@@ -5,7 +5,6 @@ sidebar_label: Java Script Camp
 ---
 
 import YouTube from 'react-youtube'
-import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment'
 
 [![serverServerlesskiy](/img/javascript/headers/00.jpg)](https://www.instagram.com/serverserverlessky/)
 
@@ -83,7 +82,7 @@ TypeScript - язык программирования, представленн
 
 ## Музыкальный альбом
 
-Курс по JS состоит из статей, видео тутариалов, подкастов и музыкальных треков. Мы создали первый в истории музыкальный альбом по языку программирования JavaScript. Который доступен сейчас в SoundCloud на русском языке. Приглашаю исполнить его на твоем родном языке.
+Курс по JS состоит из статей, видео тутариалов, подкастов и музыкальных треков. Мы создали первый в истории музыкальный альбом по языку программирования JavaScript. Который доступен сейчас в [SoundCloud](https://soundcloud.com/serverlesskiy) на русском языке. Приглашаю исполнить его и на твоем родном языке.
 
 ![@serverSerrverlesskiy](/img/jscamp/music.jpg)
 
@@ -117,53 +116,11 @@ TypeScript - язык программирования, представленн
 
 🤍 Дополнительный курс видео блоггера - пилотирование обучающих аватаров для наших обучающих видео курсов, хостов технологии AWS Sumerian. Учитель Preston Wild.
 
-<!-- ## Программа на январь:
-
-![Camp](https://media.giphy.com/media/EihFwASrXTmiQ/giphy.gif)
-
-4.01 - [Первая программа Hello World](https://react-native-village.github.io/docs/javascript01)
-
-5.01 - [Комментарии](https://react-native-village.github.io/docs/javascript02)
-
-6.01 - [Переменные](https://react-native-village.github.io/docs/javascript03)
-
-7.01 - [Типы данных](https://react-native-village.github.io/docs/javascript04)
-
-8.01 - [Ошибки](https://react-native-village.github.io/docs/javascript05)
-
-11.01 - [Строки](https://react-native-village.github.io/docs/javascript06)
-
-12.01 - [Числа](https://react-native-village.github.io/docs/javascript07)
-
-13.01 - [Истина или ложь?](https://react-native-village.github.io/docs/javascript08)
-
-14.01 - [Преобразование и приведение типов](https://react-native-village.github.io/docs/javascript09)
-
-15.01 - [Функции](https://react-native-village.github.io/docs/javascript10)
-
-18.01 - [Объекты](https://react-native-village.github.io/docs/javascript11)
-
-19.01 - [Блочная область видимости](https://react-native-village.github.io/docs/javascript12)
-
-20.01 - [Регулярные выражения](https://react-native-village.github.io/docs/javascript13)
-
-21.01 - [Конструкция switch case](https://react-native-village.github.io/docs/javascript14)
-
-22.01 - [Инкапсуляция](https://react-native-village.github.io/docs/javascript15)
-
-25.01 - [Наследование](https://react-native-village.github.io/docs/javascript16)
-
-26.01 - [Циклы](https://react-native-village.github.io/docs/javascript17)
-
-27.01 - [Массивы и псевдомассивы](https://react-native-village.github.io/docs/javascript18)
-
-Подпишитесь на весь [календарь](http://p14-caldav.icloud.com/published/2/MTYyNzQyOTgyMzE2Mjc0MnJDaPjzgR0U-x4uD_nwjr8evco8zKn-1uWVIxx9RjsmCHqFd78vLOOEuCTnjF0D0nkHFj1HIpgT0mr_ioXK22M) -->
-
 ## Автор курса
 
 Автор курса по Java Script - [Server Serverlesskiy](https://twitter.com/koshasuperstar), является создателем первого в рунете учебного курса по [React Native](https://react-native-village.github.io/docs/start000), а также первый русский блогер-программист в программе [AWS Comunity Builders](https://aws.amazon.com/ru/developer/community/community-builders/) от Amazon.
 
-<!-- ## Отзывы
+## Отзывы
 
 [![Tvit](/img/javascript/twit.png)](https://twitter.com/dabit3/status/1339622771001843716)
 
@@ -171,7 +128,7 @@ TypeScript - язык программирования, представленн
 
 Это музыкальное видео по AWS Community Builder совершенно другого уровня 🔥 😅
 
-Это курс по мобильной разработке в стеке React Native / Type Script / AWS Amplify и для сертификации в AWS Certification. Стоит проверить! -->
+Это курс по мобильной разработке в стеке React Native / Type Script / AWS Amplify и для сертификации в AWS Certification. Стоит проверить!
 
 ## Процесс обучения
 
