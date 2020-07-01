@@ -120,9 +120,9 @@ module.exports = {
 
 Where we add scripts:
 
-- Simulator. For me, this is iPhone SE since its screen size is the minimum requirement for layout (iPhone 3,4 is already everything)
-- Linter, which will prohibit you from pushing until all errors in the code are fixed
-- Installing Pods
+- Симулятор. Для меня это iPhone SE так как его размер экрана миниматльное требование по верстке(iPhone 3,4 уже все)
+- Линтер, который будет запрещать вам пушить до исправления всех ошибок в коде
+- Установка Pods
 
 ```jsx
 "scripts": {
