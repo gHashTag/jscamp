@@ -90,6 +90,7 @@ amplify codegen model
 
 Поехали!
 
+
 Данный урок является продолжением урока по [аутентификции](https://react-native-village.github.io/docs/auth1-00), так как работа с DataStore будет выполняться аутентифицированым пользователем. Поэтому, если вы его не прошли, то вернитесь на шаг назад.
 
 Чат поддержки AWS Amplify: [Telegram](https://teleg.run/awsamplify)
