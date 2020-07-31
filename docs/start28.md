@@ -3,7 +3,6 @@ id: start28
 title: Where to start learning React Native?
 sidebar_label: Where to start learning React Native?
 ---
-
 import YouTube from 'react-youtube'
 
 In order to answer this question and it was relevant today, I created this page with links to:

@@ -13,6 +13,7 @@ Prettier - Code formatting tool with support for multiple languages, minimum con
 
 <YouTube videoId='noQ0JGVC6SA' />
 
+
 ![Step01](/img/steps/01.png)
 
 ## Install dependencies
@@ -96,7 +97,11 @@ module.exports = {
 
 ![Step03](/img/steps/03.png)
 
+<<<<<<< refs/remotes/origin/master
 ## Rules Prettier
+=======
+## Правила Prettier
+>>>>>>> start28
 
 Add rules to .prettierrc.js
 
