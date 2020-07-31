@@ -3,6 +3,7 @@ module.exports = {
   someSidebar: {
     ['Startup']: ['startup00'],
     ['React Native']: [
+      'start28',
       'start00',
       'start01',
       'start02',
@@ -31,7 +32,7 @@ module.exports = {
       'start25',
       'start26',
       'start27',
-      'start28',
+
       'start29',
       'start30',
       'start31',
