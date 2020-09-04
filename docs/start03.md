@@ -74,7 +74,6 @@ module.exports = {
     'no-console': 'error',
     'arrow-parens': 0,
     'eol-last': 0,
-    'react/destructuring-assignment': 0,
     'react-native/no-unused-styles': 0,
     'react-native/split-platform-components': 0,
     'react-native/no-inline-styles': 0,
