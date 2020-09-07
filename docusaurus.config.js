@@ -9,8 +9,7 @@
 
 module.exports = {
   title: 'Уроки React Native',
-  tagline:
-    'Маркет-плейс задач и вакансий для React Native и AWS Amplify разработчиков в мобильном приложении.',
+  tagline: 'Маркет-плейс задач и вакансий для React Native и AWS Amplify разработчиков в мобильном приложении.',
   url: 'https://react-native-village.github.io',
   baseUrl: '/',
   favicon: 'img/favicon.ico',
@@ -18,41 +17,41 @@ module.exports = {
   projectName: 'react-native-village.github.io',
   themeConfig: {
     navbar: {
-      title: '#димкаРеактнативный',
+      title: 'Sumerian School',
       logo: {
         alt: 'React Native Village Logo',
-        src: 'img/logo.png',
+        src: 'img/logo.png'
       },
       links: [
         {
           to: 'docs/startup00',
           activeBasePath: 'docs',
           label: 'Уроки',
-          position: 'left',
+          position: 'left'
         },
         {
           href: 'https://www.patreon.com/reactnative',
           label: 'Patreon',
-          position: 'left',
+          position: 'left'
         },
         {
           href:
             'https://hh.ru/resume/9bbcea07ff0460389d0039ed1f775a4d445337?source=post_page-----e563aebfae71----------------------',
           label: 'Об авторе',
-          position: 'left',
+          position: 'left'
         },
         {
           href: 'https://github.com/react-native-village',
           label: 'GitHub',
-          position: 'right',
+          position: 'right'
         },
         {
           to: 'blog',
           activeBasePath: 'docs',
           label: 'Вакансии',
-          position: 'left',
-        },
-      ],
+          position: 'left'
+        }
+      ]
     },
     footer: {
       style: 'dark',
@@ -62,89 +61,89 @@ module.exports = {
           items: [
             {
               label: 'Startup',
-              to: 'docs/startup00',
+              to: 'docs/startup00'
             },
             {
               label: 'React Native',
-              to: 'docs/start00',
+              to: 'docs/start00'
             },
             {
               label: 'React Navigation 2',
-              to: 'docs/reactNavigtion2.00',
+              to: 'docs/reactNavigtion2.00'
             },
             {
               label: 'Redux',
-              to: 'docs/redux00',
-            },
-          ],
+              to: 'docs/redux00'
+            }
+          ]
         },
         {
           title: 'Community',
           items: [
             {
               label: 'Telegram',
-              href: 'https://teleg.run/awsamplify',
+              href: 'https://teleg.run/awsamplify'
             },
             {
               label: 'Discord',
-              href: 'https://discord.gg/6GDAfXn',
-            },
-          ],
+              href: 'https://discord.gg/6GDAfXn'
+            }
+          ]
         },
         {
           title: 'Social',
           items: [
             {
               label: 'Telegram Channel',
-              href: 'https://teleg.run/reactnativeinit',
+              href: 'https://teleg.run/reactnativeinit'
             },
             {
               label: 'Patreon',
-              href: 'https://www.patreon.com/reactnative',
+              href: 'https://www.patreon.com/reactnative'
             },
             {
               label: 'Instagram',
-              href: 'https://www.instagram.com/hackathonunicorn/',
+              href: 'https://www.instagram.com/hackathonunicorn/'
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/react-native-village',
+              href: 'https://github.com/react-native-village'
             },
             {
               label: 'Dev.to',
-              href: 'https://dev.to/playra',
+              href: 'https://dev.to/playra'
             },
             {
               label: 'Twitter',
-              href: 'https://twitter.com/koshasuperstar',
+              href: 'https://twitter.com/koshasuperstar'
             },
             {
               label: 'Twitch',
-              href: 'https://www.twitch.tv/koshasuperstar',
+              href: 'https://www.twitch.tv/koshasuperstar'
             },
             {
               label: 'Facebook',
-              href: 'https://www.facebook.com/reactnativeinitru',
+              href: 'https://www.facebook.com/reactnativeinitru'
             },
             {
               label: 'Vk',
-              href: 'https://vk.com/reactnativeinit',
+              href: 'https://vk.com/reactnativeinit'
             },
             {
               label: 'Medium',
-              href: 'https://medium.com/react-native-init',
-            },
-          ],
-        },
+              href: 'https://medium.com/react-native-init'
+            }
+          ]
+        }
       ],
       logo: {
         alt: 'Facebook Open Source Logo',
         src: 'img/oss_logo.png',
-        href: 'https://opensource.facebook.com/',
+        href: 'https://opensource.facebook.com/'
       },
       // Please do not remove the credits, help to publicize Docusaurus :)
-      copyright: `Copyright © ${new Date().getFullYear()} #димкаРеактнативный. Built with Docusaurus.`,
-    },
+      copyright: `Copyright © ${new Date().getFullYear()} #димкаРеактнативный. Built with Docusaurus.`
+    }
   },
   presets: [
     [
@@ -152,13 +151,12 @@ module.exports = {
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
+          editUrl: 'https://github.com/facebook/docusaurus/edit/master/website/'
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
-        },
-      },
-    ],
-  ],
-};
+          customCss: require.resolve('./src/css/custom.css')
+        }
+      }
+    ]
+  ]
+}
