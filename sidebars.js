@@ -2,7 +2,7 @@
 module.exports = {
   someSidebar: {
     ['Startup']: ['startup00'],
-    ['Java Script']: ['javascript01'],
+    ['Java Script']: ['javascript01', 'javascript02', 'javascript03'],
     ['React Native']: [
       'start28',
       'start00',
@@ -37,7 +37,7 @@ module.exports = {
       'start29',
       'start30',
       'start31',
-      'start32',
+      'start32'
     ],
     ['React Navigation 2']: [
       'reactNavigation2-00',
@@ -46,26 +46,11 @@ module.exports = {
       'reactNavigation2-03',
       'reactNavigation2-04',
       'reactNavigation2-05',
-      'reactNavigation2-06',
+      'reactNavigation2-06'
     ],
-    ['Redux']: [
-      'redux-00',
-      'redux-01',
-      'redux-02',
-      'redux-03',
-      'redux-04',
-      'redux-05',
-      'redux-06',
-    ],
+    ['Redux']: ['redux-00', 'redux-01', 'redux-02', 'redux-03', 'redux-04', 'redux-05', 'redux-06'],
     ['UI Kit']: ['unicorn00', 'unicorn01', 'unicorn02'],
     ['Аутентификация']: ['auth1-00', 'auth1-01', 'auth1-02'],
-    ['AWS Amplify']: [
-      'amplify-00',
-      'amplify-01',
-      'amplify-02',
-      'amplify-03',
-      'amplify-04',
-      'notif-00',
-    ],
-  },
-};
+    ['AWS Amplify']: ['amplify-00', 'amplify-01', 'amplify-02', 'amplify-03', 'amplify-04', 'notif-00']
+  }
+}
