@@ -15,7 +15,7 @@ Prettier - Инструмент форматирования кода c подд
 ## Устанавливаем зависимости
 
 ```
- yarn add eslint eslint-config-airbnb babel-preset-airbnb eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react eslint-watch babel-core babel-eslint babel-preset-react-native pre-commit prettier prettier-eslint eslint-plugin-prettier eslint-config-prettier eslint-plugin-react eslint-plugin-react-native eslint-plugin-flowtype eslint-plugin-react-hooks --dev
+ yarn add eslint eslint-config-airbnb babel-preset-airbnb eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react eslint-watch babel-core babel-eslint babel-preset-react-native prettier prettier-eslint eslint-plugin-prettier eslint-config-prettier eslint-plugin-react eslint-plugin-react-native eslint-plugin-react-hooks --dev
 ```
 
 ![Step02](/img/steps/02.png)
@@ -28,15 +28,15 @@ Prettier - Инструмент форматирования кода c подд
 module.exports = {
   root: true,
   parser: 'babel-eslint',
-  extends: ['airbnb', 'prettier', 'plugin:flowtype/recommended'],
+  extends: ['airbnb', 'prettier'],
   plugins: ['react', 'react-native', 'jsx-a11y', 'import', 'react-hooks'],
   parserOptions: {
     ecmaFeatures: {
-      jsx: true,
-    },
+      jsx: true
+    }
   },
   env: {
-    'react-native/react-native': true,
+    'react-native/react-native': true
   },
   rules: {
     'no-param-reassign': 0,
@@ -79,16 +79,16 @@ module.exports = {
     'react-native/no-inline-styles': 0,
     'react-native/no-color-literals': 0,
     'react-native/no-raw-text': 0,
-    'consistent-return': 0,
+    'consistent-return': 0
   },
   settings: {
     'import/resolver': {
       node: {
-        extensions: ['.js', '.ios.js', '.android.js'],
-      },
-    },
-  },
-};
+        extensions: ['.js', '.ios.js', '.android.js']
+      }
+    }
+  }
+}
 ```
 
 ![Step03](/img/steps/03.png)
@@ -106,8 +106,8 @@ module.exports = {
   bracketSpacing: true,
   semi: false,
   useTabs: false,
-  jsxBracketSameLine: false,
-};
+  jsxBracketSameLine: false
+}
 ```
 
 ![Step04](/img/steps/04.png)

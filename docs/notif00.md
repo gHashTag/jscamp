@@ -228,9 +228,9 @@ PushNotification.configure(awsconfig)
 
 ```js
 PushNotification.onRegister((token) => {
-  console.log('in app registration', token);
-  PushNotification.updateEndpoint(token);
-});
+  console.log('in app registration', token)
+  PushNotification.updateEndpoint(token)
+})
 ```
 
 **attention**: В Android может быть проблема, что этот метод никогда не будет вызван! Однако [обходной путь](https://github.com/aws-amplify/amplify-js/issues/2643#issuecomment-523610933) может быть таким везде, где вам может понадобиться токен:
@@ -267,8 +267,8 @@ PushNotification.onNotification((notification) => {
 
 ```js
 PushNotification.onNotificationOpened((notification) => {
-  console.log('the notification is opened', notification);
-});
+  console.log('the notification is opened', notification)
+})
 ```
 
 ## requestIOSPermissions
@@ -276,13 +276,13 @@ PushNotification.onNotificationOpened((notification) => {
 Push-уведомление работает только на реальном устройстве и не будет получать никаких уведомлений, если конечный пользователь не даст разрешение. `requestIOSPermissions` нужен для получения этого разрешения. Он может быть вызван без каких-либо параметров, или вы можете настроить объект следующим образом:
 
 ```js
-PushNotification.requestIOSPermissions();
+PushNotification.requestIOSPermissions()
 // or
 PushNotification.requestIOSPermissions({
   alert: true,
   badge: true,
-  sound: false,
-});
+  sound: false
+})
 ```
 
 ![Step07](/img/steps/07.png)
@@ -292,44 +292,44 @@ PushNotification.requestIOSPermissions({
 Прежде всего, мы хотим взглянуть на файл `App.js`.
 
 ```js
-import React from 'react';
-import {SafeAreaView, Platform, Text, NativeModules} from 'react-native';
+import React from 'react'
+import { SafeAreaView, Platform, Text, NativeModules } from 'react-native'
 
-import PushNotificationIOS from '@react-native-community/push-notification-ios';
-import Analytics from '@aws-amplify/analytics';
-import Amplify from 'aws-amplify';
-import PushNotification from '@aws-amplify/pushnotification';
-import awsconfig from './aws-exports';
+import PushNotificationIOS from '@react-native-community/push-notification-ios'
+import Analytics from '@aws-amplify/analytics'
+import Amplify from 'aws-amplify'
+import PushNotification from '@aws-amplify/pushnotification'
+import awsconfig from './aws-exports'
 
-Amplify.configure(awsconfig);
-PushNotification.configure(awsconfig);
+Amplify.configure(awsconfig)
+PushNotification.configure(awsconfig)
 
 PushNotification.onRegister(async (token) => {
-  console.log('in app registration', token);
-  PushNotification.updateEndpoint(token);
-});
+  console.log('in app registration', token)
+  PushNotification.updateEndpoint(token)
+})
 
 // In case PushNotification.onRegister didn't work
 NativeModules.RNPushNotification.getToken((token) => {
-  console.log(`PushToken: ${token}`);
-});
+  console.log(`PushToken: ${token}`)
+})
 
 PushNotification.onNotification((notification) => {
-  console.log('in app notification', notification);
+  console.log('in app notification', notification)
   if (Platform.OS === 'ios') {
-    notification.finish(PushNotificationIOS.FetchResult.NoData);
+    notification.finish(PushNotificationIOS.FetchResult.NoData)
   }
-});
+})
 
 PushNotification.onNotificationOpened((notification) => {
-  console.log('the notification is opened', notification);
-});
+  console.log('the notification is opened', notification)
+})
 
-const endpointId = Analytics.getPluggable('AWSPinpoint')._config.endpointId;
-console.log(`endpoint ID: ${endpointId}`);
+const endpointId = Analytics.getPluggable('AWSPinpoint')._config.endpointId
+console.log(`endpoint ID: ${endpointId}`)
 
 if (Platform.OS === 'ios') {
-  PushNotification.requestIOSPermissions();
+  PushNotification.requestIOSPermissions()
 }
 
 const App: () => React$Node = () => {
@@ -337,10 +337,10 @@ const App: () => React$Node = () => {
     <SafeAreaView>
       <Text>Push Notification</Text>
     </SafeAreaView>
-  );
-};
+  )
+}
 
-export default App;
+export default App
 ```
 
 Запускаем проект:
@@ -353,7 +353,7 @@ react-native run-android
 react-native run-ios
 ```
 
-Чтобы идти дальше, нам нужен один из `endpoint ID` или `Push Token`. Подробно объяснено тут `endpoint` в `aws` услугах:
+Чтобы идти дальше, нам нужен один из `endpoint ID` или `Push Token`. Подробно объяснено [тут](https://docs.aws.amazon.com/pinpoint/latest/apireference/apps-application-id-endpoints.html) `endpoint` в `aws` услугах:
 
 > `Endpoint` представляет пункт назначения, в который вы можете отправлять сообщения, например, на мобильное устройство, адрес электронной почты или номер телефона.
 
