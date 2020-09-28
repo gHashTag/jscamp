@@ -89,7 +89,7 @@ function Home() {
       description="Unicorn App - это мобильное приложение маркет-плейс задач и вакансий для react-native разработчиков в мобильном приложении."
     >
       <div className={videoContainer}>
-        <YouTube videoId="TZmN05l0x7M" opts={opts} className={player} />
+        <YouTube videoId="GAbsjQF9i0c" opts={opts} className={player} />
       </div>
       <main>
         {features && features.length && (
