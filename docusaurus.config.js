@@ -22,7 +22,7 @@ module.exports = {
         alt: 'React Native Village Logo',
         src: 'img/logo.png'
       },
-      links: [
+      items: [
         {
           to: 'docs/startup00',
           activeBasePath: 'docs',
