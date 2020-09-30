@@ -1,0 +1,14 @@
+{
+  "projectName": "react-native-village",
+  "projectOwner": "gHashTag",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 200,
+  "commit": true,
+  "commitConvention": "eslint",
+  "contributors": [],
+  "contributorsPerLine": 7
+}

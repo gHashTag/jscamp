@@ -15,6 +15,7 @@ module.exports = {
   favicon: 'img/favicon.ico',
   organizationName: 'react-native-village',
   projectName: 'react-native-village.github.io',
+  onBrokenLinks: 'ignore',
   themeConfig: {
     navbar: {
       title: 'Sumerian School',
