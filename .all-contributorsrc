@@ -27,6 +27,15 @@
       "contributions": [
         "financial"
       ]
+    },
+    {
+      "login": "KoDim-React",
+      "name": "Dmitiy K.",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/72087863?v=4",
+      "profile": "https://github.com/KoDim-React",
+      "contributions": [
+        "mentoring"
+      ]
     }
   ],
   "contributorsPerLine": 7
