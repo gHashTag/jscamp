@@ -387,11 +387,13 @@ yarn start
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/FELiX-RN"><img src="https://avatars1.githubusercontent.com/u/41279178?v=4" width="100px;" alt=""/><br /><sub><b>Kurbanov Jasur</b></sub></a><br /><a href="#design-FELiX-RN" title="Design">🎨</a> <a href="#maintenance-FELiX-RN" title="Maintenance">🚧</a></td>
+    <td align="center"><a href="https://github.com/FELiX-RN"><img src="https://avatars0.githubusercontent.com/u/72006627?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Philipp Dvinyaninov</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/commits?author=FELiX-RN" title="Documentation">📖</a></td>
   </tr>
 </table>
 
-<!-- markdownlint-enable -->
+<!-- markdownlint-restore -->
 <!-- prettier-ignore-end -->
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
+
+[![Become a Patron!](/img/logo/patreon.png)](https://www.patreon.com/bePatron?u=31769291)
