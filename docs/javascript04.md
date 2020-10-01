@@ -8,22 +8,12 @@ sidebar_label: Типы данных
 
 JavaScript является слабо типизированным или динамическим языком. Это значит, что вам не нужно определять тип переменной заранее. Тип определится автоматически во время выполнения программы. Также это значит, что вы можете использовать одну переменную для хранения данных различных типов:
 
-```javascript
-var foo = 42 // сейчас foo типа Number
-console.log(foo)
-foo = 'bar' // а теперь foo типа String
-console.log(foo)
-```
-
-## Оператор typeof
-
-Для понимания того какой тип данных содержит переменную в JavaScript используется оператор `typeof`.
-
-```javascript
-var a = 42
-console.log(typeof a)
-var b = 'bar'
-console.log(typeof b)
+```jsx live
+function learnJavaScript() {
+  var foo = 42 // сейчас foo типа number
+  foo = 'bar' // а теперь foo типа string
+  return <h2>{typeof foo}</h2>
+}
 ```
 
 ## Типы данных
@@ -31,32 +21,23 @@ console.log(typeof b)
 Стандарт JavaScript определяет 9 типов данных. Познакомтесь с каждым из них делая вывод в консоль и после я расскажу о каждом из них подробнее.
 
 ```javascript
-var one = { firstName: 'John', lastName: 'Smith' }
-console.log(typeof one)
+var one = { firstName: 'John', lastName: 'Smith' } // object
 
-var two = () => {}
-console.log(typeof two)
+var two = () => {} // function
 
-var three 'bar'
-console.log(typeof three)
+var three 'bar' // string
 
-var four = 42
-console.log(typeof four)
+var four = 42 // number
 
-var five = 19241924124n
-console.log(typeof five)
+var five = 19241924124n // bigint
 
-var six = true
-console.log(typeof six)
+var six = true // boolean
 
-var seven = null
-console.log(seven)
+var seven = null // null
 
-var eight
-console.log(typeof eight)
+var eight // undefined
 
-var nine = Symbol()
-console.log(typeof nine)
+var nine = Symbol() // symbol
 ```
 
 ## Объекты
@@ -105,6 +86,62 @@ console.log(typeof nine)
 Тип символ `Symbol` — это уникальное и иммутабельное примитивное значение, которое может быть использовано как ключ для свойства объекта.
 
 ## Вопросы:
+
+1. Для чего используется оператор typeof?
+
+Для определения типа данных
+
+Для вывода типа данных в консоль
+
+Для ввода новой переменной
+
+2. Сколько типов данных определяет стандарт JavaScript?
+
+42
+
+9
+
+18
+
+3. В каком типе данных содержится набор свойств?
+
+function
+
+string
+
+object
+
+4. Можно ли в JavaScript корректировать строку посимвольно?
+
+Да
+
+Возможно в особых случаях
+
+Нет, строки пересоздаются только полностью
+
+5. Какой тип данных даёт возможность работать с целыми числами произвольной длины?
+
+number
+
+srting
+
+bigint
+
+6. Какое из значений не имеет булевый тип boolean?
+
+false
+
+null
+
+true
+
+7. Какой из типов данных имеет значение, которое может быть использовано как ключ для свойства объекта?
+
+undefined
+
+symbol
+
+null
 
 ## Ссылки:
 
