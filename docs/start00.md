@@ -17,7 +17,29 @@ sidebar_label: Настройка Windows 10
 
 [Chocolatey](https://chocolatey.org/install) — менеджер пакетов в среде Windows по аналогии с apt-get в Linux, позволяющий установить Node, Python2 и др.  Устанавливается менеджер пакетов Chocolatey через консольную оболочку ``PowerShell``. Для запуска ``PowerShell`` на кнопке ``Пуск`` вызываем контекстное меню (нажатием правой клавиши мыши) и выбираем пункт ``Windows PowerShell (администратор)``. 
 
-![001](/img/rn/00/001.png)
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs
+  defaultValue="ru"
+  values={[
+    {label: 'En', value: 'en'},
+    {label: 'Ru', value: 'ru'},
+  ]}>
+  <TabItem value="en"> 
+
+  Placeholder
+
+  </TabItem>
+  <TabItem value="ru">
+
+  ![001](/img/rn/00/001.png)
+
+  </TabItem>
+</Tabs>
+
+
+
 :::info Альтернативный вариант
  Рядом с меню ``Пуск`` кнопка ``Поиск`` -> вводим ``PowerShell`` и через контекстное меню выбираем ``Запуск  от имени администратора``. 
 :::
@@ -146,14 +168,66 @@ choco install -y nodejs.install python2 openjdk8
 
 Инструменты ``React Native`` требуют настройки некоторых переменных среды для создания приложений с использованием собственного кода.
 Откройте ``панель управления Windows``. 
+
+<Tabs
+  defaultValue="ru"
+  values={[
+    {label: 'En', value: 'en'},
+    {label: 'Ru', value: 'ru'},
+  ]}>
+  <TabItem value="en"> 
+
+  Placeholder
+
+  </TabItem>
+  <TabItem value="ru">
+
+  ![Control panel](/img/rn/00/03_00_ru.png)
+
+  </TabItem>
+</Tabs>
+
 Нажмите ``Учетные записи пользователей``, затем снова нажмите ``Учетные записи пользователей``.
 
+<Tabs
+  defaultValue="en"
+  values={[
+    {label: 'En', value: 'en'},
+    {label: 'Ru', value: 'ru'},
+  ]}>
+  <TabItem value="en"> 
 
-![User](/img/rn/00/10.png)
+  ![User](/img/rn/00/10.png) 
+
+  </TabItem>
+  <TabItem value="ru">
+
+  ![UserRu](/img/rn/00/10_ru.png) 
+
+  </TabItem>
+</Tabs>
+
 
 Нажмите на ``Изменить мои переменные среды``.
 
-![Path](/img/rn/00/11.png)
+<Tabs
+  defaultValue="en"
+  values={[
+    {label: 'En', value: 'en'},
+    {label: 'Ru', value: 'ru'},
+  ]}>
+  <TabItem value="en"> 
+
+  ![Path](/img/rn/00/11.png) 
+
+  </TabItem>
+  <TabItem value="ru">
+
+  ![PathRu](/img/rn/00/11_ru.png) 
+
+  </TabItem>
+</Tabs>
+
 
 Нажмите кнопку ``Создать ...`` для добавления новой пользовательской переменной ``ANDROID_HOME``, указывающую путь к Вашему ``Android SDK``.
 Далее нажимаем кнопку ``Обзор каталога…`` и выбираем каталог установки ``Android SDK``, по умолчанию это ``%LOCALAPPDATA%\Android\Sdk``. 
@@ -161,7 +235,24 @@ choco install -y nodejs.install python2 openjdk8
 Путь до ``Android SDK`` можно узнать в пункте настроек ``SDK Manager``.
 :::
 
-![Path](/img/rn/00/12.png)
+<Tabs
+  defaultValue="en"
+  values={[
+    {label: 'En', value: 'en'},
+    {label: 'Ru', value: 'ru'},
+  ]}>
+  <TabItem value="en"> 
+
+  ![Path](/img/rn/00/12.png)
+
+  </TabItem>
+  <TabItem value="ru">
+
+  ![PathRu](/img/rn/00/12_ru.png) 
+
+  </TabItem>
+</Tabs>
+
 
 Нажимаем ``ОК``. 
 
@@ -170,8 +261,30 @@ choco install -y nodejs.install python2 openjdk8
 2.	Щелкните кнопку ``Изменить…``.
 3.	Нажмите кнопку ``Создать`` и добавьте в список путь к установленным инструментам платформы. Расположение по умолчанию для этой папки ``%LOCALAPPDATA%\Android\Sdk\platform-tools``.
 
+<Tabs
+  defaultValue="en"
+  values={[
+    {label: 'En', value: 'en'},
+    {label: 'Ru', value: 'ru'},
+    {label: 'Path D: Ru', value: 'pth'},
+  ]}>
+  <TabItem value="en"> 
 
-![Path](/img/rn/00/13.png)
+  ![Path](/img/rn/00/13.png) 
+
+  </TabItem>
+  <TabItem value="ru">
+
+  ![PathRu](/img/rn/00/13_ru.png)
+
+  </TabItem>
+  <TabItem value="pth">
+
+  ![PathRu](/img/rn/00/13_D_ru.png)
+
+  </TabItem>
+</Tabs>
+
 
 Проверяем изменение параметров сред в ``PowerShell`` командой:
 
@@ -184,6 +297,7 @@ Get-ChildItem -Path Env:\
 :::
 
 ![Step04](/img/steps/04.png)
+
 
 ## Настройка эмулятора
 
@@ -261,7 +375,7 @@ cd d:\MyProjects\MyReact
 npx react-native run-android
 ```
 :::info
-Запустится Эмулятор или подключаем реальный смартфон с включенным режимом отладки по USB для просмотра результа.
+Запустится Эмулятор или подключаем реальный смартфон с включенным режимом отладки по USB для просмотра результата.
 :::
 
 ![react-native run-android](/img/rn/00/21.png)
@@ -330,7 +444,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/FELiX-RN"><img src="https://avatars0.githubusercontent.com/u/72006627?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Philipp Dvinyaninov</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/commits?author=FELiX-RN" title="Documentation">📖</a></td>
     <td align="center"><a href="https://github.com/IIo3iTiv"><img src="https://avatars0.githubusercontent.com/u/72025062?s=400&v=4" width="200px;" alt=""/><br /><sub><b>Alexey Popovcev</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/commits?author=IIo3iTiv" title="Documentation">📖</a></td>
     <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /><a href="#financial-gHashTag" title="Financial">💵</a></td>
-    <td align="center"><a href="https://github.com/KoDim-React"><img src="https://avatars1.githubusercontent.com/u/72087863?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitiy K.</b></sub></a><br /><a href="#mentoring-KoDim-React" title="Mentoring">🧑‍🏫</a></td>
+    <td align="center"><a href="https://github.com/KoDim-React"><img src="https://avatars1.githubusercontent.com/u/72087863?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy K.</b></sub></a><br /><a href="#mentoring-KoDim-React" title="Mentoring">🧑‍🏫</a></td>
   </tr>
 </table>
 
