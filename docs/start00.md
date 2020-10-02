@@ -21,14 +21,14 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 <Tabs
-  defaultValue="ru"
+  defaultValue="en"
   values={[
     {label: 'En', value: 'en'},
     {label: 'Ru', value: 'ru'},
   ]}>
   <TabItem value="en"> 
 
-  Placeholder
+  ![001](/img/rn/00/001_en.png)
 
   </TabItem>
   <TabItem value="ru">
@@ -132,7 +132,7 @@ choco install -y nodejs.install python2 openjdk8
 Рекомендуем использовать стандартные пути установки.
 
 :::danger Внимание
-Для установки требуется порядка 20 Гб свободного пространства диска C: Можно установить пакет на диск D:, но тогда потребуется изменить переменные окружения пользователя.
+Для установки требуется порядка 40 Гб свободного пространства диска C: Можно установить пакет на диск D:, но тогда потребуется изменить переменные окружения пользователя.
 :::
 Затем нажмите кнопку ``Далее``, чтобы установить все эти компоненты.
 
@@ -170,14 +170,14 @@ choco install -y nodejs.install python2 openjdk8
 Откройте ``панель управления Windows``. 
 
 <Tabs
-  defaultValue="ru"
+  defaultValue="en"
   values={[
     {label: 'En', value: 'en'},
     {label: 'Ru', value: 'ru'},
   ]}>
   <TabItem value="en"> 
 
-  Placeholder
+  ![Control panel](/img/rn/00/03_00_en.png)
 
   </TabItem>
   <TabItem value="ru">
@@ -388,35 +388,49 @@ npx react-native run-android
 
 ## Редактирование кода в приложении - Hello World
 
-Для редактирования кода открываем папку с проектом любым редактором кода (рекомендуем VS Code). Редактирование начинаем с файла `App.js`. При изменении и сохранении кода, `Ctrl + S`, происходит автоматическое обновление интерфейса нашего приложения на экране эмулятора.
+Для редактирования кода открываем папку с проектом любым редактором кода (рекомендуем [Visual Studio Code](https://code.visualstudio.com/download)). Редактирование начинаем с файла `App.js`. При изменении и сохранении кода, `Ctrl + S`, происходит автоматическое обновление интерфейса нашего приложения на экране эмулятора.
 
 Вставьте в файл `App.js` следующий код и нажмите ``Ctrl + S``:
 
 ```jsx
-import React from 'react'
-import { Text } from 'react-native'
+import React from 'react';
+import {
+  SafeAreaView,
+  StyleSheet,
+  ScrollView,
+  View,
+  Text,
+  StatusBar,
+} from 'react-native';
 
-const App = () => {
-  const { h1 } = styles
+import {
+  Header,
+  LearnMoreLinks,
+  Colors,
+  DebugInstructions,
+  ReloadInstructions,
+} from 'react-native/Libraries/NewAppScreen';
+
+const App: () => React$Node = () => {
   return (
     <>
-      <Text style={h1}>Hello World</Text>
+      <Text style={styles.h1}>Hello World</Text>   
     </>
-  )
-}
+  );
+};
 
 const styles = StyleSheet.create({
   h1: {
     backgroundColor: '#BEFCE5',
     color: '#000',
     fontSize: 25,
-    fontWeight: '600',
+    fontWeight: '700',
     padding: 20,
     textAlign: 'center'
   }
 })
 
-export default App
+export default App;
 ```
 
 На экране со светлым фоном в вверху в центре появиться надпись «Hello World».
@@ -430,7 +444,8 @@ export default App
 1. [React Native, официальная документация](https://reactnative.dev/docs/environment-setup)
 2. [Установка Chocolatey, официальная документация](https://chocolatey.org/install)
 3. [Android Studio, официальный сайт](https://developer.android.com/studio)
-4. [Metro, официальная документация](https://facebook.github.io/metro/docs/concepts)
+4. [Visual Studio Code, официальный сайт](https://code.visualstudio.com/download)
+5. [Metro, официальная документация](https://facebook.github.io/metro/docs/concepts)
 
 ## Contributors ✨
 
