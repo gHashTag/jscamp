@@ -8,43 +8,41 @@ sidebar_label: Настройка Windows 10
 :::note
 На всех этапах установки пользователь должен иметь права Администратора и подключен к сети Интернет.
 :::
-Инструкция зависит от Вашей операционной системы и от того, под какую мобильную ОС (Android или iOS)  решите разрабатывать приложение. Данная статья ориентирована под ОС разработки Windows, среду разработки Android Studio и мобильную ОС Android.
+Инструкция зависит от Вашей операционной системы и от того, под какую мобильную ОС (Android или iOS) решите разрабатывать приложение. Данная статья ориентирована под ОС разработки Windows, среду разработки Android Studio и мобильную ОС Android.
 
+[![Настройка Windows 10](/img/rn/00/giphy.gif)](https://youtu.be/uTvjnkHCUgQ)
 
 ![Step00](/img/steps/00.png)
 
 ## Установка Chocolatey
 
-[Chocolatey](https://chocolatey.org/install) — менеджер пакетов в среде Windows по аналогии с apt-get в Linux, позволяющий установить Node, Python2 и др.  Устанавливается менеджер пакетов Chocolatey через консольную оболочку ``PowerShell``. Для запуска ``PowerShell`` на кнопке ``Пуск`` вызываем контекстное меню (нажатием правой клавиши мыши) и выбираем пункт ``Windows PowerShell (администратор)``. 
+[Chocolatey](https://chocolatey.org/install) — менеджер пакетов в среде Windows по аналогии с apt-get в Linux, позволяющий установить Node, Python2 и др. Устанавливается менеджер пакетов Chocolatey через консольную оболочку `PowerShell`. Для запуска `PowerShell` на кнопке `Пуск` вызываем контекстное меню (нажатием правой клавиши мыши) и выбираем пункт `Windows PowerShell (администратор)`.
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 <Tabs
-  defaultValue="en"
-  values={[
-    {label: 'En', value: 'en'},
-    {label: 'Ru', value: 'ru'},
-  ]}>
-  <TabItem value="en"> 
+defaultValue="en"
+values={[
+{label: 'En', value: 'en'},
+{label: 'Ru', value: 'ru'},
+]}>
+<TabItem value="en">
 
-  ![001](/img/rn/00/001_en.png)
+![001](/img/rn/00/001_en.png)
 
   </TabItem>
   <TabItem value="ru">
 
-  ![001](/img/rn/00/001.png)
+![001](/img/rn/00/001.png)
 
   </TabItem>
 </Tabs>
 
-
-
 :::info Альтернативный вариант
- Рядом с меню ``Пуск`` кнопка ``Поиск`` -> вводим ``PowerShell`` и через контекстное меню выбираем ``Запуск  от имени администратора``. 
+Рядом с меню `Пуск` кнопка `Поиск` -> вводим `PowerShell` и через контекстное меню выбираем `Запуск от имени администратора`.
 :::
-Откроется оболочка ``PowerShell`` в консольном режиме. Для проверки возможности запуска скриптов от сторонних производителей вводим команду:
-
+Откроется оболочка `PowerShell` в консольном режиме. Для проверки возможности запуска скриптов от сторонних производителей вводим команду:
 
 ```bash
 Get-ExecutionPolicy
@@ -58,7 +56,7 @@ Get-ExecutionPolicy
  Set-ExecutionPolicy Bypass -Scope Process
 ```
 
-Выполнение команды потребует подтверждения, отвечаем символом Y (Yes). 
+Выполнение команды потребует подтверждения, отвечаем символом Y (Yes).
 
 ![``PowerShell``](/img/rn/00/02.png)
 
@@ -72,12 +70,13 @@ Get-ExecutionPolicy
 
 ![Bypass](/img/rn/00/03.png)
 
-Теперь можно использовать сторонние скрипты. Установим менеджер пакетов ``Chocolatey`` следующей командой:
+Теперь можно использовать сторонние скрипты. Установим менеджер пакетов `Chocolatey` следующей командой:
 
 ```bash
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 ```
-После окончания загрузки ``Chocolatey`` можно проверить корректность установки данного пакета. Вводим в ``PowerShell`` команду:
+
+После окончания загрузки `Chocolatey` можно проверить корректность установки данного пакета. Вводим в `PowerShell` команду:
 
 ```bash
 choco
@@ -91,7 +90,7 @@ choco -v
 
 ![choco](/img/rn/00/04.png)
 
-На время написание данной статьи версия ``Chocolatey v0.10.15``.
+На время написание данной статьи версия `Chocolatey v0.10.15`.
 
 ![Step01](/img/steps/01.png)
 
@@ -104,13 +103,13 @@ choco install -y nodejs.install python2 openjdk8
 ```
 
 :::info Примечание
-``choco`` – менеджер 
+`choco` – менеджер
 
-``Install`` – ключ установки пакетов
+`Install` – ключ установки пакетов
 
-``-y`` - ключ (yes) автоматической установки пакетов
+`-y` - ключ (yes) автоматической установки пакетов
 
-``nodejs.install, python2, openjdk8``  - название устанавливаемых пакетов.
+`nodejs.install, python2, openjdk8` - название устанавливаемых пакетов.
 :::
 
 ![choco](/img/rn/00/05.png)
@@ -121,172 +120,170 @@ choco install -y nodejs.install python2 openjdk8
 
 ## Установка Android Studio
 
-Версия ``Android Studio`` на момент написания этой статьи ``4.0.1``.
+Версия `Android Studio` на момент написания этой статьи `4.0.1`.
 Загружаем и устанавливаем [Android Studio](https://developer.android.com/studio).
 Во время установки убедитесь, что выбраны пункты:
- 
--	Android SDK
--	Android SDK Platform
--	Android Virtual Device 
+
+- Android SDK
+- Android SDK Platform
+- Android Virtual Device
 
 Рекомендуем использовать стандартные пути установки.
 
 :::danger Внимание
 Для установки требуется порядка 40 Гб свободного пространства диска C: Можно установить пакет на диск D:, но тогда потребуется изменить переменные окружения пользователя.
 :::
-Затем нажмите кнопку ``Далее``, чтобы установить все эти компоненты.
+Затем нажмите кнопку `Далее`, чтобы установить все эти компоненты.
 
 ## Установка Android SDK
-``Android Studio`` по умолчанию предлагает установить последнюю стабильную версию ``Android SDK`` для создания приложения ``React Native`` с использованием нативного кода (на момент написания статьи рекомендованная версия Android SDK Platform 29.0.2).
 
-В начальном окне ``Android Studio`` открываем справа снизу раздел ``Configure``. 
+`Android Studio` по умолчанию предлагает установить последнюю стабильную версию `Android SDK` для создания приложения `React Native` с использованием нативного кода (на момент написания статьи рекомендованная версия Android SDK Platform 29.0.2).
+
+В начальном окне `Android Studio` открываем справа снизу раздел `Configure`.
 
 ![Android Studio](/img/rn/00/06.png)
 
-Выбираем пункт ``SDK Manager``.
+Выбираем пункт `SDK Manager`.
 
 ![Android Studio](/img/rn/00/07.png)
 
-В подразделе ``Android SDK`` на вкладке ``SDK Platforms`` в правом нижнем углу установите флажок ``Show Package Details``. Найдите и разверните список ``Android 10 (Q)``, и убедитесь, что отмечены следующие элементы:
--	``Android SDK Platform 29``
--	``Intel x86 Atom_64 System Image`` и/или ``Google APIs Intel x86 Atom System Image``
+В подразделе `Android SDK` на вкладке `SDK Platforms` в правом нижнем углу установите флажок `Show Package Details`. Найдите и разверните список `Android 10 (Q)`, и убедитесь, что отмечены следующие элементы:
 
-Затем выберите вкладку ``SDK Tools`` и также установите флажок рядом с ``Show Package Details``.
+- `Android SDK Platform 29`
+- `Intel x86 Atom_64 System Image` и/или `Google APIs Intel x86 Atom System Image`
 
+Затем выберите вкладку `SDK Tools` и также установите флажок рядом с `Show Package Details`.
 
 ![SDK Manager](/img/rn/00/08.png)
 
-Найдите и разверните запись с пунктом ``Android SDK Build-Tools``,  убедитесь, что выбрана версия ``29.0.2``.
+Найдите и разверните запись с пунктом `Android SDK Build-Tools`, убедитесь, что выбрана версия `29.0.2`.
 
 ![SDK Manager](/img/rn/00/09.png)
 
-Наконец, нажмите ``Apply``, чтобы загрузить и установить ``Android SDK`` и соответствующие инструменты сборки.
+Наконец, нажмите `Apply`, чтобы загрузить и установить `Android SDK` и соответствующие инструменты сборки.
 
 ![Step03](/img/steps/03.png)
 
 ## Настройка переменных среды
 
-Инструменты ``React Native`` требуют настройки некоторых переменных среды для создания приложений с использованием собственного кода.
-Откройте ``панель управления Windows``. 
+Инструменты `React Native` требуют настройки некоторых переменных среды для создания приложений с использованием собственного кода.
+Откройте `панель управления Windows`.
 
 <Tabs
-  defaultValue="en"
-  values={[
-    {label: 'En', value: 'en'},
-    {label: 'Ru', value: 'ru'},
-  ]}>
-  <TabItem value="en"> 
+defaultValue="en"
+values={[
+{label: 'En', value: 'en'},
+{label: 'Ru', value: 'ru'},
+]}>
+<TabItem value="en">
 
-  ![Control panel](/img/rn/00/03_00_en.png)
+![Control panel](/img/rn/00/03_00_en.png)
 
   </TabItem>
   <TabItem value="ru">
 
-  ![Control panel](/img/rn/00/03_00_ru.png)
+![Control panel](/img/rn/00/03_00_ru.png)
 
   </TabItem>
 </Tabs>
 
-Нажмите ``Учетные записи пользователей``, затем снова нажмите ``Учетные записи пользователей``.
+Нажмите `Учетные записи пользователей`, затем снова нажмите `Учетные записи пользователей`.
 
 <Tabs
-  defaultValue="en"
-  values={[
-    {label: 'En', value: 'en'},
-    {label: 'Ru', value: 'ru'},
-  ]}>
-  <TabItem value="en"> 
+defaultValue="en"
+values={[
+{label: 'En', value: 'en'},
+{label: 'Ru', value: 'ru'},
+]}>
+<TabItem value="en">
 
-  ![User](/img/rn/00/10.png) 
+![User](/img/rn/00/10.png)
 
   </TabItem>
   <TabItem value="ru">
 
-  ![UserRu](/img/rn/00/10_ru.png) 
+![UserRu](/img/rn/00/10_ru.png)
 
   </TabItem>
 </Tabs>
 
-
-Нажмите на ``Изменить мои переменные среды``.
+Нажмите на `Изменить мои переменные среды`.
 
 <Tabs
-  defaultValue="en"
-  values={[
-    {label: 'En', value: 'en'},
-    {label: 'Ru', value: 'ru'},
-  ]}>
-  <TabItem value="en"> 
+defaultValue="en"
+values={[
+{label: 'En', value: 'en'},
+{label: 'Ru', value: 'ru'},
+]}>
+<TabItem value="en">
 
-  ![Path](/img/rn/00/11.png) 
+![Path](/img/rn/00/11.png)
 
   </TabItem>
   <TabItem value="ru">
 
-  ![PathRu](/img/rn/00/11_ru.png) 
+![PathRu](/img/rn/00/11_ru.png)
 
   </TabItem>
 </Tabs>
 
-
-Нажмите кнопку ``Создать ...`` для добавления новой пользовательской переменной ``ANDROID_HOME``, указывающую путь к Вашему ``Android SDK``.
-Далее нажимаем кнопку ``Обзор каталога…`` и выбираем каталог установки ``Android SDK``, по умолчанию это ``%LOCALAPPDATA%\Android\Sdk``. 
+Нажмите кнопку `Создать ...` для добавления новой пользовательской переменной `ANDROID_HOME`, указывающую путь к Вашему `Android SDK`.
+Далее нажимаем кнопку `Обзор каталога…` и выбираем каталог установки `Android SDK`, по умолчанию это `%LOCALAPPDATA%\Android\Sdk`.
 :::info Примечание
-Путь до ``Android SDK`` можно узнать в пункте настроек ``SDK Manager``.
+Путь до `Android SDK` можно узнать в пункте настроек `SDK Manager`.
 :::
 
 <Tabs
-  defaultValue="en"
-  values={[
-    {label: 'En', value: 'en'},
-    {label: 'Ru', value: 'ru'},
-  ]}>
-  <TabItem value="en"> 
+defaultValue="en"
+values={[
+{label: 'En', value: 'en'},
+{label: 'Ru', value: 'ru'},
+]}>
+<TabItem value="en">
 
-  ![Path](/img/rn/00/12.png)
+![Path](/img/rn/00/12.png)
 
   </TabItem>
   <TabItem value="ru">
 
-  ![PathRu](/img/rn/00/12_ru.png) 
+![PathRu](/img/rn/00/12_ru.png)
 
   </TabItem>
 </Tabs>
 
+Нажимаем `ОК`.
 
-Нажимаем ``ОК``. 
+Там же в переменную `Path` добавьте пути к платформенным инструментам.
 
-Там же в переменную ``Path`` добавьте пути к платформенным инструментам. 
-1.	Выберите переменную ``Path``.
-2.	Щелкните кнопку ``Изменить…``.
-3.	Нажмите кнопку ``Создать`` и добавьте в список путь к установленным инструментам платформы. Расположение по умолчанию для этой папки ``%LOCALAPPDATA%\Android\Sdk\platform-tools``.
+1. Выберите переменную `Path`.
+2. Щелкните кнопку `Изменить…`.
+3. Нажмите кнопку `Создать` и добавьте в список путь к установленным инструментам платформы. Расположение по умолчанию для этой папки `%LOCALAPPDATA%\Android\Sdk\platform-tools`.
 
 <Tabs
-  defaultValue="en"
-  values={[
-    {label: 'En', value: 'en'},
-    {label: 'Ru', value: 'ru'},
-    {label: 'Path D: Ru', value: 'pth'},
-  ]}>
-  <TabItem value="en"> 
+defaultValue="en"
+values={[
+{label: 'En', value: 'en'},
+{label: 'Ru', value: 'ru'},
+{label: 'Path D: Ru', value: 'pth'},
+]}>
+<TabItem value="en">
 
-  ![Path](/img/rn/00/13.png) 
+![Path](/img/rn/00/13.png)
 
   </TabItem>
   <TabItem value="ru">
 
-  ![PathRu](/img/rn/00/13_ru.png)
+![PathRu](/img/rn/00/13_ru.png)
 
   </TabItem>
   <TabItem value="pth">
 
-  ![PathRu](/img/rn/00/13_D_ru.png)
+![PathRu](/img/rn/00/13_D_ru.png)
 
   </TabItem>
 </Tabs>
 
-
-Проверяем изменение параметров сред в ``PowerShell`` командой:
+Проверяем изменение параметров сред в `PowerShell` командой:
 
 ```bash
 Get-ChildItem -Path Env:\
@@ -298,10 +295,9 @@ Get-ChildItem -Path Env:\
 
 ![Step04](/img/steps/04.png)
 
-
 ## Настройка эмулятора
 
-Для того что бы создать или настроить эмулятор нужно, находясь на главном окне ``Android Studio``, выбрать пункт `Configure` -> `AVD Manager`.
+Для того что бы создать или настроить эмулятор нужно, находясь на главном окне `Android Studio`, выбрать пункт `Configure` -> `AVD Manager`.
 
 ![AVD Manager](/img/rn/00/14.png)
 
@@ -314,7 +310,7 @@ Get-ChildItem -Path Env:\
 ![Pixel2](/img/rn/00/16.png)
 
 В открывшемся окне в столбце Release Name выбрать `Q Download` (Download является ссылкой на скачивание выбранного образа эмулятора), скачивание и установка начнется автоматически.
-На момент создания инструкции рекомендуемый ``API Level 29``, при установке уточните актуальную версию.
+На момент создания инструкции рекомендуемый `API Level 29`, при установке уточните актуальную версию.
 
 ![Q Downloader](/img/rn/00/17.png)
 
@@ -333,13 +329,12 @@ Get-ChildItem -Path Env:\
 
 ## Создание проекта React Native
 
-``React Native`` имеет встроенный интерфейс командной строки, который вы можете использовать для создания нового проекта. Вы можете получить к нему доступ командой ``npx``, которое поставляется с ``Node.js``. 
+`React Native` имеет встроенный интерфейс командной строки, который вы можете использовать для создания нового проекта. Вы можете получить к нему доступ командой `npx`, которое поставляется с `Node.js`.
 
-Давайте создадим новый проект ``React Native`` под названием ``MyProject``.
+Давайте создадим новый проект `React Native` под названием `MyProject`.
 
-Для создания проекта на ``React Native`` нужно запустить ``PowerShell`` от имени администратора, затем в нём с помощью команды ``cd`` перейти в папку c Вашим будущим проектом (например: ``cd D:\MyProjects``). 
+Для создания проекта на `React Native` нужно запустить `PowerShell` от имени администратора, затем в нём с помощью команды `cd` перейти в папку c Вашим будущим проектом (например: `cd D:\MyProjects`).
 Далее вводим команду:
-
 
 ```bash
 npx react-native init MyReact
@@ -350,10 +345,10 @@ npx react-native init MyReact
 ![Step06](/img/steps/06.png)
 
 ## Запуск React Native
-Во-первых, вам нужно запустить ``Metro Bundler``, сборщик ``JavaScript``, который поставляется с ``React Native``. ``Metro`` «принимает входной файл и различные параметры и возвращает один файл ``JavaScript``, который включает весь ваш код и его зависимости». - [Metro Docs](https://facebook.github.io/metro/docs/concepts).
 
-Чтобы запустить ``Metro Bundler``, выполните команду в ``PowerShell``  ``npx react-native start`` в папке c Вашим созданным проектом (например: ``cd D:\MyProjects\MyReact``) :
+Во-первых, вам нужно запустить `Metro Bundler`, сборщик `JavaScript`, который поставляется с `React Native`. `Metro` «принимает входной файл и различные параметры и возвращает один файл `JavaScript`, который включает весь ваш код и его зависимости». - [Metro Docs](https://facebook.github.io/metro/docs/concepts).
 
+Чтобы запустить `Metro Bundler`, выполните команду в `PowerShell` `npx react-native start` в папке c Вашим созданным проектом (например: `cd D:\MyProjects\MyReact`) :
 
 ```bash
 cd d:\MyProjects\MyReact
@@ -362,25 +357,27 @@ npx react-native start
 
 ![react-native start](/img/rn/00/20.png)
 
-Данная команда запустит `Metro Bundler` и скомпилирует проект. 
+Данная команда запустит `Metro Bundler` и скомпилирует проект.
 :::danger Внимание
-В дальнейшем первое окно PowerShell c Metro Bundler ``не закрываем``, но можно свернуть его в фоновый режим.
+В дальнейшем первое окно PowerShell c Metro Bundler `не закрываем`, но можно свернуть его в фоновый режим.
 :::
 
 ## Запуск приложения
 
-Для запуска Вашего проекта ``React Native`` открываем второе окно ``PowerShell`` и переходим в папку с Вашим проектом выполняя команды:
+Для запуска Вашего проекта `React Native` открываем второе окно `PowerShell` и переходим в папку с Вашим проектом выполняя команды:
+
 ```bash
 cd d:\MyProjects\MyReact
 npx react-native run-android
 ```
+
 :::info
 Запустится Эмулятор или подключаем реальный смартфон с включенным режимом отладки по USB для просмотра результата.
 :::
 
 ![react-native run-android](/img/rn/00/21.png)
 
-На экране эмулятора или смартфона должен появится экран приветствия ``React Native``.
+На экране эмулятора или смартфона должен появится экран приветствия `React Native`.
 
 ![React Native](/img/rn/00/22.png)
 
@@ -390,34 +387,27 @@ npx react-native run-android
 
 Для редактирования кода открываем папку с проектом любым редактором кода (рекомендуем [Visual Studio Code](https://code.visualstudio.com/download)). Редактирование начинаем с файла `App.js`. При изменении и сохранении кода, `Ctrl + S`, происходит автоматическое обновление интерфейса нашего приложения на экране эмулятора.
 
-Вставьте в файл `App.js` следующий код и нажмите ``Ctrl + S``:
+Вставьте в файл `App.js` следующий код и нажмите `Ctrl + S`:
 
 ```jsx
-import React from 'react';
-import {
-  SafeAreaView,
-  StyleSheet,
-  ScrollView,
-  View,
-  Text,
-  StatusBar,
-} from 'react-native';
+import React from 'react'
+import { SafeAreaView, StyleSheet, ScrollView, View, Text, StatusBar } from 'react-native'
 
 import {
   Header,
   LearnMoreLinks,
   Colors,
   DebugInstructions,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
+  ReloadInstructions
+} from 'react-native/Libraries/NewAppScreen'
 
 const App: () => React$Node = () => {
   return (
     <>
-      <Text style={styles.h1}>Hello World</Text>   
+      <Text style={styles.h1}>Hello World</Text>
     </>
-  );
-};
+  )
+}
 
 const styles = StyleSheet.create({
   h1: {
@@ -430,7 +420,7 @@ const styles = StyleSheet.create({
   }
 })
 
-export default App;
+export default App
 ```
 
 На экране со светлым фоном в вверху в центре появиться надпись «Hello World».
