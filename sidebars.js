@@ -7,6 +7,7 @@ module.exports = {
     ['React Native']: [
       'start000',
       'start00',
+      'start00_2',
       'start28',
       'start01',
       'start02',
