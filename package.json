@@ -18,6 +18,7 @@
     "@docusaurus/preset-classic": "2.0.0-alpha.64",
     "@docusaurus/theme-live-codeblock": "^2.0.0-alpha.64",
     "classnames": "^2.2.6",
+    "prism-react-renderer": "^1.1.1",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-youtube": "^7.11.2"

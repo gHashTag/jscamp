@@ -3,7 +3,7 @@ module.exports = {
   someSidebar: {
     ['Startup']: ['startup00'],
     ['Blogging']: ['blogging-00'],
-    ['Java Script']: ['javascript01', 'javascript02', 'javascript03', 'javascript04', 'javascript05'],
+    ['Java Script']: ['javascript01', 'javascript02', 'javascript03', 'javascript04', 'javascript05', 'javascript07'],
     ['React Native']: [
       'start000',
       'start00',
