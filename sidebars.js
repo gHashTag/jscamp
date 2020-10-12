@@ -8,6 +8,7 @@ module.exports = {
       'start000',
       'start00',
       'start00_2',
+      'start00_3',
       'start28',
       'start01',
       'start02',
