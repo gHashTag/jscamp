@@ -4,32 +4,42 @@ title: Настройка рабочего окружения на Linux
 sidebar_label: Настройка Linux
 ---
 
-Данная статья поможет настроить рабочее окружение ``React Native`` на операционной системе ``Linux`` под мобильную операционную систему ``Android``. В данной статье будет использован популярный дистрибутив - ``Ubuntu``.
+Данная статья поможет настроить рабочее окружение `React Native` на операционной системе `Linux` под мобильную операционную систему `Android`. В данной статье будет использован популярный дистрибутив - `Ubuntu`.
 
 ![Step00](/img/steps/00.png)
 
 ## Установка пакетов Node.js, OpenJDK
-Приступаем к установке пакета ``Node.js`` через терминал.
+
+Приступаем к установке пакета `Node.js` через терминал.
 Сначала вставьте в терминал данную команду:
+
 ```bash
 sudo apt install curl
 ```
+
 А затем, эти команды:
+
 ```bash
 curl -sL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
 sudo apt-get install -y nodejs
 ```
+
 Терминал запросит пароль пользователя для продолжения, введите его и после окончания загрузки вставьте следующую команду:
+
 ```bash
 sudo apt-get install -y nodejs
 ```
-Таким образом Вы установите ``Node.js``, актуальную инструкцию по установке можно найти на [официальном сайте Node.js](https://nodejs.org/en/download/package-manager/).
 
-Для установки ``OpenJDK`` Вам потребуется вставить в терминал следующую команду:
+Таким образом Вы установите `Node.js`, актуальную инструкцию по установке можно найти на [официальном сайте Node.js](https://nodejs.org/en/download/package-manager/).
+
+Для установки `OpenJDK` Вам потребуется вставить в терминал следующую команду:
+
 ```bash
 sudo apt install openjdk-11-jdk openjdk-11-jdk-headless
 ```
+
 Проверить правильность установки можно вставив в терминал команду:
+
 ```bash
 java -version
 ```
@@ -39,31 +49,33 @@ java -version
 ![Step01](/img/steps/01.png)
 
 ## Установка Android Studio
-Теперь вам потребуется установить ``Android Studio``. В ``Ubuntu`` его можно установить используя ``Snap Store``. Для этого в поиске ``Snap Store`` введите ``Android Studio``.
+
+Теперь вам потребуется установить `Android Studio`. В `Ubuntu` его можно установить используя `Snap Store`. Для этого в поиске `Snap Store` введите `Android Studio`.
 
 ![AndroidStudio01](/img/rn/00_3/02.png)
 
-Выберите его и нажмите кнопку ``Install``.
+Выберите его и нажмите кнопку `Install`.
 
 ![AndroidStudio02](/img/rn/00_3/03.png)
 
-После окончания загрузки запустите ``Android Stuido`` и следуйте инструкциям установки. Рекомендуется оставить все настройки по умолчанию.
+После окончания загрузки запустите `Android Stuido` и следуйте инструкциям установки. Рекомендуется оставить все настройки по умолчанию.
 
 ![AndroidStudio03](/img/rn/00_3/06.png)
 
-Когда ``Android Studio`` завершит установку он запуститься автоматически.
+Когда `Android Studio` завершит установку он запуститься автоматически.
 
 ![AndroidStudio04](/img/rn/00_3/09.png)
 
 ![Step02](/img/steps/02.png)
 
 ## Установка Android SDK
-Для начала работы с ОС ``Android ``нужно установить определенные компоненты ``Android SDK``.
-Для их установки откройте ``Android Studio`` и нажмите справа внизу кнопку ``Configure``->``SDK Manager``. Если ее нет, перезапустите приложение.
+
+Для начала работы с ОС `Android `нужно установить определенные компоненты `Android SDK`.
+Для их установки откройте `Android Studio` и нажмите справа внизу кнопку `Configure`->`SDK Manager`. Если ее нет, перезапустите приложение.
 
 ![AndroidStudioSDK01](/img/rn/00_3/10.png)
 
-В открывшемся ``SDK Manager`` в правом нижнем углу установите флажок `Show Package Details`.
+В открывшемся `SDK Manager` в правом нижнем углу установите флажок `Show Package Details`.
 
 ![AndroidStudioSDK02](/img/rn/00_3/11.png)
 
@@ -91,7 +103,8 @@ java -version
 ![Step03](/img/steps/03.png)
 
 ## Настройка переменной сред ANDROID_HOME
-Для настройки переменной ``ANDROID_HOME`` перейдите в папку ``Home``
+
+Для настройки переменной `ANDROID_HOME` перейдите в папку `Home`
 
 ![AndroidHome01](/img/rn/00_3/16.png)
 
@@ -99,15 +112,16 @@ java -version
 
 ![AndroidHome02](/img/rn/00_3/17.png)
 
-Папка ``Home`` будет выглядеть примерно так:
+Папка `Home` будет выглядеть примерно так:
 
 ![AndroidHome03](/img/rn/00_3/18.png)
 
-Далее Вам нужно открыть файл ``.bashrc``
+Далее Вам нужно открыть файл `.bashrc`
 
 ![AndroidHome04](/img/rn/00_3/19.png)
 
 и добавить в него следующие строки:
+
 ```bash
 export ANDROID_HOME=$HOME/Android/Sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
@@ -119,14 +133,19 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 ![AndroidHome05](/img/rn/00_3/20.png)
 
 Затем введите в терминал следующую команду:
+
 ```bash
 source $HOME/.bashrc
 ```
-Таким образом вы добавите переменную ``ANDROID_HOME``. Вы можете убедиться в правильности установки введя команды:
+
+Таким образом вы добавите переменную `ANDROID_HOME`. Вы можете убедиться в правильности установки введя команды:
+
 ```bash
 echo $ANDROID_HOME
 ```
+
 и
+
 ```bash
 echo $PATH
 ```
@@ -136,6 +155,7 @@ echo $PATH
 ![Step04](/img/steps/04.png)
 
 ## Настройка эмулятора Android
+
 Для того что бы создать или настроить эмулятор нужно, находясь на главном окне `Android Studio`, выбрать пункт `Configure` -> `AVD Manager`.
 
 Далее нажать кнопку `Create Virtual Device...`,
@@ -169,43 +189,54 @@ echo $PATH
 ![Step05](/img/steps/05.png)
 
 ## Установка Watchman
-``Watchman`` - это инструмент от ``Facebook`` для просмотра изменений в файловой системе. Его установка не обязательна, но без него может возникнуть множество проблем.
-Для установки ``Watchman`` потребуется установить ``Homebrew``. Для этого вставьте в терминал следующую команду:
+
+`Watchman` - это инструмент от `Facebook` для просмотра изменений в файловой системе. Его установка не обязательна, но без него может возникнуть множество проблем.
+Для установки `Watchman` потребуется установить `Homebrew`. Для этого вставьте в терминал следующую команду:
+
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 ```
-Рекомендуется установить ``Homebrew`` в папку ``home``, для этого введите пароль от своей учетной записи и нажмите кнопку ``Enter``.
+
+Рекомендуется установить `Homebrew` в папку `home`, для этого введите пароль от своей учетной записи и нажмите кнопку `Enter`.
 
 ![Watchman01](/img/rn/00_3/22.png)
 
-Далее терминал запросит подтверждение, нажмите ``Enter``.
+Далее терминал запросит подтверждение, нажмите `Enter`.
 
 ![Watchman02](/img/rn/00_3/23.png)
 
 После завершения установки нужно сделать следующие действия:
 
 Выполнить в терминале команду:
+
 ```bash
 sudo apt-get install build-essential
 ```
+
 Далее поочередно выполнить следующие команды:
+
 ```bash
 test -d ~/.linuxbrew && eval $(~/.linuxbrew/bin/brew shellenv)
 test -d /home/linuxbrew/.linuxbrew && eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
 test -r ~/.bash_profile && echo "eval \$($(brew --prefix)/bin/brew shellenv)" >>~/.bash_profile
 echo "eval \$($(brew --prefix)/bin/brew shellenv)" >>~/.profile
 ```
+
 и
+
 ```bash
 brew install gcc
 ```
-``Homebrew`` готов к работе!
 
-Теперь можно устанавливать ``Watchman``. Для этого Вам необходимо вставить в терминал команду:
+`Homebrew` готов к работе!
+
+Теперь можно устанавливать `Watchman`. Для этого Вам необходимо вставить в терминал команду:
+
 ```bash
 brew install watchman
 ```
-После окончания загрузки ``Watchman`` будет готов к работе!
+
+После окончания загрузки `Watchman` будет готов к работе!
 
 ![Step06](/img/steps/06.png)
 
@@ -216,19 +247,23 @@ brew install watchman
 Давайте создадим новый проект `React Native` под названием `MyProject`.
 
 Для создания проекта на `React Native` нужно запустить терминал и ввести команду:
+
 ```bash
 npx react-native init MyProject
 ```
-Начнется инициализация проекта на ``React Native``.
+
+Начнется инициализация проекта на `React Native`.
 
 ![React01](/img/rn/00_3/24.png)
 
 ![Step07](/img/steps/07.png)
 
 ## Запуск проекта React Native
+
 Сперва Вам нужно запустить `Metro Bundler`, сборщик `JavaScript`, который поставляется с `React Native`. `Metro` «принимает входной файл и различные параметры и возвращает один файл `JavaScript`, который включает весь ваш код и его зависимости». - [Metro Docs](https://facebook.github.io/metro/docs/concepts).
 
 Чтобы запустить `Metro Bundler`, выполните команду в терминале`npx react-native start` в папке c Вашим созданным проектом (например: `cd MyReact`):
+
 ```bash
 cd MyReact
 npx react-native start
@@ -259,39 +294,32 @@ npx react-native run-android
 ![Step08](/img/steps/08.png)
 
 ## Редактирование кода в приложении - Hello World
+
 Для редактирования кода открываем папку с проектом любым редактором кода (рекомендуем [Visual Studio Code](https://code.visualstudio.com/download)). Редактирование начинаем с файла `App.js`. При изменении и сохранении кода, `Ctrl + S`, происходит автоматическое обновление интерфейса нашего приложения на экране эмулятора.
 
 Вставьте в файл `App.js` следующий код и нажмите `Ctrl + S`:
 
 ```jsx
-import React from `react`
-import { SafeAreaView, StyleSheet, ScrollView, View, Text, StatusBar } from `react-native`
+import React from 'react'
+import { StyleSheet, Text } from 'react-native'
 
-import {
-Header,
-LearnMoreLinks,
-Colors,
-DebugInstructions,
-ReloadInstructions
-} from `react-native/Libraries/NewAppScreen`
-
-const App: () => React$Node = () => {
-return (
-<>
-<Text style={styles.h1}>Hello World</Text>
-</>
-)
+const App = () => {
+  return (
+    <>
+      <Text style={styles.h1}>Hello World</Text>
+    </>
+  )
 }
 
 const styles = StyleSheet.create({
-h1: {
-backgroundColor: `#BEFCE5`,
-color: `#000`,
-fontSize: 25,
-fontWeight: `700`,
-padding: 20,
-textAlign: `center`
-}
+  h1: {
+    backgroundColor: `#BEFCE5`,
+    color: `#000`,
+    fontSize: 25,
+    fontWeight: `700`,
+    padding: 20,
+    textAlign: `center`
+  }
 })
 
 export default App
@@ -308,9 +336,9 @@ export default App
 1. [React Native, официальная документация](https://reactnative.dev/docs/environment-setup)
 2. [Node.js, официальный сайт](https://nodejs.org/)
 3. [Homebrew, официальный сайт](https://brew.sh/)
-3. [Android Studio, официальный сайт](https://developer.android.com/studio)
-4. [Visual Studio Code, официальный сайт](https://code.visualstudio.com/download)
-5. [Metro, официальная документация](https://facebook.github.io/metro/docs/concepts)
+4. [Android Studio, официальный сайт](https://developer.android.com/studio)
+5. [Visual Studio Code, официальный сайт](https://code.visualstudio.com/download)
+6. [Metro, официальная документация](https://facebook.github.io/metro/docs/concepts)
 
 ## Contributors ✨
 
