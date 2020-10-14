@@ -2193,10 +2193,10 @@ algoliasearch@^4.0.0:
     "@algolia/requester-node-http" "4.5.1"
     "@algolia/transporter" "4.5.1"
 
-all-contributors-cli@^6.17.4:
-  version "6.17.4"
-  resolved "https://registry.yarnpkg.com/all-contributors-cli/-/all-contributors-cli-6.17.4.tgz#5d942479c8a1704b6ef772fd087c533dc90c326d"
-  integrity sha512-fv55BHQu1cna2/pJJdv/ULp1C7vfUMxnW8ZRm16RE0brTR3RmuEa4NPY180vHwFjGF5vBZdZsjX/+XxAyapazA==
+all-contributors-cli@^6.18.0:
+  version "6.18.0"
+  resolved "https://registry.yarnpkg.com/all-contributors-cli/-/all-contributors-cli-6.18.0.tgz#616802b57b10ea20971f0275391f79d322136e1b"
+  integrity sha512-Dy90FtqKZ0TKmjWF3rkJUJzENW7O57mHL4B7JE7nziGjnSSLjGek9VeGAgCfluU037ENj4BKYbsB4oB/op+xFA==
   dependencies:
     "@babel/runtime" "^7.7.6"
     async "^3.0.1"
@@ -8939,7 +8939,7 @@ pretty-time@^1.1.0:
   resolved "https://registry.yarnpkg.com/pretty-time/-/pretty-time-1.1.0.tgz#ffb7429afabb8535c346a34e41873adf3d74dd0e"
   integrity sha512-28iF6xPQrP8Oa6uxE6a1biz+lWeTOAPKggvjB8HAs6nVMKZwf5bG++632Dx614hIWgUPkgivRfG+a8uAXGTIbA==
 
-prism-react-renderer@^1.0.1, prism-react-renderer@^1.1.0:
+prism-react-renderer@^1.0.1, prism-react-renderer@^1.1.0, prism-react-renderer@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/prism-react-renderer/-/prism-react-renderer-1.1.1.tgz#1c1be61b1eb9446a146ca7a50b7bcf36f2a70a44"
   integrity sha512-MgMhSdHuHymNRqD6KM3eGS0PNqgK9q4QF5P0yoQQvpB6jNjeSAi3jcSAz0Sua/t9fa4xDOMar9HJbLa08gl9ug==

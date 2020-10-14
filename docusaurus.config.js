@@ -17,6 +17,10 @@ module.exports = {
   projectName: 'react-native-village.github.io',
   onBrokenLinks: 'ignore',
   themeConfig: {
+    prism: {
+      // eslint-disable-next-line global-require
+      theme: require('prism-react-renderer/themes/dracula')
+    },
     navbar: {
       title: 'Sumerian School',
       logo: {
