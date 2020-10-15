@@ -313,12 +313,12 @@ const App = () => {
 
 const styles = StyleSheet.create({
   h1: {
-    backgroundColor: `#BEFCE5`,
-    color: `#000`,
+    backgroundColor: '#BEFCE5',
+    color: '#000',
     fontSize: 25,
-    fontWeight: `700`,
+    fontWeight: '700',
     padding: 20,
-    textAlign: `center`
+    textAlign: 'center'
   }
 })
 
