@@ -3,6 +3,7 @@ id: auth1-01
 title: Аутентификация
 sidebar_label: Часть I
 ---
+
 В этoй части мы настроим UI компонент аутентификации от AWS Amplify, а в следующей мы создадим его с нуля.
 
 Весь код для этой части можно найти на [GitHub](https://github.com/react-native-village/messaga/tree/Part1).
@@ -11,11 +12,9 @@ sidebar_label: Часть I
 
 ![Cognito](/img/auth/auth1-03.png)
 
-
-
 ![Step01](/img/steps/01.png)
-## Создаем новый проект ⚛️
 
+## Создаем новый проект ⚛️
 
 ```bash
 react-native init auth
@@ -24,16 +23,19 @@ react-native init auth
 Запускаем проект 🚀
 
 iOS
+
 ```bash
 cd auth && react-native run-ios
 ```
 
 Android
+
 ```bash
 cd auth && react-native run-android
 ```
 
 ![Step02](/img/steps/02.png)
+
 ## Подключаем иконки 👾
 
 Так как иконки используются фреймворком AWS Amplify, поэтому подключаем их согласно [этой](https://github.com/oblador/react-native-vector-icons#installation) инструкции 📃.
@@ -54,20 +56,19 @@ const App = () => {
 ```
 
 ![Step03](/img/steps/03.png)
+
 ## Регистрируем свой AWS account
 
 Регистрируемся согласно [этой](https://aws-amplify.github.io/docs/) инструкции 📃 и по видеоучебнику📺 чекаем все 5 шагов.
 
-
-:::caution Потребуется банковская карта 💳, где должно быть более 1$ 💵
+:::caution Потребуется банковская карта 💳, где должно быть более 1\$ 💵
 
 :::
 
 Там же смотрим и ставим Amplify Command Line Interface (CLI)
 
-
-
 ![Step04](/img/steps/04.png)
+
 ## Инициализация AWS Amplify в проект React Native
 
 В корневой директории проекта React Native инициализируем наш AWS Amplify проект
@@ -83,6 +84,7 @@ amplify init
 Проект инициализацировался 🚀
 
 ![Step05](/img/steps/05.png)
+
 ## Подключаем плагин аутентификации
 
 Теперь, когда приложение находится в облаке, вы можете добавить некоторые функции, такие как предоставление пользователям возможности зарегистрироваться в нашем приложении и войти в систему.
@@ -97,7 +99,6 @@ amplify add auth
 
 #### Выбираем профиль, который мы хотим использовать. default. Enter и как пользователи будут входить в систему. Email(За SMS списывают деньги).
 
-
 ![amplify init](/img/auth/auth03.png)
 
 Отправляем изменения в облако 💭
@@ -108,8 +109,8 @@ amplify push
 
 ✔ All resources are updated in the cloud
 
-
 ![Step06](/img/steps/06.png)
+
 ## Подключаем AWS Amplify в проект React Native ⚛️
 
 Подробности в [этой](https://aws-amplify.github.io/docs/js/react) инструкции 📃, а коротко и по прямой так:
@@ -125,6 +126,7 @@ cd ios && pod install && cd ..
 ```
 
 ![Step07](/img/steps/07.png)
+
 ## Редактируем структуру проекта
 
 Создаем директорию /src и переносим туда файл App.js, переименовывая его в index.js
@@ -137,7 +139,7 @@ import App from './src'
 import { name as appName } from './app.json'
 
 YellowBox.ignoreWarnings([
-  'Warning: AsyncStorage',  
+  'Warning: AsyncStorage',
   'Warning: componentWillReceiveProps',
   'RCTRootView cancelTouches',
   'not authenticated',
@@ -150,6 +152,7 @@ AppRegistry.registerComponent(appName, () => App)
 ```
 
 ![Step08](/img/steps/08.png)
+
 ## Минимальная конфигурация проекта и модуль Authenticator
 
 Amplify.configure — конфигурация проекта
@@ -158,16 +161,16 @@ Authenticator — Модуль [AWS Amplify Authentication](https://aws-amplify.
 
 ```jsx
 import React from 'react'
-import {StatusBar} from 'react-native'
+import { StatusBar } from 'react-native'
 import Amplify from '@aws-amplify/core'
-import {Authenticator} from 'aws-amplify-react-native'
+import { Authenticator } from 'aws-amplify-react-native'
 import awsconfig from '../aws-exports'
 
 Amplify.configure({
   ...awsconfig,
   Analytics: {
-    disabled: true,
-  },
+    disabled: true
+  }
 })
 
 const App = () => {
@@ -187,6 +190,7 @@ export default App
 ![Cognito](/img/auth/auth04.png)
 
 ![Step09](/img/steps/09.png)
+
 ## Правим инпуты в App.js
 
 Для этого добавляем signUpConfig
@@ -219,8 +223,8 @@ const signUpConfig = {
 />
 ```
 
-
 ![Step10](/img/steps/10.png)
+
 ## Меняем тему UI 🖌
 
 Создаем точку экспорта наших будущих компонентов /src/components/index.js с содержанием
@@ -358,18 +362,15 @@ export { AmplifyTheme }
 И подключаем тему в компонент Authenticator src/index.js
 
 ```jsx
-import {AmplifyTheme} from './components'
+import { AmplifyTheme } from './components'
 
-<Authenticator
-  usernameAttributes="email"
-  signUpConfig={signUpConfig}
-  theme={AmplifyTheme}
-/>
+;<Authenticator usernameAttributes="email" signUpConfig={signUpConfig} theme={AmplifyTheme} />
 ```
+
 ![AmplifyTheme](/img/auth/auth05.png)
 
-
 ![Step11](/img/steps/11.png)
+
 ## Подключаем локализацию
 
 В нашем случае русский язык 🇷🇺
@@ -447,10 +448,21 @@ import {
   theme={AmplifyTheme}
 />
 ```
+
 Запускаем проект, где видим, что локализация еще не применилась. Поэтому меняем в настройках своего симулятора язык на русский
 
 ![Localei18n](/img/auth/auth06.png)
 
 ## Done ✅
+
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<table>
+  <tr>
+    <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /> <a href="https://github.com/gHashTag/react-native-village/commits?author=gHashTag" title="Documentation">📖</a><a href="#financial-gHashTag" title="Financial">💵</a></td>
+  </tr>
+</table>
 
 [![Become a Patron!](/img/logo/patreon.png)](https://www.patreon.com/bePatron?u=31769291)

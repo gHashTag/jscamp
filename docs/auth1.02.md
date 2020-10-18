@@ -18,342 +18,421 @@ sidebar_label: Часть II
 
 ![Step01](/img/steps/01.png)
 
-## UI Kit
+## Клонируем репозиторий
 
 Мы будем использовать наш UI Kit, но вы можете легко заменить его своим или любым другим.
 
-Подключаем библиотеку компонентов согласно [этой](https://react-native-village.github.io/docs/unicorn00) статьи.
+```bash
+git clone https://github.com/fullstackserverless/auth.git
+```
+
+переходим в папку проекта
+
+```bash
+cd auth
+```
+
+Устанавливаем зависимости
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs
+defaultValue="yarn"
+values={[
+{label: 'Npm', value: 'npm'},
+{label: 'Yarn', value: 'yarn'},
+]}>
+<TabItem value="npm">
+
+```bash
+npm install
+```
+
+</TabItem>
+<TabItem value="yarn">
+
+```bash
+yarn
+```
+
+</TabItem>
+</Tabs>
 
 ![Step02](/img/steps/02.png)
 
-## Навигация react-navigation
+## Инициализация AWS Amplify в проекте React Native
 
-Ставим навигацию react-navigation 5, также как написано [здесь](https://reactnavigation.org/docs/getting-started/) (на момент написание этой статьи):
+Инициализируйте наш проект AWS Amplify в корневом каталоге.
+
+```bash
+amplify init
+```
+
+Ответь на эти вопросы:
+
+![amplify init](/img/auth/auth02.png)
+
+Проект успешно инициализирован 🚀
+
+![Step03](/img/steps/03.png)
+
+## Подключить плагин аутентификации
+
+Теперь, когда приложение находится в облаке, вы можете добавить некоторые функции, такие как разрешение пользователям регистрироваться в нашем приложении и входить в систему.
+
+Используйте команду:
+
+```bash
+amplify add auth
+```
+
+Подключите функцию аутентификации. Выберите конфигурацию по умолчанию. Это добавляет конфигурации ресурсов аутентификации локально в ваш каталог ampify/backend/auth
+
+<div class="alert alert--info" role="alert">
+  📌 Выберите профиль, который мы хотим использовать(default). Введите и как пользователи будут входить. Электронная почта (списать деньги за смс).
+</div>
+
+![amplify init](/img/auth/auth03.png)
+
+Отправить изменения в облако 💭
+
+```bash
+amplify push
+```
+
+✔ All resources are updated in the cloud
+
+![Step04](/img/steps/04.png)
+
+## Подключите AWS Amplify к React Native
+
+Подробности можно найти в [инструкции](https://aws-amplify.github.io/docs/js/react) 📃. Короче говоря, вы можете добавить эти зависимости ниже для подключения AWS Amplify:
+
+```bash
+yarn add aws-amplify @aws-amplify/core aws-amplify-react-native amazon-cognito-identity-js @react-native-community/netinfo
+```
+
+После установки обязательно заходим в папку ios и ставим поды
+
+```bash
+cd ios && pod install && cd ..
+```
+
+![Step05](/img/steps/05.png)
+
+## Навигация
+
+Установите react-navigation v5, основываясь этой инструкции [здесь](https://reactnavigation.org/docs/getting-started/)
+(на момент написания статьи это последняя версия навигации)
 
 ```bash
 yarn add react-native-reanimated react-native-gesture-handler react-native-screens react-native-safe-area-context @react-native-community/masked-view @react-navigation/stack
 ```
 
-Добавляем поды под iOS
+Добавить поды для iOS
 
 ```bash
 cd ios && pod install && cd ..
 ```
 
-📌 Рекомендую после каждой установки запускать приложение под iOS и Android, чтобы потом не искать библиотеку из-за которой приложение падает.
+<div class="alert alert--info" role="alert">
+📌 Рекомендую запускать приложение для iOS и Android, после каждой установки, во избежание поиска библиотеки, из-за которой приложение вылетает.
+</div>
 
-![Step03](/img/steps/03.png)
+![Step06](/img/steps/06.png)
 
 ## react-native-keychain
 
-Ставим библиотеку react-native-keychain - это безопасное хранилище ключей react-native-keychain для React Native.
+Добавьте `react-native-keychain` - это безопасная библиотека хранилища ключей для React Native.
 
 ```bash
 yarn add react-native-keychain
 ```
 
-Добавляем поды под iOS
+Добавить поды для iOS
 
 ```bash
 cd ios && pod install && cd ..
 ```
 
-Согласно тому, что нам говорит [официальная документация](https://aws-amplify.github.io/docs/js/authentication#managing-security-tokens):
+Согласно [официальной документации:](https://aws-amplify.github.io/docs/js/authentication#managing-security-tokens)
 
-> При использовании аутентификации с AWS Amplify вам не нужно обновлять токены Amazon Cognito вручную. Токены автоматически обновляются библиотекой при необходимости. Токены безопасности, такие как IdToken или AccessToken, хранятся в localStorage для браузера и в AsyncStorage для React Native. Если вы хотите хранить эти токены в более безопасном месте или используете Amplify на стороне сервера, вы можете предоставить свой собственный объект хранения для хранения этих токенов.
+> При использовании аутентификации с помощью AWS Amplify вам не нужно обновлять токены Amazon Cognito вручную. При необходимости токены автоматически обновляются библиотекой. Маркеры безопасности, такие как IdToken или AccessToken, хранятся в localStorage для браузера и в AsyncStorage для React Native. Если вы хотите хранить эти токены в более безопасном месте или использовать Amplify на стороне сервера, вы можете предоставить свой собственный объект хранения для хранения этих токенов.
 
-конфигурируем наш src/index.js
+Изменяем файл:
 
-```jsx
-import React from 'react';
-import Amplify from '@aws-amplify/core';
-import * as Keychain from 'react-native-keychain';
-import {ThemeProvider, DarkTheme, LightTheme} from 'react-native-unicorn-uikit';
-import {useColorScheme} from 'react-native-appearance';
-import AppNavigator from './AppNavigator';
-import awsconfig from '../aws-exports';
+```tsx title="src/index.tsx"
+import React, { ReactElement } from 'react'
+import Amplify from '@aws-amplify/core'
+import * as Keychain from 'react-native-keychain'
+import { useColorScheme } from 'react-native-appearance'
+import ThemeProvider from './ThemeProvider'
+import AppNavigator from './AppNavigator'
+import awsconfig from '../aws-exports'
 
-const MEMORY_KEY_PREFIX = '@MyStorage:';
-let dataMemory = {};
+const DarkTheme = {
+  dark: true,
+  colors: {
+    primary: '#50E3C2',
+    background: '#1D1E1F',
+    card: '#1D1E1F',
+    text: '#ffffff',
+    border: '#ff06f4'
+  }
+}
 
+const LightTheme = {
+  dark: false,
+  colors: {
+    primary: '#ff06f4',
+    background: '#ffffff',
+    card: '#1D1E1F',
+    text: '#ffffff',
+    border: '#ff06f4'
+  }
+}
+
+const MEMORY_KEY_PREFIX = '@MyStorage:'
+let dataMemory: any = {}
 class MyStorage {
-  static syncPromise = null;
+  static syncPromise = null
 
-  static setItem(key, value) {
-    Keychain.setGenericPassword(MEMORY_KEY_PREFIX + key, value);
-    dataMemory[key] = value;
-    return dataMemory[key];
+  static setItem(key: string, value: string): boolean {
+    Keychain.setGenericPassword(MEMORY_KEY_PREFIX + key, value)
+    dataMemory[key] = value
+    return dataMemory[key]
   }
 
-  static getItem(key) {
-    return Object.prototype.hasOwnProperty.call(dataMemory, key)
-      ? dataMemory[key]
-      : undefined;
+  static getItem(key: string): boolean {
+    return Object.prototype.hasOwnProperty.call(dataMemory, key) ? dataMemory[key] : undefined
   }
 
-  static removeItem(key) {
-    Keychain.resetGenericPassword();
-    return delete dataMemory[key];
+  static removeItem(key: string): boolean {
+    Keychain.resetGenericPassword()
+    return delete dataMemory[key]
   }
 
-  static clear() {
-    dataMemory = {};
-    return dataMemory;
+  static clear(): object {
+    dataMemory = {}
+    return dataMemory
   }
 }
 
 Amplify.configure({
   ...awsconfig,
   Analytics: {
-    disabled: false,
+    disabled: false
   },
-  storage: MyStorage,
-});
+  storage: MyStorage
+})
 
-const App = () => {
-  const scheme = useColorScheme();
+const App = (): ReactElement => {
+  /**
+   * Subscribe to color scheme changes with a hook
+   */
+  const scheme = useColorScheme()
   return (
     <>
       <ThemeProvider theme={scheme === 'dark' ? DarkTheme : LightTheme}>
         <AppNavigator />
       </ThemeProvider>
     </>
-  );
-};
+  )
+}
 
-export default App;
+export default App
 ```
 
-![Step04](/img/steps/04.png)
+Для авторизации клиентов AppSync поддерживает ключи API, учетные данные Amazon IAM, пулы пользователей Amazon Cognito и сторонних поставщиков OIDC. Это выводится из файла aws-exports.js при вызове Amplify.configure().
 
-## Константы
+При использовании аутентификации с AWS Amplify вам не нужно обновлять токены Amazon Cognito вручную. При необходимости токены автоматически обновляются библиотекой.
+Токены безопасности, такие как IdToken или AccessToken, хранятся в localStorage для браузера и в AsyncStorage для React Native. Если вы хотите хранить эти токены в более безопасном месте или используете Amplify на стороне сервера, вы можете предоставить свой собственный объект хранения для хранения этих токенов.
 
-Чтобы не копипастить одни и те же значения, мы создаем файл с константами для общего использования в компонентах src/constants.js
-
-```jsx
-import {Dimensions} from 'react-native';
-
-export const BG = '#0B0B0B';
-export const PINK = '#F20AF5';
-export const PURPLE = '#7A1374';
-export const BLUE = '#00FFFF';
-export const GREEN = '#2E7767';
-export const RED = '#FC2847';
-export const LABEL_COLOR = BLUE;
-export const INPUT_COLOR = PINK;
-export const ERROR_COLOR = RED;
-export const HELP_COLOR = '#999999';
-export const BORDER_COLOR = BLUE;
-export const DISABLED_COLOR = '#777777';
-export const DISABLED_BACKGROUND_COLOR = '#eeeeee';
-
-export const win = Dimensions.get('window');
-export const W = win.width;
-export const H = win.height;
-
-export const Device = {
-  // eslint-disable-next-line
-  select(variants) {
-    if (W >= 300 && W <= 314) return variants.mobile300 || {};
-    if (W >= 315 && W <= 341) return variants.iphone5 || {};
-    if (W >= 342 && W <= 359) return variants.mobile342 || {};
-    if (W >= 360 && W <= 374) return variants.mi5 || {};
-    if (W >= 375 && W <= 399) return variants.iphone678 || {};
-    if (W >= 400 && W <= 409) return variants.mobile400 || {};
-    if (W >= 410 && W <= 414) return variants.googlePixel || {};
-    if (W >= 415 && W <= 434) return variants.mobile415 || {};
-    if (W >= 435 && W <= 480) return variants.redmiNote5 || {};
-  },
-};
-
-export const goBack = (navigation) => () => navigation.goBack();
-
-export const onScreen = (screen, navigation, obj) => () => {
-  navigation.navigate(screen, obj);
-};
-
-export const goHome = (navigation) => () => navigation.popToTop()();
-```
-
-![Step05](/img/steps/05.png)
+![Step07](/img/steps/07.png)
 
 ## AppNavigator
 
-Создаем файл с конфигурацией навигации для нашей кастомной аутентификации src/AppNavigator.js
+Создайте файл конфигурации навигации для нашей пользовательской аутентификации.
+Добавьте к нему экран приветствия.
 
-```jsx
-import * as React from 'react';
-import {createStackNavigator} from '@react-navigation/stack';
-import {Hello} from './screens/Authenticator';
+```tsx title="src/AppNavigator.tsx"
+import * as React from 'react'
+import { createStackNavigator } from '@react-navigation/stack'
+import { Hello } from './screens/Authenticator'
 
-const Stack = createStackNavigator();
+const Stack = createStackNavigator()
+
+export type RootStackParamList = {
+  HELLO: undefined
+}
 
 const AppNavigator = () => {
   return (
     <Stack.Navigator
       screenOptions={{
-        headerShown: false,
+        headerShown: false
       }}
-      initialRouteName="HELLO">
+      initialRouteName="HELLO"
+    >
       <Stack.Screen name="HELLO" component={Hello} />
     </Stack.Navigator>
-  );
-};
+  )
+}
 
-export default AppNavigator;
+export default AppNavigator
 ```
 
-![Step06](/img/steps/06.png)
+![Step08](/img/steps/08.png)
 
 ## Hello screen
 
-Создаем точку входа для нашых экранов аутентификации src/screens/Authenticator/index.js
+Создайте точку входа для наших экранов аутентификации.
 
 ![Hello screen](/img/auth/auth1-04.png)
 
-Где для начала мы подключаем экран приветствия
+Подключим экран приветствия:
 
-```jsx
-export * from './Hello';
+```ts title="src/screens/Authenticator/index.ts"
+export * from './Hello'
 ```
 
-После создаем его src/screens/Authenticator/Hello/index.js
+Создаем сам экран приветствия:
 
-В хуке useEffect мы выполняем проверку на наличие токена пользователя, где в случае true мы отправляемся на экран User, а в случае false остаемся на этом экране.
+```tsx title="src/screens/Authenticator/Hello/index.tsx"
+import React, { useEffect, useState, ReactElement } from 'react'
+import { Auth } from 'aws-amplify'
+import * as Keychain from 'react-native-keychain'
+import { StackNavigationProp } from '@react-navigation/stack'
+import { AppContainer, Button, Space, Txt } from '../../../components'
+import { onScreen } from '../../../constants'
+import { RootStackParamList } from '../../../AppNavigator'
 
-```jsx
-import React, {useEffect, useState} from 'react';
-import {Auth} from 'aws-amplify';
-import * as Keychain from 'react-native-keychain';
-import {AppContainer, Button, Space, H6} from 'react-native-unicorn-uikit';
-import {onScreen} from '../../../constants';
+type ProfileScreenNavigationProp = StackNavigationProp<RootStackParamList, 'HELLO'>
 
-const Hello = ({navigation}) => {
-  const [loading, setLoading] = useState(false);
+type HelloT = {
+  navigation: ProfileScreenNavigationProp
+}
+
+const Hello = ({ navigation }: HelloT): ReactElement => {
+  const [loading, setLoading] = useState(false)
   useEffect(() => {
-    setLoading(true);
-    const key = async () => {
+    setLoading(true)
+    const key = async (): Promise<void> => {
       try {
-        const credentials = await Keychain.getInternetCredentials('auth');
+        const credentials = await Keychain.getInternetCredentials('auth')
 
         if (credentials) {
-          const {username, password} = credentials;
-          const user = await Auth.signIn(username, password);
-          setLoading(false);
-          user && onScreen('USER', navigation)();
+          const { username, password } = credentials
+          const user = await Auth.signIn(username, password)
+          setLoading(false)
+          user && onScreen('USER', navigation)()
         } else {
-          setLoading(false);
+          setLoading(false)
         }
       } catch (err) {
-        console.log('error', err); // eslint-disable-line
-        setLoading(false);
+        console.log('error', err) // eslint-disable-line
+        setLoading(false)
       }
-    };
-    key();
-  }, []); // eslint-disable-line
+    }
+    key()
+  }, []) // eslint-disable-line
   return (
     <AppContainer loading={loading}>
-      <Space height={200} />
+      <Space height={80} />
       <Button title="Sign In" onPress={onScreen('SIGN_IN', navigation)} />
       <Space height={10} />
-      <H6 title="or" textStyle={{alignSelf: 'center'}} />
+      <Txt h6 title="or" textStyle={{ alignSelf: 'center' }} />
       <Space height={15} />
       <Button title="Sign Up" onPress={onScreen('SIGN_UP', navigation)} />
     </AppContainer>
-  );
-};
+  )
+}
 
-export {Hello};
+export { Hello }
 ```
 
-Собираем приложение и встречаем экран приветствия.
+В хуке `useEffect` мы проверяем токен пользователя, где в случае истины мы переходим на экран пользователя, а в случае ложного - остаемся на этом экране.
 
-![Step07](/img/steps/07.png)
+Соберите все изменения и встретите экран приветствия.
+
+![Step09](/img/steps/09.png)
 
 ## SignUp screen
 
-Создаем экран регистрации SIGN_UP src/screens/Authenticator/SignUp/index.js , где для аутентификации мы используем метод [Auth.signUp](https://aws-amplify.github.io/docs/js/authentication#sign-up)
+Мы создаем экран регистрации `SIGN_UP`, где для аутентификации мы используем метод [Auth.signUp](https://docs.amplify.aws/lib/auth/emailpassword/q/platform/js#sign-up).
 
 ![SignUp](/img/auth/auth1-05.png)
 
-```jsx
-import React, {useState} from 'react';
-import {Auth} from 'aws-amplify';
-import * as Keychain from 'react-native-keychain';
-import {Formik} from 'formik';
-import * as Yup from 'yup';
-import {
-  AppContainer,
-  Space,
-  Button,
-  Input,
-  TextError,
-} from 'react-native-unicorn-uikit';
-import {onScreen, goBack} from '../../../constants';
+```tsx title="src/screen/Authenticator/SignUp/index.tsx"
+import React, { useState, ReactElement } from 'react'
+import { Auth } from 'aws-amplify'
+import * as Keychain from 'react-native-keychain'
+import { Formik } from 'formik'
+import * as Yup from 'yup'
+import { StackNavigationProp } from '@react-navigation/stack'
+import { AppContainer, Space, Button, Input, TextError } from '../../../components'
+import { onScreen, goBack } from '../../../constants'
+import { RootStackParamList } from '../../../AppNavigator'
 
-const SignUp = ({navigation}) => {
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState('');
+type ProfileScreenNavigationProp = StackNavigationProp<RootStackParamList, 'SIGN_UP'>
 
-  const _onPress = async (values) => {
-    const {email, password, passwordConfirmation} = values;
+type SignUpT = {
+  navigation: ProfileScreenNavigationProp
+}
+
+const SignUp = ({ navigation }: SignUpT): ReactElement => {
+  const [loading, setLoading] = useState(false)
+  const [error, setError] = useState('')
+
+  const _onPress = async (values: { email: string; password: string; passwordConfirmation: string }): Promise<void> => {
+    const { email, password, passwordConfirmation } = values
     if (password !== passwordConfirmation) {
-      setError('Passwords do not match!');
+      setError('Passwords do not match!')
     } else {
-      setLoading(true);
-      setError('');
+      setLoading(true)
+      setError('')
       try {
-        const user = await Auth.signUp(email, password);
-        await Keychain.setInternetCredentials('auth', email, password);
-        user && onScreen('CONFIRM_SIGN_UP', navigation, {email, password})();
-        setLoading(false);
+        const user = await Auth.signUp(email, password)
+        await Keychain.setInternetCredentials('auth', email, password)
+        user && onScreen('CONFIRM_SIGN_UP', navigation, { email, password })()
+        setLoading(false)
       } catch (err) {
-        setLoading(false);
+        setLoading(false)
         if (err.code === 'UserNotConfirmedException') {
-          setError('Account not verified yet');
+          setError('Account not verified yet')
         } else if (err.code === 'PasswordResetRequiredException') {
-          setError('Existing user found. Please reset your password');
+          setError('Existing user found. Please reset your password')
         } else if (err.code === 'NotAuthorizedException') {
-          setError('Forgot Password?');
+          setError('Forgot Password?')
         } else if (err.code === 'UserNotFoundException') {
-          setError('User does not exist!');
+          setError('User does not exist!')
         } else {
-          setError(err.code);
+          setError(err.code)
         }
       }
     }
-  };
+  }
 
   return (
     <>
-      <AppContainer
-        onPress={goBack(navigation)}
-        title="Sign Up"
-        loading={loading}>
-        <Space height={80} />
+      <AppContainer onPress={goBack(navigation)} title="Sign Up" loading={loading}>
         <Formik
-          initialValues={{email: '', password: '', passwordConfirmation: ''}}
-          onSubmit={(values) => _onPress(values)}
+          initialValues={{ email: '', password: '', passwordConfirmation: '' }}
+          onSubmit={(values): Promise<void> => _onPress(values)}
           validationSchema={Yup.object().shape({
             email: Yup.string().email().required(),
             password: Yup.string().min(6).required(),
-            passwordConfirmation: Yup.string().min(6).required(),
-          })}>
-          {({
-            values,
-            handleChange,
-            errors,
-            setFieldTouched,
-            touched,
-            isValid,
-            handleSubmit,
-          }) => (
+            passwordConfirmation: Yup.string().min(6).required()
+          })}
+        >
+          {({ values, handleChange, errors, setFieldTouched, touched, handleSubmit }): ReactElement => (
             <>
               <Input
                 name="email"
                 value={values.email}
                 onChangeText={handleChange('email')}
-                onBlur={() => setFieldTouched('email')}
+                onBlur={(): void => setFieldTouched('email')}
                 placeholder="E-mail"
                 touched={touched}
                 errors={errors}
@@ -363,304 +442,287 @@ const SignUp = ({navigation}) => {
                 name="password"
                 value={values.password}
                 onChangeText={handleChange('password')}
-                onBlur={() => setFieldTouched('password')}
+                onBlur={(): void => setFieldTouched('password')}
                 placeholder="Password"
                 touched={touched}
                 errors={errors}
+                autoCapitalize="none"
                 secureTextEntry
               />
               <Input
                 name="passwordConfirmation"
                 value={values.passwordConfirmation}
                 onChangeText={handleChange('passwordConfirmation')}
-                onBlur={() => setFieldTouched('passwordConfirmation')}
+                onBlur={(): void => setFieldTouched('passwordConfirmation')}
                 placeholder="Password confirm"
                 touched={touched}
                 errors={errors}
+                autoCapitalize="none"
                 secureTextEntry
               />
               <Space height={30} />
-              {error !== '' && (
-                <TextError title={error} textStyle={{alignSelf: 'center'}} />
-              )}
-              <Button
-                title="Sign Up"
-                disabled={!isValid}
-                onPress={handleSubmit}
-                formik
-              />
+              {error !== '' && <TextError title={error} textStyle={{ alignSelf: 'center' }} />}
+              <Button title="Sign Up" onPress={handleSubmit} />
             </>
           )}
         </Formik>
       </AppContainer>
     </>
-  );
-};
+  )
+}
 
-export {SignUp};
+export { SignUp }
 ```
 
-![Step08](/img/steps/08.png)
+![Step10](/img/steps/10.png)
 
-## ConfirmSignUp screen
+## Подтверждение регистрации ConfirmSignUp
 
-После успешного ответа с сервера, мы переходим на экран подтверждения и ввода кода, пришедшего нам на почту. Для этого создаем экран CONFIRM_SIGN_UP src/screens/Authenticator/ConfirmSignUp/index.js
+После успешного ответа от сервера мы переходим на экран подтверждения и вводим код, который пришел на нашу почту. Для этого создайте экран `CONFIRM_SIGN_UP`
 
 ![ConfirmSignUp](/img/auth/auth1-06.png)
 
-```jsx
-import React, {useState} from 'react';
-import {Auth} from 'aws-amplify';
-import {Formik} from 'formik';
-import * as Yup from 'yup';
-import {
-  AppContainer,
-  Button,
-  Space,
-  ButtonLink,
-  TextError,
-  Input,
-} from 'react-native-unicorn-uikit';
-import {onScreen, goBack} from '../../../constants';
+```jsx title="src/screens/Authenticator/ConfirmSignUp/index.tsx"
+import React, { useState, ReactElement } from 'react'
+import { Auth } from 'aws-amplify'
+import { Formik } from 'formik'
+import { StackNavigationProp } from '@react-navigation/stack'
+import { RouteProp } from '@react-navigation/native'
+import * as Yup from 'yup'
+import { AppContainer, Button, Space, ButtonLink, TextError, Input } from '../../../components'
+import { onScreen, goBack } from '../../../constants'
+import { RootStackParamList } from '../../../AppNavigator'
 
-const ConfirmSignUp = ({route, navigation}) => {
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState('');
+type ProfileScreenNavigationProp = StackNavigationProp<RootStackParamList, 'CONFIRM_SIGN_UP'>
+type ProfileScreenRouteProp = RouteProp<RootStackParamList, 'CONFIRM_SIGN_UP'>
 
-  const _onPress = async (values) => {
-    setLoading(true);
-    setError('');
+type ConfirmSignUpT = {
+  navigation: ProfileScreenNavigationProp
+  route: ProfileScreenRouteProp
+}
+
+const ConfirmSignUp = ({ route, navigation }: ConfirmSignUpT): ReactElement => {
+  const [loading, setLoading] = useState(false)
+  const [error, setError] = useState('')
+
+  const _onPress = async (values: { code: string }): Promise<void> => {
+    setLoading(true)
+    setError('')
     try {
-      const {code} = values;
-      const {email, password} = route.params;
-      await Auth.confirmSignUp(email, code, {forceAliasCreation: true});
-      const user = await Auth.signIn(email, password);
-      user && onScreen('USER', navigation)();
-      setLoading(false);
+      const { code } = values
+      const { email, password } = route.params
+      await Auth.confirmSignUp(email, code, { forceAliasCreation: true })
+      const user = await Auth.signIn(email, password)
+      user && onScreen('USER', navigation)()
+      setLoading(false)
     } catch (err) {
-      setLoading(false);
-      setError(err.message);
+      setLoading(false)
+      setError(err.message)
       if (err.code === 'UserNotConfirmedException') {
-        setError('Account not verified yet');
+        setError('Account not verified yet')
       } else if (err.code === 'PasswordResetRequiredException') {
-        setError('Existing user found. Please reset your password');
+        setError('Existing user found. Please reset your password')
       } else if (err.code === 'NotAuthorizedException') {
-        setError('Forgot Password?');
+        setError('Forgot Password?')
       } else if (err.code === 'UserNotFoundException') {
-        setError('User does not exist!');
+        setError('User does not exist!')
       }
     }
-  };
+  }
 
-  const _onResend = async () => {
+  const _onResend = async (): Promise<void> => {
     try {
-      const {email} = route.params;
-      await Auth.resendSignUp(email);
+      const { email } = route.params
+      await Auth.resendSignUp(email)
     } catch (err) {
-      setError(err.message);
+      setError(err.message)
     }
-  };
+  }
 
   return (
     <>
-      <AppContainer
-        title="Confirmation"
-        onPress={goBack(navigation)}
-        loading={loading}>
+      <AppContainer title="Confirmation" onPress={goBack(navigation)} loading={loading}>
         <Formik
-          initialValues={{code: ''}}
-          onSubmit={(values) => _onPress(values)}
+          initialValues={{ code: '' }}
+          onSubmit={(values): Promise<void> => _onPress(values)}
           validationSchema={Yup.object().shape({
-            code: Yup.string().min(6).required(),
-          })}>
-          {({
-            values,
-            handleChange,
-            errors,
-            setFieldTouched,
-            touched,
-            isValid,
-            handleSubmit,
-          }) => (
+            code: Yup.string().min(6).required()
+          })}
+        >
+          {({ values, handleChange, errors, setFieldTouched, touched, handleSubmit }): ReactElement => (
             <>
               <Space height={180} />
               <Input
                 name="code"
                 value={values.code}
                 onChangeText={handleChange('code')}
-                onBlur={() => setFieldTouched('code')}
+                onBlur={(): void => setFieldTouched('code')}
                 placeholder="Insert code"
                 touched={touched}
                 errors={errors}
               />
-              <ButtonLink
-                title="Resend code?"
-                onPress={_onResend}
-                textStyle={{alignSelf: 'center'}}
-              />
+              <ButtonLink title="Resend code?" onPress={_onResend} textStyle={{ alignSelf: 'center' }} />
               {error !== 'Forgot Password?' && <TextError title={error} />}
-              <Button
-                title="Confirm"
-                disabled={!isValid}
-                onPress={handleSubmit}
-                formik
-              />
+              <Button title="Confirm" onPress={handleSubmit} />
               <Space height={50} />
             </>
           )}
         </Formik>
       </AppContainer>
     </>
-  );
-};
+  )
+}
 
-export {ConfirmSignUp};
+export { ConfirmSignUp }
 ```
 
-## ResendSignUp
+## Отправить код повторно - ResendSignUp
 
-Если код не пришел, то мы должны предоставить пользователю возможность отправить код повторно. Для этого на кнопку Resend code? мы вешаем метод Auth.resendSignUp(userInfo.email) В случае успешного вызова метода
+Если код не пришел, мы должны предоставить пользователю возможность повторно отправить код.
+Для этого мы помещаем Auth.resendSignUp (userInfo.email) на кнопку «Отправить код повторно».
+В случае успешного вызова метода
 
 ```jsx
-Auth.confirmSignUp(email, code, {forceAliasCreation: true});
+Auth.confirmSignUp(email, code, { forceAliasCreation: true })
 ```
 
-мы должны вызывать метод
+мы должны вызвать метод
 
 ```jsx
-Auth.signIn(email, password);
+Auth.signIn(email, password)
 ```
 
-![Step09](/img/steps/09.png)
+![Step11](/img/steps/11.png)
 
-## User screen
+## Экран пользователя
 
-В случае успеха переходим на экран USER, который мы создаем c кнопкой выхода из приложения и очисткой токенов src/screens/Authenticator/User/index.js
+После успешного завершения перейдите к экрану `USER`, который мы создаем с помощью кнопки выхода для приложения и очистки токенов.
 
 ![User screen](/img/auth/auth1-07.png)
 
-```jsx
-import React, {useState, useEffect} from 'react';
-import {Auth} from 'aws-amplify';
-import * as Keychain from 'react-native-keychain';
-import {AppContainer, Button} from 'react-native-unicorn-uikit';
-import {goHome} from '../../../constants';
+```tsx title="src/screen/Authenticator/User/index.tsx"
+import React, { useState, useEffect, ReactElement } from 'react'
+import { Auth } from 'aws-amplify'
+import * as Keychain from 'react-native-keychain'
+import { StackNavigationProp } from '@react-navigation/stack'
+import { AppContainer, Button } from '../../../components'
+import { goHome } from '../../../constants'
+import { RootStackParamList } from '../../../AppNavigator'
 
-const User = ({navigation}) => {
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState('');
+type ProfileScreenNavigationProp = StackNavigationProp<RootStackParamList, 'HELLO'>
+
+type UserT = {
+  navigation: ProfileScreenNavigationProp
+}
+
+const User = ({ navigation }: UserT): ReactElement => {
+  const [loading, setLoading] = useState(false)
+  const [error, setError] = useState('')
 
   useEffect(() => {
-    const checkUser = async () => {
-      await Auth.currentAuthenticatedUser();
-    };
-    checkUser();
-  });
-
-  const _onPress = async () => {
-    setLoading(true);
-    try {
-      await Auth.signOut();
-      await Keychain.resetInternetCredentials('auth');
-      goHome(navigation)();
-    } catch (err) {
-      setError(err.message);
+    const checkUser = async (): Promise<void> => {
+      await Auth.currentAuthenticatedUser()
     }
-  };
+    checkUser()
+  }, [navigation])
+
+  const _onPress = async (): Promise<void> => {
+    setLoading(true)
+    try {
+      await Auth.signOut()
+      await Keychain.resetInternetCredentials('auth')
+      goHome(navigation)()
+    } catch (err) {
+      setError(err.message)
+    }
+  }
 
   return (
     <AppContainer message={error} loading={loading}>
       <Button title="Sign Out" onPress={_onPress} />
     </AppContainer>
-  );
-};
+  )
+}
 
-export {User};
+export { User }
 ```
 
-![Step10](/img/steps/10.png)
+![Step12](/img/steps/12.png)
 
-## SignIn screen
+## SignIn screen - экран входа
 
-После того, как зарегистрировали пользователя, мы должны предоставить юзеру возможность войти в приложение через логин и пароль. Для этого мы создаем экран SIGN_IN src/screens/Authenticator/SignIn/index.js
+После того, как пользователь зарегистрирован, мы должны предоставить пользователю возможность входа в приложение через логин и пароль. Для этого создаем экран `SIGN_IN`.
 
 ![SignIn screen](/img/auth/auth1-08.png)
 
-```jsx
-import React, {useState} from 'react';
-import {Auth} from 'aws-amplify';
-import * as Keychain from 'react-native-keychain';
-import {Formik} from 'formik';
-import * as Yup from 'yup';
-import {
-  AppContainer,
-  Button,
-  Space,
-  ButtonLink,
-  TextError,
-  Input,
-} from 'react-native-unicorn-uikit';
-import {onScreen, goBack} from '../../../constants';
+```tsx title="src/screen/Authenticator/SignIn/index.tsx"
+import React, { useState, ReactElement } from 'react'
+import { Auth } from 'aws-amplify'
+import * as Keychain from 'react-native-keychain'
+import { Formik } from 'formik'
+import * as Yup from 'yup'
+import { StackNavigationProp } from '@react-navigation/stack'
+import { AppContainer, Button, Space, ButtonLink, TextError, Input } from '../../../components'
+import { onScreen, goBack } from '../../../constants'
+import { RootStackParamList } from '../../../AppNavigator'
 
-const SignIn = ({navigation}) => {
-  const [userInfo, setUserInfo] = useState('');
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState('');
+type ProfileScreenNavigationProp = StackNavigationProp<RootStackParamList, 'SIGN_IN'>
 
-  const _onPress = async (values) => {
-    setLoading(true);
-    setError('');
+type SignUpT = {
+  navigation: ProfileScreenNavigationProp
+}
+
+const SignIn = ({ navigation }: SignUpT): ReactElement => {
+  const [userInfo, setUserInfo] = useState({ email: '', password: '' })
+  const [loading, setLoading] = useState(false)
+  const [error, setError] = useState('')
+
+  const _onPress = async (values: { email: string; password: string }): Promise<void> => {
+    setLoading(true)
+    setError('')
     try {
-      const {email, password} = values;
-      const user = await Auth.signIn(email, password);
-      await Keychain.setInternetCredentials('auth', email, password);
-      user && onScreen('USER', navigation)();
-      setLoading(false);
-    } catch (err) {
-      setLoading(false);
-      if (err.code === 'UserNotConfirmedException') {
-        setError('Account not verified yet');
-      } else if (err.code === 'PasswordResetRequiredException') {
-        setError('Existing user found. Please reset your password');
-      } else if (err.code === 'NotAuthorizedException') {
-        setError('Forgot Password?');
-      } else if (err.code === 'UserNotFoundException') {
-        setError('User does not exist!');
+      const { email, password } = values
+      const user = await Auth.signIn(email, password)
+      await Keychain.setInternetCredentials('auth', email, password)
+      user && onScreen('USER', navigation)()
+      setLoading(false)
+    } catch ({ code }) {
+      setLoading(false)
+      if (code === 'UserNotConfirmedException') {
+        setError('Account not verified yet')
+      } else if (code === 'PasswordResetRequiredException') {
+        setError('Existing user found. Please reset your password')
+      } else if (code === 'NotAuthorizedException') {
+        setUserInfo(values)
+        setError('Forgot Password?')
+      } else if (code === 'UserNotFoundException') {
+        setError('User does not exist!')
       } else {
-        setError(err.code);
+        setError(code)
       }
     }
-  };
+  }
 
   return (
     <>
-      <AppContainer
-        onPress={goBack(navigation)}
-        title="Sign In"
-        loading={loading}>
-        <Space height={140} />
+      <AppContainer onPress={goBack(navigation)} title="Sign In" loading={loading} message={error}>
         <Formik
-          initialValues={{email: '', password: ''}}
-          onSubmit={(values) => _onPress(values) && setUserInfo(values.email)}
+          enableReinitialize
+          initialValues={userInfo}
+          onSubmit={(values): Promise<void> => _onPress(values)}
           validationSchema={Yup.object().shape({
             email: Yup.string().email().required(),
-            password: Yup.string().min(6).required(),
-          })}>
-          {({
-            values,
-            handleChange,
-            errors,
-            setFieldTouched,
-            touched,
-            isValid,
-            handleSubmit,
-          }) => (
+            password: Yup.string().min(6).required()
+          })}
+        >
+          {({ values, handleChange, errors, setFieldTouched, touched, handleSubmit }): ReactElement => (
             <>
+              <Space height={90} />
               <Input
                 name="email"
                 value={values.email}
                 onChangeText={handleChange('email')}
-                onBlur={() => setFieldTouched('email')}
+                onBlur={(): void => setFieldTouched('email')}
                 placeholder="E-mail"
                 touched={touched}
                 errors={errors}
@@ -670,204 +732,184 @@ const SignIn = ({navigation}) => {
                 name="password"
                 value={values.password}
                 onChangeText={handleChange('password')}
-                onBlur={() => setFieldTouched('password')}
+                onBlur={(): void => setFieldTouched('password')}
                 placeholder="Password"
                 touched={touched}
                 errors={errors}
+                autoCapitalize="none"
                 secureTextEntry
               />
-              {error !== 'Forgot Password?' && (
-                <TextError title={error} textStyle={{alignSelf: 'center'}} />
-              )}
+              {error !== 'Forgot Password?' && <TextError title={error} textStyle={{ alignSelf: 'center' }} />}
               {error === 'Forgot Password?' && (
                 <ButtonLink
                   title={error}
                   onPress={onScreen('FORGOT', navigation, userInfo)}
-                  textStyle={{alignSelf: 'center'}}
+                  textStyle={{ alignSelf: 'center' }}
                 />
               )}
-              <Space height={30} />
-              <Button
-                title="Sign In"
-                disabled={!isValid}
-                onPress={handleSubmit}
-                formik
-              />
+              <Button title="Sign In" onPress={handleSubmit} />
+              <Space height={130} />
             </>
           )}
         </Formik>
       </AppContainer>
     </>
-  );
-};
+  )
+}
 
-export {SignIn};
+export { SignIn }
 ```
 
-![Step11](/img/steps/11.png)
+![Step13](/img/steps/13.png)
 
-## Forgot password screen
+## Forgot password screen - вспоминание пароля
 
-В случае успеха, мы отправляем юзера на экран USER, который мы уже ранее сделали, а если юзер забыл или не правильно ввел пароль, то мы показываем ошибку Forgot Password? и предлагаем сбросить пароль.
+В случае успеха мы отправляем пользователя на экран `USER`, что мы уже сделали, и если пользователь забыл или ввел пароль неправильно, мы показываем ошибку «Забыли пароль» и предлагаем сбросить пароль.
 
 ![Forgot password](/img/auth/auth1-09.png)
 
-Для этого мы создаем экран FORGOT src/screens/Authenticator/Forgot/index.js
+Для этого создаем экран `FORGOT`
 
 ![Forgot password](/img/auth/auth1-10.png)
 
-```jsx
-import React, {useState} from 'react';
-import {Auth} from 'aws-amplify';
-import {Formik} from 'formik';
-import * as Yup from 'yup';
-import {AppContainer, Button, Input} from 'react-native-unicorn-uikit';
-import {onScreen, goBack} from '../../../constants';
+```tsx title="src/screen/Authenticator/Forgot/index.tsx"
+import React, { useState, ReactElement } from 'react'
+import { Auth } from 'aws-amplify'
+import { Formik } from 'formik'
+import * as Yup from 'yup'
+import { StackNavigationProp } from '@react-navigation/stack'
+import { RouteProp } from '@react-navigation/native'
+import { AppContainer, Button, Input, Space } from '../../../components'
+import { onScreen, goBack } from '../../../constants'
+import { RootStackParamList } from '../../../AppNavigator'
 
-const Forgot = ({route, navigation}) => {
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState('');
+type ProfileScreenNavigationProp = StackNavigationProp<RootStackParamList, 'FORGOT'>
+type ProfileScreenRouteProp = RouteProp<RootStackParamList, 'FORGOT'>
 
-  const _onPress = async (values) => {
-    setLoading(true);
+type ForgotT = {
+  navigation: ProfileScreenNavigationProp
+  route: ProfileScreenRouteProp
+}
+
+const Forgot = ({ route, navigation }: ForgotT): ReactElement => {
+  const [loading, setLoading] = useState(false)
+  const [error, setError] = useState('')
+
+  const _onPress = async (values: { email: string }): Promise<void> => {
+    setLoading(true)
     try {
-      const {email} = values;
-      const user = await Auth.forgotPassword(email);
-      user && onScreen('FORGOT_PASSWORD_SUBMIT', navigation, email)();
-      setLoading(false);
+      const { email } = values
+      const user = await Auth.forgotPassword(email)
+      user && onScreen('FORGOT_PASSWORD_SUBMIT', navigation, values)()
+      setLoading(false)
     } catch (err) {
-      setError(error);
+      setError(error)
     }
-  };
+  }
 
   return (
     <>
-      <AppContainer
-        title="Forgot"
-        onPress={goBack(navigation)}
-        loading={loading}>
+      <AppContainer title="Forgot" onPress={goBack(navigation)} loading={loading} message={error}>
         <Formik
-          initialValues={{email: route.params}}
-          onSubmit={(values) => _onPress(values)}
+          initialValues={{ email: route.params.email || '' }}
+          onSubmit={(values): Promise<void> => _onPress(values)}
           validationSchema={Yup.object().shape({
-            email: Yup.string().email().required(),
-          })}>
-          {({
-            values,
-            handleChange,
-            errors,
-            setFieldTouched,
-            touched,
-            isValid,
-            handleSubmit,
-          }) => (
+            email: Yup.string().email().required()
+          })}
+        >
+          {({ values, handleChange, errors, setFieldTouched, touched, handleSubmit }): ReactElement => (
             <>
               <Input
                 name="email"
                 value={values.email}
                 onChangeText={handleChange('email')}
-                onBlur={() => setFieldTouched('email')}
+                onBlur={(): void => setFieldTouched('email')}
                 placeholder="E-mail"
                 touched={touched}
                 errors={errors}
                 autoCapitalize="none"
               />
-              <Button
-                title="Confirm"
-                disabled={!isValid}
-                onPress={handleSubmit}
-                formik
-              />
+              <Space height={30} />
+              <Button title="Confirm" onPress={handleSubmit} />
+              <Space height={100} />
             </>
           )}
         </Formik>
       </AppContainer>
     </>
-  );
-};
+  )
+}
 
-export {Forgot};
+export { Forgot }
 ```
 
-![Step12](/img/steps/12.png)
+![Step14](/img/steps/14.png)
 
-## Forgot Password Submit
+## Forgot password submit
 
-После подтверждения e-mail, мы вызываем метод Auth.forgotPassword(email) и в случае, если такой юзер есть, то отправляем пользователя на экран FORGOT_PASSWORD_SUBMIT src/screens/Authenticator/ForgotPassSubmit/index.js
+После подтверждения электронной почты мы вызываем метод `Auth.forgotPassword(email)` и, если такой пользователь есть, отправляем пользователя на экран `FORGOT_PASSWORD_SUBMIT`
 
 ![ForgotPassSubmit](/img/auth/auth1-11.png)
 
-```jsx
-import React, {useState} from 'react';
-import {Platform} from 'react-native';
-import {Auth} from 'aws-amplify';
-import * as Keychain from 'react-native-keychain';
-import {Formik} from 'formik';
-import * as Yup from 'yup';
-import {
-  AppContainer,
-  Button,
-  Space,
-  Input,
-  TextError,
-} from 'react-native-unicorn-uikit';
-import {onScreen, goBack} from '../../../constants';
+```tsx title="src/screen/Authenticator/ForgotPassSubmit/index.tsx"
+import React, { useState, ReactElement } from 'react'
+import { Auth } from 'aws-amplify'
+import * as Keychain from 'react-native-keychain'
+import { Formik } from 'formik'
+import * as Yup from 'yup'
+import { StackNavigationProp } from '@react-navigation/stack'
+import { RouteProp } from '@react-navigation/native'
+import { AppContainer, Button, Space, Input, TextError } from '../../../components'
+import { onScreen, goBack } from '../../../constants'
+import { RootStackParamList } from '../../../AppNavigator'
 
-const ForgotPassSubmit = ({route, navigation}) => {
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState('');
+type ProfileScreenNavigationProp = StackNavigationProp<RootStackParamList, 'FORGOT_PASSWORD_SUBMIT'>
+type ProfileScreenRouteProp = RouteProp<RootStackParamList, 'FORGOT_PASSWORD_SUBMIT'>
 
-  const _onPress = async (values) => {
-    setLoading(true);
+type ForgotPassSubmitT = {
+  navigation: ProfileScreenNavigationProp
+  route: ProfileScreenRouteProp
+}
+
+const ForgotPassSubmit = ({ route, navigation }: ForgotPassSubmitT): ReactElement => {
+  const [loading, setLoading] = useState(false)
+  const [error, setError] = useState('')
+
+  const _onPress = async (values: { email: string; password: string; code: string }): Promise<void> => {
+    setLoading(true)
     try {
-      const {email, code, password} = values;
-      await Auth.forgotPasswordSubmit(email, code, password);
-      await Keychain.setInternetCredentials('auth', email, password);
-      await Auth.signIn(email, password);
-      onScreen('USER', navigation)();
-      setLoading(false);
+      const { email, code, password } = values
+      await Auth.forgotPasswordSubmit(email, code, password)
+      await Keychain.setInternetCredentials('auth', email, password)
+      await Auth.signIn(email, password)
+      onScreen('USER', navigation)()
+      setLoading(false)
     } catch (err) {
-      setLoading(false);
-      setError(err.message);
+      setLoading(false)
+      setError(err.message)
     }
-  };
+  }
 
   return (
     <>
-      <AppContainer
-        title="Confirmation"
-        onPress={goBack(navigation)}
-        loading={loading}>
-        <Space height={Platform.OS === 'ios' ? 20 : 150} />
+      <AppContainer title="Confirmation" onPress={goBack(navigation)} loading={loading} message={error}>
         <Formik
-          initialValues={{
-            email: route.params,
-            code: '',
-            password: '',
-            passwordConfirmation: '',
-          }}
-          onSubmit={(values) => _onPress(values)}
+          initialValues={{ email: route.params.email || '', code: '', password: '', passwordConfirmation: '' }}
+          onSubmit={(values): Promise<void> => _onPress(values)}
           validationSchema={Yup.object().shape({
             email: Yup.string().email().required(),
             code: Yup.string().min(6).required(),
             password: Yup.string().min(6).required(),
-            passwordConfirmation: Yup.string().min(6).required(),
-          })}>
-          {({
-            values,
-            handleChange,
-            errors,
-            setFieldTouched,
-            touched,
-            isValid,
-            handleSubmit,
-          }) => (
+            passwordConfirmation: Yup.string().min(6).required()
+          })}
+        >
+          {({ values, handleChange, errors, setFieldTouched, touched, handleSubmit }): ReactElement => (
             <>
               <Input
                 name="email"
                 value={values.email}
                 onChangeText={handleChange('email')}
-                onBlur={() => setFieldTouched('email')}
+                onBlur={(): void => setFieldTouched('email')}
                 placeholder="E-mail"
                 touched={touched}
                 errors={errors}
@@ -877,7 +919,7 @@ const ForgotPassSubmit = ({route, navigation}) => {
                 name="code"
                 value={values.code}
                 onChangeText={handleChange('code')}
-                onBlur={() => setFieldTouched('code')}
+                onBlur={(): void => setFieldTouched('code')}
                 placeholder="Code"
                 touched={touched}
                 errors={errors}
@@ -886,130 +928,130 @@ const ForgotPassSubmit = ({route, navigation}) => {
                 name="password"
                 value={values.password}
                 onChangeText={handleChange('password')}
-                onBlur={() => setFieldTouched('password')}
+                onBlur={(): void => setFieldTouched('password')}
                 placeholder="Password"
                 touched={touched}
                 errors={errors}
+                autoCapitalize="none"
                 secureTextEntry
               />
               <Input
                 name="passwordConfirmation"
                 value={values.passwordConfirmation}
                 onChangeText={handleChange('passwordConfirmation')}
-                onBlur={() => setFieldTouched('passwordConfirmation')}
+                onBlur={(): void => setFieldTouched('passwordConfirmation')}
                 placeholder="Password confirm"
                 touched={touched}
                 errors={errors}
+                autoCapitalize="none"
                 secureTextEntry
               />
-              {error !== '' && (
-                <TextError title={error} textStyle={{alignSelf: 'center'}} />
-              )}
+              {error !== '' && <TextError title={error} textStyle={{ alignSelf: 'center' }} />}
               <Space height={30} />
-              <Button
-                title="Confirm"
-                disabled={!isValid}
-                onPress={handleSubmit}
-                formik
-              />
+              <Button title="Confirm" onPress={handleSubmit} />
+              <Space height={80} />
             </>
           )}
         </Formik>
       </AppContainer>
     </>
-  );
-};
+  )
+}
 
-export {ForgotPassSubmit};
+export { ForgotPassSubmit }
 ```
 
-где после ввода кода, отправленного на почту, нового пароля и его подтверждения, мы вызываем метод смены пароля
+где после ввода отправленного на почту кода нового пароля и его подтверждения вызываем метод смены пароля
 
 ```jsx
-Auth.forgotPasswordSubmit(email, code, password);
+Auth.forgotPasswordSubmit(email, code, password)
 ```
 
-успех которого отправляет юзера на экран USER.
+успех которого отправляет пользователя на экран `USER`.
 
-![Step13](/img/steps/13.png)
+![Step15](/img/steps/15.png)
 
 ## Связывание экранов
 
-Подключаем все созданые компоненты в src/screens/Authenticator/index.js
+Все созданные компоненты подключаем в
 
-```jsx
-export * from './Hello';
-export * from './User';
-export * from './SignIn';
-export * from './SignUp';
-export * from './Forgot';
-export * from './ForgotPassSubmit';
-export * from './ConfirmSignUp';
+```ts title="src/screens/Authenticator/index.ts"
+export * from './Hello'
+export * from './User'
+export * from './SignIn'
+export * from './SignUp'
+export * from './Forgot'
+export * from './ForgotPassSubmit'
+export * from './ConfirmSignUp'
 ```
 
-![Step14](/img/steps/14.png)
+![Step16](/img/steps/16.png)
 
-## Udpate AppNavigator
+## Обновляем AppNavigator
 
-Обновляем файл конфигурации навигации:
+Обновление файла конфигурации навигации:
 
-```jsx
-import * as React from 'react';
-import {createStackNavigator} from '@react-navigation/stack';
-import {
-  Hello,
-  SignUp,
-  SignIn,
-  ConfirmSignUp,
-  User,
-  Forgot,
-  ForgotPassSubmit,
-} from './screens/Authenticator';
+```jsx title="src/AppNavigator.tsx"
+import * as React from 'react'
+import { createStackNavigator } from '@react-navigation/stack'
+import { Hello, SignUp, SignIn, ConfirmSignUp, User, Forgot, ForgotPassSubmit } from './screens/Authenticator'
 
-const Stack = createStackNavigator();
+const Stack = createStackNavigator()
 
-const AppNavigator = () => {
+export type RootStackParamList = {
+  HELLO: undefined
+  SIGN_UP: undefined
+  SIGN_IN: undefined
+  FORGOT: { email: string }
+  FORGOT_PASSWORD_SUBMIT: { email: string }
+  CONFIRM_SIGN_UP: { email: string; password: string }
+  USER: undefined
+}
+
+const AppNavigator = (): React.ReactElement => {
   return (
     <Stack.Navigator
       screenOptions={{
-        headerShown: false,
+        headerShown: false
       }}
-      initialRouteName="HELLO">
+      initialRouteName="HELLO"
+    >
       <Stack.Screen name="HELLO" component={Hello} />
       <Stack.Screen name="SIGN_UP" component={SignUp} />
       <Stack.Screen name="SIGN_IN" component={SignIn} />
       <Stack.Screen name="FORGOT" component={Forgot} />
-      <Stack.Screen
-        name="FORGOT_PASSWORD_SUBMIT"
-        component={ForgotPassSubmit}
-      />
+      <Stack.Screen name="FORGOT_PASSWORD_SUBMIT" component={ForgotPassSubmit} />
       <Stack.Screen name="CONFIRM_SIGN_UP" component={ConfirmSignUp} />
       <Stack.Screen name="USER" component={User} />
     </Stack.Navigator>
-  );
-};
+  )
+}
 
-export default AppNavigator;
+export default AppNavigator
 ```
 
-![Step15](/img/steps/15.png)
-
-## Clean Up
-
-Так как мы используем кастомную тему, то удаляем компоненты AmplifyTheme и Localei18n
-
-![Step16](/img/steps/16.png)
+![Step17](/img/steps/17.png)
 
 ## Debug
 
-Для того, чтобы понимать, что происходит с токенами в вашем приложении, добавьте в корневой /index.js
+Чтобы понять, что происходит с токенами в вашем приложении, добавьте в
 
-```jsx
-window.LOG_LEVEL = 'DEBUG';
+```jsx title="root/index.js"
+window.LOG_LEVEL = 'DEBUG'
 ```
 
 Запускаем приложение и получаем кастомную аутентификацию.
 
 ## Done ✅
+
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<table>
+  <tr>
+    <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /> <a href="https://github.com/gHashTag/react-native-village/commits?author=gHashTag" title="Documentation">📖</a><a href="#financial-gHashTag" title="Financial">💵</a></td>
+  </tr>
+</table>
 
 [![Become a Patron!](/img/logo/patreon.png)](https://www.patreon.com/bePatron?u=31769291)
