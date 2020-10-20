@@ -9,6 +9,8 @@ sidebar_label: Настройка Linux
 ![Step00](/img/steps/00.png)
 
 ## Установка пакетов Node.js, OpenJDK
+<<<<<<< HEAD
+<<<<<<< refs/remotes/upstream/gh-pages
 
 Приступаем к установке пакета `Node.js` через терминал.
 Сначала вставьте в терминал данную команду:
@@ -19,17 +21,42 @@ sudo apt install curl
 
 А затем, эти команды:
 
+=======
+Приступаем к установке пакета ``Node.js`` через терминал.
+Для начала установки необходимо установить ``Curl`` для этого вставьте в терминал следующую команду:
+```bash
+sudo apt install curl
+```
+А затем, после окончания загрузки вставьте следующую команду::
+>>>>>>> Update start00_3.md
 ```bash
 curl -sL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
-sudo apt-get install -y nodejs
 ```
+<<<<<<< refs/remotes/upstream/gh-pages
 
 Терминал запросит пароль пользователя для продолжения, введите его и после окончания загрузки вставьте следующую команду:
 
+=======
+Теперь можно установить ``Node.js`` командой:
+>>>>>>> Update start00_3.md
+=======
+Приступаем к установке пакета ``Node.js`` через терминал.
+Для начала установки необходимо установить ``Curl`` для этого вставьте в терминал следующую команду:
+```bash
+sudo apt install curl
+```
+А затем, после окончания загрузки вставьте следующую команду::
+```bash
+curl -sL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
+```
+Теперь можно установить ``Node.js`` командой:
+>>>>>>> gh-pages
 ```bash
 sudo apt-get install -y nodejs
 ```
 
+<<<<<<< HEAD
+<<<<<<< refs/remotes/upstream/gh-pages
 Таким образом Вы установите `Node.js`, актуальную инструкцию по установке можно найти на [официальном сайте Node.js](https://nodejs.org/en/download/package-manager/).
 
 Для установки `OpenJDK` Вам потребуется вставить в терминал следующую команду:
@@ -40,6 +67,20 @@ sudo apt install openjdk-11-jdk openjdk-11-jdk-headless
 
 Проверить правильность установки можно вставив в терминал команду:
 
+=======
+Для установки ``OpenJDK`` вставьте в терминал следующую команду:
+```bash
+sudo apt install openjdk-11-jdk openjdk-11-jdk-headless
+```
+Проверить правильность установки ``OpenJDK`` можно вставив в терминал команду:
+>>>>>>> Update start00_3.md
+=======
+Для установки ``OpenJDK`` вставьте в терминал следующую команду:
+```bash
+sudo apt install openjdk-11-jdk openjdk-11-jdk-headless
+```
+Проверить правильность установки ``OpenJDK`` можно вставив в терминал команду:
+>>>>>>> gh-pages
 ```bash
 java -version
 ```
