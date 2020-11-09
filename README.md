@@ -43,7 +43,7 @@ Some common defaults for linting/formatting have been set for you. If you integr
 $ yarn ci
 ```
 ### OG Image
-Afler deploy add this script to index.html
+Afler deploy add this script to index.html in tag `head`
 
 ```javascript
 <meta property="og:image" content="https://react-native-village.github.io/img/app.png">
