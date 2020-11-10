@@ -389,8 +389,6 @@ function learnJavaScript() {
 
 1. [MDN web docs - Операторы сравнения](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Операторы_сравнения)
 2. [Код для подростков: прекрасное руководство по программированию для начинающих, том 1: Javascript - Jeremy Moritz ](https://www.amazon.com/Code-Teens-Beginners-Programming-Javascript-ebook/dp/B07FCTLVPC)
-3. [JavaScript.ru](https://learn.javascript.ru/ifelse#blok-else)
-4. [Арифметические действия с целыми числами](https://maths-public.ru/arithmetic/actions)
 
 ## Contributors ✨
 
