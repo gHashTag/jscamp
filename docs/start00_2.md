@@ -71,7 +71,7 @@ npx react-native init MyReact
 
 ![XCode](/img/rn/00_2/04_00.png)
 
-## Запуск Metro Budnler
+## Запуск Metro Bundler
 
 `Metro Bundler` - это сборщик `JavaScript`, который поставляется вместе с `React Native`. `Metro` принимает файлы и параметры ввода, компилируя все файлы `JavaScript` в один файл. После его запуска мы можем увидеть в какой файл `Metro` скомпилировал `JavaScript` код, он подсвечивается зелёным.
 
@@ -162,6 +162,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tr> 
     <td align="center"><a href="https://github.com/KoDim-React"><img src="https://avatars1.githubusercontent.com/u/72087863?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitiy K.</b></sub></a><br /><a href="#mentoring-KoDim-React" title="Mentoring">🧑‍🏫</a></td>
     <td align="center"><a href="https://github.com/IIo3iTiv"><img src="https://avatars1.githubusercontent.com/u/72025062?v=4?s=200" width="200px;" alt=""/><br /><sub><b>IIo3iTiv</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/commits?author=IIo3iTiv" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /><a href="#financial-gHashTag" title="Financial">💵</a></td>
   </tr>
 </table>
 
