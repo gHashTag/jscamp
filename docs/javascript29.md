@@ -1,5 +1,5 @@
 ---
-id: javascript99
+id: javascript29
 title: Конструкция switch case
 sidebar_label: Конструкция switch case
 ---
@@ -147,6 +147,10 @@ return Str;
 Результат будет тот же, но код станет более читаемым и удобным для работы.
 
 ## Вопросы:
+
+Для того чтобы понять, на сколько вы усвоили этот урок, пройдите тест в [мобильном приложении](http://onelink.to/njhc95) нашей школы по этой теме.
+
+![Sumerian school](/img/app.png)
 
 ## Ссылки:
  1. [MDN web docs](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/switch)
