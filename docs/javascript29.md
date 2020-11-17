@@ -54,47 +54,47 @@ switch(n) {
 ```jsx live
 function learnJavaScript() {
 let a = 4
-let Str
+let str
 switch (a) {
   case 3:
-    Str = 'Маловато'
+    str = 'Маловато'
     break
   case 4:
-    Str = 'В точку!'
+    str = 'В точку!'
     break
   case 5:
-    Str = 'Перебор'
+    str = 'Перебор'
     break
   default:
-    Str = 'Я таких значений не знаю'
+    str = 'Я таких значений не знаю'
 }
-return Str;
+return str;
 }
 ```
 
 Здесь оператор ``switch`` последовательно сравнит ``a`` со всеми вариантами из ``case``.
-Сначала 3, затем – так как нет совпадения – 4. Совпадение найдено, будет выполнен этот вариант, со строки ``Str = 'В точку!'`` и далее, до ближайшего ``break``, который прервёт выполнение.
+Сначала 3, затем – так как нет совпадения – 4. Совпадение найдено, будет выполнен этот вариант, со строки ``str = 'В точку!'`` и далее, до ближайшего ``break``, который прервёт выполнение.
 
 
 Рассмотрим такой пример:
 ```jsx live
 function learnJavaScript() {
 let a = "Apples"
-let Str
+let str
 switch (a) {
   case "Apples":
-    Str = 'I love '+a
+    str = 'I love '+a
     break
   case "Oranges":
-    Str = 'I love '+a
+    str = 'I love '+a
     break
   case "Bananas":
-    Str = 'I love '+a
+    str = 'I love '+a
     break
   default:
-    Str = 'I like other fruits'
+    str = 'I like other fruits'
 }
-return Str;
+return str;
 }
 ```
 Здесь оператор ``switch`` последовательно сравнит ``a`` со всеми вариантами из ``case``. Но здесь идет сравнение не чисел, а строк. Так можно сделать с любыми типами данных, главное чтобы сравнивались одинаковые типы данных.
@@ -105,19 +105,19 @@ return Str;
 ```jsx live
 function learnJavaScript() {
 let number = 2
-let Str
+let str
 if (number === 0) {
-  Str = 'Вы ввели число 0'
+  str = 'Вы ввели число 0'
 }
 
 if (number === 1) {
-  Str = 'Вы ввели число 1'
+  str = 'Вы ввели число 1'
 }
 
 if (number === 2 || number === 3) {
-  Str = 'Вы ввели число 2, а может и 3'
+  str = 'Вы ввели число 2, а может и 3'
 }
-return Str;
+return str;
 }
 ```
 
@@ -126,22 +126,22 @@ return Str;
 ```jsx live
 function learnJavaScript() {
 let number = 2
-let Str
+let str
 switch (number) {
   case 0:
-    Str = 'Вы ввели число 0'
+    str = 'Вы ввели число 0'
     break;
 
   case 1:
-    Str = 'Вы ввели число 1'
+    str = 'Вы ввели число 1'
     break;
 
   case 2:
   case 3:
-    Str = 'Вы ввели число 2, а может и 3'
+    str = 'Вы ввели число 2, а может и 3'
     break;
 }
-return Str;
+return str;
 }
 ```
 Результат будет тот же, но код станет более читаемым и удобным для работы.
