@@ -106,7 +106,8 @@ module.exports = {
   bracketSpacing: true,
   semi: false,
   useTabs: false,
-  jsxBracketSameLine: false
+  jsxBracketSameLine: false,
+  arrowParens: 'avoid'
 }
 ```
 
