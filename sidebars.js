@@ -14,6 +14,7 @@ module.exports = {
       'javascript08',
       'javascript09',
       'javascript11',
+      'javascript12',
       'javascript14',
       'javascript29'
 
