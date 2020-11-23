@@ -414,13 +414,11 @@ while (n <= maxNumer) {
 
 ## Ссылки:
 
-1. [MDN web doc. Developer.mozilla.org - Статья "While"](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/while)
-2. [MDN web doc. Developer.mozilla.org - Статья "For"](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/for)
-3. [Статья "Циклы while и for", сайт Learn.javascript.ru](https://learn.javascript.ru/while-for)
-4. [Статья "Циклы JavaScript"](https://html5book.ru/cikly-javascript/)
-5. [Работа с циклами for и while в JavaScript](http://old.code.mu/books/javascript/base/rabota-s-ciklami-for-i-while-v-javascript.html)
-6. [Статья "Задачи на циклы while, for в JavaScript"](http://old.code.mu/tasks/javascript/base/rabota-s-ciklami-for-i-while-v-javascript.html)
-7. [Код для подростков: прекрасное руководство по программированию для начинающих, том 1: Javascript - Jeremy Moritz ](https://www.amazon.com/Code-Teens-Beginners-Programming-Javascript-ebook/dp/B07FCTLVPC)
+1. [MDN web doc. Developer.mozilla.org - Статья "Инициализация объектов"](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Object_initialize)
+2. [Спецификация ECMAScript](https://es5.javascript.ru/x15.2.html)
+3. [Статья "Object Types", сайт Javascript Express](https://www.javascript.express/types/object_types)
+4. [Статья "Объекты"](https://learn.javascript.ru/object)
+5. [Код для подростков: прекрасное руководство по программированию для начинающих, том 1: Javascript - Jeremy Moritz ](https://www.amazon.com/Code-Teens-Beginners-Programming-Javascript-ebook/dp/B07FCTLVPC)
 
 ## Contributors ✨
 
