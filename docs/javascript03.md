@@ -4,6 +4,46 @@ title: Переменка
 sidebar_label: Переменка
 ---
 
+Hello world!
+Learn Java Script
+Open your console
+And enter your script
+
+Hello world!
+Learn Java Script
+Open your console
+And enter your script
+
+Что в себе содержат переменные
+Сегодня узнаете вы непременно
+В этом уроке получишь ответы
+Какие команды какие методы
+
+Список забитых слов
+Надеемся узнать ты их готов
+Обновим ли переменную
+Если дать ей команду верную
+
+Let заюзай для переменных
+Сonst заюзай для постоянных
+В наших скриптах забей на Var
+Потому что ведет себя он как кошмар
+
+Переменные содержат значения
+Но сами при этом не значения
+Если знаниями овладели
+Пройдите наш тест, и мы это проверим
+
+Hello world!
+Learn Java Script
+Open your console
+And enter your script
+
+Hello world!
+Learn Java Script
+Open your console
+And enter your script
+
 ## Переменные
 
 Переменные(Variables, сокращенно `var`) — это контейнер для таких значений, как числа, используемые в сложении, или строка, которую мы могли бы использовать как часть предложения.
