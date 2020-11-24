@@ -2,7 +2,7 @@
 id: javascript25
 title: Методы перебора массива (map, filter, reduce)
 sidebar_label: Методы перебора массива (map, filter, reduce)
---- 
+---
 Язык JavaScript оказывает явное предпочтение массивам перед другими структурами данных. У них много удобных специфических фишек, например, целый набор перебирающих методов: `map`, `filter`, `reduce`.
 ## map
 Метод `map()` создаёт новый массив с результатом вызова указанной функции для каждого элемента массива.
@@ -340,3 +340,4 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 [![Become a Patron!](/img/logo/patreon.png)](https://www.patreon.com/bePatron?u=31769291)
+
