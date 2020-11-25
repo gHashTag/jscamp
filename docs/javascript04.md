@@ -4,46 +4,6 @@ title: Типы данных
 sidebar_label: Типы данных
 ---
 
-Hello world!
-Learn Java Script
-Open your console
-And enter your script
-
-Hello world!
-Learn Java Script
-Open your console
-And enter your script
-
-Для чего нужен
-оператор type of
-В нашем уроке
-Много новых скриптов
-
-Сколько типов данных имеется
-В стандарте JavaScript
-Ну-ка посмотри, в этом туториале
-Ответ узнаешь ты
-
-Булевой тип данных запомни
-Имеет всего два значения
-True или false И используется
-Только Для их хранения
-
-Изучим объекты и функции
-Какие у них предназначения
-Тут вся информация про типы данных
-Приятного изучения
-
-Hello world!
-Learn Java Script
-Open your console
-And enter your script
-
-Hello world!
-Learn Java Script
-Open your console
-And enter your script
-
 ## Динамическая типизация
 
 JavaScript является слабо типизированным или динамическим языком. Это значит, что вам не нужно определять тип переменной заранее. Тип определится автоматически во время выполнения программы. Также это значит, что вы можете использовать одну переменную для хранения данных различных типов:

@@ -4,16 +4,6 @@ title: Классы
 sidebar_label: Классы
 ---
 
-Hello world!
-Learn Java Script
-Open your console
-And enter your script
-
-Hello world!
-Learn Java Script
-Open your console
-And enter your script
-
 В JavaScript используется модель прототипного наследования: каждый объект наследует поля (свойства) и методы объекта-прототипа.
 
 Классы создаются для более удобной работы с объектами.

@@ -4,16 +4,6 @@ title: Функции
 sidebar_label: Функции
 ---
 
-Hello world!
-Learn Java Script
-Open your console
-And enter your script
-
-Hello world!
-Learn Java Script
-Open your console
-And enter your script
-
 Функции нужны, чтобы не повторять один и тот же код во многих местах программного алгоритма. В современных программах `функции` являются основными «блоками».
 
 ## Выбор имени функции

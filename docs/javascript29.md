@@ -4,16 +4,6 @@ title: Конструкция switch case
 sidebar_label: Конструкция switch case
 ---
 
-Hello world!
-Learn Java Script
-Open your console
-And enter your script
-
-Hello world!
-Learn Java Script
-Open your console
-And enter your script
-
 Конструкция `switch` служит для сравнения значения на равенство с различными вариантами.
 
 При этом равенство подразумевается в смысле оператора `===`, сравнивать с регулярным выражением или как-то еще `switch` не умеет. То есть значения должны быть одного типа, чтобы выполнялось равенство.

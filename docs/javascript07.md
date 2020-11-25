@@ -4,46 +4,6 @@ title: Числа
 sidebar_label: Числа
 ---
 
-Hello world!
-Learn Java Script
-Open your console
-And enter your script
-
-Hello world!
-Learn Java Script
-Open your console
-And enter your script
-
-В JavaScript существует два типа чисел
-Знания об этом сейчас мы повысим
-Первый вид number, запомни его
-Их будем использовать чаще всего
-
-Bigint числа довольно умны
-Но нужны они достаточно редко
-Целые числа произвольной длины
-С ними работают метко
-
-Сегодня узнаем про операторы
-Декремент поможет нам влиться
-Уменьшает значение своего операнда
-Ровно на единицу
-
-Оператор инкремент, все его функции
-Что же это такое?
-В этом уроке узнаешь сегодня
-Об этом и многое другое
-
-Hello world!
-Learn Java Script
-Open your console
-And enter your script
-
-Hello world!
-Learn Java Script
-Open your console
-And enter your script
-
 В современном JavaScript существует два типа чисел:
 
 - `number` Обычные числа в JavaScript хранятся в 64-битном формате IEEE-754, который также называют «числа с плавающей точкой двойной точности» (double precision floating point numbers). Это числа, которые мы будем использовать чаще всего. Целые числа не рассматриваются как отдельный тип чисел. В дополнение к числам с плавающей запятой, к числовому типу данных относятся также три символьные величины: `Infinity`, `-Infinity`, и `NaN` (не-число).
