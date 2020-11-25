@@ -24,16 +24,19 @@ let obj = {
 
 `Метод объекта` в JavaScript - это просто функция(), которая добавлена в ассоциативный массив.
 
-```javascript
+```jsx live
+function learnJavaScript() {
+
 let obj = {
+  // свойства : значения
   age: 15,
   name: 'John',
-  // метод
-  say: function () {
-    console.log('Hello!')
-  }
+  // метод : функция
+  say: function () { return 'Hello!' }
 }
-// obj.say()
+
+return obj.say()
+}
 ```
 
 ### Создание объекта
@@ -115,22 +118,31 @@ alert(obj.nokey) // => undefined
     if (window.x !== undefined) // аналог typeof x ..
 ```
 
-Все свойства объектов - public (общественные), т.е при определении свойства никак нельзя ограничить доступ к свойству. В JavaScript есть специальные выверты для создания `private` свойств, связанные `с замыканиями`. Они рассмотрены вместе с наследованием объектов.
+Все свойства объектов - public (общественные), т.е при определении свойства никак нельзя ограничить доступ к свойству. В JavaScript есть специальные способы для создания `private` свойств, связанные `с замыканиями`. Они рассмотрены вместе с наследованием объектов.
 
 ### Расширенное создание
 
-Свойства можно указывать непосредственно при создании объекта, через список в фигурных скобках вида {..., `ключ : значение,` ...}:
+Свойства можно указывать непосредственно при создании объекта, через список в фигурных скобках вида {..., `ключ : значение,` ...} и создавать сложные объекты:
+```jsx live
+function learnJavaScript() {
 
-```javascript
-let obj = {
+const obj = {
   age: 15,
   name: 'John',
   color: 'black',
+  passport: {
+      serial: 5721,
+      numder: 258963,
+      date: '27.10.2015'
+      },
   student: 'true'
+}
+
+return obj.passport.date
 }
 ```
 
-Создан объект содержаний 4 свойства с конкретными значениями.
+Создан объект содержаний `5 свойств` с конкретными значениями, одно из которых паспортные данные, являющийся `встроенным объектом`. Обратите внимание, как идет обращение к дальним свойствам или методам объекта. Попробуйте вернуть номер паспорта.
 
 ### Удаление свойств
 
@@ -148,13 +160,17 @@ delete obj.age
 Как и в других языках, у объектов JavaScript есть `методы`.
 
 Например, создадим объект sport сразу с `методом run`:
+```jsx live
+function learnJavaScript() {
 
-```javascript
 let sport = {
-  name: John,
+  name: 'John',
   run: function (n) {
-    console.log('Пробежал ' + n + ' метров!')
+    return this.name + ' пробежал ' + n + ' метров!'
   }
+}
+
+return sport.run(300)
 }
 ```
 
@@ -162,67 +178,51 @@ let sport = {
 
 Добавление метода в существющий объект - просто, присвоим функцию `function(n) { ... }` свойству `sport.run`.
 
-```javascript
+```jsx live
+function learnJavaScript() {
+
 let sport = {
-  name: John
+  name: 'Nikita'
 }
 
 sport.run = function (n) {
-  console.log('Пробежал ' + n + ' метров!')
+  return 'Спортсмен пробежал ' + n + ' метров и это был ' + this.name
 }
 
-sport.run(120) // Пробежал 120 метров
-sport.run(300) // Пробежал 300 метров
+return sport.run(350)
+}
 ```
+:::note Обратите внимание
+Очень часто методы используют в своих расчетах свойства своего же объекта.
+:::
 
 Здесь не идет речь о классах, создании экземпляров и тому подобном. Просто - в любой объект в `любое время` можно `добавить новый метод` или `удалить` существующий.
 
-JavaScript - очень динамический язык.
+```jsx live
+function learnJavaScript() {
 
-### Доступ к объекту из метода
-
-Обычно хочется, чтобы метод не просто вызывался из объекта, но имел доступ к самому объекту, мог менять находящиеся в нем данные.
-
-Для этого используется ключевое слово this:
-
-```javascript
-for(let key in obj) {
-    … obj[key] …
-}
-```
-
-В отличие от многих языков, this никак не привязано к объекту, а обозначает просто объект, вызвавший эту функцию.
-Например,
-
-```javascript
-function thisObj() {
-  let vasya = { name: 'Вася' }
-  let petya = { name: 'Петя' }
-
-  let sayName = function () {
-    console.log('Я - ' + (this.name ? this.name : 'безымянный'))
-  }
-  vasya.sayName = sayName
-
-  // один и тот же метод в двух объектах
-  petya.sayName = vasya.sayName
-
-  // тут - this будет petya
-  petya.sayName() // Я - Петя
-
-  // тут - this будет vasya
-  vasya.sayName() // Я - Вася
-
-  // а тут - вызывается метод глобального объекта window, у которого нет имени
-  sayName() // Я - безымянный
+let sport = {
+  name: 'Nikita',
+  age : 18
 }
 
-thisObj()
+sport.run = function (n, str) {
+  if (str == 'men') 
+      return 'Спортсмен пробежал ' + n + ' метров и это был ' + this.name
+  if (str == 'women') 
+      return 'Спортсменка пробежала ' + n + ' метров и это была ' + this.name
+  if (str != 'men' || str != 'women') 
+      return 'Человек пробежал ' + n + ' метров.'   
+}
+
+return sport.run(350, 'women')
+}
 ```
+Подумайте, чем можно заменить множественный `if()`. JavaScript - очень динамический язык.
 
 ## Перебор свойств объекта
 
-Для перебора всех свойств объекта используется специальный вид конструкции `for`, `for..in`:
+Для перебора всех свойств объекта используется специальный вид конструкции `for .. in`:
 
 ```javascript
 for(let key in obj) {
@@ -234,14 +234,20 @@ for(let key in obj) {
 
 Например,
 
-```javascript
-const obj = {
-  a: 15,
-  b: true,
-  c: 'red'
-}
+```jsx live
+function learnJavaScript() {
+
+let result = ''
+  const obj = {
+    age   : 15,
+    b     : 'true',
+    color : 'red'
+  }
 for (let key in obj) {
-  console.log(key + ':' + obj[key])
+  result += key + ':' + obj[key] + '; '
+}
+
+return result
 }
 ```
 
@@ -301,13 +307,11 @@ for (prop in object)
 
 ## Ссылки:
 
-1. [MDN web doc. Developer.mozilla.org - Статья "While"](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/while)
-2. [MDN web doc. Developer.mozilla.org - Статья "For"](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/for)
-3. [Статья "Циклы while и for", сайт Learn.javascript.ru](https://learn.javascript.ru/while-for)
-4. [Статья "Циклы JavaScript"](https://html5book.ru/cikly-javascript/)
-5. [Работа с циклами for и while в JavaScript](http://old.code.mu/books/javascript/base/rabota-s-ciklami-for-i-while-v-javascript.html)
-6. [Статья "Задачи на циклы while, for в JavaScript"](http://old.code.mu/tasks/javascript/base/rabota-s-ciklami-for-i-while-v-javascript.html)
-7. [Код для подростков: прекрасное руководство по программированию для начинающих, том 1: Javascript - Jeremy Moritz ](https://www.amazon.com/Code-Teens-Beginners-Programming-Javascript-ebook/dp/B07FCTLVPC)
+1. [MDN web doc. Developer.mozilla.org - Статья "Типы данных JavaScript и структуры данных"](https://developer.mozilla.org/ru/docs/Web/JavaScript/Data_structures)
+2. [MDN web doc. Developer.mozilla.org - Статья "Инициализация объектов"](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Object_initialize)
+3. [Статья "Object Types"](https://www.javascript.express/types/object_types)
+4. [Статья "Объекты", сайт Learn.javascript.ru](https://learn.javascript.ru/object)
+5. [Код для подростков: прекрасное руководство по программированию для начинающих, том 1: Javascript - Jeremy Moritz ](https://www.amazon.com/Code-Teens-Beginners-Programming-Javascript-ebook/dp/B07FCTLVPC)
 
 ## Contributors ✨
 
@@ -329,3 +333,40 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 [![Become a Patron!](/img/logo/patreon.png)](https://www.patreon.com/bePatron?u=31769291)
+
+<!--
+### Доступ к объекту из метода
+
+Обычно хочется, чтобы метод не просто вызывался из объекта, но имел доступ к самому объекту, мог менять находящиеся в нем данные.
+
+Для этого используется ключевое слово this:
+
+В отличие от многих языков, this никак не привязано к объекту, а обозначает просто объект, вызвавший эту функцию.
+Например,
+
+```javascript
+function thisObj() {
+  let vasya = { name: 'Вася' }
+  let petya = { name: 'Петя' }
+
+  let sayName = function () {
+    console.log('Я - ' + (this.name ? this.name : 'безымянный'))
+  }
+  vasya.sayName = sayName
+
+  // один и тот же метод в двух объектах
+  petya.sayName = vasya.sayName
+
+  // тут - this будет petya
+  petya.sayName() // Я - Петя
+
+  // тут - this будет vasya
+  vasya.sayName() // Я - Вася
+
+  // а тут - вызывается метод глобального объекта window, у которого нет имени
+  sayName() // Я - безымянный
+}
+
+thisObj()
+```
+-->
