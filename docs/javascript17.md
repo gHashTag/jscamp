@@ -26,12 +26,15 @@ return greeting()  // prints 'Hello World'
 ```
 
 В JavaScript мы можем назначать функции переменным. Например:
-```javascript
-const square = function(x) {
-  return x * x;
+```jsx live
+function learnJavaScript() {
+
+  const square = function(x) {
+    return x * x;
+  }
+
+return square(7); 
 }
-// prints 25
-square(5);
 ```
 
 Мы также можем передавать функции (переприсваивать в качестве параметров другим переменным). Например:
@@ -43,22 +46,22 @@ foo(6);
 
 ### Передача функций в качестве параметров
 Мы можем передать функции в качестве параметров другим функциям. Например:
-```javascript
-function formalGreeting() {
-  console.log("How are you?");
-}
-function casualGreeting() {
-  console.log("What's up?");
-}
+```jsx live
+function learnJavaScript() {
+
+function formalGreeting() { return "Добрый день!" }
+function casualGreeting() { return  "Как дела?"   }
+
 function greet(type, greetFormal, greetCasual) {
   if(type === 'formal') {
-    greetFormal();
+    return greetFormal();
   } else if(type === 'casual') {
-    greetCasual();
+    return greetCasual();
   }
 }
-// prints 'What's up?'
-greet('casual', formalGreeting, casualGreeting);
+
+return greet('casual', formalGreeting, casualGreeting)
+}
 ```
 Теперь мы знаем, что такое `функции первого класса`. Можно приступать к `Функциям высшего порядка`.
 
@@ -120,16 +123,20 @@ return arr2  // 2, 4, 6, 8 только без пробелов
 ### Пример №2
 Допустим, у нас есть массив, который содержит годы рождения разных людей. Нам нужно создать массив, в котором будет храниться их возраст. Например:
 Без функции высшего порядка
-```javascript
+```jsx live
+function learnJavaScript() {
+
 const birthYear = [1975, 1997, 2002, 1995, 1985];
 const ages = [];
 for(let i = 0; i < birthYear.length; i++) {
-  let age = 2020 - birthYear[i];
+  let age = 2020 - birthYear[i] + " ";
   ages.push(age);
 }
-// prints [ 45, 23, 18, 25, 35 ]
-console.log(ages);
+
+return ages  //  [ 45, 23, 18, 25, 35 ] только без пробелов
+}
 ```
+
 С функцией высшего порядка `map`
 ```javascript
 const birthYear = [1975, 1997, 2002, 1995, 1985];
@@ -147,35 +154,44 @@ console.log(ages);
 У нас есть массив, который содержит объекты со свойствами: имя и возраст. Нам нужно создать массив, который будет содержать только совершеннолетних (т.е. возраст больший или равный 18).
 
 Без функции высшего порядка:
-```javascript
-const persons = [
-  { name: 'Peter', age: 16 },
-  { name: 'Mark', age: 18 },
-  { name: 'John', age: 27 },
-  { name: 'Jane', age: 14 },
-  { name: 'Tony', age: 24},
-];
-const fullAge = [];
-for(let i = 0; i < persons.length; i++) {
-  if(persons[i].age >= 18) {
-    fullAge.push(persons[i]);
+```jsx live
+function learnJavaScript() {
+
+  const persons = [
+    { name: 'Peter', age: 16 },
+    { name: 'Mark', age: 18 },
+    { name: 'John', age: 27 },
+    { name: 'Jane', age: 14 },
+    { name: 'Tony', age: 24},
+  ];
+
+  const fullAge = [];
+  for(let i = 0; i < persons.length; i++) {
+    if(persons[i].age >= 18) {
+      fullAge.push(persons[i]);
+    }
   }
+
+return fullAge.length // кол-во лиц старше 18 лет
 }
-console.log(fullAge);
 ```
 
 С функцией высшего порядка `filter` со встроенным условием:
 
-```javascript
-const persons = [
-  { name: 'Peter', age: 16 },
-  { name: 'Mark', age: 18 },
-  { name: 'John', age: 27 },
-  { name: 'Jane', age: 14 },
-  { name: 'Tony', age: 24},
-];
+```jsx live
+function learnJavaScript() {
+
+  const persons = [
+    { name: 'Peter', age: 34 },
+    { name: 'Mark', age: 18 },
+    { name: 'John', age: 27 },
+    { name: 'Jane', age: 14 },
+    { name: 'Tony', age: 24},
+  ];
 const fullAge = persons.filter(person => person.age >= 18);
-console.log(fullAge);
+
+return fullAge.length // кол-во лиц старше 18 лет
+}
 ```
 
 ## Создание собственной функции высшего порядка
@@ -183,7 +199,9 @@ console.log(fullAge);
 Представьте, что в JavaScript нет встроенного метода map. Мы можем самостоятельно написать его, создав функцию высшего порядка.
 
 Допустим, у нас есть строчный массив, и мы хотим конвертировать его в массив integer, в котором каждый элемент представляет длину строки из оригинального массива.
-```javascript
+```jsx live
+function learnJavaScript() {
+
 const strArray = ['English', 'JavaScript', 'React', 'TypeScript', 'AWS'];
 function mapForEach(arr, fn) {
 const newArray = [];
@@ -195,12 +213,13 @@ const newArray = [];
 return newArray;
 }
 const lenArray = mapForEach(strArray, function(item) {
-  return item.length;
+  return item.length + ' ';
 });
-// prints [ 7, 10, 5, 10, 3 ]
-console.log(lenArray);
+
+return lenArray // [ 7, 10, 5, 10, 3 ]
+}
 ```
-В примере выше, мы создали функцию высшего порядка `mapForEach` , которая принимает массив и callback-функцию fn. Эта функция `циклично перебирает` данный массив и вызывает `callback-функцию fn` внутри функции `newArray.push` для каждой итерации.
+В примере выше, мы создали функцию высшего порядка `mapForEach` , которая принимает массив и callback-функцию fn. Эта функция `циклично перебирает` данный массив и вызывает `callback-функцию fn` внутри функции `newArray.push` для каждой итерации, расчитывая количество символов в словах массива.
 
 :::note callback
 Функция обратного вызова (callback) — это функция, переданная в другую функцию в качестве аргумента, которая затем вызывается по завершению какого-либо действия.
@@ -210,14 +229,15 @@ console.log(lenArray);
 
 Еще простой пример:
 ```javascript
-function say(name) {
-  console.log('Hello ' + name);
+function say(name) {  // в качестве параметра переменная
+  console.log('Hello ' + name + ' !');
 }
-function userInput(fn) {
+function userInput(fn) { // в качестве параметра функция, пока еще не известно какая
   var name = prompt('Please enter your name.');
+  // Вызовем неизвесно заранее функцию с переменной `name`
   fn(name);
 }
-userInput(say); // say - функция callback (обратного вызова)
+userInput(say); // say - функция callback (обратного вызова), становиться ясно какая функция передается в качестве параметра
 ```
 Обратите внимание на синтаксис: 
 при передаче функции в качестве параметра скобки `()` не указываются, т.к. в параметре функция не вызывается, а передается целиком. Функция `say` является аргументом функции `userInput`.
@@ -247,16 +267,9 @@ userInput(say); // say - функция callback (обратного вызов�
 ## Ссылки:
 
 1. [Изучаем функции высшего порядка в JavaScript](https://medium.com/nuances-of-programming/%D0%B8%D0%B7%D1%83%D1%87%D0%B0%D0%B5%D0%BC-%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B8-%D0%B2%D1%8B%D1%81%D1%88%D0%B5%D0%B3%D0%BE-%D0%BF%D0%BE%D1%80%D1%8F%D0%B4%D0%BA%D0%B0-%D0%B2-javascript-c23daf53a5c0)
-
 2. [Статья "Функции высшего порядка в JavaScript"](https://habr.com/ru/post/261723/)
-3. [Статья "Функции высшего порядка"](https://eloquent-javascript.karmazzin.ru/chapter5)
-
-4. [Анонимные и самовыполняющиеся функции в JavaScript](https://webformyself.com/anonimnye-i-samovypolnyayushhiesya-funkcii-v-javascript/)
-5. [Developer.mozilla.org - Статья "Math"](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Math)
-6. [Developer.mozilla.org - Статья "Стрелочные функции"](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
-7. [Basicweb.ru - Статья "JavaScript функции"](https://basicweb.ru/javascript/js_function.php)
-8. [Javascript.ru - Статья "Функции"](https://javascript.ru/basic/functions)
-9. [Код для подростков: прекрасное руководство по программированию для начинающих, том 1: Javascript - Jeremy Moritz ](https://www.amazon.com/Code-Teens-Beginners-Programming-Javascript-ebook/dp/B07FCTLVPC)
+3. [Выразительный Javascript. Статья "Функции высшего порядка"](https://eloquent-javascript.karmazzin.ru/chapter5)
+4. [Код для подростков: прекрасное руководство по программированию для начинающих, том 1: Javascript - Jeremy Moritz ](https://www.amazon.com/Code-Teens-Beginners-Programming-Javascript-ebook/dp/B07FCTLVPC)
 
 ## Contributors ✨
 
@@ -319,4 +332,3 @@ for(let i = 0; i < arr.length; i++) {
 console.log(sum);
 Обратите внимание, как использование функции высшего порядка сделало наш код чище, лаконичнее и менее многословным.
 -->
-
