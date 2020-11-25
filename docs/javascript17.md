@@ -3,176 +3,195 @@ id: javascript17
 title: Функции высшего порядка
 sidebar_label: Функции высшего порядка
 ---
+
 Функции высшего порядка позволяют JavaScript быть пригодным для функционального программирования.
 Такие функции широко используются в JavaScript. Если вы хоть немного программировали на JavaScript, то наверняка использовали их, возможно, даже не догадываясь об этом.
 
 Чтобы в полной мере понять эту концепцию, вам следует сначала разобраться с функциональным программированием и концепцией функций первого класса.
 
 ### Что такое функциональное программирование
+
 Если говорить простыми словами, то функциональное программирование — это способ программировать, при котором вы можете передавать функции в качестве параметров другим функциям, а также возвращать их как значения. В функциональном программировании мы думаем и пишем код с точки зрения функций.
 
-
 ## Функции первого класса
+
 Если вы уже изучаете JavaScript, то могли слышать, что JavaScript расценивает функции как объекты первого класса. В JavaScript функции являются объектами, как и в других языках функционального программирования.
 В JavaScript функции являются особым типом объектов. Это Function объекты. Например:
+
 ```jsx live
 function learnJavaScript() {
-
-function greeting() {
-  return 'Hello World !'
-}
-return greeting()  // prints 'Hello World'
+  function greeting() {
+    return 'Hello World !'
+  }
+  return greeting() // prints 'Hello World'
 }
 ```
 
 В JavaScript мы можем назначать функции переменным. Например:
+
 ```jsx live
 function learnJavaScript() {
-
-  const square = function(x) {
-    return x * x;
+  const square = function (x) {
+    return x * x
   }
 
-return square(7); 
+  return square(7)
 }
 ```
 
 Мы также можем передавать функции (переприсваивать в качестве параметров другим переменным). Например:
+
 ```javascript
-const foo = square;
+const foo = square
 // prints 36
-foo(6);
+foo(6)
 ```
 
 ### Передача функций в качестве параметров
+
 Мы можем передать функции в качестве параметров другим функциям. Например:
+
 ```jsx live
 function learnJavaScript() {
-
-function formalGreeting() { return "Добрый день!" }
-function casualGreeting() { return  "Как дела?"   }
-
-function greet(type, greetFormal, greetCasual) {
-  if(type === 'formal') {
-    return greetFormal();
-  } else if(type === 'casual') {
-    return greetCasual();
+  function formalGreeting() {
+    return 'Добрый день!'
   }
-}
+  function casualGreeting() {
+    return 'Как дела?'
+  }
 
-return greet('casual', formalGreeting, casualGreeting)
+  function greet(type, greetFormal, greetCasual) {
+    if (type === 'formal') {
+      return greetFormal()
+    } else if (type === 'casual') {
+      return greetCasual()
+    }
+  }
+
+  return greet('casual', formalGreeting, casualGreeting)
 }
 ```
+
 Теперь мы знаем, что такое `функции первого класса`. Можно приступать к `Функциям высшего порядка`.
 
 ## Функции высшего порядка
-Такие функции оперируют `другими функциями`, принимая их в качестве аргументов или возвращая их. 
+
+Такие функции оперируют `другими функциями`, принимая их в качестве аргументов или возвращая их.
 
 :::note Проще говоря
 Функции высшего порядка ― это такие функции, которые принимают функцию в качестве аргумента или возвращают функцию в качестве вывода.
 :::
 
-Например, эти функции высшего порядка встроены в язык: Array.prototype.map, Array.prototype.filter и Array.prototype.reduce.
+Например, эти функции высшего порядка встроены в язык: `Array.prototype.map`, `Array.prototype.filter` и `Array.prototype.reduce`.
 
 ### Функции высшего порядка в действии
+
 Давайте посмотрим на несколько примеров таких функций, и сравним код с функциями высшего порядка и без них.
 `Array.prototype.map`
 
 Метод `map()` создаёт новый массив, вызывая `callback-функцию`, указанную в качестве аргумента, для каждого элемента входного массива. Метод map() берёт каждое возвращённое значение от callback-функции и `создаёт новый массив`, используя эти значения.
 
-`Callback-функция`, отправленная в метод `map()`, принимает 3 аргумента: element, index, и array.
+`Callback-функция`, отправленная в метод `map()`, принимает 3 аргумента: `element`, `index`, и `array`.
 Давайте посмотрим на примеры.
 
 ### Пример №1
+
 Допустим, у нас есть массив из чисел. Мы хотим создать новый массив, который будет содержать удвоенные значения первого. Давайте посмотрим, как мы можем решить эту задачу с помощью функции высшего порядка и без неё.
-Без функции высшего порядка
+
+#### Без функции высшего порядка:
+
 ```jsx live
 function learnJavaScript() {
+  const arr1 = [1, 2, 3, 4]
+  const arr2 = []
 
-    const arr1 = [1, 2, 3, 4];
-    const arr2 = [];
+  for (let i = 0; i < arr1.length; i++) {
+    arr2.push(arr1[i] * 2)
+  }
 
-    for(let i = 0; i < arr1.length; i++) {
-        arr2.push(arr1[i] * 2);
-    }
-        
-return arr2  // 2, 4, 6, 8 только без пробелов
+  return arr2 // 2, 4, 6, 8 только без пробелов
 }
 ```
 
-С функцией высшего порядка `map`
+#### С функцией высшего порядка `map`
+
 ```javascript
-const arr1 = [1, 2, 3, 4];
-const arr2 = arr1.map(function(item) {
-  return item * 2;
-});
-console.log(arr2);
+const arr1 = [1, 2, 3, 4]
+const arr2 = arr1.map(function (item) {
+  return item * 2
+})
+console.log(arr2)
 ```
+
 Мы можем записать ещё короче, используя синтаксис `стрелочных функций`:
 
 ```jsx live
 function learnJavaScript() {
+  const arr1 = [1, 2, 3, 4]
+  const arr2 = arr1.map((item) => item * 2)
 
-    const arr1 = [1, 2, 3, 4];
-    const arr2 = arr1.map(item => item * 2);
-    
-return arr2  // 2, 4, 6, 8 только без пробелов
+  return arr2 // 2, 4, 6, 8 только без пробелов
 }
 ```
 
 ### Пример №2
-Допустим, у нас есть массив, который содержит годы рождения разных людей. Нам нужно создать массив, в котором будет храниться их возраст. Например:
-Без функции высшего порядка
+
+Допустим, у нас есть массив, который содержит годы рождения разных людей. Нам нужно создать массив, в котором будет храниться их возраст.
+
+### Без функции высшего порядка:
+
 ```jsx live
 function learnJavaScript() {
+  const birthYear = [1975, 1997, 2002, 1995, 1985]
+  const ages = []
+  for (let i = 0; i < birthYear.length; i++) {
+    let age = 2020 - birthYear[i] + ' '
+    ages.push(age)
+  }
 
-const birthYear = [1975, 1997, 2002, 1995, 1985];
-const ages = [];
-for(let i = 0; i < birthYear.length; i++) {
-  let age = 2020 - birthYear[i] + " ";
-  ages.push(age);
-}
-
-return ages  //  [ 45, 23, 18, 25, 35 ] только без пробелов
+  return ages //  [ 45, 23, 18, 25, 35 ] только без пробелов
 }
 ```
 
 С функцией высшего порядка `map`
+
 ```javascript
-const birthYear = [1975, 1997, 2002, 1995, 1985];
-const ages = birthYear.map(year => 2020 - year);
+const birthYear = [1975, 1997, 2002, 1995, 1985]
+const ages = birthYear.map((year) => 2020 - year)
 
 // prints [ 45, 23, 18, 25, 35 ]
-console.log(ages);
+console.log(ages)
 ```
+
 `Перепрошиваем` новый массив в одну строчку.
 
 ### Пример №3
-Метод `Array.prototype.filter` создаёт новый массив из элементов, которые `прошли тест предусмотренный callback-функцией`. Эта функция, отправленная методу `filter()`, принимает 3 аргумента element, index, и array.
+
+Метод `Array.prototype.filter` создаёт новый массив из элементов, которые `прошли тест предусмотренный callback-функцией`. Эта функция, отправленная методу `filter()`, принимает 3 аргумента `element`, `index`, и `array`.
 
 Давайте посмотрим пример.
 У нас есть массив, который содержит объекты со свойствами: имя и возраст. Нам нужно создать массив, который будет содержать только совершеннолетних (т.е. возраст больший или равный 18).
 
 Без функции высшего порядка:
+
 ```jsx live
 function learnJavaScript() {
-
   const persons = [
     { name: 'Peter', age: 16 },
     { name: 'Mark', age: 18 },
     { name: 'John', age: 27 },
     { name: 'Jane', age: 14 },
-    { name: 'Tony', age: 24},
-  ];
+    { name: 'Tony', age: 24 }
+  ]
 
-  const fullAge = [];
-  for(let i = 0; i < persons.length; i++) {
-    if(persons[i].age >= 18) {
-      fullAge.push(persons[i]);
+  const fullAge = []
+  for (let i = 0; i < persons.length; i++) {
+    if (persons[i].age >= 18) {
+      fullAge.push(persons[i])
     }
   }
 
-return fullAge.length // кол-во лиц старше 18 лет
+  return fullAge.length // кол-во лиц старше 18 лет
 }
 ```
 
@@ -180,88 +199,95 @@ return fullAge.length // кол-во лиц старше 18 лет
 
 ```jsx live
 function learnJavaScript() {
-
   const persons = [
     { name: 'Peter', age: 34 },
     { name: 'Mark', age: 18 },
     { name: 'John', age: 27 },
     { name: 'Jane', age: 14 },
-    { name: 'Tony', age: 24},
-  ];
-const fullAge = persons.filter(person => person.age >= 18);
+    { name: 'Tony', age: 24 }
+  ]
+  const fullAge = persons.filter((person) => person.age >= 18)
 
-return fullAge.length // кол-во лиц старше 18 лет
+  return fullAge.length // кол-во лиц старше 18 лет
 }
 ```
 
 ## Создание собственной функции высшего порядка
+
 До этого мы рассматривали функции `высшего порядка`, встроенные в язык. Теперь давайте `сами создадим` такую функцию.
 Представьте, что в JavaScript нет встроенного метода map. Мы можем самостоятельно написать его, создав функцию высшего порядка.
 
 Допустим, у нас есть строчный массив, и мы хотим конвертировать его в массив integer, в котором каждый элемент представляет длину строки из оригинального массива.
+
 ```jsx live
 function learnJavaScript() {
-
-const strArray = ['English', 'JavaScript', 'React', 'TypeScript', 'AWS'];
-function mapForEach(arr, fn) {
-const newArray = [];
-  for(let i = 0; i < arr.length; i++) {
-    newArray.push(
-      fn(arr[i])
-    );
+  const strArray = ['English', 'JavaScript', 'React', 'TypeScript', 'AWS']
+  function mapForEach(arr, fn) {
+    const newArray = []
+    for (let i = 0; i < arr.length; i++) {
+      newArray.push(fn(arr[i]))
+    }
+    return newArray
   }
-return newArray;
-}
-const lenArray = mapForEach(strArray, function(item) {
-  return item.length + ' ';
-});
+  const lenArray = mapForEach(strArray, function (item) {
+    return item.length + ' '
+  })
 
-return lenArray // [ 7, 10, 5, 10, 3 ]
+  return lenArray // [ 7, 10, 5, 10, 3 ]
 }
 ```
+
 В примере выше, мы создали функцию высшего порядка `mapForEach` , которая принимает массив и callback-функцию fn. Эта функция `циклично перебирает` данный массив и вызывает `callback-функцию fn` внутри функции `newArray.push` для каждой итерации, расчитывая количество символов в словах массива.
 
 :::note callback
 Функция обратного вызова (callback) — это функция, переданная в другую функцию в качестве аргумента, которая затем вызывается по завершению какого-либо действия.
 :::
 
-`Callback-функция fn` принимает текущий элемент массива и возвращает `длину текущего элемента`, который хранится в `newArray`. После завершения цикла For, newArray возвращает значение в lenArray.
+`Callback-функция fn` принимает текущий элемент массива и возвращает длину текущего элемента - `length`, который хранится в `newArray`. После завершения цикла `for`, `newArray` возвращает значение в `lenArray`.
 
 Еще простой пример:
+
 ```javascript
-function say(name) {  // в качестве параметра переменная
-  console.log('Hello ' + name + ' !');
+function say(name) {
+  // в качестве параметра переменная
+  console.log('Hello ' + name + ' !')
 }
-function userInput(fn) { // в качестве параметра функция, пока еще не известно какая
-  var name = prompt('Please enter your name.');
+function userInput(fn) {
+  // в качестве параметра функция, пока еще не известно какая
+  var name = prompt('Please enter your name.')
   // Вызовем неизвесно заранее функцию с переменной `name`
-  fn(name);
+  fn(name)
 }
-userInput(say); // say - функция callback (обратного вызова), становиться ясно какая функция передается в качестве параметра
+userInput(say) // say - функция callback (обратного вызова), становиться ясно какая функция передается в качестве параметра
 ```
-Обратите внимание на синтаксис: 
+
+Обратите внимание на синтаксис:
 при передаче функции в качестве параметра скобки `()` не указываются, т.к. в параметре функция не вызывается, а передается целиком. Функция `say` является аргументом функции `userInput`.
 
 ## Заключение
+
 Мы узнали, что такое `функции высшего порядка` и разобрали несколько из них, уже встроенных в язык. А также научились создавать их самостоятельно.
 
-Не углубляясь в детали, о функциях высшего порядка можно сказать так: это функции, которые могут принимать функцию в качестве аргумента и даже, возвращать функцию. 
+Не углубляясь в детали, о функциях высшего порядка можно сказать так: это функции, которые могут принимать функцию в качестве аргумента и даже, возвращать функцию.
 
 ## Вопросы:
 
 Функции первого класса
+
 - объекты первого класса
 - объекты пятого класса
 - объекты высшего класса
 
 Функция высшего порядка
+
 - принимает функцию в качестве аргумента или возвращает функцию в качестве вывода
 - только принимает функцию в качестве аргумента
 - только возвращает функцию в качестве вывода
 
 Функцию высшего порядка
+
 - нереально создать самому
-- можно использовать только через встроенный метод 
+- можно использовать только через встроенный метод
 - можно самостоятельно создать самому
 
 ## Ссылки:
@@ -292,13 +318,12 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 [![Become a Patron!](/img/logo/patreon.png)](https://www.patreon.com/bePatron?u=31769291)
 
-
-<!-- 
+<!--
 ## Array.prototype.reduce
-Метод `reduce` выполняет `callback-функцию` для `каждого элемента` вызываемого массива, что в результате приводит к одному выходному значению. 
+Метод `reduce` выполняет `callback-функцию` для `каждого элемента` вызываемого массива, что в результате приводит к одному выходному значению.
 
-Метод reduce принимает два параметра: 
-1) reducer-функцию (callback) 
+Метод reduce принимает два параметра:
+1) reducer-функцию (callback)
 2) и опционально initialValue.
 
 Reducer-функция (callback) принимает 4 параметра: accumulator, currentValue, currentIndex, sourceArray.
