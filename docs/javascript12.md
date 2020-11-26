@@ -26,15 +26,15 @@ let obj = {
 
 ```jsx live
 function learnJavaScript() {
-
   let obj = {
     // свойства : значения
     age: 15,
     name: 'John',
     // метод : функция
-    say: function () { return 'Hello!' }
+    say: function () {
+      return 'Hello!'
+    }
   }
-
   return obj.say()
 }
 ```
@@ -145,22 +145,22 @@ function learnJavaScript() {
 ### Расширенное создание
 
 Свойства можно указывать непосредственно при создании объекта, через список в фигурных скобках вида {..., `ключ : значение,` ...} и создавать сложные объекты:
+
 ```jsx live
 function learnJavaScript() {
-
   const obj = {
-   age: 15,
-   name: 'John',
-   color: 'black',
-   passport: {
-       serial: 5721,
-       numder: 258963,
-       date: '27.10.2015'
-       },
-   student: 'true'
- }
+    age: 15,
+    name: 'John',
+    color: 'black',
+    passport: {
+      serial: 5721,
+      numder: 258963,
+      date: '27.10.2015'
+    },
+    student: 'true'
+  }
 
- return obj.passport.date
+  return obj.passport.date
 }
 ```
 
@@ -180,18 +180,18 @@ delete obj.age
 
 Как и в других языках, у объектов JavaScript есть `методы`.
 
-Например, создадим объект sport сразу с `методом .run`:
+Например, создадим объект sport сразу с `методом run`:
+
 ```jsx live
 function learnJavaScript() {
+  let sport = {
+    name: 'John',
+    run: function (n) {
+      return this.name + ' пробежал ' + n + ' метров!'
+    }
+  }
 
- let sport = {
-   name: 'John',
-   run: function (n) {
-     return this.name + ' пробежал ' + n + ' метров!'
-   }
- }
-
- return sport.run(300)
+  return sport.run(300)
 }
 ```
 
@@ -201,20 +201,17 @@ function learnJavaScript() {
 
 ```jsx live
 function learnJavaScript() {
+  let sport = {
+    name: 'Nikita'
+  }
 
-let sport = {
-  name: 'Nikita'
-}
+  sport.run = function (n) {
+    return 'Спортсмен пробежал ' + n + ' метров и это был ' + this.name
+  }
 
-sport.run = function (n) {
-  return 'Спортсмен пробежал ' + n + ' метров и это был ' + this.name
-}
-
-
-return sport.run(350)
+  return sport.run(350)
 }
 ```
-<!-- // sport.run = (n) => 'Спортсмен пробежал ' + n + ' метров и это был ' + this.name -->
 
 :::note Обратите внимание
 Очень часто методы используют в своих расчетах свойства своего же объекта.
@@ -224,24 +221,21 @@ return sport.run(350)
 
 ```jsx live
 function learnJavaScript() {
+  let sport = {
+    name: 'Nikita',
+    age: 18
+  }
 
-let sport = {
-  name: 'Nikita',
-  age : 18
-}
+  sport.run = function (n, str) {
+    if (str == 'men') return 'Спортсмен пробежал ' + n + ' метров и это был ' + this.name
+    if (str == 'women') return 'Спортсменка пробежала ' + n + ' метров и это была ' + this.name
+    if (str != 'men' || str != 'women') return 'Человек пробежал ' + n + ' метров.'
+  }
 
-sport.run = function (n, str) {
-  if (str == 'men') 
-      return 'Спортсмен пробежал ' + n + ' метров и это был ' + this.name
-  if (str == 'women') 
-      return 'Спортсменка пробежала ' + n + ' метров и это была ' + this.name
-  if (str != 'men' || str != 'women') 
-      return 'Человек пробежал ' + n + ' метров.'   
-}
-
-return sport.run(350, 'women')
+  return sport.run(350, 'women')
 }
 ```
+
 Подумайте, чем можно заменить множественный `if()`. JavaScript - очень динамический язык.
 
 ## Перебор свойств объекта
@@ -260,13 +254,14 @@ for(let key in obj) {
 
 ```jsx live
 function learnJavaScript() {
-
   let result = ''
-   const obj = {
-     age   : 15,
-     b     : 'true',
-     color : 'red'
-    }
+
+  const obj = {
+    age: 15,
+    b: 'true',
+    color: 'red'
+  }
+
   for (let key in obj) {
     result += key + ':' + obj[key] + '; '
   }

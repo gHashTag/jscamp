@@ -16,12 +16,14 @@ module.exports = {
       'javascript11',
       'javascript12',
       'javascript12_2',
+      'javascript13',
       'javascript14',
       'javascript17',
       'javascript18',
       'javascript21',
       'javascript25',
-      'javascript29'
+      'javascript29',
+      'javascript30'
 
     ],
     ['React Native']: [
