@@ -182,10 +182,13 @@ for (variable in object) { ...
 
 ### Проход только через собственные свойства
 
+<<<<<<< Updated upstream
 Если вы хотите рассматривать только свойства самого объекта, а не его прототипов, используйте `getOwnPropertyNames()`, `hasOwnProperty()` или `propertyIsEnumerable`. Кроме того, если вы знаете, что не будет вмешательства в код извне, вы можете расширить встроенные прототипы методом проверки. -->
 
 <!-- ### Примеры
 
+=======
+>>>>>>> Stashed changes
 Следующее выражение берёт аргументом объект. Затем проходит по всем перечислимым свойствам объекта и возвращает строку содержащую имена свойств и их значения.
 
 Нажмите в браузере Google Chrome сочетание клавиш `Ctrl + Shift + I` и на вкладке `Console` наберите:
@@ -411,13 +414,12 @@ while (n <= maxNumer) {
 
 ## Ссылки:
 
-1. [MDN web doc. Developer.mozilla.org - Статья "While"](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/while)
-2. [MDN web doc. Developer.mozilla.org - Статья "For"](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/for)
-3. [Статья "Циклы while и for", сайт Learn.javascript.ru](https://learn.javascript.ru/while-for)
-4. [Статья "Циклы JavaScript"](https://html5book.ru/cikly-javascript/)
-5. [Работа с циклами for и while в JavaScript](http://old.code.mu/books/javascript/base/rabota-s-ciklami-for-i-while-v-javascript.html)
-6. [Статья "Задачи на циклы while, for в JavaScript"](http://old.code.mu/tasks/javascript/base/rabota-s-ciklami-for-i-while-v-javascript.html)
-7. [Код для подростков: прекрасное руководство по программированию для начинающих, том 1: Javascript - Jeremy Moritz ](https://www.amazon.com/Code-Teens-Beginners-Programming-Javascript-ebook/dp/B07FCTLVPC)
+1. [MDN web doc. Статья "Цикл do...while"](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/do...while)
+2. [MDN web doc. Статья "Цикл for"](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/for)
+3. [MDN web doc. Статья "Цикл while"](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/while)
+4. [Статья "Iteration", сайт Javascript Express](https://www.javascript.express/syntax/iteration)
+5. [Статья "Циклы while и for"](https://learn.javascript.ru/while-for)
+6. [Код для подростков: прекрасное руководство по программированию для начинающих, том 1: Javascript - Jeremy Moritz ](https://www.amazon.com/Code-Teens-Beginners-Programming-Javascript-ebook/dp/B07FCTLVPC)
 
 ## Contributors ✨
 
