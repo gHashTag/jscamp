@@ -20,7 +20,7 @@ function User(pName, pAge) {
     this.name = pName 
     this.age = pAge 
 }
-var tom = new User("Том", 26) 
+var tom = new User("Том", 26) //Эти данные можно менять
 str = tom.name +" "+ tom.age
 
 return(str)
