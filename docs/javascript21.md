@@ -85,7 +85,9 @@ class User {
 
 Аргументы, используемые для создания экземпляра класса, становятся параметрами конструктора:
 
-```jsx
+```jsx live
+function learnJavaScript() {
+
 class User {
   constructor(name) {
     name // => 'Jon Snow'
@@ -93,7 +95,9 @@ class User {
   }
 }
 
-const user = new User('Jon Snow')
+const user = new User('Jon Snow') //Здесь можно менять значение
+return(user.name)
+}
 ```
 
 Параметр `name` внутри конструктора имеет значение ‘Jon Snow’.
@@ -179,7 +183,9 @@ ContentWriter наследует от User конструктор, метод ge
 
 Пусть конструктор ContentWriter вызывает родительский конструктор и инициализирует поле posts:
 
-```jsx
+```jsx live
+function learnJavaScript() {
+
 class User {
   name
 
@@ -204,6 +210,9 @@ class ContentWriter extends User {
 const writer = new ContentWriter('Лермонтов', ['Герой нашего времени'])
 writer.name // Лермонтов
 writer.posts // ['Герой нашего времени']
+
+return(writer.name) //name можно заменить на posts и посмотреть результат
+}
 ```
 
 super(name) в дочернем классе ContentWriter вызывает конструктор родительского класса User.

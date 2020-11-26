@@ -12,46 +12,48 @@ sidebar_label: Инкапсуляция
 ## Пример
 
 Например как в данном коде: 
-```jsx
+```jsx live
+function learnJavaScript() {
+let str
+
 function User(pName, pAge) {
-    this.name = pName;
-    this.age = pAge;
-    this.displayInfo = function(){
-        document.write("Имя: " + this.name + "; возраст: " + this.age);
-    };
-};
-var tom = new User("Том", 26);
-tom.name=34;
-console.log(tom.name);
+    this.name = pName 
+    this.age = pAge 
+}
+var tom = new User("Том", 26) //Эти данные можно менять
+str = tom.name +" "+ tom.age
+
+return(str)
+}
 ```
 
 Но мы можем их скрыть от доступа извне, сделав свойства локальными переменными:
 ```jsx
 function User (name) {
-    this.name = name;
-    var _age = 1;
+    this.name = name 
+    var _age = 1 
     this.displayInfo = function(){
-        console.log("Имя: " + this.name + "; возраст: " + _age);
-    };
+        console.log("Имя: " + this.name + ";  возраст: " + _age) 
+    } 
     this.getAge = function() {
-        return _age;
+        return _age 
     }
     this.setAge = function(age) {
         if(typeof age === "number" && age >0 && age<110){
-            _age = age;
+            _age = age 
         } else {
-            console.log("Недопустимое значение");
+            console.log("Недопустимое значение") 
         }
     }
 }
  
-var tom = new User("Том");
-console.log(tom._age); // undefined - _age - локальная переменная
-console.log(tom.getAge()); // 1
-tom.setAge(32);
-console.log(tom.getAge()); // 32
-tom.setAge("54"); // Недопустимое значение
-tom.setAge(123); // Недопустимое значение
+var tom = new User("Том") 
+console.log(tom._age)  // undefined - _age - локальная переменная
+console.log(tom.getAge())  // 1
+tom.setAge(32) 
+console.log(tom.getAge())  // 32
+tom.setAge("54")  // Недопустимое значение
+tom.setAge(123)  // Недопустимое значение
 ```
 Пояснение:
 В конструкторе ``User`` объявляется локальная переменная ``_age`` вместо свойства ``age``. Как правило, названия локальных переменных в конструкторах начинаются со знака подчеркивания.
