@@ -27,15 +27,15 @@ let obj = {
 ```jsx live
 function learnJavaScript() {
 
-let obj = {
-  // свойства : значения
-  age: 15,
-  name: 'John',
-  // метод : функция
-  say: function () { return 'Hello!' }
-}
+  let obj = {
+    // свойства : значения
+    age: 15,
+    name: 'John',
+    // метод : функция
+    say: function () { return 'Hello!' }
+  }
 
-return obj.say()
+  return obj.say()
 }
 ```
 
@@ -78,18 +78,18 @@ obj[nameProp] = 15
 
 ## Доступ к свойствам
 
-Доступ к свойству осуществляется точно так же:
+Доступ к свойству осуществляется при обращении к нему:
 
 ```jsx live
 function learnJavaScript() {
 
   let obj = {} // объект пустой
-  obj.age = 17 // эквивалент obj = {age:17} или obj['age'] = 17
+  obj.age = 17 // эквивалент obj['age']=17 или сразу obj={age:17}
   
-  let result1 = obj.age
-  let result2 = obj['age']
+  let result1 = obj.age     // Вариант 1
+  let result2 = obj['age']  // Вариант 2
 
-return result1 + ' или ' + result2
+  return result1 + ' или ' + result2
 }
 ```
 
@@ -104,28 +104,29 @@ function learnJavaScript() {
   else 
       result = obj.nokey
 
-return result
+  return result
 }
 ```
 
-Никакой ошибки при обращении по несуществующему свойству не будет, просто вернется специальное значение `undefined`, как и приотсутствии внутри функции ключевого слова `return`, она так же вернет значение `undefined` - отсутствие чего-либо.
+Никакой ошибки при обращении по несуществующему свойству не будет, просто вернется специальное значение `undefined`. Приотсутствии внутри функции ключевого слова `return`, так же вернется значение `undefined` - отсутствие чего-либо.
 
 ## Проверка глобальной переменной
 
-В JavaScript нельзя проверить существование глобальной переменной простым if:
+В JavaScript нельзя проверить существование глобальной переменной простым `if(проверяемаяПеременная)`:
 
 ```javascript
     if (x) { ... }
 ```
 
-Если x не определен, то конструкция if(x) вызовет ошибку.
+Если `x не определен`, то конструкция if(x) вызовет `ошибку`.
 
-Распространенное решение - использовать `typeof`:
+Распространенное решение - использовать `typeof()`:
 
 ```javascript
     if (typeof(x) != 'undefined') { ... }  // или typeof(x)
 ```
 
+<!--
 Однако зная, что глобальная переменная в Javascript - всего лишь свойство объекта `window` - мы можем записать проще:
 
 ```javascript
@@ -133,8 +134,13 @@ return result
     // или
     if (window.x !== undefined) // аналог typeof x ..
 ```
+-->
 
-Все свойства объектов - public (общественные), т.е при определении свойства никак нельзя ограничить доступ к свойству. В JavaScript есть специальные способы для создания `private` свойств, связанные `с замыканиями`. Они рассмотрены вместе с наследованием объектов.
+:::note Cвойства объектов
+Все свойства объектов - public (общественные), т.е при определении свойства никак нельзя ограничить доступ к свойству. 
+:::
+
+В JavaScript есть специальные способы для создания `private` свойств, связанные `с замыканиями`. Они рассмотрены вместе с наследованием объектов.
 
 ### Расширенное создание
 
@@ -142,19 +148,19 @@ return result
 ```jsx live
 function learnJavaScript() {
 
-const obj = {
-  age: 15,
-  name: 'John',
-  color: 'black',
-  passport: {
-      serial: 5721,
-      numder: 258963,
-      date: '27.10.2015'
-      },
-  student: 'true'
-}
+  const obj = {
+   age: 15,
+   name: 'John',
+   color: 'black',
+   passport: {
+       serial: 5721,
+       numder: 258963,
+       date: '27.10.2015'
+       },
+   student: 'true'
+ }
 
-return obj.passport.date
+ return obj.passport.date
 }
 ```
 
@@ -178,14 +184,14 @@ delete obj.age
 ```jsx live
 function learnJavaScript() {
 
-let sport = {
-  name: 'John',
-  run: function (n) {
-    return this.name + ' пробежал ' + n + ' метров!'
-  }
-}
+ let sport = {
+   name: 'John',
+   run: function (n) {
+     return this.name + ' пробежал ' + n + ' метров!'
+   }
+ }
 
-return sport.run(300)
+ return sport.run(300)
 }
 ```
 
@@ -204,9 +210,12 @@ sport.run = function (n) {
   return 'Спортсмен пробежал ' + n + ' метров и это был ' + this.name
 }
 
+
 return sport.run(350)
 }
 ```
+<!-- // sport.run = (n) => 'Спортсмен пробежал ' + n + ' метров и это был ' + this.name -->
+
 :::note Обратите внимание
 Очень часто методы используют в своих расчетах свойства своего же объекта.
 :::
@@ -252,40 +261,20 @@ for(let key in obj) {
 ```jsx live
 function learnJavaScript() {
 
-let result = ''
-  const obj = {
-    age   : 15,
-    b     : 'true',
-    color : 'red'
+  let result = ''
+   const obj = {
+     age   : 15,
+     b     : 'true',
+     color : 'red'
+    }
+  for (let key in obj) {
+    result += key + ':' + obj[key] + '; '
   }
-for (let key in obj) {
-  result += key + ':' + obj[key] + '; '
-}
 
-return result
+  return result
 }
 ```
 
-<!--
-Это уже выходит за рамки текущей статьи, но вообще - существует еще одна форма перебора свойств, которая более надежна, особенно если используется библиотека типа prototype.
-
-```javascript
-for (prop in object) {
-  if (!object.hasOwnProperty(prop)) continue
-  //...
-}
-```
-Эта форма отфильтровывает свойства, которые принадлежат не самому объекту, а его прототипу. Поэтому она работает, даже если в прототип Object добавлены новые свойства.
-
-Более элегантный вариант записи:
-
-```javascript
-for (prop in object)
-  if (object.hasOwnProperty(prop)) {
-    //...
-  }
-```
--->
 И по секрету, если честно, практически любая переменная является мини-объектом в среде JavaScript. Так, что не бойтесь их применять.
 
 ## Вопросы
@@ -350,6 +339,27 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 [![Become a Patron!](/img/logo/patreon.png)](https://www.patreon.com/bePatron?u=31769291)
 
 <!--
+
+<!--
+Это уже выходит за рамки текущей статьи, но вообще - существует еще одна форма перебора свойств, которая более надежна, особенно если используется библиотека типа prototype.
+
+```javascript
+for (prop in object) {
+  if (!object.hasOwnProperty(prop)) continue
+  //...
+}
+```
+Эта форма отфильтровывает свойства, которые принадлежат не самому объекту, а его прототипу. Поэтому она работает, даже если в прототип Object добавлены новые свойства.
+
+Более элегантный вариант записи:
+
+```javascript
+for (prop in object)
+  if (object.hasOwnProperty(prop)) {
+    //...
+  }
+```
+
 ### Доступ к объекту из метода
 
 Обычно хочется, чтобы метод не просто вызывался из объекта, но имел доступ к самому объекту, мог менять находящиеся в нем данные.

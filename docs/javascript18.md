@@ -30,7 +30,7 @@ function learnJavaScript() {
 
   let fruits = ["Яблоко", "Апельсин", "Слива"] 
 
-return fruits[0] 
+  return fruits[0] 
 }
 ```
 Мы можем `заменить` элемент:
@@ -47,7 +47,7 @@ function learnJavaScript() {
 
   let fruits = ["Яблоко", "Апельсин", "Слива"] 
 
-return fruits.length
+  return fruits.length
 }
 ```
 Вывести массив целиком.
@@ -56,7 +56,7 @@ function learnJavaScript() {
 
   let fruits = [" Яблоко", " Апельсин", " Слива"] 
 
-return 'Массив: ' + fruits
+  return 'Массив: ' + fruits
 }
 ```
 
@@ -70,7 +70,7 @@ function learnJavaScript() {
   let fruits = [] 
   fruits[155] = "Яблоко" 
 
-return fruits.length  // 156
+  return fruits.length  // 156
 }
 ```
 
@@ -150,11 +150,11 @@ let fruits = [
 ```jsx live
 function learnJavaScript() {
 
-let fruits = [" Яблоко", " Апельсин"] 
+  let fruits = [" Яблоко", " Апельсин"] 
 
-fruits.push(" Груша") 
+  fruits.push(" Груша") 
 
-return 'Массив: ' + fruits // Яблоко, Апельсин, Груша
+  return 'Массив: ' + fruits // Яблоко, Апельсин, Груша
 }
 ```
 
@@ -167,7 +167,7 @@ function learnJavaScript() {
 
   let delFruits = fruits.pop() // удаляем "Груша" и возвращаем его в переменную delFruits
 
-return 'Удален элемент = ' + delFruits + '. Остался массив: ' + fruits  // Яблоко, Апельсин
+  return 'Удален элемент = ' + delFruits + '. Остался массив: ' + fruits  // Яблоко, Апельсин
 }
 ```
 
@@ -179,7 +179,7 @@ function learnJavaScript() {
 
   let addFruits = fruits.push(' Лимон') // добавляем "Лимон" и возвращается только порядковый номер
 
-return 'Добавлен элемент = ' + addFruits + '. Массив: ' + fruits  // Яблоко, Апельсин
+  return 'Добавлен элемент = ' + addFruits + '. Массив: ' + fruits  // Яблоко, Апельсин
 }
 ```
 
@@ -189,12 +189,12 @@ return 'Добавлен элемент = ' + addFruits + '. Массив: ' + f
 ### shift
 `Удаляет` из массива `первый элемент` и возвращает его:
 ```jsx live
-function learnJavaScript() {
+  function learnJavaScript() {
 
-  let fruits = ["Яблоко ", "Апельсин ", "Груша "] 
-  fruits.shift() // удаляем Яблоко
+    let fruits = ["Яблоко ", "Апельсин ", "Груша "] 
+    fruits.shift() // удаляем Яблоко
 
-return fruits 
+  return fruits 
 }
 ```
 
@@ -206,7 +206,7 @@ function learnJavaScript() {
   let fruits = ['Яблоко ', 'Апельсин ', 'Груша '] 
   fruits.unshift('Абрикос ') 
 
-return fruits
+  return fruits
 }
 ```
 
@@ -219,7 +219,7 @@ function learnJavaScript() {
   fruits.push('Апельсин', 'Груша') 
   fruits.unshift('Ананас', 'Лимон') 
 
-return 'В массиве ' + fruits.length + ' элементов. ' + ' Массив: ' + fruits // ["Ананас", "Лимон", "Яблоко", "Апельсин", "Груша"]
+  return 'В массиве ' + fruits.length + ' элементов. ' + ' Массив: ' + fruits // ["Ананас", "Лимон", "Яблоко", "Апельсин", "Груша"]
 }
 ```
 
@@ -234,13 +234,13 @@ return 'В массиве ' + fruits.length + ' элементов. ' + ' Мас
 ```jsx live
 function learnJavaScript() {
 
-  let fruits = [" Банан"]
+  let fruits = [" Лимон"]
 
   let copy = fruits  // копируется по ссылке (две переменные ссылаются на один и тот же массив)
 
   copy.push(" Груша")  // массивы меняются по ссылке одной командой
 
-return '1 массив: ' + fruits + ' 2 массив: ' + copy   // Банан, Груша - теперь два элемента
+  return '1 массив: ' + fruits + ' 2 массив: ' + copy   // Лимон, Груша - теперь два элемента
 }
 ```
 
@@ -252,7 +252,7 @@ return '1 массив: ' + fruits + ' 2 массив: ' + copy   // Банан,
 ```javascript
 let fruits = []  // создаём пустой массив
 
-fruits[99999] = 5  // создаём свойство с индексом, намного превышающим длину массива
+fruits[99999] = 5  // создаём свойство с избыточным индексом, намного превышающим необходимую длину массива
 
 fruits.age = 25  // создаём свойство с произвольным именем
 ```
@@ -297,34 +297,47 @@ fruits.pop()  // удаляем один элемент с конца
 Аналогично работает метод `push`.
 
 ### Перебор элементов
-Одним из самых старых способов `перебора элементов` массива является цикл `for` по цифровым индексам:
-```javascript
-  let arr = ["Яблоко", "Апельсин", "Груша"] 
+Одним из самых старых способов `перебора элементов` массива является цикл `for( )` по цифровым индексам:
+```jsx live
+function learnJavaScript() {
+  let result = ''
+  let arr = ["Яблоко", "Апельсин", "Киви"] 
 
-  for (let i = 0  i < arr.length  i++) {
-    console.log( arr[i] ) 
-  }
+  for (let i = 0 ; i < arr.length ; i++)  // проходит по элементам через `for( )`
+    result += arr[i] + ' ' 
+
+  return result // Яблоко, Апельсин, Киви
+}
 ```
 
 Но для массивов возможен и другой вариант цикла, `for..of`:
-```javascript
+```jsx live
+function learnJavaScript() {
+  let result = ''
   let fruits = ["Яблоко", "Апельсин", "Слива"] 
   
-  for (let fruit of fruits) { // проходит по значениям
-    console.log( fruit ) 
+  for (let fruit of fruits) { // проходит по значениям через `for..of`
+    result += fruit + ' ' 
   }
+  return result // Яблоко, Апельсин, Слива
+}
 ```
+
 Цикл `for..of` не предоставляет доступа к номеру текущего элемента, `только к его значению`, но в большинстве случаев этого достаточно. А также это короче.
 
 ## Псевдомассивы
 В браузере и других программных средах также существуют так называемые `«псевдомассивы» – объекты`, которые выглядят, как массив. То есть, у них есть свойство `length` и `индексы`, но они также могут иметь дополнительные нечисловые свойства и методы, которые нам обычно не нужны. Тем не менее, цикл `for..in` выведет и их. Поэтому, если нам приходится иметь дело с объектами, похожими на массив, такие «лишние» свойства могут стать проблемой.
 
 Технически, так как массив является объектом, можно использовать и вариант `for..in` для `правильного` массива:
-```javascript
-let arr = ["Яблоко", "Апельсин", "Груша"] 
+```jsx live
+function learnJavaScript() {
+  let result = ''
+  let arr = ["Яблоко", "Апельсин", "Груша", "Лимон"] 
 
-for (let key in arr) {
-  console.log( arr[key] ) // Яблоко, Апельсин, Груша
+  for (let key in arr) {    // проходит по элементам через `for..in`
+    result += arr[key] + ' '  
+  }
+  return result // Яблоко, Апельсин, Груша, Лимон
 }
 ```
 
@@ -345,7 +358,7 @@ function learnJavaScript() {
     [7, 8, 9]
   ]
 
-return matrix[1][1] // 5, центральный элемент
+  return matrix[1][1] // 5, центральный элемент
 }
 ```
 
