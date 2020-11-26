@@ -76,15 +76,16 @@ for (let i = 0; i <> 5; i++) {
 ```
 Использовать локальные переменные можно только `внутри` блока, в котором они были объявлены.
 
-```jsx live
+```jsx
 function learnFavaScript() {
     function showFruit() {
         // Переменная fruit является локальной
         let fruit = 'Banana';
     }
     // Поэтому мы не можем использовать её вне функции
-    return fruit
+    return fruit 
 }
+// ReferenceError: fruit is not defined
 ```
 
 ## Примеры
@@ -114,7 +115,7 @@ function learnJavaScript() {
 ```
 
 Что, если мы попытаемся вызвать локальную переменную в родительской области видимости? Возникает ошибка, из-за того, что мы пытаемся в глобальной области видимости вызвать переменную, которую мы не создавали.
-```jsx live
+```jsx
 function learnJavaScript() {
     let num;
     for (let i = 0; i != 5; i++) {
@@ -122,6 +123,7 @@ function learnJavaScript() {
     }
     return i
 }
+// ReferenceError: i is not defined
 ```
 
 ## Ключевое слово var
@@ -135,9 +137,26 @@ function learnJavaScript() {
     return fruit
 }
 ```
-2. Создав глобальную переменную с помощью `var` мы можем изменить её из локальной области видимости, создав ещё одну переменную с таким же именем с помощью `var`. Область действия `var` ограничивается либо функцией, либо скриптом.
-3. Переменные созданные в `var` считаются объявленными с самого начала запуска скрипта, вне зависимости от того. в каком месте находится объявление. 
+```jsx
+function learnJavaScript() {
+    let fruit = 'Banana';
+    let fruit = 'Lime';
+    return fruit
+}
+// SyntaxError: Identifier 'fruit' has already been declared (3:8)
+```
+2. Создав глобальную переменную с помощью `var` мы можем изменить её из локальной области видимости, создав ещё одну переменную с таким же именем. Область действия `var` ограничивается либо функцией, либо скриптом.
 ```jsx live
+function learnJavaScript() {
+    var fruit = 'Lime'
+    {
+        var fruit = 'Banana'
+    }
+    return fruit
+}
+```
+3. Переменные созданные в `var` считаются объявленными с самого начала запуска скрипта, вне зависимости от того. в каком месте находится объявление. 
+```jsx
 function learnJavaScript() {
     let fruit = 'Banana';
     if (true) {
@@ -145,6 +164,7 @@ function learnJavaScript() {
     }
     return fruit
 }
+// SyntaxError: Identifier 'fruit' has already been declared
 ```
 
 

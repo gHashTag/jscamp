@@ -8,13 +8,13 @@ sidebar_label: Замыкание
 ```jsx live
 function learnJavaScript() {
     function getFruit() {
-        let fruit = 'Banana';
+        let fruit = 'Banana'
         return function() {
-            return fruit;
+            return fruit
         }
     }
-    let showFruit = getFruit();
-    return showFruit();
+    let showFruit = getFruit()
+    return showFruit()
 }
 ```
 
@@ -28,13 +28,13 @@ function learnJavaScript() {
 ```jsx live
 function learnJavaScript() {
     function makeCounter() {
-        let x = 0;
+        let x = 0
         return function() {
-            return ++x;
+            return ++x
         }
     }
-    let counter = makeCounter();
-    return counter();
+    let counter = makeCounter()
+    return counter()
 }
 ```
 
@@ -43,11 +43,11 @@ function learnJavaScript() {
 function learnJavaScript() {
     function say(phrase1) {
         return function(phrase2) {
-            return phrase1 + phrase2;
+            return phrase1 + phrase2
         }
     }
-    let love = say('I love ');
-    return love('Bananas');
+    let love = say('I love ')
+    return love('Bananas')
 }
 ```
 
@@ -55,23 +55,23 @@ function learnJavaScript() {
 ```jsx live
 function learnJavaScipt() {
     function makeCounter() {
-        let x = 0;
+        let x = 0
         return {
             inc: function() {
-                return ++x;
+                return ++x
             },
             dec: function() {
-                return --x;
+                return --x
             },
             val: function() {
-                return x;
+                return x
             }
         }
     }
 
-    let counter = makeCounter();
-    counter.inc();
-    return counter.val();
+    let counter = makeCounter()
+    counter.inc()
+    return counter.val()
 }
 ```
 
