@@ -4,46 +4,47 @@ title: Конструкция switch case
 sidebar_label: Конструкция switch case
 ---
 
-Конструкция ``switch`` служит для сравнения значения на равенство с различными вариантами.
+Конструкция `switch` служит для сравнения значения на равенство с различными вариантами.
 
-При этом равенство подразумевается в смысле оператора ``===``, сравнивать с регулярным выражением или как-то еще ``switch`` не умеет. То есть значения должны быть одного типа, чтобы выполнялось равенство.
+При этом равенство подразумевается в смысле оператора строгое равенство `===`, сравнивать с регулярным выражением или как-то еще `switch` не умеет. То есть значения должны быть одного типа, чтобы выполнялось равенство.
 
-Если условие совпадает, то выполняется блок кода, связанный с соответствующим ``case``. Если ни одно условие не подошло, то выполняется код, указанный в блоке ``default``, если он есть. Для выхода из конструкции используется команда ``break``. Если ее не указывать, автоматически выполнится блок кода в следующем ``case`` и т.д.
+Если условие совпадает, то выполняется блок кода, связанный с соответствующим `case`. Если ни одно условие не подошло, то выполняется код, указанный в блоке `default`, если он есть. Для выхода из конструкции используется команда `break`. Если ее не указывать, автоматически выполнится блок кода в следующем `case` и т.д. Поэтому `break` используем в наших скриптах обязательно, чтобы не гонять интерпретатор по всем `case` тем самым утрачивая время.
 
 ## Синтаксис
 
-Конструкция ``switch`` имеет один или более блок ``case`` и необязательный блок ``default``.
+Конструкция `switch` имеет один или более блок `case` и необязательный блок `default`. `n` - это булеан [boolean](https://react-native-village.github.io/docs/javascript08) условие.
 
 Выглядит она так:
+
 ```jsx
-switch(n) {
+switch (n) {
   case 1:
     // блок кода 1;
-    break;
+    break
   case 2:
     // блок кода 2;
-    break;  
-   
+    break
   // .......
   // другие варианты  case
-  // .......  
-  default: 
-    // блок кода если не подошло ни одно условие;
+  // .......
+  default:
+  // блок кода если не подошло ни одно условие;
 }
 ```
 
-Несколько вариантов ``case``, использующих один код, можно группировать.
+Несколько вариантов `case`, использующих один код, можно группировать.
+
 ```jsx
-switch(n) {
+switch (n) {
   case 1:
   case 2:
     // блок кода 1;
-    break;  
+    break
   case 3:
-      // блок кода 2;
-    break; 
-  default: 
-    // блок кода если не подошло ни одно условие;
+    // блок кода 2;
+    break
+  default:
+  // блок кода если не подошло ни одно условие;
 }
 ```
 
@@ -53,71 +54,72 @@ switch(n) {
 
 ```jsx live
 function learnJavaScript() {
-let a = 4
-let str
-switch (a) {
-  case 3:
-    str = 'Маловато'
-    break
-  case 4:
-    str = 'В точку!'
-    break
-  case 5:
-    str = 'Перебор'
-    break
-  default:
-    str = 'Я таких значений не знаю'
-}
-return str;
+  let a = 4
+  let str
+  switch (a) {
+    case 3:
+      str = 'Маловато'
+      break
+    case 4:
+      str = 'В точку!'
+      break
+    case 5:
+      str = 'Перебор'
+      break
+    default:
+      str = 'Я таких значений не знаю'
+  }
+  return str
 }
 ```
 
-Здесь оператор ``switch`` последовательно сравнит ``a`` со всеми вариантами из ``case``.
-Сначала 3, затем – так как нет совпадения – 4. Совпадение найдено, будет выполнен этот вариант, со строки ``str = 'В точку!'`` и далее, до ближайшего ``break``, который прервёт выполнение.
-
+Здесь оператор `switch` последовательно сравнит `a` со всеми вариантами из `case`.
+Сначала 3, затем – так как нет совпадения – 4. Совпадение найдено, будет выполнен этот вариант, со строки `str = 'В точку!'` и далее, до ближайшего `break`, который прервёт выполнение.
 
 Рассмотрим такой пример:
+
 ```jsx live
 function learnJavaScript() {
-let a = "Apples"
-let str
-switch (a) {
-  case "Apples":
-    str = 'I love '+a
-    break
-  case "Oranges":
-    str = 'I love '+a
-    break
-  case "Bananas":
-    str = 'I love '+a
-    break
-  default:
-    str = 'I like other fruits'
-}
-return str;
+  let a = 'Apples'
+  let str
+  switch (a) {
+    case 'Apples':
+      str = 'I love ' + a
+      break
+    case 'Oranges':
+      str = 'I love ' + a
+      break
+    case 'Bananas':
+      str = 'I love ' + a
+      break
+    default:
+      str = 'I like other fruits'
+  }
+  return str
 }
 ```
-Здесь оператор ``switch`` последовательно сравнит ``a`` со всеми вариантами из ``case``. Но здесь идет сравнение не чисел, а строк. Так можно сделать с любыми типами данных, главное чтобы сравнивались одинаковые типы данных.
 
+Здесь оператор `switch` последовательно сравнит `a` со всеми вариантами из `case`. Но здесь идет сравнение не чисел, а строк. Так можно сделать с любыми типами данных, главное чтобы сравнивались одинаковые типы данных.
 
-Также ``Switch`` используется чтобы заменить множественные ``if``.
+Также `Switch` используется чтобы заменить множественные `if`.
 Например, можно заменить данный код:
+
 ```jsx live
 function learnJavaScript() {
-let number = 2
-let str
-if (number === 0) {
-  str = 'Вы ввели число 0'
-}
+  let number = 2
+  let str
+  if (number === 0) {
+    str = 'Вы ввели число 0'
+  }
 
-if (number === 1) {
-  str = 'Вы ввели число 1'
-}
+  if (number === 1) {
+    str = 'Вы ввели число 1'
+  }
 
-if (number === 2 || number === 3) {
-  str = 'Вы ввели число 2, а может и 3'
-}
-return str;
+  if (number === 2 || number === 3) {
+    str = 'Вы ввели число 2, а может и 3'
+  }
+  return str
 }
 ```
 
@@ -125,25 +127,26 @@ return str;
 
 ```jsx live
 function learnJavaScript() {
-let number = 2
-let str
-switch (number) {
-  case 0:
-    str = 'Вы ввели число 0'
-    break;
+  let number = 2
+  let str
+  switch (number) {
+    case 0:
+      str = 'Вы ввели число 0'
+      break
 
-  case 1:
-    str = 'Вы ввели число 1'
-    break;
+    case 1:
+      str = 'Вы ввели число 1'
+      break
 
-  case 2:
-  case 3:
-    str = 'Вы ввели число 2, а может и 3'
-    break;
-}
-return str;
+    case 2:
+    case 3:
+      str = 'Вы ввели число 2, а может и 3'
+      break
+  }
+  return str
 }
 ```
+
 Результат будет тот же, но код станет более читаемым и удобным для работы.
 
 ## Вопросы:
@@ -153,9 +156,10 @@ return str;
 ![Sumerian school](/img/app.png)
 
 ## Ссылки:
- 1. [MDN web docs](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/switch)
- 2. [Learn JavaScript](https://learn.javascript.ru/switch)
- 3. [Справочник JavaScript](https://javascript.ru/switch)
+
+1.  [MDN web docs](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/switch)
+2.  [Learn JavaScript](https://learn.javascript.ru/switch)
+3.  [Справочник JavaScript](https://javascript.ru/switch)
 
 ## Contributors ✨
 
@@ -175,4 +179,5 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- prettier-ignore-end -->
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
+
 [![Become a Patron!](/img/logo/patreon.png)](https://www.patreon.com/bePatron?u=31769291)
