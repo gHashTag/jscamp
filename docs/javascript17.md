@@ -11,17 +11,15 @@ sidebar_label: Функции высшего порядка
 
 ### Что такое функциональное программирование
 
-Если говорить простыми словами, то функциональное программирование — это способ программировать, при котором вы можете передавать функции в качестве параметров другим функциям, а также возвращать их как значения. В функциональном программировании мы думаем и пишем код с точки зрения функций.
-
-
 ## Функции первого класса
+
 Если вы уже изучаете JavaScript, то могли слышать, что JavaScript расценивает функции как объекты первого класса. В JavaScript функции являются объектами, как и в других языках функционального программирования.
 В JavaScript функции являются особым типом объектов. Это Function объекты. Например:
 
 ```jsx live
 function learnJavaScript() {
 
-  function greeting() {
+  function greeting() {  // Старый вариант
     return 'Hello, World !'
   }
   return greeting()  // prints 'Hello World'
@@ -42,9 +40,7 @@ function learnJavaScript() {
 ```jsx live
 function learnJavaScript() {
 
-  const square = function(x) {
-    return x * x 
-  }
+  const square = x => x * x 
 
   return square(7)
 }
@@ -84,7 +80,6 @@ function learnJavaScript() {
       return greetFormal() 
     else if(type === 'women') 
       return greetCasual() 
-    }
   }
 
   return greet('women', formalGreeting, casualGreeting)
@@ -131,11 +126,11 @@ function learnJavaScript() {
 }
 ```
 
-С функцией высшего порядка `map`
+С функцией высшего порядка `map` консольный вариант:
 ```javascript
   const arr1 = [1, 2, 3, 4] 
-  const arr2 = arr1.map(function(item) {
-  return item * 2 
+  const arr2 = arr1.map(function(item) {  // Старый вариант
+    return item * 2 
   }) 
   console.log(arr2) 
 ```
@@ -166,7 +161,6 @@ function learnJavaScript() {
     ages.push(age)
   }
 
-
   const birthYear = [1975, 1997, 2002, 1995, 1985] 
   const ages = [] 
   for(let i = 0 ; i < birthYear.length ; i++) {
@@ -189,7 +183,6 @@ function learnJavaScript() {
 } 
 ```
 `Перепрошиваем` новый массив за одну строчку кода.
-
 
 ### Пример №3
 
@@ -259,7 +252,6 @@ function learnJavaScript() {
   // Основной код преобразования - mapForEach() вызывается с конкретными значениями-параметрами
   const lenArray = mapForEach(strArray, item => item.length + ' ') 
 
-
   return lenArray // [ 7, 10, 5, 10, 3 ]
 }
 ```
@@ -285,7 +277,7 @@ function learnJavaScript() {
 userInput(say)  // say - функция callback (обратного вызова), становиться ясно какая функция передается в качестве параметра
 ```
 -->
-Поэксперементируйте используя `стрелочные функции`:
+Поэксперементируйте, используя `стрелочные функции`:
 
 ```jsx live
 function learnJavaScript() {
@@ -293,7 +285,7 @@ function learnJavaScript() {
   let say = (name) => 'Hello, ' + name + ' !'  // Основной расчетный алгорим
   // userInput() - функция высшего порядка
   let userInput = (fn) =>  { // в качестве параметра функция, пока еще не известно какая (неизведанный алгоритм)
-     name = 'Alex'           // какое-либо действие
+     name = 'Jane'           // какое-либо действие
      return fn(name)         // только теперь запускаем callback-функцию переданную в параметре с конкретным значением `name`
   }
   return userInput(say) // say - функция callback (обратного вызова), становиться ясно какая функция передается в качестве параметра
@@ -396,3 +388,5 @@ for(let i = 0 ; i < arr.length ; i++) {
 console.log(sum) 
 Обратите внимание, как использование функции высшего порядка сделало наш код чище, лаконичнее и менее многословным.
 -->
+
+
