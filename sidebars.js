@@ -25,6 +25,7 @@ module.exports = {
       'javascript22',
       'javascript24',
       'javascript25',
+      'javascript28',
       'javascript29',
       'javascript30'
 
