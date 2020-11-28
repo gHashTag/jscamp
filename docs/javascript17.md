@@ -19,10 +19,10 @@ sidebar_label: Функции высшего порядка
 ```jsx live
 function learnJavaScript() {
 
-  function greeting() {  // Старый вариант
+  function greeting() {     // Старый вариант
     return 'Hello, World !'
   }
-  return greeting()  // prints 'Hello World'
+  return greeting()
 }
 ```
 Лучше всего использовать стрелочные функции:
@@ -31,7 +31,8 @@ function learnJavaScript() {
 function learnJavaScript() {
 
   let greeting = () => 'Hello, World !'
-  return greeting() 
+
+  return greeting()
 }
 ```
 
@@ -40,7 +41,7 @@ function learnJavaScript() {
 ```jsx live
 function learnJavaScript() {
 
-  const square = x => x * x 
+  const square = (x) => x * x
 
   return square(7)
 }
@@ -51,8 +52,8 @@ function learnJavaScript() {
 ```jsx live
 function learnJavaScript() {
   
-  const square = x => x * x 
-  const foo = square 
+  const square = x => x * x  // при передачи 1-го параметра () можно не писать
+  const foo = square
   let result = foo(12)  // 12*12 = 144
 
   return <b>{result}</b>
@@ -65,21 +66,17 @@ function learnJavaScript() {
 
 ```jsx live
 function learnJavaScript() {
-  function formalGreeting() {
-    return 'Добрый день!'
-  }
-  function casualGreeting() {
-    return 'Как дела?'
-  }
 
-  let formalGreeting = () =>  "Добрый день!" 
-  let casualGreeting = () =>  "Как дела?"
+  let formalGreeting = () =>  "Добрый день!" // Диалог 1
+  let casualGreeting = () =>  "Как дела?"    // Диалог 2
+  let whoIs = () => "Уточните запрос !"      // Диалог 3
 
   let greet = (type, greetFormal, greetCasual) => {
-    if(type === 'men')
-      return greetFormal() 
-    else if(type === 'women') 
-      return greetCasual() 
+    if(type === 'men')  // Условие выбора диалога
+      return greetFormal()
+    else if(type === 'women')
+          return greetCasual()
+         else return whoIs() 
   }
 
   return greet('women', formalGreeting, casualGreeting)
@@ -128,21 +125,21 @@ function learnJavaScript() {
 
 С функцией высшего порядка `map` консольный вариант:
 ```javascript
-  const arr1 = [1, 2, 3, 4] 
+  const arr1 = [1, 2, 3, 4]
   const arr2 = arr1.map(function(item) {  // Старый вариант
-    return item * 2 
+    return item * 2
   }) 
-  console.log(arr2) 
+  console.log(arr2)
 ```
 
 Мы можем записать ещё короче, используя синтаксис `стрелочных функций`:
 
 ```jsx live
 function learnJavaScript() {
-    const arr1 = [1, 2, 3, 4] 
+    const arr1 = [1, 2, 3, 4]
     const arr2 = arr1.map(item => item * 2 + ' ')  // Алгоритм в 1 строку
     
-  return <b>{arr2}</b> 
+  return <b>{arr2}</b>
 }
 ```
 
@@ -162,10 +159,10 @@ function learnJavaScript() {
   }
 
   const birthYear = [1975, 1997, 2002, 1995, 1985] 
-  const ages = [] 
+  const ages = []
   for(let i = 0 ; i < birthYear.length ; i++) {
-    let ageNew = 2020 - birthYear[i] + ' ' 
-    ages.push(ageNew) 
+    let ageNew = 2020 - birthYear[i] + ' '
+    ages.push(ageNew)
   }
 
   return ages  //  [ 45, 23, 18, 25, 35 ] только без пробелов
@@ -176,7 +173,7 @@ function learnJavaScript() {
 ```jsx live
 function learnJavaScript() {
   
-  const birthYear = [1975, 1997, 2002, 1995, 1985] 
+  const birthYear = [1975, 1997, 2002, 1995, 1985]
   let ages = birthYear.map(year => 2020 - year + ' ')  // Алгоритм в 1 строку
 
   return ages // prints [ 45, 23, 18, 25, 35 ]
@@ -201,12 +198,12 @@ function learnJavaScript() {
     { name: 'John', age: 27 },
     { name: 'Jane', age: 14 },
     { name: 'Tony', age: 24},
-  ] 
+  ]
 
-  const fullAge = [] 
+  const fullAge = []
   for(let i = 0 ; i < persons.length ; i++) {
     if(persons[i].age >= 18) {
-      fullAge.push(persons[i]) 
+      fullAge.push(persons[i])
     }
   }
 
@@ -224,7 +221,7 @@ function learnJavaScript() {
     { name: 'John', age: 27 },
     { name: 'Jane', age: 14 },
     { name: 'Tony', age: 24},
-  ] 
+  ]
   const fullAge = persons.filter(person => person.age >= 18) // Алгоритм с условием в 1 строку
 
 return fullAge.length // кол-во лиц старше 18 лет
@@ -240,17 +237,17 @@ return fullAge.length // кол-во лиц старше 18 лет
 ```jsx live
 function learnJavaScript() {
   // Исходный массив
-  const strArray = ['English', 'JavaScript', 'React', 'TypeScript', 'AWS'] 
+  const strArray = ['English', 'JavaScript', 'React', 'TypeScript', 'AWS']
   // функция высшего порядка mapForEach() принимает к себе формальную (гипотетическую) функцию fn и формальный массив arr
   let mapForEach = (arr, fn) => {
-  const newArray = [] 
+  const newArray = []
    for(let i = 0 ; i < arr.length ; i++) {
-       newArray.push( fn(arr[i]) ) 
+       newArray.push( fn(arr[i]) )
    }
-  return newArray 
+  return newArray
   }
   // Основной код преобразования - mapForEach() вызывается с конкретными значениями-параметрами
-  const lenArray = mapForEach(strArray, item => item.length + ' ') 
+  const lenArray = mapForEach(strArray, item => item.length + ' ')
 
   return lenArray // [ 7, 10, 5, 10, 3 ]
 }
