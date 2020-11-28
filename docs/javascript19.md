@@ -286,9 +286,7 @@ function learnJavaScript() {
 
 1. [MDN web doc. Статья "Spread syntax"](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Spread_syntax)
 2. [Статья "Остаточные параметры и оператор расширения"](https://learn.javascript.ru/rest-parameters-spread-operator)
-
-
-3. [Статья ""](https://basicweb.ru/javascript/js_array.php)
+3. [Статья "Оператор spread и rest"](https://medium.com/@stasonmars/%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D1%80-spread-%D0%B8-rest-%D0%BF%D0%B0%D1%80%D0%B0%D0%BC%D0%B5%D1%82%D1%80%D1%8B-%D0%B2-javascript-22eb33cb0825)
 
 ## Contributors ✨
 
