@@ -55,9 +55,9 @@ export class User {
 
 Класс становится полезным, когда вы создаете экземпляр класса. `Экземпляр` — это объект, содержащий данные и поведение, описанные классом.
 
-Оператор new создает экземпляр класса в JavaScript таким образом: instance = new Class().
+Оператор `new` создает экземпляр класса в JavaScript таким образом: `instance = new Class()`.
 
-Например, вы можете создать экземпляр класса User с помощью оператора new:
+Например, вы можете создать экземпляр класса User с помощью оператора `new`:
 
 ```jsx
 const myUser = new User()
@@ -87,24 +87,23 @@ class User {
 
 ```jsx live
 function learnJavaScript() {
-
-class User {
-  constructor(name) {
-    name // => 'Jon Snow'
-    this.name = name
+  class User {
+    constructor(name) {
+      name // => 'Jon Snow'
+      this.name = name
+    }
   }
-}
 
-const user = new User('Jon Snow') //Здесь можно менять значение
-return(user.name)
+  const user = new User('Jon Snow') //Здесь можно менять значение
+  return user.name
 }
 ```
 
-Параметр `name` внутри конструктора имеет значение ‘Jon Snow’.
+Параметр `name` внутри конструктора имеет значение `Jon Snow`.
 
 Если вы не определяете конструктор для класса, создается конструктор по умолчанию. Конструктор по умолчанию является пустой функцией, которая не изменяет экземпляр.
 
-В классе может быть только один метод с именем constructor.
+В классе может быть только один метод с именем `constructor`.
 
 ## Геттеры и сеттеры
 
@@ -185,33 +184,32 @@ ContentWriter наследует от User конструктор, метод ge
 
 ```jsx live
 function learnJavaScript() {
+  class User {
+    name
 
-class User {
-  name
+    constructor(name) {
+      this.name = name
+    }
 
-  constructor(name) {
-    this.name = name
+    getName() {
+      return this.name
+    }
   }
 
-  getName() {
-    return this.name
+  class ContentWriter extends User {
+    posts = []
+
+    constructor(name, posts) {
+      super(name)
+      this.posts = posts
+    }
   }
-}
 
-class ContentWriter extends User {
-  posts = []
+  const writer = new ContentWriter('Лермонтов', ['Герой нашего времени'])
+  writer.name // Лермонтов
+  writer.posts // ['Герой нашего времени']
 
-  constructor(name, posts) {
-    super(name)
-    this.posts = posts
-  }
-}
-
-const writer = new ContentWriter('Лермонтов', ['Герой нашего времени'])
-writer.name // Лермонтов
-writer.posts // ['Герой нашего времени']
-
-return(writer.name) //name можно заменить на posts и посмотреть результат
+  return writer.name //name можно заменить на posts и посмотреть результат
 }
 ```
 

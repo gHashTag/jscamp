@@ -4,65 +4,71 @@ title: Наследование
 sidebar_label: Наследование
 ---
 
-JavaScript поддерживает наследование, что позволяет нам при создании новых типов объектов при необходимости унаследовать их функционал от уже существующих. 
+JavaScript поддерживает наследование, что позволяет нам при создании новых типов объектов при необходимости унаследовать их функционал от уже существующих.
 
-Например, у нас может быть объект ``User``, представляющий отдельного пользователя. И также может быть объект ``Employee``, который представляет работника. Но работник также может являться пользователем и поэтому должен иметь все его свойства и методы. 
+Например, у нас может быть объект `User`, представляющий отдельного пользователя. И также может быть объект `Employee`, который представляет работника. Но работник также может являться пользователем и поэтому должен иметь все его свойства и методы.
 
 Например:
+
 ```jsx live
 function learnJavaScript() {
-let info
+  let info
 
-// конструктор пользователя
-function User (name, age) {
-    this.name = name 
-    this.age = age 
-    this.go = function(){document.write(this.name + " идет <br/>") }
-    this.displayInfo = function(){
-        document.write("Имя: " + this.name + "; возраст: " + this.age + "<br/>") 
-    } 
-}
-User.prototype.maxAge = 110 
- 
-// конструктор работника
-function Employee(name, age, comp){
-    User.call(this, name, age) 
-    this.company = comp 
-    this.displayInfo = function(){
-        document.write("Имя: " + this.name + "; возраст: " + this.age + "; компания: " + this.company + "<br/>") 
-    } 
-}
-Employee.prototype = Object.create(User.prototype) 
- 
-var tom = new User("Том", 26) 
-var bill = new Employee("Билл", 32, "Google") 
-tom.go() 
-bill.go() 
-tom.displayInfo()  
-bill.displayInfo()  
-console.log(bill.maxage) 
+  // конструктор пользователя
+  function User(name, age) {
+    this.name = name
+    this.age = age
+    this.go = function () {
+      //document.write(this.name + ' идет <br/>')
+    }
+    this.displayInfo = function () {
+      //document.write("Имя: " + this.name + "; возраст: " + this.age + "<br/>")
+    }
+  }
+  User.prototype.maxAge = 110
 
-info = bill.name +" "+ bill.age +" "+ bill.company //Пример того что наследование работает
-return(info)
+  // конструктор работника
+  function Employee(name, age, comp) {
+    User.call(this, name, age)
+    this.company = comp
+    this.displayInfo = function () {
+      //document.write("Имя: " + this.name + "; возраст: " + this.age + "; компания: " + this.company + "<br/>")
+    }
+  }
+  Employee.prototype = Object.create(User.prototype)
+
+  var tom = new User('Том', 26)
+  var bill = new Employee('Билл', 32, 'Google')
+  tom.go()
+  bill.go()
+  tom.displayInfo()
+  bill.displayInfo()
+  console.log(bill.maxage)
+
+  info = bill.name + ' ' + bill.age + ' ' + bill.company //Пример того что наследование работает
+  return info
 }
 ```
-Здесь в начале определяет конструктор ``User`` и к его прототипу добавляется свойство ``maxAge``. Затем определяется тип ``Employee``.
 
-В конструкторе ``Employee`` происходит обращение к конструктору ``User`` с помощью вызова:
+Здесь в начале определяет конструктор `User` и к его прототипу добавляется свойство `maxAge`. Затем определяется тип `Employee`.
+
+В конструкторе `Employee` происходит обращение к конструктору `User` с помощью вызова:
+
 ```jsx
-User.call(this, name, age) 
+User.call(this, name, age)
 ```
 
-Передача первого параметра позволяет вызвать функцию конструктора ``User`` для объекта, создаваемого конструктором ``Employee``. Благодаря этому все свойства и методы, определенные в конструкторе ``User``, также переходят на объект ``Employee``.
+Передача первого параметра позволяет вызвать функцию конструктора `User` для объекта, создаваемого конструктором `Employee`. Благодаря этому все свойства и методы, определенные в конструкторе `User`, также переходят на объект `Employee`.
 
-Кроме того, необходимо унаследовать также и прототип ``User``. Для этого служит вызов:
+Кроме того, необходимо унаследовать также и прототип `User`. Для этого служит вызов:
+
 ```jsx
-Employee.prototype = Object.create(User.prototype) 
+Employee.prototype = Object.create(User.prototype)
 ```
 
-Метод ``Object.create()`` позволяет создать объект прототипа ``User``, который затем присваивается прототипу ``Employee``. При этом при необходимости в прототипе ``Employee`` мы также можем определить дополнительные свойства и методы.
+Метод `Object.create()` позволяет создать объект прототипа `User`, который затем присваивается прототипу `Employee`. При этом при необходимости в прототипе `Employee` мы также можем определить дополнительные свойства и методы.
 
-При наследовании мы можем переопределять наследуемый функционал. Например, ``Employee`` переопределяет метод ``displayInfo()``, унаследованный от ``User``, чтобы включить в вывод этого метода новое свойство ``company``.
+При наследовании мы можем переопределять наследуемый функционал. Например, `Employee` переопределяет метод `displayInfo()`, унаследованный от `User`, чтобы включить в вывод этого метода новое свойство `company`.
 
 В итоге браузер предоставит следующий вывод:
 ![Пример наследования](/img/javascript/14_2/00.png)
@@ -74,8 +80,9 @@ Employee.prototype = Object.create(User.prototype)
 ![Sumerian school](/img/app.png)
 
 ## Ссылки:
- 1. [MDN web docs](https://developer.mozilla.org/ru/docs/Learn/JavaScript/%D0%9E%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D1%8B/Inheritance)
- 2. [Metanit справочник](https://metanit.com/web/javascript/4.9.php)
+
+1.  [MDN web docs](https://developer.mozilla.org/ru/docs/Learn/JavaScript/%D0%9E%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D1%8B/Inheritance)
+2.  [Metanit справочник](https://metanit.com/web/javascript/4.9.php)
 
 ## Contributors ✨
 
@@ -95,4 +102,5 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- prettier-ignore-end -->
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
+
 [![Become a Patron!](/img/logo/patreon.png)](https://www.patreon.com/bePatron?u=31769291)
