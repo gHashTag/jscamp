@@ -21,6 +21,8 @@ module.exports = {
       'javascript14_2',
       'javascript17',
       'javascript18',
+      'javascript19',
+      'javascript20',
       'javascript21',
       'javascript22',
       'javascript24',
