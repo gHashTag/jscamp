@@ -11,8 +11,6 @@ sidebar_label: Функции высшего порядка
 
 ### Что такое функциональное программирование
 
-Если говорить простыми словами, то функциональное программирование — это способ программировать, при котором вы можете передавать функции в качестве параметров другим функциям, а также возвращать их как значения. В функциональном программировании мы думаем и пишем код с точки зрения функций.
-
 ## Функции первого класса
 
 Если вы уже изучаете JavaScript, то могли слышать, что JavaScript расценивает функции как объекты первого класса. В JavaScript функции являются объектами, как и в других языках функционального программирования.
@@ -20,19 +18,19 @@ sidebar_label: Функции высшего порядка
 
 ```jsx live
 function learnJavaScript() {
-  function greeting() {
+
+  function greeting() {     // Старый вариант
     return 'Hello, World !'
   }
-  return greeting() // prints 'Hello World'
+  return greeting()
 }
 ```
-
-Или используя стрелочные функции:
+Лучше всего использовать стрелочные функции:
 
 ```jsx live
 function learnJavaScript() {
   let greeting = () => 'Hello, World !'
-  return greeting()
+  return greeting() 
 }
 ```
 
@@ -40,6 +38,10 @@ function learnJavaScript() {
 
 ```jsx live
 function learnJavaScript() {
+  const square = function (x) {
+    return x * x
+  }
+
   const square = (x) => x * x
 
   return square(7)
@@ -50,9 +52,10 @@ function learnJavaScript() {
 
 ```jsx live
 function learnJavaScript() {
-  const square = (x) => x * x
-  const foo = square
-  let result = foo(12) // 12*12 = 144
+  
+  const square = function(x) { return x * x  }
+  const foo = square 
+  let result = foo(12)  // 12*12 = 144
 
   return <b>{result}</b>
 }
@@ -67,25 +70,24 @@ function learnJavaScript() {
   function formalGreeting() {
     return 'Добрый день!'
   }
-  const casualGreeting = () => {
+  function casualGreeting() {
     return 'Как дела?'
   }
 
-  let formalGreeting = () => 'Добрый день!'
-  let casualGreeting = () => 'Как дела?'
+  let formalGreeting = () =>  "Добрый день!" 
+  let casualGreeting = () =>  "Как дела?"
 
   function greet(type, greetFormal, greetCasual) {
-    if (type === 'formal') {
-      return greetFormal()
-    } else if (type === 'casual') {
-      return greetCasual()
-    }
+    if(type === 'formal') {
+     return greetFormal() 
+   } else if(type === 'casual') {
+      return greetCasual() 
+   }
   }
 
-  return greet('casual', formalGreeting, casualGreeting)
+  return greet('women', formalGreeting, casualGreeting)
 }
 ```
-
 Теперь мы знаем, что такое `функции первого класса`. Можно приступать к `Функциям высшего порядка`.
 
 ## Функции высшего порядка
@@ -127,24 +129,23 @@ function learnJavaScript() {
 }
 ```
 
-#### С функцией высшего порядка `map`
-
+С функцией высшего порядка `map` консольный вариант:
 ```javascript
-const arr1 = [1, 2, 3, 4]
-const arr2 = arr1.map(function (item) {
-  return item * 2
-})
-console.log(arr2)
+  const arr1 = [1, 2, 3, 4]
+  const arr2 = arr1.map(function(item) {  // Старый вариант
+    return item * 2
+  }) 
+  console.log(arr2)
 ```
 
 Мы можем записать ещё короче, используя синтаксис `стрелочных функций`:
 
 ```jsx live
 function learnJavaScript() {
-  const arr1 = [1, 2, 3, 4]
-  const arr2 = arr1.map((item) => item * 2 + ' ') // Алгоритм в 1 строку
-
-  return <b>{arr2}</b>
+    const arr1 = [1, 2, 3, 4] 
+    const arr2 = arr1.map(item => item * 2 + ' ')  // Алгоритм в 1 строку
+    
+  return <b>{arr2}</b> 
 }
 ```
 
@@ -163,11 +164,12 @@ function learnJavaScript() {
     ages.push(age)
   }
 
-  const birthYear = [1975, 1997, 2002, 1995, 1985]
-  const ages = []
-  for (let i = 0; i < birthYear.length; i++) {
-    let ageNew = 2020 - birthYear[i] + ' '
-    ages.push(ageNew)
+
+  const birthYear = [1975, 1997, 2002, 1995, 1985] 
+  const ages = [] 
+  for(let i = 0 ; i < birthYear.length ; i++) {
+    let ageNew = 2020 - birthYear[i] + ' ' 
+    ages.push(ageNew) 
   }
 
   return ages //  [ 45, 23, 18, 25, 35 ] только без пробелов
@@ -178,8 +180,9 @@ function learnJavaScript() {
 
 ```jsx live
 function learnJavaScript() {
-  const birthYear = [1975, 1997, 2002, 1995, 1985]
-  let ages = birthYear.map((year) => 2020 - year + ' ') // Алгоритм в 1 строку
+  
+  const birthYear = [1975, 1997, 2002, 1995, 1985] 
+  let ages = birthYear.map(year => 2020 - year + ' ')  // Алгоритм в 1 строку
 
   return ages // prints [ 45, 23, 18, 25, 35 ]
 }
@@ -199,17 +202,17 @@ function learnJavaScript() {
 ```jsx live
 function learnJavaScript() {
   const persons = [
-    { name: 'Peter', age: 16 },
+    { name: 'Niki', age: 16 },
     { name: 'Mark', age: 18 },
     { name: 'John', age: 27 },
     { name: 'Jane', age: 14 },
-    { name: 'Tony', age: 24 }
-  ]
+    { name: 'Tony', age: 24},
+  ] 
 
-  const fullAge = []
-  for (let i = 0; i < persons.length; i++) {
-    if (persons[i].age >= 18) {
-      fullAge.push(persons[i])
+  const fullAge = [] 
+  for(let i = 0 ; i < persons.length ; i++) {
+    if(persons[i].age >= 18) {
+      fullAge.push(persons[i]) 
     }
   }
 
@@ -222,13 +225,13 @@ function learnJavaScript() {
 ```jsx live
 function learnJavaScript() {
   const persons = [
-    { name: 'Peter', age: 34 },
+    { name: 'Niki', age: 34 },
     { name: 'Mark', age: 18 },
     { name: 'John', age: 27 },
     { name: 'Jane', age: 14 },
-    { name: 'Tony', age: 24 }
-  ]
-  const fullAge = persons.filter((person) => person.age >= 18) // Алгоритм с условием в 1 строку
+    { name: 'Tony', age: 24},
+  ] 
+  const fullAge = persons.filter(person => person.age >= 18) // Алгоритм с условием в 1 строку
 
   return fullAge.length // кол-во лиц старше 18 лет
 }
@@ -247,16 +250,16 @@ function learnJavaScript() {
   const strArray = ['English', 'JavaScript', 'React', 'TypeScript', 'AWS']
   // функция высшего порядка mapForEach() принимает к себе формальную (гипотетическую) функцию fn и формальный массив arr
   function mapForEach(arr, fn) {
-    const newArray = []
-    for (let i = 0; i < arr.length; i++) {
-      newArray.push(fn(arr[i]))
+   const newArray = [] 
+    for(let i = 0 ; i < arr.length ; i++) {
+       newArray.push( fn(arr[i]) ) 
     }
-    return newArray
+  return newArray 
   }
   // Основной код преобразования - mapForEach() вызывается с конкретными значениями-параметрами
-  const lenArray = mapForEach(strArray, function (item) {
-    return item.length + ' '
-  })
+  const lenArray = mapForEach(strArray, function(item) {
+    return item.length + ' ' 
+  }) 
 
   return lenArray // [ 7, 10, 5, 10, 3 ]
 }
@@ -269,24 +272,21 @@ function learnJavaScript() {
 :::
 
 `Callback`-функция `fn` принимает текущий элемент массива и возвращает `длину текущего элемента`, который теперь хранится в `newArray`. После завершения цикла `For()`, newArray возвращает значение длины элементов в `lenArray`.
-
+<!--
 Еще простой пример для консоли:
 
 ```javascript
-function say(name) {
-  // в качестве параметра переменная
-  console.log('Hello, ' + name + ' !')
+function say(name) {  // в качестве параметра переменная
+  console.log('Hello, ' + name + ' !') 
 }
-function userInput(fn) {
-  // в качестве параметра функция, пока еще не известно какая
-  var name = prompt('Please enter your name.')
+function userInput(fn) { // в качестве параметра функция, пока еще не известно какая
+  var name = prompt('Please enter your name.') 
   // Вызовем неизвесно заранее функцию с переменной `name`
-  return fn(name)
+  return fn(name) 
 }
-userInput(say) // say - функция callback (обратного вызова), становиться ясно какая функция передается в качестве параметра
+userInput(say)  // say - функция callback (обратного вызова), становиться ясно какая функция передается в качестве параметра
 ```
-
-Обратите внимание на синтаксис:
+Обратите внимание на синтаксис: 
 
 при передаче функции в качестве параметра скобки `()` не указываются, т.к. в параметре функция не вызывается, а передается целиком. Функция `say` является аргументом функции `userInput`.
 
@@ -295,16 +295,17 @@ userInput(say) // say - функция callback (обратного вызова
 ```jsx live
 function learnJavaScript() {
   let name = ''
-  let say = (name) => 'Hello, ' + name + ' !'
+  let say = (name) => 'Hello, ' + name + ' !'  // Основной расчетный алгорим
   // userInput() - функция высшего порядка
-  let userInput = (fn) => {
-    // в качестве параметра функция, пока еще не известно какая
-    name = 'Alex'
-    return fn(name)
+  let userInput = (fn) =>  { // в качестве параметра функция, пока еще не известно какая
+     name = 'Alex' 
+     return fn(name) 
   }
   return userInput(say) // say - функция callback (обратного вызова), становиться ясно какая функция передается в качестве параметра
 }
-```
+```  
+
+при передаче функции say в качестве параметра скобки `()` не указываются, т.к. в параметре функция не вызывается, а передается целиком. Функция `say` является аргументом функции `userInput()`.
 
 ## Заключение
 
@@ -399,3 +400,5 @@ for(let i = 0 ; i < arr.length ; i++) {
 console.log(sum)
 Обратите внимание, как использование функции высшего порядка сделало наш код чище, лаконичнее и менее многословным.
 -->
+
+

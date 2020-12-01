@@ -14,39 +14,26 @@ JavaScript поддерживает наследование, что позво�
 function learnJavaScript() {
   let info
 
-  // конструктор пользователя
-  function User(name, age) {
-    this.name = name
-    this.age = age
-    this.go = function () {
-      //document.write(this.name + ' идет <br/>')
-    }
-    this.displayInfo = function () {
-      //document.write("Имя: " + this.name + "; возраст: " + this.age + "<br/>")
-    }
-  }
-  User.prototype.maxAge = 110
+// конструктор пользователя
+function User (name, age) {
+    this.name = name 
+    this.age = age 
+}
+User.prototype.maxAge = 110 
+ 
+// конструктор работника
+function Employee(name, age, comp){
+    User.call(this, name, age) 
+    this.company = comp  
+}
+Employee.prototype = Object.create(User.prototype) 
+ 
+var tom = new User("Том", 26) 
+var bill = new Employee("Билл", 32, "Google") 
 
-  // конструктор работника
-  function Employee(name, age, comp) {
-    User.call(this, name, age)
-    this.company = comp
-    this.displayInfo = function () {
-      //document.write("Имя: " + this.name + "; возраст: " + this.age + "; компания: " + this.company + "<br/>")
-    }
-  }
-  Employee.prototype = Object.create(User.prototype)
 
-  var tom = new User('Том', 26)
-  var bill = new Employee('Билл', 32, 'Google')
-  tom.go()
-  bill.go()
-  tom.displayInfo()
-  bill.displayInfo()
-  console.log(bill.maxage)
-
-  info = bill.name + ' ' + bill.age + ' ' + bill.company //Пример того что наследование работает
-  return info
+info = bill.name +" "+ bill.age +" "+ bill.company //Пример того что наследование работает
+return(info)
 }
 ```
 
@@ -66,12 +53,7 @@ User.call(this, name, age)
 Employee.prototype = Object.create(User.prototype)
 ```
 
-Метод `Object.create()` позволяет создать объект прототипа `User`, который затем присваивается прототипу `Employee`. При этом при необходимости в прототипе `Employee` мы также можем определить дополнительные свойства и методы.
-
-При наследовании мы можем переопределять наследуемый функционал. Например, `Employee` переопределяет метод `displayInfo()`, унаследованный от `User`, чтобы включить в вывод этого метода новое свойство `company`.
-
-В итоге браузер предоставит следующий вывод:
-![Пример наследования](/img/javascript/14_2/00.png)
+Метод ``Object.create()`` позволяет создать объект прототипа ``User``, который затем присваивается прототипу ``Employee``. При этом при необходимости в прототипе ``Employee`` мы также можем определить дополнительные свойства и методы.s
 
 ## Вопросы:
 
