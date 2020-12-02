@@ -1,5 +1,5 @@
 ---
-id: javascript14_2
+id: javascript16
 title: Наследование
 sidebar_label: Наследование
 ---
@@ -14,26 +14,25 @@ JavaScript поддерживает наследование, что позво�
 function learnJavaScript() {
   let info
 
-// конструктор пользователя
-function User (name, age) {
-    this.name = name 
-    this.age = age 
-}
-User.prototype.maxAge = 110 
- 
-// конструктор работника
-function Employee(name, age, comp){
-    User.call(this, name, age) 
-    this.company = comp  
-}
-Employee.prototype = Object.create(User.prototype) 
- 
-var tom = new User("Том", 26) 
-var bill = new Employee("Билл", 32, "Google") 
+  // конструктор пользователя
+  function User(name, age) {
+    this.name = name
+    this.age = age
+  }
+  User.prototype.maxAge = 110
 
+  // конструктор работника
+  function Employee(name, age, comp) {
+    User.call(this, name, age)
+    this.company = comp
+  }
+  Employee.prototype = Object.create(User.prototype)
 
-info = bill.name +" "+ bill.age +" "+ bill.company //Пример того что наследование работает
-return(info)
+  var tom = new User('Том', 26)
+  var bill = new Employee('Билл', 32, 'Google')
+
+  info = bill.name + ' ' + bill.age + ' ' + bill.company //Пример того что наследование работает
+  return info
 }
 ```
 
@@ -53,7 +52,7 @@ User.call(this, name, age)
 Employee.prototype = Object.create(User.prototype)
 ```
 
-Метод ``Object.create()`` позволяет создать объект прототипа ``User``, который затем присваивается прототипу ``Employee``. При этом при необходимости в прототипе ``Employee`` мы также можем определить дополнительные свойства и методы.s
+Метод `Object.create()` позволяет создать объект прототипа `User`, который затем присваивается прототипу `Employee`. При этом при необходимости в прототипе `Employee` мы также можем определить дополнительные свойства и методы.s
 
 ## Вопросы:
 

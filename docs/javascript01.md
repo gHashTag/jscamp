@@ -133,42 +133,6 @@ function learnJavaScript() {
 }
 ```
 
-В нашей школе переменка!!!
-
-AWS Comunity Builders
-
-Hello world!
-Learn Java Script
-Open your console
-And enter your script
-
-Hello Hello Hello world!
-We open bases, bases
-Write program your code
-Scripts and algorithms
-
-Open the browser console
-Experienced user level
-Doesn't matter computer OS
-Available for you and everyone
-
-Don't steal steal your time
-Learn Java Script with us
-First Hello Hello World Program
-You knock on your keys
-
-After pressing all combinations
-Discover a new world
-Welcome to school of developers
-Peace and love Peace and love!
-
-Hello world!
-Learn Java Script
-Open your console
-And enter your script
-
-AWS Comunity Builders
-
 А теперь попробуйте поиграть с математическими операциями:
 
 ```jsx live

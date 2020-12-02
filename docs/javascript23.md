@@ -1,165 +1,264 @@
 ---
 id: javascript23
-title: Отложенные и асинхронные вычисления
-sidebar_label: Promise
+title: Классы
+sidebar_label: Классы
 ---
-Promise(Обещание) — это объект который содержит будущее значение асинхронной операции. Например, если вы запрашиваете некоторые данные с сервера, промис обещает нам получить эти данные, которые мы сможем использовать в будущем.
 
-Вначале промис имеет статус pending («ожидание»), затем – одно из: fulfilled («выполнено успешно») или rejected («выполнено с ошибкой»).
+В JavaScript используется модель прототипного наследования: каждый объект наследует поля (свойства) и методы объекта-прототипа.
 
-![promise states](/img/javascript/23/promise.png)
+Классы создаются для более удобной работы с объектами, но так как JavaScript библиотека React Native учит нас функцианальному программированию, то в рамках этого курса по JavaScript мы рассмотрим классы словно мы пришли в музей истории поглядеть на мамонта, так как мы полностью отказались от использования классов в наших мобильных приложениях!
 
-1. Pending — Промис ожидает, если результат не готов. То есть, ожидает завершение чего-либо (например, завершения асинхронной операции).
-2. Fulfilled — Промис решен, если результат доступен. То есть, что-то завершило свое выполнение(например, асинхронная операция) и все прошло успешно.
-3. Rejected — Промиc отклонен, если произошла ошибка в процессе выполнения.
+## Определение: ключевое слово class
 
-## Создание промиса
-
-Объект Promise создается при помощи ключевого слова new и своего конструктора.
-Конструктор Промисов принимает один аргумент, обратный вызов, также известный как исполнительная функция, которая принимает 2 обратных вызова, resolve и reject.
-
-Исполнительная функция выполняется сразу же после создания промиса. Промис становится выполненным при помощи вызова resolve(), а отклоненным при помощи reject().
+Для определения класса используется ключевое слово `class`:
 
 ```jsx
-const promise = new Promise((resolve, reject) => {
-  if(allWentWell) {
-    resolve('Все прошло отлично!');
-  } else {
-    reject('Что-то пошло не так');
-  }
-});
-```
-
-resolve() и reject() принимают один аргумент, который может быть строкой, числом, логическим выражением, массивом или объектом.
-
-Чтобы снабдить функцию функционалом обещаний, нужно просто вернуть в ней объект Promise:
-
-```jsx
-function myAsyncFunction(url) {
-  return new Promise((resolve, reject) => {
-    //код функции
-  });
+class MyClass {
+  // методы класса
+  constructor() { ... }
+  method1() { ... }
+  method2() { ... }
+  method3() { ... }
+  ...
 }
 ```
 
-## Использование промиса
+Такой синтаксис называется объявлением класса.
 
-Промисы используются при помощи методов then() и catch().
+:::note Методы в классе не разделяются запятой
+Синтаксис классов отличается от литералов объектов. Внутри классов запятые не требуются.
+:::
 
-### then
-Метод then используется для запуска функций при положительном и отрицательном результате промиса. 
+Класс может не иметь названия. С помощью выражения класса можно присвоить класс переменной:
 
-Синтаксис метода then:
 ```jsx
-promise.then(
-  function(result) { /* обработает успешное выполнение */ },
-  function(error) { /* обработает ошибку */ }
-)
+const UserClass = class {
+  // тело класса
+}
 ```
-Первый аргумент метода .then – функция, которая выполняется, когда промис переходит в состояние «выполнен успешно», и получает результат.
 
-Второй аргумент .then – функция, которая выполняется, когда промис переходит в состояние «выполнен с ошибкой», и получает ошибку.
+Классы можно экспортировать в виде модулей. Вот пример экспорта по умолчанию:
 
-Пример метода then:
 ```jsx
-let promise = new Promise(function(resolve, reject) {
-  setTimeout(() => resolve("done!"), 1000);
+export default class User {
+  // тело класса
+}
+```
+
+А вот пример именованного экспорта:
+
+```jsx
+export class User {
+  // тело класса
+}
+```
+
+Класс становится полезным, когда вы создаете экземпляр класса. `Экземпляр` — это объект, содержащий данные и поведение, описанные классом.
+
+Оператор `new` создает экземпляр класса в JavaScript таким образом: `instance = new Class()`.
+
+Например, вы можете создать экземпляр класса User с помощью оператора `new`:
+
+```jsx
+const myUser = new User()
+```
+
+new User() создает экземпляр класса User.
+
+## Инициализация: constructor()
+
+`constructor(…)` это специальный метод в теле класса, который инициализирует экземпляр. Это место, где вы можете установить начальные значения для полей или выполнить любые настройки объектов.
+
+В следующем примере конструктор устанавливает начальное значение поля `name`:
+
+```jsx
+class User {
+  constructor(name) {
+    this.name = name
+  }
+}
+```
+
+`constructor` класса `User` использует один параметр name, который используется для установки начального значения поля `this.name`.
+
+Внутри конструктора значение `this` равно вновь созданному экземпляру.
+
+Аргументы, используемые для создания экземпляра класса, становятся параметрами конструктора:
+
+```jsx live
+function learnJavaScript() {
+  class User {
+    constructor(name) {
+      name // => 'Jon Snow'
+      this.name = name
+    }
+  }
+
+  const user = new User('Jon Snow') //Здесь можно менять значение
+  return user.name
+}
+```
+
+Параметр `name` внутри конструктора имеет значение `Jon Snow`.
+
+Если вы не определяете конструктор для класса, создается конструктор по умолчанию. Конструктор по умолчанию является пустой функцией, которая не изменяет экземпляр.
+
+В классе может быть только один метод с именем `constructor`.
+
+## Геттеры и сеттеры
+
+Геттеры и сеттеры — это вычисляемые свойства. Это методы, имитирующие поля, но позволяющие читать и записывать данные.
+
+Геттеры используются для получения данных, а сеттеры — для их изменения.
+
+Пример:
+
+```jsx
+class User {
+  #nameValue
+
+  constructor(name) {
+    this.name = name
+  }
+
+  get name() {
+    return this.#nameValue
+  }
+
+  set name(name) {
+    if (name === '') {
+      throw new Error('Имя пользователя не может быть пустым')
+    }
+    this.#nameValue = name
+  }
+}
+
+const user = new User('Печорин')
+user.name // вызывается геттер, Печорин
+user.name = 'Бэла' // вызывается сеттер
+
+user.name = '' // Имя пользователя не может быть пустым
+```
+
+## Наследование: extends
+
+Классы в JavaScript поддерживают наследование с помощью ключевого слова extends.
+
+В выражении class Child extends Parent { } класс Child наследует от класса Parent конструктор, поля и методы.
+
+Создадим дочерний класс ContentWriter, расширяющий родительский класс User:
+
+```jsx
+class User {
+  name
+
+  constructor(name) {
+    this.name = name
+  }
+
+  getName() {
+    return this.name
+  }
+}
+
+class ContentWriter extends User {
+  posts = []
+}
+
+const writer = new ContentWriter('Лермонтов')
+
+writer.name // Лермонтов
+writer.getName() // Лермонтов
+writer.posts // []
+```
+
+ContentWriter наследует от User конструктор, метод getName() и поле name. В самом ContentWriter определяется новое поле posts.
+
+Обратите внимание, что частные поля и методы родительского класса не наследуются дочерними классами.
+
+### Родительский конструктор: super() в constructor()
+
+Для того, чтобы вызвать конструктор родительского класса в дочернем классе, следует использовать специальную функцию super(), доступную в конструкторе дочернего класса.
+
+Пусть конструктор ContentWriter вызывает родительский конструктор и инициализирует поле posts:
+
+```jsx live
+function learnJavaScript() {
+  class User {
+    name
+
+    constructor(name) {
+      this.name = name
+    }
+
+    getName() {
+      return this.name
+    }
+  }
+
+  class ContentWriter extends User {
+    posts = []
+
+    constructor(name, posts) {
+      super(name)
+      this.posts = posts
+    }
+  }
+
+  const writer = new ContentWriter('Лермонтов', ['Герой нашего времени'])
+  writer.name // Лермонтов
+  writer.posts // ['Герой нашего времени']
+
+  return writer.name //name можно заменить на posts и посмотреть результат
+}
+```
+
+super(name) в дочернем классе ContentWriter вызывает конструктор родительского класса User.
+
+Обратите внимание, что в дочернем конструкторе перед использованием ключевого слова this вызывается super(). Вызов super() «привязывает» родительский конструктор к экземпляру.
+
+```jsx
+class Child extends Parent {
+  constructor(value1, value2) {
+    // не работает!
+    this.prop2 = value2
+    super(value1)
+  }
+}
+```
+
+## Пример
+
+```jsx
+class Animal { //Создание класса Animal. Классы называют с большой буквы
+
+static type = 'ANIMAL' //При помощи ключевого слова static можно объявлять переменные внутри класса. Их можно вызвать только самим классом, т.е. Animal.type
+
+  constructor(options) { //Конструктор принимает объект options
+    this.name = options.name // Инициализация полей класса
+    this.age = options.age
+    this.hasTail = options.hasTail
+  }
+
+  voice() { //Метод для класса Animal. Можно вызвать у объекта cat как cat.voice()
+    alert('I am Animal!')
+  }
+}
+
+get ageInfo(){ //Создание геттера ageInfo
+  return this.age * 7 //Если вызвать геттер у объекта cat, то получиться 5 * 7 = 35
+}
+
+set ageInfo(newAge) { //Создание сеттера ageInfo.
+  this.age = newAge // Если выполнить у объекта cat команду cat.ageInfo = 8, то полю age присвоится значение 8
+}
+
+const cat = new Animal({ //Создание объекта при помощи класса Animal
+  name: 'Cat',
+  age: 5,
+  hasTail: true
 })
-
-// resolve запустит первую функцию, переданную в .then
-promise.then(
-  result => alert(result), // выведет "done!" через одну секунду
-  error => alert(error) // не будет запущена
-)
 ```
-
-А в случае ошибки в промисе – выполнится вторая:
-
-```jsx
-let promise = new Promise(function(resolve, reject) {
-  setTimeout(() => reject(new Error("Whoops!")), 1000)
-})
-
-// reject запустит вторую функцию, переданную в .then
-promise.then(
-  result => alert(result), // не будет запущена
-  error => alert(error) // выведет "Error: Whoops!" спустя одну секунду
-)
-```
-
-Если нужно вывести только результат успешного выполения, то в then можно передать только одну функцию:
-
-```jsx
-let promise = new Promise(resolve => {
-  setTimeout(() => resolve("done!"), 1000)
-})
-
-promise.then(alert) // выведет "done!" спустя одну секунду
-```
-
-### catch
-
-Для отлова ошибок используется метод catch. Его можно использовать вместо метода then для вывода сообщений об ошибке.
-
-Синтаксис метода catch:
-
-```jsx
-let promise = new Promise((resolve, reject) => {
-  setTimeout(() => reject(new Error("Ошибка!")), 1000)
-})
-
-promise.catch(alert) // выведет "Error: Ошибка!" спустя одну секунду
-```
-
-### promise.all
-
-Этот метод берет массив промисов и возвращает новый промис, который будет выполненным, когда все промисы внутри массива выполнены или отклонен, как только встречается промис, который отклоняется. 
-
-Например:
-
-```jsx
-const promise1 = new Promise((resolve, reject) => {
- setTimeout(() => {
-  resolve('Promise1 выполнен')
- }, 2000)
-})
-const promise2 = new Promise((resolve, reject) => {
- setTimeout(() => {
-  resolve('Promise2 выполнен')
- }, 1500)
-})
-Promise.all([promise1, promise2])
-  .then((data) => console.log(data[0], data[1]))
-  .catch((error) => console.log(error))
-```
-Здесь аргументом внутри then() выступает массив, который содержит значения промисов в том же порядке, в котором они передавались в Promise.all().
-
-### promise.race
-
-Этот метод принимает массив промисов и возвращает один новый промис, который будет выполненным, как только встретится выполненный промис в массиве или же отклоняется, если отклоненный промис встречается раньше. 
-
-Например:
-```jsx
-const promise1 = new Promise((resolve, reject) => {
- setTimeout(() => {
-  resolve('Promise1 выполнен');
- }, 1000);
-});
-const promise2 = new Promise((resolve, reject) => {
- setTimeout(() => {
-  reject('Promise2 отклонен');
- }, 1500);
-});
-Promise.race([promise1, promise2])
-  .then((data) => console.log(data))  // Promise1 выполнен
-  .catch((error) => console.log(error));
-```
-
-Тут мы имеем два промиса, где один выполняется через 1 секунду, а другой отклоняется через 1.5 секунды. Как только первый промис выполнен, возвращенный из Promise.race() промис будет иметь статус выполненного не дожидаясь статуса второго промиса.
-
-Здесь data, которая передается в then() является значением первого, выполненного, промиса.
-
-По итогу, Promise.race() дожидается первого промиса и берет его статус как статус возвращаемого промиса.
 
 ## Вопросы:
 
@@ -168,9 +267,9 @@ Promise.race([promise1, promise2])
 ![Sumerian school](/img/app.png)
 
 ## Ссылки:
- 1. [MDN web docs](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise)
- 2. [Learn JavaScript](https://learn.javascript.ru/promise)
- 3. [Understanding Promises](https://blog.bitsrc.io/understanding-promises-in-javascript-c5248de9ff8f?gi=1e459ca846d9)
+
+1.  [MDN web docs](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Classes)
+2.  [Learn JavaScript](https://learn.javascript.ru/class)
 
 ## Contributors ✨
 
@@ -190,4 +289,5 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- prettier-ignore-end -->
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
+
 [![Become a Patron!](/img/logo/patreon.png)](https://www.patreon.com/bePatron?u=31769291)
