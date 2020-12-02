@@ -24,7 +24,6 @@ function escapeRegExp(string){
 ## Определение регулярных выражения
 
 В JavaScript регулярные выражения это объект, который может быть определён двумя способами.
-<<<<<<< HEAD
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -165,5 +164,3 @@ function learnJavaScript() {
   }
 ```
 Попробуйте поменять `lime` и `banana` местами.
-=======
->>>>>>> gh-pages
