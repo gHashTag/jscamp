@@ -1,5 +1,5 @@
 ---
-id: javascript15
+id: javascript14
 title: Конструкция switch case
 sidebar_label: Конструкция switch case
 ---
