@@ -31,9 +31,7 @@ function learnJavaScript() {
     age: 15,
     name: 'John',
     // метод : функция
-    say: function () {
-      return 'Hello!'
-    }
+    say: () => 'Hello!'
   }
   return obj.say()
 }
@@ -183,9 +181,7 @@ delete obj.age
 function learnJavaScript() {
   let sport = {
     name: 'John',
-    run: function (n) {
-      return this.name + ' пробежал ' + n + ' метров!'
-    }
+    run: (n) => this.name + ' пробежал ' + n + ' метров!'
   }
 
   return sport.run(300)
@@ -202,9 +198,7 @@ function learnJavaScript() {
     name: 'Nikita'
   }
 
-  sport.run = function (n) {
-    return 'Спортсмен пробежал ' + n + ' метров и это был ' + this.name
-  }
+  sport.run = (n) => 'Спортсмен пробежал ' + n + ' метров и это был ' + this.name
 
   return sport.run(350)
 }
@@ -223,7 +217,7 @@ function learnJavaScript() {
     age: 18
   }
 
-  sport.run = function (n, str) {
+  sport.run = (n, str) => {
     if (str == 'men') return 'Спортсмен пробежал ' + n + ' метров и это был ' + this.name
     if (str == 'women') return 'Спортсменка пробежала ' + n + ' метров и это была ' + this.name
     if (str != 'men' || str != 'women') return 'Человек пробежал ' + n + ' метров.'

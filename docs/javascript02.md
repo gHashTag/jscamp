@@ -18,7 +18,7 @@ function learnJavaScript() {
   // Это комментарий в строке
   var hello = 'Hello world!!!'
 
-  return <h2>{hello}</h2>
+  return hello
 }
 ```
 
@@ -32,7 +32,7 @@ function learnJavaScript() {
   /* Это однострочный комментарий */
   var hello = 'Hello world!!!'
 
-  return <h2>{hello}</h2>
+  return hello
 }
 ```
 
@@ -44,7 +44,7 @@ function learnJavaScript() {
      Обратите внимание, что вам не нужно обрывать комментарий, пока вы его не закончите*/
   var hello = 'Hello world!!!'
   /* Напишите здесь свой комментарий */
-  return <h2>{hello}</h2>
+  return hello
 }
 ```
 
@@ -55,9 +55,9 @@ function learnJavaScript() {
 ```jsx live
 function learnJavaScript() {
   var x = ''
-  var hello = 'Hello ' + x /* вставьте значение x */ + ' !'
+  var hello = 'Hello ' + x /* вставьте значение x */ + '!'
 
-  return <h2>{hello}</h2>
+  return hello
 }
 ```
 

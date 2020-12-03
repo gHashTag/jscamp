@@ -16,7 +16,7 @@ function learnJavaScript() {
   const value2 = 9
   let sum = value1 + value2
 
-  return <h2>{sum}</h2>
+  return sum
 }
 ```
 
@@ -30,7 +30,7 @@ function learnJavaScript() {
   const value2 = 9
   let sum = Number(value1) + value2
 
-  return <h2>{sum}</h2>
+  return sum
 }
 ```
 
@@ -47,7 +47,7 @@ function learnJavaScript() {
   let value = true // boolean
 
   value = String(value)
-  return <h2>{typeof value}</h2>
+  return typeof value
 }
 ```
 
@@ -61,7 +61,7 @@ function learnJavaScript() {
 function learnJavaScript() {
   let value = '6' / '2'
 
-  return <h2>{value}</h2>
+  return value
 }
 ```
 
@@ -72,7 +72,7 @@ function learnJavaScript() {
   let str = '123'
   let num = Number(str)
 
-  return <h2>{typeof num}</h2>
+  return typeof num
 }
 ```
 
@@ -84,7 +84,7 @@ function learnJavaScript() {
 function learnJavaScript() {
   let age = Number('Любая строка вместо числа')
 
-  return <h2>{age}</h2>
+  return age
 }
 ```
 

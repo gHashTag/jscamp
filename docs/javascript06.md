@@ -30,7 +30,7 @@ let single = '"I think so, indeed!" - cried he.'
 // prettier-ignore
 function learnJavaScript() {
   let backticks = 'It\'s not complicated'
-  return <h2>{backticks}</h2>
+  return backticks
 }
 ```
 
@@ -45,7 +45,7 @@ function learnJavaScript() {
 ```jsx live
 function learnJavaScript() {
   const sum = (a, b) => a + b
-  return <h2>{`1 + 2 = ${sum(1, 2)}`}</h2>
+  return `1 + 2 = ${sum(1, 2)}`
 }
 ```
 
@@ -58,7 +58,7 @@ function learnJavaScript() {
     * Pete
     * Mary
    `
-  return <h2>{guestList}</h2>
+  return guestList
 }
 ```
 
@@ -79,7 +79,7 @@ alert(guestList) // список гостей, состоящий из неск�
 ```jsx live
 function learnJavaScript() {
   let str = 'My\n'.length
-  return <h2>{str}</h2>
+  return str
 }
 ```
 
@@ -92,7 +92,7 @@ function learnJavaScript() {
 ```jsx live
 function learnJavaScript() {
   let str = 'cat'.charAt(2)
-  return <h2>{str}</h2>
+  return str
 }
 ```
 
@@ -101,7 +101,7 @@ function learnJavaScript() {
 ```jsx live
 function learnJavaScript() {
   let str = 'cat'[2]
-  return <h2>{str}</h2>
+  return str
 }
 ```
 
@@ -116,7 +116,7 @@ function learnJavaScript() {
 function learnJavaScript() {
   let str = 'Hi'
   str = 'P' + str[1] // заменяем строку
-  return <h2>{str}</h2>
+  return str
 }
 ```
 
@@ -127,7 +127,7 @@ function learnJavaScript() {
 ```jsx live
 function learnJavaScript() {
   let str = 'Interface'.toUpperCase()
-  return <h2>{str}</h2>
+  return str
 }
 ```
 
@@ -136,7 +136,7 @@ function learnJavaScript() {
 ```jsx live
 function learnJavaScript() {
   let str = 'Interface'.toLowerCase()
-  return <h2>{str}</h2>
+  return str
 }
 ```
 
@@ -173,7 +173,7 @@ function learnJavaScript() {
     slogan +
     '.'
   bio
-  return <h2>{bio}</h2>
+  return bio
 }
 ```
 
@@ -183,7 +183,7 @@ function learnJavaScript() {
 function learnJavaScript() {
   let str = '123'
   str += 456
-  return <h2>{str}</h2>
+  return str
 }
 ```
 

@@ -63,9 +63,8 @@ about:blank
 
 Теперь, когда перед вами открыто окно консоли и вы растянули его удобным образом, кликните мышкой справа от угловой скобки (>). В строке появится мигающий курсор, означающий, что можно начинать вводить текст. Сейчас вы наберёте свои первые строчки кода. Введите следующий текст (вместе с кавычками):
 
-```javascript
+```
 'Hello world!'
-
 ```
 
 ![Hello world!](/img/javascript/03.png)
@@ -129,7 +128,7 @@ hello
 function learnJavaScript() {
   var hello = 'Hello'
 
-  return <h2>{hello}</h2>
+  return hello
 }
 ```
 
@@ -139,7 +138,7 @@ function learnJavaScript() {
 function learnJavaScript() {
   var sum = 5 + 5
 
-  return <h2>{sum}</h2>
+  return sum
 }
 ```
 
