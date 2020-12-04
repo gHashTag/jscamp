@@ -12,7 +12,7 @@ JavaScript является слабо типизированным или ди�
 function learnJavaScript() {
   let foo = 42 // сейчас foo типа number
   foo = 'bar' // а теперь foo типа string
-  return <h2>{typeof foo}</h2>
+  return typeof foo
 }
 ```
 

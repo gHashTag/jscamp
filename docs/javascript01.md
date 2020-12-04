@@ -63,9 +63,8 @@ about:blank
 
 Теперь, когда перед вами открыто окно консоли и вы растянули его удобным образом, кликните мышкой справа от угловой скобки (>). В строке появится мигающий курсор, означающий, что можно начинать вводить текст. Сейчас вы наберёте свои первые строчки кода. Введите следующий текст (вместе с кавычками):
 
-```javascript
+```
 'Hello world!'
-
 ```
 
 ![Hello world!](/img/javascript/03.png)
@@ -129,45 +128,9 @@ hello
 function learnJavaScript() {
   var hello = 'Hello'
 
-  return <h2>{hello}</h2>
+  return hello
 }
 ```
-
-В нашей школе переменка!!!
-
-AWS Comunity Builders
-
-Hello world!
-Learn Java Script
-Open your console
-And enter your script
-
-Hello Hello Hello world!
-We open bases, bases
-Write program your code
-Scripts and algorithms
-
-Open the browser console
-Experienced user level
-Doesn't matter computer OS
-Available for you and everyone
-
-Don't steal steal your time
-Learn Java Script with us
-First Hello Hello World Program
-You knock on your keys
-
-After pressing all combinations
-Discover a new world
-Welcome to school of developers
-Peace and love Peace and love!
-
-Hello world!
-Learn Java Script
-Open your console
-And enter your script
-
-AWS Comunity Builders
 
 А теперь попробуйте поиграть с математическими операциями:
 
@@ -175,7 +138,7 @@ AWS Comunity Builders
 function learnJavaScript() {
   var sum = 5 + 5
 
-  return <h2>{sum}</h2>
+  return sum
 }
 ```
 

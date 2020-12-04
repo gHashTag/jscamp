@@ -42,7 +42,7 @@ x == y
 ```jsx live
 function learnJavaScript() {
   let bool = 1 == 1
-  return <h2>{bool.toString()}</h2>
+  return bool.toString()
 }
 ```
 
@@ -72,7 +72,7 @@ x != y
 ```jsx live
 function learnJavaScript() {
   let bool = 1 != 2
-  return <h2>{bool.toString()}</h2>
+  return bool.toString()
 }
 ```
 
@@ -101,7 +101,7 @@ x === y
 ```jsx live
 function learnJavaScript() {
   let bool = 3 === 3
-  return <h2>{bool.toString()}</h2>
+  return bool.toString()
 }
 ```
 
@@ -127,7 +127,7 @@ x !== y
 ```jsx live
 function learnJavaScript() {
   let bool = 3 === 3
-  return <h2>{bool.toString()}</h2>
+  return bool.toString()
 }
 ```
 
@@ -161,7 +161,7 @@ x > y
 ```jsx live
 function learnJavaScript() {
   let bool = 4 > 3
-  return <h2>{bool.toString()}</h2>
+  return bool.toString()
 }
 ```
 
@@ -187,7 +187,7 @@ x < y
 ```jsx live
 function learnJavaScript() {
   let bool = 3 < 4
-  return <h2>{bool.toString()}</h2>
+  return bool.toString()
 }
 ```
 
@@ -213,7 +213,7 @@ x >= y
 ```jsx live
 function learnJavaScript() {
   let bool = 4 >= 3
-  return <h2>{bool.toString()}</h2>
+  return bool.toString()
 }
 ```
 
@@ -239,7 +239,7 @@ x <= y
 ```jsx live
 function learnJavaScript() {
   let bool = 3 < 4
-  return <h2>{bool.toString()}</h2>
+  return bool.toString()
 }
 ```
 
@@ -284,7 +284,7 @@ function learnJavaScript() {
     whatIsTheYearNow = false
   }
 
-  return <h2>{whatIsTheYearNow.toString()}</h2>
+  return whatIsTheYearNow.toString()
 }
 ```
 
@@ -308,7 +308,7 @@ function learnJavaScript() {
     bool = false
   }
 
-  return <h2>{bool.toString()}</h2>
+  return bool.toString()
 }
 ```
 
@@ -327,7 +327,7 @@ function learnJavaScript() {
   } else {
     output = 'больше 2020'
   }
-  return <h2>{output}</h2>
+  return output
 }
 ```
 
@@ -348,7 +348,7 @@ function learnJavaScript() {
   } else {
     output = 'равно 2020'
   }
-  return <h2>{output}</h2>
+  return output
 }
 ```
 
@@ -375,7 +375,7 @@ function learnJavaScript() {
   let age = 20
   let output = age > 18 ? 'Да' : 'Нет'
 
-  return <h2>{output}</h2>
+  return output
 }
 ```
 

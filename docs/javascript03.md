@@ -16,7 +16,7 @@ sidebar_label: Переменка
 function learnJavaScript() {
   var message = ''
 
-  return <h2>{message}</h2>
+  return message
 }
 ```
 
@@ -31,7 +31,7 @@ function learnJavaScript() {
   var message
   message = 'My name is ...'
   //Мы можем получить к ней доступ, используя имя переменной
-  return <h2>{message}</h2>
+  return message
 }
 ```
 
@@ -42,7 +42,7 @@ function learnJavaScript() {
 ```jsx live
 function learnJavaScript() {
   var message = 'Hello!' // определяем переменную и присваиваем ей значение
-  return <h2>{message}</h2>
+  return message
 }
 ```
 
@@ -57,7 +57,7 @@ function learnJavaScript() {
   message = true // а теперь message true
   message = 35 // и в итоге message 35
 
-  return <h2>{message}</h2>
+  return message
 }
 ```
 
@@ -100,7 +100,7 @@ function learnJavaScript() {
 
   myNumber = 500 // так-то лучше, теперь это число (number). Удалите эту строчку и поспотрите на тип данных.
 
-  return <h2>{typeof myNumber}</h2>
+  return typeof myNumber
 }
 ```
 

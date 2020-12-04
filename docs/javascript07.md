@@ -48,7 +48,7 @@ sidebar_label: Числа
 ```jsx {2} live
 function learnJavaScript() {
   let result = 2 + 3 // здесь
-  return <h2>{result}</h2>
+  return result
 }
 ```
 
@@ -72,7 +72,7 @@ let sum = 2 + 3 // значение суммы — 7
 function learnJavaScript() {
   let sum = 2 + 3
   sum = sum + 3 // теперь значение суммы стало 8
-  return <h2>{sum}</h2>
+  return sum
 }
 ```
 
@@ -100,7 +100,7 @@ let значение = 5
 ```jsx live
 function learnJavaScript() {
   let значение = 0 + 0
-  return <h2>{значение}</h2>
+  return значение
 }
 ```
 
@@ -116,7 +116,7 @@ function learnJavaScript() {
 function learnJavaScript() {
   let increment = 0
   increment++
-  return <h2>{increment}</h2>
+  return increment
 }
 ```
 
@@ -126,7 +126,7 @@ function learnJavaScript() {
 function learnJavaScript() {
   let decrement = 6
   decrement--
-  return <h2>{decrement}</h2>
+  return decrement
 }
 ```
 
@@ -151,7 +151,7 @@ function learnJavaScript() {
 ```jsx live
 function learnJavaScript() {
   let modulo = 12 % 5
-  return <h2>{modulo}</h2>
+  return modulo
 }
 ```
 
@@ -168,7 +168,7 @@ function learnJavaScript() {
 ```jsx live
 function learnJavaScript() {
   let result = Math.round(20.49)
-  return <h2>{result}</h2>
+  return result
 }
 ```
 

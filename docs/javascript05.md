@@ -18,7 +18,7 @@ sidebar_label: Ошибки
 function learnJavaScript() {
   var error = 9
 
-  return <h2>{error}</h2>
+  return error
 }
 ```
 
@@ -33,7 +33,7 @@ function learnJavaScript() {
 function learnJavaScript() {
   var error = 5
 
-  return <h2>{error}</h2>
+  return error
 }
 ```
 
@@ -47,7 +47,7 @@ function learnJavaScript() {
 function learnJavaScript() {
   var error = 5
 
-  return <h2>{error}</h2>
+  return error
 }
 ```
 
@@ -58,7 +58,7 @@ function learnJavaScript() {
   var переменая = 5
   var error = 5 + переменая
 
-  return <h2>{error}</h2>
+  return error
 }
 ```
 
