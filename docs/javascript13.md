@@ -1,5 +1,5 @@
 ---
-id: javascript28
+id: javascript13
 title: Регулярные выражения
 sidebar_label: Регулярные выражения
 ---
