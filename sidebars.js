@@ -30,7 +30,8 @@ module.exports = {
       'javascript24',
       'javascript25',
       'javascript28',
-      'javascript30'
+      'javascript30',
+      'javascript31'
     ],
     ['React Native']: [
       'start000',
