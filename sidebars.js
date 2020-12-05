@@ -16,6 +16,7 @@ module.exports = {
       'javascript10',
       'javascript11',
       'javascript12',
+      'javascript13',
       'javascript14',
       'javascript15',
       'javascript16',
@@ -28,8 +29,8 @@ module.exports = {
       'javascript23',
       'javascript24',
       'javascript25',
-      'javascript27',
-      'javascript28'
+      'javascript28',
+      'javascript30'
     ],
     ['React Native']: [
       'start000',

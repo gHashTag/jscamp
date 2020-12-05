@@ -4,16 +4,15 @@ title: Fetch API
 sidebar_label: Fetch API
 ---
 
-`Fetch API` позволяет JavaScript обмениваться данными с сервером с помощью HTTP-запросов и является более совершенной заменой классу `XMLHttpRequest`. Выполнение запросов осуществляется методом `fetch()`, который возвращает [Promise](https://react-native-village.github.io/docs/javascript24).
+**Fetch API** позволяет JavaScript обмениваться данными с сервером с помощью HTTP-запросов и является более совершенной заменой классу `XMLHttpRequest`. Выполнение запросов осуществляется методом `fetch()`, который возвращает [Promise](https://react-native-village.github.io/docs/javascript24).
 
 ## Синтаксис
 
 ```jsx
 let promise = fetch(url, [options])
 ```
-
-- `url` - URL для отправки запроса;
-- `options` - параметры запроса.
+* `url` - URL для отправки запроса;
+* `options` - параметры запроса.
 
 Задав метод `fetch()` без `options` вы получите GET-запрос, скачивающий данные по адресу `URL`.
 
@@ -29,8 +28,8 @@ let promise = fetch(url, [options])
 8. `signal` - AbortSignal, прерывание запроса;
 9. `credentials` - отправка cookies вместе с запросом - mit, same-origin.
 
-Пример запроса с методами
 
+Пример запроса с методами
 ```jsx
 fetch('https://example.com/', {
     method: 'GET',
@@ -43,7 +42,6 @@ fetch('https://example.com/', {
 ## Получение ответа
 
 Метод `fetch()` возвращает [Promise](https://react-native-village.github.io/docs/javascript24) объект класса `Response`, который имеет следующие свойства:
-
 1. `status` - код ответа;
 2. `statusText` - текстовое сообщение, соответствующее коду ответа;
 3. `ok` - логическое значение, указывающее на успешность кода ответа (true: 200-299);
@@ -55,7 +53,6 @@ fetch('https://example.com/', {
 ## Обработка ответа
 
 Переданные данные находятся в формате `ReadableStream`. Для изменения формата можно использовать следующие методы:
-
 1. `text()` - преобразует ответ в строку;
 2. `json()` - преобразует ответ в формате JSON;
 3. `blob()` - преобразует ответ в объект Blob;
@@ -63,24 +60,21 @@ fetch('https://example.com/', {
 5. `arrayBuffer()` - преобразует ответ в объект ArrayBuffer.
 
 Пример преобразование ответа в формат JSON.
-
 ```jsx
 let res = await fetch('https://example.com/') // Выполняем запрос
-let com = await res.json() // Преобразовываем ответ
+let com = await res.json(); // Преобразовываем ответ
 ```
 
 ## Обработка ошибок
 
 Узнать завершился ли `fetch()` с ошибкой мы можем с помощью свойств: "status" и "ok". Пример:
-
 ```jsx
 let res = await fetch('https://example.com/') // Выполняем запрос
 
-if (res.ok) {
-  // Если HTTP-статус находится диапазоне 200-299
-  let answer = await res.text() // Получаем ответ
+if (res.ok) { // Если HTTP-статус находится диапазоне 200-299
+    let answer = await res.text() // Получаем ответ
 } else {
-  alert('Ошибка: ' + res.status) // Иначе выводим код ответа
+    alert('Ошибка: ' + res.status) // Иначе выводим код ответа
 }
 ```
 
@@ -100,8 +94,7 @@ fetch('https://example.com/api/data', {
     });
 ```
 
-Использование метода POST
-
+Использование метода POST 
 ```jsx
 let response = await fetch('/article/fetch/post/user', {
   method: 'POST',
@@ -109,54 +102,47 @@ let response = await fetch('/article/fetch/post/user', {
     'Content-Type': 'application/json;charset=utf-8'
   },
   body: JSON.stringify(user)
-})
+});
 
-let result = await response.json()
-alert(result.message)
+let result = await response.json();
+alert(result.message);
 ```
 
 Без `await`
-
 ```jsx
 fetch('https://api.github.com/users/KrunalLathiya')
-  .then((res) => res.json())
-  .then((json) => console.log(json))
+.then(res => res.json())
+.then(json => console.log(json));
 ```
 
 ## Вопросы
 
 1. Что возвращает метод `fetch()`?
-
 - Функцию;
 - Объект;
 - Промисы.
 
 2. Задав в `fetch()` только параметр URL, какой запрос мы получим?
-
 - POST;
 - GET;
 - PUT.
 
 3. Каким параметром указываются HTTP-заголовки?
-
 - redirect;
 - headers;
 - credentials.
 
 4. Какой метод нужно использовать для преобразование ответа в строку?
-
 - blob();
 - json();
 - text().
 
 5. Что означает свойство `ok` у объекта класса `Response`?
-
 - Код ответа;
 - Успешность кода ответа;
 - Чтение данных из запроса;
 
 ## Ссылки
-
 1. [Learn JavaScript](https://learn.javascript.ru/fetch)
 2. [MDN Web Docs](https://developer.mozilla.org/ru/docs/Web/API/Fetch_API/Using_Fetch)
 3. [JS Tutorial](https://www.javascripttutorial.net/javascript-fetch-api/)
