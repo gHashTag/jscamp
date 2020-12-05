@@ -201,17 +201,16 @@ function SearchForm({ onSearch }) {
 
 ```jsx live
 function learnJavaScript() {
-  function addNumber(total, value) {
-    return total + value
-  }
-
-  function sum(...args) {
-    return args.reduce(addNumber, 0)
-  }
-
+  let addNumber = (total, value) =>
+    total + value
+  
+  let sum = (...args) =>
+    args.reduce(addNumber, 0)
+  
   return sum(1, 2, 3, 4, 5, 6, 7) // 28
 }
 ```
+В данном примере метод `.reduce` запускается в контексте массива и вызывает функцию для каждого элемента. Но помимо этого, он аккумулирует результаты всех вызовов в одно значение. Его задача – подсчитать "сумму" всех элементов и вернуть ее.
 
 ## Итого
 
