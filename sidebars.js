@@ -4,6 +4,7 @@ module.exports = {
     ['Startup']: ['startup00'],
     ['Blogging']: ['blogging-00'],
     ['Java Script']: [
+      'javascript00',
       'javascript01',
       'javascript02',
       'javascript03',

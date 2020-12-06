@@ -8,8 +8,8 @@
  */
 
 module.exports = {
-  title: 'Уроки React Native',
-  tagline: 'Маркет-плейс задач и вакансий для React Native и AWS Amplify разработчиков в мобильном приложении.',
+  title: 'Sumerian School',
+  tagline: 'Школа программирования',
   url: 'https://react-native-village.github.io',
   baseUrl: '/',
   favicon: 'img/favicon.ico',

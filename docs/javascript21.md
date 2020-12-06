@@ -1,5 +1,5 @@
 ---
-id: javascript17
+id: javascript21
 title: Функции высшего порядка
 sidebar_label: Функции высшего порядка
 ---
@@ -18,18 +18,18 @@ sidebar_label: Функции высшего порядка
 
 ```jsx live
 function learnJavaScript() {
-
-  function greeting() {     // Старый вариант
+  function greeting() {
+    // Старый вариант
     return 'Hello, World !'
   }
   return greeting()
 }
 ```
+
 Лучше всего использовать стрелочные функции:
 
 ```jsx live
 function learnJavaScript() {
-
   let greeting = () => 'Hello, World !'
 
   return greeting()
@@ -40,8 +40,7 @@ function learnJavaScript() {
 
 ```jsx live
 function learnJavaScript() {
-
-  const square = (x) => x * x  // const square = x => x * x
+  const square = x => x * x // const square = x => x * x
 
   return square(7)
 }
@@ -51,10 +50,9 @@ function learnJavaScript() {
 
 ```jsx live
 function learnJavaScript() {
-  
-  const square = x => x * x  // при передачи 1-го параметра () можно не писать
-  const foo = square  // Теперь у нас 2 функции-константы
-  let result = foo(12)  // 12*12 = 144
+  const square = x => x * x // при передачи 1-го параметра () можно не писать
+  const foo = square // Теперь у нас 2 функции-константы
+  let result = foo(12) // 12*12 = 144
 
   return <b>{result}</b>
 }
@@ -66,22 +64,22 @@ function learnJavaScript() {
 
 ```jsx live
 function learnJavaScript() {
-
-  let formalGreeting = () =>  "Добрый день!" // Диалог 1
-  let casualGreeting = () =>  "Как дела?"    // Диалог 2
-  let whoIs = () => "Уточните запрос !"      // Диалог 3
+  let formalGreeting = () => 'Добрый день!' // Диалог 1
+  let casualGreeting = () => 'Как дела?' // Диалог 2
+  let whoIs = () => 'Уточните запрос !' // Диалог 3
 
   let greet = (type, greetFormal, greetCasual) => {
-    if(type === 'men')  // Условие выбора диалога
+    if (type === 'men')
+      // Условие выбора диалога
       return greetFormal()
-    else if(type === 'women')
-          return greetCasual()
-         else return whoIs() 
+    else if (type === 'women') return greetCasual()
+    else return whoIs()
   }
 
   return greet('women', formalGreeting, casualGreeting)
 }
 ```
+
 Теперь мы знаем, что такое функции `первого класса.` Можно приступать к `функциям высшего порядка.`
 
 ## Функции высшего порядка
@@ -116,7 +114,7 @@ function learnJavaScript() {
   const arr2 = []
 
   for (let i = 0; i < arr1.length; i++) {
-    arr2.push(arr1[i] * 2)  // массив arr2 растет в цикле
+    arr2.push(arr1[i] * 2) // массив arr2 растет в цикле
   }
 
   return arr2 // 2, 4, 6, 8 только без пробелов
@@ -128,9 +126,10 @@ function learnJavaScript() {
 ```jsx live
 function learnJavaScript() {
   const arr1 = [1, 2, 3, 4]
-  const arr2 = arr1.map(function(item) {  // Старый вариант
+  const arr2 = arr1.map(function (item) {
+    // Старый вариант
     return item * 2 + ' '
-  }) 
+  })
   return <b>{arr2}</b>
 }
 ```
@@ -139,44 +138,44 @@ function learnJavaScript() {
 
 ```jsx live
 function learnJavaScript() {
-    const arr1 = [1, 2, 3, 4, 5]
-    const multTwo = item => item * 2 + ' '
+  const arr1 = [1, 2, 3, 4, 5]
+  const multTwo = item => item * 2 + ' '
 
-    const arr2 = arr1.map(multTwo)  // Алгоритм в 1 строку
-    
+  const arr2 = arr1.map(multTwo) // Алгоритм в 1 строку
+
   return <b>{arr2}</b>
 }
 ```
 
 ### Пример №2. Вычисляемые значения .`map`
 
-Допустим, у нас есть массив, который содержит годы рождения разных людей. Нам нужно создать массив, в котором будет храниться их возраст. 
+Допустим, у нас есть массив, который содержит годы рождения разных людей. Нам нужно создать массив, в котором будет храниться их возраст.
 
 Например: без функции высшего порядка (`классика` - через цикл `for( )` и .`push( )` )
 
 ```jsx live
 function learnJavaScript() {
- 
-  const birthYear = [1975, 1997, 2002, 1995, 1985] 
+  const birthYear = [1975, 1997, 2002, 1995, 1985]
   const ages = []
-  for(let i = 0 ; i < birthYear.length ; i++) {
-    let ageNew = 2020 - birthYear[i] + ' '  // Текущее значение нового массива
-    ages.push(ageNew)   // заносим новое значение в массив ages[]
+  for (let i = 0; i < birthYear.length; i++) {
+    let ageNew = 2020 - birthYear[i] + ' ' // Текущее значение нового массива
+    ages.push(ageNew) // заносим новое значение в массив ages[]
   }
 
-  return ages  // [ 45, 23, 18, 25, 35 ] только без пробелов
+  return ages // [ 45, 23, 18, 25, 35 ] только без пробелов
 }
 ```
 
 #### С функцией высшего порядка .`map`:
+
 ```jsx live
 function learnJavaScript() {
-  
   const birthYear = [1975, 1997, 2002, 1995, 1985]
-  let ages = birthYear.map(year => 2020 - year + ' ')  // Алгоритм в 1 строку через стрелочную функцию
-  return ages     // [ 45, 23, 18, 25, 35 ]
-} 
+  let ages = birthYear.map(year => 2020 - year + ' ') // Алгоритм в 1 строку через стрелочную функцию
+  return ages // [ 45, 23, 18, 25, 35 ]
+}
 ```
+
 `Перепрошиваем` новый массив за одну строчку кода.
 
 ### Пример №3. С проверкой условия .`filter()`
@@ -195,12 +194,12 @@ function learnJavaScript() {
     { name: 'Mark', age: 18 },
     { name: 'John', age: 27 },
     { name: 'Jane', age: 14 },
-    { name: 'Tony', age: 24},
+    { name: 'Tony', age: 24 }
   ]
 
   const fullAge = []
-  for(let i = 0 ; i < persons.length ; i++) {
-    if(persons[i].age >= 18) {
+  for (let i = 0; i < persons.length; i++) {
+    if (persons[i].age >= 18) {
       fullAge.push(persons[i])
     }
   }
@@ -218,11 +217,11 @@ function learnJavaScript() {
     { name: 'Mark', age: 18 },
     { name: 'John', age: 27 },
     { name: 'Jane', age: 14 },
-    { name: 'Tony', age: 24},
+    { name: 'Tony', age: 24 }
   ]
   const fullAge = persons.filter(person => person.age >= 18) // Алгоритм с условием в 1 строку
 
-return fullAge.length // кол-во лиц старше 18 лет
+  return fullAge.length // кол-во лиц старше 18 лет
 }
 ```
 
@@ -232,17 +231,18 @@ return fullAge.length // кол-во лиц старше 18 лет
 Представьте, что в JavaScript нет встроенного метода map. Мы можем самостоятельно написать его, создав функцию высшего порядка.
 
 Допустим, у нас есть `строчный массив,` и мы хотим конвертировать его в массив integer, в котором каждый элемент представляет `длину елементов` из оригинального массива.
+
 ```jsx live
 function learnJavaScript() {
   // Исходный массив
   const strArray = ['English', 'JavaScript', 'React', 'TypeScript', 'AWS']
   // функция высшего порядка mapForEach() принимает к себе формальную (гипотетическую) функцию fn и формальный массив arr
   let mapFor = (arr, fn) => {
-  const newArray = []
-   for(let i = 0 ; i < arr.length ; i++) {
-       newArray.push( fn(arr[i]) )  // Применяем к каждому элементу скрытую функцию fn()
-   }
-  return newArray   // Возвращем новый массив
+    const newArray = []
+    for (let i = 0; i < arr.length; i++) {
+      newArray.push(fn(arr[i])) // Применяем к каждому элементу скрытую функцию fn()
+    }
+    return newArray // Возвращем новый массив
   }
   // Основной код преобразования - mapForEach() вызывается с конкретными значениями-параметрами
   const lenArray = mapFor(strArray, item => item.length + ' ')
@@ -265,20 +265,23 @@ function learnJavaScript() {
 function learnJavaScript() {
   let name = ''
   // Для наглядности функцию преобразования вынесем в отдельную переменную
-  let say = (secret) => 'Hello, ' + secret + ' !'  // Основной расчетный алгорим (можно сортировку встроить и многое другое)
+  let say = secret => 'Hello, ' + secret + ' !' // Основной расчетный алгорим (можно сортировку встроить и многое другое)
   // userInput() - функция высшего порядка
-  let userInput = (fn) =>  { // в качестве параметра функция, пока еще не известно какая (неизведанный алгоритм)
-     name = 'Jane'           // какое-либо действие
-     return fn(name)         // только теперь запускаем callback-функцию переданную в параметре с конкретным значением `name`
+  let userInput = fn => {
+    // в качестве параметра функция, пока еще не известно какая (неизведанный алгоритм)
+    name = 'Jane' // какое-либо действие
+    return fn(name) // только теперь запускаем callback-функцию переданную в параметре с конкретным значением `name`
   }
   return userInput(say) // say - функция callback (обратного вызова), становиться ясно какая функция передается в качестве параметра без скобок
 }
-```  
-Обратите внимание на синтаксис: 
+```
+
+Обратите внимание на синтаксис:
 
 при передаче функции say в качестве параметра скобки `()` не указываются, т.к. в параметре функция не вызывается, а передается целиком. Функция `say` является аргументом функции `userInput().`
 
 #### Помните, любой сколь угодно малый алгоритм состоит из 3-х этапов:
+
 - 1 этап - Инициализация переменных и функций
 - 2 этап - Функция высшего порядка (логика)
 - 3 этап - Вывод ответа.
@@ -289,15 +292,15 @@ function learnJavaScript() {
 function learnJavaScript() {
   // 1 этап - Инициализация переменных и функций
   let name = ''
-  let say = (secret) => 'Твое имя содержит ' + secret.length + ' символа.'
+  let say = secret => 'Твое имя содержит ' + secret.length + ' символа.'
   // 2 этап - Функция высшего порядка
-  let userInput = (fn) =>  { 
-     name = 'Jane'           
-     return fn(name)      
+  let userInput = fn => {
+    name = 'Jane'
+    return fn(name)
   }
   return userInput(say) // 3 этап - Ответ
 }
-```  
+```
 
 ## Заключение
 
@@ -368,27 +371,27 @@ Reducer-функция (callback) принимает 4 параметра: accum
 Пример №1
 Допустим, нам нужно суммировать массив чисел:
 С функцией высшего порядка reduce
-const arr = [5, 7, 1, 8, 4] 
+const arr = [5, 7, 1, 8, 4]
 const sum = arr.reduce(function(accumulator, currentValue) {
-  return accumulator + currentValue 
-}) 
+  return accumulator + currentValue
+})
 // prints 25
-console.log(sum) 
+console.log(sum)
 Reducer-функция вызывается для каждого элемента массива, а результат возвращённый reducer хранится в accumulator . В currentValue содержится текущее значение массива. Конечный результат хранится в переменной sum .
 Мы можем задать начальное значение этой функции:
-const arr = [5, 7, 1, 8, 4] 
+const arr = [5, 7, 1, 8, 4]
 const sum = arr.reduce(function(accumulator, currentValue) {
-  return accumulator + currentValue 
-}, 10) 
+  return accumulator + currentValue
+}, 10)
 // prints 35
-console.log(sum) 
+console.log(sum)
 Без функции высшего порядка
-const arr = [5, 7, 1, 8, 4] 
-let sum = 0 
+const arr = [5, 7, 1, 8, 4]
+let sum = 0
 for(let i = 0 ; i < arr.length ; i++) {
-  sum = sum + arr[i] 
+  sum = sum + arr[i]
 }
 // prints 25
-console.log(sum) 
+console.log(sum)
 Обратите внимание, как использование функции высшего порядка сделало наш код чище, лаконичнее и менее многословным.
 -->

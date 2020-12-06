@@ -31,3 +31,5 @@ sidebar_label: Введение
 [Вконтакте](https://vk.com/sumerianschool)
 
 [Instagram](https://instagram.com/sumerianschool)
+
+[![Become a Patron!](/img/logo/patreon.png)](https://www.patreon.com/bePatron?u=31769291)
