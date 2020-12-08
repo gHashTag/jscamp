@@ -60,6 +60,11 @@ Employee.prototype = Object.create(User.prototype)
 
 ![Sumerian school](/img/app.png)
 
+При помощи какой функции происходит наследование?
+1.  .call
+2.  .open
+3.  .extend
+
 ## Ссылки:
 
 1.  [MDN web docs](https://developer.mozilla.org/ru/docs/Learn/JavaScript/%D0%9E%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D1%8B/Inheritance)

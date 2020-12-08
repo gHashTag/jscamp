@@ -72,6 +72,11 @@ function learnJavaScript() {
 
 ![Sumerian school](/img/app.png)
 
+Если параметрам функции не передано значение, какое значение они принимают по умолчанию?
+1. null
+2. undefined
+3. NaN
+
 ## Ссылки:
 
 1.  [MDN web docs](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Functions/Default_parameters)
