@@ -167,6 +167,7 @@ function learnJavaScript() {
 ```
 
 #### С функцией высшего порядка `.map`:
+
 ```jsx live
 function learnJavaScript() {
   const birthYear = [1975, 1997, 2002, 1995, 1985]

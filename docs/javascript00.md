@@ -6,9 +6,11 @@ sidebar_label: Java Script Camp
 
 ## Онлайн лагерь скаутов
 
+![Become a Patron!](/img/logo/JSCamp.gif)
+
 С понедельника 7 декабря с 17-00 по Москве, наша школа Sumerian School переходит на онлайн обучение и мы стартуем с программой по языку программирования Java Script.
 
-## Программа на декабрь:
+## Программа на декабрь 2020:
 
 7.12 - [Первая программа Hello World](https://react-native-village.github.io/docs/javascript01)
 
@@ -46,7 +48,7 @@ sidebar_label: Java Script Camp
 
 30.12 - [Массивы и псевдомассивы](https://react-native-village.github.io/docs/javascript18)
 
-Подпишитесь на весь [календарь](webcal://p14-caldav.icloud.com/published/2/MTYyNzQyOTgyMzE2Mjc0MnJDaPjzgR0U-x4uD_nwjr8evco8zKn-1uWVIxx9RjsmCHqFd78vLOOEuCTnjF0D0nkHFj1HIpgT0mr_ioXK22M)
+Подпишитесь на весь [календарь](http://p14-caldav.icloud.com/published/2/MTYyNzQyOTgyMzE2Mjc0MnJDaPjzgR0U-x4uD_nwjr8evco8zKn-1uWVIxx9RjsmCHqFd78vLOOEuCTnjF0D0nkHFj1HIpgT0mr_ioXK22M)
 
 ## Автор курса
 

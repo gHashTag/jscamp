@@ -82,15 +82,17 @@ function Home() {
       showinfo: 0
     }
   }
+
   const { videoContainer, player, heroBanner, buttons, getStarted } = styles
   return (
     <Layout
       title={`${siteConfig.title}`}
-      description="Unicorn App - это мобильное приложение маркет-плейс задач и вакансий для react-native разработчиков в мобильном приложении."
+      description="Sumerian App - это мобильное приложение маркет-плейс задач и вакансий для react-native разработчиков в мобильном приложении."
     >
       <div className={videoContainer}>
         <YouTube videoId="GAbsjQF9i0c" opts={opts} className={player} />
       </div>
+
       <main>
         {features && features.length && (
           <section className={styles.features}>
