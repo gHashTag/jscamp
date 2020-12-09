@@ -155,6 +155,20 @@ function learnJavaScript() {
 
 ![Sumerian school](/img/app.png)
 
+Можно ли при помощи Switch сравнить что-то с регулярными выражениями?
+1. Да
+2. Нет
+
+Какой оператор сравнения использует Switch?
+1. =
+2. ===
+3. ==
+
+Какое ключевое слово останавливает процесс сравнения в Switch?
+1. break
+2. stop
+3. default
+
 ## Ссылки:
 
 1.  [MDN web docs](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/switch)
