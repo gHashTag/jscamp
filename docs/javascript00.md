@@ -6,9 +6,15 @@ sidebar_label: Java Script Camp
 
 ## Онлайн лагерь скаутов
 
-С понедельника 7 декабря с 17-00 по Москве, наша школа Sumerian School переходит на онлайн обучение и мы стартуем с программой по языку программирования Java Script.
+![Camp](https://media.giphy.com/media/l0HlCHVbO3FbvEtPy/giphy.gif)
+
+С 4 января с 17-00 по Москве, наша школа Sumerian School переходит на онлайн обучение и мы стартуем с программой по языку программирования Java Script. В завершение курса, получи свой значок скаута.
+
+![Camp](https://media.giphy.com/media/MOQG4QYC2MRSU/giphy.gif)
 
 ## Программа на декабрь:
+
+![Camp](https://media.giphy.com/media/EihFwASrXTmiQ/giphy.gif)
 
 4.01 - [Первая программа Hello World](https://react-native-village.github.io/docs/javascript01)
 
@@ -56,8 +62,12 @@ sidebar_label: Java Script Camp
 
 Обучение проходит в приложении [Discord](https://discord.gg/6GDAfXn), голосовой канал java-script
 
+![How much](https://media.giphy.com/media/bEu3CsR2RXdu5rBssw/giphy.gif)
+
 ## Оплата
 
 Оплата в лагере происходит через [Patreon](https://www.patreon.com/reactnative) и стоимоcть на курс по Java Script состовляет 10$ в месяц.
+
+![Camp](https://media.giphy.com/media/kBeFt8vcov4mWg73bI/giphy.gif)
 
 [![Become a Patron!](/img/logo/patreon.png)](https://www.patreon.com/bePatron?u=31769291)
