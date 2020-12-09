@@ -6,45 +6,51 @@ sidebar_label: Java Script Camp
 
 ## Онлайн лагерь скаутов
 
-С понедельника 7 декабря с 17-00 по Москве, наша школа Sumerian School переходит на онлайн обучение и мы стартуем с программой по языку программирования Java Script.
+![Camp](https://media.giphy.com/media/l0HlCHVbO3FbvEtPy/giphy.gif)
+
+С 4 января с 17-00 по Москве, наша школа Sumerian School переходит на онлайн обучение и мы стартуем с программой по языку программирования Java Script. В завершение курса, получи свой значок скаута.
+
+![Camp](https://media.giphy.com/media/MOQG4QYC2MRSU/giphy.gif)
 
 ## Программа на декабрь:
 
-7.12 - [Первая программа Hello World](https://react-native-village.github.io/docs/javascript01)
+![Camp](https://media.giphy.com/media/EihFwASrXTmiQ/giphy.gif)
 
-8.12 - [Комментарии](https://react-native-village.github.io/docs/javascript02)
+4.01 - [Первая программа Hello World](https://react-native-village.github.io/docs/javascript01)
 
-9.12 - [Переменные](https://react-native-village.github.io/docs/javascript03)
+5.01 - [Комментарии](https://react-native-village.github.io/docs/javascript02)
 
-10.12 - [Типы данных](https://react-native-village.github.io/docs/javascript04)
+6.01 - [Переменные](https://react-native-village.github.io/docs/javascript03)
 
-11.12 - [Ошибки](https://react-native-village.github.io/docs/javascript05)
+7.01 - [Типы данных](https://react-native-village.github.io/docs/javascript04)
 
-14.12 - [Строки](https://react-native-village.github.io/docs/javascript06)
+8.01 - [Ошибки](https://react-native-village.github.io/docs/javascript05)
 
-15.12 - [Числа](https://react-native-village.github.io/docs/javascript07)
+11.01 - [Строки](https://react-native-village.github.io/docs/javascript06)
 
-16.12 - [Истина или ложь?](https://react-native-village.github.io/docs/javascript08)
+12.01 - [Числа](https://react-native-village.github.io/docs/javascript07)
 
-17.12 - [Преобразование и приведение типов](https://react-native-village.github.io/docs/javascript09)
+13.01 - [Истина или ложь?](https://react-native-village.github.io/docs/javascript08)
 
-18.12 - [Функции](https://react-native-village.github.io/docs/javascript10)
+14.01 - [Преобразование и приведение типов](https://react-native-village.github.io/docs/javascript09)
 
-21.12 - [Объекты](https://react-native-village.github.io/docs/javascript11)
+15.01 - [Функции](https://react-native-village.github.io/docs/javascript10)
 
-22.12 - [Блочная область видимости](https://react-native-village.github.io/docs/javascript12)
+18.01 - [Объекты](https://react-native-village.github.io/docs/javascript11)
 
-23.12 - [Регулярные выражения](https://react-native-village.github.io/docs/javascript13)
+19.01 - [Блочная область видимости](https://react-native-village.github.io/docs/javascript12)
 
-24.12 - [Конструкция switch case](https://react-native-village.github.io/docs/javascript14)
+20.01 - [Регулярные выражения](https://react-native-village.github.io/docs/javascript13)
 
-25.12 - [Инкапсуляция](https://react-native-village.github.io/docs/javascript15)
+21.01 - [Конструкция switch case](https://react-native-village.github.io/docs/javascript14)
 
-28.12 - [Наследование](https://react-native-village.github.io/docs/javascript16)
+22.01 - [Инкапсуляция](https://react-native-village.github.io/docs/javascript15)
 
-29.12 - [Циклы](https://react-native-village.github.io/docs/javascript17)
+25.01 - [Наследование](https://react-native-village.github.io/docs/javascript16)
 
-30.12 - [Массивы и псевдомассивы](https://react-native-village.github.io/docs/javascript18)
+26.01 - [Циклы](https://react-native-village.github.io/docs/javascript17)
+
+27.01 - [Массивы и псевдомассивы](https://react-native-village.github.io/docs/javascript18)
 
 Подпишитесь на весь [календарь](webcal://p14-caldav.icloud.com/published/2/MTYyNzQyOTgyMzE2Mjc0MnJDaPjzgR0U-x4uD_nwjr8evco8zKn-1uWVIxx9RjsmCHqFd78vLOOEuCTnjF0D0nkHFj1HIpgT0mr_ioXK22M)
 
@@ -56,8 +62,12 @@ sidebar_label: Java Script Camp
 
 Обучение проходит в приложении [Discord](https://discord.gg/6GDAfXn), голосовой канал java-script
 
+![How much](https://media.giphy.com/media/bEu3CsR2RXdu5rBssw/giphy.gif)
+
 ## Оплата
 
 Оплата в лагере происходит через [Patreon](https://www.patreon.com/reactnative) и стоимоcть на курс по Java Script состовляет 10$ в месяц.
+
+![Camp](https://media.giphy.com/media/kBeFt8vcov4mWg73bI/giphy.gif)
 
 [![Become a Patron!](/img/logo/patreon.png)](https://www.patreon.com/bePatron?u=31769291)
