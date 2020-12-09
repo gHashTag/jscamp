@@ -10,41 +10,41 @@ sidebar_label: Java Script Camp
 
 ## Программа на декабрь:
 
-7.12 - [Первая программа Hello World](https://react-native-village.github.io/docs/javascript01)
+4.01 - [Первая программа Hello World](https://react-native-village.github.io/docs/javascript01)
 
-8.12 - [Комментарии](https://react-native-village.github.io/docs/javascript02)
+5.01 - [Комментарии](https://react-native-village.github.io/docs/javascript02)
 
-9.12 - [Переменные](https://react-native-village.github.io/docs/javascript03)
+6.01 - [Переменные](https://react-native-village.github.io/docs/javascript03)
 
-10.12 - [Типы данных](https://react-native-village.github.io/docs/javascript04)
+7.01 - [Типы данных](https://react-native-village.github.io/docs/javascript04)
 
-11.12 - [Ошибки](https://react-native-village.github.io/docs/javascript05)
+8.01 - [Ошибки](https://react-native-village.github.io/docs/javascript05)
 
-14.12 - [Строки](https://react-native-village.github.io/docs/javascript06)
+11.01 - [Строки](https://react-native-village.github.io/docs/javascript06)
 
-15.12 - [Числа](https://react-native-village.github.io/docs/javascript07)
+12.01 - [Числа](https://react-native-village.github.io/docs/javascript07)
 
-16.12 - [Истина или ложь?](https://react-native-village.github.io/docs/javascript08)
+13.01 - [Истина или ложь?](https://react-native-village.github.io/docs/javascript08)
 
-17.12 - [Преобразование и приведение типов](https://react-native-village.github.io/docs/javascript09)
+14.01 - [Преобразование и приведение типов](https://react-native-village.github.io/docs/javascript09)
 
-18.12 - [Функции](https://react-native-village.github.io/docs/javascript10)
+15.01 - [Функции](https://react-native-village.github.io/docs/javascript10)
 
-21.12 - [Объекты](https://react-native-village.github.io/docs/javascript11)
+18.01 - [Объекты](https://react-native-village.github.io/docs/javascript11)
 
-22.12 - [Блочная область видимости](https://react-native-village.github.io/docs/javascript12)
+19.01 - [Блочная область видимости](https://react-native-village.github.io/docs/javascript12)
 
-23.12 - [Регулярные выражения](https://react-native-village.github.io/docs/javascript13)
+20.01 - [Регулярные выражения](https://react-native-village.github.io/docs/javascript13)
 
-24.12 - [Конструкция switch case](https://react-native-village.github.io/docs/javascript14)
+21.01 - [Конструкция switch case](https://react-native-village.github.io/docs/javascript14)
 
-25.12 - [Инкапсуляция](https://react-native-village.github.io/docs/javascript15)
+22.01 - [Инкапсуляция](https://react-native-village.github.io/docs/javascript15)
 
-28.12 - [Наследование](https://react-native-village.github.io/docs/javascript16)
+25.01 - [Наследование](https://react-native-village.github.io/docs/javascript16)
 
-29.12 - [Циклы](https://react-native-village.github.io/docs/javascript17)
+26.01 - [Циклы](https://react-native-village.github.io/docs/javascript17)
 
-30.12 - [Массивы и псевдомассивы](https://react-native-village.github.io/docs/javascript18)
+27.01 - [Массивы и псевдомассивы](https://react-native-village.github.io/docs/javascript18)
 
 Подпишитесь на весь [календарь](webcal://p14-caldav.icloud.com/published/2/MTYyNzQyOTgyMzE2Mjc0MnJDaPjzgR0U-x4uD_nwjr8evco8zKn-1uWVIxx9RjsmCHqFd78vLOOEuCTnjF0D0nkHFj1HIpgT0mr_ioXK22M)
 
