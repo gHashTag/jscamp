@@ -6,7 +6,7 @@ sidebar_label: Java Script Camp
 
 ## Онлайн лагерь скаутов
 
-![Camp](https://media.giphy.com/media/l0HlCHVbO3FbvEtPy/giphy.gif)
+![Camp](/img/logo/JSCamp.gif)
 
 С 4 января с 17-00 по Москве, наша школа Sumerian School переходит на онлайн обучение и мы стартуем с программой по языку программирования Java Script. В завершение курса, получи свой значок скаута.
 
