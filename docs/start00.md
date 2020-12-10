@@ -10,7 +10,7 @@ sidebar_label: Настройка Windows 10
 :::
 Инструкция зависит от Вашей операционной системы и от того, под какую мобильную ОС (Android или iOS) решите разрабатывать приложение. Данная статья ориентирована под ОС разработки Windows, среду разработки Android Studio и мобильную ОС Android.
 
-[![Настройка Windows 10](/img/rn/00/giphy.gif)](https://youtu.be/uTvjnkHCUgQ)
+[![Настройка Windows 10](/img/rn/00/giphy.gif)](https://youtu.be/Qe8q7mRXof8)
 
 ![Step00](/img/steps/00.png)
 
