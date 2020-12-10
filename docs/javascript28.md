@@ -16,9 +16,31 @@ let promise = fetch(url, {options})
 
 Задав метод `fetch()` без `options` вы получите GET-запрос, скачивающий данные по адресу `URL`.
 
-## Получение ответа
+## Параметры запроса
 
-Метод `fetch()` возвращает [Promise](https://react-native-village.github.io/docs/javascript24) объект класса `Response`, который имеет следующие свойства:
+Вторым аргументом `{options}` принимаются параметры запроса, которые задаются в виде объекта.
+1. `method` - метод запроса (GET, POST, PUT, DELETE, HEAD);
+2. `headers` - HTTP-заголовки;
+3. `body` - тело запроса (используется при method: POST / PUT);
+4. `cache` - режим кэширования (default, reload, no-cache);
+5. `mode` - режим запроса (cors, no-cors, same-origin);
+6. `redirect` - указывает, как обрабатывать перенаправления(follow, error, manual);
+7. `referrer` - реферер запроса;
+8. `signal` - AbortSignal, прерывание запроса;
+9. `credentials` - отправка cookies вместе с запросом - mit, same-origin.
+
+```jsx
+fetch('https://jsonplaceholder.typicode.com/users', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json'
+  },
+   mode: 'no-cors'
+})  
+```
+
+## Получение ответа
+Выполнение возвращаемого методом `fetch()` [Promise](https://react-native-village.github.io/docs/javascript24) завершается объектом класса `Response`, который имеет следующие свойства:
 1. `status` - код ответа;
 2. `statusText` - текстовое сообщение, соответствующее коду ответа;
 3. `ok` - логическое значение, указывающее на успешность кода ответа (true: 200-299);
@@ -29,21 +51,20 @@ let promise = fetch(url, {options})
 
 ```jsx live
 function learnJavaScript() {
-  return 'ok'
+  let status
+  fetch('https://jsonplaceholder.typicode.com/users', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    mode: 'no-cors'
+  }).then(response => {
+    status = response.status
+    return status
+  })
+  return status + ' ok'
 }
 ```
-
-## Параметры запроса
-
-1. `method` - метод запроса (GET, POST, PUT, DELETE, HEAD);
-2. `headers` - HTTP-заголовки;
-3. `body` - тело запроса (используется при method: POST / PUT);
-4. `cache` - режим кэширования (default, reload, no-cache);
-5. `mode` - режим запроса (cors, no-cors, same-origin);
-6. `redirect` - указывает, как обрабатывать перенаправления(follow, error, manual);
-7. `referrer` - реферер запроса;
-8. `signal` - AbortSignal, прерывание запроса;
-9. `credentials` - отправка cookies вместе с запросом - mit, same-origin.
 
 ## Обработка ответа
 
@@ -55,9 +76,11 @@ function learnJavaScript() {
 5. `arrayBuffer()` - преобразует ответ в объект ArrayBuffer.
 
 Пример преобразование ответа в формат JSON.
-```jsx
-let res = await fetch('https://example.com/') // Выполняем запрос
-let com = await res.json(); // Преобразовываем ответ
+```jsx live
+function learnJavaScript() {
+  let data = fetch('https://jsonplaceholder.typicode.com/users').then(response => {return response.text()})
+  return typeof(response)
+}
 ```
 
 ## Обработка ошибок
