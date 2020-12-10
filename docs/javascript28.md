@@ -35,6 +35,7 @@ function learnJavaScript() {
 
 ## Параметры запроса
 
+Вторым аргументом `{options}` принимаются параметры запроса, которые задаются в виде объекта.
 1. `method` - метод запроса (GET, POST, PUT, DELETE, HEAD);
 2. `headers` - HTTP-заголовки;
 3. `body` - тело запроса (используется при method: POST / PUT);
@@ -45,6 +46,46 @@ function learnJavaScript() {
 8. `signal` - AbortSignal, прерывание запроса;
 9. `credentials` - отправка cookies вместе с запросом - mit, same-origin.
 
+<<<<<<< HEAD
+=======
+```jsx
+fetch('https://jsonplaceholder.typicode.com/users', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json'
+  },
+   mode: 'no-cors'
+})  
+```
+
+## Получение ответа
+Выполнение возвращаемого методом `fetch()` [Promise](https://react-native-village.github.io/docs/javascript24) завершается объектом класса `Response`, который имеет следующие свойства:
+1. `status` - код ответа;
+2. `statusText` - текстовое сообщение, соответствующее коду ответа;
+3. `ok` - логическое значение, указывающее на успешность кода ответа (true: 200-299);
+4. `headers` - объект с заголовками ответа, в котором ключ - наименование заголовка, а значение ключа - значение соответствующего ключу заголовка;
+5. `url` - URL, на который был отправлен запрос;
+6. `body` - данные ответа в формате `ReadableStream`
+7. `bodyUsed` - логическое значение, указывающие на чтение данных.
+
+```jsx live
+function learnJavaScript() {
+  let status
+  fetch('https://jsonplaceholder.typicode.com/users', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    mode: 'no-cors'
+  }).then(response => {
+    status = response.status
+    return status
+  })
+  return status + ' ok'
+}
+```
+
+>>>>>>> gh-pages
 ## Обработка ответа
 
 Переданные данные находятся в формате `ReadableStream`. Для изменения формата можно использовать следующие методы:
@@ -55,9 +96,11 @@ function learnJavaScript() {
 5. `arrayBuffer()` - преобразует ответ в объект ArrayBuffer.
 
 Пример преобразование ответа в формат JSON.
-```jsx
-let res = await fetch('https://example.com/') // Выполняем запрос
-let com = await res.json(); // Преобразовываем ответ
+```jsx live
+function learnJavaScript() {
+  let data = fetch('https://jsonplaceholder.typicode.com/users').then(response => {return response.text()})
+  return typeof(response)
+}
 ```
 
 ## Обработка ошибок
