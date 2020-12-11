@@ -12,6 +12,8 @@ sidebar_label: Конструкция switch case
 
 ## Синтаксис
 
+![Syntax](https://media.giphy.com/media/yR4xZagT71AAM/giphy.gif)
+
 Конструкция `switch` имеет один или более блок `case` и необязательный блок `default`. `n` - это булеан [boolean](https://react-native-village.github.io/docs/javascript08) условие.
 
 Выглядит она так:
@@ -75,6 +77,8 @@ function learnJavaScript() {
 
 Здесь оператор `switch` последовательно сравнит `a` со всеми вариантами из `case`.
 Сначала 3, затем – так как нет совпадения – 4. Совпадение найдено, будет выполнен этот вариант, со строки `str = 'В точку!'` и далее, до ближайшего `break`, который прервёт выполнение.
+
+![Wow](https://media.giphy.com/media/3oriO13KTkzPwTykp2/giphy.gif)
 
 Рассмотрим такой пример:
 
