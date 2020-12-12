@@ -145,6 +145,8 @@ function learnJavaScript() {
 
 ### Не так все просто
 
+![Index_finger](https://media.giphy.com/media/4ZcYCubFNk8AUHcZVw/giphy.gif)
+
 Допустим, у нас есть массив чисел `[3, 5, 1]`. Как вызвать для него `Math.max`?
 
 Просто так их не вставишь — `Math.max` ожидает получить `список чисел`, а не один массив.
@@ -161,6 +163,8 @@ function learnJavaScript() {
 Но, во-первых, это `плохо выглядит`, а, во-вторых, мы не всегда знаем, `сколько будет аргументов.` Их может быть как очень много, так и не быть совсем.
 
 ### Вхождение параметров
+
+![Transform](https://media.giphy.com/media/xT4uQr9H3EDL7Ha2hq/giphy.gif)
 
 Тут нам поможет `оператор расширения ...Spread`. Он похож на остаточные параметры – тоже использует `...`, но делает совершенно противоположное.
 
@@ -192,6 +196,8 @@ function learnJavaScript() {
 
 ### Слияния массивов
 
+![Merger](https://media.giphy.com/media/rytLWOErAX1F6/giphy.gif)
+
 Оператор расширения `...Spread` можно использовать и для `слияния массивов`:
 
 ```jsx live
@@ -207,6 +213,8 @@ function learnJavaScript() {
 ```
 
 ### Преобразование в строку
+
+![Transform](https://media.giphy.com/media/RLVHPJJv7jY1q/giphy.gif)
 
 Функционал оператора расширения `...Spread` работает с любым перебираемым объектом.
 
