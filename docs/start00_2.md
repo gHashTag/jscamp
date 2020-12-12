@@ -4,7 +4,7 @@ title: Настройка рабочего окружения на MacOS
 sidebar_label: Настройка MacOS
 ---
 
-[![ReactNative on MacOS](\img\rn\00_2\05.gif)](https://youtu.be/b8FTrKKHWDk)
+<!-- [![ReactNative on MacOS](img\rn\00_2\05.gif)](https://youtu.be/b8FTrKKHWDk) -->
 
 Данная статья поможет настроить рабочее окружение React Native на операционной системе MacOS под мобильную операционную систему iOS.
 
