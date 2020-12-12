@@ -77,4 +77,10 @@ sidebar_label: Java Script Camp
 
 ![Camp](https://media.giphy.com/media/kBeFt8vcov4mWg73bI/giphy.gif)
 
+## Рождественский поток 
+
+Прямо сейчас проходит набор на первый Javascript Camp. 
+
+![Cristmas tree](https://media.giphy.com/media/YxlUxrYGw2w9y/giphy.gif)
+
 [![Become a Patron!](/img/logo/patreon.png)](https://www.patreon.com/bePatron?u=31769291)
