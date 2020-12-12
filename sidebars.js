@@ -30,8 +30,10 @@ module.exports = {
       'javascript23',
       'javascript24',
       'javascript25',
+      'javascript26',
       'javascript27',
       'javascript28',
+      'javascript29',
       'javascript30',
       'javascript31'
     ],
