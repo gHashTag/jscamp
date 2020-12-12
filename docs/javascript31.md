@@ -3,11 +3,17 @@ id: javascript31
 title: ES6 Modules (import, export, require)
 sidebar_label: ES6 Modules (import, export, require)
 ---
+
+![Download](https://media.giphy.com/media/3o7WTAkv7Ze17SWMOQ/giphy.gif)
+
 **ES2015 (ES6)**
 
 С появлением `ES2015 (ES6)` со встроенной поддержкой модулей в JavaScript каждый `файл` стал предсталять собой `отдельный модуль.` Чтобы сделать объекты, функции, классы или переменные доступными для внешнего мира, достаточно просто `экспортировать` их, а затем `импортировать,` где это необходимо, в другие файлы проекта.
 
 ## `Export` (экспорт)
+
+![Export](https://media.giphy.com/media/JlxFcvNuzlPYA/giphy.gif)
+
 Вы можете экспортировать объекты по одному. То, что не экспортируется, не будет доступно непосредственно за пределами модуля с целью безопасности:
 ```javascript
 export const myNumbers = [1, 2, 3, 4];
@@ -34,6 +40,9 @@ export { myNumbers, myLogger, Alligator }
 export { myNumbers, myLogger as Logger, Alligator }
 ```
 ### Экспорт по умолчанию
+
+![default](https://media.giphy.com/media/3oEduLzte7jSNmq4z6/giphy.gif)
+
 Вы можете определить экспорт по умолчанию с помощью `default:`
 ```javascript
 export const myNumbers = [1, 2, 3, 4];
@@ -51,6 +60,9 @@ export class Alligator {
 ```
 
 ## `Import` (импорт)
+
+![Import](https://media.giphy.com/media/3obeh2rCsGMkZdcTVy/giphy.gif)
+
 Импорт также очень прост, через ключевое слово `import,` где импортируемые объекты в фигурных скобках, а затем указываем расположение модуля 'app.js' относительно текущего файла:
 
 ```javascript
@@ -64,6 +76,9 @@ import myLogger as Logger from 'app.js';
 ```
 
 ### Импорт всех экспортированных участников
+
+![Import](https://media.giphy.com/media/8TkagzJHXLWmI/giphy.gif)
+
 Вы можете импортировать все `*`, что возможно с помощью подключаемого модуля:
 ```javascript
 import * as Utils from 'app.js';
@@ -87,6 +102,8 @@ import Logger, { Alligator, myNumbers } from 'app.js';
 
 ## `Require` (затребовать)
 
+![download](https://media.giphy.com/media/nWGRHBnAl5Kmc/giphy.gif)
+
 Использование стандарта `ES6` рекомендуется, так как это должно быть выгодно, когда нативная поддержка браузеров выпущена. Причина в том, что вы можете импортировать частичные файлы из одного файла, в то время как с `CommonJS` вы должны требовать весь файл.
 
 - **ЕС6** → import, export default, export
@@ -97,6 +114,9 @@ import Logger, { Alligator, myNumbers } from 'app.js';
 Ниже приведено их общее употребление.
 
 ### ES6 экспорт по умолчанию
+
+![import](https://media.giphy.com/media/gibvnAbdWQEiGtPlk3/giphy.gif)
+
 ```javascript
 // say.js
 let hello = () => {
@@ -130,6 +150,9 @@ hello2()  // returns Hello2
 ```
 
 ### CommonJS module.exports
+
+  ![download](https://media.giphy.com/media/3o7TKWzRShjaQxMGCk/giphy.gif)
+
 ```javascript
 // say.js
 let hello= () => {
@@ -176,6 +199,9 @@ hello.hello2()   // returns Hello2
 Итак, в основном node никогда не знает, какие символы будет экспортировать модуль `CommonJS,` до тех пор, пока модуль не будет фактически оценен. И это самая большая разница с модулями `ECMAScript,` потому что ESM является лексическим и, следовательно, экспортируемые символы известны до того, как код фактически оценивается.
 
 ## Подробный синтаксис 
+
+![Download](https://media.giphy.com/media/26ufjt9stm4iHgnvO/giphy.gif)
+
 ```javascript
 import defaultExport from "module-name"
 import * as name from "module-name" 
@@ -207,6 +233,8 @@ import("/module-name.js").then(module => {…}) // Динамический им
 
 **alias, aliasN**
 
+![Export](https://media.giphy.com/media/YrZmRyiCfmJCnH13QV/giphy.gif)
+
 Имена, которые будут ссылаться на импортируемые значения.
 
 ### Описание
@@ -234,6 +262,9 @@ import {myExport} from '/modules/my-module.js'
 import {foo, bar} from '/modules/my-module.js'
 ```
 ### Импорт значений с использованием более удобных имен
+
+![Import](https://media.giphy.com/media/jO1YINDl4HRdXDh3zX/giphy.gif)
+
 Вы можете переименовать значения, когда импортируете их. Например, этот код вставляет shortName в текующую область видимости.
 ```javascript
 import {reallyReallyLongModuleExportName as shortName}
@@ -255,6 +286,9 @@ import '/modules/my-module.js'
 ```
 
 ### Импорт значения по умолчанию
+
+![Download](https://media.giphy.com/media/hyZffrEauy8QU/giphy.gif)
+
 Есть возможность задать дефолтный export (будь то объект, функция, класс или др.). Инструкция import затем может быть использована для импорта таких значений.
 
 Простейшая версия прямого импорта значения по умолчанию:
@@ -273,6 +307,9 @@ import myDefault, {foo, bar} from '/modules/my-module.js'
 ```
 
 ### Импорт переменных
+
+![Download](https://media.giphy.com/media/Y3Bb5MNAtOC4H73qbU/giphy.gif)
+
 Если вы импортируете переменные, то в данной области видимости они ведут себя как константы.
 
 Такой код выведет ошибку:

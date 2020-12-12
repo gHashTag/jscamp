@@ -6,11 +6,18 @@ sidebar_label: Java Script Camp
 
 ## Онлайн лагерь скаутов
 
-![Camp](https://media.giphy.com/media/l0HlCHVbO3FbvEtPy/giphy.gif)
+![Camp](/img/logo/JSCamp.gif)
 
-С 4 января с 17-00 по Москве, наша школа Sumerian School переходит на онлайн обучение и мы стартуем с программой по языку программирования Java Script. В завершение курса, получи свой значок скаута.
+4 января с 17-00 по Москве, наша школа Sumerian School переходит на онлайн обучение и мы стартуем с программой Java Script Camp, которую можно пройти с мобильного телефона прямо сейчас.
+
+В завершение курса, получи свой значок скаута.
 
 ![Camp](https://media.giphy.com/media/MOQG4QYC2MRSU/giphy.gif)
+
+## Цель программы
+
+Подготовить к курсу по мобильной разработке в стеке React Native / Type Script / AWS Amplify и к сертификации в [AWS Certification](https://aws.amazon.com/ru/certification/), где в процессе подготовки, вы получите широкий набор экспертных знаний, ресурсов и программ. Независимо от того, сколько сертификатов вы уже получили, мы поможем вам эффективно подтвердить свой опыт в облачных технологиях и в мобильной разработке, а мобильная разработка сейчас нужна каждому бизнесу в наше время.
+![AWS](https://entrackr.com/wp-content/uploads/2018/05/Amazon_smart_home_2.gif)
 
 ## Программа на декабрь:
 
@@ -60,7 +67,7 @@ sidebar_label: Java Script Camp
 
 ## Процесс обучения
 
-Обучение проходит в приложении [Discord](https://discord.gg/6GDAfXn), голосовой канал java-script
+Обучение проходит в приложении [Discord](https://discord.gg/6GDAfXn), секретном чате java-script, доступный вам после оплаты подписки Java Script Camp.
 
 ![How much](https://media.giphy.com/media/bEu3CsR2RXdu5rBssw/giphy.gif)
 

@@ -6,6 +6,8 @@ sidebar_label: Деструктуризация массивов и объект
 
 Деструктуризация в JavaScript это синтаксис присваивания, который позволяет удобно, в одну строку, извлечь данные из массивов и объектов.
 
+![box](https://media.giphy.com/media/hVZlE9HkWdd0pO5aRy/giphy.gif)
+
 ## Деструктуризация объектов
 ```jsx live
 function learnJavaScript() {
@@ -25,6 +27,9 @@ function learnJavaScript() {
 ```
 
 Свойства `title`, `group` и `quantity`, повторяют структуру объекта `fruit` и копируют свои значения в идентичные переменные находящиеся в `{...}`. Поэтому, если вы поменяете переменные в `{...}` местами, то код будет так же прекрасно работать, попробуйте в примере выше поменять переменные местами. 
+
+![repeat](https://media.giphy.com/media/S60FmbC13E0tlsNp3N/giphy.gif)
+
 
 ### Вложенный объект
 Мы также можем деструктурировать вложенный объект.
@@ -47,6 +52,9 @@ function learnJavaScript() {
 
 ### Другие названия
 Если вам нужно использовать названия переменных отличные от названия свойств, то будет работать такой синтаксис:
+
+![Choose](https://media.giphy.com/media/MLu2GbQF3qaxq/giphy.gif)
+
 ```jsx live
 function learnJavaScript() {
     let fruit = {
@@ -63,6 +71,9 @@ function learnJavaScript() {
 
 ### Дефолтные значения
 Если в `{...}` вы напишете переменную свойства, которой не будут найдены, то ей присвоится значение `undefined`. Для назначения переменной дефолтного значение, это значение ей можно **присвоить**. Если вы попытаетесь присвоить значение переменной свойства которой будут найдены, то ей присвоиться значение свойства. Рассмотрим на примере.
+
+![Dafault](https://media.giphy.com/media/3oEduLzte7jSNmq4z6/giphy.gif)
+
 ```jsx live
 function learnJavaScript() {
     let fruit = {
@@ -76,6 +87,9 @@ function learnJavaScript() {
 В `title` выводится значение свойства, а не то, что мы ей присваиваем. Свойства `group` в объекте `fruit` не существует, а переменной никаких значений мы не присваивали. Свойства `quantity` так же не существует, но переменной мы присвоили значение `5`.
 
 ### Остаток
+
+![octatok](https://media.giphy.com/media/hvddF1vHatFIgQspUB/giphy.gif)
+
 Если вам нужно получить из объекта одну переменную, а оставшиеся сгруппировать в другой объект, то используйте `...` перед переменной из которой будет создан объект с оставшимися свойствами.
 ```jsx live
 function learnJavaScript() {
@@ -93,6 +107,9 @@ function learnJavaScript() {
 ## Деструктуризация массива
 
 Деструктуризация массива происходит так же, как и у объекта. Единственная разница в том, что значения элементов массива будут присваиваться переменным в порядке определения элементов.
+
+![Take](https://media.giphy.com/media/IuBlckSD7dQv6/giphy.gif)
+
 ```jsx live
 function learnJavaScript() {
     // Создаем массив `fruit`
@@ -118,6 +135,9 @@ function learnJavaScript() {
 
 ### Копия массива
 Пример создания копии массива.
+
+![Copia](https://media.giphy.com/media/GI1KnTxySlrCE/giphy.gif)
+
 ```jsx live
 function learnJavaScript() {
     let fruit = ['banana ', 'tropical ', 5]
@@ -138,6 +158,12 @@ function learnJavaScript() {
     return fruit
 }
 ```
+
+## Done ✅
+
+Для того чтобы понять на сколько вы усвоили этот урок пройдите тест в [мобильном приложении](http://onelink.to/njhc95) в нашей школы по этой теме.
+
+![Sumerian school](/img/app.png)
 
 ## Вопросы
 
