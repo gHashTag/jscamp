@@ -4,7 +4,8 @@ title: Fetch API
 sidebar_label: Fetch API
 ---
 
-**Fetch API** позволяет JavaScript обмениваться данными с сервером с помощью HTTP-запросов и является более совершенной заменой классу `XMLHttpRequest`. Выполнение запросов осуществляется методом `fetch()`, который возвращает [Promise](https://react-native-village.github.io/docs/javascript27). В этой статье мы не сможем демонстрировать работу кода в `Live Editor`, в связи с чем вы можете воспользоваться консолью вашего браузера. Просто вставьте код из примера в консоль и нажмите `Enter`, код выполнится, а результат выведется ниже.
+**Fetch API** позволяет JavaScript обмениваться данными с сервером с помощью HTTP-запросов и является более совершенной заменой классу `XMLHttpRequest`. Выполнение запросов осуществляется методом `fetch()`, который возвращает [Promise](https://react-native-village.github.io/docs/javascript24).
+![Exchange](https://media.giphy.com/media/OPQiZUC381IJ8Sh7UY/giphy.gif)
 
 ## Синтаксис
 
@@ -61,6 +62,8 @@ learnJavaScript()
 
 ## Обработка ответа
 
+![Download](https://media.giphy.com/media/ECoFRCrMgVoQg/giphy.gif)
+
 Переданные данные находятся в формате `ReadableStream`. Для изменения формата можно использовать следующие методы:
 1. `text()` - преобразует ответ в строку;
 2. `json()` - преобразует ответ в формате JSON;
@@ -109,8 +112,8 @@ learnJavaScript()
 ```
 
 ## Примеры запросов
+![Math](https://media.giphy.com/media/xT1Ra5h24Eliux3UVq/giphy.gif)
 
-Выводим данные из запроса.
 ```jsx
 function learnJavaScript() {
   fetch('https://jsonplaceholder.typicode.com/users')
