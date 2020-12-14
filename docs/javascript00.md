@@ -59,7 +59,7 @@ sidebar_label: Java Script Camp
 
 27.01 - [Массивы и псевдомассивы](https://react-native-village.github.io/docs/javascript18)
 
-Подпишитесь на весь [календарь](webcal://p14-caldav.icloud.com/published/2/MTYyNzQyOTgyMzE2Mjc0MnJDaPjzgR0U-x4uD_nwjr8evco8zKn-1uWVIxx9RjsmCHqFd78vLOOEuCTnjF0D0nkHFj1HIpgT0mr_ioXK22M)
+Подпишитесь на весь [календарь](http://p14-caldav.icloud.com/published/2/MTYyNzQyOTgyMzE2Mjc0MnJDaPjzgR0U-x4uD_nwjr8evco8zKn-1uWVIxx9RjsmCHqFd78vLOOEuCTnjF0D0nkHFj1HIpgT0mr_ioXK22M)
 
 ## Автор курса
 
@@ -67,19 +67,19 @@ sidebar_label: Java Script Camp
 
 ## Процесс обучения
 
-Обучение проходит в приложении [Discord](https://discord.gg/6GDAfXn), в секретном чате java-script, доступный вам после оплаты подписки Java Script Camp.
+Обучение проходит в приложении [Discord](https://discord.gg/6GDAfXn), в секретном чате java-script, доступный вам после оплаты подписки JavaScript Camp.
 
 ![How much](https://media.giphy.com/media/bEu3CsR2RXdu5rBssw/giphy.gif)
 
 ## Оплата
 
-Оплата в лагере происходит через [Patreon](https://www.patreon.com/reactnative) и стоимоcть на курс по Java Script состовляет 10$ в месяц.
+Оплата в лагере происходит через [Patreon](https://www.patreon.com/reactnative) и стоимоcть на курс по JavaScript состовляет 10$ в месяц.
 
 ![Camp](https://media.giphy.com/media/kBeFt8vcov4mWg73bI/giphy.gif)
 
 ## Рождественский поток
 
-Прямо сейчас проходит набор на первый Javascript Camp.
+Прямо сейчас проходит набор на первый JavaScript Camp.
 
 ![Cristmas tree](https://media.giphy.com/media/YxlUxrYGw2w9y/giphy.gif)
 
