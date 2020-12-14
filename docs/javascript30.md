@@ -6,7 +6,7 @@ sidebar_label: Деструктуризация массивов и объект
 
 Деструктуризация в JavaScript это синтаксис присваивания, который позволяет удобно, в одну строку, извлечь данные из массивов и объектов.
 
-![box](https://media.giphy.com/media/hVZlE9HkWdd0pO5aRy/giphy.gif)
+![Object](https://media.giphy.com/media/26gs9kSN6d5PxSsQU/giphy.gif)
 
 ## Деструктуризация объектов
 ```jsx live
