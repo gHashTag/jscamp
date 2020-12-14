@@ -86,10 +86,7 @@ function Home() {
 
   const { videoContainer, player, heroBanner, buttons, getStarted } = styles
   return (
-    <Layout
-      title={`${siteConfig.title}`}
-      description="Sumerian App - это мобильное приложение маркет-плейс задач и вакансий для react-native разработчиков в мобильном приложении."
-    >
+    <Layout title={`${siteConfig.title}`} description="Sumerian App - это школа программирования">
       <Head>
         <meta property="og:image" content="https://react-native-village.github.io/img/app.png" />
       </Head>
