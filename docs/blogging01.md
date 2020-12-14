@@ -122,13 +122,13 @@ NUMBERS
 
 ## Ссылки
 
-Discord - https://discord.gg/UPSeqZJT
+[Discord](https://discord.gg/UPSeqZJT)
 
-Группа Вк - https://vk.com/sumerianschool
+[Группа Вк](https://vk.com/sumerianschool)
 
-Youtube канал - https://www.youtube.com/channel/UCR8tIQm7pu8MlPewAlUnzQw
+[Youtube канал](https://www.youtube.com/channel/UCR8tIQm7pu8MlPewAlUnzQw)
 
-Пройдите тест на эту тему и проверьте усвоенную тему в [мобильном приложении](http://onelink.to/njhc95), нашей школы по теме.
+Пройдите тест на эту тему и проверьте усвоенную тему в [мобильном приложении](http://onelink.to/njhc95).
 
 ## Contributors ✨
 

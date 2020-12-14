@@ -3,7 +3,9 @@ id: javascript01
 title: Hello World
 sidebar_label: Hello World 
 ---
+
 ![Hello World](https://media.giphy.com/media/1n67EigjECnOUc6rhS/giphy.gif)
+
 ## Java Script
 
 Раньше для создания digital стартапа минимум нужна была команда из:

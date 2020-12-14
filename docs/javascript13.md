@@ -341,7 +341,7 @@ function learnJavaScript() {
 
 ### search
 
-![return](https://media.giphy.com/media/Y08bx6Fea1BafzTlvc/giphy.gif)
+![return](https://media.giphy.com/media/u9lzgxCYP7MfC/giphy.gif)
 
 `str.search(regExp)` возвращать позицию первого совпадения шаблона `regExp` в строке `str`, если в строке ничего не было найдено, то вернётся `-1`. У этого метода есть **ограничение**, он умеет возвращать только позицию **первого** совпадения.
 ```jsx live
