@@ -10,6 +10,8 @@ sidebar_label: Fetch API
 
 ## Синтаксис
 
+![Book](https://media.giphy.com/media/l0HlOBZcl7sbV6LnO/giphy.gif)
+
 ```jsx
 fetch(url, {options})
 ```
@@ -19,6 +21,8 @@ fetch(url, {options})
 Задав метод `fetch()` без `options` вы получите GET-запрос, скачивающий данные по адресу `URL`.
 
 ## Параметры запроса
+
+![Option](https://media.giphy.com/media/AazZSBdhIdH9K/giphy.gif)
 
 Вторым аргументом `{options}` принимаются параметры запроса. Список параметров:
 
@@ -43,6 +47,8 @@ fetch('https://jsonplaceholder.typicode.com/users', {
 ```
 
 ## Получение ответа
+
+![Bascketball](https://media.giphy.com/media/l0MYwdebx8o0XI56E/giphy.gif)
 
 Метод `fetch()` возвращает [Promise](https://react-native-village.github.io/docs/javascript24) объект класса `Response`, который имеет следующие свойства:
 1. `status` - код ответа;
@@ -83,6 +89,8 @@ learnJavaScript()
 ```
 
 ## Обработка ошибок
+
+![Error](https://media.giphy.com/media/DHBGehJ3FSZEygszX3/giphy.gif)
 
 Узнать завершился ли `fetch()` с ошибкой мы можем с помощью свойств: "status" и "ok". 
 
