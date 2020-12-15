@@ -7,6 +7,9 @@ sidebar_label: Замыкание
 ![Snake](https://media.giphy.com/media/3oFzmdjqH15YebLQ52/giphy.gif)
 
 ## Описание
+
+![Book](https://media.giphy.com/media/ZCmDhIFeF1s2c/giphy.gif)
+
 **Замыкание** - это функция, у которой имеется доступ к внешней функции, даже после того, как работа внешней функции _прекратилась_. Замыкание нужно, чтобы обеспечить `доступ` внутренней функции к области видимости внешней функции, но при этом `закрыть` доступ из внешнего окружения к переменным внутренней функции.
 
 Требования для создания замыкания:
@@ -44,6 +47,9 @@ function learnJavaScript() {
 
 
 ### Счётчик
+
+![Counter](https://media.giphy.com/media/QSNvClMu5zWJW/giphy.gif)
+
 Счётчик, самый просто пример, на котором можно рассмотреть работу замыкания. 
 
 ```jsx live
@@ -60,6 +66,8 @@ function learnJavaScript() {
 ```
 
 ### Улучшенный счётчик
+
+![Counter](https://media.giphy.com/media/3o6Zt6fzS6qEbLhKWQ/giphy.gif)
 
 В качестве результата у нас будет не одна функция, а сразу несколько.
 ```jsx live
@@ -119,6 +127,9 @@ function learnJavaScript() {
 ```
 
 ## Итог
+
+![elipsis](https://media.giphy.com/media/1nbtaHBK8ScowN4KKO/giphy.gif)
+
 `Замыкания` — одна из важнейших **фундаментальных** концепций JavaScript, её должен понимать каждый JS-разработчик. Понимание замыканий — это одна из ступеней пути к написанию эффективных и качественных приложений.
 
 ## Done ✅

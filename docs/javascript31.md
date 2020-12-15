@@ -200,7 +200,7 @@ hello.hello2()   // returns Hello2
 
 ## Подробный синтаксис 
 
-![Download](https://media.giphy.com/media/26ufjt9stm4iHgnvO/giphy.gif)
+![book](https://media.giphy.com/media/s6OiiampNcye4/giphy.gif)
 
 ```javascript
 import defaultExport from "module-name"
@@ -238,9 +238,15 @@ import("/module-name.js").then(module => {…}) // Динамический им
 Имена, которые будут ссылаться на импортируемые значения.
 
 ### Описание
+
+![Book](https://media.giphy.com/media/V8oj5SlnHsZMY/giphy.gif)
+
 Параметр name это имя локального обьекта, который будет использован как своего рода пространство имен, ссылающееся на импортируемые значения. Параметры export определяют отдельные именованные значения, в то время как `import * as` name импортирует все значения. 
 
 ### Импорт всего содержимого модуля
+
+![insert](https://media.giphy.com/media/3o6ZtafpgSpvIaKhMI/giphy.gif)
+
 Этот код вставляет объект myModule в текущую область видимости, содержащую все экспортированные значения из модуля, находящегося в файле `/modules/my-module.js.`
 ```javascript
 import * as myModule from '/modules/my-module.js'
@@ -251,12 +257,18 @@ myModule.doAllTheAmazingThings()
 ```
 
 ### Импорт единичного значения из модуля
+
+![Download](https://media.giphy.com/media/LHZyixOnHwDDy/giphy.gif)
+
 Определенное ранее значение, названное myExport, которое было экспортировано из модуля `my-module` либо неявно (если модуль был экспортирован целиком), либо явно (с использованием инструкции export), позволяет вставить myExport в текущую область видимости.
 ```javascript
 import {myExport} from '/modules/my-module.js'
 ```
 
 ### Импорт нескольких единичных значений
+
+![insert](https://media.giphy.com/media/8OPgOmnuVIvoFyXR4w/giphy.gif)
+
 Этот код  вставляет оба значения foo и bar в текущую область видимости.
 ```javascript
 import {foo, bar} from '/modules/my-module.js'
@@ -271,6 +283,9 @@ import {reallyReallyLongModuleExportName as shortName}
   from '/modules/my-module.js'
 ```
 ### Переименование нескольких значений в одном импорте
+
+![Renaming](https://media.giphy.com/media/emc9V9NchQZKU/giphy.gif)
+
 Код, который импортирует несколько значений из модуля, используя более удобные имена.
 ```javascript
 import {
@@ -280,6 +295,9 @@ import {
 ```
 
 ### Импорт модуля для использования его побочного эффекта
+
+![Dowlands](https://media.giphy.com/media/FgiHOQyKUJmwg/giphy.gif)
+
 Импорт всего модуля только для использования побочного эффекта от его вызова, не импортируя что-либо. Это запускает глобальный код модуля, но в действительности не импортирует никаких значений.
 ```javascript
 import '/modules/my-module.js'

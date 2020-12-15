@@ -4,6 +4,8 @@ title: Операторы Rest и Spread
 sidebar_label: Операторы Rest и Spread
 ---
 
+![Hello](https://media.giphy.com/media/WOwiryOPA0G6jhKqB0/giphy.gif)
+
 Многие встроенные функции JavaScript поддерживают произвольное количество аргументов.
 
 Например:
@@ -116,6 +118,8 @@ function f(arg1, ...rest, arg2) {   // arg2 после ...rest ?
 :::
 
 ### Опасный "arguments"
+
+![dangerous](https://media.giphy.com/media/xT5LMAvRY92qUXj7dC/giphy.gif)
 
 Все аргументы функции находятся в псевдомассиве `arguments` под своими порядковыми номерами.
 
@@ -253,6 +257,8 @@ function learnJavaScript() {
 
 ## Итого
 
+![Elipsis](https://media.giphy.com/media/UWXLULrP5KGDC/giphy.gif)
+
 Когда мы видим `"..."` в коде, это могут быть как `остаточные параметры ...rest`, так и `оператор расширения ...Spread`.
 
 Как отличить их друг от друга:
@@ -267,6 +273,8 @@ function learnJavaScript() {
 - Вместе эти конструкции помогают легко преобразовывать наборы значений в массивы и обратно.
 
 ## Бонус
+
+![Bonus](https://media.giphy.com/media/fSSJUQNZOSJgsx7j8e/giphy.gif)
 
 Как понимать логику программы с операторами `...`?
 
