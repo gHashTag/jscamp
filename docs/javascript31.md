@@ -70,6 +70,9 @@ import { myLogger, Alligator } from 'app.js';
 ```
 
 ### Импорт с псевдонимом
+
+![Rename](https://media.giphy.com/media/wAc290lRAgPAs/giphy.gif)
+
 Можно использовать псевдонимы объектов во время импорта:
 ```javascript
 import myLogger as Logger from 'app.js';
@@ -88,6 +91,9 @@ import * as Utils from 'app.js';
 Utils.myLogger();
 ```
 ### Импорт модуля с объектом по умолчанию 
+
+![import](https://media.giphy.com/media/fUdaShpuYH4GU647lJ/giphy.gif)
+
 Вы импортируете объект по умолчанию, давая ему имя по вашему выбору. В следующем примере `Logger` это имя, присвоенное импортированному объекту по умолчанию:
 ```javascript
 import Logger from 'app.js';
@@ -131,6 +137,9 @@ import hello from './say'
 hello() // returns Hello
 ```
 ### ЕС6 экспортировать несколько и импортировать несколько:
+
+![Many_people](https://media.giphy.com/media/tsSUOFubsatTG/giphy.gif)
+
 ```javascript
 // say.js
 let hello1= () => {
@@ -167,6 +176,9 @@ hello()   // returns Hello
 ```
 
 ### CommonJS module.exports множественное число
+
+![binary_code](https://media.giphy.com/media/l1J9RFoDzCDrkqtEc/giphy.gif)
+
 ```javascript
 // say.js
 let hello1= () => {
