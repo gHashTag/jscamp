@@ -12,6 +12,8 @@ sidebar_label: Параметры по умолчанию
 
 ## Синтаксис
 
+![book](https://media.giphy.com/media/l0HlOBZcl7sbV6LnO/giphy.gif)
+
 ```jsx live
 function learnJavaScript() {
   const multiply = (a, b = 1) => {
