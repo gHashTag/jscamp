@@ -20,6 +20,8 @@ sidebar_label: Циклы
 
 ### Синтаксис
 
+![Boock](https://media.giphy.com/media/LkjlH3rVETgsg/giphy.gif)
+
 ```javascript
 while (условие) {
   // код алгоритма - инструкции
@@ -90,6 +92,8 @@ function learnJavaScript() {
 Выражение `for` создаёт цикл, состоящий из трех 3️⃣ необязательных выражений в круглых скобках, разделённых точками с запятой.
 
 ### Синтаксис
+
+![Book](https://media.giphy.com/media/l1J9HWBKLp20YfNAY/giphy.gif)
 
 ```javascript
 for ([инициализация]; [условие]; [финальное выражение])
