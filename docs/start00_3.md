@@ -4,6 +4,10 @@ title: Настройка рабочего окружения на Linux
 sidebar_label: Настройка Linux
 ---
 
+import YouTube from 'react-youtube'
+
+<YouTube videoId="7mdCNp5lJsI"/>
+
 Данная статья поможет настроить рабочее окружение `React Native` на операционной системе `Linux` под мобильную операционную систему `Android`. В данной статье будет использован популярный дистрибутив - `Ubuntu`.
 
 ![Step00](/img/steps/00.png)
