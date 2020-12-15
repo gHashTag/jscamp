@@ -8,9 +8,9 @@ sidebar_label: Java Script Camp
 
 ![Camp](/img/logo/JSCamp.gif)
 
-4 января с 17-00 по Москве, наша школа Sumerian School переходит на онлайн обучение и мы стартуем с программой Java Script Camp, которую можно пройти с мобильного телефона прямо сейчас.
+4 января с 17-00 по Москве, наша школа Sumerian School переходит на онлайн обучение и мы стартуем с программой Java Script Camp, которую можно пройти даже с мобильного телефона прямо сейчас.
 
-Получи свой Java Script значок скаута.
+Получи в нашей школе свой Java Script значок скаута.
 
 ![Camp](https://media.giphy.com/media/MOQG4QYC2MRSU/giphy.gif)
 
@@ -73,14 +73,15 @@ sidebar_label: Java Script Camp
 
 ## Оплата
 
-Оплата в лагере происходит через [Patreon](https://www.patreon.com/reactnative) и стоимоcть на курс по JavaScript состовляет 10$ в месяц.
+Оплата в лагере происходит через [Patreon](https://www.patreon.com/reactnative) и стоимоcть на курс по JavaScript составляет 10$ в месяц.
 
 ![Camp](https://media.giphy.com/media/kBeFt8vcov4mWg73bI/giphy.gif)
 
 ## Рождественский поток
 
 Прямо сейчас проходит набор на первый JavaScript Camp.
-
 ![Cristmas tree](https://media.giphy.com/media/YxlUxrYGw2w9y/giphy.gif)
+
+[![serverServerlesskiy](/img/javascript/instagram.png)](https://www.instagram.com/serverserverlessky/)
 
 [![Become a Patron!](/img/logo/patreon.png)](https://www.patreon.com/bePatron?u=31769291)
