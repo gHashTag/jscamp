@@ -14,6 +14,7 @@ import Link from '@docusaurus/Link'
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
 import useBaseUrl from '@docusaurus/useBaseUrl'
 import YouTube from 'react-youtube'
+import Head from '@docusaurus/Head'
 import styles from './styles.module.css'
 
 const features = [
@@ -85,10 +86,10 @@ function Home() {
 
   const { videoContainer, player, heroBanner, buttons, getStarted } = styles
   return (
-    <Layout
-      title={`${siteConfig.title}`}
-      description="Sumerian App - это мобильное приложение маркет-плейс задач и вакансий для react-native разработчиков в мобильном приложении."
-    >
+    <Layout title={`${siteConfig.title}`} description="Sumerian App - это школа программирования">
+      <Head>
+        <meta property="og:image" content="https://react-native-village.github.io/img/app.png" />
+      </Head>
       <div className={videoContainer}>
         <YouTube videoId="GAbsjQF9i0c" opts={opts} className={player} />
       </div>

@@ -10,16 +10,16 @@ sidebar_label: Java Script Camp
 
 4 января с 17-00 по Москве, наша школа Sumerian School переходит на онлайн обучение и мы стартуем с программой Java Script Camp, которую можно пройти с мобильного телефона прямо сейчас.
 
-В завершение курса, получи свой значок скаута.
+Получи свой Java Script значок скаута.
 
 ![Camp](https://media.giphy.com/media/MOQG4QYC2MRSU/giphy.gif)
 
 ## Цель программы
 
-Подготовить к курсу по мобильной разработке в стеке React Native / Type Script / AWS Amplify и к сертификации в [AWS Certification](https://aws.amazon.com/ru/certification/), где в процессе подготовки, вы получите широкий набор экспертных знаний, ресурсов и программ. Независимо от того, сколько сертификатов вы уже получили, мы поможем вам эффективно подтвердить свой опыт в облачных технологиях и в мобильной разработке, а мобильная разработка сейчас нужна каждому бизнесу в наше время.
+Подготовить к курсу по мобильной разработке в стеке React Native / Type Script / AWS Amplify и к сертификации в [AWS Certification](https://aws.amazon.com/ru/certification/), где в процессе подготовки, вы получите широкий набор экспертных знаний, ресурсов и программ. Мы поможем вам эффективно подтвердить свой опыт в облачных технологиях и в мобильной разработке, нужной каждому бизнесу в наше время.
 ![AWS](https://entrackr.com/wp-content/uploads/2018/05/Amazon_smart_home_2.gif)
 
-## Программа на декабрь:
+## Программа на январь:
 
 ![Camp](https://media.giphy.com/media/EihFwASrXTmiQ/giphy.gif)
 
@@ -59,27 +59,27 @@ sidebar_label: Java Script Camp
 
 27.01 - [Массивы и псевдомассивы](https://react-native-village.github.io/docs/javascript18)
 
-Подпишитесь на весь [календарь](webcal://p14-caldav.icloud.com/published/2/MTYyNzQyOTgyMzE2Mjc0MnJDaPjzgR0U-x4uD_nwjr8evco8zKn-1uWVIxx9RjsmCHqFd78vLOOEuCTnjF0D0nkHFj1HIpgT0mr_ioXK22M)
+Подпишитесь на весь [календарь](http://p14-caldav.icloud.com/published/2/MTYyNzQyOTgyMzE2Mjc0MnJDaPjzgR0U-x4uD_nwjr8evco8zKn-1uWVIxx9RjsmCHqFd78vLOOEuCTnjF0D0nkHFj1HIpgT0mr_ioXK22M)
 
 ## Автор курса
 
-[Автор](https://career.habr.com/hackathon-unicorn) курса по Java Script является создателем первого в рунете учебного курса по [React Native](https://react-native-village.github.io/docs/start000), а также первым русским блогером-программистом в программе [AWS Comunity Builders](https://aws.amazon.com/ru/developer/community/community-builders/) от Amazon.
+[Автор](https://career.habr.com/hackathon-unicorn) курса по Java Script является создателем первого в рунете учебного курса по [React Native](https://react-native-village.github.io/docs/start000), а также первый русский блогер-программист в программе [AWS Comunity Builders](https://aws.amazon.com/ru/developer/community/community-builders/) от Amazon.
 
 ## Процесс обучения
 
-Обучение проходит в приложении [Discord](https://discord.gg/6GDAfXn), секретном чате java-script, доступный вам после оплаты подписки Java Script Camp.
+Обучение проходит в приложении [Discord](https://discord.gg/6GDAfXn), в секретном чате java-script, доступный вам после оплаты подписки JavaScript Camp.
 
 ![How much](https://media.giphy.com/media/bEu3CsR2RXdu5rBssw/giphy.gif)
 
 ## Оплата
 
-Оплата в лагере происходит через [Patreon](https://www.patreon.com/reactnative) и стоимоcть на курс по Java Script состовляет 10$ в месяц.
+Оплата в лагере происходит через [Patreon](https://www.patreon.com/reactnative) и стоимоcть на курс по JavaScript состовляет 10$ в месяц.
 
 ![Camp](https://media.giphy.com/media/kBeFt8vcov4mWg73bI/giphy.gif)
 
-## Рождественский поток 
+## Рождественский поток
 
-Прямо сейчас проходит набор на первый Javascript Camp. 
+Прямо сейчас проходит набор на первый JavaScript Camp.
 
 ![Cristmas tree](https://media.giphy.com/media/YxlUxrYGw2w9y/giphy.gif)
 

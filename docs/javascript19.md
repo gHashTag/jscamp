@@ -129,7 +129,7 @@ Cтрелочные функции не имеют `arguments[]` как и со�
 
 ## Оператор расширения `...Spread`
 
-![operators](https://media.giphy.com/media/10rV1yPKGFw4ne/giphy.gif)
+![operators](https://media.giphy.com/media/3o6Mbfd5fQszubehmE/giphy.gif)
 
 Мы узнали, как получить массив из списка параметров.
 

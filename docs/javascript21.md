@@ -4,7 +4,7 @@ title: Функции высшего порядка
 sidebar_label: Функции высшего порядка
 ---
 
-![Higher](https://media.giphy.com/media/MaNwvXaY428jgOGTB2/giphy.gif)
+![Higher](https://media.giphy.com/media/g0yLXvb7Ffn9rilMIm/giphy.gif)
 
 Функции высшего порядка позволяют JavaScript быть пригодным для функционального программирования.
 Такие функции широко используются в JavaScript. Если вы хоть немного программировали на JavaScript, то наверняка использовали их, возможно, даже не догадываясь об этом.
