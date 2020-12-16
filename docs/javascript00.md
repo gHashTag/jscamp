@@ -4,6 +4,10 @@ title: Java Script Camp
 sidebar_label: Java Script Camp
 ---
 
+import YouTube from 'react-youtube'
+
+[![serverServerlesskiy](/img/javascript/instagram.png)](https://www.instagram.com/serverserverlessky/)
+
 ## Онлайн лагерь скаутов
 
 ![Camp](/img/logo/JSCamp.gif)
@@ -13,6 +17,10 @@ sidebar_label: Java Script Camp
 Получи в нашей школе свой Java Script значок скаута.
 
 ![Camp](https://media.giphy.com/media/MOQG4QYC2MRSU/giphy.gif)
+
+## Видео
+
+<YouTube videoId='A_i5-4FuuKw' />
 
 ## Цель программы
 
@@ -80,8 +88,7 @@ sidebar_label: Java Script Camp
 ## Рождественский поток
 
 Прямо сейчас проходит набор на первый JavaScript Camp.
-![Cristmas tree](https://media.giphy.com/media/YxlUxrYGw2w9y/giphy.gif)
 
-[![serverServerlesskiy](/img/javascript/instagram.png)](https://www.instagram.com/serverserverlessky/)
+![Cristmas tree](https://media.giphy.com/media/YxlUxrYGw2w9y/giphy.gif)
 
 [![Become a Patron!](/img/logo/patreon.png)](https://www.patreon.com/bePatron?u=31769291)

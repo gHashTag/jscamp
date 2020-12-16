@@ -4,7 +4,7 @@ title: Публикация статей в Sumerian School
 sidebar_label: Публикация статей
 ---
 
-import YouTube from 'react-youtube';
+import YouTube from 'react-youtube'
 
 Для создания статей в Sumerian School нужно выполнить несколько простых шагов.
 
