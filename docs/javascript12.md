@@ -33,7 +33,7 @@ let fruit = 'Banana'
 }
 ```
 
-При создании различных конструкций вы так же создаёте и область видимости этой конструкции, т.к. используете блок из фигурных скобок `{ ... }`.
+При создании различных конструкций вы также создаёте и область видимости этой конструкции, т.к. используете блок из фигурных скобок `{ ... }`.
 
 ```jsx
 if (true) {
@@ -101,50 +101,6 @@ function learnFavaScript() {
 // ReferenceError: fruit is not defined
 ```
 
-## Примеры
-
-Используем две переменные с одинаковым именем в разных областях видимости. Функция `otherFruit()` возвращает переменную `fruit` из той области видимости, в которой она инициализирована, как `Lime`
-
-```jsx live
-function learnJavaScript() {
-  let fruit = 'Banana'
-  function otherFruit() {
-    let fruit = 'Lime'
-    return fruit
-  }
-  return otherFruit() + ' and ' + fruit
-}
-```
-
-Если мы уберём `let` из функции `otherFruit()`, то вместо создания переменной мы её перезаписываем.
-
-```jsx live
-function learnJavaScript() {
-  let fruit = 'Banana'
-  function otherFruit() {
-    fruit = 'Lime'
-    return fruit
-  }
-  return otherFruit() + ' and ' + fruit
-}
-```
-
-Что, если мы попытаемся вызвать локальную переменную в родительской области видимости? Возникает ошибка, из-за того, что мы пытаемся в глобальной области видимости вызвать переменную, которую мы не создавали.
-
-```jsx
-function learnJavaScript() {
-  let num
-  for (let i = 0; i != 5; i++) {
-    num += i
-  }
-  return i
-}
-
-// ReferenceError: i is not defined
-```
-
-![Primer](https://media.giphy.com/media/M33UV4NDvkTHa/giphy.gif)
-
 ## Ключевое слово var
 
 ![Old](https://media.giphy.com/media/de5bARu0SsXiU/giphy.gif)
@@ -194,6 +150,56 @@ function learnJavaScript() {
   return fruit
 }
 ```
+
+## Примеры
+
+Используем две переменные с одинаковым именем в разных областях видимости. Функция `otherFruit()` возвращает переменную `fruit` из той области видимости, в которой она инициализирована, как `Lime`
+
+```jsx live
+function learnJavaScript() {
+  let fruit = 'Banana'
+  function otherFruit() {
+    let fruit = 'Lime'
+    return fruit
+  }
+  return otherFruit() + ' and ' + fruit
+}
+```
+
+Если мы уберём `let` из функции `otherFruit()`, то вместо создания переменной мы её перезаписываем.
+
+```jsx live
+function learnJavaScript() {
+  let fruit = 'Banana'
+  function otherFruit() {
+    fruit = 'Lime'
+    return fruit
+  }
+  return otherFruit() + ' and ' + fruit
+}
+```
+
+Что, если мы попытаемся вызвать локальную переменную в родительской области видимости? Возникает ошибка, из-за того, что мы пытаемся в глобальной области видимости вызвать переменную, которую мы не создавали.
+
+```jsx
+function learnJavaScript() {
+  let num
+  for (let i = 0; i != 5; i++) {
+    num += i
+  }
+  return i
+}
+
+// ReferenceError: i is not defined
+```
+
+![Primer](https://media.giphy.com/media/M33UV4NDvkTHa/giphy.gif)
+
+## Done ✅
+
+Для того чтобы понять насколько вы усвоили этот урок пройдите тест в [мобильном приложении](http://onelink.to/njhc95) в нашей школы по этой теме.
+
+![Sumerian school](/img/app.png)
 
 ## Вопросы
 

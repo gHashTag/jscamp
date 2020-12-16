@@ -91,7 +91,7 @@ function Home() {
         <meta property="og:image" content="https://react-native-village.github.io/img/app.png" />
       </Head>
       <div className={videoContainer}>
-        <YouTube videoId="GAbsjQF9i0c" opts={opts} className={player} />
+        <YouTube videoId="A_i5-4FuuKw" opts={opts} className={player} />
       </div>
 
       <main>
