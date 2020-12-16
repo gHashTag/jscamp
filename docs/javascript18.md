@@ -354,6 +354,9 @@ fruits.pop()  // удаляем один элемент с конца
 Аналогично работает метод `push.`
 
 ### Перебор элементов
+
+![Object](https://media.giphy.com/media/26gs9kSN6d5PxSsQU/giphy.gif)
+
 Одним из самых старых способов `перебора элементов` массива является цикл `for( )` по цифровым индексам:
 ```jsx live
 function learnJavaScript() {

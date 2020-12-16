@@ -16,6 +16,8 @@ sidebar_label: Методы перебора массива (map, filter, reduce
 
 ### Синтаксис
 
+![Book](https://media.giphy.com/media/s6OiiampNcye4/giphy.gif)
+
 ```javascript
 let new_array = arr.map(function callback( currentValue[, index[, array]]) {
     // Возвращает элемент для new_array
@@ -43,6 +45,8 @@ let new_array = arr.map(function callback( currentValue[, index[, array]]) {
 ### Примеры:
 
 #### Простой пример
+
+![Plain](https://media.giphy.com/media/xTiTnmRG7QzjO9LcQw/giphy.gif)
 
 У вас есть массив со множеством объектов, каждый из которых представляет отдельного человека. Тут может быть очень много данных: имя, возраст, цвет волос и любимый персонаж из кинематографа. Но в данный момент всё это не требуется – вы хотите получить только массив паспортных номеров этих людей, чтобы выдать им всем пропуска на конференцию.
 
@@ -196,6 +200,8 @@ function learnJavaScript() {
 }
 ```
 
+![Wow](https://media.giphy.com/media/M33UV4NDvkTHa/giphy.gif)
+
 ## reduce
 
 ![count](https://media.giphy.com/media/xUPGcqaVH1cDeKZTBS/giphy.gif)
@@ -218,6 +224,8 @@ function learnJavaScript() {
 
 ### Синтаксис
 
+![book](https://media.giphy.com/media/26ybvozSlm2nXveXC/giphy.gif)
+
 ```javascript
 array.reduce(function callback[, initialValue])
 ```
@@ -233,6 +241,8 @@ array.reduce(function callback[, initialValue])
 Если массив пустой и аргумент `initialValue` не указан, будет брошено исключение `TypeError`. Если массив состоит только из одного элемента (независимо от его положения в массиве) и аргумент `initialValue` не указан, или если аргумент `initialValue` указан, но массив пустой, то будет возвращено одно это значение, без вызова функции `callback`.
 
 ### Начальное значение аккумулятора
+
+![Start](https://media.giphy.com/media/kF5w7HWRrW1YJuY7qv/giphy.gif)
 
 Разберемся с начальным значением. В примере оно равно `0`, так как мы считаем численное значение – сумму возрастов. Это тот же самый `0`, который мы помещали в переменную `totalYears` в примере с `forEach`, просто здесь он органично вписан в сигнатуру метода.
 
@@ -349,6 +359,8 @@ function learnJavaScript() {
 ```
 
 ## Заключение
+
+![The and](https://media.giphy.com/media/3orif8SZCC9OCqaHnO/giphy.gif)
 
 С использованием этих замечательных функций код стало читать удобнее. Итак, ниже приведен список статей, в которых более подробна рассмотрена эта тема.
 
