@@ -273,6 +273,8 @@ const cat = new Animal({ //Создание объекта при помощи �
 })
 ```
 
+![Wow](https://media.giphy.com/media/3oriO13KTkzPwTykp2/giphy.gif)
+
 ## Вопросы:
 
 ![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)

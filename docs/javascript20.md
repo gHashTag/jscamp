@@ -98,6 +98,9 @@ function learnJavaScipt() {
 ```
 
 ### Замыкание в цикле
+
+![circle](https://media.giphy.com/media/u5s2ezDicmyuA/giphy.gif)
+
 ```jsx live
 function learnJavaScript() {
   let res = []

@@ -3,6 +3,9 @@ id: javascript29
 title: Async Await
 sidebar_label: Async Await
 --- 
+
+![Book](https://media.giphy.com/media/WoWm8YzFQJg5i/giphy.gif)
+
 Существует специальный синтаксис для работы с промисами, который называется `«async/await»`.
 
 ## Создание асинхронной функции

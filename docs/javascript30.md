@@ -32,6 +32,9 @@ function learnJavaScript() {
 
 
 ### Вложенный объект
+
+![nested](https://media.giphy.com/media/26gsvFLdwc8oyxoiI/giphy.gif)
+
 Мы также можем деструктурировать вложенный объект.
 ```jsx live
 function learnJavaScript() {
@@ -148,6 +151,9 @@ function learnJavaScript() {
 ```
 
 ### Объединение массивов
+
+![addition](https://media.giphy.com/media/3o6MbmXIt1qUsNzfu8/giphy.gif)
+
 Пример объединения массивов в один.
 ```jsx live
 function learnJavaScript() {
