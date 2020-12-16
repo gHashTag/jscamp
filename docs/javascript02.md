@@ -28,7 +28,7 @@ function learnJavaScript() {
 
 ## Многострочный комментарий
 
-![Coments](https://media.giphy.com/media/kfGJnWuCi27sH5qMCI/giphy.gif)
+![Coments](https://media.giphy.com/media/UevalSWg5twQeqpc8Q/giphy.gif)
 
 Второй способ - это `/* */`, такой способ более гибок, чем первый. Как только интерпретатор видит `/*`, он думает: "Ага, значит, пока я не увижу `*/`, то могу ни на что здесь не обращать никакого внимания!"
 Например, вы можете использовать его в одной строке:
