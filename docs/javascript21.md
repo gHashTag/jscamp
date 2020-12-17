@@ -102,6 +102,8 @@ function learnJavaScript() {
 
 ### Функции высшего порядка в действии
 
+![return](https://media.giphy.com/media/Y08bx6Fea1BafzTlvc/giphy.gif)
+
 Давайте посмотрим на несколько примеров таких функций, и сравним код с функциями высшего порядка и без них.
 `Array.prototype.map`
 

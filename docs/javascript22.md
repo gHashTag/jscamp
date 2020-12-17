@@ -16,6 +16,8 @@ sidebar_label: Методы перебора массива (map, filter, reduce
 
 ### Синтаксис
 
+![Book](https://media.giphy.com/media/s6OiiampNcye4/giphy.gif)
+
 ```javascript
 let new_array = arr.map(function callback( currentValue[, index[, array]]) {
     // Возвращает элемент для new_array
@@ -202,6 +204,8 @@ function learnJavaScript() {
   return filtered
 }
 ```
+
+![Wow](https://media.giphy.com/media/M33UV4NDvkTHa/giphy.gif)
 
 ## reduce
 

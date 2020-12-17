@@ -87,6 +87,15 @@ function learnJavaScript() {
 2. undefined
 3. NaN
 
+Параметры по умолчанию "отлавливают" ложные значения?
+1. Да
+2. Нет
+
+Можно ли в параметрах по умолчанию использовать значения параметров расположенных левее в списке?
+1. Да
+2. Нет
+
+
 ## Ссылки:
 
 1.  [MDN web docs](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Functions/Default_parameters)

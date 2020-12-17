@@ -16,8 +16,8 @@ sidebar_label: ES6 Modules (import, export, require)
 
 Вы можете экспортировать объекты по одному. То, что не экспортируется, не будет доступно непосредственно за пределами модуля с целью безопасности:
 ```javascript
-export const myNumbers = [1, 2, 3, 4];
-    const animals = ['Panda', 'Bear', 'Eagle']; // Недоступно вне модуля
+export const myNumbers = [1, 2, 3, 4]
+    const animals = ['Panda', 'Bear', 'Eagle'] // Недоступно вне модуля
 
 export function myLogger() {
   return (myNumbers, animals)
@@ -46,11 +46,11 @@ export { myNumbers, myLogger as Logger, Alligator }
 
 Вы можете определить экспорт по умолчанию с помощью `default:`
 ```javascript
-export const myNumbers = [1, 2, 3, 4];
-const animals = ['Panda', 'Bear', 'Eagle'];
+export const myNumbers = [1, 2, 3, 4]
+const animals = ['Panda', 'Bear', 'Eagle']
 
 export default function myLogger() {
-  console.log(myNumbers, pets);
+  console.log(myNumbers, pets)
 }
 
 export class Alligator {
@@ -67,7 +67,7 @@ export class Alligator {
 Импорт также очень прост, через ключевое слово `import,` где импортируемые объекты в фигурных скобках, а затем указываем расположение модуля 'app.js' относительно текущего файла:
 
 ```javascript
-import { myLogger, Alligator } from 'app.js';
+import { myLogger, Alligator } from 'app.js'
 ```
 
 ### Импорт с псевдонимом
@@ -76,7 +76,7 @@ import { myLogger, Alligator } from 'app.js';
 
 Можно использовать псевдонимы объектов во время импорта:
 ```javascript
-import myLogger as Logger from 'app.js';
+import myLogger as Logger from 'app.js'
 ```
 
 ### Импорт всех экспортированных участников
@@ -85,7 +85,7 @@ import myLogger as Logger from 'app.js';
 
 Вы можете импортировать все `*`, что возможно с помощью подключаемого модуля:
 ```javascript
-import * as Utils from 'app.js';
+import * as Utils from 'app.js'
 ```
 Это позволяет вам получить доступ к объектам с точечной нотацией:
 ```javascript
@@ -97,12 +97,12 @@ Utils.myLogger();
 
 Вы импортируете объект по умолчанию, давая ему имя по вашему выбору. В следующем примере `Logger` это имя, присвоенное импортированному объекту по умолчанию:
 ```javascript
-import Logger from 'app.js';
+import Logger from 'app.js'
 ```
 
 А вот как можно импортировать нестандартные элементы поверх объекта по умолчанию:
 ```javascript
-import Logger, { Alligator, myNumbers } from 'app.js';
+import Logger, { Alligator, myNumbers } from 'app.js'
 ```
 
 Инструкция `import` используется для импорта ссылок на значения, экспортированные из внешнего модуля. Импортированные модули находятся в строгом режиме независимо от того, объявляете ли вы их как таковые или нет.
@@ -254,7 +254,7 @@ import("/module-name.js").then(module => {…}) // Динамический им
 
 ![Book](https://media.giphy.com/media/V8oj5SlnHsZMY/giphy.gif)
 
-Параметр name это имя локального обьекта, который будет использован как своего рода пространство имен, ссылающееся на импортируемые значения. Параметры export определяют отдельные именованные значения, в то время как `import * as` name импортирует все значения. 
+Параметр name это имя локального обьекта, который будет использован как своего рода пространство имен, ссылающееся на импортируемые значения. Параметры export определяют отдельные именованные значения, в то время как `import * as name` импортирует все значения. 
 
 ### Импорт всего содержимого модуля
 
@@ -347,12 +347,13 @@ import myDefault, {foo, bar} from '/modules/my-module.js'
 
 **my-module.js**
 ```javascript
-export let a = 2;
-export let b = 3;
+export let a = 2
+export let b = 3
+
 main.js
-import {a, b} from '/modules/my-module.js';
-a = 5;
-b = 6;
+import {a, b} from '/modules/my-module.js'
+a = 5
+b = 6
 // Uncaught TypeError: Assignment to constant variable.
 ```
 Для импорта можно воспользоваться объектом в котором хранятся эти переменные.
@@ -361,21 +362,41 @@ b = 6;
 
 **my-module.js**
 ```javascript
-export let obj = {a:2, b:4};
+export let obj = {a:2, b:4}
 ```
 
 **main.js**
 ```javascript
-import {obj} from '/modules/my-module.js';
+import {obj} from '/modules/my-module.js'
 
-obj.a = 1;
-obj.b = 4;
+obj.a = 1
+obj.b = 4
 ```
 Учитывая, что import хранит именно ссылки на значения, экспортированные из внешнего модуля, то это можно использовать как замыкания.
 
 ## Вопросы:
 
 ![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
+ 
+1. Экспортировать желаемые элементы одним оператором в конце модуля можно командой:
+- export { myNumbers, myLogger, Alligator }
+- export const myNumbers = [1, 2, 3, 4]
+- import myLogger as Logger from 'app.js'
+
+2. Импорт всех экспортированных участников производится командой:
+- import * as Utils from 'app.js'
+- import { myLogger, Alligator } from 'app.js'
+- import myLogger as Logger from 'app.js'
+
+3. Для указания конкретных функций экспорта используется: 
+- export { hello1, hello2 }
+- import { hello1, hello2 } from './say'
+- const hello = require('./say')
+
+4. Команда `import myDefault, {foo, bar} from '/modules/my-module.js'` выполняет:
+- именованный импорт конкретных значений
+- экспорта по умолчанию (дефолтный экспорт) из модуля
+- импортирует все значения.
 
 ## Ссылки:
 
