@@ -25,6 +25,7 @@ import YouTube from 'react-youtube'
 ## Цель программы
 
 Подготовить к курсу по мобильной разработке в стеке React Native / Type Script / AWS Amplify и к сертификации в [AWS Certification](https://aws.amazon.com/ru/certification/), где в процессе подготовки, вы получите широкий набор экспертных знаний, ресурсов и программ. Мы поможем вам эффективно подтвердить свой опыт в облачных технологиях и в мобильной разработке, нужной каждому бизнесу в наше время.
+
 ![AWS](https://entrackr.com/wp-content/uploads/2018/05/Amazon_smart_home_2.gif)
 
 ## Программа на январь:
