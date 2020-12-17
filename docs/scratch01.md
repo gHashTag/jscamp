@@ -1,14 +1,14 @@
 ---
-id: scratch-00
-title: Основы
-sidebar_label: Основы
+id: scratch-01
+title: Создание нового проекта в Scratch
+sidebar_label: Создание нового проекта в Scratch
 ---
-## Введение
+## Изменение скорости спрайтов
 import YouTube from 'react-youtube';
 
-ОСНОВЫ первый урок по изучению языка программирования  «Scratch». Наш учитель Иван поможет вам с легкостью освоить данную тему.
+ИЗМЕНЕНИЕ СКОРОСТИ СПРАЙТОВ второй урок по изучению языка программирования  «Scratch». 
 
-<YouTube videoId='mh8zKaWimG8' />
+<YouTube videoId='L6lAa3h3hU4' />
 
 ## Ссылки
 1. [Learn JavaScript](https://learn.javascript.ru/fetch)

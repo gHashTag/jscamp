@@ -35,6 +35,7 @@ export class Alligator {
 export { myNumbers, myLogger, Alligator }
 ```
 ### Экспорт с псевдонимом
+![export](https://media.giphy.com/media/H5BOd0aDZObCAwS11s/giphy.gif)
 Вы также можете дать псевдонимы экспортированным элементам с помощью ключевого слова `as:`
 ```javascript
 export { myNumbers, myLogger as Logger, Alligator }

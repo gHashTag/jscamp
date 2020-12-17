@@ -42,8 +42,11 @@ let new_array = arr.map(function callback( currentValue[, index[, array]]) {
 
 ### Примеры:
 
+![Math](https://media.giphy.com/media/xT1Ra5h24Eliux3UVq/giphy.gif)
+
 #### Простой пример
 
+![Plain](https://media.giphy.com/media/xTiTnmRG7QzjO9LcQw/giphy.gif)
 У вас есть массив со множеством объектов, каждый из которых представляет отдельного человека. Тут может быть очень много данных: имя, возраст, цвет волос и любимый персонаж из кинематографа. Но в данный момент всё это не требуется – вы хотите получить только массив паспортных номеров этих людей, чтобы выдать им всем пропуска на конференцию.
 
 ```jsx live
@@ -158,6 +161,8 @@ function learnJavaScript() {
 
 ### Синтаксис
 
+![write](https://media.giphy.com/media/6Do13TV1OfOF2/giphy.gif)
+
 ```javascript
 let newArray = arr.filter(function callback(element[, index, [array]])[, thisArg])
 ```
@@ -181,6 +186,8 @@ let newArray = arr.filter(function callback(element[, index, [array]])[, thisArg
 Диапазон элементов, обрабатываемых методом `filter()`, устанавливается до первого вызова функции `callback`. Элементы, добавленные в массив после начала выполнения метода `filter()`, не будут посещены функцией `callback`. Если существующие элементы массива изменятся, значения, переданные в функцию `callback`, будут значениями на тот момент времени, когда метод `filter()` посетит их; удалённые элементы посещены не будут.
 
 ### Примеры
+
+![math](https://media.giphy.com/media/3orieN7HEHI0tw8x5C/giphy.gif)
 
 #### Отфильтровывание всех маленьких значений
 
@@ -218,11 +225,14 @@ function learnJavaScript() {
 
 ### Синтаксис
 
+![book](https://media.giphy.com/media/26ybvozSlm2nXveXC/giphy.gif)
 ```javascript
 array.reduce(function callback[, initialValue])
 ```
 
 ### Описание
+
+![describe](https://media.giphy.com/media/3orieVr84udUl4wbQs/giphy.gif)
 
 Метод `reduce()` выполняет функцию `callback` один раз для каждого элемента, присутствующего в массиве, за исключением пустот, принимая четыре аргумента: начальное значение (или значение от предыдущего вызова `callback`), значение текущего элемента, текущий индекс и массив, по которому происходит итерация.
 
@@ -234,6 +244,7 @@ array.reduce(function callback[, initialValue])
 
 ### Начальное значение аккумулятора
 
+![hatchng](https://media.giphy.com/media/xT1R9Qy80qNb8oQGGc/giphy.gif)
 Разберемся с начальным значением. В примере оно равно `0`, так как мы считаем численное значение – сумму возрастов. Это тот же самый `0`, который мы помещали в переменную `totalYears` в примере с `forEach`, просто здесь он органично вписан в сигнатуру метода.
 
 На месте нуля может быть любое другое число/строка (пустая или нет)/объект/массив – любое значение, с которого вы начинаете аккумуляцию. Для примера объединим имена всех друзей в одну строчку:
@@ -350,6 +361,7 @@ function learnJavaScript() {
 
 ## Заключение
 
+![The and](https://media.giphy.com/media/3orif8SZCC9OCqaHnO/giphy.gif)
 С использованием этих замечательных функций код стало читать удобнее. Итак, ниже приведен список статей, в которых более подробна рассмотрена эта тема.
 
 ## Вопросы:

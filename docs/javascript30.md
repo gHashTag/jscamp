@@ -8,7 +8,10 @@ sidebar_label: Деструктуризация массивов и объект
 
 ![Object](https://media.giphy.com/media/26gs9kSN6d5PxSsQU/giphy.gif)
 
-## Деструктуризация объектов
+## Деструктуризация объектов 
+
+![object](https://media.giphy.com/media/3o85xx7Yll3UyNVQf6/giphy.gif)
+
 ```jsx live
 function learnJavaScript() {
     // Создаём объект `fruit`
@@ -32,6 +35,7 @@ function learnJavaScript() {
 
 
 ### Вложенный объект
+![bookmark](https://media.giphy.com/media/3og0IDyqVFNH7qFpAI/giphy.gif)
 Мы также можем деструктурировать вложенный объект.
 ```jsx live
 function learnJavaScript() {
@@ -148,6 +152,7 @@ function learnJavaScript() {
 ```
 
 ### Объединение массивов
+![add](https://media.giphy.com/media/3gMrhfFtWHq9XxtqPy/giphy.gif)
 Пример объединения массивов в один.
 ```jsx live
 function learnJavaScript() {

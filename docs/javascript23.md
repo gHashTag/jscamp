@@ -12,6 +12,8 @@ sidebar_label: Классы
 
 ## Определение: ключевое слово class
 
+![key](https://media.giphy.com/media/YnSbo4lVWLr98Q2zzN/giphy.gif)
+
 Для определения класса используется ключевое слово `class`:
 
 ```jsx
@@ -188,6 +190,8 @@ ContentWriter наследует от User конструктор, метод ge
 
 ### Родительский конструктор: super() в constructor()
 
+![parents](https://media.giphy.com/media/QWMjLXYuRpl5cvCQ9r/giphy.gif)
+
 Для того, чтобы вызвать конструктор родительского класса в дочернем классе, следует использовать специальную функцию super(), доступную в конструкторе дочернего класса.
 
 Пусть конструктор ContentWriter вызывает родительский конструктор и инициализирует поле posts:
@@ -241,6 +245,9 @@ class Child extends Parent {
 ```
 
 ## Пример
+
+![math](https://media.giphy.com/media/3orieN7HEHI0tw8x5C/giphy.gif)
+
 
 ```jsx
 class Animal { //Создание класса Animal. Классы называют с большой буквы

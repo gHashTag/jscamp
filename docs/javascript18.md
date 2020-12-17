@@ -148,6 +148,8 @@ let fruits = [
 
 ## Методы `push/pop`
 
+![binarycode](https://media.giphy.com/media/fV0oSDsZ4UgdW/giphy.gif)
+
 `Стек` - вариант применения массивов как структуры данных.
 
 Она поддерживает два 2️⃣ вида операций:
@@ -223,6 +225,9 @@ function learnJavaScript() {
 ```
 
 ## Методы `shift/unshift`
+
+![start](https://media.giphy.com/media/QJvwBSGaoc4eI/giphy.gif)
+
 Методы, работающие только с началом массива:
 
 ### shift
@@ -354,6 +359,7 @@ fruits.pop()  // удаляем один элемент с конца
 Аналогично работает метод `push.`
 
 ### Перебор элементов
+![Object](https://media.giphy.com/media/26gs9kSN6d5PxSsQU/giphy.gif)
 Одним из самых старых способов `перебора элементов` массива является цикл `for( )` по цифровым индексам:
 ```jsx live
 function learnJavaScript() {
@@ -426,6 +432,11 @@ function learnJavaScript() {
 ```
 
 ## Итого
+
+
+
+![remember](https://media.giphy.com/media/l4pTfqyI6TCjUW4Yo/giphy.gif)
+
 Массив – это особый тип объекта, предназначенный для работы с упорядоченным набором элементов.
 
 Объявление:
