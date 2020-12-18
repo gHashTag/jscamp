@@ -4,6 +4,8 @@ title: Блочная область видимости
 sidebar_label: Блочная область видимости
 ---
 
+![@serverSerrverlesskiy](/img/javascript/headers/12.png)
+
 ![file](https://media.giphy.com/media/3o6Ztk7NosfLVRqcpy/giphy.gif)
 
 Область видимости (англ. Scope) - часть программы, в пределах которой переменная доступна для использования. <!--Для переменной, областью видимости будет та часть программы в которой она "видна" и может быть использована программистом.--> При создании `.js` файла мы создаём область видимости целого файла, для создания внутренней области видимости, нужно объявить её с помощью фигурных скобок `{ ... }`.
@@ -103,7 +105,51 @@ function learnFavaScript() {
 
 ## Ключевое слово var
 
-![Old](https://media.giphy.com/media/de5bARu0SsXiU/giphy.gif)
+![Math](https://media.giphy.com/media/xT1Ra5h24Eliux3UVq/giphy.gif)
+
+```jsx live
+function learnJavaScript() {
+  let fruit = 'Banana'
+  function otherFruit() {
+    let fruit = 'Lime'
+    return fruit
+  }
+  return otherFruit() + ' and ' + fruit
+}
+```
+
+Если мы уберём `let` из функции `otherFruit()`, то вместо создания переменной мы её перезаписываем.
+
+```jsx live
+function learnJavaScript() {
+  let fruit = 'Banana'
+  function otherFruit() {
+    fruit = 'Lime'
+    return fruit
+  }
+  return otherFruit() + ' and ' + fruit
+}
+```
+
+Что, если мы попытаемся вызвать локальную переменную в родительской области видимости? Возникает ошибка, из-за того, что мы пытаемся в глобальной области видимости вызвать переменную, которую мы не создавали.
+
+```jsx
+function learnJavaScript() {
+  let num
+  for (let i = 0; i != 5; i++) {
+    num += i
+  }
+  return i
+}
+
+// ReferenceError: i is not defined
+```
+
+![Primer](https://media.giphy.com/media/M33UV4NDvkTHa/giphy.gif)
+
+## Ключевое слово var
+
+![eye](https://media.giphy.com/media/PKl9JTqnoiKtO/giphy.gif)
 
 В статье [Переменка](https://react-native-village.github.io/docs/javascript03) мы вам сказали, что использовать `var` не будем, связано это как раз с областью видимости.
 
@@ -239,6 +285,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/IIo3iTiv"><img src="https://avatars1.githubusercontent.com/u/72025062?v=4?s=200" width="200px;" alt=""/><br /><sub><b>IIo3iTiv</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/commits?author=IIo3iTiv" title="Documentation">📖</a></td>
     <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /><a href="#financial-gHashTag" title="Financial">💵</a></td>
     <td align="center"><a href="https://github.com/Resoner2005"><img src="https://avatars1.githubusercontent.com/u/75675814?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Resoner2005</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/issues?q=author%3AResoner2005" title="Bug reports">🐛 🎨 🖋</a></td>
+    <td align="center"><a href="https://github.com/Navernoss"><img src="https://avatars0.githubusercontent.com/u/75784137?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Navernoss</b></sub></a><br /><a href="#content-Navernoss" title="Content">🖋 🐛 🎨 </a></td>
   </tr>
   
 </table>

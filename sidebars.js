@@ -2,8 +2,8 @@
 module.exports = {
   someSidebar: {
     ['Startup']: ['startup00'],
-    ['Scratch']: ['scratch-00'],
-    ['Blogging']: ['blogging-00', 'blogging-01', 'blogging-02'], 
+    ['Blogging']: ['blogging-00', 'blogging-01', 'blogging-02', 'blogging-03'], 
+    ['Scratch']: ['scratch-00', 'scratch-01'],
     ['Java Script']: [
       'javascript00',
       'javascript01',
@@ -37,6 +37,19 @@ module.exports = {
       'javascript29',
       'javascript30',
       'javascript31'
+    ],
+    ['TypeScript']: [
+      'typescript00',
+      'typescript01',
+      'typescript02',
+      'typescript03',
+      'typescript04',
+      'typescript05',
+      'typescript06',
+      'typescript07',
+      'typescript08',
+      'typescript09',
+      'typescript10'
     ],
     ['React Native']: [
       'start000',

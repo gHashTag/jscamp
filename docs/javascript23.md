@@ -4,6 +4,8 @@ title: Классы
 sidebar_label: Классы
 ---
 
+![@serverSerrverlesskiy](/img/javascript/headers/23.png)
+
 В JavaScript используется модель прототипного наследования: каждый объект наследует поля (свойства) и методы объекта-прототипа.
 
 ![Throne](https://media.giphy.com/media/3o7btXkbsV26U95Uly/giphy.gif)
@@ -11,6 +13,8 @@ sidebar_label: Классы
 Классы создаются для более удобной работы с объектами, но так как JavaScript библиотека React Native учит нас функцианальному программированию, то в рамках этого курса по JavaScript мы рассмотрим классы словно мы пришли в музей истории поглядеть на мамонта, так как мы полностью отказались от использования классов в наших мобильных приложениях!
 
 ## Определение: ключевое слово class
+
+![key](https://media.giphy.com/media/YnSbo4lVWLr98Q2zzN/giphy.gif)
 
 Для определения класса используется ключевое слово `class`:
 
@@ -188,6 +192,8 @@ ContentWriter наследует от User конструктор, метод ge
 
 ### Родительский конструктор: super() в constructor()
 
+![parents](https://media.giphy.com/media/QWMjLXYuRpl5cvCQ9r/giphy.gif)
+
 Для того, чтобы вызвать конструктор родительского класса в дочернем классе, следует использовать специальную функцию super(), доступную в конструкторе дочернего класса.
 
 Пусть конструктор ContentWriter вызывает родительский конструктор и инициализирует поле posts:
@@ -241,6 +247,9 @@ class Child extends Parent {
 ```
 
 ## Пример
+
+![math](https://media.giphy.com/media/3orieN7HEHI0tw8x5C/giphy.gif)
+
 
 ```jsx
 class Animal { //Создание класса Animal. Классы называют с большой буквы

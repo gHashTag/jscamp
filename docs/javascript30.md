@@ -4,11 +4,16 @@ title: Деструктуризация массивов и объектов
 sidebar_label: Деструктуризация массивов и объектов
 ---
 
+![@serverSerrverlesskiy](/img/javascript/headers/30.png)
+
 Деструктуризация в JavaScript это синтаксис присваивания, который позволяет удобно, в одну строку, извлечь данные из массивов и объектов.
 
 ![Object](https://media.giphy.com/media/26gs9kSN6d5PxSsQU/giphy.gif)
 
-## Деструктуризация объектов
+## Деструктуризация объектов 
+
+![object](https://media.giphy.com/media/3o85xx7Yll3UyNVQf6/giphy.gif)
+
 ```jsx live
 function learnJavaScript() {
     // Создаём объект `fruit`
@@ -32,9 +37,7 @@ function learnJavaScript() {
 
 
 ### Вложенный объект
-
-![nested](https://media.giphy.com/media/26gsvFLdwc8oyxoiI/giphy.gif)
-
+![bookmark](https://media.giphy.com/media/3og0IDyqVFNH7qFpAI/giphy.gif)
 Мы также можем деструктурировать вложенный объект.
 ```jsx live
 function learnJavaScript() {
@@ -151,9 +154,7 @@ function learnJavaScript() {
 ```
 
 ### Объединение массивов
-
-![addition](https://media.giphy.com/media/3o6MbmXIt1qUsNzfu8/giphy.gif)
-
+![add](https://media.giphy.com/media/3gMrhfFtWHq9XxtqPy/giphy.gif)
 Пример объединения массивов в один.
 ```jsx live
 function learnJavaScript() {
