@@ -3,6 +3,9 @@ id: javascript26
 title: Асинхронность Event loop
 sidebar_label: Асинхронность Event loop
 --- 
+
+![@serverSerrverlesskiy](/img/javascript/headers/26.png)
+
 ## Асинхронность
 
 ![data processing](https://media.giphy.com/media/1n8aGJBEXuW0M7ELrB/giphy.gif)

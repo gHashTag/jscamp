@@ -4,6 +4,8 @@ title: Отложенные и асинхронные вычисления
 sidebar_label: Promise
 ---
 
+![@serverSerrverlesskiy](/img/javascript/headers/27.png)
+
 ![math](https://media.giphy.com/media/4JVTF9zR9BicshFAb7/giphy.gif)
 
 Promise(Обещание) — это объект который содержит будущее значение асинхронной операции. Например, если вы запрашиваете некоторые данные с сервера, промис обещает нам получить эти данные, которые мы сможем использовать в будущем.

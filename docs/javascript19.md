@@ -4,6 +4,8 @@ title: Операторы Rest и Spread
 sidebar_label: Операторы Rest и Spread
 ---
 
+![@serverSerrverlesskiy](/img/javascript/headers/19.png)
+
 ![Hello](https://media.giphy.com/media/WOwiryOPA0G6jhKqB0/giphy.gif)
 
 Многие встроенные функции JavaScript поддерживают произвольное количество аргументов.
