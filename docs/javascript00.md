@@ -8,6 +8,26 @@ import YouTube from 'react-youtube'
 
 [![serverServerlesskiy](/img/javascript/instagram.png)](https://www.instagram.com/serverserverlessky/)
 
+<!-- ```SnackPlayer name=Hello%20World description=This%20is%20a%20description
+import React from 'react';
+import { Text, View } from 'react-native';
+
+const YourApp = () => {
+    return (
+    <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
+        <Text>
+          Try editing me! 🎉
+        </Text>
+    </View>
+    );
+}
+
+export default YourApp
+``` -->
+
+<!-- <div data-snack-id="@playra/frisky-blueberries" data-snack-platform="web" data-snack-preview="true" data-snack-theme="dark" style="overflow:hidden;background:#212121;border:1px solid var(--color-border);border-radius:4px;height:505px;width:100%"></div>
+<script async src="https://snack.expo.io/embed.js"></script> -->
+
 ## Онлайн лагерь скаутов
 
 ![Camp](/img/logo/JSCamp.gif)
@@ -93,3 +113,7 @@ import YouTube from 'react-youtube'
 ![Cristmas tree](https://media.giphy.com/media/YxlUxrYGw2w9y/giphy.gif)
 
 [![Become a Patron!](/img/logo/patreon.png)](https://www.patreon.com/bePatron?u=31769291)
+
+```
+
+```
