@@ -4,6 +4,8 @@ title: Переменка
 sidebar_label: Переменка
 ---
 
+![@serverSerrverlesskiy](/img/javascript/headers/03.png)
+
 ![Bell](https://media.giphy.com/media/l0HlLTjPgSsPOrnvW/giphy.gif)
 
 ## Переменные

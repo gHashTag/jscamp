@@ -4,6 +4,8 @@ title: Функции
 sidebar_label: Функции
 ---
 
+![@serverSerrverlesskiy](/img/javascript/headers/10.png)
+
 ![Function](https://media.giphy.com/media/3oz8xtzQEbPSMVrKzm/giphy.gif)
 
 Функции нужны, чтобы не повторять один и тот же код во многих местах программного алгоритма. В современных программах `функции` являются основными «блоками».

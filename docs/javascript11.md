@@ -4,6 +4,8 @@ title: Объекты
 sidebar_label: Объекты
 ---
 
+![@serverSerrverlesskiy](/img/javascript/headers/11.png)
+
 ![Object](https://media.giphy.com/media/26gs9kSN6d5PxSsQU/giphy.gif)
 
 Объекты - это как шкаф для вещей, предназначеный для хранения 📦 и транспортировки других типов данных.

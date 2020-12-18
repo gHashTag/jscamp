@@ -4,6 +4,8 @@ title: Конструкция switch case
 sidebar_label: Конструкция switch case
 ---
 
+![@serverSerrverlesskiy](/img/javascript/headers/14.png)
+
 ![comparison](https://media.giphy.com/media/icJA0VF7ntoEL18Jez/giphy.gif)
 
 Конструкция `switch` служит для сравнения значения на равенство с различными вариантами.
