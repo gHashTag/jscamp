@@ -4,6 +4,8 @@ title: Классы
 sidebar_label: Классы
 ---
 
+![@serverSerrverlesskiy](/img/javascript/headers/23.png)
+
 В JavaScript используется модель прототипного наследования: каждый объект наследует поля (свойства) и методы объекта-прототипа.
 
 ![Throne](https://media.giphy.com/media/3o7btXkbsV26U95Uly/giphy.gif)
