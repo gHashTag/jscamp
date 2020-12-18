@@ -4,7 +4,7 @@ title: Преобразование и приведение типов
 sidebar_label: Преобразование и приведение типов
 ---
 
-![@serverSerrverlesskiy](/img/javascript/headers/09.png)
+![@serverSerrverlesskiy](/img/javascript/headers/09.jpg)
 
 ## Приведение типов (type coercion)
 

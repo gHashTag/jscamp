@@ -4,7 +4,7 @@ title: 'Замыкание'
 sidebar_label: Замыкание
 ---
 
-![@serverSerrverlesskiy](/img/javascript/headers/20.png)
+![@serverSerrverlesskiy](/img/javascript/headers/20.jpg)
 
 ![Snake](https://media.giphy.com/media/3oFzmdjqH15YebLQ52/giphy.gif)
 

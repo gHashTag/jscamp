@@ -4,7 +4,7 @@ title: Методы перебора массива (map, filter, reduce)
 sidebar_label: Методы перебора массива (map, filter, reduce)
 ---
 
-![@serverSerrverlesskiy](/img/javascript/headers/22.png)
+![@serverSerrverlesskiy](/img/javascript/headers/22.jpg)
 
 ![Choosing](https://media.giphy.com/media/3oipPTHYlTpCw8oBBy/giphy.gif)
 

@@ -4,7 +4,7 @@ title: Строки
 sidebar_label: Строки
 ---
 
-![@serverSerrverlesskiy](/img/javascript/headers/06.png)
+![@serverSerrverlesskiy](/img/javascript/headers/06.jpg)
 
 ![symbols](https://media.giphy.com/media/BWEY1LI6WdaN2/giphy.gif)
 

@@ -4,7 +4,7 @@ title: Числа
 sidebar_label: Числа
 ---
 
-![@serverSerrverlesskiy](/img/javascript/headers/07.png)
+![@serverSerrverlesskiy](/img/javascript/headers/07.jpg)
 
 ![Numbers](https://media.giphy.com/media/JtBZm3Getg3dqxK0zP/giphy.gif)
 

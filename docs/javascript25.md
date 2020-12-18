@@ -4,7 +4,7 @@ title: Параметры по умолчанию
 sidebar_label: Параметры по умолчанию
 ---
 
-![@serverSerrverlesskiy](/img/javascript/headers/25.png)
+![@serverSerrverlesskiy](/img/javascript/headers/25.jpg)
 
 ![Teacher](https://media.giphy.com/media/3ohc10nduj1irsuzgA/giphy.gif)
 

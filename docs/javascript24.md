@@ -4,7 +4,7 @@ title: Запрет на ключевое слово «this»
 sidebar_label: Запрет на ключевое слово «this»
 ---
 
-![@serverSerrverlesskiy](/img/javascript/headers/24.png)
+![@serverSerrverlesskiy](/img/javascript/headers/24.jpg)
 
 ![Ban](https://media.giphy.com/media/dvOwFmfbzmAsI9v2IV/giphy.gif)
 

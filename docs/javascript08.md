@@ -4,7 +4,7 @@ title: Истина или ложь?
 sidebar_label: Истина или ложь?
 ---
 
-![@serverSerrverlesskiy](/img/javascript/headers/08.png)
+![@serverSerrverlesskiy](/img/javascript/headers/08.jpg)
 
 ![True](https://media.giphy.com/media/peBw21sPZnlqE/giphy.gif)
 

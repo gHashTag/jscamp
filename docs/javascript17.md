@@ -4,7 +4,7 @@ title: Циклы
 sidebar_label: Циклы
 ---
 
-![@serverSerrverlesskiy](/img/javascript/headers/17.png)
+![@serverSerrverlesskiy](/img/javascript/headers/17.jpg)
 
 ![cycle](https://media.giphy.com/media/Pkck2unt0XQfc4gs3R/giphy.gif) 
 

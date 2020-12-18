@@ -4,7 +4,7 @@ title: Ошибки
 sidebar_label: Ошибки
 ---
 
-![@serverSerrverlesskiy](/img/javascript/headers/05.png)
+![@serverSerrverlesskiy](/img/javascript/headers/05.jpg)
 
 ![error](https://media.giphy.com/media/1VT3UNeWdijUSMpRL4/giphy.gif)
 

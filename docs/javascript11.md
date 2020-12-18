@@ -4,7 +4,7 @@ title: Объекты
 sidebar_label: Объекты
 ---
 
-![@serverSerrverlesskiy](/img/javascript/headers/11.png)
+![@serverSerrverlesskiy](/img/javascript/headers/11.jpg)
 
 ![Object](https://media.giphy.com/media/26gs9kSN6d5PxSsQU/giphy.gif)
 

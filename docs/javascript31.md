@@ -4,7 +4,7 @@ title: ES6 Modules (import, export, require)
 sidebar_label: ES6 Modules (import, export, require)
 ---
 
-![@serverSerrverlesskiy](/img/javascript/headers/31.png)
+![@serverSerrverlesskiy](/img/javascript/headers/31.jpg)
 
 ![Download](https://media.giphy.com/media/3o7WTAkv7Ze17SWMOQ/giphy.gif)
 
