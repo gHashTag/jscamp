@@ -73,6 +73,18 @@ import YouTube from 'react-youtube'
 
 [Автор](https://career.habr.com/hackathon-unicorn) курса по Java Script является создателем первого в рунете учебного курса по [React Native](https://react-native-village.github.io/docs/start000), а также первый русский блогер-программист в программе [AWS Comunity Builders](https://aws.amazon.com/ru/developer/community/community-builders/) от Amazon.
 
+## Отзывы
+
+![Tvit](/img/javascript/twit.png)
+
+Перевод:
+
+Это музыкальное видео по AWS Community Builder совершенно другого уровня 🔥😅
+
+Это курс по мобильной разработке в стеке React Native / Type Script / AWS Amplify и для сертификации в AWS Certification. Стоит проверить!
+
+
+
 ## Процесс обучения
 
 Обучение проходит в приложении [Discord](https://discord.gg/6GDAfXn), в секретном чате java-script, доступный вам после оплаты подписки JavaScript Camp.
