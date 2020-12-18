@@ -4,6 +4,8 @@ title: Функции
 sidebar_label: Функции
 ---
 
+![@serverSerrverlesskiy](/img/javascript/headers/10.png)
+
 ![Function](https://media.giphy.com/media/3oz8xtzQEbPSMVrKzm/giphy.gif)
 
 Функции нужны, чтобы не повторять один и тот же код во многих местах программного алгоритма. В современных программах `функции` являются основными «блоками».
@@ -50,6 +52,8 @@ checkPermission(..) // проверяет доступ, возвращая true/
 :::
 
 ### Функции == Комментарии
+
+![cut](https://media.giphy.com/media/kf2bxcoZD8UmY/giphy.gif)
 
 Функции должны быть короткими и делать только что-то одно. Если это что-то большое, имеет смысл разбить функцию на несколько меньших. Cледовать этому правилу определённо полезно, особенно в командной работе.
 
@@ -202,7 +206,6 @@ let y1 = sum()
 ## Параметры и аргументы функций
 
 ![couple](https://media.giphy.com/media/3o7TKO3AC2o5cOkZfG/giphy.gif)
-
 Объявим ещё одну функцию, но уже с переменной в скобках.
 Когда при функции в скобках есть ещё и переменная 🔔 , мы будем называть её `формальным параметром` (заранее неопределенным, мы же не знаем чему будет равно значение x). У большей части функций будут параметры, но иногда нам встретятся функции и без них.
 
@@ -239,7 +242,6 @@ function learnJavaScript() {
 ### Разница между параметрами и аргументами
 
 ![Dedefencce](https://media.giphy.com/media/l41YkuPROHQj0fjRS/giphy.gif)
-
 Состоит в следующем:
 
 `аргумент` — это конкретное значение, которое мы «передали» функции при её вызове в скобочках. Это значение или набор значений присваивается формальным параметрам этой функции.
@@ -661,6 +663,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/KoDim-React"><img src="https://avatars1.githubusercontent.com/u/72087863?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy K.</b></sub></a><br /><a href="#mentoring-KoDim-React" title="Mentoring">📖</a></td>
     <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /><a href="#financial-gHashTag" title="Financial">💵</a></td>
     <td align="center"><a href="https://github.com/Resoner2005"><img src="https://avatars1.githubusercontent.com/u/75675814?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Resoner2005</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/issues?q=author%3AResoner2005" title="Bug reports">🐛 🎨 🖋</a></td>
+    <td align="center"><a href="https://github.com/Navernoss"><img src="https://avatars0.githubusercontent.com/u/75784137?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Navernoss</b></sub></a><br /><a href="#content-Navernoss" title="Content">🖋 🐛 🎨 </a></td>
   </tr>
   
 </table>

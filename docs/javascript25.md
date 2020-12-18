@@ -4,6 +4,8 @@ title: Параметры по умолчанию
 sidebar_label: Параметры по умолчанию
 ---
 
+![@serverSerrverlesskiy](/img/javascript/headers/25.png)
+
 ![Teacher](https://media.giphy.com/media/3ohc10nduj1irsuzgA/giphy.gif)
 
 Параметры по умолчанию позволяют задавать параметрам функции значения по умолчанию в случае, если функция вызвана без аргументов, или если параметру явным образом передано значение `undefined`.

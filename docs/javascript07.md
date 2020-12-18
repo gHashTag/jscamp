@@ -4,6 +4,8 @@ title: Числа
 sidebar_label: Числа
 ---
 
+![@serverSerrverlesskiy](/img/javascript/headers/07.png)
+
 ![Numbers](https://media.giphy.com/media/JtBZm3Getg3dqxK0zP/giphy.gif)
 
 В современном JavaScript существует два 2️⃣ типа чисел:

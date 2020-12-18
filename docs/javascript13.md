@@ -4,6 +4,8 @@ title: Регулярные выражения
 sidebar_label: Регулярные выражения
 ---
 
+![@serverSerrverlesskiy](/img/javascript/headers/13.png)
+
 ![search](https://media.giphy.com/media/l46Cy1rHbQ92uuLXa/giphy.gif)
 
 **Регулярные выражения** (англ. _regular expressions_) — формальный язык поиска и осуществления манипуляций с строками в тексте 📜 , основанный на использовании метасимволов. Регулярные выражения позволяют:
@@ -192,7 +194,6 @@ let regExp = /\s/
 ### Обратные символьные классы
 
 ![antimatter](https://media.giphy.com/media/9zXG9hZsLAa3x4xEaV/giphy.gif)
-
 Для некоторых символьных классов существует `обратный класс`, который обозначается такой же буквой, но в верхнем регистре. Этот класс выдаёт `противоположное значение` исходному, символьному классу.
 
 #### `\D` - всё, что не соответствует `\d`
@@ -234,7 +235,6 @@ function learnJavaScript() {
 ## Экранирование
 
 ![screen](https://media.giphy.com/media/l4pThMAKS4BOtz8d2/giphy.gif)
-
 Если вам нужно в шаблоне использовать символ, который является специальным, то его нужно **экранировать**. Для экранирования используют обратный слеш `\`.
 
 
@@ -484,6 +484,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/IIo3iTiv"><img src="https://avatars1.githubusercontent.com/u/72025062?v=4?s=200" width="200px;" alt=""/><br /><sub><b>IIo3iTiv</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/commits?author=IIo3iTiv" title="Documentation">📖</a></td>
     <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /><a href="#financial-gHashTag" title="Financial">💵</a></td>
     <td align="center"><a href="https://github.com/Resoner2005"><img src="https://avatars1.githubusercontent.com/u/75675814?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Resoner2005</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/issues?q=author%3AResoner2005" title="Bug reports">🐛 🎨 🖋</a></td>
+    <td align="center"><a href="https://github.com/Navernoss"><img src="https://avatars0.githubusercontent.com/u/75784137?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Navernoss</b></sub></a><br /><a href="#content-Navernoss" title="Content">🖋 🐛 🎨 </a></td>
   </tr>
   
 </table>
