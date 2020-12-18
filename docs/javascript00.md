@@ -75,7 +75,7 @@ import YouTube from 'react-youtube'
 
 ## Отзывы
 
-![Tvit](/img/javascript/twit.png)
+[![Tvit](/img/javascript/twit.png)](https://twitter.com/dabit3/status/1339622771001843716)
 
 Перевод:
 
