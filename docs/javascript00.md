@@ -6,7 +6,7 @@ sidebar_label: Java Script Camp
 
 import YouTube from 'react-youtube'
 
-[![serverServerlesskiy](/img/javascript/instagram.png)](https://www.instagram.com/serverserverlessky/)
+[![serverServerlesskiy](/img/javascript/headers/00.jpg)](https://www.instagram.com/serverserverlessky/)
 
 <!-- ```SnackPlayer name=Hello%20World description=This%20is%20a%20description
 import React from 'react';
@@ -103,8 +103,6 @@ export default YourApp
 Это музыкальное видео по AWS Community Builder совершенно другого уровня 🔥😅
 
 Это курс по мобильной разработке в стеке React Native / Type Script / AWS Amplify и для сертификации в AWS Certification. Стоит проверить!
-
-
 
 ## Процесс обучения
 
