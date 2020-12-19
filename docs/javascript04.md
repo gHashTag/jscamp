@@ -4,7 +4,7 @@ title: Типы данных
 sidebar_label: Типы данных
 ---
 
-![@serverSerrverlesskiy](/img/javascript/headers/04.png)
+![@serverSerrverlesskiy](/img/javascript/headers/04.jpg)
 
 ![data types](https://media.giphy.com/media/3ohzdEFUauyibx7mYE/giphy.gif)
 

@@ -5,7 +5,7 @@ sidebar_label: Комментарии
 ---
 
 
-![@serverSerrverlesskiy](/img/javascript/headers/02.png)
+![@serverSerrverlesskiy](/img/javascript/headers/02.jpg)
 
 ![Coments](https://media.giphy.com/media/PZMLFOA6JJTnSseh4N/giphy.gif)
 

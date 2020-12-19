@@ -4,7 +4,7 @@ title: Отложенные и асинхронные вычисления
 sidebar_label: Promise
 ---
 
-![@serverSerrverlesskiy](/img/javascript/headers/27.png)
+![@serverSerrverlesskiy](/img/javascript/headers/27.jpg)
 
 ![math](https://media.giphy.com/media/4JVTF9zR9BicshFAb7/giphy.gif)
 

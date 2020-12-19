@@ -4,7 +4,7 @@ title: Асинхронность Event loop
 sidebar_label: Асинхронность Event loop
 --- 
 
-![@serverSerrverlesskiy](/img/javascript/headers/26.png)
+![@serverSerrverlesskiy](/img/javascript/headers/26.jpg)
 
 ## Асинхронность
 

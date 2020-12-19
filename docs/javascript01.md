@@ -4,7 +4,7 @@ title: Hello World
 sidebar_label: Hello World
 ---
 
-[![@serverSerrverlesskiy](/img/javascript/HelloWorld.png)](https://www.instagram.com/serverserverlessky/)
+[![@serverSerrverlesskiy](/img/javascript/headers/01.jpg)](https://www.instagram.com/serverserverlessky/)
 
 ## Java Script
 

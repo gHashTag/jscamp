@@ -4,7 +4,7 @@ title: Наследование
 sidebar_label: Наследование
 ---
 
-![@serverSerrverlesskiy](/img/javascript/headers/16.png)
+![@serverSerrverlesskiy](/img/javascript/headers/16.jpg)
 
 ![Throne](https://media.giphy.com/media/Az8qq276ke2BO/giphy.gif)
 

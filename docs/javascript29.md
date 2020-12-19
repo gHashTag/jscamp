@@ -4,7 +4,7 @@ title: Async Await
 sidebar_label: Async Await
 ---
 
-![@serverSerrverlesskiy](/img/javascript/headers/29.png)
+![@serverSerrverlesskiy](/img/javascript/headers/29.jpg)
 
 ![Book](https://media.giphy.com/media/WoWm8YzFQJg5i/giphy.gif)
 

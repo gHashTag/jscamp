@@ -4,7 +4,7 @@ title: Регулярные выражения
 sidebar_label: Регулярные выражения
 ---
 
-![@serverSerrverlesskiy](/img/javascript/headers/13.png)
+![@serverSerrverlesskiy](/img/javascript/headers/13.jpg)
 
 ![search](https://media.giphy.com/media/l46Cy1rHbQ92uuLXa/giphy.gif)
 

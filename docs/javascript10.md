@@ -4,7 +4,7 @@ title: Функции
 sidebar_label: Функции
 ---
 
-![@serverSerrverlesskiy](/img/javascript/headers/10.png)
+![@serverSerrverlesskiy](/img/javascript/headers/10.jpg)
 
 ![Function](https://media.giphy.com/media/3oz8xtzQEbPSMVrKzm/giphy.gif)
 

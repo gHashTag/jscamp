@@ -4,7 +4,7 @@ title: Блочная область видимости
 sidebar_label: Блочная область видимости
 ---
 
-![@serverSerrverlesskiy](/img/javascript/headers/12.png)
+![@serverSerrverlesskiy](/img/javascript/headers/12.jpg)
 
 ![file](https://media.giphy.com/media/3o6Ztk7NosfLVRqcpy/giphy.gif)
 
