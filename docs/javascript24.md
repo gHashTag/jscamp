@@ -6,8 +6,6 @@ sidebar_label: Запрет на ключевое слово «this»
 
 ![@serverSerrverlesskiy](/img/javascript/headers/24.jpg)
 
-![Ban](https://media.giphy.com/media/dvOwFmfbzmAsI9v2IV/giphy.gif)
-
 **Fetch API** позволяет JavaScript обмениваться данными с сервером с помощью HTTP-запросов и является более совершенной заменой классу `XMLHttpRequest`. Выполнение запросов осуществляется методом `fetch()`, который возвращает [Promise](https://react-native-village.github.io/docs/javascript24).
 
 ![Return](https://media.giphy.com/media/Y08bx6Fea1BafzTlvc/giphy.gif)

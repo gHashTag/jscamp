@@ -6,8 +6,6 @@ sidebar_label: Переменка
 
 ![@serverSerrverlesskiy](/img/javascript/headers/03.jpg)
 
-![Bell](https://media.giphy.com/media/l0HlLTjPgSsPOrnvW/giphy.gif)
-
 ## Переменные
 
 ![Container](https://media.giphy.com/media/0T0FUiZl51VPCLsqLR/giphy.gif)

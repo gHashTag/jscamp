@@ -6,8 +6,6 @@ sidebar_label: ES6 Modules (import, export, require)
 
 ![@serverSerrverlesskiy](/img/javascript/headers/31.jpg)
 
-![Download](https://media.giphy.com/media/3o7WTAkv7Ze17SWMOQ/giphy.gif)
-
 **ES2015 (ES6)**
 
 С появлением `ES2015 (ES6)` со встроенной поддержкой модулей в JavaScript каждый `файл` стал предсталять собой `отдельный модуль.` Чтобы сделать объекты, функции, классы или переменные доступными для внешнего мира, достаточно просто `экспортировать` их, а затем `импортировать,` где это необходимо, в другие файлы проекта.

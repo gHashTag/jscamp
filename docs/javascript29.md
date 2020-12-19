@@ -6,8 +6,6 @@ sidebar_label: Async Await
 
 ![@serverSerrverlesskiy](/img/javascript/headers/29.jpg)
 
-![Book](https://media.giphy.com/media/WoWm8YzFQJg5i/giphy.gif)
-
 Существует специальный синтаксис для работы с промисами, который называется `«async/await»`.
 
 
