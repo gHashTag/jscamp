@@ -16,6 +16,7 @@ module.exports = {
   organizationName: 'react-native-village',
   projectName: 'react-native-village.github.io',
   onBrokenLinks: 'ignore',
+  plugins: ['remark-snackplayer'],
   themeConfig: {
     prism: {
       // eslint-disable-next-line global-require
