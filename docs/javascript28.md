@@ -6,7 +6,7 @@ sidebar_label: Fetch API
 
 ![@serverSerrverlesskiy](/img/javascript/headers/28.jpg)
 
-**Fetch API** позволяет JavaScript обмениваться данными с сервером с помощью HTTP-запросов и является более совершенной заменой классу `XMLHttpRequest`. Выполнение запросов осуществляется методом `fetch()`, который возвращает [Promise](https://react-native-village.github.io/docs/javascript24).
+**Fetch API** позволяет JavaScript обмениваться данными с сервером с помощью HTTP-запросов и является более совершенной заменой классу `XMLHttpRequest`. Выполнение запросов осуществляется методом `fetch()`, который возвращает🔄 [Promise](https://react-native-village.github.io/docs/javascript24).
 
 ![Exchange](https://media.giphy.com/media/OPQiZUC381IJ8Sh7UY/giphy.gif)
 
@@ -52,7 +52,7 @@ fetch('https://jsonplaceholder.typicode.com/users', {
 
 ![Bascketball](https://media.giphy.com/media/l0MYwdebx8o0XI56E/giphy.gif)
 
-Метод `fetch()` возвращает [Promise](https://react-native-village.github.io/docs/javascript24) объект класса `Response`, который имеет следующие свойства:
+Метод `fetch()` возвращает🔄 [Promise](https://react-native-village.github.io/docs/javascript24) объект класса `Response`, который имеет следующие свойства:
 1. `status` - код ответа;
 2. `statusText` - текстовое 📜 сообщение, соответствующее коду ответа;
 3. `ok` - логическое значение, указывающее на успешность кода ответа (true: 200-299);
@@ -94,7 +94,7 @@ learnJavaScript()
 
 ![Error](https://media.giphy.com/media/DHBGehJ3FSZEygszX3/giphy.gif)
 
-Узнать завершился ли `fetch()` с ошибкой мы можем с помощью свойств: "status" и "ok". 
+Узнать завершился ли `fetch()` с ошибкой🙅‍♂️ мы можем с помощью свойств: "status" и "ok". 
 
 ```jsx
 function learnJavaScript() {
