@@ -36,7 +36,6 @@ JavaScript, подобно множеству прочих языков👅 пр
 
 ## Первая программа на Java Script
 
-
 ![first](https://media.giphy.com/media/9CffOPMLx0Hf2/giphy.gif)
 
 «Hello, world!» — (Привет мир!) программа, результатом работы которой является вывод на экран или иное устройство фразы «Hello, world!» 🌎

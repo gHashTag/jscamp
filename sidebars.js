@@ -38,6 +38,19 @@ module.exports = {
       'javascript30',
       'javascript31'
     ],
+    ['TypeScript']: [
+      'typescript00',
+      'typescript01',
+      'typescript02',
+      'typescript03',
+      'typescript04',
+      'typescript05',
+      'typescript06',
+      'typescript07',
+      'typescript08',
+      'typescript09',
+      'typescript10'
+    ],
     ['React Native']: [
       'start000',
       'start00',
