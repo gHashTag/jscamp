@@ -24,8 +24,16 @@ sidebar_label: Запрет на ключевое слово «this»
 
 Давайте возьмем случай компонента `React`, который создает🏗️ поисковый запрос. В обоих методах, используемых в качестве обработчиков событий, при исползовании `this` теряется контекст:
 
-```javascript
+```SnackPlayer
+
+import React, { Component } from 'react'
+
+
 class SearchForm extends React.Component {
+  state = {
+    text: ''
+  }
+
   handleChange(event) {
     const newQuery = Object.freeze({ text: event.target.value })
     this.setState(newQuery)
@@ -47,6 +55,8 @@ class SearchForm extends React.Component {
     )
   }
 }
+
+export default SearchForm
 ```
 
 Существует множество решений этих `проблем:`

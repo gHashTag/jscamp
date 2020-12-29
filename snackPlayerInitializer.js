@@ -1,3 +1,4 @@
+/* eslint-disable header/header */
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
