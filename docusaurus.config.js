@@ -19,6 +19,7 @@ module.exports = {
   plugins: ['remark-snackplayer'],
   themes: ['@docusaurus/theme-live-codeblock'],
   clientModules: [require.resolve('./snackPlayerInitializer.js')],
+  scripts: [{ src: 'https://snack.expo.io/embed.js', defer: true }],
   themeConfig: {
     googleAnalytics: {
       trackingID: 'G-X2K0V4MDRW',

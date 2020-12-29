@@ -9,22 +9,48 @@ import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment'
 
 [![serverServerlesskiy](/img/javascript/headers/00.jpg)](https://www.instagram.com/serverserverlessky/)
 
-<!-- ```SnackPlayer name=Hello%20World description=This%20is%20a%20description
-import React from 'react';
-import { Text, View } from 'react-native';
+```SnackPlayer name=Class%20Component%20Example
 
-const YourApp = () => {
+import React, { Component } from 'react';
+import { AppRegistry, View, Image, StyleSheet } from 'react-native';
+
+const styles = StyleSheet.create({
+  container: {
+    paddingTop: 50,
+  },
+  tinyLogo: {
+    width: 50,
+    height: 50,
+  },
+  logo: {
+    width: 66,
+    height: 58,
+  },
+});
+
+class DisplayAnImage extends Component {
+  render() {
     return (
-    <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-        <Text>
-        Try editing me! 🎉
-        </Text>
-    </View>
+      <View style={styles.container}>
+        <Image
+          style={styles.tinyLogo}
+          source={require('@expo/snack-static/react-native-logo.png')}
+        />
+        <Image
+          style={styles.tinyLogo}
+          source={{uri: 'https://reactnative.dev/img/tiny_logo.png'}}
+        />
+        <Image
+          style={styles.logo}
+          source={{uri: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADMAAAAzCAYAAAA6oTAqAAAAEXRFWHRTb2Z0d2FyZQBwbmdjcnVzaEB1SfMAAABQSURBVGje7dSxCQBACARB+2/ab8BEeQNhFi6WSYzYLYudDQYGBgYGBgYGBgYGBgYGBgZmcvDqYGBgmhivGQYGBgYGBgYGBgYGBgYGBgbmQw+P/eMrC5UTVAAAAABJRU5ErkJggg=='}}
+        />
+      </View>
     );
+  }
 }
 
-export default YourApp;
-``` -->
+export default DisplayAnImage;
+```
 
 <!-- <div data-snack-id="@playra/frisky-blueberries" data-snack-platform="web" data-snack-preview="true" data-snack-theme="dark" style="overflow:hidden;background:#212121;border:1px solid var(--color-border);border-radius:4px;height:505px;width:100%"></div>
 <script async src="https://snack.expo.io/embed.js"></script> -->
