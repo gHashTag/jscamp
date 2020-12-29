@@ -5,6 +5,7 @@ sidebar_label: Java Script Camp
 ---
 
 import YouTube from 'react-youtube'
+import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment'
 
 [![serverServerlesskiy](/img/javascript/headers/00.jpg)](https://www.instagram.com/serverserverlessky/)
 
@@ -16,17 +17,35 @@ const YourApp = () => {
     return (
     <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
         <Text>
-          Try editing me! 🎉
+        Try editing me! 🎉
         </Text>
     </View>
     );
 }
 
-export default YourApp
+export default YourApp;
 ``` -->
 
 <!-- <div data-snack-id="@playra/frisky-blueberries" data-snack-platform="web" data-snack-preview="true" data-snack-theme="dark" style="overflow:hidden;background:#212121;border:1px solid var(--color-border);border-radius:4px;height:505px;width:100%"></div>
 <script async src="https://snack.expo.io/embed.js"></script> -->
+
+<!-- ```jsx live
+function Clock(props) {
+  const [date, setDate] = useState([{ id: 0, name: 'Nikita' }])
+  console.log(date[0].name)
+  useEffect(() => {
+    async function fetchMyAPI() {
+      let response = await fetch('https://jsonplaceholder.typicode.com/users')
+      response = await response.json()
+      setDate(response)
+    }
+
+    fetchMyAPI()
+  }, [])
+
+  return <h2>{date[0].name}</h2>
+}
+``` -->
 
 ## Онлайн лагерь скаутов
 
@@ -40,7 +59,7 @@ export default YourApp
 
 ## Видео
 
-<YouTube videoId='A_i5-4FuuKw' />
+<YouTube videoId="A_i5-4FuuKw" />
 
 ## Цель программы
 
@@ -106,7 +125,7 @@ export default YourApp
 
 ## Процесс обучения
 
-Обучение проходит в приложении [Discord](https://discord.gg/6GDAfXn), в секретном чате java-script, доступный вам после оплаты подписки  🖊️ JavaScript Camp.
+Обучение проходит в приложении [Discord](https://discord.gg/6GDAfXn), в секретном чате java-script, доступный вам после оплаты подписки 🖊️ JavaScript Camp.
 
 ![How much](https://media.giphy.com/media/bEu3CsR2RXdu5rBssw/giphy.gif)
 

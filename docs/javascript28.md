@@ -15,10 +15,11 @@ sidebar_label: Fetch API
 ![Book](https://media.giphy.com/media/l0HlOBZcl7sbV6LnO/giphy.gif)
 
 ```jsx
-fetch(url, {options})
+fetch(url, { options })
 ```
-* `url` - URL для отправки запроса;
-* `options` - параметры запроса.
+
+- `url` - URL для отправки запроса;
+- `options` - параметры запроса.
 
 Задав метод `fetch()` без `options` вы получите GET-запрос, скачивающий данные по адресу `URL`.
 
@@ -44,8 +45,8 @@ fetch('https://jsonplaceholder.typicode.com/users', {
   headers: {
     'Content-Type': 'application/json'
   },
-   mode: 'no-cors'
-})  
+  mode: 'no-cors'
+})
 ```
 
 ## Получение ответа
@@ -53,6 +54,7 @@ fetch('https://jsonplaceholder.typicode.com/users', {
 ![Bascketball](https://media.giphy.com/media/l0MYwdebx8o0XI56E/giphy.gif)
 
 Метод `fetch()` возвращает🔄 [Promise](https://react-native-village.github.io/docs/javascript24) объект класса `Response`, который имеет следующие свойства:
+
 1. `status` - код ответа;
 2. `statusText` - текстовое 📜 сообщение, соответствующее коду ответа;
 3. `ok` - логическое значение, указывающее на успешность кода ответа (true: 200-299);
@@ -63,8 +65,7 @@ fetch('https://jsonplaceholder.typicode.com/users', {
 
 ```jsx
 function learnJavaScript() {
-  fetch('https://jsonplaceholder.typicode.com/users')
-    .then(response => console.log(response))
+  fetch('https://jsonplaceholder.typicode.com/users').then(response => console.log(response))
 }
 learnJavaScript()
 ```
@@ -74,6 +75,7 @@ learnJavaScript()
 ![Download](https://media.giphy.com/media/ECoFRCrMgVoQg/giphy.gif)
 
 Переданные данные находятся в формате `ReadableStream`. Для изменения формата можно использовать следующие методы:
+
 1. `text()` - преобразует ответ в строку;
 2. `json()` - преобразует ответ в формате JSON;
 3. `blob()` - преобразует ответ в объект Blob;
@@ -81,6 +83,7 @@ learnJavaScript()
 5. `arrayBuffer()` - преобразует ответ в объект ArrayBuffer.
 
 Пример преобразование ответа в формат JSON.
+
 ```jsx
 function learnJavaScript() {
   fetch('https://jsonplaceholder.typicode.com/users')
@@ -94,7 +97,7 @@ learnJavaScript()
 
 ![Error](https://media.giphy.com/media/DHBGehJ3FSZEygszX3/giphy.gif)
 
-Узнать завершился ли `fetch()` с ошибкой🙅‍♂️ мы можем с помощью свойств: "status" и "ok". 
+Узнать завершился ли `fetch()` с ошибкой🙅‍♂️ мы можем с помощью свойств: "status" и "ok".
 
 ```jsx
 function learnJavaScript() {
@@ -112,6 +115,7 @@ learnJavaScript()
 ```
 
 При помощи `.catch()`
+
 ```jsx
 function learnJavaScript() {
   fetch('https://jsonplaceholder.typicode.com/users')
@@ -123,12 +127,13 @@ learnJavaScript()
 ```
 
 ## Примеры запросов
+
 ![Math](https://media.giphy.com/media/xT1Ra5h24Eliux3UVq/giphy.gif)
 
 ```jsx
 function learnJavaScript() {
   fetch('https://jsonplaceholder.typicode.com/users')
-    .then(response=> response.json())
+    .then(response => response.json())
     .then(data => console.log(data[0].name + ' and ' + data[2].name))
     .catch(error => console.log(error))
 }
@@ -136,51 +141,56 @@ learnJavaScript()
 ```
 
 То же самое, при помощи `async/await`
+
 ```jsx
 async function learnJavaScript() {
-  let response = await fetch('https://jsonplaceholder.typicode.com/users')
-  ,data = await response.json()
+  let response = await fetch('https://jsonplaceholder.typicode.com/users'),
+    data = await response.json()
   console.log(data[0].name + ' and ' + data[2].name)
 }
 learnJavaScript()
 ```
 
-## Done ✅
+## Вопросы
+
+![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
 
 Для того чтобы понять насколько вы усвоили этот урок пройдите тест в [мобильном приложении](http://onelink.to/njhc95) в нашей школы по этой теме.
 
 ![Sumerian school](/img/app.png)
 
-## Вопросы
-
-![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
-
 1. Что возвращает метод `fetch()`?
+
 - Функцию;
 - Объект;
 - Промис.
 
 2. Задав в `fetch()` только параметр URL, какой запрос мы получим?
+
 - POST;
 - GET;
 - PUT.
 
 3. Каким параметром указываются HTTP-заголовки?
+
 - redirect;
 - headers;
 - credentials.
 
 4. Какой метод нужно использовать для преобразование ответа в строку?
+
 - blob();
 - json();
 - text().
 
 5. Что означает свойство `ok` у объекта класса `Response`?
+
 - Код ответа;
 - Успешность кода ответа;
 - Чтение данных из запроса;
 
 ## Ссылки
+
 1. [Learn JavaScript](https://learn.javascript.ru/fetch)
 2. [MDN Web Docs](https://developer.mozilla.org/ru/docs/Web/API/Fetch_API/Using_Fetch)
 3. [JS Tutorial](https://www.javascripttutorial.net/javascript-fetch-api/)

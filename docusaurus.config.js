@@ -17,8 +17,15 @@ module.exports = {
   projectName: 'react-native-village.github.io',
   onBrokenLinks: 'ignore',
   plugins: ['remark-snackplayer'],
+  themes: ['@docusaurus/theme-live-codeblock'],
+  clientModules: [require.resolve('./snackPlayerInitializer.js')],
   themeConfig: {
+    googleAnalytics: {
+      trackingID: 'G-X2K0V4MDRW',
+      anonymizeIP: true // Should IPs be anonymized?
+    },
     prism: {
+      id: 1,
       // eslint-disable-next-line global-require
       theme: require('prism-react-renderer/themes/dracula')
     },
@@ -151,7 +158,6 @@ module.exports = {
       copyright: `Copyright © ${new Date().getFullYear()} #димкаРеактнативный. Built with Docusaurus.`
     }
   },
-  themes: ['@docusaurus/theme-live-codeblock'],
   presets: [
     [
       '@docusaurus/preset-classic',

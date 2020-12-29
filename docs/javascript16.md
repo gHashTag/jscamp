@@ -67,17 +67,20 @@ Employee.prototype = Object.create(User.prototype)
 ![Sumerian school](/img/app.png)
 
 При помощи какой функции⚙️ происходит наследование?
-1.  .call
-2.  .open
-3.  .extend
+
+1.  `.call`
+2.  `.open`
+3.  `.extend`
 
 Как создать объект прототипа?
-1. Object.create
-2. Object.extend
+
+1. `Object.create`
+2. `Object.extend`
 
 Как происходит вызов конструктора родительского класса?
-1. .open
-2. .call
+
+1. `.open`
+2. `.call`
 
 ## Ссылки:
 
