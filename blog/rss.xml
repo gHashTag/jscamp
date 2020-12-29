@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Sumerian School Blog</title>
+        <link>https://react-native-village.github.io/blog</link>
+        <description>Sumerian School Blog</description>
+        <lastBuildDate>Wed, 16 Dec 2020 00:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <item>
+            <title><![CDATA[React Native Developer]]></title>
+            <link>https://react-native-village.github.io/blog/01</link>
+            <guid>01</guid>
+            <pubDate>Wed, 16 Dec 2020 00:00:00 GMT</pubDate>
+            <description><![CDATA[CLICKLEAD.RU ищет React Native разработчика в Московский офис.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[React Native Developer]]></title>
+            <link>https://react-native-village.github.io/blog/00</link>
+            <guid>00</guid>
+            <pubDate>Wed, 08 May 2019 00:00:00 GMT</pubDate>
+            <description><![CDATA[Аквелон - международная аутсорсинговая компания, давно заявившая о себе на рынке. Совместно с такими известными компаниями, как Microsoft, Reddit, DropBox, Evernote мы реализуем решения и продукты, которыми пользуются миллионы людей в мире.]]></description>
+        </item>
+    </channel>
+</rss>
