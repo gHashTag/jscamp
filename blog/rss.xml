@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0">
     <channel>
-        <title>Sumerian School Blog</title>
+        <title>Java Script Camp Blog</title>
         <link>https://react-native-village.github.io/blog</link>
-        <description>Sumerian School Blog</description>
+        <description>Java Script Camp Blog</description>
         <lastBuildDate>Wed, 16 Dec 2020 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
