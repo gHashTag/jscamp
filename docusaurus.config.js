@@ -16,13 +16,20 @@ module.exports = {
   organizationName: 'react-native-village',
   projectName: 'react-native-village.github.io',
   onBrokenLinks: 'ignore',
-  plugins: ['remark-snackplayer'],
   themes: ['@docusaurus/theme-live-codeblock'],
+  plugins: ['remark-snackplayer'],
   clientModules: [require.resolve('./snackPlayerInitializer.js')],
   scripts: [{ src: 'https://snack.expo.io/embed.js', defer: true }],
   themeConfig: {
+    image: 'img/jscamp.jpg',
+    metadatas: [{ name: 'twitter:card', content: 'Java Script Camp' }],
     googleAnalytics: {
       trackingID: 'G-X2K0V4MDRW',
+      anonymizeIP: true // Should IPs be anonymized?
+    },
+    gtag: {
+      trackingID: 'GTM-M7F7469',
+      // Optional fields.
       anonymizeIP: true // Should IPs be anonymized?
     },
     prism: {
@@ -31,10 +38,11 @@ module.exports = {
       theme: require('prism-react-renderer/themes/dracula')
     },
     navbar: {
-      title: 'Sumerian School',
+      title: '',
       logo: {
-        alt: 'React Native Village Logo',
-        src: 'img/logo.png'
+        alt: 'Java Script Camp',
+        src: 'img/logo.png',
+        srcDark: 'img/logo_dark.png'
       },
       items: [
         {
