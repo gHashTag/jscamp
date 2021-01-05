@@ -11,25 +11,35 @@
  * CSS files with the .module.css suffix will be treated as CSS modules
  * and scoped locally.
  */
-
-.videoContainer {
+/* .videoContainer {
   position: relative;
   padding-bottom: 56.25%;
   height: 0;
   overflow: hidden;
   max-width: 100%;
+} */
+.videoContainer {
+  position: relative;
+  background-color: #f3de50;
+  width: 100%;
+  text-align: center;
 }
 
 .player {
+  position: relative;
+  height: 600;
+  align-items: center;
+}
+
+/* .player {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-}
+} */
 
 .heroBanner {
-  padding: 4rem 0;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -46,6 +56,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 200;
 }
 
 .features {

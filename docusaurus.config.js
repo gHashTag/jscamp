@@ -8,8 +8,8 @@
  */
 
 module.exports = {
-  title: 'Sumerian School',
-  tagline: 'Школа программирования',
+  title: 'Java Script Camp',
+  tagline: 'лагерь скаутов',
   url: 'https://react-native-village.github.io',
   baseUrl: '/',
   favicon: 'img/favicon.ico',
@@ -21,7 +21,7 @@ module.exports = {
   clientModules: [require.resolve('./snackPlayerInitializer.js')],
   scripts: [{ src: 'https://snack.expo.io/embed.js', defer: true }],
   themeConfig: {
-    image: 'img/jscamp.jpg',
+    image: 'img/jscamp/JSCampCoverPatreon.jpg',
     metadatas: [{ name: 'twitter:card', content: 'Java Script Camp' }],
     googleAnalytics: {
       trackingID: 'G-X2K0V4MDRW',
@@ -52,7 +52,7 @@ module.exports = {
           position: 'left'
         },
         {
-          href: 'https://www.patreon.com/reactnative',
+          href: 'https://www.patreon.com/javascriptcamp',
           label: 'Patreon',
           position: 'left'
         },

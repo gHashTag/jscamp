@@ -52,6 +52,11 @@ html[data-theme='dark'] {
   height: 33.333%;
 }
 
+.link {
+  font-size: 60;
+  padding-top: 20;
+}
+
 @media (max-width: 50em) {
   .image-container img {
     width: 100%;
