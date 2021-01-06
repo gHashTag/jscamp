@@ -157,32 +157,42 @@ function learnJavaScript() {
 
 #### `.` - соответствует любому символу
 
-```jsx
-let regExp = /шабло./
-// На месте точки может находиться любой символ
+```jsx live
+function learnJavaScript() {
+  let regExp = /b.n/ // На месте точки может находиться любой символ
+    ,str = 'banana'
+  return regExp.test(str) ? 'Нашёл' : 'Нету'
+}
 ```
 
 #### `\d` - соответствует цифре от 0 до 9
 
-```jsx
-let regExp = /\d/
-// `3` в `ban3ana`
-// `4` в `in 412`
+```jsx live
+function learnJavaScript() {
+  let regExp = /b\dn/ 
+  ,str = 'b4nana'
+  return regExp.test(str) ? 'Нашёл' : 'Нету'
+}
 ```
 
 #### `\w` - соответствует букве латинского алфавита, цифре и подчёркиванию `_`
 
-```jsx
-let regExp = /\w/
-// `1` в `№1`
-// `b` в `banana*`
+```jsx live
+function learnJavaScript() {
+  let regExp = /b\wn/ 
+  ,str = 'b_nana'
+  return regExp.test(str) ? 'Нашёл' : 'Нету'
+}
 ```
 
 #### `\s` - соответствует одиночному символу пустого пространства (пробел, табуляция, перевод строки)
 
-```jsx
-let regExp = /\s/
-// ' ' в `lime orange`
+```jsx live
+function learnJavaScript() {
+  let regExp = /b\sn/ 
+  ,str = 'b nana'
+  return regExp.test(str) ? 'Нашёл' : 'Нету'
+}
 ```
 
 #### `\0` - соответствует `null`
@@ -207,25 +217,32 @@ let regExp = /\s/
 
 #### `\D` - всё, что не соответствует `\d`
 
-```jsx
-let regExp = /\D/
-// `b` в `ban3ana`
-// `i` в `in 412`
+```jsx live
+function learnJavaScript() {
+  let regExp = /b\Dn/ 
+  ,str = 'b4nana'
+  return regExp.test(str) ? 'Нашёл' : 'Нету'
+}
 ```
 
 #### `\W` - всё, что не соответствует `\w`
 
-```jsx
-let regExp = /\W/
-// `№` в `№1`
-// `*` в `banana*`
+```jsx live
+function learnJavaScript() {
+  let regExp = /b\Wn/ 
+  ,str = 'b_nana'
+  return regExp.test(str) ? 'Нашёл' : 'Нету'
+}
 ```
 
 #### `\S` - всё, что не соответствует `\s`
 
-```jsx
-let regExp = /\s/
-// `l` в `lime orange`
+```jsx live
+function learnJavaScript() {
+  let regExp = /b\Sn/ 
+  ,str = 'b nana'
+  return regExp.test(str) ? 'Нашёл' : 'Нету'
+}
 ```
 
 ## Якоря
