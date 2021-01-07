@@ -11,8 +11,6 @@ import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment'
 
 ## Онлайн лагерь скаутов
 
-![Camp](/img/logo/JSCamp.gif)
-
 4 января с 17-00 по Москве, наша школа Sumerian School переходит на онлайн обучение и мы стартуем с программой Java Script Camp, которую можно пройти даже с мобильного телефона прямо сейчас.
 
 Получи в нашей школе свой Java Script значок скаута.
