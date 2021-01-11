@@ -283,8 +283,8 @@ function learnJavaScript() {
 
 ```jsx live
 function learnJavaScript() {
-  let regExp = /[ban]/
-  let str = '$bcd'
+  let regExp = /[123]/
+  let str = '$_lime+&_2banana'
   return regExp.test(str) ? 'Нашёл' : 'Нету'
 }
 ```
