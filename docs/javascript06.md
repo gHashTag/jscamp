@@ -75,7 +75,7 @@ function learnJavaScript() {
 ```jsx
 let guestList = 'Guests:\n * John\n * Pete\n * Mary'
 
-alert(guestList) // список гостей, состоящий из нескольких строк
+guestList // список гостей, состоящий из нескольких строк
 ```
 
 ![console](/img/javascript/12.png)
@@ -135,8 +135,6 @@ function learnJavaScript() {
 ```
 
 Квадратные скобки — современный способ получить символ, в то время как `charAt` существует в основном по историческим причинам.
-
-
 
 ### Изменение регистра символов
 
