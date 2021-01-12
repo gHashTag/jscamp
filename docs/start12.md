@@ -3,9 +3,12 @@ id: start12
 title: Стили - StyleSheet
 sidebar_label: Стили - StyleSheet
 ---
+
+import YouTube from 'react-youtube'
+
 В этом уроке мы познакомимся со стилями React Native.
 
-[![Стили(StyleSheet)](/img/start/12.gif)](https://youtu.be/vZpjqARPhFA)
+<YouTube videoId='vZpjqARPhFA' />
 
 [Шпаргалка по стилям](https://github.com/vhpoet/react-native-styling-cheat-sheet)
 
