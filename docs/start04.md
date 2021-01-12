@@ -12,34 +12,16 @@ import YouTube from 'react-youtube'
 
 Вот так в конечном итоге примерно должно выглядеть:
 
-```javascript
-import React, {Component} from 'react'
-import {StyleSheet, Text, View} from 'react-native'
+```SnackPlayer
+import { Text, AppRegistry } from 'react-native';
 
-export default class App extends Component {
-    render() {
-        return(
-            <View style={styles.container}>
-                <Text style={styles.welcome}>Hello world!!!</Text>
-            </View>
+const App = (props) => (
+  <View>
+    <Text>App1</Text>
+  </View>
+);
 
-        )
-    }
-}
-
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-        backgroundColor: '#F5FCFF'
-    },
-    welcome: {
-        fontSize: 20,
-        textAlign: 'center',
-        margin: 10
-    }
-})
+AppRegistry.registerComponent('Appname', () => App);
 ```
 
 [![Become a Patron!](/img/logo/patreon.png)](https://www.patreon.com/bePatron?u=31769291)

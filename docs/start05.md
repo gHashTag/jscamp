@@ -10,4 +10,25 @@ import YouTube from 'react-youtube'
 
 <YouTube videoId='Iw8tKp0ALkA' />
 
+index.js позволяет нам стилизовать нашу иконку прложения:
+
+```SnackPlayer
+/* @format */
+
+import {AppRegistry} from 'react-native'
+import App from './App'
+import App from './app.json'
+
+AppRegistry.registerComponent(appName, () => App)
+
+```
+
+В пятой строчке app.json - это название приложения. name - Как называется приложение, displayName - название под иконкой приложения:
+
+```javascript
+{
+    "name": "stargate",
+    "displayName": "stargate"
+}
+```
 [![Become a Patron!](/img/logo/patreon.png)](https://www.patreon.com/bePatron?u=31769291)
