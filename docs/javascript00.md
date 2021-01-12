@@ -5,32 +5,11 @@ sidebar_label: Java Script Camp
 ---
 
 import YouTube from 'react-youtube'
+import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment'
 
 [![serverServerlesskiy](/img/javascript/headers/00.jpg)](https://www.instagram.com/serverserverlessky/)
 
-<!-- ```SnackPlayer name=Hello%20World description=This%20is%20a%20description
-import React from 'react';
-import { Text, View } from 'react-native';
-
-const YourApp = () => {
-    return (
-    <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-        <Text>
-          Try editing me! 🎉
-        </Text>
-    </View>
-    );
-}
-
-export default YourApp
-``` -->
-
-<!-- <div data-snack-id="@playra/frisky-blueberries" data-snack-platform="web" data-snack-preview="true" data-snack-theme="dark" style="overflow:hidden;background:#212121;border:1px solid var(--color-border);border-radius:4px;height:505px;width:100%"></div>
-<script async src="https://snack.expo.io/embed.js"></script> -->
-
 ## Онлайн лагерь скаутов
-
-![Camp](/img/logo/JSCamp.gif)
 
 4 января с 17-00 по Москве, наша школа Sumerian School переходит на онлайн обучение и мы стартуем с программой Java Script Camp, которую можно пройти даже с мобильного телефона прямо сейчас.
 
@@ -40,7 +19,7 @@ export default YourApp
 
 ## Видео
 
-<YouTube videoId='A_i5-4FuuKw' />
+<YouTube videoId="A_i5-4FuuKw" />
 
 ## Цель программы
 
@@ -100,13 +79,13 @@ export default YourApp
 
 Перевод:
 
-Это музыкальное видео по AWS Community Builder совершенно другого уровня 🔥😅
+Это музыкальное видео по AWS Community Builder совершенно другого уровня 🔥 😅
 
 Это курс по мобильной разработке в стеке React Native / Type Script / AWS Amplify и для сертификации в AWS Certification. Стоит проверить!
 
 ## Процесс обучения
 
-Обучение проходит в приложении [Discord](https://discord.gg/6GDAfXn), в секретном чате java-script, доступный вам после оплаты подписки  🖊️ JavaScript Camp.
+Обучение проходит в приложении [Discord](https://discord.gg/6GDAfXn), в секретном чате java-script, доступный вам после оплаты подписки 🖊️ JavaScript Camp.
 
 ![How much](https://media.giphy.com/media/bEu3CsR2RXdu5rBssw/giphy.gif)
 
@@ -123,7 +102,3 @@ export default YourApp
 ![Cristmas tree](https://media.giphy.com/media/YxlUxrYGw2w9y/giphy.gif)
 
 [![Become a Patron!](/img/logo/patreon.png)](https://www.patreon.com/bePatron?u=31769291)
-
-```
-
-```

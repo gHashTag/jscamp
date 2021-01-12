@@ -8,25 +8,41 @@
  */
 
 module.exports = {
-  title: 'Sumerian School',
-  tagline: 'Школа программирования',
+  title: 'Java Script Camp',
+  tagline: 'лагерь скаутов',
   url: 'https://react-native-village.github.io',
   baseUrl: '/',
   favicon: 'img/favicon.ico',
   organizationName: 'react-native-village',
   projectName: 'react-native-village.github.io',
   onBrokenLinks: 'ignore',
+  themes: ['@docusaurus/theme-live-codeblock'],
   plugins: ['remark-snackplayer'],
+  clientModules: [require.resolve('./snackPlayerInitializer.js')],
+  scripts: [{ src: 'https://snack.expo.io/embed.js', defer: true }],
   themeConfig: {
+    image: 'img/jscamp/JSCampCoverPatreon.jpg',
+    metadatas: [{ name: 'twitter:card', content: 'Java Script Camp' }],
+    googleAnalytics: {
+      trackingID: 'G-X2K0V4MDRW',
+      anonymizeIP: true // Should IPs be anonymized?
+    },
+    gtag: {
+      trackingID: 'GTM-M7F7469',
+      // Optional fields.
+      anonymizeIP: true // Should IPs be anonymized?
+    },
     prism: {
+      id: 1,
       // eslint-disable-next-line global-require
       theme: require('prism-react-renderer/themes/dracula')
     },
     navbar: {
-      title: 'Sumerian School',
+      title: '',
       logo: {
-        alt: 'React Native Village Logo',
-        src: 'img/logo.png'
+        alt: 'Java Script Camp',
+        src: 'img/logo.png',
+        srcDark: 'img/logo_dark.png'
       },
       items: [
         {
@@ -36,7 +52,7 @@ module.exports = {
           position: 'left'
         },
         {
-          href: 'https://www.patreon.com/reactnative',
+          href: 'https://www.patreon.com/javascriptcamp',
           label: 'Patreon',
           position: 'left'
         },
@@ -151,13 +167,14 @@ module.exports = {
       copyright: `Copyright © ${new Date().getFullYear()} #димкаРеактнативный. Built with Docusaurus.`
     }
   },
-  themes: ['@docusaurus/theme-live-codeblock'],
   presets: [
     [
       '@docusaurus/preset-classic',
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
+          // eslint-disable-next-line global-require
+          remarkPlugins: [require('./plugins/remark-snackplayer')],
           editUrl: 'https://github.com/facebook/docusaurus/edit/master/website/'
         },
         theme: {
