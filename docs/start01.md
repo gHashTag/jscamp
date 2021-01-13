@@ -3,9 +3,12 @@ id: start01
 title: React Native init vs Expo
 sidebar_label: React Native init vs Expo
 ---
+
+import YouTube from 'react-youtube'
+
 На начальном этапе необходимо использовать какой-нибудь из стартеров. Основные конкурирующие стартеры React Native CLI и Expo, имеющие преимущество одно над другим.
 
-[![React Native init vs Expo](/img/start/01.gif)](https://youtu.be/r8BG3JPS8LI)
+<YouTube videoId='r8BG3JPS8LI' />
 
 В официальной документации React Native, из раздела [Getting Started](https://reactnative.dev/docs/environment-setup), мы узнаем о том, что у нас есть два пути запуска мобильного приложения: expo и react-native cli. Пользователи Windows и Linux, а таких большинство, зайдя во вкладку Building Projects with Native Code и выбирая Target OS: iOS, встречают надпись, которая отправляет их на стартер Expo, но перед тем как ставить Expo, предлагаю ознакомиться с информацией в следующей таблице и поберечь свою голову не только от тех тумаков, что получил я:
 
