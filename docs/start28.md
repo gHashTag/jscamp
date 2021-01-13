@@ -4,9 +4,11 @@ title: C чего начать учить React Native?
 sidebar_label: C чего начать учить React Native?
 ---
 
+import YouTube from 'react-youtube'
+
 Для того, чтобы ответить на этот вопрос и он был актуалным на сегодняшний день, я создал эту страницу c линками на:
 
-[![C чего начать учить React Native?](/img/start/28.gif)](https://youtu.be/o8H-jcFtm5Q)
+<YouTube videoId='o8H-jcFtm5Q' />
 
 - [официальную документацию](https://facebook.github.io/react-native/docs/getting-started.html)
 - мои курсы

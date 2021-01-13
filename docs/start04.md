@@ -3,8 +3,25 @@ id: start04
 title: Hello world
 sidebar_label: Hello world
 ---
+
+import YouTube from 'react-youtube'
+
 Открываем проект App.js и выпиливаем из него всё не нужное, подсвеченные запятые, точки с запятой. Пишем знаменитый текст “Hello World”, сохраняем и готово!
 
-[![Hello world](/img/start/04.gif)](https://youtu.be/has8w-mzVSM)
+<YouTube videoId='has8w-mzVSM' />
+
+Вот так в конечном итоге примерно должно выглядеть:
+
+```SnackPlayer
+import { Text, AppRegistry } from 'react-native';
+
+const App = (props) => (
+  <View>
+    <Text>App1</Text>
+  </View>
+);
+
+AppRegistry.registerComponent('Appname', () => App);
+```
 
 [![Become a Patron!](/img/logo/patreon.png)](https://www.patreon.com/bePatron?u=31769291)
