@@ -13,13 +13,35 @@ import YouTube from 'react-youtube'
 index.js позволяет нам стилизовать нашу иконку прложения:
 
 ```SnackPlayer
-/* @format */
+import React, { useEffect, useState } from 'react';
+import { ActivityIndicator, FlatList, Text, View } from 'react-native';
 
-import {AppRegistry} from 'react-native'
-import App from './App'
-import App from './app.json'
+export default App = () => {
+  const [isLoading, setLoading] = useState(true);
+  const [data, setData] = useState([]);
 
-AppRegistry.registerComponent(appName, () => App)
+  useEffect(() => {
+    fetch('https://reactnative.dev/movies.json')
+      .then((response) => response.json())
+      .then((json) => setData(json.movies))
+      .catch((error) => console.error(error))
+      .finally(() => setLoading(false));
+  }, []);
+
+  return (
+    <View style={{ flex: 1, padding: 24 }}>
+      {isLoading ? <ActivityIndicator/> : (
+        <FlatList
+          data={data}
+          keyExtractor={({ id }, index) => id}
+          renderItem={({ item }) => (
+            <Text>{item.title}, {item.releaseYear}</Text>
+          )}
+        />
+      )}
+    </View>
+  );
+};
 
 ```
 
@@ -31,4 +53,5 @@ AppRegistry.registerComponent(appName, () => App)
     "displayName": "stargate"
 }
 ```
+
 [![Become a Patron!](/img/logo/patreon.png)](https://www.patreon.com/bePatron?u=31769291)
