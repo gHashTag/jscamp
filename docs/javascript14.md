@@ -159,8 +159,8 @@ function learnJavaScript() {
 
 ```jsx live
 function learnJavaScript() {
-  let regExp = /b.n/ 
-    ,str = 'banana'
+  let regExp = /b.n/,
+    str = 'banana'
   return regExp.test(str) ? 'Нашёл' : 'Нету'
 }
 ```
@@ -169,8 +169,8 @@ function learnJavaScript() {
 
 ```jsx live
 function learnJavaScript() {
-  let regExp = /b\dn/ 
-  ,str = 'b4nana'
+  let regExp = /b\dn/,
+    str = 'b4nana'
   return regExp.test(str) ? 'Нашёл' : 'Нету'
 }
 ```
@@ -179,8 +179,8 @@ function learnJavaScript() {
 
 ```jsx live
 function learnJavaScript() {
-  let regExp = /b\wn/ 
-  ,str = 'b_nana'
+  let regExp = /b\wn/,
+    str = 'b_nana'
   return regExp.test(str) ? 'Нашёл' : 'Нету'
 }
 ```
@@ -189,8 +189,8 @@ function learnJavaScript() {
 
 ```jsx live
 function learnJavaScript() {
-  let regExp = /b\sn/ 
-  ,str = 'b nana'
+  let regExp = /b\sn/,
+    str = 'b nana'
   return regExp.test(str) ? 'Нашёл' : 'Нету'
 }
 ```
@@ -219,8 +219,8 @@ function learnJavaScript() {
 
 ```jsx live
 function learnJavaScript() {
-  let regExp = /b\Dn/ 
-  ,str = 'b4nana'
+  let regExp = /b\Dn/,
+    str = 'b4nana'
   return regExp.test(str) ? 'Нашёл' : 'Нету'
 }
 ```
@@ -229,8 +229,8 @@ function learnJavaScript() {
 
 ```jsx live
 function learnJavaScript() {
-  let regExp = /b\Wn/ 
-  ,str = 'b_nana'
+  let regExp = /b\Wn/,
+    str = 'b_nana'
   return regExp.test(str) ? 'Нашёл' : 'Нету'
 }
 ```
@@ -239,8 +239,8 @@ function learnJavaScript() {
 
 ```jsx live
 function learnJavaScript() {
-  let regExp = /b\Sn/ 
-  ,str = 'b nana'
+  let regExp = /b\Sn/,
+    str = 'b nana'
   return regExp.test(str) ? 'Нашёл' : 'Нету'
 }
 ```
@@ -295,7 +295,7 @@ function learnJavaScript() {
 let regExp = /[^0-9]/ // Аналог regExp = /\D/
 ```
 
-## Квантификаторы
+<!-- ## Квантификаторы
 
 ![Indicate](https://media.giphy.com/media/TdF2rSnG3Gd6spXPA9/giphy.gif)
 
@@ -353,7 +353,7 @@ function learnJavaScript() {
   let str = 'lime banana'
   return regExp.test(str) ? 'Нашёл' : 'Нету'
 }
-```
+``` -->
 
 ## Методы класса String
 
@@ -417,7 +417,11 @@ function learnJavaScript() {
 }
 ```
 
-## Метод класса RegExp
+## Итого
+
+Тема очень обширная поэтому подробней можно познакомиться с ней [здесь,](https://learn.javascript.ru/regular-expressions)[ здесь](https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Regular_Expressions)[ и здесь.](https://tuhub.ru/frontend/js-regexp)
+
+<!-- ## Метод класса RegExp
 
 ### exec
 
@@ -449,7 +453,7 @@ function learnJavaScript() {
     regExp = /\w+\d/
   return regExp.test(str) ? 'Нашёл' : 'Нету'
 }
-```
+``` -->
 
 ## Вопросы
 
@@ -507,11 +511,11 @@ function learnJavaScript() {
 2. Строку `az`;
 3. Символ `a` или `z`.
 
-Чему соответствует квантификатор `?`?
+<!-- Чему соответствует квантификатор `?`?
 
 1. **ноль или более**
 2. **ноль или один**
-3. **один или более**
+3. **один или более** -->
 
 Какому символу соответствует альтернация?
 
@@ -522,7 +526,7 @@ function learnJavaScript() {
 ## Ссылки
 
 1. [Learn JavaScript](https://learn.javascript.ru/regular-expressions)
-2. [MDN Web Docs](https://learn.javascript.ru/regular-expressions)
+2. [MDN Web Docs](https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Regular_Expressions)
 3. [JS RegExp](https://tuhub.ru/frontend/js-regexp)
 
 ## Contributors ✨
