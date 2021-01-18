@@ -63,11 +63,8 @@ fetch('https://jsonplaceholder.typicode.com/users', {
 6. `body` - данные ответа в формате `ReadableStream`
 7. `bodyUsed` - логическое значение, указывающее на чтение данных.
 
-```jsx
-function learnJavaScript() {
-  fetch('https://jsonplaceholder.typicode.com/users').then(response => console.log(response))
-}
-learnJavaScript()
+```javascript
+fetch('https://jsonplaceholder.typicode.com/users').then(response => console.log(response))
 ```
 
 ## Обработка ответа
@@ -85,12 +82,9 @@ learnJavaScript()
 Пример преобразование ответа в формат JSON.
 
 ```jsx
-function learnJavaScript() {
-  fetch('https://jsonplaceholder.typicode.com/users')
-    .then(response => response.json())
-    .then(data => console.log(data))
-}
-learnJavaScript()
+fetch('https://jsonplaceholder.typicode.com/users')
+  .then(response => response.json())
+  .then(data => console.log(data))
 ```
 
 ## Обработка ошибок
@@ -100,55 +94,43 @@ learnJavaScript()
 Узнать завершился ли `fetch()` с ошибкой🙅‍♂️ мы можем с помощью свойств: "status" и "ok".
 
 ```jsx
-function learnJavaScript() {
-  fetch('https://jsonplaceholder.typicode.com/users')
-    .then(response => {
-      if (!response.ok) {
-        console.log('Что-то пошло не так... Статус: ' + response.status)
-      } else {
-        return response.json()
-      }
-    })
-    .then(data => console.log(data))
-}
-learnJavaScript()
+fetch('https://jsonplaceholder.typicode.com/users')
+  .then(response => {
+    if (!response.ok) {
+      console.log('Что-то пошло не так... Статус: ' + response.status)
+    } else {
+      return response.json()
+    }
+  })
+  .then(data => console.log(data))
 ```
 
 При помощи `.catch()`
 
 ```jsx
-function learnJavaScript() {
-  fetch('https://jsonplaceholder.typicode.com/users')
-    .then(response => response.json())
-    .then(data => console.log(data))
-    .catch(error => console.log(error))
-}
-learnJavaScript()
+fetch('https://jsonplaceholder.typicode.com/users')
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.log(error))
 ```
 
 ## Примеры запросов
 
 ![Math](https://media.giphy.com/media/xT1Ra5h24Eliux3UVq/giphy.gif)
 
-```jsx
-function learnJavaScript() {
-  fetch('https://jsonplaceholder.typicode.com/users')
-    .then(response => response.json())
-    .then(data => console.log(data[0].name + ' and ' + data[2].name))
-    .catch(error => console.log(error))
-}
-learnJavaScript()
+```javascript
+fetch('https://jsonplaceholder.typicode.com/users')
+  .then(response => response.json())
+  .then(data => console.log(data[0].name + ' and ' + data[2].name))
+  .catch(error => console.log(error))
 ```
 
 То же самое, при помощи синтаксиса `async/await` подробнее с которым мы познакомимся в следующей статье.
 
-```jsx
-async function learnJavaScript() {
-  let response = await fetch('https://jsonplaceholder.typicode.com/users'),
-    data = await response.json()
-  console.log(data[0].name + ' and ' + data[2].name)
-}
-learnJavaScript()
+```javascript
+let response = await fetch('https://jsonplaceholder.typicode.com/users')
+let data = await response.json()
+console.log(data[0].name + ' and ' + data[2].name)
 ```
 
 ## Вопросы
