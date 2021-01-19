@@ -3,6 +3,7 @@ id: start32
 title: Селектор
 sidebar_label: Селектор
 ---
+
 Случается, что нужно выбрать одно из многих. Для этого предлагаю решение.
 
 ![selector](https://miro.medium.com/max/4800/1*egojVEXa1_MOTvg521DsOg.gif)
@@ -93,4 +94,4 @@ const styles = StyleSheet.create({
 export default App
 ```
 
-[![Become a Patron!](/img/logo/patreon.png)](https://www.patreon.com/bePatron?u=31769291)
+[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)

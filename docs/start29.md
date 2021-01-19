@@ -1,7 +1,7 @@
 ---
 id: start29
-title:  Английский для программистов (React и React Native)
-sidebar_label:  Английский для программистов (React и React Native)
+title: Английский для программистов (React и React Native)
+sidebar_label: Английский для программистов (React и React Native)
 ---
 
 import YouTube from 'react-youtube'
@@ -10,4 +10,4 @@ import YouTube from 'react-youtube'
 
 <YouTube videoId='pXfH8ItPGMI' />
 
-[![Become a Patron!](/img/logo/patreon.png)](https://www.patreon.com/bePatron?u=31769291)
+[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)

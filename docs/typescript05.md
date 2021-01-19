@@ -3,23 +3,27 @@ id: typescript05
 title: Классы
 sidebar_label: Классы
 ---
+
 TypeScript реализует объектно-ориентированный подход, в нем есть полноценная поддержка классов. Класс представляет шаблон для создания объектов и инкапсулирует функциональность, которую должен иметь объект. Класс определяет состояние и поведение, которыми обладает объект.
 
 ## Классы
+
 Рассмотрим простой пример работы с классами:
 
 ```typescript
 class Greeter {
-    greeting: string // Свойство greeting, тип строка
-    constructor(message: string) { // Конструктор класса Greeter
-        this.greeting = message
-    }
-    greet() { // Метод класса Greeter
-        return "Hello, " + this.greeting
-    }
+  greeting: string // Свойство greeting, тип строка
+  constructor(message: string) {
+    // Конструктор класса Greeter
+    this.greeting = message
+  }
+  greet() {
+    // Метод класса Greeter
+    return 'Hello, ' + this.greeting
+  }
 }
- 
-let greeter = new Greeter("world")
+
+let greeter = new Greeter('world')
 
 greeter.greet() // Вернет строчку Hello world
 ```
@@ -27,42 +31,51 @@ greeter.greet() // Вернет строчку Hello world
 Объявлен новый класс Greeter. Этот класс имеет три пункта: свойство greeting, конструктор, и метод greet. В последней строке создается экземпляр класса Greeter, используя new. Он вызывает конструктор, что определен ранее, создает новый объект, и запускает конструктор для его инициализации.
 
 ## Наследование
+
 В TypeScript используются привычные подходы объектно-ориентированного программирования. Одним из самых фундаментальных подходов в области программирования на основе классов является создание новых классов с помощью наследования.
 
 Пример:
+
 ```typescript
 class Animal {
-    name: string
-    constructor(theName: string) { this.name = theName; }
-    move(distanceInMeters: number = 0) {
-        return this.name+" moved " + distanceInMeters + " m."
-    }
+  name: string
+  constructor(theName: string) {
+    this.name = theName
+  }
+  move(distanceInMeters: number = 0) {
+    return this.name + ' moved ' + distanceInMeters + ' m.'
+  }
 }
- 
-class Snake extends Animal {
-    constructor(name: string) { super(name) }
-    move(distanceInMeters = 5) {
-        super.move(distanceInMeters)
-    }
-}
- 
-class Horse extends Animal {
-    constructor(name: string) { super(name) }
-    move(distanceInMeters = 45) {
-        super.move(distanceInMeters)
-    }
-}
- 
-let sam = new Snake("Sammy the Python")
-let tom = new Horse("Tommy the Palomino")
 
-sam.move();
-tom.move(34);
+class Snake extends Animal {
+  constructor(name: string) {
+    super(name)
+  }
+  move(distanceInMeters = 5) {
+    super.move(distanceInMeters)
+  }
+}
+
+class Horse extends Animal {
+  constructor(name: string) {
+    super(name)
+  }
+  move(distanceInMeters = 45) {
+    super.move(distanceInMeters)
+  }
+}
+
+let sam = new Snake('Sammy the Python')
+let tom = new Horse('Tommy the Palomino')
+
+sam.move()
+tom.move(34)
 ```
-Здесь, ключевое слово ``extends``, используется для создания подкласса. Классы Horse и Snake основаны на классе Animal и они получают доступ к его возможностям.
+
+Здесь, ключевое слово `extends`, используется для создания подкласса. Классы Horse и Snake основаны на классе Animal и они получают доступ к его возможностям.
 Классы Snake и Horse создают метод move, который переопределяет метод move из класса Animal, придавая ему функциональность, специфичную для каждого из классов.
 
-Это только основы работы с классами. Но в нашем курсе мы только ознокамливаемся с классами, так как ``JavaScript`` библиотека ``React Native`` учит нас функцианальному программированию.
+Это только основы работы с классами. Но в нашем курсе мы только ознокамливаемся с классами, так как `JavaScript` библиотека `React Native` учит нас функцианальному программированию.
 
 ## Ссылки:
 
@@ -89,4 +102,4 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-[![Become a Patron!](/img/logo/patreon.png)](https://www.patreon.com/bePatron?u=31769291)
+[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)

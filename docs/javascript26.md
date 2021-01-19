@@ -14,28 +14,31 @@ sidebar_label: Запрет на "this"
 Через this метод может не только обратиться к любому свойству объекта, но и передать куда-то ссылку на сам объект целиком (снижая безопасность приложения).
 
 Значение this называется контекстом вызова и будет определено в момент вызова функции. Например, такая функция, объявленная без объекта, вполне допустима:
+
 ```javascript
 functionsay Hi() {
   console.log(this.firstName)
 }
 ```
+
 Эта функция ещё не знает, каким будет this. Это выяснится при выполнении программы.
 
 Если одну и ту же функцию запускать в контексте разных объектов, она будет получать разный this:
-```javascript
-var user={firstName:"Джони"}
-var admin={firstName:"Админ"}
 
-function funcName(){
-  console.log(this.firstName)   
+```javascript
+var user = { firstName: 'Джони' }
+var admin = { firstName: 'Админ' }
+
+function funcName() {
+  console.log(this.firstName)
 }
-user.f=funcName
-admin.g=funcName
+user.f = funcName
+admin.g = funcName
 
 //this равен объекту перед точкой:
-user.f()      //Джони
-admin.g()     //Админ
-admin['g']()  //Админ (доступ к объект реализован через квадратные скобки)
+user.f() //Джони
+admin.g() //Админ
+admin['g']() //Админ (доступ к объект реализован через квадратные скобки)
 ```
 
 Итак, значение this не зависит от того, как функция была создана, оно определяется исключительно в момент вызова.
@@ -343,4 +346,4 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-[![Become a Patron!](/img/logo/patreon.png)](https://www.patreon.com/bePatron?u=31769291)
+[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)

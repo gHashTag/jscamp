@@ -246,6 +246,78 @@ myFetch()
 
 ![fetch error](/img/javascript/17.jpg)
 
+## Итого
+
+![Conclusion](https://media.giphy.com/media/3o6ZsVl2hv8ZnhSXug/giphy.gif)
+
+`Async/await` позволяет писать 🖊️ асинхронный код, который легко читать и поддерживать. Шесть причин почему его лучше использовать вместо промисов читайте [здесь](https://habr.com/ru/company/ruvds/blog/326074/).
+
+## Вопросы:
+
+![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
+
+Для того чтобы понять, на сколько вы усвоили этот урок, пройдите тест в [мобильном приложении](http://onelink.to/njhc95) нашей школы по этой теме.
+
+![Sumerian school](/img/app.png)
+
+Где помещается ключевое слово `async`?
+
+1. Перед объявлением функции
+2. После объявления функции
+3. В теле функции
+
+В каких функциях работает `await`?
+
+1. Только в синхронных функциях
+2. Только в асинхронных функциях
+3. В любых функциях
+
+Асинхронная функция - это:
+
+1. Это функция, которая определяется ключевым словом `async`
+2. Это функция, которая предвосхищает возможность использования ключевого слова `await`
+3. Оба варианта верны
+
+Преимуществом `async/await` является:
+
+1. Собственный код является заблокированным
+2. Избавление кода от блоков `.then()`
+3. Необходимость оборачивания ожидаемых обещаний в асинхронную функцию
+
+Чем является этот код:
+
+```javascript
+let hello = async function () {
+  return hello()
+}
+hello()
+```
+
+1. Синхронная функция
+2. Стрелочная функция
+3. Асинхронное функциональное выражение
+
+## Ссылки:
+
+1. [Async-await](https://learn.javascript.ru/async-await)
+2. [Как освоить Async / Await в JavaScript на реальных примерах](https://webformyself.com/async-await-v-javascript-na-primerax)
+3. [Асинхронное программирование с async/await](https://habr.com/ru/post/491012/)
+
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/AlisaNasibullina"><img src="https://avatars3.githubusercontent.com/u/74646904?s=460&v=4" width="200px;" alt=""/><br /><sub><b>AlisaNasibullina</b></sub></a><br /><a href="#mentoring-KoDim-React" title="Mentoring">📖</a></td>
+    <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /><a href="#financial-gHashTag" title="Financial">💵</a></td>
+    <td align="center"><a href="https://github.com/Resoner2005"><img src="https://avatars1.githubusercontent.com/u/75675814?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Resoner2005</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/issues?q=author%3AResoner2005" title="Bug reports">🐛 🎨 </a></td>
+  </tr>
+</table>
+
 <!-- ### Ожидание Promise.all()
 
 ![waiting](https://media.giphy.com/media/l0HlBO7eyXzSZkJri/giphy.gif)
@@ -449,81 +521,10 @@ let han = new Person('Han', 'Solo', 25, 'male', ['Smuggling'])
 han.greeting().then(console.log)
 ``` -->
 
-## Заключение
-
-![Conclusion](https://media.giphy.com/media/3o6ZsVl2hv8ZnhSXug/giphy.gif)
-
-`Async/await` позволяет писать 🖊️ асинхронный код, который легко читать и поддерживать. Шесть причин почему его лучше использовать вместо промисов читайте [здесь](https://habr.com/ru/company/ruvds/blog/326074/).
-
-## Вопросы:
-
-![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
-
-Для того чтобы понять, на сколько вы усвоили этот урок, пройдите тест в [мобильном приложении](http://onelink.to/njhc95) нашей школы по этой теме.
-
-![Sumerian school](/img/app.png)
-
-Где помещается ключевое слово `async`?
-
-1. Перед объявлением функции
-2. После объявления функции
-3. В теле функции
-
-В каких функциях работает `await`?
-
-1. Только в синхронных функциях
-2. Только в асинхронных функциях
-3. В любых функциях
-
-Асинхронная функция - это:
-
-1. Это функция, которая определяется ключевым словом `async`
-2. Это функция, которая предвосхищает возможность использования ключевого слова `await`
-3. Оба варианта верны
-
-Преимуществом `async/await` является:
-
-1. Собственный код является заблокированным
-2. Избавление кода от блоков `.then()`
-3. Необходимость оборачивания ожидаемых обещаний в асинхронную функцию
-
-Чем является этот код:
-
-```javascript
-let hello = async function () {
-  return hello()
-}
-hello()
-```
-
-1. Синхронная функция
-2. Стрелочная функция
-3. Асинхронное функциональное выражение
-
-## Ссылки:
-
-1. [Async-await](https://learn.javascript.ru/async-await)
-2. [Как освоить Async / Await в JavaScript на реальных примерах](https://webformyself.com/async-await-v-javascript-na-primerax)
-3. [Асинхронное программирование с async/await](https://habr.com/ru/post/491012/)
-
-## Contributors ✨
-
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
-
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
-<table>
-  <tr>
-    <td align="center"><a href="https://github.com/AlisaNasibullina"><img src="https://avatars3.githubusercontent.com/u/74646904?s=460&v=4" width="200px;" alt=""/><br /><sub><b>AlisaNasibullina</b></sub></a><br /><a href="#mentoring-KoDim-React" title="Mentoring">📖</a></td>
-    <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /><a href="#financial-gHashTag" title="Financial">💵</a></td>
-    <td align="center"><a href="https://github.com/Resoner2005"><img src="https://avatars1.githubusercontent.com/u/75675814?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Resoner2005</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/issues?q=author%3AResoner2005" title="Bug reports">🐛 🎨 </a></td>
-  </tr>
-</table>
 
 <!-- markdownlint-restore -->
 <!-- prettier-ignore-end -->
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-[![Become a Patron!](/img/logo/patreon.png)](https://www.patreon.com/bePatron?u=31769291)
+[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)

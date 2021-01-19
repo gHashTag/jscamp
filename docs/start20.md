@@ -1,6 +1,6 @@
 ---
 id: start20
-title:  State vs Props
+title: State vs Props
 sidebar_label: State vs Props
 ---
 
@@ -10,4 +10,4 @@ import YouTube from 'react-youtube'
 
 <YouTube videoId='vYuHeYxaJQU' />
 
-[![Become a Patron!](/img/logo/patreon.png)](https://www.patreon.com/bePatron?u=31769291)
+[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)

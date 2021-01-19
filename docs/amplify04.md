@@ -27,13 +27,7 @@ DataStore включает в себя Delta Sync с использование�
 Не думаю, что можно считать бизнес серьезным, если у его мобильного приложения отсустствуют события подписок реализованых на технологии web sockets. А многие ли приложения в наше время работают на web sockets? Думаю нет, по причине того, что real time это дополнительная работа разработчиков на бэке и фронтенде. Для нас же, [fullStack serverless](https://react-native-village.github.io/docs/amplify-01) разработчиков на AWS Amplify, real time идет из коробки, как на фронте так и на бэке и нам не надо писать код реализации для интеграции вэбсокетов на каждую модель, так как он генерируется автоматически, также как и написание документации для всего нашего сгенерированого кода, имплементированого в наш проект на основании инструкции GraphQL схемы. Чтобы не пугать громкими словами, я покажу вам пример, из [прошлого урока](https://react-native-village.github.io/docs/amplify-03), того как в AWS Amplify определяется Store:
 
 ```graphql
-type Job
-  @model
-  @auth(
-    rules: [
-      {allow: owner, ownerField: "owner", operations: [create, update, delete]}
-    ]
-  ) {
+type Job @model @auth(rules: [{ allow: owner, ownerField: "owner", operations: [create, update, delete] }]) {
   id: ID!
   position: String!
   rate: String!
@@ -89,7 +83,6 @@ amplify codegen model
 ![dataStore](/img/dataStore/dataStore07.png)
 
 Поехали!
-
 
 Данный урок является продолжением урока по [аутентификции](https://react-native-village.github.io/docs/auth1-00), так как работа с DataStore будет выполняться аутентифицированым пользователем. Поэтому, если вы его не прошли, то вернитесь на шаг назад.
 
@@ -210,13 +203,7 @@ amplify add api
 После выбранных пунктов откроется схема GraphQL в `amplify/backend/api/<datasourcename>/schema.graphql` куда вставляем эту модель:
 
 ```graphql
-type Job
-  @model
-  @auth(
-    rules: [
-      {allow: owner, ownerField: "owner", operations: [create, update, delete]}
-    ]
-  ) {
+type Job @model @auth(rules: [{ allow: owner, ownerField: "owner", operations: [create, update, delete] }]) {
   id: ID!
   position: String!
   rate: String!
@@ -274,50 +261,42 @@ amplify push
 На этом экране мы сделаем запрос Query, с опцией пагинации, где число через хук useQuery и он нам вернет массив, который мы отправим в Flatlist.
 
 ```jsx
-import React, {useEffect, useState} from 'react';
-import {FlatList} from 'react-native';
-import {Auth} from 'aws-amplify';
-import {
-  AppContainer,
-  CardVacancies,
-  Space,
-  Header,
-} from 'react-native-unicorn-uikit';
-import {DataStore} from '@aws-amplify/datastore';
-import {Job} from '../../models';
-import {goBack, onScreen} from '../../constants';
+import React, { useEffect, useState } from 'react'
+import { FlatList } from 'react-native'
+import { Auth } from 'aws-amplify'
+import { AppContainer, CardVacancies, Space, Header } from 'react-native-unicorn-uikit'
+import { DataStore } from '@aws-amplify/datastore'
+import { Job } from '../../models'
+import { goBack, onScreen } from '../../constants'
 
-const JobsMain = ({navigation}) => {
-  const [data, updateJobs] = useState([]);
+const JobsMain = ({ navigation }) => {
+  const [data, updateJobs] = useState([])
 
   const fetchJobs = async () => {
-    const mess = await DataStore.query(Job);
-    updateJobs(mess);
-  };
+    const mess = await DataStore.query(Job)
+    updateJobs(mess)
+  }
 
   useEffect(() => {
-    fetchJobs();
-    const subscription = DataStore.observe(Job).subscribe(() => fetchJobs());
+    fetchJobs()
+    const subscription = DataStore.observe(Job).subscribe(() => fetchJobs())
     return () => {
-      subscription.unsubscribe();
-    };
-  }, [data]);
+      subscription.unsubscribe()
+    }
+  }, [data])
 
-  const _renderItem = ({item}) => {
-    const owner = Auth.user.attributes.sub;
-    const check = owner === item.owner;
+  const _renderItem = ({ item }) => {
+    const owner = Auth.user.attributes.sub
+    const check = owner === item.owner
     return (
       <>
-        <CardVacancies
-          obj={item}
-          onPress={onScreen(check ? 'JOB_ADD' : 'JOB_DETAIL', navigation, item)}
-        />
+        <CardVacancies obj={item} onPress={onScreen(check ? 'JOB_ADD' : 'JOB_DETAIL', navigation, item)} />
         <Space height={20} />
       </>
-    );
-  };
+    )
+  }
 
-  const _keyExtractor = (obj) => obj.id.toString();
+  const _keyExtractor = obj => obj.id.toString()
 
   return (
     <AppContainer onPress={goBack(navigation)} flatlist>
@@ -338,10 +317,10 @@ const JobsMain = ({navigation}) => {
         stickyHeaderIndices={[0]}
       />
     </AppContainer>
-  );
-};
+  )
+}
 
-export {JobsMain};
+export { JobsMain }
 ```
 
 Для раскрытия подробностей вакансии создаем экран JobDetail src/screens/Jobs/JobDetail.js
@@ -349,27 +328,22 @@ export {JobsMain};
 ![](/img/dataStore/dataStore05.png)
 
 ```jsx
-import React from 'react';
-import {Platform} from 'react-native';
-import {
-  AppContainer,
-  CardVacancies,
-  Space,
-  Header,
-} from 'react-native-unicorn-uikit';
-import {goBack} from '../../constants';
+import React from 'react'
+import { Platform } from 'react-native'
+import { AppContainer, CardVacancies, Space, Header } from 'react-native-unicorn-uikit'
+import { goBack } from '../../constants'
 
-const JobDetail = ({route, navigation}) => {
+const JobDetail = ({ route, navigation }) => {
   return (
     <AppContainer>
       <Header onPress={goBack(navigation)} iconLeft="angle-dobule-left" />
       <CardVacancies obj={route.params} detail />
       <Space height={Platform.OS === 'ios' ? 100 : 30} />
     </AppContainer>
-  );
-};
+  )
+}
 
-export {JobDetail};
+export { JobDetail }
 ```
 
 ![Step10](/img/steps/10.png)
@@ -381,80 +355,72 @@ export {JobDetail};
 ![](/img/dataStore/dataStore06.png)
 
 ```jsx
-import React, {useState, useEffect, useRef} from 'react';
-import {
-  AppContainer,
-  Input,
-  Space,
-  Button,
-  Header,
-  ButtonLink,
-} from 'react-native-unicorn-uikit';
-import {DataStore} from '@aws-amplify/datastore';
-import {Formik} from 'formik';
-import * as Yup from 'yup';
-import {Job} from '../../models';
-import {goBack} from '../../constants';
+import React, { useState, useEffect, useRef } from 'react'
+import { AppContainer, Input, Space, Button, Header, ButtonLink } from 'react-native-unicorn-uikit'
+import { DataStore } from '@aws-amplify/datastore'
+import { Formik } from 'formik'
+import * as Yup from 'yup'
+import { Job } from '../../models'
+import { goBack } from '../../constants'
 
-const JobAdd = ({route, navigation}) => {
-  const [loading, setLoading] = useState(false);
-  const [check, setOwner] = useState(false);
-  const [error, setError] = useState('');
+const JobAdd = ({ route, navigation }) => {
+  const [loading, setLoading] = useState(false)
+  const [check, setOwner] = useState(false)
+  const [error, setError] = useState('')
 
   const [input, setJob] = useState({
     id: '',
     position: '',
     rate: '',
-    description: '',
-  });
+    description: ''
+  })
 
-  const formikRef = useRef();
+  const formikRef = useRef()
 
   useEffect(() => {
-    const obj = route.params;
+    const obj = route.params
     if (typeof obj !== 'undefined') {
-      setOwner(true);
-      setJob(obj);
-      const {setFieldValue} = formikRef.current;
-      const {position, rate, description} = obj;
-      setFieldValue('position', position);
-      setFieldValue('rate', rate);
-      setFieldValue('description', description);
+      setOwner(true)
+      setJob(obj)
+      const { setFieldValue } = formikRef.current
+      const { position, rate, description } = obj
+      setFieldValue('position', position)
+      setFieldValue('rate', rate)
+      setFieldValue('description', description)
     }
-  }, [route.params]);
+  }, [route.params])
 
-  const createJob = async (values) =>
-    (await DataStore.save(new Job({...values}))) && goBack(navigation)();
+  const createJob = async values => (await DataStore.save(new Job({ ...values }))) && goBack(navigation)()
 
-  const updateJob = async ({position, rate, description}) => {
+  const updateJob = async ({ position, rate, description }) => {
     try {
-      setLoading(true);
-      const original = await DataStore.query(Job, input.id);
+      setLoading(true)
+      const original = await DataStore.query(Job, input.id)
       const update = await DataStore.save(
-        Job.copyOf(original, (updated) => {
-          updated.position = position;
-          updated.rate = rate;
-          updated.description = description;
-        }),
-      );
-      update && goBack(navigation)();
-      setLoading(false);
+        Job.copyOf(original, updated => {
+          updated.position = position
+          updated.rate = rate
+          updated.description = description
+        })
+      )
+      update && goBack(navigation)()
+      setLoading(false)
     } catch (err) {
-      setError(err);
+      setError(err)
     }
-  };
+  }
 
   const deleteJob = async () => {
     try {
-      setLoading(true);
-      const job = await DataStore.query(Job, input.id);
-      const del = await DataStore.delete(job);
-      del && goBack(navigation)();
-      setLoading(false);
+      setLoading(true)
+      const job = await DataStore.query(Job, input.id)
+      const del = await DataStore.delete(job)
+      del && goBack(navigation)()
+      setLoading(false)
     } catch (err) {
-      setError(err);
+      setError(err)
     }
-  };
+  }
 
   return (
     <AppContainer onPress={goBack(navigation)} loading={loading} error={error}>
@@ -463,21 +429,14 @@ const JobAdd = ({route, navigation}) => {
       <Formik
         innerRef={formikRef}
         initialValues={input}
-        onSubmit={(values) => (check ? updateJob(values) : createJob(values))}
+        onSubmit={values => (check ? updateJob(values) : createJob(values))}
         validationSchema={Yup.object().shape({
           position: Yup.string().min(3).required(),
           rate: Yup.string().min(3).required(),
-          description: Yup.string().min(3).required(),
-        })}>
-        {({
-          values,
-          handleChange,
-          errors,
-          setFieldTouched,
-          touched,
-          isValid,
-          handleSubmit,
-        }) => (
+          description: Yup.string().min(3).required()
+        })}
+      >
+        {({ values, handleChange, errors, setFieldTouched, touched, isValid, handleSubmit }) => (
           <>
             <Input
               name="position"
@@ -510,16 +469,11 @@ const JobAdd = ({route, navigation}) => {
               numberOfLines={5}
             />
             <Space height={40} />
-            <Button
-              title={check ? 'Update' : 'Create'}
-              disabled={!isValid}
-              onPress={handleSubmit}
-              formik
-            />
+            <Button title={check ? 'Update' : 'Create'} disabled={!isValid} onPress={handleSubmit} formik />
             {check && (
               <>
                 <Space height={10} />
-                <ButtonLink title="or" textStyle={{alignSelf: 'center'}} />
+                <ButtonLink title="or" textStyle={{ alignSelf: 'center' }} />
                 <Space height={15} />
                 <Button title="DELETE" onPress={deleteJob} cancel />
               </>
@@ -529,18 +483,18 @@ const JobAdd = ({route, navigation}) => {
       </Formik>
       <Space height={100} />
     </AppContainer>
-  );
-};
+  )
+}
 
-export {JobAdd};
+export { JobAdd }
 ```
 
 и в screens/Jobs/index.js экспортируем экраны
 
 ```jsx
-export * from './JobsMain';
-export * from './JobDetail';
-export * from './JobAdd';
+export * from './JobsMain'
+export * from './JobDetail'
+export * from './JobAdd'
 ```
 
 ![Step11](/img/steps/11.png)
@@ -550,49 +504,39 @@ export * from './JobAdd';
 Добавляем импорт экранов Jobs и подключаем их в StackNavigator
 
 ```jsx
-import * as React from 'react';
-import {createStackNavigator} from '@react-navigation/stack';
-import {enableScreens} from 'react-native-screens'; // eslint-disable-line
-import {
-  Hello,
-  SignUp,
-  SignIn,
-  ConfirmSignUp,
-  User,
-  Forgot,
-  ForgotPassSubmit,
-} from './screens/Authenticator';
-import {JobsMain, JobDetail, JobAdd} from './screens/Jobs';
+import * as React from 'react'
+import { createStackNavigator } from '@react-navigation/stack'
+import { enableScreens } from 'react-native-screens' // eslint-disable-line
+import { Hello, SignUp, SignIn, ConfirmSignUp, User, Forgot, ForgotPassSubmit } from './screens/Authenticator'
+import { JobsMain, JobDetail, JobAdd } from './screens/Jobs'
 
-enableScreens();
+enableScreens()
 
-const Stack = createStackNavigator();
+const Stack = createStackNavigator()
 
 const AppNavigator = () => {
   return (
     <Stack.Navigator
       screenOptions={{
-        headerShown: false,
+        headerShown: false
       }}
-      initialRouteName="HELLO">
+      initialRouteName="HELLO"
+    >
       <Stack.Screen name="HELLO" component={Hello} />
       <Stack.Screen name="SIGN_UP" component={SignUp} />
       <Stack.Screen name="SIGN_IN" component={SignIn} />
       <Stack.Screen name="FORGOT" component={Forgot} />
-      <Stack.Screen
-        name="FORGOT_PASSWORD_SUBMIT"
-        component={ForgotPassSubmit}
-      />
+      <Stack.Screen name="FORGOT_PASSWORD_SUBMIT" component={ForgotPassSubmit} />
       <Stack.Screen name="CONFIRM_SIGN_UP" component={ConfirmSignUp} />
       <Stack.Screen name="USER" component={User} />
       <Stack.Screen name="JOBS_MAIN" component={JobsMain} />
       <Stack.Screen name="JOB_DETAIL" component={JobDetail} />
       <Stack.Screen name="JOB_ADD" component={JobAdd} />
     </Stack.Navigator>
-  );
-};
+  )
+}
 
-export default AppNavigator;
+export default AppNavigator
 ```
 
 ![Step12](/img/steps/12.png)
@@ -602,45 +546,45 @@ export default AppNavigator;
 Редактируем экран User в screens/Authenticator/User/index.js
 
 ```jsx
-import React, {useState, useEffect} from 'react';
-import {Auth} from 'aws-amplify';
-import * as Keychain from 'react-native-keychain';
-import {AppContainer, Button} from 'react-native-unicorn-uikit';
-import {goHome, onScreen} from '../../../constants';
+import React, { useState, useEffect } from 'react'
+import { Auth } from 'aws-amplify'
+import * as Keychain from 'react-native-keychain'
+import { AppContainer, Button } from 'react-native-unicorn-uikit'
+import { goHome, onScreen } from '../../../constants'
 
-const User = ({navigation}) => {
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState('');
+const User = ({ navigation }) => {
+  const [loading, setLoading] = useState(false)
+  const [error, setError] = useState('')
 
   useEffect(() => {
     const checkUser = async () => {
-      await Auth.currentAuthenticatedUser();
-    };
-    checkUser();
-  });
+      await Auth.currentAuthenticatedUser()
+    }
+    checkUser()
+  })
 
   const _onPress = async () => {
-    setLoading(true);
+    setLoading(true)
     try {
-      await Auth.signOut();
-      await Keychain.resetInternetCredentials('auth');
-      goHome(navigation)();
+      await Auth.signOut()
+      await Keychain.resetInternetCredentials('auth')
+      goHome(navigation)()
     } catch (err) {
-      setError(err.message);
+      setError(err.message)
     }
-  };
+  }
 
-  const _onPressJob = () => onScreen('JOBS_MAIN', navigation)(); // переход на экран JOBS_MAIN
+  const _onPressJob = () => onScreen('JOBS_MAIN', navigation)() // переход на экран JOBS_MAIN
 
   return (
     <AppContainer message={error} loading={loading}>
       <Button title="Sign Out" onPress={_onPress} />
       <Button title="Jobs" onPress={_onPressJob} />
     </AppContainer>
-  );
-};
+  )
+}
 
-export {User};
+export { User }
 ```
 
 Собираем приложение и тестируем
@@ -659,4 +603,4 @@ https://engineering.fb.com/core-data/graphql-a-data-query-language/
 
 https://graphql.org/learn
 
-[![Become a Patron!](/img/logo/patreon.png)](https://www.patreon.com/bePatron?u=31769291)
+[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)

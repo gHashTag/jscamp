@@ -101,4 +101,4 @@ import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment'
 
 ![Cristmas tree](https://media.giphy.com/media/YxlUxrYGw2w9y/giphy.gif)
 
-[![Become a Patron!](/img/logo/patreon.png)](https://www.patreon.com/bePatron?u=31769291)
+[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)

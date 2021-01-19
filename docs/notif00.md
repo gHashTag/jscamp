@@ -227,7 +227,7 @@ PushNotification.configure(awsconfig)
 Вы можете добавить следующий код в `App.js`:
 
 ```js
-PushNotification.onRegister((token) => {
+PushNotification.onRegister(token => {
   console.log('in app registration', token)
   PushNotification.updateEndpoint(token)
 })
@@ -266,7 +266,7 @@ PushNotification.onNotification((notification) => {
 Распространенный сценарий - когда пользователь открывает push-уведомление, вызывается `onNotificationOpened`. `App.js` выглядет так:
 
 ```js
-PushNotification.onNotificationOpened((notification) => {
+PushNotification.onNotificationOpened(notification => {
   console.log('the notification is opened', notification)
 })
 ```
@@ -304,24 +304,24 @@ import awsconfig from './aws-exports'
 Amplify.configure(awsconfig)
 PushNotification.configure(awsconfig)
 
-PushNotification.onRegister(async (token) => {
+PushNotification.onRegister(async token => {
   console.log('in app registration', token)
   PushNotification.updateEndpoint(token)
 })
 
 // In case PushNotification.onRegister didn't work
-NativeModules.RNPushNotification.getToken((token) => {
+NativeModules.RNPushNotification.getToken(token => {
   console.log(`PushToken: ${token}`)
 })
 
-PushNotification.onNotification((notification) => {
+PushNotification.onNotification(notification => {
   console.log('in app notification', notification)
   if (Platform.OS === 'ios') {
     notification.finish(PushNotificationIOS.FetchResult.NoData)
   }
 })
 
-PushNotification.onNotificationOpened((notification) => {
+PushNotification.onNotificationOpened(notification => {
   console.log('the notification is opened', notification)
 })
 
@@ -402,4 +402,4 @@ amplify notification console
 
 [Testing Push Notifications with AWS Amplify & CLI](https://medium.com/@dantasfiles/testing-push-notifications-with-aws-amplify-9126bd621d3a)
 
-[![Become a Patron!](/img/logo/patreon.png)](https://www.patreon.com/bePatron?u=31769291)
+[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)

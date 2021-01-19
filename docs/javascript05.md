@@ -84,7 +84,7 @@ function learnJavaScript() {
 
 ## TypeError
 
-Объект TypeError представляет ошибку, возникающую, когда значение имеет не ожидаемый тип. Мы применяем метод `toUpperCase`, с которым подробно познакомимся позже, к типу undefined, а это не допустимо так как этот метод преобразует строку в верхний регистр. Проверьте эту ошибку в консоле браузера, так в `Live Editor`s она не работает.
+Объект TypeError представляет ошибку, возникающую, когда значение имеет не ожидаемый тип. Мы применяем метод `toUpperCase`, с которым подробно познакомимся позже, к типу undefined, а это не допустимо так как этот метод преобразует строку в верхний регистр. Проверьте эту ошибку в консоле браузера, так в `LIVE EDITOR` она не работает.
 
 ```javascript
 var foo = undefined
@@ -131,4 +131,4 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   
 </table>
 
-[![Become a Patron!](/img/logo/patreon.png)](https://www.patreon.com/bePatron?u=31769291)
+[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)

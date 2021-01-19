@@ -3,12 +3,12 @@ id: typescript07
 title: Обобщения
 sidebar_label: Обобщения
 ---
+
 TypeScript является строго типизированным языком, однако иногда надо построить функционал так, чтобы он мог использовать данные любых типов. В некоторых случаях мы могли бы использовать тип any:
 
 ```typescript
 function getId(id: any): any {
-     
-    return id
+  return id
 }
 let result = getId(5)
 console.log(result)
@@ -18,21 +18,19 @@ console.log(result)
 
 ```typescript
 function getId<T>(id: T): T {
-     
-    return id
+  return id
 }
 ```
 
-С помощью выражения ``<T>`` мы указываем, что функция getId типизирована определенным типом T. При выполнении функции вместо Т будет подставляться конкретный тип. Причем на этапе компиляции конкретный тип не известен. И возвращать функция будет объект этого типа. Например:
+С помощью выражения `<T>` мы указываем, что функция getId типизирована определенным типом T. При выполнении функции вместо Т будет подставляться конкретный тип. Причем на этапе компиляции конкретный тип не известен. И возвращать функция будет объект этого типа. Например:
 
 ```typescript
 function getId<T>(id: T): T {
-     
-    return id
+  return id
 }
 let result1 = getId<number>(5)
 console.log(result1)
-let result2 = getId<string>("abc")
+let result2 = getId<string>('abc')
 console.log(result2)
 ```
 
@@ -42,43 +40,40 @@ console.log(result2)
 
 ```typescript
 function getString<T>(arg: Array<T>): string {
-    let result = ""
-    for (let i = 0; i < arg.length; i++) {
-        if (i > 0)
-            result += ","
-        result += arg[i].toString()
-    }
-    console.log(result)
-    return result
+  let result = ''
+  for (let i = 0; i < arg.length; i++) {
+    if (i > 0) result += ','
+    result += arg[i].toString()
+  }
+  console.log(result)
+  return result
 }
- 
-let result = getString<number>( [1, 2, 34, 5])
+
+let result = getString<number>([1, 2, 34, 5])
 console.log(result)
 ```
 
 В данном случае вне зависимости от типа данных, переданных в массиве, все его элементы соединятся в одну общую строку.
 
 ## Обобщенные классы и интерфейсы
+
 Кроме обобщенных функций и массивов также бывают обобщенные классы и интерфейсы:
 
 ```typescript
 class User<T> {
- 
-    private _id: T
-    constructor(id:T) {
- 
-        this._id=id
-    }
-    getId(): T {
- 
-        return this._id
-    }
+  private _id: T
+  constructor(id: T) {
+    this._id = id
+  }
+  getId(): T {
+    return this._id
+  }
 }
- 
+
 let tom = new User<number>(3)
 console.log(tom.getId()) // возвращает number
- 
-let alice = new User<string>("vsf")
+
+let alice = new User<string>('vsf')
 console.log(alice.getId()) // возвращает string
 ```
 
@@ -87,79 +82,67 @@ console.log(alice.getId()) // возвращает string
 ```typescript
 let tom = new User<number>(3)
 console.log(tom.getId())
-tom = new User<string>("vsf") // ошибка
+tom = new User<string>('vsf') // ошибка
 ```
 
 Все то же самое и с интерфейсами:
 
 ```typescript
 interface IUser<T> {
- 
-    getId(): T
+  getId(): T
 }
- 
+
 class User<T> implements IUser<T> {
- 
-    private _id: T;
-    constructor(id:T) {
- 
-        this._id=id
-    }
-    getId(): T {
- 
-        return this._id
-    }
+  private _id: T
+  constructor(id: T) {
+    this._id = id
+  }
+  getId(): T {
+    return this._id
+  }
 }
 ```
 
 ## Ограничения обобщений
+
 Иногда необходимо использовать обобщения, однако принимать любой тип в функцию или класс вместо параметра T нежелательно. Например, пусть имеется следующий интерфейс и классы его реализующие:
 
 ```typescript
 interface IUser {
- 
-    getInfo()
+  getInfo()
 }
 class User implements IUser {
- 
-    _id: number
-    _name: string
-    constructor(id:number, name:string) {
- 
-        this._id = id
-        this._name = name
-    }
-    getInfo() {
- 
-        console.log("id: " + this._id + "; name: " + this._name)
-    }
+  _id: number
+  _name: string
+  constructor(id: number, name: string) {
+    this._id = id
+    this._name = name
+  }
+  getInfo() {
+    console.log('id: ' + this._id + '; name: ' + this._name)
+  }
 }
- 
+
 class Employee extends User {
- 
-    _company: string
-    constructor(id: number, name: string, company: string) {
- 
-        super(id, name)
-        this._company = company
-    }
- 
-    getInfo() {
- 
-        console.log("id: " + this._id + "; name: " + this._name+"; company:"+this._company)
-    }
+  _company: string
+  constructor(id: number, name: string, company: string) {
+    super(id, name)
+    this._company = company
+  }
+
+  getInfo() {
+    console.log('id: ' + this._id + '; name: ' + this._name + '; company:' + this._company)
+  }
 }
 ```
 
 Теперь пусть у нас будет класс, выводящий информацию о пользователях:
 
 ```typescript
-class UserInfo<T extends IUser>{
- 
-    getUserInfo(user: T): void{
- 
-        user.getInfo()
-    }
+class UserInfo<T extends IUser> {
+  getUserInfo(user: T): void {
+    user.getInfo()
+  }
 }
 ```
 
@@ -168,19 +151,20 @@ class UserInfo<T extends IUser>{
 И затем мы можем использовать класс, передавая подходящие объекты:
 
 ```typescript
-let tom = new User(3, "Tom")
-let alice = new Employee(4, "Alice", "Microsoft")
+let tom = new User(3, 'Tom')
+let alice = new Employee(4, 'Alice', 'Microsoft')
 let userStore = new UserInfo()
 userStore.getUserInfo(tom)
 userStore.getUserInfo(alice)
 ```
 
 ## Ключевое слово new
+
 Чтобы создать новый объект в коде обобщений, нам надо указать, что обобщенный тип T имеет конструктор. Это означает, что вместо параметра type:T нам надо указать type: {new(): T;}. Например, следующий обобщенный интерфейс работать не будет:
 
 ```typescript
 function UserFactory<T>(): T {
-    return new T() // ошибка компиляции
+  return new T() // ошибка компиляции
 }
 ```
 
@@ -188,18 +172,18 @@ function UserFactory<T>(): T {
 
 ```typescript
 function userFactory<T>(type: { new (): T; }); T {
-     
+
     return new type()
 }
- 
- 
+
+
 class User {
- 
+
     constructor() {
         console.log("создан объект User")
     }
 }
- 
+
 let user : User = userFactory(User)
 ```
 
@@ -208,7 +192,6 @@ let user : User = userFactory(User)
 1.  [TypeScript документация](https://www.typescriptlang.org/docs/handbook/generics.html)
 2.  [Metanit](https://metanit.com/web/typescript/3.5.php)
 3.  [Canonium](https://canonium.com/articles/typescript-generics)
-
 
 ## Contributors ✨
 
@@ -230,4 +213,4 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-[![Become a Patron!](/img/logo/patreon.png)](https://www.patreon.com/bePatron?u=31769291)
+[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)

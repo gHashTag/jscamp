@@ -49,6 +49,7 @@ sudo gem install cocoapods
 `XCode` - это интегрированная среда разработки (IDE) программного обеспечения для платформы MacOS разработанная корпорацией Apple. Самый простой способ установки `XCode` - через [Mac App Store](https://apps.apple.com/us/app/xcode/id497799835?mt=12). Внутри `XCode` потребуется установить нужный симулятор `iOS` и инструменты командной строки.
 
 #### Симулятора iOS
+
 Установка симулятора происходит в настройках XCode, для того чтобы зайти в настройки приложения в верхней панели выбираем `XCode`, далее `Preferences...`
 
 ![XCode](/img/rn/00_2/03_02.png)
@@ -56,7 +57,8 @@ sudo gem install cocoapods
 Откроется окно с настройками. Для установки симулятора переходим во вкладку `Components` Раскрывается список доступных симуляторов, выбрав понравившийся устанавливаем его нажав на стрелочку рядом с названием симулятора.
 ![XCode](/img/rn/00_2/03_03.png)
 
-####  Инструменты командной строки
+#### Инструменты командной строки
+
 Для настройки инструментов необходимо в настройках `XCode` перейти на вкладку `Locations`. Строка `Command Line Tools:` в раскрывающемся списке выбираем самую последнюю версию инструментов командной строки.
 ![XCode](/img/rn/00_2/03_04.png)
 
@@ -169,4 +171,4 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-[![Become a Patron!](/img/logo/patreon.png)](https://www.patreon.com/bePatron?u=31769291)
+[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)

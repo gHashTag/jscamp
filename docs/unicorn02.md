@@ -3,20 +3,21 @@ id: unicorn02
 title: UI Kit - Unicorn
 sidebar_label: Установка
 ---
+
 # Установка UI Kit - Unicorn
 
 [![react-navigation](/img/uikit/00.gif)](https://youtu.be/4Cn_LdGKA_o)
 
-
 ![Step01](/img/steps/01.png)
+
 ## Добавляем библиотеку
 
 ```jsx
 yarn add react-native-unicorn-uikit
 ```
 
-
 ![Step02](/img/steps/02.png)
+
 ## Добавляем зависимости
 
 ```jsx
@@ -24,6 +25,7 @@ yarn add react-native-appearance react-native-screens @react-navigation/native @
 ```
 
 ![Step03](/img/steps/03.png)
+
 ## react-native-vector-icons
 
 Добавляем библиотеку с иконками
@@ -35,6 +37,7 @@ yarn add react-native-vector-icons
 Настраиваем как написано [здесь](https://github.com/oblador/react-native-vector-icons)
 
 ![Step04](/img/steps/04.png)
+
 ## Устанавливаем Pods
 
 ```jsx
@@ -42,6 +45,7 @@ cd ios && pod install && cd ..
 ```
 
 ![Step05](/img/steps/05.png)
+
 ## Установка шрифтов
 
 Создаем файл в корне проекта /react-native.config.js
@@ -61,11 +65,13 @@ module.exports = {
 ```jsx
 react-native link
 ```
+
 Собираем и если, как и я, получаете эти предупреждения: warning: duplicate output file errors, то перейдите в Xcode и удалите дубликаты шрифтов, кроме подключенных.
 
 ![warning: duplicate output file errors](https://miro.medium.com/max/2000/1*SwWN88tSmK2cj9qRDyTWGA.png)
 
 ![Step06](/img/steps/06.png)
+
 ## ThemeProvider
 
 B App.js подключаем дефолтные темы и ThemeProvider или на сновании [этого](https://github.com/react-native-village/react-native-unicorn/blob/master/src/APIComponents.js) файла добавляем свои темы.
@@ -98,6 +104,7 @@ export default App
 ```
 
 ![Step07](/img/steps/07.png)
+
 ## All UI Kit
 
 Создаем файл UIKit и подключаем список всех компонентов
@@ -273,7 +280,7 @@ const UIKit = () => {
           <Space height={30} />
           <Formik
             initialValues={{ email: '', password: '' }}
-            onSubmit={(values) => Alert.alert(JSON.stringify(values))}
+            onSubmit={values => Alert.alert(JSON.stringify(values))}
             validationSchema={Yup.object().shape({
               email: Yup.string().email().required(),
               password: Yup.string().min(6).required()
@@ -353,6 +360,7 @@ export default UIKit
 ```
 
 ![Step08](/img/steps/08.png)
+
 ## Faker
 
 Добавляем файл с фейковыми данными src/data.js
@@ -456,6 +464,7 @@ export {
 ```
 
 ![Step09](/img/steps/09.png)
+
 ## Build
 
 Собираем проект
@@ -472,4 +481,4 @@ react-native run-android
 
 Done ✅
 
-[![Become a Patron!](/img/logo/patreon.png)](https://www.patreon.com/bePatron?u=31769291)
+[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)

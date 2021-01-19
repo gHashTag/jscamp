@@ -1,7 +1,7 @@
 ---
 id: start27
-title:  Репозиторий проекта
-sidebar_label:  Репозиторий проекта
+title: Репозиторий проекта
+sidebar_label: Репозиторий проекта
 ---
 
 import YouTube from 'react-youtube'
@@ -10,4 +10,4 @@ import YouTube from 'react-youtube'
 
 <YouTube videoId='Uqhh9l_ImLg' />
 
-[![Become a Patron!](/img/logo/patreon.png)](https://www.patreon.com/bePatron?u=31769291)
+[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)

@@ -12,4 +12,4 @@ import YouTube from 'react-youtube'
 
 [Шпаргалка по стилям](https://github.com/vhpoet/react-native-styling-cheat-sheet)
 
-[![Become a Patron!](/img/logo/patreon.png)](https://www.patreon.com/bePatron?u=31769291)
+[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)

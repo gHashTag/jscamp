@@ -10,4 +10,4 @@ Dimensions — это компонент, точнее сказать это API
 
 <YouTube videoId='Hjomif085Ec' />
 
-[![Become a Patron!](/img/logo/patreon.png)](https://www.patreon.com/bePatron?u=31769291)
+[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)

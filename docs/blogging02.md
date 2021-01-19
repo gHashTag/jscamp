@@ -291,7 +291,7 @@ yarn all-contributors generate
 Осталось добавить в конце статьи ссылку на `Patreon`:
 
 ```bash
-[![Become a Patron!](/img/logo/patreon.png)](https://www.patreon.com/bePatron?u=31769291)
+[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
 ```
 
 Статья готова для отправки!
@@ -568,5 +568,5 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-[![Become a Patron!](/img/logo/patreon.png)](https://www.patreon.com/bePatron?u=31769291)
+[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
 ![pullreqest](/img/blogging/00/33.png)

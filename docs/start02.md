@@ -1,7 +1,7 @@
 ---
 id: start02
-title:  Инициализация
-sidebar_label:  Инициализация
+title: Инициализация
+sidebar_label: Инициализация
 ---
 
 import YouTube from 'react-youtube'
@@ -10,4 +10,4 @@ import YouTube from 'react-youtube'
 
 <YouTube videoId='2qqyDTy4HBs' />
 
-[![Become a Patron!](/img/logo/patreon.png)](https://www.patreon.com/bePatron?u=31769291)
+[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)

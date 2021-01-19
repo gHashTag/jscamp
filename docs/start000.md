@@ -14,4 +14,4 @@ import YouTube from 'react-youtube';
 
 ![react native](https://miro.medium.com/max/2000/1*eIYvYBkRv83m42yxn8Ljwg.gif)
 
-[![Become a Patron!](/img/logo/patreon.png)](https://www.patreon.com/bePatron?u=31769291)
+[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)

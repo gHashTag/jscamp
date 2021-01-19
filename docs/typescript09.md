@@ -4,7 +4,7 @@ title: Модули
 sidebar_label: Модули
 ---
 
-Концепция модулей впервые появилась в стандарте *ECMAScript 2015*. Модули позволяют разбить сложное приложение на отдельные файлы, в каждом из которых содержится строго определенный функционал, а после, с помощью импортирования, собрать их воедино. Переменные, классы, функции, объявленные в модуле, не доступны извне этого модуля, если они не экспортируются с помощью команды `export`. А для того, чтобы использовать экспортированные части в другом модуле, нужно их импортировать, воспользовавшись командой `import`.
+Концепция модулей впервые появилась в стандарте _ECMAScript 2015_. Модули позволяют разбить сложное приложение на отдельные файлы, в каждом из которых содержится строго определенный функционал, а после, с помощью импортирования, собрать их воедино. Переменные, классы, функции, объявленные в модуле, не доступны извне этого модуля, если они не экспортируются с помощью команды `export`. А для того, чтобы использовать экспортированные части в другом модуле, нужно их импортировать, воспользовавшись командой `import`.
 
 ## Экспорт
 
@@ -15,30 +15,30 @@ sidebar_label: Модули
 ```jsx
 // Экспорт переменной
 let fruit: string = 'banana',
-    device: string = 'smartphone',
-    bool: boolean = true
+  device: string = 'smartphone',
+  bool: boolean = true
 export { fruit, device, bool as isBool }
 
 // Экспорт константы
-export const e = 2.71828182845904523536028747135266250
+export const e = 2.7182818284590452353602874713526625
 
 // Экспорт функции
-export function sum(x,y: number): number {
-    return x + y
+export function sum(x, y: number): number {
+  return x + y
 }
 
 // Экспорт интерфейса
 export interface Fruit {
-    name: string,
-    sweetness: number,
-    bones: boolean
+  name: string;
+  sweetness: number;
+  bones: boolean;
 }
 
 // Экспорт класса
 export class Animal {
-    move(distanceInMeters: number = 0) {
-        console.log(`Animal moved ${distanceInMeters}m.`);
-    }
+  move(distanceInMeters: number = 0) {
+    console.log(`Animal moved ${distanceInMeters}m.`)
+  }
 }
 
 // Экспорт всего сразу
@@ -85,12 +85,12 @@ let a = scripts.A
 [Playground Link](https://www.typescriptlang.org/play?#code/KYDwDg9gTgLgBAbzgITgQwM5wEZwL5wBmUEAtnAOQB0A9BgMZQCWYMGFA3EA)
 
 ```jsx
-export { B as b } from './scripts';
+export { B as b } from './scripts'
 ```
 
 ## Вопросы
 
-Теперь мы готовы с вами изучать *TypeScript*, но для того чтобы понять на сколько вы усвоили этот урок пройдите тест в [мобильном приложении](http://onelink.to/njhc95) в нашей школы по этой теме.
+Теперь мы готовы с вами изучать _TypeScript_, но для того чтобы понять на сколько вы усвоили этот урок пройдите тест в [мобильном приложении](http://onelink.to/njhc95) в нашей школы по этой теме.
 
 ![Sumerian school](/img/app.png)
 
@@ -110,4 +110,4 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   </tr>
 </table>
 
-[![Become a Patron!](/img/logo/patreon.png)](https://www.patreon.com/bePatron?u=31769291)
+[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)

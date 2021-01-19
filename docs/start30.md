@@ -10,4 +10,4 @@ import YouTube from 'react-youtube'
 
 <YouTube videoId='8GwKno9vUyo' />
 
-[![Become a Patron!](/img/logo/patreon.png)](https://www.patreon.com/bePatron?u=31769291)
+[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)

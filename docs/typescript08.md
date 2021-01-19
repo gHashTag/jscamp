@@ -4,7 +4,7 @@ title: Интерфейсы
 sidebar_label: Интерфейсы
 ---
 
-Одним из основных принципов *TypeScript* является то, что типизация основана на структуре объектов. Такой способ типизации называют `неявной` или `«утиной»` — объект относят к тому или иному типу (классу, интерфейсу), если он имеет (реализует) все его свойства и методы. Интерфейсы в TS применяются как раз для того, чтобы описывать нужные вам типы. 
+Одним из основных принципов _TypeScript_ является то, что типизация основана на структуре объектов. Такой способ типизации называют `неявной` или `«утиной»` — объект относят к тому или иному типу (классу, интерфейсу), если он имеет (реализует) все его свойства и методы. Интерфейсы в TS применяются как раз для того, чтобы описывать нужные вам типы.
 
 ## Простой пример
 
@@ -13,8 +13,8 @@ sidebar_label: Интерфейсы
 [Playground Link](https://www.typescriptlang.org/play?#code/GYVwdgxgLglg9mABAcxgNwKYDEBOIZSIAUweBAXIgN6JgCGAthpQM5Q4xjKIC+AlNQBQiEYggIWcADYYAdFLjIiAcgDi6DIihxETRMsQBqRKXxRZ9Jn0E9BgmYQYBPXGZaIAvNVqNm+gEJ09PTKADSILADuGBhQYBgsLJQA7OEARggJlMB0UiyatqiYrgREziVQLHxAA)
 
 ```jsx
-function giveFruit (fruit: { name: string }) {
-    console.log('Give to me ' + fruit.name)
+function giveFruit(fruit: { name: string }) {
+  console.log('Give to me ' + fruit.name)
 }
 
 let myFruits = { name: 'Banana', sweetness: 7, bones: false }
@@ -23,26 +23,26 @@ giveFruit(myFruits)
 
 Функция `giveFruit()` имеет единственный параметр, который требует, чтобы переданный объект имел свойство с именем `name` типа `string`. Обратите внимание, что наш объект на самом деле имеет больше свойств, чем требуется, но компилятор только проверяет, присутствуют ли хотя бы те, которые необходимы, и соответствуют требуемым типам.
 
-Напишем тот же пример, для проверки свойства *name* с типом *string*, но при помощи интерфейсов.
+Напишем тот же пример, для проверки свойства _name_ с типом _string_, но при помощи интерфейсов.
 
 [Playground Link](https://www.typescriptlang.org/play?#code/JYOwLgpgTgZghgYwgAgGJQK7DMg3gKGSORDgFsIAuZAZzClAHMAaQ4mgdwgjBAhprUQGMgCNorYslEB7PoOkyZAGwhwQ+AL758MDCARhgc5I2AA3COiw4AFDEzZq17AEo8bIgjk0VEAHTKMoy2AOQA4hYoYDLIFMihyADUyA42-qQUrlo6qjhkAJ4uYDTIALx4JORUCQBC6g2hzLRcPPIKAOzNsvLU8Mo0KNpmlsW2hcU0rkA)
 
 ```jsx
 interface Fruit {
-    name: string,
-    sweetness: number,
-    bones: boolean
+  name: string;
+  sweetness: number;
+  bones: boolean;
 }
 
-function giveFruit (fruit: Fruit) {
-    console.log('Give to me ' + fruit.name)
+function giveFruit(fruit: Fruit) {
+  console.log('Give to me ' + fruit.name)
 }
 
 let myFruits = { name: 'Banana', sweetness: 7, bones: false }
 giveFruit(myFruits)
 ```
 
-Интерфейс `Fruit` - это имя, которое мы теперь можем использовать для описания требования в предыдущем примере. Он по-прежнему представляет наличие единственного свойства с именем *name* типа *string*. Обратите внимание, что нам не нужно было явно указывать, что объект, который мы передаем в функцию `giveFruit()`, наследует этот интерфейс, как это может быть в других языках. Здесь важен только образец. Если объект, который мы передаем функции, соответствует перечисленным требованиям, то всё позволено.
+Интерфейс `Fruit` - это имя, которое мы теперь можем использовать для описания требования в предыдущем примере. Он по-прежнему представляет наличие единственного свойства с именем _name_ типа _string_. Обратите внимание, что нам не нужно было явно указывать, что объект, который мы передаем в функцию `giveFruit()`, наследует этот интерфейс, как это может быть в других языках. Здесь важен только образец. Если объект, который мы передаем функции, соответствует перечисленным требованиям, то всё позволено.
 
 Стоит отметить, что проверка типов **не требует**, чтобы эти свойства имели какой-либо порядок, а только то, что свойства, необходимые для интерфейса, присутствуют и имеют требуемый тип.
 
@@ -54,23 +54,23 @@ giveFruit(myFruits)
 
 ```jsx
 interface Fruit {
-    name: string,
-    sweetness: number,
-    bones: boolean,
-    color?: number
+  name: string;
+  sweetness: number;
+  bones: boolean;
+  color?: number;
 }
 
 let banana: Fruit = {
-    name: 'Banana',
-    sweetness: 7,
-    bones: false,
-    color: 0xFFE135 
+  name: 'Banana',
+  sweetness: 7,
+  bones: false,
+  color: 0xffe135
 }
 
 let apple: Fruit = {
-    name: 'Apple',
-    sweetness: 5,
-    bones: true
+  name: 'Apple',
+  sweetness: 5,
+  bones: true
 }
 ```
 
@@ -78,7 +78,7 @@ let apple: Fruit = {
 
 ## Только для чтения
 
-Некоторые свойства могут быть заданы только для чтения, а значение они получат при создании объекта. Этого можно добиться, поместив ключевое слово *readonly* перед именем свойства.
+Некоторые свойства могут быть заданы только для чтения, а значение они получат при создании объекта. Этого можно добиться, поместив ключевое слово _readonly_ перед именем свойства.
 
 ```jsx
 interface Point {
@@ -94,29 +94,29 @@ console.log('Точка [' + a1.x + '; ' + a1.y + ']')
 
 ## Лишние свойства
 
-В нашем первом примере использования интерфейсов *TypeScript* позволил передать `{ name: string; sweetness: number, bones: boolean }` там, где ожидалось всего лишь `{ name: string; }`. Также мы узнали о необязательных свойствах, и о том, как они могут быть полезны при передаче аргументов в функции. Рассмотрим пример.
+В нашем первом примере использования интерфейсов _TypeScript_ позволил передать `{ name: string; sweetness: number, bones: boolean }` там, где ожидалось всего лишь `{ name: string; }`. Также мы узнали о необязательных свойствах, и о том, как они могут быть полезны при передаче аргументов в функции. Рассмотрим пример.
 
 ```jsx
 interface Fruit {
-    name: string,
-    sweetness?: number,
-    bones?: boolean,
-    color?: number
+  name: string;
+  sweetness?: number;
+  bones?: boolean;
+  color?: number;
 }
 
-function addFruit(x: Fruit): { name: string, color: number} {
-    // ...
+function addFruit(x: Fruit): { name: string, color: number } {
+  // ...
 }
 
-let banana = addFruit({ name: 'banana', colour: 0xFFE135 })
+let banana = addFruit({ name: 'banana', colour: 0xffe135 })
 // error: 'colour' not expected in type 'Fruit'
 ```
 
-Обратите внимание, что аргумент, передаваемый в `addFruit()`, записан как `colour` вместо `color`. В чистом *JavaScript* подобные вещи не выдают ошибок, но и не работают так, как хотел бы разработчик.
+Обратите внимание, что аргумент, передаваемый в `addFruit()`, записан как `colour` вместо `color`. В чистом _JavaScript_ подобные вещи не выдают ошибок, но и не работают так, как хотел бы разработчик.
 
 Можно сказать, что данная программа корректна с точки зрения типов, так как типы свойств `sweetness` совместимы, `color` отсутствует, а наличие дополнительного свойства `colour` не имеет никакого значения.
 
-Однако *TypeScript* делает предположение, что в этом куске кода есть ошибка. Литералы объектов обрабатываются им по-особенному, и проходят *проверку на наличие лишних свойств*. Эта проверка делается, когда литералы либо присваиваются другим переменным, либо передаются в качестве аргументов. Если в литерале есть какие-либо свойства, которых нет в целевом типе, то это будет считаться ошибкой.
+Однако _TypeScript_ делает предположение, что в этом куске кода есть ошибка. Литералы объектов обрабатываются им по-особенному, и проходят _проверку на наличие лишних свойств_. Эта проверка делается, когда литералы либо присваиваются другим переменным, либо передаются в качестве аргументов. Если в литерале есть какие-либо свойства, которых нет в целевом типе, то это будет считаться ошибкой.
 
 Обойти такую ошибку можно несколькими способами. **Первый** из которых - это использование приведение типов:
 
@@ -132,21 +132,21 @@ let banana = addFruit({ name: 'banana', colour: 0xFFE135 } as Fruit)
 
 ```jsx
 interface Fruit {
-    name: string;
-    color?: number;
-    [propName: string]: any;
+  name: string;
+  color?: number;
+  [propName: string]: any;
 }
 ```
 
-В данном примере интерфейс `Fruit` может иметь любое количество свойств. Если это не `name` или `color`, то тип свойства *не имеет значения*.
+В данном примере интерфейс `Fruit` может иметь любое количество свойств. Если это не `name` или `color`, то тип свойства _не имеет значения_.
 
 **Третий способ** - присвоить объект другой переменной. Из-за присваивания объекта другой переменной он не будет проходить проверку на избыточные свойства, компилятор не выдаст ошибки.
 
 [Playground Link](https://www.typescriptlang.org/play?#code/JYOwLgpgTgZghgYwgAgGJQK7DMg3gKGSORDgFsIAuZAZzClAHMAaQ4mgdwgjBAhpoB+aiAxkARtFbFk4gPZ8h1eXIA2EOCGnEEauVGEkxkqPgC++fDAwgEYYAuRwAJs-RYwACgAe1d9gBKalwScipaeiZmZF1VfRFjaDM8NiIAejTkADoc80t1HDkAB3sFGmQAXjxQimoAcnFNJrro2LkMKGoABm9UVABRAEYAZgBWZDNtIkbSUkqnV38vYtKQGgCgA)
 
 ```jsx
-let options = { name: 'banana', colour: 0xFFE135 },
-    banana = addFruit(options)
+let options = { name: 'banana', colour: 0xffe135 },
+  banana = addFruit(options)
 ```
 
 Стоит иметь ввиду, что для простого кода не стоит обходить данные проверки свойств. Для более сложных литералов объектов, которые содержат в себе методы, параметры состояния и др., стоит держать в памяти данные способы обхода проверок, но все же большинство ошибок, связанных с проверкой лишних свойств, как правило, на самом деле являются ошибками. Если у вас возникает такая ошибка, возможно стоит пересмотреть объявление типа.
@@ -159,7 +159,7 @@ let options = { name: 'banana', colour: 0xFFE135 },
 
 ```jsx
 interface SearchFunc {
-    (source: string, subString: string): boolean
+  (source: string, subString: string): boolean;
 }
 ```
 
@@ -168,15 +168,14 @@ interface SearchFunc {
 [Playground Link](https://www.typescriptlang.org/play?#code/JYOwLgpgTgZghgYwgAgMoTlBALAYgVxAWQG8AoZS5ACgGcB7fLCALmVrClAHMAad-ACNUnHmw5cQ3AJRtB9egBsMIANxkAvmTLKwyALYBPdJhxsTWPIQTqyRizmQBeZDGthg9EHUbNxoqX5aIRFJbn8w6VIKKl1kKAhgxT0XBiYkADpaDEs6EICZdSpkYBgaBKSUlwBaAEYo8mLihLAmEFc4RWyiqi1iiC6URqbKFrbkTnwIHsotLTIELwZlDMV6bmp7HJxqAHJBOBBDuGRFYH0UOAAHK+Vd-n3jo93paSA)
 
 ```jsx
-let mySearch: SearchFunc;
-mySearch = function(source: string, subString: string) {
-    let result = source.search(subString)
-    if (result == -1) {
-        return false
-    }
-    else {
-        return true
-    }
+let mySearch: SearchFunc
+mySearch = function (source: string, subString: string) {
+  let result = source.search(subString)
+  if (result == -1) {
+    return false
+  } else {
+    return true
+  }
 }
 ```
 
@@ -185,15 +184,14 @@ mySearch = function(source: string, subString: string) {
 [Playground Link](https://www.typescriptlang.org/play?#code/JYOwLgpgTgZghgYwgAgMoTlBALAYgVxAWQG8AoZS5ACgGcB7fLCALmVrClAHMAad-ACNUnHmw5cQ3AJRtB9egBsMIANxkAvmTLKwyALYBPdJhxsTWPIQTqyRizmQBeZDGthg9EHSzjRU-lohP0kZOQVlOBBSCipdZCgIIMU9F1osADpaDEs6IWl1KmRgGBpE5NSXAFoARmkYoqLEsCZo+EVswqotIogOlHJGqmbW5E58CC7KLS0yBC8GZQzFem5qexycagByQSj95EVgfRQ4AAcz5W3+Xf2QOG3paSA)
 
 ```jsx
-let mySearch: SearchFunc;
-mySearch = function(src: string, sub: string): boolean {
-    let result = src.search(sub)
-    if (result == -1) {
-        return false
-    }
-    else {
-        return true
-    }
+let mySearch: SearchFunc
+mySearch = function (src: string, sub: string): boolean {
+  let result = src.search(sub)
+  if (result == -1) {
+    return false
+  } else {
+    return true
+  }
 }
 ```
 
@@ -202,59 +200,58 @@ mySearch = function(src: string, sub: string): boolean {
 [Playground Link](https://www.typescriptlang.org/play?#code/JYOwLgpgTgZghgYwgAgMoTlBALAYgVxAWQG8AoZS5ACgGcB7fLCALmVrClAHMAad-ACNUnHmw5cQ3AJRtB9egBsMIANxkAvmTLKwyALYBPdJhxsTWPIQTajFnMgC8yGNbDB6IOln60h00goqXWQoCD9FPWdaLAA6WgxLOn8gymAYGjCIqOcAWgBGAPIqEtCIMCYQFzhFBNTkLRKIWpRi0sowiqgqznwIeq0tMgRPBmVYxXpuajtEnGoAckE4EBW4ZEVgfRQ4AAdd5QX+JbXVhelpIA)
 
 ```jsx
-let mySearch: SearchFunc;
-mySearch = function(src, sub) {
-    let result = src.search(sub)
-    if (result == -1) {
-        return false
-    }
-    else {
-        return true
-    }
+let mySearch: SearchFunc
+mySearch = function (src, sub) {
+  let result = src.search(sub)
+  if (result == -1) {
+    return false
+  } else {
+    return true
+  }
 }
 ```
 
 ## Индексируемые типы
 
-Аналогично тому, как мы можем использовать интерфейсы для описания типов функций, мы также можем описывать типы, в которые мы можем *«индексировать»*, например, `a[10]` или `ageMap["daniel"]`. Индексируемые типы имеют сигнатуру индекса, которая описывает типы, которые мы можем использовать для индексации объекта, вместе с соответствующими типами возврата при индексации. Давайте посмотрим на пример:
+Аналогично тому, как мы можем использовать интерфейсы для описания типов функций, мы также можем описывать типы, в которые мы можем _«индексировать»_, например, `a[10]` или `ageMap["daniel"]`. Индексируемые типы имеют сигнатуру индекса, которая описывает типы, которые мы можем использовать для индексации объекта, вместе с соответствующими типами возврата при индексации. Давайте посмотрим на пример:
 
 [Playground Link](https://www.typescriptlang.org/play?#code/JYOwLgpgTgZghgYwgAgMpiqA5gQSlOAT2QG8AoZZAbVABMIAPALmRAFcBbAI2gF0WAzhmwBuMgF8yZADYQwyDoTwFCLdJhC58RMYuVFkAXmoAiAEIB7LiYA0yEwDEoEWid5iZchYXWDhmo299QioABncpBAsQAQtZADppCywACj1tEPCASiA)
 
 ```jsx
 interface StringArray {
-    [index: number]: string;
+  [index: number]: string;
 }
 
-let myArray: StringArray;
-myArray = ["Bob", "Fred"];
+let myArray: StringArray
+myArray = ['Bob', 'Fred']
 
-let myStr: string = myArray[0];
+let myStr: string = myArray[0]
 ```
 
-Здесь у нас есть интерфейс `StringArray`, у которого есть сигнатура индекса. Эта сигнатура говорит о том, что, когда `StringArray` индексируется *числом*, возвращается *строка*.
+Здесь у нас есть интерфейс `StringArray`, у которого есть сигнатура индекса. Эта сигнатура говорит о том, что, когда `StringArray` индексируется _числом_, возвращается _строка_.
 
 ## Типы классов
 
-В *TypeScript* также возможно одно из наиболее распространенных применений интерфейсов в таких языках, как *C#* и *Java*, - явное принудительное принудительное соблюдение классом определенного контракта.
+В _TypeScript_ также возможно одно из наиболее распространенных применений интерфейсов в таких языках, как _C#_ и _Java_, - явное принудительное принудительное соблюдение классом определенного контракта.
 
 ```jsx
 interface ClockInterface {
-    currentTime: Date; // переменные
-    setTime(d: Date): void; // методы
+  currentTime: Date; // переменные
+  setTime(d: Date): void; // методы
 }
 
 class Clock implements ClockInterface {
-    currentTime: Date = new Date();
-    setTime(d: Date) {
-        this.currentTime = d;
-    }  
-    constructor(h: number, m: number) {}
+  currentTime: Date = new Date()
+  setTime(d: Date) {
+    this.currentTime = d
+  }
+  constructor(h: number, m: number) {}
 }
 ```
 
 ### Статические и экземплярные классы
 
-При работе с классами и интерфейсами полезно помнить, что класс имеет два типа: *статические* и *экземпларные*. Вы можете заметить, что если вы создаете интерфейс с сигнатурой конструктора и пытаетесь создать класс, реализующий этот интерфейс, вы получаете ошибку:
+При работе с классами и интерфейсами полезно помнить, что класс имеет два типа: _статические_ и _экземпларные_. Вы можете заметить, что если вы создаете интерфейс с сигнатурой конструктора и пытаетесь создать класс, реализующий этот интерфейс, вы получаете ошибку:
 
 [Playground Link](https://www.typescriptlang.org/play?#code/JYOwLgpgTgZghgYwgAgMIBsD2CDWrMgDOYUArgmJlMgN4BQyjyIEA7sgBQAWmpUAXM1IBbAEbQANMmGhSkQSBHioASgDcdAL506CdHEKE0WXMmDCADugjCI4Ixmx4CxMhSq0GTAPTfkAUSgoKi9GBD4oOzAAFXMIQQAROEgNJmQEFxJySihuBSVJaXyxaBVabU0gA)
 
@@ -278,36 +275,36 @@ class Clock implements ClockConstructor {
 
 ```jsx
 interface ClockConstructor {
-    new (hour: number, minute: number): ClockInterface;
+  new(hour: number, minute: number): ClockInterface;
 }
 
 interface ClockInterface {
-    tick(): void;
+  tick(): void;
 }
 
 function createClock(ctor: ClockConstructor, hour: number, minute: number): ClockInterface {
-    return new ctor(hour, minute);
+  return new ctor(hour, minute)
 }
 
 class DigitalClock implements ClockInterface {
-    constructor(h: number, m: number) {}
-    tick() {
-        console.log("beep beep");
-    }
+  constructor(h: number, m: number) {}
+  tick() {
+    console.log('beep beep')
+  }
 }
 
 class AnalogClock implements ClockInterface {
-    constructor(h: number, m: number) {}
-    tick() {
-        console.log("tick tock");
-    }
+  constructor(h: number, m: number) {}
+  tick() {
+    console.log('tick tock')
+  }
 }
 
-let digital = createClock(DigitalClock, 12, 17);
-let analog = createClock(AnalogClock, 7, 32);
+let digital = createClock(DigitalClock, 12, 17)
+let analog = createClock(AnalogClock, 7, 32)
 ```
 
-Поскольку первый параметр `createClock` имеет тип `ClockConstructor`, в createClock *(AnalogClock, 7, 32)* он проверяет, имеет ли `AnalogClock` правильную сигнатуру конструктора.
+Поскольку первый параметр `createClock` имеет тип `ClockConstructor`, в createClock _(AnalogClock, 7, 32)_ он проверяет, имеет ли `AnalogClock` правильную сигнатуру конструктора.
 
 ## Расширение интерфейсов
 
@@ -337,7 +334,7 @@ square.penWidth = 5.0;
 
 ## Гибридные типы
 
-Как мы упоминали ранее, интерфейсы могут описывать более сложные типы, присутствующие в реальном мире *JavaScript*. Из-за динамического и гибкого характера *JavaScript* вы можете случайно встретить объект, который работает как комбинация некоторых типов, описанных выше.
+Как мы упоминали ранее, интерфейсы могут описывать более сложные типы, присутствующие в реальном мире _JavaScript_. Из-за динамического и гибкого характера _JavaScript_ вы можете случайно встретить объект, который работает как комбинация некоторых типов, описанных выше.
 
 Одним из таких примеров является объект, который действует как функция и объект с дополнительными свойствами:
 
@@ -365,7 +362,7 @@ c.interval = 5.0;
 
 ## Расширение классов интерфейсами
 
-Когда тип интерфейса расширяет тип класса, он наследует переменные класса, но не их реализации. Это как если бы интерфейс объявил всех переменных класса без предоставления реализации. Интерфейсы наследуют даже *private* и *protected* переменные базового класса. Это означает, что, когда вы создаете интерфейс, который расширяет класс *private* или *protected* полями, этот тип интерфейса может быть реализован только этим классом или его подклассом.
+Когда тип интерфейса расширяет тип класса, он наследует переменные класса, но не их реализации. Это как если бы интерфейс объявил всех переменных класса без предоставления реализации. Интерфейсы наследуют даже _private_ и _protected_ переменные базового класса. Это означает, что, когда вы создаете интерфейс, который расширяет класс _private_ или _protected_ полями, этот тип интерфейса может быть реализован только этим классом или его подклассом.
 
 Это полезно, когда у вас большая иерархия наследования, но вы хотите указать, что ваш код работает только с подклассами, которые имеют определенные свойства. Подклассы не должны быть связаны, кроме наследования от базового класса. Например:
 
@@ -394,11 +391,11 @@ class ImageControl implements SelectableControl {
 }
 ```
 
-В приведенном выше примере `SelectableControl` содержит все члены `Control`, включая свойство `private state`. Поскольку `state` является *private* полем, только потомки `Control` могут реализовать `SelectableControl`. Это связано с тем, что только потомки элемента `Control` будут иметь закрытый элемент, созданный в той же декларации, что является обязательным требованием для совместимости закрытых членов.
+В приведенном выше примере `SelectableControl` содержит все члены `Control`, включая свойство `private state`. Поскольку `state` является _private_ полем, только потомки `Control` могут реализовать `SelectableControl`. Это связано с тем, что только потомки элемента `Control` будут иметь закрытый элемент, созданный в той же декларации, что является обязательным требованием для совместимости закрытых членов.
 
 ## Вопросы
 
-Теперь мы готовы с вами изучать *TypeScript*, но для того чтобы понять на сколько вы усвоили этот урок пройдите тест в [мобильном приложении](http://onelink.to/njhc95) в нашей школы по этой теме.
+Теперь мы готовы с вами изучать _TypeScript_, но для того чтобы понять на сколько вы усвоили этот урок пройдите тест в [мобильном приложении](http://onelink.to/njhc95) в нашей школы по этой теме.
 
 ![Sumerian school](/img/app.png)
 
@@ -418,4 +415,4 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   </tr>
 </table>
 
-[![Become a Patron!](/img/logo/patreon.png)](https://www.patreon.com/bePatron?u=31769291)
+[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
