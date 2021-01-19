@@ -103,12 +103,16 @@ module.exports = {
           title: 'Community',
           items: [
             {
-              label: 'Telegram',
+              label: 'Discord',
+              href: 'https://discord.gg/6GDAfXn'
+            },
+            {
+              label: 'AWS Amplify Ru',
               href: 'https://teleg.run/awsamplify'
             },
             {
-              label: 'Discord',
-              href: 'https://discord.gg/6GDAfXn'
+              label: 'AWS Amplify En',
+              href: 'https://discord.gg/yh76QcjKBC'
             }
           ]
         },
@@ -117,15 +121,15 @@ module.exports = {
           items: [
             {
               label: 'Telegram Channel',
-              href: 'https://teleg.run/reactnativeinit'
+              href: 'https://t.me/javascriptcamping'
             },
             {
               label: 'Patreon',
-              href: 'https://www.patreon.com/reactnative'
+              href: 'https://www.patreon.com/javascriptcamp'
             },
             {
               label: 'Instagram',
-              href: 'https://www.instagram.com/hackathonunicorn/'
+              href: 'https://www.instagram.com/javascriptcamp/'
             },
             {
               label: 'GitHub',
@@ -136,16 +140,8 @@ module.exports = {
               href: 'https://dev.to/playra'
             },
             {
-              label: 'Twitter',
-              href: 'https://twitter.com/koshasuperstar'
-            },
-            {
-              label: 'Twitch',
-              href: 'https://www.twitch.tv/koshasuperstar'
-            },
-            {
               label: 'Facebook',
-              href: 'https://www.facebook.com/reactnativeinitru'
+              href: 'https://www.facebook.com/javascriptcamp'
             },
             {
               label: 'Vk',
