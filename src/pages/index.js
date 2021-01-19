@@ -7,16 +7,14 @@
  * @format
  */
 
-import React, { Suspense } from 'react'
+import React from 'react'
 import classnames from 'classnames'
 import Layout from '@theme/Layout'
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
 import useBaseUrl from '@docusaurus/useBaseUrl'
 import YouTube from 'react-youtube'
 import Head from '@docusaurus/Head'
-import Loader from 'react-loader-spinner'
 import styles from './styles.module.css'
-import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css'
 
 const features = [
   {
@@ -131,27 +129,26 @@ const Home = () => {
         <div className={videoContainer}>
           <YouTube videoId="A_i5-4FuuKw" opts={opts} className={player} />
         </div>
-        <Suspense fallback={<Loader type="Puff" color="#1EE4EC" height={100} width={100} />}>
-          <Program />
 
-          <header className={classnames('hero hero--primary', heroBanner)}>
-            <div className="container">
-              <img src={useBaseUrl('img/jscamp/Покатушки по Джаваскриптушке.png')} alt="Покатушки по Джаваскриптушке" />
-              {/* <h1 className="hero__title">Java Script Camp</h1> */}
-              <p className="hero__subtitle">
-                Лагерь скаутов от создателя первого в Рунете{' '}
-                <a href="https://youtube.com/playlist?list=PLth6QPteH5guFUwQj1iCdu-SOZ7O5KCz4">курса по React Native</a>{' '}
-                и первого русского блогера-программиста в программе{' '}
-                <a href="https://aws.amazon.com/ru/developer/community/community-builders/">AWS Community Builders</a>{' '}
-                от Амазон - Димки Реактнативного
-              </p>
+        <Program />
 
-              <a href="https://www.patreon.com/javascriptcamp">
-                <img src={useBaseUrl('img/jscamp/Button 10$.png')} alt="" />
-              </a>
-            </div>
-          </header>
-        </Suspense>
+        <header className={classnames('hero hero--primary', heroBanner)}>
+          <div className="container">
+            <img src={useBaseUrl('img/jscamp/Покатушки по Джаваскриптушке.png')} alt="Покатушки по Джаваскриптушке" />
+            {/* <h1 className="hero__title">Java Script Camp</h1> */}
+            <p className="hero__subtitle">
+              Лагерь скаутов от создателя первого в Рунете{' '}
+              <a href="https://youtube.com/playlist?list=PLth6QPteH5guFUwQj1iCdu-SOZ7O5KCz4">курса по React Native</a> и
+              первого русского блогера-программиста в программе{' '}
+              <a href="https://aws.amazon.com/ru/developer/community/community-builders/">AWS Community Builders</a> от
+              Амазон - Димки Реактнативного
+            </p>
+
+            <a href="https://www.patreon.com/javascriptcamp">
+              <img src={useBaseUrl('img/jscamp/Button 10$.png')} alt="" />
+            </a>
+          </div>
+        </header>
       </Layout>
     </>
   )
