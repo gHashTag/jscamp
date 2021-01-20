@@ -4,6 +4,8 @@ title: Типы данных
 sidebar_label: Типы данных
 ---
 
+import YouTube from 'react-youtube'
+
 ![@serverSerrverlesskiy](/img/javascript/headers/04.jpg)
 
 ## Динамическая типизация
@@ -21,6 +23,10 @@ function learnJavaScript() {
   return typeof foo
 }
 ```
+
+## Видео
+
+<YouTube videoId="1zXZCVbNbkQ" />
 
 ## Типы данных
 
