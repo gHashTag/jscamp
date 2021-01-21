@@ -11,7 +11,7 @@ import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment'
 
 ## Онлайн лагерь скаутов
 
-4 января с 17-00 по Москве, наша школа Sumerian School переходит на онлайн обучение и мы стартуем с программой Java Script Camp, которую можно пройти даже с мобильного телефона прямо сейчас.
+Наша школа перешла на онлайн обучение и мы стартовали с программой Java Script Camp, которую можно пройти даже с мобильного телефона прямо сейчас.
 
 Получи в нашей школе свой Java Script значок скаута.
 
@@ -27,7 +27,7 @@ import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment'
 
 ![AWS](https://entrackr.com/wp-content/uploads/2018/05/Amazon_smart_home_2.gif)
 
-## Программа на январь:
+<!-- ## Программа на январь:
 
 ![Camp](https://media.giphy.com/media/EihFwASrXTmiQ/giphy.gif)
 
@@ -67,7 +67,7 @@ import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment'
 
 27.01 - [Массивы и псевдомассивы](https://react-native-village.github.io/docs/javascript18)
 
-Подпишитесь на весь [календарь](http://p14-caldav.icloud.com/published/2/MTYyNzQyOTgyMzE2Mjc0MnJDaPjzgR0U-x4uD_nwjr8evco8zKn-1uWVIxx9RjsmCHqFd78vLOOEuCTnjF0D0nkHFj1HIpgT0mr_ioXK22M)
+Подпишитесь на весь [календарь](http://p14-caldav.icloud.com/published/2/MTYyNzQyOTgyMzE2Mjc0MnJDaPjzgR0U-x4uD_nwjr8evco8zKn-1uWVIxx9RjsmCHqFd78vLOOEuCTnjF0D0nkHFj1HIpgT0mr_ioXK22M) -->
 
 ## Автор курса
 
@@ -77,7 +77,7 @@ import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment'
 
 [![Tvit](/img/javascript/twit.png)](https://twitter.com/dabit3/status/1339622771001843716)
 
-Перевод:
+### Перевод:
 
 Это музыкальное видео по AWS Community Builder совершенно другого уровня 🔥 😅
 
@@ -92,13 +92,5 @@ import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment'
 ## Оплата
 
 Оплата в лагере происходит через [Patreon](https://www.patreon.com/reactnative) и стоимоcть на курс по JavaScript составляет 10$ в месяц.
-
-![Camp](https://media.giphy.com/media/kBeFt8vcov4mWg73bI/giphy.gif)
-
-## Рождественский поток
-
-Прямо сейчас проходит набор на первый JavaScript Camp.
-
-![Cristmas tree](https://media.giphy.com/media/YxlUxrYGw2w9y/giphy.gif)
 
 [![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)

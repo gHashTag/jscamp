@@ -33,9 +33,7 @@ module.exports = {
       'javascript26',
       'javascript27',
       'javascript28',
-      'javascript29',
-      'javascript30',
-      'javascript31'
+      'javascript29'
     ],
 
     ['React Native']: [
