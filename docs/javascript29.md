@@ -144,7 +144,7 @@ npm init
 }
 ```
 
-Как только вы это сделаете, вы можете запустить приложение с помощью команды `npm start`. Это очень удобно, когда вы хотите развернуть свое приложение у PaaS-провайдера: они могут распознать команду `npm start` и использовать её для запуска приложения.
+Как только вы это сделаете, вы можете запустить приложение с помощью команды `npm start`.
 
 ## Импорт
 
@@ -603,29 +603,29 @@ obj.b = 4
 
 ![Sumerian school](/img/app.png)
 
-1. Экспортировать желаемые элементы одним оператором в конце модуля можно командой:
+<!-- Экспортировать желаемые элементы одним оператором в конце модуля можно командой:
 
-- export { myNumbers, myLogger, Alligator }
-- export const myNumbers = [1, 2, 3, 4]
-- import myLogger as Logger from 'app.js'
+1. export { myNumbers, myLogger, Alligator }
+2. export const myNumbers = [1, 2, 3, 4]
+3. import myLogger as Logger from 'app.js'
 
-2. Импорт всех экспортированных участников производится командой:
+Импорт всех экспортированных участников производится командой:
 
-- import \* as Utils from 'app.js'
-- import { myLogger, Alligator } from 'app.js'
-- import myLogger as Logger from 'app.js'
+1. import \* as Utils from 'app.js'
+2. import { myLogger, Alligator } from 'app.js'
+3. import myLogger as Logger from 'app.js'
 
-3. Для указания конкретных функций экспорта используется:
+Для указания конкретных функций экспорта используется:
 
-- export { hello1, hello2 }
-- import { hello1, hello2 } from './say'
-- const hello = require('./say')
+1. export { hello1, hello2 }
+2. import { hello1, hello2 } from './say'
+3. const hello = require('./say')
 
-4. Команда `import myDefault, {foo, bar} from '/modules/my-module.js'` выполняет:
+Команда `import myDefault, {foo, bar} from '/modules/my-module.js'` выполняет:
 
-- именованный импорт конкретных значений
-- экспорта по умолчанию (дефолтный экспорт) из модуля
-- импортирует все значения.
+1. именованный импорт конкретных значений
+2. экспорта по умолчанию (дефолтный экспорт) из модуля
+3. импортирует все значения -->
 
 ## Ссылки:
 

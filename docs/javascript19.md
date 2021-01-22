@@ -71,7 +71,9 @@ function learnJavaScript() {
     { id: 85, name: 'William', age: 34, group: 'editor' },
     { id: 97, name: 'Oliver', age: 28, group: 'admin' }
   ]
+
   let result = users.map(({ id, age, group }) => `\n${id} ${age} ${group}`).join('')
+
   return result
 }
 ```
@@ -85,7 +87,9 @@ function learnJavaScript() {
 ```jsx live
 function learnJavaScript() {
   let celsius = [-15, -5, 0, 10, 16, 20, 24, 32]
+
   let fahrenheit = celsius.map(t => t * 1.8 + 32 + ' ')
+
   return fahrenheit
 }
 ```
@@ -107,8 +111,10 @@ function learnJavaScript() {
 
 ```jsx live
 function learnJavaScript() {
-  var numbers = [1, 4, 9]
-  var doubles = numbers.map(num => num * 2 + ' ')
+  const numbers = [1, 4, 9]
+
+  const doubles = numbers.map(num => num * 2 + ' ')
+
   return doubles
 }
 ```
@@ -179,7 +185,7 @@ let newArray = arr.filter(function callback(element[, index, [array]])[, thisArg
 
 Диапазон элементов, обрабатываемых методом `filter()`, устанавливается до первого вызова функции⚙️ `callback`. Элементы, добавленные в массив после начала выполнения метода `filter()`, не будут посещены функцией⚙️ `callback`. Если существующие элементы массива изменятся, значения, переданные в функцию⚙️ `callback`, будут значениями на тот момент времени, когда метод `filter()` посетит их. Удалённые элементы посещены не будут.
 
-### Примеры
+### Пример
 
 ![math](https://media.giphy.com/media/3orieN7HEHI0tw8x5C/giphy.gif)
 
@@ -189,10 +195,10 @@ let newArray = arr.filter(function callback(element[, index, [array]])[, thisArg
 
 ```jsx live
 function learnJavaScript() {
-  function isBigEnough(value) {
-    return value >= 10
-  }
+  const isBigEnough = value => value >= 10
+
   let filtered = [12, 5, 8, 130, 44].filter(isBigEnough) + ' '
+
   return filtered
 }
 ```
@@ -239,9 +245,7 @@ array.reduce(function callback[, initialValue])
 
 ![hatchng](https://media.giphy.com/media/xT1R9Qy80qNb8oQGGc/giphy.gif)
 
-Разберемся с начальным значением. В примере оно равно `0`, так как мы считаем численное значение – сумму возрастов. Это тот же самый `0`, который мы помещали в переменную 🔔 `totalYears` в примере с `forEach`, просто здесь он органично вписан в сигнатуру метода.
-
-На месте нуля может быть любое другое число/строка (пустая или нет)/объект/массив – любое значение, с которого вы начинаете аккумуляцию. Для примера объединим имена всех друзей в одну строчку 👇 :
+Разберемся с начальным значением. В примере оно равно `0`, так как мы считаем численное значение – сумму возрастов. На месте нуля может быть любое другое число/строка (пустая или нет)/объект/массив – любое значение, с которого вы начинаете аккумуляцию. Для примера объединим имена всех друзей в одну строчку 👇 :
 
 ```jsx live
 function learnJavaScript() {
@@ -253,7 +257,9 @@ function learnJavaScript() {
     { passport: '03005992', name: 'Monica Geller', age: 31, sex: 'f' },
     { passport: '03005993', name: 'Phoebe Buffay', age: 34, sex: 'f' }
   ]
-  let names = friends.reduce((accumulator, friend) => `${accumulator} ${friend.name}, `, 'Friends: ')
+
+  const names = friends.reduce((accumulator, friend) => `${accumulator} ${friend.name}, `, 'Friends: ')
+
   return names
 }
 ```
@@ -262,9 +268,33 @@ function learnJavaScript() {
 
 Если вы не указываете исходное значение явно, им неявно становится первый 1️⃣ элемент массива. В этом случае функция⚙️ для него уже не вызывается.
 
-### Примеры
+### Пример
 
-#### Сглаживание массива массивов:
+#### Суммирование всех значений в массиве:
+
+```jsx live
+function learnJavaScript() {
+  const initialValue = 0
+
+  const sum = [1, 2, 3].reduce((accumulator, currentValue) => {
+    return accumulator + currentValue
+  }, initialValue)
+
+  return sum
+}
+```
+
+И тоже самое в одну строчку кода:
+
+```jsx live
+function learnJavaScript() {
+  const sum = [1, 2, 3].reduce((x, y) => x + y)
+
+  return sum
+}
+```
+
+<!-- #### Сглаживание массива массивов:
 
 ![transform](https://media.giphy.com/media/dVleMgtOlPE6Q/giphy.gif)
 
@@ -272,25 +302,15 @@ function learnJavaScript() {
 
 ```jsx live
 function learnJavaScript() {
-  let nested = [
+  const nested = [
     [1, 2, 3],
     [4, 5, 6],
     [7, 8, 9]
   ]
-  let flat = nested.reduce((acc, it) => [...acc, ...it], [])
+
+  const flat = nested.reduce((acc, it) => [...acc, ...it], [])
+
   return flat + ' '
-}
-```
-
-#### Суммирование всех значений в массиве:
-
-```jsx live
-function learnJavaScript() {
-  var initialValue = 0
-  var sum = [{ x: 1 }, { x: 2 }, { x: 3 }].reduce(function (accumulator, currentValue) {
-    return accumulator + currentValue.x
-  }, initialValue)
-  return sum
 }
 ```
 
@@ -298,16 +318,17 @@ function learnJavaScript() {
 
 ```jsx live
 function learnJavaScript() {
-  var flattened = [
+  const flattened = [
     [0, 1],
     [2, 3],
     [4, 5]
   ].reduce(function (a, b) {
     return a.concat(b) + ' '
   })
+
   return flattened
 }
-```
+``` -->
 
 ## chaining
 
