@@ -11,6 +11,7 @@ import React from 'react'
 import classnames from 'classnames'
 import Layout from '@theme/Layout'
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
+import useThemeContext from '@theme/hooks/useThemeContext'
 import useBaseUrl from '@docusaurus/useBaseUrl'
 import YouTube from 'react-youtube'
 import Head from '@docusaurus/Head'
@@ -51,6 +52,7 @@ const features = [
 
 const Feature = ({ imageUrl, title, description }) => {
   const imgUrl = useBaseUrl(imageUrl)
+  const { isDarkTheme, setLightTheme, setDarkTheme } = useThemeContext()
   return (
     <div className={classnames('col col--4', styles.feature)}>
       {imgUrl && (
@@ -245,9 +247,9 @@ const Program = () => {
         <img src={useBaseUrl('img/jscamp/30.3.jpg')} alt="Java Script Camp" className="image-mobile" />
         <img src={useBaseUrl('img/jscamp/30.2.jpg')} alt="Java Script Camp" />
         <img src={useBaseUrl('img/jscamp/30.1.jpg')} alt="Java Script Camp" className="image-mobile" />
-        <img src={useBaseUrl('img/jscamp/32.3.jpg')} alt="Java Script Camp" className="image-mobile" />
+        {/* <img src={useBaseUrl('img/jscamp/32.3.jpg')} alt="Java Script Camp" className="image-mobile" />
         <img src={useBaseUrl('img/jscamp/31.2.jpg')} alt="Java Script Camp" />
-        <img src={useBaseUrl('img/jscamp/32.1.jpg')} alt="Java Script Camp" className="image-mobile" />
+        <img src={useBaseUrl('img/jscamp/32.1.jpg')} alt="Java Script Camp" className="image-mobile" /> */}
         <img src={useBaseUrl('img/jscamp/31.3.jpg')} alt="Java Script Camp" className="image-mobile" />
         <img src={useBaseUrl('img/jscamp/32.2.jpg')} alt="Java Script Camp" />
         <img src={useBaseUrl('img/jscamp/31.1.jpg')} alt="Java Script Camp" className="image-mobile" />

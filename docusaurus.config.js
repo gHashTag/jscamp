@@ -21,6 +21,11 @@ module.exports = {
   clientModules: [require.resolve('./snackPlayerInitializer.js')],
   scripts: [{ src: 'https://snack.expo.io/embed.js', defer: true }],
   themeConfig: {
+    algolia: {
+      apiKey: '4b22eba94660cfe3f3e4083ad49b11b6',
+      indexName: 'prod',
+      searchParameters: {}
+    },
     image: 'img/jscamp/JSCampCoverPatreon.jpg',
     metadatas: [{ name: 'twitter:card', content: 'Java Script Camp' }],
     googleAnalytics: {
@@ -48,7 +53,7 @@ module.exports = {
         {
           to: 'docs/startup00',
           activeBasePath: 'docs',
-          label: 'Уроки',
+          label: 'Учебный план',
           position: 'left'
         },
         {
@@ -79,7 +84,7 @@ module.exports = {
       style: 'dark',
       links: [
         {
-          title: 'Уроки',
+          title: 'Учебный план',
           items: [
             {
               label: 'Startup',
