@@ -201,6 +201,10 @@ module.exports.sum = sum // export
 
 Вот мы и завершили с вами подготовительный, перед курсом по [мобильной разработке](https://react-native-village.github.io/docs/start000), курс по JavaScript.
 
+## Проблемы?
+
+Пишите в телеграмм [чат](https://t.me/jscampapp), а также подписывайтесь на наши [новости](https://t.me/javascriptapp).
+
 <!-- ## `Export` (экспорт)
 
 ![Export](https://media.giphy.com/media/JlxFcvNuzlPYA/giphy.gif)

@@ -215,6 +215,10 @@ function learnJavaScript() {
 
 Вот мы и познакомились с самым популярным типом данных в JavaScript и самыми часто используемыми методами к нему.
 
+## Проблемы?
+
+Пишите в телеграмм [чат](https://t.me/jscampapp), а также подписывайтесь на наши [новости](https://t.me/javascriptapp).
+
 ## Вопросы:
 
 ![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)

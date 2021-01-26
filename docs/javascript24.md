@@ -286,6 +286,10 @@ JavaScript без this выглядит как лучший функционал
 
 Так как в прошлом уроке мы отказались от [классов](https://react-native-village.github.io/docs/javascript25#отказ-от-классов), то и вместе с ними прощаемся и с `this`.
 
+## Проблемы?
+
+Пишите в телеграмм [чат](https://t.me/jscampapp), а также подписывайтесь на наши [новости](https://t.me/javascriptapp).
+
 ## Вопросы
 
 ![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)

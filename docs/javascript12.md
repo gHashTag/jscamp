@@ -224,6 +224,10 @@ console.log(fruit) // "Apple"
 
 Из-за перечисленных причин, разработчики отказались от использования `var`
 
+## Проблемы?
+
+Пишите в телеграмм [чат](https://t.me/jscampapp), а также подписывайтесь на наши [новости](https://t.me/javascriptapp).
+
 ## Вопросы
 
 ![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)

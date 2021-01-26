@@ -162,6 +162,10 @@ function learnJavaScript() {
 
 Практически всегда, когда известно количество необходимых итераций, вы скорее будете работать с `for`, нежели с `while`. В связи с этим циклы `for` так популярны. Существуют и другие циклы, но они не столь популярны и при желании можете познакомиться с ними [здесь](https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/%D0%A6%D0%B8%D0%BA%D0%BB%D1%8B_%D0%B8_%D0%B8%D1%82%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%B8).
 
+## Проблемы?
+
+Пишите в телеграмм [чат](https://t.me/jscampapp), а также подписывайтесь на наши [новости](https://t.me/javascriptapp).
+
 ## Вопросы:
 
 ![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
