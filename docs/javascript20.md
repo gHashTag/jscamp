@@ -182,10 +182,6 @@ function learnJavaScript() {
 
 ![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
 
-Для того чтобы понять насколько вы усвоили этот урок пройдите тест в [мобильном приложении](http://onelink.to/njhc95) в нашей школы по этой теме.
-
-![Sumerian school](/img/app.png)
-
 Деструктуризация - это?
 
 1. Функция
@@ -207,6 +203,10 @@ function learnJavaScript() {
 
 1. Да
 2. Нет
+
+Для того чтобы понять насколько вы усвоили этот урок пройдите тест в [мобильном приложении](http://onelink.to/njhc95) в нашей школы по этой теме.
+
+![Sumerian school](/img/app.png)
 
 ## Ссылки
 

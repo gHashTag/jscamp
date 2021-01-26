@@ -194,10 +194,6 @@ Promise.race([promise1, promise2])
 
 ![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
 
-Для того чтобы понять, на сколько вы усвоили этот урок, пройдите тест в [мобильном приложении](http://onelink.to/njhc95) нашей школы по этой теме.
-
-![Sumerian school](/img/app.png)
-
 Как называется метод который вызывается при успешном выполнении промиса?
 
 1. `reject`
@@ -222,6 +218,10 @@ Promise.race([promise1, promise2])
 
 1. `then`
 2. `catch`
+
+Для того чтобы понять, на сколько вы усвоили этот урок, пройдите тест в [мобильном приложении](http://onelink.to/njhc95) нашей школы по этой теме.
+
+![Sumerian school](/img/app.png)
 
 ## Ссылки:
 

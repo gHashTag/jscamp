@@ -219,10 +219,6 @@ function learnJavaScript() {
 
 ![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
 
-Для того чтобы понять, на сколько вы усвоили этот урок, пройдите тест в [мобильном приложении](http://onelink.to/njhc95) нашей школы по этой теме.
-
-![Sumerian school](/img/app.png)
-
 Как в JavaScript не записываются строки?
 
 1. В одинарных кавычках
@@ -245,7 +241,7 @@ function learnJavaScript() {
 
 1. `\n`
 2. `\`
-3. `\\\*`
+3. `\*`
 
 Какую букву вернет `'sport'[3]`?
 
@@ -270,6 +266,10 @@ function learnJavaScript() {
 1. `=`
 2. `+`
 3. `+=`
+
+Для того чтобы понять, на сколько вы усвоили этот урок, пройдите тест в [мобильном приложении](http://onelink.to/njhc95) нашей школы по этой теме.
+
+![Sumerian school](/img/app.png)
 
 ## Сcылки:
 

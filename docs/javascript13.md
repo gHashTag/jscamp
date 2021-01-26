@@ -81,15 +81,11 @@ function learnJavaScript() {
 
 ![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
 
-Для того чтобы понять, на сколько вы усвоили этот урок, пройдите тест в [мобильном приложении](http://onelink.to/njhc95) нашей школы по этой теме.
-
-![Sumerian school](/img/app.png)
-
 Если параметрам функции⚙️ не передано значение, какое значение они принимают по умолчанию?
 
-1. null
-2. undefined
-3. NaN
+1. `null`
+2. `undefined`
+3. `NaN`
 
 Параметры по умолчанию "отлавливают" ложные значения?
 
@@ -100,6 +96,10 @@ function learnJavaScript() {
 
 1. Да
 2. Нет
+
+Для того чтобы понять, на сколько вы усвоили этот урок, пройдите тест в [мобильном приложении](http://onelink.to/njhc95) нашей школы по этой теме.
+
+![Sumerian school](/img/app.png)
 
 ## Ссылки:
 

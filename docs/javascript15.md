@@ -152,11 +152,7 @@ function learnJavaScript() {
 
 ![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
 
-Для того чтобы понять, на сколько вы усвоили этот урок, пройдите тест в [мобильном приложении](http://onelink.to/njhc95) нашей школы по этой теме.
-
-![Sumerian school](/img/app.png)
-
-Можно ли при помощи Switch сравнить что-то с регулярными выражениями?
+Можно ли при помощи `switch` сравнить что-то с регулярными выражениями?
 
 1. Да
 2. Нет
@@ -172,6 +168,10 @@ function learnJavaScript() {
 1. `break`
 2. `stop`
 3. `default`
+
+Для того чтобы понять, на сколько вы усвоили этот урок, пройдите тест в [мобильном приложении](http://onelink.to/njhc95) нашей школы по этой теме.
+
+![Sumerian school](/img/app.png)
 
 ## Ссылки:
 

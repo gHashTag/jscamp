@@ -332,10 +332,6 @@ function learnJavaScript() {
 
 ![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
 
-Для того чтобы понять, на сколько вы усвоили этот урок, пройдите тест в [мобильном приложении](http://onelink.to/njhc95) нашей школы по этой теме.
-
-![Sumerian school](/img/app.png)
-
 Пустой объект создается командой:
 
 1. `let obj = {}`
@@ -365,6 +361,10 @@ function learnJavaScript() {
 1. `for (let i = 0; i <= 100; i++) { sum += i }`
 2. `for(let key in obj) { }`
 3. `while (условие) { }`
+
+Для того чтобы понять, на сколько вы усвоили этот урок, пройдите тест в [мобильном приложении](http://onelink.to/njhc95) нашей школы по этой теме.
+
+![Sumerian school](/img/app.png)
 
 ## Ссылки:
 

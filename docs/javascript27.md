@@ -137,10 +137,6 @@ console.log(data[0].name + ' and ' + data[2].name)
 
 ![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
 
-Для того чтобы понять насколько вы усвоили этот урок пройдите тест в [мобильном приложении](http://onelink.to/njhc95) в нашей школы по этой теме.
-
-![Sumerian school](/img/app.png)
-
 Что возвращает метод `fetch()`?
 
 1. Функцию
@@ -170,6 +166,10 @@ console.log(data[0].name + ' and ' + data[2].name)
 1. Код ответа
 2. Успешность кода ответа
 3. Чтение данных из запроса
+
+Для того чтобы понять насколько вы усвоили этот урок пройдите тест в [мобильном приложении](http://onelink.to/njhc95) в нашей школы по этой теме.
+
+![Sumerian school](/img/app.png)
 
 ## Ссылки
 

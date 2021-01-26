@@ -453,10 +453,6 @@ let arr = new Array(item1, item2...)
 
 ![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
 
-Для того чтобы понять, на сколько вы усвоили этот урок, пройдите тест в [мобильном приложении](http://onelink.to/njhc95) нашей школы по этой теме.
-
-![Sumerian school](/img/app.png)
-
 Массив – это ...
 
 1. Подвид объектов с "упорядоченной коллекцией данных"
@@ -492,6 +488,10 @@ let arr = new Array(item1, item2...)
 1. `pop()`
 2. `shift()`
 3. `unshift()`
+
+Для того чтобы понять, на сколько вы усвоили этот урок, пройдите тест в [мобильном приложении](http://onelink.to/njhc95) нашей школы по этой теме.
+
+![Sumerian school](/img/app.png)
 
 ## Ссылки
 
