@@ -24,10 +24,30 @@ module.exports = {
     algolia: {
       apiKey: '4b22eba94660cfe3f3e4083ad49b11b6',
       indexName: 'prod',
-      searchParameters: {}
+      contextualSearch: true
     },
-    image: 'img/jscamp/JSCampCoverPatreon.jpg',
-    metadatas: [{ name: 'twitter:card', content: 'Java Script Camp' }],
+    image: 'img/jscamp.jpg',
+    metadatas: [
+      {
+        name: 'description',
+        content: 'Java Script Camp - программа обучения JavaScript в стеке React Native, Type Script, AWS Amplify'
+      },
+      { property: 'og:title', content: 'Java Script Camp' },
+      {
+        property: 'og:description',
+        content: 'Java Script Camp - программа обучения JavaScript в стеке React Native, Type Script, AWS Amplify'
+      },
+      { property: 'og:url', content: 'https://jscamp.app/' },
+      {
+        property: 'og:image',
+        content: 'https://jscamp.app/img/jscamp.jpg'
+      },
+      { name: 'twitter:card', content: 'summary' },
+      {
+        name: 'twitter:image',
+        content: 'https://jscamp.app/img/jscamp.jpg'
+      }
+    ],
     googleAnalytics: {
       trackingID: 'G-X2K0V4MDRW',
       anonymizeIP: true // Should IPs be anonymized?
