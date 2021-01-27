@@ -46,7 +46,7 @@ $ yarn ci
 Afler deploy add this script to index.html in tag `head`
 
 ```javascript
-<meta property="og:image" content="https://react-native-village.github.io/img/app.png">
+<meta property="og:image" content="https://www.jscamp.app/img/app.png">
 <!-- Facebook Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
@@ -64,7 +64,20 @@ fbq('track', 'PageView');
 src="https://react-native-village.github.io/assets/images/app-b1ad811d205d35252340669e9e1f7545.png"
 /></noscript>
 <!-- End Facebook Pixel Code -->
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
+   ym(50359945, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/50359945" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
 ```
 
 ## Contributors ✨

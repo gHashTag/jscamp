@@ -154,7 +154,7 @@ npm install --save @react-native-community/netinfo
 1. Устанавливаем `@react-native-community/push-notification-ios`:
 
 ```bash
-yarn add @react-native-community/push-notification-ios`
+yarn add @react-native-community/push-notification-ios
 ```
 
 ```bash
