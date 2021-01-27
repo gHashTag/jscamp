@@ -10,7 +10,7 @@
 module.exports = {
   title: 'Java Script Camp',
   tagline: 'лагерь скаутов',
-  url: 'https://react-native-village.github.io',
+  url: 'https://jscamp.app',
   baseUrl: '/',
   favicon: 'img/favicon.ico',
   organizationName: 'react-native-village',
