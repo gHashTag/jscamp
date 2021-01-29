@@ -9,7 +9,7 @@
 
 module.exports = {
   title: 'Java Script Camp',
-  tagline: 'лагерь скаутов',
+  tagline: 'программа обучения JavaScript',
   url: 'https://jscamp.app',
   baseUrl: '/',
   favicon: 'img/favicon.ico',

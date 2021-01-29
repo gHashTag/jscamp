@@ -12,7 +12,7 @@ import YouTube from 'react-youtube'
 
 ## Видео
 
-<YouTube videoId="xJtVop2fAxg" />
+<YouTube videoId="ocQTm9K2vdo" />
 
 ## Одинарные или двойные кавычки
 
