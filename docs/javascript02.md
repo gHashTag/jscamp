@@ -85,7 +85,11 @@ function learnJavaScript() {
 
 ## Проблемы?
 
+![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
+
 Пишите в телеграмм [чат](https://t.me/jscampapp), а также подписывайтесь на наши [новости](https://t.me/javascriptapp).
+
+Для V.I.P персон секретный канал в [Discord](https://discord.gg/6GDAfXn) после оплаты на [Patreon](https://www.patreon.com/javascriptcamp).
 
 ## Вопросы:
 
