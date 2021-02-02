@@ -141,7 +141,7 @@ x !== y
 
 ```jsx live
 function learnJavaScript() {
-  let bool = 3 === 3
+  let bool = 3 !== 3
   return bool.toString()
 }
 ```
