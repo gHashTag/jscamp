@@ -83,36 +83,36 @@ module.exports = {
       },
       items: [
         {
-          to: 'docs/startup00',
+          to: 'docs/javascript00',
           activeBasePath: 'docs',
-          label: 'Syllabus',
+          label: 'Syllabus 🏕',
           position: 'left'
         },
         {
           href: 'https://www.patreon.com/javascriptcamp',
-          label: 'Patreon',
+          label: 'Patreon 🤑',
           position: 'left'
         },
         {
           href:
             'https://hh.ru/resume/9bbcea07ff0460389d0039ed1f775a4d445337?source=post_page-----e563aebfae71----------------------',
-          label: 'Author',
+          label: 'Author 🧑🏻‍🎤',
           position: 'left'
         },
         {
           href: 'https://github.com/react-native-village',
-          label: 'GitHub',
-          position: 'right'
+          label: 'GitHub 🛰',
+          position: 'left'
         },
         {
           to: 'blog',
           activeBasePath: 'docs',
-          label: 'Vacancies',
+          label: 'Vacancies 🗄',
           position: 'left'
         },
         {
           type: 'localeDropdown',
-          position: 'left'
+          position: 'right'
         }
       ]
     },
@@ -120,11 +120,11 @@ module.exports = {
       style: 'dark',
       links: [
         {
-          title: 'Syllabus',
+          title: 'Syllabus 🏕',
           items: [
             {
-              label: 'Startup',
-              to: 'docs/startup00'
+              label: 'JavaScript',
+              to: 'docs/javascript00'
             },
             {
               label: 'React Native',
@@ -141,55 +141,55 @@ module.exports = {
           ]
         },
         {
-          title: 'Community',
+          title: 'Community 💛',
           items: [
             {
-              label: 'Discord',
+              label: 'Discord 💭',
               href: 'https://discord.gg/6GDAfXn'
             },
             {
-              label: 'AWS Amplify Ru',
+              label: 'AWS Amplify Ru 💭',
               href: 'https://teleg.run/awsamplify'
             },
             {
-              label: 'AWS Amplify En',
+              label: 'AWS Amplify En 💭',
               href: 'https://discord.gg/yh76QcjKBC'
             }
           ]
         },
         {
-          title: 'Social',
+          title: 'Social 🌎',
           items: [
             {
-              label: 'Telegram Channel',
+              label: 'Telegram Channel 📬',
               href: 'https://t.me/javascriptcamping'
             },
             {
-              label: 'Patreon',
+              label: 'Patreon 🤑',
               href: 'https://www.patreon.com/javascriptcamp'
             },
             {
-              label: 'Instagram',
+              label: 'Instagram 🌎',
               href: 'https://www.instagram.com/javascriptcamp/'
             },
             {
-              label: 'GitHub',
+              label: 'GitHub 🛰',
               href: 'https://github.com/react-native-village'
             },
             {
-              label: 'Dev.to',
+              label: 'Dev.to 🌎',
               href: 'https://dev.to/playra'
             },
             {
-              label: 'Facebook',
+              label: 'Facebook 🌎',
               href: 'https://www.facebook.com/javascriptcamp'
             },
             {
-              label: 'Vk',
+              label: 'Vk 🌎',
               href: 'https://vk.com/reactnativeinit'
             },
             {
-              label: 'Medium',
+              label: 'Medium 🌎',
               href: 'https://medium.com/react-native-init'
             }
           ]
@@ -201,7 +201,7 @@ module.exports = {
         href: 'https://opensource.facebook.com/'
       },
       // Please do not remove the credits, help to publicize Docusaurus :)
-      copyright: `Copyright © ${new Date().getFullYear()} #димкаРеактнативный. Built with Docusaurus.`
+      copyright: `Copyright © ${new Date().getFullYear()} Server Serverlesskiy 🎰 Built with Docusaurus.`
     }
   },
   presets: [

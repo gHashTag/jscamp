@@ -1,8 +1,6 @@
 /* eslint-disable */
 module.exports = {
   someSidebar: {
-    ['Startup']: ['startup00'],
-
     ['Java Script']: [
       'javascript00',
       'javascript01',
@@ -101,6 +99,7 @@ module.exports = {
     ['Authentication']: ['auth1-00', 'auth1-01', 'auth1-02'],
     ['AWS Amplify']: ['amplify-00', 'amplify-01', 'amplify-02', 'amplify-03', 'amplify-04', 'notif-00'],
     ['Blogging']: ['blogging-00', 'blogging-01', 'blogging-02', 'blogging-03'],
-    ['Scratch']: ['scratch-00', 'scratch-01']
+    ['Scratch']: ['scratch-00', 'scratch-01'],
+    ['Startup']: ['startup00']
   }
 }

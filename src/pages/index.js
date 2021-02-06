@@ -11,7 +11,8 @@ import React from 'react'
 import classnames from 'classnames'
 import Layout from '@theme/Layout'
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
-import useThemeContext from '@theme/hooks/useThemeContext'
+// import useThemeContext from '@theme/hooks/useThemeContext'
+import Translate from '@docusaurus/Translate'
 import useBaseUrl from '@docusaurus/useBaseUrl'
 import YouTube from 'react-youtube'
 import Head from '@docusaurus/Head'
@@ -19,40 +20,28 @@ import styles from './styles.module.css'
 
 const features = [
   {
-    title: <>Решаем проблемы</>,
+    title: 'We solve problems',
     imageUrl: 'img/undraw_docusaurus_mountain.svg',
-    description: (
-      <>
-        В процессе обучения вы можете описать свои проблемы и получить на них квалифицированную помощь от менторов
-        курса.
-      </>
-    )
+    description:
+      'In the learning process, you can describe your problems and get qualified help from the course mentors on them.'
   },
   {
-    title: <>Даем практику и трудоустраиваем лучших</>,
+    title: 'We give practice and employ the best',
     imageUrl: 'img/undraw_docusaurus_tree.svg',
-    description: (
-      <>
-        После прохождения нашего курса и практики в стеке Java Script, Type Script, React Native, AWS Amplify, в нашем
-        стартапе, отличившихся студентов ждет трудоустройство в нашу компанию или компании партнеров.
-      </>
-    )
+    description:
+      'After completing our course and practice in the stack of Java Script, Type Script, React Native, AWS Amplify, in our startup, distinguished students will find employment in our company or partner companies.'
   },
   {
-    title: <>Открыл знание, открой его другому</>,
+    title: 'Opened knowledge, open it to another',
     imageUrl: 'img/undraw_docusaurus_react.svg',
-    description: (
-      <>
-        Это золотое правило в нашей школе, так как благодаря открытию знания кому-то еще оно усваивается крепче и так мы
-        организуем команду менторов, где можешь быть и ты.
-      </>
-    )
+    description:
+      'This is the golden rule in our school, because thanks to the discovery of knowledge to someone else, it is assimilated more strongly and so we organize a team of mentors where you can be.'
   }
 ]
 
 const Feature = ({ imageUrl, title, description }) => {
   const imgUrl = useBaseUrl(imageUrl)
-  const { isDarkTheme, setLightTheme, setDarkTheme } = useThemeContext()
+  // const { isDarkTheme, setLightTheme, setDarkTheme } = useThemeContext()
   return (
     <div className={classnames('col col--4', styles.feature)}>
       {imgUrl && (
@@ -60,8 +49,12 @@ const Feature = ({ imageUrl, title, description }) => {
           <img className={styles.featureImage} src={imgUrl} alt={title} />
         </div>
       )}
-      <h3>{title}</h3>
-      <p>{description}</p>
+      <h3>
+        <Translate>{title}</Translate>
+      </h3>
+      <p>
+        <Translate>{description}</Translate>
+      </p>
     </div>
   )
 }
@@ -102,12 +95,15 @@ const Home = () => {
           <div className="container">
             <img src={useBaseUrl('img/jscamp/Покатушки по Джаваскриптушке.png')} alt="Покатушки по Джаваскриптушке" />
             {/* <h1 className="hero__title">Java Script Camp</h1> */}
+
             <p className="hero__subtitle">
-              Лагерь скаутов от создателя первого в Рунете{' '}
-              <a href="https://youtube.com/playlist?list=PLth6QPteH5guFUwQj1iCdu-SOZ7O5KCz4">курса по React Native</a> и
-              первого русского блогера-программиста в программе{' '}
-              <a href="https://aws.amazon.com/ru/developer/community/community-builders/">AWS Community Builders</a> от
-              Амазон - Димки Реактнативного
+              <Translate>Scout camp from the creator of the first in Runet</Translate>{' '}
+              <a href="https://youtube.com/playlist?list=PLth6QPteH5guFUwQj1iCdu-SOZ7O5KCz4">
+                <Translate>React Native course</Translate>
+              </a>{' '}
+              <Translate>and the first Russian blogger-programmer in the program</Translate>{' '}
+              <a href="https://aws.amazon.com/ru/developer/community/community-builders/">AWS Community Builders</a>{' '}
+              <Translate>from Amazon</Translate>
             </p>
 
             <a href="https://www.patreon.com/javascriptcamp">

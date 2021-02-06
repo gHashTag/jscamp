@@ -1,0 +1,42 @@
+{
+  "Scout camp from the creator of the first in Runet": {
+    "message": "Лагерь скаутов от создателя первого в Рунете",
+    "description": "The homepage welcome message"
+  },
+  "React Native course": {
+    "message": "курса по React Native",
+    "description": "The homepage input placeholder"
+  },
+  "and the first Russian blogger-programmer in the program": {
+    "message": "и первого русского блогера-программиста в программе",
+    "description": "The homepage input placeholder" 
+  },
+  "from Amazon": {
+    "message": "от Амазон",
+    "description": "The homepage input placeholder" 
+  },
+  "We solve problems": {
+    "message": "Решаем проблемы",
+    "description": "The homepage input placeholder" 
+  },
+  "We give practice and employ the best": {
+    "message": "Даем практику и трудоустраиваем лучших",
+    "description": "The homepage input placeholder" 
+  },
+  "Opened knowledge, open it to another": {
+    "message": "Открыл знание, открой его другому",
+    "description": "The homepage input placeholder" 
+  },
+  "In the learning process, you can describe your problems and get qualified help from the course mentors on them.": {
+    "message": "В процессе обучения вы можете описать свои проблемы и получить на них квалифицированную помощь от менторов курса.",
+    "description": "The homepage input placeholder" 
+  },
+  "After completing our course and practice in the stack of Java Script, Type Script, React Native, AWS Amplify, in our startup, distinguished students will find employment in our company or partner companies.": {
+    "message": "После прохождения нашего курса и практики в стеке Java Script, Type Script, React Native, AWS Amplify, в нашем стартапе, отличившихся студентов ждет трудоустройство в нашу компанию или компании партнеров.",
+    "description": "The homepage input placeholder" 
+  },
+  "This is the golden rule in our school, because thanks to the discovery of knowledge to someone else, it is assimilated more strongly and so we organize a team of mentors where you can be.": {
+    "message": "Это золотое правило в нашей школе, так как благодаря открытию знания кому-то еще оно усваивается крепче и так мы организуем команду менторов, где можешь быть и ты.",
+    "description": "The homepage input placeholder" 
+  }
+}
