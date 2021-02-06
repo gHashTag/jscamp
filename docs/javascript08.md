@@ -141,7 +141,7 @@ Enter the examples one by one into the 🔔 `bool` variable of our `LIVE EDITOR`
 
 ```jsx live
 function learnJavaScript() {
-  let bool = 3 === 3
+  let bool = 3 !== 3
   return bool.toString()
 }
 ```
