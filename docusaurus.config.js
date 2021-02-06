@@ -94,13 +94,12 @@ module.exports = {
           position: 'left'
         },
         {
-          href:
-            'https://hh.ru/resume/9bbcea07ff0460389d0039ed1f775a4d445337?source=post_page-----e563aebfae71----------------------',
+          href: 'https://www.linkedin.com/in/raoffonom/',
           label: 'Author 🧑🏻‍🎤',
           position: 'left'
         },
         {
-          href: 'https://github.com/react-native-village',
+          href: 'https://github.com/react-native-village/react-native-village.github.io',
           label: 'GitHub 🛰',
           position: 'left'
         },
