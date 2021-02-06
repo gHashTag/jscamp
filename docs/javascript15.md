@@ -1,50 +1,50 @@
 ---
 id: javascript15
-title: Конструкция switch case
-sidebar_label: Конструкция switch case
+title: Switch case construct
+sidebar_label: Switch case construct
 ---
 
 ![@serverSerrverlesskiy](/img/javascript/headers/14.jpg)
 
-Конструкция `switch` служит для сравнения значения на равенство с различными вариантами.
+The switch construction is used to compare a value for equality with different options.
 
-При этом равенство подразумевается в смысле оператора строгое равенство `===`, сравнивать с регулярным выражением или как-то еще `switch` не умеет. То есть значения должны быть одного типа, чтобы выполнялось равенство.
+In this case, equality is implied in the sense of the operator strict equality `===`, it cannot compare with a regular expression or somehow else. That is, the values must be of the same type for equality to hold.
 
 ![comparison](https://media.giphy.com/media/icJA0VF7ntoEL18Jez/giphy.gif)
 
-Если условие совпадает, то выполняется блок кода📟 , связанный с соответствующим `case`. Если ни одно условие не подошло, то выполняется код📟 , указанный в блоке `default`, если он есть. Для выхода из конструкции используется команда `break`. Если ее не указывать, автоматически выполнится блок кода📟 в следующем `case` и т.д. Поэтому `break` используем в наших скриптах обязательно, чтобы не гонять интерпретатор по всем `case` тем самым снижая производительность скрипта.
+If the condition matches, then the code block📟 associated with the corresponding `case` is executed. If none of the conditions match, then the code specified in the `default` block, if any, is executed. To exit the construction, use the `break` command. If you do not specify it, the code block is automatically executed in the next `case`, etc. Therefore, we use `break` in our scripts, so as not to run the interpreter over all `cases`, thereby reducing the performance of the script.
 
-## Синтаксис
+## Syntax
 
 ![Syntax](https://media.giphy.com/media/yR4xZagT71AAM/giphy.gif)
 
-Конструкция `switch` имеет один или более блоков `case` и необязательный блок `default`.
+A `switch` construct has one or more` case` blocks and an optional `default` block.
 
-Выглядит она так:
+It looks like this:
 
 ```jsx
 switch (n) {
   case 1:
-    // блок кода 1;
+    // code block 1;
     break
   case 2:
-    // блок кода 2;
+    // code block 2;
     break
   // .......
-  // другие варианты  case
+  // other case options
   // .......
   default:
-  // блок кода если не подошло ни одно условие;
+  // code block if none of the conditions match;
 }
 ```
 
-`n` - это булеан [boolean](https://react-native-village.github.io/docs/javascript08) условие.
+`n` - this is [boolean](https://react-native-village.github.io/docs/javascript08) condition.
 
-## Примеры
+## Examples of
 
 ![Math](https://media.giphy.com/media/xT1Ra5h24Eliux3UVq/giphy.gif)
 
-Рассмотрим простейший пример 👇 :
+Let's consider the simplest example 👇:
 
 ```jsx live
 function learnJavaScript() {
@@ -52,27 +52,27 @@ function learnJavaScript() {
   let str
   switch (a) {
     case 3:
-      str = 'Маловато'
+      str = 'Not enough'
       break
     case 4:
-      str = 'В точку!'
+      str = 'To the point!'
       break
     case 5:
-      str = 'Перебор'
+      str = 'brute force'
       break
     default:
-      str = 'Я таких значений не знаю'
+      str = "I don't know such values"
   }
   return str
 }
 ```
 
-Здесь оператор `switch` последовательно сравнит `a` со всеми вариантами из `case`.
-Сначала `3`, затем – так как нет совпадения – `4`. Совпадение найдено, будет выполнен этот вариант, со строки `str = 'В точку!'` и далее, до ближайшего `break`, который прервёт выполнение.
+Here the `switch` statement will sequentially compare` a` with all the options from `case`.
+First `3`, then - since there is no match - `4`. A match is found, this option will be executed, from the line `str = 'To point!'` And further, to the nearest `break`, which will interrupt the execution.
 
 ![Wow](https://media.giphy.com/media/3oriO13KTkzPwTykp2/giphy.gif)
 
-Рассмотрим такой пример 👇 :
+Consider this example 👇:
 
 ```jsx live
 function learnJavaScript() {
@@ -95,34 +95,34 @@ function learnJavaScript() {
 }
 ```
 
-Здесь оператор `switch` последовательно сравнит `a` со всеми вариантами из `case`. Но здесь идет сравнение не чисел, а строк. Так можно сделать с любыми типами данных, главное чтобы сравнивались одинаковые типы данных.
+Here the `switch` statement will sequentially compare `a` with all the options from `case`. But this is not a comparison of numbers, but of strings. This can be done with any data type, as long as the same data types are compared.
 
-## Замена `if`
+## Replacing `if`
 
-Также `Switch` используется чтобы заменить множественные `if`.
+Also, `Switch` is used to replace multiple `if`.
 
-Например, можно заменить данный код 👇 :
+For example, you can replace this code 👇:
 
 ```jsx live
 function learnJavaScript() {
   let number = 2
   let str
   if (number === 0) {
-    str = 'Вы ввели число 0'
+    str = 'You entered the number 0'
   }
 
   if (number === 1) {
-    str = 'Вы ввели число 1'
+    str = 'You entered the number 1'
   }
 
   if (number === 2 || number === 3) {
-    str = 'Вы ввели число 2, а может и 3'
+    str = 'You entered the number 2, maybe 3'
   }
   return str
 }
 ```
 
-На этот 👇 :
+On this 👇:
 
 ```jsx live
 function learnJavaScript() {
@@ -130,54 +130,56 @@ function learnJavaScript() {
   let str
   switch (number) {
     case 0:
-      str = 'Вы ввели число 0'
+      str = 'You entered the number 0'
       break
 
     case 1:
-      str = 'Вы ввели число 1'
+      str = 'You entered the number 1'
       break
 
     case 2:
     case 3:
-      str = 'Вы ввели число 2, а может и 3'
+      str = 'You entered the number 2, maybe 3'
       break
   }
   return str
 }
 ```
 
-Результат будет тот же, но код📟 станет более читабельным и удобным для работы.
+The result will be the same, but the code will become more readable and easier to work with.
 
-## Проблемы?
+## Problems?
 
-Пишите в телеграмм [чат](https://t.me/jscampapp), а также подписывайтесь на наши [новости](https://t.me/javascriptapp).
+![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
 
-## Вопросы:
+Channel in [Discord](https://discord.gg/6GDAfXn) after paying on [Patreon](https://www.patreon.com/javascriptcamp).
+
+## Questions:
 
 ![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
 
-Можно ли при помощи `switch` сравнить что-то с регулярными выражениями?
+Is it possible to use `switch` to compare something with regular expressions?
 
-1. Да
-2. Нет
+1. Yes
+2. No
 
-Какой оператор сравнения использует `switch`?
+What comparison operator does `switch` use?
 
 1. `=`
 2. `===`
 3. `==`
 
-Какое ключевое слово останавливает процесс сравнения в `switch`?
+Which keyword stops the comparison process in `switch`?
 
 1. `break`
 2. `stop`
 3. `default`
 
-Для того чтобы понять, на сколько вы усвоили этот урок, пройдите тест в [мобильном приложении](http://onelink.to/njhc95) нашей школы по этой теме.
+In order to understand how much you learned this lesson, take the test on the [mobile application](http://onelink.to/njhc95) of our school on this topic.
 
 ![Sumerian school](/img/app.png)
 
-## Ссылки:
+## Links
 
 1.  [MDN web docs](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/switch)
 2.  [Learn JavaScript](https://learn.javascript.ru/switch)

@@ -1,42 +1,42 @@
 ---
 id: javascript05
-title: Ошибки
-sidebar_label: Ошибки
+title: Errors
+sidebar_label: Errors
 ---
 
 import YouTube from 'react-youtube'
 
 ![@serverSerrverlesskiy](/img/javascript/headers/05.jpg)
 
-Вы точно, как и все мы, будете совершать ошибки🙅‍♂️ в коде📟. Программные ошибки🙅‍♂️ называют багами. Баг - означает ошибку🙅‍♂️ в программе💾 или в системе, из-за которой программа выдает неожиданное поведение и, как следствие, результат. Большинство программных ошибок🙅‍♂️ возникают из-за ошибок🙅‍♂️, допущенных разработчиками программы в её исходном коде📟, либо в её дизайне.
+You will definitely, like the rest of us, make mistakes🙅‍♂️ in the code📟. Software bugs🙅‍♂️ are called bugs. Bug - means an error🙅‍♂️ in the program💾 or in the system, due to which the program produces unexpected behavior and, as a result, the result. Most software errors🙅‍♂️ arise from errors🙅‍♂️ made by program developers in its source code📟 or in its design.
 
 ![error](https://media.giphy.com/media/1VT3UNeWdijUSMpRL4/giphy.gif)
 
-В значении «неуловимой технической ошибки🙅‍♂️» слово «жучок» (англ. bug) употреблялось задолго до появления компьютеров🖥️ персоналом телеграфных и телефонных компаний в отношении неполадок с электрооборудованием и радиотехникой. В 1878 году Томас Эдисон писал:
+In the meaning of "elusive technical error", the word "bug" was used long before the advent of computers by the staff of telegraph and telephone companies in relation to problems with electrical equipment and radio equipment. In 1878, Thomas Edison wrote:
 
-> «Так было со всеми моими изобретениями. 1️⃣ Первый шаг — интуиция, которая приходит как вспышка, затем возникают трудности — устройство отказывается работать, и именно тогда проявляются «жучки» — так называют эти мелкие ошибки и трудности — и требуются месяцы пристального наблюдения, исследований и усилий, прежде чем дело дойдёт до коммерческого успеха или неудачи».
+> “This was the case with all my inventions. 1️⃣ The first step is intuition, which comes like a flash, then difficulties arise - the device refuses to work, and that's when the bugs appear - as these small mistakes and difficulties are called - and it takes months of close observation, research and effort before it comes to commercial success or failure. "
 
-Отладка – это процесс поиска и исправления ошибок🙅‍♂️ в скрипте.
+Debugging is the process of finding and fixing errors🙅‍♂️ in a script.
 
 [Wikipedia](https://ru.wikipedia.org/wiki/Программная_ошибка🙅‍♂️)
 
-## Видео
+<!-- ## Видео
 
-<YouTube videoId="xJtVop2fAxg" />
+<YouTube videoId="xJtVop2fAxg" /> -->
 
-## Самые частые ошибки
+## The most common mistakes
 
 ![Teacher](https://media.giphy.com/media/27c3zdaY6eeIAwp7Qi/giphy.gif)
 
-Надеюсь вы уже успели встретить свои первые ошибки🙅‍♂️ в процессе написания кода. Почему надеюсь? Потому что ошибки🙅‍♂️ - это наши учителя, которые показывают нам, что мы делаем неправильно в своем коде📟 и компьютер🖥️, точнее интерпретатор кода📟, нас попросту не может понять. Ошибки🙅‍♂️ при написании кода📟 случаются практически каждый день. Штука в том, чтобы уметь прочесть сообщение💬 об ошибке🙅‍♂️, которое выдаст вам машина🚗, чтобы оперативно найти и исправить недочёт в написанном коде📟. Чем больше вы изучаете JavaScript, тем больше начинаете ценить сообщения💬 об ошибках🙅‍♂️ - зачастую они очень верно показывают, где же вы допустили промах.
+I hope you have already encountered your first mistakes🙅‍♂️ in the process of writing code. Why hope? Because mistakes🙅‍♂️ are our teachers who show us what we do wrong in our code📟 and a computer🖥️, or rather a code interpreter📟, simply cannot understand us. Mistakes🙅‍♂️ when writing code📟 happen almost every day. The trick is to be able to read the error message💬 that the machine will give you in order to quickly find and fix a defect in the written code📟. The more you learn JavaScript, the more you appreciate the error messages💬 - they often show very accurately where you went wrong.
 
-Пара самых популярных типов ошибок🙅‍♂️ в коде📟:
+A couple of the most common error types🙅‍♂️ in code код:
 
 ## SyntaxError
 
 ![Error](https://media.giphy.com/media/TqiwHbFBaZ4ti/giphy.gif)
 
-`Syntax Error` - нарушение правил языка👅. Например введите ​​​​​девять плюс точка с запятой `9 + ;`👇:
+`Syntax Error` - violation of language rules правил. For example, enter nine plus a semicolon `9 +;` 👇:
 
 ```jsx live
 function learnJavaScript() {
@@ -46,12 +46,12 @@ function learnJavaScript() {
 }
 ```
 
-Ответ: `SyntaxError: Unexpected token ;`
+Reply: `SyntaxError: Unexpected token;`
 
-Cинтаксическая ошибка🙅‍♂️, означает всего лишь, что в теле вашего предложения содержится ошибка🙅‍♂️. Другими словами, то, что вы написали, не является правильным с точки зрения языка👅 JavaScript. Интерпретатор не может прочесть ваше предложение и не знает, что с ним нужно делать. `Unexpected token ;` означает, что интерпретатор прочёл что-то, чего прочесть вовсе не ожидал: в нашем случае — точку с запятой `;`.
+A syntax error🙅‍♂️ simply means that there is an error in the body of your sentence🙅‍♂️. In other words, what you wrote is not correct in terms of JavaScript. The interpreter cannot read your sentence and does not know what to do with it. `Unexpected token;` means that the interpreter has read something that it did not expect to read at all: in our case, a semicolon `;`.
 
-Еще раз ошибемся🙅‍♂️!
-Введем в консоле пять плюс три и скобка в конце `5+3)`.
+Let's make a mistake again🙅‍♂️!
+Let's enter five plus three in the console and a parenthesis at the end of `5 + 3)`.
 
 ```jsx live
 function learnJavaScript() {
@@ -61,13 +61,13 @@ function learnJavaScript() {
 }
 ```
 
-У вас есть закрывающая скобка `)`, но нет скобки открывающей `(`! А ведь скобки всегда ходят парами — не может быть, чтобы была закрывающая, но не нашлось открывающей скобки, и наоборот.
+You have a closing parenthesis `)`, but there is no opening parenthesis `(`! But the parentheses always go in pairs - it cannot be that there is a closing, but there is no opening parenthesis, and vice versa.
 
 ## ReferenceError
 
 ![Error](https://media.giphy.com/media/8L0Pky6C83SzkzU55a/giphy.gif)
 
-`ReferenceError` - неправильное имя! Объект `ReferenceError` представляет ошибку🙅‍♂️, возникающую при обращении к несуществующей переменной. Например введите пять плюс переменая `5 + переменая`:
+`ReferenceError` is an invalid name! The `ReferenceError` object represents an error🙅‍♂️ that occurs when accessing a variable that does not exist. For example, enter five plus alternating `5 + alternating`:
 
 ```jsx live
 function learnJavaScript() {
@@ -77,12 +77,12 @@ function learnJavaScript() {
 }
 ```
 
-Теперь перед нами ошибка обращения `ReferenceError`. Быть может, вы уже заметили, в чём здесь дело? Давайте внимательно прочтём сообщение💬 об ошибке (ведь для этого, в конце концов, оно и выдаётся!). Там сказано: `переменная 🔔 is not defined` — переменная не задана, вот в этом-то и кроется наша проблема! Сперва мы должны объявить🗣️ переменную каким-нибудь, скажем, таким образом:
+Now we have before us an error of the reference `ReferenceError`. Perhaps you have already noticed what is the matter here? Let's read the error message 💬 carefully (after all, that's why it is displayed!). It says: `variable 🔔 is not defined` - the variable is not set, this is where our problem lies! First, we have to declare the variable-in some way, say this way:
 
 ```jsx live
 function learnJavaScript() {
-  var переменая = 5
-  var error = 5 + переменая
+  var test = 5
+  var error = 5 + test
 
   return error
 }
@@ -90,7 +90,7 @@ function learnJavaScript() {
 
 ## TypeError
 
-Объект TypeError представляет ошибку, возникающую, когда значение имеет не ожидаемый тип. Мы применяем метод `toUpperCase`, с которым подробно познакомимся позже, к типу undefined, а это не допустимо так как этот метод преобразует строку в верхний регистр. Проверьте эту ошибку в консоле браузера, так в `LIVE EDITOR` она не работает.
+A TypeError object represents an error that is thrown when a value is not of the expected type. We apply the `toUpperCase` method, which we will learn more about later, to the undefined type, and this is not allowed since this method converts the string to uppercase. Check this error in the browser console, it doesn't work in `LIVE EDITOR`.
 
 ```javascript
 var foo = undefined
@@ -99,34 +99,36 @@ foo.toUpperCase()
 
 ![TypeError](/img/javascript/25.jpg)
 
-## Проблемы?
+## Problems?
 
-Пишите в телеграмм [чат](https://t.me/jscampapp), а также подписывайтесь на наши [новости](https://t.me/javascriptapp).
+![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
 
-## Вопросы:
+Channel in [Discord](https://discord.gg/6GDAfXn) after paying on [Patreon](https://www.patreon.com/javascriptcamp).
+
+## Questions:
 
 ![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
 
-Что означает `Syntax Error`?
+What does `Syntax Error` mean?
 
-1. Неправильный порядок знаков
-2. Нарушение правил языка
-3. Неуместные скобки
+1. Wrong order of signs
+2. Violation of the rules of the language
+3. Inappropriate parentheses
 
-Что означает `Reference Error`?
+What does `Reference Error` mean?
 
-1. Необъявленная переменная
-2. Синтаксическая ошибка
-3. Неправильное имя
+1. Undeclared variable
+2. Syntax error
+3. Wrong name
 
-Для того чтобы понять, на сколько вы усвоили этот урок, пройдите тест в [мобильном приложении](http://onelink.to/njhc95) нашей школы по этой теме.
+In order to understand how much you learned this lesson, take the test on the [mobile application](http://onelink.to/njhc95) of our school on this topic.
 
 ![Sumerian school](/img/app.png)
 
-## Ссылки:
+## Links
 
 1. [MDN web docs](https://developer.mozilla.org/ru/docs/Web/JavaScript/Data_structures)
-2. [Код для подростков: прекрасное руководство по программированию для начинающих, том 1: Javascript - Jeremy Moritz ](https://www.amazon.com/Code-Teens-Beginners-Programming-Javascript-ebook/dp/B07FCTLVPC)
+2. [Code for Teens: The Perfect Beginner's Guide to Programming, Volume 1: Javascript - Jeremy Moritz](https://www.amazon.com/Code-Teens-Beginners-Programming-Javascript-ebook/dp/B07FCTLVPC)
 3. [JavaScript.ru](https://learn.javascript.ru/types)
 
 ## Contributors ✨

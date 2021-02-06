@@ -1,22 +1,22 @@
 ---
 id: javascript21
-title: 'Замыкание'
-sidebar_label: Замыкание
+title: Closure
+sidebar_label: Closure
 ---
 
 ![@serverSerrverlesskiy](/img/javascript/headers/20.jpg)
 
-Замыкание - это функция⚙️, у которой имеется доступ к внешней функции⚙️, даже после того, как работа внешней функции️ прекратилась. Замыкание нужно, чтобы обеспечить доступ внутренней функции к области видимости внешней функции️, но при этом закрыть доступ из внешнего окружения к переменным внутренней функции⚙️.
+A closure is a function⚙️ that has access to an external function⚙️ even after the external function️ has terminated. A closure is needed to provide an internal function with access to the scope of an external function️, but at the same time close access from the external environment to the variables of the internal function⚙️.
 
 ![Snake](https://media.giphy.com/media/3oFzmdjqH15YebLQ52/giphy.gif)
 
-Требования для создания🏗️ замыкания:
+Requirements for creating a closure:
 
-1. Внешняя функция, которая вызывается в коде.
-2. Во внешней функции находится внутренняя функция.
-3. В качестве результата внешняя функция возвращает внутреннюю.
+1. An external function that is called in the code.
+2. The outer function contains the inner function.
+3. As a result, the outer function returns the inner one.
 
-Рассмотрим создание🏗️ замыкания на примере:
+Let's consider creating a closure using an example:
 
 ```jsx live
 function learnJavaScript() {
@@ -32,22 +32,22 @@ function learnJavaScript() {
 }
 ```
 
-1. В примере мы создали внешнюю функцию `getFruit`;
-2. Внутри `getFruit` создали внутреннюю функцию `show`.
-3. В качестве результата функция `getFruit` выдаёт функцию `show`.
-4. Далее в коде мы присвоили результат функции `getFruit` переменной `showFruit`.
-5. Т.к. результат работы `getFruit` является функцией, то `showFruit` становится не переменной🔔 , а функцией.
-6. Результатом всей конструкции стала переменная🔔 `fruit` находящаяся внутри функции `getFruit`, она стала замкнутой. Теперь мы можем только узнать значение этой переменной🔔 , изменить её нельзя.
+1. In the example, we have created an external function `getFruit`;
+2. Inside `getFruit` created an internal function `show`.
+3. The getFruit function returns the show function as a result.
+4. Further in the code, we assigned the result of the `getFruit` function to the variable `showFruit`.
+5. Because the result of `getFruit` is a function, then `showFruit` becomes not a variable🔔, but a function.
+6. The result of the whole construction is the variable `fruit`, which is inside the function `getFruit`, it became closed. Now we can only find out the value of this variable🔔, we cannot change it.
 
-## Примеры
+## Examples of
 
 ![Math](https://media.giphy.com/media/xT1Ra5h24Eliux3UVq/giphy.gif)
 
-Рассмотрим больше примеров для понимания.
+Let's look at more examples for understanding.
 
-### Счётчик
+### Counter
 
-Счётчик, самый простой пример, на котором можно рассмотреть работу замыкания.
+A counter is the simplest example to consider how a closure works.
 
 <!-- ![Counter](https://media.giphy.com/media/QSNvClMu5zWJW/giphy.gif) -->
 
@@ -64,11 +64,11 @@ function learnJavaScript() {
 }
 ```
 
-### Улучшенный счётчик
+### Improved counter
 
 ![Counter](https://media.giphy.com/media/3o6Zt6fzS6qEbLhKWQ/giphy.gif)
 
-В качестве результата у нас будет не одна функция⚙️, а сразу несколько.
+As a result, we will have not one function⚙️, but several at once.
 
 ```jsx live
 function learnJavaScipt() {
@@ -97,7 +97,7 @@ function learnJavaScipt() {
 }
 ```
 
-### Замыкание в цикле
+### Closure in a loop
 
 ![circle](https://media.giphy.com/media/u5s2ezDicmyuA/giphy.gif)
 
@@ -113,7 +113,7 @@ function learnJavaScript() {
 }
 ```
 
-### Запоминаем фразу
+### Remember the phrase
 
 ![l](https://media.giphy.com/media/l4pTfqyI6TCjUW4Yo/giphy.gif)
 
@@ -130,15 +130,17 @@ function learnJavaScript() {
 }
 ```
 
-## Итого
+## Total
 
-Замыкания — одна из важнейших фундаментальных концепций JavaScript, её должен понимать каждый JS-разработчик. Понимание 💡 замыканий — это одна из ступеней пути к написанию 🖊️ эффективных и качественных приложений.
+Closures are one of the most important fundamental JavaScript concepts that every JS developer should understand. Understanding closures is one stepping stone to writing efficient, high-quality applications.
 
-## Проблемы?
+## Problems?
 
-Пишите в телеграмм [чат](https://t.me/jscampapp), а также подписывайтесь на наши [новости](https://t.me/javascriptapp).
+![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
 
-## Вопросы
+Channel in [Discord](https://discord.gg/6GDAfXn) after paying on [Patreon](https://www.patreon.com/javascriptcamp).
+
+## Questions:
 
 ![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
 
@@ -159,11 +161,11 @@ function learnJavaScript() {
 2. Она доступна
 3. Переменную можно только просмотреть
 
-Для того чтобы понять, на сколько вы усвоили этот урок, пройдите тест в [мобильном приложении](http://onelink.to/njhc95) нашей школы по этой теме.
+In order to understand how much you learned this lesson, take the test on the [mobile application](http://onelink.to/njhc95) of our school on this topic.
 
 ![Sumerian school](/img/app.png)
 
-## Ссылки
+## Links
 
 1. [Learn JavaScript](https://learn.javascript.ru/closures)
 2. [MDN Web Docs](https://developer.mozilla.org/ru/docs/Web/JavaScript/Closures)

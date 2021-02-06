@@ -1,129 +1,127 @@
 ---
 id: javascript02
-title: Комментарии
-sidebar_label: Комментарии
+title: Comments
+sidebar_label: Comments
 ---
 
 import YouTube from 'react-youtube'
 
 ![@serverSerrverlesskiy](/img/javascript/headers/02.jpg)
 
-## Что такое комментарии?
+## What are comments?
 
-В JavaScript есть несколько способов указать комментарии в коде 📟
+JavaScript has several ways to specify comments in code 📟
 
-Порой при написании 🖊️ кода вам необходимо будет снабдить его пояснениями, предназначенными только для людей 👨 , а не для компьютера. Возможно, это будет некое послание к себе из прошлого (к Будущему Мне!) по поводу той или иной вещи в программном коде. А может, это будет просто указание, что запустить нужно лишь такую-то часть кода, а прочее надлежит опустить. Словом, в любом подобном случае вам необходимо будет прибегнуть к помощи комментариев.
-Комментарии 🗣️ используются для добавления ➕ подсказок, заметок 🔖 , предложений или предупреждений. Они могут упростить чтение и понимание 💡 кода. Также они могут быть использованы для предотвращения 🛑 выполнения кода (этот приём практикуется при отладке кода).
+Sometimes, when writing 🖊️ the code, you will need to provide explanations that are intended only for humans а and not for the computer. Perhaps it will be some kind of message to yourself from the past (to the Future Me!) About this or that thing in the program code. Or maybe it will just be an indication that you need to run only such and such a part of the code, and the rest should be omitted. In short, in any such case, you will need to resort to the help of comments.
+Comments 🗣️ are used to add ➕ hints, notes 🔖, suggestions or warnings. They can make the code easier to read and understand. They can also be used to prevent 🛑 code execution (this is a common practice when debugging code).
 
-В JavaScript есть несколько способов указать комментарии 🗣️ в коде.
+JavaScript has several ways to specify comments 🗣️ in code.
 
-## Видео
+<!-- ## Video
 
-<YouTube videoId="zCvKMw5QHRw" />
+<YouTube videoId="zCvKMw5QHRw" /> -->
 
-## Однострочный комментарий
+## Single line comment
 
 ![Slash](https://media.giphy.com/media/bKXMS0NjXoyaY/giphy.gif)
 
-Первый 1️⃣ способ `// комментарий` 🗣️ в этом случае весь текст 📜 в строке после двойного слэша будет комментарием 🗣️ . Когда интерпретатор видит два 2️⃣ слэша подряд `//`, он сразу понимает, что всё, что идёт далее до конца строки, можно смело проигнорировать. Пока не обращайте внимание на синтаксис 📖 кода, с ним мы детально познакомимся чуть позже.
+The first 1️⃣ way is `// comment` 🗣️ in this case all text 📜 in the line after the double slash will be a comment 🗣️. When the interpreter sees two 2️⃣ slashes in a row `//`, it immediately understands that everything that goes further to the end of the line can be safely ignored. For now, ignore the syntax 📖 of the code, we will get to know it in detail a little later.
 
 ```jsx live
 function learnJavaScript() {
-  // Это комментарий в строке
+  // This is a comment on the line
   var hello = 'Hello world!!!'
 
   return hello
 }
 ```
 
-## Многострочный комментарий
+## Multi-line comment
 
 ![Coments](https://media.giphy.com/media/UevalSWg5twQeqpc8Q/giphy.gif)
 
-Второй 2️⃣ способ - это `/* */`, такой способ более гибок, чем первый 1️⃣ . Как только интерпретатор видит `/*`, он думает: "Ага, значит, пока я не увижу `*/`, то могу ни на что здесь не обращать никакого внимания!"
-Например, вы можете использовать его в одной 1️⃣ строке 👇 :
+The second 2️⃣ way is `/ * * /`, which is more flexible than the first 1️⃣. As soon as the interpreter sees `/ *`, it thinks: "Yeah, so until I see`* /`, I can not pay any attention to anything here!"
+For example, you can use it in one 1️⃣ line 👇:
 
 ```jsx live
 function learnJavaScript() {
-  /* Это однострочный комментарий */
+  /* This is a one-line comment */
   var hello = 'Hello world!!!'
 
   return hello
 }
 ```
 
-Либо вы можете сделать многострочный комментарий 🗣️ , как показано здесь 👇 :
+Alternatively, you can make a multi-line comment 🗣️ as shown here 👇:
 
 ```jsx live
 function learnJavaScript() {
-  /*Этот комментарий располагается на нескольких линиях. 
-     Обратите внимание, что вам не нужно обрывать комментарий, пока вы его не закончите*/
+  /* This comment spans multiple lines.
+      Please note that you do not need to terminate the comment until you have finished */
   var hello = 'Hello world!!!'
-  /* Напишите здесь свой комментарий */
+  /* Write your comment here */
   return hello
 }
 ```
 
-## Комментарий посреди кода
+## Comment in the middle of the code
 
 ![Among](https://media.giphy.com/media/fnjIiBNo38IHS/giphy.gif)
 
-Также, если пожелаете, то вы можете использовать такое комментирование 🗣️ посреди строки кода. Хотя это может ухудшить читабельность кода👇 :
+Also, if you wish, you can use this commenting 🗣️ in the middle of a line of code. Although this may impair the readability of the code👇:
 
 ```jsx live
 function learnJavaScript() {
   var x = ''
-  var hello = 'Hello ' + x /* вставьте значение x */ + '!'
+  var hello = 'Hello ' + x /* insert the value x */ + '!'
 
   return hello
 }
 ```
 
-С комментированием кода все и прозвучал звонок на перемену🔔 .
+With the commenting on the code, that's all and the call for a break sounded.
 
 ![Comments](https://media.giphy.com/media/SvuRLwWT0EoeErwPvB/giphy.gif)
 
-## Проблемы?
+## Problems?
 
 ![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
 
-Пишите в телеграмм [чат](https://t.me/jscampapp), а также подписывайтесь на наши [новости](https://t.me/javascriptapp).
+Channel in [Discord](https://discord.gg/6GDAfXn) after paying on [Patreon](https://www.patreon.com/javascriptcamp).
 
-Для V.I.P персон секретный канал в [Discord](https://discord.gg/6GDAfXn) после оплаты на [Patreon](https://www.patreon.com/javascriptcamp).
-
-## Вопросы:
+## Questions:
 
 ![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
 
-Для кого предназначены комментарии?
+Who are the comments for?
 
-1. Человек
-2. Консоль
-3. Интерпретатор JavaScript
+1. person
+2. Console
+3. JavaScript interpreter
 
-Для чего не используются комментарии?
+What are comments not used for?
 
-1. Добавление подсказок, заметок, предложений
-2. Как часть программного кода
-3. Для предотвращения выполнения кода
+1. Adding tips, notes, suggestions
+2. As part of the program code
+3. To prevent code execution
 
-Какого из способов указания комментария в коде JavaScript не существует?
+Which way of specifying a comment in JavaScript code does not exist?
 
-1. `(' ')`
+1. `('')`
 2. `//`
-3. `/* */`
+3. `/ * * /`
 
-Как отключить любое количество строк кода?
+How do I disable any number of lines of code?
 
-1. Написать комментарий посреди кода
-2. Обернуть код в комментарий
-3. Использовать команду `console.log`
+1. Write a comment in the middle of the code
+2. Wrap the code in a comment
+3. Use the command `console.log`
 
-Для того чтобы понять, на сколько вы усвоили этот урок, пройдите тест в [мобильном приложении](http://onelink.to/njhc95) нашей школы по этой теме.
+In order to understand how much you learned this lesson, take a test in our school [mobile application] (http://onelink.to/njhc95) on this topic.
 
 ![Sumerian school](/img/app.png)
 
-## Ссылки:
+## Links
 
 1. [MDN web docs](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Lexical_grammar)
 2. [Код для подростков: прекрасное руководство по программированию для начинающих, том 1: Javascript - Jeremy Moritz ](https://www.amazon.com/Code-Teens-Beginners-Programming-Javascript-ebook/dp/B07FCTLVPC)

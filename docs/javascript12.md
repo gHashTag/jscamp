@@ -1,115 +1,115 @@
 ---
 id: javascript12
-title: Блочная область видимости
-sidebar_label: Блочная область видимости
+title: Block Scope
+sidebar_label: Block Scope
 ---
 
 ![@serverSerrverlesskiy](/img/javascript/headers/12.jpg)
 
-Область видимости (англ. Scope) - часть программы, в пределах которой переменная доступна для использования. <!--Для переменной, областью видимости будет та часть программы в которой она "видна" и может быть использована программистом.--> При создании🏗️ `.js` файла мы создаём🏗️ область видимости целого файла, для создания🏗️ внутренней области видимости, нужно объявить🗣️ её с помощью фигурных скобок `{ ... }`.
+Scope is a part of a program within which a variable is available for use. When creating🏗️ `.js` file, we create🏗️ the scope of the whole file to create🏗️ the internal scope , you must declare it with curly braces `{...}`.
 
 ![file](https://media.giphy.com/media/3o6Ztk7NosfLVRqcpy/giphy.gif)
 
 ```jsx
-// Первая область видимости
+// First scope
 let fruit = 'Banana'
 {
-  // Вторая область видимости
+  // Second scope
   let fruit = 'Apple'
   {
-    // Третья область видимости
+    // Third scope
     let fruit = 'Lime'
   }
 }
 ```
 
-В этом примере мы создали🏗️ три переменные в разных областях видимости, в которых находится своя версия переменной `fruit`, поэтому ошибки🙅‍♂️ не возникают, но если попытаться в одной области видимости создать🏗️ две переменные с одним именем, то возникнет ошибка🙅‍♂️.
+In this example, we have created🏗️ three variables in different scopes, which have their own version of the `fruit` variable, so no errors🙅‍♂️ occur, but if you try to create🏗️ two variables with the same name in the same scope, an error will occur🙅 ‍♂️.
 
 ```jsx
-// Первая область видимости
+// First scope
 let fruit = 'Banana'
 {
-  // Вторая область видимости
+  // Second scope
   let fruit = 'Apple'
-  let fruit = 'Lime' // Здесь возникнет ошибка
+  let fruit = 'Lime' // An error will occur here
 }
 ```
 
-При создании🏗️ различных конструкций вы также создаёте🏗️ и область видимости этой конструкции, так как используете блок из фигурных скобок `{ ... }`.
+When creating🏗️ various constructs, you also create a scope for that construct, since you use a block of curly braces `{...}`.
 
 ```jsx
 if (true) {
-    // Область видимости условного оператора
+  // Scope of the conditional operator
 }
 
-for (let i = 0; i <> 5; i++) {
-    // Область видимости цикла
+for (let i = 0; i > 5; i++) {
+  // Scope of the cycle
 }
 
 function test() {
-    // Область видимости функции
+  // Function scope
 }
 ```
 
-В этих примерах у каждой конструкции своя область видимости.
+In these examples, each construct has its own scope.
 
-## Глобальная область видимости
+## Global scope
 
 ![Global](https://media.giphy.com/media/l0MYPsBLOYyFqSDte/giphy.gif)
 
-Говоря глобальная область видимости, мы подразумеваем, что все остальные области видимости являются дочерними по отношению к этой. В глобальной области видимости находятся переменные, объявленные🗣️ вне всех функций⚙️ и блоков.
+When we say global scope, we mean that all other scopes are children of this one. The global scope contains variables that are declared outside all functions and blocks.
 
 ```jsx
-// Глобальная область видимости
+// Global scope
 let fruit = 'Banana'
 ```
 
-Переменная 🔔 созданная в глобальной области видимости называется `глобальной переменной` 🔔 . Глобальную переменную 🔔 можно использовать во всех дочерних областях видимости.
+A variable 🔔 created in the global scope is called a `global variable` 🔔. The global variable 🔔 can be used in all child scopes.
 
 ```jsx live
 function learnFavaScript() {
-  // Переменная fruit является глобальной
+  // The variable fruit is global
   let fruit = 'Banana'
   function showFruit() {
-    // Поэтому мы можем использовать её внутри функции
+    // Therefore, we can use it inside a function
     return fruit
   }
   return showFruit()
 }
 ```
 
-## Локальная область видимости
+## Local scope
 
 ![Local](https://media.giphy.com/media/VFwRCi6WKBUk08fliV/giphy.gif)
 
-В локальной области видимости находятся переменные, объявленные🗣️ в определенной части кода📟 . К примеру переменные, созданные🏗️ внутри цикла, будут локальными.
+The local scope contains variables that are declared🗣️ in a specific part of the code📟. For example, variables created inside a loop will be local.
 
 ```jsx
 for (let i = 0; i > 5; i++) {
-  // Переменная i является локальной
+  // Variable i is local
 }
 ```
 
-Использовать локальные переменные 🔔 можно только внутри блока, в котором они были объявлены.
+Local variables 🔔 can only be used within the block in which they were declared.
 
 ```jsx
 function learnFavaScript() {
   function showFruit() {
-    // Переменная fruit является локальной
+    // The variable fruit is local
     let fruit = 'Banana'
   }
-  // Поэтому мы не можем использовать её вне функции
+  // Therefore, we cannot use it outside the function.
   return fruit
 }
 
 // ReferenceError: fruit is not defined
 ```
 
-## Примеры
+## Examples
 
 ![Math](https://media.giphy.com/media/xT1Ra5h24Eliux3UVq/giphy.gif)
 
-Используем две переменные 🔔 с одинаковым именем в разных областях видимости. Функция `otherFruit()` возвращает переменную 🔔 `fruit` из той области видимости, в которой она инициализирована, как `Lime`
+We use two variables 🔔 with the same name in different scopes. The `otherFruit()` function returns a 🔔 `fruit` variable from the scope in which it is initialized as` Lime`
 
 ```jsx live
 function learnJavaScript() {
@@ -122,7 +122,7 @@ function learnJavaScript() {
 }
 ```
 
-Если мы уберём `let` из функции `otherFruit()`, то вместо создания переменной 🔔 мы её перезаписываем 🖊️.
+If we remove `let` from the`otherFruit()`function, then instead of creating a variable 🔔 we overwrite it 🖊️.
 
 ```jsx live
 function learnJavaScript() {
@@ -135,7 +135,7 @@ function learnJavaScript() {
 }
 ```
 
-Что, если мы попытаемся вызвать локальную переменную 🔔 в родительской области видимости? Возникает ошибка, из-за того, что мы пытаемся в глобальной области видимости вызвать переменную 🔔 , которую мы не создавали.
+What if we try to call a local variable 🔔 in the parent scope? An error occurs due to the fact that we are trying in the global scope to call a variable 🔔, which we did not create.
 
 ```javascript
 function learnJavaScript() {
@@ -151,13 +151,13 @@ function learnJavaScript() {
 
 ![Primer](https://media.giphy.com/media/M33UV4NDvkTHa/giphy.gif)
 
-## Запрет на var
+## Denying var
 
 ![eye](https://media.giphy.com/media/PKl9JTqnoiKtO/giphy.gif)
 
-В статье [Переменка](https://react-native-village.github.io/docs/javascript03) мы вам сказали, что использовать `var` не будем, связано это как раз с областью видимости.
+In the article [Change](https://react-native-village.github.io/docs/javascript03) we told you that we will not use `var`, this is related to the scope.
 
-1. Если в одной области видимости вы создадите две переменные 🔔 с одним именем с помощью ключевого слова `let` или `const`, то интерпретатор нас предупреждает об этом, выводя ошибку.
+1. If in the same scope you create two variables 🔔 with the same name using the keyword `let` or `const`, the interpreter warns us about this by displaying an error.
 
 ```jsx
 function learnJavaScript() {
@@ -168,7 +168,7 @@ function learnJavaScript() {
 }
 ```
 
-Но, если с помощью `var` вы создадите переменные 🔔 с одинаковым именем, то он её переназначит.
+But, if you create variables with the same name with `var`, it will reassign it.
 
 ```jsx live
 function learnJavaScript() {
@@ -178,9 +178,9 @@ function learnJavaScript() {
 }
 ```
 
-Ошибки🙅‍♂️ не возникает, т.к. `var` перезаписал переменную `fruit`
+Error🙅‍♂️ does not occur, because `var` has overwritten the variable` fruit`
 
-2. Создав глобальную переменную 🔔 с помощью `var` мы можем изменить её из локальной области видимости, создав ещё одну переменную 🔔 с таким же именем с помощью `var`. Область действия `var` ограничивается либо функцией, либо скриптом.
+2. Having created a global variable 🔔 with `var`, we can change it from the local scope by creating another variable 🔔 with the same name with `var`. The scope of `var` is limited to either a function or a script.
 
 ```jsx live
 function learnJavaScript() {
@@ -192,7 +192,7 @@ function learnJavaScript() {
 }
 ```
 
-3. Переменные 🔔 созданные с `var` считаются объявленными с самого начала запуска скрипта, вне зависимости от того, в каком месте находится объявление.
+3. Variables 🔔 created with `var` are considered declared from the very beginning of script execution, regardless of where the declaration is located.
 
 ```jsx live
 function learnJavaScript() {
@@ -202,11 +202,11 @@ function learnJavaScript() {
 }
 ```
 
-4. В JavaScript до ES6 блочных областей видимости не было. Т.е. любая переменная созданная с помощью ключевого слова `var` внутри блока будет видима и за его пределами.
+4. JavaScript did not have block scopes before ES6. Those. any variable created with the `var` keyword inside a block will be visible outside of it.
 
 ```javascript
 if (true) {
-  var fruit = 'Apple' // переменная будет видна за пределами данного блока
+  var fruit = 'Apple' // the variable will be visible outside the given block
 }
 console.log(fruit) // "Apple"
 ```
@@ -215,44 +215,46 @@ console.log(fruit) // "Apple"
 
 ```javascript
 if (true) {
-  let fruit = 'Apple' // переменная не будет видна за пределами данного блока
+  let fruit = 'Apple' // the variable will not be visible outside the given block
 }
 console.log(fruit) // "Apple"
 ```
 
 ![javascript](/img/javascript/29.jpg)
 
-Из-за перечисленных причин, разработчики отказались от использования `var`
+Due to the listed reasons, the developers decided not to use `var`
 
-## Проблемы?
+## Problems?
 
-Пишите в телеграмм [чат](https://t.me/jscampapp), а также подписывайтесь на наши [новости](https://t.me/javascriptapp).
+![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
 
-## Вопросы
+Channel in [Discord](https://discord.gg/6GDAfXn) after paying on [Patreon](https://www.patreon.com/javascriptcamp).
+
+## Questions:
 
 ![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
 
-Когда мы создаём самую первую область видимости?
+When do we create the very first scope?
 
-1. При создании цикла
-2. При создании файла
-3. При создании блока
+1. When creating a cycle
+2. When creating a file
+3. When creating a block
 
-При создании условного оператора создаётся ли новая область видимости?
+When creating a conditional statement, is a new scope created?
 
-1. Да
-2. Нет
+1. Yes
+2. No
 
-Где создаётся локальная переменная?
+Where is the local variable created?
 
-1. В определенной части кода
-2. Вне всех блоков
+1. In a certain part of the code
+2. Outside of all blocks
 
-Для того чтобы понять насколько вы усвоили этот урок пройдите тест в [мобильном приложении](http://onelink.to/njhc95) в нашей школы по этой теме.
+In order to understand how much you learned this lesson, take the test on the [mobile application](http://onelink.to/njhc95) of our school on this topic.
 
 ![Sumerian school](/img/app.png)
 
-## Ссылки
+## Links
 
 1. [JavaScript Scope](https://css-tricks.com/javascript-scope-closures/)
 2. [Learn JavaScript](https://learn.javascript.ru/closure)

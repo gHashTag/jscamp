@@ -1,50 +1,50 @@
 ---
 id: javascript19
-title: Методы перебора массива (map, filter, reduce)
-sidebar_label: Методы перебора массива (map, filter, reduce)
+title: Array iteration methods(map, filter, reduce)
+sidebar_label: map, filter, reduce
 ---
 
 ![@serverSerrverlesskiy](/img/javascript/headers/22.jpg)
 
-Язык👅 JavaScript оказывает явное предпочтение массивам перед другими структурами данных. У них много удобных специфических фишек, например, целый набор перебирающих методов: `map`, `filter`, `reduce`.
+The JavaScript language has a clear preference for arrays over other data structures. They have a lot of convenient specific tricks, for example, a whole set of iterating methods: `map`,` filter`, `reduce`.
 
 ## map
 
 ![Create](https://media.giphy.com/media/ffd0F6WNcRJMQ/giphy.gif)
 
-Метод `map()` создаёт🏗️ новый🆕 массив с результатом вызова указанной функции⚙️ для каждого элемента массива.
+The `map ()` method creates🏗️ a new с array with the result of calling the specified function⚙️ for each element of the array.
 
-### Синтаксис
+### Syntax
 
 ![Book](https://media.giphy.com/media/s6OiiampNcye4/giphy.gif)
 
 ```javascript
 let new_array = arr.map(function callback( currentValue[, index[, array]]) {
-    // Возвращает элемент для new_array
+    // Returns the item for new_array
 }[, thisArg])
 ```
 
-Метод `map` вызывает переданную функцию⚙️ `callback` один раз для каждого элемента, в порядке их появления и конструирует 🆕 новый массив из результатов её вызова. Функция⚙️ `callback` вызывается только для индексов массива, имеющих присвоенные значения, включая `undefined`. Она не вызывается для пропущенных элементов массива (то есть для индексов, которые никогда не были заданы, были удалены или им никогда не было присвоено значение).
+The `map` method calls the passed `callback` function once for each element, in the order of their occurrence, and constructs a new array from the results of its call. The `callback` function is called only for array indices that have assigned values, including `undefined`. It is not called for missing array elements (that is, for indices that were never specified, deleted, or never assigned a value).
 
-Функция⚙️ `callback` вызывается с тремя аргументами:
+The function⚙️ `callback` is called with three arguments:
 
-- значением элемента,
-- индексом элемента
-- и массивом, по которому осуществляется проход.
+- the value of the element,
+- element index
+- and the array through which the passage is carried out.
 
-Если в метод `map` был передан параметр `thisArg`, при вызове `callback` он будет использоваться в качестве значения `this`. В противном случае в качестве значения `this` будет использоваться значение `undefined`. В конечном итоге значение `this`, наблюдаемое из функции⚙️ `callback`, определяется согласно обычным правилам определения `this`, видимого из функции⚙️.
+If the `thisArg` parameter was passed to the `map` method, it will be used as the `this` value when `callback` is called. Otherwise, the `this` value will be `undefined`. Ultimately, the value of `this` as seen from the `callback` function is determined according to the usual rules for defining `this` as seen from a function.
 
-Метод `map` не изменяет массив, для которого он был вызван (хотя функция⚙️ может это делать!).
+The `map` method does not modify the array for which it was called (although the function⚙️ can do that!).
 
-Диапазон элементов, обрабатываемых методом `map`, устанавливается до первого вызова функции⚙️ `callback`. Элементы, добавленные в массив после начала выполнения метода `map`, не будут посещены функцией⚙️ `callback`. Если существующие элементы массива изменяются функцией⚙️ `callback`, их значения, переданные в функцию⚙️, будут значениями на тот момент времени, когда метод `map` посетит их. Удалённые элементы посещены не будут.
+The range of elements processed by the `map` method is set before the first call to the `callback` function. Items added to the array after the start of the `map` method will not be visited by the `callback` function. If the existing elements of the array are modified by the `callback` function, their values ​​passed to the function will be the values ​​at the time when the `map` method visits them. Deleted items will not be visited.
 
-### Примеры:
+### Examples:
 
 ![Math](https://media.giphy.com/media/xT1Ra5h24Eliux3UVq/giphy.gif)
 
-#### простой пример
+#### simple example
 
-У вас есть массив со множеством объектов, каждый из которых представляет отдельного человека👨. Тут может быть очень много данных: имя, возраст, цвет волос и любимый персонаж из кинематографа, но в данный момент всё это не требуется – вы хотите получить только массив паспортных номеров этих людей, чтобы выдать им всем пропуска на конференцию.
+You have an array with many objects, each representing a different person👨. There can be a lot of data here: name, age, hair color and favorite character from the cinema, but at the moment all this is not required - you only want to get an array of passport numbers of these people in order to give them all conference passes.
 
 ```jsx live
 function learnJavaScript() {
@@ -61,7 +61,7 @@ function learnJavaScript() {
 }
 ```
 
-#### В определенных случаях вам может понадобится отобразить массив объектов с выбранными ключами в виде строки 👇 :
+#### In certain cases, you may need to display an array of objects with the selected keys as a string 👇:
 
 ```jsx live
 function learnJavaScript() {
@@ -78,11 +78,11 @@ function learnJavaScript() {
 }
 ```
 
-#### Создание массива значений Фаренгейта из массива значений Цельсия:
+#### Creating an array of Fahrenheit values from an array of Celsius values:
 
 ![Thermometer](https://media.giphy.com/media/W23dJLsAW5knUU27Fv/giphy.gif)
 
-Пример с обработкой каждого элемента массива заданной формулой 👇 :
+An example with processing each element of an array with a given formula 👇:
 
 ```jsx live
 function learnJavaScript() {
@@ -107,7 +107,7 @@ function learnJavaScript() {
 }
 ``` -->
 
-#### Отображение массива чисел с использованием функции, содержащей аргумент 👇 :
+#### Displaying an array of numbers using a function that takes an argument 👇:
 
 ```jsx live
 function learnJavaScript() {
@@ -155,11 +155,11 @@ function learnJavaScript() {
 
 ![filter](https://media.giphy.com/media/xT5LMGupUKCHb7DnFu/giphy.gif)
 
-Метод `filter()` создаёт 🆕 новый массив со всеми элементами, прошедшими проверку, задаваемую в передаваемой функции⚙️.
+The `filter ()` method creates 🆕 a new array with all the elements that have passed the check specified in the passed function⚙️.
 
-Результатом работы `filter` всегда является массив. Если функция⚙️ для элемента возвращает🔄 `true` ✅ (или любое "правдивое" значение), этот элемент попадает в результат, иначе – не попадает.
+The result of a filter is always an array. If a function⚙️ for an element returns🔄 `true` ✅ (or any" true "value), this element is included in the result, otherwise it is not included.
 
-### Синтаксис
+### Syntax
 
 ![write](https://media.giphy.com/media/6Do13TV1OfOF2/giphy.gif)
 
@@ -167,31 +167,31 @@ function learnJavaScript() {
 let newArray = arr.filter(function callback(element[, index, [array]])[, thisArg])
 ```
 
-### Описание
+### Description
 
 ![m](https://media.giphy.com/media/DQaeCdCqhHWx3n4dvH/giphy.gif)
 
-Метод `filter()` вызывает переданную функцию⚙️ `callback` один раз для каждого элемента, присутствующего в массиве, и конструирует новый массив со всеми значениями, для которых функция⚙️ `callback` вернула `true` ✅ или значение, становящееся `true` ✅ при приведении в `boolean`. Функция⚙️ `callback` вызывается только для индексов массива, имеющих присвоенные значения; она не вызывается для индексов, которые были удалены или им значения никогда не присваивались. Элементы массива, не прошедшие проверку функцией⚙️ `callback`, просто пропускаются и не включаются в 🆕 новый массив.
+The `filter()` method calls the passed `callback` function once for each element present in the array and constructs a new array with all values ​​for which the `callback` function returned `true` or a value that becomes `true` ✅ when cast to `boolean`. The `callback` function is called only for array indices that have assigned values; it is not called for indexes that have been dropped or have never been assigned values. Array elements that have not been checked by the `callback` function are simply skipped and not included in the 🆕 new array.
 
-Функция⚙️ `callback` вызывается с тремя аргументами:
+The function⚙️ `callback` is called with three arguments:
 
-- значение элемента;
-- индекс элемента;
-- массив, по которому осуществляется проход.
+- the value of the element;
+- element index;
+- the array through which the passage is carried out.
 
-Если в метод `filter()` был передан параметр `thisArg`, при вызове функции⚙️ он будет использоваться в качестве значения `this`. В противном случае в качестве значения `this` будет использоваться значение `undefined`. В конечном итоге значение `this`, наблюдаемое из функции⚙️, определяется согласно обычным правилам определения `this`, видимого из функции⚙️.
+If the `thisArg` parameter was passed to the `filter()` method, it will be used as the `this` value when the function is called. Otherwise, the `this` value will be `undefined`. Ultimately, the value of `this` as seen from a function⚙️ is determined according to the usual rules for defining `this` as seen from a function⚙️.
 
-Метод `filter()` не изменяет массив, для которого он был вызван.
+The `filter()` method does not modify the array on which it was called.
 
-Диапазон элементов, обрабатываемых методом `filter()`, устанавливается до первого вызова функции⚙️ `callback`. Элементы, добавленные в массив после начала выполнения метода `filter()`, не будут посещены функцией⚙️ `callback`. Если существующие элементы массива изменятся, значения, переданные в функцию⚙️ `callback`, будут значениями на тот момент времени, когда метод `filter()` посетит их. Удалённые элементы посещены не будут.
+The range of elements processed by the `filter()` method is set before the first call to the `callback` function. Items added to the array after the start of the `filter()` method will not be visited by the `callback` function. If the existing array elements change, the values ​​passed to the `callback` function will be the values ​​at the time when the`filter()`method visits them. Deleted items will not be visited.
 
-### Пример
+### Example
 
 ![math](https://media.giphy.com/media/3orieN7HEHI0tw8x5C/giphy.gif)
 
-#### Отфильтровывание всех маленьких значений
+#### Filtering out all small values
 
-Следующий пример использует `filter()` для создания🏗️ отфильтрованного массива, все элементы которого больше или равны `value`, а все меньшие `value` удалены.
+The following example uses `filter()` to create a filtered array with all elements greater than or equal to `value`, and all elements less than `value` removed.
 
 ```jsx live
 function learnJavaScript() {
@@ -209,43 +209,43 @@ function learnJavaScript() {
 
 ![count](https://media.giphy.com/media/xUPGcqaVH1cDeKZTBS/giphy.gif)
 
-Метод `reduce` также запускается в контексте массива и вызывает функцию⚙️ для каждого элемента, но помимо этого, он аккумулирует результаты всех вызовов в одно значение. Этим поведением можно управлять.
+The reduce method also runs in the context of an array and calls a function⚙️ for each element, but it also accumulates the results of all calls into a single value. This behavior can be controlled.
 
-`reduce` предназначен не для того, чтобы изменять элементы коллекции, как `map`. Его задача – подсчитать "сумму" всех элементов тем или иным способом, и вернуть ее.
+reduce is not meant to modify the elements of a collection like map. Its task is to calculate the "sum" of all elements in one way or another, and return it.
 
-Результирующим значением может быть что угодно: число, строка, объект, массив – все зависит от задачи, которую решает JavaScript разработчик.
+The resulting value can be anything: a number, a string, an object, an array - it all depends on the problem that the JavaScript developer is solving.
 
-Метод `reduce` принимает 2 параметра:
+The reduce method takes 2 parameters:
 
-- функция, как и `map`, который будет вызван последовательно для каждого элемента коллекции;
-- начальное значение аккумулятора.
+- a function, like `map`, which will be called sequentially for each element of the collection;
+  is the initial value of the accumulator.
 
-В функции⚙️ тоже 2 аргумента:
+The function⚙️ also has 2 arguments:
 
-- первый – это накопленное значение (аккумулятор);
-- непосредственно элемент массива.
+- the first is the accumulated value (accumulator);
+- directly an element of the array.
 
-### Синтаксис
+### Syntax
 
 ```javascript
 array.reduce(function callback[, initialValue])
 ```
 
-### Описание
+### Description
 
 ![describe](https://media.giphy.com/media/3orieVr84udUl4wbQs/giphy.gif)
 
-Метод `reduce()` выполняет функцию⚙️ `callback` один раз для каждого элемента, присутствующего в массиве, за исключением пустот, принимая четыре аргумента: начальное значение (или значение от предыдущего вызова `callback`), значение текущего элемента, текущий индекс и массив, по которому происходит итерация.
+The reduce () method executes the callback function once for each element in the array, excluding voids, taking four arguments: the initial value (or the value from a previous callback), the value of the current element, the current index, and the array to iterate over.
 
-При первом вызове функции⚙️, параметры `accumulator` и `currentValue` могут принимать одно из двух значений. Если при вызове `reduce()` передан аргумент `initialValue`, то значение `accumulator` будет равным значению `initialValue`, а значение `currentValue` будет равным первому значению в массиве. Если аргумент `initialValue` не задан, то значение `accumulator` будет равным первому значению в массиве, а значение `currentValue` будет равным второму значению в массиве.
+The first time the function is called⚙️, the accumulator and currentValue parameters can take one of two values. If the `initialValue` argument is passed in the call to reduce (), then the value of `accumulator` will be equal to the value of `initialValue` and the value of `currentValue` will be equal to the first value in the array. If no initialValue is specified, accumulator will be equal to the first value in the array, and currentValue will be equal to the second value in the array.
 
-Если массив пустой и аргумент `initialValue` не указан, будет брошено исключение `TypeError`. Если массив состоит только из одного элемента (независимо от его положения в массиве) и аргумент `initialValue` не указан, или если аргумент `initialValue` указан, но массив пустой, то будет возвращено🔄 одно это значение, без вызова функции⚙️ `callback`.
+If the array is empty and no `initialValue` argument is specified, a `TypeError` exception will be thrown. If the array consists of only one element (regardless of its position in the array) and the `initialValue` argument is not specified, or if the `initialValue` argument is specified, but the array is empty, then this value will be returned, without calling the function⚙️ `callback` ...
 
-### Начальное значение аккумулятора
+### Initial battery value
 
 ![hatchng](https://media.giphy.com/media/xT1R9Qy80qNb8oQGGc/giphy.gif)
 
-Разберемся с начальным значением. В примере оно равно `0`, так как мы считаем численное значение – сумму возрастов. На месте нуля может быть любое другое число/строка (пустая или нет)/объект/массив – любое значение, с которого вы начинаете аккумуляцию. Для примера объединим имена всех друзей в одну строчку 👇 :
+Let's figure out the initial value. In the example, it is equal to `0`, since we are calculating the numerical value - the sum of the ages. In place of zero, there can be any other number / string (empty or not) / object / array - whatever value you start accumulating from. For example, let's combine the names of all friends in one line 👇:
 
 ```jsx live
 function learnJavaScript() {
@@ -264,13 +264,13 @@ function learnJavaScript() {
 }
 ```
 
-Здесь исходным значением послужила строка `"Friends:"`, к которой постепенно добавились имена всех друзей.
+Here, the initial value was the string `" Friends: "`, to which the names of all friends were gradually added.
 
-Если вы не указываете исходное значение явно, им неявно становится первый 1️⃣ элемент массива. В этом случае функция⚙️ для него уже не вызывается.
+If you do not specify the original value explicitly, the first 1️⃣ element of the array becomes implicitly. In this case, the function⚙️ for it is no longer called.
 
-### Пример
+### Example
 
-#### Суммирование всех значений в массиве:
+#### Sum all values in an array:
 
 ```jsx live
 function learnJavaScript() {
@@ -284,7 +284,7 @@ function learnJavaScript() {
 }
 ```
 
-И тоже самое в одну строчку кода:
+And the same thing in one line of code:
 
 ```jsx live
 function learnJavaScript() {
@@ -334,11 +334,11 @@ function learnJavaScript() {
 
 ![unity](https://media.giphy.com/media/jTf2Io0LtBXGZddOVE/giphy.gif)
 
-Программирование на JavaScript поддерживает удобный паттерн чейнинг (`chaining`) – объединение нескольких функций⚙️ в одну цепочку с последовательной передачей результата.
+JavaScript programming supports the convenient `chaining` pattern - combining multiple functions⚙️ into one chain with sequential transmission of the result.
 
-Все три разобранных метода вызываются в контексте массива, а два 2️⃣ из них еще и возвращают🔄 массив. Таким образом, их очень легко объединить.
+All three parsed methods are called in the context of an array, and two 2️⃣ of them also return an array. Thus, it is very easy to combine them.
 
-Например, посчитаем общий возраст всех мальчиков 👇 :
+For example, let's calculate the total age of all boys 👇:
 
 ```jsx live
 function learnJavaScript() {
@@ -357,7 +357,7 @@ function learnJavaScript() {
 }
 ```
 
-Или соберем номера паспортов девочек, чтобы купить им билеты на самолет до Лас-Вегаса 👇 :
+Or we can collect the girls' passport numbers to buy them plane tickets to Las Vegas 👇:
 
 ```jsx live
 function learnJavaScript() {
@@ -374,68 +374,70 @@ function learnJavaScript() {
 }
 ```
 
-## Заключение
+## Conclusion
 
-С использованием этих замечательных функций⚙️ код📟 стало читать удобнее. Итак, ниже приведен список статей, в которых более подробна рассмотрена эта тема.
+With these great features⚙️ the code📟 becomes easier to read. So, below is a list of articles that go into more detail on this topic.
 
-## Проблемы?
+## Problems?
 
-Пишите в телеграмм [чат](https://t.me/jscampapp), а также подписывайтесь на наши [новости](https://t.me/javascriptapp).
+![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
 
-## Вопросы:
+Channel in [Discord](https://discord.gg/6GDAfXn) after paying on [Patreon](https://www.patreon.com/javascriptcamp).
+
+## Questions:
 
 ![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
 
-Функция, вызываемая для каждого элемента массива?
+A function to be called for each element of an array?
 
 1. `currentValue`
 2. `array`
 3. `callback`
 
-Метод, который создаёт🏗️ новый массив с результатом вызова указанной функции для каждого элемента массива:
+A method that creates a new array with the result of calling the specified function for each element of the array:
 
 1. `map`
 2. `filter`
 3. `reduce`
 
-Результирующим значением метода `reduce` может выступать:
+The resulting value of the reduce method can be:
 
-1. Число
-2. Массив
-3. Что угодно
+1. Number
+2. Array
+3. Anything
 
-Суммирование всех значений в массиве достигается методом:
+Summing all values ​​in an array is achieved by the method:
 
 1. `map`
 2. `filter`
 3. `reduce`
 
-Необязательный параметр или значение, используемое в качестве `this` при вызове функции `callback`:
+Optional parameter or value used as `this` when calling the `callback` function:
 
 1. `array`
 2. `index`
 3. `thisArg`
 
-Метод, который создаёт🏗️ новый массив со всеми элементами, прошедшими проверку, задаваемую в передаваемой функции:
+A method that creates a new array with all the elements that passed the validation specified in the passed function:
 
 1. `map`
 2. `filter`
 3. `reduce`
 
-Объединение нескольких функций в одну цепочку с последовательной передачей результата:
+Combining several functions into one chain with sequential transfer of the result:
 
 1. unity
 2. chaining
 3. merger
 
-Для того чтобы понять, на сколько вы усвоили этот урок, пройдите тест в [мобильном приложении](http://onelink.to/njhc95) нашей школы по этой теме.
+In order to understand how much you learned this lesson, take the test on the [mobile application](http://onelink.to/njhc95) of our school on this topic.
 
 ![Sumerian school](/img/app.png)
 
-## Ссылки:
+## Links
 
-1. [Упрости свой JavaScript – используй map, reduce и filter](https://proglib.io/p/javascript-map-reduce-filter)
-2. [15 Полезных javascript примеров map(), reduce() и filter()](https://webdevblog.ru/15-poleznyh-javascript-primerov-map-reduce-i-filter)
+1. [Simplify your JavaScript - use map, reduce and filter](https://proglib.io/p/javascript-map-reduce-filter)
+2. [15 useful javascript examples of map, reduce and filter](https://webdevblog.ru/15-poleznyh-javascript-primerov-map-reduce-i-filter)
 3. [Array.prototype.map()](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
 4. [Array.prototype.filter()](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
 5. [Array.prototype.reduce()](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)

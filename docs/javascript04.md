@@ -1,38 +1,38 @@
 ---
 id: javascript04
-title: Типы данных
-sidebar_label: Типы данных
+title: Data types
+sidebar_label: Data types
 ---
 
 import YouTube from 'react-youtube'
 
 ![@serverSerrverlesskiy](/img/javascript/headers/04.jpg)
 
-## Динамическая типизация
+## Dynamic typing
 
-JavaScript является слабо типизированным или динамическим языком. Это значит, что вам не нужно определять тип переменной 🔔 заранее.
+JavaScript is a loosely typed or dynamic language. This means that you do not need to define the type of the variable 🔔 in advance.
 
 ![Dinamics](https://media.giphy.com/media/26uf759LlDftqZNVm/giphy.gif)
 
-Тип определится автоматически во время выполнения программы. Также это значит, что вы можете использовать одну переменную 🔔 для хранения 📦 данных различных типов 👇 :
+The type will be determined automatically during program execution. It also means that you can use one variable 🔔 to store 📦 different types of data 👇:
 
 ```jsx live
 function learnJavaScript() {
-  let foo = 42 // сейчас foo типа number
-  foo = 'bar' // а теперь foo типа string
+  let foo = 42 // now foo is of type number
+  foo = 'bar' //and now foo is of type string
   return typeof foo
 }
 ```
 
-## Видео
+<!-- ## Видео
 
-<YouTube videoId="1zXZCVbNbkQ" />
+<YouTube videoId="1zXZCVbNbkQ" /> -->
 
-## Типы данных
+## Data types
 
 ![Data types](https://media.giphy.com/media/NPXkCN2FutVO1Nt4P9/giphy.gif)
 
-Стандарт JavaScript определяет 9 типов данных. Познакомьтесь с каждым из них делая вывод в консоль и после я расскажу 🗣️ о каждом из них подробнее.
+The JavaScript standard defines 9 data types. Get to know each of them by outputting to the console and then I will tell you about each of them in more detail.
 
 ```javascript
 let one = { firstName: 'John', lastName: 'Smith' } // object
@@ -54,76 +54,76 @@ let eight // undefined
 let nine = Symbol() // symbol
 ```
 
-## Объекты
+## Objects
 
 ![cupboard](https://media.giphy.com/media/l2Sq0NFJlJC5Dqb7y/giphy.gif)
 
-В компьютерной терминологии, тип объект `object` — это значение в памяти, на которое возможно сослаться с помощью идентификатора. В JavaScript объект может расцениваться как набор свойств. Это как шкаф 🗄️ для хранения 📦 других типов данных.
+In computer terminology, an object is a value in memory that can be referenced by an identifier. In JavaScript, an object can be thought of as a collection of properties. It's like a closet for storing other types of data.
 
-## Функции
+## Functions
 
 ![Function](https://media.giphy.com/media/FuSJ5C7SSHlZCxjC6q/giphy.gif)
 
-Функции⚙️ `function` — это обычные объекты, имеющие дополнительную возможность быть вызванными для исполнения.
+Functions⚙️ `function` are ordinary objects that have the additional ability to be called for execution.
 
-## Примитивные значения
+## Primitive values
 
 ![Primitive](https://media.giphy.com/media/rBdWc61BPFVYc/giphy.gif)
 
-Все типы данных в JavaScript, кроме объектов, являются иммутабельными (значения не могут быть модифицированы, а только перезаписаны новым полным значением). Например, в отличии от языка👅 C, где строку можно посимвольно корректировать, в JavaScript строки пересоздаются🏗️ только полностью. Значения таких типов называются "примитивными значениями".
+All data types in JavaScript, except for objects, are immutable (values cannot be modified, only overwritten with a new full value). For example, unlike the C language, where a string can be corrected character by character, in JavaScript the strings are re-created only completely. Values of these types are called "primitive values".
 
-## Текстовые строки
+## Text strings
 
 ![text](https://media.giphy.com/media/26n6AaCcCajAyZx04/giphy.gif)
 
-В JavaScript для представления текстовых 📜 данных служит тип `string`.
+In JavaScript, the type `string` is used to represent text data.
 
-## Числа
+## Numbers
 
 ![Numbers](https://media.giphy.com/media/xT5LMMneIRG1UJquOI/giphy.gif)
 
-Числовой тип данных `number` представляет как целочисленные значения, так и числа с плавающей точкой.
+The numeric data type `number` represents both integer values and floating point numbers.
 
 ## BigInt
 
 ![giant](https://media.giphy.com/media/LZGipmRpX6uwE/giphy.gif)
 
-В JavaScript тип `number` не может содержать числа больше, чем (253-1) (т. е. 9007199254740991), или меньше, чем -(253-1) для отрицательных чисел. Это техническое ограничение вызвано их внутренним представлением.
+In JavaScript, the `number` type cannot contain numbers greater than (253-1) (i.e. 9007199254740991), or less than - (253-1) for negative numbers. This technical limitation is due to their internal representation.
 
-Для большинства случаев этого достаточно. Но иногда нам нужны действительно гигантские числа, например, в криптографии или при использовании метки времени ("timestamp") с микросекундами.
+For most cases, this is sufficient. But sometimes we need really gigantic numbers, like in cryptography or when using a "timestamp" with microseconds.
 
-Тип `bigInt` был добавлен в JavaScript, чтобы дать возможность работать с целыми числами произвольной длины.
+The `bigInt` type was added to JavaScript to allow for arbitrary length integers.
 
-## Булевый тип данных
+## Boolean data type
 
-Булевый тип `boolean` представляет логическую сущность и имеет два 2️⃣ значения: `true` ✅ (истина)
+The boolean type `boolean` represents a logical entity and has two 2️⃣ values: `true` ✅
 
 ![true](https://media.giphy.com/media/ap6wcjRyi8HoA/giphy.gif)
 
-и `false` ❎ (ложь).
+and `false` ❎
 
 ![False](https://media.giphy.com/media/HNOVuT5AvCK1fgvp1m/giphy.gif)
 
-Такой тип, как правило, используется для хранения 📦 значений да/нет: true ✅ значит «да, правильно», а false ❎ значит «нет, не правильно».
+This type is usually used to store 📦 yes / no values: true ✅ means “yes, right,” and false ❎ means “no, wrong”.
 
 ## Null
 
 ![Null](https://media.giphy.com/media/26hkhPJ5hmdD87HYA/giphy.gif)
 
-Этот тип данных имеет всего одно значение: `null`. Это значение, специально обозначенное как примитив, так как по поведению это в самом деле видимый примитив. Но при этом от `null` унаследованы все остальные Объекты, поэтому, несмотря на то, что `null` возвращает🔄 примитивное значение, его тип это объект.
-Например можно присвоить его значению по умолчанию.
+This data type has only one value: `null`. This value is specially designated as a primitive, since it is indeed a visible primitive in behavior. But at the same time, all other Objects are inherited from `null`, therefore, despite the fact that `null` returns a primitive value, its type is an object.
+For example, you can assign it to the default value.
 
 ## Undefined
 
 ![Unndefined](https://media.giphy.com/media/PkKzNQjwPy7GvxZbfe/giphy.gif)
 
-Переменная 🔔 , которой не было присвоено значение, будет иметь значение `undefined`.
+A variable 🔔 that has not been assigned a value will have the value `undefined`.
 
-### Отличия между null и undefined
+### Differences between null and undefined
 
 ![Spiderman](https://media.giphy.com/media/l36kU80xPf0ojG0Erg/giphy.gif)
 
-`null` является определенным значением отсутствия объекта, тогда как `undefined` обозначает неопределенность. Например вы можете это проверить в консоле браузера:
+`null` is the definite value of the absence of an object, while` undefined` denotes ambiguity. For example, you can check this in the browser console:
 
 ```javascript
 let TestVar
@@ -131,7 +131,7 @@ console.log(TestVar) // undefined
 console.log(typeof TestVar) // undefined
 ```
 
-`null` - это значение присваивания. Он может быть присвоен переменной 🔔 как представление без значения:
+`null` is an assignment value. It can be assigned to a variable 🔔 as a representation with no value:
 
 ```javascript
 let TestVar = null
@@ -139,7 +139,7 @@ console.log(TestVar) // null
 console.log(typeof TestVar) // object
 ```
 
-Из предыдущих примеров ясно, что `undefined` и `null` - это два 2️⃣ различных типа: `undefined` - это сам тип (неопределенный), а `null` - объект.
+It is clear from the previous examples that `undefined` and `null` are two 2️⃣ different types: `undefined` is the type itself (undefined), and` null` is an object.
 
 ```javascript
 null === undefined // false
@@ -147,70 +147,70 @@ null == undefined // true
 null === null // true
 ```
 
-## Тип данных Символ (Symbol)
+## Data type Symbol
 
 ![Symbol](https://media.giphy.com/media/QvSGhHq8CrVzq/giphy.gif)
 
-Тип символ `Symbol` — это уникальное и иммутабельное примитивное значение, которое может быть использовано как ключ для свойства объекта. Этот тип на столько редко используется в реальной работе, что мы даже не будем рассматривать его в рамках этого курса.
+The `Symbol` type is a unique and immutable primitive value that can be used as a key for a property of an object. This type is so rarely used in real work that we will not even consider it in this course.
 
-## Проблемы?
+## Problems?
 
-Пишите в телеграмм [чат](https://t.me/jscampapp), а также подписывайтесь на наши [новости](https://t.me/javascriptapp).
+![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
 
-## Вопросы:
+Channel in [Discord](https://discord.gg/6GDAfXn) after paying on [Patreon](https://www.patreon.com/javascriptcamp).
+
+## Questions:
 
 ![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
 
-Для чего используется оператор `typeof`?
+What is the `typeof` operator used for?
 
-1. Для определения типа данных
-2. Для вывода типа данных в консоль
-3. Для ввода новой переменной
+1. To determine the data type
+2. To output the data type to the console
+3. To enter a new variable
 
-Сколько типов данных определяет стандарт JavaScript?
+How many data types does the JavaScript standard define?
 
-1. 7
-2. 9
-3. 5
+1.7
+2.9
+3.5
 
-В каком типе данных содержится набор свойств?
+What data type contains a set of properties?
 
 1. `function`
 2. `string`
 3. `object`
 
-Можно ли в JavaScript корректировать строку посимвольно?
+Can a string be adjusted character by character in JavaScript?
 
-1. Да
-2. Возможно в особых случаях
-3. Нет, строки пересоздаются только полностью
+1. Yes
+2. Possibly in special cases
+3. No, the lines are re-created only completely
 
-Какой тип данных даёт возможность работать с целыми числами произвольной длины?
+What data type makes it possible to work with integers of arbitrary length?
 
 1. `number`
 2. `string`
 3. `bigint`
 
-Какое из значений не имеет булевый тип `boolean`?
+Which value is not of type `boolean`?
 
 1. `false`
 2. `null`
 3. `true`
 
-Какой из типов данных имеет значение, которое может быть использовано как ключ для свойства объекта?
+Which data type has a value that can be used as a key for an object property?
 
-1. `undefined`
-2. `symbol`
-3. `null`
+1.` undefined` 2.` symbol` 3.` null`
 
-Для того чтобы понять, на сколько вы усвоили этот урок, пройдите тест в [мобильном приложении](http://onelink.to/njhc95) нашей школы по этой теме.
+In order to understand how much you learned this lesson, take a test in our school [mobile application](http://onelink.to/njhc95) on this topic.
 
 ![Sumerian school](/img/app.png)
 
-## Ссылки:
+## Links
 
 1. [MDN web docs](https://developer.mozilla.org/ru/docs/Web/JavaScript/Data_structures)
-2. [Код для подростков: прекрасное руководство по программированию для начинающих, том 1: Javascript - Jeremy Moritz ](https://www.amazon.com/Code-Teens-Beginners-Programming-Javascript-ebook/dp/B07FCTLVPC)
+2. [Code for Teens: The Perfect Beginner's Guide to Programming, Volume 1: Javascript - Jeremy Moritz](https://www.amazon.com/Code-Teens-Beginners-Programming-Javascript-ebook/dp/B07FCTLVPC)
 3. [JavaScript.ru](https://learn.javascript.ru/types)
 
 ## Contributors ✨

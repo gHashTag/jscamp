@@ -20,6 +20,18 @@ module.exports = {
   plugins: ['remark-snackplayer'],
   clientModules: [require.resolve('./snackPlayerInitializer.js')],
   scripts: [{ src: 'https://snack.expo.io/embed.js', defer: true }],
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en', 'ru'],
+    localeConfigs: {
+      en: {
+        label: 'English'
+      },
+      ru: {
+        label: 'Русский'
+      }
+    }
+  },
   themeConfig: {
     algolia: {
       apiKey: '4b22eba94660cfe3f3e4083ad49b11b6',
@@ -73,7 +85,7 @@ module.exports = {
         {
           to: 'docs/startup00',
           activeBasePath: 'docs',
-          label: 'Учебный план',
+          label: 'Syllabus',
           position: 'left'
         },
         {
@@ -84,7 +96,7 @@ module.exports = {
         {
           href:
             'https://hh.ru/resume/9bbcea07ff0460389d0039ed1f775a4d445337?source=post_page-----e563aebfae71----------------------',
-          label: 'Об авторе',
+          label: 'Author',
           position: 'left'
         },
         {
@@ -95,7 +107,11 @@ module.exports = {
         {
           to: 'blog',
           activeBasePath: 'docs',
-          label: 'Вакансии',
+          label: 'Vacancies',
+          position: 'left'
+        },
+        {
+          type: 'localeDropdown',
           position: 'left'
         }
       ]
@@ -104,7 +120,7 @@ module.exports = {
       style: 'dark',
       links: [
         {
-          title: 'Учебный план',
+          title: 'Syllabus',
           items: [
             {
               label: 'Startup',

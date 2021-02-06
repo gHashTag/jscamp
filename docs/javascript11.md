@@ -1,18 +1,18 @@
 ---
 id: javascript11
-title: Преобразование и приведение типов
-sidebar_label: Преобразование и приведение типов
+title: Type conversion and casting
+sidebar_label: Type conversion and casting
 ---
 
 ![@serverSerrverlesskiy](/img/javascript/headers/09.jpg)
 
-## Приведение типов (type coercion)
+## Type coercion (type coercion)
 
-Это автоматическое или неявное преобразование значений из одного типа данных в другой (например, строки в число). Преобразование типа похоже на приведение типа, потому что они оба преобразуют значения из одного типа данных в другой с одним ключевым🗝️ различием — приведение типа является неявным, тогда как преобразование типа может быть неявным или явным.
+It is an automatic or implicit conversion of values from one data type to another (for example, a string to a number). Type conversions are similar to type conversions because they both convert values from one data type to another, with one key difference - type conversion is implicit, while type conversion can be implicit or explicit.
 
 ![transformation](https://media.giphy.com/media/xT4uQr9H3EDL7Ha2hq/giphy.gif)
 
-Примеры 👇 :
+Examples 👇:
 
 ```jsx live
 function learnJavaScript() {
@@ -24,9 +24,9 @@ function learnJavaScript() {
 }
 ```
 
-В приведённом выше примере JavaScript приводит число `9` в строку, а затем объединяет два 2️⃣ значения вместе, в результате получается строка `59`. JavaScript имел выбор между строкой или числом и решил использовать строку.
+In the example above, JavaScript casts the number `9` into a string, and then concatenates the two 2️⃣ values together, resulting in the string `59`. JavaScript had a choice between string or number and chose to use string.
 
-Компилятор мог привести строку `5` к числу и вернуть сумму `14`, но он этого не сделал. Чтобы получить этот результат, вам нужно явно преобразовать строку `5` в число, используя метод `Number()`👇 :
+The compiler could convert the string `5` to a number and return the sum of `14`, but it did not. To get this result, you need to explicitly convert the string `5` to a number using the` Number()` 👇 method:
 
 ```jsx live
 function learnJavaScript() {
@@ -38,17 +38,17 @@ function learnJavaScript() {
 }
 ```
 
-## Преобразование типов (type conversion)
+## Type conversion
 
 ![Transformation](https://media.giphy.com/media/l2SpMMVivErM0Q7jG/giphy.gif)
 
-Означает передачу данных из одного типа данных в другой. Неявное преобразование происходит, когда компилятор автоматически присваивает (назначает) типы данных, но исходный код📟 также может явно требовать преобразования для завершения.
+Means the transfer of data from one data type to another. Implicit conversion occurs when the compiler automatically assigns (assigns) data types, but the source code may also explicitly require the conversion to complete.
 
-### Строковое преобразование
+### String conversion
 
 ![Transformation](https://media.giphy.com/media/RLVHPJJv7jY1q/giphy.gif)
 
-Строковое преобразование происходит, когда требуется представление чего-либо в виде строки. Например, мы можем использовать функцию `String(value)`, чтобы преобразовать значение к строке 👇 :
+String conversion occurs when you want to represent something as a string. For example, we can use the `String (value)` function to convert a value to a string 👇:
 
 ```jsx live
 function learnJavaScript() {
@@ -59,13 +59,13 @@ function learnJavaScript() {
 }
 ```
 
-Преобразование происходит очевидным образом. `true` ✅ становится `"true"` ✅
+The transformation takes place in an obvious way. `true` ✅ becomes`"true"`✅
 
-### Численное преобразование
+### Numeric conversion
 
 ![Transformation](https://media.giphy.com/media/4H5nOUqX7FywOGpCF7/giphy.gif)
 
-Численное преобразование происходит в математических функциях⚙️ и выражениях.
+Numerical conversion occurs in math functions and expressions.
 
 ```jsx live
 function learnJavaScript() {
@@ -75,7 +75,7 @@ function learnJavaScript() {
 }
 ```
 
-Мы можем использовать функцию `Number(value)`, чтобы явно преобразовать `value` к числу 👇 :
+We can use the `Number (value)` function to explicitly convert `value` to a number 👇:
 
 ```jsx live
 function learnJavaScript() {
@@ -86,49 +86,49 @@ function learnJavaScript() {
 }
 ```
 
-Явное преобразование часто применяется, когда мы ожидаем получить число из строкового контекста, например из текстовых 📜 полей форм.
+Explicit conversion is often used when we expect to get a number from a string context, such as text fields in forms.
 
-Если строка не может быть явно приведена к числу, то результатом преобразования будет `NaN` (англ. Not-a-Number, "не число"). Например 👇:
+If the string cannot be explicitly cast to a number, then the conversion result will be `NaN` (Not-a-Number, "not a number "). For example 👇:
 
 ```jsx live
 function learnJavaScript() {
-  let age = Number('Любая строка вместо числа')
+  let age = Number('Any string instead of a number')
 
   return age
 }
 ```
 
-### Правила численного преобразования:
+### Numeric conversion rules:
 
-| Значение         |                                                                           Преобразуется в…                                                                           |
-| ---------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| `undefined`      |                                                                                `NaN`                                                                                 |
-| `null `          |                                                                                 `0`                                                                                  |
-| `true` / `false` |                                                                              `1` / `0`                                                                               |
-| `string`         | Пробельные символы по краям обрезаются. Далее, если остаётся пустая строка, то получаем 0, иначе из непустой строки «считывается» число. При ошибке🙅‍♂️ результат NaN. |
+| Value            |                                                                              Converted to ...                                                                               |
+| ---------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| `undefined`      |                                                                                    `NaN`                                                                                    |
+| `null`           |                                                                                     `0`                                                                                     |
+| `true` /` false` |                                                                                  `1` /` 0`                                                                                  |
+| `string`         | White space is trimmed at the edges. Further, if an empty string remains, then we get 0, otherwise a number is "read" from a non-empty string. On error, the result is NaN. |
 
-Примеры:
+Examples:
 
 ```javascript
 Number('   123   ') // 123
-Number('123z') // NaN (ошибка чтения числа на месте символа "z")
+Number('123z') // NaN (error reading the number in place of the "z" character)
 Number(true) // 1
 Number(false) // 0
 Number(null) // 0
 Number(undefined) // NaN
 ```
 
-Учтите, что `null` и `undefined` ведут себя по-разному. Так, `null` становится нулём, тогда как `undefined` приводится к `NaN`.
+Note that `null` and` undefined` behave differently. So, `null` becomes zero, while` undefined` is cast to `NaN`.
 
-### Логическое преобразование
+### Boolean conversion
 
 ![Transformation](https://media.giphy.com/media/JjAdpCxrdro7m/giphy.gif)
 
-Логическое преобразование самое простое. Происходит в логических операциях, но также может быть выполнено явно с помощью функции⚙️ `Boolean(value)`.
+The logical transformation is the simplest. Occurs in logical operations, but can also be performed explicitly with the function⚙️ `Boolean (value)`.
 
-### Правила логического преобразования:
+### Boolean conversion rules:
 
-Значения, которые интуитивно "пустые", вроде `0`, пустой строки, `null`, `undefined`и `NaN`, становятся `false`. Все остальные значения становятся `true`.
+Values that are intuitively "empty" such as `0`, an empty string,` null`, `undefined`, and` NaN` become `false`. All other values become `true`.
 
 ```javascript
 Boolean(1) // true
@@ -137,64 +137,65 @@ Boolean('Привет!') // true
 Boolean('') // false
 ```
 
-:::caution Заметим, что строчка с нулём "0" — это true
-Некоторые языки👅 (к примеру, PHP) воспринимают строку `"0"` как `false`. Но в JavaScript, если строка не пустая, то она всегда `true`
-
+:::caution Note that the line with zero "0" is true
+Some languages👅 (for example PHP) interpret the string `" 0 "` as `false`. But in JavaScript, if a string is not empty, then it is always `true`
 :::
 
 ```javascript
 Boolean('0') // true
-Boolean(' ') // пробел это тоже true (любая непустая строка это true)
+Boolean(' ') // space is also true (any non-empty string is true)
 ```
 
-## Проблемы?
+## Problems?
 
-Пишите в телеграмм [чат](https://t.me/jscampapp), а также подписывайтесь на наши [новости](https://t.me/javascriptapp).
+![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
 
-## Вопросы:
+Channel in [Discord](https://discord.gg/6GDAfXn) after paying on [Patreon](https://www.patreon.com/javascriptcamp).
+
+## Questions:
 
 ![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
 
-Какую функцию нужно использовать для строкового преобразования?
+Which function should you use for string conversion?
 
-1.  `String(value)`
-2.  `Boolean(value)`
-3.  `Number(value)`
+1. `String (value)`
+2. `Boolean (value)`
+3. `Number (value)`
 
-Что такое приведение типов?
+What is typecasting?
 
-1.  Передача данных из одного типа в другой
-2.  Преобразование значений из одного типа данных в другой
-3.  Представление чего-либо в виде строки
+1. Transferring data from one type to another
+2. Converting values ​​from one data type to another
+3. Representation of something as a string
 
-Какое ключевое различие между приведением типов и преобразованием типов?
+What is the key difference between typecasting and typecasting?
 
-1. Приведение типа явное, а преобразование типа неявное
-2. Приведение типа неявное, а преобразование типа явное
-3. Приведение типа неявное, а преобразование типа может быть и явным и неявным
+1. Type casting is explicit, and type conversion is implicit
+2. Type casting is implicit, and type conversion is explicit
+3. Type conversion is implicit, and type conversion can be both explicit and implicit
 
-В каком случае результатом преобразования будет `NaN`?
+When would the conversion result be `NaN`?
 
-1.  Когда строка не может быть явно приведена к числу
-2.  Когда число не может быть явно приведено к строке
-3.  Когда в коде есть ошибка
+1. When a string cannot be explicitly cast to a number
+2. When a number cannot be explicitly cast to a string
+3. When there is an error in the code
 
-Чем становятся «пустые» значения при преобразовании?
+What do “empty” values ​​become when converted?
 
-1.  `null`
-2.  `true`
-3.  `false`
+1. `null`
+2. `true`
+3. `false`
 
-Для того чтобы понять, на сколько вы усвоили этот урок, пройдите тест в [мобильном приложении](http://onelink.to/njhc95) нашей школы по этой теме.
+In order to understand how much you learned this lesson, take the test on the [mobile application](http://onelink.to/njhc95) of our school on this topic.
 
 ![Sumerian school](/img/app.png)
 
-## Ссылки:
+## Links
 
-1. [MDN web docs - Приведение типов](https://developer.mozilla.org/ru/docs/Словарь/Type_coercion)
-2. [ для подростков: прекрасное руководство по программированию для начинающих, том 1: Javascript - Jeremy Moritz ](https://www.amazon.com/Code-Teens-Beginners-Programming-Javascript-ebook/dp/B07FCTLVPC)
+1. [MDN web docs - Typecasting](https://developer.mozilla.org/en/docs/Словарь/Type_coercion)
+2. [Code for Teens: The Perfect Beginner's Guide to Programming, Volume 1: Javascript - Jeremy Moritz](https://www.amazon.com/Code-Teens-Beginners-Programming-Javascript-ebook/dp/B07FCTLVPC)
 3. [JavaScript.ru](https://learn.javascript.ru/ifelse#blok-else)
-4. [Арифметические действия с целыми числами](https://maths-public.ru/arithmetic/actions)
+4. [Integer arithmetic](https://maths-public.ru/arithmetic/actions)
 
 ## Contributors ✨
 

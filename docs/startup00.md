@@ -1,35 +1,33 @@
 ---
 id: startup00
-title: Школа программирования 🦄
-sidebar_label: Введение
+title: JS Camp 🦄
+sidebar_label: JS Camp
 ---
 
-Программа разностороннего развития, содержащая интеллектуальную деятельность (развитие логики, пространственного мышления и моторики), изучение английского языка, физические занятия для здоровья, творчество.
+A diversified development program containing intellectual activity (development of logic, spatial thinking and motor skills), learning English, physical activities for health, creativity.
 
-۞ Для взрослых и старших детей, которые умеют собирать кубик Рубика:
+۞ For adults and older children who can solve Rubik's cube:
 
-💛 Первый класс Java Script, учитель Fiona Miller.
+💛 First Java Script Class taught by Fiona Miller.
 
-💚 Второй класс школы React Native - разработка и верстка системы атомарных компонентов в мобильных приложениях iOS, Android, а также в системах AR/VR дополненной и виртуальной реальностью с библиотекой от Facebook. Учитель Grace Willie.
+💚 The second class of the React Native school - development and layout of the system of atomic components in mobile applications iOS, Android, as well as in AR / VR systems in augmented and virtual reality with a library from Facebook. Teacher Grace Willie.
 
-💙 Третий класс: Type Script - типизация системы атомарных компонентов, учитель Maya Lakshmi.
+💙 Third grade: Type Script - typing of the atomic component system, teacher Maya Lakshmi.
 
-💜 Четвертый класс: AWS Amplify - Fullstack Serverless - бессерверные вычисления на функциях AWS Amplify. Учитель Server Serverlesskiy.
+💜 Fourth class: AWS Amplify - Fullstack Serverless - serverless computing on AWS Amplify functions. Serverlesskiy teacher.
 
-🤍 Дополнительный курс видео блоггера - пилотирование обучающих аватаров для наших обучающих видео курсов, хостов технологии AWS Sumerian. Учитель Preston Wild.
+🤍 Optional Video Blogger Course - Piloting training avatars for our training video courses hosted by AWS Sumerian technology. Preston Wild teacher.
 
-- Иностранные учителя школы 🦄 - это виртуальные 3D аватары c эффектом присутствия, основанные на машинном обучении (machine learning) от технологий Amazon.
-- После обучения в школе выдаётся сертификат
+- Foreign teachers of the school 🦄 are virtual 3D avatars with the effect of presence, based on machine learning from Amazon technologies.
+- After studying at school, a certificate is issued
 
-Скачать [мобильное приложение](http://onelink.to/njhc95) школы.
+Download the [mobile app](http://onelink.to/njhc95) school.
 
 [![Мобильное приложение школы](/img/app.png)](http://onelink.to/njhc95)
 
-Возник вопрос?
-Напишите или позвоните нам в социальных сетях:
+Got a question?
+Write or call us on social networks:
 
-[Вконтакте](https://vk.com/sumerianschool)
-
-[Instagram](https://instagram.com/sumerianschool)
+[Instagram](https://instagram.com/javascriptcamp)
 
 [![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)

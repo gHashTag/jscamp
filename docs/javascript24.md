@@ -1,19 +1,19 @@
 ---
 id: javascript24
-title: Запрет на "this"
-sidebar_label: Запрет на "this"
+title: Ban on "this"
+sidebar_label: Ban on "this"
 ---
 
 ![@serverSerrverlesskiy](/img/javascript/headers/24.jpg)
 
-Удаление ключевого🗝️ слова `this` из JavaScript делает язык👅 лучше!
+Removing the `this` keyword from JavaScript makes the language better!
 
-Причина в том, что `this` зависит от того, как была вызвана функция⚙️, а не от того, где она была определена. Поэтому `this` в JavaScript является источником большой путаницы в языке👅.
+This is because `this` depends on how the function was called, not where it was defined. Therefore, JavaScript's `this` is a source of much language confusion пут.
 
-Использование `this` гарантирует, что функция работает именно с тем объектом, в контексте которого вызвана.
-Через `this` метод можно не только обратиться к любому свойству объекта, но и передать куда-то ссылку на сам объект целиком (снижая безопасность приложения).
+Using this ensures that the function works on the exact object in the context of which it was called.
+Through the `this` method, you can not only refer to any property of the object, but also pass a reference to the entire object itself somewhere (reducing the security of the application).
 
-Значение `this` называется контекстом вызова и будет определено в момент вызова функции. Например, такая функция, объявленная без объекта, вполне допустима:
+The value of `this` is called the calling context and will be determined when the function is called. For example, a function like this, declared without an object, is perfectly valid:
 
 ```javascript
 functionsay Hi() {
@@ -21,13 +21,13 @@ functionsay Hi() {
 }
 ```
 
-Эта функция ещё не знает, каким будет `this`. Это выяснится при выполнении программы.
+This function does not yet know what this will be. This will be revealed when the program is executed.
 
-Если одну и ту же функцию запускать в контексте разных объектов, она будет получать разный `this`:
+If the same function is run in the context of different objects, it will receive a different `this`:
 
 ```javascript
-var user = { firstName: 'Джони' }
-var admin = { firstName: 'Админ' }
+var user = { firstName: 'John' }
+var admin = { firstName: 'Admin' }
 
 function funcName() {
   console.log(this.firstName)
@@ -35,25 +35,25 @@ function funcName() {
 user.f = funcName
 admin.g = funcName
 
-//this равен объекту перед точкой:
-user.f() //Джони
-admin.g() //Админ
-admin['g']() //Админ (доступ к объект реализован через квадратные скобки)
+// this is equal to the object before point:
+user.f() // Joni
+admin.g() // Admin
+admin['g']() // Admin (access to the object is implemented through square brackets)
 ```
 
-Итак, значение `this` не зависит от того, как функция была создана, оно определяется исключительно в момент вызова.
+So, the value of `this` does not depend on how the function was created, it is determined exclusively at the time of the call.
 
-## `this` и его недостатки
+## `this` and its disadvantages
 
-Методы — это функции⚙️, которые хранятся в объектах. Для того, чтобы функция⚙️ знала, над каким объектом работать, используется `this.`
+Methods are functions that are stored in objects. In order for the function⚙️ to know which object to work on, use `this`.
 
 ![Poor](https://media.giphy.com/media/fQJbwrRJdHyMOP7RPH/giphy.gif)
 
-Но `this` теряет контекст во многих ситуациях (неизвестно возвращаемое🔄 значение):
+But `this` loses context in many situations (return value unknown):
 
-- теряет контекст внутри вложенных функций
-- теряет контекст в обратных вызовах (callback)
-- `this` теряет контекст, когда метод используется в качестве обработчика события.
+- loses context inside nested functions
+- loses context in callbacks
+- `this` loses context when the method is used as an event handler.
 
 <!-- Давайте возьмем случай компонента `React`, который создает🏗️ поисковый запрос. В обоих методах, используемых в качестве обработчиков событий, при исползовании `this` теряется контекст:
 
@@ -123,13 +123,13 @@ timer.timerId // secret не такой уже секретный
 
 Удаление `this` означает отсутствие пользовательских прототипов в целом. -->
 
-## Лучший язык
+## Best language
 
 ![The_best](https://media.giphy.com/media/ZBn3ZRvCbWz2PS3Rbg/giphy.gif)
 
-JavaScript — это и функциональный язык программирования, и язык на основе прототипов. Если мы избавимся от `this`, у нас останется JavaScript как функциональный⚙️ язык👅 программирования. Это даже лучше!
+JavaScript is both a functional programming language and a prototype-based language. If we get rid of this, we are left with JavaScript as a functional programming language. This is even better!
 
-В то же время, без `this` JavaScript предлагает 🆕 новый, уникальный способ выполнения объектно-ориентированного программирования без классов и наследования.
+At the same time, without `this` JavaScript offers a new, unique way to do object-oriented programming without classes and inheritance.
 
 <!-- ### Объектно-ориентированное программирование без this
 
@@ -270,63 +270,60 @@ function learnJavaScript() {
 
 В данном примере метод `reduce` запускается в контексте массива и вызывает функцию⚙️ для каждого элемента. Но помимо этого, он аккумулирует результаты всех вызовов в одно значение. Его задача – подсчитать "сумму" всех элементов и вернуть ее. -->
 
-## Отказ от this
+## Abandoning this
 
 ![remember](https://media.giphy.com/media/S52I9r5QfB4fIBS6WV/giphy.gif)
 
-Лучший способ избежать связанных с `this` проблем — вообще не использовать `this`!
+The best way to avoid `this` related problems is not to use `this` at all!
 
 :::note JavaScript
-JavaScript без this выглядит как лучший функциональный⚙️ язык👅 программирования!
+JavaScript without this looks like the best functional programming language!
+
 :::
 
-Мы можем создавать🏗️ инкапсулированные объекты без использования `this` в качестве коллекций закрытий. С помощью [React Hooks](https://ru.reactjs.org/docs/hooks-intro.html) мы можем создавать🏗️ без `this` компоненты с сохранением состояния.
+We can create encapsulated objects without using this as a collection of closures. With the help of [React Hooks](https://reactjs.org/docs/hooks-intro.html) we can create stateful components🏗️ without `this`.
 
-Ключевое слово `this` не может быть удалено из JavaScript, без разрушения всех существующих приложений. Однако что можно сделать? Мы можем написать 🖊️ собственный код без `this` и позволить его использовать только в библиотеках. Тем временем вводятся [новые правила](https://ru.reactjs.org/docs/hooks-rules.html#eslint-plugin) `ESLint,` запрещающие использование `this`.
+The `this` keyword cannot be removed from JavaScript without destroying all existing applications. However, what can be done? We can write 🖊️ our own code without `this` and only allow it to be used in libraries. In the meantime, [new rules](https://ru.reactjs.org/docs/hooks-rules.html#eslint-plugin) `ESLint` are being introduced, prohibiting the use of `this`.
 
-Так как в прошлом уроке мы отказались от [классов](https://react-native-village.github.io/docs/javascript25#отказ-от-классов), то и вместе с ними прощаемся и с `this`.
+Since in the last lesson we abandoned [classes](https://react-native-village.github.io/docs/javascript25#refused-classes), we say goodbye to `this` with them.
 
-## Проблемы?
+## Problems?
 
-Пишите в телеграмм [чат](https://t.me/jscampapp), а также подписывайтесь на наши [новости](https://t.me/javascriptapp).
+![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
 
-## Вопросы
+Channel in [Discord](https://discord.gg/6GDAfXn) after paying on [Patreon](https://www.patreon.com/javascriptcamp).
+
+## Questions:
 
 ![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
 
-Ключевое слово `this` это -
+The `this` keyword is -
 
-1. Объект, которому принадлежит метод
-2. Первый аргумент в функции
-3. Набор свойств
+1. The object to which the method belongs
+2. First argument in the function
+3. Set of properties
 
-Можно ли обойтись без `this`:
+Is it possible to do without this:
 
-1. Можно, и лучше вообще не использовать
-2. Можно, но не целесообразно
-3. Нельзя, т.к. `this` не может быть удален из JavaScript
+1. You can, and it is better not to use at all
+2. It is possible, but not advisable
+3. It is impossible, because `this` cannot be removed from JavaScript
 
-<!-- Использование `this`:
+JavaScript without `this` looks like the best:
 
-1. Понижает безопасность кода
-2. Повышает безопасность кода
-3. Не влияет на безопасность -->
+1. Functional programming language
+2. Procedural programming language
+3. Logical programming language
 
-JavaScript без `this` выглядит как лучший:
-
-1. Функциональный язык программирования
-2. Процедурный язык программирования
-3. Логический язык программирования
-
-Для того чтобы понять, на сколько вы усвоили этот урок, пройдите тест в [мобильном приложении](http://onelink.to/njhc95) нашей школы по этой теме.
+In order to understand how much you learned this lesson, take the test on the [mobile application](http://onelink.to/njhc95) of our school on this topic.
 
 ![Sumerian school](/img/app.png)
 
-## Ссылки
+## Links
 
-1. [Статья "Удаление ключевого слова «this» из JavaScript делает язык лучше"](https://webformyself.com/udalenie-klyuchevogo-slova-this-iz-javascript/)
-2. [Статья "Ключевое слово this в JavaScript"](https://habr.com/ru/post/464163/)
-3. [MDN web doc. Статья "this"](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/this)
+1. [Removing the 'this' keyword from JavaScript makes the language better](https://webformyself.com/udalenie-klyuchevogo-slova-this-iz-javascript/)
+2. [The article "The this keyword in JavaScript"](https://habr.com/ru/post/464163/)
+3. [MDN web doc. Article "this"](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/this)
 
 ## Contributors ✨
 

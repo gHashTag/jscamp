@@ -1,41 +1,41 @@
 ---
 id: javascript20
-title: Деструктуризация массивов и объектов
-sidebar_label: Деструктуризация массивов и объектов
+title: Destructuring arrays and objects
+sidebar_label: Destructuring
 ---
 
 ![@serverSerrverlesskiy](/img/javascript/headers/30.jpg)
 
-Деструктуризация в JavaScript это синтаксис присваивания, который позволяет удобно, в одну строку, извлечь данные из массивов и объектов.
+Destructuring in JavaScript is an assignment syntax that allows you to conveniently extract data from arrays and objects in one line.
 
-## Деструктуризация объектов
+## Object destructuring
 
 ![object](https://media.giphy.com/media/3o85xx7Yll3UyNVQf6/giphy.gif)
 
 ```jsx live
 function learnJavaScript() {
-  // Создаём объект `fruit`
+  // Create a `fruit` object
   let fruit = {
     title: 'banana',
     group: 'tropical',
     quantity: 5
   }
 
-  // Деструктуризация объекта `fruit`
+  // Destructuring the `fruit` object
   let { title, group, quantity } = fruit
 
-  // Выводим на экран `title`
+  // Display `title`
   return title
 }
 ```
 
-Свойства `title`, `group` и `quantity`, повторяют структуру объекта `fruit` и копируют свои значения в идентичные переменные 🔔 находящиеся в `{...}`. Поэтому, если вы поменяете переменные 🔔 в `{...}` местами, то код будет так же прекрасно работать, попробуйте в примере выше поменять переменные 🔔 местами.
+The properties `title`,` group` and `quantity` repeat the structure of the object` fruit` and copy their values into identical variables 🔔 found in `{...}`. Therefore, if you swap the variables 🔔 in `{...}`, then the code will work just as well, try swapping the variables 🔔 in the example above.
 
-### Вложенный объект
+### Nested object
 
 ![bookmark](https://media.giphy.com/media/3og0IDyqVFNH7qFpAI/giphy.gif)
 
-Мы также можем деструктурировать вложенный объект.
+We can also destructure the nested object.
 
 ```jsx live
 function learnJavaScript() {
@@ -57,9 +57,9 @@ function learnJavaScript() {
 }
 ```
 
-### Другие названия
+### Other names
 
-Если вам нужно использовать названия переменных 🔔 отличные от названия свойств, то будет работать такой синтаксис:
+If you need to use variable names 🔔 other than property names, the following syntax will work:
 
 ```jsx live
 function learnJavaScript() {
@@ -75,9 +75,9 @@ function learnJavaScript() {
 }
 ```
 
-### Дефолтные значения
+### Default values
 
-Если в `{...}` вы напишете переменную 🔔 свойства, которой не будут найдены, то ей присвоится значение `undefined`. Для назначения переменной 🔔 дефолтного значение, это значение ей можно присвоить. Если вы попытаетесь присвоить значение переменной 🔔 свойства которой будут найдены, то ей присвоится значение свойства. Рассмотрим на примере.
+If in `{...}` you write a property variable 🔔 which will not be found, then it will be assigned the value `undefined`. To assign a default value to a variable 🔔, you can assign that value to it. If you try to assign a value to a variable 🔔 whose properties are found, then the property value will be assigned to it. Let's look at an example.
 
 ![Dafault](https://media.giphy.com/media/3oEduLzte7jSNmq4z6/giphy.gif)
 
@@ -92,13 +92,13 @@ function learnJavaScript() {
 }
 ```
 
-В `title` выводится значение свойства, а не то, что мы ей присваиваем. Свойства `group` в объекте `fruit` не существует, а переменной 🔔 никаких значений мы не присваивали. Свойства `quantity` также не существует, но переменной 🔔 мы присвоили значение `5`.
+The `title` contains the property value, not what we assign to it. The `group` property does not exist in the` fruit` object, and we have not assigned any values to the variable 🔔. The property `quantity` also does not exist, but we assigned the value` 5` to the variable 🔔.
 
-### Остаток
+### Remainder
 
 ![octatok](https://media.giphy.com/media/hvddF1vHatFIgQspUB/giphy.gif)
 
-Если вам нужно получить из объекта одну переменную 🔔 , а оставшиеся сгруппировать в другой объект, то используйте `...` перед переменной 🔔 из которой будет создан объект с оставшимися свойствами.
+If you need to get one variable 🔔 from an object, and group the rest into another object, then use `...` before the variable 🔔 from which the object with the remaining properties will be created.
 
 ```jsx live
 function learnJavaScript() {
@@ -113,28 +113,28 @@ function learnJavaScript() {
 }
 ```
 
-## Деструктуризация массивов
+## Destructuring arrays
 
-Деструктуризация массива происходит так же, как и у объекта. Единственная разница в том, что значения элементов массива будут присваиваться переменным 🔔 в порядке определения элементов.
+Destructuring of an array is the same as for an object. The only difference is that the values of the array elements will be assigned to the variables 🔔 in the order in which the elements are defined.
 
 ![Take](https://media.giphy.com/media/IuBlckSD7dQv6/giphy.gif)
 
 ```jsx live
 function learnJavaScript() {
-  // Создаем массив `fruit`
+  // Create an array `fruit`
   let fruit = ['banana', 'tropical', 5]
 
-  // Деструктурируем массив `fruit`
+  // Destruct the `fruit` array
   let [title, group, quantity] = fruit
 
-  // Выводим на экран
-  return `${title}, ${group}, ${quantity}`
+  // Display
+  return `$ {title}, $ {group}, $ {quantity}`
 }
 ```
 
-### Остаток
+### Remainder
 
-По аналогии с объектами работает остаток.
+By analogy with objects, the remainder works.
 
 ```jsx live
 function learnJavaScript() {
@@ -146,9 +146,9 @@ function learnJavaScript() {
 }
 ```
 
-### Копия массива
+### Copy of array
 
-Пример создания🏗️ копии массива.
+An example of creating a copy of an array.
 
 ![Copia](https://media.giphy.com/media/GI1KnTxySlrCE/giphy.gif)
 
@@ -162,11 +162,11 @@ function learnJavaScript() {
 }
 ```
 
-### Объединение массивов
+### Concatenating arrays
 
 ![add](https://media.giphy.com/media/3gMrhfFtWHq9XxtqPy/giphy.gif)
 
-Пример объединения массивов в один.
+An example of combining arrays into one.
 
 ```jsx live
 function learnJavaScript() {
@@ -178,45 +178,47 @@ function learnJavaScript() {
 }
 ```
 
-## Проблемы?
+## Problems?
 
-Пишите в телеграмм [чат](https://t.me/jscampapp), а также подписывайтесь на наши [новости](https://t.me/javascriptapp).
+![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
 
-## Вопросы
+Channel in [Discord](https://discord.gg/6GDAfXn) after paying on [Patreon](https://www.patreon.com/javascriptcamp).
+
+## Questions:
 
 ![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
 
-Деструктуризация - это?
+Destructuring is it?
 
-1. Функция
-2. Синтаксис
-3. Объект
+1. Function
+2. Syntax
+3. Object
 
-Обязательно ли, при деструктуризации объекта, ставить переменные в том же порядке, в каком они находятся в объекте?
+Is it necessary, when destructuring an object, to put variables in the same order as they are in the object?
 
-1. Да
-2. Нет
+1. Yes
+2. No
 
-Что присвоится переменной, если в объекте не будет найдено идентичного свойства?
+What will be assigned to a variable if no identical property is found in the object?
 
 1. `error`
 2. `undefined`
 3. `unknown`
 
-Важен ли порядок элементов в объекте, при его деструктуризации?
+Is the order of elements in an object important when it is destructed?
 
-1. Да
-2. Нет
+1. Yes
+2. No
 
-Для того чтобы понять насколько вы усвоили этот урок пройдите тест в [мобильном приложении](http://onelink.to/njhc95) в нашей школы по этой теме.
+In order to understand how much you learned this lesson, take the test on the [mobile application](http://onelink.to/njhc95) of our school on this topic.
 
 ![Sumerian school](/img/app.png)
 
-## Ссылки
+## Links
 
 1. [Learn JavaScript](https://learn.javascript.ru/destructuring-assignment)
 2. [MDN Web Docs](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
-3. [Деструктуризация в ES6](https://medium.com/@stasonmars/деструктуризация-в-es6-полное-руководство-b865bb71f376)
+3. [Destructuring in ES6](https://medium.com/@stasonmars/деструктуризация-в-es6-полное-руководство-b865bb71f376)
 
 ## Contributors ✨
 

@@ -1,0 +1,50 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.someSidebar.category.Startup": {
+    "message": "Startup",
+    "description": "The label for category Startup in sidebar someSidebar"
+  },
+  "sidebar.someSidebar.category.Java Script": {
+    "message": "Java Script",
+    "description": "The label for category Java Script in sidebar someSidebar"
+  },
+  "sidebar.someSidebar.category.React Native": {
+    "message": "React Native",
+    "description": "The label for category React Native in sidebar someSidebar"
+  },
+  "sidebar.someSidebar.category.React Navigation 2": {
+    "message": "React Navigation 2",
+    "description": "The label for category React Navigation 2 in sidebar someSidebar"
+  },
+  "sidebar.someSidebar.category.Redux": {
+    "message": "Redux",
+    "description": "The label for category Redux in sidebar someSidebar"
+  },
+  "sidebar.someSidebar.category.TypeScript": {
+    "message": "TypeScript",
+    "description": "The label for category TypeScript in sidebar someSidebar"
+  },
+  "sidebar.someSidebar.category.UI Kit": {
+    "message": "UI Kit",
+    "description": "The label for category UI Kit in sidebar someSidebar"
+  },
+  "sidebar.someSidebar.category.Authentication": {
+    "message": "Authentication",
+    "description": "The label for category Authentication in sidebar someSidebar"
+  },
+  "sidebar.someSidebar.category.AWS Amplify": {
+    "message": "AWS Amplify",
+    "description": "The label for category AWS Amplify in sidebar someSidebar"
+  },
+  "sidebar.someSidebar.category.Blogging": {
+    "message": "Blogging",
+    "description": "The label for category Blogging in sidebar someSidebar"
+  },
+  "sidebar.someSidebar.category.Scratch": {
+    "message": "Scratch",
+    "description": "The label for category Scratch in sidebar someSidebar"
+  }
+}

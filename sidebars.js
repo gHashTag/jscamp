@@ -98,7 +98,7 @@ module.exports = {
       'typescript10'
     ],
     ['UI Kit']: ['unicorn00', 'unicorn01', 'unicorn02'],
-    ['Аутентификация']: ['auth1-00', 'auth1-01', 'auth1-02'],
+    ['Authentication']: ['auth1-00', 'auth1-01', 'auth1-02'],
     ['AWS Amplify']: ['amplify-00', 'amplify-01', 'amplify-02', 'amplify-03', 'amplify-04', 'notif-00'],
     ['Blogging']: ['blogging-00', 'blogging-01', 'blogging-02', 'blogging-03'],
     ['Scratch']: ['scratch-00', 'scratch-01']

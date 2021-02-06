@@ -1,156 +1,156 @@
 ---
 id: javascript26
-title: Promise - отложенные и асинхронные вычисления
+title: Promise - deferred and asynchronous computation
 sidebar_label: Promise
 ---
 
 ![@serverSerrverlesskiy](/img/javascript/headers/27.jpg)
 
-Promise(Обещание) — это объект который содержит будущее значение асинхронной операции. Например, если вы запрашиваете некоторые данные с сервера, промис обещает нам получить эти данные, которые мы сможем использовать в будущем.
+A Promise is an object that contains the future value of an asynchronous operation. For example, if you request some data from a server, a promise promises us to receive this data that we can use in the future.
 
 ![math](https://media.giphy.com/media/4JVTF9zR9BicshFAb7/giphy.gif)
 
-Вначале промис имеет статус `pending` ("ожидание"), затем – одно из: `fulfilled` ("выполнено успешно") или `rejected` ("выполнено с ошибкой🙅‍♂️").
+At first, the promise has the status `pending`, then it has one of: `fulfilled` ("successfully completed") or `rejected` (" completed with an error🙅‍♂️ ").
 
 ![promise states](/img/javascript/23/promise.png)
 
-1. `Pending` - Промис ожидает, если результат не готов. То есть, ожидает завершение чего-либо (например, завершения асинхронной операции).
-2. `Fulfilled` - Промис решен, если результат доступен. То есть, что-то завершило свое выполнение(например, асинхронная операция) и все прошло успешно.
-3. `Rejected` - Промиc отклонен, если произошла ошибка в процессе выполнения.
+1. `Pending` - The promise is pending if the result is not ready. That is, it is waiting for something to complete (for example, the completion of an asynchronous operation).
+2. `Fulfilled` - Promise resolved if result is available. That is, something completed its execution (for example, an asynchronous operation) and everything went well.
+3. `Rejected` - Promise was rejected if an error occurred during execution.
 
-## Создание промиса
+## Create a promise
 
 ![Plus](https://media.giphy.com/media/Yqo5mjWTLGlVOIP8Dc/giphy.gif)
 
-Объект `Promise` создается🏗️ при помощи ключевого🗝️ слова new и своего конструктора.
-Конструктор Промисов принимает один аргумент, обратный вызов, также известный как исполнительная функция⚙️, которая принимает 2 обратных вызова, `resolve` и `reject`.
+A `Promise` object is created using the new keyword and its own constructor.
+The Promise constructor takes one argument, a callback, also known as an execution function⚙️, which takes 2 callbacks, `resolve` and` reject`.
 
-Исполнительная функция⚙️ выполняется сразу же после создания🏗️ промиса. Промис становится выполненным при помощи вызова `resolve()`, а отклоненным при помощи `reject()`.
+The executive function is executed immediately after the promise is created. A promise is made fulfilled by calling `resolve` and rejected by calling `reject`.
 
 ```jsx
 const promise = new Promise((resolve, reject) => {
   if (allWentWell) {
-    resolve('Все прошло отлично!')
+    resolve('Everything went great!')
   } else {
-    reject('Что-то пошло не так')
+    reject('Something went wrong')
   }
 })
 ```
 
-`resolve()` и `reject()` принимают один аргумент, который может быть строкой, числом, логическим выражением, массивом или объектом.
+`resolve` and `reject` take one argument, which can be a string, number, boolean expression, array, or object.
 
-Чтобы снабдить функцию⚙️ функционалом⚙️ обещаний, нужно просто вернуть в ней объект `Promise`:
+To provide a function with promises functionality, you just need to return a `Promise` object in it:
 
 ```jsx
 function myAsyncFunction(url) {
   return new Promise((resolve, reject) => {
-    //код функции
+    // function code
   })
 }
 ```
 
-## Использование промиса
+## Using a promise
 
 ![Help](https://media.giphy.com/media/iigqhSTOKmb6wDObGb/giphy.gif)
 
-Промисы используются при помощи методов `then()` и `catch()`.
+Promises are used with the `then()` and `catch()` methods.
 
 ### then
 
-Метод `then` используется для запуска функций⚙️ при положительном и отрицательном результате промиса.
+The `then` method is used to run functions on a positive or negative promise.
 
 ![Launch](https://media.giphy.com/media/1n4FT4KRQkDvK0IO4X/giphy.gif)
 
-Синтаксис📖 метода `then`:
+The syntax for the `then` method is:
 
 ```jsx
 promise.then(
   function (result) {
-    /* обработает успешное выполнение */
+    /* handle successful execution */
   },
   function (error) {
-    /* обработает ошибку */
+    /* will handle the error */
   }
 )
 ```
 
-Первый 1️⃣ аргумент метода `then` – функция⚙️, которая выполняется, когда промис переходит в состояние "выполнен успешно", и получает результат.
+The first 1️⃣ argument of the `then` method is a function⚙️ that is executed when the promise is passed to the" completed successfully "state and receives the result.
 
-Второй аргумент `then` – функция⚙️, которая выполняется, когда промис переходит в состояние "выполнен с ошибкой🙅‍♂️", и получает ошибку🙅‍♂️.
+The second argument to `then` is a function⚙️ that is executed when a promise enters the completed with error state and receives an error🙅‍♂️.
 
 ![Error](https://media.giphy.com/media/iJCo9daAP0xugHhhfb/giphy.gif)
 
-Пример метода `then`:
+An example of the `then` method:
 
 ```jsx
 let promise = new Promise(function (resolve, reject) {
   setTimeout(() => resolve('done!'), 1000)
 })
 
-// resolve запустит первую функцию, переданную в .then
+// resolve will run the first function passed to .then
 promise.then(
-  result => alert(result), // выведет "done!" через одну секунду
-  error => alert(error) // не будет запущена
+  result => alert(result), // displays "done!" in one second
+  error => alert(error) // will not be triggered
 )
 ```
 
-А в случае ошибки🙅‍♂️ в промисе – выполнится вторая:
+And in case of an error 🙅‍♂️ in a promise, the second will be executed:
 
 ```jsx
 let promise = new Promise(function (resolve, reject) {
   setTimeout(() => reject(new Error('Whoops!')), 1000)
 })
 
-// reject запустит вторую функцию, переданную в .then
+// reject will run the second function passed to .then
 promise.then(
-  result => alert(result), // не будет запущена
-  error => alert(error) // выведет "Error: Whoops!" спустя одну секунду
+  result => alert(result), // will not be triggered
+  error => alert(error) // prints "Error: Whoops!" one second later
 )
 ```
 
-Если нужно вывести только результат успешного выполения, то в `then` можно передать только одну функцию⚙️:
+If you need to display only the result of a successful execution, then only one function can be passed to `then`:
 
 ```jsx
 let promise = new Promise(resolve => {
   setTimeout(() => resolve('done!'), 1000)
 })
 
-promise.then(alert) // выведет "done!" спустя одну секунду
+promise.then(alert) // will print "done!" one second later
 ```
 
 ### catch
 
 ![Catch](https://media.giphy.com/media/fxeeuml8GaESfmuE4z/giphy.gif)
 
-Для отлова ошибок🙅‍♂️ используется метод `catch`. Его можно использовать вместо метода `then` для вывода сообщений💬 об ошибке🙅‍♂️.
+To catch errors🙅‍♂️, the `catch` method is used. It can be used instead of the `then` method to display error messages.
 
-Синтаксис📖 метода catch:
+The syntax for the catch method is:
 
 ```jsx
 let promise = new Promise((resolve, reject) => {
-  setTimeout(() => reject(new Error('Ошибка!')), 1000)
+  setTimeout(() => reject(new Error('Error!')), 1000)
 })
 
-promise.catch(alert) // выведет "Error: Ошибка!" спустя одну секунду
+promise.catch(alert) // will print "Error: Error!" one second later
 ```
 
 ### promise.all
 
-Этот метод берет массив промисов и возвращает🔄 🆕 новый промис, который будет выполненным, когда все промисы внутри массива выполнены или отклонен, как только встречается промис, который отклоняется.
+This method takes an array of promises and returns a new promise that will be fulfilled when all the promises within the array are fulfilled or rejected as soon as a promise is encountered that is rejected.
 
 ![Return](https://media.giphy.com/media/Y08bx6Fea1BafzTlvc/giphy.gif)
 
-Например:
+For example:
 
 ```jsx
 const promise1 = new Promise((resolve, reject) => {
   setTimeout(() => {
-    resolve('Promise1 выполнен')
+    resolve('Promise1 completed')
   }, 2000)
 })
 const promise2 = new Promise((resolve, reject) => {
   setTimeout(() => {
-    resolve('Promise2 выполнен')
+    resolve('Promise2 completed')
   }, 1500)
 })
 Promise.all([promise1, promise2])
@@ -158,7 +158,7 @@ Promise.all([promise1, promise2])
   .catch(error => console.log(error))
 ```
 
-Здесь аргументом внутри `then()` выступает массив, который содержит значения промисов в том же порядке, в котором они передавались в `Promise.all()`.
+Here, the argument inside `then()` is an array that contains the values of the promises in the same order in which they were passed to `Promise.all()`.
 
 <!-- ### promise.race
 
@@ -190,44 +190,36 @@ Promise.race([promise1, promise2])
 
 По итогу, `Promise.race()` дожидается первого промиса и берет его статус как статус возвращаемого🔄 промиса. -->
 
-## Проблемы?
+## Problems?
 
-Пишите в телеграмм [чат](https://t.me/jscampapp), а также подписывайтесь на наши [новости](https://t.me/javascriptapp).
+![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
 
-## Вопросы:
+Channel in [Discord](https://discord.gg/6GDAfXn) after paying on [Patreon](https://www.patreon.com/javascriptcamp).
+
+## Questions:
 
 ![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
 
-Как называется метод который вызывается при успешном выполнении промиса?
+What is the name of the method that is called when the promise is successful?
 
 1. `reject`
 2. `resolve`
 
-Каким методом можно проверить выполнение всех промисов в массиве?
+What method can be used to check the fulfillment of all promises in the array?
 
 1. `promise.all`
 2. `promise.race`
 
-<!-- Каким методом можно проверить выполнение всех промисов в массиве?
-
-1. `promise.all`
-2. `promise.race`
-
-Каким методом можно проверить какой промис выполниться первее?
-
-1. `promise.all`
-2. `promise.race` -->
-
-Какой метод служит для отлова ошибок в промисах?
+What method is used to catch errors in promises?
 
 1. `then`
 2. `catch`
 
-Для того чтобы понять, на сколько вы усвоили этот урок, пройдите тест в [мобильном приложении](http://onelink.to/njhc95) нашей школы по этой теме.
+In order to understand how much you learned this lesson, take the test on the [mobile application](http://onelink.to/njhc95) of our school on this topic.
 
 ![Sumerian school](/img/app.png)
 
-## Ссылки:
+## Links:
 
 1.  [MDN web docs](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise)
 2.  [Learn JavaScript](https://learn.javascript.ru/promise)

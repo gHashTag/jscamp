@@ -1,118 +1,119 @@
 ---
 id: javascript18
-title: Операторы Rest и Spread
-sidebar_label: Операторы Rest и Spread
+title: Rest and Spread
+sidebar_label: Rest and Spread
 ---
 
 ![@serverSerrverlesskiy](/img/javascript/headers/19.jpg)
 
-Многие встроенные функции⚙️ JavaScript поддерживают произвольное количество аргументов.
+Many built-in JavaScript functions support an arbitrary number of arguments.
 
-Например:
+For example:
 
-`Math.max(arg1, arg2, ..., argN)` – вычисляет максимальное число из переданных аргументов.
+`Math.max (arg1, arg2, ..., argN)` - calculates the maximum number of the passed arguments.
 
-`Math.min(arg1, arg2, ..., argN)` - возвращает🔄 минимальное значение из переданных аргументов.
+`Math.min (arg1, arg2, ..., argN)` - returns the minimum value of the passed arguments.
 
-В этой статье мы узнаем, как сделать то же самое с нашими собственными функциями⚙️ и как передавать таким функциям⚙️ параметры в виде массива.
+In this article, we will learn how to do the same with our own functions and how to pass parameters to such functions as an array.
 
-## Остаточные параметры `(...rest)`
+## Remaining parameters `(... rest)`
 
 ![Parametrs](https://media.giphy.com/media/hvddF1vHatFIgQspUB/giphy.gif)
 
-Вызывать функцию⚙️ можно с любым количеством аргументов независимо от того, как она была определена.
+You can call a function⚙️ with any number of arguments, regardless of how it was defined.
 
-Например 👇 :
+For example 👇:
 
 ```jsx live
 function learnJavaScript() {
   let summa = (a, b, c) => {
     return a + b + c
-  } // Сумма 3-х чисел
+  } // Sum of 3 numbers
 
   return summa(1, 2, 3, 4, 5, 6, 7)
 }
 ```
 
-Лишние аргументы не вызовут ошибку, но конечно посчитаются только первые три.
+Extra arguments will not cause an error, but of course only the first three will be counted.
 
-### Концепция ES6
+### ES6 concept
 
 ![Idea](https://media.giphy.com/media/3o6Mbj2w67HnPQKgcE/giphy.gif)
 
-Начиная со стандарта ES6 появилась концепция, как `...rest` - остаточные параметры.
+Starting with the ES6 standard, a concept has appeared like `... rest` - residual parameters.
 
 ```jsx
 let goFun = (...rest) => {
-  // Алгоритм
+  // Algorithm
 }
 ```
 
-Свободные параметры могут быть обозначены через три точки `...`. Буквально это значит: "собери оставшиеся параметры и положи их в массив".
+Free parameters can be indicated with three dots `...`. It literally means: "collect the remaining parameters and put them in an array."
 
-Например, соберём все аргументы в массив `args`👇 :
+For example, let's collect all the arguments into an array `args`👇:
 
 ```jsx live
 function learnJavaScript() {
   let sumAll = (...args) => {
-    // args — имя массива передаваемых аргументов
+    // args — name of the array of passed arguments
     let sum = 0
-    for (let arg of args) if (typeof arg === 'number') sum += arg // sum - соберется сумма всех числовых аргументов
+    for (let arg of args) if (typeof arg === 'number') sum += arg // sum - will collect the sum of all numeric arguments
     return sum
   }
   return sumAll(1, 2, 3, 4, 5, 6, 7, 'React', 'Native')
 }
 ```
 
-Ответ уже 28 и без ошибок🙅‍♂️! Подробуйте изменить аргументы или размерность массива.
+The answer is already 28 and no errors🙅‍♂️! Try changing the arguments or the dimension of the array.
 
-### Несколько параметров
+### Multiple parameters
 
-Мы можем положить первые несколько параметров в переменные 🔔 , а остальные – собрать в массив.
-Это означает то, что вы просто можете вставить `...rest`, но только вместо последнего параметра функции.
+We can put the first few parameters in variables 🔔, and collect the rest into an array.
+This means that you can simply insert `... rest`, but only instead of the last parameter of the function.
 
 ![paste](https://media.giphy.com/media/3o6ZtafpgSpvIaKhMI/giphy.gif)
 
 ```jsx
 let goFun = (first, second, ...rest) => {
-  // Алгоритм
+  // Algorithm
 }
 ```
 
-В примере ниже первые два2️⃣ аргумента функции станут именем и фамилией, а третий и последующие превратятся в массив `titles[i]` 👇 :
+In the example below, the first two 2️⃣ arguments to the function will become the first and last name, and the third and subsequent arguments will become the array `titles [i]` 👇:
 
 ```jsx live
 function learnJavaScript() {
   let free = ''
   let showName = (firstName, lastName, ...titles) => {
-    free = firstName + ' ' + lastName // Имя + Фамилия
+    free = firstName + ' ' + lastName // First name + Last name
     return titles[0] + ' ' + titles[1]
   }
-  // Оставшиеся параметры пойдут в массив titles = ["React", "Native"]
-  // titles[0]  // React
-  // titles[1]  // Native
+  // The rest of the parameters will go to the titles = ["React", "Native"] array
+  // titles [0] // React
+  // titles [1] // Native
 
-  let result = showName('Юлий', 'Цезарь', 'React', 'Native')
+  let result = showName('Julius', 'Caesar', 'React', 'Native')
 
-  return free + ' или ' + result
+  return free + ' or ' + result
 }
 ```
 
-### Возможные ошибки
+### Possible mistakes
 
 ![error](https://media.giphy.com/media/xTiN0L7EW5trfOvEk0/giphy.gif)
 
-Остаточные параметры должны располагаться в конце, поэтому нельзя писать 🖊️ что-либо после них.
-Это вызовет `ошибку`:
+Residual parameters must be at the end, so you cannot write 🖊️ anything after them.
+This will throw an error:
 
 ```jsx
 function f(arg1, ...rest, arg2) {   // arg2 после ...rest ?
-  // Ошибка!
+  // Mistake!
 }
 ```
 
-:::note Запомни
-`...rest` должен всегда быть последним.
+:::note Remember
+`... rest` must always be last.
+
 :::
 
 <!-- ### Опасный "arguments"
@@ -129,13 +130,13 @@ Cтрелочные функции⚙️ не имеют `arguments[]` как и
 
 Если мы обратимся к `arguments` из стрелочной функции⚙️, то получим аргументы внешней "классической" функции⚙️. Соответственно, для более удобной работы с аргументами лучше использовать только остаточные параметры `...rest`. -->
 
-## Оператор расширения `...spread`
+## Spread operator `... spread`
 
 ![operators](https://media.giphy.com/media/3o6Mbfd5fQszubehmE/giphy.gif)
 
-Мы узнали, как получить массив из списка параметров, но иногда нужно сделать противоположное - запихнуть массив в вызываемую функцию⚙️.
+We learned how to get an array from a parameter list, but sometimes you need to do the opposite - stuff the array into the called function⚙️.
 
-Например, есть встроенная функция⚙️ `Math.max`. Она возвращает🔄 наибольшее число из списка:
+For example, there is a built-in function ⚙️ `Math.max`. It returns the largest number in the list:
 
 ```jsx live
 function learnJavaScript() {
@@ -143,13 +144,13 @@ function learnJavaScript() {
 }
 ```
 
-### Не так все просто
+### Not so simple
 
 ![Index_finger](https://media.giphy.com/media/4ZcYCubFNk8AUHcZVw/giphy.gif)
 
-Допустим, у нас есть массив чисел `[3, 5, 1]`. Как вызвать для него `Math.max`?
+Let's say we have an array of numbers `[3, 5, 1]`. How to call `Math.max` for it?
 
-Просто так их не вставишь — `Math.max` ожидает получить список чисел, а не один массив.
+You can't just insert them - `Math.max` expects to get a list of numbers, not a single array.
 
 ```jsx live
 function learnJavaScript() {
@@ -158,29 +159,29 @@ function learnJavaScript() {
 }
 ```
 
-Конечно, мы можем вводить числа вручную: `Math.max(arr[0], arr[1], arr[2]).`
+Of course, we can enter numbers manually: `Math.max (arr[0], arr[1], ar[2]).`
 
-Но, во-первых, это плохо выглядит, а, во-вторых, мы не всегда знаем, сколько будет аргументов. Их может быть как очень много, так и не быть совсем.
+But, firstly, it looks bad, and, secondly, we do not always know how many arguments there will be. There can be a lot of them, or not at all.
 
-### Вхождение параметров
+### Occurrence of parameters
 
 ![Transform](https://media.giphy.com/media/xT4uQr9H3EDL7Ha2hq/giphy.gif)
 
-Тут нам поможет оператор расширения `...spread`. Он похож на остаточные параметры – тоже использует `...`, но делает совершенно противоположное.
+The `...spread` operator will help us here. It is similar to residual parameters - it also uses `...`, but does the exact opposite.
 
-Когда функционал⚙️ `...spread` используется при вызове функции⚙️, он преобразует массив-объект `arr` в список аргументов.
+When the `...spread` functionality is used in a function call, it converts the `arr` array object to an argument list.
 
-Для `Math.max` 👇 :
+For `Math.max` 👇:
 
 ```jsx live
 function learnJavaScript() {
   let arr = [3, 5, 1, 17, 14, 8, 2, 11]
 
-  return Math.max(...arr) // оператор ...arr преобразует массив `arr` в список аргументов
+  return Math.max(...arr) // the ... arr operator converts the array `arr` to an argument list
 }
 ```
 
-Этим же способом мы можем передать несколько итерируемых объектов 👇 :
+In the same way, we can pass multiple iterables 👇:
 
 ```jsx live
 function learnJavaScript() {
@@ -192,13 +193,13 @@ function learnJavaScript() {
 }
 ```
 
-Круто! Очень гибкий подход к программированию. Можно также комбинировать оператор расширения с обычными значениями.
+Cool! A very flexible approach to programming. You can also combine the spread operator with normal values.
 
-### Слияния массивов
+### Merging Arrays
 
 ![Merger](https://media.giphy.com/media/rytLWOErAX1F6/giphy.gif)
 
-Оператор расширения `...spread` можно использовать и для слияния массивов 👇 :
+The spread operator `... spread` can also be used to merge arrays 👇:
 
 ```jsx live
 function learnJavaScript() {
@@ -212,95 +213,97 @@ function learnJavaScript() {
 }
 ```
 
-### Преобразование в строку
+### Converting to string
 
 ![Transform](https://media.giphy.com/media/RLVHPJJv7jY1q/giphy.gif)
 
-Функционал⚙️ оператора расширения `...spread` работает с любым перебираемым объектом.
+The `... spread` operator functionality works with any iterable object.
 
-Например, оператор расширения подойдёт для превращения строки в массив символов 👇 :
+For example, the spread operator is suitable for converting a string into an array of characters 👇:
 
 ```javascript
-let str = 'Привет, Alex!'
+let str = 'Hey, Alex!'
 let result = [...str]
 ```
 
 ![spread](/img/javascript/13.jpg)
 
-Посмотрим, что происходит. Под капотом оператор расширения использует итераторы, чтобы перебирать элементы. Так же, как это делает `for..of`.
+Let's see what happens. Under the hood, the spread operator uses iterators to iterate over the elements. Just like `for..of` does.
 
-Цикл `for..of` перебирает строку как последовательность символов, поэтому из `...str` получается "П", "р", "и", "в", "е", "т"...
-Получившиеся символы собираются в массив при помощи стандартного объявления🗣️ массива `[...str].`
+The `for..of` loop iterates over the string as a sequence of characters, so from` ... str` it turns out "P", "p", "and", "in", "e", "t" ...
+The resulting characters are collected into an array using the standard array declaration🗣️ `[... str] .`
 
-Для этой задачи мы можем использовать и `Array.from`. Он тоже преобразует перебираемый объект (такой как строка) в массив 👇 :
+We can also use `Array.from` for this task. It also converts an iterable (such as a string) to an array 👇:
 
 ```javascript
-let str = 'Привет'
-Array.from(str) // "П", "р", "и", "в", "е", "т"
-// Array.from преобразует перебираемый объект в массив
+let str = 'Hello'
+Array.from(str) // "H", "e", "l", "l", "o"
+// Array.from converts an iterable to an array
 ```
 
 ![spread](/img/javascript/14.jpg)
 
-Результат аналогичен `[...str].` Но между `Array.from(obj)` и `[...obj]` есть разница:
+The result is the same as `[...str]`. But there is a difference between `Array.from(obj)` and `[...obj] `:
 
-- `Array.from` работает как с псевдомассивами, так и с итерируемыми объектами.
-- Оператор расширения `...spread` работает `только` с итерируемыми объектами.
+- `Array.from` works with both pseudo-arrays and iterables.
+- The `... spread` operator works `only` with iterable objects.
 
-Поэтому `Array.from` — более универсальный метод.
+Therefore, `Array.from` is a more general method.
 
-## Итого
+## Total
 
 ![Elipsis](https://media.giphy.com/media/UWXLULrP5KGDC/giphy.gif)
 
-Когда мы видим `"..."` в коде📟 , это могут быть как остаточные параметры `...rest`, так и оператор расширения `...spread`.
+When we see `"..."` in code код, it can be either the residual parameters `...rest` or the extension operator` ...spread`.
 
-Как отличить их друг от друга:
+How to distinguish them from each other:
 
-- Если `...` располагается в конце списка аргументов функции, то это "остаточные параметры". Он собирает остальные неуказанные аргументы и делает из них массив.
-- Если `...` встретился в вызове функции или где-либо ещё, то это "оператор расширения". Он извлекает элементы из массива для инициализации работы функции.
+- If `...` is located at the end of the function argument list, then these are "residual parameters". It collects the rest of the unspecified arguments and makes an array of them.
+- If `...` occurs in a function call or elsewhere, it is an "extension operator". It extracts elements from an array to initialize the function.
 
-Полезно запомнить:
+It is useful to remember:
 
-- Остаточные параметры используются, чтобы создавать новые функции с неопределённым числом аргументов.
-- С помощью оператора расширения можно вставить массив в функцию, которая по умолчанию работает с обычным списком аргументов.
-- Вместе эти конструкции помогают легко преобразовывать наборы значений в массивы и обратно.
+- Residual parameters are used to create new functions with an undefined number of arguments.
+- Using the spread operator, you can insert an array into a function that, by default, works with a regular list of arguments.
+  “Together, these constructs make it easy to convert sets of values ​​to and from arrays.
 
-## Проблемы?
+## Problems?
 
-Пишите в телеграмм [чат](https://t.me/jscampapp), а также подписывайтесь на наши [новости](https://t.me/javascriptapp).
+![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
 
-## Вопросы
+Channel in [Discord](https://discord.gg/6GDAfXn) after paying on [Patreon](https://www.patreon.com/javascriptcamp).
+
+## Questions:
 
 ![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
 
-Если `...` располагается в конце списка аргументов функции, то мы имеет дело с:
+If `...` is located at the end of the function argument list, then we are dealing with:
 
-1. Остаточным параметром
-2. Оператором расширения
-3. Случайными показателями
+1. Residual parameter
+2. Expansion operator
+3. Random indicators
 
-Для создания функции с неопределённым числом аргументов используют:
+To create a function with an undefined number of arguments, use:
 
-1. Остаточные параметры `...rest`
-2. Оператор расширения `...spread`
-3. Внешние функции вызова
+1. Residual parameters `...rest`
+2. The spread operator `...spread`
+3. External call functions
 
-Объединить два массива в один можно используя:
+You can combine two arrays into one using:
 
-1. Оператор расширения
-2. Оператор `Array.from`
-3. Остаточный параметр
+1. Expansion operator
+2. The `Array.from` operator
+3. Residual parameter
 
-Для того чтобы понять, на сколько вы усвоили этот урок, пройдите тест в [мобильном приложении](http://onelink.to/njhc95) нашей школы по этой теме.
+In order to understand how much you learned this lesson, take the test on the [mobile application](http://onelink.to/njhc95) of our school on this topic.
 
 ![Sumerian school](/img/app.png)
 
-## Ссылки
+## Links
 
-1. [MDN web doc. Статья "spread syntax"](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/spread_syntax)
-2. [Статья "Остаточные параметры и оператор расширения"](https://learn.javascript.ru/rest-parameters-spread-operator)
-3. [Статья "Оператор spread и rest"](https://medium.com/@stasonmars/%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D1%80-spread-%D0%B8-rest-%D0%BF%D0%B0%D1%80%D0%B0%D0%BC%D0%B5%D1%82%D1%80%D1%8B-%D0%B2-javascript-22eb33cb0825)
+1. [MDN web doc. Spread syntax article](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/spread_syntax)
+2. [Residual Parameters and the Spread Operator article](https://learn.javascript.ru/rest-parameters-spread-operator)
+3. [The article "The spread and rest operator"](https://medium.com/@stasonmars/%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D1%80-spread-%D0%B8-rest-%D0%BF%D0%B0%D1%80%D0%B0%D0%BC%D0%B5%D1%82%D1%80%D1%8B-%D0%B2-javascript-22eb33cb0825)
 
 ## Contributors ✨
 

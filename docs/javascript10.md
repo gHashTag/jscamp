@@ -1,21 +1,21 @@
 ---
 id: javascript10
-title: Объекты
-sidebar_label: Объекты
+title: Objects
+sidebar_label: Objects
 ---
 
 ![@serverSerrverlesskiy](/img/javascript/headers/11.jpg)
 
-Объекты - это как шкаф📦 для вещей, предназначеный для хранения 📦 и транспортировки других типов данных.
-JavaScript спроектирован на основе простой парадигмы. В основе концепции лежат простые объекты. Объект — это набор свойств, и каждое свойство состоит из имени(ключ) и значения, ассоциированного с этим именем. Значением свойства может быть функция⚙️, которую можно назвать методом объекта или любой другой тип.
+Objects are like a closet📦 for storing and transporting other types of data.
+JavaScript is designed around a simple paradigm. The concept is based on simple objects. An object is a collection of properties, and each property consists of a name (key) and a value associated with that name. The property value can be a function⚙️, which can be called a method of an object, or any other type.
 
 ![Object](https://media.giphy.com/media/xTiTnFEfyt0vqhQzDi/giphy.gif)
 
-В этой статье рассмотрим самые базовые свойства объектов JavaScript, создание🏗️ и изменение, перечисление свойств.
+In this article, we'll cover the most basic properties of JavaScript objects, creating and modifying, and enumerating properties.
 
-Объект в JavaScript представляет собой обычный ассоциативный массив или, иначе говоря, "хэш". Он хранит любые соответствия `"ключ : значение"` и имеет несколько стандартных методов.
+An object in JavaScript is a simple associative array or, in other words, a "hash". It stores any key: value matches and has several standard methods.
 
-Объекты в JavaScript как и объекты в реальной жизни (человек👨, автобус, здание и т.д.) имеют несколько именованных (ключевых🗝️) параметров (возраст, имя, цвет волос, статус) с конкреными значениями (15, John, black, 'true') ✅ :
+Objects in JavaScript, like objects in real life (a person👨, a bus, a building, etc.) have several named (key🗝️) parameters (age, name, hair color, status) with specific values (15, John, black, 'true') ✅:
 
 ```javascript
 let obj = {
@@ -26,46 +26,46 @@ let obj = {
 }
 ```
 
-Метод объекта в JavaScript - это просто функция️, которая добавлена в ассоциативный массив.
+An object method in JavaScript is simply a function️ that is added to an associative array.
 
 ```jsx live
 function learnJavaScript() {
   let obj = {
-    // свойства : значения
+    // properties: values
     age: 15,
     name: 'John',
-    // метод : функция
+    // method: function
     say: () => 'Hello!'
   }
   return obj.say()
 }
 ```
 
-### Создание объекта
+### Object creation
 
 ![Object](https://media.giphy.com/media/2YaKpvYQEcl1WuJJTl/giphy.gif)
 
-В компьютере🖥️ мы можем представить `объект` в виде шкафа📦 с подписанными на нём именами-свойствами (`ключи доступа`). Внутри шкафа📦 ящики🧰 - данные (конкретная информация) и даже могут быть более мелкие объекты, по аналогии вещи. По `ключу` нужный ящик🧰 легко найти, удалить или добавить (записать) в него новое `значение`.
+In a computer🖥️ we can represent an `object` as a cabinet with names-properties (`access keys`) signed on it. Inside the cabinet📦 drawers🧰 - data (specific information) and even smaller objects, by analogy with things. It is easy to find, delete or add (write) a new value to it by the `key`.
 
 ![obj01](/img/javascript/12/01.png)
 
-Это два 2️⃣ варианта создания🏗️ пустого объекта:
+These are two 2️⃣ options for creating🏗️ an empty object:
 
 ```javascript
-// эквивалентные записи
+// equivalent records
 let obj = {}
 let person = new Object()
 ```
 
-Второй вариант очень редко используется в практике.
+The second option is very rarely used in practice.
 
 ![obj00](/img/javascript/12/00.png)
 
-## Расширенное создание
+## Advanced creation
 
 ![Extended](https://media.giphy.com/media/2XflxzlJfoSDycf3BBu/giphy.gif)
 
-Свойства можно указывать непосредственно при создании🏗️ объекта, через список в фигурных скобках вида {..., `ключ : значение,` ...} и создавать🏗️ сложные объекты:
+Properties can be specified directly when creating an object, through a list in curly braces like {..., `key: value,` ...} and create complex objects:
 
 ```jsx live
 function learnJavaScript() {
@@ -85,16 +85,16 @@ function learnJavaScript() {
 }
 ```
 
-Созданый🏗️ объект содержит пять свойств с конкретными значениями, одно из которых паспортные данные, являющийся встроенным объектом. Обратите внимание, как идет обращение к дальним свойствам или методам объекта. Попробуйте вернуть номер паспорта.
+The created🏗️ object contains five properties with specific values, one of which is passport data, which is a built-in object. Notice how the call to distant properties or methods of the object goes. Try to return your passport number.
 
-## Добавление свойств
+## Adding properties
 
 ![Adding](https://media.giphy.com/media/3CZ2iGe1ByKfhZxaD7/giphy.gif)
 
-Есть два 2️⃣ синтаксиса добавления свойств в объект. 1️⃣ Первый - точка, второй - квадратные скобки:
+There are two 2️⃣ syntax for adding properties to an object. 1️⃣ The first is a period, the second is square brackets:
 
 ```javascript
-// эквивалентные записи
+// equivalent records
 obj.age = 15
 obj['age'] = 15
 ```
@@ -111,14 +111,14 @@ function learnJavaScript() {
 }
 ```
 
-Квадратные скобки используются в основном, когда `название свойства` (properties) находится в `переменной` 🔔 :
+Square brackets are mainly used when the `properties' name is in a` variable` 🔔:
 
 ```javascript
 let nameProp = 'age'
 obj[nameProp] = 15
 ```
 
-Здесь через переменную 🔔 `nameProp` задаем имя свойства `"age"`, являющийся ключом в ассоциативном массиве, по которому лежит `значение 15`.
+Here, through the variable 🔔 `nameProp`, we set the name of the property`"age"`, which is the key in the associative array that contains` value 15`.
 
 ```jsx live
 function learnJavaScript() {
@@ -133,25 +133,25 @@ function learnJavaScript() {
 }
 ```
 
-## Доступ к свойствам
+## Accessing properties
 
 ![Door](https://media.giphy.com/media/l378znZcUM7b6VDyM/giphy.gif)
 
-Доступ к свойству осуществляется при обращении к нему 👇 :
+The property is accessed by accessing it 👇:
 
 ```jsx live
 function learnJavaScript() {
-  let obj = {} // объект пустой
-  obj.age = 17 // эквивалент obj['age']=17 или сразу obj={age:17}
+  let obj = {} // object is empty
+  obj.age = 17 // equivalent to obj ['age'] = 17 or immediately obj = {age: 17}
 
-  let result1 = obj.age // Вариант 1
-  let result2 = obj['age'] // Вариант 2
+  let result1 = obj.age // Option 1
+  let result2 = obj['age'] // Option 2
 
-  return result1 + ' или ' + result2
+  return result1 + 'or' + result2
 }
 ```
 
-Если у объекта `нет такого свойства`, то результат будет `'undefined'`. Проверьте это в консоле браузера.
+If the object has no such property, the result is `undefined`. Check it in your browser console.
 
 ```javascrript
 let obj = {}
@@ -160,7 +160,7 @@ obj.nokey
 
 ![nokey](/img/javascript/15.jpg)
 
-Никакой ошибки🙅‍♂️ при обращении по несуществующему свойству не будет, просто вернется специальное значение `undefined`. При отсутствии внутри функции⚙️ ключевого 🗝️ слова `return`, так же вернется значение `undefined` - отсутствие чего-либо.
+There will be no error🙅‍♂️ when accessing a property that does not exist, the special value `undefined` will simply return. If there is no `return` keyword inside the function, then the` undefined` value will also return - the absence of something.
 
 <!-- ## Проверка глобальной переменной
 
@@ -196,13 +196,13 @@ obj.nokey
 
 В JavaScript есть специальные способы для создания🏗️ `private` свойств, связанные с `замыканиями`. Они рассмотрены вместе с наследованием объектов далее по курсу. -->
 
-## Удаление свойств
+## Removing properties
 
 ![Delete](https://media.giphy.com/media/5xaOcLwEvFOizxHVyVy/giphy.gif)
 
-Удаляет ➖ свойство оператор `delete`. Попробуйте удалить из прошлого примера номер паспорта:
+Deletes ➖ property operator `delete`. Try to remove the passport number from the previous example:
 
-Создайте в консоле объект из прошлого примера.
+Create the object from the previous example in the console.
 
 ```javascript
 const obj = {
@@ -218,13 +218,13 @@ const obj = {
 }
 ```
 
-А теперь удалите вложеный объект `passport`
+Now remove the nested `passport` object
 
 ```javascript
 delete obj.passport
 ```
 
-Теперь если обратиться к нему, то в результате получим `undefined`
+Now if you refer to it, then the result will be `undefined`
 
 ```javascript
 obj.passport
@@ -232,35 +232,35 @@ obj.passport
 
 ![delete obj](/img/javascript/16.jpg)
 
-## Методы объектов
+## Object Methods
 
 ![Description](https://media.giphy.com/media/3ohzAqLk7azQ0O6RvW/giphy.gif)
 
-Как и в других языках👅, у объектов JavaScript есть `методы`.
+As with other languages👅, JavaScript objects have `methods`.
 
-Например, создадим🏗️ объект `sport` сразу с методом `run`:
+For example, let's create a `sport` object right away with the` run` method:
 
 ```jsx live
 function learnJavaScript() {
   let sport = {
-    run: n => 'John' + ' пробежал ' + n + ' метров!'
+    run: n => 'John' + 'ran' + n + 'meters!'
   }
 
   return sport.run(300)
 }
 ```
 
-### Добавление метода
+### Adding a method
 
 ![Add](https://media.giphy.com/media/5ns6077LTlGACuwRQR/giphy.gif)
 
-Добавление метода в существющий объект - просто, присвоим функцию⚙️ `function(n) { ... }` свойству `sport.run`.
+Adding a method to an existing object is simple, assign the function⚙️ `function (n) {...}` to the `sport.run` property.
 
 ```jsx live
 function learnJavaScript() {
   let sport = {}
 
-  sport.run = n => 'Спортсмен пробежал ' + n + ' метров и это был ' + 'Nikita'
+  sport.run = n => 'The athlete ran' + n + 'meters and it was' + 'Nikita'
 
   return sport.run(350)
 }
@@ -270,7 +270,7 @@ function learnJavaScript() {
 Очень часто методы используют в своих расчетах свойства своего же объекта.
 ::: -->
 
-Здесь не идет речь о классах, создании🏗️ экземпляров и тому подобном. Просто - в любой объект в любое время можно добавить новый метод или удалить существующий.
+This is not about classes, instantiation, and the like. Simple - you can add a new method or delete an existing one to any object at any time.
 
 <!--
 ```jsx live
@@ -292,21 +292,21 @@ function learnJavaScript() {
 
 Подумайте, чем можно заменить множественный `if()`. JavaScript - очень динамический язык👅. -->
 
-## Перебор свойств объекта
+## Looping through object properties
 
 ![enumeration](https://media.giphy.com/media/h5FIFDs6rXLpWlWWZJ/giphy.gif)
 
-Для перебора всех свойств объекта используется специальный вид конструкции `for .. in`:
+To iterate over all the properties of an object, a special type of `for .. in` construction is used:
 
 ```javascript
 for(let key in obj) {
-  // key - название свойства
-  // obj[key] - значение свойства
+   // key - property name
+   // obj [key] - property value
   ...
 }
 ```
 
-Например 👇 :
+For example 👇:
 
 ```jsx live
 function learnJavaScript() {
@@ -326,57 +326,59 @@ function learnJavaScript() {
 }
 ```
 
-И по секрету, если честно, практически любая переменная 🔔 является мини-объектом в среде JavaScript. Так, что не бойтесь их применять.
+And secretly, to be honest, almost any variable 🔔 is a mini-object in the JavaScript environment. So, don't be afraid to use them.
 
-## Проблемы?
+## Problems?
 
-Пишите в телеграмм [чат](https://t.me/jscampapp), а также подписывайтесь на наши [новости](https://t.me/javascriptapp).
+![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
 
-## Вопросы
+Channel in [Discord](https://discord.gg/6GDAfXn) after paying on [Patreon](https://www.patreon.com/javascriptcamp).
+
+## Questions:
 
 ![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
 
-Пустой объект создается командой:
+An empty object is created with the command:
 
 1. `let obj = {}`
 2. `function obj()`
 3. `let x = 10`
 
-Объект хранит соответствия:
+The object stores matches:
 
-1. ключ : значение
-2. имя : фамилия
-3. переменная = значение
+1. key: value
+2. name: surname
+3. variable = value
 
-Синтаксиc присвоения значения конкретному ключу (свойству):
+The syntax for assigning a value to a specific key (property):
 
-1. `color() = "green"`
-2. `obj.color = "red"`
-3. `function color () => "yellow"`
+1. `color () = "green" `
+2. `obj.color =" red "`
+3. `function color () =>" yellow "`
 
-Метод объекта в JavaScript - это
+An object method in JavaScript is
 
-1. Просто функция, добавленная в ассоциативный массив
-2. Внешняя функция
-3. Переменная описанная вне объекта
+1. Just a function added to an associative array
+2. External function
+3. Variable described outside the object
 
-Перебор свойств объекта
+Looping through object properties
 
-1. `for (let i = 0; i <= 100; i++) { sum += i }`
-2. `for(let key in obj) { }`
-3. `while (условие) { }`
+1. `for (let i = 0; i <= 100; i ++) {sum + = i} `
+2. `for (let key in obj) {}`
+3. `while (condition) {} `
 
-Для того чтобы понять, на сколько вы усвоили этот урок, пройдите тест в [мобильном приложении](http://onelink.to/njhc95) нашей школы по этой теме.
+In order to understand how much you learned this lesson, take the test on the [mobile application](http://onelink.to/njhc95) of our school on this topic.
 
 ![Sumerian school](/img/app.png)
 
-## Ссылки:
+## Links
 
 1. [MDN web doc. Developer.mozilla.org - Статья "Типы данных JavaScript и структуры данных"](https://developer.mozilla.org/ru/docs/Web/JavaScript/Data_structures)
 2. [MDN web doc. Developer.mozilla.org - Статья "Инициализация объектов"](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Object_initialize)
 3. [Статья "Object Types"](https://www.javascript.express/types/object_types)
 4. [Статья "Объекты", сайт Learn.javascript.ru](https://learn.javascript.ru/object)
-5. [Код для подростков: прекрасное руководство по программированию для начинающих, том 1: Javascript - Jeremy Moritz ](https://www.amazon.com/Code-Teens-Beginners-Programming-Javascript-ebook/dp/B07FCTLVPC)
+5. [Code for Teens: The Perfect Beginner's Guide to Programming, Volume 1: Javascript - Jeremy Moritz](https://www.amazon.com/Code-Teens-Beginners-Programming-Javascript-ebook/dp/B07FCTLVPC)
 
 ## Contributors ✨
 

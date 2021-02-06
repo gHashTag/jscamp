@@ -1,43 +1,43 @@
 ---
 id: javascript13
-title: Параметры по умолчанию
-sidebar_label: Параметры по умолчанию
+title: Default parameters
+sidebar_label: Default parameters
 ---
 
 ![@serverSerrverlesskiy](/img/javascript/headers/25.jpg)
 
-Параметры по умолчанию позволяют задавать параметрам функции⚙️ значения по умолчанию в случае, если функция⚙️ вызвана без аргументов, или если параметру явным образом передано значение `undefined`.
+Default parameters allow you to set default values for function parameters if the function is called without arguments, or if the parameter is explicitly passed the value `undefined`.
 
 ![Teacher](https://media.giphy.com/media/3ohc10nduj1irsuzgA/giphy.gif)
 
-В JavaScript параметры функции⚙️, которым при ее вызове не передаются значения, принимают по умолчанию значение `undefined`. Однако в некоторых случаях может быть полезно задать иное значение по умолчанию. Именно для таких случаев предназначены параметры по умолчанию.
+In JavaScript, function parameters⚙️ that are not passed values when called are defaulted to `undefined`. However, in some cases it may be useful to set a different default value. This is where the default options are intended.
 
-## Синтаксис
+## Syntax
 
 ![book](https://media.giphy.com/media/l0HlOBZcl7sbV6LnO/giphy.gif)
 
 ```jsx live
 function learnJavaScript() {
   const multiply = (a, b = 1) => {
-    //Значение по умолчанию у b равно 1
+    // The default value b is 1
     return a * b
   }
-  //Если b будет undefined, то ему присвоиться значение по умолчанию
-  return multiply(5, 2) // удалите запятую, второй аргумент и получите 5 + 1
+  // If b is undefined, then it will be assigned a default value
+  return multiply(5, 2) // remove the comma, second argument and get 5 + 1
 }
 ```
 
-### Передача других "ложных" значений
+### Passing other "false" values
 
 ![basketball](https://media.giphy.com/media/3oEdv5e5Zd2gsczAhG/giphy.gif)
 
-Если формальному параметру при вызове передано любое значение, отличное от `undefined`, в том числе одно из "ложных" значений, таких как false ❎ , `0`, `""`, `''`,`null`, `NaN`, то в этом случае значение по умолчанию присвоено параметру не будет. В этом случае нужно самому прописывать 🖊️ код который будет отлавливать эти "ложные значения".
+If any value other than `undefined` is passed to the formal parameter during the call, including one of the" false "values such as false ❎,` 0`, `" "`, `''`, `null`,`NaN`, then in this case the default value will not be assigned to the parameter. In this case, you need to write the code yourself that will catch these "false values".
 
-## Примеры
+## Examples of
 
 ![Math](https://media.giphy.com/media/xT1Ra5h24Eliux3UVq/giphy.gif)
 
-В параметрах по умолчанию можно использовать значения предыдущих (расположеннных левее в списке) параметров:
+In the default parameters, you can use the values of the previous (located to the left in the list) parameters:
 
 ```jsx live
 function learnJavaScript() {
@@ -49,16 +49,16 @@ function learnJavaScript() {
 }
 ```
 
-Пример функции с параметрами по умолчанию и без них 👇 :
+An example of a function with and without default parameters 👇:
 
 ```jsx live
 function learnJavaScript() {
   const withDefaults = (a = 1, b = 3, c = 2) => {
-    //Функия с параметрами по умолчанию
+    // Function with default parameters
     return [a, b, c]
   }
   const withoutDefaults = (a, b, c) => {
-    //Функция без параметров по умолчанию
+    // Function without default parameters
     if (a == undefined) {
       a = 1
     }
@@ -75,39 +75,41 @@ function learnJavaScript() {
 }
 ```
 
-Результат будет тот же, но без параметров по умолчанию код📟 может стать заметно больше.
+The result will be the same, but without default parameters, the code📟 can become noticeably larger.
 
-## Проблемы?
+## Problems?
 
-Пишите в телеграмм [чат](https://t.me/jscampapp), а также подписывайтесь на наши [новости](https://t.me/javascriptapp).
+![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
 
-## Вопросы:
+Channel in [Discord](https://discord.gg/6GDAfXn) after paying on [Patreon](https://www.patreon.com/javascriptcamp).
+
+## Questions:
 
 ![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
 
-Если параметрам функции⚙️ не передано значение, какое значение они принимают по умолчанию?
+If no value is passed to function parameters⚙️, what is their default value?
 
 1. `null`
 2. `undefined`
 3. `NaN`
 
-Параметры по умолчанию "отлавливают" ложные значения?
+Are the default parameters "catching" false values?
 
-1. Да
-2. Нет
+1. Yes
+2. No
 
-Можно ли в параметрах по умолчанию использовать значения параметров расположенных левее в списке?
+Is it possible to use the values of the parameters located to the left of the list in the default parameters?
 
-1. Да
-2. Нет
+1. Yes
+2. No
 
-Для того чтобы понять, на сколько вы усвоили этот урок, пройдите тест в [мобильном приложении](http://onelink.to/njhc95) нашей школы по этой теме.
+In order to understand how much you learned this lesson, take the test on the [mobile application](http://onelink.to/njhc95) of our school on this topic.
 
 ![Sumerian school](/img/app.png)
 
-## Ссылки:
+## Links
 
-1.  [MDN web docs](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Functions/Default_parameters)
+1.  [MDN web docs](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Functions/Default_parameters)
 
 ## Contributors ✨
 

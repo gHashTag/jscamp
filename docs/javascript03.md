@@ -1,28 +1,28 @@
 ---
 id: javascript03
-title: Переменка
-sidebar_label: Переменка
+title: Variables
+sidebar_label: Variables
 ---
 
 import YouTube from 'react-youtube'
 
 ![@serverSerrverlesskiy](/img/javascript/headers/03.jpg)
 
-## Переменные
+## Variables
 
-Переменные 🔔 (Variables, сокращенно `var`) — это контейнер 📦 для таких значений, как числа, используемые в сложении ➕ , или строка, которую мы могли бы использовать как часть предложения.
+Variables 🔔 (Variables, abbreviated as `var`) are a container, for values such as numbers used in addition ➕, or a string that we could use as part of a sentence.
 
 ![Container](https://media.giphy.com/media/0T0FUiZl51VPCLsqLR/giphy.gif)
 
-## Видео
+<!-- ## Видео
 
-<YouTube videoId="gCqxA_JOtmw" />
+<YouTube videoId="gCqxA_JOtmw" /> -->
 
-## Объявление переменной
+## Variable declaration
 
 ![Announcement](https://media.giphy.com/media/cYaBD8kxE4PZudHBRA/giphy.gif)
 
-Чтобы использовать переменную, вы сначала должны ее создать🏗️, или, если быть точнее, объявить🗣️ переменную. Чтобы сделать это, мы вводим ключевое🗝️ слово `var`, за которым следует имя, которое вы хотите дать своей переменной. Приведённая ниже инструкция создаёт🏗️ (другими словами: объявляет🗣️ или определяет) переменную с именем «message»:
+To use a variable, you must first create it, or, more precisely, declare a variable. To do this, we introduce the keyword `var` followed by the name you want to give your variable. The instruction below creates (in other words: declares or defines) a variable named "message":
 
 ```jsx live
 function learnJavaScript() {
@@ -32,174 +32,176 @@ function learnJavaScript() {
 }
 ```
 
-Здесь мы создаем переменную 🔔 `message`. В настоящее время ⏱️ она не содержит значение, если сказать точней, то переменная содержит пустую строку.
+Here we create a variable 🔔 `message`. Currently ⏱️ it does not contain a value, to be more precise, the variable contains an empty string.
 
-## Присвоение значения переменной
+## Assigning a value to a variable
 
 ![Memory](https://media.giphy.com/media/3o6ZtafpgSpvIaKhMI/giphy.gif)
 
-Как только переменная 🔔 объявлена, ей можно присвоить значение. Для этого пишется 🖊️ имя переменной 🔔 , затем следует знак равенства `=`, а за ним значение, которое вы хотите присвоить. Например 👇 :
+Once the variable 🔔 is declared, it can be assigned a value. To do this, write 🖊️ variable name 🔔, followed by an equal sign `=`, followed by the value you want to assign. For example 👇:
 
 ```jsx live
 function learnJavaScript() {
   var message
   message = 'My name is ...'
-  //Мы можем получить к ней доступ, используя имя переменной
+  // We can access it using the variable name
   return message
 }
 ```
 
-В `RESULT` значение, которое вы назначили переменной 🔔 , возвращаемой в консоли. Поиграйтесь 🎮 со значениями переменной 🔔 , например дополните выражение своим именем.
+In `RESULT`, the value that you assigned to the variable 🔔 returned in the console. Play around 🎮 with the values of a variable 🔔, for example, complete the expression with your name.
 
-Для краткости можно совместить объявление переменной 🔔 и запись 🖊️ в одну строку 👇 :
+For brevity, you can combine the declaration of a variable 🔔 and writing 🖊️ in one line 👇:
 
 ```jsx live
 function learnJavaScript() {
-  var message = 'Hello!' // определяем переменную и присваиваем ей значение
+  var message = 'Hello!' // define a variable and assign a value to it
   return message
 }
 ```
 
-## Обновление переменной
+## Variable update
 
 ![Update](https://media.giphy.com/media/FP47IFqWyXfdKYU6VG/giphy.gif)
 
-Одна из особенностей переменных 🔔 — их значение может меняться.
-Когда переменной 🔔 присваивается значение, вы можете изменить (обновить) это значение, просто указав другое значение. Давайте взглянем на простой пример 👇 :
+One of the peculiarities of variables 🔔 is that their meaning can change.
+When a value is assigned to a variable 🔔, you can change (update) that value simply by specifying a different value. Let's take a look at a simple example 👇:
 
 ```jsx live
 function learnJavaScript() {
-  var message = 'Bob' // сейчас message Bob
-  message = true // а теперь message true
-  message = 35 // и в итоге message 35
+  var message = 'Bob' // now message Bob
+  message = true // and now the message is true
+  message = 35 // and as a result message 35
 
   return message
 }
 ```
 
-Еще одна особенность переменных 🔔 заключается в том, что они могут содержать практически все, а не только строки и числа. Переменные 🔔 могут также содержать сложные данные и даже целые функции. Об этом вы узнаете больше при дальнейшем изучении курса.
+Another feature of variables 🔔 is that they can contain almost anything, not just strings and numbers. Variables 🔔 can also contain complex data and even entire functions. You will learn more about this as you study the course further.
 
-:::tip На заметку!
-Мы говорим, что переменные содержат значения. Это важное различие. Переменные не являются самими значениями! Они представляют собой контейнеры📦 для значений. Представьте, что они похожи на маленькие картонные коробки📦, в которых вы можете хранить вещи.
+::: tip Note!
+We say that variables contain values. This is an important distinction. Variables are not the values themselves! They are containers for values. Imagine that they are like little cardboard boxes📦 in which you can store things.
 :::
 
 ![Variables](https://mdn.mozillademos.org/files/13506/boxes.png)
 
 ![Hello World](https://media.giphy.com/media/26his8ERHOSxKuWw8/giphy.gif)
 
-## Правила именования переменных
+## Variable naming rules
 
 ![Rules](https://media.giphy.com/media/XK8I8Am1gSe17MiJ2m/giphy.gif)
 
-Вы можете назвать переменную 🔔 как угодно, но есть ограничения. Как правило, вы должны придерживаться только латинских символов (0-9, a-z, A-Z) и символа подчеркивания.
+You can name the variable 🔔 whatever you like, but there are limitations. Generally, you should only stick to Latin characters (0-9, a-z, A-Z) and the underscore character.
 
-- Не рекомендуется использование других символов, потому что они могут вызывать ошибки или быть непонятными для международной аудитории.
-- Не используйте символы подчеркивания в начале имен переменных 🔔 - это используется в некоторых конструкциях JavaScript для обозначения конкретных вещей.
-- Не используйте числа в начале переменных 🔔 . Это недопустимо и приведет к ошибке.
-- Общепринято придерживаться так называемый "lower camel case"(верблюжийРегистр - называется так из-за "горбов" которые образуют первые буквы слов), где вы склеиваете несколько слов, используя строчные буквы для всего первого слова, а затем заглавные буквы последующих слов. Мы использовали это для наших имен переменных 🔔 в этой статье.
-- Делайте имена переменных 🔔 такими, чтобы было интуитивно понятно, какие данные они содержат. Не используйте только отдельные буквы / цифры или большие длинные фразы.
-- Переменные 🔔 чувствительны к регистру, так что `myage` и `myAge` - разные переменные 🔔 .
-- И последнее - вам также нужно избегать использования зарезервированных слов JavaScript в качестве имен переменных 🔔 - под этим мы подразумеваем слова, которые составляют фактический синтаксис JavaScript! Таким образом, вы не можете использовать слова типа var, function, let, и for для имен переменных 🔔 . Браузеры распознают их как разные элементы кода, и поэтому возникают ошибки.
+- The use of other symbols is not recommended because they may cause errors or be incomprehensible to an international audience.
+- Do not use underscores at the beginning of variable names 🔔 - this is used in some JavaScript constructs to denote specific things.
+- Do not use numbers at the beginning of variables 🔔. This is invalid and will result in an error.
+- It is generally accepted to stick to the so-called "lower camel case" (camelCase - so called because of the "humps" that form the first letters of words), where you glue several words, using lowercase letters for the entire first word, and then capital letters of subsequent words. We have used this for our variable names 🔔 in this article.
+- Make variable names 🔔 intuitive about what data they contain. Do not use only single letters / numbers or large long phrases.
+- Variables 🔔 are case sensitive, so `myage` and` myAge` are different variables 🔔.
+- Last but not least - you also need to avoid using JavaScript reserved words as variable names 🔔 - by that we mean the words that make up the actual JavaScript syntax! Thus, you cannot use words like var, function, let, and for for variable names 🔔. Browsers recognize them as different pieces of code and therefore errors occur.
 
-## Список зарезервированных слов
+## List of reserved words
 
 ![Reserved](https://media.giphy.com/media/3o6Mb3eci7bVDKBR2o/giphy.gif)
 
-Этими словами мы не можем называть переменные 🔔 , так как они зарезервированы в языке Java Script.
+We cannot call variables 🔔 with these words, since they are reserved in the Java Script language.
 `break`, `case`, `catch`, `class`, `const`, `continue`, `debugger`, `default`, `delete`, `do`, `else`, `export`, `extends`, `finally`, `for`, `function`, `if`, `import`, `in`, `instanceof`, `new`, `return`, `super`, `switch`, `this`, `throw`, `try`, `typeof`, `var`, `void`, `while`, `with`, `yield`
 
 ## Свободная типизация
 
 ![Freedom](https://media.giphy.com/media/6901DbEbbm4o0/giphy.gif)
 
-JavaScript - это «свободно типизируемый язык👅», что означает, что в отличие от некоторых других языков👅 вам не нужно указывать, какой тип данных будет содержать переменная 🔔 (например, числа, строки, массивы и т. д.).
+JavaScript is a “freely typed language👅” which means that unlike some other languages👅 you do not need to specify what type of data the variable will contain (eg numbers, strings, arrays, etc.).
 
-Например, если вы объявите переменную 🔔 и присвоите ей значение, заключенное в кавычки, браузер будет обрабатывать переменную 🔔 как строку 👇 :
+For example, if you declare a variable 🔔 and assign a quoted value to it, the browser will treat the variable 🔔 as a string 👇:
 
 ```jsx live
 function learnJavaScript() {
   var myString = 'Hello'
-  // Она все равно будет строкой, даже если содержит числа, поэтому будьте осторожны:
-  var myNumber = '500' // упс, это все еще строка (string)
+  // It will still be a string, even if it contains numbers, so be careful:
+  var myNumber = '500' // oops, it's still a string
 
-  myNumber = 500 // так-то лучше, теперь это число (number). Удалите эту строчку и посмотрите на тип данных.
+  myNumber = 500 // that's better, now it's number. Remove this line and look at the data type.
 
   return typeof myNumber
 }
 ```
 
-## Устаревшее ключевое слово "var"
+## Deprecated "var" keyword
 
 ![Old](https://media.giphy.com/media/3orieJI3IdkKWIsAGA/giphy.gif)
 
-Обычно `var` не используется в современных скриптах, но всё ещё может скрываться в старых. Связано это с тем, что он ведет себя не однозначно, поэтому вместо `var` мы будем использовать `let` для переменных 🔔 , а `const` для постоянных - констант.
+Usually `var` is not used in modern scripts, but it can still be hidden in old ones. This is due to the fact that it does not behave unambiguously, so instead of `var` we will use` let` for variables 🔔, and `const` for constants - constants.
 
-🔔 Переменка закончилась, бежим на следующий урок!
+🔔 The break is over, let's run to the next lesson!
 
-## Проблемы?
+## Problems?
 
-Пишите в телеграмм [чат](https://t.me/jscampapp), а также подписывайтесь на наши [новости](https://t.me/javascriptapp).
+![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
 
-## Вопросы:
+Channel in [Discord](https://discord.gg/6GDAfXn) after paying on [Patreon](https://www.patreon.com/javascriptcamp).
+
+## Questions:
 
 ![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
 
-Для кого содержит информацию команда `console.log`?
+For whom does the `console.log` command contain information?
 
-1. Пользователь
-2. Разработчик
-3. Интерпретатор JavaScript
+1. User
+2. Developer
+3. JavaScript interpreter
 
-Что такое переменные?
+What are variables?
 
-1. Контейнеры для значений
-2. Переменные значения
-3. Латинские буквы
+1. Containers for values
+2. Variable values
+3. Latin letters
 
-Что могут содержать переменные?
+What can variables contain?
 
-1. Только строки и числа
-2. Числа, строки, сложные данные, функции
-3. Только сложные данные и функции
+1. Only strings and numbers
+2. Numbers, strings, complex data, functions
+3. Only complex data and functions
 
-Как прописать команду присвоения переменной?
+How to write a command to assign a variable?
 
 1. `var`
-2. `var` [название переменной] =
-3. `var` [название переменной]
+2. `var` [variable name] =
+3. `var` [variable name]
 
-Как обновить переменную?
+How do I update a variable?
 
-1. Переменную нельзя обновить
-2. Указать другое значение переменной
-3. Задать специальную команду
+1. The variable cannot be updated
+2. Specify a different value for the variable
+3. Set a custom command
 
-Чего нет в правилах именования переменных?
+What is missing in the variable naming rules?
 
-1. Не используйте числа в начале переменных
-2. Используйте символы подчеркивания в начале переменных
-3. Придерживаться латинских символов
+1. Don't use numbers at the beginning of variables
+2. Use underscores at the beginning of variables
+3. Stick to Latin characters
 
-Как прописать значение переменной, чтобы браузер обрабатывал переменную как строку?
+How do I write the value of a variable so that the browser treats the variable as a string?
 
-1. Без кавычек
-2. В кавычках
-3. В скобках
+1. Without quotes
+2. In quotes
+3. In brackets
 
-Какое ключевое🗝️ слово мы не используем для определения переменных?
+Which keyword don't we use to define variables?
 
 1. `let`
 2. `const`
 3. `var`
 
-Для того чтобы понять, на сколько вы усвоили этот урок, пройдите тест в [мобильном приложении](http://onelink.to/njhc95) нашей школы по этой теме.
+In order to understand how much you learned this lesson, take a test in our school [mobile application](http://onelink.to/njhc95) on this topic.
 
 ![Sumerian school](/img/app.png)
 
-## Ссылки:
+## Links
 
 1. [MDN web docs](https://developer.mozilla.org/ru/docs/Learn/JavaScript/Первые_шаги/Variables)
-2. [Код для подростков: прекрасное руководство по программированию для начинающих, том 1: Javascript - Jeremy Moritz ](https://www.amazon.com/Code-Teens-Beginners-Programming-Javascript-ebook/dp/B07FCTLVPC)
+2. [Code for Teens: The Perfect Beginner's Guide to Programming, Volume 1: Javascript - Jeremy Moritz](https://www.amazon.com/Code-Teens-Beginners-Programming-Javascript-ebook/dp/B07FCTLVPC)
 3. [JavaScript.ru](https://learn.javascript.ru/types)
 
 ## Contributors ✨

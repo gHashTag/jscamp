@@ -1,52 +1,52 @@
 ---
 id: javascript22
-title: Функции высшего порядка
-sidebar_label: Функции высшего порядка
+title: Higher order functions
+sidebar_label: Higher order functions
 ---
 
 ![@serverSerrverlesskiy](/img/javascript/headers/21.jpg)
 
-Функции⚙️ высшего порядка позволяют JavaScript быть пригодным для [функционального⚙️ программирования](https://ru.wikipedia.org/wiki/Функциональное_программирование).
-Такие функции⚙️ широко используются в JavaScript. Если вы хоть немного программировали на JavaScript, то наверняка использовали их, возможно, даже не догадываясь об этом.
+Higher-order functions allow JavaScript to be suitable for [functional programming](https://en.wikipedia.org/wiki/Higher-order_function).
+Such functions are widely used in JavaScript. If you've programmed in JavaScript even a little, you've probably used them, perhaps without even realizing it.
 
-Чтобы в полной мере понять эту концепцию, вам следует сначала разобраться с функциональным⚙️ программированием и концепцией функций⚙️ первого класса.
+To fully understand this concept, you should first understand functional programming and the concept of first class functions.
 
-## Что такое функциональное программирование?
+## What is functional programming?
 
-> Функциона́льное программи́рование — раздел дискретной математики и парадигма программирования, в которой процесс вычисления трактуется как вычисление значений функций в математическом понимании последних (в отличие от функций как подпрограмм в процедурном программировании). [Wikipedia]
+> Functional programming is a branch of discrete mathematics and a programming paradigm, in which the computation process is interpreted as the calculation of the values ​​of functions in the mathematical sense of the latter (as opposed to functions as subroutines in procedural programming). [Wikipedia]
 
-### Функции первого класса
+### First class functions
 
 ![First_class](https://media.giphy.com/media/l2Jecm1l0wnJ2kQDu/giphy.gif)
 
-Если вы уже изучаете JavaScript, то могли слышать, что JavaScript расценивает функции⚙️ как объекты первого класса. В JavaScript функции⚙️ являются объектами, как и в других языках👅 функционального⚙️ программирования.
-В JavaScript функции⚙️ являются особым типом объектов. Это `Function` объекты. Например:
+If you are already learning JavaScript, you may have heard that JavaScript treats functions⚙️ as first-class objects. Functions in JavaScript are objects, just like in other functional programming languages.
+In JavaScript, functions⚙️ are a special type of object. These are `Function` objects. For example:
 
 ```jsx live
 function learnJavaScript() {
-  let greeting = () => 'Hello, World !'
+  let greeting = () => 'Hello, World!'
 
   return greeting()
 }
 ```
 
-Теперь мы знаем, что такое функции⚙️ первого класса. Можно приступать к функциям высшего порядка.
+We now know what first-class functions are. You can start with higher-order functions.
 
-## Функции высшего порядка
+## Higher order functions
 
 ![Higher](https://media.giphy.com/media/WS4yajVBkb3lIwDIKd/giphy.gif)
 
-Это такие функции⚙️, которые принимают функцию⚙️ в качестве аргумента или возвращают🔄 функцию⚙️ в качестве вывода.
+These are functions⚙️ that take a function⚙️ as an argument or return🔄 a function⚙️ as output.
 
-Например, эти функции⚙️ высшего порядка встроены в язык👅: `map()` `filter()` и `reduce()`
+For example, these higher-order functions are built into the language: `map()` `filter()` and `reduce()`
 
-### Пример №1. Изменяем числа `.push`
+### Example # 1. Change the numbers `.push`
 
 ![Edit_number](https://media.giphy.com/media/xT5LMMneIRG1UJquOI/giphy.gif)
 
-Допустим, у нас есть массив из чисел. Мы хотим создать🏗️ новый🆕 массив, который будет содержать удвоенные значения первого. Давайте посмотрим, как мы можем решить эту задачу с помощью функции⚙️ высшего порядка и без неё.
+Let's say we have an array of numbers. We want to create a new🆕 array that will contain the doubled values of the first one. Let's see how we can solve this problem with and without a higher-order function.
 
-#### Без функции высшего порядка:
+#### Without higher order function:
 
 ```jsx live
 function learnJavaScript() {
@@ -54,79 +54,79 @@ function learnJavaScript() {
   const arr2 = []
 
   for (let i = 0; i < arr1.length; i++) {
-    arr2.push(arr1[i] * 2) // массив arr2 растет в цикле
+    arr2.push(arr1[i] * 2) // the arr2 array grows in a loop
   }
 
-  return arr2 // 2, 4, 6, 8 только без пробелов
+  return arr2 // 2, 4, 6, 8 only without spaces
 }
 ```
 
-С функцией⚙️ высшего порядка `map` консольный вариант:
+With the higher-order function `map`, the console option is:
 
 ```jsx live
 function learnJavaScript() {
   const arr1 = [1, 2, 3, 4]
   const arr2 = arr1.map(function (item) {
-    // Старый вариант
+    // Old variant
     return item * 2 + ' '
   })
   return arr2
 }
 ```
 
-Мы можем записать ещё короче, используя синтаксис "стрелочных функций":
+We can write it even shorter using the "arrow function" syntax:
 
 ```jsx live
 function learnJavaScript() {
   const arr1 = [1, 2, 3, 4, 5]
   const multTwo = item => item * 2 + ' '
 
-  const arr2 = arr1.map(multTwo) // Алгоритм в 1 строку
+  const arr2 = arr1.map(multTwo) // Algorithm in 1 line
 
   return arr2
 }
 ```
 
-### Пример №2. Вычисляемые значения `.map`
+### Example # 2. Computed values `.map`
 
 ![Math](https://media.giphy.com/media/3o7btPCcdNniyf0ArS/giphy.gif)
 
-Допустим, у нас есть массив, который содержит годы рождения разных людей. Нам нужно создать🏗️ массив, в котором будет храниться их возраст.
+Let's say we have an array that contains the birth years of different people. We need to create an array that will store their age.
 
-Например: без функции⚙️ высшего порядка (классика - через цикл `for( )` и `push( )`)
+For example: without a higher-order function⚙️ (classic - through the `for()` and `push()` loops)
 
 ```jsx live
 function learnJavaScript() {
   const birthYear = [1975, 1997, 2002, 1995, 1985]
   const ages = []
   for (let i = 0; i < birthYear.length; i++) {
-    let ageNew = 2020 - birthYear[i] + ' ' // Текущее значение нового массива
-    ages.push(ageNew) // заносим новое значение в массив ages[]
+    let ageNew = 2020 - birthYear[i] + ' ' // The current value of the new array
+    ages.push(ageNew) // push the new value into the ages [] array
   }
 
-  return ages // [ 45, 23, 18, 25, 35 ] только без пробелов
+  return ages // [ 45, 23, 18, 25, 35 ] only without spaces
 }
 ```
 
-С функцией высшего порядка `map`:
+With the higher order function `map`:
 
 ```jsx live
 function learnJavaScript() {
   const birthYear = [1975, 1997, 2002, 1995, 1985]
-  let ages = birthYear.map(year => 2020 - year + ' ') // Алгоритм в 1 строку через стрелочную функцию
+  let ages = birthYear.map(year => 2020 - year + ' ') // 1-line algorithm via arrow function
   return ages // [ 45, 23, 18, 25, 35 ]
 }
 ```
 
-Перепрошиваем 🆕 новый массив за одну строчку кода📟 .
+We reflash 🆕 a new array in one line of code📟.
 
-### Пример №3. С проверкой условия `.filter()`
+### Example # 3. With condition check `.filter()`
 
 ![Check](https://media.giphy.com/media/Rd6sn03ncIklmprvy6/giphy.gif)
 
-У нас есть массив, который содержит объекты со свойствами: имя и возраст. Нам нужно создать🏗️ массив, который будет содержать только совершеннолетних (т.е. возраст больший или равный 18).
+We have an array that contains objects with properties: name and age. We need to create🏗️ an array that will only contain adults (ie, age greater than or equal to 18).
 
-Без функции высшего порядка (классика - через цикл `for( )` и `push( )` ):
+Without a higher-order function (classic - through the `for ()` and `push ()` loops):
 
 ```jsx live
 function learnJavaScript() {
@@ -145,11 +145,11 @@ function learnJavaScript() {
     }
   }
 
-  return fullAge.length // кол-во лиц старше 18 лет
+  return fullAge.length // number of persons over 18 years old
 }
 ```
 
-С функцией высшего порядка `filter` со встроенным условием:
+With a higher-order function `filter` with a built-in condition:
 
 ```jsx live
 function learnJavaScript() {
@@ -160,47 +160,48 @@ function learnJavaScript() {
     { name: 'Jane', age: 14 },
     { name: 'Tony', age: 24 }
   ]
-  const fullAge = persons.filter(person => person.age >= 18) // Алгоритм с условием в 1 строку
+  const fullAge = persons.filter(person => person.age >= 18) // Algorithm with a condition in 1 line
 
-  return fullAge.length // кол-во лиц старше 18 лет
+  return fullAge.length // number of persons over 18 years old
 }
 ```
 
-## Создание собственной функции высшего порядка
+## Creating your own higher-order function
 
 ![Create](https://media.giphy.com/media/3ohzdWsUVRcZC2L7Ms/giphy.gif)
 
-До этого мы рассматривали функции⚙️ высшего порядка, встроенные в язык👅. Теперь давайте сами создадим такую функцию⚙️.
-Представьте, что в JavaScript нет встроенного метода `map`. Мы можем самостоятельно написать его, создав🏗️ функцию⚙️ высшего порядка.
+So far, we've looked at higher-order functions that are built into the language. Now let's create such a function ourselves⚙️.
+Imagine JavaScript doesn't have a built-in `map` method. We can write it ourselves by creating a higher-order function.
 
-Допустим, у нас есть строчный массив, и мы хотим конвертировать его в массив чисел, в котором каждый элемент представляет длину элементов из оригинального массива.
+Let's say we have a string array and we want to convert it to an array of numbers, where each element represents the length of the elements from the original array.
 
 ```jsx live
 function learnJavaScript() {
-  // Исходный массив
+  // Source array
   const strArray = ['English', 'JavaScript', 'React', 'TypeScript', 'AWS']
-  // функция высшего порядка mapForEach() принимает к себе формальную (гипотетическую) функцию fn и формальный массив arr
+  // higher order function mapForEach () takes a formal (hypothetical) function fn and a formal array arr
   let mapFor = (arr, fn) => {
     const newArray = []
     for (let i = 0; i < arr.length; i++) {
-      newArray.push(fn(arr[i])) // Применяем к каждому элементу скрытую функцию fn()
+      newArray.push(fn(arr[i])) // We apply the hidden function fn () to each element
     }
-    return newArray // Возвращем новый массив
+    return newArray // Returning a new array
   }
-  // Основной код преобразования - mapForEach() вызывается с конкретными значениями-параметрами
+  // The main conversion code - mapForEach() is called with specific parameter values
   const lenArray = mapFor(strArray, item => item.length + ' ')
 
-  return 'Длина слов: ' + lenArray // [ 7, 10, 5, 10, 3 ]
+  return 'Word length: ' + lenArray // [ 7, 10, 5, 10, 3 ]
 }
 ```
 
-В примере выше, мы создали свою функцию высшего порядка `mapFor(),` которая принимает массив `arr` и callback-функцию `fn.` Эта функция циклично перебирает данный массив и вызывает callback-функцию `fn` внутри функции `newArray.push()` для каждой итерации, расчитывая количество символов в словах массива, алгоритм расчета которой описан 🖊️ в виде 2-й переменной 🔔 .
+In the example above, we have created our own higher-order function `mapFor()`, which takes an array `arr` and a callback function`fn`. This function loops through this array and calls the callback function `fn` inside the `newArray.push()` for each iteration, calculating the number of characters in the words of the array, the calculation algorithm of which is described 🖊️ in the form of the 2nd variable 🔔.
 
-:::note callback
-Функция⚙️ обратного вызова (callback) — это функция⚙️, переданная в другую функцию⚙️ в качестве аргумента, которая затем вызывается по завершению какого-либо действия.
+::: note callback
+A callback function is a function passed to another function as an argument, which is then called upon completion of an action.
+
 :::
 
-`Callback`-функция⚙️ `fn` принимает текущий элемент массива и возвращает🔄 длину текущего элемента, который теперь хранится в `newArray`. После завершения цикла `For()`, `newArray` возвращает🔄 значение длины элементов в `lenArray`.
+The `callback` function⚙️ `fn` takes the current element of the array and returns🔄 the length of the current element, which is now stored in `newArray`. After the `For()` loop completes, `newArray` returns the length of the elements in `lenArray`.
 
 <!-- Поэксперементируйте, используя стрелочные функции:
 
@@ -223,11 +224,11 @@ function learnJavaScript() {
 
 при передаче функции⚙️ say в качестве параметра скобки `()` не указываются, т.к. в параметре функция⚙️ не вызывается, а передается целиком. Функция⚙️ `say` является аргументом функции⚙️ `userInput().` -->
 
-Помните, любой сколь угодно малый алгоритм состоит из 3-х этапов:
+Remember, any algorithm, no matter how small, consists of 3 stages:
 
-- 1 этап - Инициализация переменных 🔔 и функций
-- 2 этап - Функция высшего порядка (логика)
-- 3 этап - Вывод ответа.
+- Stage 1 - Initialization of variables 🔔 and functions
+- Stage 2 - Higher order function (logic)
+- Stage 3 - Conclusion of the answer.
 
 <!-- Модернизированный пример:
 
@@ -245,50 +246,52 @@ function learnJavaScript() {
 }
 ``` -->
 
-## Заключение
+## Conclusion
 
 <!-- ![The and](https://media.giphy.com/media/xT1XH3yj7ujmm2h40o/giphy.gif) -->
 
-Мы узнали, что такое функции высшего порядка и разобрали несколько из них, уже встроенных в язык👅. Научились создавать🏗️ их самостоятельно.
+We learned what higher-order functions are and took a look at several of them already built into the language👅. We learned to create them on our own.
 
-Не углубляясь в детали, о функциях⚙️ высшего порядка можно сказать так: это функции⚙️, которые могут принимать функцию⚙️ в качестве аргумента и даже, возвращать🔄 функцию⚙️.
+Without going into details, higher-order functions⚙️ can be said as follows: these are functions⚙️ that can take a function⚙️ as an argument and even return a function⚙️.
 
-## Проблемы?
+## Problems?
 
-Пишите в телеграмм [чат](https://t.me/jscampapp), а также подписывайтесь на наши [новости](https://t.me/javascriptapp).
+![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
 
-## Вопросы:
+Channel in [Discord](https://discord.gg/6GDAfXn) after paying on [Patreon](https://www.patreon.com/javascriptcamp).
+
+## Questions:
 
 ![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
 
-Функции первого класса:
+First class functions:
 
-1. Объекты первого класса
-2. Объекты пятого класса
-3. Объекты высшего класса
+1. First class facilities
+2. Facilities of the fifth class
+3. Top class facilities
 
-Функция высшего порядка:
+Higher order function:
 
-1. Принимает функцию в качестве аргумента или возвращает функцию в качестве вывода
-2. Только принимает функцию в качестве аргумента
-3. Только возвращает функцию в качестве вывода
+1. Takes a function as an argument or returns a function as output
+2. Only takes a function as an argument
+3. Only returns a function as output
 
-Функцию высшего порядка:
+Higher order function:
 
-1. Нереально создать самому
-2. Можно использовать только через встроенный метод
-3. Можно самостоятельно создать самому
+1. It is unrealistic to create yourself
+2. Can only be used via built-in method
+3. You can create yourself
 
-Для того чтобы понять, на сколько вы усвоили этот урок, пройдите тест в [мобильном приложении](http://onelink.to/njhc95) нашей школы по этой теме.
+In order to understand how much you learned this lesson, take the test on the [mobile application](http://onelink.to/njhc95) of our school on this topic.
 
 ![Sumerian school](/img/app.png)
 
-## Ссылки:
+## Links:
 
-1. [Изучаем функции высшего порядка в JavaScript](https://medium.com/nuances-of-programming/%D0%B8%D0%B7%D1%83%D1%87%D0%B0%D0%B5%D0%BC-%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B8-%D0%B2%D1%8B%D1%81%D1%88%D0%B5%D0%B3%D0%BE-%D0%BF%D0%BE%D1%80%D1%8F%D0%B4%D0%BA%D0%B0-%D0%B2-javascript-c23daf53a5c0)
-2. [Статья "Функции высшего порядка в JavaScript"](https://habr.com/ru/post/261723/)
-3. [Выразительный Javascript. Статья "Функции высшего порядка"](https://eloquent-javascript.karmazzin.ru/chapter5)
-4. [Код для подростков: прекрасное руководство по программированию для начинающих, том 1: Javascript - Jeremy Moritz ](https://www.amazon.com/Code-Teens-Beginners-Programming-Javascript-ebook/dp/B07FCTLVPC)
+1. [Exploring Higher-Order Functions in JavaScript](https://medium.com/nuances-of-programming/%D0%B8%D0%B7%D1%83%D1%87%D0%B0%D0%B5%D0%BC-%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B8-%D0%B2%D1%8B%D1%81%D1%88%D0%B5%D0%B3%D0%BE-%D0%BF%D0%BE%D1%80%D1%8F%D0%B4%D0%BA%D0%B0-%D0%B2-javascript-c23daf53a5c0)
+2. [Article "Higher-order functions in JavaScript"](https://habr.com/ru/post/261723/)
+3. [Expressive Javascript. Article "Higher-order functions"](https://eloquent-javascript.karmazzin.ru/chapter5)
+4. [Code for Teens: The Perfect Beginner's Guide to Programming, Volume 1: Javascript - Jeremy Moritz](https://www.amazon.com/Code-Teens-Beginners-Programming-Javascript-ebook/dp/B07FCTLVPC)
 
 ## Contributors ✨
 

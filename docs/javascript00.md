@@ -9,21 +9,21 @@ import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment'
 
 [![serverServerlesskiy](/img/javascript/headers/00.jpg)](https://www.instagram.com/serverserverlessky/)
 
-## Онлайн лагерь скаутов
+## Online scout camp
 
-Наша школа перешла на онлайн обучение и мы стартовали с программой Java Script Camp, которую можно пройти даже с мобильного телефона прямо сейчас.
+Our school switched to online training and we started with the Java Script Camp program, which can be completed even from a mobile phone right now.
 
-Получи в нашей школе свой Java Script значок скаута.
+Get your Java Script badge at our school.
 
 ![Camp](https://media.giphy.com/media/MOQG4QYC2MRSU/giphy.gif)
 
-## Видео
+## Video
 
 <YouTube videoId="A_i5-4FuuKw" />
 
-## Цель программы
+## Purpose of the program
 
-Подготовить к курсу по мобильной разработке в стеке React Native / Type Script / AWS Amplify и к сертификации в [AWS Certification](https://aws.amazon.com/ru/certification/), где в процессе подготовки, вы получите широкий набор экспертных знаний, ресурсов и программ. Мы поможем вам эффективно подтвердить свой опыт в облачных технологиях и в мобильной разработке, нужной каждому бизнесу в наше время.
+Prepare for the course on mobile development in the React Native / Type Script / AWS Amplify stack and for certification in [AWS Certification](https://aws.amazon.com/en/certification/), where in the process of preparation you will receive a wide range of expertise, resources and programs. We will help you effectively validate your cloud and mobile development expertise that every business needs today.
 
 ![AWS](https://entrackr.com/wp-content/uploads/2018/05/Amazon_smart_home_2.gif)
 
@@ -69,28 +69,22 @@ import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment'
 
 Подпишитесь на весь [календарь](http://p14-caldav.icloud.com/published/2/MTYyNzQyOTgyMzE2Mjc0MnJDaPjzgR0U-x4uD_nwjr8evco8zKn-1uWVIxx9RjsmCHqFd78vLOOEuCTnjF0D0nkHFj1HIpgT0mr_ioXK22M) -->
 
-## Автор курса
+## Course author
 
-[Автор](https://career.habr.com/hackathon-unicorn) курса по Java Script является создателем первого в рунете учебного курса по [React Native](https://react-native-village.github.io/docs/start000), а также первый русский блогер-программист в программе [AWS Comunity Builders](https://aws.amazon.com/ru/developer/community/community-builders/) от Amazon.
+[Author](https://career.habr.com/hackathon-unicorn) of the Java Script course is the creator of the first [React Native] training course in the Russian Internet (https://react-native-village.github.io/docs/start000), as well as the first Russian blogger-programmer in the [AWS Comunity Builders](https://aws.amazon.com/ru/developer/community/community-builders/) program from Amazon.
 
-## Отзывы
+## Reviews
 
 [![Tvit](/img/javascript/twit.png)](https://twitter.com/dabit3/status/1339622771001843716)
 
-### Перевод:
+## Learning process
 
-Это музыкальное видео по AWS Community Builder совершенно другого уровня 🔥 😅
-
-Это курс по мобильной разработке в стеке React Native / Type Script / AWS Amplify и для сертификации в AWS Certification. Стоит проверить!
-
-## Процесс обучения
-
-Обучение проходит в приложении [Discord](https://discord.gg/6GDAfXn), в секретном чате java-script, доступный вам после оплаты подписки 🖊️ JavaScript Camp.
+Training takes place in the [Discord](https://discord.gg/6GDAfXn) application, in a secret java-script chat, available to you after you pay for a subscription 🖊️ JavaScript Camp.
 
 ![How much](https://media.giphy.com/media/bEu3CsR2RXdu5rBssw/giphy.gif)
 
-## Оплата
+## Payment
 
-Оплата в лагере происходит через [Patreon](https://www.patreon.com/reactnative) и стоимоcть на курс по JavaScript составляет 10$ в месяц.
+The camp is paid through [Patreon](https://www.patreon.com/reactnative) and the cost for the JavaScript course is $ 10 per month.
 
 [![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
