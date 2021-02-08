@@ -1,12 +1,13 @@
 ---
 id: start26
-title: Список - List
-sidebar_label: Список - List
+title: List
+sidebar_label: List
 ---
 
 import YouTube from 'react-youtube'
 
-В этом уроке мы научимся работать со списком.
+
+In this tutorial we will learn how to work with a list.
 
 <YouTube videoId='EVOJpfQU3zE' />
 

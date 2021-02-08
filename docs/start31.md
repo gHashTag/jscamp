@@ -6,7 +6,7 @@ sidebar_label: React Children
 
 import YouTube from 'react-youtube'
 
-Так как этот курс является началом следующего, то необходимо вынести вёрстку из умного компонента в глупый. С помощью утилиты React Children, здесь мы будем возвращаем любой переданный через props компонент.
+Since this course is the beginning of the next one, it is necessary to move the layout from a smart component to a stupid one. With the React Children utility, here we will return any props-passed component.
 
 <YouTube videoId='TL65kwAL0bE' />
 

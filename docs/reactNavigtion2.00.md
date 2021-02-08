@@ -1,10 +1,11 @@
 ---
 id: reactNavigation2-00
-title: Введение
-sidebar_label: Введение
+title: Introduction
+sidebar_label: Introduction
 ---
 
-Мы продолжаем и начинаем наш новый курс по теме — навигация в React Native приложении с библиотекой React Navigation второй версии, который будет базироваться на курсе для начинающих в React Native ссылка на него доступна в комментарии к этому видео уроку и на ваших экранах.
+
+We continue and begin our new course on the topic - navigation in a React Native application with the React Navigation library of the second version, which will be based on the course for beginners in React Native, the link to it is available in the comments to this video tutorial and on your screens.
 
 [![react-navigation](/img/rn2/00.gif)](https://youtu.be/tz_pOxQFcdo)
 

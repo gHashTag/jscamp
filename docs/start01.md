@@ -6,26 +6,27 @@ sidebar_label: React Native init vs Expo
 
 import YouTube from 'react-youtube'
 
-На начальном этапе необходимо использовать какой-нибудь из стартеров. Основные конкурирующие стартеры React Native CLI и Expo, имеющие преимущество одно над другим.
+
+At the initial stage, you must use one of the starters. The main competing starters are React Native CLI and Expo, taking advantage of one over the other.
 
 <YouTube videoId='r8BG3JPS8LI' />
 
-В официальной документации React Native, из раздела [Getting Started](https://reactnative.dev/docs/environment-setup), мы узнаем о том, что у нас есть два пути запуска мобильного приложения: expo и react-native cli. Пользователи Windows и Linux, а таких большинство, зайдя во вкладку Building Projects with Native Code и выбирая Target OS: iOS, встречают надпись, которая отправляет их на стартер Expo, но перед тем как ставить Expo, предлагаю ознакомиться с информацией в следующей таблице и поберечь свою голову не только от тех тумаков, что получил я:
+In the official React Native documentation, from the section [Getting Started](https://reactnative.dev/docs/environment-setup), we learn that we have two ways to launch a mobile application: expo and react-native cli. Windows and Linux users, and most of them, go to the Building Projects with Native Code tab and select Target OS: iOS, they meet an inscription that sends them to the Expo starter, but before putting Expo, I suggest that you read the information in the following table and keep my head not only from those cuffs that I received:
 
 ![expo](https://miro.medium.com/max/1400/1*ioOfqLdPgkvvvXsD_W_K0w.png)
 
-Если вы все же выбрали Expo, то вопрос времени, что вы столкнетесь с его ограничениями и захотите использовать нативные модули, то для этого вам придется делать detach. По своему опыту и многих знакомых коллег знаю, что detach делается криво, а это значит, что вам придется рефакторить кучу ошибок.
-Для меня Live Reloading в симуляторе стал верным другом, но в Expo он постоянно ломается и его постоянно приходится перезапускать, от чего процесс разработки становится мучительным.
+If you nevertheless chose Expo, then it is a matter of time that you will face its limitations and want to use native modules, then for this you will have to do detach. From my own experience and from many familiar colleagues I know that detach is done crookedly, which means that you will have to refactor a bunch of mistakes.
+For me, Live Reloading in the simulator has become a faithful friend, but in Expo it constantly breaks and it constantly has to be restarted, which makes the development process painful.
 
-В Expo полным полно зависимостей, которые лично вам для проекта будут не нужны, но вы будете обязаны ждать дополнительное время, пока соберется ваш JS бандл с лишним мусором, а после этот мусор Expo добавит в ваш релизный .apk и .ipa на мобильные устройства ваших клиентов, из-за чего время запуска приложения возрастет, а вместе с ним возрастает время на разработку приложения, так как JS бандл приходится собирать очень часто.
+Expo is full of dependencies that you personally will not need for the project, but you will have to wait additional time until your JS bundle with extra garbage is collected, and after this garbage Expo will add to your release .apk and .ipa on your mobile devices clients, due to which the application launch time will increase, and with it the application development time increases, since the JS bundle has to be collected very often.
 
-Каждую нативную библиотеку, которую подключаешь сам в react-native cli, надо проверять, так как библиотека библиотеке рознь, и в тоже время с другой стороны сторонние библиотеки проще форкать, изменять или вообще переписывать взяв за основу в своем проекте, в Expo с этим явно сложнее.
+Each native library that you connect yourself in the react-native cli must be checked, since the library is different from the library, and at the same time, on the other hand, third-party libraries are easier to fork, change or even rewrite taking as a basis in your project, in Expo with this explicitly more difficult.
 
-Если бы компоненты Expo работали бы и с react-native cli, то не было бы проблем, а так я наблюдаю пропасть в совместимости стартеров и самое печальное, что Expo начнет подкидывать вам свои дополнительные ошибки, связанные со своей инфраструктурой.
-В Экспо, версия React Native практически всегда не самая свежая. На момент написания статьи Expo SDK 30.0.0 содержит версию React Native 0.55.4, а актуальная на данный момент 0.57. Например функция debounce не работает, под Android, в дебаг-режиме (активированная опция debug js remotely) для компонента TextInput, а это значит, что вы всегда будете отставать от новых улучшений в библиотеки React Native.
+If the Expo components worked with the react-native cli, then there would be no problems, and so I observe a chasm in starter compatibility and the saddest thing is that Expo will start throwing you its additional errors related to its infrastructure.
+At Expo, React Native is almost always not the most recent. At the time of this writing, Expo SDK 30.0.0 contains React Native version 0.55.4, and the current one at the moment is 0.57. For example, the debounce function does not work, under Android, in debug mode (debug js remotely enabled) for the TextInput component, which means that you will always lag behind new improvements in the React Native libraries.
 
-Конечно не у всех есть возможность купить Mac, но бэнчмаркинг двух стартеров и мой 2.5 годичный опыт работы на том и другом показывает, что разрабатывать приложение с react-native cli, даже только из под Windows на Android — это более выгодная инвестиция в более профессиональное решение, так как с React-Native используется одна кодовая база под iOS и Android.
+Of course, not everyone has the opportunity to buy a Mac, but benchmarking two starters and my 2.5 year experience on both shows that developing an application with react-native cli, even only from Windows on Android, is a better investment in a more professional solution , since React-Native uses the same codebase for iOS and Android.
 
-Надеюсь на вашу обратную связь, благодаря которой информация в изложенной статье будет корректироваться и дополняться.
+I hope for your feedback, thanks to which the information in this article will be corrected and supplemented.
 
 [![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)

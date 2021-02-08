@@ -6,126 +6,128 @@ sidebar_label: English by emoji
 
 import YouTube from 'react-youtube';
 
-## Введение
 
-Для тех детей, кто еще не умеет собирать кубик Рубика, создан подготовительный класс английского язык по эмодзи - учитель носитель языка Chris Brown.
-Анимированный преподаватель :woman_tone4: Chris Brown, на родном английском, поможет вам с легкостью освоить данную тему :100:
+## Introduction
+
+For those children who still do not know how to solve the Rubik's cube, a kindergarten in English for emoji has been created by a native speaker Chris Brown.
+Animated trainer: woman_tone4: Chris Brown, in native English, will help you master this topic with ease: 100:
 
 ## Alphabet
 
 ALPHABET
-Так называется первый урок по английскому языку, который уже доступен в нашем мобильном приложении Sumerian School
-Анимированный преподаватель 👩🏾 Chris Brown, на родном английском, поможет вам с легкостью освоить данную тему 💯
+This is the name of the first English lesson, which is already available in our mobile app Sumerian School
+Animated teacher 👩🏾 Chris Brown, in native English, will help you master the topic with ease 💯
 
 <YouTube videoId='oE7DRc9Ijzc' />
 
 ## Numbers
 
 NUMBERS
-Второй урок по английскому языку, в котором вы легко и быстро научитесь запоминать числа от 0 до 🔟
+The second lesson in English, in which you will easily and quickly learn to memorize numbers from 0 to 🔟
 
 <YouTube videoId='BKJkb9K-TwI' />
 
 ## Food and drink
 
-Наш третий урок, который включает в себя лексику о еде 🍰 и напитках ☕
+Our third lesson, which includes vocabulary about food 🍰 and drinks ☕
 
-Тема питания будет актуальна всегда, так как разговор о еде может объединить даже малознакомых людей 👩🏾‍🦱👱🏻‍♂👦🏽 и поможет поддержать беседу 🗣
+The topic of nutrition will always be relevant, as a conversation about food can unite even unfamiliar people 👩🏾‍🦱👱🏻‍♂👦🏽 and help keep the conversation going 🗣
 
 <YouTube videoId='95o7TTXN6kg' />
 
 ## Activity
 
-Эта серия включает в себя две основные темы: спорт/спортивный инвентарь ⛹🏻‍♀ 🏀 и Музыка /музыкальные инструменты 🎼 🎻 а именно всё то, без чего не представляет свою жизнь современный человек 🎧 🧘🏽‍♀
+This series includes two main themes: sports / sports equipment ⛹🏻‍♀ 🏀 and Music / musical instruments 🎼 🎻 namely everything that a modern man cannot imagine his life without 🎧 🧘🏽‍♀
 
 <YouTube videoId='wzZIQm3VkvI' />
 
 ## Animals
 
-Тема животные в английском языке является одной из первых, которую с большим интересом учат и дети 👧🏼 и взрослые 🧔🏽
-Домашние 🐈 и дикие 🐗 животные, птицы 🦆, насекомые 🐝, млекопитающие 🐋- всё это вы можете найти в нашем мобильном приложении Sumerian School 🦄
+The topic of animals in English is one of the first, which is taught with great interest by both children 👧🏼 and adults 🧔🏽
+Pets кие and wild 🐗 animals, birds 🦆, insects 🐝, mammals 🐋 - you can find all this in our Sumerian School mobile app 🦄
 
 <YouTube videoId='k-faBaOPbwo' />
 
 ## Clothes
 
-Каждый день мы сталкиваемся с выбором одежды 👕 🤔 👔 собираясь утром на учёбу/работу или покупая её в магазине/интернете.
+Every day we are faced with the choice of clothes 👕 🤔 👔 when going to school / work in the morning or buying it in the store / internet.
 
-Существует огромное разнообразие одежды:
-💫повседневная - праздничная;
-💫взрослая- детская;
-💫зимняя-летняя;
-💫спортивная-домашняя.
+There is a huge variety of clothes:
+💫 everyday - festive;
+💫 adult - children;
+💫 winter-summer;
+💫sports home.
 
-Поэтому так важно знать как называются предметы гардероба, которые мы так часто используем в своей жизни.
+Therefore, it is so important to know the name of the wardrobe items that we use so often in our lives.
 
-А поможет вам в этом анимированный преподаватель английского языка Chris Brown 👩🏾
+👩🏾 And the animated English teacher Chris Brown will help you with this. 
 
 <YouTube videoId='Il3TBIh26U0' />
 
 ## Smileys
 
-Нам часто не хватает слов, чтобы выразить свои эмоции через переписку, где мы не можем уловить изменение этих эмоций.
-В этом случае на помощь нам приходят анимированные эмоции - смайлы 😃, которые помогают значительно сократить объём сообщения, всего лишь заменив текст значком ☺
+We often do not have enough words to express our emotions through correspondence, where we cannot catch the change in these emotions.
+In this case, animated emotions come to the rescue - smilies 😃, which help to significantly reduce the volume of the message, just replacing the text with the icon ☺
 
-Смайлы 🙃 достаточно необходимы на нынешнем уровне развития социальных сетей, потому что многие люди проводят там значительное количество времени.
+Smilies 🙃 are quite necessary at the current level of development of social networks, because many people spend a significant amount of time there.
 
-А в мобильном приложении Sumerian School 🦄 вы сможете познать всю палитру смайлов 😄 😂 😍 🥳 🤑 на английском языке.
+And in the Sumerian School mobile app 🦄 you can learn the entire palette of 😄 😂 😍 🥳 🤑 emoticons in English.
 
 <YouTube videoId='actCwSYL9dM' />
 
 ## Symbols
 
-В этом уроке собраны многие условные обозначения, которые окружают нас повсюду и так упрощают нашу жизнь: символы безопасности 🚷, дорожные знаки 🅿 и эмблемы.
+This lesson has collected many of the conventions that surround us everywhere and so simplify our lives: safety symbols 🚷, road signs 🅿 and emblems.
 
 <YouTube videoId='432vDNxMOpw' />
 
 ## Objects
 
-Эта одна из самых обширных тем по английскому языку в мобильном приложении Sumerian School 🦄
-Здесь собраны самые популярные слова с названиями предметов, окружающие человека в современном мире: техника 🖥, кино 🎞, деньги 💰 - всё это вы найдёте в нашем мобильном приложении Sumerian School 🦄
+This is one of the most extensive English topics in the Sumerian School mobile app 🦄
+Here are collected the most popular words with the names of objects that surround a person in the modern world: technology 🖥, cinema 🎞, money 💰 - you can find all this in our mobile application Sumerian School 🦄
 
 <YouTube videoId='0zIsDnmfqfQ' />
 
 ## Travel
 
-В мобильном приложении Sumerian School 🦄 вышел новый урок, в котором вы можете познакомиться с лексиконом о путешествиях ⛵, а именно: узнать новые слова о видах транспорта 🚕 🏍 🚂 и достопримечательностях 🗽 🏯
+A new lesson has been released in the Sumerian School mobile app 🦄 in which you can get acquainted with the vocabulary about travel ⛵, namely: learn new words about modes of transport 🚕 🏍 🚂 and attractions 🗽 🏯
 
-Ведь путешествия в наше время являются очень популярной темой 🔝
+After all, travel in our time is a very popular topic 🔝
 
-Существует много способов путешествовать - на поезде 🚊 самолёте ✈ или корабле 🛳. Многие путешествуют для того, чтобы открыть для себя что-то новое 🏞, увидеть красивые места 🏜 и узнать о достопримечательностях 🏰 той или иной страны.
+There are many ways to travel - by train 🚊 plane ✈ or ship 🛳. Many people travel in order to discover something new увидеть, see beautiful places 🏜 and learn about the sights 🏰 of a particular country.
 
 <YouTube videoId='aoGiGbi540k' />
 
 ## Time
 
-Ежедневно мы сталкиваемся с понятием времени 🕧 : когда договариваемся с кем-либо о встрече, записываемся на приём к доктору или просто подсказываем прохожему на улице.
-Изучая английский язык, нужно знать как точно указать время суток.
+Every day we are faced with the concept of time 🕧: when we make an appointment with someone, make an appointment with a doctor, or just prompt a passerby on the street.
+When learning English, you need to know how to specify the exact time of day.
+
 <YouTube videoId='FcO-d7hn_NU' />
 
 ## People
 
-Данная тема даст вам более обширное представление о возрастных особенностях человека 👶 👵🏾, профессиях людей 👩‍🎨 👨‍🚀, познакомит с некоторыми сказочными персонажами 🧜‍♀ 🦸🏻‍♂ и поможет изучить жестикуляцию 🤞👌🏻 на английском языке в мобильном приложении Sumerian School 🦄
+This topic will give you a broader understanding of the age characteristics of a person 👶 👵🏾, people's professions 👩‍🎨 👨‍🚀, introduce you to some fairy-tale characters 🧜‍♀ 🦸🏻‍♂ and help you learn gestures 🤞👌🏻 in English in a mobile application Sumerian School 🦄
 
 <YouTube videoId='9nITEQEKBxs' />
 
 ## Nature
 
-Природа окружает нас повсюду 🌳 🌞 Она так красива 🌈 и разнообразна 🌹 🌼 Поэтому многие люди очень любят делиться впечатлениями от увиденных красот природы, например, путешествуя по разным странам 🌍
+Nature surrounds us everywhere 🌳 🌞 It is so beautiful 🌈 and diverse 🌹 🌼 Therefore, many people love to share their impressions of the beauties of nature they saw, for example, traveling to different countries 🌍
 
-Sumerian School 🦄 поможет вам изучить природные явления 🌦, пейзажи 🏞, растительный мир 🍄 и другие элементы окружающего нас мира на английском языке 😉
+Sumerian School 🦄 will help you study natural phenomena 🌦, landscapes 🏞, flora 🍄 and other elements of the world around us in English 😉
 
 <YouTube videoId='Ncy7chtb0CM' />
 
-## Ссылки
+## Links
 
 [Discord](https://discord.gg/UPSeqZJT)
 
-[Группа Вк](https://vk.com/sumerianschool)
+[Group FB](https://www.facebook.com/javascriptcamp)
 
-[Youtube канал](https://www.youtube.com/channel/UCR8tIQm7pu8MlPewAlUnzQw)
+[Youtube channel](https://www.youtube.com/channel/UCR8tIQm7pu8MlPewAlUnzQw)
 
-Пройдите тест на эту тему и проверьте усвоенную тему в [мобильном приложении](http://onelink.to/njhc95).
+Take the quiz on this topic and check the learned topic in the [mobile application](http://onelink.to/njhc95).
 
 ## Contributors ✨
 

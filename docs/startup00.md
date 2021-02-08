@@ -23,7 +23,7 @@ A diversified development program containing intellectual activity (development 
 
 Download the [mobile app](http://onelink.to/njhc95) school.
 
-[![Мобильное приложение школы](/img/app.png)](http://onelink.to/njhc95)
+[![School mobile application](/img/app.png)](http://onelink.to/njhc95)
 
 Got a question?
 Write or call us on social networks:

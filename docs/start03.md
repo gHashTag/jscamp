@@ -6,15 +6,16 @@ sidebar_label: ESLint & Prettier
 
 import YouTube from 'react-youtube'
 
-Плагин ES Lint — [https://eslint.org](https://eslint.org) позволяет писать ваш код более чистым, подсказывает, где вы совершаете ошибки и вообще это хорошая практика для работе в команде, чтобы у всех всё было в одном стиле — ES Lint будет подсказывать какие переменные вы не используете, где и какие компоненты не задействуйте, показывает синтаксические ошибки и где не правильно ставите пробелы, где ставите точки с запятыми и т.д. То есть это уже стандарт дефакто, который нужно использовать в написании своего кода и этот плагин вас избавит от многих глупых ошибок, которые вы допускаете при разработке своего приложения.
 
-Prettier - Инструмент форматирования кода c поддержкой множества языков, минимумом конфигурации и максимумом навязанных правил.
+Plugin ES Lint — [https://eslint.org](https://eslint.org) allows you to write your code cleaner, tells you where you make mistakes and, in general, it is a good practice for working in a team, so that everyone has everything in the same style - ES Lint will suggest which variables you do not use, where and which components do not use, shows syntax errors and where you put spaces incorrectly, where you put semicolons, etc. That is, this is already a de facto standard that must be used in writing your code, and this plugin will save you from many stupid mistakes that you make when developing your application.
+
+Prettier - Code formatting tool with support for multiple languages, minimum configuration and maximum imposed rules.
 
 <YouTube videoId='noQ0JGVC6SA' />
 
 ![Step01](/img/steps/01.png)
 
-## Устанавливаем зависимости
+## Install dependencies
 
 ```
  yarn add eslint eslint-config-airbnb babel-preset-airbnb eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react eslint-watch babel-core babel-eslint babel-preset-react-native prettier prettier-eslint eslint-plugin-prettier eslint-config-prettier eslint-plugin-react eslint-plugin-react-native eslint-plugin-react-hooks --dev
@@ -22,9 +23,9 @@ Prettier - Инструмент форматирования кода c подд
 
 ![Step02](/img/steps/02.png)
 
-## Правила Eslint
+## Rules Eslint
 
-Добавляем правила в .eslintrc.js
+Add rules to .eslintrc.js
 
 ```jsx
 module.exports = {
@@ -95,9 +96,9 @@ module.exports = {
 
 ![Step03](/img/steps/03.png)
 
-## Правила Prettier
+## Rules Prettier
 
-Добавляем правила в .prettierrc.js
+Add rules to .prettierrc.js
 
 ```jsx
 module.exports = {
@@ -115,13 +116,13 @@ module.exports = {
 
 ![Step04](/img/steps/04.png)
 
-## Редактируем package.json
+## Editing package.json
 
-Куда добавляем скрипты:
+Where we add scripts:
 
-- Симулятор. Для меня это iPhone SE так как его размер экрана минимальное требование по верстке(iPhone 3,4 уже все)
-- Линтер, который будет запрещать вам пушить до исправления всех ошибок в коде
-- Установка Pods
+- Simulator. For me, this is iPhone SE since its screen size is the minimum requirement for layout (iPhone 3,4 is already everything)
+- Linter, which will prohibit you from pushing until all errors in the code are fixed
+- Installing Pods
 
 ```jsx
 "scripts": {
@@ -136,15 +137,15 @@ module.exports = {
 
 ![Step05](/img/steps/05.png)
 
-## Переносим App.js
+## We transfer App.js
 
-Создаем папку `src` и переносим туда файл App.js, переименовывая его `src/index.js`
+Create a folder `src` and move the App.js file there, renaming it `src/index.js`
 
 ![Step06](/img/steps/06.png)
 
-## Редактируем tsconfig.json
+## Editing tsconfig.json
 
-Редактируем конфигурацию работы typescript.
+Editing the work configuration typescript.
 
 ```jsx
 {
@@ -210,7 +211,7 @@ module.exports = {
 
 ![Step07](/img/steps/07.png)
 
-## Запускаем приложение
+## Run the application
 
 `yarn start-ios` or `yarn start-android`
 

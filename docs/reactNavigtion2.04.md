@@ -1,10 +1,10 @@
 ---
 id: reactNavigation2-04
-title: Z-переход
-sidebar_label: Z-переход
+title: Z-jump
+sidebar_label: Z-jump
 ---
 
-Не стандартные переходы в навигации.
+Non-standard navigation transitions.
 
 [![Z-переход](/img/rn2/04.gif)](https://youtu.be/pvbtcorKX3U)
 

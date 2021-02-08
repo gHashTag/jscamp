@@ -1,12 +1,12 @@
 ---
 id: start02
-title: Инициализация
-sidebar_label: Инициализация
+title: Initialization
+sidebar_label: Initialization
 ---
 
 import YouTube from 'react-youtube'
 
-Для инициализации React Native приложения на вашей машине, необходимо воспользоваться CLI. Надеюсь в этом уроке вы увидите надпись “BUILD SUCCEEDED” свидетельствующее о запуске приложения.
+To initialize a React Native application on your machine, you need to use the CLI. I hope in this tutorial you will see the inscription “BUILD SUCCEEDED” indicating that the application has started.
 
 <YouTube videoId='2qqyDTy4HBs' />
 

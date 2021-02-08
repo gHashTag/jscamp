@@ -1,12 +1,13 @@
 ---
 id: start29
-title: Английский для программистов (React и React Native)
-sidebar_label: Английский для программистов (React и React Native)
+title: English for programmers (React и React Native)
+sidebar_label: English for programmers (React и React Native)
 ---
 
 import YouTube from 'react-youtube'
 
-У каждой профессии свой словарный запас, как у React программистов свой, так и у React Native программистов свой, поэтому хорошо было бы знать слова из всей официальной документации, уметь читать её, так как письменно с ним вы будете постоянно работать и без знания слов из этой библиотеки становиться сложно понимать о чём вообще там говорят и пишут, поэтому я взял все слова из библиотеки React и React Native, скопировал их, отрефактарил, создал на базе них частичный словарик и создал [курс](https://www.memrise.com/course/1450006/react-react-native/), который состоит из 2229 слов.
+
+Each profession has its own vocabulary, both React programmers have their own, and React Native programmers have their own, so it would be nice to know words from all the official documentation, to be able to read it, since you will constantly work with it in writing and without knowing words from of this library, it becomes difficult to understand what they are talking and writing about in general, so I took all the words from the React and React Native libraries, copied them, refactored them, created a partial dictionary based on them and created [course](https://www.memrise.com/course/1450006/react-react-native/), which consists of 2229 words.
 
 <YouTube videoId='pXfH8ItPGMI' />
 

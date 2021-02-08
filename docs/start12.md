@@ -1,12 +1,13 @@
 ---
 id: start12
-title: Стили - StyleSheet
-sidebar_label: Стили - StyleSheet
+title: StyleSheet
+sidebar_label: StyleSheet
 ---
 
 import YouTube from 'react-youtube'
 
-В этом уроке мы познакомимся со стилями React Native.
+
+In this tutorial, we'll take a look at React Native styles.
 
 <YouTube videoId='vZpjqARPhFA' />
 

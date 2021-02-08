@@ -6,7 +6,8 @@ sidebar_label: MVC
 
 import YouTube from 'react-youtube'
 
-Благодаря пониманию этого паттерна, складывается всё по полочкам и смотря на приложение вы понимаете для чего существует один блок, для чего нужен один блок и для чего нужен третий блок. Когда всё складывается по полочкам смотря на приложение через эту концепцию легче создавать приложение. Поэтому понимание сути этого паттерна позволит легче войти в тему React Native, да и вообще этот патерн применим ко многим библиотекам.
+
+Thanks to the understanding of this pattern, everything is folded up on the shelves and looking at the application you understand why there is one block, what is one block for, and what is the third block for. When everything is stacked up, looking at the application through this concept makes it easier to create an application. Therefore, understanding the essence of this pattern will make it easier to enter the topic of React Native, and in general this pattern is applicable to many libraries.
 
 <YouTube videoId='PQV4J-pOHPw' />
 

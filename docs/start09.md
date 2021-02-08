@@ -1,12 +1,13 @@
 ---
 id: start09
-title: Теги
-sidebar_label: Теги
+title: Tags
+sidebar_label: Tags
 ---
 
 import YouTube from 'react-youtube'
 
-Если мы проведём параллель тегов React Native с тегами HTML, то получится таблица, посмотреть которую можно в этом уроке.
+
+If we parallel React Native tags with HTML tags, we get a table, which can be viewed in this tutorial.
 
 <YouTube videoId='SZg_jgnc7Xw' />
 

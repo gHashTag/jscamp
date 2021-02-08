@@ -1,12 +1,13 @@
 ---
 id: start17
-title: Жизненный цикл React компонента
-sidebar_label: Жизненный цикл React компонента
+title: React component life cycle
+sidebar_label: React component life cycle
 ---
 
 import YouTube from 'react-youtube'
 
-В процессе работы компонент проходит через ряд этапов жизненного цикла. На каждом из этапов вызывается определенная функция, в которой мы можем определить какие-либо действия.
+
+In the process of work, a component goes through a number of stages of the life cycle. At each of the stages, a specific function is called in which we can define any actions.
 
 <YouTube videoId='4xjWX3oRQoc' />
 

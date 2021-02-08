@@ -1,24 +1,25 @@
 ---
 id: typescript02
-title: Типы данных
-sidebar_label: Типы данных
+title: Data types
+sidebar_label: Data types
 ---
 
-Как вы уже знаете `TypeScript` является статически типизированным языком. `Статически типизированный язык`, это язык программирования, который имеет систему типов. Зачем же нужны типы? `Типы данных` используются для добавления статических ограничений на программные элементы, такие как функции, переменные и свойства. Это позволяет компилятору и средствам разработки осуществлять более тщательную проверку и поддержку в процессе разработки. Хоть JavaScript является динамически типизируемым языком, типы там всё же присутствуют, но присваивание происходит во время выполнения кода, а не во время компиляции. Все типы JavaSсript присутствуют и в TypeScript, но TypeScript по-другому с ними работает и добавляет свои типы.
 
-## Типы в TypeScript
+As you already know, `TypeScript` is a statically typed language. A `statically typed language` is a programming language that has a type system. Why are types needed? `Data types` are used to add static constraints to programmatic items such as functions, variables and properties. This allows the compiler and development tools to provide more thorough validation and support during development. Although JavaScript is a dynamically typed language, types are still there, but the assignment happens at runtime, not at compile time. All JavaScript types are present in TypeScript, but TypeScript works with them differently and adds its own types.
 
-Все типы в _TypeScript_ являются подтипами главного типа, которым является тип `Any`. Тип `Any` — единственный, который может представлять любое значение JavaScript без всяких ограничений. Все остальные типы накладывают определенные _ограничения_ на свои значения.
+## Types in TypeScript
+
+All types in _TypeScript_ are subtypes of the main type, which is the type `Any`. The `Any` type is the only one that can represent any JavaScript value without any restrictions. All other types impose certain _constraints_ on their values.
 
 ### Any
 
-Тип `Any` используется, когда мы не знаем какой тип должна иметь та или иная переменная. Эта переменная может быть получена из некоего динамического содержимого, как например, если бы использовалась некая сторонняя библиотека. В таких случаях нужно отказаться от проверки типов и позволить таким переменным проходить проверку во время компиляции. Для того, чтобы это сделать, нужно указать переменной тип Any с помощью ключевого слова `any`.
+The `Any` type is used when we do not know what type this or that variable should have. This variable can be obtained from some dynamic content, such as if some third-party library were used. In such cases, you should abandon the type checking and allow such variables to be checked at compile time. In order to do this, you need to specify the variable type Any using the keyword `any`.
 
 ```jsx
 let variable: any
 ```
 
-[Пример](https://www.typescriptlang.org/play?#code/DYUwLgBAlgzgggOwJ4C4IENkCgDGB7BGPUAOmDwHMAKWRJCAaggHIAaCQIhBAOEEH4QNZxhDBIADiDwAzaPGQBKLLWQQAvCxhgATlAQUAjM1wEipctUX0mbTr36DhYydLrzzKiABZDhYiDKUaMhYs7Nx8LHai4lLmLoFuAN4Avl7GvqYBdIJWobZM9lFOckA)
+[Example](https://www.typescriptlang.org/play?#code/DYUwLgBAlgzgggOwJ4C4IENkCgDGB7BGPUAOmDwHMAKWRJCAaggHIAaCQIhBAOEEH4QNZxhDBIADiDwAzaPGQBKLLWQQAvCxhgATlAQUAjM1wEipctUX0mbTr36DhYydLrzzKiABZDhYiDKUaMhYs7Nx8LHai4lLmLoFuAN4Avl7GvqYBdIJWobZM9lFOckA)
 
 ```jsx
 let isAny: any
@@ -33,9 +34,9 @@ console.log(isAny + ', Тип: ' + typeof isAny)
 
 ### Boolean
 
-Тип Boolean является логическим типом и представлен значениями "истина" true и "ложь" false. Объявляется при помощи ключевого слова boolean.
+The Boolean type is a boolean type and is represented by the values true and false. It is declared using the boolean keyword.
 
-[Пример](https://www.typescriptlang.org/play?#code/DYUwLgBAlgzgagQwE4EYBcEBGB7boEB2EAvBAGYLAwgA0AUBI9PMgEwkRhICuIdAxtgIw8IAHTBsAcwAUsRKggBqCAHIaEQEQggDhBA-CAZVyzgE8ADiGxlmClAEoBQkaAnS5LJOxXqteg0bBmFlbybLZAA)
+[Example](https://www.typescriptlang.org/play?#code/DYUwLgBAlgzgagQwE4EYBcEBGB7boEB2EAvBAGYLAwgA0AUBI9PMgEwkRhICuIdAxtgIw8IAHTBsAcwAUsRKggBqCAHIaEQEQggDhBA-CAZVyzgE8ADiGxlmClAEoBQkaAnS5LJOxXqteg0bBmFlbybLZAA)
 
 ```jsx
 let isVar1: boolean = false,
@@ -46,23 +47,23 @@ console.log(isVar2 + ', Тип: ' + typeof isVar2)
 
 ### Number
 
-В _TypeScript_, как и в JavaScript, все производные от number являются 64-битными числами двойной точности с плавающей запятой. Кроме десятичного и шестнадцатеричного формата, поддерживаются бинарный и восьмеричный, введенные в ECMAScript 2015.
+In _TypeScript_, as in JavaScript, all derivatives of number are 64-bit double precision floating point numbers. In addition to decimal and hexadecimal formats, binary and octal, introduced in ECMAScript 2015, are supported.
 
-[Пример](https://www.typescriptlang.org/play?#code/DYUwLgBAlgzgcgVwLYCEoDsBcF3IEYgBOEAvBAAx7nkCMNtdANBAPQsRroCGhAngFAQh0eMgDyAYzDZcSAsTLkA9gDYA7MzYRJYLsEHDYiJABEQEmfiKkIAVlub2ZiVCR6DQo8gASIAB425H4AzGqs7L5+-BJK6DBKoAB0wEoA5gAU6V5IkRAA1BR+AGYAlPkQAOTMgEQggBwggPwg2BXlYLwADiBKRSLGkSVAA)
+[Example](https://www.typescriptlang.org/play?#code/DYUwLgBAlgzgcgVwLYCEoDsBcF3IEYgBOEAvBAAx7nkCMNtdANBAPQsRroCGhAngFAQh0eMgDyAYzDZcSAsTLkA9gDYA7MzYRJYLsEHDYiJABEQEmfiKkIAVlub2ZiVCR6DQo8gASIAB425H4AzGqs7L5+-BJK6DBKoAB0wEoA5gAU6V5IkRAA1BR+AGYAlPkQAOTMgEQggBwggPwg2BXlYLwADiBKRSLGkSVAA)
 
 ```jsx
 let isNumBin: number = 0b00110111, // Binary
   isNumOct: number = 0o67, // Octal
   isNumDec: number = 55, // Decimal
   isNumHex = 0x37 // Hex
-console.log(isNumHex + 0xf + ', Тип: ' + typeof isNumHex)
+console.log(isNumHex + 0xf + ', type: ' + typeof isNumHex)
 ```
 
 ### String
 
-Тип _String_ представляет собой последовательность символов в кодировке _Unicode UTF-16_. Строки могут быть заключены в одинарные или двойные кавычки, а также в обратные апострофы (инициаторы так называемых шаблонных строк).
+The _String_ type is a sequence of characters encoded in _Unicode UTF-16_. Strings can be enclosed in single quotes, double quotes, and backticks (the initiators of so-called template strings).
 
-[Пример](https://www.typescriptlang.org/play?#code/DYUwLgBAlgzgagQwE4EYBcEZiVAdgcwgF4IByQQRBAhEEAEQQPhBAuEEAYQUgGgCgJPp5kAmYiACJALCDVAwiCBmEEaB5EAhU6TQWwDGAe1wxVoAHTBV+ABSxEqCAGoyLCICIQQBwggfhAMpcxDABPAA4hVAM24mUAEoVdU0dPUNjPhdWGwcnF3cvX38+QKA)
+[Example](https://www.typescriptlang.org/play?#code/DYUwLgBAlgzgagQwE4EYBcEZiVAdgcwgF4IByQQRBAhEEAEQQPhBAuEEAYQUgGgCgJPp5kAmYiACJALCDVAwiCBmEEaB5EAhU6TQWwDGAe1wxVoAHTBV+ABSxEqCAGoyLCICIQQBwggfhAMpcxDABPAA4hVAM24mUAEoVdU0dPUNjPhdWGwcnF3cvX38+QKA)
 
 ```jsx
 let isVar1: string = 'строка',
@@ -73,7 +74,7 @@ console.log(isVar2 + ', Тип: ' + typeof isVar2)
 
 ### Symbol
 
-Тип `Symbol` предоставляет уникальные идентификаторы, которые могут быть использованы как ключи для свойств объекта. Значения, имеющие тип Symbol, реализуют глобальный объект _‘Symbol’_, который имеет набор методов и свойств, которые могут быть вызваны как функции.
+The `Symbol` type provides unique identifiers that can be used as keys for object properties. Values of type Symbol implement the _'Symbol 'global object, which has a set of methods and properties that can be called as functions.
 
 ```jsx
 let secretKey = Symbol(),
@@ -84,9 +85,9 @@ obj[Symbol.toStringTag] = 'тест'
 
 ### Void
 
-Тип `Void` это нечто противоположное _any_, то есть отсутствие каких-либо типов. Чаще всего он используется в качестве возвращаемого типа функций, которые не возвращают никакого значения.
+The `Void` type is the opposite of _any_, that is, the absence of any types. It is most commonly used as the return type of functions that do not return any value.
 
-[Пример](https://www.typescriptlang.org/play?#code/GYVwdgxgLglg9mABAGwKYEMBOYAqBPAB1QGUJMYCoAKASgC5EA3OGAE0QG8AoRXxCBAGc4aAHTI4AcyoAiQLQggIRBADCCJAIiCBhEEC8IIC4QQGIggDhBA8iCJN+wOIggVhBAzCCA+EBMXEgJhAbgdhBHgARAlgSRAlFhQEIZGi4AXy40KEQYQQA1LABGRABeFAxsfCJSckpaLgEwYTEJaWi4zESAakQAcgAaREAiEH1AfhAGasQqqEJUOGAo2ITgoA)
+[Example](https://www.typescriptlang.org/play?#code/GYVwdgxgLglg9mABAGwKYEMBOYAqBPAB1QGUJMYCoAKASgC5EA3OGAE0QG8AoRXxCBAGc4aAHTI4AcyoAiQLQggIRBADCCJAIiCBhEEC8IIC4QQGIggDhBA8iCJN+wOIggVhBAzCCA+EBMXEgJhAbgdhBHgARAlgSRAlFhQEIZGi4AXy40KEQYQQA1LABGRABeFAxsfCJSckpaLgEwYTEJaWi4zESAakQAcgAaREAiEH1AfhAGasQqqEJUOGAo2ITgoA)
 
 ```jsx
 function learnTypeScript(): void {
@@ -98,7 +99,7 @@ console.log(isVar1 + ', Тип: ' + typeof isVar1)
 
 ### Never
 
-Тип `Never` представляет тип, значение которого никогда не наступает. Например, never является типом, который возвращает функция, которая всегда бросает исключения или выход из которой никогда не происходит (например, бесконечный цикл). Переменные также могут иметь данный тип, например, для того, чтобы никогда не принимать значение true.
+The type `Never` represents a type whose value never occurs. For example, never is a type returned by a function that always throws exceptions or never exits (for example, an infinite loop). Variables can also be of this type, for example, to never be true.
 
 ```jsx
 function error(message: string): never {
@@ -108,9 +109,9 @@ function error(message: string): never {
 
 ### Null/Undefined
 
-В TypeScript `null` и `undefined` являются субтипами. Субтипы – это типы, которые могут быть присвоены любому другому типу, например, string или number.
+In TypeScript, `null` and` undefined` are subtypes. Subtypes are types that can be assigned to any other type, such as string or number.
 
-[Пример](https://www.typescriptlang.org/play?#code/DYUwLgBAlgzgymATlAdgcwFwRk1aIC8EKArsMADQBQEt0MAciQLYBGIiWpbHhEJKACYgAZqhCDqdegCEA9nNABDFFlYLlKPqXJUAxnJQxFIAHTA5aABSwmPRBADUEAOQUIgIhBAHCCB+ECwunCDAATwAHEDkRejt2RABKIA)
+[Example](https://www.typescriptlang.org/play?#code/DYUwLgBAlgzgymATlAdgcwFwRk1aIC8EKArsMADQBQEt0MAciQLYBGIiWpbHhEJKACYgAZqhCDqdegCEA9nNABDFFlYLlKPqXJUAxnJQxFIAHTA5aABSwmPRBADUEAOQUIgIhBAHCCB+ECwunCDAATwAHEDkRejt2RABKIA)
 
 ```jsx
 let isString: string = null,
@@ -119,14 +120,13 @@ let isString: string = null,
 console.log(isNumber + ', Тип: ' + typeof isNumber)
 ```
 
-## Структуры
+## Structures
 
-Обычно в _TypeScript_ не разделяют понятия типа и структуры, потому что структура тоже является типом. Но так как структура – это составной тип данных, который состоит из разных типов, сгруппированных под одним, мы выделили такие типы в отдельную часть.
+Usually in _TypeScript_ do not separate the concepts of type and structure, because structure is also a type. But since a structure is a composite data type that consists of different types grouped under one, we have separated such types into a separate part.
 
-### Array (массив)
+### Array (array)
 
-Тип `Array` используется для указания элементов массива. Определить массив можно двумя способами:
-
+The `Array` type is used to indicate the elements of an array. There are two ways to define an array:
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
@@ -138,9 +138,9 @@ values = {[
 ]}>
 <TabItem value = "one">
 
-В первом методе вы указываете тип элементов массива, за которым следует `[]`, который обозначает массив этого типа.
+In the first method, you specify the type of the elements of the array, followed by `[]`, which denotes an array of that type.
 
-[Пример](https://www.typescriptlang.org/play?#code/DYUwLgBAlgzgggJwQeQGYGUwIFwRlqAOwHMBtAXQgF4JSByfBI4gRjoBoIGCSAmO8uwBQEUdHhI0AOQCuAW1yF5AIxAIK1Wi069OAZk4AWTgFZyQgMYB7QjCugAdMCvEAFLEQpUsuaUOUAai5OQCIQQA4QQH4QXDoIILAATwAHECtUcU9peQBKIA)
+[Example](https://www.typescriptlang.org/play?#code/DYUwLgBAlgzgggJwQeQGYGUwIFwRlqAOwHMBtAXQgF4JSByfBI4gRjoBoIGCSAmO8uwBQEUdHhI0AOQCuAW1yF5AIxAIK1Wi069OAZk4AWTgFZyQgMYB7QjCugAdMCvEAFLEQpUsuaUOUAai5OQCIQQA4QQH4QXDoIILAATwAHECtUcU9peQBKIA)
 
 ```jsx
 let isArrOfStr: string[] = ['string1', 'string2'],
@@ -151,9 +151,9 @@ console.log(isArrOfNum[4] + ', Тип: ' + typeof isArrOfNum)
 </TabItem>
 <TabItem value = "two">
 
-Другим методом использование типа является: Array &lt;elemType&gt;.
+Another method of using type is: Array &lt;elemType&gt;.
 
-[Пример](https://www.typescriptlang.org/play?#code/DYUwLgBAlgzgggJwQeQGYGUwIFwUQgQwE8AeGLKAOwHMA+CAXggG0BychK6gRlYBoI7CjQBMrALp8AUBFnR4SNADkArgFtc+YiUrqARiAT0mzbgJECAzAIAsAgKzipAYwD2lGK9AA6YK+oAFLD4yurMNuIQANSCAoBEIIAcIID8ILis0RBgRAAOIK6o8iGoqmoAlEA)
+[Example](https://www.typescriptlang.org/play?#code/DYUwLgBAlgzgggJwQeQGYGUwIFwUQgQwE8AeGLKAOwHMA+CAXggG0BychK6gRlYBoI7CjQBMrALp8AUBFnR4SNADkArgFtc+YiUrqARiAT0mzbgJECAzAIAsAgKzipAYwD2lGK9AA6YK+oAFLD4yurMNuIQANSCAoBEIIAcIID8ILis0RBgRAAOIK6o8iGoqmoAlEA)
 
 ```jsx
 let isArrOfStr: Array<string> = ['string1', 'string2'],
@@ -166,9 +166,9 @@ console.log(isArrOfNum[4] + ', Тип: ' + typeof isArrOfNum)
 
 ### Tuple (кортеж)
 
-Тип `Tuple` или кортеж представляет собой массив, каждому из элементов которого можно указать свой тип. Обычно такая структура используется для предоставления набора данных, например, записи в базе данных.
+The `Tuple` type or tuple is an array, each of whose elements can be specified with its own type. Typically this structure is used to provide a set of data, such as a record in a database.
 
-[Пример](https://www.typescriptlang.org/play?#code/DYUwLgBAlgzgKgVwA6gFwQNozAJygOwHMAaCAIwHsLQBDfAXQgF5MBybPIgRldIDMawGCHoAoAMYV8MaiAB0wCoQAUsRChAYADIwDUEXhEBEIIA4QQPwg6VhH1gAnkhAU+0eMlDb6ASglSZoBUqqrhoYXHoGpKYWBtYQdg5OLuruYZ5AA)
+[Example](https://www.typescriptlang.org/play?#code/DYUwLgBAlgzgKgVwA6gFwQNozAJygOwHMAaCAIwHsLQBDfAXQgF5MBybPIgRldIDMawGCHoAoAMYV8MaiAB0wCoQAUsRChAYADIwDUEXhEBEIIA4QQPwg6VhH1gAnkhAU+0eMlDb6ASglSZoBUqqrhoYXHoGpKYWBtYQdg5OLuruYZ5AA)
 
 ```jsx
 let isTuple: [string, boolean] = ['string1', false]
@@ -176,11 +176,11 @@ console.log(isTuple[0] + ', Тип: ' + typeof isTuple[0])
 console.log(isTuple[1] + ', Тип: ' + typeof isTuple[1])
 ```
 
-### Enum (перечисление)
+### Enum (enumeration)
 
-Тип `Enum` используется для объявления перечисления — отдельного типа, который состоит из набора именованных констант, называемого списком перечислителей. Перечисления пришли в _TypeScript_ из _C#_. Например, для вашего удобства вы можете создать enum дней. По умолчанию первый перечислитель имеет значение 0, и значение каждого последующего перечислителя инкрементируется на единицу.
+The `Enum` type is used to declare an enumeration - a separate type that consists of a set of named constants called a list of enumerators. Enums came to _TypeScript_ from _C # _. For example, for your convenience, you can create an enum of days. By default, the first enumerator is 0, and the value of each subsequent enumerator is incremented by one.
 
-[Пример](https://www.typescriptlang.org/play?#code/KYOwrgtgBAlgzgUXBAgiGECGAbKBvAY0wBcAaKAJ0wCNqYyoALAewrmHIBNmBzcx0OQLMA7uTgDgABwC+AKGEg4zbMAB02XgAp4SSGgw41VWvSgBqKAHJygIhBAHCCB+EABc1i1GIBPKcGYAzWERkAyxsYxo6YgBKBWYlFXVNHh0g-XRQgG0ARgBddxsoBxc3Sy8ff0C9VHScbJyY0EhK5AB1YGAAa3wAWTioAF4oAGYAFnIAFTAOKDbOCcYwcgAxChhyAGUSDbAQeUVlVQ1tXVb2jozRvMsrKFYS5sg2zrVJ4Hy7J1cb0u9fAJPHmcokA)
+[Example](https://www.typescriptlang.org/play?#code/KYOwrgtgBAlgzgUXBAgiGECGAbKBvAY0wBcAaKAJ0wCNqYyoALAewrmHIBNmBzcx0OQLMA7uTgDgABwC+AKGEg4zbMAB02XgAp4SSGgw41VWvSgBqKAHJygIhBAHCCB+EABc1i1GIBPKcGYAzWERkAyxsYxo6YgBKBWYlFXVNHh0g-XRQgG0ARgBddxsoBxc3Sy8ff0C9VHScbJyY0EhK5AB1YGAAa3wAWTioAF4oAGYAFnIAFTAOKDbOCcYwcgAxChhyAGUSDbAQeUVlVQ1tXVb2jozRvMsrKFYS5sg2zrVJ4Hy7J1cb0u9fAJPHmcokA)
 
 ```jsx
 enum isEnumAnimal {cat, rabbit, horse, dog, hen, cow, sheep}
@@ -190,15 +190,15 @@ enum isEnumWeek {Mon = 34, Tue, Wed, Thu, Fri, Sat, Sun}
 console.log(isEnumWeek[34] + ' or ' + isEnumWeek.Tue + ', Тип: ' + typeof isEnumWeek)
 ```
 
-## Работа с типами
+## Working with types
 
-Для начала следует рассказать основные моменты для работы с типами в TypeScript.
+To begin with, you should tell the main points for working with types in TypeScript.
 
-### Аннотация типов
+### Type annotations
 
-В TypeScript аннотация типа или указание типа осуществляется с помощью оператора двоеточия `: type`, после которого следует идентификатор типа. TypeScript является статически типизированным языком, поэтому после того как идентификатор будет связан с типом, изменить тип будет **невозможно**.
+In TypeScript, type annotation or type indication is performed using the colon operator `: type` followed by a type identifier. TypeScript is a statically typed language, so once an identifier is associated with a type, the type will change. **impossible**.
 
-[Пример](https://clck.ru/SkhTJ)
+[Example](https://clck.ru/SkhTJ)
 
 ```jsx
 // let variable: type = value
@@ -209,18 +209,18 @@ let isNumber: number = 777, // явно
 console.log('isNumber - ' + typeof isNumber + '\n anotNumber - ' + typeof anotNumber)
 ```
 
-Так же присвоить тип переменной можно через конструкцию `Union`.
+You can also assign a type to a variable through the construction `Union`.
 
-### typeof (Запрос типа)
+### typeof (Request type)
 
-Механизм `запроса типа` _(Type Queries)_ позволяет получить тип, связанный со значением по его _идентификатору_ и в дальнейшим использовать его как обычный тип. Запрос типа осуществляется оператором `typeof`, после которого идет идентификатор, ссылающийся на значение. Запрос типа также может располагаться в местах указания типа.
+The mechanism of `type query` _ (Type Queries) _ allows you to get a type associated with a value by its _identifier_ and then use it as a normal type. The type is requested by the `typeof` operator, followed by an identifier referencing the value. The type request can also be located in the places where the type is specified.
 
 ```jsx
 let isVar1: string
 let isVar2: typeof isVar1
 ```
 
-[Пример](https://www.typescriptlang.org/play?#code/DYUwLgBAlgzgymATlAdgcwFwRk1aIC8EA5DsusQFAgoCuAttDAKJ30CCKU9AhsBAG8AxjzAAaCIh4AjaVHEQAFgHtEMEAF9KQ5ShjLQAOmDK0ACmKwE5fAFoSEANQQwATwAOIZQDMm1vACU2rr6RibmlixsnNx8EPbETi4eXr6wrAwxvMABQA)
+[Example](https://www.typescriptlang.org/play?#code/DYUwLgBAlgzgymATlAdgcwFwRk1aIC8EA5DsusQFAgoCuAttDAKJ30CCKU9AhsBAG8AxjzAAaCIh4AjaVHEQAFgHtEMEAF9KQ5ShjLQAOmDK0ACmKwE5fAFoSEANQQwATwAOIZQDMm1vACU2rr6RibmlixsnNx8EPbETi4eXr6wrAwxvMABQA)
 
 ```jsx
 let isString: string = 'string'
@@ -229,17 +229,17 @@ console.log('isString - ' + typeof isString)
 console.log('isEnumAnimal - ' + typeof isEnumAnimal)
 ```
 
-### Объединения
+### Associations
 
-`Объединение` _(Union)_ - это мощный механизм, позволяющий создавать из множества существующих типов логическое условие, по которому данные могут принадлежать только к одному из указанных типов. Объединение указывается с помощью оператора прямой черты `|`, по обе стороны которой располагаются типы данных.
+`Associations` _(Union)_ - it is a powerful mechanism that allows you to create a logical condition from many existing types, according to which data can belong to only one of the specified types. A union is specified using the forward slash operator `|`, on either side of which are data types.
 
 ```jsx
 let variable = type1 | type2 | type3
 ```
 
-Переменной, которой был присвоен объединенный тип, может быть присвоено значение, принадлежащие к одному из объединенных типов.
+A variable that has been assigned a merged type can be assigned a value belonging to one of the merged types.
 
-[Пример](https://www.typescriptlang.org/play?#code/DYUwLgBAlgzgqgOygewQLgjMAnKCDmEAPhAgK4C2ARiNsRFcsqAIYIBQsiKCEAvBACM7AMaoYzEADpgyfAAouSVBADUEAOQAaCICIQQBwggfhAMGtRDABPAA4hkAM2jxlCAJScnPfhDstgMEKLikjJyih4q6tp6RiZmljb2jtyobkqeAhoAEiDAshqBCBKgIQppEZo6Bsaacda2DmWuQA)
+[Example](https://www.typescriptlang.org/play?#code/DYUwLgBAlgzgqgOygewQLgjMAnKCDmEAPhAgK4C2ARiNsRFcsqAIYIBQsiKCEAvBACM7AMaoYzEADpgyfAAouSVBADUEAOQAaCICIQQBwggfhAMGtRDABPAA4hkAM2jxlCAJScnPfhDstgMEKLikjJyih4q6tp6RiZmljb2jtyobkqeAhoAEiDAshqBCBKgIQppEZo6Bsaacda2DmWuQA)
 
 ```jsx
 let isUnion: string | number | boolean
@@ -251,25 +251,24 @@ isUnion = 'Hello'
 console.log(isUnion + ', Тип: ' + typeof isUnion)
 ```
 
-### Пересечение
+### Crossing
 
-`Пересечение` _(Intersection)_ — механизм TypeScript, который позволяет рассматривать множество типов данных как _единое целое_. Пересечение указывается с помощью оператора амперсанда `&`, по обе стороны которого указываются типы данных.
-
+`Crossing` _(Intersection)_ — mechanism TypeScript, which allows many types of data to be treated as a _uniform whole_. Intersections are specified using the `&` ampersand operator, with data types on either side.
 ```jsx
 let variable: type1 & type2 & type3
 ```
 
-Переменной, которой был указан тип пересечение `type1` и `type2` и `type3`, должно быть присвоено значение, принадлежащее к типам type1 и type2 и type3 **одновременно**. Другими словами, значение должно обладать всеми обязательными признаками каждого типа, определяющего пересечение.
+A variable that has been assigned the type intersection of `type1` and` type2` and `type3` must be assigned a value belonging to types type1 and type2 and type3 **simultaneously**. In other words, the value must have all the required attributes of each type that defines the intersection.
 
-### Псевдонимы типов
+### Type aliases
 
-Для любого типа можно создать его псевдоним и использовать его в дальнейшем. Псевдоним типа объявляется при помощи ключевого слова `type`.
+For any type, you can create its alias and use it in the future. The type alias is declared using the keyword `type`.
 
 ```jsx
 type isAlias = type
 ```
 
-[Пример](https://www.typescriptlang.org/play?#code/C4TwDgpgBAlgzgQQDYwIZygXinYAnGAOwHMoAfKQgVwFsAjCPcqOge1aQlUIChPhYcAGqo8ALkHI0cHvBFNsARh4BjVoTgcIAOiStiACjmioAaigByADRRARCCAOEED8IBItmooSKwBmg+QEpZYRNsL1QkOAhVdU1OXX0jIKZzazsnFzcPCG9fUQDjBUsACQgkPQsojS04w3y3FIdnSwzwLJ98vyA)
+[Example](https://www.typescriptlang.org/play?#code/C4TwDgpgBAlgzgQQDYwIZygXinYAnGAOwHMoAfKQgVwFsAjCPcqOge1aQlUIChPhYcAGqo8ALkHI0cHvBFNsARh4BjVoTgcIAOiStiACjmioAaigByADRRARCCAOEED8IBItmooSKwBmg+QEpZYRNsL1QkOAhVdU1OXX0jIKZzazsnFzcPCG9fUQDjBUsACQgkPQsojS04w3y3FIdnSwzwLJ98vyA)
 
 ```jsx
 type isAlias = string | number | boolean
@@ -284,19 +283,19 @@ console.log(isVar + ', Тип: ' + typeof isVar)
 
 ### Тип Assertions
 
-Type `assertion` представляет модель преобразования значения переменной к определенному типу. Обычно в некоторых ситуациях одна переменная может представлять какой-то широкий тип, например, _any_, который по факту допускает значения различных типов. Однако при этом нам надо использовать переменную как значение строго определенного типа. И в этом случае мы можем привести к этому типу. Есть две формы приведения.
+Type `assertion` represents a model for converting a variable's value to a specific type. Usually, in some situations, one variable can represent some kind of wide type, for example, _any_, which in fact allows values of different types. However, in this case, we need to use the variable as a value of a strictly defined type. And in this case, we can lead to this type. There are two forms of casting.
 
 <Tabs
 defaultValue = 'one'
 values = {[
-{label: 'Ключевое слово as', value: 'one'},
-{label: 'Оператор <>', value: 'two'}
+{label: 'Keyword as', value: 'one'},
+{label: 'Operator <>', value: 'two'}
 ]}>
 <TabItem value = 'one'>
 
-Первая форма заключается в применении оператора `as`:
+The first form is to use the operator `as`:
 
-[Пример](https://clck.ru/SkgoF)
+[Example](https://clck.ru/SkgoF)
 
 ```jsx
 let isAny: any = 777
@@ -307,9 +306,9 @@ console.log(isNumber + ', Тип: ' + typeof isNumber)
 </TabItem>
 <TabItem value = 'two'>
 
-Вторая форма заключается в использовании `угловых скобок`.
+The second form is to use `angle brackets`.
 
-[Пример](https://clck.ru/Skgqh)
+[Example](https://clck.ru/Skgqh)
 
 ```jsx
 let isAny: any = 777
@@ -317,21 +316,21 @@ let isNumber = <number> isAny
 console.log(isNumber + ', Тип: ' + typeof isNumber)
 ```
 
-Однако при работе с _JSX_ в TypeScript допускается только `as - синтаксис`, поскольку JSX встраивается в XML как синтаксис. А т.к. XML использует угловые скобки, он создает **конфликт** при использовании утверждений типа с угловыми скобками в JSX.
+However, when working with _JSX_ in TypeScript, only `as - syntax` is allowed, since JSX is embedded in XML as syntax. And since XML uses angle brackets, it creates **conflict** when using type assertions with angle brackets in JSX.
 
 </TabItem>
 </Tabs>
 
-## Вопросы
+## Questions
 
-Теперь мы готовы с вами изучать TypeScript, но для того чтобы понять на сколько вы усвоили этот урок пройдите тест в [мобильном приложении](http://onelink.to/njhc95) в нашей школы по этой теме.
+Now we are ready to learn TypeScript with you, but in order to understand how much you learned this lesson, take the test in the [mobile application](http://onelink.to/njhc95) in our school on this topic.
 
 ![Sumerian school](/img/app.png)
 
-## Ссылки
+## Links
 
 1. [TypeScript Lang](https://www.typescriptlang.org/)
-2. [Спривочник TypeScript](https://xsltdev.ru/typescript/)
+2. [Sprivochnik TypeScript](https://xsltdev.ru/typescript/)
 3. [Сanonium](https://canonium.com/category/typescript)
 
 ## Contributors ✨

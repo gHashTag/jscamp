@@ -6,7 +6,8 @@ sidebar_label: Live Reload
 
 import YouTube from 'react-youtube'
 
-Если сделаем какое-нибудь изменение в нашем приложении, например удалим восклицательные знаки и сохраним, то изменения не проявят себя. Для автоматической перезагрузки того, что мы делаем, после сохранения, необходимо включить функцию, которая называется “Live Reload”.
+
+If we make any change in our application, for example, remove exclamation marks and save, then the changes will not manifest themselves. To automatically reload what we are doing after saving, you must enable a function called “Live Reload”.
 
 <YouTube videoId='uISgghCjL38' />
 

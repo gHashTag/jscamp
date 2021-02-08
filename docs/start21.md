@@ -6,7 +6,7 @@ sidebar_label: fetch()
 
 import YouTube from 'react-youtube'
 
-Будем получать данные с сервера, для отрисовки списка фильмов.
+We will receive data from the server to draw a list of movies.
 
 <YouTube videoId='MHCrQExp3S4' />
 

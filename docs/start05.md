@@ -1,16 +1,17 @@
 ---
 id: start05
-title: Точка входа
-sidebar_label: Точка входа
+title: Point of entry
+sidebar_label: Point of entry
 ---
 
 import YouTube from 'react-youtube'
 
-Файл, который первый загружается в нашем приложении называется index.js с ним мы и познакомимся в этом уроке.
+
+The file that is first loaded in our application is called index.js, we will get acquainted with it in this tutorial.
 
 <YouTube videoId='Iw8tKp0ALkA' />
 
-index.js позволяет нам стилизовать нашу иконку прложения:
+index.js allows us to style our app icon:
 
 ```SnackPlayer
 import React, { useEffect, useState } from 'react';
@@ -45,7 +46,7 @@ export default App = () => {
 
 ```
 
-В пятой строчке app.json - это название приложения. name - Как называется приложение, displayName - название под иконкой приложения:
+In the fifth line, app.json is the name of the application. name - What is the name of the application, displayName is the name under the application icon:
 
 ```javascript
 {

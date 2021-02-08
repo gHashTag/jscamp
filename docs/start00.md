@@ -1,24 +1,24 @@
 ---
 id: start00
-title: Настройка рабочего окружения на Windows 10
-sidebar_label: Настройка Windows 10
+title: Setting up a working environment on Windows 10
+sidebar_label: Configuring Windows 10
 ---
 
 import YouTube from 'react-youtube'
 
 <YouTube videoId="Qe8q7mRXof8"/>
 
-Данная статья поможет настроить рабочее окружение React Native на операционной системе Windows 10.
-:::note
-На всех этапах установки пользователь должен иметь права Администратора и подключен к сети Интернет.
+This article will help you set up a React Native working environment on the Windows 10 operating system.
+::: note
+At all stages of installation, the user must have Administrator rights and be connected to the Internet.
 :::
-Инструкция зависит от Вашей операционной системы и от того, под какую мобильную ОС (Android или iOS) решите разрабатывать приложение. Данная статья ориентирована под ОС разработки Windows, среду разработки Android Studio и мобильную ОС Android.
+The instructions depend on your operating system and on which mobile OS (Android or iOS) you decide to develop the application. This article is focused on Windows development OS, Android Studio development environment and Android mobile OS.
 
 ![Step00](/img/steps/00.png)
 
-## Установка Chocolatey
+## Installing Chocolatey
 
-[Chocolatey](https://chocolatey.org/install) — менеджер пакетов в среде Windows по аналогии с apt-get в Linux, позволяющий установить Node, Python2 и др. Устанавливается менеджер пакетов Chocolatey через консольную оболочку `PowerShell`. Для запуска `PowerShell` на кнопке `Пуск` вызываем контекстное меню (нажатием правой клавиши мыши) и выбираем пункт `Windows PowerShell (администратор)`.
+[Chocolatey](https://chocolatey.org/install) — package manager in Windows, similar to apt-get in Linux, which allows you to install Node, Python2, etc. The Chocolatey package manager is installed via the `PowerShell` console shell. To launch `PowerShell` on the Start button, call the context menu (by pressing the right mouse button) and select the item` Windows PowerShell (administrator) `.
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -41,10 +41,10 @@ values={[
   </TabItem>
 </Tabs>
 
-:::info Альтернативный вариант
-Рядом с меню `Пуск` кнопка `Поиск` -> вводим `PowerShell` и через контекстное меню выбираем `Запуск от имени администратора`.
+:::info Alternative option
+Next to the `Start` menu, the` Search` button -> enter `PowerShell` and select` Run as administrator` through the context menu.
 :::
-Откроется оболочка `PowerShell` в консольном режиме. Для проверки возможности запуска скриптов от сторонних производителей вводим команду:
+This will open `PowerShell` in console mode. To check the possibility of running scripts from third-party manufacturers, enter the command:
 
 ```bash
 Get-ExecutionPolicy
@@ -52,39 +52,38 @@ Get-ExecutionPolicy
 
 ![Chocolatey](/img/rn/00/01.png)
 
-По умолчанию использование сторонних скриптов заблокировано (Restricted). Разрешим выполнение сторонних скриптов командой:
+By default, the use of third-party scripts is Restricted. Let's enable the execution of third-party scripts with the command:
 
 ```bash
  Set-ExecutionPolicy Bypass -Scope Process
 ```
 
-Выполнение команды потребует подтверждения, отвечаем символом Y (Yes).
+Execution of the command will require confirmation, we answer with the symbol Y (Yes).
 
 ![``PowerShell``](/img/rn/00/02.png)
 
-Проверим разблокировку запуска скриптов из консоли предыдущей командой:
+Let's check the unlocking of running scripts from the console with the previous command:
 
 ```bash
 Get-ExecutionPolicy
 ```
 
-При успешном выполнении ответом будет `Bypass`.
+If successful, the response will be `Bypass`.
 
 ![Bypass](/img/rn/00/03.png)
 
-Теперь можно использовать сторонние скрипты. Установим менеджер пакетов `Chocolatey` следующей командой:
-
+Now you can use third party scripts. Install the package manager `Chocolatey` with the following command:
 ```bash
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 ```
 
-После окончания загрузки `Chocolatey` можно проверить корректность установки данного пакета. Вводим в `PowerShell` команду:
+After the download of `Chocolatey` has finished, you can check that the package is installed correctly. Enter the command into `PowerShell`:
 
 ```bash
 choco
 ```
 
-или точнее
+or more precisely
 
 ```bash
 choco -v
@@ -92,84 +91,84 @@ choco -v
 
 ![choco](/img/rn/00/04.png)
 
-На время написание данной статьи версия `Chocolatey v0.10.15`.
+At the time of this writing, version `Chocolatey v0.10.15`.
 
 ![Step01](/img/steps/01.png)
 
-## Установка пакетов Node, Python2, JDK
+## Installing Node, Python2, JDK packages
 
-Приступаем к установке пакетов Node, Python2 и JDK через PowerShell командой:
+Let's start installing Node, Python2 and JDK packages via PowerShell with the command:
 
 ```bash
 choco install -y nodejs.install python2 openjdk8
 ```
 
-:::info Примечание
-`choco` – менеджер
+:::info Note
+`choco` - manager
 
-`Install` – ключ установки пакетов
+`Install` - package installation key
 
-`-y` - ключ (yes) автоматической установки пакетов
+`-y` - switch (yes) to automatically install packages
 
-`nodejs.install, python2, openjdk8` - название устанавливаемых пакетов.
+`nodejs.install, python2, openjdk8` - the name of the installed packages.
 :::
 
 ![choco](/img/rn/00/05.png)
 
-Начнется загрузка и установка пакетов. После установки каждого пакета будет соответствующая надпись о том, что он установлен успешно (successful).
+The download and installation of the packages will begin. After installing each package, there will be a corresponding message stating that it was installed successfully.
 
 ![Step02](/img/steps/02.png)
 
-## Установка Android Studio
+## Installing Android Studio
 
-Версия `Android Studio` на момент написания этой статьи `4.0.1`.
-Загружаем и устанавливаем [Android Studio](https://developer.android.com/studio).
-Во время установки убедитесь, что выбраны пункты:
+The version of `Android Studio` at the time of this writing is` 4.0.1`.
+Download and install [Android Studio](https://developer.android.com/studio).
+During installation, make sure the items are selected:
 
 - Android SDK
 - Android SDK Platform
 - Android Virtual Device
 
-Рекомендуем использовать стандартные пути установки.
+We recommend using the standard installation paths.
 
-:::danger Внимание
-Для установки требуется порядка 40 Гб свободного пространства диска C: Можно установить пакет на диск D:, но тогда потребуется изменить переменные окружения пользователя.
+::: danger Attention
+Installation requires about 40 GB of free space on the C: drive. You can install the package on the D: drive, but then you need to change the user's environment variables.
 :::
-Затем нажмите кнопку `Далее`, чтобы установить все эти компоненты.
+Then click the Next button to install all these components.
 
-## Установка Android SDK
+## Installing the Android SDK
 
-`Android Studio` по умолчанию предлагает установить последнюю стабильную версию `Android SDK` для создания приложения `React Native` с использованием нативного кода (на момент написания статьи рекомендованная версия Android SDK Platform 29.0.2).
+`Android Studio` by default suggests installing the latest stable version of the` Android SDK` to create a `React Native` application using native code (at the time of this writing, the recommended version of Android SDK Platform is 29.0.2).
 
-В начальном окне `Android Studio` открываем справа снизу раздел `Configure`.
+In the initial `Android Studio` window, open the` Configure` section at the bottom right.
 
 ![Android Studio](/img/rn/00/06.png)
 
-Выбираем пункт `SDK Manager`.
+Choose an item `SDK Manager`.
 
 ![Android Studio](/img/rn/00/07.png)
 
-В подразделе `Android SDK` на вкладке `SDK Platforms` в правом нижнем углу установите флажок `Show Package Details`. Найдите и разверните список `Android 10 (Q)`, и убедитесь, что отмечены следующие элементы:
+In the Android SDK subsection of the SDK Platforms tab in the lower right corner, check the Show Package Details checkbox. Find and expand the list for `Android 10 (Q)`, and make sure the following items are checked:
 
 - `Android SDK Platform 29`
 - `Intel x86 Atom_64 System Image` и/или `Google APIs Intel x86 Atom System Image`
 
-Затем выберите вкладку `SDK Tools` и также установите флажок рядом с `Show Package Details`.
+Then select the `SDK Tools` tab and also check the box next to `Show Package Details`.
 
 ![SDK Manager](/img/rn/00/08.png)
 
-Найдите и разверните запись с пунктом `Android SDK Build-Tools`, убедитесь, что выбрана версия `29.0.2`.
+Find and expand the entry for `Android SDK Build-Tools`, make sure the version is` 29.0.2`.
 
 ![SDK Manager](/img/rn/00/09.png)
 
-Наконец, нажмите `Apply`, чтобы загрузить и установить `Android SDK` и соответствующие инструменты сборки.
+Finally, click on Apply to download and install the Android SDK and related build tools.
 
 ![Step03](/img/steps/03.png)
 
-## Настройка переменных среды
+## Setting environment variables
 
-Инструменты `React Native` требуют настройки некоторых переменных среды для создания приложений с использованием собственного кода.
-Откройте `панель управления Windows`.
+The `React Native` tools require setting some environment variables in order to create applications using native code.
+Open `Windows Control Panel`.
 
 <Tabs
 defaultValue="en"
@@ -189,7 +188,7 @@ values={[
   </TabItem>
 </Tabs>
 
-Нажмите `Учетные записи пользователей`, затем снова нажмите `Учетные записи пользователей`.
+Click on `User Accounts`, then click on` User Accounts` again.
 
 <Tabs
 defaultValue="en"
@@ -209,7 +208,7 @@ values={[
   </TabItem>
 </Tabs>
 
-Нажмите на `Изменить мои переменные среды`.
+Click on `Change my environment variables`.
 
 <Tabs
 defaultValue="en"
@@ -229,10 +228,10 @@ values={[
   </TabItem>
 </Tabs>
 
-Нажмите кнопку `Создать ...` для добавления новой пользовательской переменной `ANDROID_HOME`, указывающую путь к Вашему `Android SDK`.
-Далее нажимаем кнопку `Обзор каталога…` и выбираем каталог установки `Android SDK`, по умолчанию это `%LOCALAPPDATA%\Android\Sdk`.
-:::info Примечание
-Путь до `Android SDK` можно узнать в пункте настроек `SDK Manager`.
+Click the New ... button to add a new user variable, ANDROID_HOME, indicating the path to your Android SDK.
+Then press the button `Browse directory ...` and select the installation directory `Android SDK`, by default it is`% LOCALAPPDATA% \ Android \ Sdk`.
+::: info Note
+The path to the `Android SDK` can be found in the settings item` SDK Manager`.
 :::
 
 <Tabs
@@ -253,13 +252,14 @@ values={[
   </TabItem>
 </Tabs>
 
-Нажимаем `ОК`.
+Click `OK`.
 
-Там же в переменную `Path` добавьте пути к платформенным инструментам.
+In the same place, add the paths to the platform tools to the variable `Path`.
 
-1. Выберите переменную `Path`.
-2. Щелкните кнопку `Изменить…`.
-3. Нажмите кнопку `Создать` и добавьте в список путь к установленным инструментам платформы. Расположение по умолчанию для этой папки `%LOCALAPPDATA%\Android\Sdk\platform-tools`.
+1. Select the variable `Path`.
+2. Click the `Change ...` button.
+3. Click the New button and add the path to the installed platform tools to the list. The default location for this folder
+`%LOCALAPPDATA%\Android\Sdk\platform-tools`.
 
 <Tabs
 defaultValue="en"
@@ -285,58 +285,58 @@ values={[
   </TabItem>
 </Tabs>
 
-Проверяем изменение параметров сред в `PowerShell` командой:
+We check the change in the parameters of the environments in `PowerShell` with the command:
 
 ```bash
 Get-ChildItem -Path Env:\
 ```
 
-:::info Примечание
-Если пути не обновились необходимо перезагрузить компьютер и проверить заново.
+:::info Note
+If the paths have not been updated, you need to restart the computer and check again.
 :::
 
 ![Step04](/img/steps/04.png)
 
-## Настройка эмулятора
+## Setting up the emulator
 
-Для того что бы создать или настроить эмулятор нужно, находясь на главном окне `Android Studio`, выбрать пункт `Configure` -> `AVD Manager`.
+In order to create or configure the emulator, while on the main window of `Android Studio`, select the item `Configure` -> `AVD Manager`.
 
 ![AVD Manager](/img/rn/00/14.png)
 
-Далее нажать кнопку `Create Virtual Device...`,
+Then press the button `Create Virtual Device...`,
 
 ![AVD Manager](/img/rn/00/15.png)
 
-выбираем модель эмулируемого смартфона (Например, Pixel 2) и нажимаем кнопку `Next`.
+select the model of the emulated smartphone (for example, Pixel 2) and press the button `Next`.
 
 ![Pixel2](/img/rn/00/16.png)
 
-В открывшемся окне в столбце Release Name выбрать `Q Download` (Download является ссылкой на скачивание выбранного образа эмулятора), скачивание и установка начнется автоматически.
-На момент создания инструкции рекомендуемый `API Level 29`, при установке уточните актуальную версию.
+In the window that opens, in the Release Name column, select `Q Download` (Download is a link to download the selected emulator image), download and installation will start automatically.
+At the time of creating the instructions, the recommended `API Level 29`, check the current version during installation.
 
 ![Q Downloader](/img/rn/00/17.png)
 
-Затем нажмите кнопку `Next`->`Finish`.
-Можно проверить работу эмулятора нажав на зеленую кнопку в форме треугольника, должен появится интерфейс в виде смартфона.
+Then click the button `Next`->` Finish`.
+You can check the operation of the emulator by clicking on the green button in the shape of a triangle, an interface in the form of a smartphone should appear.
 
 ![Next](/img/rn/00/18.png)
 
-:::note Подключение реального Андроид девайса
+:::note Connecting a real Android device
 
-Если возникли проблемы с эмулятором, не отчаивайтесь, можно использовать реальный смартфон.
-Для этого нужно стать разработчиком в своем смартфоне. Для этого переходим в настройки смартфона и выбираем пункт `Об устройстве` Далее нужно найти пункт `Версия...` и нажать 5-7 до того пока не появится надпись "Вы стали разработчиком".
-Подключаем смартфон через USB кабель и в зависимости от прошивки включаем режим отладки по USB. Для каждой прошивки алгоритм включения отличается друг от друга. [Подробнее](https://reactnative.dev/docs/running-on-device).
+If you have problems with the emulator, don't despair, you can use a real smartphone.
+To do this, you need to become a developer in your smartphone. To do this, go to the smartphone settings and select the item `About the device` Next, you need to find the item` Version ... `and press 5-7 until the inscription" You have become a developer "appears.
+We connect the smartphone via a USB cable and, depending on the firmware, turn on the USB debugging mode. For each firmware, the activation algorithm is different from each other. [More](https://reactnative.dev/docs/running-on-device).
 :::
 ![Step05](/img/steps/05.png)
 
-## Создание проекта React Native
+## Creating a React Native Project
 
-`React Native` имеет встроенный интерфейс командной строки, который вы можете использовать для создания нового проекта. Вы можете получить к нему доступ командой `npx`, которое поставляется с `Node.js`.
+`React Native` has a built-in command line interface that you can use to create a new project. You can access it with the `npx` command that ships with` Node.js`.
 
-Давайте создадим новый проект `React Native` под названием `MyProject`.
+Let's create a new `React Native` project called` MyProject`.
 
-Для создания проекта на `React Native` нужно запустить `PowerShell` от имени администратора, затем в нём с помощью команды `cd` перейти в папку c Вашим будущим проектом (например: `cd D:\MyProjects`).
-Далее вводим команду:
+To create a project on `React Native`, you need to run` PowerShell` as administrator, then in it using the `cd` command go to the folder with your future project (for example:` cd D: \ MyProjects`).
+Next, enter the command:
 
 ```bash
 npx react-native init MyReact
@@ -346,11 +346,11 @@ npx react-native init MyReact
 
 ![Step06](/img/steps/06.png)
 
-## Запуск React Native
+## Launching React Native
 
-Во-первых, вам нужно запустить `Metro Bundler`, сборщик `JavaScript`, который поставляется с `React Native`. `Metro` «принимает входной файл и различные параметры и возвращает один файл `JavaScript`, который включает весь ваш код и его зависимости». - [Metro Docs](https://facebook.github.io/metro/docs/concepts).
+First, you need to run Metro Bundler, the JavaScript builder that comes with React Native. `Metro`" takes an input file and various parameters and returns a single `JavaScript` file that includes all your code and its dependencies.". - [Metro Docs](https://facebook.github.io/metro/docs/concepts).
 
-Чтобы запустить `Metro Bundler`, выполните команду в `PowerShell` `npx react-native start` в папке c Вашим созданным проектом (например: `cd D:\MyProjects\MyReact`) :
+To start Metro Bundler, run the npx react-native start command in PowerShell in the folder with your created project (for example: `cd D:\MyProjects\MyReact`) :
 
 ```bash
 cd d:\MyProjects\MyReact
@@ -359,14 +359,14 @@ npx react-native start
 
 ![react-native start](/img/rn/00/20.png)
 
-Данная команда запустит `Metro Bundler` и скомпилирует проект.
-:::danger Внимание
-В дальнейшем первое окно PowerShell c Metro Bundler `не закрываем`, но можно свернуть его в фоновый режим.
+This command will run the Metro Bundler and compile the project.
+::: danger Attention
+In the future, do not close the first PowerShell window with Metro Bundler, but you can minimize it to the background.
 :::
 
-## Запуск приложения
+## Launch application
 
-Для запуска Вашего проекта `React Native` открываем второе окно `PowerShell` и переходим в папку с Вашим проектом выполняя команды:
+To start your `React Native` project, open the second` PowerShell` window and go to the folder with your project by executing the commands:
 
 ```bash
 cd d:\MyProjects\MyReact
@@ -374,22 +374,22 @@ npx react-native run-android
 ```
 
 :::info
-Запустится Эмулятор или подключаем реальный смартфон с включенным режимом отладки по USB для просмотра результата.
+The Emulator will start or we connect a real smartphone with USB debugging enabled to view the result.
 :::
 
 ![react-native run-android](/img/rn/00/21.png)
 
-На экране эмулятора или смартфона должен появится экран приветствия `React Native`.
+A welcome screen should appear on the emulator or smartphone screen `React Native`.
 
 ![React Native](/img/rn/00/22.png)
 
 ![Step07](/img/steps/07.png)
 
-## Редактирование кода в приложении - Hello World
+## Editing Code in an Application - Hello World
 
-Для редактирования кода открываем папку с проектом любым редактором кода (рекомендуем [Visual Studio Code](https://code.visualstudio.com/download)). Редактирование начинаем с файла `App.js`. При изменении и сохранении кода, `Ctrl + S`, происходит автоматическое обновление интерфейса нашего приложения на экране эмулятора.
+To edit the code, open the project folder with any code editor (we recommend [Visual Studio Code](https://code.visualstudio.com/download)). We start editing with the file `App.js`. When changing and saving the code, `Ctrl + S`, the interface of our application is automatically updated on the emulator screen.
 
-Вставьте в файл `App.js` следующий код и нажмите `Ctrl + S`:
+Paste the following code into the `App.js` file and click `Ctrl + S`:
 
 ```jsx
 import React from 'react'
@@ -417,19 +417,19 @@ const styles = StyleSheet.create({
 export default App
 ```
 
-На экране со светлым фоном в вверху в центре появиться надпись «Hello World».
+On a screen with a light background, an inscription appears in the top center «Hello World».
 
 ![Hello World](/img/rn/00/23.png)
 
-Вот так просто!
+It's that simple!
 
-## Ссылки:
+## Links:
 
-1. [React Native, официальная документация](https://reactnative.dev/docs/environment-setup)
-2. [Установка Chocolatey, официальная документация](https://chocolatey.org/install)
-3. [Android Studio, официальный сайт](https://developer.android.com/studio)
-4. [Visual Studio Code, официальный сайт](https://code.visualstudio.com/download)
-5. [Metro, официальная документация](https://facebook.github.io/metro/docs/concepts)
+1. [React Native, official documentation](https://reactnative.dev/docs/environment-setup)
+2. [Установка Chocolatey, official documentation](https://chocolatey.org/install)
+3. [Android Studio, official site](https://developer.android.com/studio)
+4. [Visual Studio Code, official site](https://code.visualstudio.com/download)
+5. [Metro, official documentation](https://facebook.github.io/metro/docs/concepts)
 
 ## Contributors ✨
 

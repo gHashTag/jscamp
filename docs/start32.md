@@ -1,10 +1,10 @@
 ---
 id: start32
-title: Селектор
-sidebar_label: Селектор
+title: Selector
+sidebar_label: Selector
 ---
 
-Случается, что нужно выбрать одно из многих. Для этого предлагаю решение.
+It happens that you need to choose one of many. For this I propose a solution.
 
 ![selector](https://miro.medium.com/max/4800/1*egojVEXa1_MOTvg521DsOg.gif)
 

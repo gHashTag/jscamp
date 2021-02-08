@@ -1,14 +1,15 @@
 ---
 id: typescript09
-title: Модули
-sidebar_label: Модули
+title: Modules
+sidebar_label: Modules
 ---
 
-Концепция модулей впервые появилась в стандарте _ECMAScript 2015_. Модули позволяют разбить сложное приложение на отдельные файлы, в каждом из которых содержится строго определенный функционал, а после, с помощью импортирования, собрать их воедино. Переменные, классы, функции, объявленные в модуле, не доступны извне этого модуля, если они не экспортируются с помощью команды `export`. А для того, чтобы использовать экспортированные части в другом модуле, нужно их импортировать, воспользовавшись командой `import`.
 
-## Экспорт
+The concept of modules first appeared in the _ECMAScript 2015_ standard. Modules allow you to split a complex application into separate files, each of which contains strictly defined functionality, and then, using import, to put them together. Variables, classes, functions declared in a module are not available from outside this module, unless they are exported using the `export` command. And in order to use the exported parts in another module, you need to import them using the `import` command.
 
-Любое объявление можно экспортировать с помощью ключевого слова `export`.
+## Export
+
+Any declaration can be exported using the `export` keyword.
 
 [Playground Link](https://www.typescriptlang.org/play?#code/PTAEloQQuEEQRBH4QQ+EEAIgghEFLQrCCPYHhB2F4QPeQThAAoAGwFMAXUAMwCcBXASyoC5QBnK+5gOwDmoALygA5ACMAhnxlSxAGhKgVoACYUAbswDGFDt16CR4zgFsp9KgAcAFgHs+FRctUT79sh3eeKMkzyMFCQUAB7W9lagAN50TKwK6lq6FIk+ZKBSnKDMnABCHhkAviQkIBAwCCigkPB40MiADCB4yIDSICHhkTQ6jtygFCYATAB0AOwAjAAcg5NTMwAsAKwAnAAMS4MAzIubAGyrM6PzE9uDu7uDi6ul5VBwSKiAIiCAwiB4kIBiIIAcIJ8dEVG0jD4OiozEcXEYZgAFKEFABPDh8CESCj0ACUCKRKJirhU9GojHofFAoVAAGpQLCSCUymA7lVUJ8WphHugiNBGr8ujk+FQUbQpHpQAAxeI0aI40CyMz6Lg8fgCJSqLgAdwo1CcnE4GLMyPoircjgoWtA6T8fCpN1plQeNUA3CCNaDszlRHRkLLZACCfGYFgy4qVZnsmgokLUuSoMj0AEk+ABZago42InVY0SrVHYpVKnp8Ti+YZkewCSEAAy9PqkGUDwbUoAAJNEw9xIxQY-HefROEUzMMS6iANwSkrU27W6qAJhBoOhAMwg8FA0EQjUA7CDPZ1iuIsKiJVLgsyJEWbxLl32gIpAA)
 
@@ -45,9 +46,9 @@ export class Animal {
 export { fruit, e, sum, Fruit, Animal }
 ```
 
-## Экспорт по умолчанию
+## Default export
 
-С помощью ключевого слова `default` можно делать экспорт по умолчанию.
+Using the keyword `default` you can export by default.
 
 [Playground Link](https://www.typescriptlang.org/play?#code/KYDwDg9gTgLgBAE2AMwIYFcA28DGnUDOBcAqgcFHAN4BQc9cOEAdgTFOjjNABRjoAjTAEsccZqgC2wAJTUAvjXlA)
 
@@ -57,9 +58,9 @@ export default class User {
 }
 ```
 
-## Импорт
+## Import
 
-Подключить экспортируемую функциональность модуля можно с помощью ключевого слова `import`.
+You can connect the exported functionality of the module using the keyword `import`.
 
 [Playground Link](https://www.typescriptlang.org/play?#code/PTAEgwQQeEEfhBD4QQBEEEIgpr0BwglCsIPAUASwFsAHAewCcAXUAb1AEEAaUAIVAF9QAzMkg0AcgB0wAM4BjMniIUR-HDhAQYCZIBYQQNwggeRBQgWRBAXCCBBEDhJADCApYoQMIgkWOsDiICcC8IGkByIPmLkqAVREBTMlw8fELAAK5+ZLLyilDGyAagqvCWgMwgGKAYmI6YkO6klDT0oACGIiVMrBzcvALC4pLSUQpgsSqggEwgBpiAoiCgNqqW6piAnCB5nqAAVCVl9VIygTUhs41yADa+VMWgALygyzKCdEA)
 
@@ -78,9 +79,9 @@ import * as scripts from './scripts'
 let a = scripts.A
 ```
 
-## Реэкспорт
+## Re-export
 
-В модуле можно выполнить реэкспорт функционала какого-то другого модуля при помощи конструкции `export .. from`. При этом локально импорт не производится и переменная не создается.
+In a module, you can re-export the functionality of some other module using the `export .. from` construction. In this case, no import is performed locally and the variable is not created.
 
 [Playground Link](https://www.typescriptlang.org/play?#code/KYDwDg9gTgLgBAbzgITgQwM5wEZwL5wBmUEAtnAOQB0A9BgMZQCWYMGFA3EA)
 
@@ -88,16 +89,16 @@ let a = scripts.A
 export { B as b } from './scripts'
 ```
 
-## Вопросы
+## Questions
 
-Теперь мы готовы с вами изучать _TypeScript_, но для того чтобы понять на сколько вы усвоили этот урок пройдите тест в [мобильном приложении](http://onelink.to/njhc95) в нашей школы по этой теме.
+Now we are ready to study _TypeScript_ with you, but in order to understand how much you learned this lesson, take the test in the [mobile application](http://onelink.to/njhc95) in our school on this topic.
 
 ![Sumerian school](/img/app.png)
 
-## Ссылки
+## Links
 
 1. [TypeScriptLang](https://www.typescriptlang.org/docs/handbook/modules.html)
-2. [Модули](http://typescript-lang.ru/docs/Modules.html)
+2. [Modules](http://typescript-lang.ru/docs/Modules.html)
 
 ## Contributors ✨
 

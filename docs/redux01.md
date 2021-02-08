@@ -1,10 +1,10 @@
 ---
 id: redux-01
-title: Концепция
-sidebar_label: Концепция
+title: Concept
+sidebar_label: Concept
 ---
 
-В этом уроке мы познакомимся с концепцией Redux.
+In this tutorial, we will introduce you to the concept of Redux.
 
 [![redux](/img/redux/01.gif)](https://youtu.be/3iNnqtmEgtg)
 

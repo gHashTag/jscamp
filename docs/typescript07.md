@@ -1,10 +1,11 @@
 ---
 id: typescript07
-title: Обобщения
-sidebar_label: Обобщения
+title: Generalizations
+sidebar_label: Generalizations
 ---
 
-TypeScript является строго типизированным языком, однако иногда надо построить функционал так, чтобы он мог использовать данные любых типов. В некоторых случаях мы могли бы использовать тип any:
+
+TypeScript is a strongly typed language, but sometimes you need to build functionality so that it can use any data type. In some cases, we could use the any type:
 
 ```typescript
 function getId(id: any): any {
@@ -14,7 +15,7 @@ let result = getId(5)
 console.log(result)
 ```
 
-Однако в этом случае мы не можем использовать результат функции как объект того типа, который передан в функцию. Для нас это тип any. Если бы вместо числа 5 в функцию передавался бы объект какого-нибудь класса, и нам потом надо было бы использовать этот объект, например, вызывать у него функции, то это было бы проблематично. И чтобы конкретизировать возвращаемый тип, мы можем использовать обобщения:
+However, in this case, we cannot use the result of the function as an object of the same type that was passed to the function. For us, this is type any. If instead of the number 5, an object of some class were passed to the function, and then we would have to use this object, for example, call functions on it, then this would be problematic. And to concretize the return type, we can use generics:
 
 ```typescript
 function getId<T>(id: T): T {
@@ -22,7 +23,7 @@ function getId<T>(id: T): T {
 }
 ```
 
-С помощью выражения `<T>` мы указываем, что функция getId типизирована определенным типом T. При выполнении функции вместо Т будет подставляться конкретный тип. Причем на этапе компиляции конкретный тип не известен. И возвращать функция будет объект этого типа. Например:
+With the expression `<T>` we indicate that the function getId is typed with a specific type T. When the function is executed, a specific type will be substituted for T. Moreover, at the compilation stage, the specific type is not known. And the function will return an object of this type. For example:
 
 ```typescript
 function getId<T>(id: T): T {
@@ -34,9 +35,9 @@ let result2 = getId<string>('abc')
 console.log(result2)
 ```
 
-В первом случае вместо параметра T будет испльзоваться тип number, поэтому в функцию мы можем передать число. Во втором случае вместо T используется тип string, поэтому во втором случае можно передать строку. Таким образом, мы можем передать в функцию объекты различных типов, но при этом сохраняется строгая типизация, каждый вариант обобщенной функции может принимать объекты только определенного типа.
+In the first case, instead of the T parameter, the number type will be used, so we can pass a number to the function. In the second case, instead of T, the string type is used, so in the second case, you can pass a string. Thus, we can pass objects of different types to the function, but at the same time strict typing is preserved, each version of a generic function can only accept objects of a certain type.
 
-Подобным образом еще можно использовать обобщенные массивы:
+Similarly, you can also use generic arrays:
 
 ```typescript
 function getString<T>(arg: Array<T>): string {
@@ -53,11 +54,11 @@ let result = getString<number>([1, 2, 34, 5])
 console.log(result)
 ```
 
-В данном случае вне зависимости от типа данных, переданных в массиве, все его элементы соединятся в одну общую строку.
+In this case, regardless of the type of data passed in the array, all its elements will be combined into one common string.
 
-## Обобщенные классы и интерфейсы
+## Generic Classes and Interfaces
 
-Кроме обобщенных функций и массивов также бывают обобщенные классы и интерфейсы:
+In addition to generic functions and arrays, there are also generic classes and interfaces:
 
 ```typescript
 class User<T> {
@@ -77,7 +78,7 @@ let alice = new User<string>('vsf')
 console.log(alice.getId()) // возвращает string
 ```
 
-Только в данном случае надо учитывать, что если мы типизировали объект определенным типом, то сменить данный тип уже не получится. То есть в следующем случае второе создание объекта не будет работать, так как объект tom уже типизирован типом number:
+Only in this case, we must take into account that if we typed an object with a certain type, then changing this type will no longer work. That is, in the following case, the second object creation will not work, since the tom object is already typed with the number type:
 
 ```typescript
 let tom = new User<number>(3)
@@ -85,7 +86,7 @@ console.log(tom.getId())
 tom = new User<string>('vsf') // ошибка
 ```
 
-Все то же самое и с интерфейсами:
+It's the same with interfaces:
 
 ```typescript
 interface IUser<T> {
@@ -103,9 +104,9 @@ class User<T> implements IUser<T> {
 }
 ```
 
-## Ограничения обобщений
+## Generalization constraints
 
-Иногда необходимо использовать обобщения, однако принимать любой тип в функцию или класс вместо параметра T нежелательно. Например, пусть имеется следующий интерфейс и классы его реализующие:
+Sometimes you need to use generics, but you don't want to accept any type in a function or class instead of the T parameter. For example, suppose you have the following interface and classes that implement it:
 
 ```typescript
 interface IUser {
@@ -136,7 +137,7 @@ class Employee extends User {
 }
 ```
 
-Теперь пусть у нас будет класс, выводящий информацию о пользователях:
+Now let's have a class that displays information about users:
 
 ```typescript
 class UserInfo<T extends IUser> {
@@ -146,9 +147,9 @@ class UserInfo<T extends IUser> {
 }
 ```
 
-В методе getUserInfo мы хотим использовать функцию getInfo(), предполагая, что в качестве параметра будет передаваться объект IUser. Но чтобы нельзя было передать объекты любого типа, а только объекты IUser, устанавливается ограничения с помощью ключевого слова extends.
+In the getUserInfo method, we want to use the getInfo () function, assuming an IUser object will be passed as a parameter. But so that you cannot pass objects of any type, but only IUser objects, constraints are set using the extends keyword.
 
-И затем мы можем использовать класс, передавая подходящие объекты:
+And then we can use the class by passing in the appropriate objects:
 
 ```typescript
 let tom = new User(3, 'Tom')
@@ -158,9 +159,9 @@ userStore.getUserInfo(tom)
 userStore.getUserInfo(alice)
 ```
 
-## Ключевое слово new
+## The new keyword
 
-Чтобы создать новый объект в коде обобщений, нам надо указать, что обобщенный тип T имеет конструктор. Это означает, что вместо параметра type:T нам надо указать type: {new(): T;}. Например, следующий обобщенный интерфейс работать не будет:
+To create a new object in generic code, we need to indicate that the generic type T has a constructor. This means that instead of the type: T parameter, we need to specify type: {new (): T;}. For example, the following generic interface will not work:
 
 ```typescript
 function UserFactory<T>(): T {
@@ -168,7 +169,7 @@ function UserFactory<T>(): T {
 }
 ```
 
-Чтобы интерфейс начал работать, используем слово new:
+To make the interface work, use the word new:
 
 ```typescript
 function userFactory<T>(type: { new (): T; }); T {
@@ -187,7 +188,7 @@ class User {
 let user : User = userFactory(User)
 ```
 
-## Ссылки:
+## Links:
 
 1.  [TypeScript документация](https://www.typescriptlang.org/docs/handbook/generics.html)
 2.  [Metanit](https://metanit.com/web/typescript/3.5.php)

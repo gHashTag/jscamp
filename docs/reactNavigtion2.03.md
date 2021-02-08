@@ -4,7 +4,7 @@ title: Drawer Navigator
 sidebar_label: Drawer Navigator
 ---
 
-Этот метод навигации позволяет напрямую переключаться между различными экранами с помощью слайд-ящика. Этот слайд-ящик содержит ссылки на различные экраны приложения.
+This navigation method allows you to switch directly between different screens using a slide drawer. This slide box contains links to various screens in the application.
 
 [![Drawer Navigator](/img/rn2/03.gif)](https://youtu.be/x1BkWHncx10)
 

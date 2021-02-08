@@ -1,21 +1,23 @@
 ---
 id: scratch-01
-title: Создание нового проекта в Scratch
-sidebar_label: Создание нового проекта в Scratch
+title: Creating a new project in Scratch
+sidebar_label: Creating a new project in Scratch
 ---
-## Изменение скорости спрайтов
+## Changing the speed of sprites
+
 import YouTube from 'react-youtube';
 
-ИЗМЕНЕНИЕ СКОРОСТИ СПРАЙТОВ второй урок по изучению языка программирования  «Scratch». 
+
+CHANGING SPEEDS SPEEDS second lesson on learning programming language  «Scratch». 
 
 <YouTube videoId='L6lAa3h3hU4' />
 
-## Ссылки
+## Links
 1. [Learn JavaScript](https://learn.javascript.ru/fetch)
 2. [MDN Web Docs](https://developer.mozilla.org/ru/docs/Web/API/Fetch_API/Using_Fetch)
 3. [JS Tutorial](https://www.javascripttutorial.net/javascript-fetch-api/)
 
-Наше [мобильное приложение](http://onelink.to/njhc95)
+Our [mobile application](http://onelink.to/njhc95)
 
 ![Sumerian school](/img/app.png)
 

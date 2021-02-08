@@ -1,38 +1,39 @@
 ---
 id: auth1-02
-title: Аутентификация
-sidebar_label: Часть II
+title: Authentication
+sidebar_label: Part II
 ---
+
 
 Во-первых стандартный UI от Amplify далеко не всегда удовлетворяет UX приходящий со стороны заказчика
 
-Во-вторых в [официальной документации](https://aws-amplify.github.io/docs/js/react#note-on-jwt-storage) Amplify написано:
+Secondly in the [official documentation](https://aws-amplify.github.io/docs/js/react#note-on-jwt-storage) Amplify says:
 
 > Data is stored unencrypted when using standard storage adapters (localStorage in the browser and AsyncStorage on React Native). Amplify gives you the option to use your own storage object to persist data. With this, you could write a thin wrapper around libraries like: react-native-keychain react-native-secure-storage Expo’s secure store
 
-Это значит, что данные аутентификации хранятся в не зашифрованном виде, а это риск 🕷 информационной безопасности с возможными негативными последствиями 🕸, поэтому мы решим эти две задачи в этой части.
+This means that the authentication data is stored in an unencrypted form, and this is a risk 🕷 information security with possible negative consequences 🕸, so we will solve these two tasks in this part.
 
-Весь код для этой части можно найти на [GitHub](https://github.com/react-native-village/aws-amplify-react-hooks/tree/master/examples/reactNativeCRUDv2).
+All the code for this part can be found at [GitHub](https://github.com/react-native-village/aws-amplify-react-hooks/tree/master/examples/reactNativeCRUDv2).
 
 [![AWS Amplify](/img/auth/00.gif)](https://youtu.be/CM_M5cNLmK4)
 
 ![Step01](/img/steps/01.png)
 
-## Клонируем репозиторий
+## Clone the repository
 
-Мы будем использовать наш UI Kit, но вы можете легко заменить его своим или любым другим.
+We will use our UI Kit, but you can easily replace it with your own or any other.
 
 ```bash
 git clone https://github.com/fullstackserverless/auth.git
 ```
 
-переходим в папку проекта
+go to the project folder
 
 ```bash
 cd auth
 ```
 
-Устанавливаем зависимости
+Install dependencies
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -61,41 +62,41 @@ yarn
 
 ![Step02](/img/steps/02.png)
 
-## Инициализация AWS Amplify в проекте React Native
+## Initializing AWS Amplify in a React Native Project
 
-Инициализируйте наш проект AWS Amplify в корневом каталоге.
+Initialize our AWS Amplify project in the root directory.
 
 ```bash
 amplify init
 ```
 
-Ответь на эти вопросы:
+Answer these questions:
 
 ![amplify init](/img/auth/auth02.png)
 
-Проект успешно инициализирован 🚀
+The project has been successfully initialized 🚀
 
 ![Step03](/img/steps/03.png)
 
-## Подключить плагин аутентификации
+## Connect authentication plugin
 
-Теперь, когда приложение находится в облаке, вы можете добавить некоторые функции, такие как разрешение пользователям регистрироваться в нашем приложении и входить в систему.
+Now that the application is in the cloud, you can add some functionality, such as allowing users to register with our application and sign in.
 
-Используйте команду:
+Use the command:
 
 ```bash
 amplify add auth
 ```
 
-Подключите функцию аутентификации. Выберите конфигурацию по умолчанию. Это добавляет конфигурации ресурсов аутентификации локально в ваш каталог ampify/backend/auth
+Connect the authentication function. Select the default configuration. This adds auth resource configurations locally to your directory ampify/backend/auth
 
 <div class="alert alert--info" role="alert">
-  📌 Выберите профиль, который мы хотим использовать(default). Введите и как пользователи будут входить. Электронная почта (списать деньги за смс).
+  📌 Select the profile we want to use (default). Enter and how users will log in. Email (write off money for SMS).
 </div>
 
 ![amplify init](/img/auth/auth03.png)
 
-Отправить изменения в облако 💭
+Send changes to the cloud 💭
 
 ```bash
 amplify push
@@ -105,15 +106,15 @@ amplify push
 
 ![Step04](/img/steps/04.png)
 
-## Подключите AWS Amplify к React Native
+## Connect AWS Amplify to React Native
 
-Подробности можно найти в [инструкции](https://aws-amplify.github.io/docs/js/react) 📃. Короче говоря, вы можете добавить эти зависимости ниже для подключения AWS Amplify:
+Details can be found in [instructions](https://aws-amplify.github.io/docs/js/react) 📃. In short, you can add these dependencies below to connect AWS Amplify:
 
 ```bash
 yarn add aws-amplify @aws-amplify/core aws-amplify-react-native amazon-cognito-identity-js @react-native-community/netinfo
 ```
 
-После установки обязательно заходим в папку ios и ставим поды
+After installation, be sure to go to the ios folder and put the pods
 
 ```bash
 cd ios && pod install && cd ..
@@ -121,46 +122,46 @@ cd ios && pod install && cd ..
 
 ![Step05](/img/steps/05.png)
 
-## Навигация
+## Navigation
 
-Установите react-navigation v5, основываясь этой инструкции [здесь](https://reactnavigation.org/docs/getting-started/)
-(на момент написания статьи это последняя версия навигации)
+Install react-navigation v5 based on this instruction [here](https://reactnavigation.org/docs/getting-started/)
+(at the time of writing this is the latest navigation version)
 
 ```bash
 yarn add react-native-reanimated react-native-gesture-handler react-native-screens react-native-safe-area-context @react-native-community/masked-view @react-navigation/stack
 ```
 
-Добавить поды для iOS
+Add pods for iOS
 
 ```bash
 cd ios && pod install && cd ..
 ```
 
 <div class="alert alert--info" role="alert">
-📌 Рекомендую запускать приложение для iOS и Android, после каждой установки, во избежание поиска библиотеки, из-за которой приложение вылетает.
+📌 I recommend running the iOS and Android app after each installation, in order to avoid searching for the library that crashes the app.
 </div>
 
 ![Step06](/img/steps/06.png)
 
 ## react-native-keychain
 
-Добавьте `react-native-keychain` - это безопасная библиотека хранилища ключей для React Native.
+Add `react-native-keychain` - this is a secure keychain library for React Native.
 
 ```bash
 yarn add react-native-keychain
 ```
 
-Добавить поды для iOS
+Add pods for iOS
 
 ```bash
 cd ios && pod install && cd ..
 ```
 
-Согласно [официальной документации:](https://aws-amplify.github.io/docs/js/authentication#managing-security-tokens)
+According to [official documentation:](https://aws-amplify.github.io/docs/js/authentication#managing-security-tokens)
 
 > При использовании аутентификации с помощью AWS Amplify вам не нужно обновлять токены Amazon Cognito вручную. При необходимости токены автоматически обновляются библиотекой. Маркеры безопасности, такие как IdToken или AccessToken, хранятся в localStorage для браузера и в AsyncStorage для React Native. Если вы хотите хранить эти токены в более безопасном месте или использовать Amplify на стороне сервера, вы можете предоставить свой собственный объект хранения для хранения этих токенов.
 
-Изменяем файл:
+Modifying the file:
 
 ```tsx title="src/index.tsx"
 import React, { ReactElement } from 'react'
@@ -244,17 +245,17 @@ const App = (): ReactElement => {
 export default App
 ```
 
-Для авторизации клиентов AppSync поддерживает ключи API, учетные данные Amazon IAM, пулы пользователей Amazon Cognito и сторонних поставщиков OIDC. Это выводится из файла aws-exports.js при вызове Amplify.configure().
+AppSync supports API keys, Amazon IAM credentials, Amazon Cognito user pools, and third-party OIDC providers for client authorization. This is output from aws-exports.js when Amplify.configure () is called.
 
-При использовании аутентификации с AWS Amplify вам не нужно обновлять токены Amazon Cognito вручную. При необходимости токены автоматически обновляются библиотекой.
-Токены безопасности, такие как IdToken или AccessToken, хранятся в localStorage для браузера и в AsyncStorage для React Native. Если вы хотите хранить эти токены в более безопасном месте или используете Amplify на стороне сервера, вы можете предоставить свой собственный объект хранения для хранения этих токенов.
+When using authentication with AWS Amplify, you do not need to manually renew your Amazon Cognito tokens. The tokens are automatically updated by the library if necessary.
+Security tokens such as IdToken or AccessToken are stored in localStorage for the browser and AsyncStorage for React Native. If you want to store these tokens in a more secure location, or if you use Amplify on the server side, you can provide your own storage object to store these tokens.
 
 ![Step07](/img/steps/07.png)
 
 ## AppNavigator
 
-Создайте файл конфигурации навигации для нашей пользовательской аутентификации.
-Добавьте к нему экран приветствия.
+Create a navigation config file for our custom authentication.
+Add a welcome screen to it.
 
 ```tsx title="src/AppNavigator.tsx"
 import * as React from 'react'
@@ -287,17 +288,17 @@ export default AppNavigator
 
 ## Hello screen
 
-Создайте точку входа для наших экранов аутентификации.
+Create an entry point for our authentication screens.
 
 ![Hello screen](/img/auth/auth1-04.png)
 
-Подключим экран приветствия:
+Let's connect the welcome screen:
 
 ```ts title="src/screens/Authenticator/index.ts"
 export * from './Hello'
 ```
 
-Создаем сам экран приветствия:
+Create the welcome screen itself:
 
 ```tsx title="src/screens/Authenticator/Hello/index.tsx"
 import React, { useEffect, useState, ReactElement } from 'react'
@@ -352,15 +353,15 @@ const Hello = ({ navigation }: HelloT): ReactElement => {
 export { Hello }
 ```
 
-В хуке `useEffect` мы проверяем токен пользователя, где в случае истины мы переходим на экран пользователя, а в случае ложного - остаемся на этом экране.
+In the `useEffect` hook, we check the user's token, where if true we go to the user's screen, and if false we stay on this screen.
 
-Соберите все изменения и встретите экран приветствия.
+Collect all changes and you will be greeted with a welcome screen.
 
 ![Step09](/img/steps/09.png)
 
 ## SignUp screen
 
-Мы создаем экран регистрации `SIGN_UP`, где для аутентификации мы используем метод [Auth.signUp](https://docs.amplify.aws/lib/auth/emailpassword/q/platform/js#sign-up).
+We create a `SIGN_UP` login screen where we use the method for authentication [Auth.signUp](https://docs.amplify.aws/lib/auth/emailpassword/q/platform/js#sign-up).
 
 ![SignUp](/img/auth/auth1-05.png)
 
@@ -476,9 +477,9 @@ export { SignUp }
 
 ![Step10](/img/steps/10.png)
 
-## Подтверждение регистрации ConfirmSignUp
+## Confirmation of registration ConfirmSignUp
 
-После успешного ответа от сервера мы переходим на экран подтверждения и вводим код, который пришел на нашу почту. Для этого создайте экран `CONFIRM_SIGN_UP`
+After a successful response from the server, we go to the confirmation screen and enter the code that came to our mail. To do this, create a screen `CONFIRM_SIGN_UP`
 
 ![ConfirmSignUp](/img/auth/auth1-06.png)
 
@@ -576,17 +577,17 @@ const ConfirmSignUp = ({ route, navigation }: ConfirmSignUpT): ReactElement => {
 export { ConfirmSignUp }
 ```
 
-## Отправить код повторно - ResendSignUp
+## Resend code - ResendSignUp
 
-Если код не пришел, мы должны предоставить пользователю возможность повторно отправить код.
-Для этого мы помещаем Auth.resendSignUp (userInfo.email) на кнопку «Отправить код повторно».
-В случае успешного вызова метода
+If the code doesn't arrive, we must provide the user with the option to resend the code.
+To do this, we put Auth.resendSignUp (userInfo.email) on the Resend Code button.
+In case of successful method call
 
 ```jsx
 Auth.confirmSignUp(email, code, { forceAliasCreation: true })
 ```
 
-мы должны вызвать метод
+we have to call the method
 
 ```jsx
 Auth.signIn(email, password)
@@ -594,9 +595,9 @@ Auth.signIn(email, password)
 
 ![Step11](/img/steps/11.png)
 
-## Экран пользователя
+## User screen
 
-После успешного завершения перейдите к экрану `USER`, который мы создаем с помощью кнопки выхода для приложения и очистки токенов.
+After successful completion, go to the `USER` screen we create with the exit button for the app and clear tokens.
 
 ![User screen](/img/auth/auth1-07.png)
 
@@ -649,9 +650,9 @@ export { User }
 
 ![Step12](/img/steps/12.png)
 
-## SignIn screen - экран входа
+## SignIn screen - login screen
 
-После того, как пользователь зарегистрирован, мы должны предоставить пользователю возможность входа в приложение через логин и пароль. Для этого создаем экран `SIGN_IN`.
+After the user is registered, we must provide the user with the ability to log into the application through a username and password. To do this, create a screen `SIGN_IN`.
 
 ![SignIn screen](/img/auth/auth1-08.png)
 
@@ -762,13 +763,13 @@ export { SignIn }
 
 ![Step13](/img/steps/13.png)
 
-## Forgot password screen - вспоминание пароля
+## Forgot password screen - remember password
 
-В случае успеха мы отправляем пользователя на экран `USER`, что мы уже сделали, и если пользователь забыл или ввел пароль неправильно, мы показываем ошибку «Забыли пароль» и предлагаем сбросить пароль.
+If successful, we send the user to the `USER` screen, which we have already done, and if the user has forgotten or entered the password incorrectly, we show the error" Forgot password "and suggest resetting the password.
 
 ![Forgot password](/img/auth/auth1-09.png)
 
-Для этого создаем экран `FORGOT`
+To do this, create a screen `FORGOT`
 
 ![Forgot password](/img/auth/auth1-10.png)
 
@@ -847,7 +848,7 @@ export { Forgot }
 
 ## Forgot password submit
 
-После подтверждения электронной почты мы вызываем метод `Auth.forgotPassword(email)` и, если такой пользователь есть, отправляем пользователя на экран `FORGOT_PASSWORD_SUBMIT`
+After confirming the email, we call the `Auth.forgotPassword (email)` method and, if there is such a user, we send the user to the screen `FORGOT_PASSWORD_SUBMIT`
 
 ![ForgotPassSubmit](/img/auth/auth1-11.png)
 
@@ -961,19 +962,19 @@ const ForgotPassSubmit = ({ route, navigation }: ForgotPassSubmitT): ReactElemen
 export { ForgotPassSubmit }
 ```
 
-где после ввода отправленного на почту кода нового пароля и его подтверждения вызываем метод смены пароля
+where after entering the new password code sent to the mail and confirming it, we call the password change method
 
 ```jsx
 Auth.forgotPasswordSubmit(email, code, password)
 ```
 
-успех которого отправляет пользователя на экран `USER`.
+whose success sends the user to the screen `USER`.
 
 ![Step15](/img/steps/15.png)
 
-## Связывание экранов
+## Linking screens
 
-Все созданные компоненты подключаем в
+We connect all the created components to
 
 ```ts title="src/screens/Authenticator/index.ts"
 export * from './Hello'
@@ -987,9 +988,9 @@ export * from './ConfirmSignUp'
 
 ![Step16](/img/steps/16.png)
 
-## Обновляем AppNavigator
+## Updating AppNavigator
 
-Обновление файла конфигурации навигации:
+Updating the navigation config file:
 
 ```jsx title="src/AppNavigator.tsx"
 import * as React from 'react'
@@ -1034,13 +1035,13 @@ export default AppNavigator
 
 ## Debug
 
-Чтобы понять, что происходит с токенами в вашем приложении, добавьте в
+To understand what is happening with tokens in your application, add in
 
 ```jsx title="root/index.js"
 window.LOG_LEVEL = 'DEBUG'
 ```
 
-Запускаем приложение и получаем кастомную аутентификацию.
+We launch the application and get custom authentication.
 
 ## Done ✅
 

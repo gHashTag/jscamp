@@ -1,0 +1,78 @@
+{
+  "link.title.Syllabus 🏕": {
+    "message": "Syllabus 🏕",
+    "description": "The title of the footer links column with title=Syllabus 🏕 in the footer"
+  },
+  "link.title.Community 💛": {
+    "message": "Community 💛",
+    "description": "The title of the footer links column with title=Community 💛 in the footer"
+  },
+  "link.title.Social 🌎": {
+    "message": "Social 🌎",
+    "description": "The title of the footer links column with title=Social 🌎 in the footer"
+  },
+  "link.item.label.JavaScript": {
+    "message": "JavaScript",
+    "description": "The label of footer link with label=JavaScript linking to docs/javascript00"
+  },
+  "link.item.label.React Native": {
+    "message": "React Native",
+    "description": "The label of footer link with label=React Native linking to docs/start00"
+  },
+  "link.item.label.React Navigation 2": {
+    "message": "React Navigation 2",
+    "description": "The label of footer link with label=React Navigation 2 linking to docs/reactNavigtion2.00"
+  },
+  "link.item.label.Redux": {
+    "message": "Redux",
+    "description": "The label of footer link with label=Redux linking to docs/redux00"
+  },
+  "link.item.label.Discord 💭": {
+    "message": "Discord 💭",
+    "description": "The label of footer link with label=Discord 💭 linking to https://discord.gg/6GDAfXn"
+  },
+  "link.item.label.AWS Amplify Ru 💭": {
+    "message": "AWS Amplify Ru 💭",
+    "description": "The label of footer link with label=AWS Amplify Ru 💭 linking to https://teleg.run/awsamplify"
+  },
+  "link.item.label.AWS Amplify En 💭": {
+    "message": "AWS Amplify En 💭",
+    "description": "The label of footer link with label=AWS Amplify En 💭 linking to https://discord.gg/yh76QcjKBC"
+  },
+  "link.item.label.Telegram Channel 📬": {
+    "message": "Telegram Channel 📬",
+    "description": "The label of footer link with label=Telegram Channel 📬 linking to https://t.me/javascriptcamping"
+  },
+  "link.item.label.Patreon 🤑": {
+    "message": "Patreon 🤑",
+    "description": "The label of footer link with label=Patreon 🤑 linking to https://www.patreon.com/javascriptcamp"
+  },
+  "link.item.label.Instagram 🌎": {
+    "message": "Instagram 🌎",
+    "description": "The label of footer link with label=Instagram 🌎 linking to https://www.instagram.com/javascriptcamp/"
+  },
+  "link.item.label.GitHub 🛰": {
+    "message": "GitHub 🛰",
+    "description": "The label of footer link with label=GitHub 🛰 linking to https://github.com/react-native-village"
+  },
+  "link.item.label.Dev.to 🌎": {
+    "message": "Dev.to 🌎",
+    "description": "The label of footer link with label=Dev.to 🌎 linking to https://dev.to/playra"
+  },
+  "link.item.label.Facebook 🌎": {
+    "message": "Facebook 🌎",
+    "description": "The label of footer link with label=Facebook 🌎 linking to https://www.facebook.com/javascriptcamp"
+  },
+  "link.item.label.Vk 🌎": {
+    "message": "Vk 🌎",
+    "description": "The label of footer link with label=Vk 🌎 linking to https://vk.com/reactnativeinit"
+  },
+  "link.item.label.Medium 🌎": {
+    "message": "Medium 🌎",
+    "description": "The label of footer link with label=Medium 🌎 linking to https://medium.com/react-native-init"
+  },
+  "copyright": {
+    "message": "Copyright © 2021 Server Serverlesskiy 🎰 Built with Docusaurus.",
+    "description": "The footer copyright"
+  }
+}

@@ -1,12 +1,13 @@
 ---
 id: start18
-title: Состояние - State
-sidebar_label: Состояние - State
+title: Condition - State
+sidebar_label: Condition - State
 ---
 
 import YouTube from 'react-youtube'
 
-State компонента — это его внутренне состояние и в этом уроке мы с ним познакомимся.
+
+The State of a component is its internal state, and in this tutorial we will get to know it.
 
 <YouTube videoId='4sRGK632S5I' />
 

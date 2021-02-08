@@ -1,12 +1,13 @@
 ---
 id: start15
-title: Стилизация Header
-sidebar_label: Стилизация Header
+title: Stylization Header
+sidebar_label: Stylization Header
 ---
 
 import YouTube from 'react-youtube'
 
-Закрепляем знания о Flexbox на практике.
+
+We consolidate knowledge about Flexbox in practice.
 
 <YouTube videoId='dPynUHhrsB0' />
 

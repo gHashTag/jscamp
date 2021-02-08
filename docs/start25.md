@@ -6,7 +6,7 @@ sidebar_label: ImageCard
 
 import YouTube from 'react-youtube'
 
-Мы с вами сверстаем карточку в нашем приложении с текстовым полем, с тенюшечкой и с округлыми краями.
+We will lay out a card in our application with a text field, with a shadow and with rounded edges.
 
 <YouTube videoId='anVgDcngW8I' />
 

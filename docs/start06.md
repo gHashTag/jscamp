@@ -6,11 +6,12 @@ sidebar_label: AppRegistry
 
 import YouTube from 'react-youtube'
 
-AppRegistry — это точка входа JavaScript для запуска всех приложений React Native. Корневые компоненты приложения должны зарегистрироваться с помощью AppRegistry.registerComponent (), затем собственная система может загрузить пакет для приложения и затем запустить приложение, когда оно будет готово, вызвав AppRegistry.runApplication ().
+
+The AppRegistry is the JavaScript entry point for running all React Native apps. Application root components must register with AppRegistry.registerComponent (), then the native system can load the package for the application and then launch the application when ready by calling AppRegistry.runApplication ().
 
 <YouTube videoId='IHThgXE5U1c' />
 
-Код Appregistry:
+Code Appregistry:
 
 ```SnackPlayer
 import { Text, AppRegistry } from 'react-native';

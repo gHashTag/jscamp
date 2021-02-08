@@ -6,7 +6,8 @@ sidebar_label: State vs Props
 
 import YouTube from 'react-youtube'
 
-Многие начинающие, да что скрывать я сам был одним из таких и путал что такое State, что такое Props, так как по сути они очень похожи и в то же время они имеют существенное отличие. Для того, чтобы разобраться с этим и не путать одно с другим делан этот урок.
+
+Many beginners, but what to hide, I myself was one of those and confused what State is, what Props are, since in fact they are very similar and at the same time they have a significant difference. In order to deal with this and not to confuse one with the other, this lesson was done.
 
 <YouTube videoId='vYuHeYxaJQU' />
 

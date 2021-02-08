@@ -1,61 +1,62 @@
 ---
 id: blogging-03
-title: Парное программирование
-sidebar_label: Парное программирование
+title: Pair programming
+sidebar_label: Pair programming
 ---
 
-## Парное програмирование
+
+## Pair programming
 
 ![Duo](https://media.giphy.com/media/DKznWTry3u9Q4/giphy.gif)
 
-В нашей школе мы воспитываем парных програмистов.
-Па́рное программи́рование — техника программирования, при которой исходный код создаётся парами людей, программирующих одну задачу, сидя за одним рабочим местом. Один программист («ведущий») управляет компьютером и, в основном, думает над кодированием в деталях. Другой программист («штурман»[1]) сосредоточен на картине в целом и непрерывно просматривает код, производимый первым программистом. Время от времени они меняются ролями, обычно, каждые полчаса.
+In our school we train paired programmers.
+Pair programming is a programming technique in which the source code is created by pairs of people programming the same task while sitting at the same workstation. One programmer ("presenter") controls the computer and mostly thinks about coding in detail. Another programmer ("navigator" [1]) focuses on the big picture and continually reviews the code produced by the first programmer. They change roles from time to time, usually every half hour.
 
-### Преимущество парных программистов
+### The Paired Programmer Advantage
 
-#### Повышение дисциплины
+#### Improving discipline
 
 ![Disciplin](https://media.giphy.com/media/3orifbkY8i6T0XA0Qo/giphy.gif)
 
-Программисты в паре чаще «делают то, что нужно» и реже устраивают длинные перерывы.
+Paired programmers are more likely to "do the right thing" and rarely take long breaks.
 
-#### Лучший код
+#### Better code
 
 ![Programmer](https://media.giphy.com/media/ZVik7pBtu9dNS/giphy.gif)
 
-Партнёры в паре менее склонны к неудачным решениям и производят более качественный код.
+Partners in a pair are less prone to bad decisions and produce better code.
 
-#### Коллективное владение кодом
+#### Collective code ownership
 
 ![Collective](https://media.giphy.com/media/LmNwrBhejkK9EFP504/giphy.gif)
 
-Коллективное владение (пары меняются) означает, что каждый несёт ответственность за весь код. Таким образом, каждый вправе вносить изменения в любой участок кода. Парное программирование поддерживает эту практику: работая в парах, все программисты получают доступ ко всем частям кода. Важное преимущество коллективного владения кодом заключается в том, что оно ускоряет процесс разработки, поскольку, при появлении ошибки, её может устранить любой программист.
+Collective ownership (pairs swap) means that everyone is responsible for all the code. Thus, everyone has the right to make changes to any part of the code. Pair programming supports this practice: by working in pairs, all programmers have access to all parts of the code. An important advantage of shared code ownership is that it speeds up the development process, because when an error occurs, any programmer can fix it.
 
-#### Непрерывность проверки кода
+#### Code validation continuity
 
 ![Check](https://media.giphy.com/media/Rd6sn03ncIklmprvy6/giphy.gif)
 
-Ошибки обнаруживаются сразу же, как только появились, это позволяет экономить и время, и деньги. Команда разработчиков сплачивается, что позволяет закончить работу раньше и в лучшем качестве.
+Errors are detected as soon as they appear, which saves both time and money. The development team rallies, which allows you to finish work earlier and in better quality.
 
-#### Удалённое (дистанционное) парное программирование
+#### Remote (remote) pair programming
 
 ![Distance](https://media.giphy.com/media/db4Es0WhZAeRFkmB1c/giphy.gif)
 
-Удалённое (дистанционное) парное программирование, также известное как виртуальное парное программирование или распределённое парное программирование, это разновидность парного программирования, в котором два программиста находятся на расстоянии друг от друга[2], работая через средство совместного редактирования кода, удалённый рабочий стол, или посредством плагина для интегрированной системы разработки. Удалённое парное программирование добавляет дополнительные трудности, отсутствующие в обычном парном программировании, такие как дополнительные задержки координации, зависимость от более тяжеловесных инструментов управления задачами вместо таких упрощённых вариантов, как карточки с индексами, и отсутствие невербальных средств общения, приводящее к непониманию и конфликтам в таких вопросах, как «чья сейчас клавиатура».
+Remote (remote) pair programming, also known as virtual pair programming or distributed pair programming, is a form of pair programming in which two programmers are separated from each other [2], working through a co-authoring tool, remote desktop, or via plugin for the integrated development system. Remote pair programming adds additional difficulties not found in conventional pair programming, such as additional coordination delays, reliance on heavier task management tools instead of simplistic options such as index cards, and a lack of non-verbal communication tools leading to misunderstandings and conflicts in such matters. like "whose keyboard is now."
 
-Подробнее о парном программирование можете прочитать [здесь](https://ru.wikipedia.org/wiki/Парное_программирование)
+You can read more about pair programming [here](https://ru.wikipedia.org/wiki/Парное_программирование)
 
 ![Sumerian school](/img/app.png)
 
-## Ссылки
+## Links
 
 1. [MDN web docs](https://developer.mozilla.org/ru/docs/Web/JavaScript/Data_structures)
-2. [Код для подростков: прекрасное руководство по программированию для начинающих, том 1: Javascript - Jeremy Moritz ](https://www.amazon.com/Code-Teens-Beginners-Programming-Javascript-ebook/dp/B07FCTLVPC)
+2. [Code for Teens: The Perfect Beginner's Guide to Programming, Volume 1: Javascript - Jeremy Moritz ](https://www.amazon.com/Code-Teens-Beginners-Programming-Javascript-ebook/dp/B07FCTLVPC)
 3. [JavaScript.ru](https://learn.javascript.ru/types)
-4. [Wiki с информацией о парных программистах](https://ru.wikipedia.org/wiki/Парное_программирование)
-5. Наш [Discord](https://discord.gg/jgRpPsDx)
-6. [Группа Вк](https://vk.com/sumerianschool)
-7. Пройдите тест на эту тему и проверьте усвоенную тему в [мобильном приложении](http://onelink.to/njhc95).
+4. [Wiki with information about paired programmers](https://ru.wikipedia.org/wiki/Парное_программирование)
+5. Our [Discord](https://discord.gg/jgRpPsDx)
+6. [Group FB](https://www.facebook.com/javascriptcamp)
+7.Take the quiz on this topic and check the learned topic in the [mobile application](http://onelink.to/njhc95).
 
 ## Contributors ✨
 

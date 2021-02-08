@@ -1,24 +1,24 @@
 ---
 id: start00_2
-title: Настройка рабочего окружения на MacOS
-sidebar_label: Настройка MacOS
+title: Setting up a working environment on MacOS
+sidebar_label: MacOS setup
 ---
 
 import YouTube from 'react-youtube'
 
 <YouTube videoId="b8FTrKKHWDk"/>
 
-Данная статья поможет настроить рабочее окружение React Native на операционной системе MacOS под мобильную операционную систему iOS.
+This article will help you set up the React Native working environment on the macOS operating system for the iOS mobile operating system.
 
-## Компоненты
+## Components
 
-Для работы понадобятся следующие компоненты: Node, Watchman, XCode и интерфейс командной строки React Native.
+To work, you need the following components: Node, Watchman, XCode, and the React Native CLI.
 
-Для создания программного кода понадобиться редактор. Мы рекомендуем использовать `VS Code` Но можно использовать и любой другой редактор, понравившийся вам.
+You need an editor to create program code. We recommend using `VS Code` But you can use any other editor you like.
 
 ## Homebrew
 
-[Homebrew](https://brew.sh/) - утилита командой строки в MacOS и Linux, которая позволяет устанавливать пакеты и приложения. Кратко `Homebrew` это менеджер пакетов в MacOS.
+[Homebrew](https://brew.sh/) - a command line utility in macOS and Linux that allows you to install packages and applications. In short, `Homebrew` is a package manager for macOS.
 
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
@@ -26,19 +26,19 @@ import YouTube from 'react-youtube'
 
 ## Node.js & Watchman & CocoaPods
 
-[Node.js](https://nodejs.org/en/) - это среда для серверной разработки на языке `JavaScript`. Если вы уже устанавливали `Node`, то убедитесь, что это 10 версия или больше.
+[Node.js](https://nodejs.org/en/) - is a `JavaScript` server-side development environment. If you've installed `Node` before, make sure it is version 10 or higher.
 
 ```bash
 brew install node
 ```
 
-[Watchman](https://facebook.github.io/watchman/) - утилита для просмотра файлов с открытым исходным кодом, которая отслеживает файлы и выполняет действия при их изменении. Устанавливаем его для повышения производительности.
+[Watchman](https://facebook.github.io/watchman/) - An open source file viewer that monitors files and takes action when they change. Install it to improve performance.
 
 ```bash
 brew install watchman
 ```
 
-[CocoaPods](https://cocoapods.org/) - это мощное и одновременно изящное средство управления зависимостями Cocoa-библиотек, которые разработчики используют в своих iOS и MacOS проектах.
+[CocoaPods](https://cocoapods.org/) - it is a powerful yet elegant tool for managing the dependencies of Cocoa libraries that developers use in their iOS and MacOS projects.
 
 ```bash
 sudo gem install cocoapods
@@ -46,25 +46,25 @@ sudo gem install cocoapods
 
 ## XCode
 
-`XCode` - это интегрированная среда разработки (IDE) программного обеспечения для платформы MacOS разработанная корпорацией Apple. Самый простой способ установки `XCode` - через [Mac App Store](https://apps.apple.com/us/app/xcode/id497799835?mt=12). Внутри `XCode` потребуется установить нужный симулятор `iOS` и инструменты командной строки.
+`XCode` - is an integrated development environment (IDE) for macOS software developed by Apple. The easiest way to install `XCode` - through [Mac App Store](https://apps.apple.com/us/app/xcode/id497799835?mt=12). Inside `Xcode`, you need to install the desired` iOS` simulator and command line tools.
 
-#### Симулятора iOS
+#### iOS Simulator
 
-Установка симулятора происходит в настройках XCode, для того чтобы зайти в настройки приложения в верхней панели выбираем `XCode`, далее `Preferences...`
+The simulator is installed in the Xcode settings, in order to enter the application settings in the top panel, select `Xcode`, then` Preferences ... `
 
 ![XCode](/img/rn/00_2/03_02.png)
 
-Откроется окно с настройками. Для установки симулятора переходим во вкладку `Components` Раскрывается список доступных симуляторов, выбрав понравившийся устанавливаем его нажав на стрелочку рядом с названием симулятора.
+A window with settings will open. To install the simulator, go to the `Components` tab. The list of available simulators opens, choosing the one you like, install it by clicking on the arrow next to the simulator name.
 ![XCode](/img/rn/00_2/03_03.png)
 
-#### Инструменты командной строки
+#### Command line tools
 
-Для настройки инструментов необходимо в настройках `XCode` перейти на вкладку `Locations`. Строка `Command Line Tools:` в раскрывающемся списке выбираем самую последнюю версию инструментов командной строки.
+To configure the tools, go to the `Locations` tab in the` Xcode` settings. The line `Command Line Tools:` in the drop-down list select the most recent version of the command line tools.
 ![XCode](/img/rn/00_2/03_04.png)
 
-## Создание проекта ReactNative
+## Creating a ReactNative project
 
-Создание проекта и дальнейшая работа с проектом на React Native схожа с созданием проекта в ОС Windows 10. Для создания проекта используется встроенный интерфейс командной строки React Native `npx`. Создадим проект под названием `MyReact`. После запуска команды в терминале пойдёт процесс создания проекта, он не быстрый.
+Creating a project and further working with a project in React Native is similar to creating a project in Windows 10. The built-in command line interface React Native `npx` is used to create a project. Let's create a project called `MyReact`. After starting the command in the terminal, the process of creating a project will go, it is not quick.
 
 ```bash
 npx react-native init MyReact
@@ -72,46 +72,46 @@ npx react-native init MyReact
 
 ![XCode](/img/rn/00_2/04_00.png)
 
-## Запуск Metro Bundler
+## Metro Bundler launch
 
-`Metro Bundler` - это сборщик `JavaScript`, который поставляется вместе с `React Native`. `Metro` принимает файлы и параметры ввода, компилируя все файлы `JavaScript` в один файл. После его запуска мы можем увидеть в какой файл `Metro` скомпилировал `JavaScript` код, он подсвечивается зелёным.
+`Metro Bundler` is a` JavaScript` builder that comes with `React Native`. Metro accepts files and input parameters, compiling all JavaScript files into one file. After its launch, we can see in which file `Metro` has compiled the` JavaScript` code, it is highlighted in green.
 
-Запуск осуществляется в терминале, перед запуском команды перейдём в директорию с нашим проектом `MyReact` и пропишем следующую команду:
+The launch is carried out in the terminal, before starting the command, go to the directory with our project `MyReact` and write the following command:
 
 ```bash
 npx react-native start
 ```
 
-Если при запуске не обнаружились ошибки мы увидим такую картину:
+If no errors were found at startup, we will see the following picture:
 ![XCode](/img/rn/00_2/04_01.png)
 
-## Запуск приложения
+## Application launch
 
-Терминал, в котором работает `Metro Bundler` не выключаем. Для запуска приложения открываем новый терминал. На этом шаге так же потребуется перейти в корень проекта `MyReact`. После перехода выполняем команду:
+Do not turn off the terminal where Metro Bundler is running. To launch the application, open a new terminal. This step also requires you to go to the root of the `MyReact` project. After the transition, execute the command:
 
 ```bash
 npx react-native run-ios
 ```
 
-Данная команда запустит приложение проекта `MyReact` в симуляторе `iOS`. Если вы не изменяли никакие файлы в проекте, то должны увидеть приветствие от `React Native`.
+This command will launch the application of the project `MyReact` in the simulator` iOS`. If you haven't changed any files in the project, you should see a greeting from `React Native`.
 ![XCode](/img/rn/00_2/04_02.png)
 
 ## VS Code
 
-Как говорилось в начале статьи подойдёт любой редактор, но мы рекомендуем использовать `VS Code`. Для установки рекомендуемого редактора можно воспользоваться указанным ранее менеджером пакетов `Homebrew`, для этого в терминале нужно прописать следующую команду:
+As mentioned at the beginning of this article, any editor will work, but we recommend using `VS Code`. To install the recommended editor, you can use the previously specified `Homebrew` package manager, for this you need to write the following command in the terminal:
 
 ```bash
 brew cask install visual-studio-code
 ```
 
-После установки `VS Code` запускаем его. Для открытия проекта `MyReact` в главном меню находим строку `Open folder...`, по нажатию на которую откроется диалоговое окно, в котором нужно выбрать папку с нашим проектом `MyReact`.
+After installing `VS Code`, launch it. To open the project `MyReact` in the main menu we find the line` Open folder ... `, by clicking on which a dialog box will open, in which you need to select the folder with our project` MyReact`.
 ![XCode](/img/rn/00_2/04_04.png)
 
-После выбора проекта появится навигационная панель `Навигатор` для работы с проектом.
+After selecting a project, the Navigator navigation panel will appear for working with the project.
 
 ## Hello World
 
-После того, как мы установили и запустили `VS Code` можно начать работу. Для этого открываем файл `App.js` в корне проекта. В этом файле описано, что будет видеть пользователь при запуске приложения. При первом запуске мы видели приветствие от `React Native`. Мы можем изменить несколько строк и при сохранении картинка на симуляторе изменится. Замените весь код в файле `App.js` на представленный ниже и сохраните файл:
+After we have installed and launched `VS Code`, we can start working. To do this, open the file `App.js` in the root of the project. This file describes what the user will see when the application starts. On first launch, we saw a greeting from `React Native`. We can change several lines and when saving, the picture on the simulator will change. Replace all the code in the `App.js` file with the one below and save the file:
 
 ```jsx
 import React from 'react'

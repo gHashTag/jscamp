@@ -1,49 +1,50 @@
 ---
 id: typescript06
-title: Преобразование типов
-sidebar_label: Преобразование типов
+title: Type conversion
+sidebar_label: Type conversion
 ---
 
-Типы относящиеся к одной категории так же как и различную валюту можно конвертировать друг в друга.
-Преобразование типов (type conversion, typecasting) — это процесс заключающийся в преобразовании (конвертации) значения одного типа в значение другого типа.
 
-Преобразование типов делятся на явные и неявные преобразования.
+Types belonging to the same category as well as different currencies can be converted to each other.
+Type conversion (typecasting) is the process of converting (converting) a value of one type to a value of another type.
 
-## Неявные преобразования
+Type conversions are divided into explicit and implicit conversions.
 
-Неявные преобразования не требуют никаких языковых конструкций и не приводят к утрате данных.
-Примером неявного преобразования может служить преобразование значения типа `int` в тип `double`. Являясь 64-битным вещественным типом, `double` может хранить любое значение 32-битного целочисленного типа `int`.
+## Implicit conversions
+
+Implicit conversions do not require any language constructs and do not lead to data loss.
+An example of an implicit conversion is converting a value of type `int` to type` double`. Being a 64-bit real type, `double` can store any value of a 32-bit integer type `int`.
 
 ![inttodouble](/img/typescript/06/int-to-double.png)
 
-Как показано на изображении выше, преобразование int в double не приводит к потере данных, так как 32-битное значение умещается в 64 битах.
+As shown in the image above, converting an int to a double does not result in data loss, since a 32-bit value fits into 64 bits.
 
-## Явные преобразования
+## Explicit conversions
 
-Явные преобразования, которые для ясности часто называют приведением типов, происходят при участии разработчика и требуют указания языковых конструкций, называемых операторами приведения. Приведение типов требуется тогда, когда в процессе преобразования данные могут быть утрачены или по каким-то причинам процесс может завершиться ошибкой.
-Самым простым примером явного преобразования служит преобразование типа double, используемого для хранения 64-битных значений с плавающей запятой, к целочисленному типу int.
+Explicit conversions, often referred to as typecasting for clarity, take place with developer input and require the specification of language constructs called cast operators. Typecasting is required when data may be lost during the conversion process or, for some reason, the process may end with an error.
+The simplest example of an explicit conversion is the conversion of the double type, used to store 64-bit floating point values, to the integer type int.
 
 ![doubletoint](/img/typescript/06/double-to-int.png)
 
-## Примеры
+## Examples of
 
-TypeScript предоставляет встроенные функции для выполнения преобразования типов.
+TypeScript provides built-in functions for performing type conversions.
 
-Можно преобразовать число в строку, используя конструктор строки, как показано ниже.
+You can convert a number to a string using the string constructor as shown below.
 
 ```typescript
 let number: number = 42
 let numberAsString: string = String(number) //Перевод числа в строку
 ```
 
-Также можно наоборот, перевести строку в число.
+Alternatively, you can convert a string to a number.
 
 ```typescript
 let stringAsNumber: string = '42'
 let number: number = Number(stringAsNumber)
 ```
 
-## Ссылки:
+## Links:
 
 1.  [Metanit](https://metanit.com/web/typescript/3.9.php)
 2.  [Xsltdev](https://xsltdev.ru/typescript/004/)

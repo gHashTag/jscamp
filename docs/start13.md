@@ -1,12 +1,13 @@
 ---
 id: start13
-title: Ширина и Высота
-sidebar_label: Ширина и Высота
+title: Width and Height
+sidebar_label: Width and Height
 ---
 
 import YouTube from 'react-youtube'
 
-Подробнее о ширине и высоте экрана в мобильном приложении React Native.
+
+Learn more about screen width and height in a React Native mobile app.
 
 <YouTube videoId='XehdxK1jkFk' />
 

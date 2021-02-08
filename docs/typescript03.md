@@ -1,14 +1,14 @@
 ---
 id: typescript03
-title: Функции
-sidebar_label: Функции
+title: Functions
+sidebar_label: Functions
 ---
 
-Функции — это одна из фундаментальных основ любого приложения на языке JavaScript. С помощью них строятся уровни абстракции, сокрытие информации и модули. Язык `TypeScript` немного расширяет возможности функций по сравнению с JavaScript, делая работу с ними еще удобнее.
+Functions are one of the fundamental foundations of any JavaScript application. With the help of them, levels of abstraction, information hiding and modules are built. The `TypeScript` language slightly expands the capabilities of functions in comparison with JavaScript, making them even more convenient to work with.
 
-## Описание функции
+## Function description
 
-Типичное описание функции в TypeScript с определением типа передаваемых параметров и типа возвращаемого значения:
+A typical description of a function in TypeScript with the definition of the type of the passed parameters and the type of the return value:
 
 ```javascript
 // определение функции
@@ -20,7 +20,7 @@ let result1 = add(1, 2)
 console.log(result1)
 ```
 
-Либо мы можем опредить функцию как переменную и затем через переменной вызывать данную функцию:
+Or we can define the function as a variable and then call this function through the variable:
 
 ```javascript
 let add = function (a: number, b: number): number {
@@ -29,9 +29,9 @@ let add = function (a: number, b: number): number {
 let result1 = add(1, 2)
 ```
 
-### Параметры функции
+### Function parameters
 
-Функция может иметь параметры, которые указываются после названия функции в скобках через запятую. Через двоеточие после имени формального параметра указывается его тип:
+A function can have parameters that are specified after the function name in brackets separated by commas. A colon after the name of a formal parameter indicates its type:
 
 ```javascript
 // определение функции
@@ -44,9 +44,9 @@ add(20, 30) // 50
 add(10, 15) //25
 ```
 
-Однако поскольку параметры имеют тип `number,` то при вызове функции `add("1", "2")` компилятор TS выдаст `ошибку,` так как параметры должны иметь тип number, а не тип string.
+However, since the parameters are of the `number` type, when calling the `add (" 1 "," 2 ")` function, the TS compiler will generate an `error,` since the parameters must be of the number type, not the string type.
 
-При этом функция может не только использовать передаваемые параметры, но и `глобальные переменные,` определенные во вне:
+In this case, the function can not only use the passed parameters, but also `global variables` defined outside:
 
 ```javascript
 let koef: number = 1.5
@@ -60,9 +60,9 @@ add(20) // 30
 add(10) //15
 ```
 
-### Результат функции
+### Function result
 
-Функция может возвращать значение определенного типа, который еще называется типом функции. Возвращаемый тип функции ставится после списка параметров через двоеточие:
+A function can return a value of a specific type, which is also called a function type. The return type of the function is placed after the parameter list, separated by a colon:
 
 ```javascript
 function add(a: number, b: number): number {
@@ -71,9 +71,9 @@ function add(a: number, b: number): number {
 let result1 = add(1, 2)
 ```
 
-В данном случае функция будет возвращать значение типа `number.`
+In this case, the function will return a value of type `number.`
 
-Если функция `ничего не возвращает,` то указывается тип `void:`
+If the function `returns nothing,` then the type is specified `void:`
 
 ```javascript
 function add(a: number, b: number): void {
@@ -82,7 +82,7 @@ function add(a: number, b: number): void {
 add(10, 20)
 ```
 
-В принципе мы можем и не указывать тип, тогда он будет выводиться неявно на основе возвращаемого значения:
+In principle, we can not specify the type, then it will be inferred implicitly based on the return value:
 
 ```javascript
 function add(a: number, b: number) {
@@ -91,9 +91,9 @@ function add(a: number, b: number) {
 let result = add(10, 20)
 ```
 
-### Необязательные параметры
+### Optional parameters
 
-В typescript при вызове в функцию должно передаваться ровно столько значений, сколько в ней определено параметров:
+In typescript, when calling a function, exactly as many values must be passed as there are defined parameters:
 
 ```javascript
 function getName(firstName: string, lastName: string) {
@@ -105,7 +105,7 @@ let name2 = getName('Иван', 'Михайлович', 'Кузнецов') //о
 let name3 = getName('Иван') //ошибка, мало параметров
 ```
 
-Чтобы иметь возможность передавать различное число значений в функцию, в TS некоторые параметры можно объявить как `необязательные.` Необязательные параметры должны быть помечены вопросительным знаком `?.` Причем необязательные параметры должны идти `после обязательных:`
+In order to be able to pass a different number of values to a function, in TS, some parameters can be declared as `optional.` Optional parameters must be marked with a question mark `?.` And optional parameters must go after the required ones: `
 
 ```javascript
 function getName(firstName: string, lastName?: string) {
@@ -113,30 +113,30 @@ function getName(firstName: string, lastName?: string) {
   else return firstName
 }
 
-let name1 = getName('Иван', 'Кузнецов')
-console.log(name1) // Иван Кузнецов
-let name2 = getName('Вася')
-console.log(name2) // Вася
+let name1 = getName('Ivan', 'Kuznecov')
+console.log(name1) // Ivan Kuznecov
+let name2 = getName('Vasya')
+console.log(name2) // Vasya
 ```
 
-Во втором случае, когда в функцию передается только имя, второй используемый параметр будет иметь неопределенное значение или `"undefined".` Поэтому с помощью условной конструкции `:?` проверяется наличие значения для этого параметра.
+In the second case, when only the name is passed to the function, the second used parameter will have an undefined value or `" undefined ". Therefore, the presence of a value for this parameter is checked using the`:? `Conditional construction.
 
-### Значения параметров по умолчанию
+### Default parameter values
 
-Параметры позволяют задать начальное значение по умолчанию. И если для такого параметра не передается значение, то он использует значение `по умолчанию:`
+The parameters allow you to set the initial default value. And if no value is passed for such a parameter, then it uses the `default value:`
 
 ```javascript
 function getName(firstName: string, lastName: string = 'Иванов') {
   return firstName + ' ' + lastName
 }
 
-let name1 = getName('Иван', 'Кузнецов')
-console.log(name1) // Иван Кузнецов
-let name2 = getName('Вася')
-console.log(name2) // Вася Иванов
+let name1 = getName('Ivan', 'Kuznecov')
+console.log(name1) // Ivan Kuznecov
+let name2 = getName('Vasya')
+console.log(name2) // Vasya
 ```
 
-Причем в качестве значения можно передавать результат другого выражения:
+Moreover, as a value, you can pass the result of another expression:
 
 ```javascript
 function defaultSurname(): string {
@@ -151,9 +151,9 @@ let name1 = getName('Tom')
 console.log(name1) // Tom Smith
 ```
 
-## Неопределенный набор параметров `...Rest`
+## Undefined set of parameters `...Rest`
 
-Если же необходимо, чтобы функция принимала набор однотипных параметров, то используется `знак многоточия,` после которого идет массив:
+If it is necessary for a function to accept a set of parameters of the same type, then an ellipsis sign is used, followed by an array:
 
 ```javascript
 function addNumbers(firstNumber: number, ...numberArray: number[]): number {
@@ -171,11 +171,11 @@ let num2 = addNumbers(3, 7, 8, 9, 4)
 console.log(num2) // 31
 ```
 
-## Перегрузка функций
+## Overloading functions
 
-TypeScript поддерживает возможность перегрузки функций, то есть мы можем определить несколько версий функции, которые будут иметь одно и то же имя, но разные типы параметров или разное количество параметров. Для перегрузки вначале опеределяем все версии функции, которые не будут иметь никакой логики. А потом определяем версию функции `с общей сигнатурой,` которая подходит под все ранее определенные варианты. И в этой `общей версии` уже определяем конкретную `логику функции.`
+TypeScript supports function overloading, which means that we can define multiple versions of a function that have the same name, but different types of parameters or a different number of parameters. For overloading, we first define all versions of the function that will not have any logic. And then we define the version of the function `with a common signature,` which fits all previously defined options. And in this `general version` we already define the specific` logic of the function.
 
-Например, нам надо объединить два значения, но если они представляют строки, то просто их конкатенировать, а если числа - то сложить. Тогда мы могли бы использовать следующую функцию:
+For example, we need to concatenate two values, but if they represent strings, then just concatenate them, and if they are numbers, then add them. Then we could use the following function:
 
 ```javascript
 function add(x: string, y: string): string
@@ -191,78 +191,78 @@ let result2 = add("5", "4")
 console.log(result2)   // 54
 ```
 
-Первая версия функции `add` принимает две строки и возвращает строку, вторая версия принимает два числа и возвращает число. Общей для них будет функция, которая принимает параметры типа `any` и возвращает результат также типа `any.`
+The first version of the add function takes two strings and returns a string, the second version takes two numbers and returns a number. Common to them will be a function that takes parameters of type `any` and returns a result of type` any.`
 
-Но если бы мы ту же функцию применили бы к логическим значениям:
+But if we would apply the same function to boolean values:
 
 ```javascript
 let result3 = add(true, false)
 console.log(result3)
 ```
 
-то мы получили бы ошибку, так как две версии функции позволяют принимать в качестве параметров либо две строки, либо два числа. И в этом случае нам надо было бы добавить еще одну версию функции для логических значений тоже:
+then we would get an error, since the two versions of the function allow us to take either two strings or two numbers as parameters. And in this case, we would need to add another version of the function for booleans too:
 
 ```javascript
 function add(x: boolean, y: boolean): boolean
 ```
 
-## Вопросы:
+## Questions:
 
-1. Язык `TypeScript`:
+1. Language `TypeScript`:
 
-- расширяет возможности функций
-- уменьшает возможности функций
-- описывает дополнительные переменные
-- описывает дополнительные функции
+- expands the possibilities of functions
+- reduces the possibilities of functions
+- describes additional variables
+- describes additional functions
 
-2. Параметры функции могут быть:
+2. Function parameters can be:
 
-- любого типа
-- только number
-- только number или string
-- все кроме типа boolean
+- any type
+- only number
+- only number or string
+- everything except boolean type
 
-Возвращаемый тип функции ставится после списка параметров через двоеточие
+The return type of the function is placed after the parameter list, separated by a colon
 
-3. У функции указывается тип `void` если она:
+3. The function is of the type `void` if it:
 
-- ничего не возвращает
-- возвращает тип number
-- возвращает тип string
-- возвращает тип boolean
+- returns nothing
+- returns type number
+- returns type string
+- returns the boolean type
 
-4. Необязательные параметры в функции должны быть помечены знаком:
+4. Optional parameters in the function must be marked with the sign:
 
-- ?
+-?
 - &
-- !
+-!
 - @
 
-5. Параметры позволяют задать начальное значение по умолчанию в формате:
+5. Parameters allow you to set the initial default value in the format:
 
-- firstName: string="Tom"
-- firstName:: number=100
-- firstName: string=true
-- firstName= number=>100
+- firstName: string = "Tom"
+- firstName :: number = 100
+- firstName: string = true
+- firstName = number => 100
 
-6. Параметры типа `any` означают:
+6. Parameters of type `any` mean:
 
-- любой тип данных
-- вещественнный тип
-- логический тип
-- строковый тип
+- any data type
+- real type
+- boolean type
+- string type
 
 ![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
 
-Для того чтобы понять насколько вы усвоили этот урок пройдите тест в [мобильном приложении](http://onelink.to/njhc95) в нашей школы по этой теме.
+In order to understand how much you learned this lesson, take the test in the [mobile application](http://onelink.to/njhc95) in our school on this topic.
 
 ![Sumerian school](/img/app.png)
 
-## Ссылки:
+## Links:
 
-1. [Основы TypeScript. Функции](https://metanit.com/web/typescript/2.2.php)
-2. [Статья "TypeScript — Функции"](https://coderlessons.com/tutorials/veb-razrabotka/izuchite-mashinopis/typescript-funktsii)
-3. [Статья "TypeScript — Функции скрипта"](https://webformyself.com/typescript-funkcii-skripta/)
+1. [Foundations of TypeScript. Functions](https://metanit.com/web/typescript/2.2.php)
+2. [Article "TypeScript — Functions"](https://coderlessons.com/tutorials/veb-razrabotka/izuchite-mashinopis/typescript-funktsii)
+3. [Article "TypeScript — Script functions"](https://webformyself.com/typescript-funkcii-skripta/)
 
 ## Contributors ✨
 

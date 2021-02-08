@@ -1,12 +1,13 @@
 ---
 id: start27
-title: Репозиторий проекта
-sidebar_label: Репозиторий проекта
+title: Project repository
+sidebar_label: Project repository
 ---
 
 import YouTube from 'react-youtube'
 
-Место, где лежит исходный код проекта, [репозиторий](https://github.com/react-native-village/react-native-init), к которому вы всегда можете обратиться в случае ошибок в вашем коде и продолжить изучать этот курс.
+
+The place where the source code of the project is located, [repository](https://github.com/react-native-village/react-native-init), which you can always refer to in case of errors in your code and continue to study this course.
 
 <YouTube videoId='Uqhh9l_ImLg' />
 

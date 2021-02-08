@@ -6,11 +6,12 @@ sidebar_label: Hello world
 
 import YouTube from 'react-youtube'
 
-Открываем проект App.js и выпиливаем из него всё не нужное, подсвеченные запятые, точки с запятой. Пишем знаменитый текст “Hello World”, сохраняем и готово!
+
+Open the App.js project and cut out everything you don't need, highlighted commas, semicolons. Write the famous text "Hello World", save and you're done!
 
 <YouTube videoId='has8w-mzVSM' />
 
-Вот так в конечном итоге примерно должно выглядеть:
+This is what it should eventually look like:
 
 ```SnackPlayer
 import { Text, AppRegistry } from 'react-native';

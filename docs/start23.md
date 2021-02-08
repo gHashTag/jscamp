@@ -1,12 +1,12 @@
 ---
 id: start23
-title: Деструктурирование
-sidebar_label: Деструктурирование
+title: Destructuring
+sidebar_label: Destructuring
 ---
 
 import YouTube from 'react-youtube'
 
-Деструктурирующее присваивание — это фича пришла к нам вместе с ES6.
+Destructuring assignment is a feature that came to us with ES6.
 
 <YouTube videoId='z2cAFj7hfXU' />
 

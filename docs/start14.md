@@ -6,7 +6,8 @@ sidebar_label: Flexbox
 
 import YouTube from 'react-youtube'
 
-Flexbox предоставляет инструменты для быстрого создания сложных, гибких макетов, и функции, которые были сложны в традиционных методах CSS.
+
+Flexbox provides tools to quickly create complex, flexible layouts, and features that were difficult in traditional CSS techniques.
 
 <YouTube videoId='PF1kzcGdN7E' />
 

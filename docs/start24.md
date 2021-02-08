@@ -6,7 +6,7 @@ sidebar_label: Dimensions
 
 import YouTube from 'react-youtube'
 
-Dimensions — это компонент, точнее сказать это API React Native, необходимый нам для определения размера экрана. Так как у Android свои размеры, у iOS свои размеры, то нам надо как-то привязываться к ширине и высоте, для кроссплатформенной вёрстки. Для этого к нам на помощь приходит нативный API Dimensions. Для того чтобы его подключить необходимо обратиться к его методу Get Window и получить высоту и ширину экрана и всё.
+Dimensions is a component, more precisely, it is the React Native API that we need to determine the screen size. Since Android has its own sizes, iOS has its own sizes, then we need to somehow tie to the width and height for cross-platform layout. For this, the native Dimensions API comes to our aid. In order to connect it, you need to refer to its Get Window method and get the height and width of the screen and that's it.
 
 <YouTube videoId='Hjomif085Ec' />
 

@@ -1,16 +1,17 @@
 ---
 id: start000
-title: Введение
-sidebar_label: Введение
+title: Introduction
+sidebar_label: Introduction
 ---
+
 
 import YouTube from 'react-youtube';
 
-В этом курсе по React Native для начинающих, мы с вами разработаем мобильное приложение, суть которого получение данных с сервера и отрисовка этих данных на одном экране
+In this course on React Native for beginners, we will develop a mobile application with you, the essence of which is receiving data from the server and rendering this data on one screen.
 
 <YouTube videoId='tz_pOxQFcdo' />
 
-> Можете учится по курсу с Экспо или через эмулятор Андроид или через любой другой стартер. В этом курсе базовые темы, которые работают везде.
+> You can study at the Expo course or through the Android emulator or through any other starter. This course contains basic topics that apply everywhere.
 
 ![react native](https://miro.medium.com/max/2000/1*eIYvYBkRv83m42yxn8Ljwg.gif)
 

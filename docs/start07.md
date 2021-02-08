@@ -6,7 +6,8 @@ sidebar_label: React vs React Native
 
 import YouTube from 'react-youtube'
 
-React против React Native — это, конечно же, условности, но факт остаётся фактом. Многие из вас может быть заметили, что при создании компонентов мы импортируем часть чего то, пока для вас не понятного из библиотеки React и что-то импортируем из библиотеки React Native. В этом мы и разберёмся.
+
+React versus React Native is, of course, conventions, but the fact remains. Many of you may have noticed that when creating components, we import part of something that is not yet clear to you from the React library and import something from the React Native library. In this we will figure it out.
 
 <YouTube videoId='QdJGtUfkvfA' />
 

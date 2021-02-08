@@ -1,12 +1,13 @@
 ---
 id: start16
-title: Отладка - Debug
-sidebar_label: Отладка - Debug
+title: Debug
+sidebar_label: Debug
 ---
 
 import YouTube from 'react-youtube'
 
-Знакомимся с инструментами отладки.
+
+Let's get acquainted with the debugging tools.
 
 <YouTube videoId='7tb8JE0-yb4' />
 

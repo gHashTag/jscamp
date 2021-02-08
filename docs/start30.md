@@ -6,7 +6,7 @@ sidebar_label: SafeAreaView
 
 import YouTube from 'react-youtube'
 
-Если мы посмотрим на наше приложение и запустим его в iPhone 5 либо под Android, то мы увидим, что у нас хедер очень большой такой, не красивый и надо что-то с этим делать, и для этого используется как раз SafeAreaView. SafeAreaView — это компонент из API React Native, который используется под iPhone Х и мы понимаем, что нужно делать приложение и для этой целевой аудитории и важно стилизовать свои приложения используя этот компонент.
+If we look at our application and run it on the iPhone 5 or under Android, we will see that our header is very large, not pretty, and we need to do something about it, and for this we use SafeAreaView. SafeAreaView is a component from the React Native API that is used for iPhone X and we understand that we need to make an application for this target audience and it is important to style our applications using this component.
 
 <YouTube videoId='8GwKno9vUyo' />
 
