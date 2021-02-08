@@ -37,6 +37,7 @@ module.exports = {
   },
   themeConfig: {
     algolia: {
+      appId: 'ONIGVMP8QH',
       apiKey: '4b22eba94660cfe3f3e4083ad49b11b6',
       indexName: 'prod',
       contextualSearch: true
@@ -88,7 +89,7 @@ module.exports = {
         {
           to: 'docs/javascript00',
           activeBasePath: 'docs',
-          label: 'Syllabus 🏕',
+          label: 'Syllabus 📚',
           position: 'left'
         },
         {
@@ -203,7 +204,7 @@ module.exports = {
         href: 'https://opensource.facebook.com/'
       },
       // Please do not remove the credits, help to publicize Docusaurus :)
-      copyright: `Copyright © ${new Date().getFullYear()} Server Serverlesskiy 🎰 Built with Docusaurus.`
+      copyright: `Copyright © ${new Date().getFullYear()} Server Serverlesskiy 🎰 Built with Docusaurus`
     }
   },
   presets: [

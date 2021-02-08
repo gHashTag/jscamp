@@ -38,5 +38,8 @@
   "This is the golden rule in our school, because thanks to the discovery of knowledge to someone else, it is assimilated more strongly and so we organize a team of mentors where you can be.": {
     "message": "Это золотое правило в нашей школе, так как благодаря открытию знания кому-то еще оно усваивается крепче и так мы организуем команду менторов, где можешь быть и ты.",
     "description": "The homepage input placeholder" 
+  },
+  "Subscribe": {
+    "message": "Подписаться"
   }
 }

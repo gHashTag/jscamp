@@ -12,6 +12,7 @@ import classnames from 'classnames'
 import Layout from '@theme/Layout'
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
 // import useThemeContext from '@theme/hooks/useThemeContext'
+import Link from '@docusaurus/Link'
 import Translate from '@docusaurus/Translate'
 import useBaseUrl from '@docusaurus/useBaseUrl'
 import YouTube from 'react-youtube'
@@ -41,7 +42,7 @@ const features = [
 
 const Feature = ({ imageUrl, title, description }) => {
   const imgUrl = useBaseUrl(imageUrl)
-  // const { isDarkTheme, setLightTheme, setDarkTheme } = useThemeContext()
+
   return (
     <div className={classnames('col col--4', styles.feature)}>
       {imgUrl && (
@@ -77,6 +78,7 @@ const Home = () => {
   }
   // const imgUrl = useBaseUrl(imageUrl)
   const { player, videoContainer, heroBanner } = styles
+
   return (
     <>
       <Layout title={`${siteConfig.title}`} description="Java Script Camp - лагерь скаутов">
@@ -93,10 +95,10 @@ const Home = () => {
 
         <header className={classnames('hero hero--primary', heroBanner)}>
           <div className="container">
-            <img src={useBaseUrl('img/jscamp/Покатушки по Джаваскриптушке.png')} alt="Покатушки по Джаваскриптушке" />
+            {/* <img src={useBaseUrl('img/jscamp/Покатушки по Джаваскриптушке.png')} alt="Покатушки по Джаваскриптушке" /> */}
             {/* <h1 className="hero__title">Java Script Camp</h1> */}
 
-            <p className="hero__subtitle">
+            <p className="dark-text">
               <Translate>Scout camp from the creator of the first in Runet</Translate>{' '}
               <a href="https://youtube.com/playlist?list=PLth6QPteH5guFUwQj1iCdu-SOZ7O5KCz4">
                 <Translate>React Native course</Translate>
@@ -105,10 +107,17 @@ const Home = () => {
               <a href="https://aws.amazon.com/ru/developer/community/community-builders/">AWS Community Builders</a>{' '}
               <Translate>from Amazon</Translate>
             </p>
+            <br />
 
-            <a href="https://www.patreon.com/javascriptcamp">
+            <h3>
+              <Link className="button-custom" to="https://www.patreon.com/javascriptcamp">
+                <Translate>Subscribe</Translate>{' '}
+              </Link>
+            </h3>
+
+            {/* <a href="https://www.patreon.com/javascriptcamp">
               <img src={useBaseUrl('img/jscamp/Button 10$.png')} alt="" />
-            </a>
+            </a> */}
           </div>
         </header>
         <main>
