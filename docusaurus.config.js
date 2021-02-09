@@ -123,7 +123,7 @@ module.exports = {
       style: 'dark',
       links: [
         {
-          title: 'Syllabus 🏕',
+          title: 'Syllabus 📚',
           items: [
             {
               label: 'JavaScript',

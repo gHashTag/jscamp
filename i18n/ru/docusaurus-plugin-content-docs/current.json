@@ -32,7 +32,7 @@
     "description": "The label for category UI Kit in sidebar someSidebar"
   },
   "sidebar.someSidebar.category.Authentication": {
-    "message": "Authentication",
+    "message": "Аутентификация",
     "description": "The label for category Authentication in sidebar someSidebar"
   },
   "sidebar.someSidebar.category.AWS Amplify": {

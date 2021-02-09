@@ -1,22 +1,22 @@
 {
-  "item.label.Syllabus": {
+  "item.label.Syllabus 📚": {
     "message": "Учебный план 📚",
-    "description": "Navbar item with label Syllabus"
+    "description": "Navbar item with label Syllabus 📚"
   },
-  "item.label.Patreon": {
+  "item.label.Patreon 🤑": {
     "message": "Patreon 🤑",
-    "description": "Navbar item with label Patreon"
+    "description": "Navbar item with label Patreon 🤑"
   },
-  "item.label.Author": {
+  "item.label.Author 🧑🏻‍🎤": {
     "message": "Author 🧑🏻‍🎤",
-    "description": "Navbar item with label Author"
+    "description": "Navbar item with label Author 🧑🏻‍🎤"
   },
-  "item.label.GitHub": {
+  "item.label.GitHub 🛰": {
     "message": "GitHub 🛰",
-    "description": "Navbar item with label GitHub"
+    "description": "Navbar item with label GitHub 🛰"
   },
-  "item.label.Vacancies": {
+  "item.label.Vacancies 🗄": {
     "message": "Вакансии 🗄",
-    "description": "Navbar item with label Vacancies"
+    "description": "Navbar item with label Vacancies 🗄"
   }
 }
