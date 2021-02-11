@@ -1,42 +1,42 @@
 ---
 id: javascript06
-title: Strings
-sidebar_label: Strings
+title: 弦樂
+sidebar_label: 弦樂
 ---
 
 import YouTube from 'react-youtube'
 
 ![@serverSerrverlesskiy](/img/javascript/headers/06.jpg)
 
-In JavaScript, any text data is strings. However, do not forget that numbers can also be written in a string. Of all the data types, you will probably use strings the most. Let's analyze all the options for creating a new line.
+在 JavaScript 中，任何文本數據都是字符串。 但是，不要忘記數字也可以寫在字符串中。 在所有數據類型中，您可能會最多使用字符串。 讓我們分析創建新行的所有選項。
 
-<!-- ## Видео
+<!-- ## Video
 
 <YouTube videoId="ocQTm9K2vdo" /> -->
 
-## Single or double quotes
+## 單引號或雙引號
 
 ![quotation marks](https://media.giphy.com/media/7cSTvZ4hI6ABZkcTwk/giphy.gif)
 
-Either ‘single’ or “double” quotes are used to create strings.
+要么 ‘single’ 要么 “double” 引號用於創建字符串
 
 ```jsx
 let single = 'Hello World'
 let double = "Hello World" // prettier-ignore
 ```
 
-You can use both of them, the main thing is that if you start a line with a single one, although there may be doubles inside, it must also be completed with a single one. And, accordingly, with double quotes.
+您可以同時使用它們，最主要的是，如果您以單行開始，儘管內部可能有雙打，但也必須以單行結束。 並且，因此，用雙引號引起來。
 
 ```jsx
 let double = "Don't you think so, d'Artagnan?"
 let single = '"I think so, indeed!" - cried he.'
 ```
 
-## Backslash
+## 反斜杠
 
 ![shielding](https://media.giphy.com/media/3og0IPizf4zPR6VMt2/giphy.gif)
 
-If the same quotes are used inside the string as outside, then they must be escaped with a backslash - the so-called "escape character". It is appended ➕ before the enclosing quotation mark `\ '' so that it does not indicate the end of the line.
+如果在字符串內部使用與外部相同的引號，則必須使用反斜杠將其轉義，即所謂的“轉義字符”。 附在➕之前 `\ '' 這樣它就不會指示行尾。
 
 ```jsx live
 // prettier-ignore
@@ -46,15 +46,15 @@ function learnJavaScript() {
 }
 ```
 
-Note that the backslash `\` is only used to correctly read the string by the interpreter, but it is not written 🖊️ to the string after it has been read. When a string is saved to main memory, the `\` character is not added to it. You can clearly see this in the findings.
+注意反斜杠 `\` 僅用於解釋器正確讀取字符串，但未編寫 🖊️ 讀取後的字符串。 當字符串保存到主存儲器中時`\` 字符未添加到其中。 您可以在調查結果中清楚地看到這一點。
 
-## Back quotes
+## 反引號
 
 ![Dollar](https://media.giphy.com/media/26BoCwvDEWXnGlLyM/giphy.gif)
 
-In writing a string, you can do without a backslash by using \ `back \` quotes.
+在編寫字符串時，您可以使用 \ `back \` 引號
 
-Single and double quotes work essentially the same way, and if you use back quotes, we can insert arbitrary JavaScript expressions into such a string by wrapping them in a dollar sign with curly braces `$ {...}` 👇:
+單引號和雙引號的工作方式基本上相同，如果使用反引號，則可以通過將花括號括起來的美元符號將任意JavaScript表達式插入這樣的字符串中 `$ {...}` 👇:
 
 ```jsx live
 function learnJavaScript() {
@@ -63,7 +63,7 @@ function learnJavaScript() {
 }
 ```
 
-Another advantage of backticks is that they can span more than one line.
+反引號的另一個優點是它們可以跨越多條線
 
 ```jsx live
 function learnJavaScript() {
@@ -76,7 +76,7 @@ function learnJavaScript() {
 }
 ```
 
-Multiline strings can also be created with single and double quotation marks, using the so-called "line feed" character, which is written as `\ n`. All special characters, in Java Script, begin with a backslash `\` True, we can check this in the browser console (`LIVE EDITOR` does not display correctly).
+也可以使用所謂的“換行”字符，用單引號和雙引號創建多行字符串，寫為 `\ n`. Java腳本中的所有特殊字符均以反斜杠開頭 `\` 是的，我們可以在瀏覽器控制台中進行檢查（“ LIVE EDITOR”無法正確顯示）。
 
 ```jsx
 let guestList = 'Guests:\n * John\n * Pete\n * Mary'
@@ -86,12 +86,11 @@ guestList // multi-line guest list
 
 ![console](/img/javascript/12.png)
 
-## Strings are immutable
+## 字符串是不可變的
 
 ![Tree](https://media.giphy.com/media/YxlUxrYGw2w9y/giphy.gif)
 
-The content of a string in JavaScript cannot be changed. You cannot take the symbol in the middle and replace it. Once a string is created🏗️ - it is like that forever.
-You can create a new string and write it to the same variable instead of the old one.
+JavaScript中字符串的內容無法更改。 您不能將符號放在中間並替換它。 一旦創建了一個字符串-️-就像那樣永遠。🏗️ 您可以創建一個新字符串並將其寫入相同的變量，而不是舊的變量。
 
 ```jsx live
 function learnJavaScript() {
@@ -101,13 +100,13 @@ function learnJavaScript() {
 }
 ```
 
-## Popular string methods
+## 流行的字符串方法
 
-### String length
+### 弦長
 
 ![Length](https://media.giphy.com/media/Y1GK5MEiRa3OSVsxHK/giphy.gif)
 
-The `length` property returns the number of code values in the string.
+ `length` 屬性返回字符串中代碼值的數量。
 
 ```jsx live
 function learnJavaScript() {
@@ -116,13 +115,13 @@ function learnJavaScript() {
 }
 ```
 
-Please note that `\ n` is one special character, so everything is correct here: the length of the string is 3.
+請注意 `\ n` 是一個特殊字符，因此這裡是正確的：字符串的長度為3。
 
-### Access to symbols
+### 訪問符號
 
 ![Door](https://media.giphy.com/media/xUA7aLpVxPVEoEPXji/giphy.gif)
 
-There are two 2️⃣ ways to get to a specific character in a string. The first method uses the `charAt ()` method. The first 1️⃣ character is at position zero:
+那裡有兩個 2️⃣ 獲取字符串中特定字符的方法 第一種方法使用 `charAt ()` 方法。 首先 1️⃣ 字符在零位置：
 
 ```jsx live
 function learnJavaScript() {
@@ -131,7 +130,7 @@ function learnJavaScript() {
 }
 ```
 
-You can also get a symbol using square brackets:
+您還可以使用方括號獲得符號：
 
 ```jsx live
 function learnJavaScript() {
@@ -140,13 +139,13 @@ function learnJavaScript() {
 }
 ```
 
-Square brackets are the modern way to get a character, while `charAt` exists mainly for historical reasons.
+方括號是獲取字符的現代方式，而`charAt`主要是出於歷史原因而存在。
 
-### Change case of characters
+### 更改字符大小寫
 
 ![Capital letter](https://media.giphy.com/media/3orifcBbnezczHmU8g/giphy.gif)
 
-To convert the letters of a string to uppercase, use the `toUpperCase ()` method.
+要將字符串的字母轉換為大寫，請使用 `toUpperCase ()` 方法。
 
 ```jsx live
 function learnJavaScript() {
@@ -155,7 +154,7 @@ function learnJavaScript() {
 }
 ```
 
-to lowercase `toLowerCase ()`
+小寫`toLowerCase ()`
 
 ```jsx live
 function learnJavaScript() {
@@ -164,11 +163,11 @@ function learnJavaScript() {
 }
 ```
 
-### Concatenate (concatenate) a string
+### 連接（連接）字符串
 
 ![Chain](https://media.giphy.com/media/l3q2EOu4nu1D8uJKU/giphy.gif)
 
-To construct a string from existing strings, use the plus sign `+` to concatenate the strings.
+要從現有字符串構造一個字符串，請使用加號 `+` 連接字符串
 
 ```jsx
 let name = 'Mary '
@@ -213,79 +212,79 @@ function learnJavaScript() {
 }
 ``` -->
 
-So we got acquainted with the most popular data type in JavaScript and the most commonly used methods for it.
+因此，我們熟悉了JavaScript中最流行的數據類型及其最常用的方法。
 
-## Problems?
+## 問題？
 
 ![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
 
 Channel in [Discord](https://discord.gg/6GDAfXn) after paying on [Patreon](https://www.patreon.com/javascriptcamp).
 
-## Questions:
+## 問題：
 
 ![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
 
-How strings are not written in JavaScript?
+如何用JavaScript不寫字符串？
 
-1. In single quotes
-2. In backslashes
-3. In back quotes
+1.單引號
+2.反斜杠
+3.反引號
 
-Why isn't a backslash used in a string?
+為什麼在字符串中不使用反斜杠？
 
-1. For shielding
-2. To write special characters
-3. To end the line
+1.用於屏蔽
+2.寫特殊字符
+3.結束行
 
-Find the line with the error🙅‍♂️
+找到有錯誤的行🙅‍♂️
 
 1. let str = \ `It's not complicated \`
 2. let str = "'I think so, indeed!' - cried he. "
 3. let str = 'My slogan: "Don't worry, be happy!"'
 
-Select "line feed character"
+選擇“換行符”
 
 1. `\ n`
 2. `\`
 3. `\ *`
 
-What letter will `'sport' [3]` return?
+什麼字母會`'sport' [3]` 返回？
 
 1. `o`
 2. `r`
-3. Will not return anything
+3. 不會返回任何東西
 
-How do I change a character in a JavaScript string?
+如何更改JavaScript字符串中的字符？
 
-1. Change the line
-2. Get to the symbol and replace it
-3. Create a new line and write it to the same variable instead of the old one
+1.換行
+2.找到符號並替換它
+3.創建新行並將其寫入相同的變量，而不是舊的
 
-What method is used to capitalize letters?
+使用什麼方法將字母大寫？
 
 1. `'Interface'.toUpperCase()`
 2. `'Interface' [0] .toLowerCase()`
 3. `'Interface'.toLowerCase()`
 
-What character is used to concatenate strings?
+什麼字符用來連接字符串？
 
 1. `=`
 2. `+`
 3. `+ =`
 
-In order to understand how much you learned this lesson, take the test on the [mobile application](http://onelink.to/njhc95) of our school on this topic.
+為了了解您學到了多少本課程，請對 [移動應用](http://onelink.to/njhc95) 我們學校就這個話題。
 
 ![Sumerian school](/img/app.png)
 
-## Links
+## 鏈接
 
 1. [MDN web docs](https://developer.mozilla.org/ru/docs/Web/JavaScript/Data_structures)
 2. [Code for Teens: The Perfect Beginner's Guide to Programming, Volume 1: Javascript - Jeremy Moritz](https://www.amazon.com/Code-Teens-Beginners-Programming-Javascript-ebook/dp/B07FCTLVPC)
 3. [JavaScript.ru](https://learn.javascript.ru/types)
 
-## Contributors ✨
+## 貢獻者 ✨
 
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+感謝這些好人 ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->

@@ -1,28 +1,28 @@
 ---
 id: javascript07
-title: Numbers
-sidebar_label: Numbers
+title: 號碼
+sidebar_label: 號碼
 ---
 
 import YouTube from 'react-youtube'
 
 ![@serverSerrverlesskiy](/img/javascript/headers/07.jpg)
 
-There are two 2️⃣ types of numbers in modern JavaScript:
+那裡有兩個 2️⃣ 現代數字的類型 JavaScript:
 
 ### `number`
 
-Ordinary numbers in JavaScript are stored in the 64-bit IEEE-754 format, also called double precision floating point numbers. These are the numbers we will use most often. Integers are not considered a separate type of numbers. In addition to floating point numbers, the numeric data type also includes three character values: `Infinity`,` -Infinity`, and `NaN` (non-number).
+JavaScript中的普通數字以64位IEEE-754格式存儲，也稱為雙精度浮點數。 這些是我們最常使用的數字。 整數不被視為單獨的數字類型。 除了浮點數，數字數據類型還包括三個字符值： `Infinity`,` -Infinity`, 和 `NaN` （非數字）。
 
-![Numbers](https://media.giphy.com/media/JtBZm3Getg3dqxK0zP/giphy.gif)
+![號碼](https://media.giphy.com/media/JtBZm3Getg3dqxK0zP/giphy.gif)
 
 ### `bigInt`
 
-Numbers make it possible to work with integers of arbitrary length. They are rarely needed and are used in cases where you need to work with values ​​outside the maximum safe integer value `Number`.
+數字使使用任意長度的整數成為可能。 很少需要它們，並且在需要使用最大安全整數值之外的值的情況下使用它們 `Number`.
 
-Any number, even a decimal fraction with a lot of decimal places, is never quoted.
+絕不會引用任何數字，即使是帶有很多小數位的小數。
 
-You can use four types of numeric literals: decimal, binary, octal, and hexadecimal. Since the last three are used quite rarely, we will omit their detailed description 🖊️, but the curious can get acquainted with them [here](https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Numbers_and_dates).
+您可以使用四種類型的數字文字：十進制，二進制，八進制和十六進制。 由於後三者很少使用，我們將省略其詳細描述description️，但好奇的人可以熟悉它們 [這裡](https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Numbers_and_dates).
 
 :::caution
 Be careful when using leading zeros! This means you don't need to put zero before the decimal number.
@@ -36,22 +36,22 @@ Be careful when using leading zeros! This means you don't need to put zero befor
 0777 // treated as non-strict octal (511 decimal)
 ```
 
-## Arithmetic operations
+## 算術運算
 
 ![Arithmetic operation](https://media.giphy.com/media/gEvab1ilmJjA82FaSV/giphy.gif)
 
-Two or more integers can be used to form a new integer. There are many ways to compose a new integer. The way to compose a new number from two or more numbers is called arithmetic.
-In general, there are many arithmetic operations, but there are only four basic ones: addition, subtraction, multiplication and division. They are called basic, because all other actions are brought to them.
+可以使用兩個或多個整數來形成新的整數。 有很多方法可以組成一個新的整數。 由兩個或多個數字組成一個新數字的方法稱為算術。
+通常，算術運算有很多，但只有四個基本運算：加法，減法，乘法和除法。 之所以稱它們為基本的，是因為將所有其他動作都帶給了他們。
 
-The plus sign `+` is used to express addition: `4 + 4` Answer:` 8`
+加號 `+` 用於表示加法： `4 + 4` 回答：` 8`
 
-Minus `–` for subtraction:` 7 - 6` Answer: `1`
+減去 `–` 減法：` 7 - 6` 回答： `1`
 
-The asterisk `*` represents multiplication: `3 * 4` Answer:` 12`
+星號 `*` 表示乘法： `3 * 4` 回答：` 12`
 
-Forward slash `/` division: `15 / 5` Reply:` 3`
+正斜杠 `/` 師： `15 / 5` 回复：` 3`
 
-If more than one action is performed in a line, we use - (parentheses) to separate them from each other and also to make the code📟 more readable. Let's type the following sentences into the console. The answer for each of them should consist of only one digit9️⃣:
+如果一行中執行了多個動作，則使用-（括號）將它們彼此分開，並使代碼 📟 更具可讀性。 讓我們在控制台中輸入以下語句。 他們每個人的答案應該只包含一位數字 9️⃣:
 
 ```
  3 * (2 + 1)
@@ -60,7 +60,7 @@ If more than one action is performed in a line, we use - (parentheses) to separa
  2 * (5 - 8 / 2) * (3 + 1)
 ```
 
-Enter the following values into `LIVE EDITOR` 👇:
+將以下值輸入 `LIVE EDITOR` 👇:
 
 ```jsx {2} live
 function learnJavaScript() {
@@ -70,23 +70,23 @@ function learnJavaScript() {
 }
 ```
 
-## Combined assignment
+## 組合作業
 
 ![Conbination](https://media.giphy.com/media/l2Sq8jlaqqnqBoGhG/giphy.gif)
 
-An operator is a symbolic designation of some action performed with operands in an expression (For example: `+`, `-`,`*`,`/`).
+運算符是對錶達式中的操作數執行的某些操作的象徵性指定 (例如：`+`, `-`,`*`,`/`).
 
-The operand is some value that is processed in the program. Operands can be of any data type. The operand to the left of the operator is the left operand, the operand to the right of the operator is the right operand.
+操作數是在程序中處理的某個值。 操作數可以是任何數據類型。 運算符左側的操作數是左側操作數，運算符右側的操作數是右側操作數。
 
-The main operator of combined assignment is the equal to `=`, and it assigns the value of the right operand to the left one. That is - `x = y` assigns the value to the variable 🔔 `y`, to the variable 🔔 `x`.
+組合分配的主要算子等於 `=`, 並將右操作數的值賦給左一個。 那是 - `x = y` 將值分配給變量 🔔 `y`, 到變量 🔔 `x`.
 
-You have seen many times how you assign values ​​to variables 🔔 using mathematical operators. For example, like this:
+您已經多次看到如何為變量分配值 🔔 使用數學運算符。 例如，像這樣：
 
 ```javascript
 let sum = 2 + 3 // sum value 7
 ```
 
-And you probably did not have time to forget that at any time you can change the value of an already known variable 🔔:
+您可能沒有時間忘記在任何時候都可以更改已知變量的值 🔔:
 
 ```jsx live
 function learnJavaScript() {
@@ -96,7 +96,7 @@ function learnJavaScript() {
 }
 ```
 
-Assignment with addition `+ =` in order to quickly increase the value of a variable! Here are some examples:
+加法分配 `+ =` 為了快速增加一個變量的值！ 這裡有些例子：
 
 ```javascript
 let value = 5
@@ -106,7 +106,7 @@ value = value + value // 20 (or you can just value + = // value)
 value += value // 40 (same as value = value + // value)
 ```
 
-You already guessed that such things work with other mathematical operations, right?!
+您已經猜想這些事情可以與其他數學運算一起使用，對吧？
 
 ```javascript
 value -= 25 // value is now 15 (same as value = value - // 25)
@@ -115,7 +115,7 @@ value /= 3 // value is now 10 (same as value = // value / 3)
 value // Answer: 10
 ```
 
-Next, check all the listed examples in `LIVE EDITOR`:
+接下來，檢查中所有列出的示例 `LIVE EDITOR`:
 
 ```jsx live
 function learnJavaScript() {
@@ -124,13 +124,13 @@ function learnJavaScript() {
 }
 ```
 
-You can read more about combined assignment [here](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Assignment_Operators)
+您可以閱讀有關合併作業的更多信息 [這裡](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Assignment_Operators)
 
-## Increment and decrement
+## 遞增和遞減
 
-![increment](https://media.giphy.com/media/dX9qnaX4OH3avyMcU3/giphy.gif)
+![增量](https://media.giphy.com/media/dX9qnaX4OH3avyMcU3/giphy.gif)
 
-The operator `++` (increment) increases the value of its operand by one. If the value of the operand is not a number, the operator automatically converts it to a number, increments it by one, and returns the result, which is assigned back to the operand:
+運營商 `++` （遞增）將其操作數的值增加一。 如果操作數的值不是數字，則運算符會自動將其轉換為數字，再將其加1，然後返回結果，該結果將分配回操作數：
 
 ```jsx live
 function learnJavaScript() {
@@ -140,7 +140,7 @@ function learnJavaScript() {
 }
 ```
 
-The operator `--` (decrement) works similarly to the increment operator, but does not increase the value of its operand, but, on the contrary, decreases it by one:
+運營商`--` （decrement）的工作方式與增量運算符相似，但不會增加其操作數的值，相反，它會減少一個：
 
 ```jsx live
 function learnJavaScript() {
@@ -150,11 +150,11 @@ function learnJavaScript() {
 }
 ```
 
-## The modulo operator
+## 模運算符
 
 ![function](https://media.giphy.com/media/seVVu09CPz2upPeU1s/giphy.gif)
 
-The `%` (percent) signifies the remainder of the division. The operator returns the integer remainder of dividing the left operand by the right. The return🔄 value always gets the sign of the dividend, not the divisor. It uses the built-in function⚙️ modulo, which is the integer remainder of dividing `let1` by `let2`.
+ `%` （百分比）表示除法的其餘部分。 運算符返回左操作數除以右的整數餘數。 收益 🔄 值總是得到除數的符號，而不是除數。 它使用內置函數⚙️模，這是除法的整數餘數 ⚙️ `let1`通過 `let2`.
 
 `12% 5` result` 2`
 
@@ -168,7 +168,7 @@ The `%` (percent) signifies the remainder of the division. The operator returns 
 
 `5.5% 2` result` 1.5`
 
-Check out all the listed examples in `LIVE EDITOR` and you will immediately understand everything:
+查看中列出的所有示例 `LIVE EDITOR` 您將立即了解所有內容：
 
 ```jsx live
 function learnJavaScript() {
@@ -177,11 +177,11 @@ function learnJavaScript() {
 }
 ```
 
-## Rounding
+## 四捨五入
 
 ![Balls](https://media.giphy.com/media/6glYLqOQ3dlok/giphy.gif)
 
-The `Math.round ()` method returns a number rounded to the nearest integer. If the fractional part of the number is greater than or equal to `0.5`, the argument will be rounded to the nearest larger integer. If the fractional part of the number is less than `0.5`, the argument will be rounded to the nearest lower integer.
+ `Math.round ()` 方法返回舍入到最接近整數的數字。 如果數字的小數部分大於或等於“ 0.5”，則參數將四捨五入為最接近的較大整數。 如果數字的小數部分小於 `0.5`, 參數將四捨五入到最接近的下整數。
 
 `result = Math.round (20.49)` Returns 20
 
@@ -196,60 +196,60 @@ function learnJavaScript() {
 }
 ```
 
-## Problems?
+## 問題？
 
 ![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
 
-Channel in [Discord](https://discord.gg/6GDAfXn) after paying on [Patreon](https://www.patreon.com/javascriptcamp).
+頻道輸入 [Discord](https://discord.gg/6GDAfXn) 付款後 [Patreon](https://www.patreon.com/javascriptcamp).
 
-## Questions:
+## 問題：
 
-![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
+![問題：](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
 
-What arithmetic operations are called basic?
+什麼算術運算稱為基本運算？
 
-1. Addition, subtraction
-2. Multiplication, division
-3. Addition, subtraction, multiplication, division
+1.加，減
+2.乘法，除法
+3.加，減，乘，除
 
-What is the correct reading of `+ =`?
+什麼是正確的閱讀 `+ =`?
 
-1. Increment
-2. Assignment with addition
-3. Plus and equal
+1.增量
+2.附加作業
+3.加等於
 
-How is the increment written by sign (s)?
+如何用符號寫增量 (s)?
 
 1. `++`
 2. ` --`
 3. `+`
 
-What is the sign for the remainder of the division?
+其餘部門的標誌是什麼？
 
 1. `%`
 2. `/`
 3. `\`
 
-What value will `Math.round` return when `Math.round (20.62)`is applied?
+有什麼價值 `Math.round` 何時返回 `Math.round (20.62)`被申請;被應用？
 
 1. `22`
 2. `20`
 3. `21`
 
-In order to understand how much you learned this lesson, take the test on the [mobile application](http://onelink.to/njhc95) of our school on this topic.
+為了了解您學到了多少本課程，請對 [移動應用](http://onelink.to/njhc95) 我們學校就這個話題。
 
 ![Sumerian school](/img/app.png)
 
-## Links
+## 鏈接
 
 1. [MDN web docs](https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Numbers_and_dates)
 2. [Code for Teens: The Perfect Beginner's Guide to Programming, Volume 1: Javascript - Jeremy Moritz](https://www.amazon.com/Code-Teens-Beginners-Programming-Javascript-ebook/dp/B07FCTLVPC)
 3. [JavaScript.ru](https://learn.javascript.ru/number)
 4. [Integer arithmetic](https://maths-public.ru/arithmetic/actions)
 
-## Contributors ✨
+## 貢獻者 ✨
 
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+感謝這些好人 ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
 <table>
   <tr>

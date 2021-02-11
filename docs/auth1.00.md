@@ -5,9 +5,9 @@ sidebar_label: Introduction
 ---
 
 
-One of the most requested topics among the subscribers of my channel [Dimka Reactnative] (https://www.youtube.com/channel/UCOxewePwIQATdHTD3yZ2UZw) is authentication and authorization in the React Native application. Therefore, I decided to devote a separate post to this issue and before we start coding, it is necessary to understand the definition of Authentication / Authorization.
+One of the most requested topics among the subscribers of my channel [Dimka Reactnative](https://www.youtube.com/channel/UCOxewePwIQATdHTD3yZ2UZw) is authentication and authorization in the React Native application. Therefore, I decided to devote a separate post to this issue and before we start coding, it is necessary to understand the definition of Authentication / Authorization.
 
-> Можете учиться по курсу с Экспо или через эмулятор Андроид или через любой другой стартер.
+> You can study the course with Expo or through the Android emulator or through any other starter.
 
 ![cognito](/img/auth/01.png)
 

@@ -14,7 +14,7 @@ Variables 🔔 (Variables, abbreviated as `var`) are a container, for values suc
 
 ![Container](https://media.giphy.com/media/0T0FUiZl51VPCLsqLR/giphy.gif)
 
-<!-- ## Видео
+<!-- ## Video
 
 <YouTube videoId="gCqxA_JOtmw" /> -->
 
@@ -108,7 +108,7 @@ You can name the variable 🔔 whatever you like, but there are limitations. Gen
 We cannot call variables 🔔 with these words, since they are reserved in the Java Script language.
 `break`, `case`, `catch`, `class`, `const`, `continue`, `debugger`, `default`, `delete`, `do`, `else`, `export`, `extends`, `finally`, `for`, `function`, `if`, `import`, `in`, `instanceof`, `new`, `return`, `super`, `switch`, `this`, `throw`, `try`, `typeof`, `var`, `void`, `while`, `with`, `yield`
 
-## Свободная типизация
+## Loose typing
 
 ![Freedom](https://media.giphy.com/media/6901DbEbbm4o0/giphy.gif)
 
@@ -218,21 +218,21 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 [![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
 
-<!-- ## Супер команда console.log()
+<!-- ## Super command console.log ()
 
-Перед тем как продолжить, я познакомлю вас с супер секретной и супер полезной командой `console.log()`, которую вы будете очень и очень часто использовать во время разработки программ.
-Так вот, чтобы вывести в консоль отладочную информацию только для разработчиков (пользователи её увидеть не смогут; как вы знаете, большинство людей не подозревает даже о существовании самой консоли, а не то что о секретных «логах»!), напишите:
+Before continuing, I'll introduce you to the super secret and super useful command `console.log ()` which you will use very, very often during program development.
+So, in order to display debug information in the console only for developers (users will not be able to see it; as you know, most people are not even aware of the existence of the console itself, and not even that about secret "logs"!), Write:
 
-```javascript
-console.log('Совершенно секретно! Только для разработчиков!')
-```
+javascript
+console.log ('Top Secret! For Developers Only!')
+``
 
-Как видно из названия функции, мы выводим в консоль «лог» (то есть информацию о работе системы). Этой доброй суперспособностью разработчики пользуются постоянно. Скажем, когда у вас были сообщения об ошибках, вы видели в консоли именно это — интерпретатор выдавал («логгировал») в консоль информацию о работе системы, чтобы вы могли прочесть и исправить нужные параметры. Словом, очень полезная штука. Вам не раз и не два придётся прибегнуть к помощи console.log, так что запомните эту функцию!
+As you can see from the name of the function, we display the "log" (that is, information about the system operation) to the console. Developers use this kind superpower all the time. For example, when you had error messages, you saw exactly this in the console - the interpreter gave ("logged") information about the system operation to the console so that you could read and correct the necessary parameters. In a word, a very useful thing. You will have to resort to console.log more than once, so remember this function!
 
-```javascript
-console.log('Выведите любое сообщение, какое пожелаете')
-console.log('просто введите сюда какую-нибудь ' + 'строку')
-var сообщение = 'А ещё в качестве аргумента можно использовать переменные!'
-console.log(сообщение)
-var чтоНужноИзучить = 'JavaScript'
-console.log('Я изучу ' + чтоНужноИзучить) -->
+javascript
+console.log ('Print any message you want')
+console.log ('just put some' + 'string' here)
+var message = 'You can also use variables as an argument!'
+console.log (message)
+var what to Learn = 'JavaScript'
+console.log ('I will study' + what should I study) ->

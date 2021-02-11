@@ -5,7 +5,7 @@ sidebar_label: Part II
 ---
 
 
-Во-первых стандартный UI от Amplify далеко не всегда удовлетворяет UX приходящий со стороны заказчика
+First, the standard UI from Amplify does not always satisfy the UX coming from the customer.
 
 Secondly in the [official documentation](https://aws-amplify.github.io/docs/js/react#note-on-jwt-storage) Amplify says:
 

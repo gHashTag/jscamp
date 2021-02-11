@@ -144,22 +144,22 @@ Channel in [Discord](https://discord.gg/6GDAfXn) after paying on [Patreon](https
 
 ![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
 
-Что такое замыкание?
+What is a closure?
 
-1. Конструкция
-2. Функция
-3. Концепция
+1. Construction
+2. Function
+3. Concept
 
-Что на чём замыкается?
+What is closure on what?
 
-1. Функция на область видимости
-2. Переменные в функции
+1. Function on scope
+2. Variables in a function
 
-Что нужно сделать, чтобы получить доступ к замкнутой переменной?
+What do you need to do to access a closed variable?
 
-1. Опишу её и воспользуюсь
-2. Она доступна
-3. Переменную можно только просмотреть
+1. I will describe it and use it
+2. It is available
+3. The variable can only be viewed
 
 In order to understand how much you learned this lesson, take the test on the [mobile application](http://onelink.to/njhc95) of our school on this topic.
 

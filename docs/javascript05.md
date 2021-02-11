@@ -20,7 +20,7 @@ Debugging is the process of finding and fixing errors🙅‍♂️ in a script.
 
 [Wikipedia](https://ru.wikipedia.org/wiki/Программная_ошибка🙅‍♂️)
 
-<!-- ## Видео
+<!-- ## Video
 
 <YouTube videoId="xJtVop2fAxg" /> -->
 

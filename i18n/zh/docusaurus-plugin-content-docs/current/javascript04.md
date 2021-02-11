@@ -1,20 +1,20 @@
 ---
 id: javascript04
-title: Data types
-sidebar_label: Data types
+title: 資料類型
+sidebar_label: 資料類型
 ---
 
 import YouTube from 'react-youtube'
 
 ![@serverSerrverlesskiy](/img/javascript/headers/04.jpg)
 
-## Dynamic typing
+## 動態打字
 
-JavaScript is a loosely typed or dynamic language. This means that you do not need to define the type of the variable 🔔 in advance.
+JavaScript 是一種鬆散類型或動態語言。 這意味著您不需要預先定義變量the的類型。
 
 ![Dinamics](https://media.giphy.com/media/26uf759LlDftqZNVm/giphy.gif)
 
-The type will be determined automatically during program execution. It also means that you can use one variable 🔔 to store 📦 different types of data 👇:
+類型將在程序執行期間自動確定。 這也意味著您可以使用一個變量 🔔 存儲 📦 不同類型的數據👇：
 
 ```jsx live
 function learnJavaScript() {
@@ -28,11 +28,11 @@ function learnJavaScript() {
 
 <YouTube videoId="1zXZCVbNbkQ" /> -->
 
-## Data types
+## 資料類型
 
 ![Data types](https://media.giphy.com/media/NPXkCN2FutVO1Nt4P9/giphy.gif)
 
-The JavaScript standard defines 9 data types. Get to know each of them by outputting to the console and then I will tell you about each of them in more detail.
+JavaScript 標准定義了9種數據類型。 通過輸出到控制台來了解它們中的每一個，然後我將更詳細地介紹它們。
 
 ```javascript
 let one = { firstName: 'John', lastName: 'Smith' } // object
@@ -54,49 +54,49 @@ let eight // undefined
 let nine = Symbol() // symbol
 ```
 
-## Objects
+## 對象
 
 ![cupboard](https://media.giphy.com/media/l2Sq0NFJlJC5Dqb7y/giphy.gif)
 
-In computer terminology, an object is a value in memory that can be referenced by an identifier. In JavaScript, an object can be thought of as a collection of properties. It's like a closet for storing other types of data.
+在計算機術語中，對像是內存中的值，可以由標識符引用。 在JavaScript中，可以將對象視為屬性的集合。 這就像一個壁櫥，用於存儲其他類型的數據。
 
-## Functions
+## 功能
 
 ![Function](https://media.giphy.com/media/FuSJ5C7SSHlZCxjC6q/giphy.gif)
 
-Functions⚙️ `function` are ordinary objects that have the additional ability to be called for execution.
+函數⚙️函數是普通的對象，具有調用執行的附加功能。
 
-## Primitive values
+## 原始值
 
 ![Primitive](https://media.giphy.com/media/rBdWc61BPFVYc/giphy.gif)
 
-All data types in JavaScript, except for objects, are immutable (values cannot be modified, only overwritten with a new full value). For example, unlike the C language, where a string can be corrected character by character, in JavaScript the strings are re-created only completely. Values of these types are called "primitive values".
+除對像外，JavaScript中的所有數據類型都是不可變的（不能修改值，只能用新的完整值覆蓋）。 例如，與C語言不同，在C語言中可以逐個字符地校正字符串，而在JavaScript中，只能完全重新創建字符串。 這些類型的值稱為“原始值”。
 
-## Text strings
+## 文字字串
 
 ![text](https://media.giphy.com/media/26n6AaCcCajAyZx04/giphy.gif)
 
-In JavaScript, the type `string` is used to represent text data.
+在 JavaScript 中，“字符串”類型用於表示文本數據。
 
-## Numbers
+## 號碼
 
 ![Numbers](https://media.giphy.com/media/xT5LMMneIRG1UJquOI/giphy.gif)
 
-The numeric data type `number` represents both integer values and floating point numbers.
+數字數據類型“數字”代表整數值和浮點數。
 
 ## BigInt
 
 ![giant](https://media.giphy.com/media/LZGipmRpX6uwE/giphy.gif)
 
-In JavaScript, the `number` type cannot contain numbers greater than (253-1) (i.e. 9007199254740991), or less than - (253-1) for negative numbers. This technical limitation is due to their internal representation.
+在JavaScript中，“數字”類型不能包含大於（253-1）（即9007199254740991）或小於-（253-1）的負數。 此技術限制是由於其內部表示。
 
-For most cases, this is sufficient. But sometimes we need really gigantic numbers, like in cryptography or when using a "timestamp" with microseconds.
+在大多數情況下，這就足夠了。 但是有時我們需要真正的巨大數字，例如在密碼學中或使用微秒的“時間戳”時。
 
-The `bigInt` type was added to JavaScript to allow for arbitrary length integers.
+在 JavaScript 中添加了 bigInt 類型以允許任意長度的整數。
 
-## Boolean data type
+## 布爾數據類型
 
-The boolean type `boolean` represents a logical entity and has two 2️⃣ values: `true` ✅
+布爾類型boolean表示邏輯實體，具有兩個 2️⃣ 值：true ✅
 
 ![true](https://media.giphy.com/media/ap6wcjRyi8HoA/giphy.gif)
 
@@ -104,26 +104,26 @@ and `false` ❎
 
 ![False](https://media.giphy.com/media/HNOVuT5AvCK1fgvp1m/giphy.gif)
 
-This type is usually used to store 📦 yes / no values: true ✅ means “yes, right,” and false ❎ means “no, wrong”.
+此類型通常用於存儲 📦 yes / no 值：true ✅ 表示“是，正確”，而false ❎ 表示“否，錯誤”。
 
-## Null
+## 空值
 
 ![Null](https://media.giphy.com/media/26hkhPJ5hmdD87HYA/giphy.gif)
 
-This data type has only one value: `null`. This value is specially designated as a primitive, since it is indeed a visible primitive in behavior. But at the same time, all other Objects are inherited from `null`, therefore, despite the fact that `null` returns a primitive value, its type is an object.
-For example, you can assign it to the default value.
+該數據類型只有一個值：“ null”。 該值被專門指定為基元，因為它在行為上確實是可見的基元。 但是同時，所有其他對像都從“ null”繼承，因此，儘管“ null”返回原始值，但其類型是一個對象。
+例如，您可以將其分配給默認值。
 
-## Undefined
+## 未定義
 
 ![Unndefined](https://media.giphy.com/media/PkKzNQjwPy7GvxZbfe/giphy.gif)
 
-A variable 🔔 that has not been assigned a value will have the value `undefined`.
+未分配值的變量will的值將為“未定義”。
 
-### Differences between null and undefined
+### null 和 undefined 之間的差異
 
 ![Spiderman](https://media.giphy.com/media/l36kU80xPf0ojG0Erg/giphy.gif)
 
-`null` is the definite value of the absence of an object, while` undefined` denotes ambiguity. For example, you can check this in the browser console:
+`null`是不存在對象的確定值，而“ undefined”則表示歧義。 例如，您可以在瀏覽器控制台中進行檢查：
 
 ```javascript
 let TestVar
@@ -131,7 +131,7 @@ console.log(TestVar) // undefined
 console.log(typeof TestVar) // undefined
 ```
 
-`null` is an assignment value. It can be assigned to a variable 🔔 as a representation with no value:
+`null` 是分配值。 可以將其賦給變量🔔作為無值的表示形式：
 
 ```javascript
 let TestVar = null
@@ -139,7 +139,7 @@ console.log(TestVar) // null
 console.log(typeof TestVar) // object
 ```
 
-It is clear from the previous examples that `undefined` and `null` are two 2️⃣ different types: `undefined` is the type itself (undefined), and` null` is an object.
+從前面的示例中可以明顯看出，`undefined`和`null`是兩個 2️⃣ 不同的類型：`undefined`是類型本身（未定義），而`null`是對象。
 
 ```javascript
 null === undefined // false
@@ -151,71 +151,73 @@ null === null // true
 
 ![Symbol](https://media.giphy.com/media/QvSGhHq8CrVzq/giphy.gif)
 
-The `Symbol` type is a unique and immutable primitive value that can be used as a key for a property of an object. This type is so rarely used in real work that we will not even consider it in this course.
+`Symbol` 類型是唯一且不可變的原始值，可以用作對象屬性的鍵。 這種類型在實際工作中很少使用，因此在本課程中我們將不再考慮。
 
-## Problems?
+## 問題？
 
-![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
+![問題](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
 
-Channel in [Discord](https://discord.gg/6GDAfXn) after paying on [Patreon](https://www.patreon.com/javascriptcamp).
+頻道輸入 [Discord](https://discord.gg/6GDAfXn) 付款後 [Patreon](https://www.patreon.com/javascriptcamp).
 
-## Questions:
+## 問題：
 
-![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
+![題](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
 
-What is the `typeof` operator used for?
+typeof 運算符用於什麼？
 
-1. To determine the data type
-2. To output the data type to the console
-3. To enter a new variable
+1.確定數據類型
+2.要將數據類型輸出到控制台
+3.輸入一個新變量
 
-How many data types does the JavaScript standard define?
+JavaScript標准定義了幾種數據類型？
 
 1.7
 2.9
 3.5
 
-What data type contains a set of properties?
+哪種數據類型包含一組屬性？
 
-1. `function`
-2. `string`
-3. `object`
+1.`功能`
+2.`string`
+3.`object`
 
-Can a string be adjusted character by character in JavaScript?
+可以在JavaScript中逐個字符串地調整字符串嗎？
 
-1. Yes
-2. Possibly in special cases
-3. No, the lines are re-created only completely
+1.是的
+2.可能在特殊情況下
+3.不，僅完全重新創建線條
 
-What data type makes it possible to work with integers of arbitrary length?
+哪種數據類型可以處理任意長度的整數？
 
-1. `number`
-2. `string`
-3. `bigint`
+1.`number`
+2.`string`
+3.`bigint`
 
-Which value is not of type `boolean`?
+哪個值不是布爾類型？
 
-1. `false`
-2. `null`
-3. `true`
+1.`false`
+2.`null`
+3.`true`
 
-Which data type has a value that can be used as a key for an object property?
+哪種數據類型的值可以用作對象屬性的鍵？
 
-1.` undefined` 2.` symbol` 3.` null`
+1.` undefined` 
+2.` symbol` 
+3.` null`
 
-In order to understand how much you learned this lesson, take a test in our school [mobile application](http://onelink.to/njhc95) on this topic.
+為了了解您學到了多少，請在我們學校參加考試 [移動應用](http://onelink.to/njhc95) 關於這個話題。
 
 ![Sumerian school](/img/app.png)
 
-## Links
+## 鏈接
 
 1. [MDN web docs](https://developer.mozilla.org/ru/docs/Web/JavaScript/Data_structures)
 2. [Code for Teens: The Perfect Beginner's Guide to Programming, Volume 1: Javascript - Jeremy Moritz](https://www.amazon.com/Code-Teens-Beginners-Programming-Javascript-ebook/dp/B07FCTLVPC)
 3. [JavaScript.ru](https://learn.javascript.ru/types)
 
-## Contributors ✨
+## 貢獻者 ✨
 
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+感謝這些好人 ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
 <table>
   <tr>

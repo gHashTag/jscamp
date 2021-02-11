@@ -1,31 +1,31 @@
 ---
 id: javascript02
-title: Comments
-sidebar_label: Comments
+title: 評論
+sidebar_label: 評論
 ---
 
 import YouTube from 'react-youtube'
 
 ![@serverSerrverlesskiy](/img/javascript/headers/02.jpg)
 
-## What are comments?
+## 有什麼評論？
 
-JavaScript has several ways to specify comments in code 📟
+JavaScript 有幾種方法可以在代碼中指定註釋 📟
 
-Sometimes, when writing 🖊️ the code, you will need to provide explanations that are intended only for humans а and not for the computer. Perhaps it will be some kind of message to yourself from the past (to the Future Me!) About this or that thing in the program code. Or maybe it will just be an indication that you need to run only such and such a part of the code, and the rest should be omitted. In short, in any such case, you will need to resort to the help of comments.
-Comments 🗣️ are used to add ➕ hints, notes 🔖, suggestions or warnings. They can make the code easier to read and understand. They can also be used to prevent 🛑 code execution (this is a common practice when debugging code).
+有時，在編寫代碼時，您將需要提供僅適用於人類的解釋，而不適用於計算機。 也許這將是過去（給我未來）給自己的某種信息，關於程序代碼中的這一點或那件事。 也許這只是表明您只需要運行代碼的這一部分，其餘部分應省略。 簡而言之，在任何情況下，您都需要藉助註釋的幫助。
+註釋 🗣️ 用於添加➕提示，註釋 🔖 建議或警告。 它們可以使代碼更易於閱讀和理解。 它們還可以用於阻止執行代碼（這是調試代碼時的常見做法）。
 
-JavaScript has several ways to specify comments 🗣️ in code.
+JavaScript有幾種方法可以在代碼中指定註釋 🗣️
 
 <!-- ## Video
 
 <YouTube videoId="zCvKMw5QHRw" /> -->
 
-## Single line comment
+## 單行註釋
 
 ![Slash](https://media.giphy.com/media/bKXMS0NjXoyaY/giphy.gif)
 
-The first 1️⃣ way is `// comment` 🗣️ in this case all text 📜 in the line after the double slash will be a comment 🗣️. When the interpreter sees two 2️⃣ slashes in a row `//`, it immediately understands that everything that goes further to the end of the line can be safely ignored. For now, ignore the syntax 📖 of the code, we will get to know it in detail a little later.
+第一種 1️⃣ 方式是`// comment`🗣️，在這種情況下，雙斜杠之後的所有文本will都是註釋comment️。 當解釋器看到連續兩個斜杠“ //”時，它立即知道可以安全地忽略行尾的所有內容。 現在，忽略代碼的語法，稍後我們將詳細了解它 📖  📜
 
 ```jsx live
 function learnJavaScript() {
@@ -36,12 +36,12 @@ function learnJavaScript() {
 }
 ```
 
-## Multi-line comment
+## 多行評論
 
 ![Coments](https://media.giphy.com/media/UevalSWg5twQeqpc8Q/giphy.gif)
 
-The second 2️⃣ way is `/ * * /`, which is more flexible than the first 1️⃣. As soon as the interpreter sees `/ *`, it thinks: "Yeah, so until I see`* /`, I can not pay any attention to anything here!"
-For example, you can use it in one 1️⃣ line 👇:
+第二種 2️⃣ 方法是`/ * * /`，它比第一種 1️⃣ 方法更靈活。 解釋器一看到`/ *`，就會想：“是的，所以直到我看到`* /`，我什麼都不能注意！”
+例如，您可以在一條 1️⃣ 行中使用它 👇:
 
 ```jsx live
 function learnJavaScript() {
@@ -52,7 +52,7 @@ function learnJavaScript() {
 }
 ```
 
-Alternatively, you can make a multi-line comment 🗣️ as shown here 👇:
+或者，您可以進行多行評論 🗣️，如下所示 👇:
 
 ```jsx live
 function learnJavaScript() {
@@ -64,11 +64,11 @@ function learnJavaScript() {
 }
 ```
 
-## Comment in the middle of the code
+## 在代碼中間加註釋
 
 ![Among](https://media.giphy.com/media/fnjIiBNo38IHS/giphy.gif)
 
-Also, if you wish, you can use this commenting 🗣️ in the middle of a line of code. Although this may impair the readability of the code👇:
+另外，如果您願意，可以在一行代碼的中間使用此註釋 🗣️。 儘管這可能會損害代碼的可讀性👇:
 
 ```jsx live
 function learnJavaScript() {
@@ -79,57 +79,57 @@ function learnJavaScript() {
 }
 ```
 
-With the commenting on the code, that's all and the call for a break sounded.
+加上對代碼的註釋，僅此而已，發出了休息的呼籲。
 
-![Comments](https://media.giphy.com/media/SvuRLwWT0EoeErwPvB/giphy.gif)
+![評論](https://media.giphy.com/media/SvuRLwWT0EoeErwPvB/giphy.gif)
 
-## Problems?
+## 問題？
 
-![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
+![問題](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
 
-Channel in [Discord](https://discord.gg/6GDAfXn) after paying on [Patreon](https://www.patreon.com/javascriptcamp).
+頻道輸入 [Discord](https://discord.gg/6GDAfXn) after paying on [Patreon](https://www.patreon.com/javascriptcamp).
 
-## Questions:
+## 問題：
 
-![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
+![題](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
 
-Who are the comments for?
+對誰發表評論？
 
-1. person
-2. Console
-3. JavaScript interpreter
+1人
+2.控制台
+3. JavaScript解釋器
 
-What are comments not used for?
+註釋不用於什麼？
 
-1. Adding tips, notes, suggestions
-2. As part of the program code
-3. To prevent code execution
+1.添加提示，筆記，建議
+2.作為程序代碼的一部分
+3.防止代碼執行
 
-Which way of specifying a comment in JavaScript code does not exist?
+不存在哪種在JavaScript代碼中指定註釋的方式？
 
 1. `('')`
 2. `//`
 3. `/ * * /`
 
-How do I disable any number of lines of code?
+如何禁用任意數量的代碼行？
 
-1. Write a comment in the middle of the code
-2. Wrap the code in a comment
-3. Use the command `console.log`
+1.在代碼中間寫一個註釋
+2.將代碼包裝在註釋中
+3.使用命令“ console.log”
 
-In order to understand how much you learned this lesson, take a test in our school [mobile application] (http://onelink.to/njhc95) on this topic.
+為了了解您學到了多少，請在我們學校參加考試 [移動應用](http://onelink.to/njhc95) 關於這個話題。
 
 ![Sumerian school](/img/app.png)
 
-## Links
+## 鏈接
 
 1. [MDN web docs](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Lexical_grammar)
-2. [Код для подростков: прекрасное руководство по программированию для начинающих, том 1: Javascript - Jeremy Moritz ](https://www.amazon.com/Code-Teens-Beginners-Programming-Javascript-ebook/dp/B07FCTLVPC)
+2. [青少年代碼：完美的初學者編程指南，第1卷 Javascript - Jeremy Moritz ](https://www.amazon.com/Code-Teens-Beginners-Programming-Javascript-ebook/dp/B07FCTLVPC)
 3. [JavaScript.ru](https://learn.javascript.ru/types)
 
-## Contributors ✨
+## 貢獻者 ✨
 
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+感謝這些好人 ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
 <table>
   <tr>

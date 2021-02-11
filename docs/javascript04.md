@@ -24,7 +24,7 @@ function learnJavaScript() {
 }
 ```
 
-<!-- ## Видео
+<!-- ## Video
 
 <YouTube videoId="1zXZCVbNbkQ" /> -->
 

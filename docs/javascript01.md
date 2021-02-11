@@ -227,7 +227,7 @@ What is the symbol for the division operation?
 9. Как называется плагин для вывода занчений онлайн в редакторе кода?
 10. Что такое Node.js? -->
 
-Now we are ready to study Java Script with you, but in order to understand how much you learned this lesson take the test in [mobile application] (http://onelink.to/njhc95) in our school on this topic.
+Now we are ready to study Java Script with you, but in order to understand how much you learned this lesson take the test in [mobile application](http://onelink.to/njhc95) in our school on this topic.
 
 ![Sumerian school](/img/app.png)
 

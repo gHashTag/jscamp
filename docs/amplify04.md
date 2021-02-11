@@ -193,7 +193,7 @@ cd ios && pod install && cd ..
 
 ## Connecting the API plugin (App Sync)
 
-If you connected it in [the last lesson] (https://react-native-village.github.io/docs/amplify-03), then skip this step. If not, then connect the API plugin
+If you connected it in [the last lesson](https://react-native-village.github.io/docs/amplify-03), then skip this step. If not, then connect the API plugin
 
 ```bash
 amplify add api

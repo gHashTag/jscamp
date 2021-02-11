@@ -85,6 +85,6 @@ Training takes place in the [Discord](https://discord.gg/6GDAfXn) application, i
 
 ## Payment
 
-The camp is paid through [Patreon](https://www.patreon.com/reactnative) and the cost for the JavaScript course is $ 10 per month.
+The camp is paid through [Patreon](https://www.patreon.com/javascriptcamp) and the cost for the JavaScript course is $ 10 per month.
 
 [![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)

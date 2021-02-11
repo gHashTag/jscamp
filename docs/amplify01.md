@@ -79,6 +79,6 @@ The bill from your cloud provider is only a fraction of the total cost of your c
 There are also development costs. Building applications this way speeds time-to-market, reducing overall development time and therefore development costs.
 Basically, you pay for stable bandwidth or execution time, not for the number of servers used.
 
-More about pricing [здесь](https://aws.amazon.com/ru/appsync/pricing/)
+More about pricing [here](https://aws.amazon.com/ru/appsync/pricing/)
 
 [![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)

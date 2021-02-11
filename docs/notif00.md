@@ -344,7 +344,7 @@ const App: () => React$Node = () => {
 export default App
 ```
 
-Запускаем проект:
+Launching the project:
 
 ```bash
 react-native run-android

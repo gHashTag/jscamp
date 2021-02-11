@@ -1,16 +1,16 @@
 ---
 id: javascript03
-title: Variables
-sidebar_label: Variables
+title: 變數
+sidebar_label: 變數
 ---
 
 import YouTube from 'react-youtube'
 
 ![@serverSerrverlesskiy](/img/javascript/headers/03.jpg)
 
-## Variables
+## 變數
 
-Variables 🔔 (Variables, abbreviated as `var`) are a container, for values such as numbers used in addition ➕, or a string that we could use as part of a sentence.
+變量 🔔（Variables，縮寫為``var''）是一個容器，用於存儲值，例如在addition之外使用的數字，或可以用作句子一部分的字符串。
 
 ![Container](https://media.giphy.com/media/0T0FUiZl51VPCLsqLR/giphy.gif)
 
@@ -18,11 +18,11 @@ Variables 🔔 (Variables, abbreviated as `var`) are a container, for values suc
 
 <YouTube videoId="gCqxA_JOtmw" /> -->
 
-## Variable declaration
+## 變量聲明
 
 ![Announcement](https://media.giphy.com/media/cYaBD8kxE4PZudHBRA/giphy.gif)
 
-To use a variable, you must first create it, or, more precisely, declare a variable. To do this, we introduce the keyword `var` followed by the name you want to give your variable. The instruction below creates (in other words: declares or defines) a variable named "message":
+要使用變量，必須首先創建它，或者更確切地說，聲明一個變量。 為此，我們引入關鍵字“ var”，後跟您想要給變量的名稱。 下面的指令創建（換句話說：聲明或定義）一個名為“ message”的變量：
 
 ```jsx live
 function learnJavaScript() {
@@ -32,13 +32,13 @@ function learnJavaScript() {
 }
 ```
 
-Here we create a variable 🔔 `message`. Currently ⏱️ it does not contain a value, to be more precise, the variable contains an empty string.
+在這裡，我們創建一個變量 🔔 message。 當前 ⏱️ 它不包含值，更確切地說，變量包含一個空字符串。
 
-## Assigning a value to a variable
+## 給變量賦值
 
 ![Memory](https://media.giphy.com/media/3o6ZtafpgSpvIaKhMI/giphy.gif)
 
-Once the variable 🔔 is declared, it can be assigned a value. To do this, write 🖊️ variable name 🔔, followed by an equal sign `=`, followed by the value you want to assign. For example 👇:
+一旦聲明了變量 🔔，就可以為其分配一個值。 為此，請寫🖊️變量名 🔔，後跟等號“ =”，然後是要分配的值。 例如 👇:
 
 ```jsx live
 function learnJavaScript() {
@@ -48,10 +48,9 @@ function learnJavaScript() {
   return message
 }
 ```
+在“結果”中，您分配給變量 🔔 的值在控制台中返回。 在 🔔 中使用變量values的值進行操作，例如，用您的名字完成表達式。
 
-In `RESULT`, the value that you assigned to the variable 🔔 returned in the console. Play around 🎮 with the values of a variable 🔔, for example, complete the expression with your name.
-
-For brevity, you can combine the declaration of a variable 🔔 and writing 🖊️ in one line 👇:
+為了簡潔起見，您可以將變量declaration的聲明與在一行中編寫🖊️組合起來👇：
 
 ```jsx live
 function learnJavaScript() {
@@ -60,12 +59,12 @@ function learnJavaScript() {
 }
 ```
 
-## Variable update
+## 變量更新
 
 ![Update](https://media.giphy.com/media/FP47IFqWyXfdKYU6VG/giphy.gif)
 
-One of the peculiarities of variables 🔔 is that their meaning can change.
-When a value is assigned to a variable 🔔, you can change (update) that value simply by specifying a different value. Let's take a look at a simple example 👇:
+變量 🔔 的特點之一是它們的含義可以改變。
+將值分配給變量 🔔 後，只需指定其他值即可更改（更新）該值。 讓我們看一個簡單的示例👇：
 
 ```jsx live
 function learnJavaScript() {
@@ -77,44 +76,44 @@ function learnJavaScript() {
 }
 ```
 
-Another feature of variables 🔔 is that they can contain almost anything, not just strings and numbers. Variables 🔔 can also contain complex data and even entire functions. You will learn more about this as you study the course further.
+變量 🔔 的另一個特徵是它們可以包含幾乎所有內容，而不僅僅是字符串和數字。 變量 🔔 還可以包含複雜數據甚至整個函數。 隨著您進一步學習本課程，您將學到更多有關此的知識。
 
 ::: tip Note!
-We say that variables contain values. This is an important distinction. Variables are not the values themselves! They are containers for values. Imagine that they are like little cardboard boxes📦 in which you can store things.
+我們說變量包含值。 這是一個重要的區別。 變量不是自己的值！ 它們是價值的容器。 想像一下，它們就像小紙板箱一樣，可以在其中存放東西。
 :::
 
 ![Variables](https://mdn.mozillademos.org/files/13506/boxes.png)
 
 ![Hello World](https://media.giphy.com/media/26his8ERHOSxKuWw8/giphy.gif)
 
-## Variable naming rules
+## 可變命名規則
 
 ![Rules](https://media.giphy.com/media/XK8I8Am1gSe17MiJ2m/giphy.gif)
 
-You can name the variable 🔔 whatever you like, but there are limitations. Generally, you should only stick to Latin characters (0-9, a-z, A-Z) and the underscore character.
+您可以隨意命名變量,，但有限制。 通常，您應僅使用拉丁字符（0-9，a-z，A-Z）和下劃線字符。
 
-- The use of other symbols is not recommended because they may cause errors or be incomprehensible to an international audience.
-- Do not use underscores at the beginning of variable names 🔔 - this is used in some JavaScript constructs to denote specific things.
-- Do not use numbers at the beginning of variables 🔔. This is invalid and will result in an error.
-- It is generally accepted to stick to the so-called "lower camel case" (camelCase - so called because of the "humps" that form the first letters of words), where you glue several words, using lowercase letters for the entire first word, and then capital letters of subsequent words. We have used this for our variable names 🔔 in this article.
-- Make variable names 🔔 intuitive about what data they contain. Do not use only single letters / numbers or large long phrases.
-- Variables 🔔 are case sensitive, so `myage` and` myAge` are different variables 🔔.
-- Last but not least - you also need to avoid using JavaScript reserved words as variable names 🔔 - by that we mean the words that make up the actual JavaScript syntax! Thus, you cannot use words like var, function, let, and for for variable names 🔔. Browsers recognize them as different pieces of code and therefore errors occur.
+-不建議使用其他符號，因為它們可能會引起錯誤或國際聽眾難以理解。
+-請勿在變量名beginning的開頭使用下劃線-在某些JavaScript構造中用於表示特定內容。
+-不要在變量 🔔 的開頭使用數字。這是無效的，將導致錯誤。
+-通常都堅持使用所謂的“小寫駝峰大寫”（camelCase-之所以稱為“駝峰”，是因為形成單詞的第一個字母的“駝峰”），在其中粘貼多個單詞，整個前一個單詞使用小寫字母單詞，然後是後續單詞的大寫字母。在本文中，我們已將其用作變量名 🔔。
+-使變量名 🔔 直觀了解它們包含的數據。請勿僅使用單個字母/數字或較大的長短語。
+-變量 🔔 區分大小寫，因此`myage`和`myAge`是不同的變量 🔔。
+-最後但並非最不重要的一點-您還需要避免將JavaScript保留字用作變量名 🔔-意思是構成實際JavaScript語法的字！因此，您不能將var，function，let和for等詞用於變量名 🔔。瀏覽器將它們識別為不同的代碼段，因此會發生錯誤。
 
-## List of reserved words
+## 保留字列表
 
 ![Reserved](https://media.giphy.com/media/3o6Mb3eci7bVDKBR2o/giphy.gif)
 
-We cannot call variables 🔔 with these words, since they are reserved in the Java Script language.
+我們不能用這些詞來調用變量,，因為它們是 Java Script 語言保留的。
 `break`, `case`, `catch`, `class`, `const`, `continue`, `debugger`, `default`, `delete`, `do`, `else`, `export`, `extends`, `finally`, `for`, `function`, `if`, `import`, `in`, `instanceof`, `new`, `return`, `super`, `switch`, `this`, `throw`, `try`, `typeof`, `var`, `void`, `while`, `with`, `yield`
 
-## Свободная типизация
+## 打字鬆散
 
 ![Freedom](https://media.giphy.com/media/6901DbEbbm4o0/giphy.gif)
 
-JavaScript is a “freely typed language👅” which means that unlike some other languages👅 you do not need to specify what type of data the variable will contain (eg numbers, strings, arrays, etc.).
+JavaScript是一種“自由類型語言”，這意味著與某些其他語言不同，您無需指定變量將包含哪種數據類型（例如，數字，字符串，數組等）。
 
-For example, if you declare a variable 🔔 and assign a quoted value to it, the browser will treat the variable 🔔 as a string 👇:
+例如，如果您聲明變量 🔔 並為其分配一個帶引號的值，則瀏覽器會將變量 🔔 視為字符串 👇:
 
 ```jsx live
 function learnJavaScript() {
@@ -128,85 +127,85 @@ function learnJavaScript() {
 }
 ```
 
-## Deprecated "var" keyword
+## 不推薦使用的“ var”關鍵字
 
 ![Old](https://media.giphy.com/media/3orieJI3IdkKWIsAGA/giphy.gif)
 
-Usually `var` is not used in modern scripts, but it can still be hidden in old ones. This is due to the fact that it does not behave unambiguously, so instead of `var` we will use` let` for variables 🔔, and `const` for constants - constants.
+通常在現代腳本中不使用var，但仍可以在舊腳本中將其隱藏。 這是由於事實並非如此，因此，我們將使用`let`表示變量🔔，而不是`var`表示常量-常量。
 
-🔔 The break is over, let's run to the next lesson!
+🔔 休息已經結束，讓我們繼續下一課！
 
-## Problems?
+## 問題？
 
 ![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
 
-Channel in [Discord](https://discord.gg/6GDAfXn) after paying on [Patreon](https://www.patreon.com/javascriptcamp).
+頻道輸入 [Discord](https://discord.gg/6GDAfXn) 付款後 [Patreon](https://www.patreon.com/javascriptcamp).
 
-## Questions:
+## 問題：
 
-![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
+![題](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
 
-For whom does the `console.log` command contain information?
+console.log命令包含哪些信息？
 
-1. User
-2. Developer
-3. JavaScript interpreter
+1.用戶
+2.開發人員
+3. JavaScript解釋器
 
-What are variables?
+什麼是變量？
 
-1. Containers for values
-2. Variable values
-3. Latin letters
+1.價值的容器
+2.變量值
+3.拉丁字母
 
-What can variables contain?
+變量可以包含什麼？
 
-1. Only strings and numbers
-2. Numbers, strings, complex data, functions
-3. Only complex data and functions
+1.僅字符串和數字
+2.數字，字符串，複雜數據，函數
+3.僅複雜的數據和功能
 
-How to write a command to assign a variable?
+如何編寫命令來分配變量？
 
-1. `var`
-2. `var` [variable name] =
-3. `var` [variable name]
+1.`var`
+2.`var` [變量名] =
+3.`var` [變量名]
 
-How do I update a variable?
+如何更新變量？
 
-1. The variable cannot be updated
-2. Specify a different value for the variable
-3. Set a custom command
+1.變量無法更新
+2.為變量指定一個不同的值
+3.設置自定義命令
 
-What is missing in the variable naming rules?
+變量命名規則中缺少什麼？
 
-1. Don't use numbers at the beginning of variables
-2. Use underscores at the beginning of variables
-3. Stick to Latin characters
+1.不要在變量開頭使用數字
+2.在變量開頭使用下劃線
+3.堅持拉丁字符
 
-How do I write the value of a variable so that the browser treats the variable as a string?
+如何編寫變量的值，以便瀏覽器將變量視為字符串？
 
-1. Without quotes
-2. In quotes
-3. In brackets
+1.不帶引號
+2.引號
+3.中括號
 
-Which keyword don't we use to define variables?
+我們不使用哪個關鍵字來定義變量？
 
 1. `let`
 2. `const`
 3. `var`
 
-In order to understand how much you learned this lesson, take a test in our school [mobile application](http://onelink.to/njhc95) on this topic.
+為了了解您學到了多少，請在我們學校參加考試 [移動應用](http://onelink.to/njhc95) 關於這個話題。
 
 ![Sumerian school](/img/app.png)
 
-## Links
+## 鏈接
 
 1. [MDN web docs](https://developer.mozilla.org/ru/docs/Learn/JavaScript/Первые_шаги/Variables)
 2. [Code for Teens: The Perfect Beginner's Guide to Programming, Volume 1: Javascript - Jeremy Moritz](https://www.amazon.com/Code-Teens-Beginners-Programming-Javascript-ebook/dp/B07FCTLVPC)
 3. [JavaScript.ru](https://learn.javascript.ru/types)
 
-## Contributors ✨
+## 貢獻者 ✨
 
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+感謝這些好人 ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
 <table>
   <tr>

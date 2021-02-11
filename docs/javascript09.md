@@ -181,17 +181,17 @@ function sum() {
 }
 ```
 
-В функции⚙️ `sum()` объявляются🗣️ переменные `x` и `y` со значениями, объявляется🗣️ переменная 🔔 `z` и по заданному алгоритму производим расчет (сложение 2-х чисел), а результат выводим через `return`.
+In the function `sum ()`, the variables `x` and` y` with values are declared, the variable 🔔 `z` is declared and, according to the given algorithm, we perform the calculation (addition of 2 numbers), and the result is output through` return`.
 
-При необходимости обращаться к функции⚙️ можно несколько раз. Например в значение двух разных переменых присвоить нашу функцию⚙️:
+If necessary, you can call the function При several times. For example, assign our function to the value of two different variables:
 
-```javascript
-let x1 = sum()
+javascript
+let x1 = sum ()
 
-let y1 = sum()
-```
+let y1 = sum ()
+``
 
-Этот пример явно показывает одно из главных предназначений функций⚙️: избавление от дублирования кода📟 ! Функцию⚙️ можно запускать множества раз в разных участках вашего кода📟 . -->
+This example clearly shows one of the main purposes of functions⚙️: getting rid of code duplication! A function⚙️ can be run multiple times in different places in your code📟. ->
 
 ## Parameters and function arguments
 

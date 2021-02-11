@@ -59,7 +59,7 @@ const App = () => {
 
 ## Registering your AWS account
 
-We register according to [this] (https://aws-amplify.github.io/docs/) instructions 📃 and check all 5 steps using the video tutorial.
+We register according to [this](https://aws-amplify.github.io/docs/) instructions 📃 and check all 5 steps using the video tutorial.
 
 ::: caution You need a bank card 💳 where there must be more than 1 \ $ 💵
 
@@ -113,7 +113,7 @@ amplify push
 
 ## Connecting AWS Amplify to a React Native project ⚛️
 
-Details in [this] (https://aws-amplify.github.io/docs/js/react) instructions 📃, but briefly and in a straight line like this:
+Details in [this](https://aws-amplify.github.io/docs/js/react) instructions 📃, but briefly and in a straight line like this:
 
 ```bash
 yarn add aws-amplify @aws-amplify/core aws-amplify-react-native amazon-cognito-identity-js @react-native-community/netinfo

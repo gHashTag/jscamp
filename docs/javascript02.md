@@ -117,7 +117,7 @@ How do I disable any number of lines of code?
 2. Wrap the code in a comment
 3. Use the command `console.log`
 
-In order to understand how much you learned this lesson, take a test in our school [mobile application] (http://onelink.to/njhc95) on this topic.
+In order to understand how much you learned this lesson, take a test in our school [mobile application](http://onelink.to/njhc95) on this topic.
 
 ![Sumerian school](/img/app.png)
 

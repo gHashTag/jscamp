@@ -141,9 +141,9 @@ export default App
 
 ![XCode](/img/rn/00_2/04_05.png)
 
-#### Вот так просто!
+#### It's that simple!
 
-## Ссылки
+## Links
 
 1. [Node.js](https://nodejs.org/en/)
 2. [Watchman](https://facebook.github.io/watchman/)

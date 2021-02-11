@@ -1,22 +1,22 @@
 {
-  "item.label.Syllabus 🏕": {
-    "message": "Syllabus 🏕",
-    "description": "Navbar item with label Syllabus 🏕"
+  "item.label.Syllabus 📚": {
+    "message": "教學大綱 📚",
+    "description": "帶有標籤教學大綱的導航欄項目 🏕"
   },
   "item.label.Patreon 🤑": {
     "message": "Patreon 🤑",
-    "description": "Navbar item with label Patreon 🤑"
+    "description": "帶有標籤Patreon的導航欄項目 🤑"
   },
-  "item.label.Author 🧑🏻‍🎤": {
-    "message": "Author 🧑🏻‍🎤",
-    "description": "Navbar item with label Author 🧑🏻‍🎤"
+  "item.label.作者 🧑🏻‍🎤": {
+    "message": "作者 🧑🏻‍🎤",
+    "description": "帶有標籤作者的導航欄項目 🧑🏻‍🎤"
   },
   "item.label.GitHub 🛰": {
     "message": "GitHub 🛰",
-    "description": "Navbar item with label GitHub 🛰"
+    "description": "帶有標籤GitHub的Navbar項目 🛰"
   },
-  "item.label.Vacancies 🗄": {
-    "message": "Vacancies 🗄",
-    "description": "Navbar item with label Vacancies 🗄"
+  "item.label.空缺 🗄": {
+    "message": "空缺 🗄",
+    "description": "帶有標籤空缺的導航欄項目 🗄"
   }
 }

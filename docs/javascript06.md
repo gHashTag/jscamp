@@ -10,7 +10,7 @@ import YouTube from 'react-youtube'
 
 In JavaScript, any text data is strings. However, do not forget that numbers can also be written in a string. Of all the data types, you will probably use strings the most. Let's analyze all the options for creating a new line.
 
-<!-- ## Видео
+<!-- ## Video
 
 <YouTube videoId="ocQTm9K2vdo" /> -->
 
@@ -203,7 +203,7 @@ function learnJavaScript() {
 }
 ```
 
-И `+=` для присвоения с объединением.
+И `+=` for assignment with union.
 
 ```jsx live
 function learnJavaScript() {

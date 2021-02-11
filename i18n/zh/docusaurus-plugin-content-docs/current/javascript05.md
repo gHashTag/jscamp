@@ -1,22 +1,22 @@
 ---
 id: javascript05
-title: Errors
-sidebar_label: Errors
+title: 失誤
+sidebar_label: 失誤
 ---
 
 import YouTube from 'react-youtube'
 
 ![@serverSerrverlesskiy](/img/javascript/headers/05.jpg)
 
-You will definitely, like the rest of us, make mistakes🙅‍♂️ in the code📟. Software bugs🙅‍♂️ are called bugs. Bug - means an error🙅‍♂️ in the program💾 or in the system, due to which the program produces unexpected behavior and, as a result, the result. Most software errors🙅‍♂️ arise from errors🙅‍♂️ made by program developers in its source code📟 or in its design.
+與我們其他人一樣，您肯定會在代碼中犯錯誤 🙅 軟件錯誤 🙅‍♂️ 稱為錯誤。 錯誤-表示程序 💾 或系統中的錯誤，由於該錯誤，程序會產生意外的行為，並因此導致結果。 大多數軟件錯誤是由程序開發人員在其源代碼或設計中所犯的錯誤引起的。
 
-![error](https://media.giphy.com/media/1VT3UNeWdijUSMpRL4/giphy.gif)
+![錯誤](https://media.giphy.com/media/1VT3UNeWdijUSMpRL4/giphy.gif)
 
-In the meaning of "elusive technical error", the word "bug" was used long before the advent of computers by the staff of telegraph and telephone companies in relation to problems with electrical equipment and radio equipment. In 1878, Thomas Edison wrote:
+在“難以捉摸的技術錯誤”的含義中，“電報”一詞在電報和電話公司的工作人員出現與計算機和無線電設備有關的問題之前就已經使用很久了。 1878年，托馬斯·愛迪生（Thomas Edison）寫道：
 
 > “This was the case with all my inventions. 1️⃣ The first step is intuition, which comes like a flash, then difficulties arise - the device refuses to work, and that's when the bugs appear - as these small mistakes and difficulties are called - and it takes months of close observation, research and effort before it comes to commercial success or failure. "
 
-Debugging is the process of finding and fixing errors🙅‍♂️ in a script.
+調試是在腳本中查找並修復錯誤的過程。
 
 [Wikipedia](https://ru.wikipedia.org/wiki/Программная_ошибка🙅‍♂️)
 
@@ -24,19 +24,19 @@ Debugging is the process of finding and fixing errors🙅‍♂️ in a script.
 
 <YouTube videoId="xJtVop2fAxg" /> -->
 
-## The most common mistakes
+## 最常見的錯誤
 
-![Teacher](https://media.giphy.com/media/27c3zdaY6eeIAwp7Qi/giphy.gif)
+![老師](https://media.giphy.com/media/27c3zdaY6eeIAwp7Qi/giphy.gif)
 
-I hope you have already encountered your first mistakes🙅‍♂️ in the process of writing code. Why hope? Because mistakes🙅‍♂️ are our teachers who show us what we do wrong in our code📟 and a computer🖥️, or rather a code interpreter📟, simply cannot understand us. Mistakes🙅‍♂️ when writing code📟 happen almost every day. The trick is to be able to read the error message💬 that the machine will give you in order to quickly find and fix a defect in the written code📟. The more you learn JavaScript, the more you appreciate the error messages💬 - they often show very accurately where you went wrong.
+希望您在編寫代碼的過程中遇到了第一個錯誤。 為什麼希望？ 因為錯誤🙅‍♂️是我們的老師，向我們展示我們在代碼中做錯了什麼📟，而計算機🖥️，或更確切地說是代碼解釋器📟，簡直無法理解我們。 幾乎每天都會發生編寫代碼時的錯誤。 訣竅是能夠讀取機器將為您提供的錯誤消息，以便快速找到並修復編寫的代碼中的缺陷。 您對JavaScript的了解越多，您對錯誤消息的理解就越多-它們通常可以非常準確地顯示出您出了錯的地方。
 
-A couple of the most common error types🙅‍♂️ in code код:
+代碼код中最常見的幾種錯誤類型🙅‍♂️：
 
-## SyntaxError
+## 語法錯誤
 
-![Error](https://media.giphy.com/media/TqiwHbFBaZ4ti/giphy.gif)
+![錯誤](https://media.giphy.com/media/TqiwHbFBaZ4ti/giphy.gif)
 
-`Syntax Error` - violation of language rules правил. For example, enter nine plus a semicolon `9 +;` 👇:
+`語法錯誤` - 違反語言規則правил。 例如，輸入9加分號 `9 +;` 👇:
 
 ```jsx live
 function learnJavaScript() {
@@ -48,10 +48,10 @@ function learnJavaScript() {
 
 Reply: `SyntaxError: Unexpected token;`
 
-A syntax error🙅‍♂️ simply means that there is an error in the body of your sentence🙅‍♂️. In other words, what you wrote is not correct in terms of JavaScript. The interpreter cannot read your sentence and does not know what to do with it. `Unexpected token;` means that the interpreter has read something that it did not expect to read at all: in our case, a semicolon `;`.
+語法錯誤 🙅‍♂️ 僅僅意味著句子的主體中存在錯誤 error‍ 🙅️。 換句話說，您寫的內容在JavaScript方面是不正確的。 口譯員無法閱讀您的句子，也不知道該如何處理。 “意外的令牌；”表示解釋器已讀取了它根本不希望讀取的內容：在我們的例子中，是分號 `;`.
 
-Let's make a mistake again🙅‍♂️!
-Let's enter five plus three in the console and a parenthesis at the end of `5 + 3)`.
+讓我們再犯一個錯誤 🙅‍♂️！
+讓我們在控制台中輸入5加3，並在末尾輸入括號 `5 + 3)`.
 
 ```jsx live
 function learnJavaScript() {
@@ -61,13 +61,13 @@ function learnJavaScript() {
 }
 ```
 
-You have a closing parenthesis `)`, but there is no opening parenthesis `(`! But the parentheses always go in pairs - it cannot be that there is a closing, but there is no opening parenthesis, and vice versa.
+您有一個右括號 `)`, 但沒有左括號 `(`! 但是括號總是成對出現-不可能有一個閉合括號，但沒有開頭括號，反之亦然。
 
-## ReferenceError
+## 參考誤差
 
 ![Error](https://media.giphy.com/media/8L0Pky6C83SzkzU55a/giphy.gif)
 
-`ReferenceError` is an invalid name! The `ReferenceError` object represents an error🙅‍♂️ that occurs when accessing a variable that does not exist. For example, enter five plus alternating `5 + alternating`:
+`ReferenceError` 是無效名稱！ “ ReferenceError” 對象表示在訪問不存在的變量時發生的錯誤。例如，輸入5加號 `5 + alternating`:
 
 ```jsx live
 function learnJavaScript() {
@@ -77,7 +77,7 @@ function learnJavaScript() {
 }
 ```
 
-Now we have before us an error of the reference `ReferenceError`. Perhaps you have already noticed what is the matter here? Let's read the error message 💬 carefully (after all, that's why it is displayed!). It says: `variable 🔔 is not defined` - the variable is not set, this is where our problem lies! First, we have to declare the variable-in some way, say this way:
+現在我們前面有一個引用`ReferenceError`的錯誤。 也許您已經註意到這裡發生了什麼事？ 讓我們仔細閱讀錯誤消息（（畢竟，這就是它顯示出來的原因！）。 它說：“變量🔔未定義”-未設置變量，這就是我們的問題所在！ 首先，我們必須以某種方式聲明變量，例如：
 
 ```jsx live
 function learnJavaScript() {
@@ -88,9 +88,9 @@ function learnJavaScript() {
 }
 ```
 
-## TypeError
+## 類型錯誤
 
-A TypeError object represents an error that is thrown when a value is not of the expected type. We apply the `toUpperCase` method, which we will learn more about later, to the undefined type, and this is not allowed since this method converts the string to uppercase. Check this error in the browser console, it doesn't work in `LIVE EDITOR`.
+TypeError對象表示當值不是預期類型時引發的錯誤。 我們將`toUpperCase`方法應用於未定義的類型，稍後將對其進行詳細介紹，該方法將被轉換為大寫，這是不允許的。 在瀏覽器控制台中檢查此錯誤，該錯誤在`LIVE EDITOR`.
 
 ```javascript
 var foo = undefined
@@ -99,41 +99,40 @@ foo.toUpperCase()
 
 ![TypeError](/img/javascript/25.jpg)
 
-## Problems?
+## 問題？
 
 ![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
 
-Channel in [Discord](https://discord.gg/6GDAfXn) after paying on [Patreon](https://www.patreon.com/javascriptcamp).
+頻道輸入 [Discord](https://discord.gg/6GDAfXn) 付款後 [Patreon](https://www.patreon.com/javascriptcamp).
 
 ## Questions:
 
-![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
+![問題：](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
 
-What does `Syntax Error` mean?
+“語法錯誤”是什麼意思？
 
-1. Wrong order of signs
-2. Violation of the rules of the language
-3. Inappropriate parentheses
+1.標誌順序錯誤
+2.違反語言規則
+3.括號不合適
 
-What does `Reference Error` mean?
+參考錯誤是什麼意思？
 
-1. Undeclared variable
-2. Syntax error
-3. Wrong name
+1.未聲明的變量
+2.語法錯誤
+3.名字錯誤
 
-In order to understand how much you learned this lesson, take the test on the [mobile application](http://onelink.to/njhc95) of our school on this topic.
-
+為了了解您學到了多少本課程，請對 [mobile application](http://onelink.to/njhc95) 我們學校就這個話題。
 ![Sumerian school](/img/app.png)
 
-## Links
+## 鏈接
 
 1. [MDN web docs](https://developer.mozilla.org/ru/docs/Web/JavaScript/Data_structures)
 2. [Code for Teens: The Perfect Beginner's Guide to Programming, Volume 1: Javascript - Jeremy Moritz](https://www.amazon.com/Code-Teens-Beginners-Programming-Javascript-ebook/dp/B07FCTLVPC)
 3. [JavaScript.ru](https://learn.javascript.ru/types)
 
-## Contributors ✨
+## 貢獻者 ✨
 
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+感謝這些好人 ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
 <table>
   <tr>
