@@ -13,7 +13,7 @@ module.exports = {
   url: 'https://jscamp.app',
   baseUrl: '/',
   favicon: 'img/favicon.ico',
-  // organizationName: 'react-native-village',
+  organizationName: 'gHashTag',
   projectName: 'jscamp',
   onBrokenLinks: 'ignore',
   themes: ['@docusaurus/theme-live-codeblock'],
