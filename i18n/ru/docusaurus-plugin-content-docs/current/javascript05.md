@@ -99,9 +99,15 @@ foo.toUpperCase()
 
 ![TypeError](/img/javascript/25.jpg)
 
+## Помощь
+
+Мы также можем ошибаться, поэтому если вы обнаружите ошибку на сайте или не точность в переводе, то можете легко помочь исправить ошибку на сайте. Для этого нужно нажать на кнопку `Edit this page` в самом низу каждой странице.
+
 ## Проблемы?
 
-Пишите в телеграмм [чат](https://t.me/jscampapp), а также подписывайтесь на наши [новости](https://t.me/javascriptapp).
+![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
+
+Пишите в [Discord](https://discord.gg/6GDAfXn) или телеграмм [чат](https://t.me/jscampapp), а также подписывайтесь на наши [новости](https://t.me/javascriptapp)
 
 ## Вопросы:
 

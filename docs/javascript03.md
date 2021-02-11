@@ -140,7 +140,7 @@ Usually `var` is not used in modern scripts, but it can still be hidden in old o
 
 ![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
 
-Channel in [Discord](https://discord.gg/6GDAfXn) after paying on [Patreon](https://www.patreon.com/javascriptcamp).
+Write to [Discord](https://discord.gg/6GDAfXn) chat.
 
 ## Questions:
 
@@ -217,22 +217,3 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 </table>
 
 [![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
-
-<!-- ## Super command console.log ()
-
-Before continuing, I'll introduce you to the super secret and super useful command `console.log ()` which you will use very, very often during program development.
-So, in order to display debug information in the console only for developers (users will not be able to see it; as you know, most people are not even aware of the existence of the console itself, and not even that about secret "logs"!), Write:
-
-javascript
-console.log ('Top Secret! For Developers Only!')
-``
-
-As you can see from the name of the function, we display the "log" (that is, information about the system operation) to the console. Developers use this kind superpower all the time. For example, when you had error messages, you saw exactly this in the console - the interpreter gave ("logged") information about the system operation to the console so that you could read and correct the necessary parameters. In a word, a very useful thing. You will have to resort to console.log more than once, so remember this function!
-
-javascript
-console.log ('Print any message you want')
-console.log ('just put some' + 'string' here)
-var message = 'You can also use variables as an argument!'
-console.log (message)
-var what to Learn = 'JavaScript'
-console.log ('I will study' + what should I study) ->

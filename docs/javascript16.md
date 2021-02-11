@@ -165,7 +165,7 @@ Almost always, when you know the number of iterations needed, you would rather w
 
 ![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
 
-Channel in [Discord](https://discord.gg/6GDAfXn) after paying on [Patreon](https://www.patreon.com/javascriptcamp).
+Write to [Discord](https://discord.gg/6GDAfXn) chat.
 
 ## Questions:
 

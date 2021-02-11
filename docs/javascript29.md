@@ -205,7 +205,7 @@ So we have completed the preparatory course on JavaScript before the course on [
 
 ![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
 
-Channel in [Discord](https://discord.gg/6GDAfXn) after paying on [Patreon](https://www.patreon.com/javascriptcamp).
+Write to [Discord](https://discord.gg/6GDAfXn) chat.
 
 ## Questions:
 
