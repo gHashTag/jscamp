@@ -216,7 +216,7 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // eslint-disable-next-line global-require
           remarkPlugins: [require('./plugins/remark-snackplayer')],
-          editUrl: 'https://github.com/react-native-village/react-native-village.github.io/tree/gh-pages'
+          editUrl: 'https://github.com/gHashTag/jscamp/tree/gh-pages'
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css')
