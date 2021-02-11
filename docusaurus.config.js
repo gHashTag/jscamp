@@ -13,8 +13,8 @@ module.exports = {
   url: 'https://jscamp.app',
   baseUrl: '/',
   favicon: 'img/favicon.ico',
-  organizationName: 'react-native-village',
-  projectName: 'react-native-village.github.io',
+  // organizationName: 'react-native-village',
+  projectName: 'jscamp',
   onBrokenLinks: 'ignore',
   themes: ['@docusaurus/theme-live-codeblock'],
   plugins: ['remark-snackplayer'],
@@ -36,6 +36,7 @@ module.exports = {
     }
   },
   themeConfig: {
+    hideableSidebar: true,
     algolia: {
       appId: 'ONIGVMP8QH',
       apiKey: '4b22eba94660cfe3f3e4083ad49b11b6',
@@ -168,8 +169,8 @@ module.exports = {
               href: 'https://t.me/javascriptcamping'
             },
             {
-              label: 'Patreon 🤑',
-              href: 'https://www.patreon.com/javascriptcamp'
+              label: 'TikTok 🌎',
+              href: 'https://vm.tiktok.com/ZSJ1dxkFu/'
             },
             {
               label: 'Instagram 🌎',
