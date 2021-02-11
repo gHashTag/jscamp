@@ -1,6 +1,6 @@
 ---
 id: javascript02
-title: Комментарии
+title: Комментарии test
 sidebar_label: Комментарии
 ---
 

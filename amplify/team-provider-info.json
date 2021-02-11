@@ -1,0 +1,23 @@
+{
+    "prod": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-jscamp-prod-135600-authRole",
+            "UnauthRoleArn": "arn:aws:iam::123118798050:role/amplify-jscamp-prod-135600-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::123118798050:role/amplify-jscamp-prod-135600-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "amplify-jscamp-prod-135600-deployment",
+            "UnauthRoleName": "amplify-jscamp-prod-135600-unauthRole",
+            "StackName": "amplify-jscamp-prod-135600",
+            "StackId": "arn:aws:cloudformation:us-east-1:123118798050:stack/amplify-jscamp-prod-135600/fbfb8f10-6c46-11eb-b752-0e5c31da0605",
+            "AmplifyAppId": "d2q7r6g8jxgfa7"
+        },
+        "categories": {
+            "hosting": {
+                "amplifyhosting": {
+                    "appId": "d2q7r6g8jxgfa7",
+                    "type": "cicd"
+                }
+            }
+        }
+    }
+}
