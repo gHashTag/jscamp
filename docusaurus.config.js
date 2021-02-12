@@ -17,7 +17,7 @@ module.exports = {
   projectName: 'jscamp',
   onBrokenLinks: 'ignore',
   themes: ['@docusaurus/theme-live-codeblock'],
-  plugins: ['remark-snackplayer'],
+  plugins: ['remark-snackplayer', 'docusaurus-plugin-google-adsense'],
   clientModules: [require.resolve('./snackPlayerInitializer.js')],
   scripts: [{ src: 'https://snack.expo.io/embed.js', defer: true }],
   i18n: {
@@ -36,6 +36,9 @@ module.exports = {
     }
   },
   themeConfig: {
+    googleAdsense: {
+      dataAdClient: 'ca-pub-5291507187121449'
+    },
     hideableSidebar: true,
     algolia: {
       appId: 'ONIGVMP8QH',
