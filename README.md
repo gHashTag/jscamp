@@ -1,6 +1,9 @@
 # Website
+
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+
 [![All Contributors](https://img.shields.io/badge/all_contributors-7-orange.svg?style=flat-square)](#contributors-)
+
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 This website is built using [Docusaurus 2](https://v2.docusaurus.io/), a modern static website generator.
@@ -42,7 +45,9 @@ Some common defaults for linting/formatting have been set for you. If you integr
 ```
 $ yarn ci
 ```
+
 ### OG Image
+
 Afler deploy add this script to index.html in tag `head`
 
 ```javascript
@@ -78,6 +83,14 @@ src="https://react-native-village.github.io/assets/images/app-b1ad811d205d352523
 </script>
 <noscript><div><img src="https://mc.yandex.ru/watch/50359945" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
+```
+
+## Algolia
+
+Create index
+
+```bash
+docker run -it --env-file=.env -e "CONFIG=$(cat ./config.json | jq -r tostring)" algolia/docsearch-scraper
 ```
 
 ## Contributors ✨
