@@ -1,21 +1,21 @@
 ---
 id: javascript10
-title: Objects
-sidebar_label: Objects
+title: 對象
+sidebar_label: 對象
 ---
 
 ![@serverSerrverlesskiy](/img/javascript/headers/11.jpg)
 
-Objects are like a closet📦 for storing and transporting other types of data.
-JavaScript is designed around a simple paradigm. The concept is based on simple objects. An object is a collection of properties, and each property consists of a name (key) and a value associated with that name. The property value can be a function⚙️, which can be called a method of an object, or any other type.
+對象就像一個壁櫥📦，用於存儲和傳輸其他類型的數據。
+JavaScript是圍繞一個簡單的範例設計的。 該概念基於簡單的對象。 對像是屬性的集合，每個屬性都包含一個名稱（鍵）和一個與該名稱關聯的值。 該屬性值可以是一個函數⚙️，可以稱為對象的方法或任何其他類型。
 
 ![Object](https://media.giphy.com/media/xTiTnFEfyt0vqhQzDi/giphy.gif)
 
-In this article, we'll cover the most basic properties of JavaScript objects, creating and modifying, and enumerating properties.
+在本文中，我們將介紹JavaScript對象的最基本屬性，創建和修改以及枚舉屬性。
 
-An object in JavaScript is a simple associative array or, in other words, a "hash". It stores any key: value matches and has several standard methods.
+JavaScript中的對像是簡單的關聯數組，換句話說就是“哈希”。 它存儲任何鍵：值匹配，並具有幾種標準方法。
 
-Objects in JavaScript, like objects in real life (a person👨, a bus, a building, etc.) have several named (key🗝️) parameters (age, name, hair color, status) with specific values (15, John, black, 'true') ✅:
+JavaScript中的對象，例如現實生活中的對象（人，公共汽車，建築物等），具有多個具有特定值（15，約翰，黑色）的命名（關鍵🗝️）參數（年齡，姓名，頭髮顏色，狀態） 'true') ✅:
 
 ```javascript
 let obj = {
@@ -26,7 +26,7 @@ let obj = {
 }
 ```
 
-An object method in JavaScript is simply a function️ that is added to an associative array.
+JavaScript中的對象方法只是一個函數️，已添加到關聯數組中。
 
 ```jsx live
 function learnJavaScript() {
@@ -41,15 +41,15 @@ function learnJavaScript() {
 }
 ```
 
-### Object creation
+### 對象創建
 
 ![Object](https://media.giphy.com/media/2YaKpvYQEcl1WuJJTl/giphy.gif)
 
-In a computer🖥️ we can represent an `object` as a cabinet with names-properties (`access keys`) signed on it. Inside the cabinet📦 drawers🧰 - data (specific information) and even smaller objects, by analogy with things. It is easy to find, delete or add (write) a new value to it by the `key`.
+在計算機🖥️中，我們可以將“對象”表示為帶有簽名的名稱-屬性（“訪問鍵”）的櫃子。 櫥櫃內部📦抽屜🧰-類似於事物，數據（特定信息）甚至更小的物體。 可以很容易地找到，刪除或添加（寫入）新值。`key`.
 
 ![obj01](/img/javascript/12/01.png)
 
-These are two 2️⃣ options for creating🏗️ an empty object:
+這是用於創建🏗️空對象的兩個2️⃣選項：
 
 ```javascript
 // equivalent records
@@ -57,15 +57,15 @@ let obj = {}
 let person = new Object()
 ```
 
-The second option is very rarely used in practice.
+第二種選擇在實踐中很少使用。
 
 ![obj00](/img/javascript/12/00.png)
 
-## Advanced creation
+## 進階創作
 
 ![Extended](https://media.giphy.com/media/2XflxzlJfoSDycf3BBu/giphy.gif)
 
-Properties can be specified directly when creating an object, through a list in curly braces like {..., `key: value,` ...} and create complex objects:
+可以在創建對象時通過大括號中的列表直接指定屬性 {..., `key: value,` ...} 並創建複雜的對象：
 
 ```jsx live
 function learnJavaScript() {
@@ -85,13 +85,13 @@ function learnJavaScript() {
 }
 ```
 
-The created🏗️ object contains five properties with specific values, one of which is passport data, which is a built-in object. Notice how the call to distant properties or methods of the object goes. Try to return your passport number.
+創建的🏗️對象包含五個具有特定值的屬性，其中之一是護照數據，這是一個內置對象。 注意對對象的遙遠屬性或方法的調用是如何進行的。 嘗試返回您的護照號碼。
 
-## Adding properties
+## 添加屬性
 
 ![Adding](https://media.giphy.com/media/3CZ2iGe1ByKfhZxaD7/giphy.gif)
 
-There are two 2️⃣ syntax for adding properties to an object. 1️⃣ The first is a period, the second is square brackets:
+有兩種用於將屬性添加到對象的2️⃣語法。 1️⃣第一個是句號，第二個是方括號：
 
 ```javascript
 // equivalent records
@@ -111,14 +111,14 @@ function learnJavaScript() {
 }
 ```
 
-Square brackets are mainly used when the `properties' name is in a` variable` 🔔:
+方括號主要用於 `properties' 名字在 `variable` 🔔:
 
 ```javascript
 let nameProp = 'age'
 obj[nameProp] = 15
 ```
 
-Here, through the variable 🔔 `nameProp`, we set the name of the property`"age"`, which is the key in the associative array that contains` value 15`.
+在這裡，通過變量🔔 `nameProp`, 我們設置屬性的名稱 `"age"`, 這是包含以下內容的關聯數組中的鍵 `value 15`.
 
 ```jsx live
 function learnJavaScript() {
@@ -133,11 +133,11 @@ function learnJavaScript() {
 }
 ```
 
-## Accessing properties
+## 訪問屬性
 
 ![Door](https://media.giphy.com/media/l378znZcUM7b6VDyM/giphy.gif)
 
-The property is accessed by accessing it 👇:
+通過訪問屬性來訪問它 👇:
 
 ```jsx live
 function learnJavaScript() {
@@ -151,7 +151,7 @@ function learnJavaScript() {
 }
 ```
 
-If the object has no such property, the result is `undefined`. Check it in your browser console.
+如果對像不具有此類屬性，則結果為 `undefined`. 在瀏覽器控制台中檢查它。
 
 ```javascrript
 let obj = {}
@@ -160,7 +160,7 @@ obj.nokey
 
 ![nokey](/img/javascript/15.jpg)
 
-There will be no error🙅‍♂️ when accessing a property that does not exist, the special value `undefined` will simply return. If there is no `return` keyword inside the function, then the` undefined` value will also return - the absence of something.
+訪問不存在的屬性（特殊值）時不會出現錯誤🙅‍♂️ `undefined` 只會返回。 如果沒有 `return` 函數中的關鍵字，然後 `undefined` 值也會返回-缺少東西。
 
 <!-- ## Проверка глобальной переменной
 
@@ -196,13 +196,13 @@ There will be no error🙅‍♂️ when accessing a property that does not exis
 
 В JavaScript есть специальные способы для создания🏗️ `private` свойств, связанные с `замыканиями`. Они рассмотрены вместе с наследованием объектов далее по курсу. -->
 
-## Removing properties
+## 刪除屬性
 
 ![Delete](https://media.giphy.com/media/5xaOcLwEvFOizxHVyVy/giphy.gif)
 
-Deletes ➖ property operator `delete`. Try to remove the passport number from the previous example:
+刪除➖屬性運算符 `delete`. 嘗試從上一個示例中刪除護照號碼：
 
-Create the object from the previous example in the console.
+從控制台中的上一個示例創建對象。
 
 ```javascript
 const obj = {
@@ -218,13 +218,13 @@ const obj = {
 }
 ```
 
-Now remove the nested `passport` object
+現在刪除嵌套 `passport` 目的
 
 ```javascript
 delete obj.passport
 ```
 
-Now if you refer to it, then the result will be `undefined`
+現在，如果您引用它，那麼結果將是 `undefined`
 
 ```javascript
 obj.passport
@@ -232,13 +232,13 @@ obj.passport
 
 ![delete obj](/img/javascript/16.jpg)
 
-## Object Methods
+## 對象方法
 
 ![Description](https://media.giphy.com/media/3ohzAqLk7azQ0O6RvW/giphy.gif)
 
-As with other languages👅, JavaScript objects have `methods`.
+與其他語言一樣，JavaScript對象具有`methods`.
 
-For example, let's create a `sport` object right away with the` run` method:
+例如，讓我們創建一個 `sport` 立即與 `run` 方法:
 
 ```jsx live
 function learnJavaScript() {
@@ -250,11 +250,11 @@ function learnJavaScript() {
 }
 ```
 
-### Adding a method
+### 添加方法
 
 ![Add](https://media.giphy.com/media/5ns6077LTlGACuwRQR/giphy.gif)
 
-Adding a method to an existing object is simple, assign the function⚙️ `function (n) {...}` to the `sport.run` property.
+向現有對象添加方法很簡單，分配功能⚙️ `function (n) {...}` 到 `sport.run` 財產。
 
 ```jsx live
 function learnJavaScript() {
@@ -270,7 +270,7 @@ function learnJavaScript() {
 Очень часто методы используют в своих расчетах свойства своего же объекта.
 ::: -->
 
-This is not about classes, instantiation, and the like. Simple - you can add a new method or delete an existing one to any object at any time.
+這與類，實例化等無關。 簡單-您可以隨時向任何對象添加新方法或刪除現有方法。
 
 <!--
 ```jsx live
@@ -292,11 +292,11 @@ function learnJavaScript() {
 
 Подумайте, чем можно заменить множественный `if()`. JavaScript - очень динамический язык👅. -->
 
-## Looping through object properties
+## 遍歷對象屬性
 
 ![enumeration](https://media.giphy.com/media/h5FIFDs6rXLpWlWWZJ/giphy.gif)
 
-To iterate over all the properties of an object, a special type of `for .. in` construction is used:
+要遍歷對象的所有屬性，一種特殊的 `for .. in` 使用建築:
 
 ```javascript
 for(let key in obj) {
@@ -306,7 +306,7 @@ for(let key in obj) {
 }
 ```
 
-For example 👇:
+例如 👇:
 
 ```jsx live
 function learnJavaScript() {
@@ -326,53 +326,53 @@ function learnJavaScript() {
 }
 ```
 
-And secretly, to be honest, almost any variable 🔔 is a mini-object in the JavaScript environment. So, don't be afraid to use them.
+秘密地說，幾乎所有變量🔔在JavaScript環境中都是一個微型對象。 因此，不要害怕使用它們。
 
-## Problems?
+## 問題？
 
 ![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
 
 Channel in [Discord](https://discord.gg/6GDAfXn) after paying on [Patreon](https://www.patreon.com/javascriptcamp).
 
-## Questions:
+## 問題:
 
 ![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
 
-An empty object is created with the command:
+使用以下命令創建一個空對象：
 
 1. `let obj = {}`
 2. `function obj()`
 3. `let x = 10`
 
-The object stores matches:
+對象存儲匹配項：
 
-1. key: value
-2. name: surname
-3. variable = value
+1.鍵：值
+2.姓名：姓
+3.變量=值
 
-The syntax for assigning a value to a specific key (property):
+為特定鍵（屬性）分配值的語法:
 
 1. `color () = "green" `
 2. `obj.color =" red "`
 3. `function color () =>" yellow "`
 
-An object method in JavaScript is
+JavaScript中的對象方法是
 
-1. Just a function added to an associative array
-2. External function
-3. Variable described outside the object
+1.只是將一個函數添加到關聯數組
+2.外部功能
+3.在對像外部描述的變量
 
-Looping through object properties
+遍歷對象屬性
 
 1. `for (let i = 0; i <= 100; i ++) {sum + = i} `
 2. `for (let key in obj) {}`
 3. `while (condition) {} `
 
-In order to understand how much you learned this lesson, take the test on the [mobile application](http://onelink.to/njhc95) of our school on this topic.
+為了了解您學到了多少本課程，請對 [mobile application](http://onelink.to/njhc95) 我們學校就這個話題。
 
 ![Sumerian school](/img/app.png)
 
-## Links
+## 鏈接
 
 1. [MDN web doc. Developer.mozilla.org - Статья "Типы данных JavaScript и структуры данных"](https://developer.mozilla.org/ru/docs/Web/JavaScript/Data_structures)
 2. [MDN web doc. Developer.mozilla.org - Статья "Инициализация объектов"](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Object_initialize)
@@ -380,9 +380,9 @@ In order to understand how much you learned this lesson, take the test on the [m
 4. [Статья "Объекты", сайт Learn.javascript.ru](https://learn.javascript.ru/object)
 5. [Code for Teens: The Perfect Beginner's Guide to Programming, Volume 1: Javascript - Jeremy Moritz](https://www.amazon.com/Code-Teens-Beginners-Programming-Javascript-ebook/dp/B07FCTLVPC)
 
-## Contributors ✨
+## 貢獻者 ✨
 
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+感謝這些好人([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->

@@ -1,28 +1,28 @@
 ---
 id: javascript09
-title: Functions
-sidebar_label: Functions
+title: 功能
+sidebar_label: 功能
 ---
 
 ![@serverSerrverlesskiy](/img/javascript/headers/10.jpg)
 
-Functions⚙️ are needed so as not to repeat the same code📟 in many places in the program algorithm. In modern programs, functions are the main "building blocks".
+為了避免在程序算法的許多地方重複相同的代碼，需要函數⚙️。 在現代程序中，功能是主要的“構建塊”。
 
-## Don’t repeat yourself
+## 不要重複自己
 
-DRY (rus. Do not repeat yourself) is a software development principle aimed at reducing the repetition of information of various kinds, especially in systems with many layers of abstraction. Functions are exactly the type of data that serves this design principle.
+DRY（rus。不要重複自己）是一種軟件開發原理，旨在減少各種信息的重複，尤其是在具有多個抽象層的系統中。 函數正是服務於該設計原則的數據類型。
 
-## Select function name
+## 選擇功能名稱
 
-Function⚙️ is action! Therefore, the function name is usually a verb. It should be simple, precise, and describe the action of the function, so that the programmer reading the code📟 has a good understanding of what the function does.
+功能⚙️是行動！ 因此，函數名稱通常是動詞。 它應該簡單，精確並描述函數的作用，以便程序員閱讀代碼 📟 對函數的功能有很好的理解。
 
 ![Choice](https://media.giphy.com/media/VbEloWwOz3QqYBsqIZ/giphy.gif)
 
-As a rule, verb prefixes are used, indicating the general nature of the action, followed by a clarification. Typically, development teams have conventions about the meaning of these prefixes.
+通常，使用動詞前綴來表示操作的一般性質，然後進行說明。 通常，開發團隊對這些前綴的含義有約定。
 
-For example, functions⚙️ starting with `` show '' usually show something.
+例如，以 `` show '' 通常顯示一些東西。
 
-Functions⚙️ starting with ...
+函數⚙️從開始 ...
 
 ```
 "get .." - return a value,
@@ -31,7 +31,7 @@ Functions⚙️ starting with ...
 "check .." - check something and return a boolean value, etc.
 ```
 
-Examples of such names:
+這樣的名字的例子:
 
 ```javascript
 showMessage (..) // shows the message
@@ -41,37 +41,37 @@ createForm (..) // creates a form (and usually returns it)
 checkPermission (..) // checks access by returning true / false
 ```
 
-Thanks to prefixes, at the first glance at the name of a function, it becomes clear what its code is doing and what value it can return🔄.
+有了前綴，乍一看一個函數的名字，就很清楚它的代碼在做什麼，可以返回什麼值。🔄.
 
-In any case, you and your team need to understand exactly what a prefix means and what a function⚙️ can and cannot do with it.
+無論如何，您和您的團隊需要準確了解前綴的含義以及and️可以使用和不能使用的功能。
 
-:::note Ultra-short function names⚙️
-Function names⚙️ that are used very often are sometimes made extra short.
+:::note 超短函數名稱 
+經常使用的函數名⚙️有時會變得更短。
 
-For example, the jQuery framework has a function⚙️ named `$`. In the Lodash library, the main function⚙️ is represented by the underscore name \ \_
+例如，jQuery框架具有一個名為的函數⚙️`$`. 在Lodash庫中，主要功能⚙️由下劃線名稱表示 \ \_
 
-These are exceptions. Basically, function names should be reasonably short and descriptive 🖊️.
+這些是例外。 基本上，函數名稱應該簡短而具有描述性 🖊️.
 :::
 
-### Functions === Comments
+### 功能 === 評論
 
 ![cut](https://media.giphy.com/media/kf2bxcoZD8UmY/giphy.gif)
 
-Functions⚙️ should be short and only do one thing. If it's something big, it makes sense to split the function⚙️ into several smaller ones. Following this rule is definitely helpful, especially in teamwork.
+函數⚙️應該簡短，只能做一件事。 如果太大，將功能⚙️拆分為幾個較小的功能是有意義的。 遵循此規則絕對有幫助，尤其是在團隊合作中。
 
-Small functions⚙️ not only make testing and debugging easier - the very existence of such functions⚙️ serves as good comments.
+較小的功能⚙️不僅使測試和調試更容易-這些功能的存在serves️可以作為很好的註釋。
 
-## Function declaration
+## 功能聲明
 
 ![Announcement](https://media.giphy.com/media/2A5zHrIPvo8MNnkAXl/giphy.gif)
 
-To create functions⚙️ we use a function declaration⚙️.
+要創建函數，我們使用函數聲明。
 
-First comes the keyword `function`, followed by the name of the function, then the list of parameters in parentheses separated by commas (in the given example it is empty) and, finally, the code📟 of the function, also called the“ body of the function ”, inside curly braces ...
+首先是關鍵字 `function`, 然後是函數的名稱，然後是用逗號分隔的括號中的參數列表（在給定的示例中，該列表為空），最後是該函數的代碼📟，也稱為“函數的主體”，位於大括號內 大括號...
 
-This classic way of writing 🖊️ functions is called `Function Declaration`.
+🖊️函數的這種經典編寫方法稱為“函數聲明”。
 
-Syntax📖:
+句法 📖:
 
 ```javascript
 function name (parameters) {
@@ -80,16 +80,16 @@ function name (parameters) {
 }
 ```
 
-:::note Attention!
-If no return is specified, the function returns undefined instead, and by default it is assumed that the function ends with an empty return stub, executing only internal scripts.
+:::note 注意力！
+如果未指定return，則該函數將返回undefined，並且默認情況下，假定該函數以空的return存根結尾，僅執行內部腳本。
 :::
 
-In JavaScript, apart from the classic `Function Declaration` method, you can create a function⚙️ by using:
+在JavaScript中，除了經典 `Function Declaration` 方法，您可以使用以下方法創建函數⚙️：
 
 - `Function Expression`
 - `Arrow Function (arrow functions)`
 
-A Function Expression is a declaration🗣️ of a function⚙️ that is part of an expression (for example, an assignment).
+函數表達式是函數的聲明🗣️，它是表達式的一部分（例如，賦值）.
 
 ```javascript
 const name = function (parameters) {
@@ -97,7 +97,7 @@ const name = function (parameters) {
 }
 ```
 
-Let's compare `Function Declaration` and` Function Expression`:
+比較一下 `Function Declaration` and `Function Expression`:
 
 ```javascript
 // Function Declaration
@@ -111,11 +111,11 @@ const sum = function (num1, num2) {
 }
 ```
 
-The syntax for Arrow Function will be introduced later in this chapter. This is the simplified and most commonly used way of writing functions.
+箭頭函數的語法將在本章後面介紹。 這是編寫函數的簡化且最常用的方式。
 
-## Function call
+## 函數調用
 
-To call a function⚙️ and execute it, you need to refer to it by name and then specify two parentheses `myMessages()`:
+要調用一個函數⚙️並執行它，您需要按名稱引用它，然後指定兩個括號 `myMessages()`:
 
 ```javascript
 // function declaration
@@ -126,13 +126,13 @@ function myMessage() {
 myMessage() // function call
 ```
 
-Note that in this example the function is called but does not return a value.
+請注意，在此示例中，該函數被調用但不返回值。
 
-## Functions with return
+## 帶返回功能
 
 ![Return](https://media.giphy.com/media/Y08bx6Fea1BafzTlvc/giphy.gif)
 
-In order for a function to return something, the keyword `return` (point of exit or return of the result) and the return value are specified in its body.
+為了使函數返回某些內容，關鍵字 `return` （結果的退出點或返回點）和返回值在其主體中指定。
 
 ```jsx live
 function showNumberFive() {
@@ -140,17 +140,17 @@ function showNumberFive() {
 }
 ```
 
-Experiment, replace the original number 9️⃣ with the number of your years.
+實驗，將原來的數字9️⃣替換為您的年數。
 
-:::tip Remember!
-By declaring a function and then calling it, we in any case get the result of the algorithm (previously described actions) in the function body теле.
+:::tip 記住！
+通過聲明一個函數然後調用它，無論如何我們都可以在函數主體теле中獲得算法的結果（先前描述的動作）。
 :::
 
-## Function inside another function
+## 另一個函數內的函數
 
 ![Matryoschka](https://media.giphy.com/media/bFhSvsdyaCy4g0d2lU/giphy.gif)
 
-Inside a function⚙️ you can place other functions⚙️. For example, the function⚙️ `showNumberFive()` will return the number 5️⃣, the value of which will be displayed through the call to the function learn `learnJavaScript()`.
+在功能⚙️內部，您可以放置其他功能⚙️。 例如，函數⚙️ `showNumberFive()` 將返回數字5️⃣，其值將通過調用函數Learn來顯示`learnJavaScript()`.
 
 ```jsx live
 function learnJavaScript() {
@@ -161,14 +161,14 @@ function learnJavaScript() {
 }
 ```
 
-Let's go through all this step by step:
+讓我們逐步完成所有這些步驟：
 
-- The keyword `function` indicates to the interpreter that the following code is user-defined, that is, a created by you, and not a built-in function.
-- Written in camelCase `showNumberFive` ​​is the custom name for this function. For the interpreter, in general, it makes no difference exactly what this function is called, but it is better to give the functions names that clearly indicate what exactly they do.
-- `()` brackets are a required element of any function. Sometimes one, two or more variables are enclosed in brackets 🔔, in our case there is nothing in the brackets.
-- The body of the function itself must be enclosed in curly braces `{}` - the essence of the program algorithm.
-- The body of the function itself is usually indented to the right (using the TAB key). This is not necessary for the execution of the program, but it is necessary for teamwork, since it greatly facilitates the readability of the code.
-- The keyword `return` means that whenever we call this function, the value will be passed, that is," returned ", to the interpreter, therefore it is called the" return value of the function ".
+- 關鍵字 `function` 向解釋器指示以下代碼是用戶定義的，即由您創建的代碼，而不是內置函數。
+- 用駝峰寫 `showNumberFive` ​​是此函數的自定義名稱。 通常，對於解釋器而言，準確調用此函數沒有什麼區別，但是最好給函數名稱清楚地表明它們的確切作用。
+- `()` 括號是任何功能的必需元素。 有時，括號enclosed中會包含一個，兩個或多個變量，在我們的情況下，括號中什麼也沒有。
+-函數本身必須用花括號括起來 `{}` - 程序算法的本質。
+-函數本身的主體通常向右縮進（使用TAB鍵）。 這對於程序的執行不是必需的，但對於團隊合作則是必需的，因為它極大地促進了代碼的可讀性。
+- T他關鍵字 `return` m可以看出，每當我們調用此函數時，都會傳遞值，即," returned ", 因此，它被稱為“函數的返回值”。
 
 <!-- Еще один пример 👇 :
 
@@ -193,12 +193,12 @@ let y1 = sum()
 
 Этот пример явно показывает одно из главных предназначений функций⚙️: избавление от дублирования кода📟 ! Функцию⚙️ можно запускать множества раз в разных участках вашего кода📟 . -->
 
-## Parameters and function arguments
+## 參數和函數參數
 
 ![couple](https://media.giphy.com/media/3o7TKO3AC2o5cOkZfG/giphy.gif)
 
-Let's declare🗣️ one more function но, but with a variable in parentheses.
-When the function also contains the variable 🔔 in brackets, we will call it a formal parameter (undefined in advance, we do not know what the value of x will be). Most functions⚙️ will have parameters, but sometimes we will come across functions⚙️ without them.
+讓我們再聲明一個函數оо，但是在括號中帶有一個變量。
+當函數在方括號中還包含變量，時，我們將其稱為形式參數（預先未定義，我們不知道x的值是什麼）。 大多數函數⚙️都會有參數，但是有時我們會遇到沒有參數的函數⚙️。
 
 ```javascript
 function addThree(x) {
@@ -206,8 +206,8 @@ function addThree(x) {
 }
 ```
 
-After the declaration🗣️ of the function⚙️ and its parameters, we can call (run) the "code block" with a specific value (for example: 5).
-We will call this assignment an argument:
+在聲明函數🗣️及其參數之後，我們可以調用（運行）具有特定值（例如：5）的“代碼塊”。
+我們將此賦值稱為參數：
 
 ```javascript
 addThree(5)
@@ -215,12 +215,12 @@ addThree(5)
 // Answer: 8
 ```
 
-In our example, the number 5️⃣ is the function argument - a specific value passed into the function⚙️.
-As soon as our function⚙️ received its argument, it immediately assigned its value to the variable x (which is a formal parameter of our function⚙️).
+在我們的示例中，數字5️⃣是函數參數-傳遞給函數⚙️的特定值。
+我們的函數⚙️收到參數後，立即將其值分配給變量x（這是函數⚙的形式參數）。
 
-### Code example📟:
+### 代碼示例📟:
 
-Experiment 👇:
+實驗 👇:
 
 ```jsx live
 function learnJavaScript() {
@@ -232,23 +232,23 @@ function learnJavaScript() {
 }
 ```
 
-### Difference between parameters and arguments
+### 參數和參數之間的差異
 
 ![Dedefencce](https://media.giphy.com/media/l41YkuPROHQj0fjRS/giphy.gif)
 
-Consists of the following:
+包括以下內容：
 
-`argument` is a specific value that we" passed "to the function⚙️ when calling it in parentheses. This value or set of values is assigned to the formal parameters of this function⚙️.
+`argument` 是我們在括號中調用時傳遞給函數⚙️的特定值。 將此值或一組值分配給此函數的形式參數⚙️。
 
-`parameter` is the name of a variable 🔔 specified in the function declaration and waiting to be assigned a specific value at the time of the function call. The value assigned to the parameter is the argument.
+`parameter` 是在函數聲明中指定的變量the的名稱，並在函數調用時等待分配一個特定的值。 分配給參數的值是參數。
 
-Many programmers use these terms (argument and parameter) interchangeably, but we understood the difference.
+許多程序員可以互換使用這些術語（參數和參數），但是我們了解它們之間的區別。
 
-## Example:
+## 例子:
 
 ![Mathematics](https://media.giphy.com/media/3o7btPCcdNniyf0ArS/giphy.gif)
 
-Let's try to declare🗣️ a function по for calculating on two sides of the rectangle perimeter, the parameters of which will expect two 2️⃣ numbers as their value. Please note that if you have more than one parameter, then they must be separated from each other with a comma.
+讓我們嘗試聲明一個用於在矩形周長的兩側進行計算的函數по，該函數的參數將期望兩個2️⃣作為其值。 請注意，如果您有多個參數，則必須用逗號將它們彼此分開。
 
 ```jsx live
 function learnJavaScript() {
@@ -259,7 +259,7 @@ function learnJavaScript() {
 }
 ```
 
-When we call this function⚙️, we will have to give it two 2️⃣ numbers as arguments - the values of the sides of a particular rectangle (separated from each other by a comma):
+當我們調用此函數⚙️時，我們將不得不給它兩個2️⃣數字作為參數-特定矩形的邊的值（以逗號分隔）：
 
 ```javascript
 calcPrym(7, 8)
@@ -267,15 +267,15 @@ calcPrym(7, 8)
 // Answer: 30
 ```
 
-Oh, thanks a lot, computer🖥️!
+哦，非常感謝，計算機🖥️！
 
-By passing other values to the function⚙️, it will immediately calculate the perimeters of other rectangles as well.
+通過將其他值傳遞給函數⚙️，它還將立即計算其他矩形的周長。
 
-:::info Once again!
-One of the main purposes of functions⚙️ is to get rid of code duplication📟 and the ability to call them multiple times to solve your problems.
+:::信息再次！
+函數⚙️的主要目的之一是擺脫代碼重複📟，並具有多次調用它們以解決問題的能力。
 :::
 
-## Built-in functions
+## 內建功能
 
 ![Integration](https://media.giphy.com/media/F0NHdHQRjr9f2/giphy.gif)
 
@@ -283,17 +283,17 @@ One of the main purposes of functions⚙️ is to get rid of code duplication�
 
 ![Secret](https://media.giphy.com/media/l1J9BGJOQMbkbpWVy/giphy.gif)
 
-A way to output (log) debug information to the console only for developers (users will not be able to see it; as you know, most people are not even aware of the existence of the console itself, and not that about secret "logs"!).
+僅向開發人員輸出（日誌）調試信息到控制台的一種方式（用戶將無法看到它；如您所知，大多數人甚至不知道控制臺本身的存在，也不知道秘密的“日誌” “！）。
 
-Press the keyboard shortcut `Ctrl + Shift + I` in the Google Chrome browser and type in the` Console` tab:
+在Google Chrome瀏覽器中按鍵盤快捷鍵“ Ctrl + Shift + I”，然後輸入“控制台”標籤：
 
 ```javascript
 console.log('Top Secret! For Developers Only!')
 ```
 
-As the name of the function⚙️ implies, we print the "log" (that is, information about the system operation) to the console; developers use this good superpower all the time. For example, when you had error messages, you saw exactly this in the console - the interpreter gave ("logged") information about the system operation to the console so that you could read and correct the necessary parameters. In a word, a very useful thing. You will have to resort to using `console.log ()` more than once or twice 2️⃣, so remember this function⚙️!
+正如函數名稱⚙️所暗示的，我們將“ log”（即有關係統操作的信息）打印到控制台； 開發人員一直都在使用這種強大的功能。 例如，當您收到錯誤消息時，您恰好在控制台中看到了此內容-解釋器向控制台提供了有關“系統操作”的信息（“已記錄”），以便您可以閱讀和更正必要的參數。 總之，這是非常有用的事情。 您將不得不使用 `console.log ()` 不止一次或兩次2️⃣，所以請記住此功能⚙️！
 
-Enter the following commands line by line:
+逐行輸入以下命令：
 
 ```javascript
 console.log ('Print any message you want')
@@ -302,31 +302,31 @@ let myMessage = 'You can also use variables as an argument!'
 console.log (myMessage)s
 ```
 
-While you're playing with the console logs, I'll show you another trick. Our good old friend - backslash will help me to do it!
+當您使用控制台日誌時，我將向您展示另一個技巧。 我們的好朋友-反斜杠將幫助我做到這一點！
 
-With its assistance, `\ n` you can split your code📟 line by line. Try it yourself!
-Enter the following commands line by line:
+在它的協助下 `\ n` 您可以逐行拆分代碼。 自己嘗試！
+逐行輸入以下命令：
 
 ```javascript
 console.log('You can split any text  n into many  n lines.')
 console.log('Here is the first.  nAnd here is the 2nd.  n3-i  n4-i  n5-i!')
 ```
 
-This `\ n` thing actually has many useful practical uses. For example, you can draw a bear in the [ASCII] encoding (https://ru.wikipedia.org/wiki/ASCII) in the console. Type in the console:
+這 `\ n` 事物實際上有許多有用的實際用途。 例如，您可以在 [ASCII] 編碼方式 (https://ru.wikipedia.org/wiki/ASCII) 在控制台中。 在控制台中輸入：
 
 ```javascript
 console.log("c ___ c  n /. \\ n \\ _ T _ /  n / '' \\ n (/. \\)  n / '; -;' \\ n () /   () ")
 ```
 
-Is it clear why this is so?
+清楚為什麼會這樣嗎？
 
-Each `\ n` specifies a transition to a new line, so that subsequent characters seem to" go down "below, and voila! We have made a significant contribution to the development of society by drawing a cute bear!
+每個`\ n` 指定到新行的過渡，以便後續字符似乎在下面“向下”，瞧！ 畫一隻可愛的熊，為社會的發展做出了重大貢獻！
 
 ### Math.random()
 
 ![Random](https://media.giphy.com/media/3o6ozoD1ByqYv7ARIk/giphy.gif)
 
-Another useful built-in function⚙️: `Math.random()`. Please note that, unlike the previous ones, the name of this function⚙️ begins with an uppercase letter `M`. There is a reason for this, the uppercase and lowercase letters in JavaScript differ in their internal codes📟. In every language👅, be it Russian, English or JavaScript, there are always some exceptions to the rule. This is one of them. All other variables and functions⚙️ that you come across should be written with a lowercase letter. Remember that register is important, and if the name `Math.random()` starts with `math`, then the function⚙️ simply won't run!
+另一個有用的內置函數⚙️： `Math.random()`. 請注意，與以前的函數不同，此函數的名稱⚙️以大寫字母開頭 `M`. T這是一個原因，JavaScript中的大寫和小寫字母內部代碼不同 📟. 在每種語言中，無論是俄語，英語還是JavaScript，該規則總是有一些例外。 這就是其中之一。 您遇到的所有其他變量和函數⚙️應該用小寫字母書寫。 請記住，註冊很重要，如果名稱 `Math.random()` 以。。開始 `math`, 然後功能⚙️根本就不會運行！
 
 ```jsx live
 function learnJavaScript() {
@@ -334,9 +334,9 @@ function learnJavaScript() {
 }
 ```
 
-A new number every time! The function returns a random real number between 0 and 1.
+每次都有新號碼！ 該函數返回0到1之間的隨機實數。
 
-Let's update the equation 👇:
+讓我們更新方程式 👇:
 
 ```jsx live
 function learnJavaScript() {
@@ -344,13 +344,13 @@ function learnJavaScript() {
 }
 ```
 
-If you suddenly need a random number in the range of 0 to 100, then this function will be very useful to you.
+如果您突然需要0到100範圍內的隨機數，則此功能對您非常有用。
 
 ### Math.floor()
 
 ![Floor](https://media.giphy.com/media/uTAZTQi8dX1VGa4pXT/giphy.gif)
 
-This function⚙️ takes a number or digit5️⃣ as an argument and then rounds them down.
+⚙️函數將數字或digit5️⃣作為自變量，然後將其四捨五入。
 
 ```javascript
 Math.floor(10.7) // 10
@@ -368,7 +368,7 @@ function learnJavaScript() {
 
 ![rounding](https://media.giphy.com/media/g4G287ogD1fmgqwVjS/giphy.gif)
 
-`Math.round (x)` vice versa to the nearest integer, without any tenths after the decimal point.
+`Math.round (x)`反之亦然，最接近的整數，小數點後不能有十分之一。
 
 ```javascript
 Math.round(10.7) // 11
@@ -386,14 +386,14 @@ function learnJavaScript() {
 
 ![Words](https://media.giphy.com/media/Utt80M7ucSJyiGdbLi/giphy.gif)
 
-Have you EVER noticed THAT SOME messages ARE TOO MANY CAPITAL WORDS?
-Well, that’s what we’ll learn now.
+您是否曾經註意到某些消息中的大寫單詞太多？
+好吧，這就是我們現在要學習的內容。
 
-You can easily take any string and return its new version, separated by uppercase 🖊️ letters (i.e. upper / lower case), using the built-in method `.toUpperCase() / .toLowerCase()`. And, accordingly, you can return any string in lowercase letters (that is, in lowercase).
+您可以使用內置方法輕鬆獲取任何字符串並返回其新版本，並以大寫🖊️字母（即大寫/小寫）分隔 `.toUpperCase() / .toLowerCase()`.並且，因此，您可以返回任何以小寫字母（即小寫）的字符串。
 
-Remember that a method is just a function, attached to the object described, in this case a generic string.
+請記住，方法只是附加到所描述對象的函數，在這種情況下為通用字符串。
 
-It works like this, `.toUpperCase()` in uppercase 🖊️ letters 👇:
+像這樣 `.toUpperCase()` in個大寫🖊️字母👇:
 
 ```jsx live
 function learnJavaScript() {
@@ -401,7 +401,7 @@ function learnJavaScript() {
 }
 ```
 
-And `.toLowerCase()` in lowercase:
+和`.toLowerCase()` 小寫：
 
 ```jsx live
 function learnJavaScript() {
@@ -409,11 +409,11 @@ function learnJavaScript() {
 }
 ```
 
-## Now all together!
+## 現在在一起！
 
 ![Mix](https://media.giphy.com/media/WTdOnTQJwTHmhifwGE/giphy.gif)
 
-Let's try to mix a small cocktail from the functions we just learned⚙️.
+讓我們嘗試從剛剛學習的功能中混合一些小雞尾酒⚙️。
 
 ```jsx live
 function learnJavaScript() {
@@ -429,17 +429,17 @@ function learnJavaScript() {
 }
 ```
 
-Hopefully, none of the above turned out to be a difficult task for you, and you understand everything. If not, then take your time to review each line and comments to it.
+希望上述所有內容對您來說都不是一件困難的任務，並且您了解所有內容。 如果沒有，那麼請花一些時間檢查每一行並對其進行評論。
 
-## Arrow Function (arrow functions)
+## 箭頭功能（箭頭功能）
 
 ![Arrow](https://media.giphy.com/media/xT9IgAakXAITtXIWje/giphy.gif)
 
-There is an even simpler and concise syntaxтакс for creating functions⚙️, which is often better than other kinds.
+創建函數⚙️甚至有一種更簡單明了的語法такс，通常比其他類型要好。
 
-So, the classic version of writing 🖊️ function⚙️:
+因此，編寫🖊️函數⚙️的經典版本：
 
-Function Declaration:
+功能聲明：
 
 ```javascript
 function func1(arg1, arg2, ...argN) {
@@ -447,7 +447,7 @@ function func1(arg1, arg2, ...argN) {
 }
 ```
 
-Function Expression:
+函數表達式:
 
 ```javascript
 let func1 = function (arg1, arg2, ...argN) {
@@ -455,21 +455,21 @@ let func1 = function (arg1, arg2, ...argN) {
 }
 ```
 
-Such code📟 creates a function⚙️ `func1` with arguments `arg1, .. argN` and calculates `expression` - a set of actions of the algorithm on the right side using them, returning the result of calculations through the keyword` return`.
+這樣的代碼📟創建一個函數⚙️ `func1` 帶參數 `arg1, .. argN` 併計算 `expression` - 一組使用它們的右側算法的操作，通過關鍵字返回計算結果 `return`.
 
-Now let's use the `Arrow functions`:
+現在讓我們使用 `Arrow functions`:
 
 ```javascript
 let func1 = (arg1, arg2, ...argN) => expression
 ```
 
-In other words, this is a shorter version of such a notation 🖊️.
+換句話說，這是這種表示法的縮寫 🖊️.
 
 :::note How!
 `=>` we have replaced `{return ...}` on the right side and allowed us not to write the keyword `function` on the left side!
 :::
 
-Let's take a look at a concrete example 👇:
+讓我們看一個具體的例子 👇:
 
 ```jsx live
 function learnJavaScript() {
@@ -484,13 +484,13 @@ function learnJavaScript() {
 }
 ```
 
-Both options are correct! `function` is almost never used in modern writing of code📟, so use arrow functions!
+兩種選擇都是正確的！ `function` 在現代writing代碼編寫中幾乎從未使用過，因此請使用箭頭功能！
 
-### Only one argument
+### 只有一個論點
 
 ![only one](https://media.giphy.com/media/3o6MbjZirZUc6cYpz2/giphy.gif)
 
-If we have only one argument, then the parentheses around the parameters can be omitted, making the notation even shorter `let num2 = n => n * 2`
+如果我們只有一個參數，則可以省略參數周圍的括號，從而使表示法更短 `let num2 = n => n * 2`
 
 ```jsx live
 function learnJavaScript() {
@@ -506,11 +506,11 @@ function learnJavaScript() {
 }
 ```
 
-### If there are no arguments
+### 如果沒有參數
 
 ![no](https://media.giphy.com/media/LOEI8jsNKPmzdJYvhJ/giphy.gif)
 
-If there are no arguments, then to avoid double `==`, use `empty parentheses` 👇:
+如果沒有參數，則避免重複 `==`, 使用 `empty parentheses` 👇:
 
 ```jsx live
 function learnJavaScript() {
@@ -520,22 +520,22 @@ function learnJavaScript() {
 }
 ```
 
-The arrow functions are convenient and very compact!
+箭頭功能既方便又緊湊！
 
-## Self-Executing Functions (IIFE)
+## 自執行功能 (IIFE)
 
 ![Start](https://media.giphy.com/media/xTiTnmeJ1bBGONMCBy/giphy.gif)
 
-`Immediately Invoked Function Expression` is a JavaScript function that is executed immediately after it has been defined. JavaScript allows you to create, in addition to ordinary and arrow functions, also anonymous functions⚙️ that play an important role in JavaScript.
+`Immediately Invoked Function Expression` 是定義後立即執行的JavaScript函數。 除了普通和箭頭功能外，JavaScript還允許您創建在JavaScript中發揮重要作用的匿名函數⚙️。
 
-### Anonymous functions
+### 匿名功能
 
 ![Anonym](https://media.giphy.com/media/m3lszq64i1k2s/giphy.gif)
 
-If after `function` there is a name - the function⚙️ is named, otherwise anonymous.
-Anonymous functions⚙️ are often created and run immediately. Another important difference is that named functions are⚙️ declared🗣️ and anonymous functions are created using the function statement.
+如果之後 `function` 有一個名字-函數⚙️已命名，否則為匿名。
+匿名函數⚙️通常會創建並立即運行。 另一個重要的區別是，已命名的函數是⚙️聲明的🗣️，而匿名函數是使用function語句創建的。
 
-Type the following code in the Google Chrome console:
+在Google Chrome控制台中輸入以下代碼：
 
 ```
 (function (num1, num2) {
@@ -543,63 +543,47 @@ Type the following code in the Google Chrome console:
 })(7, 4)
 ```
 
-Self-invocation is created by parentheses at the end of a function⚙️ that tell the interpreter to run that function⚙️ immediately.
+自我調用由函數⚙️末尾的括號創建，該括號告訴解釋器立即運行該函數⚙️。
 
-## Conclusion
+## 結論
 
 ![conclusion](https://media.giphy.com/media/8Bksh0hra9RcZcSNSO/giphy.gif)
 
-By understanding arrow and normal functions⚙️, you can pass functions to variable objects🔔 and rebuild your code📟 in modules. Functions of this kind can also be used to create and return🔄 other functions⚙️. Here we are already talking about closure, which we will talk about in the next series.
+通過了解箭頭和正常函數⚙️，您可以將函數傳遞給變量對象🔔並在模塊中重建代碼。 這種函數也可以用於創建和返回其他函數⚙️。 在這裡，我們已經在討論閉包了，我們將在下一個系列中討論閉包。
 
-## Problems?
+## 問題？
 
 ![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
 
-Channel in [Discord](https://discord.gg/6GDAfXn) after paying on [Patreon](https://www.patreon.com/javascriptcamp).
+頻道輸入 [Discord](https://discord.gg/6GDAfXn) 付款後 [Patreon](https://www.patreon.com/javascriptcamp).
 
-## Questions:
+## 問題:
 
 ![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
 
-How is a function declared?
+如何聲明一個函數？
 
-1. function name (parameters, separated by commas) {
-   // body, function code
+1. 函數名稱（參數，用逗號分隔） {
+   // 主體，功能代碼
    }
-2. procedure name (parameters) {
-   // body, function code
+2. 程序名稱（參數） {
+   // 主體，功能代碼
    }
-3. let name (s) {}
+3. 讓名字 (s) {}
 
-Exit or return point of result in function?
+函數結果的返回點或返回點？
 
 1. `Esc`
 2. `return`
 3. `Hello`
 
-The `return` keyword inside the function body:
+`return` 函數體內的關鍵字:
 
-1. mandatory
-2. optional
-3. differently
+1.強制性
+2.可選
+3.不同地
 
-The function is given
-
-```javascript
-function addThree(x) {
-  return x + 3
-}
-
-addThree(20)
-```
-
-Define a formal parameter:
-
-1. `20`
-2. `x`
-3. `x + 3`
-
-The function is given
+給定功能
 
 ```javascript
 function addThree(x) {
@@ -609,41 +593,57 @@ function addThree(x) {
 addThree(20)
 ```
 
-Define an argument:
+定義一個形式參數：
 
 1. `20`
 2. `x`
 3. `x + 3`
 
-Where is the built-in function?
+給定功能
+
+```javascript
+function addThree(x) {
+  return x + 3
+}
+
+addThree(20)
+```
+
+定義一個參數：
+
+1. `20`
+2. `x`
+3. `x + 3`
+
+內置功能在哪裡？
 
 1. `console.log()`
 2. `myMessage()`
 3. `return ()`
 
-What syntax do arrow functions use?
+箭頭函數使用什麼語法？
 
 1. `Forward()`
 2. `=>`
 3. `go.Arrow`
 
-Using arrow functions allows?
+使用箭頭功能可以嗎？
 
-1. Write code more compact and safer
-2. Increases the structure of the code
-3. Allows using new variables
+1.編寫更緊湊，更安全的代碼
+2.增加代碼的結構
+3.允許使用新變量
 
-A self-executing function is
+自我執行功能是
 
-1. A function that is executed immediately after it has been defined
-2. Built-in function in JavaScript
-3. This is a common procedure that performs a sequence of commands
+1.定義後立即執行的功能
+2. JavaScript中的內置函數
+3.這是執行一系列命令的通用過程
 
-In order to understand how much you learned this lesson, take the test on the [mobile application](http://onelink.to/njhc95) of our school on this topic.
+為了了解您學到了多少本課程，請對 [mobile application](http://onelink.to/njhc95) 我們學校就這個話題。
 
 ![Sumerian school](/img/app.png)
 
-## Links
+## 鏈接
 
 1. [MDN web docs - Function](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Function)
 2. [Learn.javascript.ru - Статья "Функции"](https://learn.javascript.ru/function-basics)
@@ -655,9 +655,9 @@ In order to understand how much you learned this lesson, take the test on the [m
 8. [Javascript.ru - Статья "Функции"](https://javascript.ru/basic/functions)
 9. [Code for Teens: The Perfect Beginner's Guide to Programming, Volume 1: Javascript - Jeremy Moritz](https://www.amazon.com/Code-Teens-Beginners-Programming-Javascript-ebook/dp/B07FCTLVPC)
 
-## Contributors ✨
+## 貢獻者 ✨
 
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+感謝這些好人 ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->

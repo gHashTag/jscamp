@@ -1,41 +1,42 @@
 ---
 id: javascript08
-title: True or False?
-sidebar_label: True or False?
+title: 對或錯?
+sidebar_label: 對或錯?
 ---
 
 ![@serverSerrverlesskiy](/img/javascript/headers/08.jpg)
 
-There will be a lot of new things in this chapter, but it shouldn't be very difficult: after all, in general, everything revolves around a simple idea - true or false?
+本章將有很多新事物，但這應該並不困難：畢竟，總的來說，所有事物都圍繞著一個簡單的想法-對還是錯？
 
-Until now, we have always dealt only with primitive data types - with numbers and strings.
-Have you come across the term "primitive" in programming before? If not, I'll explain: "primitive" (they also say "simple") means that this data type is not an object (we'll come back to this point) and does not have built-in methods of work (that is, functions⚙️).
+到目前為止，我們一直只處理原始數據類型-數字和字符串。
+
+您以前在編程中遇到過“原始”一詞嗎？ 如果不是，我將解釋：“原始”（它們也說“簡單”）表示此數據類型不是對象（我們將回到這一點）並且沒有內置的工作方法（即 是，功能⚙️）。
 
 ![True](https://media.giphy.com/media/peBw21sPZnlqE/giphy.gif)
 
-The data type that you will definitely need is called boolean, or boolean. Boolean type always has the value either `true` ✅ - true, or` false` ❎ - false. And only this way, and nothing else! He is either lying or telling the truth - pan or disappear, the light is on or off, or there is or not. You either did your homework or you didn't. Only two 2️⃣ values are `true` ✅ or` false`.
+您肯定需要的數據類型稱為布爾值或布爾值。 布爾類型始終具有以下值： `真的` ✅ - true, 或者 `錯誤的` ❎ - false. 只有這樣，別無其他！ 他在撒謊或在說真話-搖晃或消失，燈光開或關，或不存在。 您要么做作業，要么沒有做。 只有兩個 2️⃣ 值是 `真的` ✅  或者 `錯誤的`.
 
-## Equality operators
+## 平等經營者
 
-![Operator](https://media.giphy.com/media/9r1n7HzkPT9sM1Wp0G/giphy.gif)
+![操作員](https://media.giphy.com/media/9r1n7HzkPT9sM1Wp0G/giphy.gif)
 
-Boolean values come in handy when we need to compare something in JavaScript. When the need arises, we immediately call the comparison operators.
-Now we will sequentially study all eight comparison operators, but the thing is that as a result of each of them, we do not care
-we will always be left with a boolean value - either `true` ✅ or `false` ❎.
+當我們需要比較JavaScript中的某些內容時，布爾值會派上用場。 當需要時，我們立即調用比較運算符。
+現在，我們將依次研究所有八個比較運算符，但事實是，由於每個運算符，我們都不在乎
+我們總是會得到一個布爾值-要么 `真的` ✅  或者 `錯誤的` ❎ 
 
-### Equals `==`
+### 等於 `==`
 
-![Justice](https://media.giphy.com/media/3o85xDf6hr7ajhVL9K/giphy.gif)
+![正義](https://media.giphy.com/media/3o85xDf6hr7ajhVL9K/giphy.gif)
 
-The equals operator first converts the operands to the same type, and then applies strict comparison. If both operands are objects, then JavaScript compares internal references that are equal if they refer to the same object in memory.
+equals運算符首先將操作數轉換為相同類型，然後進行嚴格比較。 如果兩個操作數都是對象，則JavaScript會比較內部引用，如果它們引用內存中的同一對象，則它們是相等的。
 
-Syntax📖:
+句法 📖:
 
 ```javascript
 x == y
 ```
 
-Examples:
+例子:
 
 ```javascript
 1 == 1 // true
@@ -46,7 +47,7 @@ Examples:
 'foo' == 'bar' // false
 ```
 
-Enter the examples one by one into the 🔔 `bool` variable of our `LIVE EDITOR`
+將示例一個接一個地輸入到 🔔 `bool` 我們的變量 `LIVE EDITOR`
 
 ```jsx live
 function learnJavaScript() {
@@ -55,19 +56,19 @@ function learnJavaScript() {
 }
 ```
 
-### Not equal to `! =`
+### 不等於 `! =`
 
-![Equals](https://media.giphy.com/media/xT8qBit7YomT80d0M8/giphy.gif)
+![等於](https://media.giphy.com/media/xT8qBit7YomT80d0M8/giphy.gif)
 
-The not equal operator returns🔄 `true` ✅ if the operands are not equal. It is similar to the equality operator, converting the operands to the same type before comparing. If both operands are objects, JavaScript compares internal references that are not equal if they refer to different objects in memory.
+不等於運算符的返回 🔄 `true` ✅ 如果操作數不相等。 它類似於相等運算符，在比較之前將操作數轉換為相同類型。 如果兩個操作數都是對象，則JavaScript將比較內部引用，如果它們引用內存中的不同對象，則內部引用不相等。
 
-Syntax📖:
+句法 📖:
 
 ```javascript
 x != y
 ```
 
-Examples:
+例子:
 
 ```javascript
 1! = 2 // true
@@ -78,7 +79,7 @@ Examples:
 'foo'! = 'bar' // true
 ```
 
-Enter the examples one by one into the 🔔 `bool` variable of our `LIVE EDITOR`
+將示例一個接一個地輸入到 🔔 `bool` 我們的變量 `LIVE EDITOR`
 
 ```jsx live
 function learnJavaScript() {
@@ -87,19 +88,19 @@ function learnJavaScript() {
 }
 ```
 
-### Strictly equal to `===`
+### 嚴格等於 `===`
 
-![equality](https://media.giphy.com/media/4W0ZwRP8y7pQtcUMyQ/giphy.gif)
+![平等](https://media.giphy.com/media/4W0ZwRP8y7pQtcUMyQ/giphy.gif)
 
-The operator returns true if the operands are strictly equal. Unlike the equals operator, this operator does not cast operands to the same type.
+如果操作數嚴格相等，則運算符返回true。 與equals運算符不同，此運算符不會將操作數轉換為相同類型。
 
-Syntax📖:
+句法 📖:
 
 ```javascript
 x === y
 ```
 
-Examples:
+例子:
 
 ```javascript
 3 === 3 // true
@@ -107,9 +108,9 @@ Examples:
 'foo' === 'foo' // true
 ```
 
-The operator makes sure that both the value and the type are strictly identical. In the case of `3 === '3'`, the value is, of course, identical, but the type is not: the first is a number, and the second is a string.
+操作員確保值和類型都嚴格相同。 如果是 `3 === '3'`, 該值當然是相同的，但類型不同：第一個是數字，第二個是字符串。
 
-Enter the examples one by one into the 🔔 `bool` variable of our `LIVE EDITOR`
+將示例一個接一個地輸入到 🔔 `bool` 我們的變量 `LIVE EDITOR`
 
 ```jsx live
 function learnJavaScript() {
@@ -118,26 +119,26 @@ function learnJavaScript() {
 }
 ```
 
-### Strictly not equal to `! ==`
+### 嚴格不等於 `! ==`
 
 ![ruler](https://media.giphy.com/media/tPK9Fyl1gyIkU6XbZv/giphy.gif)
 
-The strictly not equal operator returns true if the operands are not equal or their types differ from each other.
+如果操作數不相等或它們的類型彼此不同，則嚴格不等於運算符將返回true。
 
-Syntax📖:
+句法 📖:
 
 ```javascript
 x !== y
 ```
 
-Examples:
+例子:
 
 ```javascript
 3 !== '3' // true
 4 !== 3 // true
 ```
 
-Enter the examples one by one into the 🔔 `bool` variable of our `LIVE EDITOR`
+將示例一個接一個地輸入到 🔔 `bool` 我們的變量 `LIVE EDITOR`
 
 ```jsx live
 function learnJavaScript() {
@@ -146,34 +147,34 @@ function learnJavaScript() {
 }
 ```
 
-Why not use `==` and `! =`? But because, in general, there is never such a need. Whenever you can use them, you can always use both the strict `===` and `! ==`. If you want more flexibility in the answer (say, so that both `1` and `'1'` or `true` are equally accepted ✅), then you can simply include the desired answer options in the code itself (without changing this `===`).
+為什麼不使用 `==` 和 `! =`? 但是因為總的來說，從來沒有這樣的需要。只要您可以使用它們，就可以同時使用 `===` 和 `! ==`. 如果您想在答案中提供更大的靈活性（例如， `1` 和 `'1'` 或者 `true` 同樣被接受 ✅), 那麼您只需在代碼本身中包含所需的答案選項即可（無需更改此 `===`).
 
 :::info Just understand the rule
 Never use `==` or `! =`
 :::
 
-## Comparison Operators
+## 比較運算符Comparison Operators
 
-### More `>`
+### 更多的 `>`
 
-![not equal](https://media.giphy.com/media/jPfQcPdmI9bTXpa7hi/giphy.gif)
+![不相等](https://media.giphy.com/media/jPfQcPdmI9bTXpa7hi/giphy.gif)
 
-The more operator returns true if the value of the left operand is greater than that of the right one.
+如果左操作數的值大於右操作數的值，則more運算符將返回 true。
 
-Syntax📖:
+句法 📖:
 
 ```javascript
 x > y
 ```
 
-Examples:
+例子:
 
 ```javascript
 4 > 3 // true
 1 > 5 // false
 ```
 
-Enter the examples one by one into the variable 🔔 `bool` in `LIVE EDITOR`
+將示例一個接一個地輸入到 🔔 `bool` 我們的變量 `LIVE EDITOR`
 
 ```jsx live
 function learnJavaScript() {
@@ -182,26 +183,26 @@ function learnJavaScript() {
 }
 ```
 
-### Less `<`
+### 較少的 `<`
 
-![small](https://media.giphy.com/media/82tNeaMTlEsdW/giphy.gif)
+![小的](https://media.giphy.com/media/82tNeaMTlEsdW/giphy.gif)
 
-The less than operator returns true if the value of the operand on the left is less than the value of the operand on the right.
+如果左側的操作數的值小於右側的操作數的值，則小於運算符返回true。
 
-Syntax📖:
+句法 📖:
 
 ```javascript
 x < y
 ```
 
-Examples:
+例子:
 
 ```javascript
 3 < 4 // true
 5 < 2 // false
 ```
 
-Enter the examples one by one into the 🔔 `bool` variable of our `LIVE EDITOR`
+將示例一個接一個地輸入到 🔔 `bool` 我們的變量 `LIVE EDITOR`
 
 ```jsx live
 function learnJavaScript() {
@@ -210,26 +211,26 @@ function learnJavaScript() {
 }
 ```
 
-### Greater than or equal to `>=`
+### 大於或等於 `>=`
 
-![comparison operator](https://media.giphy.com/media/icJA0VF7ntoEL18Jez/giphy.gif)
+![比較運算符](https://media.giphy.com/media/icJA0VF7ntoEL18Jez/giphy.gif)
 
-The operator is greater than or equal to, returns true if the value of the operand on the left is greater than or equal to the value of the operand on the right.
+運算符大於或等於，如果左側的操作數的值大於或等於右側的操作數的值，則返回 true。
 
-Syntax📖:
+句法 📖:
 
 ```javascript
 x >= y
 ```
 
-Examples:
+例子:
 
 ```javascript
 4 >= 3 // true
 3 >= 3 // true
 ```
 
-Enter the examples in the 🔔 `bool` variable one by one:
+在中輸入示例 🔔 `bool` 一對一可變:
 
 ```jsx live
 function learnJavaScript() {
@@ -238,26 +239,26 @@ function learnJavaScript() {
 }
 ```
 
-### Less than or equal to `<=`
+### 小於或等於`<=`
 
-![less](https://media.giphy.com/media/UQbDc6dyK6WjpCXMvt/giphy.gif)
+![較少的](https://media.giphy.com/media/UQbDc6dyK6WjpCXMvt/giphy.gif)
 
-The operator is less than or equal, returns true if the value of the operand on the left is less than or equal to the value of the operand on the right.
+運算符小於或等於，如果左側的操作數的值小於或等於右側的操作數的值，則返回 true。
 
-Syntax📖:
+句法 📖:
 
 ```javascript
 x <= y
 ```
 
-Examples:
+例子:
 
 ```javascript
 3 <= 4 // true
 3 <= 3 // true
 ```
 
-Enter the examples in the 🔔 `bool` variable one by one:
+在中輸入示例 🔔 `bool` 一對一可變:
 
 ```jsx live
 function learnJavaScript() {
@@ -266,25 +267,25 @@ function learnJavaScript() {
 }
 ```
 
-## Conditional constructs
+## 條件構造
 
 ![boolean](https://media.giphy.com/media/12W5Sg2koWYnwA/giphy.gif)
 
-You must be thinking, "Well, all this boolean logic thing was very simple ... They are probably pretty useless and not used often." No matter how it is! Boolean values are used in programming more than all the time and most often in the form of conditionals (or expressions).
+您必須在想：“好吧，所有這些布爾邏輯的東西都很簡單……它們可能幾乎沒有用，而且不經常使用。” 無論如何！ 布爾值在編程中的使用率很高，並且經常以條件（或表達式）的形式使用。
 
-### What is a "conditional"?
+### 什麼是“有條件的”?
 
 ![thoughtful](https://media.giphy.com/media/IyyGGEMZhZIZwAxnUS/giphy.gif)
 
-Good question! A conditional is a clause that is used to run certain blocks of code📟 according to a given condition. The condition (for example, when comparing `x === y`) always returns a boolean value - either` true` ✅ or `false` ❎. Accordingly, if the value is `true` ✅, then the code should be run, otherwise the code block should be skipped. Let's look at some examples.
+好問題！ 條件語句是一個子句，用於根據給定條件運行某些代碼塊📟。 條件（例如，比較時 `x === y`) 總是返回布爾值-要么 true` ✅ 或者 `false` ❎. 因此，如果值是 `true` ✅, 然後應運行代碼，否則應跳過代碼塊。 讓我們看一些例子。
 
-### Conditional Expressions with `if`
+### 條件表達式 `if`
 
 ![Instruction manual](https://media.giphy.com/media/2mDSs3gPUyrcMqtheg/giphy.gif)
 
-The `if` construction executes` instruction1`, if the condition is `true` ✅, if the condition is` false` ❎, then `instruction2` is executed.
+`if` 施工執行 `instruction1`, 如果條件是 `true` ✅, 如果條件是 `false` ❎, 然後 `instruction2` 被執行.
 
-Syntax📖:
+句法 📖:
 
 ```javascript
 if (condition) {
@@ -298,10 +299,10 @@ if (condition) {
 An expression that is either true or false.
 
 `instruction1` -
-An instruction executed if the value of `condition` is true ✅. Can be any statement, including a nested `if`. An empty statement can be used when no action is required.
+如果以下值執行一條指令 `condition` 是真的 ✅. 可以是任何語句，包括嵌套 `if`. 當不需要任何操作時，可以使用空語句。
 
 `instruction2` -
-An instruction to execute if the value of `condition` is false. Can be any statement, including a nested `if`. Instructions can also be grouped into a block. Change the year in the 🔔 `whatIsTheYearNow` variable and note the output.
+如果以下值執行指令 `condition` 是假的。 可以是任何語句，包括嵌套`if`. 指令也可以分組為一個塊。 更改年份 🔔 `whatIsTheYearNow` 變量並記下輸出。
 
 ```jsx live
 function learnJavaScript() {
@@ -317,17 +318,17 @@ function learnJavaScript() {
 }
 ```
 
-### `if` not only with boolean values
+### `if` 不僅具有布爾值
 
 ![No](https://media.giphy.com/media/ftqLysT45BJMagKFuk/giphy.gif)
 
-Conditional expressions can work not only with boolean values, that is, with those that are not exactly `true` ✅ or` false` ❎ So, in general, we can safely use them in parentheses, as well as boolean values.
+條件表達式不僅可以用於布爾值，也可以用於不完全相同的值 `true` ✅ or` false` ❎ 因此，通常，我們可以安全地在括號和布爾值中使用它們。
 
-- All integers, except zero - `true` ✅
-- A string with at least one `true` character ✅
-- An empty string is `false` ❎
+- 除零外的所有整數 - `true` ✅
+- 一串帶至少一串帶至少一串 `true` 特點 ✅
+- 一個空字符串是 `false` ❎
 
-Let's try it, enter values into the 🔔 `bool` 👇 variable:
+讓我們嘗試一下，在 🔔 `bool` 👇 多變的:
 
 ```jsx live
 function learnJavaScript() {
@@ -343,11 +344,11 @@ function learnJavaScript() {
 }
 ```
 
-### Comparison Operators in `if` Expressions
+### 中的比較運算符 `if` 表達方式
 
 ![made for each other](https://media.giphy.com/media/6yxIP39EMwP7IlIA28/giphy.gif)
 
-So far we have dealt with comparisons or conditionals with `if`, but so far we have not used them together, and they are just made for each other!
+到目前為止，我們已經處理了與 `if`, 但是到目前為止，我們還沒有一起使用它們，它們只是為彼此而造！
 
 ```jsx live
 function learnJavaScript() {
@@ -364,9 +365,9 @@ function learnJavaScript() {
 }
 ```
 
-### Multiple `else if` conditions
+### 多種的 `else if` 情況
 
-Sometimes, you need to check several variants of a condition. This is done using the `else if` block. Change the year and see the output.
+有時，您需要檢查條件的多個變體。 這是通過使用 `else if` 堵塞。 更改年份並查看輸出。
 
 ```jsx live
 function learnJavaScript() {
@@ -385,25 +386,25 @@ function learnJavaScript() {
 }
 ```
 
-### Conditional (ternary) operator `?`
+### 條件（三元）運算符 `?`
 
 ![question mark](https://media.giphy.com/media/wH4rY2nPnEnp6/giphy.gif)
 
-The only JavaScript operator that accepts three operands: `condition` followed by a question mark `?`, Then `expression`, which is executed if the condition is true, followed by a colon `:`, and finally, `expression` which is executed if the condition is false. It is often used as a shorthand for an `if` statement.
+T他是唯一接受三個操作數的JavaScript運算符： `condition` 跟一個問號 `?`, 然後 `expression`, 如果條件為真，則執行此命令，然後加冒號 `:`, 最後， `expression` 如果條件為假，則執行該命令。 它通常用作 `if` 陳述。
 
-Syntax📖:
+句法 📖:
 
 ```javascript
 condition ? expression1 : expression2
 ```
 
-Parameters:
+參數:
 
-`condition` - An expression that takes the value `true` ✅ or `false` ❎.
+`condition` - 取值的表達式 `true` ✅ or `false` ❎.
 
-`expression1`,` expression2` - Expressions whose values can be of any type.
+`expression1`,` expression2` - 其值可以是任何類型的表達式。
 
-Example 👇:
+例子 👇:
 
 ```jsx live
 function learnJavaScript() {
@@ -414,84 +415,84 @@ function learnJavaScript() {
 }
 ```
 
-## Problems?
+## 問題?
 
-![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
+![問題](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
 
 Channel in [Discord](https://discord.gg/6GDAfXn) after paying on [Patreon](https://www.patreon.com/javascriptcamp).
 
-## Questions:
+## 問題:
 
-![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
+![問題](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
 
-What syntax is used in the equal operator?
+等於運算符中使用什麼語法？
 
 1. `x == y`
 2. `x = y`
 3. `x - y`
 
-In which case does the not equal operator return `true`?
+在這種情況下，不等於運算符返回 `true`?
 
-1. If the operands are not equal
-2. If the operands are equal
-3. If both operands are objects
+1.如果操作數不相等
+2.如果操作數相等
+3.如果兩個操作數都是對象
 
-How is the operator equal to different from strictly equal?
+算子等於與嚴格等於有何不同？
 
-1. Strictly equal does not cast operands to the same type
-2. Strictly equalizes operands to the same type
-3. Strictly ensures that the value is identical, but the type is not
+1.嚴格相等不會將操作數轉換為相同類型
+2.嚴格將操作數均衡為相同類型
+3.嚴格確保值相同，但類型不同
 
-What is the syntax for the operator strictly not equal?
+嚴格不相等的運算符的語法是什麼？
 
 1. `!= `
 2. `!== `
 3. `==! `
 
-In which case does the operator return more false?
+在哪種情況下，操作員會返回更多假？
 
-1. If the value of the left operand is greater than that of the right
-2. If the value of the right operand is greater than that of the left
-3. If the values ​​of the operand are the same
+1.如果左操作數的值大於右操作數的值
+2.如果右操作數的值大於左操作數的值
+3.如果操作數的值相同
 
-What is the syntax for the operator greater than or equal?
+大於或等於的運算符的語法是什麼？
 
 1. `> = `
 2. `> => `
 3. `> <= `
 
-In which example will the less than or equal operator return true?
+在哪個示例中，小於或等於運算符將返回true？
 
 1. `4 <= 5`
 2. `5 <= 4`
 3. `3 <= 2`
 
-What is a condition?
+什麼情況
 
-1. Instruction
-2. Expression
-3. Value
+1.說明
+2.表達
+3.價值
 
-Which block is used to check multiple variants of a condition?
+哪個塊用於檢查條件的多個變體？
 
 1. `else if`
 2. `if`
 3. `for`
 
-Which operator takes 3 operands?
+哪個運算符採用3個操作數？
 
-1. Conditional (ternary) operator
-2. Greater than or equal
-3. Less than or equal
+1.條件（三元）運算符
+2.大於或等於
+3.小於或等於
 
-## Links
+## 鏈接
 
 1. [MDN web docs - Comparison Operators](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Операторы_сравнения)
 2. [Code for Teens: The Perfect Beginner's Guide to Programming, Volume 1: Javascript - Jeremy Moritz](https://www.amazon.com/Code-Teens-Beginners-Programming-Javascript-ebook/dp/B07FCTLVPC)
 
-## Contributors ✨
+## 貢獻者 ✨
 
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+感謝這些好人([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
 <table>
   <tr>

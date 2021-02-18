@@ -1,41 +1,41 @@
 ---
 id: javascript14
-title: Regular expressions
-sidebar_label: Regular expressions
+title: 常用表達
+sidebar_label: 常用表達
 ---
 
 ![@serverSerrverlesskiy](/img/javascript/headers/13.jpg)
 
-Regular expressions are a formal language for searching and manipulating strings in a text based on the use of metacharacters.
+正則表達式是一種形式語言，用於根據元字符的使用來搜索和處理文本中的字符串。
 
-Regular expressions allow you to:
+正則表達式使您可以：
 
-- Search for text in a string
-- Replace substrings in a string
-- Extract information from a string
+-搜索字符串中的文本
+-替換字符串中的子字符串
+-從字符串中提取信息
 
 ![search](https://media.giphy.com/media/l46Cy1rHbQ92uuLXa/giphy.gif)
 
-JavaScript, along with Perl, is one of the programming languages in which regular expression support is built directly into the language.
+JavaScript與Perl一起是一種編程語言，正則表達式支持直接內置在該語言中。
 
-## Difficulty to use
+## 使用困難
 
 ![the complexity of using](https://media.giphy.com/media/5XYsIwzY00ONq/giphy.gif)
 
-The disadvantage of regular expressions is that they often look strange and even intimidating. This is especially true for more complex templates.
+正則表達式的缺點是它們通常看起來很奇怪甚至令人生畏。 對於更複雜的模板尤其如此。
 
 ```jsx
 let regExp = /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
 ```
 
-## Defining regular expressions
+## 定義正則表達式
 
 ![search](https://media.giphy.com/media/RMwYOO5e8pr1lhL8K7/giphy.gif)
 
-The definition of a regular expression is the creation of a template on the basis of which work with strings will take place. In JavaScript, regular expressions are an object that can be defined in two ways.
+正則表達式的定義是創建模板，並根據模板進行字符串處理。 在JavaScript中，正則表達式是可以用兩種方式定義的對象。
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
+從導入標籤 '@theme/Tabs';
+從中導入TabItem '@theme/TabItem';
 
 <Tabs
 defaultValue="literal"
@@ -46,25 +46,25 @@ values={[
 }>
 <TabItem value="literal">
 
-Defining regular expressions using literals. For regular expressions, slashes `/ ... /` are literals, they play the same role as the parentheses `` ... '' when creating strings.
+使用文字定義正則表達式。 對於正則表達式，斜杠 `/ ... /` 是文字，它們與括號的作用相同 `` ... '' 創建字符串時。
 
 ```jsx
 let regExp = /pattern/
 ```
 
-If you decide to create regular expressions using literals, then it should be borne in mind that this method of creation _ does not allow dynamic changes_ in the specified values. This is due to the fact that regular expression literals cause _precompilation_ when the script is parsed.
+如果決定使用文字創建正則表達式，則應牢記這種創建方法 _不允許動態更改_ 在指定的值。 這是由於正則表達式文字導致 _預編譯_ 腳本解析時。
 
   </TabItem>
   
   <TabItem value="construction">
 
-Defining regular expressions using a constructor.
+使用構造函數定義正則表達式。
 
 ```jsx
 let regExp = new RegExp('pattern')
 ```
 
-The compilation of the regular expression created🏗️ using the constructor occurs at the time of the script execution. This way of creating is worth using if your regular expression is being created созда from a dynamically generated string.
+使用構造函數創建的🏗️正則表達式的編譯發生在腳本執行時。 如果從動態生成的字符串中創建正則表達式，則值得使用這種創建方式。
 
   </TabItem>
 </Tabs>
@@ -73,13 +73,13 @@ The compilation of the regular expression created🏗️ using the constructor o
 
 ![pressing the button](https://media.giphy.com/media/12hhLP67q6PqCs/giphy.gif)
 
-Let's look at the use of regular expressions using an example:
+讓我們通過一個示例來看一下正則表達式的用法：
 
 ```jsx
 let regExp = /banana/
 ```
 
-With this code📟 we have created🏗️ a simple regular expression that searches for the string `banana`. To test a regular expression, you can use the `.test(string)` method, the result of the method is a `boolean` value.
+使用此代碼📟我們創建了🏗️一個簡單的正則表達式來搜索字符串 `banana`. 要測試正則表達式，可以使用 `.test(string)` 方法，該方法的結果是 `boolean` 價值。
 
 ```jsx live
 function learnJavaScript() {
@@ -89,13 +89,13 @@ function learnJavaScript() {
 }
 ```
 
-In the example, the regular expression looks for the substring `banana` in the string` str`.
+在示例中，正則表達式查找子字符串 `banana` 在字符串中 `str`.
 
-## Anchors
+## 錨點
 
 ![anchor](https://media.giphy.com/media/3ohze1LSWrEGCML02Y/giphy.gif)
 
-Anchors tie a pattern to the beginning or end of a line. To bind to the beginning of a line, use `^`, and to the end, use `$`.
+錨將模式綁定到行的開頭或結尾。 要綁定到行首，請使用 `^`, 最後，使用 `$`.
 
 ```jsx live
 function learnJavaScript() {
@@ -105,22 +105,22 @@ function learnJavaScript() {
 }
 ```
 
-Using this pattern `/ banana /` you will search for `banana` in the whole line. If you need to check for a complete match of a string with a template, you need to use the anchors `/ ^ banana $ /`. The `.test ()` method will return `true` ✅ only if the whole line is` banana`.
+使用這種模式 `/ banana /` 您將搜索 `banana` 在整個生產線上。 如果您需要檢查字符串是否與模板完全匹配，則需要使用錨點 `/ ^ banana $ /`. `.test ()`方法將返回 `true` ✅ 僅當整行是 `banana`.
 
-## Flags
+## 標誌
 
 ![Flag](https://media.giphy.com/media/ihRmRCxJuIi3pCORTL/giphy.gif)
 
-Flags are used to enhance regular expression searches.
+標誌用於增強正則表達式搜索。
 
-- `g` - when searching, searches for all matches;
-- `i` - search does not depend on case`[Z-z]`;
-- `m` - multi-line mode;
-- `s` - turns on the ** dotall ** mode, in which the dot` .` can match a line feed character;
-- `y` - searches starting from the character that is at the position of the ** lastindex ** property of the current regular expression;
-- `u` - enables ** Unicode ** support.
+- `g` - 搜索時，搜索所有匹配項;
+- `i` - 搜索不取決於大小寫`[Z-z]`;
+- `m` - 多線模式;
+- `s` - 開啟 **dotall** 模式，其中點 `.` 可以匹配換行符;
+- `y` - 最后索引 **lastindex** p當前正則表達式的屬性;
+- `u` - 啟用 **Unicode** 支持.
 
-Using flags in different ways to create a regular expression pattern
+以不同方式使用標誌來創建正則表達式模式
 
 <Tabs
 defaultValue="literal"
@@ -135,7 +135,7 @@ values={[
 let regExp = /pattern/anchor // prettier-ignore
 ```
 
-Please note that the flags are ** integral part ** of the regular expression. Flags cannot be added or removed later. Also flags can be combined.
+請注意，這些標誌是 **integral part** 正則表達式 以後不能添加或刪除標誌。 也可以組合標誌。
 
 ```jsx live
 function learnJavaScript() {
@@ -145,7 +145,7 @@ function learnJavaScript() {
 }
 ```
 
-Try removing the `i` flag from the example.
+嘗試刪除 `i` 該示例中的標誌。
 </TabItem>
 <TabItem value="construction">
 
@@ -153,7 +153,7 @@ Try removing the `i` flag from the example.
 let regExp = new RegExp('pattern', 'anchor')
 ```
 
-Please note that the flags are ** integral part ** of the regular expression. Flags cannot be added or removed later. Also flags can be combined.
+請注意，這些標誌是 **integral part** 正則表達式 以後不能添加或刪除標誌。 也可以組合標誌。
 
 ```jsx live
 function learnJavaScript() {
@@ -163,55 +163,55 @@ function learnJavaScript() {
 }
 ```
 
-Try removing the `i` flag from the example. The search is now case sensitive.
+嘗試刪除 `i` 該示例中的標誌。 搜索現在區分大小寫。
 </TabItem>
 </Tabs>
 
 ## Total
 
-The topic is very extensive and rarely used by us in development, so if you're interested, you can get acquainted with it in more detail [here,](https://learn.javascript.ru/regular-expressions) [here](https://developer.mozilla.org/en/docs/Web/JavaScript/Guide/Regular_Expressions)[and here.](https://tuhub.ru/frontend/js-regexp)
+該主題非常廣泛，在開發中很少被我們使用，因此，如果您有興趣，可以更詳細地了解它。 [here,](https://learn.javascript.ru/regular-expressions) [here](https://developer.mozilla.org/en/docs/Web/JavaScript/Guide/Regular_Expressions)[and here.](https://tuhub.ru/frontend/js-regexp)
 
-## Problems?
+## 問題？
 
 ![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
 
-Channel in [Discord](https://discord.gg/6GDAfXn) after paying on [Patreon](https://www.patreon.com/javascriptcamp).
+頻道輸入 [Discord](https://discord.gg/6GDAfXn) 付款後 [Patreon](https://www.patreon.com/javascriptcamp).
 
-## Questions:
+## 問題:
 
-![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
+![問題](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
 
-What are regular expressions for?
+正則表達式有什麼用？
 
-1. Creation of templates
-2. String manipulation
-3. Editing strings
+1.創建模板
+2.字符串操作
+3.編輯字符串
 
-What character is used to literally create a regular expression?
+什麼字符用於字面上創建正則表達式？
 
 1. Slash `/`
 2. Backslash `\`
 3. Square brackets `[]`
 
-What is the way to create a regular expression that does not allow further dynamic changes to the given values?
+如何創建不允許對給定值進行進一步動態更改的正則表達式？
 
-1. In literal
-2. In the constructor
-3. With any method, dynamic change is permissible
+1.從字面上看
+2.在構造函數中
+3.採用任何方法，都可以進行動態更改
 
-In order to understand how much you learned this lesson, take the test on the [mobile application](http://onelink.to/njhc95) of our school on this topic.
+為了了解您學到了多少本課程，請對[mobile application](http://onelink.to/njhc95) 我們學校就這個話題。
 
 ![Sumerian school](/img/app.png)
 
-## Links
+## 鏈接
 
 1. [Learn JavaScript](https://learn.javascript.ru/regular-expressions)
 2. [MDN Web Docs](https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Regular_Expressions)
 3. [JS RegExp](https://tuhub.ru/frontend/js-regexp)
 
-## Contributors ✨
+## 貢獻者✨
 
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+感謝這些好人([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
 <table>
   <tr> 

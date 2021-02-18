@@ -1,18 +1,18 @@
 ---
 id: javascript11
-title: Type conversion and casting
-sidebar_label: Type conversion and casting
+title: 類型轉換和轉換
+sidebar_label: 類型轉換和轉換
 ---
 
 ![@serverSerrverlesskiy](/img/javascript/headers/09.jpg)
 
-## Type coercion (type coercion)
+## 類型強制（類型強制）
 
-It is an automatic or implicit conversion of values from one data type to another (for example, a string to a number). Type conversions are similar to type conversions because they both convert values from one data type to another, with one key difference - type conversion is implicit, while type conversion can be implicit or explicit.
+它是值從一種數據類型到另一種數據類型（例如，字符串到數字）的自動或隱式轉換。 類型轉換與類型轉換類似，因為它們都將值從一種數據類型轉換為另一種數據類型，但有一個關鍵的區別-類型轉換是隱式的，而類型轉換可以是隱式的或顯式的。
 
 ![transformation](https://media.giphy.com/media/xT4uQr9H3EDL7Ha2hq/giphy.gif)
 
-Examples 👇:
+例子 👇:
 
 ```jsx live
 function learnJavaScript() {
@@ -24,9 +24,9 @@ function learnJavaScript() {
 }
 ```
 
-In the example above, JavaScript casts the number `9` into a string, and then concatenates the two 2️⃣ values together, resulting in the string `59`. JavaScript had a choice between string or number and chose to use string.
+在上面的示例中，JavaScript強制轉換為數字 `9` 成一個字符串，然後將兩個2️⃣值連接在一起，得到字符串 `59`. JavaScript可以在字符串或數字之間選擇，然後選擇使用字符串。
 
-The compiler could convert the string `5` to a number and return the sum of `14`, but it did not. To get this result, you need to explicitly convert the string `5` to a number using the` Number()` 👇 method:
+編譯器可以轉換字符串 `5` 到一個數字並返回 `14`, 但事實並非如此。 要獲得此結果，您需要顯式轉換字符串 `5` 到使用 `Number()` 👇 方法:
 
 ```jsx live
 function learnJavaScript() {
@@ -38,17 +38,17 @@ function learnJavaScript() {
 }
 ```
 
-## Type conversion
+## 類型轉換
 
 ![Transformation](https://media.giphy.com/media/l2SpMMVivErM0Q7jG/giphy.gif)
 
-Means the transfer of data from one data type to another. Implicit conversion occurs when the compiler automatically assigns (assigns) data types, but the source code may also explicitly require the conversion to complete.
+表示將數據從一種數據類型傳輸到另一種數據類型。 隱式轉換發生在編譯器自動分配（分配）數據類型時，但是源代碼也可能明確要求轉換完成。
 
-### String conversion
+### 字符串轉換
 
 ![Transformation](https://media.giphy.com/media/RLVHPJJv7jY1q/giphy.gif)
 
-String conversion occurs when you want to represent something as a string. For example, we can use the `String (value)` function to convert a value to a string 👇:
+當您想將某些東西表示為字符串時，就會發生字符串轉換。 例如，我們可以使用 `String (value)` 將值轉換為字符串的函數 👇:
 
 ```jsx live
 function learnJavaScript() {
@@ -59,13 +59,13 @@ function learnJavaScript() {
 }
 ```
 
-The transformation takes place in an obvious way. `true` ✅ becomes`"true"`✅
+轉換以明顯的方式發生。 `true` ✅ 變成`"true"`✅
 
-### Numeric conversion
+### 數值轉換
 
 ![Transformation](https://media.giphy.com/media/4H5nOUqX7FywOGpCF7/giphy.gif)
 
-Numerical conversion occurs in math functions and expressions.
+數值轉換發生在數學函數和表達式中。
 
 ```jsx live
 function learnJavaScript() {
@@ -75,7 +75,7 @@ function learnJavaScript() {
 }
 ```
 
-We can use the `Number (value)` function to explicitly convert `value` to a number 👇:
+我們可以使用 `Number (value)` 函數顯式轉換 `value` 到一個數字 👇:
 
 ```jsx live
 function learnJavaScript() {
@@ -86,9 +86,9 @@ function learnJavaScript() {
 }
 ```
 
-Explicit conversion is often used when we expect to get a number from a string context, such as text fields in forms.
+當我們期望從字符串上下文中獲取數字（例如表單中的文本字段）時，通常會使用顯式轉換。
 
-If the string cannot be explicitly cast to a number, then the conversion result will be `NaN` (Not-a-Number, "not a number "). For example 👇:
+如果無法將字符串顯式轉換為數字，則轉換結果將為 `NaN` (非數字, "not a number "). 例如 👇:
 
 ```jsx live
 function learnJavaScript() {
@@ -98,16 +98,16 @@ function learnJavaScript() {
 }
 ```
 
-### Numeric conversion rules:
+### 數值轉換規則:
 
 | Value            |                                                                              Converted to ...                                                                               |
 | ---------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 | `undefined`      |                                                                                    `NaN`                                                                                    |
 | `null`           |                                                                                     `0`                                                                                     |
 | `true` /` false` |                                                                                  `1` /` 0`                                                                                  |
-| `string`         | White space is trimmed at the edges. Further, if an empty string remains, then we get 0, otherwise a number is "read" from a non-empty string. On error, the result is NaN. |
+| `string`         | 邊緣處留有空白。 此外，如果保留一個空字符串，則我們將得到0，否則將從非空字符串“讀取”一個數字。 錯誤時，結果為 NaN。 |
 
-Examples:
+例子:
 
 ```javascript
 Number('   123   ') // 123
@@ -118,17 +118,17 @@ Number(null) // 0
 Number(undefined) // NaN
 ```
 
-Note that `null` and` undefined` behave differently. So, `null` becomes zero, while` undefined` is cast to `NaN`.
+注意 `null` 和 `undefined` 表現不同。 所以， `null` 變為零，而 `undefined` 被投射到 `NaN`.
 
-### Boolean conversion
+### 布爾轉換
 
 ![Transformation](https://media.giphy.com/media/JjAdpCxrdro7m/giphy.gif)
 
-The logical transformation is the simplest. Occurs in logical operations, but can also be performed explicitly with the function⚙️ `Boolean (value)`.
+邏輯轉換是最簡單的。 發生在邏輯運算中，但也可以使用功能⚙️顯式執行 `Boolean (value)`.
 
-### Boolean conversion rules:
+### 布爾轉換規則:
 
-Values that are intuitively "empty" such as `0`, an empty string,` null`, `undefined`, and` NaN` become `false`. All other values become `true`.
+直觀上是“空”的值，例如 `0`, an empty string,`一個空字符串null`, `undefined`, 和 `NaN` 變得`false`. 所有其他值變為 `true`.
 
 ```javascript
 Boolean(1) // true
@@ -137,8 +137,8 @@ Boolean('Привет!') // true
 Boolean('') // false
 ```
 
-:::caution Note that the line with zero "0" is true
-Some languages👅 (for example PHP) interpret the string `" 0 "` as `false`. But in JavaScript, if a string is not empty, then it is always `true`
+:::注意請注意，零“ 0”的行為true
+某些語言👅（例如PHP）會解釋字符串 `" 0 "` 作為 `false`. 但是在JavaScript中，如果字符串不為空，則始終為 `true`
 :::
 
 ```javascript
@@ -146,60 +146,60 @@ Boolean('0') // true
 Boolean(' ') // space is also true (any non-empty string is true)
 ```
 
-## Problems?
+## 問題？
 
 ![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
 
-Channel in [Discord](https://discord.gg/6GDAfXn) after paying on [Patreon](https://www.patreon.com/javascriptcamp).
+頻道輸入 [Discord](https://discord.gg/6GDAfXn) 付款後 [Patreon](https://www.patreon.com/javascriptcamp).
 
-## Questions:
+## 問題:
 
 ![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
 
-Which function should you use for string conversion?
+您應該使用哪個函數進行字符串轉換？
 
 1. `String (value)`
 2. `Boolean (value)`
 3. `Number (value)`
 
-What is typecasting?
+什麼是類型轉換？
 
-1. Transferring data from one type to another
-2. Converting values ​​from one data type to another
-3. Representation of something as a string
+1.將數據從一種類型傳輸到另一種類型
+2.將值從一種數據類型轉換為另一種數據類型
+3.用字符串表示事物
 
-What is the key difference between typecasting and typecasting?
+類型轉換和類型轉換之間的主要區別是什麼？
 
-1. Type casting is explicit, and type conversion is implicit
-2. Type casting is implicit, and type conversion is explicit
-3. Type conversion is implicit, and type conversion can be both explicit and implicit
+1.類型轉換是顯式的，類型轉換是隱式的
+2.類型轉換是隱式的，類型轉換是顯式的
+3.類型轉換是隱式的，類型轉換可以是顯式的也可以是隱式的
 
-When would the conversion result be `NaN`?
+轉換結果何時 `NaN`?
 
-1. When a string cannot be explicitly cast to a number
-2. When a number cannot be explicitly cast to a string
-3. When there is an error in the code
+1.無法將字符串顯式轉換為數字時
+2.無法將數字顯式轉換為字符串時
+3.當代碼中有錯誤時
 
-What do “empty” values ​​become when converted?
+做什麼 “empty” 轉換時會變成值？
 
 1. `null`
 2. `true`
 3. `false`
 
-In order to understand how much you learned this lesson, take the test on the [mobile application](http://onelink.to/njhc95) of our school on this topic.
+為了了解您學到了多少本課程，請對 [mobile application](http://onelink.to/njhc95) 我們學校就這個話題。
 
 ![Sumerian school](/img/app.png)
 
-## Links
+## 鏈接
 
 1. [MDN web docs - Typecasting](https://developer.mozilla.org/en/docs/Словарь/Type_coercion)
 2. [Code for Teens: The Perfect Beginner's Guide to Programming, Volume 1: Javascript - Jeremy Moritz](https://www.amazon.com/Code-Teens-Beginners-Programming-Javascript-ebook/dp/B07FCTLVPC)
 3. [JavaScript.ru](https://learn.javascript.ru/ifelse#blok-else)
 4. [Integer arithmetic](https://maths-public.ru/arithmetic/actions)
 
-## Contributors ✨
+## 貢獻者 ✨
 
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+感謝這些好人 ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
 <table>
   <tr>

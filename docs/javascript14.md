@@ -52,7 +52,7 @@ Defining regular expressions using literals. For regular expressions, slashes `/
 let regExp = /pattern/
 ```
 
-If you decide to create regular expressions using literals, then it should be borne in mind that this method of creation _ does not allow dynamic changes_ in the specified values. This is due to the fact that regular expression literals cause _precompilation_ when the script is parsed.
+If you decide to create regular expressions using literals, then it should be borne in mind that this method of creation _does not allow dynamic changes_ in the specified values. This is due to the fact that regular expression literals cause _precompilation_ when the script is parsed.
 
   </TabItem>
   
@@ -116,9 +116,9 @@ Flags are used to enhance regular expression searches.
 - `g` - when searching, searches for all matches;
 - `i` - search does not depend on case`[Z-z]`;
 - `m` - multi-line mode;
-- `s` - turns on the ** dotall ** mode, in which the dot` .` can match a line feed character;
-- `y` - searches starting from the character that is at the position of the ** lastindex ** property of the current regular expression;
-- `u` - enables ** Unicode ** support.
+- `s` - turns on the **dotall** mode, in which the dot` .` can match a line feed character;
+- `y` - searches starting from the character that is at the position of the ** lastindex **property** of the current regular expression;
+- `u` - enables **Unicode** support.
 
 Using flags in different ways to create a regular expression pattern
 
@@ -135,7 +135,7 @@ values={[
 let regExp = /pattern/anchor // prettier-ignore
 ```
 
-Please note that the flags are ** integral part ** of the regular expression. Flags cannot be added or removed later. Also flags can be combined.
+Please note that the flags are **integral part** of the regular expression. Flags cannot be added or removed later. Also flags can be combined.
 
 ```jsx live
 function learnJavaScript() {
@@ -153,7 +153,7 @@ Try removing the `i` flag from the example.
 let regExp = new RegExp('pattern', 'anchor')
 ```
 
-Please note that the flags are ** integral part ** of the regular expression. Flags cannot be added or removed later. Also flags can be combined.
+Please note that the flags are **integral part** of the regular expression. Flags cannot be added or removed later. Also flags can be combined.
 
 ```jsx live
 function learnJavaScript() {

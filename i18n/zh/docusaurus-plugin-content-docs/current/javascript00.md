@@ -85,6 +85,6 @@ import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment'
 
 ## 付款
 
-營地通過支付 [Patreon](https://www.patreon.com/reactnative) JavaScript課程的費用為每月10美元。
+營地通過支付 [Patreon](https://www.patreon.com/javascriptcamp) JavaScript課程的費用為每月10美元。
 
 [![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)

@@ -1,18 +1,18 @@
 ---
 id: javascript13
-title: Default parameters
-sidebar_label: Default parameters
+title: 默認參數
+sidebar_label: 默認參數
 ---
 
 ![@serverSerrverlesskiy](/img/javascript/headers/25.jpg)
 
-Default parameters allow you to set default values for function parameters if the function is called without arguments, or if the parameter is explicitly passed the value `undefined`.
+如果在不帶參數的情況下調用函數，或者顯式傳遞了參數的值，則默認參數允許您設置函數參數的默認值 `undefined`.
 
 ![Teacher](https://media.giphy.com/media/3ohc10nduj1irsuzgA/giphy.gif)
 
-In JavaScript, function parameters⚙️ that are not passed values when called are defaulted to `undefined`. However, in some cases it may be useful to set a different default value. This is where the default options are intended.
+在JavaScript中，調用時未傳遞值的函數參數⚙️默認為 `undefined`. 但是，在某些情況下，設置其他默認值可能很有用。 這是默認選項的目的。
 
-## Syntax
+## 句法
 
 ![book](https://media.giphy.com/media/l0HlOBZcl7sbV6LnO/giphy.gif)
 
@@ -27,17 +27,17 @@ function learnJavaScript() {
 }
 ```
 
-### Passing other "false" values
+### 傳遞其他“假”值
 
 ![basketball](https://media.giphy.com/media/3oEdv5e5Zd2gsczAhG/giphy.gif)
 
-If any value other than `undefined` is passed to the formal parameter during the call, including one of the" false "values such as false ❎,` 0`, `" "`, `''`, `null`,`NaN`, then in this case the default value will not be assigned to the parameter. In this case, you need to write the code yourself that will catch these "false values".
+如果沒有其他值 `undefined` 在調用期間被傳遞給形式參數，包括“ false”值之一，例如false ❎,`0`, `" "`, `''`, `null`,`NaN`, 那麼在這種情況下，默認值將不會分配給該參數。 在這種情況下，您需要自己編寫代碼來捕獲這些“假值”。
 
-## Examples of
+## 示例
 
 ![Math](https://media.giphy.com/media/xT1Ra5h24Eliux3UVq/giphy.gif)
 
-In the default parameters, you can use the values of the previous (located to the left in the list) parameters:
+在默認參數中，可以使用先前（位於列表左側）參數的值：
 
 ```jsx live
 function learnJavaScript() {
@@ -49,7 +49,7 @@ function learnJavaScript() {
 }
 ```
 
-An example of a function with and without default parameters 👇:
+有或沒有默認參數的函數示例 👇:
 
 ```jsx live
 function learnJavaScript() {
@@ -75,45 +75,45 @@ function learnJavaScript() {
 }
 ```
 
-The result will be the same, but without default parameters, the code📟 can become noticeably larger.
+結果將是相同的，但是如果沒有默認參數，代碼📟可能會變得明顯更大。
 
-## Problems?
+## 問題？
 
 ![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
 
-Channel in [Discord](https://discord.gg/6GDAfXn) after paying on [Patreon](https://www.patreon.com/javascriptcamp).
+頻道輸入 [Discord](https://discord.gg/6GDAfXn) 付款後 [Patreon](https://www.patreon.com/javascriptcamp).
 
-## Questions:
+## 問題:
 
-![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
+![問題](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
 
-If no value is passed to function parameters⚙️, what is their default value?
+如果沒有將任何值傳遞給函數參數，️，那麼它們的默認值是多少？
 
 1. `null`
 2. `undefined`
 3. `NaN`
 
-Are the default parameters "catching" false values?
+默認參數是否“捕獲”錯誤值？
 
-1. Yes
-2. No
+1.是的
+2.沒有
 
-Is it possible to use the values of the parameters located to the left of the list in the default parameters?
+是否可以使用默認參數列表左側的參數值？
 
-1. Yes
-2. No
+1.是的
+2.沒有
 
-In order to understand how much you learned this lesson, take the test on the [mobile application](http://onelink.to/njhc95) of our school on this topic.
+為了了解您學到了多少本課程，請對 [mobile application](http://onelink.to/njhc95) 我們學校就這個話題。
 
 ![Sumerian school](/img/app.png)
 
-## Links
+## 鏈接
 
 1.  [MDN web docs](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Functions/Default_parameters)
 
-## Contributors ✨
+## 貢獻者 ✨
 
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+感謝這些好人 ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
