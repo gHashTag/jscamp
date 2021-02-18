@@ -22,6 +22,8 @@ values={[ {label: 'Choco', value: 'choco'}, {label: 'Homebrew', value: 'brew'}]}
 choco install -y nodejs.install
 ```
 
+Послу завершения установки PowerShell выдаст такой результат:
+![install_success](/img/typescript/01/install.png)
 </TabItem>
 
 <TabItem value="brew">
@@ -41,9 +43,6 @@ brew install node
 npm install -g typescript
 ```
 
-Послу завершения установки PowerShell выдаст такой результат:
-![install_success](/img/typescript/01/install.png)
-
 Вполне возможно, что ранее уже был установлен TS. В этом случае его можно обновить до последней версии с помощью команды
 
 ```bash
@@ -61,24 +60,93 @@ tsc -v
 ## Инициализация TypeScript в проекте
 
 Все что остается сделать так это подключить TypeScript к своему проекту. Для этого нужно создать файл с расширением `.ts` в папке с проектом, написать код и скомпилировать его.
-Это можно сделать в PowerShell командой:
+
+Начнем с простого примера Hello World на Node.js. Создайте новую папку HelloWorld и запустите редактор кода.
+
+### Создаем директорию `HelloWorld`
+
+<Tabs
+defaultValue="shell"
+values={[ {label: 'PowerShell', value: 'shell'}, {label: 'Bash', value: 'bash'}]}>
+
+<TabItem value="shell">
 
 ```bash
-tsc
+New-Item -ItemType "HelloWorld" -Path "c:\"
+cd \HelloWorld
 ```
 
-Например:
+</TabItem>
+
+<TabItem value="bash">
 
 ```bash
-tsc app.ts
+mkdir HelloWorld
+cd HelloWorld
 ```
+
+</TabItem>
+</Tabs>
+
+### Создаем файл `hello.ts`
+
+<Tabs
+defaultValue="shell"
+values={[ {label: 'PowerShell', value: 'shell'}, {label: 'Bash', value: 'bash'}]}>
+
+<TabItem value="shell">
+
+```bash
+New-Item -Name "hello.ts"
+```
+
+</TabItem>
+
+<TabItem value="bash">
+
+```bash
+touch hello.ts
+```
+
+</TabItem>
+</Tabs>
+
+### `HelloWorld` код
+
+В файл `hello.ts` вставляем следующий код:
+
+```ts title="HelloWorld/hello.ts"
+let message: string = 'Hello World'
+console.log(message)
+```
+
+Здесь мы создаем переменную `message` и объявляем тип `string`.
+
+### Компиляция кода
+
+Чтобы скомпилировать код TypeScript в JavaScript, вы можете открыть интегрированный терминал и ввести `tsc hello.ts`. Это скомпилирует и создаст новый файл JavaScript `helloworld.js`.
 
 :::note Примечание
 Сперва необходимо переместиться в папку с проектом. Иначе файл не будет найден. В командной строке перемещение по папкам происходит при помощи команды `cd`.
 :::
-Компилятор создаст файл с расширением `.js`. После каждого изменения необходимо производить компиляцию.
 
-Вот так просто работать с TypeScript.
+```bash
+tsc hello.ts
+```
+
+Компилятор создаст файл с расширением `.js`.
+
+Проверяем компиляцию:
+
+```bash npm2yarn
+node hello.js
+```
+
+:::note Примечание
+После каждого изменения необходимо производить компиляцию или же воспользоваться инструментом [Nodemon](https://www.npmjs.com/package/nodemon)
+:::
+
+В результате мы видем строку `Hello World`.
 
 ## Ссылки:
 
