@@ -10,6 +10,8 @@ TypeScript реализует объектно-ориентированный п
 
 Рассмотрим простой пример работы с классами:
 
+[Пример](https://www.typescriptlang.org/play?ssl=15&ssc=59&pln=1&pc=1#code/MYGwhgzhAEDiBOBTRAXR9oG8BQ1oHMlUBLAO3wC5oIV4z9oB6R6QQhBAmEED4QQThBBBEECEQLgSIp6AGmj9AHCCB+EGgDAAiCdAXCCAGEFzRgAe1I14AV2Aot8ABQBbRFDD5EVPfQCUWDXmbRAWCCdAvCCLAwiDK-JwK0MqA3CCqvLyqcCLortAoABbEEAB0hMii5NAAvNCW1rYaAL4amaimzjh4biyAOCCArCBBgCwgoRFRMQhZ8bXQSCj68KTQAOQAEoggIFoSo9AA1Ikp6RXZ+KXYZdggqMI9GPmkiADusQemoycmIAAmo47Y2Nq6WrtpM-ima+gZIlXQRzuQBIII0FN5mvJ+EpAOIgyj80Em0y00Gu8DuQA)
+
 ```typescript
 class Greeter {
   greeting: string // Свойство greeting, тип строка
@@ -25,7 +27,7 @@ class Greeter {
 
 let greeter = new Greeter('world')
 
-greeter.greet() // Вернет строчку Hello world
+console.log(greeter.greet()) // Вернет строчку Hello world
 ```
 
 Объявлен новый класс `Greeter`. Этот класс имеет три пункта: свойство `greeting`, конструктор, и метод `greet`. В последней строке создается экземпляр класса `Greeter`, используя new. Он вызывает конструктор, что определен ранее, создает новый объект, и запускает конструктор для его инициализации.
@@ -34,7 +36,7 @@ greeter.greet() // Вернет строчку Hello world
 
 В TypeScript используются привычные подходы объектно-ориентированного программирования. Одним из самых фундаментальных подходов в области программирования на основе классов является создание новых классов с помощью наследования.
 
-Пример:
+Пример
 
 ```typescript
 class Animal {

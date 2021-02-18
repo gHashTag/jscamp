@@ -16,7 +16,7 @@ sidebar_label: Преобразование типов
 
 ![inttodouble](/img/typescript/06/int-to-double.png)
 
-Как показано на изображении выше, преобразование int в double не приводит к потере данных, так как 32-битное значение умещается в 64 битах.
+Как показано на изображении выше, преобразование `int` в `double` не приводит к потере данных, так как 32-битное значение умещается в 64 битах.
 
 ## Явные преобразования
 
@@ -31,6 +31,8 @@ TypeScript предоставляет встроенные функции для
 
 Можно преобразовать число в строку, используя конструктор строки, как показано ниже.
 
+[Пример](https://www.typescriptlang.org/play?#code/DYUwLgBAdgrgtgIxAJwFzXk5EC8EAsATAFCiSyIoCCAzgMpjICWUA5ujYy67hA82wAUFLAEoIAegmB8EECsIIAEQWYCYQQHwggFhAIgcRBAHCCBBEEDcIIAYQCEoi7AQiDyVgLhBAwiDFiAYwD2UGs9AA6YM9bDM1PRcbKJAA)
+
 ```typescript
 let number: number = 42
 let numberAsString: string = String(number) //Перевод числа в строку
@@ -38,9 +40,13 @@ let numberAsString: string = String(number) //Перевод числа в ст�
 
 Также можно наоборот, перевести строку в число.
 
+[Пример](https://www.typescriptlang.org/play?ssl=4&ssc=20&pln=1&pc=1#code/DYUwLgBAzmBOCWA7A5gQSgOQK4FsBGIsAXNHEshALwQDkALAEw0BQokiuBxEH+hVEbH1gAKGAhTohXAJTNmAYwD2iKEtAA6YEuQjesoA)
+
 ```typescript
-let stringAsNumber: string = '42'
+llet stringAsNumber: string = '42'
 let number: number = Number(stringAsNumber)
+
+console.log(number)
 ```
 
 ## Ссылки:
