@@ -6,15 +6,17 @@ sidebar_label: Обобщения
 
 TypeScript является строго типизированным языком, однако иногда надо построить функционал так, чтобы он мог использовать данные любых типов. В некоторых случаях мы могли бы использовать тип any:
 
+[Пример](https://www.typescriptlang.org/play?#code/DYUwLgBA5uCSAmEC8EAUBLeAuCBDAdgJ4CUOBhyAfBJgFC2iQBOIAzgK7CQoxgKoBWYrQDGAe3ysxoAHTAxUVCw5diQA)
+
 ```typescript
-function getId(id: any): any {
-  return id
-}
+let getId = (id: any): any => id
+
 let result = getId(5)
+
 console.log(result)
 ```
 
-Однако в этом случае мы не можем использовать результат функции как объект того типа, который передан в функцию. Для нас это тип any. Если бы вместо числа 5 в функцию передавался бы объект какого-нибудь класса, и нам потом надо было бы использовать этот объект, например, вызывать у него функции, то это было бы проблематично. И чтобы конкретизировать возвращаемый тип, мы можем использовать обобщения:
+Однако в этом случае мы не можем использовать результат функции как объект того типа, который передан в функцию. Для нас это тип `any`. Если бы вместо числа `5` в функцию передавался бы объект какого-нибудь класса, и нам потом надо было бы использовать этот объект, например, вызывать у него функции, то это было бы проблематично. И чтобы конкретизировать возвращаемый тип, мы можем использовать обобщения:
 
 ```typescript
 function getId<T>(id: T): T {
@@ -22,21 +24,27 @@ function getId<T>(id: T): T {
 }
 ```
 
-С помощью выражения `<T>` мы указываем, что функция getId типизирована определенным типом T. При выполнении функции вместо Т будет подставляться конкретный тип. Причем на этапе компиляции конкретный тип не известен. И возвращать функция будет объект этого типа. Например:
+С помощью выражения `<T>` мы указываем, что функция `getId` типизирована определенным типом `T`. При выполнении функции вместо `Т` будет подставляться конкретный тип. Причем на этапе компиляции конкретный тип не известен. И возвращать функция будет объект этого типа.
+
+[Пример](https://www.typescriptlang.org/play?ssl=8&ssc=21&pln=1&pc=1#code/GYVwdgxgLglg9mABAcwKZQJIBMA8AVAPgAoYsAuRPASgr0QG8AoRRAJ3RFaVMYF9GANujaoAziAFQAjIgC8KdNhxgQAWwBGqVsQCsVRhASi4QgHQC4yIu3GSp+wcJsSoAJjkLMuUVFYwwyMQA5ACG6hBB+oZgxmYWVs6SrlRAA)
 
 ```typescript
 function getId<T>(id: T): T {
   return id
 }
+
 let result1 = getId<number>(5)
 console.log(result1)
+
 let result2 = getId<string>('abc')
 console.log(result2)
 ```
 
-В первом случае вместо параметра T будет испльзоваться тип number, поэтому в функцию мы можем передать число. Во втором случае вместо T используется тип string, поэтому во втором случае можно передать строку. Таким образом, мы можем передать в функцию объекты различных типов, но при этом сохраняется строгая типизация, каждый вариант обобщенной функции может принимать объекты только определенного типа.
+В первом случае вместо параметра `T` будет испльзоваться тип `number`, поэтому в функцию мы можем передать число. Во втором случае вместо `T` используется тип `string`, поэтому во втором случае можно передать строку. Таким образом, мы можем передать в функцию объекты различных типов, но при этом сохраняется строгая типизация, каждый вариант обобщенной функции может принимать объекты только определенного типа.
 
 Подобным образом еще можно использовать обобщенные массивы:
+
+[Пример](https://www.typescriptlang.org/play?#code/GYVwdgxgLglg9mABAcwKZQMpQE4zMgHgBUA+ACgENtkAuRAQW2woE9iSBKOgZxz2UQBvAFCJEAG3SJsqbiHFREAXkQByVaMTA42RGUmKYyxAAYA3IiMFEVZADpJ+KAAsLMANTuOQzWJjA9IxJTbxk5BUR3FVUAGg0xMTD5RSibagBtGABdOyg4LFx8Mg5NAF9NCARuOEkHOGQyJIUSxPQQbCQmqGFy4QNpWWTjNEw+fAIwEABbACNUbHJ0gEYYxAAmVYBmABZVgFYsksqwatrxesbB5qA)
 
 ```typescript
 function getString<T>(arg: Array<T>): string {
@@ -55,9 +63,12 @@ console.log(result)
 
 В данном случае вне зависимости от типа данных, переданных в массиве, все его элементы соединятся в одну общую строку.
 
+<!--
 ## Обобщенные классы и интерфейсы
 
 Кроме обобщенных функций и массивов также бывают обобщенные классы и интерфейсы:
+
+[Пример](https://www.typescriptlang.org/play?#code/MYGwhgzhAECqEFMBOAeAKgPmgbwFDWgAckBLANzABcFoB9EgEwC5o19pgB7AOwkqQCuwSpyQAKRizQBKHOwKUAFiQgA6eg2gBeaI3YBfdgHMElAJIMx0qXIIEkpgUm7QlK9XoKHDuEKdecALba0NwIAO5wiKjcAoEARsgYYgDM0rhcvJx+qiCcRmIigaom5pbSsgD0ldCATCCAfCCA7CC1gAIggAwggJIgbYCsIIBCIKFxiUi4vv5gICTANDphkfDIKHyk3EbJAORkEABma+mZENkIufli45NHpRZWVTUNze1dfdBLJCtAA)
 
 ```typescript
 class User<T> {
@@ -78,6 +89,8 @@ console.log(alice.getId()) // возвращает string
 ```
 
 Только в данном случае надо учитывать, что если мы типизировали объект определенным типом, то сменить данный тип уже не получится. То есть в следующем случае второе создание объекта не будет работать, так как объект tom уже типизирован типом number:
+
+[Пример](https://www.typescriptlang.org/play?#code/MYGwhgzhAECqEFMBOAeAKgPmgbwFDWgAckBLANzABcFoB9EgEwC5o19pgB7AOwkqQCuwSpyQAKRizQBKHOwKUAFiQgA6eg2gBeaI3YBfdgHMElAJIMx0qXIIEkpgUm7QlK9XoKHDuEKdecALba0NwIAO5wiKjcAoEARsgYYgDM0rhcvJx+qiCcRmIigaom5pbS6bhFIWGR8MgofKTcRskA5GQQAGZtsgD0fdCAfCCAEiCAHCCAjCCAXCCADCBAA)
 
 ```typescript
 let tom = new User<number>(3)
@@ -105,7 +118,7 @@ class User<T> implements IUser<T> {
 
 ## Ограничения обобщений
 
-Иногда необходимо использовать обобщения, однако принимать любой тип в функцию или класс вместо параметра T нежелательно. Например, пусть имеется следующий интерфейс и классы его реализующие:
+Иногда необходимо использовать обобщения, однако принимать любой тип в функцию или класс вместо параметра `T` нежелательно. Например, пусть имеется следующий интерфейс и классы его реализующие:
 
 ```typescript
 interface IUser {
@@ -146,7 +159,7 @@ class UserInfo<T extends IUser> {
 }
 ```
 
-В методе getUserInfo мы хотим использовать функцию getInfo(), предполагая, что в качестве параметра будет передаваться объект IUser. Но чтобы нельзя было передать объекты любого типа, а только объекты IUser, устанавливается ограничения с помощью ключевого слова extends.
+В методе `getUserInfo` мы хотим использовать функцию `getInfo()`, предполагая, что в качестве параметра будет передаваться объект `IUser`. Но чтобы нельзя было передать объекты любого типа, а только объекты `IUser`, устанавливается ограничения с помощью ключевого слова extends.
 
 И затем мы можем использовать класс, передавая подходящие объекты:
 
@@ -185,7 +198,7 @@ class User {
 }
 
 let user : User = userFactory(User)
-```
+``` -->
 
 ## Ссылки:
 
