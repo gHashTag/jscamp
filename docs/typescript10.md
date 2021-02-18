@@ -1,133 +1,96 @@
 ---
 id: typescript10
-title: Declarations
-sidebar_label: Declarations
+title: Modules
+sidebar_label: Modules
 ---
 
+The concept of modules first appeared in the _ECMAScript 2015_ standard. Modules allow you to split a complex application into separate files, each of which contains strictly defined functionality, and then, using import, to put them together. Variables, classes, functions declared in a module are not available from outside this module, unless they are exported using the `export` command. And in order to use the exported parts in another module, you need to import them using the `import` command.
 
-Declarations are a very important part of _TypeScript_ due to which static typing is projected onto dynamic _JavaScript_.
+## Export
 
-## Declaration
+Any declaration can be exported using the `export` keyword.
 
-Since the development of programs in _TypeScript_ uses libraries written in _JavaScript_, the `tsc` compiler, whose main task is type checking, feels like it is blindfolded. Despite the fact that with each new version type inference is getting better and better at understanding _JavaScript_, it is still far from ideal. In addition, parsing the _JavaScript_ code adds a load on the processor, which is sometimes not enough precious time when developing modern applications.
-
-_TypeScript_ solved this problem by connecting to the project the declarations it generated in advance or manually created by developers. Declarations are placed in files with the extension `.d.ts` and consist only of type declarations that completely repeat the program until the moment of compilation, when it was deprived of all typing features. Their operation is very similar to the operation of files with the extension `.h` in languages _C/C++_.
-
-```jsx
-// Файл Animal.ts
-export default class Animal {
-   public name: string = 'animal';
-   public voice(): void {}
-}
-
-// Файл Animal.d.ts
-declare module "Animal" {
-   export default class Animal {
-       name: string;
-       voice(): void;
-   }
-}
-```
-
-## Installation declaration
-
-If the declaration is distributed separately from the library, then it will most likely end up in a huge repository on `github` called` DefinitelyTyped` containing a huge number of declarations. To make it easier to navigate in this set, in addition to the site [TypeSearch](https://www.typescriptlang.org/dt/search?search=) acting as a search engine, a declaration manager called `Typed` was created. But we will not talk about it since it is used when working with `TypeScript` versions less than` v2.0`, so we will talk about its development in the image of the package manager team _npm_, namely _@types_.
-
-In order to set the required declaration, in the terminal it is necessary to execute the command, part of which consists of their directive `@ types`, followed by the name of the library, separated by a slash` / `.
+[Playground Link](https://www.typescriptlang.org/play?#code/PTAEloQQuEEQRBH4QQ+EEAIgghEFLQrCCPYHhB2F4QPeQThAAoAGwFMAXUAMwCcBXASyoC5QBnK+5gOwDmoALygA5ACMAhnxlSxAGhKgVoACYUAbswDGFDt16CR4zgFsp9KgAcAFgHs+FRctUT79sh3eeKMkzyMFCQUAB7W9lagAN50TKwK6lq6FIk+ZKBSnKDMnABCHhkAviQkIBAwCCigkPB40MiADCB4yIDSICHhkTQ6jtygFCYATAB0AOwAjAAcg5NTMwAsAKwAnAAMS4MAzIubAGyrM6PzE9uDu7uDi6ul5VBwSKiAIiCAwiB4kIBiIIAcIJ8dEVG0jD4OiozEcXEYZgAFKEFABPDh8CESCj0ACUCKRKJirhU9GojHofFAoVAAGpQLCSCUymA7lVUJ8WphHugiNBGr8ujk+FQUbQpHpQAAxeI0aI40CyMz6Lg8fgCJSqLgAdwo1CcnE4GLMyPoircjgoWtA6T8fCpN1plQeNUA3CCNaDszlRHRkLLZACCfGYFgy4qVZnsmgokLUuSoMj0AEk+ABZago42InVY0SrVHYpVKnp8Ti+YZkewCSEAAy9PqkGUDwbUoAAJNEw9xIxQY-HefROEUzMMS6iANwSkrU27W6qAJhBoOhAMwg8FA0EQjUA7CDPZ1iuIsKiJVLgsyJEWbxLl32gIpAA)
 
 ```jsx
-npm i -D @types/name
-```
+// Экспорт переменной
+let fruit: string = 'banana',
+  device: string = 'smartphone',
+  bool: boolean = true
+export { fruit, device, bool as isBool }
 
-## Creating a declaration
+// Экспорт константы
+export const e = 2.7182818284590452353602874713526625
 
-In addition to the fact that the declaration can be written by hand, it can also be generated automatically, provided that the code is written in _TypeScript_. In order for _tsc_ to generate declarations during compilation, you need to activate the compiler option `--declaration`.
-
-It will not be superfluous to remind you that the declaration needs to be generated only when the library is completely ready. The entry point of the compiler itself is the configuration file that was installed for it at startup. This means that if the project is in the `src` directory, then in the declaration the path will be specified as` src / libname` instead of the required `lib`.
-
-```jsx
-// Ожидается
-declare module 'libname' {
-  // ...
+// Экспорт функции
+export function sum(x, y: number): number {
+  return x + y
 }
 
-// Есть
-declare module 'src/libname' {
-  // ...
+// Экспорт интерфейса
+export interface Fruit {
+  name: string;
+  sweetness: number;
+  bones: boolean;
 }
-```
 
-## Example
-
-Let's see how we can use header files, using the example of using global variables. For example, a _JS_ variable is defined on a web page.
-
-```html
-<!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8" />
-    <title>TypeScript HTML</title>
-  </head>
-
-  <body>
-    <h1>TypeScript HTML</h1>
-    <div id="content"></div>
-    <script>
-      let gVar = 'Hello TypeSript !'
-    </script>
-    <script src="app.js"></script>
-  </body>
-</html>
-```
-
-We want to access this variable in the TypeScript code in the file `app.ts`.
-
-```jsx
-class Utility {
-  static displayGlobalVar() {
-    console.log(globalVar)
+// Экспорт класса
+export class Animal {
+  move(distanceInMeters: number = 0) {
+    console.log(`Animal moved ${distanceInMeters}m.`)
   }
 }
 
-window.onload = () => {
-  Utility.displayGlobalVar()
-}
+// Экспорт всего сразу
+export { fruit, e, sum, Fruit, Animal }
 ```
 
-When the application is launched, the _TS_ compiler will not be able to compile the program, since the global variable does not yet exist for the _TS_ code. In this case, we need to include the definition of a global variable using declarative files. To do this, add a new file to the project, which we will call `globals.d.ts` and which will have the following content.
+## Default export
+
+Using the keyword `default` you can export by default.
+
+[Playground Link](https://www.typescriptlang.org/play?#code/KYDwDg9gTgLgBAE2AMwIYFcA28DGnUDOBcAqgcFHAN4BQc9cOEAdgTFOjjNABRjoAjTAEsccZqgC2wAJTUAvjXlA)
 
 ```jsx
-declare let gVar: string
+export default class User {
+    constructor(public name) {}
+}
 ```
 
-Using the declare keyword, the definition of a global variable is included in the TS program. Let's also change the file `app.ts`.
+## Import
+
+You can connect the exported functionality of the module using the keyword `import`.
+
+[Playground Link](https://www.typescriptlang.org/play?#code/PTAEgwQQeEEfhBD4QQBEEEIgpr0BwglCsIPAUASwFsAHAewCcAXUAb1AEEAaUAIVAF9QAzMkg0AcgB0wAM4BjMniIUR-HDhAQYCZIBYQQNwggeRBQgWRBAXCCBBEDhJADCApYoQMIgkWOsDiICcC8IGkByIPmLkqAVREBTMlw8fELAAK5+ZLLyilDGyAagqvCWgMwgGKAYmI6YkO6klDT0oACGIiVMrBzcvALC4pLSUQpgsSqggEwgBpiAoiCgNqqW6piAnCB5nqAAVCVl9VIygTUhs41yADa+VMWgALygyzKCdEA)
 
 ```jsx
-// <reference path="globals.d.ts" />
+// Импорт пример
+import { A, B } from './scripts'
 
-class Utility {
-  static displayGlobalVar() {
-    console.log(gVar)
-  }
-}
-window.onload = () => {
-  Utility.displayGlobalVar()
-}
+// Импорт для экспорта по умолчанию
+import User from './users'
+
+// Импорт с другим именем
+import { A as a, B } from './scripts'
+
+// Импорт всех модулей
+import * as scripts from './scripts'
+let a = scripts.A
 ```
 
-Using the `reference` directive at the beginning of the file, the header file` globals.d.ts` is included. The path parameter specifies the path to the header file.
+## Re-export
 
-Project structure:
+In a module, you can re-export the functionality of some other module using the `export .. from` construction. In this case, no import is performed locally and the variable is not created.
 
-- app.ts
-- globals.d.ts
-- index.html
+[Playground Link](https://www.typescriptlang.org/play?#code/KYDwDg9gTgLgBAbzgITgQwM5wEZwL5wBmUEAtnAOQB0A9BgMZQCWYMGFA3EA)
 
-When you run the `index.html` file in the developer console, you will see the phrase `Hello TypeScript !`.
+```jsx
+export { B as b } from './scripts'
+```
 
 ## Questions
 
-Now we are ready to explore with you _TypeScript_, but in order to understand how much you learned this lesson, take the test in the [mobile application](http://onelink.to/njhc95) in our school on this topic.
+Now we are ready to study _TypeScript_ with you, but in order to understand how much you learned this lesson, take the test in the [mobile application](http://onelink.to/njhc95) in our school on this topic.
 
 ![Sumerian school](/img/app.png)
 
