@@ -10,18 +10,18 @@ import YouTube from 'react-youtube'
 
 <YouTube videoId='has8w-mzVSM' />
 
-Вот так в конечном итоге примерно должно выглядеть:
+Вот так в конечном итоге должно выглядеть:
 
-```SnackPlayer
-import { Text, AppRegistry } from 'react-native';
+```jsx
+import { Text, AppRegistry } from 'react-native'
 
-const App = (props) => (
+const App = props => (
   <View>
     <Text>App1</Text>
   </View>
-);
+)
 
-AppRegistry.registerComponent('Appname', () => App);
+AppRegistry.registerComponent('Appname', () => App)
 ```
 
 [![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)

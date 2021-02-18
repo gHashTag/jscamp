@@ -8,18 +8,36 @@ sidebar_label: Установка
 
 ## Установка Node.js
 
-Для установки через NPM необходимо установить Node.js (если он ранее не был установлен). Для дальнейших действий нужен установленный менеджер пакетов [Chocolatey](https://react-native-village.github.io/docs/start00#установка-chocolatey). С помощью него установим NPM.
-Для начала процесса установки необходимо выполнить в Powershell комманду:
+Для установки через NPM необходимо установить Node.js (если он ранее не был установлен). Если у вас Windows, то для дальнейших действий нужен установленный менеджер пакетов [Chocolatey](https://www.jscamp.app/ru/docs/start00/#%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-chocolatey). С помощью него установим Node.js. Если у вас MacOS, то мы используем менеджер пакетов [Homebrew](https://www.jscamp.app/ru/docs/start00_2#homebrew).
+
+Для начала процесса установки необходимо выполнить команду:
+
+<Tabs
+defaultValue="choco"
+values={[ {label: 'Choco', value: 'choco'}, {label: 'Homebrew', value: 'brew'}]}>
+
+<TabItem value="choco">
 
 ```bash
 choco install -y nodejs.install
 ```
 
+</TabItem>
+
+<TabItem value="brew">
+
+```bash
+brew install node
+```
+
+</TabItem>
+</Tabs>
+
 ## Установка TypeScript
 
 Чтобы установить TypeScript необходимо выполнить в Powershell комманду:
 
-```bash
+```bash npm2yarn
 npm install -g typescript
 ```
 

@@ -218,7 +218,7 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // eslint-disable-next-line global-require
-          remarkPlugins: [require('./plugins/remark-snackplayer')],
+          remarkPlugins: [require('./plugins/remark-snackplayer'), require('@docusaurus/remark-plugin-npm2yarn')],
           editUrl: 'https://github.com/gHashTag/jscamp/tree/gh-pages'
         },
         theme: {

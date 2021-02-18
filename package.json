@@ -20,7 +20,7 @@
   "dependencies": {
     "@docusaurus/core": "^2.0.0-alpha.fd17476c3",
     "@docusaurus/preset-classic": "^2.0.0-alpha.fd17476c3",
-    "@docusaurus/remark-plugin-npm2yarn": "2.0.0-alpha.70",
+    "@docusaurus/remark-plugin-npm2yarn": "^2.0.0-alpha.70",
     "@docusaurus/theme-live-codeblock": "2.0.0-alpha.70",
     "@docusaurus/theme-search-algolia": "^2.0.0-alpha.70",
     "classnames": "^2.2.6",
