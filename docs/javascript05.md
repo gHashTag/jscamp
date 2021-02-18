@@ -99,11 +99,15 @@ foo.toUpperCase()
 
 ![TypeError](/img/javascript/25.jpg)
 
+## Open source
+
+We can also make mistakes, so if you find an error on the site or incorrect translation, you can easily help fix the error on the site. To do this, click on the `Edit this page` button at the very bottom of each page.
+
 ## Problems?
 
 ![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
 
-Channel in [Discord](https://discord.gg/6GDAfXn) after paying on [Patreon](https://www.patreon.com/javascriptcamp).
+Write to [Discord](https://discord.gg/6GDAfXn) chat.
 
 ## Questions:
 

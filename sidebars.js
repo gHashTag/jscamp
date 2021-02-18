@@ -92,8 +92,7 @@ module.exports = {
       'typescript06',
       'typescript07',
       'typescript08',
-      'typescript09',
-      'typescript10'
+      'typescript09'
     ],
     ['UI Kit']: ['unicorn00', 'unicorn01', 'unicorn02'],
     ['Authentication']: ['auth1-00', 'auth1-01', 'auth1-02'],

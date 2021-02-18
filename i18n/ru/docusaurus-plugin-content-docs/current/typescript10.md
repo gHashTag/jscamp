@@ -1,128 +1,92 @@
 ---
 id: typescript10
-title: Декларации
-sidebar_label: Декларации
+title: Модули
+sidebar_label: Модули
 ---
 
-Декларации это очень важная часть _TypeScript_ благодаря которой статическая типизация проецируется на динамический _JavaScript_.
+Концепция модулей впервые появилась в стандарте _ECMAScript 2015_. Модули позволяют разбить сложное приложение на отдельные файлы, в каждом из которых содержится строго определенный функционал, а после, с помощью импортирования, собрать их воедино. Переменные, классы, функции, объявленные в модуле, не доступны извне этого модуля, если они не экспортируются с помощью команды `export`. А для того, чтобы использовать экспортированные части в другом модуле, нужно их импортировать, воспользовавшись командой `import`.
 
-## Declaration
+## Экспорт
 
-Поскольку при разработке программ на _TypeScript_ используются библиотеки написанные на _JavaScript_, компилятор `tsc`, чьей главной задачей является проверка типов, чувствует себя будто у него завязаны глаза. Несмотря на то, что с каждой новой версией вывод типов все лучше и лучше учится разбирать _JavaScript_, до идеала ещё далеко. Кроме того, разбор _JavaScript_ кода добавляет нагрузку на процессор, драгоценного время которого при разработке современных приложений, порой и так не достаточно.
+Любое объявление можно экспортировать с помощью ключевого слова `export`.
 
-_TypeScript_ решил эту проблему за счет подключения к проекту заранее сгенерированных им или создаваемых вручную разработчиками деклараций. Декларации размещаются в файлах с расширением `.d.ts` и состоят только из объявлений типов полностью повторяющих программу до момента компиляции при которой она была лишена всех признаков типизации. Их действие во многом похоже на работу файлов с расширением `.h` в языках _C/C++_.
-
-```jsx
-// Файл Animal.ts
-export default class Animal {
-   public name: string = 'animal';
-   public voice(): void {}
-}
-
-// Файл Animal.d.ts
-declare module "Animal" {
-   export default class Animal {
-       name: string;
-       voice(): void;
-   }
-}
-```
-
-## Установка декларации
-
-Если декларация распространяется отдельно от библиотеки, то она скорее всего, попадет в огромный репозиторий на `github` под названием `DefinitelyTyped` содержащий огромное количество деклараций. Чтобы было проще ориентироваться в этом множестве, помимо сайта [TypeSearch](https://www.typescriptlang.org/dt/search?search=) выступающего в роли поисковика, был создан менеджер деклараций под названием `Typed`. Но о нем мы говорить не будем поскольку он применяется при работе с `TypeScript` версии меньше чем `v2.0`, поэтому речь пойдет о его развитии в образе команды пакетного менеджера _npm_, а именно _@types_.
-
-Для того чтобы установить требующуюся декларацию, в терминале необходимо выполнить команду часть которой состоит их директивы `@types` после которой, через косую черту `/`, следует имя библиотеки.
+[Playground Link](https://www.typescriptlang.org/play?#code/PTAEloQQuEEQRBH4QQ+EEAIgghEFLQrCCPYHhB2F4QPeQThAAoAGwFMAXUAMwCcBXASyoC5QBnK+5gOwDmoALygA5ACMAhnxlSxAGhKgVoACYUAbswDGFDt16CR4zgFsp9KgAcAFgHs+FRctUT79sh3eeKMkzyMFCQUAB7W9lagAN50TKwK6lq6FIk+ZKBSnKDMnABCHhkAviQkIBAwCCigkPB40MiADCB4yIDSICHhkTQ6jtygFCYATAB0AOwAjAAcg5NTMwAsAKwAnAAMS4MAzIubAGyrM6PzE9uDu7uDi6ul5VBwSKiAIiCAwiB4kIBiIIAcIJ8dEVG0jD4OiozEcXEYZgAFKEFABPDh8CESCj0ACUCKRKJirhU9GojHofFAoVAAGpQLCSCUymA7lVUJ8WphHugiNBGr8ujk+FQUbQpHpQAAxeI0aI40CyMz6Lg8fgCJSqLgAdwo1CcnE4GLMyPoircjgoWtA6T8fCpN1plQeNUA3CCNaDszlRHRkLLZACCfGYFgy4qVZnsmgokLUuSoMj0AEk+ABZago42InVY0SrVHYpVKnp8Ti+YZkewCSEAAy9PqkGUDwbUoAAJNEw9xIxQY-HefROEUzMMS6iANwSkrU27W6qAJhBoOhAMwg8FA0EQjUA7CDPZ1iuIsKiJVLgsyJEWbxLl32gIpAA)
 
 ```jsx
-npm i -D @types/name
-```
+// Экспорт переменной
+let fruit: string = 'banana',
+  device: string = 'smartphone',
+  bool: boolean = true
+export { fruit, device, bool as isBool }
 
-## Создание декларации
+// Экспорт константы
+export const e = 2.7182818284590452353602874713526625
 
-Помимо того, что декларацию можно написать руками, её также можно сгенерировать автоматически, при условии что код написан на _TypeScript_. Для того, чтобы _tsc_ при компиляции генерировал декларации, нужно активировать опцию компилятора `--declaration`.
-
-Будет не лишним напомнить, что декларацию нужно генерировать только тогда, когда библиотека полностью готова. Точкой входа самого компилятора, служит конфигурационный файл который ему был установлен при запуске. Это означает, что если проект находится в директории `src`, то в декларации путь будет указан как `src/libname` вместо требуемого `lib`.
-
-```jsx
-// Ожидается
-declare module 'libname' {
-  // ...
+// Экспорт функции
+export function sum(x, y: number): number {
+  return x + y
 }
 
-// Есть
-declare module 'src/libname' {
-  // ...
+// Экспорт интерфейса
+export interface Fruit {
+  name: string;
+  sweetness: number;
+  bones: boolean;
 }
-```
 
-## Пример
-
-Рассмотрим, как мы можем использовать заголовочные файлы, на примере использования глобальных переменных. К примеру на веб-странице определена _JS_ переменная.
-
-```html
-<!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8" />
-    <title>TypeScript HTML</title>
-  </head>
-
-  <body>
-    <h1>TypeScript HTML</h1>
-    <div id="content"></div>
-    <script>
-      let gVar = 'Hello TypeSript !'
-    </script>
-    <script src="app.js"></script>
-  </body>
-</html>
-```
-
-Получить доступ к этой переменной мы хотим в коде TypeScript в файле `app.ts`.
-
-```jsx
-class Utility {
-  static displayGlobalVar() {
-    console.log(globalVar)
+// Экспорт класса
+export class Animal {
+  move(distanceInMeters: number = 0) {
+    console.log(`Animal moved ${distanceInMeters}m.`)
   }
 }
 
-window.onload = () => {
-  Utility.displayGlobalVar()
-}
+// Экспорт всего сразу
+export { fruit, e, sum, Fruit, Animal }
 ```
 
-При запуске приложения компилятор _TS_ не сможет скомпилировать программу, так как для кода _TS_ глобальная переменная пока не существует. В этом случае нам надо подключать определение глобальной переменной с помощью декларативных файлов. Для этого добавим в проект новый файл, который назовем `globals.d.ts` и который будет иметь следующее содержимое.
+## Экспорт по умолчанию
+
+С помощью ключевого слова `default` можно делать экспорт по умолчанию.
+
+[Playground Link](https://www.typescriptlang.org/play?#code/KYDwDg9gTgLgBAE2AMwIYFcA28DGnUDOBcAqgcFHAN4BQc9cOEAdgTFOjjNABRjoAjTAEsccZqgC2wAJTUAvjXlA)
 
 ```jsx
-declare let gVar: string
+export default class User {
+    constructor(public name) {}
+}
 ```
 
-С помощью ключевого слова declare в программу на TS подключается определение глобальной переменной. Также изменем файл `app.ts`.
+## Импорт
+
+Подключить экспортируемую функциональность модуля можно с помощью ключевого слова `import`.
+
+[Playground Link](https://www.typescriptlang.org/play?#code/PTAEgwQQeEEfhBD4QQBEEEIgpr0BwglCsIPAUASwFsAHAewCcAXUAb1AEEAaUAIVAF9QAzMkg0AcgB0wAM4BjMniIUR-HDhAQYCZIBYQQNwggeRBQgWRBAXCCBBEDhJADCApYoQMIgkWOsDiICcC8IGkByIPmLkqAVREBTMlw8fELAAK5+ZLLyilDGyAagqvCWgMwgGKAYmI6YkO6klDT0oACGIiVMrBzcvALC4pLSUQpgsSqggEwgBpiAoiCgNqqW6piAnCB5nqAAVCVl9VIygTUhs41yADa+VMWgALygyzKCdEA)
 
 ```jsx
-// <reference path="globals.d.ts" />
+// Импорт пример
+import { A, B } from './scripts'
 
-class Utility {
-  static displayGlobalVar() {
-    console.log(gVar)
-  }
-}
-window.onload = () => {
-  Utility.displayGlobalVar()
-}
+// Импорт для экспорта по умолчанию
+import User from './users'
+
+// Импорт с другим именем
+import { A as a, B } from './scripts'
+
+// Импорт всех модулей
+import * as scripts from './scripts'
+let a = scripts.A
 ```
 
-С помощью директивы `reference` в начале файла подключается заголовочный файл `globals.d.ts`. С помощью параметра `path` указывается путь к заголовочному файлу.
+## Реэкспорт
 
-Структура проекта:
+В модуле можно выполнить реэкспорт функционала какого-то другого модуля при помощи конструкции `export .. from`. При этом локально импорт не производится и переменная не создается.
 
-- app.ts
-- globals.d.ts
-- index.html
+[Playground Link](https://www.typescriptlang.org/play?#code/KYDwDg9gTgLgBAbzgITgQwM5wEZwL5wBmUEAtnAOQB0A9BgMZQCWYMGFA3EA)
 
-При запуске файла `index.html` в консоле разработчика вы увидите фразу `Hello TypeScript !`.
+```jsx
+export { B as b } from './scripts'
+```
 
 ## Вопросы
 

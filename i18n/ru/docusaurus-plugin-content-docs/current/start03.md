@@ -16,7 +16,7 @@ Prettier - Инструмент форматирования кода c подд
 
 ## Устанавливаем зависимости
 
-```
+```bash
  yarn add eslint eslint-config-airbnb babel-preset-airbnb eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react eslint-watch babel-core babel-eslint babel-preset-react-native prettier prettier-eslint eslint-plugin-prettier eslint-config-prettier eslint-plugin-react eslint-plugin-react-native eslint-plugin-react-hooks --dev
 ```
 

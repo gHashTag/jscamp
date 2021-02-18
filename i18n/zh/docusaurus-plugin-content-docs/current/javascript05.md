@@ -12,7 +12,7 @@ import YouTube from 'react-youtube'
 
 ![錯誤](https://media.giphy.com/media/1VT3UNeWdijUSMpRL4/giphy.gif)
 
-在“難以捉摸的技術錯誤”的含義中，“電報”一詞在電報和電話公司的工作人員出現與計算機和無線電設備有關的問題之前就已經使用很久了。 1878年，托馬斯·愛迪生（Thomas Edison）寫道：
+在“難以捉摸的技術錯誤”的含義中，“電報”一詞在電報和電話公司的工作人員出現與計算機和無線電設備有關的問題之前就已經使用很久了。 1878 年，托馬斯·愛迪生（Thomas Edison）寫道：
 
 > “This was the case with all my inventions. 1️⃣ The first step is intuition, which comes like a flash, then difficulties arise - the device refuses to work, and that's when the bugs appear - as these small mistakes and difficulties are called - and it takes months of close observation, research and effort before it comes to commercial success or failure. "
 
@@ -28,15 +28,15 @@ import YouTube from 'react-youtube'
 
 ![老師](https://media.giphy.com/media/27c3zdaY6eeIAwp7Qi/giphy.gif)
 
-希望您在編寫代碼的過程中遇到了第一個錯誤。 為什麼希望？ 因為錯誤🙅‍♂️是我們的老師，向我們展示我們在代碼中做錯了什麼📟，而計算機🖥️，或更確切地說是代碼解釋器📟，簡直無法理解我們。 幾乎每天都會發生編寫代碼時的錯誤。 訣竅是能夠讀取機器將為您提供的錯誤消息，以便快速找到並修復編寫的代碼中的缺陷。 您對JavaScript的了解越多，您對錯誤消息的理解就越多-它們通常可以非常準確地顯示出您出了錯的地方。
+希望您在編寫代碼的過程中遇到了第一個錯誤。 為什麼希望？ 因為錯誤 🙅‍♂️ 是我們的老師，向我們展示我們在代碼中做錯了什麼 📟，而計算機 🖥️，或更確切地說是代碼解釋器 📟，簡直無法理解我們。 幾乎每天都會發生編寫代碼時的錯誤。 訣竅是能夠讀取機器將為您提供的錯誤消息，以便快速找到並修復編寫的代碼中的缺陷。 您對 JavaScript 的了解越多，您對錯誤消息的理解就越多-它們通常可以非常準確地顯示出您出了錯的地方。
 
-代碼код中最常見的幾種錯誤類型🙅‍♂️：
+代碼 код 中最常見的幾種錯誤類型 🙅‍♂️：
 
 ## 語法錯誤
 
 ![錯誤](https://media.giphy.com/media/TqiwHbFBaZ4ti/giphy.gif)
 
-`語法錯誤` - 違反語言規則правил。 例如，輸入9加分號 `9 +;` 👇:
+`語法錯誤` - 違反語言規則 правил。 例如，輸入 9 加分號 `9 +;` 👇:
 
 ```jsx live
 function learnJavaScript() {
@@ -48,10 +48,10 @@ function learnJavaScript() {
 
 Reply: `SyntaxError: Unexpected token;`
 
-語法錯誤 🙅‍♂️ 僅僅意味著句子的主體中存在錯誤 error‍ 🙅️。 換句話說，您寫的內容在JavaScript方面是不正確的。 口譯員無法閱讀您的句子，也不知道該如何處理。 “意外的令牌；”表示解釋器已讀取了它根本不希望讀取的內容：在我們的例子中，是分號 `;`.
+語法錯誤 🙅‍♂️ 僅僅意味著句子的主體中存在錯誤 error‍ 🙅️。 換句話說，您寫的內容在 JavaScript 方面是不正確的。 口譯員無法閱讀您的句子，也不知道該如何處理。 “意外的令牌；”表示解釋器已讀取了它根本不希望讀取的內容：在我們的例子中，是分號 `;`.
 
 讓我們再犯一個錯誤 🙅‍♂️！
-讓我們在控制台中輸入5加3，並在末尾輸入括號 `5 + 3)`.
+讓我們在控制台中輸入 5 加 3，並在末尾輸入括號 `5 + 3)`.
 
 ```jsx live
 function learnJavaScript() {
@@ -67,7 +67,7 @@ function learnJavaScript() {
 
 ![Error](https://media.giphy.com/media/8L0Pky6C83SzkzU55a/giphy.gif)
 
-`ReferenceError` 是無效名稱！ “ ReferenceError” 對象表示在訪問不存在的變量時發生的錯誤。例如，輸入5加號 `5 + alternating`:
+`ReferenceError` 是無效名稱！ “ ReferenceError” 對象表示在訪問不存在的變量時發生的錯誤。例如，輸入 5 加號 `5 + alternating`:
 
 ```jsx live
 function learnJavaScript() {
@@ -77,7 +77,7 @@ function learnJavaScript() {
 }
 ```
 
-現在我們前面有一個引用`ReferenceError`的錯誤。 也許您已經註意到這裡發生了什麼事？ 讓我們仔細閱讀錯誤消息（（畢竟，這就是它顯示出來的原因！）。 它說：“變量🔔未定義”-未設置變量，這就是我們的問題所在！ 首先，我們必須以某種方式聲明變量，例如：
+現在我們前面有一個引用`ReferenceError`的錯誤。 也許您已經註意到這裡發生了什麼事？ 讓我們仔細閱讀錯誤消息（（畢竟，這就是它顯示出來的原因！）。 它說：“變量 🔔 未定義”-未設置變量，這就是我們的問題所在！ 首先，我們必須以某種方式聲明變量，例如：
 
 ```jsx live
 function learnJavaScript() {
@@ -90,7 +90,7 @@ function learnJavaScript() {
 
 ## 類型錯誤
 
-TypeError對象表示當值不是預期類型時引發的錯誤。 我們將`toUpperCase`方法應用於未定義的類型，稍後將對其進行詳細介紹，該方法將被轉換為大寫，這是不允許的。 在瀏覽器控制台中檢查此錯誤，該錯誤在`LIVE EDITOR`.
+TypeError 對象表示當值不是預期類型時引發的錯誤。 我們將`toUpperCase`方法應用於未定義的類型，稍後將對其進行詳細介紹，該方法將被轉換為大寫，這是不允許的。 在瀏覽器控制台中檢查此錯誤，該錯誤在`LIVE EDITOR`.
 
 ```javascript
 var foo = undefined
@@ -98,6 +98,10 @@ foo.toUpperCase()
 ```
 
 ![TypeError](/img/javascript/25.jpg)
+
+## 開源
+
+我們也可能會犯錯誤，因此，如果您在網站上發現錯誤或翻譯不正確，則可以輕鬆地在網站上幫助解決錯誤。 為此，請點擊每頁底部的“編輯此頁面”按鈕。
 
 ## 問題？
 
@@ -111,15 +115,11 @@ foo.toUpperCase()
 
 “語法錯誤”是什麼意思？
 
-1.標誌順序錯誤
-2.違反語言規則
-3.括號不合適
+1.標誌順序錯誤 2.違反語言規則 3.括號不合適
 
 參考錯誤是什麼意思？
 
-1.未聲明的變量
-2.語法錯誤
-3.名字錯誤
+1.未聲明的變量 2.語法錯誤 3.名字錯誤
 
 為了了解您學到了多少本課程，請對 [mobile application](http://onelink.to/njhc95) 我們學校就這個話題。
 ![Sumerian school](/img/app.png)

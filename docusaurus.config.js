@@ -13,11 +13,11 @@ module.exports = {
   url: 'https://jscamp.app',
   baseUrl: '/',
   favicon: 'img/favicon.ico',
-  // organizationName: 'react-native-village',
+  organizationName: 'gHashTag',
   projectName: 'jscamp',
   onBrokenLinks: 'ignore',
   themes: ['@docusaurus/theme-live-codeblock'],
-  plugins: ['remark-snackplayer'],
+  plugins: ['remark-snackplayer', 'docusaurus-plugin-google-adsense'],
   clientModules: [require.resolve('./snackPlayerInitializer.js')],
   scripts: [{ src: 'https://snack.expo.io/embed.js', defer: true }],
   i18n: {
@@ -36,6 +36,9 @@ module.exports = {
     }
   },
   themeConfig: {
+    googleAdsense: {
+      dataAdClient: 'ca-pub-5291507187121449'
+    },
     hideableSidebar: true,
     algolia: {
       appId: 'ONIGVMP8QH',
@@ -215,8 +218,8 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // eslint-disable-next-line global-require
-          remarkPlugins: [require('./plugins/remark-snackplayer')],
-          editUrl: 'https://github.com/react-native-village/react-native-village.github.io/tree/gh-pages'
+          remarkPlugins: [require('./plugins/remark-snackplayer'), require('@docusaurus/remark-plugin-npm2yarn')],
+          editUrl: 'https://github.com/gHashTag/jscamp/tree/gh-pages'
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css')

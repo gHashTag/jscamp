@@ -10,6 +10,8 @@ TypeScript реализует объектно-ориентированный п
 
 Рассмотрим простой пример работы с классами:
 
+[Пример](https://www.typescriptlang.org/play?ssl=15&ssc=59&pln=1&pc=1#code/MYGwhgzhAEDiBOBTRAXR9oG8BQ1oHMlUBLAO3wC5oIV4z9oB6R6QQhBAmEED4QQThBBBEECEQLgSIp6AGmj9AHCCB+EGgDAAiCdAXCCAGEFzRgAe1I14AV2Aot8ABQBbRFDD5EVPfQCUWDXmbRAWCCdAvCCLAwiDK-JwK0MqA3CCqvLyqcCLortAoABbEEAB0hMii5NAAvNCW1rYaAL4amaimzjh4biyAOCCArCBBgCwgoRFRMQhZ8bXQSCj68KTQAOQAEoggIFoSo9AA1Ikp6RXZ+KXYZdggqMI9GPmkiADusQemoycmIAAmo47Y2Nq6WrtpM-ima+gZIlXQRzuQBIII0FN5mvJ+EpAOIgyj80Em0y00Gu8DuQA)
+
 ```typescript
 class Greeter {
   greeting: string // Свойство greeting, тип строка
@@ -25,16 +27,16 @@ class Greeter {
 
 let greeter = new Greeter('world')
 
-greeter.greet() // Вернет строчку Hello world
+console.log(greeter.greet()) // Вернет строчку Hello world
 ```
 
-Объявлен новый класс Greeter. Этот класс имеет три пункта: свойство greeting, конструктор, и метод greet. В последней строке создается экземпляр класса Greeter, используя new. Он вызывает конструктор, что определен ранее, создает новый объект, и запускает конструктор для его инициализации.
+Объявлен новый класс `Greeter`. Этот класс имеет три пункта: свойство `greeting`, конструктор, и метод `greet`. В последней строке создается экземпляр класса `Greeter`, используя new. Он вызывает конструктор, что определен ранее, создает новый объект, и запускает конструктор для его инициализации.
 
 ## Наследование
 
 В TypeScript используются привычные подходы объектно-ориентированного программирования. Одним из самых фундаментальных подходов в области программирования на основе классов является создание новых классов с помощью наследования.
 
-Пример:
+Пример
 
 ```typescript
 class Animal {
@@ -72,10 +74,12 @@ sam.move()
 tom.move(34)
 ```
 
-Здесь, ключевое слово `extends`, используется для создания подкласса. Классы Horse и Snake основаны на классе Animal и они получают доступ к его возможностям.
-Классы Snake и Horse создают метод move, который переопределяет метод move из класса Animal, придавая ему функциональность, специфичную для каждого из классов.
+Здесь, ключевое слово `extends`, используется для создания подкласса. Классы `Horse` и `Snake` основаны на классе `Animal` и они получают доступ к его возможностям.
+Классы `Snake` и `Horse` создают метод `move`, который переопределяет метод `move` из класса `Animal`, придавая ему функциональность, специфичную для каждого из классов.
 
-Это только основы работы с классами. Но в нашем курсе мы только ознокамливаемся с классами, так как `JavaScript` библиотека `React Native` учит нас функцианальному программированию.
+## Отказ от классов
+
+Так как в курсе нашей школы мы учим разрабатывать мобильные приложения с помощью библиотеки [React](https://ru.reactjs.org), где нововведение [React Hooks](https://ru.reactjs.org/docs/hooks-intro.html) позволяет использовать состояние и другие возможности [React](https://ru.reactjs.org) без написания классов. Поэтому рассказывать о классах больше нет смысла, так как мы от них отказались.
 
 ## Ссылки:
 
