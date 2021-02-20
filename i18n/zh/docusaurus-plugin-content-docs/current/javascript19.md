@@ -1,20 +1,20 @@
 ---
 id: javascript19
-title: Array iteration methods(map, filter, reduce)
-sidebar_label: map, filter, reduce
+title: 數組迭代方法（映射，過濾，縮小）
+sidebar_label: 映射，過濾，縮小
 ---
 
 ![@serverSerrverlesskiy](/img/javascript/headers/22.jpg)
 
-The JavaScript language has a clear preference for arrays over other data structures. They have a lot of convenient specific tricks, for example, a whole set of iterating methods: `map`,` filter`, `reduce`.
+JavaScript語言顯然比其他數據結構更喜歡數組。 它們有很多方便的特定技巧，例如，一整套迭代方法： `map`,` filter`, `reduce`.
 
-## map
+## 地圖
 
 ![Create](https://media.giphy.com/media/ffd0F6WNcRJMQ/giphy.gif)
 
-The `map ()` method creates🏗️ a new с array with the result of calling the specified function⚙️ for each element of the array.
+`map ()` 方法創建一個 🏗️ 新的с數組，結果是為數組的每個元素調用指定的函數⚙️。
 
-### Syntax
+### 句法
 
 ![Book](https://media.giphy.com/media/s6OiiampNcye4/giphy.gif)
 
@@ -24,27 +24,27 @@ let new_array = arr.map(function callback( currentValue[, index[, array]]) {
 }[, thisArg])
 ```
 
-The `map` method calls the passed `callback` function once for each element, in the order of their occurrence, and constructs a new array from the results of its call. The `callback` function is called only for array indices that have assigned values, including `undefined`. It is not called for missing array elements (that is, for indices that were never specified, deleted, or never assigned a value).
+`map` 方法調用傳遞的 `callback` 函數對每個元素按其出現的順序執行一次，並根據其調用結果構造一個新數組。 `callback` 僅對具有指定值的數組索引調用函數，包括 `undefined`. 缺少數組元素（即從未指定，刪除或從未分配值的索引）不會調用它。
 
-The function⚙️ `callback` is called with three arguments:
+功能 ⚙️ `callback`用三個參數調用：
 
-- the value of the element,
-- element index
-- and the array through which the passage is carried out.
+-元素的值，
+-元素索引
+-以及執行通過的陣列。
 
-If the `thisArg` parameter was passed to the `map` method, it will be used as the `this` value when `callback` is called. Otherwise, the `this` value will be `undefined`. Ultimately, the value of `this` as seen from the `callback` function is determined according to the usual rules for defining `this` as seen from a function.
+如果 `thisArg` 參數已傳遞給 `map` 方法，它將用作 `this` 值當 `callback` 叫做。 否則， `this` 價值將是 `undefined`. 最終， `this` 從 `callback` 函數是根據從函數中看到的用於定義“ this”的常規規則確定的。
 
-The `map` method does not modify the array for which it was called (although the function⚙️ can do that!).
+`map` 方法不會修改其調用的數組（儘管函數⚙️可以做到！）。
 
-The range of elements processed by the `map` method is set before the first call to the `callback` function. Items added to the array after the start of the `map` method will not be visited by the `callback` function. If the existing elements of the array are modified by the `callback` function, their values ​​passed to the function will be the values ​​at the time when the `map` method visits them. Deleted items will not be visited.
+元素處理的元素範圍 `map` 方法是在第一次調用之前設置的 `callback` 功能。 開始後添加到數組的項目 `map` 方法將不會被訪問 `callback` 功能。 如果數組的現有元素被修改 `callback` 函數，它們傳遞給函數的值將是 `map` 方法訪問他們。 刪除的項目將不會被訪問。
 
-### Examples:
+### 例子:
 
 ![Math](https://media.giphy.com/media/xT1Ra5h24Eliux3UVq/giphy.gif)
 
-#### simple example
+#### 簡單的例子
 
-You have an array with many objects, each representing a different person👨. There can be a lot of data here: name, age, hair color and favorite character from the cinema, but at the moment all this is not required - you only want to get an array of passport numbers of these people in order to give them all conference passes.
+您有一個包含許多對象的數組，每個對象代表一個不同的人👨 這裡可以有很多數據：電影院的名稱，年齡，頭髮顏色和喜歡的角色，但目前並不需要所有這些信息-您只想獲取這些人的護照號碼才能給他們 所有會議通行證。
 
 ```jsx live
 function learnJavaScript() {
@@ -78,11 +78,11 @@ function learnJavaScript() {
 }
 ```
 
-#### Creating an array of Fahrenheit values from an array of Celsius values:
+#### 從攝氏值數組創建華氏值數組：
 
 ![Thermometer](https://media.giphy.com/media/W23dJLsAW5knUU27Fv/giphy.gif)
 
-An example with processing each element of an array with a given formula 👇:
+使用給定公式處理數組的每個元素的示例 👇:
 
 ```jsx live
 function learnJavaScript() {
@@ -107,7 +107,7 @@ function learnJavaScript() {
 }
 ``` -->
 
-#### Displaying an array of numbers using a function that takes an argument 👇:
+#### 使用帶有參數的函數顯示數字數組 👇:
 
 ```jsx live
 function learnJavaScript() {
@@ -151,15 +151,15 @@ function learnJavaScript() {
 }
 ``` -->
 
-## filter
+## 篩選
 
 ![filter](https://media.giphy.com/media/xT5LMGupUKCHb7DnFu/giphy.gif)
 
-The `filter ()` method creates 🆕 a new array with all the elements that have passed the check specified in the passed function⚙️.
+`filter ()` 方法將創建一個新數組，其中包含所有已通過傳遞函數中指定的檢查的元素⚙️。
 
-The result of a filter is always an array. If a function⚙️ for an element returns🔄 `true` ✅ (or any" true "value), this element is included in the result, otherwise it is not included.
+過濾器的結果始終是一個數組。 如果元素的函數⚙️返回 🔄 `true` ✅ （或任何“ true”值），則此元素將包含在結果中，否則將不包括在內。
 
-### Syntax
+### 句法
 
 ![write](https://media.giphy.com/media/6Do13TV1OfOF2/giphy.gif)
 
@@ -167,31 +167,31 @@ The result of a filter is always an array. If a function⚙️ for an element re
 let newArray = arr.filter(function callback(element[, index, [array]])[, thisArg])
 ```
 
-### Description
+### 描述
 
 ![m](https://media.giphy.com/media/DQaeCdCqhHWx3n4dvH/giphy.gif)
 
-The `filter()` method calls the passed `callback` function once for each element present in the array and constructs a new array with all values ​​for which the `callback` function returned `true` or a value that becomes `true` ✅ when cast to `boolean`. The `callback` function is called only for array indices that have assigned values; it is not called for indexes that have been dropped or have never been assigned values. Array elements that have not been checked by the `callback` function are simply skipped and not included in the 🆕 new array.
+`filter()` 方法調用傳遞的 `callback` 對數組中存在的每個元素執行一次功能，並構造一個具有所有值的新數組 `callback` 函數返回 `true` 或變成 `true` ✅ 當投射到 `boolean`. `callback` 僅對已分配值的數組索引調用該函數； 對於已刪除或從未分配值的索引，不會調用它。 數組元素尚未被 `callback` 函數只是被跳過，不包含在 🆕 數組中。
 
-The function⚙️ `callback` is called with three arguments:
+功能 ⚙️ `callback` 用三個參數調用：
 
-- the value of the element;
-- element index;
-- the array through which the passage is carried out.
+-元素的值；
+-元素索引；
+-執行通過的陣列。
 
-If the `thisArg` parameter was passed to the `filter()` method, it will be used as the `this` value when the function is called. Otherwise, the `this` value will be `undefined`. Ultimately, the value of `this` as seen from a function⚙️ is determined according to the usual rules for defining `this` as seen from a function⚙️.
+如果 `thisArg` 參數已傳遞給 `filter()` 方法，它將用作 `this` 調用函數時的值。 否則， `this` 價值將是 `undefined`. 最終， `this` 從功能上看⚙️是根據定義的通常規則確定的 `this` 從功能上看 ⚙️
 
-The `filter()` method does not modify the array on which it was called.
+`filter()` 方法不會修改在其上調用的數組。
 
-The range of elements processed by the `filter()` method is set before the first call to the `callback` function. Items added to the array after the start of the `filter()` method will not be visited by the `callback` function. If the existing array elements change, the values ​​passed to the `callback` function will be the values ​​at the time when the`filter()`method visits them. Deleted items will not be visited.
+元素處理的元素範圍 `filter()` 方法是在第一次調用之前設置的 `callback` 功能。 開始後添加到數組的項目 `filter()` 方法將不會被訪問 `callback` 功能。 如果現有數組元素發生更改，則將值傳遞給`callback` 函數將是當 `filter()`方法訪問他們。 刪除的項目將不會被訪問。
 
-### Example
+### 例子
 
 ![math](https://media.giphy.com/media/3orieN7HEHI0tw8x5C/giphy.gif)
 
-#### Filtering out all small values
+#### 過濾掉所有小的值
 
-The following example uses `filter()` to create a filtered array with all elements greater than or equal to `value`, and all elements less than `value` removed.
+以下示例使用 `filter()` 創建一個所有元素都大於或等於的過濾數組 `value`, 並且所有元素少於 `value` 刪除。
 
 ```jsx live
 function learnJavaScript() {
@@ -205,47 +205,47 @@ function learnJavaScript() {
 
 ![Wow](https://media.giphy.com/media/M33UV4NDvkTHa/giphy.gif)
 
-## reduce
+## 減少
 
 ![count](https://media.giphy.com/media/xUPGcqaVH1cDeKZTBS/giphy.gif)
 
-The reduce method also runs in the context of an array and calls a function⚙️ for each element, but it also accumulates the results of all calls into a single value. This behavior can be controlled.
+reduce方法還可以在數組的上下文中運行，並為每個元素調用一個函數⚙️，但是它還將所有調用的結果累加為一個值。 此行為可以控制。
 
-reduce is not meant to modify the elements of a collection like map. Its task is to calculate the "sum" of all elements in one way or another, and return it.
+reduce並不意味著要修改諸如map之類的集合中的元素。 它的任務是以一種或另一種方式計算所有元素的“和”，然後將其返回。
 
-The resulting value can be anything: a number, a string, an object, an array - it all depends on the problem that the JavaScript developer is solving.
+結果值可以是任何東西：數字，字符串，對象，數組-所有這些都取決於JavaScript開發人員正在解決的問題。
 
-The reduce method takes 2 parameters:
+reduce方法採用2個參數：
 
-- a function, like `map`, which will be called sequentially for each element of the collection;
-  is the initial value of the accumulator.
+-功能，例如 `map`, 對於集合的每個元素，將依次調用它；
+   是累加器的初始值。
 
-The function⚙️ also has 2 arguments:
+函數⚙️也有2個參數：
 
-- the first is the accumulated value (accumulator);
-- directly an element of the array.
+-第一個是累加值（累加器）；
+-直接是數組的元素。
 
-### Syntax
+### 句法
 
 ```javascript
 array.reduce(function callback[, initialValue])
 ```
 
-### Description
+### 描述
 
 ![describe](https://media.giphy.com/media/3orieVr84udUl4wbQs/giphy.gif)
 
-The reduce () method executes the callback function once for each element in the array, excluding voids, taking four arguments: the initial value (or the value from a previous callback), the value of the current element, the current index, and the array to iterate over.
+reduce（）方法對數組中的每個元素（不包括void）執行一次回調函數，並採用四個參數：初始值（或上一個回調中的值），當前元素的值，當前索引和 數組進行迭代。
 
-The first time the function is called⚙️, the accumulator and currentValue parameters can take one of two values. If the `initialValue` argument is passed in the call to reduce (), then the value of `accumulator` will be equal to the value of `initialValue` and the value of `currentValue` will be equal to the first value in the array. If no initialValue is specified, accumulator will be equal to the first value in the array, and currentValue will be equal to the second value in the array.
+第一次調用該函數時，accumulator和currentValue參數可以採用兩個值之一。 如果 `initialValue` 參數在reduce（）的調用中傳遞，然後的值 `accumulator` 將等於 `initialValue` 和的價值 `currentValue` 將等於數組中的第一個值。 如果未指定initialValue，則累加器將等於數組中的第一個值，而currentValue將等於數組中的第二個值。
 
-If the array is empty and no `initialValue` argument is specified, a `TypeError` exception will be thrown. If the array consists of only one element (regardless of its position in the array) and the `initialValue` argument is not specified, or if the `initialValue` argument is specified, but the array is empty, then this value will be returned, without calling the function⚙️ `callback` ...
+如果數組為空且沒有 `initialValue` a指定了參數 `TypeError` 將會拋出異常。 如果數組僅包含一個元素（無論其在數組中的位置如何）， `initialValue` 參數未指定，或者 `initialValue` 參數已指定，但數組為空，則將返回此值，而無需調用函數 ⚙️ `callback` ...
 
-### Initial battery value
+### 初始電池值
 
 ![hatchng](https://media.giphy.com/media/xT1R9Qy80qNb8oQGGc/giphy.gif)
 
-Let's figure out the initial value. In the example, it is equal to `0`, since we are calculating the numerical value - the sum of the ages. In place of zero, there can be any other number / string (empty or not) / object / array - whatever value you start accumulating from. For example, let's combine the names of all friends in one line 👇:
+讓我們找出初始值。 在示例中，它等於 `0`, 因為我們正在計算數值-年齡的總和。 代替零，可以有任何其他數字/字符串（空或非空）/對象/數組-您從中開始累積的任何值。 例如，讓我們在一行中合併所有朋友的名字 👇:
 
 ```jsx live
 function learnJavaScript() {
@@ -264,13 +264,13 @@ function learnJavaScript() {
 }
 ```
 
-Here, the initial value was the string `" Friends: "`, to which the names of all friends were gradually added.
+在這裡，初始值是字符串 `" Friends: "`, 所有朋友的名字都逐漸添加到其中。
 
-If you do not specify the original value explicitly, the first 1️⃣ element of the array becomes implicitly. In this case, the function⚙️ for it is no longer called.
+如果未顯式指定原始值，則數組的第一個1️⃣元素將隱式變為。 在這種情況下，不再調用函數⚙️。
 
-### Example
+### 例子
 
-#### Sum all values in an array:
+#### 對數組中的所有值求和:
 
 ```jsx live
 function learnJavaScript() {
@@ -330,15 +330,15 @@ function learnJavaScript() {
 }
 ``` -->
 
-## chaining
+## 鍊式
 
 ![unity](https://media.giphy.com/media/jTf2Io0LtBXGZddOVE/giphy.gif)
 
-JavaScript programming supports the convenient `chaining` pattern - combining multiple functions⚙️ into one chain with sequential transmission of the result.
+JavaScript 編程支持便捷 `chaining` 模式-將多個功能組合成一個鏈，並順序傳輸結果。
 
-All three parsed methods are called in the context of an array, and two 2️⃣ of them also return an array. Thus, it is very easy to combine them.
+所有三個解析的方法都在數組的上下文中調用，其中兩個2️⃣還返回一個數組。 因此，將它們組合起來非常容易。
 
-For example, let's calculate the total age of all boys 👇:
+例如，讓我們計算所有男孩的總年齡 👇:
 
 ```jsx live
 function learnJavaScript() {
@@ -357,7 +357,7 @@ function learnJavaScript() {
 }
 ```
 
-Or we can collect the girls' passport numbers to buy them plane tickets to Las Vegas 👇:
+或者我們可以收集女孩的護照號碼以購買前往拉斯維加斯的機票👇:
 
 ```jsx live
 function learnJavaScript() {
@@ -374,67 +374,67 @@ function learnJavaScript() {
 }
 ```
 
-## Conclusion
+## 結論
 
-With these great features⚙️ the code📟 becomes easier to read. So, below is a list of articles that go into more detail on this topic.
+有了這些強大的功能⚙️，代碼📟變得更易於閱讀。 因此，下面是有關此主題的更多文章的列表。
 
-## Problems?
+## 問題？
 
 ![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
 
 Write to [Discord](https://discord.gg/6GDAfXn) chat.
 
-## Questions:
+## 問題:
 
 ![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
 
-A function to be called for each element of an array?
+為數組的每個元素調用的函數？
 
 1. `currentValue`
 2. `array`
 3. `callback`
 
-A method that creates a new array with the result of calling the specified function for each element of the array:
+一種創建新數組的方法，其結果是為數組的每個元素調用指定的函數：
 
 1. `map`
 2. `filter`
 3. `reduce`
 
-The resulting value of the reduce method can be:
+reduce方法的結果值可以是：
 
-1. Number
-2. Array
-3. Anything
+1.號碼
+2.數組
+3.一切
 
-Summing all values ​​in an array is achieved by the method:
+通過以下方法實現對數組中的所有值求和：
 
 1. `map`
 2. `filter`
 3. `reduce`
 
-Optional parameter or value used as `this` when calling the `callback` function:
+用作以下參數的可選參數或值 `this` 當打電話給 `callback` 功能：
 
 1. `array`
 2. `index`
 3. `thisArg`
 
-A method that creates a new array with all the elements that passed the validation specified in the passed function:
+一個方法，該方法創建一個新數組，其中包含所有通過傳遞函數中指定的驗證的元素：
 
 1. `map`
 2. `filter`
 3. `reduce`
 
-Combining several functions into one chain with sequential transfer of the result:
+將多個功能組合到一個鏈中，並按順序傳輸結果：
 
-1. unity
-2. chaining
-3. merger
+1.團結
+2.鏈接
+3.合併
 
-In order to understand how much you learned this lesson, take the test on the [mobile application](http://onelink.to/njhc95) of our school on this topic.
+為了了解您學到了多少本課程，請對 [mobile application](http://onelink.to/njhc95) 我們學校就這個話題。
 
 ![Sumerian school](/img/app.png)
 
-## Links
+## 鏈接
 
 1. [Simplify your JavaScript - use map, reduce and filter](https://proglib.io/p/javascript-map-reduce-filter)
 2. [15 useful javascript examples of map, reduce and filter](https://webdevblog.ru/15-poleznyh-javascript-primerov-map-reduce-i-filter)
@@ -442,9 +442,9 @@ In order to understand how much you learned this lesson, take the test on the [m
 4. [Array.prototype.filter()](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
 5. [Array.prototype.reduce()](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
 
-## Contributors ✨
+## 貢獻者 ✨
 
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+感謝這些好人 ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->

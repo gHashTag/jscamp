@@ -1,28 +1,28 @@
 ---
 id: javascript18
-title: Rest and Spread
-sidebar_label: Rest and Spread
+title: 休息和傳播
+sidebar_label: 休息和傳播
 ---
 
 ![@serverSerrverlesskiy](/img/javascript/headers/19.jpg)
 
-Many built-in JavaScript functions support an arbitrary number of arguments.
+許多內置的JavaScript函數支持任意數量的參數。
 
-For example:
+例如：
 
-`Math.max (arg1, arg2, ..., argN)` - calculates the maximum number of the passed arguments.
+`Math.max (arg1, arg2, ..., argN)` - c計算傳遞的參數的最大數量。
 
-`Math.min (arg1, arg2, ..., argN)` - returns the minimum value of the passed arguments.
+`Math.min (arg1, arg2, ..., argN)` - 返回所傳遞參數的最小值。
 
-In this article, we will learn how to do the same with our own functions and how to pass parameters to such functions as an array.
+在本文中，我們將學習如何對我們自己的函數執行相同的操作，以及如何將參數傳遞給數組等函數。
 
-## Remaining parameters `(... rest)`
+## 其餘參數 `(... rest)`
 
 ![Parametrs](https://media.giphy.com/media/hvddF1vHatFIgQspUB/giphy.gif)
 
-You can call a function⚙️ with any number of arguments, regardless of how it was defined.
+您可以使用任意數量的參數調用函數⚙️，而不管其定義方式如何。
 
-For example 👇:
+例如 👇:
 
 ```jsx live
 function learnJavaScript() {
@@ -34,13 +34,13 @@ function learnJavaScript() {
 }
 ```
 
-Extra arguments will not cause an error, but of course only the first three will be counted.
+多餘的參數不會導致錯誤，但是當然只計算前三個參數。
 
-### ES6 concept
+### ES6概念
 
 ![Idea](https://media.giphy.com/media/3o6Mbj2w67HnPQKgcE/giphy.gif)
 
-Starting with the ES6 standard, a concept has appeared like `... rest` - residual parameters.
+從ES6標准開始，出現了類似 `... rest` - 剩餘參數。
 
 ```jsx
 let goFun = (...rest) => {
@@ -48,9 +48,9 @@ let goFun = (...rest) => {
 }
 ```
 
-Free parameters can be indicated with three dots `...`. It literally means: "collect the remaining parameters and put them in an array."
+自由參數可以用三個點表示 `...`. 它的字面意思是：“收集剩餘的參數並將它們放入數組中。”
 
-For example, let's collect all the arguments into an array `args`👇:
+例如，讓我們將所有參數收集到一個數組中 `args`👇:
 
 ```jsx live
 function learnJavaScript() {
@@ -64,12 +64,12 @@ function learnJavaScript() {
 }
 ```
 
-The answer is already 28 and no errors🙅‍♂️! Try changing the arguments or the dimension of the array.
+答案已經是28，並且沒有錯誤🙅‍♂️！ 嘗試更改參數或數組的維數。
 
-### Multiple parameters
+### 多個參數
 
-We can put the first few parameters in variables 🔔, and collect the rest into an array.
-This means that you can simply insert `... rest`, but only instead of the last parameter of the function.
+我們可以將前幾個參數放在變量中 🔔, 並將其餘的收集到一個數組中。
+這意味著您只需插入 `... rest`, 但僅代替函數的最後一個參數。
 
 ![paste](https://media.giphy.com/media/3o6ZtafpgSpvIaKhMI/giphy.gif)
 
@@ -79,7 +79,7 @@ let goFun = (first, second, ...rest) => {
 }
 ```
 
-In the example below, the first two 2️⃣ arguments to the function will become the first and last name, and the third and subsequent arguments will become the array `titles [i]` 👇:
+在下面的示例中，該函數的前兩個2️⃣參數將成為名字和姓氏，第三個及後續參數將成為數組 `titles [i]` 👇:
 
 ```jsx live
 function learnJavaScript() {
@@ -98,12 +98,12 @@ function learnJavaScript() {
 }
 ```
 
-### Possible mistakes
+### 可能的錯誤
 
 ![error](https://media.giphy.com/media/xTiN0L7EW5trfOvEk0/giphy.gif)
 
-Residual parameters must be at the end, so you cannot write 🖊️ anything after them.
-This will throw an error:
+殘留參數必須在末尾，因此您不能在它們之後寫🖊️。
+這將引發錯誤：
 
 ```jsx
 function f(arg1, ...rest, arg2) {   // arg2 после ...rest ?
@@ -130,13 +130,13 @@ Cтрелочные функции⚙️ не имеют `arguments[]` как и
 
 Если мы обратимся к `arguments` из стрелочной функции⚙️, то получим аргументы внешней "классической" функции⚙️. Соответственно, для более удобной работы с аргументами лучше использовать только остаточные параметры `...rest`. -->
 
-## Spread operator `... spread`
+## 點差運算符 `... spread`
 
 ![operators](https://media.giphy.com/media/3o6Mbfd5fQszubehmE/giphy.gif)
 
-We learned how to get an array from a parameter list, but sometimes you need to do the opposite - stuff the array into the called function⚙️.
+我們學習瞭如何從參數列表中獲取數組，但是有時您需要做相反的工作-將數組填充到調用的函數中。
 
-For example, there is a built-in function ⚙️ `Math.max`. It returns the largest number in the list:
+例如，有一個內置功能 ⚙️ `Math.max`. 返回列表中最大的數字:
 
 ```jsx live
 function learnJavaScript() {
@@ -144,13 +144,13 @@ function learnJavaScript() {
 }
 ```
 
-### Not so simple
+### 沒那麼簡單
 
 ![Index_finger](https://media.giphy.com/media/4ZcYCubFNk8AUHcZVw/giphy.gif)
 
-Let's say we have an array of numbers `[3, 5, 1]`. How to call `Math.max` for it?
+假設我們有一個數字數組 `[3, 5, 1]`. 怎麼打 `Math.max` 為了它？
 
-You can't just insert them - `Math.max` expects to get a list of numbers, not a single array.
+您不能只插入它們 - `Math.max` 期望得到一個數字列表，而不是單個數組。
 
 ```jsx live
 function learnJavaScript() {
@@ -159,19 +159,19 @@ function learnJavaScript() {
 }
 ```
 
-Of course, we can enter numbers manually: `Math.max (arr[0], arr[1], ar[2]).`
+當然，我們可以手動輸入數字： `Math.max (arr[0], arr[1], ar[2]).`
 
-But, firstly, it looks bad, and, secondly, we do not always know how many arguments there will be. There can be a lot of them, or not at all.
+但是，首先，它看起來很糟糕，其次，我們並不總是知道會有多少個論點。 可能有很多，或者根本沒有。
 
-### Occurrence of parameters
+### 參數的出現
 
 ![Transform](https://media.giphy.com/media/xT4uQr9H3EDL7Ha2hq/giphy.gif)
 
-The `...spread` operator will help us here. It is similar to residual parameters - it also uses `...`, but does the exact opposite.
+`...spread` o操作員會在這裡幫助我們。 它類似於殘差參數-它也使用 `...`, 但恰恰相反。
 
-When the `...spread` functionality is used in a function call, it converts the `arr` array object to an argument list.
+當。。。的時候 `...spread` 功能在函數調用中使用，它將轉換 `arr` 數組對像到參數列表。
 
-For `Math.max` 👇:
+為了 `Math.max` 👇:
 
 ```jsx live
 function learnJavaScript() {
@@ -181,7 +181,7 @@ function learnJavaScript() {
 }
 ```
 
-In the same way, we can pass multiple iterables 👇:
+同樣，我們可以傳遞多個可迭代對象 👇:
 
 ```jsx live
 function learnJavaScript() {
@@ -193,13 +193,13 @@ function learnJavaScript() {
 }
 ```
 
-Cool! A very flexible approach to programming. You can also combine the spread operator with normal values.
+涼爽的！ 一種非常靈活的編程方法。 您還可以將擴展運算符與常規值組合。
 
-### Merging Arrays
+### 合併陣列
 
 ![Merger](https://media.giphy.com/media/rytLWOErAX1F6/giphy.gif)
 
-The spread operator `... spread` can also be used to merge arrays 👇:
+點差運算符 `... spread` 也可以用來合併數組 👇:
 
 ```jsx live
 function learnJavaScript() {
@@ -213,13 +213,13 @@ function learnJavaScript() {
 }
 ```
 
-### Converting to string
+### 轉換為字符串
 
 ![Transform](https://media.giphy.com/media/RLVHPJJv7jY1q/giphy.gif)
 
-The `... spread` operator functionality works with any iterable object.
+`... spread` 操作員功能可與任何可迭代對像一起使用。
 
-For example, the spread operator is suitable for converting a string into an array of characters 👇:
+例如，散佈運算符適用於將字符串轉換為字符數組👇:
 
 ```javascript
 let str = 'Hey, Alex!'
@@ -228,12 +228,12 @@ let result = [...str]
 
 ![spread](/img/javascript/13.jpg)
 
-Let's see what happens. Under the hood, the spread operator uses iterators to iterate over the elements. Just like `for..of` does.
+讓我們看看發生了什麼。 在底層，散佈運算符使用迭代器迭代元素。 就像 `for..of` 做。
 
-The `for..of` loop iterates over the string as a sequence of characters, so from` ... str` it turns out "P", "p", "and", "in", "e", "t" ...
-The resulting characters are collected into an array using the standard array declaration🗣️ `[... str] .`
+`for..of` 循環將字符串作為字符序列進行迭代，因此從 ` ... str` 原來 "P", "p", "and", "in", "e", "t" ...
+使用標準數組聲明將結果字符收集到數組中 🗣️ `[... str] .`
 
-We can also use `Array.from` for this task. It also converts an iterable (such as a string) to an array 👇:
+我們也可以使用 `Array.from` 為此任務。 還將可迭代（例如字符串）轉換為數組👇:
 
 ```javascript
 let str = 'Hello'
@@ -243,71 +243,71 @@ Array.from(str) // "H", "e", "l", "l", "o"
 
 ![spread](/img/javascript/14.jpg)
 
-The result is the same as `[...str]`. But there is a difference between `Array.from(obj)` and `[...obj] `:
+結果與 `[...str]`. 但是兩者之間有區別 `Array.from(obj)` 和 `[...obj] `:
 
-- `Array.from` works with both pseudo-arrays and iterables.
-- The `... spread` operator works `only` with iterable objects.
+- `Array.from` 可與偽數組和可迭代對像一起使用。
+- The `... spread` 操作員工作 `only` 與可迭代的對象。
 
-Therefore, `Array.from` is a more general method.
+所以 `Array.from` 是更通用的方法。
 
-## Total
+## 全部的
 
 ![Elipsis](https://media.giphy.com/media/UWXLULrP5KGDC/giphy.gif)
 
-When we see `"..."` in code код, it can be either the residual parameters `...rest` or the extension operator` ...spread`.
+當我們看到 `"..."` 在代碼код中，它可以是殘差參數 `...rest` 或擴展運算符 ` ...spread`.
 
-How to distinguish them from each other:
+如何區分彼此:
 
-- If `...` is located at the end of the function argument list, then these are "residual parameters". It collects the rest of the unspecified arguments and makes an array of them.
-- If `...` occurs in a function call or elsewhere, it is an "extension operator". It extracts elements from an array to initialize the function.
+- 如果 `...` 位於函數參數列表的末尾，則這些是 “剩餘參數”。 它收集其餘未指定的參數，並組成它們的數組。
+- 如果 `...` 發生在函數調用或其他地方，它是 “擴展運算符”。 它從數組中提取元素以初始化函數。
 
-It is useful to remember:
+記住以下幾點很有用：
 
-- Residual parameters are used to create new functions with an undefined number of arguments.
-- Using the spread operator, you can insert an array into a function that, by default, works with a regular list of arguments.
-  “Together, these constructs make it easy to convert sets of values ​​to and from arrays.
+-剩餘參數用於創建帶有未定義數量參數的新函數。
+-使用散佈運算符，您可以將數組插入默認情況下與常規參數列表一起使用的函數中。
+   ``這些構造在一起使在數組之間來迴轉換值集變得容易。
 
-## Problems?
+## 問題?
 
 ![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
 
-Write to [Discord](https://discord.gg/6GDAfXn) chat.
+寫給 [Discord](https://discord.gg/6GDAfXn) 聊天。
 
-## Questions:
+## 問題:
 
 ![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
 
-If `...` is located at the end of the function argument list, then we are dealing with:
+如果 `...` 位於函數參數列表的末尾，那麼我們正在處理：
 
-1. Residual parameter
-2. Expansion operator
-3. Random indicators
+1.殘留參數
+2.擴展運算符
+3.隨機指標
 
-To create a function with an undefined number of arguments, use:
+要創建帶有不確定數量的參數的函數，請使用：
 
-1. Residual parameters `...rest`
-2. The spread operator `...spread`
-3. External call functions
+1. 殘留參數 `...rest`
+2. 點差運算符 `...spread`
+3. 外部通話功能
 
-You can combine two arrays into one using:
+您可以使用以下方法將兩個數組合併為一個：
 
-1. Expansion operator
-2. The `Array.from` operator
-3. Residual parameter
+1.擴展運算符
+2.`Array.from` 操作員
+3.殘留參數
 
-In order to understand how much you learned this lesson, take the test on the [mobile application](http://onelink.to/njhc95) of our school on this topic.
+為了了解您學到了多少本課程，請對[mobile application](http://onelink.to/njhc95) 我們學校就這個話題。
 
 ![Sumerian school](/img/app.png)
 
-## Links
+## 鏈接
 
 1. [MDN web doc. Spread syntax article](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/spread_syntax)
 2. [Residual Parameters and the Spread Operator article](https://learn.javascript.ru/rest-parameters-spread-operator)
 3. [The article "The spread and rest operator"](https://medium.com/@stasonmars/%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D1%80-spread-%D0%B8-rest-%D0%BF%D0%B0%D1%80%D0%B0%D0%BC%D0%B5%D1%82%D1%80%D1%8B-%D0%B2-javascript-22eb33cb0825)
 
-## Contributors ✨
+## 貢獻者 ✨
 
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+感謝這些好人 ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->

@@ -1,14 +1,14 @@
 ---
 id: javascript20
-title: Destructuring arrays and objects
-sidebar_label: Destructuring
+title: 解構數組和對象
+sidebar_label: 解構
 ---
 
 ![@serverSerrverlesskiy](/img/javascript/headers/30.jpg)
 
-Destructuring in JavaScript is an assignment syntax that allows you to conveniently extract data from arrays and objects in one line.
+JavaScript中的解構是一種賦值語法，使您可以方便地從一行中的數組和對像中提取數據。
 
-## Object destructuring
+## 對象解構
 
 ![object](https://media.giphy.com/media/3o85xx7Yll3UyNVQf6/giphy.gif)
 
@@ -29,13 +29,13 @@ function learnJavaScript() {
 }
 ```
 
-The properties `title`,` group` and `quantity` repeat the structure of the object` fruit` and copy their values into identical variables 🔔 found in `{...}`. Therefore, if you swap the variables 🔔 in `{...}`, then the code will work just as well, try swapping the variables 🔔 in the example above.
+屬性 `title`,`group` 和 `quantity` 重複對象的結構 `fruit` 並將它們的值複製到相同的變量中 `{...}`. 因此，如果在中交換變量the `{...}`, 那麼代碼也將正常工作，請嘗試在上面的示例中交換變量🔔
 
-### Nested object
+### 嵌套對象
 
 ![bookmark](https://media.giphy.com/media/3og0IDyqVFNH7qFpAI/giphy.gif)
 
-We can also destructure the nested object.
+我們還可以解構嵌套對象。
 
 ```jsx live
 function learnJavaScript() {
@@ -57,9 +57,9 @@ function learnJavaScript() {
 }
 ```
 
-### Other names
+### 其他名稱
 
-If you need to use variable names 🔔 other than property names, the following syntax will work:
+如果您需要使用除屬性名之外的變量名,，則可以使用以下語法：
 
 ```jsx live
 function learnJavaScript() {
@@ -75,9 +75,9 @@ function learnJavaScript() {
 }
 ```
 
-### Default values
+### 默認值
 
-If in `{...}` you write a property variable 🔔 which will not be found, then it will be assigned the value `undefined`. To assign a default value to a variable 🔔, you can assign that value to it. If you try to assign a value to a variable 🔔 whose properties are found, then the property value will be assigned to it. Let's look at an example.
+如果在 `{...}` 您編寫一個找不到的屬性變量then，然後為其分配值 `undefined`. 要將默認值分配給變量🔔，可以為其分配值。 如果嘗試將值賦給已找到其屬性的變量,，則將為其分配屬性值。 讓我們來看一個例子。
 
 ![Dafault](https://media.giphy.com/media/3oEduLzte7jSNmq4z6/giphy.gif)
 
@@ -92,13 +92,13 @@ function learnJavaScript() {
 }
 ```
 
-The `title` contains the property value, not what we assign to it. The `group` property does not exist in the` fruit` object, and we have not assigned any values to the variable 🔔. The property `quantity` also does not exist, but we assigned the value` 5` to the variable 🔔.
+`title` 包含屬性值，而不是我們為其分配的值。 這 `group` 該屬性不存在 `fruit` 對象，並且我們尚未為變量分配任何值 🔔 物業 `quantity` 也不存在，但我們分配了值 `5` 到變量 🔔.
 
-### Remainder
+### 餘
 
 ![octatok](https://media.giphy.com/media/hvddF1vHatFIgQspUB/giphy.gif)
 
-If you need to get one variable 🔔 from an object, and group the rest into another object, then use `...` before the variable 🔔 from which the object with the remaining properties will be created.
+如果需要從一個對像中獲取一個變量🔔，並將其餘變量分組到另一個對像中，請使用 `...` 在變量之前，將從中創建具有其餘屬性的對象。
 
 ```jsx live
 function learnJavaScript() {
@@ -113,9 +113,9 @@ function learnJavaScript() {
 }
 ```
 
-## Destructuring arrays
+## 解構數組
 
-Destructuring of an array is the same as for an object. The only difference is that the values of the array elements will be assigned to the variables 🔔 in the order in which the elements are defined.
+數組的解構與對象的解構相同。 唯一的區別是，數組元素的值將按照元素定義的順序分配給變量🔔。
 
 ![Take](https://media.giphy.com/media/IuBlckSD7dQv6/giphy.gif)
 
@@ -132,9 +132,9 @@ function learnJavaScript() {
 }
 ```
 
-### Remainder
+### 餘
 
-By analogy with objects, the remainder works.
+通過與對象的類比，其餘的工作。
 
 ```jsx live
 function learnJavaScript() {
@@ -146,9 +146,9 @@ function learnJavaScript() {
 }
 ```
 
-### Copy of array
+### 數組的副本
 
-An example of creating a copy of an array.
+創建數組副本的示例。
 
 ![Copia](https://media.giphy.com/media/GI1KnTxySlrCE/giphy.gif)
 
@@ -162,7 +162,7 @@ function learnJavaScript() {
 }
 ```
 
-### Concatenating arrays
+### 串聯數組
 
 ![add](https://media.giphy.com/media/3gMrhfFtWHq9XxtqPy/giphy.gif)
 
@@ -178,51 +178,51 @@ function learnJavaScript() {
 }
 ```
 
-## Problems?
+## 問題？
 
 ![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
 
 Write to [Discord](https://discord.gg/6GDAfXn) chat.
 
-## Questions:
+## 問題:
 
 ![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
 
-Destructuring is it?
+是解構嗎？
 
-1. Function
-2. Syntax
-3. Object
+1.功能
+2.語法
+3.對象
 
-Is it necessary, when destructuring an object, to put variables in the same order as they are in the object?
+銷毀對象時，是否有必要按與對像中相同的順序放置變量？
 
-1. Yes
-2. No
+1.是的
+2.沒有
 
-What will be assigned to a variable if no identical property is found in the object?
+如果在對像中找不到相同的屬性，將為變量分配什麼？
 
 1. `error`
 2. `undefined`
 3. `unknown`
 
-Is the order of elements in an object important when it is destructed?
+銷毀對象時元素的順序重要嗎？
 
-1. Yes
-2. No
+1.是的
+2.沒有
 
-In order to understand how much you learned this lesson, take the test on the [mobile application](http://onelink.to/njhc95) of our school on this topic.
+為了了解您學到了多少本課程，請對 [mobile application](http://onelink.to/njhc95) 我們學校就這個話題。
 
 ![Sumerian school](/img/app.png)
 
-## Links
+## 鏈接
 
 1. [Learn JavaScript](https://learn.javascript.ru/destructuring-assignment)
 2. [MDN Web Docs](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
 3. [Destructuring in ES6](https://medium.com/@stasonmars/деструктуризация-в-es6-полное-руководство-b865bb71f376)
 
-## Contributors ✨
+## 貢獻者✨
 
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+感謝這些好人 ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
 <table>
   <tr> 

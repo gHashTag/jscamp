@@ -1,22 +1,22 @@
 ---
 id: javascript17
-title: Arrays
-sidebar_label: Arrays
+title: 數組
+sidebar_label: 數組
 ---
 
 ![@serverSerrverlesskiy](/img/javascript/headers/18.jpg)
 
-To store ordered collections, there is a special data structure called an `Array`.
+為了存儲有序集合，有一個特殊的數據結構稱為 `Array`.
 
 ![Storage](https://media.giphy.com/media/3orif6FORJ98Z11xzq/giphy.gif)
 
-`Array` - an ordered collection of data, which contains the 1st, 2nd, 3rd elements, etc. For example, we need it to store 📦 a list of something: users, products, site elements, etc.
+`Array` - 有序的數據集合，其中包含第1，第2，第3個元素等。例如，我們需要它來存儲以下內容的列表：用戶，產品，站點元素等。
 
-## Creation
+## 創建
 
 ![create](https://media.giphy.com/media/3oEduXdm2gjnrsJBOo/giphy.gif)
 
-There are 2️⃣ options for creating🏗️ an empty array:
+2️⃣  有用於創建空數組的選項：🏗️
 
 ```javascript
 let arr = new Array(5)
@@ -24,7 +24,7 @@ let arr = new Array(5)
 let arr = []
 ```
 
-The second variant 2️⃣ syntax📖 is almost always used. In parentheses, we can indicate the initial values of the elements:
+幾乎總是使用第二種變體2️⃣語法used。 在括號中，我們可以指示元素的初始值：
 
 ```jsx live
 function learnJavaScript() {
@@ -34,9 +34,9 @@ function learnJavaScript() {
 }
 ```
 
-The array elements are numbered starting from zero 0️⃣.
+數組元素從零開始編號
 
-We can get an element by specifying its number in square brackets 👇:
+我們可以通過在方括號中指定其編號來獲取元素👇:
 
 ```jsx live
 function learnJavaScript() {
@@ -46,13 +46,13 @@ function learnJavaScript() {
 }
 ```
 
-We can replace the 🖊️ element:
+我們可以替換🖊️元素:
 
 ```javascript
 fruits[2] = 'Plum' // now ["Apple", "Orange", "Plum"]
 ```
 
-... Or add 🆕 a new one to the existing array 👇:
+... 或在現有陣列上添加一個新的 👇:
 
 ```jsx live
 function learnJavaScript() {
@@ -64,9 +64,9 @@ function learnJavaScript() {
 }
 ```
 
-## length
+## 長度
 
-The total number of elements in the array is contained in its `.length` property:
+數組中的元素總數包含在其數組中 `.length` 財產：
 
 ```jsx live
 function learnJavaScript() {
@@ -76,11 +76,11 @@ function learnJavaScript() {
 }
 ```
 
-The `length` property is automatically updated when the array changes. To be precise, it is not the number of elements in the array, but the largest numeric index plus one.
+`length` 數組更改時，屬性會自動更新。 確切地說，它不是數組中元素的數量，而是最大的數字索引加一。
 
 ![Update](https://media.giphy.com/media/FP47IFqWyXfdKYU6VG/giphy.gif)
 
-For example, the only real element with a large index gives the largest possible length to the array 👇:
+例如，唯一的具有大索引的實元素為數組提供最大可能的長度 👇:
 
 ```jsx live
 function learnJavaScript() {
@@ -91,11 +91,11 @@ function learnJavaScript() {
 }
 ```
 
-Note that we usually don't use arrays this way.
+請注意，我們通常不以這種方式使用數組。
 
-Another interesting fact about the `length` property is that it can be overwritten.
+關於 `length` 屬性是它可以被覆蓋。
 
-If we manually increase ➕ it, nothing interesting happens. But if we decrease it, the array will become shorter. This process is irreversible, as we can understand from the example 👇:
+如果我們手動增加➕，則不會發生任何有趣的事情。 但是，如果我們減少它，數組將變短。 我們可以從示例中了解到，這個過程是不可逆的 👇:
 
 ```jsx live
 function learnJavaScript() {
@@ -111,15 +111,15 @@ function learnJavaScript() {
 }
 ```
 
-So the simplest way to clear the array is with `arr.length = 0`.
+所以清除數組的最簡單方法是 `arr.length = 0`.
 
-## Item types
+## 項目類型
 
 ![Storage](https://media.giphy.com/media/2sYaePC3iVWYBNxaVj/giphy.gif)
 
-An array can store 📦 elements of any type - number, boolean value, strings, objects, or entire functions:
+數組可以存儲任何類型的📦元素-數字，布爾值，字符串，對像或整個函數：
 
-For example 👇:
+例如 👇:
 
 ```jsx live
 function learnJavaScript() {
@@ -142,37 +142,37 @@ function learnJavaScript() {
 }
 ```
 
-Note `result1 = arr [3]` contain the text of the function, and `result2 = arr [3] ()` the result of the executed function is `()` we run it.
+筆記 `result1 = arr [3]` 包含函數的文本，以及 `result2 = arr [3] ()` 執行函數的結果是 `()` 我們運行它。
 
-## Methods `push / pop`
+## 方法 `push / pop`
 
 ![binarycode](https://media.giphy.com/media/fV0oSDsZ4UgdW/giphy.gif)
 
-`Stack` is a variant of using arrays as data structures.
+`Stack` 是使用數組作為數據結構的一種變體。
 
-It supports two 2️⃣ types of operations:
+它支持兩種 2️⃣ 操作類型：
 
-- `push` adds a ➕ element to the end.
+- `push` ➕ 在最後添加一個元素。
 
 ![Add](https://media.giphy.com/media/Yqo5mjWTLGlVOIP8Dc/giphy.gif)
 
-- `pop` removes ➖ the last element.
+- `pop` ➖ 刪除最後一個元素。
 
 ![Delete](https://media.giphy.com/media/VD4Bt6FyYWcWj0LzDK/giphy.gif)
 
-Thus, new elements are always added or removed from the "end".
+因此，新元素總是添加或刪除 "end".
 
-An example of a stack is usually a pyramid: new rings are placed on top and also taken from above.
+堆棧的一個例子通常是金字塔：新的戒指放在頂部，也從上方取下來。
 
-`Queue` is one of the most common uses for an array. In computer science, this is an ordered collection of elements
+`Queue` 是數組的最常見用途之一。 在計算機科學中，這是元素的有序集合
 
-## Methods for working with the end of an array:
+## 處理數組末尾的方法:
 
-### push
+### 推
 
 ![Add to](https://media.giphy.com/media/21ODeWspDCgZNAoCIp/giphy.gif)
 
-Adds an ➕ element to the end of an array 👇:
+➕ 將元素添加到數組的末尾👇:
 
 ```jsx live
 function learnJavaScript() {
@@ -184,11 +184,11 @@ function learnJavaScript() {
 }
 ```
 
-### pop
+### 流行音樂
 
 ![Delete](https://media.giphy.com/media/26ybwwiZmci3DJdYs/giphy.gif)
 
-Removes ➖ the last element from an array and returns it 👇:
+➖ 從數組中刪除最後一個元素並返回它 👇:
 
 ```jsx live
 function learnJavaScript() {
@@ -200,13 +200,13 @@ function learnJavaScript() {
 }
 ```
 
-## Methods for working with the beginning of an array:
+## 處理數組開頭的方法:
 
 ![start](https://media.giphy.com/media/QJvwBSGaoc4eI/giphy.gif)
 
-### shift
+### 轉移
 
-Removes ➖ the first from the array and returns 🔄 it:
+➖  從數組中刪除第一個並返回 🔄 :
 
 ![delete](https://media.giphy.com/media/4Z1XJumqDgvI9b1VZJ/giphy.gif)
 
@@ -220,9 +220,9 @@ function learnJavaScript() {
 }
 ```
 
-### unshift
+### 不變
 
-Adds an ➕ element to the beginning of the array:
+➕ 將元素添加到數組的開頭:
 
 ![Plus](https://media.giphy.com/media/LgC9OQ53v5mFi/giphy.gif)
 
@@ -236,7 +236,7 @@ function learnJavaScript() {
 }
 ```
 
-The `push` and` unshift` methods can add ➕ several elements at once 👇:
+`push` 和 `unshift` 方法可以一次添加多個元素 👇:
 
 ```jsx live
 function learnJavaScript() {
@@ -249,17 +249,17 @@ function learnJavaScript() {
 }
 ```
 
-## Internal Array
+## 內部陣列
 
 ![cupboard](https://media.giphy.com/media/b90TnygrKqYqk/giphy.gif)
 
-An array is a special kind of object. The square brackets used to access the arr [0] property are essentially the usual syntax for key access, such as obj `[key]`, where obj is arr and the key is a numeric index.
+數組是一種特殊的對象。 用於訪問arr的方括號 [0] 屬性本質上是鍵訪問的常用語法，例如 obj `[key]`, 其中obj是arr，鍵是數字索引。
 
-Arrays extend objects because they provide special methods for working with ordered collections of data, as well as a length property. “But they are still facility based.
+數組擴展了對象，因為它們提供了用於處理數據的有序集合以及 length 屬性的特殊方法。 “但是它們仍然基於設施。
 
-Keep in mind that in JavaScript, an array is an object and therefore behaves like an object.
+請記住，在JavaScript中，數組是一個對象，因此其行為類似於對象。
 
-For example, an array is copied by reference 👇:
+例如，數組通過引用複制 👇:
 
 ```jsx live
 function learnJavaScript() {
@@ -273,11 +273,11 @@ function learnJavaScript() {
 }
 ```
 
-What really makes arrays special is their internal representation. The JavaScript engine tries to store the elements of an array in a contiguous region of memory, one after the other. There are other optimizations that make arrays very fast.
+真正使數組與眾不同的是它們的內部表示。 JavaScript引擎試圖將數組的元素一個接一個地存儲在內存的連續區域中。 還有其他優化可以使數組變得非常快。
 
-But they all become ineffective if we stop working with an array as an "ordered collection of data" and start using it like a regular object.
+但是，如果我們停止將數組作為“數據的有序集合”使用，並像常規對像一樣開始使用它，它們將全部失效。
 
-For example, we can technically do the following:
+例如，我們可以在技術上執行以下操作：
 
 ```javascript
 let fruits = [] // create an empty array
@@ -287,25 +287,25 @@ fruits[99999] = 5 // create a property with a redundant index much larger than t
 fruits.age = 25 // create a property with an arbitrary name
 ```
 
-This is possible because the array is based on an object. We can assign any properties to it.
+這是可能的，因為數組基於對象。 我們可以為其分配任何屬性。
 
-:::note Possible misuse of an array!
+:::note 可能濫用陣列！
 
-- Adding a non-numeric property (index test), for example: arr.test = 5
-- Creation of "holes", for example: adding arr [0], then arr [1000] (there is nothing in between)
-- Filling the array in reverse order, for example: arr [1000], arr [999], etc.
+- 例如，添加非數值屬性（索引測試: arr.test = 5
+- 的製作"holes", 例如：添加arr [0], 藝術 [1000] （兩者之間沒有任何東西）
+-以相反的順序填充數組，例如：arr [1000], arr [999], etc.
 
 :::
 
-Consider an array as a special structure that allows you to work with ordered data. If you need arbitrary keys, it is quite possible that a regular {} object is better suited.
+將數組視為一種特殊的結構，它允許您處理有序數據。 如果您需要任意鍵，則很有可能 {} 對象更適合。
 
-## Efficiency
+## 效率
 
 ![Fast](https://media.giphy.com/media/3oriNYQX2lC6dfW2Ji/giphy.gif)
 
-The push / pop methods are fast, and the shift / unshift methods are slow.
+推/彈出方法快，而移位/不移位方法慢。
 
-Why is it faster to work with the end of an array than with its beginning? Let's see what happens at runtime:
+為什麼在數組的結尾處比在數組的開始處更快？ 讓我們看看運行時會發生什麼：
 
 ```javascript
 fruits.shift() // remove the first element from the beginning
@@ -313,35 +313,35 @@ fruits.shift() // remove the first element from the beginning
 
 It is not enough to simply grab and remove item 0. You also need to re-number the rest of the elements.
 
-The shift operation has to do 3 things:
+移位操作必須做三件事：
 
-- Remove element with index 0
+-刪除索引為0的元素
 
 ![Delete](https://media.giphy.com/media/VIzs0jgs8KmgVeTknN/giphy.gif)
 
-- Move all the elements to the left, re-number them, replacing `1` with `0`, `2` with `1`, etc.
+- 將所有元素移到左側，重新編號，替換 `1` 和 `0`, `2` 和 `1`, etc.
 
 ![Move](https://media.giphy.com/media/jSQcEjcwG53WooptHz/giphy.gif)
 
-- Update the `length` property
+- 更新 `length` 財產
 
-The more elements the array contains, the longer it will take to move them, the more memory operations.
+數組包含的元素越多，移動它們所需的時間越長，則內存操作也就越多。
 
-But what about removing pop? He doesn't need to move anything. To remove an element at the end of an array, the pop method clears the index and decrements the length. The rest of the elements remain with the same indices.
+但是刪除流行音樂呢？ 他不需要移動任何東西。 要刪除數組末尾的元素，pop方法將清除索引並減小長度。 其餘元素保留相同的索引。
 
 ```javascript
 fruits.pop() // remove one element from the end
 ```
 
-The pop method does not need to be moved. That is why it runs very quickly.
+pop方法不需要移動。 這就是為什麼它運行非常快的原因。
 
-The `push` method works the same way.
+`push` 方法的工作方式相同。
 
-## Iterating over elements
+## 遍曆元素
 
 ![Object](https://media.giphy.com/media/26gs9kSN6d5PxSsQU/giphy.gif)
 
-One of the oldest ways to iterate over array elements is a `for ()` loop over numeric indices 👇:
+迭代數組元素的最古老方法之一是 `for ()` 遍歷數字索引 👇:
 
 ```jsx live
 // prettier-ignore
@@ -356,7 +356,7 @@ function learnJavaScript() {
 }
 ```
 
-But another version of the loop is possible for arrays, `for..of` 👇:
+但是數組也可以使用另一種循環形式， `for..of` 👇:
 
 ```jsx live
 function learnJavaScript() {
@@ -371,7 +371,7 @@ function learnJavaScript() {
 }
 ```
 
-The `for..of` loop does not provide access to the number of the current element, only its value, but in most cases this is more than enough, and it is also shorter.
+`for..of` 循環不提供對當前元素編號的訪問，僅提供其值的訪問，但是在大多數情況下，這樣做綽綽有餘，而且更短。
 
 <!-- ## Псевдомассивы
 
@@ -400,11 +400,11 @@ function learnJavaScript() {
 
 - цикл `for..in` выполняет перебор всех свойств объекта, а не только цифровых. -->
 
-## Multidimensional arrays
+## 多維數組
 
 ![Matryoschka](https://media.giphy.com/media/XuPaGVKyJ6eyI/giphy.gif)
 
-Arrays can contain elements that are also arrays. This can be used to create омер multidimensional arrays, for example, to store 📦 matrices:
+數組可以包含也是數組的元素。 這可以用於創建омер多維數組，例如，存儲📦矩陣：
 
 ```jsx live
 function learnJavaScript() {
@@ -418,13 +418,13 @@ function learnJavaScript() {
 }
 ```
 
-## Total
+## 全部的
 
 ![remember](https://media.giphy.com/media/l4pTfqyI6TCjUW4Yo/giphy.gif)
 
-An array is a special type of object designed to work with an ordered set of elements.
+數組是一種特殊類型的對象，旨在與一組有序元素一起使用。
 
-Announcement🗣️:
+公告🗣️:
 
 ```javascript
 // square brackets (usually)
@@ -434,83 +434,83 @@ let arr = [item1, item2 ...]
 let arr = new Array (item1, item2 ...)
 ```
 
-The call `new Array (number)` creates an array with the given length, but no elements.
+通話 `new Array (number)` 創建具有給定長度但沒有元素的數組。
 
-The length property reflects the length of the array.
+length屬性反映了數組的長度。
 
-We can use an array as a deque using the following operations:
+我們可以使用以下操作將數組用作雙端隊列：
 
-- `push (... items)` adds ➕ items to the end of the array.
-- `pop ()` removes ➖element at the end of the array and returns it.
-- `shift ()` removes ➖ the element at the beginning of the array and returns it.
-- `unshift (... items)` adds ➕ items to the beginning of the array.
+- `push (... items)`➕ 將項目添加到數組的末尾。
+- `pop ()` ➖ 刪除數組末尾的元素並返回它。
+- `shift ()` ➖ 刪除數組開頭的元素並返回它。
+- `unshift (... items)` ➕  adds項目到數組的開頭。
 
-To iterate over the elements of an array:
+要遍歷數組的元素：
 
-- `for (let i = 0 i < arr.length i ++)` - works fastest, compatible with older browsers.
-- `for (let item of arr)` - modern syntax📖 only for item values ​​(no access to indices).
-- `for (let i in arr)` - never use for arrays!
+- `for (let i = 0 i < arr.length i ++)` - 工作最快，與舊版瀏覽器兼容。
+- `for (let item of arr)` - 現代語法📖僅適用於項目值（無法訪問索引）。
+- `for (let i in arr)` - 永遠不要用於數組！
 
-## Problems?
+## 問題？
 
 ![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
 
-Write to [Discord](https://discord.gg/6GDAfXn) chat.
+寫給 [Discord](https://discord.gg/6GDAfXn) 聊天。
 
-## Questions:
+## 問題:
 
 ![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
 
-An array is ...
+數組是...
 
-1. Subtype of objects with "ordered collection of data"
-2. Internal function
-3. Subtype of objects with "unordered data collection"
+1.具有“數據的有序收集”的對象子類型
+2.內部功能
+3.具有“無序數據收集”的對象的子類型
 
-An empty array is created:
+創建一個空數組：
 
 1. `let arr1 = []`
 2. `let arr2 = {}`
 3. `let arr3 = ()`
 
-The length of the array can be determined by the property:
+數組的長度可以由以下屬性確定：
 
 1. `pop ()`
 2. `push ()`
 3. `length`
 
-The array can store elements:
+該數組可以存儲元素：
 
-1. Any type
-2. Numeric
-3. String
+1.任何類型
+2.數值
+3.字符串
 
-Adding an element at the end of the array:
+在數組的末尾添加一個元素：
 
 1. `push () `
 2. `pop () `
 3. `shift () `
 
-Removing an element at the beginning of an array:
+刪除數組開頭的元素：
 
 1. `pop () `
 2. `shift () `
 3. `unshift () `
 
-In order to understand how much you learned this lesson, take the test on the [mobile application](http://onelink.to/njhc95) of our school on this topic.
+為了了解您學到了多少本課程，請對 [mobile application](http://onelink.to/njhc95) 我們學校就這個話題。
 
 ![Sumerian school](/img/app.png)
 
-## Links
+## 鏈接
 
 1. [Article "Arrays"](https://learn.javascript.ru/array)
 2. [MDN web doc. Article "Arrays"](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array)
 3. [JavaScript Arrays](https://basicweb.ru/javascript/js_array.php)
 4. [Code for Teens: The Perfect Beginner's Guide to Programming, Volume 1: Javascript - Jeremy Moritz](https://www.amazon.com/Code-Teens-Beginners-Programming-Javascript-ebook/dp/B07FCTLVPC)
 
-## Contributors ✨
+## 貢獻者 ✨
 
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+感謝這些好人 ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->

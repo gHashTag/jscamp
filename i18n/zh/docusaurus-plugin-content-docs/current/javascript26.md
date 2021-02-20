@@ -1,31 +1,31 @@
 ---
 id: javascript26
-title: Promise - deferred and asynchronous computation
-sidebar_label: Promise
+title: 承諾-延遲和異步計算
+sidebar_label: 承諾
 ---
 
 ![@serverSerrverlesskiy](/img/javascript/headers/27.jpg)
 
-A Promise is an object that contains the future value of an asynchronous operation. For example, if you request some data from a server, a promise promises us to receive this data that we can use in the future.
+Promise是包含異步操作的將來值的對象。 例如，如果您從服務器請求一些數據，則諾言承諾我們將收到我們將來可以使用的數據。
 
 ![math](https://media.giphy.com/media/4JVTF9zR9BicshFAb7/giphy.gif)
 
-At first, the promise has the status `pending`, then it has one of: `fulfilled` ("successfully completed") or `rejected` (" completed with an error🙅‍♂️ ").
+首先，諾言具有地位 `pending`, 那麼它具有以下之一： `fulfilled` ("成功完成") or `rejected` (" 錯誤完成🙅‍♂️ ").
 
 ![promise states](/img/javascript/23/promise.png)
 
-1. `Pending` - The promise is pending if the result is not ready. That is, it is waiting for something to complete (for example, the completion of an asynchronous operation).
-2. `Fulfilled` - Promise resolved if result is available. That is, something completed its execution (for example, an asynchronous operation) and everything went well.
-3. `Rejected` - Promise was rejected if an error occurred during execution.
+1. `Pending` - 如果結果尚未準備好，則承諾將待定。 也就是說，它正在等待某些事情完成（例如，異步操作的完成）。
+2. `Fulfilled` - 如果結果可用，則承諾已解決。 就是說，某事完成了執行（例如，異步操作），一切順利。
+3. `Rejected` - 如果在執行過程中發生錯誤，則Promise被拒絕。
 
-## Create a promise
+## 創造承諾
 
 ![Plus](https://media.giphy.com/media/Yqo5mjWTLGlVOIP8Dc/giphy.gif)
 
-A `Promise` object is created using the new keyword and its own constructor.
-The Promise constructor takes one argument, a callback, also known as an execution function⚙️, which takes 2 callbacks, `resolve` and` reject`.
+A `Promise` 使用new關鍵字及其自己的構造函數創建對象。
+Promise構造函數採用一個參數，即回調，也稱為執行函數⚙️，它採用2個回調， `resolve` 和 `reject`.
 
-The executive function is executed immediately after the promise is created. A promise is made fulfilled by calling `resolve` and rejected by calling `reject`.
+創建承諾後，立即執行執行功能。 通過打電話來兌現諾言 `resolve` 並被拒絕 `reject`.
 
 ```jsx
 const promise = new Promise((resolve, reject) => {
@@ -37,9 +37,9 @@ const promise = new Promise((resolve, reject) => {
 })
 ```
 
-`resolve` and `reject` take one argument, which can be a string, number, boolean expression, array, or object.
+`resolve` 和 `reject` 接受一個參數，可以是字符串，數字，布爾表達式，數組或對象。
 
-To provide a function with promises functionality, you just need to return a `Promise` object in it:
+要提供具有promises功能的功能，您只需要返回一個 `Promise` 其中的對象:
 
 ```jsx
 function myAsyncFunction(url) {
@@ -49,19 +49,19 @@ function myAsyncFunction(url) {
 }
 ```
 
-## Using a promise
+## 履行諾言
 
 ![Help](https://media.giphy.com/media/iigqhSTOKmb6wDObGb/giphy.gif)
 
-Promises are used with the `then()` and `catch()` methods.
+承諾與 `then()` 和 `catch()` 方法。
 
-### then
+### 然後
 
-The `then` method is used to run functions on a positive or negative promise.
+`then` 方法用於按肯定或否定的承諾運行函數。
 
 ![Launch](https://media.giphy.com/media/1n4FT4KRQkDvK0IO4X/giphy.gif)
 
-The syntax for the `then` method is:
+的語法 `then` 方法是：
 
 ```jsx
 promise.then(
@@ -74,13 +74,13 @@ promise.then(
 )
 ```
 
-The first 1️⃣ argument of the `then` method is a function⚙️ that is executed when the promise is passed to the" completed successfully "state and receives the result.
+的第一個 1️⃣ 參數 `then` m方法是一個函數⚙️，當將諾言傳遞到“成功完成”狀態並接收結果時執行。
 
-The second argument to `then` is a function⚙️ that is executed when a promise enters the completed with error state and receives an error🙅‍♂️.
+第二個論點 `then` 是一個函數⚙️，當promise進入帶有錯誤的完成狀態並收到錯誤時執行🙅‍♂️.
 
 ![Error](https://media.giphy.com/media/iJCo9daAP0xugHhhfb/giphy.gif)
 
-An example of the `then` method:
+一個例子 `then` 方法:
 
 ```jsx
 let promise = new Promise(function (resolve, reject) {
@@ -94,7 +94,7 @@ promise.then(
 )
 ```
 
-And in case of an error 🙅‍♂️ in a promise, the second will be executed:
+並且在保證中出現錯誤 🙅‍♂️ 時，將執行第二個:
 
 ```jsx
 let promise = new Promise(function (resolve, reject) {
@@ -118,13 +118,13 @@ let promise = new Promise(resolve => {
 promise.then(alert) // will print "done!" one second later
 ```
 
-### catch
+### 抓住
 
 ![Catch](https://media.giphy.com/media/fxeeuml8GaESfmuE4z/giphy.gif)
 
-To catch errors🙅‍♂️, the `catch` method is used. It can be used instead of the `then` method to display error messages.
+捕捉錯誤🙅‍♂️ `catch` 使用方法。 它可以代替 `then` 顯示錯誤消息的方法。
 
-The syntax for the catch method is:
+catch方法的語法為：
 
 ```jsx
 let promise = new Promise((resolve, reject) => {
@@ -136,11 +136,11 @@ promise.catch(alert) // will print "Error: Error!" one second later
 
 ### promise.all
 
-This method takes an array of promises and returns a new promise that will be fulfilled when all the promises within the array are fulfilled or rejected as soon as a promise is encountered that is rejected.
+此方法接受一個promise數組，並返回一個新的promise，當遇到數組中的所有promise都被拒絕時，將滿足或拒絕數組中的所有promise時將滿足該新promise。
 
 ![Return](https://media.giphy.com/media/Y08bx6Fea1BafzTlvc/giphy.gif)
 
-For example:
+例如:
 
 ```jsx
 const promise1 = new Promise((resolve, reject) => {
@@ -158,7 +158,7 @@ Promise.all([promise1, promise2])
   .catch(error => console.log(error))
 ```
 
-Here, the argument inside `then()` is an array that contains the values of the promises in the same order in which they were passed to `Promise.all()`.
+在這裡，裡面的說法 `then()` 是一個數組，其中包含承諾值的傳遞順序與傳遞給它們的順序相同 `Promise.all()`.
 
 <!-- ### promise.race
 
@@ -190,44 +190,44 @@ Promise.race([promise1, promise2])
 
 По итогу, `Promise.race()` дожидается первого промиса и берет его статус как статус возвращаемого🔄 промиса. -->
 
-## Problems?
+## 問題?
 
 ![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
 
-Write to [Discord](https://discord.gg/6GDAfXn) chat.
+寫給 [Discord](https://discord.gg/6GDAfXn) 聊天.
 
-## Questions:
+## 問題：
 
 ![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
 
-What is the name of the method that is called when the promise is successful?
+承諾成功時調用的方法的名稱是什麼？
 
 1. `reject`
 2. `resolve`
 
-What method can be used to check the fulfillment of all promises in the array?
+可以使用什麼方法來檢查數組中所有 promise 的實現？
 
 1. `promise.all`
 2. `promise.race`
 
-What method is used to catch errors in promises?
+用什麼方法來捕捉承諾中的錯誤？
 
 1. `then`
 2. `catch`
 
-In order to understand how much you learned this lesson, take the test on the [mobile application](http://onelink.to/njhc95) of our school on this topic.
+為了了解您學到了多少本課程，請對 [mobile application](http://onelink.to/njhc95) 我們學校就這個話題。
 
 ![Sumerian school](/img/app.png)
 
-## Links:
+## 鏈接：
 
 1.  [MDN web docs](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise)
 2.  [Learn JavaScript](https://learn.javascript.ru/promise)
 3.  [Understanding Promises](https://blog.bitsrc.io/understanding-promises-in-javascript-c5248de9ff8f?gi=1e459ca846d9)
 
-## Contributors ✨
+## 貢獻者 ✨
 
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+T向這些好人致敬 ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->

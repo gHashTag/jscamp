@@ -1,42 +1,42 @@
 ---
 id: javascript25
-title: Asynchronous Event loop
-sidebar_label: Event loop
+title: 異步事件循環
+sidebar_label: 事件循環
 ---
 
 ![@serverSerrverlesskiy](/img/javascript/headers/26.jpg)
 
-## Asynchronous
+## 異步
 
-In JavaScript, asynchrony is the main tool that processes requests in parallel with the loading of a web page. Now it is impossible to imagine the Internet, where all requests to the server would be sent with a page reload.
+在JavaScript中，異步是與加載網頁並行處理請求的主要工具。 現在無法想像Internet，在那裡對服務器的所有請求都將隨著頁面重新加載而發送。
 
-Any data from the server is requested asynchronously: a request is sent (XMLHttpRequest or XHR), and the code📟 does not wait for its return🔄, continuing to execute. When the server responds, the XHR object is notified of this and runs the callback function that was passed to it before sending the request.
+來自服務器的任何數據都是異步請求的：發送了一個請求（XMLHttpRequest或XHR），並且代碼📟不等待其返回🔄而繼續執行。 服務器響應時，會向XHR對象發出通知，並運行在發送請求之前傳遞給它的回調函數。
 
-If you use the language tools correctly👅, then the execution of a request, which occurs sequentially and in one thread, does not interfere in any way with the reception of events and the reaction to them - a person👨 calmly works with the interface, not noticing lags, crashes and freezes.
+如果您正確使用語言工具👅，則順序執行並在一個線程中進行的請求的執行不會以任何方式乾擾事件的接收和對事件的反應-一個人可以輕鬆地使用界面， 沒有註意到滯後，崩潰和凍結。
 
-## Event loop
+## 事件循環
 
 ![Queue](https://media.giphy.com/media/5YuhLwDgrgtRVwI7OY/giphy.gif)
 
-The JavaScript `Event loop` is an asynchronous call manager.
+JavaScript `Event loop` 是一個異步呼叫管理器。
 
-To make this tricky process work smoothly, JavaScript implements a mechanism to control the sequence of code execution📟. Since it is a single-threaded language👅, it became necessary to "wedge" into the current execution context. This mechanism is called an event loop.
+為了使這個棘手的過程順利進行，JavaScript實現了一種機制來控制代碼執行的順序。 由於它是單線程語言，因此有必要“楔入”當前的執行上下文。 這種機制稱為事件循環。
 
-From English, `loop` translates as" loop ", which perfectly reflects the meaning: we are dealing with a loopback queue.
+來自英語, `loop` 轉換為 “循環”，完美體現了含義：我們正在處理回送隊列。
 
-`Event loop` regulates the sequence of execution of contexts - the stack. It is generated when an event was triggered or a function was called. The response to the event is placed in the execution queue, in the `event loop`, which sequentially, with each loop, executes the code that gets into it📟. In this case, the function bound to the event is called next after the current execution context.
+`Event loop` 調節上下文的執行順序-堆棧。 它是在觸發事件或調用函數時生成的。 對事件的響應放置在執行隊列中 `event loop`, 每個循環依次執行進入其中的代碼 📟 在這種情況下，綁定到事件的函數在當前執行上下文之後被調用。
 
-In JavaScript, synchronous and asynchronous execution queues are constantly running. Synchronous - `stack` - forms a queue and forwards to asynchronous - `event loop` - function calls⚙️ that will be executed after the currently scheduled executable context.
+在 JavaScript 中，同步和異步執行隊列一直在運行。 同步 - `stack` - 形成隊列並轉發到異步 - `event loop` - 函數調用⚙️，它將在當前計劃的可執行上下文之後執行。
 
-For data to be in a consistent state, each function must be completed. This is due to the single-threading of JavaScript and some other features, such as closures characteristic of functional "languages" of programming. Therefore, a single thread is represented as a queue of execution contexts, in which functions that have passed through the event loop are "wedged".
+為了使數據保持一致狀態，必須完成每個功能。 這是由於JavaScript的單線程和其他一些功能，例如功能的閉包 "languages" 編程。 因此，一個線程被表示為執行上下文的隊列，其中通過事件循環傳遞的函數是 "wedged".
 
-## Description
+## 描述
 
-JavaScript is a single-threaded language: only one task can run at a time. This is usually no big deal, but now imagine you are running a task that takes 30 seconds ... Yes. During this task, we wait 30 seconds before anything else can happen (by default, JavaScript runs on the main browser thread, so the entire UI will wait) 😬 It's 2021 now, no one wants a slow site that is dumb.
+JavaScript是一種單線程語言：一次只能運行一個任務。 通常這沒什麼大不了的，但是現在想像您正在運行一個耗時30秒的任務...是的。 在執行此任務期間，我們等待30秒鐘，然後其他任何事情才能發生（默認情況下，JavaScript在主瀏覽器線程上運行，因此整個UI都將等待）now 現在是2021年，沒有人想要一個速度慢的站點。
 
-Fortunately, the browser provides us with some functionality that JavaScript itself does not provide: the Web API. Which includes DOM API, setTimeout, HTTP requests, and so on. This can help us create asynchronous non-blocking behavior 🚀.
+幸運的是，瀏覽器為我們提供了JavaScript本身未提供的某些功能：Web API。 其中包括DOM API，setTimeout，HTTP請求等。 這可以幫助我們創建異步非阻塞行為。
 
-When we call a function, it is added to the call stack. The call stack is part of the JS engine, it is browser independent. This is a classic view of the stack, i.e. `first in`,` last out`. When a function returns, it is popped off the stack.
+當我們調用一個函數時，它將被添加到調用堆棧中。 調用堆棧是JS引擎的一部分，它與瀏覽器無關。 這是堆棧的經典視圖，即 `first in`,` last out`.當函數返回時，它會從堆棧中彈出。
 
 ```javascript
 function great() {
@@ -53,25 +53,25 @@ respond()
 
 ![stack](/img/javascript/27/stack.gif)
 
-The respond function returns the setTimeout function. `SetTimeout` is provided to us through the` Web-API`: it allows us to divide tasks without blocking the main thread. The `Callback` function we passed to the` setTimeout` function, the `() => {return 'Hey'}` lambda function is added to the `Web-API`. Meanwhile, `setTimeout` and `responde` are popped from the stack and return their values.
+響應函數返回 setTimeout 函數。 `SetTimeout` 通過以下方式提供給我們 `Web-API`: 它使我們可以在不阻塞主線程的情況下劃分任務。 這 `Callback` 我們傳遞給 `setTimeout` 功能， `() => {返回 'Hey'}` lambda函數已添加到 `Web-API`. 同時, `setTimeout` 和 `responde` 從堆棧中彈出並返回其值。
 
 ![timer](/img/javascript/27/timer.gif)
 
-In `Web-API`, the timer runs until the second argument we passed to it waits for 1000ms. The callback is not immediately added to the call stack, but passed to something called a queue.
+在`Web-API`, 計時器一直運行到我們傳遞給它的第二個參數等待 1000ms。 回調不會立即添加到調用堆棧中，而是傳遞給稱為隊列的內容。
 
 ![queue](/img/javascript/27/queue.gif)
 
-This can be confusing: it does not mean that the `callback` function is added to the call stack (thus returning a value) after 1000ms! It just gets added to the queue after 1000ms. But in this queue, the function must wait until it is its turn.
+這可能會造成混亂：這並不意味著在1000毫秒後將“回調”函數添加到調用堆棧中（從而返回一個值）！ 它只是在1000毫秒後添加到隊列中。 但是在此隊列中，該函數必須等到輪到它為止。
 
-Now this is the part we've all been waiting for ... Time for the event loop to do one thing: connect the queue to the call stack! If the call stack is empty, that is, if all previously called functions returned their values ​​and were popped from the stack, the first item in the queue is added to the call stack. In this case, no other functions were called, which means that the call stack was empty by the time the `callback` function was the first item in the queue.
+現在這是我們大家一直在等待的部分。事件循環要做一件事的時間：將隊列連接到調用堆棧！ 如果調用堆棧為空，也就是說，如果所有先前調用的函數都返回了它們的值並從堆棧中彈出，則隊列中的第一項將添加到調用堆棧中。 在這種情況下，沒有其他函數被調用，這意味著到 `callback`函數是隊列中的第一項。
 
 ![qtoc](/img/javascript/27/qtoc.gif)
 
-callback is pushed onto the call stack, called and returned, and popped off the stack.
+回調被推入調用堆棧，被調用並返回，並從堆棧中彈出。
 
 ![result](/img/javascript/27/res.gif)
 
-It's fun to watch, but you can't fully grasp a topic without working on it over and over again. Try to figure out what appears in the console if we run the following:
+觀看很有趣，但是如果不反复研究一個主題，就無法完全掌握一個主題。 如果運行以下命令，嘗試找出控制台中顯示的內容：
 
 ```jsx
 const foo = () => console.log('First')
@@ -83,50 +83,50 @@ foo()
 baz()
 ```
 
-Let's see what happens when we run this code in a browser:
+讓我們看看在瀏覽器中運行以下代碼時會發生什麼：
 
 ![br](/img/javascript/27/br.gif)
 
-We call `bar`, which returns the `setTimeout` function.
-The `Callback` that we passed to `setTimeout` is added to the `Web API`, the `setTimeout` and `bar` functions are popped from the call stack.
+我們稱之為 `bar`, 這將返回 `setTimeout` 功能。
+`Callback` 我們傳遞給 `setTimeout` 被添加到 `Web API`, `setTimeout` 和 `bar` 從調用堆棧彈出功能。
 
-The timer starts, meanwhile `foo` is called and logs `First`. `foo` returns `undefined`, `baz` is called and `callback` is added to the queue
-`baz` logs` Third`. The event loop sees that the callstack is empty after baz returns, after which the callback is added to the call stack.
-`Callback` logs `Second`.
+計時器開始計時 `foo` 被稱為和日誌 `First`. `foo` 退貨 `undefined`, `baz` 被稱為 `callback` 已添加到隊列
+`baz` logs` Third`. 事件循環發現baz返回後，調用棧為空，然後將回調添加到調用棧。
+`Callback` 日誌 `Second`.
 
-Hope this makes you feel more confident with the `event loop`!
+希望這會讓您對 `event loop`!
 
-Don't worry if this still seems confusing, the most important thing is to understand where certain bugs or specific behavior might come from.
+不必擔心是否仍然令人困惑，最重要的是了解某些錯誤或特定行為可能來自何處。
 
-## Problems?
+## 問題？
 
 ![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
 
-Write to [Discord](https://discord.gg/6GDAfXn) chat.
+寫給 [Discord](https://discord.gg/6GDAfXn) 聊天。
 
-## Questions:
+## 問題：
 
 ![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
 
-Asynchrony is:
+異步是：
 
-1. A tool that displays the execution context of a function from a synchronous stream
-2. A tool that executes code line by line
-3. A tool that processes requests in parallel with the loading of web pages
+1.一種工具，用於顯示同步流中函數的執行上下文
+2.逐行執行代碼的工具
+3.一種與網頁加載並行處理請求的工具
 
-Asynchronous Call Manager:
+異步呼叫管理器：
 
 1. `stack`
 2. `Event loop`
 3. `JavaScript`
 
-Function calls are placed in:
+函數調用位於：
 
-1. Stack
-2. A bunch of
-3. Loop
+1.堆疊
+2.一堆
+3.循環
 
-Tool that executes code with a millisecond delay:
+延遲一毫秒執行代碼的工具：
 
 1. `delay`
 2. `heap`
@@ -352,11 +352,11 @@ redButton.click();
 
 -->
 
-In order to understand how much you learned this lesson, take the test on the [mobile application](http://onelink.to/njhc95) of our school on this topic.
+為了了解您學到了多少本課程，請對 [mobile application](http://onelink.to/njhc95) 我們學校就這個話題。
 
 ![Sumerian school](/img/app.png)
 
-## Links:
+## 鏈接：
 
 1. [Explaining how EventLoop works in JavaScript](https://medium.com/devschacht/javascript-eventloop-explained-f2dcf84e36ee)
 2. [How to manage event loop in JavaScript](https://skillbox.ru/media/code/event_loop_chast_1)
@@ -364,9 +364,9 @@ In order to understand how much you learned this lesson, take the test on the [m
 4. [Article: Explaining Event Loop in Javascript Using Rendering](https://bool.dev/blog/detail/obyasnenie-event-loop-v-javascript-s-pomoshchyu-vizualizatsii)
 5. [Article: JavaScript Visualized: Promises & Async / Await](https://medium.com/@lydiahallie/javascript-visualized-promises-async-await-a3f1aad8a943)
 
-## Contributors ✨
+## 貢獻者 ✨
 
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+感謝這些好人 ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->

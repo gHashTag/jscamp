@@ -1,26 +1,27 @@
 ---
 id: javascript22
-title: Higher order functions
-sidebar_label: Higher order functions
+title: 高階函數
+sidebar_label: 高階函數
 ---
 
 ![@serverSerrverlesskiy](/img/javascript/headers/21.jpg)
 
-Higher-order functions allow JavaScript to be suitable for [functional programming](https://en.wikipedia.org/wiki/Higher-order_function).
-Such functions are widely used in JavaScript. If you've programmed in JavaScript even a little, you've probably used them, perhaps without even realizing it.
+高階函數允許JavaScript適用於 [functional programming](https://en.wikipedia.org/wiki/Higher-order_function).
 
-To fully understand this concept, you should first understand functional programming and the concept of first class functions.
+這些功能在 JavaScript 中被廣泛使用。 如果您曾經用 JavaScript 編程過一點，則可能已經使用了它們，甚至可能沒有意識到。
 
-## What is functional programming?
+為了完全理解該概念，您應該首先了解函數式編程和一流函數的概念。
+
+## 什麼是函數式編程？
 
 > Functional programming is a branch of discrete mathematics and a programming paradigm, in which the computation process is interpreted as the calculation of the values ​​of functions in the mathematical sense of the latter (as opposed to functions as subroutines in procedural programming). [Wikipedia]
 
-### First class functions
+### 一流的功能
 
 ![First_class](https://media.giphy.com/media/l2Jecm1l0wnJ2kQDu/giphy.gif)
 
-If you are already learning JavaScript, you may have heard that JavaScript treats functions⚙️ as first-class objects. Functions in JavaScript are objects, just like in other functional programming languages.
-In JavaScript, functions⚙️ are a special type of object. These are `Function` objects. For example:
+如果您已經在學習JavaScript，則可能聽說過JavaScript將函數⚙️視為一流的對象。 就像其他函數式編程語言一樣，JavaScript中的函數是對象。
+在JavaScript中，函數⚙️是一種特殊的對像類型。 這些是 `Function` 對象。 例如:
 
 ```jsx live
 function learnJavaScript() {
@@ -30,23 +31,23 @@ function learnJavaScript() {
 }
 ```
 
-We now know what first-class functions are. You can start with higher-order functions.
+現在我們知道什麼是一流的功能。 您可以從高階函數開始。
 
-## Higher order functions
+## 高階函數
 
 ![Higher](https://media.giphy.com/media/WS4yajVBkb3lIwDIKd/giphy.gif)
 
-These are functions⚙️ that take a function⚙️ as an argument or return🔄 a function⚙️ as output.
+這些是將函數⚙️作為參數或返回函數🔄️作為輸出的函數⚙️。
 
-For example, these higher-order functions are built into the language: `map()` `filter()` and `reduce()`
+例如，這些高階函數內置在該語言中： `map()` `filter()` 和 `reduce()`
 
-### Example # 1. Change the numbers `.push`
+### 例子 # 1. 更改號碼 `.push`
 
 ![Edit_number](https://media.giphy.com/media/xT5LMMneIRG1UJquOI/giphy.gif)
 
-Let's say we have an array of numbers. We want to create a new🆕 array that will contain the doubled values of the first one. Let's see how we can solve this problem with and without a higher-order function.
+假設我們有一個數字數組。 我們要創建一個新的 🆕 數組，其中將包含第一個數組的兩倍值。 讓我們看看如何使用和不使用高階函數來解決此問題。
 
-#### Without higher order function:
+#### 沒有高階函數：
 
 ```jsx live
 function learnJavaScript() {
@@ -61,7 +62,7 @@ function learnJavaScript() {
 }
 ```
 
-With the higher-order function `map`, the console option is:
+具有高階功能 `map`, 控制台選項是:
 
 ```jsx live
 function learnJavaScript() {
@@ -74,7 +75,7 @@ function learnJavaScript() {
 }
 ```
 
-We can write it even shorter using the "arrow function" syntax:
+我們可以使用 “箭頭功能” 語法將其編寫得更短：
 
 ```jsx live
 function learnJavaScript() {
@@ -87,13 +88,13 @@ function learnJavaScript() {
 }
 ```
 
-### Example # 2. Computed values `.map`
+### 例子 # 2. 計算值 `.map`
 
 ![Math](https://media.giphy.com/media/3o7btPCcdNniyf0ArS/giphy.gif)
 
-Let's say we have an array that contains the birth years of different people. We need to create an array that will store their age.
+假設我們有一個包含不同人的出生年份的數組。 我們需要創建一個數組來存儲他們的年齡。
 
-For example: without a higher-order function⚙️ (classic - through the `for()` and `push()` loops)
+例如：沒有高階函數⚙️（經典-通過 `for()` 和 `push()` 循環)
 
 ```jsx live
 function learnJavaScript() {
@@ -108,7 +109,7 @@ function learnJavaScript() {
 }
 ```
 
-With the higher order function `map`:
+具有高階功能 `map`:
 
 ```jsx live
 function learnJavaScript() {
@@ -118,15 +119,15 @@ function learnJavaScript() {
 }
 ```
 
-We reflash 🆕 a new array in one line of code📟.
-
-### Example # 3. With condition check `.filter()`
+我們在一行鱈魚中刷新 🆕 一個新數組e📟.
+ 
+### 例子 # 3. 有條件檢查 `.filter()`
 
 ![Check](https://media.giphy.com/media/Rd6sn03ncIklmprvy6/giphy.gif)
 
-We have an array that contains objects with properties: name and age. We need to create🏗️ an array that will only contain adults (ie, age greater than or equal to 18).
+我們有一個數組，其中包含具有以下屬性的對象：名稱和年齡。 我們需要創建一個僅包含成人（即年齡大於或等於18歲）的數組。
 
-Without a higher-order function (classic - through the `for ()` and `push ()` loops):
+沒有高階函數（經典-通過 `for ()` 和 `push ()` 循環):
 
 ```jsx live
 function learnJavaScript() {
@@ -166,14 +167,14 @@ function learnJavaScript() {
 }
 ```
 
-## Creating your own higher-order function
+## 創建自己的高階函數
 
 ![Create](https://media.giphy.com/media/3ohzdWsUVRcZC2L7Ms/giphy.gif)
 
-So far, we've looked at higher-order functions that are built into the language. Now let's create such a function ourselves⚙️.
-Imagine JavaScript doesn't have a built-in `map` method. We can write it ourselves by creating a higher-order function.
+到目前為止，我們已經研究了語言中內置的高階函數。 現在讓我們自己創建這樣的功能function️。
+想像一下，JavaScript沒有內置的“ map”方法。 我們可以通過創建一個高階函數自己編寫它。
 
-Let's say we have a string array and we want to convert it to an array of numbers, where each element represents the length of the elements from the original array.
+假設我們有一個字符串數組，我們想將其轉換為數字數組，其中每個元素代表原始數組中元素的長度。
 
 ```jsx live
 function learnJavaScript() {
@@ -194,14 +195,14 @@ function learnJavaScript() {
 }
 ```
 
-In the example above, we have created our own higher-order function `mapFor()`, which takes an array `arr` and a callback function`fn`. This function loops through this array and calls the callback function `fn` inside the `newArray.push()` for each iteration, calculating the number of characters in the words of the array, the calculation algorithm of which is described 🖊️ in the form of the 2nd variable 🔔.
+在上面的示例中，我們創建了自己的高階函數 `mapFor()`, 這需要一個數組 `arr` 和一個回調函數 `fn`. 該函數遍歷此數組並調用回調函數 `fn` 在 - 的里面 `newArray.push()` f或每次迭代，計算數組單詞中的字符數，其計算算法以第二個變量的形式描述 🔔.
 
-::: note callback
-A callback function is a function passed to another function as an argument, which is then called upon completion of an action.
+::: 筆記回調
+回調函數是作為參數傳遞給另一個函數的函數，然後在完成操作後調用該函數。
 
 :::
 
-The `callback` function⚙️ `fn` takes the current element of the array and returns🔄 the length of the current element, which is now stored in `newArray`. After the `For()` loop completes, `newArray` returns the length of the elements in `lenArray`.
+`callback` 功能 ⚙️ `fn` 獲取數組的當前元素並返回🔄當前元素的長度，該長度現在存儲在 `newArray`. 之後 `For()` 循環完成, `newArray` 返回元素的長度 `lenArray`.
 
 <!-- Поэксперементируйте, используя стрелочные функции:
 
@@ -224,11 +225,11 @@ function learnJavaScript() {
 
 при передаче функции⚙️ say в качестве параметра скобки `()` не указываются, т.к. в параметре функция⚙️ не вызывается, а передается целиком. Функция⚙️ `say` является аргументом функции⚙️ `userInput().` -->
 
-Remember, any algorithm, no matter how small, consists of 3 stages:
+請記住，任何算法，無論多麼小，都包括三個階段：
 
-- Stage 1 - Initialization of variables 🔔 and functions
-- Stage 2 - Higher order function (logic)
-- Stage 3 - Conclusion of the answer.
+-階段1-變量🔔和函數的初始化
+-階段2-高階函數（邏輯）
+-階段3-答案的結論。
 
 <!-- Модернизированный пример:
 
@@ -246,56 +247,56 @@ function learnJavaScript() {
 }
 ``` -->
 
-## Conclusion
+## 結論
 
 <!-- ![The and](https://media.giphy.com/media/xT1XH3yj7ujmm2h40o/giphy.gif) -->
 
-We learned what higher-order functions are and took a look at several of them already built into the language👅. We learned to create them on our own.
+我們了解了什麼是高階函數，並研究了其中幾種已經內置在該語言中的函數。 我們學會了自己創建它們。
 
-Without going into details, higher-order functions⚙️ can be said as follows: these are functions⚙️ that can take a function⚙️ as an argument and even return a function⚙️.
+無需贅述，高階函數⚙️可以這樣表示：這些是可以將函數⚙️作為參數甚至返回函數⚙️的函數⚙️。
 
-## Problems?
+## 問題？
 
 ![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
 
-Write to [Discord](https://discord.gg/6GDAfXn) chat.
+寫給 [Discord](https://discord.gg/6GDAfXn) 聊天。
 
-## Questions:
+## 問題：
 
 ![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
 
-First class functions:
+一流的功能：
 
-1. First class facilities
-2. Facilities of the fifth class
-3. Top class facilities
+1.一流的設施
+2.第五類的設施
+3.一流的設施
 
-Higher order function:
+高階函數：
 
-1. Takes a function as an argument or returns a function as output
-2. Only takes a function as an argument
-3. Only returns a function as output
+1.以函數作為參數或返回函數作為輸出
+2.只接受一個函數作為參數
+3.只返回一個函數作為輸出
 
-Higher order function:
+高階函數：
 
-1. It is unrealistic to create yourself
-2. Can only be used via built-in method
-3. You can create yourself
+1.創造自己是不現實的
+2.只能通過內置方法使用
+3.您可以創造自己
 
-In order to understand how much you learned this lesson, take the test on the [mobile application](http://onelink.to/njhc95) of our school on this topic.
+為了了解您學到了多少本課程，請對 [mobile application](http://onelink.to/njhc95) 我們學校就這個話題。
 
 ![Sumerian school](/img/app.png)
 
-## Links:
+## 鏈接:
 
 1. [Exploring Higher-Order Functions in JavaScript](https://medium.com/nuances-of-programming/%D0%B8%D0%B7%D1%83%D1%87%D0%B0%D0%B5%D0%BC-%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B8-%D0%B2%D1%8B%D1%81%D1%88%D0%B5%D0%B3%D0%BE-%D0%BF%D0%BE%D1%80%D1%8F%D0%B4%D0%BA%D0%B0-%D0%B2-javascript-c23daf53a5c0)
 2. [Article "Higher-order functions in JavaScript"](https://habr.com/ru/post/261723/)
 3. [Expressive Javascript. Article "Higher-order functions"](https://eloquent-javascript.karmazzin.ru/chapter5)
 4. [Code for Teens: The Perfect Beginner's Guide to Programming, Volume 1: Javascript - Jeremy Moritz](https://www.amazon.com/Code-Teens-Beginners-Programming-Javascript-ebook/dp/B07FCTLVPC)
 
-## Contributors ✨
+## 貢獻者 ✨
 
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+感謝這些好人 ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
