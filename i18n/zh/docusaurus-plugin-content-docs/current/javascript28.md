@@ -1,18 +1,18 @@
 ---
 id: javascript28
-title: Async Await
-sidebar_label: Async Await
+title: 異步等待
+sidebar_label: 異步等待
 ---
 
 ![@serverSerrverlesskiy](/img/javascript/headers/29.jpg)
 
-There is a special syntax работы for working with promises called `async / await`.
+有一種特殊的語法可以處理諾言 `async / await`.
 
-## Creating an asynchronous function
+## 創建一個異步函數
 
 ![creature](https://media.giphy.com/media/4T7e4DmcrP9du/giphy.gif)
 
-An asynchronous function⚙️ is defined by an asynchronous function expression⚙️. The basic function⚙️ looks like this:
+異步函數⚙️由異步函數表達式⚙️定義。 基本功能⚙️看起來像這樣：
 
 ```javascript
 async function foo() {
@@ -21,7 +21,7 @@ async function foo() {
 }
 ```
 
-We define a function⚙️ to be asynchronous using `async`. This keyword can be used with any syntax for a function declaration:
+我們定義一個函數⚙️使用 `async`. 此關鍵字可以與函數聲明的任何語法一起使用：
 
 ```javascript
 // Function Declaration
@@ -41,16 +41,16 @@ class Bar {
 
 ![Stops](https://media.giphy.com/media/WrgAGkGrh0MD1Z2gkO/giphy.gif)
 
-Once we have defined the function as asynchronous, we can use the `await` keyword.
-This keyword is placed before a promise call, it pauses the function until the promise is fulfilled or rejected.
+將函數定義為異步後，我們可以使用 `await` keyword.
+該關鍵字放在 promise 調用之前，它將暫停功能，直到 promise 被實現或拒絕。
 
-## Async
+## 異步
 
 ![run](https://media.giphy.com/media/3N0fFF5xxcZrO/giphy.gif)
 
-We have the keyword `async`, which we put before the function declaration to make it asynchronous. An asynchronous function⚙️ is a function⚙️ that anticipates the use of the `await` keyword to run asynchronous code📟.
+我們有關鍵字 `async`, 我們將其放在函數聲明之前以使其異步。 異步功能⚙️是一種功能⚙️，可以預期使用 `await` 關鍵字以運行異步代碼 📟
 
-Try typing the following in your browser console:
+嘗試在瀏覽器控制台中鍵入以下內容：
 
 ```javascript
 function hello() {
@@ -59,9 +59,9 @@ function hello() {
 hello()
 ```
 
-The function will return `Hello`. Nothing unusual.
+該函數將返回 `Hello`. 沒什麼不尋常的。
 
-But what if we turn it into an asynchronous function⚙️? Try the following:
+但是，如果我們將其轉換為異步函數⚙️呢？ 請嘗試以下操作：
 
 ```javascript
 async function hello() {
@@ -72,9 +72,9 @@ hello()
 
 ![Promise](https://media.giphy.com/media/GFtJhEvG3681y/giphy.gif)
 
-The function call now returns a promise. This is one of the features of asynchronous functions⚙️ - they return🔄 values that are guaranteed to be converted to promises.
+現在，函數調用將返回一個Promise。 這是異步函數的功能之一⚙️-它們返回 🔄 保證可以轉換為承諾的值。
 
-You can also create an asynchronous function expression, like this:
+您還可以創建一個異步函數表達式，如下所示：
 
 ```javascript
 // Function Expression
@@ -84,7 +84,7 @@ let hello = async function () {
 hello()
 ```
 
-You can also use arrow functions⚙️:
+您還可以使用箭頭功能 ⚙️：
 
 ```javascript
 let hello = async () => {
@@ -92,9 +92,9 @@ let hello = async () => {
 }
 ```
 
-All these functions⚙️ do the same thing.
+所有這些功能⚙️做相同的事情。
 
-To get the value of a completed promise, we can use the `.then()` block:
+要獲得已兌現承諾的價值，我們可以使用 `.then()` 堵塞：
 
 ```javascript
 hello().then(value => console.log(value))
@@ -106,17 +106,17 @@ hello().then(value => console.log(value))
 hello().then(console.log)
 ```
 
-Thus, adding the keyword `async` causes the function to return a promise instead of a value. It also allows synchronous functions to avoid any overhead associated with starting and maintaining await. Simply adding `async` before the function⚙️ enables the JS engine to automatically optimize the code.
+因此，添加關鍵字 `async` 使函數返回一個 promise，而不是一個值。 它還允許同步功能避免與啟動和維護等待相關的任何開銷。 只需添加 `async` 在功能⚙️使JS引擎自動優化代碼之前。
 
-## Await
+## 等待
 
 ![Wait](https://media.giphy.com/media/myPdoRAlad0J2/giphy.gif)
 
-The benefits of asynchronous functions⚙️ become even more apparent when you combine them with the await keyword. It can be added before any promise-based function⚙️ to make it wait for the promise to complete and then return the result. After that, the next block of code is executed📟.
+當您將異步功能與await關鍵字結合使用時，異步功能的好處變得更加明顯。 可以在任何基於promise的函數之前添加它⚙️，以使其等待promise完成，然後返回結果。 之後，執行下一個代碼塊📟
 
-You can use `await` when calling any function that returns a promise, including the `Web API` functions.
+您可以使用 `await` 當調用任何返回諾言的函數時，包括 `Web API` 功能。
 
-Syntax📖:
+句法 📖:
 
 ```javascript
 let response = await fetch('https://jsonplaceholder.typicode.com/users')
@@ -205,13 +205,13 @@ let response = await fetch('coffee.jpg')
 
 Когда меньше блоков `.then()` для оборачивания кода📟 , все это выглядит как синхронный код📟 , поэтому он интуитивно понятен. -->
 
-## Error handling with `try ... catch`
+## 錯誤處理 `try ... catch`
 
 ![code rewriting](https://media.giphy.com/media/ZVik7pBtu9dNS/giphy.gif)
 
-If you want to add error handling, you have several options.
+如果要添加錯誤處理，則有幾種選擇。
 
-You can use a synchronous `try ... catch` structure along with `async / await`:
+您可以使用同步 `try ... catch` s與結構 `async / await`:
 
 ```javascript
 async function myFetch() {
@@ -227,9 +227,9 @@ async function myFetch() {
 myFetch()
 ```
 
-The `catch () {}` block takes an error object объект, which we named `e`. Now we can output it to the console, this will allow us to get a message💬 about where in the code📟 the error occurred🙅‍♂️.
+`catch () {}` 塊接受一個錯誤對象，我們將其命名為 `e`. 現在我們可以將其輸出到控制台，這將使我們能夠獲得消息 💬 有關代碼在何處發生錯誤的信息 🙅‍♂️
 
-Let's purposefully create an error in url and look at the error output.
+讓我們有目的地在url中創建一個錯誤並查看錯誤輸出。
 
 ```javascript
 async function myFetch() {
@@ -247,47 +247,47 @@ myFetch()
 
 ![fetch error](/img/javascript/17.jpg)
 
-## Total
+## 全部的
 
 ![Conclusion](https://media.giphy.com/media/3o6ZsVl2hv8ZnhSXug/giphy.gif)
 
-`Async / await` allows you to write 🖊️ asynchronous code that is easy to read and maintain. For six reasons why it is better to use it instead of promises read [here](https://habr.com/ru/company/ruvds/blog/326074/).
+`Async / await` 允許您編寫易於閱讀和維護的🖊️異步代碼。 出於六個原因，為什麼最好使用它而不是應許閱讀 [here](https://habr.com/ru/company/ruvds/blog/326074/).
 
-## Problems?
+## 問題?
 
 ![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
 
-Write to [Discord](https://discord.gg/6GDAfXn) chat.
+寫給 [Discord](https://discord.gg/6GDAfXn) chat.
 
-## Questions:
+## 問題:
 
 ![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
 
-Where does the `async` keyword go?
+在哪裡 `async` 關鍵字去嗎？
 
-1. Before the function declaration
-2. After the function is declared
-3. In the body of the function
+1.函數聲明前
+2.函數聲明後
+3.在功能主體中
 
-What functions does `await` work in?
+有什麼功能 `await`上班嗎
 
-1. Only in synchronous functions
-2. Only in asynchronous functions
-3. In any function
+1.僅在同步功能中
+2.僅在異步功能中
+3.任何功能
 
-An asynchronous function is:
+異步函數是：
 
-1. This is the function which is defined by the keyword `async`
-2. This is a function that anticipates the use of the `await` keyword
-3. Both options are correct
+1.這是由關鍵字定義的功能 `async`
+2.此功能可預期使用 `await` 關鍵詞
+3.兩種選擇都是正確的
 
-The advantage of `async / await` is:
+的優勢 `async / await` 是：
 
-1. Own code is locked
-2. Getting rid of the code from `.then()` blocks
-3. The need to wrap expected promises in an asynchronous function
+1.自己的代碼被鎖定
+2.擺脫代碼 `.then()` 塊
+3.需要將期望的承諾包裝在異步函數中
 
-What this code is:
+這段代碼是什麼：
 
 ```javascript
 let hello = async function () {
@@ -296,23 +296,23 @@ let hello = async function () {
 hello()
 ```
 
-1. Synchronous function
-2. Arrow function
-3. Asynchronous function expression
+1.同步功能
+2.箭頭功能
+3.異步函數表達式
 
-In order to understand how much you learned this lesson, take the test on the [mobile application](http://onelink.to/njhc95) of our school on this topic.
+為了了解您學到了多少本課程，請對 [mobile application](http://onelink.to/njhc95) 我們學校就這個話題。
 
 ![Sumerian school](/img/app.png)
 
-## Links:
+## 鏈接:
 
 1. [Async-await](https://learn.javascript.ru/async-await)
 2. [How to master async / await in JavaScript with real examples](https://webformyself.com/async-await-v-javascript-na-primerax)
 3. [Asynchronous programming with async / await](https://habr.com/ru/post/491012/)
 
-## Contributors ✨
+## 貢獻者 ✨
 
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+感謝這些好人 ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->

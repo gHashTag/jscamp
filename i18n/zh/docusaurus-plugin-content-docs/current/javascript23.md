@@ -1,16 +1,16 @@
 ---
 id: javascript23
-title: Classes
-sidebar_label: Classes
+title: 班級
+sidebar_label: 班級
 ---
 
 ![@serverSerrverlesskiy](/img/javascript/headers/23.jpg)
 
-JavaScript uses the prototypal inheritance model: each object inherits the fields (properties) and methods of the prototype object.
+JavaScript使用原型繼承模型：每個對像都繼承原型對象的字段（屬性）和方法。
 
-## class
+## 班級
 
-The keyword `class` is used to define a class:
+關鍵字 `class` 用於定義一個類：
 
 ```jsx
 class MyClass {
@@ -23,16 +23,16 @@ class MyClass {
 }
 ```
 
-This syntax is called a class declaration.
+此語法稱為類聲明。
 
 ![Class](https://media.giphy.com/media/cYaBD8kxE4PZudHBRA/giphy.gif)
 
-:::note Methods in the class are not comma separated
-Class syntax differs from object literals. No commas are required inside classes.
+:::note 類中的方法不是逗號分隔的
+類語法與對象文字不同。 類內不需要逗號。
 
 :::
 
-The class may not have a name. A class expression can be used to assign a class to a variable 🔔:
+該類可能沒有名稱。 類表達式可用於將類分配給變量 🔔:
 
 ```jsx
 const UserClass = class {
@@ -40,7 +40,7 @@ const UserClass = class {
 }
 ```
 
-Classes can be exported as modules. Here's an example of the default export:
+可以將類導出為模塊。 這是默認導出的示例：
 
 ```jsx
 export default class User {
@@ -48,7 +48,7 @@ export default class User {
 }
 ```
 
-And here's an example of a named export:
+這是一個命名導出的示例：
 
 ```jsx
 export class User {
@@ -56,26 +56,25 @@ export class User {
 }
 ```
 
-The class becomes useful when you instantiate the class. An instance is an object that contains the data and behavior described by 🖊️
-class.
+當您實例化該類時，該類將變得有用。 實例是一個對象，其中包含🖊️類描述的數據和行為。
 
-The `new` operator creates an instance of a class in JavaScript like this: `instance = new Class()`.
+`new` 運算符在JavaScript中創建一個類的實例，如下所示： `instance = new Class()`.
 
-For example, you can create🏗️ an instance of the User class👤 using the `new` operator:
+例如，您可以使用以下命令創建User類的實例 `new` 操作員：
 
 ```jsx
 const myUser = new User()
 ```
 
-`new User()` creates an instance of the `User` class 👤.
+`new User()` 創建一個實例 `User` 班級 👤.
 
-## Initialization: constructor ()
+## 初始化：構造函數()
 
 ![spangeBob](https://media.giphy.com/media/3oriNZoNvn73MZaFYk/giphy.gif)
 
-`constructor (...)` is a special method in the body of the class that initializes an instance. This is the place where you can set initial values for the fields or make any adjustments to the objects.
+`constructor (...)` 是類主體中用於初始化實例的特殊方法。 在這裡您可以設置字段的初始值或對對象進行任何調整。
 
-In the following example, the constructor sets the initial value of the `name` field:
+在下面的示例中，構造函數設置了 `name` 場地：
 
 ```jsx
 class User {
@@ -85,11 +84,11 @@ class User {
 }
 ```
 
-The `constructor` of the `User` class takes one parameter, `name`, which is used to set the initial value of the `this.name` field.
+`constructor` 的 `User` 類採用一個參數, `name`, 用於設置初始值 `this.name` 場地。
 
-Inside the constructor, the value of `this` is equal to the newly created instance.
+在構造函數中，值 `this` 等於新創建的實例。
 
-The arguments used to instantiate the class become parameters to the constructor 👇:
+用於實例化類的參數成為構造函數的參數 👇:
 
 ```jsx live
 function learnJavaScript() {
@@ -105,42 +104,42 @@ function learnJavaScript() {
 }
 ```
 
-The `name` parameter inside the constructor is `Jon Snow`.
+`name` 構造函數中的參數是 `Jon Snow`.
 
-If you do not define a constructor for a class, a default constructor is created. The default constructor is an empty function⚙️ that does not modify the instance.
+如果未為類定義構造函數，則會創建一個默認構造函數。 默認構造函數是一個空函數⚙️，它不會修改實例。
 
-There can be only one method named `constructor` in a class.
+只能有一種名為 `constructor` 在課堂上。
 
-## Discarding classes
+## 放棄課程
 
-Since in the course of our school we teach to develop mobile applications using the library [React](https://reactjs.org), where is the innovation [React Hooks](https://en.reactjs.org/docs/hooks-intro.html) allows you to use state and other React features without writing classes. Therefore, it makes no sense to talk about classes anymore, since we have abandoned them.
+由於在我們學校的課程中，我們教授使用庫開發移動應用程序 [React](https://reactjs.org), 創新在哪裡 [React Hooks](https://en.reactjs.org/docs/hooks-intro.html) 允許您在不編寫類的情況下使用狀態和其他React功能。 因此，不再討論類，因為我們已經放棄了它們。
 
-## Problems?
+## 問題？
 
 ![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
 
-Write to [Discord](https://discord.gg/6GDAfXn) chat.
+寫給 [Discord](https://discord.gg/6GDAfXn) 聊天。
 
-## Questions:
+## 問題:
 
 ![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
 
-What is the keyword for class definition?
+類定義的關鍵字是什麼？
 
 1. `constructor()`
 2. `class`
 3. `this`
 
-Are methods inside a class comma separated?
+類逗號內的方法是否分開？
 
-1. Yes
-2. No
+1.是的
+2.沒有
 
-How many `constructor()` methods can there be in one class?
+多少 `constructor()` 方法可以在一堂課中嗎？
 
-1. Unlimited
-2. Up to ten
-3. Only one
+1.無限
+2.最多十個
+3.只有一個
 
 <!-- Что такое геттеры и сеттеры?
 
@@ -158,7 +157,7 @@ How many `constructor()` methods can there be in one class?
 1. Перед this
 2. После this -->
 
-In order to understand how much you learned this lesson, take the test on the [mobile application](http://onelink.to/njhc95) of our school on this topic.
+為了了解您學到了多少本課程，請對 [mobile application](http://onelink.to/njhc95) 我們學校就這個話題。
 
 ![Sumerian school](/img/app.png)
 
@@ -360,14 +359,14 @@ const cat = new Animal({ //Создание объекта при помощи �
 1. Перед this
 2. После this -->
 
-## Links:
+## 鏈接：
 
 1.  [MDN web docs](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Classes)
 2.  [Learn JavaScript](https://learn.javascript.ru/class)
 
-## Contributors ✨
+## 貢獻者 ✨
 
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+感謝這些好人 ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->

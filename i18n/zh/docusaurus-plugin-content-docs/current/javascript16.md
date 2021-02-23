@@ -1,26 +1,26 @@
 ---
 id: javascript16
-title: Cycles
-sidebar_label: Cycles
+title: 週期數
+sidebar_label: 週期數
 ---
 
 ![@serverSerrverlesskiy](/img/javascript/headers/17.jpg)
 
-When an action needs to be repeated a large number of times, cycles are used in programming. For example, you need to display the text 📜 "Hello, World!" 🌎. Instead of repeating the same text output command 📜 two hundred times, a loop is often created that repeats 200 times what is written 🖊️ in the body of the loop. Each repetition is called an iteration.
+當一個動作需要重複很多次時，在編程中會使用循環。 例如，您需要顯示文本 📜 "Hello, World!" 🌎. 與其重複相同的文本輸出命令 📜 200次，通常是創建一個循環，該循環重複循環主體中所寫內容的200倍。 每次重複稱為一次迭代。
 
 ![cycle](https://media.giphy.com/media/Pkck2unt0XQfc4gs3R/giphy.gif)
 
-Iteration in programming - in the broadest sense - the organization of data processing in which actions are repeated many times, without leading to calls 📞 themselves (as opposed to recursion). In a narrow sense, it is one step in an iterative, cyclical process.
+編程中的迭代-從最廣泛的意義上講-數據處理的組織，在該過程中，動作被重複多次，而不會導致自身調用（與遞歸相反）。 從狹義上講，這是一個循環迭代過程中的一步。
 
-A loop in JavaScript (and in all other languages👅) is a block of code📟 that repeats itself as long as a known condition is true. There are many different types of loops, but they all essentially do the same thing: they repeat an action several times.
+JavaScript（以及所有其他語言）中的循環是一段代碼 📟 只要已知條件為真，該循環便會重複。 循環有很多不同的類型，但是它們基本上都做相同的事情：它們重複執行幾次動作。
 
-## The while() loop
+## The while() 循環
 
 ![While](https://media.giphy.com/media/WS6CDvvyNDrhZRFBtT/giphy.gif)
 
-The `while` operator creates a loop that executes the specified instruction while the condition being tested is true. The logical value of the condition is calculated вычис before executing the loop body.
+ `while` 運算符創建一個循環，在被測條件為真時執行指定的指令。 在執行循環主體之前，先計算條件的邏輯值。
 
-### Syntax
+### 句法
 
 ![Boock](https://media.giphy.com/media/LkjlH3rVETgsg/giphy.gif)
 
@@ -30,11 +30,11 @@ while (condition) {
 }
 ```
 
-`condition` is an expression whose boolean value is checked each time before entering the loop. If the value is true - `true`✅, then the instruction is executed. When the value becomes false - `false`❎, we exit the loop.
+`condition` 是一個表達式，每次進入循環之前都會檢查其布爾值。 如果值為true - `true`✅ 然後執行指令。 當值變為假時 - `false`❎, 我們退出循環。
 
-An instruction is an algorithm code that is executed every time the condition is true. To execute multiple instructions in a loop, use the `{...}` block operator to group them. When using 1 command in the body of the loop, curly braces can be omitted.
+指令是每當條件為真時執行的算法代碼。 要循環執行多個指令，請使用 `{...}` 阻止運算符將它們分組。 在循環主體中使用1個命令時，可省略花括號。
 
-Here is a simple example of a loop `while (condition) {...}`
+這是一個簡單的循環示例 `while (condition) {...}`
 
 ```jsx live
 function learnJavaScript() {
@@ -49,11 +49,11 @@ function learnJavaScript() {
 }
 ```
 
-The `count` in the example is `0`. The condition of our loop (it is written скоб in brackets) is that the block with the code will repeat itself over and over until (that is, the actual `while`) `count` is less than `10`.
+`count`在示例中是`0`。 循環的條件（在括號中用скоб表示）是帶有代碼的塊將不斷重複直到（即，實際 `while`) `count` 小於 `10`.
 
-Since the initial value of `0` is less than` 10`, the code📟 runs. Each time the interpreter re-checks the ✔️ condition, if the condition is still true, then the code📟 will be run again. Each time we increment the counter value by `1`. Otherwise, the value would remain at `0`, so our condition `counter <10` would always remain true, and our code📟 would loop forever!
+自初始值 `0` 小於 `10`, 代碼📟運行。 每次口譯員重新檢查 ✔️ 條件，如果條件仍然為真，則將再次運行代碼 📟。 每次我們將計數器值增加 `1`. 否則，該值將保持在 `0`, 所以我們的條件` <10` 將永遠保持為真，我們的代碼將永遠循環！
 
-As a result, after `10` cycles it will become `10`. After that, the interpreter will terminate the loop since the condition is `false` ❎ and go to the final lines of our code📟.
+結果，之後 `10` 週期將變成 `10`. 在那之後，解釋器將終止循環，因為條件是 `false` ❎ 然後轉到我們代碼的最後幾行 📟
 
 <!-- ## Цикл do … while
 
@@ -86,13 +86,13 @@ function learnJavaScript() {
 
 Такая форма синтаксиса📖 оправдана, если вы хотите, чтобы тело цикла выполнилось хотя бы один раз, даже если условие окажется ложным ❎ . -->
 
-## The for() loop
+## The for() 循環
 
 ![Create](https://media.giphy.com/media/XaExByjWTK1V2HgDfh/giphy.gif)
 
-The `for` expression creates a loop of three 3 optional expressions in parentheses, separated by semicolons.
+`for` expression會在括號中創建由三個3個可選表達式組成的循環，並用分號分隔。
 
-### Syntax
+### 句法
 
 ![Book](https://media.giphy.com/media/l1J9HWBKLp20YfNAY/giphy.gif)
 
@@ -101,15 +101,15 @@ for ([initialization]; [condition]; [final expression])
    { expression }
 ```
 
-`initialization` - expression or definition of variables. This expression can optionally declare new variables using the `let` keyword. These variables are visible only in the `for` loop, i.e. in the same scope (for security).
+`initialization` - 變量的表達或定義。 該表達式可以選擇使用 `let` 關鍵詞。 這些變量僅在 `for` 循環，即在同一範圍內（出於安全性考慮）。
 
-`condition` is an expression that is executed at each iteration of the loop. If the expression is true, the loop is executed. The condition is optional. If not, the condition is always considered true. If the expression is false, execution of `for` is terminated.
+`condition` 是在循環的每次迭代中執行的表達式。 如果表達式為true，則執行循環。 條件是可選的。 如果不是，則始終認為該條件為真。 如果表達式為假，則執行 `for` 終止。
 
-`final expression` - an expression that is executed at the end of the loop iteration. Occurs until the next condition is met. Usually used to `increment ++`, `decrement -` or `update i + = 5` of a counter variable 🔔.
+`final expression` - 在循環迭代結束時執行的表達式。 發生直到滿足下一個條件。 通常用來 `increment ++`, `decrement -` or `update i + = 5` 一個計數器變量 🔔
 
-`expression` - executable code of the algorithm while the condition of the loop is `true`. To execute multiple expressions in a loop, use the `{...}` block to group those expressions. To avoid executing any expression in a loop, use an empty `for (;;;)` expression.
+`expression` - 循環條件為時算法的可執行代碼 `true`. 要在循環中執行多個表達式，請使用 `{...}` 阻止將這些表達式分組。 為避免在循環中執行任何表達式，請使用空 `for (;;;)` 表達。
 
-Let's calculate the sum of numbers from 0 to 100 👇:
+讓我們計算0到100之間的數字總和 👇:
 
 ```jsx live
 function learnJavaScript() {
@@ -122,16 +122,16 @@ function learnJavaScript() {
 }
 ```
 
-Remember when we wrote our 1️⃣ first `while()` what happened to our counter? We found that it is very important that it constantly changes (`increment ++` helped us with this). Because if you forget about it, then the code📟 will fall into an `infinite loop of loops`.
+還記得我們寫第一本書的時候 1️⃣  `while()` 我們的櫃檯怎麼了？ 我們發現不斷變化非常重要 (`increment ++` helped us with this). 因為如果您忘記它，那麼代碼 📟 將落入 `infinite loop of loops`.
 
-Well, situations like this happen quite regularly with `while-loops`, which is why `for` was done with a built-in counter!
+好吧，這種情況經常發生 `while-loops`, 這就是為什麼 `for` 用內置計數器完成的！
 
-### Example for loop
+### 循環示例
 
 ![hmm](https://media.giphy.com/media/l3nSILUHhuVDuWSnC/giphy.gif)
 
-When you first see the syntax📖 of a `loop for`, you might think 🤔 that this is something very strange. But you should still study it 🧑‍🎓, since you will meet
-like this many times:
+當您第一次看到a的語法時 📖  `loop for`, 您可能會認為🤔這很奇怪。 但是您仍然應該學習🧑‍🧑，因為您將會見面
+這樣多次：
 
 ```jsx live
 function learnJavaScript() {
@@ -147,43 +147,43 @@ function learnJavaScript() {
 
 ![Wow](https://media.giphy.com/media/3oriO13KTkzPwTykp2/giphy.gif)
 
-Well, did you know? They should have! After all, this is practically the same code📟 that we used for the `while` loop at the beginning of the chapter! The three parts of the cycle are separated by semicolons; they were all in that while loop, but in different places. Let's take a closer look:
+好吧，你知道嗎？ 他們應該有！ 畢竟，這實際上與我們用於 `while` 在本章開始循環！ 循環的三個部分用分號分隔； 他們都在while循環中，但是在不同的地方。 讓我們仔細看看：
 
 ![for](/img/javascript/14/00.png)
 
-1. First, we declare a counter variable - `let i = 0`. It is in the function itself and outside this loop that this `i` will be absent, and this is safe!
-2. Next, we set a condition that the interpreter will check before each iteration of the loop (to determine whether it is worth starting the code at all). An iteration is called one iteration of the loop (for example, if we had 10 startup cycles, then we can say that there were 10 code iterations).
-3. The third part of our code is `increment ++` (or `decrement --`). It runs at the end of each iteration to change our variable every time 🔔.
+1. 首先，我們聲明一個計數器變量 - `let i = 0`. 正是在函數本身和這個循環之外 `i` 會缺席，這很安全！
+2.接下來，我們設置一個條件，解釋器將在循環的每次迭代之前進行檢查（以確定是否值得啟動代碼）。 一次迭代稱為循環的一次迭代（例如，如果我們有10個啟動週期，則可以說有10個代碼迭代）。
+3.我們代碼的第三部分是 `increment ++` (or `decrement --`). 它在每次迭代結束時運行，以每次更改我們的變量 🔔
 
-## Conclusion
+## 結論
 
 ![The and](https://media.giphy.com/media/l1Lc1Kn9hImgpx5Re/giphy.gif)
 
-Almost always, when you know the number of iterations needed, you would rather work with for than with while. This is why `for` loops are so popular. There are other cycles, but they are not so popular and if you want you can get acquainted with them [here](https://developer.mozilla.org/en/docs/Web/JavaScript/Guide/%D0%A6%D0%B8%D0%BA%D0%BB%D1%8B_%D0%B8_%D0%B8%D1%82%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%B8).
+幾乎總是，當您知道所需的迭代次數時，寧願使用for而不是while。 這就是為什麼 `for` 循環是如此流行。 還有其他週期，但是它們並不那麼受歡迎，如果您願意，可以結識它們 [here](https://developer.mozilla.org/en/docs/Web/JavaScript/Guide/%D0%A6%D0%B8%D0%BA%D0%BB%D1%8B_%D0%B8_%D0%B8%D1%82%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%B8).
 
-## Problems?
+## 問題？
 
 ![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
 
 Write to [Discord](https://discord.gg/6GDAfXn) chat.
 
-## Questions:
+## 問題：
 
 ![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
 
-What is the name of a block of code that repeats itself over and over again until a given condition is no longer true?
+一遍又一遍地重複直到給定條件不再成立的代碼塊的名稱是什麼？
 
-1. Cycle
-2. Condition
-3. Initialization
+1.循環
+2.條件
+3.初始化
 
-Which of the two loop operators is more popular?
+這兩個循環運算符中哪個更受歡迎？
 
 1. `for`
 2. `while`
 3. `break`
 
-How many messages will the following code output to the console?
+以下代碼將輸出到控制台多少條消息？
 
 ```javascript
 let k = 0
@@ -196,24 +196,24 @@ while (k < 7) {
 2. `8`
 3. `infinity`
 
-What is the character used to separate the parts of the for loop that are in parentheses?
+用於分隔括號中的for循環部分的字符是什麼？
 
 1. `&&`
 2. `;`
 3. `=!`
 
-If `_______` always remains true, then the code can get stuck in an infinite `_______`.
+If `_______` 始終保持為真，則代碼可能陷入無限 `_______`.
 
 1. condition / loop
 2. cycle / condition
 
-What is the middle `_____` of the three bracketed parts of a `for` loop called?
+中間是什麼 `_____` 的三個括號部分中的一個 `for` 循環調用？
 
-1. Expression
-2. Condition
-3. Increment
+1.表達
+2.條件
+3.增量
 
-How many messages will the following code output to the console?
+以下代碼將輸出到控制台多少條消息？
 
 ```javascript
 const maxNumer = 17
@@ -228,17 +228,17 @@ while (n <= maxNumer) {
 2. `9`
 3. `10`
 
-What is the term for a single (step) passage of the cycle?
+循環的一個（步驟）通過的術語是什麼？
 
-1. Iteration
-2. Interrupt
-3. Looping
+1.迭代
+2.中斷
+3.循環播放
 
-In order to understand how much you learned this lesson, take the test on the [mobile application](http://onelink.to/njhc95) of our school on this topic.
+為了了解您學到了多少本課程，請對 [mobile application](http://onelink.to/njhc95) 我們學校就這個話題。
 
 ![Sumerian school](/img/app.png)
 
-## Links
+## 鏈接
 
 1. [MDN web doc. The article "The do ... while loop"](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Statements/do...while)
 2. [MDN web doc. For Loop Article](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Statements/for)
@@ -247,9 +247,9 @@ In order to understand how much you learned this lesson, take the test on the [m
 5. [While and for Loops](https://learn.javascript.ru/while-for)
 6. [Code for Teens: The Perfect Beginner's Guide to Programming, Volume 1: Javascript - Jeremy Moritz](https://www.amazon.com/Code-Teens-Beginners-Programming-Javascript-ebook/dp/B07FCTLVPC)
 
-## Contributors ✨
+## 貢獻者 ✨
 
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+感謝這些好人 ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->

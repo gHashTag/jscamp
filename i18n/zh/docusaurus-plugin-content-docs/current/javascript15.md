@@ -1,26 +1,26 @@
 ---
 id: javascript15
-title: Switch case construct
-sidebar_label: Switch case construct
+title: 開關盒構造
+sidebar_label: 開關盒構造
 ---
 
 ![@serverSerrverlesskiy](/img/javascript/headers/14.jpg)
 
-The switch construction is used to compare a value for equality with different options.
+開關構造用於將相等值與不同選項進行比較。
 
-In this case, equality is implied in the sense of the operator strict equality `===`, it cannot compare with a regular expression or somehow else. That is, the values must be of the same type for equality to hold.
+在這種情況下，在操作員嚴格平等的意義上意味著平等 `===`, 它無法與正則表達式或其他方式進行比較。 也就是說，值必須具有相同的類型才能保持相等。
 
 ![comparison](https://media.giphy.com/media/icJA0VF7ntoEL18Jez/giphy.gif)
 
-If the condition matches, then the code block📟 associated with the corresponding `case` is executed. If none of the conditions match, then the code specified in the `default` block, if any, is executed. To exit the construction, use the `break` command. If you do not specify it, the code block is automatically executed in the next `case`, etc. Therefore, we use `break` in our scripts, so as not to run the interpreter over all `cases`, thereby reducing the performance of the script.
+如果條件匹配，則代碼塊📟與相應的 `case` 被執行。 如果沒有條件匹配，則在 `default` block, 如果有，則執行。 要退出施工，請使用 `break` c命令。 如果未指定，則代碼塊將在下一個步驟中自動執行 `case`, 等等. 因此，我們使用 `break` 在我們的腳本中，以免全部運行解釋器 `cases`, 從而降低了腳本的性能。
 
-## Syntax
+## 句法
 
 ![Syntax](https://media.giphy.com/media/yR4xZagT71AAM/giphy.gif)
 
-A `switch` construct has one or more` case` blocks and an optional `default` block.
+一種 `switch` 構造具有一個或多個 `case` 塊和可選 `default` 堵塞。
 
-It looks like this:
+看起來像這樣:
 
 ```jsx
 switch (n) {
@@ -38,13 +38,13 @@ switch (n) {
 }
 ```
 
-`n` - this is [boolean](https://react-native-village.github.io/docs/javascript08) condition.
+`n` - this is [boolean](https://react-native-village.github.io/docs/javascript08) 健康）狀況。
 
-## Examples of
+## 示例
 
 ![Math](https://media.giphy.com/media/xT1Ra5h24Eliux3UVq/giphy.gif)
 
-Let's consider the simplest example 👇:
+讓我們考慮最簡單的例子👇:
 
 ```jsx live
 function learnJavaScript() {
@@ -67,12 +67,12 @@ function learnJavaScript() {
 }
 ```
 
-Here the `switch` statement will sequentially compare` a` with all the options from `case`.
-First `3`, then - since there is no match - `4`. A match is found, this option will be executed, from the line `str = 'To point!'` And further, to the nearest `break`, which will interrupt the execution.
+在這裡 `switch` 語句將按順序進行比較 `a` 與所有選項 `case`.
+第一的 `3`, 然後-由於沒有匹配項 - `4`. 找到一個匹配項，將從行開始執行此選項 `str = 'To point!'` 而且，到最近 `break`, 這會中斷執行。
 
 ![Wow](https://media.giphy.com/media/3oriO13KTkzPwTykp2/giphy.gif)
 
-Consider this example 👇:
+考慮這個例子 👇:
 
 ```jsx live
 function learnJavaScript() {
@@ -95,13 +95,13 @@ function learnJavaScript() {
 }
 ```
 
-Here the `switch` statement will sequentially compare `a` with all the options from `case`. But this is not a comparison of numbers, but of strings. This can be done with any data type, as long as the same data types are compared.
+在這裡 `switch` 語句將按順序進行比較 `a` 與所有選項 `case`. 但這不是數字的比較，而是字符串的比較。 只要比較相同的數據類型，就可以使用任何數據類型來完成。
 
-## Replacing `if`
+## 更換 `if`
 
-Also, `Switch` is used to replace multiple `if`.
+還 `Switch` 用於替換多個 `if`.
 
-For example, you can replace this code 👇:
+例如，您可以替換此代碼 👇:
 
 ```jsx live
 function learnJavaScript() {
@@ -122,7 +122,7 @@ function learnJavaScript() {
 }
 ```
 
-On this 👇:
+在這個 👇:
 
 ```jsx live
 function learnJavaScript() {
@@ -146,48 +146,48 @@ function learnJavaScript() {
 }
 ```
 
-The result will be the same, but the code will become more readable and easier to work with.
+結果將是相同的，但是代碼將變得更具可讀性並且更易於使用。
 
-## Problems?
+## 問題？
 
 ![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
 
-Write to [Discord](https://discord.gg/6GDAfXn) chat.
+寫給 [Discord](https://discord.gg/6GDAfXn) chat.
 
-## Questions:
+## 問題:
 
 ![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
 
-Is it possible to use `switch` to compare something with regular expressions?
+是否可以使用`switch`將某些內容與正則表達式進行比較？
 
-1. Yes
-2. No
+1.是的
+2.沒有
 
-What comparison operator does `switch` use?
+比較運算符的作用 `switch` 使用？
 
 1. `=`
 2. `===`
 3. `==`
 
-Which keyword stops the comparison process in `switch`?
+哪個關鍵字停止比較過程 `switch`?
 
 1. `break`
 2. `stop`
 3. `default`
 
-In order to understand how much you learned this lesson, take the test on the [mobile application](http://onelink.to/njhc95) of our school on this topic.
+為了了解您學到了多少本課程，請對 [mobile application](http://onelink.to/njhc95) 我們學校就這個話題。
 
 ![Sumerian school](/img/app.png)
 
-## Links
+## 鏈接
 
 1.  [MDN web docs](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/switch)
 2.  [Learn JavaScript](https://learn.javascript.ru/switch)
 3.  [Справочник JavaScript](https://javascript.ru/switch)
 
-## Contributors ✨
+## 貢獻者 ✨
 
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+感謝這些好人 ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->

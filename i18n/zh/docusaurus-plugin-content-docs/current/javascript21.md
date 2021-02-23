@@ -1,22 +1,22 @@
 ---
 id: javascript21
-title: Closure
-sidebar_label: Closure
+title: 關閉
+sidebar_label: 關閉
 ---
 
 ![@serverSerrverlesskiy](/img/javascript/headers/20.jpg)
 
-A closure is a function⚙️ that has access to an external function⚙️ even after the external function️ has terminated. A closure is needed to provide an internal function with access to the scope of an external function️, but at the same time close access from the external environment to the variables of the internal function⚙️.
+閉包是一個函數⚙️，即使外部函數️已終止，它也可以訪問外部函數⚙️。 需要使用閉包來為內部函數提供對外部函數作用域的訪問權限，但是與此同時，也需要從外部環境對內部函數的變量進行緊密訪問。
 
 ![Snake](https://media.giphy.com/media/3oFzmdjqH15YebLQ52/giphy.gif)
 
-Requirements for creating a closure:
+創建關閉的要求：
 
-1. An external function that is called in the code.
-2. The outer function contains the inner function.
-3. As a result, the outer function returns the inner one.
+1.在代碼中調用的外部函數。
+2.外部函數包含內部函數。
+3.結果，外部函數返回內部函數。
 
-Let's consider creating a closure using an example:
+讓我們考慮使用一個示例創建一個閉包：
 
 ```jsx live
 function learnJavaScript() {
@@ -32,22 +32,22 @@ function learnJavaScript() {
 }
 ```
 
-1. In the example, we have created an external function `getFruit`;
-2. Inside `getFruit` created an internal function `show`.
-3. The getFruit function returns the show function as a result.
-4. Further in the code, we assigned the result of the `getFruit` function to the variable `showFruit`.
-5. Because the result of `getFruit` is a function, then `showFruit` becomes not a variable🔔, but a function.
-6. The result of the whole construction is the variable `fruit`, which is inside the function `getFruit`, it became closed. Now we can only find out the value of this variable🔔, we cannot change it.
+1. 在示例中，我們創建了一個外部函數 `getFruit`;
+2. 裡面 `getFruit` 創建了一個內部功能 `show`.
+3. getFruit函數返回show函數作為結果。
+4.在代碼中，我們進一步分配了 `getFruit` 對變量起作用 `showFruit`.
+5. 因為結果 `getFruit` 是一個函數，那麼 `showFruit` 變成不是變量🔔，而是一個函數。
+6.整體構造的結果是變量 `fruit`, 在函數內部 `getFruit`, 它關閉了。 現在我們只能找出該變量的值🔔，我們無法對其進行更改。
 
-## Examples of
+## 示例
 
 ![Math](https://media.giphy.com/media/xT1Ra5h24Eliux3UVq/giphy.gif)
 
-Let's look at more examples for understanding.
+讓我們看更多示例以進行理解。
 
-### Counter
+### 櫃檯
 
-A counter is the simplest example to consider how a closure works.
+計數器是考慮閉包如何工作的最簡單示例。
 
 <!-- ![Counter](https://media.giphy.com/media/QSNvClMu5zWJW/giphy.gif) -->
 
@@ -64,11 +64,11 @@ function learnJavaScript() {
 }
 ```
 
-### Improved counter
+### 改進計數器
 
 ![Counter](https://media.giphy.com/media/3o6Zt6fzS6qEbLhKWQ/giphy.gif)
 
-As a result, we will have not one function⚙️, but several at once.
+結果，我們將沒有一個功能⚙️，而是一次具有多個功能。
 
 ```jsx live
 function learnJavaScipt() {
@@ -97,7 +97,7 @@ function learnJavaScipt() {
 }
 ```
 
-### Closure in a loop
+### 循環閉合
 
 ![circle](https://media.giphy.com/media/u5s2ezDicmyuA/giphy.gif)
 
@@ -113,7 +113,7 @@ function learnJavaScript() {
 }
 ```
 
-### Remember the phrase
+### 記住這句話
 
 ![l](https://media.giphy.com/media/l4pTfqyI6TCjUW4Yo/giphy.gif)
 
@@ -130,50 +130,50 @@ function learnJavaScript() {
 }
 ```
 
-## Total
+## 全部的
 
-Closures are one of the most important fundamental JavaScript concepts that every JS developer should understand. Understanding closures is one stepping stone to writing efficient, high-quality applications.
+閉包是每個JS開發人員都應該理解的最重要的基本JavaScript概念之一。 了解閉包是編寫高效，高質量應用程序的第一步。
 
-## Problems?
+## 問題？
 
 ![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
 
 Write to [Discord](https://discord.gg/6GDAfXn) chat.
 
-## Questions:
+## 問題：
 
 ![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
 
-Что такое замыкание?
+什麼是封包？
 
-1. Конструкция
-2. Функция
-3. Концепция
+1.施工
+2.功能
+3.概念
 
-Что на чём замыкается?
+什麼是封閉？
 
-1. Функция на область видимости
-2. Переменные в функции
+1.作用域
+2.函數中的變量
 
-Что нужно сделать, чтобы получить доступ к замкнутой переменной?
+您需要做什麼才能訪問封閉變量？
 
-1. Опишу её и воспользуюсь
-2. Она доступна
-3. Переменную можно только просмотреть
+1.我將描述並使用它
+2.可用
+3.該變量只能查看
 
-In order to understand how much you learned this lesson, take the test on the [mobile application](http://onelink.to/njhc95) of our school on this topic.
+為了了解您學到了多少本課程，請對 [mobile application](http://onelink.to/njhc95) 我們學校就這個話題。
 
 ![Sumerian school](/img/app.png)
 
-## Links
+## 鏈接
 
 1. [Learn JavaScript](https://learn.javascript.ru/closures)
 2. [MDN Web Docs](https://developer.mozilla.org/ru/docs/Web/JavaScript/Closures)
 3. [Замыкания JavaScript](https://medium.com/@stasonmars/понимаем-замыкания-в-javascript-раз-и-навсегда-c211805b6898)
 
-## Contributors ✨
+## 貢獻者 ✨
 
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+感謝這些好人 ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->

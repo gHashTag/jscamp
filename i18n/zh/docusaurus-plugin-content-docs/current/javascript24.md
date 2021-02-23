@@ -1,19 +1,19 @@
 ---
 id: javascript24
-title: Ban on "this"
+title: 禁止“此”
 sidebar_label: Ban on "this"
 ---
 
 ![@serverSerrverlesskiy](/img/javascript/headers/24.jpg)
 
-Removing the `this` keyword from JavaScript makes the language better!
+卸下 `this` JavaScript中的關鍵字可以使語言更好！
 
-This is because `this` depends on how the function was called, not where it was defined. Therefore, JavaScript's `this` is a source of much language confusion пут.
+這是因為 `this` 取決於函數的調用方式，而不是定義位置。 因此，JavaScript `this` 是造成語言混亂пут的根源。
 
-Using this ensures that the function works on the exact object in the context of which it was called.
-Through the `this` method, you can not only refer to any property of the object, but also pass a reference to the entire object itself somewhere (reducing the security of the application).
+使用此選項可確保函數在調用它的上下文中對確切的對象起作用。
+通過 `this` 方法，您不僅可以引用對象的任何屬性，還可以在某個地方傳遞對整個對象本身的引用（降低應用程序的安全性）。
 
-The value of `this` is called the calling context and will be determined when the function is called. For example, a function like this, declared without an object, is perfectly valid:
+的價值 `this` 稱為調用上下文，將在調用函數時確定。 例如，沒有對象聲明的類似這樣的函數是完全有效的：
 
 ```javascript
 functionsay Hi() {
@@ -21,9 +21,9 @@ functionsay Hi() {
 }
 ```
 
-This function does not yet know what this will be. This will be revealed when the program is executed.
+此功能尚不知道會是什麼。 程序執行時將顯示出來。
 
-If the same function is run in the context of different objects, it will receive a different `this`:
+如果在不同對象的上下文中運行相同的函數，它將收到不同的結果 `this`:
 
 ```javascript
 var user = { firstName: 'John' }
@@ -41,19 +41,19 @@ admin.g() // Admin
 admin['g']() // Admin (access to the object is implemented through square brackets)
 ```
 
-So, the value of `this` does not depend on how the function was created, it is determined exclusively at the time of the call.
+因此， `this` 不依賴於函數的創建方式，它是在調用時唯一確定的。
 
-## `this` and its disadvantages
+## `this` 及其缺點
 
-Methods are functions that are stored in objects. In order for the function⚙️ to know which object to work on, use `this`.
+方法是存儲在對像中的函數。 為了使功能⚙️知道要處理的對象，請使用 `this`.
 
 ![Poor](https://media.giphy.com/media/fQJbwrRJdHyMOP7RPH/giphy.gif)
 
-But `this` loses context in many situations (return value unknown):
+但 `this` 在許多情況下會丟失上下文（返回值未知）：
 
-- loses context inside nested functions
-- loses context in callbacks
-- `this` loses context when the method is used as an event handler.
+-在嵌套函數中丟失上下文
+-在回調中丟失上下文
+- `this` 當該方法用作事件處理程序時會丟失上下文。
 
 <!-- Давайте возьмем случай компонента `React`, который создает🏗️ поисковый запрос. В обоих методах, используемых в качестве обработчиков событий, при исползовании `this` теряется контекст:
 
@@ -127,9 +127,9 @@ timer.timerId // secret не такой уже секретный
 
 ![The_best](https://media.giphy.com/media/ZBn3ZRvCbWz2PS3Rbg/giphy.gif)
 
-JavaScript is both a functional programming language and a prototype-based language. If we get rid of this, we are left with JavaScript as a functional programming language. This is even better!
+JavaScript既是一種功能編程語言，又是一種基於原型的語言。 如果我們擺脫了這一點，我們將剩下JavaScript作為一種功能性編程語言。 這樣更好！
 
-At the same time, without `this` JavaScript offers a new, unique way to do object-oriented programming without classes and inheritance.
+同時，沒有 `this` JavaScript提供了一種新的獨特方法，無需類和繼承即可進行面向對象的編程。
 
 <!-- ### Объектно-ориентированное программирование без this
 
@@ -270,64 +270,64 @@ function learnJavaScript() {
 
 В данном примере метод `reduce` запускается в контексте массива и вызывает функцию⚙️ для каждого элемента. Но помимо этого, он аккумулирует результаты всех вызовов в одно значение. Его задача – подсчитать "сумму" всех элементов и вернуть ее. -->
 
-## Abandoning this
+## 放棄這個
 
 ![remember](https://media.giphy.com/media/S52I9r5QfB4fIBS6WV/giphy.gif)
 
-The best way to avoid `this` related problems is not to use `this` at all!
+避免的最佳方法 `this` 相關問題是不使用 `this` 都！
 
 :::note JavaScript
-JavaScript without this looks like the best functional programming language!
+JavaScript 沒有這種語言，看起來像是最好的函數式編程語言！
 
 :::
 
-We can create encapsulated objects without using this as a collection of closures. With the help of [React Hooks](https://reactjs.org/docs/hooks-intro.html) we can create stateful components🏗️ without `this`.
+我們可以創建封裝的對象，而無需將其用作閉包的集合。 在...的幫助下 [React Hooks](https://reactjs.org/docs/hooks-intro.html) 我們可以創建有狀態的組件 🏗️ 而無需 `this`.
 
-The `this` keyword cannot be removed from JavaScript without destroying all existing applications. However, what can be done? We can write 🖊️ our own code without `this` and only allow it to be used in libraries. In the meantime, [new rules](https://ru.reactjs.org/docs/hooks-rules.html#eslint-plugin) `ESLint` are being introduced, prohibiting the use of `this`.
+`this` 在不破壞所有現有應用程序的情況下，無法從JavaScript中刪除關鍵字。 但是，該怎麼辦？ 我們可以不用自己編寫🖊️我們的代碼 `this` 並且僅允許在庫中使用。 同時， [new rules](https://ru.reactjs.org/docs/hooks-rules.html#eslint-plugin) `ESLint` 被引入，禁止使用 `this`.
 
-Since in the last lesson we abandoned [classes](https://react-native-village.github.io/docs/javascript25#refused-classes), we say goodbye to `this` with them.
+從上一課開始 [classes](https://react-native-village.github.io/docs/javascript25#refused-classes), 我們告別 `this` 跟他們。
 
-## Problems?
+## 問題？
 
 ![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
 
-Write to [Discord](https://discord.gg/6GDAfXn) chat.
+寫給 [Discord](https://discord.gg/6GDAfXn)聊天。
 
-## Questions:
+## 問題：
 
 ![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
 
-The `this` keyword is -
+`this` 關鍵字是 -
 
-1. The object to which the method belongs
-2. First argument in the function
-3. Set of properties
+1.方法所屬的對象
+2.函數中的第一個參數
+3.屬性集
 
-Is it possible to do without this:
+是否可以不這樣做：
 
-1. You can, and it is better not to use at all
-2. It is possible, but not advisable
-3. It is impossible, because `this` cannot be removed from JavaScript
+1.可以，最好不要使用
+2.有可能，但不建議
+3.這是不可能的，因為 `this` 無法從JavaScript中刪除
 
-JavaScript without `this` looks like the best:
+沒有 JavaScript `this` 看起來最好：
 
-1. Functional programming language
-2. Procedural programming language
-3. Logical programming language
+1.函數式編程語言
+2.程序語言
+3.邏輯編程語言
 
-In order to understand how much you learned this lesson, take the test on the [mobile application](http://onelink.to/njhc95) of our school on this topic.
+為了了解您學到了多少本課程，請對 [mobile application](http://onelink.to/njhc95) of our school on this topic.
 
 ![Sumerian school](/img/app.png)
 
-## Links
+## 鏈接
 
 1. [Removing the 'this' keyword from JavaScript makes the language better](https://webformyself.com/udalenie-klyuchevogo-slova-this-iz-javascript/)
 2. [The article "The this keyword in JavaScript"](https://habr.com/ru/post/464163/)
 3. [MDN web doc. Article "this"](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/this)
 
-## Contributors ✨
+## 貢獻者 ✨
 
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+感謝這些好人 ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->

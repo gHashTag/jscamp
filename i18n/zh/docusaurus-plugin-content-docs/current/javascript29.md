@@ -1,27 +1,27 @@
 ---
 id: javascript29
-title: Import Export
-sidebar_label: Import Export
+title: 進出口
+sidebar_label: 進出口
 ---
 
 ![@serverSerrverlesskiy](/img/javascript/headers/31.jpg)
 
-To make objects, functions, classes or variables 🔔 available to the outside world, simply export them and then import them into other project files where necessary.
+要使對象，函數，類或變量to對外界可用，只需將其導出，然後在需要時將其導入其他項目文件中。
 
 ## "Hello, World!" on Node.js
 
-`Node.js®` is a JavaScript environment built on the [Chrome V8](https://v8.dev) engine.
+`Node.js®` JavaScript 建立在 [Chrome V8](https://v8.dev) 引擎。
 
-Let's get started with `Node.js` just by typing node in the console:
+讓我們開始吧 `Node.js` 只需在控制台中輸入node即可：
 
 ```javascript
 $ node
 >
 ```
 
-If you don't have it, then [download](https://nodejs.org) and install it on your computer.
+如果沒有的話 [download](https://nodejs.org) 並將其安裝在您的計算機上。
 
-Now let's try to print something:
+現在讓我們嘗試打印一些內容：
 
 ```javascript
 $ node
@@ -33,11 +33,11 @@ undefined
 
 ![Export](https://media.giphy.com/media/3ohzAiaRIBBrge2jQc/giphy.gif)
 
-Feel free to experiment with `Node.js` using this interface: it is common to test small pieces of code here if it is not practical to put them directly into a file.
+隨時嘗試 `Node.js` 使用此接口：如果將小段代碼直接放入文件中不切實際，通常在此處進行測試。
 
-It's time to create our Hello Node.js application!
+現在該創建我們的 Hello Node.js 應用程序了！
 
-Let's start by creating the `index.js` file. With the next command we create the folder `myProject` and enter it.
+讓我們開始創建 `index.js` 文件。 使用下一條命令，我們創建文件夾 `myProject` 然後輸入
 
 ```bash
 mkdir myProject && cd myProject
@@ -49,52 +49,52 @@ Now we create the `index.js` file itself
 touch index.js
 ```
 
-Open your code editor or download and install it. We recommend [VS Code](https://code.visualstudio.com).
+打開您的代碼編輯器或下載並安裝它。 我們推薦 [VS Code](https://code.visualstudio.com).
 
-Open the code editor and add the folder of the project we created to it.
+打開代碼編輯器，然後向其添加我們創建的項目的文件夾。
 
 ![new prroject](/img/javascript/18.jpg)
 
-Now open the side menu by clicking this icon.
+現在，通過單擊此圖標打開側面菜單。
 
 ![new prroject](/img/javascript/19.jpg)
 
-Copy the following piece of code into it:
+將以下代碼複製到其中：
 
 ```javascript
 // index.js
 console.log('hello from Node.js')
 ```
 
-To run this file, you must reopen your terminal and navigate to the directory where `index.js` is located.
+要運行此文件，必須重新打開終端並導航到以下目錄： `index.js` 位於。
 
-In `VS Code` this can be done by clicking on these icons.
+在 `VS Code` 單擊這些圖標即可完成此操作。
 
 ![new prroject](/img/javascript/20.jpg)
 
-And choose the tab `TERMINAL`
+然後選擇標籤 `TERMINAL`
 
 ![new prroject](/img/javascript/21.jpg)
 
-Once you have successfully navigated to the desired location, run the file using the command
+成功導航到所需位置後，請使用以下命令運行文件
 
 ```javascript
 node index.js
 ```
 
-You will see that this command will produce the same output as before, printing the string directly to the terminal.
+您將看到此命令將產生與以前相同的輸出，將字符串直接打印到終端。
 
 ![new prroject](/img/javascript/22.jpg)
 
-## Application modularity
+## 應用程序模塊化
 
 ![Export](https://media.giphy.com/media/3o7btSt2Et1GgIaDAY/source.gif)
 
-It's time to move to the next level! Let's create something a little more complex by splitting our source code into multiple JavaScript files for the sake of readability and maintainability.
+現在是時候進入下一個階段了！ 為了便於閱讀和可維護性，讓我們將源代碼分成多個JavaScript文件來創建一些更複雜的東西。
 
-### Project structure
+### 項目結構
 
-Create the following directory structure (with empty files), but don't create `package.json` yet, we will generate it automatically in the next step:
+創建以下目錄結構（包含空文件），但不要創建 `package.json` 但是，我們將在下一步中自動生成它：
 
 ```javascript
 ├── app
@@ -104,21 +104,21 @@ Create the following directory structure (with empty files), but don't create `p
 └── package.json
 ```
 
-To create a new file or folder in `VS Code` click the corresponding icon as shown in the picture.
+在以下位置創建新文件或文件夾 `VS Code` 單擊相應的圖標，如圖所示。
 
 ![new file](/img/javascript/23.jpg)
 
 ### package.json
 
-Every `Node.js` project starts by creating a `package.json` file. You can think of it as a JSON representation of the application and its dependencies. It contains the name of your application, the author (you), and any dependencies required to run the application. This is your project map.
+每一個 `Node.js` 項目首先創建一個 `package.json` 文件。 您可以將其視為應用程序及其依賴項的JSON表示形式。 它包含應用程序的名稱，作者（您）以及運行該應用程序所需的任何依賴項。 這是您的項目圖。
 
-You can interactively generate the `package.json` file with the command
+您可以交互式生成 `package.json` 用命令文件
 
 ```bash
 npm init
 ```
 
-in the terminal. After running the command, you will be asked to enter some information, such as your application name, version, description, and so on. No need to worry, just press `Enter` until you get the generated JSON and the question is `is it ok` ?. Press Enter one last time and voila: your package.json has been automatically generated and placed in your application folder. If you open this file in your IDE, it looks very similar to the code snippet below.
+在終端。 運行命令後，將要求您輸入一些信息，例如應用程序名稱，版本，描述等。 不用擔心，只需按 `Enter` 直到獲得生成的JSON，問題是 `is it ok` ?. 最後一次按Enter鍵，瞧：您的 package.json 已自動生成並放置在應用程序文件夾中。 如果您在IDE中打開此文件，則該文件看起來與下面的代碼片段非常相似。
 
 ```json
 // package.json
@@ -135,7 +135,7 @@ in the terminal. After running the command, you will be asked to enter some info
 }
 ```
 
-It is good practice to add a startup script to your `package.json` package. So add the following line to the `scripts` object:
+良好的做法是將啟動腳本添加到您的 `package.json` 包裹。 因此，將以下行添加到 `scripts` 目的：
 
 ```json
 "scripts": {
@@ -144,11 +144,11 @@ It is good practice to add a startup script to your `package.json` package. So a
 }
 ```
 
-Once you have done this, you can start the application with the `npm start` command.
+完成此操作後，您可以使用 `npm start` 命令。
 
-## Import
+## 進口
 
-Now let's go back to the first file you created called `index.js`. It is recommended to keep this file very compact: only include the application itself (the `index.js` file from the` / app` subdirectory created earlier). Copy the following code into your `index.js` file and save:
+現在，讓我們回到您創建的第一個文件 `index.js`. 建議保持此文件非常緊湊：僅包含應用程序本身 (the `index.js` 來自的文件 `/ app` 先前創建的子目錄）。 將以下代碼複製到您的 `index.js` 歸檔並保存：
 
 ```javascript
 // index.js
@@ -162,14 +162,14 @@ or shorthand for all `index.js` files
 require('./app')
 ```
 
-If a specific file is not specified, then the code interpreter looks for the `index.js` file and enters it. This is how we simply connected our first file to the project.
+如果未指定特定文件，則代碼解釋器將查找 `index.js` 文件並輸入。 這就是我們簡單地將第一個文件連接到項目的方式。
 
 ![Export](https://media.giphy.com/media/W6Lidy1RgOl3kYdARr/giphy.gif)
 
-## Export
+## 出口
 
-Now it's time to start building a real application. Open the `index.js` file from the `/app` folder to create a very simple example: adding an array of numbers. In this case, the `index.js` file will only contain the numbers that we want to add, and the logic that requires the calculations must be placed in a separate module in the `calc.js` file.
-Paste this code into the `index.js` file in the `/app` directory.
+現在是時候開始構建一個真正的應用程序了。 打開 `index.js` 來自的文件 `/app` 文件夾中創建一個非常簡單的示例：添加數字數組。 在這種情況下， `index.js`文件將僅包含我們要添加的數字，並且要求計算的邏輯必須放置在 `calc.js` 文件。
+將此代碼粘貼到 `index.js` 文件在 `/app` 目錄。
 
 ```javascript
 // app/index.js
@@ -180,7 +180,7 @@ const result = calc.sum(numbersToAdd)
 console.log(`The result is: ${result}`)
 ```
 
-Now paste the actual business logic into the `calc.js` file that can be found in the same folder.
+現在，將實際的業務邏輯粘貼到 `calc.js` 可以在同一文件夾中找到的文件。
 
 ```javascript
 // app/calc.js
@@ -191,23 +191,23 @@ const sum = arr => {
 module.exports.sum = sum // export
 ```
 
-In this file, we created a `sum` function and exported it, made it available in other files in the project.
+在此文件中，我們創建了一個 `sum` 函數並導出它，使其在項目中的其他文件中可用。
 
-To check if you did everything right, save these files, open a terminal and type `npm start` or `node index.js`. If you did everything correctly, you will receive the answer: `19.` If something went wrong, carefully review the log in the console and find the problem based on it.
+要檢查您是否做對了所有事情，請保存以下文件，打開終端並輸入 `npm start` 或者 `node index.js`. 如果您正確執行了所有操作，則將收到答案： `19.` 如果出現問題，請仔細檢查控制台中的日誌並根據該日誌查找問題。
 
 ![new file](/img/javascript/24.jpg)
 
-## Total
+## 全部的
 
-So we have completed the preparatory course on JavaScript before the course on [mobile development](https://react-native-village.github.io/docs/start000).
+因此，我們先完成了關於 JavaScript 的預備課程， [mobile development](https://react-native-village.github.io/docs/start000).
 
-## Problems?
+## 問題?
 
 ![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
 
-Write to [Discord](https://discord.gg/6GDAfXn) chat.
+寫給[Discord](https://discord.gg/6GDAfXn) 聊天。
 
-## Questions:
+## 問題:
 
 ![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
 
@@ -605,24 +605,24 @@ obj.b = 4
 
 Учитывая, что import хранит именно ссылки на значения, экспортированные из внешнего модуля, то это можно использовать как замыкания. -->
 
-To make objects, functions, classes or variables 🔔 available to the outside world, you need to:
+為了使對象，函數，類或變量🔔可供外界使用，您需要：
 
-1. Export them and then import
-2. Import them and then export
+1.導出然後導入
+2.導入然後導出
 
 `Node.js®` is:
 
-1. Programming language
-2. JavaScript environment built on the Chrome V8 engine
-3. Browser
+1.編程語言
+2.基於Chrome V8引擎構建的JavaScript環境
+3.瀏覽器
 
 `package.json` is:
 
-1. JavaScript environment built on the Chrome V8 engine
-2. JSON representation of the application and its dependencies
-3. JSON programming language
+1.基於Chrome V8引擎構建的JavaScript環境
+2.應用程序及其依賴項的JSON表示形式
+3. JSON編程語言
 
-In order to understand how much you learned this lesson, take the test on the [mobile application](http://onelink.to/njhc95) of our school on this topic.
+為了了解您學到了多少本課程，請對 [mobile application](http://onelink.to/njhc95) 我們學校就這個話題。
 
 ![Sumerian school](/img/app.png)
 
@@ -650,15 +650,15 @@ In order to understand how much you learned this lesson, take the test on the [m
 2. экспорта по умолчанию (дефолтный экспорт) из модуля
 3. импортирует все значения -->
 
-## Links:
+## 鏈接:
 
 1. [MDN web doc. ECMAScript 6 Modules: The Future Is Now](https://frontender.info/es6-modules/)
 2. [ES6 Modules and How to Use Import and Export in JavaScript](https://www.digitalocean.com/community/tutorials/js-modules-es6)
 3. ["require vs ES6 import / export"](https://coderoad.ru/31354559/%D0%98%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-Node-js-require-%D0%BF%D1%80%D0%BE%D1%82%D0%B8%D0%B2-ES6-import-export)
 
-## Contributors ✨
+## 貢獻者 ✨
 
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+感謝這些好人 ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
