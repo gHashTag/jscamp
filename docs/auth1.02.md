@@ -4,6 +4,7 @@ title: Authentication
 sidebar_label: Part II
 ---
 
+import YouTube from 'react-youtube'
 
 First, the standard UI from Amplify does not always satisfy the UX coming from the customer.
 
@@ -15,7 +16,9 @@ This means that the authentication data is stored in an unencrypted form, and th
 
 All the code for this part can be found at [GitHub](https://github.com/react-native-village/aws-amplify-react-hooks/tree/master/examples/reactNativeCRUDv2).
 
-[![AWS Amplify](/img/auth/00.gif)](https://youtu.be/CM_M5cNLmK4)
+## Video
+
+<YouTube videoId="QMObthDaewQ" />
 
 ![Step01](/img/steps/01.png)
 

@@ -4,8 +4,6 @@ title: Комментарии
 sidebar_label: Комментарии
 ---
 
-import YouTube from 'react-youtube'
-
 ![@serverSerrverlesskiy](/img/javascript/headers/02.jpg)
 
 ## Что такое комментарии?

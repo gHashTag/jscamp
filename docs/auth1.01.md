@@ -4,13 +4,17 @@ title: Authentication
 sidebar_label: Part I
 ---
 
+import YouTube from 'react-youtube'
+
 In this part, we will configure the AWS Amplify Authentication UI component, and in the next we will create it from scratch.
 
 All the code for this part can be found at [GitHub](https://github.com/react-native-village/messaga/tree/Part1).
 
-[![AWS Amplify](/img/auth/00.gif)](https://youtu.be/9uOGS7Pw1fo)
-
 ![Cognito](/img/auth/auth1-03.png)
+
+## Video
+
+<YouTube videoId="QMObthDaewQ" />
 
 ![Step01](/img/steps/01.png)
 
