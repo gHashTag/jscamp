@@ -200,11 +200,24 @@ class User {
 let user : User = userFactory(User)
 ``` -->
 
+## Вопросы
+![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
+
+Для чего используется тип any?
+1. Принимает любые типы
+2. Принимает любые числа
+3. Принимает любые символы
+
+Можно ли использовать результат функции как объект того типа, который передан в функцию?
+1. Да
+2. Нет
+
 ## Ссылки:
 
 1.  [TypeScript документация](https://www.typescriptlang.org/docs/handbook/generics.html)
 2.  [Metanit](https://metanit.com/web/typescript/3.5.php)
 3.  [Canonium](https://canonium.com/articles/typescript-generics)
+
 
 ## Contributors ✨
 

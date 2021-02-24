@@ -6,6 +6,8 @@ sidebar_label: Интерфейсы
 
 Одним из основных принципов TypeScript является то, что типизация основана на структуре объектов. Такой способ типизации называют `неявной` или `«утиной»` — объект относят к тому или иному типу (классу, интерфейсу), если он имеет (реализует) все его свойства и методы. Интерфейсы в TS применяются как раз для того, чтобы описывать нужные вам типы.
 
+![Utka](https://media.giphy.com/media/rtRflhLVzbNWU/giphy.gif)
+
 ## Простой пример
 
 Лучший способ узнать, как работают интерфейсы - начасть с простого примера:
@@ -42,6 +44,8 @@ giveFruit(myFruits)
 
 Стоит отметить, что проверка типов не требует, чтобы эти свойства имели какой-либо порядок, а только то, что свойства, необходимые для интерфейса, присутствуют и имеют требуемый тип.
 
+![Interface](https://media.giphy.com/media/kv7mW8wf26Z73lFZI0/giphy.gif)
+
 ## Необязательные свойства
 
 Не все свойства интерфейса могут быть обязательными. Некоторые существуют при определенных условиях или могут вообще отсутствовать. Интерфейсы с необязательными свойствами записываются аналогично другим интерфейсам, где каждое необязательное свойство обозначается знаком `?` в конце имени свойства в декларации.
@@ -72,6 +76,8 @@ let apple: Fruit = {
 
 Необязательные свойства популярны при создании шаблонов, таких как «option bags», в которых вы передаете объект в функцию, у которого заполнены только пара свойств.
 
+![Questions](https://media.giphy.com/media/WUURy2lKOj6BdhCbbd/giphy.gif)
+
 ## Только для чтения
 
 Некоторые свойства могут быть заданы только для чтения, а значение они получат при создании объекта. Этого можно добиться, поместив ключевое слово _readonly_ перед именем свойства.
@@ -90,6 +96,8 @@ console.log('Точка [' + a1.x + '; ' + a1.y + ']')
 ```
 
 Можно создать переменную c типом `Point`, присвоив ей литерал объекта. После этого значения свойств `x` и `y` изменять будет нельзя.
+
+![readonly](https://media.giphy.com/media/kAsj9dvOV9nZeFtSe2/giphy.gif)
 
 ## Лишние свойства
 
@@ -123,6 +131,8 @@ let banana = addFruit({ name: 'banana', colour: 0xffe135 })
 
 ### Первый способ
 
+![One](https://media.giphy.com/media/WtIBjvQ2tYJvyKWtjO/giphy.gif)
+
 Использование приведение типов:
 
 [Пример](https://www.typescriptlang.org/play?#code/JYOwLgpgTgZghgYwgAgGJQK7DMg3gKGSORDgFsIAuZAZzClAHMAaQ4mgdwgjBAhpoB+aiAxkARtFbFk4gPZ8h1eXIA2EOCGnEEauVGEkxkqPgC++fDAwgEYYAuRwAJs-RYwACgAe1d9gBKalwScipaeiZmZF1VfRFjaDM8NiIAejTkADoc80t1HHFNYuQAXidXfy8Q0gpqAHIi0lJ66Ni5DChqAAZvVFQAUQBGAGYAVmRkuBo0TECgA)
@@ -132,6 +142,8 @@ let banana = addFruit({ name: 'banana', colour: 0xFFE135 } as Fruit)
 ```
 
 ### Второй способ
+
+![two](https://media.giphy.com/media/Sx9hhGMoX7ALGKfpMV/giphy.gif)
 
 Добавление строкового индекса, его лучше использовать тогда, когда вы уверены, что объект может иметь дополнительные свойства.
 
@@ -149,6 +161,8 @@ interface Fruit {
 
 ### Третий способ
 
+![three](https://media.giphy.com/media/SVTMh6GCBqHS9RXTP6/giphy.gif)
+
 Присвоить объект другой переменной. Из-за присваивания объекта другой переменной он не будет проходить проверку на избыточные свойства, компилятор не выдаст ошибки.
 
 [Пример](https://www.typescriptlang.org/play?#code/JYOwLgpgTgZghgYwgAgGJQK7DMg3gKGSORDgFsIAuZAZzClAHMAaQ4mgdwgjBAhpoB+aiAxkARtFbFk4gPZ8h1eXIA2EOCGnEEauVGEkxkqPgC++fDAwgEYYAuRwAJs-RYwACgAe1d9gBKalwScipaeiZmZF1VfRFjaDM8NiIAejTkADoc80t1HDkAB3sFGmQAXjxQimoAcnFNJrro2LkMKGoABm9UVABRAEYAZgBWZDNtIkbSUkqnV38vYtKQGgCgA)
@@ -161,6 +175,8 @@ let options = { name: 'banana', colour: 0xffe135 },
 Стоит иметь ввиду, что для простого кода не стоит обходить данные проверки свойств. Для более сложных литералов объектов, которые содержат в себе методы, параметры состояния и т.д., стоит держать в памяти данные способы обхода проверок, но все же большинство ошибок, связанных с проверкой лишних свойств, как правило, на самом деле являются ошибками. Если у вас возникает такая ошибка, возможно стоит пересмотреть объявление типа.
 
 ## Типы функций
+
+![function](https://media.giphy.com/media/Zdgd7q3pw9GXzYXaf6/giphy.gif)
 
 Помимо описания свойств, интерфейсы также позволяют описывать типы функций.
 
@@ -341,6 +357,8 @@ let analog = createClock(AnalogClock, 7, 32)
 
 ## Расширение интерфейсов
 
+![extends](https://media.giphy.com/media/10rV1yPKGFw4ne/giphy.gif)
+
 Интерфейсы могут расширять друг друга. Это позволяет вам копировать элементы одного интерфейса в другой, что дает вам больше гибкости в том, как вы разделяете свои интерфейсы на повторно используемые компоненты.
 
 [Пример](https://www.typescriptlang.org/play?#code/JYOwLgpgTgZghgYwgAgMoAs4AcUG8BQyyCA9gDYlQBcyAzmFKAOb4C+++oksiKAChBCoGJANZ5CyHCADqwACZh0NEAFcAtgCNobDgHo9yQDwggXhBAfCCA2EECsIIEEQQEIggJhArJ81eSABEEAMIDcASIIA4Qd2c-K05waHgkNABHVTgoFAgAD0gQeVo0TBwAGmQBIRFxZAIiWgUIABlBJiUVDW0oXXwyCDA6GLiUAF4i1mQ4dNR2+PxaIYgAOlIKKGRugHJNMlUIOZGx8dL5CqqlWeQARgAGNdj48ek5RXQ9gFZxw6A)
@@ -366,6 +384,8 @@ square.penWidth = 5.0
 ```
 
 ## Гибридные типы
+
+![gibrid](https://media.giphy.com/media/JT84rtPITBqiZ2PExw/giphy.gif)
 
 Как мы упоминали ранее, интерфейсы могут описывать более сложные типы, присутствующие в реальном мире JavaScript. Из-за динамического и гибкого характера JavaScript вы можете случайно встретить объект, который работает как комбинация некоторых типов, описанных выше.
 
@@ -427,6 +447,44 @@ class ImageControl implements SelectableControl {
 В приведенном выше примере `SelectableControl` содержит все члены `Control`, включая свойство `private state`. Поскольку `state` является _private_ полем, только потомки `Control` могут реализовать `SelectableControl`. Это связано с тем, что только потомки элемента `Control` будут иметь закрытый элемент, созданный в той же декларации, что является обязательным требованием для совместимости закрытых членов. -->
 
 ## Вопросы
+
+![question](https://media.giphy.com/media/Uq4ucFb5FLDStK6CUk/giphy.gif)
+
+Как называется способ типизации, используемый в TypeScript?
+
+  1. Явной
+  2. Утиной
+  3. Строгая
+
+С помощью какого ключевого слова объявляется интерфейс?
+
+  1. interface
+  2. class
+  3. function
+
+С помощью какого символа объявляется необязательное свойство?
+
+  1. `!`
+  2. `?`
+  3. `-`
+
+Для чего используется `readonly`?
+
+  1. Только для чтения
+  2. Только для записи
+  3. Незнаю
+
+Позволяют ли интерфейсы описывать типы функций?
+
+  1. Да
+  2. Нет
+  3. Незнаю
+
+С помощью какого ключевого слова расширяются интерфейсы?
+
+  1. yield
+  2. extends
+  3. export
 
 Теперь мы готовы с вами изучать TypeScript, но для того чтобы понять на сколько вы усвоили этот урок пройдите тест в [мобильном приложении](http://onelink.to/njhc95) в нашей школы по этой теме.
 
