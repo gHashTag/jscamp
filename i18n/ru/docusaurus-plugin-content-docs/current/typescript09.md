@@ -136,20 +136,23 @@ window.onload = () => {
 
 ![question](https://media.giphy.com/media/Uq4ucFb5FLDStK6CUk/giphy.gif)
 
-1. Где размещаются декларации?
-  - `.d.ts`;
-  - `.h`;
-  - `.js`.
+Где размещаются декларации?
 
-2. С помощью какой команды устанавливается декларация?
-  - `npm search -D @types/name`;
-  - `npm view -D @types/name`;
-  - `npm install -D @types/name`.
+  1. `.d.ts`
+  2. `.h`
+  3. `.js`
 
-3. Каким синтаксисом нужно воспользоваться для создания декларации?
-  - `declare 'libname' { ... }`;
-  - `module 'lib' { ... }`;
-  - `declare module 'libname' { ... }`.
+С помощью какой команды устанавливается декларация?
+
+  1. `npm search -D @types/name`
+  2. `npm view -D @types/name`
+  3. `npm install -D @types/name`
+
+Каким синтаксисом нужно воспользоваться для создания декларации?
+
+  1. `declare 'libname' { ... }`
+  2. `module 'lib' { ... }`
+  3. `declare module 'libname' { ... }`
 
 Теперь мы готовы с вами изучать TypeScript, но для того чтобы понять на сколько вы усвоили этот урок пройдите тест в [мобильном приложении](http://onelink.to/njhc95) в нашей школы по этой теме.
 
