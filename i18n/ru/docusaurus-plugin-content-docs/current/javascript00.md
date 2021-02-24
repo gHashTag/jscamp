@@ -22,7 +22,7 @@ import YouTube from 'react-youtube'
 
 ## Видео
 
-<YouTube videoId="ynySIutZh3w" />
+<YouTube videoId="z5gO1PzyLwU" />
 
 ## Цель программы
 
