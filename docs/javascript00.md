@@ -82,7 +82,7 @@ TypeScript is a programming language introduced by Microsoft in 2012 and markete
 
 ## Music album
 
-The JS course consists of articles, video tutorials, podcasts, and music tracks. We created the first ever JavaScript music album. Which is available now at [SoundCloud](https://soundcloud.com/serverlesskiy) in Russian. I invite you to perform it in your own language.
+The JS course consists of articles, video tutorials, podcasts, and music tracks. We created the first ever JavaScript music album. Which is available now at [SoundCloud](https://soundcloud.com/serverlesskiy/sets/javascript) in Russian. I invite you to perform it in your own language.
 
 ![@serverSerrverlesskiy](/img/jscamp/music.jpg)
 
