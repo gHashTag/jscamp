@@ -1,5 +1,6 @@
 ---
 id: blogging-00
+<<<<<<< refs/remotes/origin/master
 title: Assembling Rubik's Cube at Sumerian School
 sidebar_label: Assembling Rubik's Cube
 ---
@@ -129,3 +130,8 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 [![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
+=======
+title:  Публикация статей в Sumerian School
+sidebar_label: Публикация статей
+---
+>>>>>>> Создал вкладку Blogging
