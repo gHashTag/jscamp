@@ -15,7 +15,7 @@ import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment'
 
 > [Cloud Programming Simplified: A Berkeley View on Serverless Computing](https://www2.eecs.berkeley.edu/Pubs/TechRpts/2019/EECS-2019-3.pdf), February 10, 2019
 
-Из этого прогноза очевиден спрос на serverless технологии, а значит и на обучающие этим технологиям ресурсы. Поэтому мы организовали школу программирования, где обучаем serverless технологиям AWS Amplify, а также подготавливаем к ним обучая [английскому языку по Эмоджи](https://www.jscamp.app/docs/blogging-01/), [JavaScript](https://www.jscamp.app/ru/docs/javascript01), [React Native](https://www.jscamp.app/ru/docs/start000) и [Type Script](https://www.jscamp.app/ru/docs/typescript00).
+Из этого прогноза очевиден спрос на serverless технологии, а значит и на обучающие этим технологиям ресурсы. Поэтому мы организовали школу программирования, где обучаем serverless технологиям AWS Amplify, а также подготавливаем к ним обучая [английскому языку по Эмоджи](https://www.jscamp.app/docs/blogging-01/U), [JavaScript](https://www.jscamp.app/ru/docs/javascript01), [React Native](https://www.jscamp.app/ru/docs/start000) и [Type Script](https://www.jscamp.app/ru/docs/typescript00).
 
 ![javaScript](https://media.giphy.com/media/ln7z2eWriiQAllfVcn/giphy.gif)
 
@@ -184,5 +184,3 @@ TypeScript - язык программирования, представленн
 Обучение бесплатно, но вы можете поддержать наш стартап через [Patreon](https://www.patreon.com/reactnative).
 
 [![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
-
-#AmplifyHashnode
