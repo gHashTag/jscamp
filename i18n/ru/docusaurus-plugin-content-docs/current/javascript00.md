@@ -140,6 +140,6 @@ TypeScript - язык программирования, представленн
 
 ## Оплата
 
-Обучение бесплатно, но вы можете поддержать наш стартап через [Patreon](https://www.patreon.com/reactnative).
+Обучение бесплатно, но вы можете поддержать наш стартап через [Patreon](https://www.patreon.com/bePatron?u=31769291).
 
 [![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)

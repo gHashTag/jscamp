@@ -136,10 +136,10 @@ This is a mobile development course on the React Native / Type Script / AWS Ampl
 
 Training takes place in the application [Discord](https://discord.gg/6GDAfXn).
 
-![How much](https://media.giphy.com/media/bEu3CsR2RXdu5rBssw/giphy.gif)
-
 ## Payment
 
-Training is free, but you can support our startup through [Patreon](https://www.patreon.com/reactnative).
+![How much](https://media.giphy.com/media/bEu3CsR2RXdu5rBssw/giphy.gif)
+
+Training is free, but you can support our startup through [Patreon](https://www.patreon.com/bePatron?u=31769291).
 
 [![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
