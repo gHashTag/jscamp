@@ -110,13 +110,27 @@ We begin offline classes with the assembly of the Rubik's cube and those who col
 
 💛 First class - Java Script, teacher Fiona Miller.
 
+![Java Script](/img/teachers/FionaMiller.jpg)
+
 💚 Second class - React Native, development and layout of the system of atomic components in mobile applications iOS, Android, as well as AR / VR systems in augmented and virtual reality with a library from Facebook. Teacher Grace Willie.
+
+![Grace Willie](/img/teachers/GraceWillie.jpg)
 
 💙 Third class - TypeScript, atomic component system typing, teacher Maya Lakshmi.
 
-💜 Fourth class - AWS Amplify, serverless computing on AWS Amplify functions. Serverlesskiy teacher.
+![Maya Lakshmi](/img/teachers/MayaLakshmi.jpg)
+
+💜 Fourth class - AWS Amplify, serverless computing on AWS Amplify functions. Server Serverlesskiy teacher.
+
+![Server Serverlesskiy](/img/teachers/ServerServerlesskiy.jpg)
 
 🤍 Optional Video Blogger Course - Piloting training avatars for our training video courses, hosts of AWS Sumerian technology. Preston Wild teacher.
+
+![Preston Wild](/img/teachers/PrestonWild.jpg)
+
+💟 Preparatory class in English. Teacher Cris Brown.
+
+![Preston Wild](/img/teachers/CrisBrown.jpg)
 
 ## Course author
 
@@ -125,12 +139,6 @@ The author of the Java Script course - [Server Serverlesskiy](https://twitter.co
 ## Reviews
 
 [![Tvit](/img/javascript/twit.png)](https://twitter.com/dabit3/status/1339622771001843716)
-
-### Transfer:
-
-This is a completely different level of AWS Community Builder music video 🔥 😅
-
-This is a mobile development course on the React Native / Type Script / AWS Amplify Stack and for AWS Certification. Worth checking out!
 
 ## Learning process
 
