@@ -100,7 +100,9 @@ Our project is available [Open Source](https://github.com/fullstackserverless/Su
 
 ## YouTube movies
 
-We also launched a video series in Russian with the participation of children. If you want to engage in the development of your child by integrating him into our project in your native language with our franchise, then write to me in [Discord](https://discord.gg/6GDAfXn).
+We also launched a video series in Russian with the participation of children. If you want to engage in the development of your child by integrating him into our project in your native language with our franchise, then write to us at [Discord](https://discord.gg/6GDAfXn).
+
+<YouTube videoId="H6RmU-Hi0EI" />
 
 ## JS Camp Program
 

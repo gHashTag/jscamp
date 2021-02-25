@@ -32,7 +32,7 @@ JavaScript — первый из самых популярных языков п
 
 ## Видео
 
-<YouTube videoId="FWrtcMRCE1I" />
+<YouTube videoId="H6RmU-Hi0EI" />
 
 ## Синтаксис
 
