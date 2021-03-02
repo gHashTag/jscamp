@@ -140,6 +140,12 @@ The author of the Java Script course - [Server Serverlesskiy](https://twitter.co
 
 [![Tvit](/img/javascript/twit.png)](https://twitter.com/dabit3/status/1339622771001843716)
 
+### Transfer:
+
+This is a completely different level of AWS Community Builder music video 🔥 😅
+
+This is a mobile development course on the React Native / Type Script / AWS Amplify Stack and for AWS Certification. Worth checking out!
+
 ## Learning process
 
 Training takes place in the application [Discord](https://discord.gg/6GDAfXn).
