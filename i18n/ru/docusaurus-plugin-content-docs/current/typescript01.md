@@ -23,7 +23,7 @@ choco install -y nodejs.install
 ```
 
 Послу завершения установки PowerShell выдаст такой результат:
-![install_success](/img/typescript/01/install.png)
+
 </TabItem>
 
 <TabItem value="brew">
@@ -42,6 +42,8 @@ brew install node
 ```bash npm2yarn
 npm install -g typescript
 ```
+
+![install_success](/img/typescript/01/install.png)
 
 Вполне возможно, что ранее уже был установлен TS. В этом случае его можно обновить до последней версии с помощью команды
 
@@ -147,6 +149,25 @@ node hello.js
 :::
 
 В результате мы видем строку `Hello World`.
+
+## Вопросы
+![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
+
+Какой коммандой компилируется проект на TypeScript?
+1. tsc
+2. tsc -v
+3. typescript
+
+Какой коммандой устанавливается TypeScript?
+1. install typescript
+2. npm install -g typescript
+3. choco install -y nodejs.install
+
+Компилятор ts создает файл с расширением?
+1. .ts
+2. .js
+3. .jsx
+
 
 ## Ссылки:
 
