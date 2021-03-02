@@ -119,9 +119,9 @@ Sumerian School 🦄 поможет вам изучить природные я�
 
 ## Ссылки
 
-[Discord](https://discord.gg/UPSeqZJT)
+[Discord](https://discord.gg/6GDAfXn)
 
-[Группа Вк](https://vk.com/sumerianschool)
+[Группа Вк](https://vk.com/javascriptcamp)
 
 [Youtube канал](https://www.youtube.com/channel/UCR8tIQm7pu8MlPewAlUnzQw)
 

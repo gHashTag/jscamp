@@ -6,7 +6,6 @@ sidebar_label: English by emoji
 
 import YouTube from 'react-youtube';
 
-
 ## Introduction
 
 For those children who still do not know how to solve the Rubik's cube, a kindergarten in English for emoji has been created by a native speaker Chris Brown.
@@ -60,7 +59,7 @@ There is a huge variety of clothes:
 
 Therefore, it is so important to know the name of the wardrobe items that we use so often in our lives.
 
-👩🏾 And the animated English teacher Chris Brown will help you with this. 
+👩🏾 And the animated English teacher Chris Brown will help you with this.
 
 <YouTube videoId='Il3TBIh26U0' />
 
@@ -121,7 +120,7 @@ Sumerian School 🦄 will help you study natural phenomena 🌦, landscapes 🏞
 
 ## Links
 
-[Discord](https://discord.gg/UPSeqZJT)
+[Discord](https://discord.gg/6GDAfXn)
 
 [Group FB](https://www.facebook.com/javascriptcamp)
 

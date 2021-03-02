@@ -21,6 +21,8 @@ $ node
 
 Если он у вас не стоит, то [скачайте](https://nodejs.org) его и установите на свой компьютер.
 
+![Node](https://media.giphy.com/media/kdFc8fubgS31b8DsVu/giphy.gif)
+
 А теперь давайте попробуем что-то напечатать:
 
 ```javascript

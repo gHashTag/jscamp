@@ -172,31 +172,43 @@ module.exports = {
               href: 'https://t.me/javascriptcamping'
             },
             {
-              label: 'TikTok 🌎',
+              label: 'TikTok',
               href: 'https://vm.tiktok.com/ZSJ1dxkFu/'
             },
             {
-              label: 'Instagram 🌎',
+              label: 'Instagram',
               href: 'https://www.instagram.com/javascriptcamp/'
             },
             {
-              label: 'GitHub 🛰',
+              label: 'Twitter',
+              href: 'https://twitter.com/serverlesskiy'
+            },
+            {
+              label: 'YouTube En',
+              href: 'https://www.youtube.com/channel/UCR8tIQm7pu8MlPewAlUnzQw'
+            },
+            {
+              label: 'YouTube Ru',
+              href: 'https://www.youtube.com/channel/UCOxewePwIQATdHTD3yZ2UZw'
+            },
+            {
+              label: 'GitHub',
               href: 'https://github.com/react-native-village'
             },
             {
-              label: 'Dev.to 🌎',
+              label: 'Dev.to',
               href: 'https://dev.to/playra'
             },
             {
-              label: 'Facebook 🌎',
+              label: 'Facebook',
               href: 'https://www.facebook.com/javascriptcamp'
             },
             {
-              label: 'Vk 🌎',
+              label: 'Vk',
               href: 'https://vk.com/reactnativeinit'
             },
             {
-              label: 'Medium 🌎',
+              label: 'Medium',
               href: 'https://medium.com/react-native-init'
             }
           ]

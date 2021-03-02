@@ -4,6 +4,7 @@ title: Authentication
 sidebar_label: Part II
 ---
 
+import YouTube from 'react-youtube'
 
 First, the standard UI from Amplify does not always satisfy the UX coming from the customer.
 
@@ -15,7 +16,9 @@ This means that the authentication data is stored in an unencrypted form, and th
 
 All the code for this part can be found at [GitHub](https://github.com/react-native-village/aws-amplify-react-hooks/tree/master/examples/reactNativeCRUDv2).
 
-[![AWS Amplify](/img/auth/00.gif)](https://youtu.be/CM_M5cNLmK4)
+## Video
+
+<YouTube videoId="QMObthDaewQ" />
 
 ![Step01](/img/steps/01.png)
 
@@ -197,7 +200,7 @@ const LightTheme = {
 const MEMORY_KEY_PREFIX = '@MyStorage:'
 let dataMemory: any = {}
 class MyStorage {
-  static syncPromise = null
+  static syncPromise = null;
 
   static setItem(key: string, value: string): boolean {
     Keychain.setGenericPassword(MEMORY_KEY_PREFIX + key, value)
@@ -223,10 +226,10 @@ class MyStorage {
 Amplify.configure({
   ...awsconfig,
   Analytics: {
-    disabled: false
+    disabled: false,
   },
-  storage: MyStorage
-})
+  storage: MyStorage,
+});
 
 const App = (): ReactElement => {
   /**
@@ -239,10 +242,10 @@ const App = (): ReactElement => {
         <AppNavigator />
       </ThemeProvider>
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;
 ```
 
 AppSync supports API keys, Amazon IAM credentials, Amazon Cognito user pools, and third-party OIDC providers for client authorization. This is output from aws-exports.js when Amplify.configure () is called.
@@ -262,7 +265,7 @@ import * as React from 'react'
 import { createStackNavigator } from '@react-navigation/stack'
 import { Hello } from './screens/Authenticator'
 
-const Stack = createStackNavigator()
+const Stack = createStackNavigator();
 
 export type RootStackParamList = {
   HELLO: undefined
@@ -272,16 +275,15 @@ const AppNavigator = () => {
   return (
     <Stack.Navigator
       screenOptions={{
-        headerShown: false
+        headerShown: false,
       }}
-      initialRouteName="HELLO"
-    >
+      initialRouteName="HELLO">
       <Stack.Screen name="HELLO" component={Hello} />
     </Stack.Navigator>
-  )
-}
+  );
+};
 
-export default AppNavigator
+export default AppNavigator;
 ```
 
 ![Step08](/img/steps/08.png)
@@ -321,23 +323,23 @@ const Hello = ({ navigation }: HelloT): ReactElement => {
     setLoading(true)
     const key = async (): Promise<void> => {
       try {
-        const credentials = await Keychain.getInternetCredentials('auth')
+        const credentials = await Keychain.getInternetCredentials('auth');
 
         if (credentials) {
-          const { username, password } = credentials
-          const user = await Auth.signIn(username, password)
-          setLoading(false)
-          user && onScreen('USER', navigation)()
+          const {username, password} = credentials;
+          const user = await Auth.signIn(username, password);
+          setLoading(false);
+          user && onScreen('USER', navigation)();
         } else {
-          setLoading(false)
+          setLoading(false);
         }
       } catch (err) {
-        console.log('error', err) // eslint-disable-line
-        setLoading(false)
+        console.log('error', err); // eslint-disable-line
+        setLoading(false);
       }
-    }
-    key()
-  }, []) // eslint-disable-line
+    };
+    key();
+  }, []); // eslint-disable-line
   return (
     <AppContainer loading={loading}>
       <Space height={80} />
@@ -347,10 +349,10 @@ const Hello = ({ navigation }: HelloT): ReactElement => {
       <Space height={15} />
       <Button title="Sign Up" onPress={onScreen('SIGN_UP', navigation)} />
     </AppContainer>
-  )
-}
+  );
+};
 
-export { Hello }
+export {Hello};
 ```
 
 In the `useEffect` hook, we check the user's token, where if true we go to the user's screen, and if false we stay on this screen.
@@ -389,31 +391,31 @@ const SignUp = ({ navigation }: SignUpT): ReactElement => {
   const _onPress = async (values: { email: string; password: string; passwordConfirmation: string }): Promise<void> => {
     const { email, password, passwordConfirmation } = values
     if (password !== passwordConfirmation) {
-      setError('Passwords do not match!')
+      setError('Passwords do not match!');
     } else {
-      setLoading(true)
-      setError('')
+      setLoading(true);
+      setError('');
       try {
-        const user = await Auth.signUp(email, password)
-        await Keychain.setInternetCredentials('auth', email, password)
-        user && onScreen('CONFIRM_SIGN_UP', navigation, { email, password })()
-        setLoading(false)
+        const user = await Auth.signUp(email, password);
+        await Keychain.setInternetCredentials('auth', email, password);
+        user && onScreen('CONFIRM_SIGN_UP', navigation, {email, password})();
+        setLoading(false);
       } catch (err) {
-        setLoading(false)
+        setLoading(false);
         if (err.code === 'UserNotConfirmedException') {
-          setError('Account not verified yet')
+          setError('Account not verified yet');
         } else if (err.code === 'PasswordResetRequiredException') {
-          setError('Existing user found. Please reset your password')
+          setError('Existing user found. Please reset your password');
         } else if (err.code === 'NotAuthorizedException') {
-          setError('Forgot Password?')
+          setError('Forgot Password?');
         } else if (err.code === 'UserNotFoundException') {
-          setError('User does not exist!')
+          setError('User does not exist!');
         } else {
-          setError(err.code)
+          setError(err.code);
         }
       }
     }
-  }
+  };
 
   return (
     <>
@@ -469,10 +471,10 @@ const SignUp = ({ navigation }: SignUpT): ReactElement => {
         </Formik>
       </AppContainer>
     </>
-  )
-}
+  );
+};
 
-export { SignUp }
+export {SignUp};
 ```
 
 ![Step10](/img/steps/10.png)
@@ -510,39 +512,42 @@ const ConfirmSignUp = ({ route, navigation }: ConfirmSignUpT): ReactElement => {
     setLoading(true)
     setError('')
     try {
-      const { code } = values
-      const { email, password } = route.params
-      await Auth.confirmSignUp(email, code, { forceAliasCreation: true })
-      const user = await Auth.signIn(email, password)
-      user && onScreen('USER', navigation)()
-      setLoading(false)
+      const {code} = values;
+      const {email, password} = route.params;
+      await Auth.confirmSignUp(email, code, {forceAliasCreation: true});
+      const user = await Auth.signIn(email, password);
+      user && onScreen('USER', navigation)();
+      setLoading(false);
     } catch (err) {
-      setLoading(false)
-      setError(err.message)
+      setLoading(false);
+      setError(err.message);
       if (err.code === 'UserNotConfirmedException') {
-        setError('Account not verified yet')
+        setError('Account not verified yet');
       } else if (err.code === 'PasswordResetRequiredException') {
-        setError('Existing user found. Please reset your password')
+        setError('Existing user found. Please reset your password');
       } else if (err.code === 'NotAuthorizedException') {
-        setError('Forgot Password?')
+        setError('Forgot Password?');
       } else if (err.code === 'UserNotFoundException') {
-        setError('User does not exist!')
+        setError('User does not exist!');
       }
     }
-  }
+  };
 
   const _onResend = async (): Promise<void> => {
     try {
-      const { email } = route.params
-      await Auth.resendSignUp(email)
+      const {email} = route.params;
+      await Auth.resendSignUp(email);
     } catch (err) {
-      setError(err.message)
+      setError(err.message);
     }
-  }
+  };
 
   return (
     <>
-      <AppContainer title="Confirmation" onPress={goBack(navigation)} loading={loading}>
+      <AppContainer
+        title="Confirmation"
+        onPress={goBack(navigation)}
+        loading={loading}>
         <Formik
           initialValues={{ code: '' }}
           onSubmit={(values): Promise<void> => _onPress(values)}
@@ -562,7 +567,11 @@ const ConfirmSignUp = ({ route, navigation }: ConfirmSignUpT): ReactElement => {
                 touched={touched}
                 errors={errors}
               />
-              <ButtonLink title="Resend code?" onPress={_onResend} textStyle={{ alignSelf: 'center' }} />
+              <ButtonLink
+                title="Resend code?"
+                onPress={_onResend}
+                textStyle={{alignSelf: 'center'}}
+              />
               {error !== 'Forgot Password?' && <TextError title={error} />}
               <Button title="Confirm" onPress={handleSubmit} />
               <Space height={50} />
@@ -571,10 +580,10 @@ const ConfirmSignUp = ({ route, navigation }: ConfirmSignUpT): ReactElement => {
         </Formik>
       </AppContainer>
     </>
-  )
-}
+  );
+};
 
-export { ConfirmSignUp }
+export {ConfirmSignUp};
 ```
 
 ## Resend code - ResendSignUp
@@ -584,13 +593,13 @@ To do this, we put Auth.resendSignUp (userInfo.email) on the Resend Code button.
 In case of successful method call
 
 ```jsx
-Auth.confirmSignUp(email, code, { forceAliasCreation: true })
+Auth.confirmSignUp(email, code, {forceAliasCreation: true});
 ```
 
 we have to call the method
 
 ```jsx
-Auth.signIn(email, password)
+Auth.signIn(email, password);
 ```
 
 ![Step11](/img/steps/11.png)
@@ -630,22 +639,22 @@ const User = ({ navigation }: UserT): ReactElement => {
   const _onPress = async (): Promise<void> => {
     setLoading(true)
     try {
-      await Auth.signOut()
-      await Keychain.resetInternetCredentials('auth')
-      goHome(navigation)()
+      await Auth.signOut();
+      await Keychain.resetInternetCredentials('auth');
+      goHome(navigation)();
     } catch (err) {
-      setError(err.message)
+      setError(err.message);
     }
-  }
+  };
 
   return (
     <AppContainer message={error} loading={loading}>
       <Button title="Sign Out" onPress={_onPress} />
     </AppContainer>
-  )
-}
+  );
+};
 
-export { User }
+export {User};
 ```
 
 ![Step12](/img/steps/12.png)
@@ -702,7 +711,7 @@ const SignIn = ({ navigation }: SignUpT): ReactElement => {
         setError(code)
       }
     }
-  }
+  };
 
   return (
     <>
@@ -740,12 +749,14 @@ const SignIn = ({ navigation }: SignUpT): ReactElement => {
                 autoCapitalize="none"
                 secureTextEntry
               />
-              {error !== 'Forgot Password?' && <TextError title={error} textStyle={{ alignSelf: 'center' }} />}
+              {error !== 'Forgot Password?' && (
+                <TextError title={error} textStyle={{alignSelf: 'center'}} />
+              )}
               {error === 'Forgot Password?' && (
                 <ButtonLink
                   title={error}
                   onPress={onScreen('FORGOT', navigation, userInfo)}
-                  textStyle={{ alignSelf: 'center' }}
+                  textStyle={{alignSelf: 'center'}}
                 />
               )}
               <Button title="Sign In" onPress={handleSubmit} />
@@ -755,10 +766,10 @@ const SignIn = ({ navigation }: SignUpT): ReactElement => {
         </Formik>
       </AppContainer>
     </>
-  )
-}
+  );
+};
 
-export { SignIn }
+export {SignIn};
 ```
 
 ![Step13](/img/steps/13.png)
@@ -804,9 +815,9 @@ const Forgot = ({ route, navigation }: ForgotT): ReactElement => {
       user && onScreen('FORGOT_PASSWORD_SUBMIT', navigation, values)()
       setLoading(false)
     } catch (err) {
-      setError(error)
+      setError(error);
     }
-  }
+  };
 
   return (
     <>
@@ -838,10 +849,10 @@ const Forgot = ({ route, navigation }: ForgotT): ReactElement => {
         </Formik>
       </AppContainer>
     </>
-  )
-}
+  );
+};
 
-export { Forgot }
+export {Forgot};
 ```
 
 ![Step14](/img/steps/14.png)
@@ -886,10 +897,10 @@ const ForgotPassSubmit = ({ route, navigation }: ForgotPassSubmitT): ReactElemen
       onScreen('USER', navigation)()
       setLoading(false)
     } catch (err) {
-      setLoading(false)
-      setError(err.message)
+      setLoading(false);
+      setError(err.message);
     }
-  }
+  };
 
   return (
     <>
@@ -947,7 +958,9 @@ const ForgotPassSubmit = ({ route, navigation }: ForgotPassSubmitT): ReactElemen
                 autoCapitalize="none"
                 secureTextEntry
               />
-              {error !== '' && <TextError title={error} textStyle={{ alignSelf: 'center' }} />}
+              {error !== '' && (
+                <TextError title={error} textStyle={{alignSelf: 'center'}} />
+              )}
               <Space height={30} />
               <Button title="Confirm" onPress={handleSubmit} />
               <Space height={80} />
@@ -956,16 +969,16 @@ const ForgotPassSubmit = ({ route, navigation }: ForgotPassSubmitT): ReactElemen
         </Formik>
       </AppContainer>
     </>
-  )
-}
+  );
+};
 
-export { ForgotPassSubmit }
+export {ForgotPassSubmit};
 ```
 
 where after entering the new password code sent to the mail and confirming it, we call the password change method
 
 ```jsx
-Auth.forgotPasswordSubmit(email, code, password)
+Auth.forgotPasswordSubmit(email, code, password);
 ```
 
 whose success sends the user to the screen `USER`.
@@ -997,7 +1010,7 @@ import * as React from 'react'
 import { createStackNavigator } from '@react-navigation/stack'
 import { Hello, SignUp, SignIn, ConfirmSignUp, User, Forgot, ForgotPassSubmit } from './screens/Authenticator'
 
-const Stack = createStackNavigator()
+const Stack = createStackNavigator();
 
 export type RootStackParamList = {
   HELLO: undefined
@@ -1013,22 +1026,24 @@ const AppNavigator = (): React.ReactElement => {
   return (
     <Stack.Navigator
       screenOptions={{
-        headerShown: false
+        headerShown: false,
       }}
-      initialRouteName="HELLO"
-    >
+      initialRouteName="HELLO">
       <Stack.Screen name="HELLO" component={Hello} />
       <Stack.Screen name="SIGN_UP" component={SignUp} />
       <Stack.Screen name="SIGN_IN" component={SignIn} />
       <Stack.Screen name="FORGOT" component={Forgot} />
-      <Stack.Screen name="FORGOT_PASSWORD_SUBMIT" component={ForgotPassSubmit} />
+      <Stack.Screen
+        name="FORGOT_PASSWORD_SUBMIT"
+        component={ForgotPassSubmit}
+      />
       <Stack.Screen name="CONFIRM_SIGN_UP" component={ConfirmSignUp} />
       <Stack.Screen name="USER" component={User} />
     </Stack.Navigator>
-  )
-}
+  );
+};
 
-export default AppNavigator
+export default AppNavigator;
 ```
 
 ![Step17](/img/steps/17.png)

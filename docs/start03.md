@@ -13,6 +13,7 @@ Prettier - Code formatting tool with support for multiple languages, minimum con
 
 <YouTube videoId='noQ0JGVC6SA' />
 
+
 ![Step01](/img/steps/01.png)
 
 ## Install dependencies
@@ -96,7 +97,11 @@ module.exports = {
 
 ![Step03](/img/steps/03.png)
 
+<<<<<<< refs/remotes/origin/master
 ## Rules Prettier
+=======
+## Правила Prettier
+>>>>>>> start28
 
 Add rules to .prettierrc.js
 
@@ -120,9 +125,9 @@ module.exports = {
 
 Where we add scripts:
 
-- Simulator. For me, this is iPhone SE since its screen size is the minimum requirement for layout (iPhone 3,4 is already everything)
-- Linter, which will prohibit you from pushing until all errors in the code are fixed
-- Installing Pods
+- Симулятор. Для меня это iPhone SE так как его размер экрана миниматльное требование по верстке(iPhone 3,4 уже все)
+- Линтер, который будет запрещать вам пушить до исправления всех ошибок в коде
+- Установка Pods
 
 ```jsx
 "scripts": {

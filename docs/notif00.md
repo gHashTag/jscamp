@@ -4,7 +4,6 @@ title: Push Notifications with AWS Amplify
 sidebar_label: Push notifications
 ---
 
-
 Push notifications play an important role in any application. This can dramatically increase user engagement.
 
 ![Push Notifications](/img/notification/00.png)
@@ -143,7 +142,7 @@ npm install --save @react-native-community/netinfo
 
 - Open [Firebase Console ](https://console.firebase.google.com/) and open the app you created in the previous steps.
 - Click on the icon in the `Project Overview` section in the toolbar and select `Project settings`. ![Настройки проекта](/img/notification/notif_project_settings.png)
--Select the `Cloud Messaging` tab and copy the value `Server key`. ![Project settings](/img/notification/notif_api_key.png)
+  -Select the `Cloud Messaging` tab and copy the value `Server key`. ![Project settings](/img/notification/notif_api_key.png)
 
 5. Insert the requested values for `ApiKey`.
 6. After completing the configuration, run `amplify push`.
@@ -193,7 +192,7 @@ npm install --save @react-native-community/push-notification-ios
 
    5. Discover `.xcworkspace` with XCode.
 
-    6. Select a project and select a project name in the `TARGETS` section. Select `Signing & Capabilities` and press the` + `in front of the` Capability`. Select `Background Mode - Remote Notifications`.
+   6. Select a project and select a project name in the `TARGETS` section. Select `Signing & Capabilities` and press the`+`in front of the` Capability`. Select `Background Mode - Remote Notifications`.
 
 ![Step05](/img/steps/05.png)
 

@@ -1,11 +1,10 @@
 ---
 id: blogging-00
-title: Assembling Rubik's Cube at Sumerian School
+title: Assembling Rubik's Cube
 sidebar_label: Assembling Rubik's Cube
 ---
 
 import YouTube from 'react-youtube';
-
 
 <YouTube videoId='5WyRcKrGwMo' />
 
