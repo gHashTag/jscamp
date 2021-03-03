@@ -28,6 +28,26 @@ function learnJavaScript() {
 
 <YouTube videoId="1zXZCVbNbkQ" /> -->
 
+## typeof
+
+In order to understand the data type contained in a variable, the `typeof` operator is used. The `typeof` operator returns the type of the argument.
+It has two syntaxes, with brackets and without:
+
+- Operator syntax: `typeof x`
+
+- Function syntax: `typeof (x)`
+
+They work the same, but the first syntax is shorter.
+
+The result of `typeof` is a string containing the type.
+
+```jsx live
+function learnJavaScript() {
+  let num = 9
+  return typeof num
+}
+```
+
 ## Data types
 
 ![Data types](https://media.giphy.com/media/NPXkCN2FutVO1Nt4P9/giphy.gif)
