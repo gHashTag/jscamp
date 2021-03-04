@@ -18,7 +18,7 @@ In this article, we will learn how to do the same with our own functions and how
 
 ## Remaining parameters `(... rest)`
 
-![Parametrs](https://media.giphy.com/media/hvddF1vHatFIgQspUB/giphy.gif)
+![Parametrs](https://media.giphy.com/media/3osxYoufeOGOA7xiX6/giphy.gif)
 
 You can call a function⚙️ with any number of arguments, regardless of how it was defined.
 

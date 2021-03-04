@@ -18,7 +18,7 @@ sidebar_label: Операторы Rest и Spread
 
 ## Остаточные параметры `(...rest)`
 
-![Parametrs](https://media.giphy.com/media/hvddF1vHatFIgQspUB/giphy.gif)
+![Parametrs](https://media.giphy.com/media/3osxYoufeOGOA7xiX6/giphy.gif)
 
 Вызывать функцию⚙️ можно с любым количеством аргументов независимо от того, как она была определена.
 

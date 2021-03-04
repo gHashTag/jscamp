@@ -6,11 +6,11 @@ sidebar_label: 休息和傳播
 
 ![@serverSerrverlesskiy](/img/javascript/headers/19.jpg)
 
-許多內置的JavaScript函數支持任意數量的參數。
+許多內置的 JavaScript 函數支持任意數量的參數。
 
 例如：
 
-`Math.max (arg1, arg2, ..., argN)` - c計算傳遞的參數的最大數量。
+`Math.max (arg1, arg2, ..., argN)` - c 計算傳遞的參數的最大數量。
 
 `Math.min (arg1, arg2, ..., argN)` - 返回所傳遞參數的最小值。
 
@@ -18,9 +18,9 @@ sidebar_label: 休息和傳播
 
 ## 其餘參數 `(... rest)`
 
-![Parametrs](https://media.giphy.com/media/hvddF1vHatFIgQspUB/giphy.gif)
+![Parametrs](https://media.giphy.com/media/3osxYoufeOGOA7xiX6/giphy.gif)
 
-您可以使用任意數量的參數調用函數⚙️，而不管其定義方式如何。
+您可以使用任意數量的參數調用函數 ⚙️，而不管其定義方式如何。
 
 例如 👇:
 
@@ -36,11 +36,11 @@ function learnJavaScript() {
 
 多餘的參數不會導致錯誤，但是當然只計算前三個參數。
 
-### ES6概念
+### ES6 概念
 
 ![Idea](https://media.giphy.com/media/3o6Mbj2w67HnPQKgcE/giphy.gif)
 
-從ES6標准開始，出現了類似 `... rest` - 剩餘參數。
+從 ES6 標准開始，出現了類似 `... rest` - 剩餘參數。
 
 ```jsx
 let goFun = (...rest) => {
@@ -64,7 +64,7 @@ function learnJavaScript() {
 }
 ```
 
-答案已經是28，並且沒有錯誤🙅‍♂️！ 嘗試更改參數或數組的維數。
+答案已經是 28，並且沒有錯誤 🙅‍♂️！ 嘗試更改參數或數組的維數。
 
 ### 多個參數
 
@@ -79,7 +79,7 @@ let goFun = (first, second, ...rest) => {
 }
 ```
 
-在下面的示例中，該函數的前兩個2️⃣參數將成為名字和姓氏，第三個及後續參數將成為數組 `titles [i]` 👇:
+在下面的示例中，該函數的前兩個 2️⃣ 參數將成為名字和姓氏，第三個及後續參數將成為數組 `titles [i]` 👇:
 
 ```jsx live
 function learnJavaScript() {
@@ -102,7 +102,7 @@ function learnJavaScript() {
 
 ![error](https://media.giphy.com/media/xTiN0L7EW5trfOvEk0/giphy.gif)
 
-殘留參數必須在末尾，因此您不能在它們之後寫🖊️。
+殘留參數必須在末尾，因此您不能在它們之後寫 🖊️。
 這將引發錯誤：
 
 ```jsx
@@ -167,7 +167,7 @@ function learnJavaScript() {
 
 ![Transform](https://media.giphy.com/media/xT4uQr9H3EDL7Ha2hq/giphy.gif)
 
-`...spread` o操作員會在這裡幫助我們。 它類似於殘差參數-它也使用 `...`, 但恰恰相反。
+`...spread` o 操作員會在這裡幫助我們。 它類似於殘差參數-它也使用 `...`, 但恰恰相反。
 
 當。。。的時候 `...spread` 功能在函數調用中使用，它將轉換 `arr` 數組對像到參數列表。
 
@@ -219,7 +219,7 @@ function learnJavaScript() {
 
 `... spread` 操作員功能可與任何可迭代對像一起使用。
 
-例如，散佈運算符適用於將字符串轉換為字符數組👇:
+例如，散佈運算符適用於將字符串轉換為字符數組 👇:
 
 ```javascript
 let str = 'Hey, Alex!'
@@ -233,7 +233,7 @@ let result = [...str]
 `for..of` 循環將字符串作為字符序列進行迭代，因此從 ` ... str` 原來 "P", "p", "and", "in", "e", "t" ...
 使用標準數組聲明將結果字符收集到數組中 🗣️ `[... str] .`
 
-我們也可以使用 `Array.from` 為此任務。 還將可迭代（例如字符串）轉換為數組👇:
+我們也可以使用 `Array.from` 為此任務。 還將可迭代（例如字符串）轉換為數組 👇:
 
 ```javascript
 let str = 'Hello'
@@ -254,7 +254,7 @@ Array.from(str) // "H", "e", "l", "l", "o"
 
 ![Elipsis](https://media.giphy.com/media/UWXLULrP5KGDC/giphy.gif)
 
-當我們看到 `"..."` 在代碼код中，它可以是殘差參數 `...rest` 或擴展運算符 ` ...spread`.
+當我們看到 `"..."` 在代碼 код 中，它可以是殘差參數 `...rest` 或擴展運算符 ` ...spread`.
 
 如何區分彼此:
 
@@ -263,9 +263,8 @@ Array.from(str) // "H", "e", "l", "l", "o"
 
 記住以下幾點很有用：
 
--剩餘參數用於創建帶有未定義數量參數的新函數。
--使用散佈運算符，您可以將數組插入默認情況下與常規參數列表一起使用的函數中。
-   ``這些構造在一起使在數組之間來迴轉換值集變得容易。
+-剩餘參數用於創建帶有未定義數量參數的新函數。 -使用散佈運算符，您可以將數組插入默認情況下與常規參數列表一起使用的函數中。
+``這些構造在一起使在數組之間來迴轉換值集變得容易。
 
 ## 問題?
 
@@ -279,9 +278,7 @@ Array.from(str) // "H", "e", "l", "l", "o"
 
 如果 `...` 位於函數參數列表的末尾，那麼我們正在處理：
 
-1.殘留參數
-2.擴展運算符
-3.隨機指標
+1.殘留參數 2.擴展運算符 3.隨機指標
 
 要創建帶有不確定數量的參數的函數，請使用：
 
@@ -291,9 +288,7 @@ Array.from(str) // "H", "e", "l", "l", "o"
 
 您可以使用以下方法將兩個數組合併為一個：
 
-1.擴展運算符
-2.`Array.from` 操作員
-3.殘留參數
+1.擴展運算符 2.`Array.from` 操作員 3.殘留參數
 
 為了了解您學到了多少本課程，請對[mobile application](http://onelink.to/njhc95) 我們學校就這個話題。
 
