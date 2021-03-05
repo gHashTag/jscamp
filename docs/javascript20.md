@@ -128,7 +128,7 @@ function learnJavaScript() {
   let [title, group, quantity] = fruit
 
   // Display
-  return `$ {title}, $ {group}, $ {quantity}`
+  return `${title}, ${group}, ${quantity}`
 }
 ```
 

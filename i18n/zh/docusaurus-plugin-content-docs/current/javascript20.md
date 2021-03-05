@@ -6,7 +6,7 @@ sidebar_label: 解構
 
 ![@serverSerrverlesskiy](/img/javascript/headers/30.jpg)
 
-JavaScript中的解構是一種賦值語法，使您可以方便地從一行中的數組和對像中提取數據。
+JavaScript 中的解構是一種賦值語法，使您可以方便地從一行中的數組和對像中提取數據。
 
 ## 對象解構
 
@@ -29,7 +29,7 @@ function learnJavaScript() {
 }
 ```
 
-屬性 `title`,`group` 和 `quantity` 重複對象的結構 `fruit` 並將它們的值複製到相同的變量中 `{...}`. 因此，如果在中交換變量the `{...}`, 那麼代碼也將正常工作，請嘗試在上面的示例中交換變量🔔
+屬性 `title`,`group` 和 `quantity` 重複對象的結構 `fruit` 並將它們的值複製到相同的變量中 `{...}`. 因此，如果在中交換變量 the `{...}`, 那麼代碼也將正常工作，請嘗試在上面的示例中交換變量 🔔
 
 ### 嵌套對象
 
@@ -77,7 +77,7 @@ function learnJavaScript() {
 
 ### 默認值
 
-如果在 `{...}` 您編寫一個找不到的屬性變量then，然後為其分配值 `undefined`. 要將默認值分配給變量🔔，可以為其分配值。 如果嘗試將值賦給已找到其屬性的變量,，則將為其分配屬性值。 讓我們來看一個例子。
+如果在 `{...}` 您編寫一個找不到的屬性變量 then，然後為其分配值 `undefined`. 要將默認值分配給變量 🔔，可以為其分配值。 如果嘗試將值賦給已找到其屬性的變量,，則將為其分配屬性值。 讓我們來看一個例子。
 
 ![Dafault](https://media.giphy.com/media/3oEduLzte7jSNmq4z6/giphy.gif)
 
@@ -98,7 +98,7 @@ function learnJavaScript() {
 
 ![octatok](https://media.giphy.com/media/hvddF1vHatFIgQspUB/giphy.gif)
 
-如果需要從一個對像中獲取一個變量🔔，並將其餘變量分組到另一個對像中，請使用 `...` 在變量之前，將從中創建具有其餘屬性的對象。
+如果需要從一個對像中獲取一個變量 🔔，並將其餘變量分組到另一個對像中，請使用 `...` 在變量之前，將從中創建具有其餘屬性的對象。
 
 ```jsx live
 function learnJavaScript() {
@@ -115,7 +115,7 @@ function learnJavaScript() {
 
 ## 解構數組
 
-數組的解構與對象的解構相同。 唯一的區別是，數組元素的值將按照元素定義的順序分配給變量🔔。
+數組的解構與對象的解構相同。 唯一的區別是，數組元素的值將按照元素定義的順序分配給變量 🔔。
 
 ![Take](https://media.giphy.com/media/IuBlckSD7dQv6/giphy.gif)
 
@@ -128,7 +128,7 @@ function learnJavaScript() {
   let [title, group, quantity] = fruit
 
   // Display
-  return `$ {title}, $ {group}, $ {quantity}`
+  return `${title}, ${group}, ${quantity}`
 }
 ```
 
@@ -190,14 +190,11 @@ Write to [Discord](https://discord.gg/6GDAfXn) chat.
 
 是解構嗎？
 
-1.功能
-2.語法
-3.對象
+1.功能 2.語法 3.對象
 
 銷毀對象時，是否有必要按與對像中相同的順序放置變量？
 
-1.是的
-2.沒有
+1.是的 2.沒有
 
 如果在對像中找不到相同的屬性，將為變量分配什麼？
 
@@ -207,8 +204,7 @@ Write to [Discord](https://discord.gg/6GDAfXn) chat.
 
 銷毀對象時元素的順序重要嗎？
 
-1.是的
-2.沒有
+1.是的 2.沒有
 
 為了了解您學到了多少本課程，請對 [mobile application](http://onelink.to/njhc95) 我們學校就這個話題。
 
@@ -220,7 +216,7 @@ Write to [Discord](https://discord.gg/6GDAfXn) chat.
 2. [MDN Web Docs](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
 3. [Destructuring in ES6](https://medium.com/@stasonmars/деструктуризация-в-es6-полное-руководство-b865bb71f376)
 
-## 貢獻者✨
+## 貢獻者 ✨
 
 感謝這些好人 ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
