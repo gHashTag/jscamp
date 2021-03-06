@@ -141,19 +141,29 @@ const Home = () => {
 
         <header className={classnames('hero hero--primary', heroBanner)}>
           <div className="container">
-            <img src={useBaseUrl('img/jscamp/Покатушки по Джаваскриптушке.png')} alt="Покатушки по Джаваскриптушке" />
+            {/* <img src={useBaseUrl('img/jscamp/Покатушки по Джаваскриптушке.png')} alt="Покатушки по Джаваскриптушке" /> */}
             {/* <h1 className="hero__title">Java Script Camp</h1> */}
-            <p className="hero__subtitle">
-              Лагерь скаутов от создателя первого в Рунете{' '}
-              <a href="https://youtube.com/playlist?list=PLth6QPteH5guFUwQj1iCdu-SOZ7O5KCz4">курса по React Native</a> и
-              первого русского блогера-программиста в программе{' '}
-              <a href="https://aws.amazon.com/ru/developer/community/community-builders/">AWS Community Builders</a> от
-              Амазон - Димки Реактнативного
-            </p>
 
-            <a href="https://www.patreon.com/javascriptcamp">
+            <p className="dark-text">
+              <Translate>Scout camp from the creator of the first in Runet</Translate>{' '}
+              <a href="https://youtube.com/playlist?list=PLth6QPteH5guFUwQj1iCdu-SOZ7O5KCz4">
+                <Translate>React Native course</Translate>
+              </a>{' '}
+              <Translate>and the first Russian blogger-programmer in the program</Translate>{' '}
+              <a href="https://aws.amazon.com/ru/developer/community/community-builders/">AWS Community Builders</a>{' '}
+              <Translate>from Amazon</Translate>
+            </p>
+            <br />
+
+            <h3>
+              <Link className="button-custom" to="https://www.patreon.com/javascriptcamp">
+                <Translate>Subscribe</Translate>{' '}
+              </Link>
+            </h3>
+
+            {/* <a href="https://www.patreon.com/javascriptcamp">
               <img src={useBaseUrl('img/jscamp/Button 10$.png')} alt="" />
-            </a>
+            </a> */}
           </div>
         </header>
       </Layout>
@@ -168,102 +178,111 @@ const Program = () => {
         <img src={useBaseUrl('img/jscamp/34.3.jpg')} alt="Java Script Camp" className="image-mobile" />
         <img src={useBaseUrl('img/jscamp/34.2.jpg')} alt="Java Script Camp" />
         <img src={useBaseUrl('img/jscamp/34.1.jpg')} alt="Java Script Camp" className="image-mobile" />
+
         <img src={useBaseUrl('img/jscamp/3.3.jpg')} alt="Java Script Camp" className="image-mobile" />
         <img src={useBaseUrl('img/jscamp/3.2.jpg')} alt="Java Script Camp" />
         <img src={useBaseUrl('img/jscamp/3.1.jpg')} alt="Java Script Camp" className="image-mobile" />
-        <img src={useBaseUrl('img/jscamp/4.3.jpg')} alt="Java Script Camp" className="image-mobile" />
-        <img src={useBaseUrl('img/jscamp/4.2.jpg')} alt="Java Script Camp" />
-        <img src={useBaseUrl('img/jscamp/4.1.jpg')} alt="Java Script Camp" className="image-mobile" />
-        <img src={useBaseUrl('img/jscamp/5.3.jpg')} alt="Java Script Camp" className="image-mobile" />
-        <img src={useBaseUrl('img/jscamp/5.2.jpg')} alt="Java Script Camp" />
-        <img src={useBaseUrl('img/jscamp/5.1.jpg')} alt="Java Script Camp" className="image-mobile" />
-        <img src={useBaseUrl('img/jscamp/6.3.jpg')} alt="Java Script Camp" className="image-mobile" />
-        <img src={useBaseUrl('img/jscamp/6.2.jpg')} alt="Java Script Camp" />
-        <img src={useBaseUrl('img/jscamp/6.1.jpg')} alt="Java Script Camp" className="image-mobile" />
-        <img src={useBaseUrl('img/jscamp/7.3.jpg')} alt="Java Script Camp" className="image-mobile" />
-        <img src={useBaseUrl('img/jscamp/7.2.jpg')} alt="Java Script Camp" />
-        <img src={useBaseUrl('img/jscamp/7.1.jpg')} alt="Java Script Camp" className="image-mobile" />
-        <img src={useBaseUrl('img/jscamp/8.3.jpg')} alt="Java Script Camp" className="image-mobile" />
-        <img src={useBaseUrl('img/jscamp/8.2.jpg')} alt="Java Script Camp" />
-        <img src={useBaseUrl('img/jscamp/8.1.jpg')} alt="Java Script Camp" className="image-mobile" />
-        <img src={useBaseUrl('img/jscamp/9.3.jpg')} alt="Java Script Camp" className="image-mobile" />
-        <img src={useBaseUrl('img/jscamp/9.2.jpg')} alt="Java Script Camp" />
-        <img src={useBaseUrl('img/jscamp/9.1.jpg')} alt="Java Script Camp" className="image-mobile" />
-        <img src={useBaseUrl('img/jscamp/10.3.jpg')} alt="Java Script Camp" className="image-mobile" />
-        <img src={useBaseUrl('img/jscamp/10.2.jpg')} alt="Java Script Camp" />
-        <img src={useBaseUrl('img/jscamp/10.1.jpg')} alt="Java Script Camp" className="image-mobile" />
-        <img src={useBaseUrl('img/jscamp/11.3.jpg')} alt="Java Script Camp" className="image-mobile" />
-        <img src={useBaseUrl('img/jscamp/11.2.jpg')} alt="Java Script Camp" />
-        <img src={useBaseUrl('img/jscamp/11.1.jpg')} alt="Java Script Camp" className="image-mobile" />
-        <img src={useBaseUrl('img/jscamp/12.3.jpg')} alt="Java Script Camp" className="image-mobile" />
-        <img src={useBaseUrl('img/jscamp/12.2.jpg')} alt="Java Script Camp" />
-        <img src={useBaseUrl('img/jscamp/12.1.jpg')} alt="Java Script Camp" className="image-mobile" />
-        <img src={useBaseUrl('img/jscamp/13.3.jpg')} alt="Java Script Camp" className="image-mobile" />
-        <img src={useBaseUrl('img/jscamp/13.2.jpg')} alt="Java Script Camp" />
-        <img src={useBaseUrl('img/jscamp/13.1.jpg')} alt="Java Script Camp" className="image-mobile" />
-        <img src={useBaseUrl('img/jscamp/14.3.jpg')} alt="Java Script Camp" className="image-mobile" />
-        <img src={useBaseUrl('img/jscamp/14.2.jpg')} alt="Java Script Camp" />
-        <img src={useBaseUrl('img/jscamp/14.1.jpg')} alt="Java Script Camp" className="image-mobile" />
-        <img src={useBaseUrl('img/jscamp/15.3.jpg')} alt="Java Script Camp" className="image-mobile" />
-        <img src={useBaseUrl('img/jscamp/15.2.jpg')} alt="Java Script Camp" />
-        <img src={useBaseUrl('img/jscamp/15.1.jpg')} alt="Java Script Camp" className="image-mobile" />
-        <img src={useBaseUrl('img/jscamp/16.3.jpg')} alt="Java Script Camp" className="image-mobile" />
-        <img src={useBaseUrl('img/jscamp/16.2.jpg')} alt="Java Script Camp" />
-        <img src={useBaseUrl('img/jscamp/16.1.jpg')} alt="Java Script Camp" className="image-mobile" />
-        <img src={useBaseUrl('img/jscamp/17.3.jpg')} alt="Java Script Camp" className="image-mobile" />
-        <img src={useBaseUrl('img/jscamp/17.2.jpg')} alt="Java Script Camp" />
-        <img src={useBaseUrl('img/jscamp/17.1.jpg')} alt="Java Script Camp" className="image-mobile" />
-        <img src={useBaseUrl('img/jscamp/18.3.jpg')} alt="Java Script Camp" className="image-mobile" />
-        <img src={useBaseUrl('img/jscamp/18.2.jpg')} alt="Java Script Camp" />
-        <img src={useBaseUrl('img/jscamp/18.1.jpg')} alt="Java Script Camp" className="image-mobile" />
-        <img src={useBaseUrl('img/jscamp/20.3.jpg')} alt="Java Script Camp" className="image-mobile" />
-        <img src={useBaseUrl('img/jscamp/20.2.jpg')} alt="Java Script Camp" />
-        <img src={useBaseUrl('img/jscamp/20.1.jpg')} alt="Java Script Camp" className="image-mobile" />
-        <img src={useBaseUrl('img/jscamp/19.3.jpg')} alt="Java Script Camp" className="image-mobile" />
-        <img src={useBaseUrl('img/jscamp/19.2.jpg')} alt="Java Script Camp" />
-        <img src={useBaseUrl('img/jscamp/19.1.jpg')} alt="Java Script Camp" className="image-mobile" />
-        <img src={useBaseUrl('img/jscamp/21.3.jpg')} alt="Java Script Camp" className="image-mobile" />
-        <img src={useBaseUrl('img/jscamp/21.2.jpg')} alt="Java Script Camp" />
-        <img src={useBaseUrl('img/jscamp/21.1.jpg')} alt="Java Script Camp" className="image-mobile" />
-        <img src={useBaseUrl('img/jscamp/23.3.jpg')} alt="Java Script Camp" className="image-mobile" />
-        <img src={useBaseUrl('img/jscamp/23.2.jpg')} alt="Java Script Camp" />
-        <img src={useBaseUrl('img/jscamp/23.1.jpg')} alt="Java Script Camp" className="image-mobile" />
-        <img src={useBaseUrl('img/jscamp/22.3.jpg')} alt="Java Script Camp" className="image-mobile" />
-        <img src={useBaseUrl('img/jscamp/22.2.jpg')} alt="Java Script Camp" />
-        <img src={useBaseUrl('img/jscamp/22.1.jpg')} alt="Java Script Camp" className="image-mobile" />
-        <img src={useBaseUrl('img/jscamp/24.3.jpg')} alt="Java Script Camp" className="image-mobile" />
-        <img src={useBaseUrl('img/jscamp/24.2.jpg')} alt="Java Script Camp" />
-        <img src={useBaseUrl('img/jscamp/24.1.jpg')} alt="Java Script Camp" className="image-mobile" />
-        <img src={useBaseUrl('img/jscamp/26.3.jpg')} alt="Java Script Camp" className="image-mobile" />
-        <img src={useBaseUrl('img/jscamp/26.2.jpg')} alt="Java Script Camp" />
-        <img src={useBaseUrl('img/jscamp/26.1.jpg')} alt="Java Script Camp" className="image-mobile" />
-        <img src={useBaseUrl('img/jscamp/25.3.jpg')} alt="Java Script Camp" className="image-mobile" />
-        <img src={useBaseUrl('img/jscamp/25.2.jpg')} alt="Java Script Camp" />
-        <img src={useBaseUrl('img/jscamp/25.1.jpg')} alt="Java Script Camp" className="image-mobile" />
-        <img src={useBaseUrl('img/jscamp/27.3.jpg')} alt="Java Script Camp" className="image-mobile" />
-        <img src={useBaseUrl('img/jscamp/27.2.jpg')} alt="Java Script Camp" />
-        <img src={useBaseUrl('img/jscamp/27.1.jpg')} alt="Java Script Camp" className="image-mobile" />
-        <img src={useBaseUrl('img/jscamp/29.3.jpg')} alt="Java Script Camp" className="image-mobile" />
-        <img src={useBaseUrl('img/jscamp/29.2.jpg')} alt="Java Script Camp" />
-        <img src={useBaseUrl('img/jscamp/29.1.jpg')} alt="Java Script Camp" className="image-mobile" />
-        <img src={useBaseUrl('img/jscamp/28.3.jpg')} alt="Java Script Camp" className="image-mobile" />
-        <img src={useBaseUrl('img/jscamp/28.2.jpg')} alt="Java Script Camp" />
-        <img src={useBaseUrl('img/jscamp/28.1.jpg')} alt="Java Script Camp" className="image-mobile" />
-        <img src={useBaseUrl('img/jscamp/30.3.jpg')} alt="Java Script Camp" className="image-mobile" />
-        <img src={useBaseUrl('img/jscamp/30.2.jpg')} alt="Java Script Camp" />
-        <img src={useBaseUrl('img/jscamp/30.1.jpg')} alt="Java Script Camp" className="image-mobile" />
-        {/* <img src={useBaseUrl('img/jscamp/32.3.jpg')} alt="Java Script Camp" className="image-mobile" />
-        <img src={useBaseUrl('img/jscamp/31.2.jpg')} alt="Java Script Camp" />
-        <img src={useBaseUrl('img/jscamp/32.1.jpg')} alt="Java Script Camp" className="image-mobile" /> */}
-        <img src={useBaseUrl('img/jscamp/31.3.jpg')} alt="Java Script Camp" className="image-mobile" />
-        <img src={useBaseUrl('img/jscamp/32.2.jpg')} alt="Java Script Camp" />
-        <img src={useBaseUrl('img/jscamp/31.1.jpg')} alt="Java Script Camp" className="image-mobile" />
         <img src={useBaseUrl('img/jscamp/2.3.jpg')} alt="Java Script Camp" className="image-mobile" />
         <img src={useBaseUrl('img/jscamp/2.2.jpg')} alt="Java Script Camp" />
         <img src={useBaseUrl('img/jscamp/2.1.jpg')} alt="Java Script Camp" className="image-mobile" />
+        <img src="img/startup/AWSAmplifyHackaton.jpg" className="startup" alt="Java Script Camp" />
+        <img src={useBaseUrl('img/startup/500.jpg')} alt="Java Script Camp" />
+        <img src={useBaseUrl('img/startup/startupShow.jpg')} alt="Java Script Camp" />
+        <img src={useBaseUrl('img/startup/clean.jpg')} alt="Java Script Camp" />
+        <img src={useBaseUrl('img/startup/StartupVillage.jpg')} alt="Java Script Camp" />
+        <img src={useBaseUrl('img/startup/clean.jpg')} alt="Java Script Camp" />
       </div>
     </>
   )
 }
 
 export default Home
+{
+  /* 
+<img src={useBaseUrl('img/jscamp/4.3.jpg')} alt="Java Script Camp" className="image-mobile" />
+<img src={useBaseUrl('img/jscamp/4.2.jpg')} alt="Java Script Camp" />
+<img src={useBaseUrl('img/jscamp/4.1.jpg')} alt="Java Script Camp" className="image-mobile" />
+<img src={useBaseUrl('img/jscamp/5.3.jpg')} alt="Java Script Camp" className="image-mobile" />
+<img src={useBaseUrl('img/jscamp/5.2.jpg')} alt="Java Script Camp" />
+<img src={useBaseUrl('img/jscamp/5.1.jpg')} alt="Java Script Camp" className="image-mobile" />
+<img src={useBaseUrl('img/jscamp/6.3.jpg')} alt="Java Script Camp" className="image-mobile" />
+<img src={useBaseUrl('img/jscamp/6.2.jpg')} alt="Java Script Camp" />
+<img src={useBaseUrl('img/jscamp/6.1.jpg')} alt="Java Script Camp" className="image-mobile" />
+<img src={useBaseUrl('img/jscamp/7.3.jpg')} alt="Java Script Camp" className="image-mobile" />
+<img src={useBaseUrl('img/jscamp/7.2.jpg')} alt="Java Script Camp" />
+<img src={useBaseUrl('img/jscamp/7.1.jpg')} alt="Java Script Camp" className="image-mobile" />
+<img src={useBaseUrl('img/jscamp/8.3.jpg')} alt="Java Script Camp" className="image-mobile" />
+<img src={useBaseUrl('img/jscamp/8.2.jpg')} alt="Java Script Camp" />
+<img src={useBaseUrl('img/jscamp/8.1.jpg')} alt="Java Script Camp" className="image-mobile" />
+<img src={useBaseUrl('img/jscamp/9.3.jpg')} alt="Java Script Camp" className="image-mobile" />
+<img src={useBaseUrl('img/jscamp/9.2.jpg')} alt="Java Script Camp" />
+<img src={useBaseUrl('img/jscamp/9.1.jpg')} alt="Java Script Camp" className="image-mobile" />
+<img src={useBaseUrl('img/jscamp/10.3.jpg')} alt="Java Script Camp" className="image-mobile" />
+<img src={useBaseUrl('img/jscamp/10.2.jpg')} alt="Java Script Camp" />
+<img src={useBaseUrl('img/jscamp/10.1.jpg')} alt="Java Script Camp" className="image-mobile" />
+<img src={useBaseUrl('img/jscamp/11.3.jpg')} alt="Java Script Camp" className="image-mobile" />
+<img src={useBaseUrl('img/jscamp/11.2.jpg')} alt="Java Script Camp" />
+<img src={useBaseUrl('img/jscamp/11.1.jpg')} alt="Java Script Camp" className="image-mobile" />
+<img src={useBaseUrl('img/jscamp/12.3.jpg')} alt="Java Script Camp" className="image-mobile" />
+<img src={useBaseUrl('img/jscamp/12.2.jpg')} alt="Java Script Camp" />
+<img src={useBaseUrl('img/jscamp/12.1.jpg')} alt="Java Script Camp" className="image-mobile" />
+<img src={useBaseUrl('img/jscamp/13.3.jpg')} alt="Java Script Camp" className="image-mobile" />
+<img src={useBaseUrl('img/jscamp/13.2.jpg')} alt="Java Script Camp" />
+<img src={useBaseUrl('img/jscamp/13.1.jpg')} alt="Java Script Camp" className="image-mobile" />
+<img src={useBaseUrl('img/jscamp/14.3.jpg')} alt="Java Script Camp" className="image-mobile" />
+<img src={useBaseUrl('img/jscamp/14.2.jpg')} alt="Java Script Camp" />
+<img src={useBaseUrl('img/jscamp/14.1.jpg')} alt="Java Script Camp" className="image-mobile" />
+<img src={useBaseUrl('img/jscamp/15.3.jpg')} alt="Java Script Camp" className="image-mobile" />
+<img src={useBaseUrl('img/jscamp/15.2.jpg')} alt="Java Script Camp" />
+<img src={useBaseUrl('img/jscamp/15.1.jpg')} alt="Java Script Camp" className="image-mobile" />
+<img src={useBaseUrl('img/jscamp/16.3.jpg')} alt="Java Script Camp" className="image-mobile" />
+<img src={useBaseUrl('img/jscamp/16.2.jpg')} alt="Java Script Camp" />
+<img src={useBaseUrl('img/jscamp/16.1.jpg')} alt="Java Script Camp" className="image-mobile" />
+<img src={useBaseUrl('img/jscamp/17.3.jpg')} alt="Java Script Camp" className="image-mobile" />
+<img src={useBaseUrl('img/jscamp/17.2.jpg')} alt="Java Script Camp" />
+<img src={useBaseUrl('img/jscamp/17.1.jpg')} alt="Java Script Camp" className="image-mobile" />
+<img src={useBaseUrl('img/jscamp/18.3.jpg')} alt="Java Script Camp" className="image-mobile" />
+<img src={useBaseUrl('img/jscamp/18.2.jpg')} alt="Java Script Camp" />
+<img src={useBaseUrl('img/jscamp/18.1.jpg')} alt="Java Script Camp" className="image-mobile" />
+<img src={useBaseUrl('img/jscamp/20.3.jpg')} alt="Java Script Camp" className="image-mobile" />
+<img src={useBaseUrl('img/jscamp/20.2.jpg')} alt="Java Script Camp" />
+<img src={useBaseUrl('img/jscamp/20.1.jpg')} alt="Java Script Camp" className="image-mobile" />
+<img src={useBaseUrl('img/jscamp/19.3.jpg')} alt="Java Script Camp" className="image-mobile" />
+<img src={useBaseUrl('img/jscamp/19.2.jpg')} alt="Java Script Camp" />
+<img src={useBaseUrl('img/jscamp/19.1.jpg')} alt="Java Script Camp" className="image-mobile" />
+<img src={useBaseUrl('img/jscamp/21.3.jpg')} alt="Java Script Camp" className="image-mobile" />
+<img src={useBaseUrl('img/jscamp/21.2.jpg')} alt="Java Script Camp" />
+<img src={useBaseUrl('img/jscamp/21.1.jpg')} alt="Java Script Camp" className="image-mobile" />
+<img src={useBaseUrl('img/jscamp/23.3.jpg')} alt="Java Script Camp" className="image-mobile" />
+<img src={useBaseUrl('img/jscamp/23.2.jpg')} alt="Java Script Camp" />
+<img src={useBaseUrl('img/jscamp/23.1.jpg')} alt="Java Script Camp" className="image-mobile" />
+<img src={useBaseUrl('img/jscamp/22.3.jpg')} alt="Java Script Camp" className="image-mobile" />
+<img src={useBaseUrl('img/jscamp/22.2.jpg')} alt="Java Script Camp" />
+<img src={useBaseUrl('img/jscamp/22.1.jpg')} alt="Java Script Camp" className="image-mobile" />
+<img src={useBaseUrl('img/jscamp/24.3.jpg')} alt="Java Script Camp" className="image-mobile" />
+<img src={useBaseUrl('img/jscamp/24.2.jpg')} alt="Java Script Camp" />
+<img src={useBaseUrl('img/jscamp/24.1.jpg')} alt="Java Script Camp" className="image-mobile" />
+<img src={useBaseUrl('img/jscamp/26.3.jpg')} alt="Java Script Camp" className="image-mobile" />
+<img src={useBaseUrl('img/jscamp/26.2.jpg')} alt="Java Script Camp" />
+<img src={useBaseUrl('img/jscamp/26.1.jpg')} alt="Java Script Camp" className="image-mobile" />
+<img src={useBaseUrl('img/jscamp/25.3.jpg')} alt="Java Script Camp" className="image-mobile" />
+<img src={useBaseUrl('img/jscamp/25.2.jpg')} alt="Java Script Camp" />
+<img src={useBaseUrl('img/jscamp/25.1.jpg')} alt="Java Script Camp" className="image-mobile" />
+<img src={useBaseUrl('img/jscamp/27.3.jpg')} alt="Java Script Camp" className="image-mobile" />
+<img src={useBaseUrl('img/jscamp/27.2.jpg')} alt="Java Script Camp" />
+<img src={useBaseUrl('img/jscamp/27.1.jpg')} alt="Java Script Camp" className="image-mobile" />
+<img src={useBaseUrl('img/jscamp/29.3.jpg')} alt="Java Script Camp" className="image-mobile" />
+<img src={useBaseUrl('img/jscamp/29.2.jpg')} alt="Java Script Camp" />
+<img src={useBaseUrl('img/jscamp/29.1.jpg')} alt="Java Script Camp" className="image-mobile" />
+<img src={useBaseUrl('img/jscamp/28.3.jpg')} alt="Java Script Camp" className="image-mobile" />
+<img src={useBaseUrl('img/jscamp/28.2.jpg')} alt="Java Script Camp" />
+<img src={useBaseUrl('img/jscamp/28.1.jpg')} alt="Java Script Camp" className="image-mobile" />
+<img src={useBaseUrl('img/jscamp/30.3.jpg')} alt="Java Script Camp" className="image-mobile" />
+<img src={useBaseUrl('img/jscamp/30.2.jpg')} alt="Java Script Camp" />
+<img src={useBaseUrl('img/jscamp/30.1.jpg')} alt="Java Script Camp" className="image-mobile" />
+
+<img src={useBaseUrl('img/jscamp/31.3.jpg')} alt="Java Script Camp" className="image-mobile" />
+<img src={useBaseUrl('img/jscamp/32.2.jpg')} alt="Java Script Camp" />
+<img src={useBaseUrl('img/jscamp/31.1.jpg')} alt="Java Script Camp" className="image-mobile" />
+ */
+}
