@@ -186,6 +186,7 @@ const Program = () => {
         <img src={useBaseUrl('img/jscamp/2.2.jpg')} alt="Java Script Camp" />
         <img src={useBaseUrl('img/jscamp/2.1.jpg')} alt="Java Script Camp" className="image-mobile" />
         <img src="img/startup/AWSAmplifyHackaton.jpg" className="startup" alt="Java Script Camp" />
+
         <img src={useBaseUrl('img/startup/500.jpg')} alt="Java Script Camp" />
         <img src={useBaseUrl('img/startup/startupShow.jpg')} alt="Java Script Camp" />
         <img src={useBaseUrl('img/startup/clean.jpg')} alt="Java Script Camp" />

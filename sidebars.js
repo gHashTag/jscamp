@@ -100,6 +100,6 @@ module.exports = {
     ['AWS Amplify']: ['amplify-00', 'amplify-01', 'amplify-02', 'amplify-03', 'amplify-04', 'notif-00'],
     ['Blogging']: ['blogging-00', 'blogging-01', 'blogging-02', 'blogging-03'],
     ['Scratch']: ['scratch-00', 'scratch-01'],
-    ['Startup']: ['startup00']
+    ['Startup']: ['startup00', 'startup01', 'startup02']
   }
 }
