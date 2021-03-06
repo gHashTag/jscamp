@@ -210,6 +210,14 @@ module.exports = {
             {
               label: 'Medium',
               href: 'https://medium.com/react-native-init'
+            },
+            {
+              label: 'Twitch',
+              href: 'https://www.twitch.tv/javascriptcamp'
+            },
+            {
+              label: 'CodeWars',
+              href: 'www.codewars.com/r/e67HyQ'
             }
           ]
         }

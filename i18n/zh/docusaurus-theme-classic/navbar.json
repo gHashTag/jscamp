@@ -7,7 +7,7 @@
     "message": "Patreon 🤑",
     "description": "帶有標籤Patreon的導航欄項目 🤑"
   },
-  "item.label.作者 🧑🏻‍🎤": {
+  "item.label.Author 🧑🏻‍🎤": {
     "message": "作者 🧑🏻‍🎤",
     "description": "帶有標籤作者的導航欄項目 🧑🏻‍🎤"
   },
@@ -15,7 +15,7 @@
     "message": "GitHub 🛰",
     "description": "帶有標籤GitHub的Navbar項目 🛰"
   },
-  "item.label.空缺 🗄": {
+  "item.label.Vacancies 🗄": {
     "message": "空缺 🗄",
     "description": "帶有標籤空缺的導航欄項目 🗄"
   }

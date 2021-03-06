@@ -31,7 +31,8 @@ module.exports = {
       'javascript26',
       'javascript27',
       'javascript28',
-      'javascript29'
+      'javascript29',
+      'javascript30'
     ],
 
     ['React Native']: [
@@ -67,7 +68,6 @@ module.exports = {
       'start25',
       'start26',
       'start27',
-
       'start29',
       'start30',
       'start31',
