@@ -157,10 +157,6 @@ module.exports = {
             {
               label: 'AWS Amplify Ru 💭',
               href: 'https://teleg.run/awsamplify'
-            },
-            {
-              label: 'AWS Amplify En 💭',
-              href: 'https://discord.gg/yh76QcjKBC'
             }
           ]
         },
