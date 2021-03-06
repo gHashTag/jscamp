@@ -6,7 +6,7 @@ sidebar_label: 班級
 
 ![@serverSerrverlesskiy](/img/javascript/headers/23.jpg)
 
-JavaScript使用原型繼承模型：每個對像都繼承原型對象的字段（屬性）和方法。
+JavaScript 使用原型繼承模型：每個對像都繼承原型對象的字段（屬性）和方法。
 
 ## 班級
 
@@ -56,11 +56,11 @@ export class User {
 }
 ```
 
-當您實例化該類時，該類將變得有用。 實例是一個對象，其中包含🖊️類描述的數據和行為。
+當您實例化該類時，該類將變得有用。 實例是一個對象，其中包含 🖊️ 類描述的數據和行為。
 
-`new` 運算符在JavaScript中創建一個類的實例，如下所示： `instance = new Class()`.
+`new` 運算符在 JavaScript 中創建一個類的實例，如下所示： `instance = new Class()`.
 
-例如，您可以使用以下命令創建User類的實例 `new` 操作員：
+例如，您可以使用以下命令創建 User 類的實例 `new` 操作員：
 
 ```jsx
 const myUser = new User()
@@ -106,13 +106,15 @@ function learnJavaScript() {
 
 `name` 構造函數中的參數是 `Jon Snow`.
 
-如果未為類定義構造函數，則會創建一個默認構造函數。 默認構造函數是一個空函數⚙️，它不會修改實例。
+如果未為類定義構造函數，則會創建一個默認構造函數。 默認構造函數是一個空函數 ⚙️，它不會修改實例。
 
 只能有一種名為 `constructor` 在課堂上。
 
 ## 放棄課程
 
-由於在我們學校的課程中，我們教授使用庫開發移動應用程序 [React](https://reactjs.org), 創新在哪裡 [React Hooks](https://en.reactjs.org/docs/hooks-intro.html) 允許您在不編寫類的情況下使用狀態和其他React功能。 因此，不再討論類，因為我們已經放棄了它們。
+![rejection](https://media.giphy.com/media/l2SpUoAPo0CBOkyxq/giphy.gif)
+
+由於在我們學校的課程中，我們教授使用庫開發移動應用程序 [React](https://reactjs.org), 創新在哪裡 [React Hooks](https://en.reactjs.org/docs/hooks-intro.html) 允許您在不編寫類的情況下使用狀態和其他 React 功能。 因此，不再討論類，因為我們已經放棄了它們。
 
 ## 問題？
 
@@ -132,14 +134,11 @@ function learnJavaScript() {
 
 類逗號內的方法是否分開？
 
-1.是的
-2.沒有
+1.是的 2.沒有
 
 多少 `constructor()` 方法可以在一堂課中嗎？
 
-1.無限
-2.最多十個
-3.只有一個
+1.無限 2.最多十個 3.只有一個
 
 <!-- Что такое геттеры и сеттеры?
 

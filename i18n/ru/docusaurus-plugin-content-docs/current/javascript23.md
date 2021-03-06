@@ -112,6 +112,8 @@ function learnJavaScript() {
 
 ## Отказ от классов
 
+![rejection](https://media.giphy.com/media/l2SpUoAPo0CBOkyxq/giphy.gif)
+
 Так как в курсе нашей школы мы учим разрабатывать мобильные приложения с помощью библиотеки [React](https://ru.reactjs.org), где нововведение [React Hooks](https://ru.reactjs.org/docs/hooks-intro.html) позволяет использовать состояние и другие возможности [React](https://ru.reactjs.org) без написания классов. Поэтому рассказывать о классах больше нет смысла, так как мы от них отказались.
 
 ## Проблемы?
