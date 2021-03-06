@@ -1,33 +1,111 @@
 ---
 id: startup00
-title: JS Camp 🦄
-sidebar_label: JS Camp
+title: 500 Startups
+sidebar_label: 500 Startups
 ---
 
-A diversified development program containing intellectual activity (development of logic, spatial thinking and motor skills), learning English, physical activities for health, creativity.
+import YouTube from 'react-youtube'
 
-۞ For adults and older children who can solve Rubik's cube:
+## Видео
 
-💛 First Java Script Class taught by Fiona Miller.
+<YouTube videoId="z5gO1PzyLwU" />
 
-💚 The second class of the React Native school - development and layout of the system of atomic components in mobile applications iOS, Android, as well as in AR / VR systems in augmented and virtual reality with a library from Facebook. Teacher Grace Willie.
+# Рабочая тетрадь
 
-💙 Third grade: Type Script - typing of the atomic component system, teacher Maya Lakshmi.
+![500statups](/img/startup/500/1.jpg)
 
-💜 Fourth class: AWS Amplify - Fullstack Serverless - serverless computing on AWS Amplify functions. Serverlesskiy teacher.
+## Упражнение - 10к
 
-🤍 Optional Video Blogger Course - Piloting training avatars for our training video courses hosted by AWS Sumerian technology. Preston Wild teacher.
+![Упражнение 10к](/img/startup/500/2.jpg)
 
-- Foreign teachers of the school 🦄 are virtual 3D avatars with the effect of presence, based on machine learning from Amazon technologies.
-- After studying at school, a certificate is issued
+## Value proposition
 
-Download the [mobile app](http://onelink.to/njhc95) school.
+![Value proposition](/img/startup/500/3.jpg)
 
-[![Мобильное приложение школы](/img/app.png)](http://onelink.to/njhc95)
+## Целевые потребительские сегменты
 
-Got a question?
-Write or call us on social networks:
+![Target customer segments](/img/startup/500/4.jpg)
 
-[Instagram](https://instagram.com/javascriptcamp)
+## Target customer segments
 
-[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
+![Target customer segments](/img/startup/500/5.jpg)
+
+### Первый целевой сегмент
+
+![Target customer segments](/img/startup/500/6.jpg)
+
+### Второй целевой сегмент
+
+![Target customer segments](/img/startup/500/7.jpg)
+
+### Третий целевой сегмент
+
+![Target customer segments](/img/startup/500/8.jpg)
+
+### Четвертый целевой сегмент
+
+![Target customer segments](/img/startup/500/9.jpg)
+
+### Пятый целевой сегмент
+
+![Target customer segments](/img/startup/500/10.jpg)
+
+## Преимущества
+
+![Target customer segments](/img/startup/500/11.jpg)
+
+## Ценностное предложение
+
+![Target customer segments](/img/startup/500/12.jpg)
+
+### Покупатели
+
+![](/img/startup/500/13.jpg)
+
+![](/img/startup/500/14.jpg)
+
+## Привлечение покупателей
+
+![](/img/startup/500/15.jpg)
+
+![](/img/startup/500/16.jpg)
+
+## 60-секундная история
+
+![](/img/startup/500/17.jpg)
+
+![](/img/startup/500/18.jpg)
+
+<YouTube videoId="z5gO1PzyLwU" />
+
+## Активация покупателей
+
+![](/img/startup/500/19.jpg)
+
+## Статьи расхода
+
+![](/img/startup/500/20.jpg)
+
+## Водопад прибыли
+
+![](/img/startup/500/21.jpg)
+
+## CAC и LTV
+
+![](/img/startup/500/22.jpg)
+
+## Metrics pyramid
+
+![](/img/startup/500/23.jpg)
+
+## KPI
+
+![](/img/startup/500/24.jpg)
+
+## ICE Brainstorming
+
+![](/img/startup/500/25.jpg)
+
+## Когортный анализ
+
+![](/img/startup/500/26.jpg)
