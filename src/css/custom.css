@@ -106,3 +106,14 @@ html[data-theme='dark'] {
   box-shadow: inset 0 0 0 2px #ff06f4;
   text-decoration: none;
 }
+
+/* add links */
+
+.imgContainer {
+  width: 33.3%;
+}
+
+.imgContainer img {
+  width: 100%;
+  height: 100%;
+}

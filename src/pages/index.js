@@ -171,26 +171,187 @@ const Home = () => {
   )
 }
 
+const arrLinks = [
+  {
+    id: 0,
+    imageUrl: 'img/jscamp/34.3.jpg',
+    hrefUrl: '#',
+    alt: 'Java Script Camp',
+    classLink: 'imgContainer',
+    classImage: 'image-mobile'
+  },
+  {
+    id: 1,
+    imageUrl: 'img/jscamp/34.2.jpg',
+    hrefUrl: '',
+    alt: 'Java Script Camp',
+    classLink: 'imgContainer',
+    classImage: 'image-mobile'
+  },
+  {
+    id: 2,
+    imageUrl: 'img/jscamp/34.1.jpg',
+    hrefUrl: '',
+    alt: 'Java Script Camp',
+    classLink: 'imgContainer',
+    classImage: 'image-mobile'
+  },
+  {
+    id: 3,
+    imageUrl: 'img/jscamp/3.3.jpg',
+    hrefUrl: '',
+    alt: 'Java Script Camp',
+    classLink: 'imgContainer',
+    classImage: 'image-mobile'
+  },
+  {
+    id: 4,
+    imageUrl: 'img/jscamp/3.2.jpg',
+    hrefUrl: '',
+    alt: 'Java Script Camp',
+    classLink: 'imgContainer',
+    classImage: 'image-mobile'
+  },
+  {
+    id: 5,
+    imageUrl: 'img/jscamp/3.1.jpg',
+    hrefUrl: '',
+    alt: 'Java Script Camp',
+    classLink: 'imgContainer',
+    classImage: 'image-mobile'
+  },
+  {
+    id: 6,
+    imageUrl: 'img/jscamp/2.3.jpg',
+    hrefUrl: '',
+    alt: 'Java Script Camp',
+    classLink: 'imgContainer',
+    classImage: 'image-mobile'
+  },
+  {
+    id: 7,
+    imageUrl: 'img/jscamp/2.2.jpg',
+    hrefUrl: '',
+    alt: 'Java Script Camp',
+    classLink: 'imgContainer',
+    classImage: 'image-mobile'
+  },
+  {
+    id: 8,
+    imageUrl: 'img/jscamp/2.1.jpg',
+    hrefUrl: '',
+    alt: 'Java Script Camp',
+    classLink: 'imgContainer',
+    classImage: 'image-mobile'
+  },
+  {
+    id: 9,
+    imageUrl: 'img/startup/AWSAmplifyHackaton.jpg',
+    hrefUrl: '',
+    alt: 'Java Script Camp',
+    classLink: 'imgContainer',
+    classImage: 'image-mobile'
+  },
+  {
+    id: 10,
+    imageUrl: 'img/startup/500.jpg',
+    hrefUrl: '',
+    alt: 'Java Script Camp',
+    classLink: 'imgContainer',
+    classImage: 'image-mobile'
+  },
+  {
+    id: 11,
+    imageUrl: 'img/startup/startupShow.jpg',
+    hrefUrl: '',
+    alt: 'Java Script Camp',
+    classLink: 'imgContainer',
+    classImage: 'image-mobile'
+  },
+  {
+    id: 12,
+    imageUrl: 'img/startup/clean.jpg',
+    hrefUrl: '',
+    alt: 'Java Script Camp',
+    classLink: 'imgContainer',
+    classImage: 'image-mobile'
+  },
+  {
+    id: 13,
+    imageUrl: 'img/startup/StartupVillage.jpg',
+    hrefUrl: '',
+    alt: 'Java Script Camp',
+    classLink: 'imgContainer',
+    classImage: 'image-mobile'
+  },
+  {
+    id: 14,
+    imageUrl: 'img/startup/clean.jpg',
+    hrefUrl: '',
+    alt: 'Java Script Camp',
+    classLink: 'imgContainer',
+    classImage: 'image-mobile'
+  },
+]
+
 const Program = () => {
   return (
     <>
       <div className={classnames('image-container')}>
-        <img src={useBaseUrl('img/jscamp/34.3.jpg')} alt="Java Script Camp" className="image-mobile" />
-        <img src={useBaseUrl('img/jscamp/34.2.jpg')} alt="Java Script Camp" />
-        <img src={useBaseUrl('img/jscamp/34.1.jpg')} alt="Java Script Camp" className="image-mobile" />
-
-        <img src={useBaseUrl('img/jscamp/3.3.jpg')} alt="Java Script Camp" className="image-mobile" />
-        <img src={useBaseUrl('img/jscamp/3.2.jpg')} alt="Java Script Camp" />
-        <img src={useBaseUrl('img/jscamp/3.1.jpg')} alt="Java Script Camp" className="image-mobile" />
-        <img src={useBaseUrl('img/jscamp/2.3.jpg')} alt="Java Script Camp" className="image-mobile" />
-        <img src={useBaseUrl('img/jscamp/2.2.jpg')} alt="Java Script Camp" />
-        <img src={useBaseUrl('img/jscamp/2.1.jpg')} alt="Java Script Camp" className="image-mobile" />
-        <img src="img/startup/AWSAmplifyHackaton.jpg" className="startup" alt="Java Script Camp" />
-        <img src={useBaseUrl('img/startup/500.jpg')} alt="Java Script Camp" />
-        <img src={useBaseUrl('img/startup/startupShow.jpg')} alt="Java Script Camp" />
-        <img src={useBaseUrl('img/startup/clean.jpg')} alt="Java Script Camp" />
-        <img src={useBaseUrl('img/startup/StartupVillage.jpg')} alt="Java Script Camp" />
-        <img src={useBaseUrl('img/startup/clean.jpg')} alt="Java Script Camp" />
+        {
+          arrLinks.map((item) => {
+            return (
+              <a className={item.classLink} href={item.hrefUrl ? item.hrefUrl : '##'} key={item.id}>
+                <img src={useBaseUrl(`${item.imageUrl}`)} alt={item.alt} className={item.classImage} />
+              </a>
+            )
+          })
+        }
+        {/* <a className='imgContainer' href='#'>
+          <img src={useBaseUrl('img/jscamp/34.3.jpg')} alt="Java Script Camp" className="image-mobile" />
+        </a>
+        <a className='imgContainer'>
+          <img src={useBaseUrl('img/jscamp/34.2.jpg')} alt="Java Script Camp" />
+        </a>
+        <a className='imgContainer'>
+          <img src={useBaseUrl('img/jscamp/34.1.jpg')} alt="Java Script Camp" className="image-mobile" />
+        </a>
+        <a className='imgContainer'>
+          <img src={useBaseUrl('img/jscamp/3.3.jpg')} alt="Java Script Camp" className="image-mobile" />
+        </a>
+        <a className='imgContainer'>
+          <img src={useBaseUrl('img/jscamp/3.2.jpg')} alt="Java Script Camp" />
+        </a>
+        <a className='imgContainer'>
+          <img src={useBaseUrl('img/jscamp/3.1.jpg')} alt="Java Script Camp" className="image-mobile" />
+        </a>
+        <a className='imgContainer'>
+          <img src={useBaseUrl('img/jscamp/2.3.jpg')} alt="Java Script Camp" className="image-mobile" />
+        </a>
+        <a className='imgContainer'>
+          <img src={useBaseUrl('img/jscamp/2.2.jpg')} alt="Java Script Camp" />
+        </a>
+        <a className='imgContainer'>
+          <img src={useBaseUrl('img/jscamp/2.1.jpg')} alt="Java Script Camp" className="image-mobile" />
+        </a>
+        <a className='imgContainer'>
+          <img src="img/startup/AWSAmplifyHackaton.jpg" className="startup" alt="Java Script Camp" />
+        </a>
+        <a className='imgContainer'>
+          <img src={useBaseUrl('img/startup/500.jpg')} alt="Java Script Camp" />
+        </a>
+        <a className='imgContainer'>
+          <img src={useBaseUrl('img/startup/startupShow.jpg')} alt="Java Script Camp" />
+        </a>
+        <a className='imgContainer'>
+          <img src={useBaseUrl('img/startup/clean.jpg')} alt="Java Script Camp" />
+        </a>
+        <a className='imgContainer'>
+          <img src={useBaseUrl('img/startup/StartupVillage.jpg')} alt="Java Script Camp" />
+        </a>
+        <a className='imgContainer'>
+          <img src={useBaseUrl('img/startup/clean.jpg')} alt="Java Script Camp" />
+        </a> */}
       </div>
     </>
   )
