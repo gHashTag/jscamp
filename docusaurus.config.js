@@ -196,6 +196,10 @@ module.exports = {
               href: 'https://github.com/react-native-village'
             },
             {
+              label: 'Hashnode',
+              href: 'https://jscamp.hashnode.dev'
+            },
+            {
               label: 'Dev.to',
               href: 'https://dev.to/playra'
             },

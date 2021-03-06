@@ -175,7 +175,7 @@ const arrLinks = [
   {
     id: 0,
     imageUrl: 'img/jscamp/34.3.jpg',
-    hrefUrl: '#',
+    hrefUrl: 'https://www.jscamp.app/docs/javascript01',
     alt: 'Java Script Camp',
     classLink: 'imgContainer',
     classImage: 'image-mobile'
@@ -183,7 +183,7 @@ const arrLinks = [
   {
     id: 1,
     imageUrl: 'img/jscamp/34.2.jpg',
-    hrefUrl: '',
+    hrefUrl: 'https://www.jscamp.app/docs/javascript01',
     alt: 'Java Script Camp',
     classLink: 'imgContainer',
     classImage: 'image-mobile'
@@ -191,7 +191,7 @@ const arrLinks = [
   {
     id: 2,
     imageUrl: 'img/jscamp/34.1.jpg',
-    hrefUrl: '',
+    hrefUrl: 'https://www.jscamp.app/docs/javascript01',
     alt: 'Java Script Camp',
     classLink: 'imgContainer',
     classImage: 'image-mobile'
@@ -199,7 +199,7 @@ const arrLinks = [
   {
     id: 3,
     imageUrl: 'img/jscamp/3.3.jpg',
-    hrefUrl: '',
+    hrefUrl: 'https://www.jscamp.app/docs/javascript01',
     alt: 'Java Script Camp',
     classLink: 'imgContainer',
     classImage: 'image-mobile'
@@ -207,7 +207,7 @@ const arrLinks = [
   {
     id: 4,
     imageUrl: 'img/jscamp/3.2.jpg',
-    hrefUrl: '',
+    hrefUrl: 'https://www.jscamp.app/docs/javascript01',
     alt: 'Java Script Camp',
     classLink: 'imgContainer',
     classImage: 'image-mobile'
@@ -215,7 +215,7 @@ const arrLinks = [
   {
     id: 5,
     imageUrl: 'img/jscamp/3.1.jpg',
-    hrefUrl: '',
+    hrefUrl: 'https://www.jscamp.app/docs/javascript01',
     alt: 'Java Script Camp',
     classLink: 'imgContainer',
     classImage: 'image-mobile'
@@ -223,7 +223,7 @@ const arrLinks = [
   {
     id: 6,
     imageUrl: 'img/jscamp/2.3.jpg',
-    hrefUrl: '',
+    hrefUrl: 'https://www.jscamp.app/docs/javascript01',
     alt: 'Java Script Camp',
     classLink: 'imgContainer',
     classImage: 'image-mobile'
@@ -231,7 +231,7 @@ const arrLinks = [
   {
     id: 7,
     imageUrl: 'img/jscamp/2.2.jpg',
-    hrefUrl: '',
+    hrefUrl: 'https://www.jscamp.app/docs/javascript01',
     alt: 'Java Script Camp',
     classLink: 'imgContainer',
     classImage: 'image-mobile'
@@ -239,7 +239,7 @@ const arrLinks = [
   {
     id: 8,
     imageUrl: 'img/jscamp/2.1.jpg',
-    hrefUrl: '',
+    hrefUrl: 'https://www.jscamp.app/docs/javascript01',
     alt: 'Java Script Camp',
     classLink: 'imgContainer',
     classImage: 'image-mobile'
@@ -247,7 +247,7 @@ const arrLinks = [
   {
     id: 9,
     imageUrl: 'img/startup/AWSAmplifyHackaton.jpg',
-    hrefUrl: '',
+    hrefUrl: 'https://jscamp.hashnode.dev/java-script-camp',
     alt: 'Java Script Camp',
     classLink: 'imgContainer',
     classImage: 'image-mobile'
@@ -255,7 +255,7 @@ const arrLinks = [
   {
     id: 10,
     imageUrl: 'img/startup/500.jpg',
-    hrefUrl: '',
+    hrefUrl: 'https://www.jscamp.app/docs/startup00/',
     alt: 'Java Script Camp',
     classLink: 'imgContainer',
     classImage: 'image-mobile'
@@ -263,7 +263,7 @@ const arrLinks = [
   {
     id: 11,
     imageUrl: 'img/startup/startupShow.jpg',
-    hrefUrl: '',
+    hrefUrl: 'https://www.jscamp.app/docs/startup01',
     alt: 'Java Script Camp',
     classLink: 'imgContainer',
     classImage: 'image-mobile'
@@ -279,7 +279,7 @@ const arrLinks = [
   {
     id: 13,
     imageUrl: 'img/startup/StartupVillage.jpg',
-    hrefUrl: '',
+    hrefUrl: 'https://www.jscamp.app/docs/startup02',
     alt: 'Java Script Camp',
     classLink: 'imgContainer',
     classImage: 'image-mobile'
@@ -291,67 +291,20 @@ const arrLinks = [
     alt: 'Java Script Camp',
     classLink: 'imgContainer',
     classImage: 'image-mobile'
-  },
+  }
 ]
 
 const Program = () => {
   return (
     <>
       <div className={classnames('image-container')}>
-        {
-          arrLinks.map((item) => {
-            return (
-              <a className={item.classLink} href={item.hrefUrl ? item.hrefUrl : '##'} key={item.id}>
-                <img src={useBaseUrl(`${item.imageUrl}`)} alt={item.alt} className={item.classImage} />
-              </a>
-            )
-          })
-        }
-        {/* <a className='imgContainer' href='#'>
-          <img src={useBaseUrl('img/jscamp/34.3.jpg')} alt="Java Script Camp" className="image-mobile" />
-        </a>
-        <a className='imgContainer'>
-          <img src={useBaseUrl('img/jscamp/34.2.jpg')} alt="Java Script Camp" />
-        </a>
-        <a className='imgContainer'>
-          <img src={useBaseUrl('img/jscamp/34.1.jpg')} alt="Java Script Camp" className="image-mobile" />
-        </a>
-        <a className='imgContainer'>
-          <img src={useBaseUrl('img/jscamp/3.3.jpg')} alt="Java Script Camp" className="image-mobile" />
-        </a>
-        <a className='imgContainer'>
-          <img src={useBaseUrl('img/jscamp/3.2.jpg')} alt="Java Script Camp" />
-        </a>
-        <a className='imgContainer'>
-          <img src={useBaseUrl('img/jscamp/3.1.jpg')} alt="Java Script Camp" className="image-mobile" />
-        </a>
-        <a className='imgContainer'>
-          <img src={useBaseUrl('img/jscamp/2.3.jpg')} alt="Java Script Camp" className="image-mobile" />
-        </a>
-        <a className='imgContainer'>
-          <img src={useBaseUrl('img/jscamp/2.2.jpg')} alt="Java Script Camp" />
-        </a>
-        <a className='imgContainer'>
-          <img src={useBaseUrl('img/jscamp/2.1.jpg')} alt="Java Script Camp" className="image-mobile" />
-        </a>
-        <a className='imgContainer'>
-          <img src="img/startup/AWSAmplifyHackaton.jpg" className="startup" alt="Java Script Camp" />
-        </a>
-        <a className='imgContainer'>
-          <img src={useBaseUrl('img/startup/500.jpg')} alt="Java Script Camp" />
-        </a>
-        <a className='imgContainer'>
-          <img src={useBaseUrl('img/startup/startupShow.jpg')} alt="Java Script Camp" />
-        </a>
-        <a className='imgContainer'>
-          <img src={useBaseUrl('img/startup/clean.jpg')} alt="Java Script Camp" />
-        </a>
-        <a className='imgContainer'>
-          <img src={useBaseUrl('img/startup/StartupVillage.jpg')} alt="Java Script Camp" />
-        </a>
-        <a className='imgContainer'>
-          <img src={useBaseUrl('img/startup/clean.jpg')} alt="Java Script Camp" />
-        </a> */}
+        {arrLinks.map(item => {
+          return (
+            <a className={item.classLink} href={item.hrefUrl ? item.hrefUrl : '##'} key={item.id}>
+              <img src={useBaseUrl(`${item.imageUrl}`)} alt={item.alt} className={item.classImage} />
+            </a>
+          )
+        })}
       </div>
     </>
   )
