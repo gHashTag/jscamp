@@ -4,6 +4,8 @@ title: Комментарии
 sidebar_label: Комментарии
 ---
 
+import YouTube from 'react-youtube'
+
 ![@serverSerrverlesskiy](/img/javascript/headers/02.jpg)
 
 ## Что такое комментарии?
@@ -15,9 +17,9 @@ sidebar_label: Комментарии
 
 В JavaScript есть несколько способов указать комментарии 🗣️ в коде.
 
-## Видео
+<!-- ## Видео
 
-<YouTube videoId="zCvKMw5QHRw" />
+<YouTube videoId="zCvKMw5QHRw" /> -->
 
 ## Однострочный комментарий
 

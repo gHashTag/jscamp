@@ -562,25 +562,6 @@ function learnJavaScript() {
 
 ![question](https://media.giphy.com/media/Uq4ucFb5FLDStK6CUk/giphy.gif)
 
-Где размещаются декларации?
-
-1. `.d.ts`
-2. `.h`
-3. `.js`
-
-С помощью какой команды устанавливается декларация?
-
-1. `npm search -D @types/name`
-2. `npm view -D @types/name`
-3. `npm install -D @types/name`
-
-Каким синтаксисом нужно воспользоваться для создания декларации?
-
-1. `declare 'libname' { ... }`
-2. `module 'lib' { ... }`
-3. `declare module 'libname' { ... }`
-   ![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
-
 Как объявляется функция?
 
 1. function имя (параметры, через, запятую) {
