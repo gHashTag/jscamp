@@ -10,8 +10,7 @@ import YouTube from 'react-youtube'
 
 ## 變數
 
-變量 🔔（Variables，縮寫為``var''）是一個容器，用於存儲值，例如在addition之外使用的數字，或可以用作句子一部分的字符串。
-
+變量 🔔（Variables，縮寫為``var''）是用於存儲值的容器，例如用於加法的數字或可用作句子一部分的字符串，以及稍後將學習的其他數據類型。
 ![Container](https://media.giphy.com/media/0T0FUiZl51VPCLsqLR/giphy.gif)
 
 <!-- ## Видео
