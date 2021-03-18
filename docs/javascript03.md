@@ -196,7 +196,7 @@ Which keyword don't we use to define variables?
 
 In order to understand how much you learned this lesson, take a test in our school [mobile application](http://onelink.to/njhc95) on this topic.
 
-![Sumerian school](/img/app.png)
+![Sumerian school](/img/app.jpg)
 
 ## Links
 

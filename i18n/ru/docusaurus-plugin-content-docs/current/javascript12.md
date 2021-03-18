@@ -252,7 +252,7 @@ console.log(fruit) // "Apple"
 
 Для того чтобы понять насколько вы усвоили этот урок пройдите тест в [мобильном приложении](http://onelink.to/njhc95) в нашей школы по этой теме.
 
-![Sumerian school](/img/app.png)
+![Sumerian school](/img/app.jpg)
 
 ## Ссылки
 

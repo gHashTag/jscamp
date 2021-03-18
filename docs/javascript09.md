@@ -641,7 +641,7 @@ A self-executing function is
 
 In order to understand how much you learned this lesson, take the test on the [mobile application](http://onelink.to/njhc95) of our school on this topic.
 
-![Sumerian school](/img/app.png)
+![Sumerian school](/img/app.jpg)
 
 ## Links
 

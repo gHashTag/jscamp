@@ -274,7 +274,7 @@ Channel in [Discord](https://discord.gg/6GDAfXn) after paying on [Patreon](https
 
 為了了解您學到了多少本課程，請對 [移動應用](http://onelink.to/njhc95) 我們學校就這個話題。
 
-![Sumerian school](/img/app.png)
+![Sumerian school](/img/app.jpg)
 
 ## 鏈接
 

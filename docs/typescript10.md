@@ -92,7 +92,7 @@ export { B as b } from './scripts'
 
 Now we are ready to study _TypeScript_ with you, but in order to understand how much you learned this lesson, take the test in the [mobile application](http://onelink.to/njhc95) in our school on this topic.
 
-![Sumerian school](/img/app.png)
+![Sumerian school](/img/app.jpg)
 
 ## Links
 

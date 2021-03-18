@@ -229,7 +229,7 @@ function learnJavaScript() {
 
 現在，我們準備與您一起學習JavaScript，但是為了了解您學到了多少，請參加以下課程的測試 [移動應用](http://onelink.to/njhc95) 在我們學校就這個話題。
 
-![Sumerian school](/img/app.png)
+![Sumerian school](/img/app.jpg)
 
 ## 鏈接
 

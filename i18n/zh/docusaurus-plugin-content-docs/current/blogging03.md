@@ -45,7 +45,7 @@ sidebar_label: Парное программирование
 
 Подробнее о парном программирование можете прочитать [здесь](https://ru.wikipedia.org/wiki/Парное_программирование)
 
-![Sumerian school](/img/app.png)
+![Sumerian school](/img/app.jpg)
 
 ## Ссылки
 

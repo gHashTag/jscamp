@@ -19,7 +19,7 @@ CHANGING SPEEDS SPEEDS second lesson on learning programming language  «Scratch
 
 Our [mobile application](http://onelink.to/njhc95)
 
-![Sumerian school](/img/app.png)
+![Sumerian school](/img/app.jpg)
 
 ## Contributors ✨
 

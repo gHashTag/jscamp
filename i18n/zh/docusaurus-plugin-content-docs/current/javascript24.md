@@ -317,7 +317,7 @@ JavaScript 沒有這種語言，看起來像是最好的函數式編程語言！
 
 為了了解您學到了多少本課程，請對 [mobile application](http://onelink.to/njhc95) of our school on this topic.
 
-![Sumerian school](/img/app.png)
+![Sumerian school](/img/app.jpg)
 
 ## 鏈接
 

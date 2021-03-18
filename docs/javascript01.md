@@ -235,7 +235,7 @@ What is the symbol for the division operation?
 
 Now we are ready to study JavaScript with you, but in order to understand how much you learned this lesson take the test in [mobile application](http://onelink.to/njhc95) in our school on this topic.
 
-![Sumerian school](/img/app.png)
+![Sumerian school](/img/app.jpg)
 
 ## Links
 

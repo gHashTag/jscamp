@@ -51,7 +51,7 @@ $ yarn ci
 Afler deploy add this script to index.html in tag `head`
 
 ```javascript
-<meta property="og:image" content="https://www.jscamp.app/img/app.png">
+<meta property="og:image" content="https://www.jscamp.app/img/app.jpg">
 <!-- Facebook Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)

@@ -46,7 +46,7 @@ Remote (remote) pair programming, also known as virtual pair programming or dist
 
 You can read more about pair programming [here](https://ru.wikipedia.org/wiki/Парное_программирование)
 
-![Sumerian school](/img/app.png)
+![Sumerian school](/img/app.jpg)
 
 ## Links
 

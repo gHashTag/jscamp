@@ -179,7 +179,7 @@ A functional type has two parts: the argument types and the return type. The ret
 
 In order to understand how much you learned this lesson, take the test in the [mobile application](http://onelink.to/njhc95) in our school on this topic.
 
-![Sumerian school](/img/app.png)
+![Sumerian school](/img/app.jpg)
 
 ## Links:
 

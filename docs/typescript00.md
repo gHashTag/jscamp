@@ -95,7 +95,7 @@ In the event that you know in advance that the project has certain frameworks of
 
 Now we are ready to learn TypeScript with you, but in order to understand how much you learned this lesson, take the test in the [mobile application](http://onelink.to/njhc95) в нашей школы по этой теме.
 
-![Sumerian school](/img/app.png)
+![Sumerian school](/img/app.jpg)
 
 ## Links
 

@@ -624,7 +624,7 @@ To make objects, functions, classes or variables 🔔 available to the outside w
 
 In order to understand how much you learned this lesson, take the test on the [mobile application](http://onelink.to/njhc95) of our school on this topic.
 
-![Sumerian school](/img/app.png)
+![Sumerian school](/img/app.jpg)
 
 <!-- Экспортировать желаемые элементы одним оператором в конце модуля можно командой:
 
