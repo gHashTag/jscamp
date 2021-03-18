@@ -23,7 +23,7 @@ import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment'
 
 ## 計劃目的
 
-在React Native / Type Script / AWS Amplify堆棧中為移動開發課程做準備並在 [AWS Certification](https://aws.amazon.com/en/certification/), 在準備過程中，您將獲得廣泛的專業知識，資源和計劃。 我們將幫助您有效地驗證當今每項業務所需的雲和移動開發專業知識。
+在React Native / TypeScript / AWS Amplify堆棧中為移動開發課程做準備並在 [AWS Certification](https://aws.amazon.com/en/certification/), 在準備過程中，您將獲得廣泛的專業知識，資源和計劃。 我們將幫助您有效地驗證當今每項業務所需的雲和移動開發專業知識。
 
 ![AWS](https://entrackr.com/wp-content/uploads/2018/05/Amazon_smart_home_2.gif)
 

@@ -30,7 +30,7 @@ const features = [
     title: 'We give practice and employ the best',
     imageUrl: 'img/undraw_docusaurus_tree.svg',
     description:
-      'After completing our course and practice in the stack of Java Script, Type Script, React Native, AWS Amplify, in our startup, distinguished students will find employment in our company or partner companies.'
+      'After completing our course and practice in the stack of JavaScript, TypeScript, React Native, AWS Amplify, in our startup, distinguished students will find employment in our company or partner companies.'
   },
   {
     title: 'Opened knowledge, open it to another',

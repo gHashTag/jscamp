@@ -14,7 +14,7 @@ import YouTube from 'react-youtube'
 
 > [Cloud Programming Simplified: A Berkeley View on Serverless Computing](https://www2.eecs.berkeley.edu/Pubs/TechRpts/2019/EECS-2019-3.pdf), February 10, 2019
 
-From this forecast, the demand for serverless technologies is obvious, and therefore for resources teaching these technologies. Therefore, we organized a programming school where we teach serverless technologies AWS Amplify, as well as prepare for them by teaching [English using Emoji](https://www.jscamp.app/docs/blogging-01/), [JavaScript](https://www.jscamp.app/ru/docs/javascript01), [React Native](https://www.jscamp.app/ru/docs/start000) and [Type Script](https://www.jscamp.app/ru/docs/typescript00).
+From this forecast, the demand for serverless technologies is obvious, and therefore for resources teaching these technologies. Therefore, we organized a programming school where we teach serverless technologies AWS Amplify, as well as prepare for them by teaching [English using Emoji](https://www.jscamp.app/docs/blogging-01/), [JavaScript](https://www.jscamp.app/ru/docs/javascript01), [React Native](https://www.jscamp.app/ru/docs/start000) and [TypeScript](https://www.jscamp.app/ru/docs/typescript00).
 
 ![javaScript](https://media.giphy.com/media/ln7z2eWriiQAllfVcn/giphy.gif)
 
@@ -26,7 +26,7 @@ For this, we have created a mobile application [Sumerian School](http://onelink.
 
 ## Purpose of the program
 
-Prepare for the course on mobile development in the React Native / Type Script / AWS Amplify stack and for certification in [AWS Certification](https://aws.amazon.com/en/certification/), where in the process of preparation you will receive a wide range of expertise, resources and programs. We will help you effectively validate your cloud and mobile development expertise that every business needs today.
+Prepare for the course on mobile development in the React Native / TypeScript / AWS Amplify stack and for certification in [AWS Certification](https://aws.amazon.com/en/certification/), where in the process of preparation you will receive a wide range of expertise, resources and programs. We will help you effectively validate your cloud and mobile development expertise that every business needs today.
 
 ![AWS](https://entrackr.com/wp-content/uploads/2018/05/Amazon_smart_home_2.gif)
 
@@ -66,7 +66,7 @@ This course contains the minimum knowledge you need to create mobile application
 [AWS Amplify](https://aws.amazon.com/en/amplify/) – it is a set of tools and services that can be used together or separately by web and mobile developers to build scalable end-to-end applications on AWS. With Amplify, you can configure application backends and connect applications in minutes, deploy static web applications with a few clicks, and easily manage application content outside of the AWS console.
 Amplify supports popular web platforms like JavaScript, React, Angular, Vue, Next.js, and mobile platforms like Android, iOS, React Native, Ionic, Flutter (preview). Fast time to market with AWS Amplify.
 
-## Type Script
+## TypeScript
 
 JavaScript was originally created to make web pages live. Due to its ease of use, it gained popularity and began to be used on almost all platforms. JavaScript code is built on scripts, which are supposed to be small and fast. The developers didn't think that JavaScript would be used to write applications with a lot of code. In this connection, large applications written in JavaScript have problems. Here is some of them:
 
@@ -144,7 +144,7 @@ The author of the JavaScript course - [Server Serverlesskiy](https://twitter.com
 
 This is a completely different level of AWS Community Builder music video 🔥 😅
 
-This is a mobile development course on the React Native / Type Script / AWS Amplify Stack and for AWS Certification. Worth checking out!
+This is a mobile development course on the React Native / TypeScript / AWS Amplify Stack and for AWS Certification. Worth checking out!
 
 ## Learning process
 

@@ -50,12 +50,12 @@ module.exports = {
     metadatas: [
       {
         name: 'description',
-        content: 'JavaScript Camp - программа обучения JavaScript в стеке React Native, Type Script, AWS Amplify'
+        content: 'JavaScript Camp - программа обучения JavaScript в стеке React Native, TypeScript, AWS Amplify'
       },
       { property: 'og:title', content: 'JavaScript Camp' },
       {
         property: 'og:description',
-        content: 'JavaScript Camp - программа обучения JavaScript в стеке React Native, Type Script, AWS Amplify'
+        content: 'JavaScript Camp - программа обучения JavaScript в стеке React Native, TypeScript, AWS Amplify'
       },
       { property: 'og:url', content: 'https://jscamp.app/' },
       {
