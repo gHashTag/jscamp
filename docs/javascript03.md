@@ -10,7 +10,7 @@ import YouTube from 'react-youtube'
 
 ## Variables
 
-Variables 🔔 (Variables, abbreviated as `var`) are a container, for values such as numbers used in addition ➕, or a string that we could use as part of a sentence.
+Variables 🔔 (Variables, abbreviated as `var`) are a container, for values such as numbers used in addition ➕, or a string that we could use as part of a sentence, and other data types that we'll get to know later.
 
 ![Container](https://media.giphy.com/media/0T0FUiZl51VPCLsqLR/giphy.gif)
 
