@@ -32,7 +32,7 @@ import YouTube from 'react-youtube'
 
 ## JavaScript Camp - JS Camp
 
-На создание нашего [онлайн курса по JavaScript](https://discord.gg/6GDAfXn), на популярных языках мира, нас вдохновила книга [Код для подростков: JavaScript - Jeremy Moritz](https://www.amazon.com/Code-Teens-Beginners-Programming-Javascript-ebook/dp/B07FCTLVPC). Уникальность книги в том, что она адаптирована для изучения детьми своей простотой изложения, ее недостаток лишь в том, что количество изложенных в ней тем не достаточно для создания реальных проектов. Поэтому мы поставили перед собой задачу - Создать книгу "JavaScript for Kids" c подготовкой к изучению курса по мобильной разработке на библиотеке [React Native](https://reactnative.dev).
+На создание нашего [онлайн курса по JavaScript](https://www.jscamp.app/ru/docs/javascript01), на популярных языках мира, нас вдохновила книга [Код для подростков: JavaScript - Jeremy Moritz](https://www.amazon.com/Code-Teens-Beginners-Programming-Javascript-ebook/dp/B07FCTLVPC). Уникальность книги в том, что она адаптирована для изучения детьми своей простотой изложения, ее недостаток лишь в том, что количество изложенных в ней тем не достаточно для создания реальных проектов. Поэтому мы поставили перед собой задачу - Создать книгу "JavaScript for Kids" c подготовкой к изучению курса по мобильной разработке на библиотеке [React Native](https://reactnative.dev). Мы создали курс из 29 тем, который сейчас проходят даже школьники с 10-ти лет. Как вы считаете получилось ли у нас решить эту задачу? 
 
 ![JavaScript](https://media.giphy.com/media/dC3EHvqJ61hNReoxMV/giphy.gif)
 
