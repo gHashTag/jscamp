@@ -7,9 +7,9 @@
     "message": "Startup",
     "description": "The label for category Startup in sidebar someSidebar"
   },
-  "sidebar.someSidebar.category.Java Script": {
-    "message": "Java Script",
-    "description": "The label for category Java Script in sidebar someSidebar"
+  "sidebar.someSidebar.category.JavaScript": {
+    "message": "JavaScript",
+    "description": "The label for category JavaScript in sidebar someSidebar"
   },
   "sidebar.someSidebar.category.React Native": {
     "message": "React Native",

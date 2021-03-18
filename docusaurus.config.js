@@ -8,7 +8,7 @@
  */
 
 module.exports = {
-  title: 'Java Script Camp',
+  title: 'JavaScript Camp',
   tagline: 'программа обучения JavaScript',
   url: 'https://jscamp.app',
   baseUrl: '/',
@@ -50,12 +50,12 @@ module.exports = {
     metadatas: [
       {
         name: 'description',
-        content: 'Java Script Camp - программа обучения JavaScript в стеке React Native, Type Script, AWS Amplify'
+        content: 'JavaScript Camp - программа обучения JavaScript в стеке React Native, Type Script, AWS Amplify'
       },
-      { property: 'og:title', content: 'Java Script Camp' },
+      { property: 'og:title', content: 'JavaScript Camp' },
       {
         property: 'og:description',
-        content: 'Java Script Camp - программа обучения JavaScript в стеке React Native, Type Script, AWS Amplify'
+        content: 'JavaScript Camp - программа обучения JavaScript в стеке React Native, Type Script, AWS Amplify'
       },
       { property: 'og:url', content: 'https://jscamp.app/' },
       {
@@ -85,7 +85,7 @@ module.exports = {
     navbar: {
       title: '',
       logo: {
-        alt: 'Java Script Camp',
+        alt: 'JavaScript Camp',
         src: 'img/logo.png',
         srcDark: 'img/logo_dark.png'
       },

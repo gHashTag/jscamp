@@ -104,7 +104,7 @@ function learnJavaScript() {
 
 ![Reserved](https://media.giphy.com/media/3o6Mb3eci7bVDKBR2o/giphy.gif)
 
-我們不能用這些詞來調用變量,，因為它們是 Java Script 語言保留的。
+我們不能用這些詞來調用變量,，因為它們是 JavaScript 語言保留的。
 `break`, `case`, `catch`, `class`, `const`, `continue`, `debugger`, `default`, `delete`, `do`, `else`, `export`, `extends`, `finally`, `for`, `function`, `if`, `import`, `in`, `instanceof`, `new`, `return`, `super`, `switch`, `this`, `throw`, `try`, `typeof`, `var`, `void`, `while`, `with`, `yield`
 
 ## 打字鬆散

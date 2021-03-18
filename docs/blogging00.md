@@ -10,7 +10,7 @@ import YouTube from 'react-youtube';
 
 ## Introduction
 
-In order to get into the Java Script class, you need to collect the Rubik's cube. For those who still do not know how to solve the cube, we teach according to the author's method #yogaCubicaRubica
+In order to get into the JavaScript class, you need to collect the Rubik's cube. For those who still do not know how to solve the cube, we teach according to the author's method #yogaCubicaRubica
 
 ## yogaCubicRubica
 

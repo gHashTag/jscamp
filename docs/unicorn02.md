@@ -387,7 +387,7 @@ const cardContacts = {
 }
 const cardInfo = {
   position: 'React-Native Developer, Front-end Developer',
-  language: 'Java Script, Python',
+  language: 'JavaScript, Python',
   stack: 'React-Native, Apollo, GraphQL, AWS Amplify',
   experience: '5 years',
   salary: 5000

@@ -8,7 +8,7 @@ import YouTube from 'react-youtube'
 
 [![@serverSerrverlesskiy](/img/javascript/headers/01.jpg)](https://www.instagram.com/serverserverlessky/)
 
-## Java Script
+## JavaScript
 
 🏗️以前，要創建數字化創業公司，需要來自以下方面的團隊：
 
@@ -24,9 +24,9 @@ import YouTube from 'react-youtube'
 
 ![你好世界](https://media.giphy.com/media/jTICSwJwDz3wa1PQmk/giphy.gif)
 
-如今，借助Java Script，可以使用我們學校教授的技術堆棧，用一名Java Script開發人員替換 5️⃣ 開發人員。
+如今，借助JavaScript，可以使用我們學校教授的技術堆棧，用一名JavaScript開發人員替換 5️⃣ 開發人員。
 
-Java Script是一種編程語言，可以在網頁等上實現複雜的行為。 在Java Script中，您可以編寫站點 ℹ️，服務器，移動 📱 和桌面 💻 應用程序，以及用於增強現實和虛擬現實的應用程序。
+JavaScript是一種編程語言，可以在網頁等上實現複雜的行為。 在JavaScript中，您可以編寫站點 ℹ️，服務器，移動 📱 和桌面 💻 應用程序，以及用於增強現實和虛擬現實的應用程序。
 
 JavaScript是歐洲開發人員中最流行的編程語言之一。 該數據由以下作者獲得 [研究](https://www.oreilly.com/programming/free/files/2016-european-software-development-salary-survey.pdf) 來自O'Reilly公司的調查結果來自27個國家/地區的1300多名程序員。
 
@@ -227,7 +227,7 @@ function learnJavaScript() {
 9. 用於在代碼編輯器中在線顯示值的插件的名稱是什麼？
 10. 什麼是Node.js？ -->
 
-現在，我們準備與您一起學習Java Script，但是為了了解您學到了多少，請參加以下課程的測試 [移動應用](http://onelink.to/njhc95) 在我們學校就這個話題。
+現在，我們準備與您一起學習JavaScript，但是為了了解您學到了多少，請參加以下課程的測試 [移動應用](http://onelink.to/njhc95) 在我們學校就這個話題。
 
 ![Sumerian school](/img/app.png)
 

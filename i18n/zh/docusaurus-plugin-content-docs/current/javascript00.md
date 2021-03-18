@@ -1,7 +1,7 @@
 ---
 id: javascript00
-title: Java Script Camp
-sidebar_label: Java Script Camp
+title: JavaScript Camp
+sidebar_label: JavaScript Camp
 ---
 
 import YouTube from 'react-youtube'
@@ -11,9 +11,9 @@ import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment'
 
 ## 在線偵察營
 
-我們的學校改用了在線培訓，並且從Java Script Camp計劃開始，該計劃甚至可以立即通過手機完成。
+我們的學校改用了在線培訓，並且從JavaScript Camp計劃開始，該計劃甚至可以立即通過手機完成。
 
-在我們的學校獲得Java Script徽章。
+在我們的學校獲得JavaScript徽章。
 
 ![Camp](https://media.giphy.com/media/MOQG4QYC2MRSU/giphy.gif)
 

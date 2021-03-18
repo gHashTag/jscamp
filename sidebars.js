@@ -1,7 +1,7 @@
 /* eslint-disable */
 module.exports = {
   someSidebar: {
-    ['Java Script']: [
+    ['JavaScript']: [
       'javascript00',
       'javascript01',
       'javascript02',

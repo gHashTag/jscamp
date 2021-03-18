@@ -1,7 +1,7 @@
 ---
 id: javascript00
-title: Java Script Camp
-sidebar_label: Java Script Camp
+title: JavaScript Camp
+sidebar_label: JavaScript Camp
 ---
 
 import YouTube from 'react-youtube'
@@ -108,9 +108,9 @@ We also launched a video series in Russian with the participation of children. I
 
 We begin offline classes with the assembly of the Rubik's cube and those who collected the Rubik's cube enter the first grade.
 
-💛 First class - Java Script, teacher Fiona Miller.
+💛 First class - JavaScript, teacher Fiona Miller.
 
-![Java Script](/img/teachers/FionaMiller.jpg)
+![JavaScript](/img/teachers/FionaMiller.jpg)
 
 💚 Second class - React Native, development and layout of the system of atomic components in mobile applications iOS, Android, as well as AR / VR systems in augmented and virtual reality with a library from Facebook. Teacher Grace Willie.
 
@@ -134,7 +134,7 @@ We begin offline classes with the assembly of the Rubik's cube and those who col
 
 ## Course author
 
-The author of the Java Script course - [Server Serverlesskiy](https://twitter.com/koshasuperstar), is the creator of the first [React Native](https://react-native-village.github.io/docs/start000) training course in the Russian Internet, as well as the first Russian blogger-programmer in the [AWS Comunity Builders](https://aws.amazon.com/ru/developer/community/community-builders/) program from Amazon.
+The author of the JavaScript course - [Server Serverlesskiy](https://twitter.com/koshasuperstar), is the creator of the first [React Native](https://react-native-village.github.io/docs/start000) training course in the Russian Internet, as well as the first Russian blogger-programmer in the [AWS Comunity Builders](https://aws.amazon.com/ru/developer/community/community-builders/) program from Amazon.
 
 ## Reviews
 

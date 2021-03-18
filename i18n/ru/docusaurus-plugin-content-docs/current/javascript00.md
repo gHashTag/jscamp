@@ -1,7 +1,7 @@
 ---
 id: javascript00
-title: Java Script Camp
-sidebar_label: Java Script Camp
+title: JavaScript Camp
+sidebar_label: JavaScript Camp
 ---
 
 import YouTube from 'react-youtube'
@@ -108,9 +108,9 @@ TypeScript - язык программирования, представленн
 
 Офлайн занятия мы начинаем со сборки кубика Рубика и те кто собирал кубик Рубика поступает в первый класс.
 
-💛 Первый класс - Java Script, учитель Fiona Miller.
+💛 Первый класс - JavaScript, учитель Fiona Miller.
 
-![Java Script](/img/teachers/FionaMiller.jpg)
+![JavaScript](/img/teachers/FionaMiller.jpg)
 
 💚 Второй класс - React Native, разработка и верстка системы атомарных компонентов в мобильных приложениях iOS, Android, а также в системах AR/VR дополненной и виртуальной реальностью с библиотекой от Facebook. Учитель Grace Willie.
 
@@ -170,7 +170,7 @@ TypeScript - язык программирования, представленн
 
 ## Автор курса
 
-Автор курса по Java Script - [Server Serverlesskiy](https://twitter.com/koshasuperstar), является создателем первого в рунете учебного курса по [React Native](https://react-native-village.github.io/docs/start000), а также первый русский блогер-программист в программе [AWS Comunity Builders](https://aws.amazon.com/ru/developer/community/community-builders/) от Amazon.
+Автор курса по JavaScript - [Server Serverlesskiy](https://twitter.com/koshasuperstar), является создателем первого в рунете учебного курса по [React Native](https://react-native-village.github.io/docs/start000), а также первый русский блогер-программист в программе [AWS Comunity Builders](https://aws.amazon.com/ru/developer/community/community-builders/) от Amazon.
 
 ## Отзывы
 

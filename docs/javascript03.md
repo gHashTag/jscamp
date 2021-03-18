@@ -105,7 +105,7 @@ You can name the variable 🔔 whatever you like, but there are limitations. Gen
 
 ![Reserved](https://media.giphy.com/media/3o6Mb3eci7bVDKBR2o/giphy.gif)
 
-We cannot call variables 🔔 with these words, since they are reserved in the Java Script language.
+We cannot call variables 🔔 with these words, since they are reserved in the JavaScript language.
 `break`, `case`, `catch`, `class`, `const`, `continue`, `debugger`, `default`, `delete`, `do`, `else`, `export`, `extends`, `finally`, `for`, `function`, `if`, `import`, `in`, `instanceof`, `new`, `return`, `super`, `switch`, `this`, `throw`, `try`, `typeof`, `var`, `void`, `while`, `with`, `yield`
 
 ## Loose typing

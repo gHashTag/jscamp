@@ -76,7 +76,7 @@ function learnJavaScript() {
 }
 ```
 
-Multiline strings can also be created with single and double quotation marks, using the so-called "line feed" character, which is written as `\ n`. All special characters, in Java Script, begin with a backslash `\` True, we can check this in the browser console (`LIVE EDITOR` does not display correctly).
+Multiline strings can also be created with single and double quotation marks, using the so-called "line feed" character, which is written as `\ n`. All special characters, in JavaScript, begin with a backslash `\` True, we can check this in the browser console (`LIVE EDITOR` does not display correctly).
 
 ```jsx
 let guestList = 'Guests:\n * John\n * Pete\n * Mary'
