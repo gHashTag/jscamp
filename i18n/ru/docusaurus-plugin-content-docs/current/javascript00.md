@@ -147,7 +147,7 @@ TypeScript - язык программирования, представленн
 
 ## Процесс обучения
 
-Обучение проходит в приложениях: [YouTube](https://www.youtube.com/c/JavaScriptCampRU), [Discord](https://discord.gg/6GDAfXn), [Twitch](https://www.twitch.tv/javascriptcamp), [TikTok](https://vm.tiktok.com/ZSvrWxFB), [Instagram](https://www.instagram.com/javascriptcamp), [Telegram](https://t.me/javascriptcamping), [Vkontakte](https://vk.com/javascriptcamp), [Одноклассники](https://ok.ru/group/58601728245977) и [Facebook](https://www.facebook.com/javascriptcamp).
+Обучение проходит в приложениях: [YouTube](https://www.youtube.com/c/JavaScriptCampRU), [Discord](https://discord.gg/6GDAfXn), [Twitch](https://www.twitch.tv/javascriptcamp), [TikTok](https://vm.tiktok.com/ZSvrWxFB), [Instagram](https://www.instagram.com/javascriptcamp), [Telegram](https://t.me/javascriptcamping), [Vkontakte](https://vk.com/javascriptcamp), [Одноклассники](https://ok.ru/group/58601728245977), [Linkedin](https://www.linkedin.com/in/raoffonom) и [Facebook](https://www.facebook.com/javascriptcamp).
 
 ![How much](https://media.giphy.com/media/VHnwACS3XAN7SZyx6O/giphy.gif)
 
