@@ -26,7 +26,7 @@ Previously, to create a 🏗️ digital startup, a team was needed from:
 
 Today, thanks to JavaScript, it is possible to replace 5️⃣ developers with one JavaScript developer using the technology stack that we teach in our school.
 
-JavaScript is a programming language ёт that makes it possible to implement complex behaviors on web pages and more. In JavaScript, you can write sites ℹ️, servers, mobile 📱 and desktop 💻 applications, as well as applications for augmented and virtual reality.
+JavaScript is a programming language that makes it possible to implement complex behaviors on web pages and more. In JavaScript, you can write sites ℹ️, servers, mobile 📱 and desktop 💻 applications, as well as applications for augmented and virtual reality.
 
 JavaScript is the first of the most popular programming languages ​​among European developers. This data was obtained by the authors of [research](https://www.oreilly.com/programming/free/files/2016-european-software-development-salary-survey.pdf) from the O'Reilly company as a result of a survey of more than 1300 programmers from 27 countries.
 
@@ -81,7 +81,7 @@ If the combination `CTRL + SHIFT + J` or `COMMAND + OPTION + J` for some reason 
 
 ## Hello world program
 
-"Hello, world!" - (Hello world!) A program that outputs the phrase "Hello, world!" To the screen or other device 🌎
+"Hello, world!" - A program that outputs the phrase "Hello, world!" To the screen or other device 🌎
 
 This is usually the first example of a program in a programming textbook, and for many students, this is the first experience in learning a new language👅.
 
@@ -98,13 +98,13 @@ A blinking cursor🖱️ appears on the line, indicating that you can start typi
 ![Hello world!](/img/javascript/03.png)
 ![Hello World](https://media.giphy.com/media/xiOgHgY2ceKhm46cAj/giphy.gif)
 
-Press ENTER. The console will return your text on the next line 📜: "Hello World!" or "Hello world!" in English. Through the browser console, we communicate directly with the JavaScript engine - this is such a program, or, in other words, an interpreter that executes code written in JavaScript.
+Press ENTER. The console will return your text on the next line 📜: "Hello World!". Through the browser console, we communicate directly with the JavaScript engine - this is such a program, or, in other words, an interpreter that executes code written in JavaScript.
 
 ![Hello world!](/img/javascript/04.png)
 
 Now you can be proud that you wrote and executed the first JavaScript code with your own hands!
 
-Then press the key\_ UP_ARROW ⬆️ (up arrow) and you will see your text 📜 "Hello World!" or "Hello world!" in English. Next, move the cursor🖱️ to the beginning of the line and type the following text instead 📜:
+Then press the key\_ UP_ARROW ⬆️ (up arrow) and you will see your text 📜 "Hello World!". Next, move the cursor🖱️ to the beginning of the line and type the following text instead 📜:
 
 ```javascript
 var hello = 'Hello world!'
@@ -187,9 +187,9 @@ Write to [Discord](https://discord.gg/6GDAfXn) chat.
 
 What URL (address) do I need to enter into Chrome's address bar to open a completely blank browser tab?
 
-1.blank
-2.about.blank
-3.about: blank
+1. blank
+2. about.blank
+3. about: blank
 
 What's the keyboard shortcut to open the console in Chrome?
 
@@ -199,39 +199,27 @@ What's the keyboard shortcut to open the console in Chrome?
 
 What is the symbol for the addition operation?
 
-1.`+ /`
-
-2.`+ \`
-
-3.`+`
+1. `+ /`
+2. `+ \`
+3. `+`
 
 What is the symbol for the subtraction operation?
 
-1.`/`
-
-2.`- \`
-
-3.` -`
+1. `/`
+2. `- \`
+3. ` -`
 
 What is the symbol for the multiplication operation?
 
-1.`×`
-
-2.`* /`
-
-3.`*`
+1. `×`
+2. `* /`
+3. `*`
 
 What is the symbol for the division operation?
 
-1.`/`
-
-2.`\`
-
-3.`% `
-
-<!-- 8. Как называется редактор кода, который мы рекомендуем для прохождения нешего курса?
-9. Как называется плагин для вывода занчений онлайн в редакторе кода?
-10. Что такое Node.js? -->
+1. `/`
+2. `\`
+3. `% `
 
 Now we are ready to study JavaScript with you, but in order to understand how much you learned this lesson take the test in [mobile application](http://onelink.to/njhc95) in our school on this topic.
 
