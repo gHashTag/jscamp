@@ -1,115 +1,219 @@
 ---
 id: typescript10
-title: Модули
-sidebar_label: Модули
+title: ESLint & Prettier & TS config
+sidebar_label: ESLint & Prettier & TS config
 ---
 
-Концепция модулей впервые появилась в стандарте _ECMAScript 2015_. Модули позволяют разбить сложное приложение на отдельные файлы, в каждом из которых содержится строго определенный функционал, а после, с помощью импортирования, собрать их воедино. Переменные, классы, функции, объявленные в модуле, не доступны извне этого модуля, если они не экспортируются с помощью команды `export`. А для того, чтобы использовать экспортированные части в другом модуле, нужно их импортировать, воспользовавшись командой `import`.
+import YouTube from 'react-youtube'
 
-## Экспорт
+Плагин ES Lint — [https://eslint.org](https://eslint.org) позволяет писать ваш код более чистым, подсказывает, где вы совершаете ошибки и вообще это хорошая практика для работе в команде, чтобы у всех всё было в одном стиле — ES Lint будет подсказывать какие переменные вы не используете, где и какие компоненты не задействуйте, показывает синтаксические ошибки и где не правильно ставите пробелы, где ставите точки с запятыми и т.д. То есть это уже стандарт дефакто, который нужно использовать в написании своего кода и этот плагин вас избавит от многих глупых ошибок, которые вы допускаете при разработке своего приложения.
 
-Любое объявление можно экспортировать с помощью ключевого слова `export`.
+Prettier - Инструмент форматирования кода c поддержкой множества языков, минимумом конфигурации и максимумом навязанных правил.
 
-[Playground Link](https://www.typescriptlang.org/play?#code/PTAEloQQuEEQRBH4QQ+EEAIgghEFLQrCCPYHhB2F4QPeQThAAoAGwFMAXUAMwCcBXASyoC5QBnK+5gOwDmoALygA5ACMAhnxlSxAGhKgVoACYUAbswDGFDt16CR4zgFsp9KgAcAFgHs+FRctUT79sh3eeKMkzyMFCQUAB7W9lagAN50TKwK6lq6FIk+ZKBSnKDMnABCHhkAviQkIBAwCCigkPB40MiADCB4yIDSICHhkTQ6jtygFCYATAB0AOwAjAAcg5NTMwAsAKwAnAAMS4MAzIubAGyrM6PzE9uDu7uDi6ul5VBwSKiAIiCAwiB4kIBiIIAcIJ8dEVG0jD4OiozEcXEYZgAFKEFABPDh8CESCj0ACUCKRKJirhU9GojHofFAoVAAGpQLCSCUymA7lVUJ8WphHugiNBGr8ujk+FQUbQpHpQAAxeI0aI40CyMz6Lg8fgCJSqLgAdwo1CcnE4GLMyPoircjgoWtA6T8fCpN1plQeNUA3CCNaDszlRHRkLLZACCfGYFgy4qVZnsmgokLUuSoMj0AEk+ABZago42InVY0SrVHYpVKnp8Ti+YZkewCSEAAy9PqkGUDwbUoAAJNEw9xIxQY-HefROEUzMMS6iANwSkrU27W6qAJhBoOhAMwg8FA0EQjUA7CDPZ1iuIsKiJVLgsyJEWbxLl32gIpAA)
+<YouTube videoId='noQ0JGVC6SA' />
+
+![Step01](/img/steps/01.png)
+
+## Устанавливаем зависимости
+
+```bash
+ yarn add eslint eslint-config-airbnb babel-preset-airbnb eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react eslint-watch babel-core babel-eslint babel-preset-react-native prettier prettier-eslint eslint-plugin-prettier eslint-config-prettier eslint-plugin-react eslint-plugin-react-native eslint-plugin-react-hooks --dev
+```
+
+![Step02](/img/steps/02.png)
+
+## Правила Eslint
+
+Добавляем правила в .eslintrc.js
 
 ```jsx
-// Экспорт переменной
-let fruit: string = 'banana',
-  device: string = 'smartphone',
-  bool: boolean = true
-export { fruit, device, bool as isBool }
-
-// Экспорт константы
-export const e = 2.7182818284590452353602874713526625
-
-// Экспорт функции
-export function sum(x, y: number): number {
-  return x + y
-}
-
-// Экспорт интерфейса
-export interface Fruit {
-  name: string;
-  sweetness: number;
-  bones: boolean;
-}
-
-// Экспорт класса
-export class Animal {
-  move(distanceInMeters: number = 0) {
-    console.log(`Animal moved ${distanceInMeters}m.`)
+module.exports = {
+  root: true,
+  parser: 'babel-eslint',
+  extends: ['airbnb', 'prettier'],
+  plugins: ['react', 'react-native', 'jsx-a11y', 'import', 'react-hooks'],
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true
+    }
+  },
+  env: {
+    'react-native/react-native': true
+  },
+  rules: {
+    'no-param-reassign': 0,
+    'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': 'warn',
+    'react/jsx-filename-extension': ['off'],
+    'react/jsx-one-expression-per-line': 0,
+    'linebreak-style': ['off'],
+    'implicit-arrow-linebreak': 0,
+    'no-undef': ['error'],
+    'react/sort-comp': ['off'],
+    'react/prefer-stateless-function': ['off'],
+    'react/destructuring-assignment': 1,
+    'function-paren-newline': 0,
+    semi: ['error', 'never'],
+    'spaced-comment': 0,
+    'comma-dangle': ['error', 'never'],
+    'react/prop-types': 0,
+    'no-extra-boolean-cast': 0,
+    'quote-props': 0,
+    'object-curly-spacing': ['error', 'always'],
+    camelcase: 0,
+    'no-nested-ternary': 0,
+    'react/jsx-wrap-multilines': 0,
+    'object-curly-newline': 0,
+    'operator-linebreak': 0,
+    'no-unused-expressions': 0,
+    'global-require': 0,
+    'max-len': 0,
+    'import/no-cycle': 0,
+    'no-underscore-dangle': 0,
+    'no-return-assign': 0,
+    'import/prefer-default-export': 0,
+    'jsx-quotes': ['error', 'prefer-double'],
+    'no-console': 'error',
+    'arrow-parens': 0,
+    'eol-last': 0,
+    'react-native/no-unused-styles': 0,
+    'react-native/split-platform-components': 0,
+    'react-native/no-inline-styles': 0,
+    'react-native/no-color-literals': 0,
+    'react-native/no-raw-text': 0,
+    'consistent-return': 0
+  },
+  settings: {
+    'import/resolver': {
+      node: {
+        extensions: ['.js', '.ios.js', '.android.js']
+      }
+    }
   }
 }
-
-// Экспорт всего сразу
-export { fruit, e, sum, Fruit, Animal }
 ```
 
-## Экспорт по умолчанию
+![Step03](/img/steps/03.png)
 
-С помощью ключевого слова `default` можно делать экспорт по умолчанию.
+## Правила Prettier
 
-[Playground Link](https://www.typescriptlang.org/play?#code/KYDwDg9gTgLgBAE2AMwIYFcA28DGnUDOBcAqgcFHAN4BQc9cOEAdgTFOjjNABRjoAjTAEsccZqgC2wAJTUAvjXlA)
+Добавляем правила в .prettierrc.js
 
 ```jsx
-export default class User {
-    constructor(public name) {}
+module.exports = {
+  singleQuote: true,
+  printWidth: 120,
+  tabWidth: 2,
+  trailingComma: 'none',
+  bracketSpacing: true,
+  semi: false,
+  useTabs: false,
+  jsxBracketSameLine: false,
+  arrowParens: 'avoid'
 }
 ```
 
-## Импорт
+![Step04](/img/steps/04.png)
 
-Подключить экспортируемую функциональность модуля можно с помощью ключевого слова `import`.
+## Редактируем package.json
 
-[Playground Link](https://www.typescriptlang.org/play?#code/PTAEgwQQeEEfhBD4QQBEEEIgpr0BwglCsIPAUASwFsAHAewCcAXUAb1AEEAaUAIVAF9QAzMkg0AcgB0wAM4BjMniIUR-HDhAQYCZIBYQQNwggeRBQgWRBAXCCBBEDhJADCApYoQMIgkWOsDiICcC8IGkByIPmLkqAVREBTMlw8fELAAK5+ZLLyilDGyAagqvCWgMwgGKAYmI6YkO6klDT0oACGIiVMrBzcvALC4pLSUQpgsSqggEwgBpiAoiCgNqqW6piAnCB5nqAAVCVl9VIygTUhs41yADa+VMWgALygyzKCdEA)
+Куда добавляем скрипты:
 
-```jsx
-// Импорт пример
-import { A, B } from './scripts'
-
-// Импорт для экспорта по умолчанию
-import User from './users'
-
-// Импорт с другим именем
-import { A as a, B } from './scripts'
-
-// Импорт всех модулей
-import * as scripts from './scripts'
-let a = scripts.A
-```
-
-## Реэкспорт
-
-В модуле можно выполнить реэкспорт функционала какого-то другого модуля при помощи конструкции `export .. from`. При этом локально импорт не производится и переменная не создается.
-
-[Playground Link](https://www.typescriptlang.org/play?#code/KYDwDg9gTgLgBAbzgITgQwM5wEZwL5wBmUEAtnAOQB0A9BgMZQCWYMGFA3EA)
+- Симулятор. Для меня это iPhone SE так как его размер экрана минимальное требование по верстке(iPhone 3,4 уже все)
+- Линтер, который будет запрещать вам пушить до исправления всех ошибок в коде
+- Установка Pods
 
 ```jsx
-export { B as b } from './scripts'
+"scripts": {
+   "ios": "react-native run-ios --simulator='iPhone SE'",
+   "android": "react-native run-android",
+   "lint": "esw src/**",
+   "lint-watch": "esw -w --changed src/**",
+    "postinstall":"cd ./ios && pod install && cd .."
+ },
+"precommit": "lint",
 ```
 
-## Вопросы
+![Step05](/img/steps/05.png)
 
+## Переносим App.js
 
+Создаем папку `src` и переносим туда файл App.js, переименовывая его `src/index.js`
 
-Теперь мы готовы с вами изучать _TypeScript_, но для того чтобы понять на сколько вы усвоили этот урок пройдите тест в [мобильном приложении](http://onelink.to/njhc95) в нашей школы по этой теме.
+![Step06](/img/steps/06.png)
 
-![Sumerian school](/img/app.jpg)
+## Редактируем tsconfig.json
 
-## Ссылки
+Редактируем конфигурацию работы typescript.
 
-1. [TypeScriptLang](https://www.typescriptlang.org/docs/handbook/modules.html)
-2. [Модули](http://typescript-lang.ru/docs/Modules.html)
+```jsx
+{
+  "compilerOptions": {
+    /* Basic Options */
+    "target": "esnext" /* Specify ECMAScript target version: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017','ES2018' or 'ESNEXT'. */,
+    "module": "commonjs" /* Specify module code generation: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', or 'ESNext'. */,
+    "lib": ["es6"] /* Specify library files to be included in the compilation. */,
+    "allowJs": true /* Allow javascript files to be compiled. */,
+    // "checkJs": true,                       /* Report errors in .js files. */
+    "jsx": "react-native" /* Specify JSX code generation: 'preserve', 'react-native', or 'react'. */,
+    // "declaration": true,                   /* Generates corresponding '.d.ts' file. */
+    // "sourceMap": true,                     /* Generates corresponding '.map' file. */
+    // "outFile": "./",                       /* Concatenate and emit output to single file. */
+    // "outDir": "./",                        /* Redirect output structure to the directory. */
+    // "rootDir": "./",                       /* Specify the root directory of input files. Use to control the output directory structure with --outDir. */
+    // "removeComments": true,                /* Do not emit comments to output. */
+    "noEmit": true /* Do not emit outputs. */,
+    // "incremental": true,                   /* Enable incremental compilation */
+    // "importHelpers": true,                 /* Import emit helpers from 'tslib'. */
+    // "downlevelIteration": true,            /* Provide full support for iterables in 'for-of', spread, and destructuring when targeting 'ES5' or 'ES3'. */
+    "isolatedModules": true /* Transpile each file as a separate module (similar to 'ts.transpileModule'). */,
 
-## Contributors ✨
+    /* Strict Type-Checking Options */
+    "strict": true /* Enable all strict type-checking options. */,
+    // "noImplicitAny": true,                 /* Raise error on expressions and declarations with an implied 'any' type. */
+    // "strictNullChecks": true,              /* Enable strict null checks. */
+    // "strictFunctionTypes": true,           /* Enable strict checking of function types. */
+    // "strictPropertyInitialization": true,  /* Enable strict checking of property initialization in classes. */
+    // "noImplicitThis": true,                /* Raise error on 'this' expressions with an implied 'any' type. */
+    // "alwaysStrict": true,                  /* Parse in strict mode and emit "use strict" for each source file. */
+    "resolveJsonModule": true,
+    /* Additional Checks */
+    // "noUnusedLocals": true,                /* Report errors on unused locals. */
+    // "noUnusedParameters": true,            /* Report errors on unused parameters. */
+    // "noImplicitReturns": true,             /* Report error when not all code paths in function return a value. */
+    // "noFallthroughCasesInSwitch": true,    /* Report errors for fallthrough cases in switch statement. */
 
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+    /* Module Resolution Options */
+    "moduleResolution": "node" /* Specify module resolution strategy: 'node' (Node.js) or 'classic' (TypeScript pre-1.6). */,
+    "baseUrl": "./" /* Base directory to resolve non-absolute module names. */,
+    // "paths": {},                           /* A series of entries which re-map imports to lookup locations relative to the 'baseUrl'. */
+    // "rootDirs": [],                        /* List of root folders whose combined content represents the structure of the project at runtime. */
+    // "typeRoots": [],                       /* List of folders to include type definitions from. */
+    // "types": [],                           /* Type declaration files to be included in compilation. */
+    "allowSyntheticDefaultImports": true /* Allow default imports from modules with no default export. This does not affect code emit, just typechecking. */,
+    "esModuleInterop": true /* Enables emit interoperability between CommonJS and ES Modules via creation of namespace objects for all imports. Implies 'allowSyntheticDefaultImports'. */
+    // "preserveSymlinks": true,              /* Do not resolve the real path of symlinks. */
 
-<table>
-  <tr> 
-    <td align="center"><a href="https://github.com/IIo3iTiv"><img src="https://avatars1.githubusercontent.com/u/72025062?v=4?s=200" width="200px;" alt=""/><br /><sub><b>IIo3iTiv</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/commits?author=IIo3iTiv" title="Documentation">📖</a></td>
-    <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /><a href="#financial-gHashTag" title="Financial">💵</a></td>
-  </tr>
-</table>
+    /* Source Map Options */
+    // "sourceRoot": "./",                    /* Specify the location where debugger should locate TypeScript files instead of source locations. */
+    // "mapRoot": "./",                       /* Specify the location where debugger should locate map files instead of generated locations. */
+    // "inlineSourceMap": true,               /* Emit a single file with source maps instead of having a separate file. */
+    // "inlineSources": true,                 /* Emit the source alongside the sourcemaps within a single file; requires '--inlineSourceMap' or '--sourceMap' to be set. */
+
+    /* Experimental Options */
+    // "experimentalDecorators": true,        /* Enables experimental support for ES7 decorators. */
+    // "emitDecoratorMetadata": true,         /* Enables experimental support for emitting type metadata for decorators. */
+  },
+  "exclude": ["node_modules", "babel.config.js", "metro.config.js", "jest.config.js"]
+}
+```
+
+![Step07](/img/steps/07.png)
+
+## Запускаем приложение
+
+`yarn start-ios` or `yarn start-android`
+
+## Done ✅
 
 [![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)

@@ -12,16 +12,15 @@ import YouTube from 'react-youtube'
 
 Вот так в конечном итоге должно выглядеть:
 
-```jsx
-import { Text, AppRegistry } from 'react-native'
+```SnackPlayer name=index.js
+import * as React from 'react'
+import { Text } from 'react-native'
 
-const App = props => (
-  <View>
-    <Text>App1</Text>
-  </View>
+const App = () => (
+  <Text>Hello world</Text>
 )
 
-AppRegistry.registerComponent('Appname', () => App)
+export default App
 ```
 
 [![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
