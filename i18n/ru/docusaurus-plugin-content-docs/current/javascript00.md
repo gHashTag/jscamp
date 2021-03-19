@@ -82,7 +82,7 @@ TypeScript - язык программирования, представленн
 
 ## Музыкальный альбом
 
-Курс по JS состоит из статей, видео тутариалов, подкастов и музыкальных треков. Мы создали первый в истории музыкальный альбом по языку программирования JavaScript. Который доступен сейчас в [SoundCloud](https://soundcloud.com/serverlesskiy/sets/javascript) на русском языке. Приглашаю исполнить его и на твоем родном языке.
+Курс по JS состоит из статей, видео тутариалов, подкастов и музыкальных треков. Мы создали первый в истории музыкальный альбом bp 31 трека по языку программирования JavaScript, который доступен на всех музыкальных площадках: [iTunes](https://music.apple.com/ru/playlist/js-ru/pl.u-2dmLuaMVMW6), [Spotify](https://open.spotify.com/album/7EERTMekG9NPv6BCHPOCAU?si=dXCVmbA2QlSD2IVEuWb3YA), [Yandex Music](https://music.yandex.ru/album/14321761), [Vk](https://vk.com/music/album/-2000606760_10606760_436eb2cad88220d169), [Ok](https://ok.ru/music/album/122915405411131), [SoundCloud](https://soundcloud.com/serverlesskiy/sets/javascript) на русском языке. Приглашаю исполнить его и на твоем, отличным от русского, родном языке.
 
 ![@serverSerrverlesskiy](/img/jscamp/music.jpg)
 
