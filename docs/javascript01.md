@@ -155,7 +155,7 @@ And any other mathematical operations ...
 
 ![Live editor](https://media.giphy.com/media/l1KVcrdl7rJpFnY2s/giphy.gif)
 
-The JavaScript code is executed by the JavaScript engine of the browser. Through the console, we access it directly. Further, in order not to write the entire training course in the browser and jump through windows from our site to the browser console and vice versa, we will write the code in the `Live Coding` mode right on our site. To do this, try to add the word Hello, the word World in the next window `LIVE EDITOR`. In `RESULT`, you should get` Hello World` 🌎.
+The JavaScript code is executed by the JavaScript engine of the browser. Through the console, we access it directly. Further, in order not to write the entire training course in the browser and jump through windows from our site to the browser console and vice versa, we will write the code in the `Live Coding` mode right on our site. To do this, try to add the word Hello in the next window `LIVE EDITOR`. In `RESULT`, you should get` Hello World` 🌎.
 
 ```jsx live
 function learnJavaScript() {
