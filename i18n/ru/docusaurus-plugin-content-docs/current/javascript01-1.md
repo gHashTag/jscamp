@@ -15,6 +15,8 @@ import YouTube from 'react-youtube'
 Мы используем вопросы, которые взяли из 29 тем [нашего курса](https://www.jscamp.app/docs/javascript01/) по основам JavaScript. Подробней [о нас](https://www.jscamp.app/ru/docs/javascript00/) можно почитать в прошлой публикации.
 В результате ответа на все вопросы тебя ждет оценка твоего уровня знаний.
 
+![javascript bot result](https://miro.medium.com/max/1400/1*KCe76zg2M56lT-234Xi1NA.png)
+
 ## Telegraph.js
 
 Наш бот реализован на фреймворке [Telegraph.js](https://telegraf.js.org/)

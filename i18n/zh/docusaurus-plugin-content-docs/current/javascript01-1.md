@@ -15,6 +15,8 @@ With the help of [this Telegram bot](https://t.me/javascriptcamp_bot) you can te
 We use questions from 29 topics [of our course](https://www.jscamp.app/docs/javascript01/) on JavaScript basics. More details [about us](https://www.jscamp.app/ru/docs/javascript00/) can be found in the previous publication.
 As a result of answering all the questions, an assessment of your level of knowledge awaits you.
 
+![javascript bot result](https://miro.medium.com/max/1400/1*KCe76zg2M56lT-234Xi1NA.png)
+
 ## Telegraph.js
 
 Our bot is implemented on the framework [Telegraph.js](https://telegraf.js.org/).
