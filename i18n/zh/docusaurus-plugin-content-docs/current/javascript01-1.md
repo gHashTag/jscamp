@@ -17,7 +17,7 @@ As a result of answering all the questions, an assessment of your level of knowl
 
 ## Telegraph.js
 
-Our bot is implemented on the framework [Telegraph.js](https://telegraf.js.org/)
+Our bot is implemented on the framework [Telegraph.js](https://telegraf.js.org/).
 
 ![Telegraph.js](/img/javascript/telegraf.jpg)
 
