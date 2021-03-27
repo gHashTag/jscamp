@@ -116,6 +116,8 @@ node index.js
 
 Вы можете интерактивно генерировать файл `package.json` с помощью команды
 
+![npm](https://media.giphy.com/media/gHnBLyeYE6hboT3t3o/giphy.gif)
+
 ```bash
 npm init
 ```
