@@ -31,7 +31,7 @@ import YouTube from 'react-youtube'
 
 ## Internationalization (i18n)
 
-[Сейчас бот](https://github.com/gHashTag/javascriptcamp_bot/tree/heroku/locales) общается на английском и русском языках, но ты можешь отправить pull request на своем родном.
+[Сейчас бот](https://github.com/gHashTag/javascriptcamp_bot/tree/heroku/src/quiz) общается на английском и русском языках, но ты можешь отправить pull request на своем родном.
 
 ![i18n](/img/javascript/i18n.png)
 

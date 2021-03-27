@@ -25,7 +25,7 @@ Our bot is implemented on the framework [Telegraph.js](https://telegraf.js.org/)
 
 ## OpenSource
 
-The source code of the project is available on [GitHub](https://github.com/gHashTag/javascriptcamp_bot/tree/heroku), so you can participate in its development.
+The source code of the project is available on [GitHub](https://github.com/gHashTag/javascriptcamp_bot/tree/heroku/src/quiz), so you can participate in its development.
 
 ![open source](https://media.giphy.com/media/7FgmaCJgUAMxRWatWB/giphy.gif)
 
