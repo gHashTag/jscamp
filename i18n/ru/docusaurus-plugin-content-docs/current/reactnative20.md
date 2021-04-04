@@ -8,7 +8,7 @@ sidebar_label: Selector
 
 ![selector](https://miro.medium.com/max/4800/1*egojVEXa1_MOTvg521DsOg.gif)
 
-```jsx
+```SnackPlayer name=index.js
 import React, { useState } from 'react'
 import { StyleSheet, View, Text, TouchableOpacity } from 'react-native'
 
