@@ -93,7 +93,8 @@ There are three key properties to use when customizing the header style: `header
 - `headerTintColor`: The back button and header use this property as the color. In the example below, we are setting the shade color `# fff` to white, so the back button and title heading will be white.
 - `headerTitleStyle`: If we want to customize the `fontFamily`, `fontWeight` and other text style properties for the title, we can use that for that.
 
-```jsx
+
+```js
 const StackScreen = () => {
   return (
     <Stack.Navigator>
