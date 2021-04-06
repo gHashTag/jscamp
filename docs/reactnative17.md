@@ -146,6 +146,14 @@ Create a folder `src` and move the App.js file there, renaming it `src/index.js`
 
 `yarn start-ios` or `yarn start-android`
 
+## Questions
+
+Which library allows you to write your code cleaner, tells you where you are making mistakes?
+
+1. Prettier
+2. ES Lint
+3. Babel
+
 To see how well you learned this lesson, take the test in the [mobile application](http://onelink.to/njhc95) of our school on this topic or in the [telegram bot](https://t.me/javascriptcamp_bot).
 
 ![Sumerian school](/img/app.jpg)

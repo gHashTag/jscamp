@@ -146,6 +146,14 @@ module.exports = {
 
 `yarn start-ios` or `yarn start-android`
 
+## Вопросы
+
+Какая библиотека позволяет писать ваш код более чистым, подсказывает, где вы совершаете ошибки?
+
+1. Prettier
+2. ES Lint
+3. Babel
+
 ## Done ✅
 
 Чтобы узнать, насколько хорошо вы усвоили этот урок, пройдите тест в [мобильном приложении](http://onelink.to/njhc95) нашей школы по этой теме или в [боте Telegram](https://t.me/javascriptcamp_bot).

@@ -1,11 +1,10 @@
 ---
 id: reactnative14
 title: Setting up a working environment on Windows 10
-sidebar_label: Configuring Windows 10
+sidebar_label: Windows 10 setup
 ---
 
 import YouTube from 'react-youtube'
-
 
 This article will help you set up a React Native working environment on the Windows 10 operating system.
 ::: note

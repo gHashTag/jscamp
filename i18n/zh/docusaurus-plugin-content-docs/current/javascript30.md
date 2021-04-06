@@ -1,7 +1,7 @@
 ---
 id: javascript30
-title: Задачи по JavaScirpt
-sidebar_label: Практика
+title: JavaScript 任務
+sidebar_label: JavaScript 任務
 ---
 
 import YouTube from 'react-youtube'
