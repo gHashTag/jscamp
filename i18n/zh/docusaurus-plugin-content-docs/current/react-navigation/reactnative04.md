@@ -109,29 +109,7 @@ There are a few things to note here:
 
 There is often a desire to customize the title in the same way on many screens. For example, your company's brand color might be red, so you want the header background color to be red and the tint color to be white. For convenience, these are the colors we are using in our current example, and you will notice that when you go to the DetailsScreen, the colors revert to their defaults. Wouldn't it be awful if we had to copy the options header style properties from HomeScreen to DetailsScreen and for every single screen component we use in our application? Fortunately, no. Instead, we can move the configuration to the stack navigator in the prop `screenOptions` section.
 
-```jsx
-const StackScreen = () => {
-  return (
-    <Stack.Navigator
-      screenOptions={{
-        headerStyle: {
-          backgroundColor: '#f4511e',
-        },
-        headerTintColor: '#fff',
-        headerTitleStyle: {
-          fontWeight: 'bold',
-        },
-      }}
-    >
-      <Stack.Screen
-        name="Home"
-        component={HomeScreen}
-        options={{ title: 'My home' }}
-      />
-    </Stack.Navigator>
-  )
-}
-```
+
 
 [Try this example on Snack](https://snack.expo.io/?platform=android&name=sharing%20header%20styles&dependencies=%40expo%2Fvector-icons%40*%2C%40react-native-community%2Fmasked-view%40*%2Creact-native-gesture-handler%40*%2Creact-native-pager-view%40*%2Creact-native-paper%40%5E4.7.2%2Creact-native-reanimated%40*%2Creact-native-safe-area-context%40*%2Creact-native-screens%40*%2Creact-native-tab-view%40%5E3.0.0%2C%40react-navigation%2Fbottom-tabs%40%5E6.0.0-next.1%2C%40react-navigation%2Fdrawer%40%5E6.0.0-next.1%2C%40react-navigation%2Fmaterial-bottom-tabs%40%5E6.0.0-next.1%2C%40react-navigation%2Fmaterial-top-tabs%40%5E6.0.0-next.1%2C%40react-navigation%2Fnative%40%5E6.0.0-next.1%2C%40react-navigation%2Fstack%40%5E6.0.0-next.6&hideQueryParams=true&sourceUrl=https%3A%2F%2Freactnavigation.org%2Fexamples%2F6.x%2Fsharing-header-styles.js)
 

@@ -107,29 +107,6 @@ export default App
 
 Часто возникает желание настроить заголовок аналогичным образом на многих экранах. Например, цвет бренда вашей компании может быть красным, поэтому вы хотите, чтобы цвет фона заголовка был красным, а цвет оттенка был белым. Для удобства это цвета, которые мы используем в нашем текущем примере, и вы заметите, что при переходе на экран `DetailsScreen` цвета возвращаются к значениям по умолчанию. Разве не было бы ужасно, если бы нам пришлось скопировать свойства стиля заголовка параметров из `HomeScreen` в `DetailsScreen` и для каждого отдельного компонента экрана, который мы используем в нашем приложении? К счастью, нет. Вместо этого мы можем переместить конфигурацию в навигатор стека в разделе prop `screenOptions`.
 
-```jsx
-const StackScreen = () => {
-  return (
-    <Stack.Navigator
-      screenOptions={{
-        headerStyle: {
-          backgroundColor: '#f4511e',
-        },
-        headerTintColor: '#fff',
-        headerTitleStyle: {
-          fontWeight: 'bold',
-        },
-      }}
-    >
-      <Stack.Screen
-        name="Home"
-        component={HomeScreen}
-        options={{ title: 'My home' }}
-      />
-    </Stack.Navigator>
-  )
-}
-```
 
 [Попробуйте этот пример на Snack](https://snack.expo.io/?platform=android&name=sharing%20header%20styles&dependencies=%40expo%2Fvector-icons%40*%2C%40react-native-community%2Fmasked-view%40*%2Creact-native-gesture-handler%40*%2Creact-native-pager-view%40*%2Creact-native-paper%40%5E4.7.2%2Creact-native-reanimated%40*%2Creact-native-safe-area-context%40*%2Creact-native-screens%40*%2Creact-native-tab-view%40%5E3.0.0%2C%40react-navigation%2Fbottom-tabs%40%5E6.0.0-next.1%2C%40react-navigation%2Fdrawer%40%5E6.0.0-next.1%2C%40react-navigation%2Fmaterial-bottom-tabs%40%5E6.0.0-next.1%2C%40react-navigation%2Fmaterial-top-tabs%40%5E6.0.0-next.1%2C%40react-navigation%2Fnative%40%5E6.0.0-next.1%2C%40react-navigation%2Fstack%40%5E6.0.0-next.6&hideQueryParams=true&sourceUrl=https%3A%2F%2Freactnavigation.org%2Fexamples%2F6.x%2Fsharing-header-styles.js)
 
