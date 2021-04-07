@@ -170,7 +170,7 @@ const styles = StyleSheet.create({
   },
 })
 
-export default FlexDirectionBasics;
+export default FlexDirectionBasics
 ```
 
 ## Layout Direction
