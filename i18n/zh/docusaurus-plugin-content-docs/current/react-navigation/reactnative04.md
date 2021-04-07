@@ -90,10 +90,10 @@ It is often necessary to update the option configuration for the active display 
 There are three key properties to use when customizing the header style: `headerStyle`, `headerTintColor` and `headerTitleStyle`.
 
 - `headerStyle`: a style object to be applied to the `View` that wraps the header. If you set it to `backgroundColor`, this will be the color of your title.
-- `headerTintColor`: The back button and header use this property as the color. In the example below, we are setting the shade color `# fff` to white, so the back button and title heading will be white.
+- `headerTintColor`: The back button and header use this property as the color. In the example below, we are setting the shade color `#fff` to white, so the back button and title heading will be white.
 - `headerTitleStyle`: If we want to customize the `fontFamily`, `fontWeight` and other text style properties for the title, we can use that for that.
 
-<!-- 
+
 ```jsx
 const StackScreen = () => {
   return (
@@ -115,7 +115,7 @@ const StackScreen = () => {
     </Stack.Navigator>
   )
 }
-``` -->
+
 
 [Try this example on Snack](https://snack.expo.io/?platform=android&name=header%20styles&dependencies=%40expo%2Fvector-icons%40*%2C%40react-native-community%2Fmasked-view%40*%2Creact-native-gesture-handler%40*%2Creact-native-pager-view%40*%2Creact-native-paper%40%5E4.7.2%2Creact-native-reanimated%40*%2Creact-native-safe-area-context%40*%2Creact-native-screens%40*%2Creact-native-tab-view%40%5E3.0.0%2C%40react-navigation%2Fbottom-tabs%40%5E6.0.0-next.1%2C%40react-navigation%2Fdrawer%40%5E6.0.0-next.1%2C%40react-navigation%2Fmaterial-bottom-tabs%40%5E6.0.0-next.1%2C%40react-navigation%2Fmaterial-top-tabs%40%5E6.0.0-next.1%2C%40react-navigation%2Fnative%40%5E6.0.0-next.1%2C%40react-navigation%2Fstack%40%5E6.0.0-next.6&hideQueryParams=true&sourceUrl=https%3A%2F%2Freactnavigation.org%2Fexamples%2F6.x%2Fheader-styles.js)
 
