@@ -94,7 +94,7 @@ There are three key properties to use when customizing the header style: `header
 - `headerTitleStyle`: If we want to customize the `fontFamily`, `fontWeight` and other text style properties for the title, we can use that for that.
 
 
-```js
+```jsx
 const StackScreen = () => {
   return (
     <Stack.Navigator>
@@ -104,12 +104,12 @@ const StackScreen = () => {
         options={{
           title: 'My home',
           headerStyle: {
-            backgroundColor: '#f4511e',
+            backgroundColor: '#f4511e'
           },
           headerTintColor: '#fff',
           headerTitleStyle: {
-            fontWeight: 'bold',
-          },
+            fontWeight: 'bold'
+          }
         }}
       />
     </Stack.Navigator>
