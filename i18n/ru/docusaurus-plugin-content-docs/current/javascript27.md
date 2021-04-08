@@ -23,6 +23,10 @@ fetch(url, { options })
 
 Задав метод `fetch()` без `options` вы получите GET-запрос, скачивающий данные по адресу `URL`.
 
+## Видео
+
+<YouTube videoId="ZvUMvV_YZKg" />
+
 ## Параметры запроса
 
 ![Option](https://media.giphy.com/media/AazZSBdhIdH9K/giphy.gif)

@@ -16,6 +16,10 @@ import YouTube from 'react-youtube'
 
 ![Numbers](https://media.giphy.com/media/JtBZm3Getg3dqxK0zP/giphy.gif)
 
+## Видео
+
+<YouTube videoId="wltQLqPeOyc" /> 
+
 ### `bigInt`
 
 Числа дают возможность работать с целыми числами произвольной длины. Они нужны достаточно редко и используются в случаях, когда необходимо работать со значениями за пределами максимального безопасного целочисленного значения `Number`.

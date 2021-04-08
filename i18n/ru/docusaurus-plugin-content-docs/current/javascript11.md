@@ -37,6 +37,9 @@ function learnJavaScript() {
   return sum
 }
 ```
+## Видео
+
+<YouTube videoId="Ay82Lut-CS8" />
 
 ## Преобразование типов (type conversion)
 

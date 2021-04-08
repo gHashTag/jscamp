@@ -53,6 +53,10 @@ function test() {
 
 В этих примерах у каждой конструкции своя область видимости.
 
+## Видео
+
+<YouTube videoId="p-wmzCW_2C8 " />
+
 ## Глобальная область видимости
 
 ![Global](https://media.giphy.com/media/l0MYPsBLOYyFqSDte/giphy.gif)

@@ -68,6 +68,10 @@ const myUser = new User()
 
 `new User()` создает🏗️ экземпляр класса `User` 👤.
 
+## Видео
+
+<YouTube videoId="rR_ZHhkx_O0" />
+
 ## Инициализация: constructor()
 
 ![spangeBob](https://media.giphy.com/media/3oriNZoNvn73MZaFYk/giphy.gif)

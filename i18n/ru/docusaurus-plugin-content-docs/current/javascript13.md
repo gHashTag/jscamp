@@ -27,6 +27,10 @@ function learnJavaScript() {
 }
 ```
 
+## Видео
+
+<YouTube videoId="J89Qcz0cunw" />
+
 ### Передача других "ложных" значений
 
 ![basketball](https://media.giphy.com/media/3oEdv5e5Zd2gsczAhG/giphy.gif)

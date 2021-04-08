@@ -16,6 +16,10 @@ sidebar_label: Операторы Rest и Spread
 
 В этой статье мы узнаем, как сделать то же самое с нашими собственными функциями⚙️ и как передавать таким функциям⚙️ параметры в виде массива.
 
+## Видео
+
+<YouTube videoId="9Qt7c5lEF_4" />
+
 ## Остаточные параметры `(...rest)`
 
 ![Parametrs](https://media.giphy.com/media/3osxYoufeOGOA7xiX6/giphy.gif)

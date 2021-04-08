@@ -40,6 +40,9 @@ function learnJavaScript() {
   return obj.say()
 }
 ```
+## Видео
+
+<YouTube videoId="3rEcxqlkJNE" /> 
 
 ### Создание объекта
 
