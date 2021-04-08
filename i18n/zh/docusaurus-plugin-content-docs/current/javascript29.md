@@ -6,13 +6,13 @@ sidebar_label: 進出口
 
 ![@serverSerrverlesskiy](/img/javascript/headers/31.jpg)
 
-要使對象，函數，類或變量to對外界可用，只需將其導出，然後在需要時將其導入其他項目文件中。
+要使對象，函數，類或變量 to 對外界可用，只需將其導出，然後在需要時將其導入其他項目文件中。
 
 ## "Hello, World!" on Node.js
 
 `Node.js®` JavaScript 建立在 [Chrome V8](https://v8.dev) 引擎。
 
-讓我們開始吧 `Node.js` 只需在控制台中輸入node即可：
+讓我們開始吧 `Node.js` 只需在控制台中輸入 node 即可：
 
 ```javascript
 $ node
@@ -53,7 +53,7 @@ touch index.js
 
 打開代碼編輯器，然後向其添加我們創建的項目的文件夾。
 
-![new prroject](/img/javascript/18.jpg)
+![new project](/img/javascript/18.jpg)
 
 現在，通過單擊此圖標打開側面菜單。
 
@@ -90,7 +90,7 @@ node index.js
 
 ![Export](https://media.giphy.com/media/3o7btSt2Et1GgIaDAY/source.gif)
 
-現在是時候進入下一個階段了！ 為了便於閱讀和可維護性，讓我們將源代碼分成多個JavaScript文件來創建一些更複雜的東西。
+現在是時候進入下一個階段了！ 為了便於閱讀和可維護性，讓我們將源代碼分成多個 JavaScript 文件來創建一些更複雜的東西。
 
 ### 項目結構
 
@@ -110,15 +110,17 @@ node index.js
 
 ### package.json
 
-每一個 `Node.js` 項目首先創建一個 `package.json` 文件。 您可以將其視為應用程序及其依賴項的JSON表示形式。 它包含應用程序的名稱，作者（您）以及運行該應用程序所需的任何依賴項。 這是您的項目圖。
+每一個 `Node.js` 項目首先創建一個 `package.json` 文件。 您可以將其視為應用程序及其依賴項的 JSON 表示形式。 它包含應用程序的名稱，作者（您）以及運行該應用程序所需的任何依賴項。 這是您的項目圖。
 
 您可以交互式生成 `package.json` 用命令文件
+
+![npm](https://media.giphy.com/media/gHnBLyeYE6hboT3t3o/giphy.gif)
 
 ```bash
 npm init
 ```
 
-在終端。 運行命令後，將要求您輸入一些信息，例如應用程序名稱，版本，描述等。 不用擔心，只需按 `Enter` 直到獲得生成的JSON，問題是 `is it ok` ?. 最後一次按Enter鍵，瞧：您的 package.json 已自動生成並放置在應用程序文件夾中。 如果您在IDE中打開此文件，則該文件看起來與下面的代碼片段非常相似。
+在終端。 運行命令後，將要求您輸入一些信息，例如應用程序名稱，版本，描述等。 不用擔心，只需按 `Enter` 直到獲得生成的 JSON，問題是 `is it ok` ?. 最後一次按 Enter 鍵，瞧：您的 package.json 已自動生成並放置在應用程序文件夾中。 如果您在 IDE 中打開此文件，則該文件看起來與下面的代碼片段非常相似。
 
 ```json
 // package.json
@@ -605,22 +607,17 @@ obj.b = 4
 
 Учитывая, что import хранит именно ссылки на значения, экспортированные из внешнего модуля, то это можно использовать как замыкания. -->
 
-為了使對象，函數，類或變量🔔可供外界使用，您需要：
+為了使對象，函數，類或變量 🔔 可供外界使用，您需要：
 
-1.導出然後導入
-2.導入然後導出
+1.導出然後導入 2.導入然後導出
 
 `Node.js®` is:
 
-1.編程語言
-2.基於Chrome V8引擎構建的JavaScript環境
-3.瀏覽器
+1.編程語言 2.基於 Chrome V8 引擎構建的 JavaScript 環境 3.瀏覽器
 
 `package.json` is:
 
-1.基於Chrome V8引擎構建的JavaScript環境
-2.應用程序及其依賴項的JSON表示形式
-3. JSON編程語言
+1.基於 Chrome V8 引擎構建的 JavaScript 環境 2.應用程序及其依賴項的 JSON 表示形式 3. JSON 編程語言
 
 為了了解您學到了多少本課程，請對 [mobile application](http://onelink.to/njhc95) 我們學校就這個話題。
 

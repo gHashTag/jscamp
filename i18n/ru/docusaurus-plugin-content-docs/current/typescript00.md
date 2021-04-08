@@ -103,13 +103,6 @@ TypeScript развивается как `OpenSource`-проект и, как и
 
 ![Question](https://media.giphy.com/media/Uq4ucFb5FLDStK6CUk/giphy.gif)
 
-Для каких скриптов задумывался JavaScript?
-
-1. Для больших и быстрых
-2. Для больших я медленных
-3. Для маленьких и быстрых
-4. Для маленьких и медленных
-
 Что добавляет TypeScript в JavaScript?
 
 1. Объекты

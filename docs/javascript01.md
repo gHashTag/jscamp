@@ -155,7 +155,7 @@ And any other mathematical operations ...
 
 ![Live editor](https://media.giphy.com/media/l1KVcrdl7rJpFnY2s/giphy.gif)
 
-The JavaScript code is executed by the JavaScript engine of the browser. Through the console, we access it directly. Further, in order not to write the entire training course in the browser and jump through windows from our site to the browser console and vice versa, we will write the code in the `Live Coding` mode right on our site. To do this, try to add the word Hello, the word World in the next window `LIVE EDITOR`. In `RESULT`, you should get` Hello World` 🌎.
+The JavaScript code is executed by the JavaScript engine of the browser. Through the console, we access it directly. Further, in order not to write the entire training course in the browser and jump through windows from our site to the browser console and vice versa, we will write the code in the `Live Coding` mode right on our site. To do this, try to add the word Hello in the next window `LIVE EDITOR`. In `RESULT`, you should get` Hello World` 🌎.
 
 ```jsx live
 function learnJavaScript() {
@@ -239,7 +239,6 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /> <a href="https://github.com/gHashTag/react-native-village/commits?author=gHashTag" title="Documentation">📖</a></td>
     <td align="center"><a href="https://github.com/Resoner2005"><img src="https://avatars1.githubusercontent.com/u/75675814?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Resoner2005</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/issues?q=author%3AResoner2005" title="Bug reports">🐛 🎨 🖋</a></td>
   </tr>
-  
 </table>
 
 [![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)

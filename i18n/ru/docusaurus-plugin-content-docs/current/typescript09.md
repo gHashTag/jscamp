@@ -136,6 +136,12 @@ window.onload = () => {
 
 ![question](https://media.giphy.com/media/Uq4ucFb5FLDStK6CUk/giphy.gif)
 
+Как называется очень важная часть TypeScript благодаря которой статическая типизация проецируется на динамический JavaScript?
+
+1. декларации
+2. интроспекция
+3. интерфейс
+
 Где размещаются декларации?
 
 1. `.d.ts`
@@ -144,8 +150,8 @@ window.onload = () => {
 
 С помощью какой команды устанавливается декларация?
 
-1. `npm search -D @types/name`
-2. `npm view -D @types/name`
+1. `npm install -D @t/name`,
+2. `npm install -D @d/name`,
 3. `npm install -D @types/name`
 
 Каким синтаксисом нужно воспользоваться для создания декларации?

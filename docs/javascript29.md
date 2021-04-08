@@ -114,6 +114,8 @@ Every `Node.js` project starts by creating a `package.json` file. You can think 
 
 You can interactively generate the `package.json` file with the command
 
+![npm](https://media.giphy.com/media/gHnBLyeYE6hboT3t3o/giphy.gif)
+
 ```bash
 npm init
 ```

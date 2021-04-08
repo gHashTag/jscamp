@@ -179,7 +179,7 @@ How do I update a variable?
 What is missing in the variable naming rules?
 
 1. Don't use numbers at the beginning of variables
-2. Use underscores at the beginning of variables
+2. Don't use reserved words
 3. Stick to Latin characters
 
 How do I write the value of a variable so that the browser treats the variable as a string?

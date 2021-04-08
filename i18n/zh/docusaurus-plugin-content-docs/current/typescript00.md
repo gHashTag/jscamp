@@ -50,7 +50,7 @@ function learnTypeScript() {
 
 ```jsx
 let fruit: string = 'banana'
-fruit = 666
+fruit = 999
 console.log(fruit)
 ```
 

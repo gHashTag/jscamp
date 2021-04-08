@@ -10,13 +10,11 @@ One of the most requested topics among the subscribers of my channel [Sumerian S
 
 > You can study the course with Expo or through the Android emulator or through any other starter.
 
-![cognito](/img/auth/01.png)
-
-Support Chat AWS Amplify: [Discord](https://discord.gg/6GDAfXn)
-
 ## Video
 
 <YouTube videoId="QMObthDaewQ" />
+
+Support Chat AWS Amplify: [Discord](https://discord.gg/6GDAfXn)s
 
 ## Authentication
 
