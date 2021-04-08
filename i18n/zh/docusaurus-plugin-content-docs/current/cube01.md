@@ -1,5 +1,5 @@
 ---
-id: blogging-00
+id: cube-01
 title: Сборка кубик-Рубика в Sumerian School
 sidebar_label: Сборка кубика-Рубика
 ---

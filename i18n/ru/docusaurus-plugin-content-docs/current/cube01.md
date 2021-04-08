@@ -1,5 +1,5 @@
 ---
-id: blogging-00
+id: cube-01
 title: Сборка кубик-Рубика в Sumerian School
 sidebar_label: Сборка кубика-Рубика
 ---
@@ -106,7 +106,7 @@ R2 F R’ F’ D2 R2 U F U’ B L2 F2 R F2 U’ L F2 L B R’ D’ L’ D’ R F
 
 ## Ссылки
 
-Discord - https://discord.gg/UPSeqZJT
+[Discord](https://discord.gg/6GDAfXn)
 
 ## Contributors ✨
 
