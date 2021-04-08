@@ -4,6 +4,8 @@ title: Async Await
 sidebar_label: Async Await
 ---
 
+import YouTube from 'react-youtube'
+
 ![@serverSerrverlesskiy](/img/javascript/headers/29.jpg)
 
 Существует специальный синтаксис 📖 для работы с промисами, который называется `async/await`.

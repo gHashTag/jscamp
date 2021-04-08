@@ -4,6 +4,8 @@ title: Истина или ложь?
 sidebar_label: Истина или ложь?
 ---
 
+import YouTube from 'react-youtube'
+
 ![@serverSerrverlesskiy](/img/javascript/headers/08.jpg)
 
 В этой главе будет много нового, но уж очень сложно быть не должно: ведь, в общем-то, всё вертится вокруг простой идеи — истина или ложь?

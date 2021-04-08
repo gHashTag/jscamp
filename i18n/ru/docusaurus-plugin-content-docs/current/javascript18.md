@@ -4,6 +4,8 @@ title: Операторы Rest и Spread
 sidebar_label: Операторы Rest и Spread
 ---
 
+import YouTube from 'react-youtube'
+
 ![@serverSerrverlesskiy](/img/javascript/headers/19.jpg)
 
 Многие встроенные функции⚙️ JavaScript поддерживают произвольное количество аргументов.

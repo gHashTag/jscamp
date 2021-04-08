@@ -4,6 +4,8 @@ title: Функции высшего порядка
 sidebar_label: Функции высшего порядка
 ---
 
+import YouTube from 'react-youtube'
+
 ![@serverSerrverlesskiy](/img/javascript/headers/21.jpg)
 
 Функции⚙️ высшего порядка позволяют JavaScript быть пригодным для [функционального⚙️ программирования](https://ru.wikipedia.org/wiki/Функциональное_программирование).
@@ -13,7 +15,7 @@ sidebar_label: Функции высшего порядка
 
 ## Видео
 
-<YouTube videoId="VqRjaxoKJs" />
+<YouTube videoId="-VqRjaxoKJs" />
 
 ## Что такое функциональное программирование?
 

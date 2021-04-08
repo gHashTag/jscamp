@@ -4,6 +4,8 @@ title: Fetch API
 sidebar_label: Fetch API
 ---
 
+import YouTube from 'react-youtube'
+
 ![@serverSerrverlesskiy](/img/javascript/headers/28.jpg)
 
 **Fetch API** позволяет JavaScript обмениваться данными с сервером с помощью HTTP-запросов и является более совершенной заменой классу `XMLHttpRequest`. Выполнение запросов осуществляется методом `fetch()`, который возвращает🔄 [Promise](https://react-native-village.github.io/docs/javascript24).

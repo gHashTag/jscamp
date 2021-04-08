@@ -4,6 +4,8 @@ title: Деструктуризация массивов и объектов
 sidebar_label: Деструктуризация массивов и объектов
 ---
 
+import YouTube from 'react-youtube'
+
 ![@serverSerrverlesskiy](/img/javascript/headers/30.jpg)
 
 Деструктуризация в JavaScript это синтаксис присваивания, который позволяет удобно, в одну строку, извлечь данные из массивов и объектов.
