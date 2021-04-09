@@ -4,6 +4,8 @@ title: Преобразование и приведение типов
 sidebar_label: Преобразование и приведение типов
 ---
 
+import YouTube from 'react-youtube'
+
 ![@serverSerrverlesskiy](/img/javascript/headers/09.jpg)
 
 ## Приведение типов (type coercion)
@@ -39,7 +41,7 @@ function learnJavaScript() {
 ```
 ## Видео
 
-<YouTube videoId="Ay82Lut-CS8" />
+<YouTube videoId="Ay82Lut-CS8" /> 
 
 ## Преобразование типов (type conversion)
 

@@ -4,6 +4,8 @@ title: Асинхронность Event loop
 sidebar_label: Асинхронность Event loop
 ---
 
+import YouTube from 'react-youtube'
+
 ![@serverSerrverlesskiy](/img/javascript/headers/26.jpg)
 
 ## Асинхронность

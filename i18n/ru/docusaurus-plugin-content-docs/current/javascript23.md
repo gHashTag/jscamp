@@ -4,6 +4,8 @@ title: Классы
 sidebar_label: Классы
 ---
 
+import YouTube from 'react-youtube'
+
 ![@serverSerrverlesskiy](/img/javascript/headers/23.jpg)
 
 В JavaScript используется модель прототипного наследования: каждый объект наследует поля (свойства) и методы объекта-прототипа.

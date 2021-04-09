@@ -4,6 +4,8 @@ title: Конструкция switch case
 sidebar_label: Конструкция switch case
 ---
 
+import YouTube from 'react-youtube'
+
 ![@serverSerrverlesskiy](/img/javascript/headers/14.jpg)
 
 Конструкция `switch` служит для сравнения значения на равенство с различными вариантами.

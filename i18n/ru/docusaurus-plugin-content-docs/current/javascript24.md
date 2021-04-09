@@ -4,6 +4,8 @@ title: Запрет на "this"
 sidebar_label: Запрет на "this"
 ---
 
+import YouTube from 'react-youtube'
+
 ![@serverSerrverlesskiy](/img/javascript/headers/24.jpg)
 
 Удаление ключевого🗝️ слова `this` из JavaScript делает язык👅 лучше!
