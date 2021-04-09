@@ -562,6 +562,8 @@ function learnJavaScript() {
 
 Пишите в [Discord](https://discord.gg/6GDAfXn) или телеграмм [чат](https://t.me/jscampapp), а также подписывайтесь на наши [новости](https://t.me/javascriptapp)
 
+![JavaScript Camp](/img/bandlink.png)
+
 ## Вопросы
 
 ![question](https://media.giphy.com/media/Uq4ucFb5FLDStK6CUk/giphy.gif)

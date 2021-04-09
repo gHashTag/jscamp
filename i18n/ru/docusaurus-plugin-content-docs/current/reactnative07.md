@@ -37,6 +37,15 @@ export default PizzaTranslator
 
 Ввод текста - это один из способов взаимодействия пользователя с приложением. Затем давайте посмотрим на другой тип ввода и узнаем, как обрабатывать прикосновения.
 
+
+## Проблемы?
+
+![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
+
+Пишите в [Discord](https://discord.gg/6GDAfXn) или телеграмм [чат](https://t.me/jscampapp), а также подписывайтесь на наши [новости](https://t.me/javascriptapp)
+
+![JavaScript Camp](/img/bandlink.png)
+
 ## Вопросы
 
 Основной компонент, который позволяет пользователю вводить текст?

@@ -64,6 +64,14 @@ react-devtools
 
 ![React Native Debugger](https://user-images.githubusercontent.com/3001525/29451479-6621bf1a-83c8-11e7-8ebb-b4e98b1af91c.png)
 
+## Проблемы?
+
+![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
+
+Пишите в [Discord](https://discord.gg/6GDAfXn) или телеграмм [чат](https://t.me/jscampapp), а также подписывайтесь на наши [новости](https://t.me/javascriptapp)
+
+![JavaScript Camp](/img/bandlink.png)
+
 ## Вопросы
 
 Функция React Native, которая позволяет вам почти мгновенно получать обратную связь об изменениях в ваших компонентах React?

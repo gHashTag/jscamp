@@ -190,6 +190,15 @@ React Native поддерживает только имена цветов в н
 - <ins style={{background: '#ffff00'}} className="color-box" /> yellow (`#ffff00`)
 - <ins style={{background: '#9acd32'}} className="color-box" /> yellowgreen (`#9acd32`)
 
+
+## Проблемы?
+
+![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
+
+Пишите в [Discord](https://discord.gg/6GDAfXn) или телеграмм [чат](https://t.me/jscampapp), а также подписывайтесь на наши [новости](https://t.me/javascriptapp)
+
+![JavaScript Camp](/img/bandlink.png)
+
 ## Вопросы
 
 С помощью какого языка стилизованы компоненты в React Native?

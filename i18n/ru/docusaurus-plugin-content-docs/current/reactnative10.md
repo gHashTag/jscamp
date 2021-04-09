@@ -103,6 +103,14 @@ export default App
 
 О том как самому создать пользовательский хук читайте [здесь](https://ru.reactjs.org/docs/hooks-custom.html)
 
+## Проблемы?
+
+![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
+
+Пишите в [Discord](https://discord.gg/6GDAfXn) или телеграмм [чат](https://t.me/jscampapp), а также подписывайтесь на наши [новости](https://t.me/javascriptapp)
+
+![JavaScript Camp](/img/bandlink.png)
+
 ## Вопросы
 
 Функции, с помощью которых вы можете «подцепиться» к состоянию и методам жизненного цикла React из функциональных компонентов?

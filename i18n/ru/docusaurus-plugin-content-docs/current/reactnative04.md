@@ -1136,6 +1136,15 @@ export default PositionLayout
 
 Мы рассмотрели основы, но есть много других стилей, которые могут вам понадобиться для макетов. Полный список свойств, управляющих макетом, задокументирован [здесь](https://reactnative.dev/docs/layout-props).
 
+
+## Проблемы?
+
+![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
+
+Пишите в [Discord](https://discord.gg/6GDAfXn) или телеграмм [чат](https://t.me/jscampapp), а также подписывайтесь на наши [новости](https://t.me/javascriptapp)
+
+![JavaScript Camp](/img/bandlink.png)
+
 ## Вопросы
 
 Flexbox предоставляет инструменты для быстрого создания сложных, гибких макетов, и функции, которые были сложны в традиционных методах CSS.

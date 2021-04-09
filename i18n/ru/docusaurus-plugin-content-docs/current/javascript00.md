@@ -156,6 +156,8 @@ TypeScript - язык программирования, представленн
 
 ![Sumerian school](/img/app.jpg)
 
+![JavaScript Camp](/img/bandlink.png)
+
 ## Оплата
 
 Обучение бесплатно, но вы можете поддержать наш стартап через [Patreon](https://www.patreon.com/bePatron?u=31769291).

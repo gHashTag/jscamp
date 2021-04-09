@@ -39,6 +39,9 @@ import YouTube from 'react-youtube'
 
 Далее мы планируем реализовать тестирование по TypeScript, React Native, AWS Amplify, поэтому подпишись на наш [Twitter](https://twitter.com/serverlesskiy), чтобы следить за новостями.
 
+![JavaScript Camp](/img/bandlink.png)
+
+
 Бот бесплатный, но вы можете поддержать наш стартап через [Patreon](https://www.patreon.com/javascriptcamp)
 
 [![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)

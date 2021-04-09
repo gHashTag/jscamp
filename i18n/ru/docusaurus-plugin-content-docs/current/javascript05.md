@@ -109,6 +109,8 @@ foo.toUpperCase()
 
 Пишите в [Discord](https://discord.gg/6GDAfXn) или телеграмм [чат](https://t.me/jscampapp), а также подписывайтесь на наши [новости](https://t.me/javascriptapp)
 
+![JavaScript Camp](/img/bandlink.png)
+
 ## Вопросы:
 
 ![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
@@ -134,6 +136,7 @@ foo.toUpperCase()
 Для того чтобы понять, на сколько вы усвоили этот урок, пройдите тест в [мобильном приложении](http://onelink.to/njhc95) нашей школы по этой теме.
 
 ![Sumerian school](/img/app.jpg)
+
 
 ## Ссылки:
 

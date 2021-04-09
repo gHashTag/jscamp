@@ -61,6 +61,11 @@ module.exports = {
         label: 'React Navigation',
         items: ['react-navigation/reactnative00', 'react-navigation/reactnative01', 'react-navigation/reactnative02',  'react-navigation/reactnative03', 'react-navigation/reactnative04', 'react-navigation/reactnative05', 'react-navigation/reactnative06',  'react-navigation/reactnative07', 'react-navigation/reactnative08'],
       },
+      {
+        type: 'category',
+        label: 'State management',
+        items: ['state-management/reactnativestate00'],
+      },
     ],
     ['Redux']: ['redux-00', 'redux-01', 'redux-02', 'redux-03', 'redux-04', 'redux-05', 'redux-06'],
     ['TypeScript']: [
