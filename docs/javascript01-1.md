@@ -37,7 +37,7 @@ The source code of the project is available on [GitHub](https://github.com/gHash
 
 ## What's next?
 
-Next, we plan to implement testing on TypeScript, React Native, AWS Amplify, so subscribe to our [Twitter](https://twitter.com/serverlesskiy) to stay tuned.
+Next, we plan to implement testing on TypeScript, React Native, AWS Amplify, so subscribe to our [Twitter](https://twitter.com/jscamp_bot) to stay tuned.
 
 The bot is free, but you can support our startup via [Patreon](https://www.patreon.com/javascriptcamp)
 
