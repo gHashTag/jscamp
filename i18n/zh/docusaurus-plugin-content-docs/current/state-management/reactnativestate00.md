@@ -217,12 +217,6 @@ const Todo = observer(() => {
 export default Todo
 ```
 
-## Problems?
-
-![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
-
-Write to [Discord](https://discord.gg/6GDAfXn) chat.
-
 
 ## Links
 
