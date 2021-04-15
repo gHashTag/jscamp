@@ -23,7 +23,7 @@ function learnJavaScript() {
     return a * b
   }
   // If b is undefined, then it will be assigned a default value
-  return multiply(5, 2) // remove the comma, second argument and get 5 + 1
+  return multiply(5, 2) // remove the comma, second argument and get 5 * 1
 }
 ```
 
