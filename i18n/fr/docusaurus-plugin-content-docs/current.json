@@ -1,0 +1,58 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.someSidebar.category.JavaScript": {
+    "message": "JavaScript",
+    "description": "The label for category JavaScript in sidebar someSidebar"
+  },
+  "sidebar.someSidebar.category.React Native": {
+    "message": "React Native",
+    "description": "The label for category React Native in sidebar someSidebar"
+  },
+  "sidebar.someSidebar.category.React Navigation": {
+    "message": "React Navigation",
+    "description": "The label for category React Navigation in sidebar someSidebar"
+  },
+  "sidebar.someSidebar.category.State management": {
+    "message": "State management",
+    "description": "The label for category State management in sidebar someSidebar"
+  },
+  "sidebar.someSidebar.category.Redux": {
+    "message": "Redux",
+    "description": "The label for category Redux in sidebar someSidebar"
+  },
+  "sidebar.someSidebar.category.TypeScript": {
+    "message": "TypeScript",
+    "description": "The label for category TypeScript in sidebar someSidebar"
+  },
+  "sidebar.someSidebar.category.UI Kit": {
+    "message": "UI Kit",
+    "description": "The label for category UI Kit in sidebar someSidebar"
+  },
+  "sidebar.someSidebar.category.Authentication": {
+    "message": "Authentication",
+    "description": "The label for category Authentication in sidebar someSidebar"
+  },
+  "sidebar.someSidebar.category.AWS Amplify": {
+    "message": "AWS Amplify",
+    "description": "The label for category AWS Amplify in sidebar someSidebar"
+  },
+  "sidebar.someSidebar.category.Blogging": {
+    "message": "Blogging",
+    "description": "The label for category Blogging in sidebar someSidebar"
+  },
+  "sidebar.someSidebar.category.Rubik's Cube": {
+    "message": "Rubik's Cube",
+    "description": "The label for category Rubik's Cube in sidebar someSidebar"
+  },
+  "sidebar.someSidebar.category.Scratch": {
+    "message": "Scratch",
+    "description": "The label for category Scratch in sidebar someSidebar"
+  },
+  "sidebar.someSidebar.category.Startup": {
+    "message": "Startup",
+    "description": "The label for category Startup in sidebar someSidebar"
+  }
+}
