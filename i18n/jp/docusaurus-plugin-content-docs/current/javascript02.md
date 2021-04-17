@@ -42,91 +42,90 @@ function learnJavaScript() {
 
 ```jsx live
 function learnJavaScript() {
-  /* Это однострочный комментарий */
+  /* これは1行のコメントです */
   var hello = 'Hello world!!!'
 
   return hello
 }
 ```
 
-Либо вы можете сделать многострочный комментарий 🗣️ , как показано здесь 👇 :
+または、複数行コメントを作成できます 🗣️ , ここに示すように 👇 :
 
 ```jsx live
 function learnJavaScript() {
-  /*Этот комментарий располагается на нескольких линиях. 
-     Обратите внимание, что вам не нужно обрывать комментарий, пока вы его не закончите*/
+  /*このコメントは数行にまたがっています。
+     終了するまでコメントを終了する必要はありませんのでご注意ください。*/
   var hello = 'Hello world!!!'
-  /* Напишите здесь свой комментарий */
+  /* ここにコメントを書いてください */
   return hello
 }
 ```
 
-## Комментарий посреди кода
+## コードの途中でコメントする
 
 ![Among](https://media.giphy.com/media/fnjIiBNo38IHS/giphy.gif)
 
-Также, если пожелаете, то вы можете использовать такое комментирование 🗣️ посреди строки кода. Хотя это может ухудшить читабельность кода👇 :
+また、必要に応じて、このようなコメントを使用できます。 🗣️ コード行の途中。これはコードの可読性を損なう可能性がありますが👇 :
 
 ```jsx live
 function learnJavaScript() {
   var x = ''
-  var hello = 'Hello ' + x /* вставьте значение x */ + '!'
+  var hello = 'Hello ' + x /* 値を挿入 x */ + '!'
 
   return hello
 }
 ```
 
-С комментированием кода все и прозвучал звонок на перемену🔔 .
+コードへのコメントで、それがすべてであり、変更の呼び出しが鳴りました🔔 .
 
 ![Comments](https://media.giphy.com/media/SvuRLwWT0EoeErwPvB/giphy.gif)
 
-## Проблемы?
+## 問題?
 
 ![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
 
-Пишите в [Discord](https://discord.gg/6GDAfXn) или телеграмм [чат](https://t.me/jscampapp), а также подписывайтесь на наши [новости](https://t.me/javascriptapp)
+に書く [Discord](https://discord.gg/6GDAfXn) または電報 [チャット](https://t.me/jscampapp), また、私たちの購読 [ニュース](https://t.me/javascriptapp)
 
-## Вопросы:
+## 質問と回答:
 
 ![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
 
-Для кого предназначены комментарии?
+コメントは誰ですか？?
 
-1. Человек
-2. Консоль
-3. Интерпретатор JavaScript
+1. 人
+2. コンソール
+3. JavaScriptインタープリター
+コメントが使用されていないもの?
 
-Для чего не используются комментарии?
+1. ヒント、メモ、提案を追加する
+2. プログラムコードの一部として
+3. コードの実行を防ぐため
 
-1. Добавление подсказок, заметок, предложений
-2. Как часть программного кода
-3. Для предотвращения выполнения кода
-
-Какого из способов указания комментария в коде JavaScript не существует?
+コードでコメントを指定する方法はどれですか JavaScript 存在しない?
 
 1. `(' ')`
 2. `//`
 3. `/* */`
 
-Как отключить любое количество строк кода?
+コードの任意の数の行を無効にする方法?
 
-1. Написать комментарий посреди кода
-2. Обернуть код в комментарий
-3. Использовать команду `console.log`
+1. コードの途中にコメントを書く
+2. コードをコメントでラップします
+3. コマンドを使用します `console.log`
 
-Для того чтобы понять, на сколько вы усвоили этот урок, пройдите тест в [мобильном приложении](http://onelink.to/njhc95) нашей школы по этой теме.
+このレッスンをどれだけ学んだかを理解するために、 [モバイルアプリ](http://onelink.to/njhc95) このトピックに関する私たちの学校.
 
 ![Sumerian school](/img/app.jpg)
 
-## Ссылки:
+## リンク:
 
 1. [MDN web docs](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Lexical_grammar)
-2. [Код для подростков: прекрасное руководство по программированию для начинающих, том 1: Javascript - Jeremy Moritz ](https://www.amazon.com/Code-Teens-Beginners-Programming-Javascript-ebook/dp/B07FCTLVPC)
+2. [十代の若者たちのためのコード：プログラミングの完璧な初心者向けガイド、ボリューム 1: Javascript - Jeremy Moritz ](https://www.amazon.com/Code-Teens-Beginners-Programming-Javascript-ebook/dp/B07FCTLVPC)
 3. [JavaScript.ru](https://learn.javascript.ru/types)
 
 ## Contributors ✨
 
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+これらの素晴らしい人々に感謝します ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
 <table>
   <tr>
