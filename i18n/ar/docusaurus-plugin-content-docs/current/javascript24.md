@@ -1,19 +1,19 @@
 ---
 id: javascript24
-title: Ban on "this"
-sidebar_label: Ban on "this"
+title: حظر على "هذا"
+sidebar_label: حظر على "هذا"
 ---
 
 ![@serverSerrverlesskiy](/img/javascript/headers/24.jpg)
 
-Removing the `this` keyword from JavaScript makes the language better!
+إزالة `this` الكلمة الأساسية من JavaScript تجعل اللغة أفضل!
 
-This is because `this` depends on how the function was called, not where it was defined. Therefore, JavaScript's `this` is a source of much language confusion пут.
+هذا بسبب `this` يعتمد على كيفية استدعاء الوظيفة ، وليس مكان تعريفها. لذلك ، جافا سكريبت`this` مصدر الكثير من الارتباك اللغويوضع.
 
-Using this ensures that the function works on the exact object in the context of which it was called.
-Through the `this` method, you can not only refer to any property of the object, but also pass a reference to the entire object itself somewhere (reducing the security of the application).
+يضمن استخدام هذا أن الوظيفة تعمل على الكائن المحدد في سياقه الذي تم استدعاؤه.
+من خلال `this`طريقة ، لا يمكنك فقط الرجوع إلى أي خاصية من خصائص الكائن ، ولكن يمكنك أيضًا تمرير مرجع إلى الكائن بأكمله في مكان ما (تقليل أمان التطبيق).
 
-The value of `this` is called the calling context and will be determined when the function is called. For example, a function like this, declared without an object, is perfectly valid:
+قيمة ال`this` يسمى سياق الاستدعاء وسيتم تحديده عند استدعاء الوظيفة. على سبيل المثال ، دالة مثل هذه ، تم إعلانها بدون كائن ، صالحة تمامًا:
 
 ```javascript
 functionsay Hi() {
@@ -21,9 +21,9 @@ functionsay Hi() {
 }
 ```
 
-This function does not yet know what this will be. This will be revealed when the program is executed.
+هذه الوظيفة لا تعرف حتى الآن ما سيكون هذا. سيتم الكشف عن هذا عند تنفيذ البرنامج.
 
-If the same function is run in the context of different objects, it will receive a different `this`:
+إذا تم تشغيل نفس الوظيفة في سياق كائنات مختلفة ، فستتلقى ملفًا مختلفًا`this`:
 
 ```javascript
 var user = { firstName: 'John' }
@@ -41,19 +41,19 @@ admin.g() // Admin
 admin['g']() // Admin (access to the object is implemented through square brackets)
 ```
 
-So, the value of `this` does not depend on how the function was created, it is determined exclusively at the time of the call.
+لذا ، فإن قيمة `this` لا تعتمد على كيفية إنشاء الوظيفة ، يتم تحديدها حصريًا وقت المكالمة.
 
-## `this` and its disadvantages
+## "هذا" وعيوبه
 
-Methods are functions that are stored in objects. In order for the function⚙️ to know which object to work on, use `this`.
+الأساليب هي الوظائف التي يتم تخزينها في الكائنات. لكي تعرف الوظيفة أي كائن تعمل عليه ، استخدم `this`.
 
 ![Poor](https://media.giphy.com/media/fQJbwrRJdHyMOP7RPH/giphy.gif)
 
-But `this` loses context in many situations (return value unknown):
+لكن `this` يفقد السياق في العديد من المواقف (القيمة المرجعة غير معروفة):
 
-- loses context inside nested functions
-- loses context in callbacks
-- `this` loses context when the method is used as an event handler.
+- يفقد السياق داخل الوظائف المتداخلة
+- يفقد السياق في عمليات الاسترجاعات
+- `this` يفقد السياق عند استخدام الطريقة كمعالج للأحداث.
 
 <!-- Давайте возьмем случай компонента `React`, который создает🏗️ поисковый запрос. В обоих методах, используемых в качестве обработчиков событий, при исползовании `this` теряется контекст:
 
@@ -123,13 +123,13 @@ timer.timerId // secret не такой уже секретный
 
 Удаление `this` означает отсутствие пользовательских прототипов в целом. -->
 
-## Best language
+## أفضل لغة
 
 ![The_best](https://media.giphy.com/media/ZBn3ZRvCbWz2PS3Rbg/giphy.gif)
 
-JavaScript is both a functional programming language and a prototype-based language. If we get rid of this, we are left with JavaScript as a functional programming language. This is even better!
+JavaScript هي لغة برمجة وظيفية ولغة قائمة على النموذج الأولي. إذا تخلصنا من هذا ، فسيتبقى لنا JavaScript كلغة برمجة وظيفية. هذا أفضل!
 
-At the same time, without `this` JavaScript offers a new, unique way to do object-oriented programming without classes and inheritance.
+في نفس الوقت ، بدون`this` تقدم JavaScript طريقة جديدة وفريدة للقيام بالبرمجة الموجهة للكائنات بدون فئات أو وراثة.
 
 <!-- ### Объектно-ориентированное программирование без this
 
@@ -270,18 +270,18 @@ function learnJavaScript() {
 
 В данном примере метод `reduce` запускается в контексте массива и вызывает функцию⚙️ для каждого элемента. Но помимо этого, он аккумулирует результаты всех вызовов в одно значение. Его задача – подсчитать "сумму" всех элементов и вернуть ее. -->
 
-## Abandoning this
+## التخلي عن هذا
 
 ![remember](https://media.giphy.com/media/S52I9r5QfB4fIBS6WV/giphy.gif)
 
-The best way to avoid `this` related problems is not to use `this` at all!
+أفضل طريقة لتجنب `this` المشاكل ذات الصلة ليست للاستخدام `this` على الاطلاق!
 
-:::note JavaScript
-JavaScript without this looks like the best functional programming language!
+::: لاحظ جافا سكريبت
+تبدو JavaScript بدون هذا أفضل لغة برمجة وظيفية!
 
 :::
 
-We can create encapsulated objects without using this as a collection of closures. With the help of [React Hooks](https://reactjs.org/docs/hooks-intro.html) we can create stateful components🏗️ without `this`.
+يمكننا إنشاء كائنات مغلفة دون استخدام هذا كمجموعة من الإغلاق. بمساعدة [React Hooks](https://reactjs.org/docs/hooks-intro.html) يمكننا إنشاء مكونات ذات حالة🏗️ بدون `this`.
 
 The `this` keyword cannot be removed from JavaScript without destroying all existing applications. However, what can be done? We can write 🖊️ our own code without `this` and only allow it to be used in libraries. In the meantime, [new rules](https://ru.reactjs.org/docs/hooks-rules.html#eslint-plugin) `ESLint` are being introduced, prohibiting the use of `this`.
 

@@ -1,16 +1,16 @@
 ---
 id: javascript23
-title: Classes
-sidebar_label: Classes
+title: الطبقات
+sidebar_label: الطبقات
 ---
 
 ![@serverSerrverlesskiy](/img/javascript/headers/23.jpg)
 
-JavaScript uses the prototypal inheritance model: each object inherits the fields (properties) and methods of the prototype object.
+يستخدم JavaScript نموذج الوراثة النموذجي: كل كائن يرث الحقول (الخصائص) وأساليب كائن النموذج الأولي.
 
-## class
+## صف دراسي
 
-The keyword `class` is used to define a class:
+الكلمة `class` يستخدم لتحديد فئة:
 
 ```jsx
 class MyClass {
@@ -23,16 +23,16 @@ class MyClass {
 }
 ```
 
-This syntax is called a class declaration.
+تسمى هذه الصيغة بإعلان الفئة.
 
 ![Class](https://media.giphy.com/media/cYaBD8kxE4PZudHBRA/giphy.gif)
 
-:::note Methods in the class are not comma separated
-Class syntax differs from object literals. No commas are required inside classes.
+::: note الأساليب في الفصل ليست مفصولة بفواصل
+يختلف بناء جملة الفئة عن حرفية الكائن. لا توجد فواصل مطلوبة داخل الفصول الدراسية.
 
 :::
 
-The class may not have a name. A class expression can be used to assign a class to a variable 🔔:
+قد لا يكون للفصل اسم. يمكن استخدام تعبير فئة لتعيين فئة إلى متغير 🔔:
 
 ```jsx
 const UserClass = class {
@@ -40,7 +40,7 @@ const UserClass = class {
 }
 ```
 
-Classes can be exported as modules. Here's an example of the default export:
+يمكن تصدير الفئات كوحدات نمطية. فيما يلي مثال على التصدير الافتراضي:
 
 ```jsx
 export default class User {
@@ -48,7 +48,7 @@ export default class User {
 }
 ```
 
-And here's an example of a named export:
+وإليك مثال على تصدير مسمى:
 
 ```jsx
 export class User {
@@ -56,26 +56,26 @@ export class User {
 }
 ```
 
-The class becomes useful when you instantiate the class. An instance is an object that contains the data and behavior described by 🖊️
-class.
+يصبح الفصل مفيدًا عندما تقوم بإنشاء مثيل له. المثيل هو كائن يحتوي على البيانات والسلوك الموصوف بواسطة🖊️
+صف دراسي.
 
-The `new` operator creates an instance of a class in JavaScript like this: `instance = new Class()`.
+ال `new` ينشئ عامل التشغيل مثيلًا لفئة في JavaScript مثل هذا: `instance = new Class()`.
 
-For example, you can create🏗️ an instance of the User class👤 using the `new` operator:
+على سبيل المثال ، يمكنك إنشاء ملفات🏗️ مثيل لفئة المستخدم👤 باستخدام `new` المشغل أو العامل:
 
 ```jsx
 const myUser = new User()
 ```
 
-`new User()` creates an instance of the `User` class 👤.
+`new User()` يُنشئ مثيلاً لـ`User` صف دراسي👤.
 
-## Initialization: constructor ()
+## التهيئة: المنشئ ()
 
 ![spangeBob](https://media.giphy.com/media/3oriNZoNvn73MZaFYk/giphy.gif)
 
-`constructor (...)` is a special method in the body of the class that initializes an instance. This is the place where you can set initial values for the fields or make any adjustments to the objects.
+`constructor (...)` هي طريقة خاصة في جسم الفئة تقوم بتهيئة مثيل. هذا هو المكان الذي يمكنك فيه تعيين القيم الأولية للحقول أو إجراء أي تعديلات على الكائنات.
 
-In the following example, the constructor sets the initial value of the `name` field:
+في المثال التالي ، يعيّن المُنشئ القيمة الأولية لملف`name` مجال:
 
 ```jsx
 class User {
@@ -85,11 +85,11 @@ class User {
 }
 ```
 
-The `constructor` of the `User` class takes one parameter, `name`, which is used to set the initial value of the `this.name` field.
+ال `constructor` التابع `User` الفصل يأخذ معلمة واحدة ، `name`, والذي يستخدم لتعيين القيمة الأولية لـ`this.name` مجال.
 
-Inside the constructor, the value of `this` is equal to the newly created instance.
+داخل المنشئ ، قيمة`this` يساوي المثيل المنشأ حديثًا.
 
-The arguments used to instantiate the class become parameters to the constructor 👇:
+تصبح الوسائط المستخدمة لإنشاء مثيل للفئة معلمات للمُنشئ👇:
 
 ```jsx live
 function learnJavaScript() {
@@ -105,44 +105,44 @@ function learnJavaScript() {
 }
 ```
 
-The `name` parameter inside the constructor is `Jon Snow`.
+ال `name` المعلمة داخل المنشئ هي `Jon Snow`.
 
-If you do not define a constructor for a class, a default constructor is created. The default constructor is an empty function⚙️ that does not modify the instance.
+إذا لم تقم بتعريف مُنشئ لفئة ، فسيتم إنشاء مُنشئ افتراضي. المُنشئ الافتراضي هو دالة فارغة⚙️ لا تقوم بتعديل المثيل.
 
-There can be only one method named `constructor` in a class.
+يمكن أن يكون هناك طريقة واحدة فقط تسمى `constructor` في الفصل.
 
-## Discarding classes
+## نبذ الطبقات
 
 ![rejection](https://media.giphy.com/media/l2SpUoAPo0CBOkyxq/giphy.gif)
 
-Since in the course of our school we teach to develop mobile applications using the library [React](https://reactjs.org), where is the innovation [React Hooks](https://en.reactjs.org/docs/hooks-intro.html) allows you to use state and other React features without writing classes. Therefore, it makes no sense to talk about classes anymore, since we have abandoned them.
+نظرًا لأننا ندرس في مسار مدرستنا تطوير تطبيقات الهاتف المحمول باستخدام المكتبة[React](https://reactjs.org), اين الابتكار[React Hooks](https://en.reactjs.org/docs/hooks-intro.html) يسمح لك باستخدام ميزات الحالة وميزات React الأخرى دون كتابة فئات. لذلك ، ليس من المنطقي الحديث عن الفصول بعد الآن ، لأننا تخلينا عنها.
 
-## Problems?
+## مشاكل؟
 
 ![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
 
-Write to [Discord](https://discord.gg/6GDAfXn) chat.
+اكتب ل [Discord](https://discord.gg/6GDAfXn) محادثة.
 
-## Questions:
+## أسئلة:
 
 ![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
 
-What is the keyword for class definition?
+ما هي الكلمة الأساسية لتعريف الفئة؟
 
 1. `constructor()`
 2. `class`
 3. `this`
 
-Are methods inside a class comma separated?
+هل الطرق داخل الفصل مفصولة بفاصلة؟
 
-1. Yes
-2. No
+1. نعم
+2. لا
 
-How many `constructor()` methods can there be in one class?
+كم العدد `constructor()` يمكن أن يكون هناك في فئة واحدة؟
 
-1. Unlimited
-2. Up to ten
-3. Only one
+1. غير محدود
+2. ما يصل إلى عشرة
+3. واحد فقط
 
 <!-- Что такое геттеры и сеттеры?
 
@@ -160,7 +160,7 @@ How many `constructor()` methods can there be in one class?
 1. Перед this
 2. После this -->
 
-In order to understand how much you learned this lesson, take the test on the [mobile application](http://onelink.to/njhc95) of our school on this topic.
+لفهم مقدار ما تعلمته في هذا الدرس ، قم بإجراء الاختبار في[mobile application](http://onelink.to/njhc95) من مدرستنا في هذا الموضوع.
 
 ![Sumerian school](/img/app.jpg)
 
@@ -362,14 +362,14 @@ const cat = new Animal({ //Создание объекта при помощи �
 1. Перед this
 2. После this -->
 
-## Links:
+## الروابط:
 
 1.  [MDN web docs](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Classes)
 2.  [Learn JavaScript](https://learn.javascript.ru/class)
 
-## Contributors ✨
+## المساهمون✨
 
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+الشكر يعود إلى هؤلاء الأشخاص الرائعين ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
