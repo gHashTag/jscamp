@@ -161,11 +161,11 @@ console.log(typeof TestVar) // object
 
 Из предыдущих примеров ясно, что `undefined` и `null` - это два 2️⃣ различных типа: `undefined` - это сам тип (неопределенный), а `null` - объект.
 
-```javascript
+<!-- ```javascript
 null === undefined // false
 null == undefined // true
 null === null // true
-```
+``` -->
 
 ## Тип данных Символ (Symbol)
 
