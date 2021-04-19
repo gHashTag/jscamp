@@ -8,37 +8,36 @@ import YouTube from 'react-youtube'
 
 ![javascript bot](/img/javascript/JSBot.jpg)
 
-With the help of [this Telegram bot](https://t.me/javascriptcamp_bot) you can test your knowledge of JavaScript basics.
+Avec l'aide de [ce bot Telegram](https://t.me/javascriptcamp_bot) vous pouvez tester vos connaissances sur les bases de JavaScript.
 
 ![javascript bot](https://miro.medium.com/max/1400/1*x9F9oX8vTt5e-bVxL4oOog.png)
 
-We use questions from 29 topics [of our course](https://www.jscamp.app/docs/javascript01/) on JavaScript basics. More details [about us](https://www.jscamp.app/ru/docs/javascript00/) can be found in the previous publication.
-As a result of answering all the questions, an assessment of your level of knowledge awaits you.
-
-![javascript bot result](https://miro.medium.com/max/1400/1*KCe76zg2M56lT-234Xi1NA.png)
+Nous utilisons des questions de 29 sujets [of our course](https://www.jscamp.app/docs/javascript01/) sur les bases de JavaScript. Plus de détails [à propos de nous](https://www.jscamp.app/ru/docs/javascript00/) peuvent être trouvés dans la publication précédente.
+Après avoir répondu à toutes les questions, une évaluation de votre niveau de connaissances vous attend.
+![javascript bot résultat](https://miro.medium.com/max/1400/1*KCe76zg2M56lT-234Xi1NA.png)
 
 ## Telegraph.js
 
-Our bot is implemented on the framework [Telegraph.js](https://telegraf.js.org/)
+Notre bot est implémenté sur le framework [Telegraph.js](https://telegraf.js.org/)
 
 ![Telegraph.js](/img/javascript/telegraf.jpg)
 
 ## OpenSource
 
-The source code of the project is available on [GitHub](https://github.com/gHashTag/javascriptcamp_bot/tree/heroku/src/quiz), so you can participate in its development.
+Le code source du projet est disponible sur [GitHub](https://github.com/gHashTag/javascriptcamp_bot/tree/heroku/src/quiz), afin que vous puissiez participer à son développement.
 
 ![open source](https://media.giphy.com/media/7FgmaCJgUAMxRWatWB/giphy.gif)
 
 ## Internationalization (i18n)
 
-[Bot Now](https://github.com/gHashTag/javascriptcamp_bot/tree/heroku/locales) communicates in English and Russian, but you can send a pull request in your native language.
+[Bot Now](https://github.com/gHashTag/javascriptcamp_bot/tree/heroku/locales) communique en anglais et en russe, mais vous pouvez envoyer une pull request dans votre langue maternelle.
 
 ![i18n](/img/javascript/i18n.png)
 
 ## What's next?
 
-Next, we plan to implement testing on TypeScript, React Native, AWS Amplify, so subscribe to our [Twitter](https://twitter.com/jscamp_bot) to stay tuned.
+Ensuite, nous prévoyons de mettre en œuvre des tests sur TypeScript, React Native, AWS Amplify, alors abonnez-vous à notre [Twitter](https://twitter.com/jscamp_bot) to stay tuned.
 
-The bot is free, but you can support our startup via [Patreon](https://www.patreon.com/javascriptcamp)
+Le bot est gratuit, mais vous pouvez soutenir notre startup via [Patreon](https://www.patreon.com/javascriptcamp)
 
 [![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
