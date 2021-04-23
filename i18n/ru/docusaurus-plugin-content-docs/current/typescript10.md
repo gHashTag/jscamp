@@ -16,8 +16,8 @@ Prettier - Инструмент форматирования кода c подд
 
 ## Устанавливаем зависимости
 
-```bash
- yarn add eslint eslint-config-airbnb babel-preset-airbnb eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react eslint-watch babel-core babel-eslint babel-preset-react-native prettier prettier-eslint eslint-plugin-prettier eslint-config-prettier eslint-plugin-react eslint-plugin-react-native eslint-plugin-react-hooks --dev
+```npm2yarn
+npm install eslint-plugin-import eslint-plugin-react-hooks --dev 
 ```
 
 ![Step02](/img/steps/02.png)
@@ -26,20 +26,10 @@ Prettier - Инструмент форматирования кода c подд
 
 Добавляем правила в .eslintrc.js
 
-```jsx
+```js
 module.exports = {
   root: true,
-  parser: 'babel-eslint',
-  extends: ['airbnb', 'prettier'],
-  plugins: ['react', 'react-native', 'jsx-a11y', 'import', 'react-hooks'],
-  parserOptions: {
-    ecmaFeatures: {
-      jsx: true
-    }
-  },
-  env: {
-    'react-native/react-native': true
-  },
+  extends: '@react-native-community',
   rules: {
     'no-param-reassign': 0,
     'react-hooks/rules-of-hooks': 'error',
@@ -71,7 +61,6 @@ module.exports = {
     'import/no-cycle': 0,
     'no-underscore-dangle': 0,
     'no-return-assign': 0,
-    'import/prefer-default-export': 0,
     'jsx-quotes': ['error', 'prefer-double'],
     'no-console': 'error',
     'arrow-parens': 0,
@@ -102,7 +91,6 @@ module.exports = {
     }
   }
 }
-
 ```
 
 ![Step03](/img/steps/03.png)

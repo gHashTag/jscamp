@@ -4,8 +4,6 @@ title: UI Kit - Unicorn
 sidebar_label: Установка
 ---
 
-# Установка UI Kit - Unicorn
-
 [![react-navigation](/img/uikit/00.gif)](https://youtu.be/4Cn_LdGKA_o)
 
 ![Step01](/img/steps/01.png)
