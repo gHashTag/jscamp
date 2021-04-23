@@ -1,42 +1,42 @@
 ---
 id: javascript25
-title: Asynchronous Event loop
-sidebar_label: Event loop
+title: حلقة حدث غير متزامن
+sidebar_label: حلقة الحدث
 ---
 
 ![@serverSerrverlesskiy](/img/javascript/headers/26.jpg)
 
-## Asynchronous
+## غير متزامن
 
-In JavaScript, asynchrony is the main tool that processes requests in parallel with the loading of a web page. Now it is impossible to imagine the Internet, where all requests to the server would be sent with a page reload.
+في JavaScript ، يعد عدم التزامن الأداة الرئيسية التي تعالج الطلبات بالتوازي مع تحميل صفحة الويب. الآن من المستحيل تخيل الإنترنت ، حيث سيتم إرسال جميع الطلبات إلى الخادم مع إعادة تحميل الصفحة.
 
-Any data from the server is requested asynchronously: a request is sent (XMLHttpRequest or XHR), and the code📟 does not wait for its return🔄, continuing to execute. When the server responds, the XHR object is notified of this and runs the callback function that was passed to it before sending the request.
+يتم طلب أي بيانات من الخادم بشكل غير متزامن: يتم إرسال الطلب (XMLHttpRequest أو XHR) ، والرمز📟 لا تنتظر عودته🔄, الاستمرار في التنفيذ. عندما يستجيب الخادم ، يتم إخطار كائن XHR بذلك ويقوم بتشغيل وظيفة رد الاتصال التي تم تمريرها إليه قبل إرسال الطلب.
 
-If you use the language tools correctly👅, then the execution of a request, which occurs sequentially and in one thread, does not interfere in any way with the reception of events and the reaction to them - a person👨 calmly works with the interface, not noticing lags, crashes and freezes.
+إذا كنت تستخدم أدوات اللغة بشكل صحيح👅, ثم تنفيذ الطلب الذي يحدث بشكل متتابع وفي خيط واحد لا يتدخل بأي شكل من الأشكال في استقبال الأحداث ورد الفعل عليها - شخص👨 يعمل بهدوء مع الواجهة ، دون ملاحظة التأخيرات والأعطال والتجميد.
 
-## Event loop
+## حلقة الحدث
 
 ![Queue](https://media.giphy.com/media/5YuhLwDgrgtRVwI7OY/giphy.gif)
 
-The JavaScript `Event loop` is an asynchronous call manager.
+جافا سكريبت `Event loop` هو مدير مكالمات غير متزامن.
 
-To make this tricky process work smoothly, JavaScript implements a mechanism to control the sequence of code execution📟. Since it is a single-threaded language👅, it became necessary to "wedge" into the current execution context. This mechanism is called an event loop.
+لجعل هذه العملية الصعبة تعمل بسلاسة ، تنفذ JavaScript آلية للتحكم في تسلسل تنفيذ التعليمات البرمجية📟. لأنها لغة ذات ترابط واحد👅, أصبح من الضروري "الإسفين" في سياق التنفيذ الحالي. هذه الآلية تسمى حلقة الحدث.
 
-From English, `loop` translates as" loop ", which perfectly reflects the meaning: we are dealing with a loopback queue.
+من الانجليزية، `loop` يترجم كـ "حلقة" ، وهو ما يعكس المعنى تمامًا: نحن نتعامل مع قائمة انتظار الاسترجاع.
 
-`Event loop` regulates the sequence of execution of contexts - the stack. It is generated when an event was triggered or a function was called. The response to the event is placed in the execution queue, in the `event loop`, which sequentially, with each loop, executes the code that gets into it📟. In this case, the function bound to the event is called next after the current execution context.
+`Event loop` ينظم تسلسل تنفيذ السياقات - المكدس. يتم إنشاؤه عندما يتم تشغيل حدث أو استدعاء وظيفة. يتم وضع الاستجابة للحدث في قائمة انتظار التنفيذ ، في`event loop`,الذي ينفذ بالتسلسل ، مع كل حلقة ، الكود الذي يدخل فيه📟. في هذه الحالة ، يتم استدعاء الوظيفة المرتبطة بالحدث التالي بعد سياق التنفيذ الحالي.
 
-In JavaScript, synchronous and asynchronous execution queues are constantly running. Synchronous - `stack` - forms a queue and forwards to asynchronous - `event loop` - function calls⚙️ that will be executed after the currently scheduled executable context.
+في JavaScript ، يتم تشغيل قوائم انتظار التنفيذ المتزامن وغير المتزامن باستمرار. متزامن - `stack` - تشكل قائمة انتظار وإعادة توجيهها إلى غير متزامن -`event loop` - استدعاءات الوظائف التي سيتم تنفيذها بعد السياق القابل للتنفيذ المجدول حاليًا.
 
-For data to be in a consistent state, each function must be completed. This is due to the single-threading of JavaScript and some other features, such as closures characteristic of functional "languages" of programming. Therefore, a single thread is represented as a queue of execution contexts, in which functions that have passed through the event loop are "wedged".
+لكي تكون البيانات في حالة متسقة ، يجب إكمال كل وظيفة. ويرجع ذلك إلى الترابط الفردي لجافا سكريبت وبعض الميزات الأخرى ، مثل خصائص الإغلاق المميزة "للغات" الوظيفية للبرمجة. لذلك ، يتم تمثيل خيط واحد كقائمة انتظار لسياقات التنفيذ ، حيث تكون الوظائف التي مرت عبر حلقة الحدث "مثبتة".
 
-## Description
+## وصف
 
-JavaScript is a single-threaded language: only one task can run at a time. This is usually no big deal, but now imagine you are running a task that takes 30 seconds ... Yes. During this task, we wait 30 seconds before anything else can happen (by default, JavaScript runs on the main browser thread, so the entire UI will wait) 😬 It's 2021 now, no one wants a slow site that is dumb.
+JavaScript هي لغة ذات ترابط واحد: يمكن تشغيل مهمة واحدة فقط في كل مرة. هذه ليست مشكلة كبيرة في العادة ، لكن تخيل الآن أنك تقوم بمهمة تستغرق 30 ثانية ... نعم. أثناء هذه المهمة ، ننتظر 30 ثانية قبل أن يحدث أي شيء آخر (افتراضيًا ، يتم تشغيل JavaScript على سلسلة المتصفح الرئيسية ، لذلك ستنتظر واجهة المستخدم بأكملها) 😬 إنه عام 2021 الآن ، لا أحد يريد موقعًا بطيئًا وغبيًا.
 
-Fortunately, the browser provides us with some functionality that JavaScript itself does not provide: the Web API. Which includes DOM API, setTimeout, HTTP requests, and so on. This can help us create asynchronous non-blocking behavior 🚀.
+لحسن الحظ ، يوفر لنا المتصفح بعض الوظائف التي لا توفرها JavaScript نفسها: واجهة برمجة تطبيقات الويب. والتي تتضمن DOM API و setTimeout وطلبات HTTP وما إلى ذلك. يمكن أن يساعدنا هذا في إنشاء سلوك غير متزامن غير معطل🚀.
 
-When we call a function, it is added to the call stack. The call stack is part of the JS engine, it is browser independent. This is a classic view of the stack, i.e. `first in`,` last out`. When a function returns, it is popped off the stack.
+عندما نستدعي وظيفة ، تتم إضافتها إلى مكدس الاستدعاءات. مكدس الاستدعاءات هو جزء من محرك JS ، وهو مستعرض مستقل. هذه طريقة عرض كلاسيكية للمكدس ، أي `first in`,` last out`. عندما تعود دالة ، تنبثق من المكدس.
 
 ```javascript
 function great() {
@@ -53,25 +53,25 @@ respond()
 
 ![stack](/img/javascript/27/stack.gif)
 
-The respond function returns the setTimeout function. `SetTimeout` is provided to us through the` Web-API`: it allows us to divide tasks without blocking the main thread. The `Callback` function we passed to the` setTimeout` function, the `() => {return 'Hey'}` lambda function is added to the `Web-API`. Meanwhile, `setTimeout` and `responde` are popped from the stack and return their values.
+تقوم وظيفة الاستجابة بإرجاع الدالة setTimeout. `SetTimeout` يتم توفيره لنا من خلال` Web-API`: يسمح لنا بتقسيم المهام دون حجب الخيط الرئيسي. ال `Callback` وظيفة مررناها إلى` setTimeout` وظيفة`() => {return 'Hey'}` تمت إضافة وظيفة lambda إلى ملف`Web-API`. وفى الوقت نفسه، `setTimeout` و`responde` من المكدس وإرجاع قيمها.
 
 ![timer](/img/javascript/27/timer.gif)
 
-In `Web-API`, the timer runs until the second argument we passed to it waits for 1000ms. The callback is not immediately added to the call stack, but passed to something called a queue.
+في `Web-API`, يعمل الموقت حتى تنتظر الوسيطة الثانية التي مررناها إليها 1000 مللي ثانية. لا تتم إضافة رد الاتصال على الفور إلى مكدس الاستدعاءات ، ولكن يتم تمريره إلى ما يسمى قائمة الانتظار.
 
 ![queue](/img/javascript/27/queue.gif)
 
-This can be confusing: it does not mean that the `callback` function is added to the call stack (thus returning a value) after 1000ms! It just gets added to the queue after 1000ms. But in this queue, the function must wait until it is its turn.
+قد يكون هذا محيرًا: فهذا لا يعني أن ملف `callback` تضاف وظيفة إلى مكدس الاستدعاءات (وبالتالي إرجاع قيمة) بعد 1000 مللي ثانية! تتم إضافته إلى قائمة الانتظار بعد 1000 مللي ثانية. ولكن في قائمة الانتظار هذه ، يجب أن تنتظر الوظيفة حتى يحين دورها.
 
-Now this is the part we've all been waiting for ... Time for the event loop to do one thing: connect the queue to the call stack! If the call stack is empty, that is, if all previously called functions returned their values ​​and were popped from the stack, the first item in the queue is added to the call stack. In this case, no other functions were called, which means that the call stack was empty by the time the `callback` function was the first item in the queue.
+الآن هذا هو الجزء الذي كنا ننتظره جميعًا ... حان الوقت لفعل حلقة الحدث شيئًا واحدًا: توصيل قائمة الانتظار بمكدس المكالمات! إذا كانت مكدس الاستدعاءات فارغًا ، أي إذا أعادت جميع الوظائف التي تم استدعاؤها سابقًا قيمها وتم إخراجها من المكدس ، فسيتم إضافة العنصر الأول في قائمة الانتظار إلى مكدس الاستدعاءات. في هذه الحالة ، لم يتم استدعاء أي وظائف أخرى ، مما يعني أن مكدس الاستدعاءات كان فارغًا بحلول الوقت`callback` كانت الوظيفة العنصر الأول في قائمة الانتظار.
 
 ![qtoc](/img/javascript/27/qtoc.gif)
 
-callback is pushed onto the call stack, called and returned, and popped off the stack.
+يتم دفع رد الاتصال إلى مكدس المكالمات ، ويتم استدعاؤه وإعادته ، وإزالته من المجموعة.
 
 ![result](/img/javascript/27/res.gif)
 
-It's fun to watch, but you can't fully grasp a topic without working on it over and over again. Try to figure out what appears in the console if we run the following:
+من الممتع مشاهدتها ، لكن لا يمكنك استيعاب موضوع بالكامل دون العمل عليه مرارًا وتكرارًا. حاول معرفة ما يظهر في وحدة التحكم إذا قمنا بتشغيل ما يلي:
 
 ```jsx
 const foo = () => console.log('First')
@@ -83,50 +83,50 @@ foo()
 baz()
 ```
 
-Let's see what happens when we run this code in a browser:
+دعونا نرى ما يحدث عندما نقوم بتشغيل هذا الرمز في المتصفح:
 
 ![br](/img/javascript/27/br.gif)
 
-We call `bar`, which returns the `setTimeout` function.
-The `Callback` that we passed to `setTimeout` is added to the `Web API`, the `setTimeout` and `bar` functions are popped from the call stack.
+نحن نتصل `bar`, الذي يعيد ال`setTimeout` وظيفة.
+ال`Callback` الذي مررنا إليه `setTimeout` يضاف إلى `Web API`, ال`setTimeout` و`bar` تنبثق وظائف من مكدس المكالمات.
 
-The timer starts, meanwhile `foo` is called and logs `First`. `foo` returns `undefined`, `baz` is called and `callback` is added to the queue
-`baz` logs` Third`. The event loop sees that the callstack is empty after baz returns, after which the callback is added to the call stack.
-`Callback` logs `Second`.
+في غضون ذلك ، يبدأ الموقت `foo` يسمى والسجلات `First`. `foo` عائدات `undefined`, `baz` يسمى و `callback` يضاف إلى قائمة الانتظار
+`baz` السجلات` Third`. ترى حلقة الحدث أن callstack فارغ بعد عودة baz ، وبعد ذلك تتم إضافة رد الاتصال إلى مكدس الاستدعاءات.
+`Callback` السجلات`Second`.
 
-Hope this makes you feel more confident with the `event loop`!
+آمل أن يجعلك هذا تشعر بمزيد من الثقة مع`event loop`!
 
-Don't worry if this still seems confusing, the most important thing is to understand where certain bugs or specific behavior might come from.
+لا تقلق إذا كان هذا لا يزال يبدو محيرًا ، فالشيء الأكثر أهمية هو فهم مصدر أخطاء معينة أو سلوك معين.
 
-## Problems?
+## مشاكل؟
 
 ![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
 
-Write to [Discord](https://discord.gg/6GDAfXn) chat.
+اكتب ل[Discord](https://discord.gg/6GDAfXn) محادثة.
 
-## Questions:
+## أسئلة:
 
 ![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
 
-Asynchrony is:
+عدم التزامن هو:
 
-1. A tool that displays the execution context of a function from a synchronous stream
-2. A tool that executes code line by line
-3. A tool that processes requests in parallel with the loading of web pages
+1. أداة تعرض سياق تنفيذ وظيفة من دفق متزامن
+2. أداة تنفذ التعليمات البرمجية سطرًا بسطر
+3. أداة تعالج الطلبات بالتوازي مع تحميل صفحات الويب
 
-Asynchronous Call Manager:
+مدير الاتصال غير المتزامن:
 
 1. `stack`
 2. `Event loop`
 3. `JavaScript`
 
-Function calls are placed in:
+يتم إجراء مكالمات الوظائف في:
 
-1. Stack
-2. A bunch of
-3. Loop
+1. كومة
+2. حفنة من
+3. حلقة
 
-Tool that executes code with a millisecond delay:
+الأداة التي تنفذ التعليمات البرمجية بتأخير ميلي ثانية:
 
 1. `delay`
 2. `heap`
@@ -352,11 +352,11 @@ redButton.click();
 
 -->
 
-In order to understand how much you learned this lesson, take the test on the [mobile application](http://onelink.to/njhc95) of our school on this topic.
+لفهم مقدار ما تعلمته في هذا الدرس ، قم بإجراء الاختبار في[mobile application](http://onelink.to/njhc95) من مدرستنا في هذا الموضوع.
 
 ![Sumerian school](/img/app.jpg)
 
-## Links:
+## الروابط:
 
 1. [Explaining how EventLoop works in JavaScript](https://medium.com/devschacht/javascript-eventloop-explained-f2dcf84e36ee)
 2. [How to manage event loop in JavaScript](https://skillbox.ru/media/code/event_loop_chast_1)
@@ -364,9 +364,9 @@ In order to understand how much you learned this lesson, take the test on the [m
 4. [Article: Explaining Event Loop in Javascript Using Rendering](https://bool.dev/blog/detail/obyasnenie-event-loop-v-javascript-s-pomoshchyu-vizualizatsii)
 5. [Article: JavaScript Visualized: Promises & Async / Await](https://medium.com/@lydiahallie/javascript-visualized-promises-async-await-a3f1aad8a943)
 
-## Contributors ✨
+## المساهمون ✨
 
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+الشكر يعود إلى هؤلاء الأشخاص الرائعين([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
