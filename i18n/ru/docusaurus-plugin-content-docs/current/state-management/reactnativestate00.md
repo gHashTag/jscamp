@@ -46,7 +46,7 @@ npm install mobx mobx-react-lite nanoid @react-native-community/checkbox
 При использовании c react native можно использовать следующий пресет 
 
 ```bash npm2yarn
-npm i @babel/plugin-proposal-decorators
+npm install @babel/plugin-proposal-decorators
 ```
 
 
