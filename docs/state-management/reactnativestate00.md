@@ -46,7 +46,7 @@ Include the ExperimentalDecorators compiler option in `tsconfig.json`, or pass i
 When using c react native the following preset can be used
 
 ```bash npm2yarn
-npm i @babel/plugin-proposal-decorators
+npm install @babel/plugin-proposal-decorators
 ```
 
 
