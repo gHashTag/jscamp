@@ -285,49 +285,47 @@ function learnJavaScript() {
 
 ال `this` لا يمكن إزالة الكلمة الأساسية من JavaScript دون تدمير جميع التطبيقات الموجودة. ومع ذلك ، ما الذي يمكن عمله؟ يمكننا الكتابة 🖊️ رمزنا الخاص بدون `this` والسماح باستخدامه في المكتبات فقط. في هذه الأثناء، [new rules](https://ru.reactjs.org/docs/hooks-rules.html#eslint-plugin) `ESLint` يتم إدخالها ، وحظر استخدام`this`.
 
-Since in the last lesson we abandoned [classes](https://react-native-village.github.io/docs/javascript25#refused-classes), we say goodbye to `this` with them.
+منذ الدرس الأخير تخلينا [classes](https://react-native-village.github.io/docs/javascript25#refused-classes), we قل وداعا إلى `this` معهم.
 
-## Problems?
+## مشاكل؟
 
 ![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
 
-Write to [Discord](https://discord.gg/6GDAfXn) chat.
+اكتب ل[Discord](https://discord.gg/6GDAfXn) محادثة.
 
-## Questions:
+## أسئلة:
 
 ![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
 
-The `this` keyword is -
+ال`this` الكلمة الرئيسية هي-
 
-1. The object to which the method belongs
-2. First argument in the function
-3. Set of properties
+1. الكائن الذي تنتمي إليه الطريقة
+2. الوسيطة الأولى في الوظيفة
+3. مجموعة من الخصائص
 
-Is it possible to do without this:
+هل من الممكن الاستغناء عن هذا:
 
-1. You can, and it is better not to use at all
-2. It is possible, but not advisable
-3. It is impossible, because `this` cannot be removed from JavaScript
+1. يمكنك ، ومن الأفضل عدم استخدامها على الإطلاق
+2. هذا ممكن ، لكن لا ينصح به
+3. إنه مستحيل ، لأنه لا يمكن إزالة "هذا" من JavaScript
 
-JavaScript without `this` looks like the best:
+جافا سكريبت بدون`this` يبدو أنه الأفضل:
+1. لغة البرمجة الوظيفية
+2. لغة البرمجة الإجرائية
+3. لغة البرمجة المنطقية
 
-1. Functional programming language
-2. Procedural programming language
-3. Logical programming language
+لفهم مقدار ما تعلمته في هذا الدرس ، قم بإجراء الاختبار في[mobile application](http://onelink.to/njhc95) من مدرستنا في هذا الموضوع.
 
-In order to understand how much you learned this lesson, take the test on the [mobile application](http://onelink.to/njhc95) of our school on this topic.
+! [المدرسة السومرية] (/ img / app.jpg)
 
-![Sumerian school](/img/app.jpg)
-
-## Links
+## الروابط
 
 1. [Removing the 'this' keyword from JavaScript makes the language better](https://webformyself.com/udalenie-klyuchevogo-slova-this-iz-javascript/)
 2. [The article "The this keyword in JavaScript"](https://habr.com/ru/post/464163/)
 3. [MDN web doc. Article "this"](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/this)
+## المساهمون✨
 
-## Contributors ✨
-
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+الشكر يعود إلى هؤلاء الأشخاص الرائعين ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
