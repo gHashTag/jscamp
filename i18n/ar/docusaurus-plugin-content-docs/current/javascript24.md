@@ -283,7 +283,7 @@ function learnJavaScript() {
 
 يمكننا إنشاء كائنات مغلفة دون استخدام هذا كمجموعة من الإغلاق. بمساعدة [React Hooks](https://reactjs.org/docs/hooks-intro.html) يمكننا إنشاء مكونات ذات حالة🏗️ بدون `this`.
 
-The `this` keyword cannot be removed from JavaScript without destroying all existing applications. However, what can be done? We can write 🖊️ our own code without `this` and only allow it to be used in libraries. In the meantime, [new rules](https://ru.reactjs.org/docs/hooks-rules.html#eslint-plugin) `ESLint` are being introduced, prohibiting the use of `this`.
+ال `this` لا يمكن إزالة الكلمة الأساسية من JavaScript دون تدمير جميع التطبيقات الموجودة. ومع ذلك ، ما الذي يمكن عمله؟ يمكننا الكتابة 🖊️ رمزنا الخاص بدون `this` والسماح باستخدامه في المكتبات فقط. في هذه الأثناء، [new rules](https://ru.reactjs.org/docs/hooks-rules.html#eslint-plugin) `ESLint` يتم إدخالها ، وحظر استخدام`this`.
 
 Since in the last lesson we abandoned [classes](https://react-native-village.github.io/docs/javascript25#refused-classes), we say goodbye to `this` with them.
 
