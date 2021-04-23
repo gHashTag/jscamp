@@ -59,7 +59,7 @@ let one = { firstName: 'John', lastName: 'Smith' } // object
 
 let two = () => {} // function
 
-let three 'bar' // string
+let three = 'bar' // string
 
 let four = 42 // number
 
