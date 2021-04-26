@@ -1,31 +1,31 @@
 ---
 id: javascript26
-title: Promise - deferred and asynchronous computation
-sidebar_label: Promise
+title: الوعد - حساب مؤجل وغير متزامن
+sidebar_label: يعد
 ---
 
 ![@serverSerrverlesskiy](/img/javascript/headers/27.jpg)
 
-A Promise is an object that contains the future value of an asynchronous operation. For example, if you request some data from a server, a promise promises us to receive this data that we can use in the future.
+الوعد هو كائن يحتوي على القيمة المستقبلية لعملية غير متزامنة. على سبيل المثال ، إذا طلبت بعض البيانات من خادم ، فإن الوعد يعدنا بتلقي هذه البيانات التي يمكننا استخدامها في المستقبل.
 
 ![math](https://media.giphy.com/media/4JVTF9zR9BicshFAb7/giphy.gif)
 
-At first, the promise has the status `pending`, then it has one of: `fulfilled` ("successfully completed") or `rejected` (" completed with an error🙅‍♂️ ").
+في البداية ، الوعد له مكانة `pending`, ثم يكون له واحد من: `fulfilled` ("مكتملة بنجاح") أو`rejected` (" اكتمل بخطأ🙅‍♂️ ").
 
 ![promise states](/img/javascript/23/promise.png)
 
-1. `Pending` - The promise is pending if the result is not ready. That is, it is waiting for something to complete (for example, the completion of an asynchronous operation).
-2. `Fulfilled` - Promise resolved if result is available. That is, something completed its execution (for example, an asynchronous operation) and everything went well.
-3. `Rejected` - Promise was rejected if an error occurred during execution.
+1. `Pending` - الوعد معلق إذا كانت النتيجة غير جاهزة. أي أنه ينتظر اكتمال شيء ما (على سبيل المثال ، إكمال عملية غير متزامنة).
+2. `Fulfilled` - حل الوعد إذا توفرت النتيجة. أي أن شيئًا ما أكمل تنفيذه (على سبيل المثال ، عملية غير متزامنة) وسار كل شيء على ما يرام.
+3. `Rejected` - تم رفض الوعد إذا حدث خطأ أثناء التنفيذ.
 
-## Create a promise
+## ابتكر وعدًا
 
 ![Plus](https://media.giphy.com/media/Yqo5mjWTLGlVOIP8Dc/giphy.gif)
 
-A `Promise` object is created using the new keyword and its own constructor.
-The Promise constructor takes one argument, a callback, also known as an execution function⚙️, which takes 2 callbacks, `resolve` and` reject`.
+أ`Promise` يتم إنشاء الكائن باستخدام الكلمة الأساسية الجديدة والمُنشئ الخاص بها.
+يأخذ مُنشئ الوعد وسيطًا واحدًا ، وهو رد نداء ، يُعرف أيضًا باسم دالة التنفيذ ، والتي تأخذ استعادتي نداء `resolve` و` reject`.
 
-The executive function is executed immediately after the promise is created. A promise is made fulfilled by calling `resolve` and rejected by calling `reject`.
+يتم تنفيذ الوظيفة التنفيذية فور إنشاء الوعد. الوعد يتم الوفاء به عن طريق الاتصال `resolve` ورفض الاتصال `reject`.
 
 ```jsx
 const promise = new Promise((resolve, reject) => {
@@ -37,9 +37,9 @@ const promise = new Promise((resolve, reject) => {
 })
 ```
 
-`resolve` and `reject` take one argument, which can be a string, number, boolean expression, array, or object.
+`resolve` و `reject` خذ وسيطة واحدة ، والتي يمكن أن تكون سلسلة أو رقمًا أو تعبيرًا منطقيًا أو مصفوفة أو كائنًا.
 
-To provide a function with promises functionality, you just need to return a `Promise` object in it:
+لتوفير وظيفة بوظيفة الوعود ، ما عليك سوى إرجاع ملف `Promise` كائن فيه:
 
 ```jsx
 function myAsyncFunction(url) {
@@ -49,19 +49,19 @@ function myAsyncFunction(url) {
 }
 ```
 
-## Using a promise
+## باستخدام الوعد
 
 ![Help](https://media.giphy.com/media/iigqhSTOKmb6wDObGb/giphy.gif)
 
-Promises are used with the `then()` and `catch()` methods.
+وعود تستخدم مع `then()` و `catch()` أساليب.
 
-### then
+### ومن بعد
 
-The `then` method is used to run functions on a positive or negative promise.
+ال `then` تستخدم الطريقة لتشغيل الدوال بوعد إيجابي أو سلبي.
 
 ![Launch](https://media.giphy.com/media/1n4FT4KRQkDvK0IO4X/giphy.gif)
 
-The syntax for the `then` method is:
+بناء الجملة لملف`then` الطريقة هي:
 
 ```jsx
 promise.then(
@@ -74,13 +74,13 @@ promise.then(
 )
 ```
 
-The first 1️⃣ argument of the `then` method is a function⚙️ that is executed when the promise is passed to the" completed successfully "state and receives the result.
+الأول 1️⃣ حجة `then` الطريقة هي وظيفة يتم تنفيذها عند تمرير الوعد إلى حالة "تم بنجاح" وتلقي النتيجة.
 
-The second argument to `then` is a function⚙️ that is executed when a promise enters the completed with error state and receives an error🙅‍♂️.
+الحجة الثانية ل `then` هي وظيفة يتم تنفيذها عندما يدخل الوعد في حالة اكتمال مع وجود خطأ ويتلقى خطأ🙅‍♂️.
 
 ![Error](https://media.giphy.com/media/iJCo9daAP0xugHhhfb/giphy.gif)
 
-An example of the `then` method:
+مثال على `then` طريقة:
 
 ```jsx
 let promise = new Promise(function (resolve, reject) {
@@ -94,7 +94,7 @@ promise.then(
 )
 ```
 
-And in case of an error 🙅‍♂️ in a promise, the second will be executed:
+وفي حالة وجود خطأ 🙅‍♂️ في الوعد ، يتم تنفيذ الثاني:
 
 ```jsx
 let promise = new Promise(function (resolve, reject) {
@@ -108,7 +108,7 @@ promise.then(
 )
 ```
 
-If you need to display only the result of a successful execution, then only one function can be passed to `then`:
+إذا كنت بحاجة إلى عرض نتيجة التنفيذ الناجح فقط ، فيمكن تمرير وظيفة واحدة فقط إليها`then`:
 
 ```jsx
 let promise = new Promise(resolve => {
@@ -118,13 +118,14 @@ let promise = new Promise(resolve => {
 promise.then(alert) // will print "done!" one second later
 ```
 
-### catch
+### قبض على
 
 ![Catch](https://media.giphy.com/media/fxeeuml8GaESfmuE4z/giphy.gif)
 
-To catch errors🙅‍♂️, the `catch` method is used. It can be used instead of the `then` method to display error messages.
+للقبض على الأخطاء🙅‍♂️, ال `catch` الطريقة المستخدمة. يمكن استخدامه بدلاً من ملف `then` طريقة عرض رسائل الخطأ.
 
-The syntax for the catch method is:
+
+صيغة طريقة catch هي:
 
 ```jsx
 let promise = new Promise((resolve, reject) => {
@@ -134,9 +135,9 @@ let promise = new Promise((resolve, reject) => {
 promise.catch(alert) // will print "Error: Error!" one second later
 ```
 
-### promise.all
+### الوعد. الكل
 
-This method takes an array of promises and returns a new promise that will be fulfilled when all the promises within the array are fulfilled or rejected as soon as a promise is encountered that is rejected.
+تأخذ هذه الطريقة مجموعة من الوعود وتعيد وعدًا جديدًا سيتم الوفاء به عندما يتم الوفاء بجميع الوعود داخل المصفوفة أو رفضها بمجرد الوفاء بوعد تم رفضه.
 
 ![Return](https://media.giphy.com/media/Y08bx6Fea1BafzTlvc/giphy.gif)
 
@@ -158,7 +159,7 @@ Promise.all([promise1, promise2])
   .catch(error => console.log(error))
 ```
 
-Here, the argument inside `then()` is an array that contains the values of the promises in the same order in which they were passed to `Promise.all()`.
+هنا ، الحجة في الداخل `then()` هي مصفوفة تحتوي على قيم الوعود بنفس الترتيب الذي تم تمريرها إليه `Promise.all()`.
 
 <!-- ### promise.race
 
@@ -190,44 +191,44 @@ Promise.race([promise1, promise2])
 
 По итогу, `Promise.race()` дожидается первого промиса и берет его статус как статус возвращаемого🔄 промиса. -->
 
-## Problems?
+## مشاكل؟
 
 ![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
 
-Write to [Discord](https://discord.gg/6GDAfXn) chat.
+اكتب ل [Discord](https://discord.gg/6GDAfXn)محادثة.
 
-## Questions:
+## أسئلة:
 
 ![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
 
-What is the name of the method that is called when the promise is successful?
+ما اسم الطريقة التي تسمى عند نجاح الوعد؟
 
 1. `reject`
 2. `resolve`
 
-What method can be used to check the fulfillment of all promises in the array?
+ما هي الطريقة التي يمكن استخدامها للتحقق من الوفاء بجميع الوعود في المصفوفة؟
 
 1. `promise.all`
 2. `promise.race`
 
-What method is used to catch errors in promises?
+ما هي الطريقة التي تستخدم للقبض على الأخطاء في الوعود؟
 
 1. `then`
 2. `catch`
 
-In order to understand how much you learned this lesson, take the test on the [mobile application](http://onelink.to/njhc95) of our school on this topic.
+لفهم مقدار ما تعلمته في هذا الدرس ، قم بإجراء الاختبار في [mobile application](http://onelink.to/njhc95) من مدرستنا في هذا الموضوع.
 
 ![Sumerian school](/img/app.jpg)
 
-## Links:
+## الروابط:
 
 1.  [MDN web docs](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise)
 2.  [Learn JavaScript](https://learn.javascript.ru/promise)
 3.  [Understanding Promises](https://blog.bitsrc.io/understanding-promises-in-javascript-c5248de9ff8f?gi=1e459ca846d9)
 
-## Contributors ✨
+## المساهمون ✨
 
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+الشكر يعود إلى هؤلاء الأشخاص الرائعين ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
