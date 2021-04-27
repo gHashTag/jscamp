@@ -23,12 +23,6 @@ Our bot is implemented on the framework [Telegraph.js](https://telegraf.js.org/)
 
 ![Telegraph.js](/img/javascript/telegraf.jpg)
 
-## OpenSource
-
-The source code of the project is available on [GitHub](https://github.com/gHashTag/javascriptcamp_bot/tree/heroku/src/quiz), so you can participate in its development.
-
-![open source](https://media.giphy.com/media/7FgmaCJgUAMxRWatWB/giphy.gif)
-
 ## Internationalization (i18n)
 
 [Bot Now](https://github.com/gHashTag/javascriptcamp_bot/tree/heroku/locales) communicates in English and Russian, but you can send a pull request in your native language.

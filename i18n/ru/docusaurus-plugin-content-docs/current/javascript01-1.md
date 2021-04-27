@@ -23,11 +23,6 @@ import YouTube from 'react-youtube'
 
 ![Telegraph.js](/img/javascript/telegraf.jpg)
 
-## OpenSource
-
-Исходный код проекта доступен на [GitHub](https://github.com/gHashTag/javascriptcamp_bot/tree/heroku), поэтому ты можешь участвовать в его развитии.
-
-![open source](https://media.giphy.com/media/7FgmaCJgUAMxRWatWB/giphy.gif)
 
 ## Internationalization (i18n)
 
