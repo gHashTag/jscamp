@@ -55,9 +55,9 @@ If more than one action is performed in a line, we use - (parentheses) to separa
 
 ```
  3 * (2 + 1)
-(3 + 9) / (10 - 6)
-(2 + 3 * 4) / (6 + 1)
- 2 * (5 - 8 / 2) * (3 + 1)
+(27 + 9) / (10 - 6)
+(63 / 3 ) / (6 + 1)
+ 2 * (5 - 8 / 2) + (3 + 4)
 ```
 
 Enter the following values into `LIVE EDITOR` 👇:
