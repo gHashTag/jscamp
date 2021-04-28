@@ -63,11 +63,15 @@ module.exports = {
       },
       {
         type: 'category',
-        label: 'State management',
+        label: 'MobX',
         items: ['state-management/reactnativestate00'],
       },
+      {
+        type: 'category',
+        label: 'Redux',
+        items: ['redux-00', 'redux-01', 'redux-02', 'redux-03', 'redux-04', 'redux-05', 'redux-06'],
+      }, 
     ],
-    ['Redux']: ['redux-00', 'redux-01', 'redux-02', 'redux-03', 'redux-04', 'redux-05', 'redux-06'],
     ['TypeScript']: [
       'typescript00',
       'typescript01',
