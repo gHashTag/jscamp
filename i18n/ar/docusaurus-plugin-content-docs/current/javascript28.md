@@ -1,18 +1,18 @@
 ---
 id: javascript28
-title: Async Await
-sidebar_label: Async Await
+title: Async في انتظار
+sidebar_label: Async في انتظار
 ---
 
 ![@serverSerrverlesskiy](/img/javascript/headers/29.jpg)
 
-There is a special syntax работы for working with promises called `async / await`.
+هناك صيغة خاصة للعمل مع الوعود تسمى `async / await`.
 
-## Creating an asynchronous function
+## إنشاء وظيفة غير متزامنة
 
 ![creature](https://media.giphy.com/media/4T7e4DmcrP9du/giphy.gif)
 
-An asynchronous function⚙️ is defined by an asynchronous function expression⚙️. The basic function⚙️ looks like this:
+يتم تعريف دالة غير متزامنة بواسطة تعبير دالة غير متزامن. تبدو الوظيفة الأساسية كما يلي:
 
 ```javascript
 async function foo() {
@@ -21,7 +21,7 @@ async function foo() {
 }
 ```
 
-We define a function⚙️ to be asynchronous using `async`. This keyword can be used with any syntax for a function declaration:
+نحدد دالة لتكون غير متزامنة باستخدام`async`. يمكن استخدام هذه الكلمة الأساسية مع أي بناء جملة لإعلان الوظيفة:
 
 ```javascript
 // Function Declaration
@@ -41,16 +41,16 @@ class Bar {
 
 ![Stops](https://media.giphy.com/media/WrgAGkGrh0MD1Z2gkO/giphy.gif)
 
-Once we have defined the function as asynchronous, we can use the `await` keyword.
-This keyword is placed before a promise call, it pauses the function until the promise is fulfilled or rejected.
+بمجرد تعريف الوظيفة على أنها غير متزامنة ، يمكننا استخدام `await` كلمة رئيسية.
+يتم وضع هذه الكلمة الرئيسية قبل مكالمة الوعد ، وتوقف الوظيفة مؤقتًا حتى يتم الوفاء بالوعد أو رفضه.
 
-## Async
+## غير متزامن
 
 ![run](https://media.giphy.com/media/3N0fFF5xxcZrO/giphy.gif)
 
-We have the keyword `async`, which we put before the function declaration to make it asynchronous. An asynchronous function⚙️ is a function⚙️ that anticipates the use of the `await` keyword to run asynchronous code📟.
+لدينا الكلمة `async`, التي نضعها قبل إعلان الوظيفة لجعلها غير متزامنة. الوظيفة غير المتزامنة - هي وظيفة - تتوقع استخدام`await` الكلمة الأساسية لتشغيل التعليمات البرمجية غير المتزامنة📟.
 
-Try typing the following in your browser console:
+حاول كتابة ما يلي في وحدة تحكم المستعرض الخاص بك:
 
 ```javascript
 function hello() {
@@ -59,9 +59,9 @@ function hello() {
 hello()
 ```
 
-The function will return `Hello`. Nothing unusual.
+ستعود الوظيفة `Hello`. لا شيء غير طبيعي.
 
-But what if we turn it into an asynchronous function⚙️? Try the following:
+ولكن ماذا لو قمنا بتحويلها إلى دالة غير متزامنة⚙️؟ حاول القيام بما يلي:
 
 ```javascript
 async function hello() {
@@ -72,9 +72,9 @@ hello()
 
 ![Promise](https://media.giphy.com/media/GFtJhEvG3681y/giphy.gif)
 
-The function call now returns a promise. This is one of the features of asynchronous functions⚙️ - they return🔄 values that are guaranteed to be converted to promises.
+يعيد استدعاء الوظيفة الآن وعدًا. هذه إحدى ميزات الوظائف غير المتزامنة - تعود🔄 القيم التي يتم ضمان تحويلها إلى وعود.
 
-You can also create an asynchronous function expression, like this:
+يمكنك أيضًا إنشاء تعبير دالة غير متزامن ، مثل هذا:
 
 ```javascript
 // Function Expression
@@ -84,7 +84,7 @@ let hello = async function () {
 hello()
 ```
 
-You can also use arrow functions⚙️:
+يمكنك أيضًا استخدام وظائف الأسهم⚙️:
 
 ```javascript
 let hello = async () => {
@@ -92,31 +92,31 @@ let hello = async () => {
 }
 ```
 
-All these functions⚙️ do the same thing.
+كل هذه الوظائف - تفعل نفس الشيء.
 
-To get the value of a completed promise, we can use the `.then()` block:
+للحصول على قيمة الوعد المنجز ، يمكننا استخدام `.then()` منع:
 
 ```javascript
 hello().then(value => console.log(value))
 ```
 
-… or even like this:
+… أو حتى مثل هذا:
 
 ```javascript
 hello().then(console.log)
 ```
 
-Thus, adding the keyword `async` causes the function to return a promise instead of a value. It also allows synchronous functions to avoid any overhead associated with starting and maintaining await. Simply adding `async` before the function⚙️ enables the JS engine to automatically optimize the code.
+وهكذا ، فإن إضافة الكلمة `async` يتسبب في قيام الدالة بإرجاع وعد بدلاً من قيمة. كما يسمح للوظائف المتزامنة بتجنب أي عبء مرتبط ببدء التشغيل والحفاظ عليه. ببساطة إضافة `async` قبل الوظيفة - تمكن محرك JS من تحسين الشفرة تلقائيًا.
 
-## Await
+## انتظر
 
 ![Wait](https://media.giphy.com/media/myPdoRAlad0J2/giphy.gif)
 
-The benefits of asynchronous functions⚙️ become even more apparent when you combine them with the await keyword. It can be added before any promise-based function⚙️ to make it wait for the promise to complete and then return the result. After that, the next block of code is executed📟.
+تصبح فوائد الوظائف غير المتزامنة أكثر وضوحًا عند دمجها مع الكلمة الأساسية انتظار. يمكن إضافتها قبل أي وظيفة قائمة على الوعد - لجعلها تنتظر اكتمال الوعد ثم إرجاع النتيجة. بعد ذلك ، يتم تنفيذ الكتلة التالية من التعليمات البرمجية📟.
 
-You can use `await` when calling any function that returns a promise, including the `Web API` functions.
+يمكنك استخدام `await` عند استدعاء أي وظيفة تعود بوعد ، بما في ذلك`Web API` المهام.
 
-Syntax📖:
+بناء الجملة📖:
 
 ```javascript
 let response = await fetch('https://jsonplaceholder.typicode.com/users')
@@ -205,13 +205,13 @@ let response = await fetch('coffee.jpg')
 
 Когда меньше блоков `.then()` для оборачивания кода📟 , все это выглядит как синхронный код📟 , поэтому он интуитивно понятен. -->
 
-## Error handling with `try ... catch`
+## خطأ في التعامل مع `حاول ...`
 
 ![code rewriting](https://media.giphy.com/media/ZVik7pBtu9dNS/giphy.gif)
 
-If you want to add error handling, you have several options.
+إذا كنت تريد إضافة معالجة الأخطاء ، فلديك عدة خيارات.
 
-You can use a synchronous `try ... catch` structure along with `async / await`:
+يمكنك استخدام متزامن `try ... catch` هيكل مع`async / await`:
 
 ```javascript
 async function myFetch() {
@@ -227,9 +227,9 @@ async function myFetch() {
 myFetch()
 ```
 
-The `catch () {}` block takes an error object объект, which we named `e`. Now we can output it to the console, this will allow us to get a message💬 about where in the code📟 the error occurred🙅‍♂️.
+ال `catch () {}` block يأخذ كائن خطأ ، والذي أطلقنا عليه اسم `e`. الآن يمكننا إخراجها إلى وحدة التحكم ، وهذا سيسمح لنا بتلقي رسالة💬 حول مكان في الكود📟 حدث الخطأ🙅‍♂️.
 
-Let's purposefully create an error in url and look at the error output.
+دعونا ننشئ خطأ في عنوان url عن قصد وننظر إلى ناتج الخطأ.
 
 ```javascript
 async function myFetch() {
@@ -247,47 +247,47 @@ myFetch()
 
 ![fetch error](/img/javascript/17.jpg)
 
-## Total
+## مجموع
 
 ![Conclusion](https://media.giphy.com/media/3o6ZsVl2hv8ZnhSXug/giphy.gif)
 
-`Async / await` allows you to write 🖊️ asynchronous code that is easy to read and maintain. For six reasons why it is better to use it instead of promises read [here](https://habr.com/ru/company/ruvds/blog/326074/).
+`Async / await` يسمح لك بالكتابة 🖊️ رمز غير متزامن يسهل قراءته وصيانته. لستة أسباب لماذا من الأفضل استخدامه بدلاً من قراءة الوعود [here](https://habr.com/ru/company/ruvds/blog/326074/).
 
-## Problems?
+## مشاكل؟
 
 ![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
 
 Write to [Discord](https://discord.gg/6GDAfXn) chat.
 
-## Questions:
+## أسئلة:
 
 ![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
 
-Where does the `async` keyword go?
+أين `async` الكلمة الرئيسية تذهب؟
 
-1. Before the function declaration
-2. After the function is declared
-3. In the body of the function
+1. قبل إعلان الوظيفة
+2. بعد إعلان الوظيفة
+3. في جسم الوظيفة
 
-What functions does `await` work in?
+ما هي الوظائف `await`العمل في؟
 
-1. Only in synchronous functions
-2. Only in asynchronous functions
-3. In any function
+1. فقط في وظائف متزامنة
+2. فقط في الوظائف غير المتزامنة
+3. في أي وظيفة
 
-An asynchronous function is:
+الوظيفة غير المتزامنة هي:
 
-1. This is the function which is defined by the keyword `async`
-2. This is a function that anticipates the use of the `await` keyword
-3. Both options are correct
+1. هذه هي الوظيفة التي تحددها الكلمة الأساسية `async`
+2. هذه وظيفة تتوقع استخدام `await` كلمة رئيسية
+3. كلا الخيارين صحيحان
 
-The advantage of `async / await` is:
+ميزة`async / await` هو:
 
-1. Own code is locked
-2. Getting rid of the code from `.then()` blocks
-3. The need to wrap expected promises in an asynchronous function
+1. الرمز الخاص مقفل
+2. التخلص من الكود من `.then()` كتل
+3. الحاجة إلى الوفاء بالوعود المتوقعة في وظيفة غير متزامنة
 
-What this code is:
+ما هذا الرمز:
 
 ```javascript
 let hello = async function () {
@@ -296,23 +296,23 @@ let hello = async function () {
 hello()
 ```
 
-1. Synchronous function
-2. Arrow function
-3. Asynchronous function expression
+1. وظيفة متزامنة
+2. وظيفة السهم
+3. تعبير دالة غير متزامن
 
-In order to understand how much you learned this lesson, take the test on the [mobile application](http://onelink.to/njhc95) of our school on this topic.
+لفهم مقدار ما تعلمته في هذا الدرس ، قم بإجراء الاختبار في[mobile application](http://onelink.to/njhc95) من مدرستنا في هذا الموضوع.
 
 ![Sumerian school](/img/app.jpg)
 
-## Links:
+## الروابط:
 
 1. [Async-await](https://learn.javascript.ru/async-await)
 2. [How to master async / await in JavaScript with real examples](https://webformyself.com/async-await-v-javascript-na-primerax)
 3. [Asynchronous programming with async / await](https://habr.com/ru/post/491012/)
 
-## Contributors ✨
+## المساهمون ✨
 
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+الشكر يعود إلى هؤلاء الأشخاص الرائعين ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->

@@ -1,16 +1,16 @@
 ---
 id: javascript27
-title: Fetch API
-sidebar_label: Fetch API
+title: جلب API
+sidebar_label: جلب API
 ---
 
 ![@serverSerrverlesskiy](/img/javascript/headers/28.jpg)
 
-The ** Fetch API ** allows JavaScript to communicate with the server using HTTP requests and is a better replacement for the XMLHttpRequest class. Queries are executed by the `fetch()` method, which returns🔄 [Promise](https://react-native-village.github.io/docs/javascript24).
+ال ** تسمح Fetch API ** لجافا سكريبت بالاتصال بالخادم باستخدام طلبات HTTP وهي بديل أفضل لفئة XMLHttpRequest. يتم تنفيذ الاستعلامات بواسطة `fetch()` الطريقة التي تعود🔄 [Promise](https://react-native-village.github.io/docs/javascript24).
 
 ![Exchange](https://media.giphy.com/media/OPQiZUC381IJ8Sh7UY/giphy.gif)
 
-## Syntax
+## بناء الجملة
 
 ![Book](https://media.giphy.com/media/l0HlOBZcl7sbV6LnO/giphy.gif)
 
@@ -18,26 +18,26 @@ The ** Fetch API ** allows JavaScript to communicate with the server using HTTP 
 fetch(url, { options })
 ```
 
-- `url` - URL for sending the request;
-- `options` - request parameters.
+- `url` - URL لإرسال الطلب ؛
+- `options` - طلب المعلمات.
 
-By specifying the `fetch()` method without `options`, you will receive a GET request that fetch data from the `URL`.
+بتحديد`fetch()` طريقة بدون `options`, ستتلقى طلب GET لجلب البيانات من `URL`.
 
-## Parameters request
+## طلب المعلمات
 
 ![Option](https://media.giphy.com/media/AazZSBdhIdH9K/giphy.gif)
 
-The second argument to `{options}` accepts request parameters. Parameter list:
+الحجة الثانية ل `{options}` يقبل طلب المعلمات. قائمة المعلمات:
 
-1. `method` - request method (GET, POST, PUT, DELETE, HEAD);
-2. `headers` - HTTP headers;
-3. `body` - request body (used for method: POST / PUT);
-4. `cache` - caching mode (default, reload, no-cache);
-5. `mode` - request mode (cors, no-cors, same-origin);
-6. `redirect` - specifies how to handle redirects (follow, error, manual);
-7. `referrer` - request referrer;
-8. `signal` - AbortSignal, interrupt request;
-9. `credentials` - sending cookies along with the request - mit, same-origin.
+1. `method` - طريقة الطلب(GET, POST, PUT, DELETE, HEAD);
+2. `headers` - رؤوس HTTP
+3. `body` - نص الطلب (يُستخدم للطريقة: POST / PUT) ؛
+4. `cache` - وضع التخزين المؤقت (الافتراضي ، إعادة التحميل ، عدم التخزين المؤقت);
+5. `mode` - وضع الطلب (cors، no-cors، same-origin);
+6. `redirect` - يحدد كيفية التعامل مع عمليات إعادة التوجيه (متابعة ، خطأ ، دليل);
+7. `referrer` - طلب المُحيل ؛
+8. `signal` - AbortSignal ، طلب المقاطعة;
+9. `credentials` - إرسال ملفات تعريف الارتباط مع الطلب - mit، same-origin.
 
 ```jsx
 fetch('https://jsonplaceholder.typicode.com/users', {
@@ -49,37 +49,37 @@ fetch('https://jsonplaceholder.typicode.com/users', {
 })
 ```
 
-## Receiving a response
+## تلقي الرد
 
 ![Bascketball](https://media.giphy.com/media/l0MYwdebx8o0XI56E/giphy.gif)
 
-The `fetch()` method returns🔄 [Promise](https://react-native-village.github.io/docs/javascript24) an object of the `Response` class, which has the following properties:
+إرجاع طريقة `fetch ()`🔄 [Promise](https://react-native-village.github.io/docs/javascript24) كائن من فئة "Response" ، والتي لها الخصائص التالية:
 
-1. `status` - response code;
-2. `statusText` - text message 📜 corresponding to the response code;
-3. `ok` - a boolean value indicating the success of the response code (true: 200-299);
-4. `headers` - an object with response headers, in which the key is the name of the header, and the key value is the value of the header corresponding to the key;
-5. `url` - the URL to which the request was sent;
-6. `body` - response data in `ReadableStream` format
-7. `bodyUsed` - Boolean value indicating data reading.
+1. `status` - كود الاستجابة
+2. `statusText` - رسالة نصية 📜 المقابلة لرمز الاستجابة ؛
+3. `ok` - قيمة منطقية تشير إلى نجاح رمز الاستجابة (صواب: 200-299) ؛;
+4. `headers` - كائن برؤوس استجابة ، حيث يكون المفتاح هو اسم الرأس ، وقيمة المفتاح هي قيمة الرأس المقابلة للمفتاح ؛
+5. `url` - عنوان URL الذي تم إرسال الطلب إليه ؛
+6. `body` - بيانات الاستجابة بتنسيق "ReadableStream"
+7. `bodyUsed` - قيمة منطقية تشير إلى قراءة البيانات.
 
 ```javascript
 fetch('https://jsonplaceholder.typicode.com/users').then(response => console.log(response))
 ```
 
-## Response handling
+## التعامل مع الاستجابة
 
 ![Download](https://media.giphy.com/media/ECoFRCrMgVoQg/giphy.gif)
 
-The transmitted data is in the format `ReadableStream`. The following methods can be used to change the format:
+البيانات المرسلة في التنسيق `ReadableStream`. يمكن استخدام الطرق التالية لتغيير التنسيق:
 
-1. `text()` - converts the answer to a string;
-2. `json()` - converts the response in JSON format;
-3. `blob()` - converts the response to a Blob object;
-4. `formData()` - the response is converted into a FormData instance;
-5. `arrayBuffer()` - converts the response to an ArrayBuffer object.
+1. `text()` - يحول الإجابة إلى سلسلة ؛
+2. `json()` - تحويل الاستجابة بتنسيق JSON ؛
+3. `blob()` - يحول الاستجابة إلى كائن Blob ؛
+4. `formData()` - يتم تحويل الاستجابة إلى مثيل FormData؛
+5. `arrayBuffer()` - يحول الاستجابة إلى كائن ArrayBuffer.
 
-An example of converting a response to JSON format.
+مثال على تحويل استجابة إلى تنسيق JSON.
 
 ```jsx
 fetch('https://jsonplaceholder.typicode.com/users')
@@ -87,11 +87,11 @@ fetch('https://jsonplaceholder.typicode.com/users')
   .then(data => console.log(data))
 ```
 
-## Error processing
+## معالجة الخطأ
 
 ![Error](https://media.giphy.com/media/DHBGehJ3FSZEygszX3/giphy.gif)
 
-We can find out whether `fetch()` has completed with an error🙅‍♂️ using the "status" and "ok" properties.
+يمكننا معرفة ما إذا كان `fetch()` hكما اكتمل مع وجود خطأ🙅‍♂️ باستخدام خصائص "الحالة" و "موافق".
 
 ```jsx
 fetch('https://jsonplaceholder.typicode.com/users')
@@ -114,7 +114,7 @@ fetch('https://jsonplaceholder.typicode.com/users')
   .catch(error => console.log(error))
 ```
 
-## Request examples
+## طلب أمثلة
 
 ![Math](https://media.giphy.com/media/xT1Ra5h24Eliux3UVq/giphy.gif)
 
@@ -125,7 +125,7 @@ fetch('https://jsonplaceholder.typicode.com/users')
   .catch(error => console.log(error))
 ```
 
-The same, using the `async / await` syntax, which we will get to know in more detail in the next article.
+نفس الشيء ، باستخدام ملف `async / await` بناء الجملة ، والتي سنتعرف عليها بمزيد من التفصيل في المقالة التالية.
 
 ```javascript
 let response = await fetch('https://jsonplaceholder.typicode.com/users')
@@ -133,59 +133,59 @@ let data = await response.json()
 console.log(data[0].name + ' and ' + data[2].name)
 ```
 
-## Problems?
+## مشاكل؟
 
 ![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
 
-Write to [Discord](https://discord.gg/6GDAfXn) chat.
+اكتب ل[Discord](https://discord.gg/6GDAfXn) محادثة.
 
-## Questions:
+## أسئلة:
 
 ![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
 
-What does the `fetch()` method return?
+ما الذي تعيده طريقة `fetch ()`؟
 
-1. Function
-2. Object
-3. Promise
+1. الوظيفة
+2. الكائن
+3. وعد
 
-Given only the URL parameter in fetch (), what request do we get?
+بالنظر إلى معلمة URL فقط في fetch () ، ما هو الطلب الذي نحصل عليه؟
 
-1. `POST`
-2. `GET`
-3. `PUT`
+1. "مشاركة"
+2. "احصل"
+3. "وضع"
 
-What parameter are HTTP headers specified?
+ما هي المعلمة المحددة رؤوس HTTP؟
 
-1. `redirect`
-2. `headers`
-3. `credentials`
+1. "إعادة التوجيه"
+2. "رؤوس"
+3. "أوراق الاعتماد"
 
-What method should you use to convert the response to a string?
+ما الطريقة التي يجب أن تستخدمها لتحويل الاستجابة إلى سلسلة؟
 
-1. `blob()`
-2. `json()`
-3. `text()`
+1. `blob ()`
+2. `json ()`
+3. "نص ()`
 
-What does the `ok` property mean for an object of class `Response`?
+ماذا تعني الخاصية "ok" لكائن من الفئة "Response"؟
 
-1. Response code
-2. Success of the response code
-3. Reading data from a request
+1. رمز الاستجابة
+2. نجاح رمز الاستجابة
+3. قراءة البيانات من طلب
 
-In order to understand how much you learned this lesson, take the test on the [mobile application](http://onelink.to/njhc95) of our school on this topic.
+لفهم مقدار ما تعلمته في هذا الدرس ، قم بإجراء الاختبار في [mobile application](http://onelink.to/njhc95) من مدرستنا في هذا الموضوع.
 
 ![Sumerian school](/img/app.jpg)
 
-## Links
+## الروابط
 
 1. [Learn JavaScript](https://learn.javascript.ru/fetch)
 2. [MDN Web Docs](https://developer.mozilla.org/ru/docs/Web/API/Fetch_API/Using_Fetch)
 3. [JS Tutorial](https://www.javascripttutorial.net/javascript-fetch-api/)
 
-## Contributors ✨
+## المساهمون ✨
 
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+الشكر يعود إلى هؤلاء الأشخاص الرائعين([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
 <table>
   <tr> 

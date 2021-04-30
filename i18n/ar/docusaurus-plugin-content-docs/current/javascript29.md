@@ -1,27 +1,27 @@
 ---
 id: javascript29
-title: Import Export
-sidebar_label: Import Export
+title: استيراد و تصدير
+sidebar_label: استيراد و تصدير
 ---
 
 ![@serverSerrverlesskiy](/img/javascript/headers/31.jpg)
 
-To make objects, functions, classes or variables 🔔 available to the outside world, simply export them and then import them into other project files where necessary.
+لإنشاء كائنات أو وظائف أو فئات أو متغيرات🔔 متاح للعالم الخارجي ، ما عليك سوى تصديرها ثم استيرادها إلى ملفات مشاريع أخرى عند الضرورة.
 
-## "Hello, World!" on Node.js
+## "مرحبا بالعالم!" على Node.js
 
-`Node.js®` is a JavaScript environment built on the [Chrome V8](https://v8.dev) engine.
+`Node.js®` هي بيئة JavaScript مبنية على [Chrome V8](https://v8.dev) محرك.
 
-Let's get started with `Node.js` just by typing node in the console:
+لنبدأ مع `Node.js` فقط عن طريق كتابة العقدة في وحدة التحكم:
 
 ```javascript
 $ node
 >
 ```
 
-If you don't have it, then [download](https://nodejs.org) and install it on your computer.
+إذا لم يكن لديك ، إذن[download](https://nodejs.org) وتثبيته على جهاز الكمبيوتر الخاص بك.
 
-Now let's try to print something:
+الآن دعنا نحاول طباعة شيء ما:
 
 ```javascript
 $ node
@@ -33,11 +33,11 @@ undefined
 
 ![Export](https://media.giphy.com/media/3ohzAiaRIBBrge2jQc/giphy.gif)
 
-Feel free to experiment with `Node.js` using this interface: it is common to test small pieces of code here if it is not practical to put them directly into a file.
+لا تتردد في تجربة "Node.js" باستخدام هذه الواجهة: من الشائع اختبار أجزاء صغيرة من التعليمات البرمجية هنا إذا لم يكن عمليًا وضعها مباشرة في ملف.
 
-It's time to create our Hello Node.js application!
+حان الوقت لإنشاء تطبيق Hello Node.js!
 
-Let's start by creating the `index.js` file. With the next command we create the folder `myProject` and enter it.
+لنبدأ بإنشاء ملف `index.js`. باستخدام الأمر التالي ، نقوم بإنشاء المجلد "myProject" وأدخله.
 
 ```bash
 mkdir myProject && cd myProject
@@ -49,52 +49,52 @@ Now we create the `index.js` file itself
 touch index.js
 ```
 
-Open your code editor or download and install it. We recommend [VS Code](https://code.visualstudio.com).
+افتح محرر التعليمات البرمجية الخاص بك أو قم بتنزيله وتثبيته. نوصي [VS Code](https://code.visualstudio.com).
 
-Open the code editor and add the folder of the project we created to it.
+افتح محرر الكود وأضف مجلد المشروع الذي أنشأناه إليه.
 
 ![new prroject](/img/javascript/18.jpg)
 
-Now open the side menu by clicking this icon.
+الآن افتح القائمة الجانبية بالنقر فوق هذا الرمز.
 
 ![new prroject](/img/javascript/19.jpg)
 
-Copy the following piece of code into it:
+انسخ الجزء التالي من التعليمات البرمجية فيه:
 
 ```javascript
 // index.js
 console.log('hello from Node.js')
 ```
 
-To run this file, you must reopen your terminal and navigate to the directory where `index.js` is located.
+لتشغيل هذا الملف ، يجب عليك إعادة فتح الجهاز الخاص بك والانتقال إلى الدليل حيث يوجد `index.js`
 
-In `VS Code` this can be done by clicking on these icons.
+في "VS Code" يمكن القيام بذلك عن طريق النقر على هذه الرموز.
 
 ![new prroject](/img/javascript/20.jpg)
 
-And choose the tab `TERMINAL`
+واختر علامة التبويب "TERMINAL"
 
 ![new prroject](/img/javascript/21.jpg)
 
-Once you have successfully navigated to the desired location, run the file using the command
+بمجرد أن تنتقل بنجاح إلى الموقع المطلوب ، قم بتشغيل الملف باستخدام الأمر
 
 ```javascript
 node index.js
 ```
 
-You will see that this command will produce the same output as before, printing the string directly to the terminal.
+سترى أن هذا الأمر سينتج نفس الإخراج كما كان من قبل ، وطباعة السلسلة مباشرة إلى المحطة.
 
 ![new prroject](/img/javascript/22.jpg)
 
-## Application modularity
+## نمطية التطبيق
 
 ![Export](https://media.giphy.com/media/3o7btSt2Et1GgIaDAY/source.gif)
 
-It's time to move to the next level! Let's create something a little more complex by splitting our source code into multiple JavaScript files for the sake of readability and maintainability.
+حان الوقت للانتقال إلى المستوى التالي! دعونا ننشئ شيئًا أكثر تعقيدًا بقليل من خلال تقسيم شفرة المصدر الخاصة بنا إلى ملفات جافا سكريبت متعددة من أجل سهولة القراءة وقابلية الصيانة.
 
-### Project structure
+### هيكل المشروع
 
-Create the following directory structure (with empty files), but don't create `package.json` yet, we will generate it automatically in the next step:
+أنشئ بنية الدليل التالية (بالملفات الفارغة) ، لكن لا تنشئ "package.json" حتى الآن ، فسننشئها تلقائيًا في الخطوة التالية:
 
 ```javascript
 ├── app
@@ -104,21 +104,21 @@ Create the following directory structure (with empty files), but don't create `p
 └── package.json
 ```
 
-To create a new file or folder in `VS Code` click the corresponding icon as shown in the picture.
+لإنشاء ملف أو مجلد جديد في "VS Code" ، انقر فوق الرمز المقابل كما هو موضح في الصورة.
 
 ![new file](/img/javascript/23.jpg)
 
 ### package.json
 
-Every `Node.js` project starts by creating a `package.json` file. You can think of it as a JSON representation of the application and its dependencies. It contains the name of your application, the author (you), and any dependencies required to run the application. This is your project map.
+كل `Node.js` يبدأ المشروع بإنشاء ملف `package.json` ملف. يمكنك التفكير في الأمر على أنه تمثيل JSON للتطبيق وتبعياته. يحتوي على اسم التطبيق الخاص بك ، والمؤلف (أنت) ، وأي تبعيات مطلوبة لتشغيل التطبيق. هذه خريطة مشروعك
 
-You can interactively generate the `package.json` file with the command
+يمكنك إنشاء ملف `package.json` بشكل تفاعلي باستخدام الأمر
 
 ```bash
 npm init
 ```
 
-in the terminal. After running the command, you will be asked to enter some information, such as your application name, version, description, and so on. No need to worry, just press `Enter` until you get the generated JSON and the question is `is it ok` ?. Press Enter one last time and voila: your package.json has been automatically generated and placed in your application folder. If you open this file in your IDE, it looks very similar to the code snippet below.
+في المحطة. بعد تشغيل الأمر ، سيُطلب منك إدخال بعض المعلومات ، مثل اسم التطبيق والإصدار والوصف وما إلى ذلك. لا داعي للقلق ، فقط اضغط`Enter` حتى تحصل على JSON الذي تم إنشاؤه والسؤال هل هو جيد؟. اضغط على Enter للمرة الأخيرة وفويلا: تم إنشاء package.json تلقائيًا ووضعه في مجلد التطبيق الخاص بك. إذا فتحت هذا الملف في IDE الخاص بك ، فإنه يبدو مشابهًا جدًا لمقتطف الشفرة أدناه.
 
 ```json
 // package.json
@@ -135,7 +135,7 @@ in the terminal. After running the command, you will be asked to enter some info
 }
 ```
 
-It is good practice to add a startup script to your `package.json` package. So add the following line to the `scripts` object:
+من الممارسات الجيدة إضافة برنامج نصي لبدء التشغيل إلى ملف `package.json` رزمة. لذا أضف السطر التالي إلى `scripts` موضوع:
 
 ```json
 "scripts": {
@@ -144,11 +144,11 @@ It is good practice to add a startup script to your `package.json` package. So a
 }
 ```
 
-Once you have done this, you can start the application with the `npm start` command.
+بمجرد القيام بذلك ، يمكنك بدء التطبيق باستخدام الأمر "npm start".
 
-## Import
+## يستورد
 
-Now let's go back to the first file you created called `index.js`. It is recommended to keep this file very compact: only include the application itself (the `index.js` file from the` / app` subdirectory created earlier). Copy the following code into your `index.js` file and save:
+الآن دعنا نعود إلى الملف الأول الذي قمت بإنشائه والمسمى`index.js`. يوصى بالحفاظ على هذا الملف مضغوطًا جدًا: قم فقط بتضمين التطبيق نفسه(تم إنشاء ملف `index.js` من دليل فرعي` / app` سابقًا). انسخ الكود التالي إلى ملف `index.js` واحفظه:
 
 ```javascript
 // index.js
@@ -162,14 +162,14 @@ or shorthand for all `index.js` files
 require('./app')
 ```
 
-If a specific file is not specified, then the code interpreter looks for the `index.js` file and enters it. This is how we simply connected our first file to the project.
+إذا لم يتم تحديد ملف معين ، فسيقوم مترجم الشفرة بالبحث عن ملف `index.js` وإدخاله. هذه هي الطريقة التي قمنا بها ببساطة بتوصيل ملفنا الأول بالمشروع.
 
 ![Export](https://media.giphy.com/media/W6Lidy1RgOl3kYdARr/giphy.gif)
 
-## Export
+## يصدر
 
-Now it's time to start building a real application. Open the `index.js` file from the `/app` folder to create a very simple example: adding an array of numbers. In this case, the `index.js` file will only contain the numbers that we want to add, and the logic that requires the calculations must be placed in a separate module in the `calc.js` file.
-Paste this code into the `index.js` file in the `/app` directory.
+حان الوقت الآن لبدء إنشاء تطبيق حقيقي. افتح ال`index.js` ملف من `/app` لإنشاء مثال بسيط للغاية: إضافة مصفوفة من الأرقام. في هذه الحالة ، فإن ملف `index.js` سيحتوي الملف فقط على الأرقام التي نريد إضافتها ، ويجب وضع المنطق الذي يتطلب الحسابات في وحدة منفصلة في`calc.js` ملف.
+الصق هذه الشفرة في ملف `index.js` في دليل` / app`.
 
 ```javascript
 // app/index.js
@@ -180,7 +180,7 @@ const result = calc.sum(numbersToAdd)
 console.log(`The result is: ${result}`)
 ```
 
-Now paste the actual business logic into the `calc.js` file that can be found in the same folder.
+الآن قم بلصق منطق الأعمال الفعلي في ملف `calc.js` الذي يمكن العثور عليه في نفس المجلد.
 
 ```javascript
 // app/calc.js
@@ -191,23 +191,23 @@ const sum = arr => {
 module.exports.sum = sum // export
 ```
 
-In this file, we created a `sum` function and exported it, made it available in other files in the project.
+في هذا الملف ، أنشأنا دالة "sum" وقمنا بتصديرها ، وجعلناها متاحة في ملفات أخرى في المشروع.
 
-To check if you did everything right, save these files, open a terminal and type `npm start` or `node index.js`. If you did everything correctly, you will receive the answer: `19.` If something went wrong, carefully review the log in the console and find the problem based on it.
+للتحقق مما إذا كنت قد فعلت كل شيء بشكل صحيح ، احفظ هذه الملفات ، وافتح Terminal واكتب`npm start` أو `node index.js`. إذا فعلت كل شيء بشكل صحيح ، فستتلقى الإجابة: "19." إذا حدث خطأ ما ، فراجع بعناية السجل في وحدة التحكم وابحث عن المشكلة بناءً عليها.
 
 ![new file](/img/javascript/24.jpg)
 
-## Total
+## مجموع
 
-So we have completed the preparatory course on JavaScript before the course on [mobile development](https://react-native-village.github.io/docs/start000).
+لذلك أكملنا الدورة التحضيرية في JavaScript قبل الدورة [mobile development](https://react-native-village.github.io/docs/start000).
 
-## Problems?
+## مشاكل؟
 
 ![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
 
-Write to [Discord](https://discord.gg/6GDAfXn) chat.
+اكتب ل [Discord](https://discord.gg/6GDAfXn) محادثة.
 
-## Questions:
+## أسئلة:
 
 ![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
 
@@ -605,24 +605,24 @@ obj.b = 4
 
 Учитывая, что import хранит именно ссылки на значения, экспортированные из внешнего модуля, то это можно использовать как замыкания. -->
 
-To make objects, functions, classes or variables 🔔 available to the outside world, you need to:
+لإنشاء كائنات أو وظائف أو فئات أو متغيرات🔔 متاح للعالم الخارجي ، فأنت بحاجة إلى:
 
-1. Export them and then import
-2. Import them and then export
+1. تصديرها ثم الاستيراد
+2. استيرادها ثم تصديرها
 
-`Node.js®` is:
+`Node.js®` هو:
 
-1. Programming language
-2. JavaScript environment built on the Chrome V8 engine
-3. Browser
+1. لغة البرمجة
+2. بيئة JavaScript مبنية على محرك Chrome V8
+3. المتصفح
 
-`package.json` is:
+`package.json` هو:
 
-1. JavaScript environment built on the Chrome V8 engine
-2. JSON representation of the application and its dependencies
-3. JSON programming language
+1. بيئة JavaScript مبنية على محرك Chrome V8
+2. تمثيل JSON للتطبيق وتبعياته
+3. لغة برمجة JSON
 
-In order to understand how much you learned this lesson, take the test on the [mobile application](http://onelink.to/njhc95) of our school on this topic.
+لفهم مقدار ما تعلمته في هذا الدرس ، قم بإجراء الاختبار في[mobile application](http://onelink.to/njhc95) من مدرستنا في هذا الموضوع.
 
 ![Sumerian school](/img/app.jpg)
 
@@ -650,15 +650,15 @@ In order to understand how much you learned this lesson, take the test on the [m
 2. экспорта по умолчанию (дефолтный экспорт) из модуля
 3. импортирует все значения -->
 
-## Links:
+## الروابط:
 
 1. [MDN web doc. ECMAScript 6 Modules: The Future Is Now](https://frontender.info/es6-modules/)
 2. [ES6 Modules and How to Use Import and Export in JavaScript](https://www.digitalocean.com/community/tutorials/js-modules-es6)
 3. ["require vs ES6 import / export"](https://coderoad.ru/31354559/%D0%98%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-Node-js-require-%D0%BF%D1%80%D0%BE%D1%82%D0%B8%D0%B2-ES6-import-export)
 
-## Contributors ✨
+## المساهمون ✨
 
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+الشكر يعود إلى هؤلاء الأشخاص الرائعين ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
