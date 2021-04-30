@@ -55,7 +55,7 @@ function learnJavaScript() {
 }
 ```
 
-### Not equal to `! =`
+### Not equal to `!=`
 
 ![Equals](https://media.giphy.com/media/xT8qBit7YomT80d0M8/giphy.gif)
 

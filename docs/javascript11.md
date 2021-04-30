@@ -137,6 +137,13 @@ Boolean('Привет!') // true
 Boolean('') // false
 ```
 
+The shorter way of the `Boolean` function, the double NOT (!!) is used to convert values to a boolean type:
+
+```jsx
+!!'non-empty string' // true
+!!null // false
+```
+
 :::caution Note that the line with zero "0" is true
 Some languages👅 (for example PHP) interpret the string `" 0 "` as `false`. But in JavaScript, if a string is not empty, then it is always `true`
 :::
