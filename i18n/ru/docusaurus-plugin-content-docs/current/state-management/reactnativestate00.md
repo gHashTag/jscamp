@@ -231,7 +231,7 @@ export default Todo
 - [Announcing Mobx 6](https://michel.codes/blogs/mobx6)
 
 
-Для того чтобы понять, на сколько вы усвоили этот урок, пройдите тест в [мобильном приложении](http://onelink.to/njhc95) нашей школы по этой теме.
+Для того чтобы понять, на сколько вы усвоили этот урок, пройдите тест в [мобильном приложении](http://onelink.to/njhc95) нашей школы по этой теме или в нашем [телеграм боте](https://t.me/javascriptcamp_bot).
 
 ![Sumerian school](/img/app.jpg)
 

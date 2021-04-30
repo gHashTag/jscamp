@@ -175,7 +175,7 @@ Which keyword stops the comparison process in `switch`?
 2. `stop`
 3. `default`
 
-In order to understand how much you learned this lesson, take the test on the [mobile application](http://onelink.to/njhc95) of our school on this topic.
+In order to understand how much you learned this lesson, take the test in the [mobile application](http://onelink.to/njhc95) of our school on this topic or in our [telegram bot](https://t.me/javascriptcamp_bot).
 
 ![Sumerian school](/img/app.jpg)
 

@@ -223,7 +223,7 @@ Which data type has a value that can be used as a key for an object property?
 
 1.` undefined` 2.` symbol` 3.` null`
 
-In order to understand how much you learned this lesson, take a test in our school [mobile application](http://onelink.to/njhc95) on this topic.
+In order to understand how much you learned this lesson, take the test in the [mobile application](http://onelink.to/njhc95) of our school on this topic or in our [telegram bot](https://t.me/javascriptcamp_bot).
 
 ![Sumerian school](/img/app.jpg)
 
