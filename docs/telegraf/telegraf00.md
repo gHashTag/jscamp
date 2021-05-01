@@ -1,62 +1,61 @@
 ---
 id: telegraf00
-title: Оплата в Telegram боте 
-sidebar_label: Оплата в Telegram боте 
+title: Payment in Telegram bot
+sidebar_label: Payment in Telegram bot
 ---
 
-Платежи 2.0 — Telegram ввел оплату картами во всех чатах
+Payments 2.0 - The Telegram messenger now has the ability to accept payments in any chat, including groups and channels. You can connect your store to the platform on your own, without agreement with Telegram.
 
-В мессенджере Telegram появилась возможность принимать платежи в любом чате, включая группы и каналы. Подключить свой магазин к платформе можно самостоятельно, без согласования с Telegram.
 
-И в этом туториале мы создадим простого бота с [Node.js](https://nodejs.org/en/) на фреймворке [Telegraf.js](https://telegraf.js.org/), который сможет принимать деньги с клиента и отправлять их на ваш счет через Сбербанк.
+And in this tutorial we will create a simple bot with [Node.js](https://nodejs.org/en/) on the [Telegraf.js](https://telegraf.js.org/) framework  that can accept money from the client and send them to your account through Sberbank.
 
 ![Платежи 2.0](https://telegram.org/file/464001036/3/9ZnITFnkib4.283442/5dc5b1f30fa97ec631)
 
-## Платежи 2.0
+## Payments 2.0
 
-Платёжные боты существуют в Telegram с 2017 года. С их помощью можно безопасно оплачивать товары и услуги вроде доставки пиццы, не покидая приложения.
+Payment bots have existed on Telegram since 2017. With their help, you can safely pay for goods and services like pizza delivery without leaving the app.
 
-С сегодняшнего дня продавцы могут принимать платежи кредитными картами с помощью 8-ми встроенных платёжных систем в любом чате, включая группы и каналы.
+From now on, merchants can accept credit card payments using 8 built-in payment systems in any chat, including groups and channels.
 
-На данный момент мы поддерживаем платежи из более чем 200 стран через следующих платежных систем:
+At the moment, payments from more than 200 countries are supported through the following payment systems:
 
 ![payments](/img/telegraf/payments.jpg)
 
-Telegram не обрабатывает платежи от пользователей и вместо этого полагается на разных поставщиков платежей по всему миру. Именно провайдеры платежей обрабатывают и хранят всю конфиденциальную информацию, например данные кредитной карты. Ни Telegram, ни разработчики ботов не имеют к нему доступа.
+Telegram does not process payments from users and instead relies on different payment providers around the world. It is the payment providers that process and store all confidential information, such as credit card information. Neither Telegram nor bot developers have access to it.
 
-Для оплаты можно использовать любое приложение – в том числе Telegram для компьютеров. Покупатель также может оставить чаевые, чтобы поддержать любимого автора, кафе или магазин.
+You can use any application for payment, including Telegram for computers. A customer can also leave a tip to support a favorite author, cafe or store.
 
 
 ## Создаём бота в Telegram
 
-Бот в Telegram создается при помощи другого бота под названием [@BotFather](http://telegram.me/BotFather). Отправляем ему команду `/newbot`, выбираем имя, которое будет отображаться в списке контактов, и адрес. Например, `Оплата в Telegram боте` с адресом `sber_pay_test_bot`.
+Telegram bot is created using another bot called [@BotFather](http://telegram.me/BotFather). We send him the command `/ newbot`, select the name that will be displayed in the contact list, and the address. For example, `Payment in Telegram bot` with the address `sber_pay_test_bot`.
 
 ![newBot](/img/telegraf/newBot.jpg)
 
-Если адрес не занят, а имя введено правильно, BotFather пришлет в ответ сообщение с токеном — «ключом» для доступа к созданному боту. 
+If the address is not busy, and the name is entered correctly, BotFather will send in response a message with a token - "key" to access the created bot.
 
-:::caution Внимание
-Его нужно сохранить и никому не показывать.
+:::caution Attention
+It must be preserved and not shown to anyone.
 :::
 
-## Создаем проект Node.js
+## Create a Node.js project
 
-Далее создадим новый проект. Создаем папку. 
+Next, let's create a new project. We create a folder.
 
-Вводим в консоле:
+Enter in the console:
 
 ```bash
 mkdir sber_pay_test_bot && cd sber_pay_test_bot
 ```
-Затем:
+Then:
 
 ```bash npm2yarn
 npm init 
 ```
 
-Программа задаёт вам разные вопросы и создает `package.json`, который определяет настройки проекта, зависимости, скрипты, название и прочее. Для примера можно везде нажать `enter`
+The program asks you different questions and creates a `package.json` that defines the project settings, dependencies, scripts, name, and more. For example, you can press `enter` everywhere
 
-и добавим файл `index.js` в котором будет разрабатываться наш бот. 
+and add the file `index.js` in which our bot will be developed.
 
 ```bash
 touch index.js    
@@ -64,19 +63,19 @@ touch index.js
 
 ## Telegraf.js
 
-Cтавим telegraf.js — это один из популярных фреймворков для создания телеграмм бота. 
+We install [telegraf.js](https://telegraf.js.org) - this is one of the popular frameworks for creating telegram bots.
 
 ```bash npm2yarn
-npm install telegraf 
+npm install telegraf@3.38 
 ```
 
-Ставим библиотеку `dotenv` - это модуль, который загружает переменные среды из файла `.env` в `process.env.`, а также заодно поставим `nodemon` - инструмент, который помогает разрабатывать приложения на основе node.js путем автоматического перезапуска приложения `node` при обнаружении изменений файлов в каталоге.
+We put the `dotenv` library - this is a module that loads environment variables from the `.env` file into `process.env.`, and also we put `nodemon` - a tool that helps to develop applications based on node.js by automatically restarting the application `node` when it detects file changes in a directory.
 
 ```bash npm2yarn
 npm install dotenv nodemon
 ```
 
-Добавляем скрипт запуска в `package.json`
+Add the startup script to `package.json`
 
 ```json
 "scripts": {
@@ -84,62 +83,125 @@ npm install dotenv nodemon
 }
 ```
 
-Смотрим документацию телеграфа, копируем в наш проект первоначальную настройку бота.
+From the [telegraf.js](https://telegraf.js.org) documentation, copy the initial bot setup into our project.
 
 ```js
 const { Telegraf } = require('telegraf')
 require('dotenv').config()
 
-const bot = new Telegraf(process.env.BOT_TOKEN) //сюда помещается токен, который дал botFather
+const bot = new Telegraf(process.env.BOT_TOKEN) // this is where the token given by botFather is placed
 
-bot.start((ctx) => ctx.reply('Welcome')) //ответ бота на команду /start
-bot.help((ctx) => ctx.reply('Send me a sticker')) //ответ бота на команду /help
-bot.on('sticker', (ctx) => ctx.reply('')) //bot.on это обработчик введенного юзером сообщения, в данном случае он отслеживает стикер, можно использовать обработчик текста или голосового сообщения
-bot.hears('hi', (ctx) => ctx.reply('Hey there')) // bot.hears это обработчик конкретного текста, данном случае это - "hi"
-bot.launch() // запуск бота
+bot.start((ctx) => ctx.reply('Welcome')) // the bot's response to the /start command
+bot.help((ctx) => ctx.reply('Send me a sticker')) // the bot's response to the / help command
+bot.on('sticker', (ctx) => ctx.reply('')) // bot.on is a handler for a user-entered message, in this case it tracks a sticker, you can use a text or voice message handler
+bot.hears('hi', (ctx) => ctx.reply('Hey there')) // bot.hears is a handler for a specific text, in this case it is "hi"
+bot.launch() // bot launch
 ```
 
-Создаем файл `.env` куда в переменую `BOT_TOKEN` кладем токен, который ранее нам выдал [@BotFather](http://telegram.me/BotFather) 
+Create a file `.env` where in the variable `BOT_TOKEN` we put the token that was given to us earlier by [@BotFather](http://telegram.me/BotFather) 
 
 ```js
 BOT_TOKEN='сюда'
 ```
 
-Запускаем бот командой
+Create a file `.env` where in the variable BOT_TOKEN` we put the token that was given to us earlier by [@BotFather]
 
 ```bash npm2yarn
 npm run start
 ```
 
-Проверяем работу бота
+Checking the bot's work
 
 ![chekBot](/img/telegraf/checkBot.jpg)
 
 
-## Получаем PROVIDER_TOKEN от @SberbankPaymentBot
+## We get PROVIDER_TOKEN from @SberbankPaymentBot
 
-Для получения `PROVIDER_TOKEN` вам необходимо получить `merchantLogin` в Сбербанке. Для этого необходимо подключить [услугу интерент-эквайринг в Сбербанке](https://www.sberbank.ru/ru/s_m_business/bankingservice/acquiring_total).
+To get `PROVIDER_TOKEN` you need to get `merchantLogin` from Sberbank. To do this, you need to connect [the Internet acquiring service at Sberbank](https://www.sberbank.ru/ru/s_m_business/bankingservice/acquiring_total).
 
-После того как вы его получили переходим в [@BotFather](http://telegram.me/BotFather) и вызываем команду `/mybots`, где выбераем вашего бота.
+After you have received it, go to [@BotFather](http://telegram.me/BotFather) and call the command `/ mybots`, where we select your bot.
 
-Далее `Payments`
+Next `Payments`
 
 ![Payments](/img/telegraf/selectPayments.jpg)
 
-Где выбераем Сбербанк 
+Where we choose Sberbank
 
 ![Payments](/img/telegraf/selectSber.jpg)
 
-Выбераем `Connect Сбербанк Live`
+Choose `Connect Sberbank Live`
 
 ![Payments](/img/telegraf/SberLive.jpg)
 
-После этого вас перекинет на `@SberbankPaymentBot`, где нужно ввести ваш `merchantLogin`, который неодходимо вводить без всяких префиксов `-api` или `-operator`. Например так: `P71XXXXXXX21`. Из-за того что я этого не знал, у меня ушло на переписку с техподдержкой Сбербанка неделя времени. 
+After that you will be redirected to `@SberbankPaymentBot`, where you need to enter your `merchantLogin`, which must be entered without any `-api` or `-operator` prefixes. For example: `P71XXXXXXX21`. Due to the fact that I did not know this, it took me a week to correspond with the technical support of Sberbank.
 
 ![SberbankPaymentBot](/img/telegraf/SberPaymentBot.jpg)
 
-После [@BotFather](http://telegram.me/BotFather) выдаст вам токен, который нужно вставить в переменную `PROVIDER_TOKEN` файла `.env`
+After [@BotFather](http://telegram.me/BotFather) will give you a token that you need to insert into the variable `PROVIDER_TOKEN` in the file `.env`
+
+```json
+PROVIDER_TOKEN='41018XXXX:LIVE:XXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
+```
 
 ![SberbankPaymentBot](/img/telegraf/token.jpg)
 
-# 
+## We connect payment in the application
+
+We write the following code in `index.js`:
+
+```javascript title="index.js"
+const { Telegraf, Markup } = require('telegraf')
+require('dotenv').config()
+
+const bot = new Telegraf(process.env.BOT_TOKEN) // this is where the token that botFather gave
+
+const getInvoice = (id) => {
+  const invoice = {
+    chat_id: id, // Unique identifier of the target chat or username of the target channel
+    provider_token: process.env.PROVIDER_TOKEN, // token issued via bot @SberbankPaymentBot
+    start_parameter: 'get_access', // Unique parameter for deep links. If you leave this field blank, forwarded copies of the forwarded message will have a Pay button that allows multiple users to pay directly from the forwarded message using the same account. If not empty, redirected copies of the sent message will have a URL button with a deep link to the bot (instead of a payment button) with a value used as an initial parameter.
+    title: 'InvoiceTitle', // Product name, 1-32 characters
+    description: 'InvoiceDescription', // Product description, 1-255 characters
+    currency: 'RUB', // ISO 4217 Three-Letter Currency Code
+    prices: [{ label: 'Invoice Title', amount: 100 * 100 }], // Price breakdown, serialized list of components in JSON format 100 kopecks * 100 = 100 rubles
+    payload: { // The payload of the invoice, as determined by the bot, 1-128 bytes. This will not be visible to the user, use it for your internal processes.
+      unique_id: `${id}_${Number(new Date())}`,
+      provider_token: process.env.PROVIDER_TOKEN 
+    }
+  }
+
+  return invoice
+}
+
+bot.use(Telegraf.log())
+
+bot.hears('pay', (ctx) => { . // this is a handler for a specific text, in this case it is "pay"
+  return ctx.replyWithInvoice(getInvoice(ctx.from.id)) //  replyWithInvoice method for invoicing 
+})
+
+bot.on('pre_checkout_query', (ctx) => ctx.answerPreCheckoutQuery(true)) // response to a preliminary request for payment
+
+bot.on('successful_payment', async (ctx, next) => { // reply in case of positive payment
+  await ctx.reply('SuccessfulPayment')
+})
+
+bot.launch()
+```
+
+The Telegraf method [replyWithInvoice](http://49.213.81.43/static/tool/thuocbot/node_modules/telegraf/docs/#/) is the [telegram.sendInvoice](https://core.telegram.org/bots/api#sendinvoice) method .
+
+Use this method to send invoices. If successful, the message sent is returned.
+
+
+We launch the bot with the command `yarn start` and check if the payment is completed.
+
+You can check how payment works in our telegram bots [JavaScript Bot](https://t.me/javascriptcamp_bot) - this is a bot with test questions for our JavaScript, React Native, TypeScript courses, and you can also check payments in a bot for learning English words by emoji [Englishmoji](https://t.me/englishmoji_bot)
+
+## Problems or questions?
+
+Ask them in the telegram community [Bots on Telegraf](https://t.me/telegraf_ru)
+
+Subscribe to our [news] (https://t.me/javascriptapp) and social networks.
+
+
+![JavaScript Camp](/img/bandlink.png)
