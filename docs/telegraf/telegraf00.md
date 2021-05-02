@@ -7,6 +7,8 @@ sidebar_label: Payment in Telegram bot
 Payments 2.0 - The Telegram messenger now has the ability to accept payments in any chat, including groups and channels. You can connect your store to the platform on your own, without agreement with Telegram.
 
 
+![Платежи 2.0](/img/telegraf/Cover.jpg)
+
 And in this tutorial we will create a simple bot with [Node.js](https://nodejs.org/en/) on the [Telegraf.js](https://telegraf.js.org/) framework  that can accept money from the client and send them to your account through Sberbank.
 
 ![Платежи 2.0](https://telegram.org/file/464001036/3/9ZnITFnkib4.283442/5dc5b1f30fa97ec631)
