@@ -102,7 +102,7 @@ Write to [Discord](https://discord.gg/6GDAfXn) chat.
 
 Who are the comments for?
 
-1. person
+1. Person
 2. Console
 3. JavaScript interpreter
 
