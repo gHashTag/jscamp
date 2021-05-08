@@ -78,6 +78,13 @@ function learnJavaScript() {
   return hello
 }
 ```
+However, there are ways to reduce the need for comments. We can use certain coding techniques to refine our code simply by taking advantage of the programming language to our advantage.
+
+This not only makes our code easier to understand, but also helps to improve the overall design of the program!
+
+This type of code is often referred to as self-documenting.
+
+This means that the code must be written so that, firstly, in the future, it would be convenient for other programmers to work with it, including its author, and secondly, taking into account the possibility of extending this code.
 
 With the commenting on the code, that's all and the call for a break sounded.
 
