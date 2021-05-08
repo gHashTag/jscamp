@@ -124,6 +124,11 @@ How do I disable any number of lines of code?
 2. Wrap the code in a comment
 3. Use the command `console.log`
 
+What term refers to code that has useful variable names and descriptive function names so that the developer can easily understand the purpose of the code as he reads it (without much need for explanatory comments)?
+1. Self-documenting
+2. Documenting
+3. Manuscript
+
 In order to understand how much you learned this lesson, take the test in the [mobile application](http://onelink.to/njhc95) of our school on this topic or in our [telegram bot](https://t.me/javascriptcamp_bot).
 
 ![Sumerian school](/img/app.jpg)
