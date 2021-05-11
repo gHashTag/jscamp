@@ -19,7 +19,7 @@ import YouTube from 'react-youtube'
 
 ## Видео
 
-<YouTube videoId="P5nXzvtZgH0" /> 
+<YouTube videoId="fBimh_vyf7w" /> 
 
 ## Операторы равенства
 

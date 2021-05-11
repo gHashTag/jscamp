@@ -18,7 +18,7 @@ import YouTube from 'react-youtube'
 
 ## Видео
 
-<YouTube videoId="TQmZIuS9fVE" />
+<YouTube videoId="4CwNZJpc2eA" />
 
 ## Цикл while()
 

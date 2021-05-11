@@ -16,7 +16,7 @@ DRY (рус. не повторяйся) — это принцип разрабо
 
 ## Видео
 
-<YouTube videoId="3rEcxqlkJNE" /> 
+<YouTube videoId="cDVul9Fppq8" /> 
 
 ## Выбор имени функции
 

@@ -43,7 +43,7 @@ function learnJavaScript() {
 
 ## Видео
 
-<YouTube videoId="bsWqPzc4g-8" />
+<YouTube videoId="tpOEn4PH_nE" />
 
 <!-- ## Примеры
 

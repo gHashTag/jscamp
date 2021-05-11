@@ -27,7 +27,7 @@ fetch(url, { options })
 
 ## Видео
 
-<YouTube videoId="ZvUMvV_YZKg" />
+<YouTube videoId="D2dYZWwSgms" />
 
 <!-- ## Параметры запроса
 

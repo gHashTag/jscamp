@@ -18,7 +18,7 @@ import YouTube from 'react-youtube'
 
 ## Видео
 
-<YouTube videoId="wltQLqPeOyc" /> 
+<YouTube videoId="UXh-ZFjlcA0" /> 
 
 ### `bigInt`
 

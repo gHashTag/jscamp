@@ -41,7 +41,7 @@ function learnJavaScript() {
 ```
 ## Видео
 
-<YouTube videoId="Ay82Lut-CS8" /> 
+<YouTube videoId="SXq-1EraVQU" /> 
 
 ## Преобразование типов (type conversion)
 

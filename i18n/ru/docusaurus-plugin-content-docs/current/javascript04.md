@@ -26,7 +26,7 @@ function learnJavaScript() {
 
 ## Видео
 
-<YouTube videoId="1zXZCVbNbkQ" />
+<YouTube videoId="jCGt2AkB_C8" />
 
 ## typeof
 

@@ -31,7 +31,7 @@ function learnJavaScript() {
 
 ## Видео
 
-<YouTube videoId="J89Qcz0cunw" />
+<YouTube videoId="Xo8lVbjslpM" />
 
 ### Передача других "ложных" значений
 

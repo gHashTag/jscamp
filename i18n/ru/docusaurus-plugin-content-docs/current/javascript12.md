@@ -57,7 +57,7 @@ function test() {
 
 ## Видео
 
-<YouTube videoId="p-wmzCW_2C8" />
+<YouTube videoId="-qOAyB28Wv8" />
 
 <!-- ## Глобальная область видимости
 

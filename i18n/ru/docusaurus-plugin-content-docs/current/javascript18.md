@@ -20,7 +20,7 @@ import YouTube from 'react-youtube'
 
 ## Видео
 
-<YouTube videoId="9Qt7c5lEF_4" />
+<YouTube videoId="X4JepTP9zbk" />
 
 ## Остаточные параметры `(...rest)`
 

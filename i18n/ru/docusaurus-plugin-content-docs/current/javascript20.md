@@ -35,7 +35,7 @@ function learnJavaScript() {
 
 ## Видео
 
-<YouTube videoId="AGB030qG0zA" />
+<YouTube videoId="AqenK2xOgsE" />
 
 <!--
 ### Вложенный объект

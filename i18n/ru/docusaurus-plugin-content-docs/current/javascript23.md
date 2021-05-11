@@ -72,7 +72,7 @@ const myUser = new User()
 
 ## Видео
 
-<YouTube videoId="rR_ZHhkx_O0" />
+<YouTube videoId="QIZRfgsIF04" />
 
 <!-- ## Инициализация: constructor()
 
@@ -154,13 +154,16 @@ function learnJavaScript() {
 
 Для того чтобы понять, на сколько вы усвоили этот урок, пройдите тест в [мобильном приложении](http://onelink.to/njhc95) нашей школы по этой теме или в нашем [телеграм боте](https://t.me/javascriptcamp_bot).
 
-![Sumerian school](/img/app.jpg) -->
-
+![Sumerian school](/img/app.jpg) 
 
 ## Ссылки:
 
 1.  [MDN web docs](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Classes)
 2.  [Learn JavaScript](https://learn.javascript.ru/class)
+-->
+
+
+
 
 ## Оплата
 

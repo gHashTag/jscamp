@@ -18,7 +18,7 @@ import YouTube from 'react-youtube'
 
 ## Видео
 
-<YouTube videoId="lEBJ5bqRrg8" />
+<YouTube videoId="eTxtqiPjGUk" />
 
 ### Синтаксис
 

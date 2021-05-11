@@ -12,7 +12,7 @@ import YouTube from 'react-youtube'
 
 ## Видео
 
-<YouTube videoId="eObrJvg0Y5s" />
+<YouTube videoId="tb-vCdLIHck" />
 
 <!-- ## «Hello, World!» на Node.js
 

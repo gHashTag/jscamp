@@ -48,7 +48,7 @@ class Bar {
 
 ## Видео
 
-<YouTube videoId="5KVQ4pcJOrU" />
+<YouTube videoId="I0t9dwZ4ST8" />
 
 <!-- ## Async
 

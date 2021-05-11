@@ -44,7 +44,7 @@ function learnJavaScript() {
 ```
 ## Видео
 
-<YouTube videoId="3rEcxqlkJNE" /> 
+<YouTube videoId="vFXAg_ndCJo" /> 
 
 ### Создание объекта
 

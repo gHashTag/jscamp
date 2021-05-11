@@ -18,7 +18,7 @@ import YouTube from 'react-youtube'
 
 ## Видео
 
-<YouTube videoId="vQbBNRyeshw" />
+<YouTube videoId="Z0W6_TpTZU4" />
 
 <!-- ## Event loop
 

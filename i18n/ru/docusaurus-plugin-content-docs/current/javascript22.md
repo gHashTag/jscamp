@@ -15,7 +15,7 @@ import YouTube from 'react-youtube'
 
 ## Видео
 
-<YouTube videoId="-VqRjaxoKJs" />
+<YouTube videoId="ccFTP7WD6FA" />
 
 ## Что такое функциональное программирование?
 
