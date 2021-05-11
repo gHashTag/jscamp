@@ -324,7 +324,7 @@ function learnJavaScript() {
   }
 
   for (let key in obj) {
-    result += key + ':' + obj[key] + ' '
+    result += key + ': ' + obj[key] + ' '
   }
 
   return result

@@ -78,6 +78,13 @@ function learnJavaScript() {
   return hello
 }
 ```
+However, there are ways to reduce the need for comments. We can use certain coding techniques to refine our code simply by taking advantage of the programming language to our advantage.
+
+This not only makes our code easier to understand, but also helps to improve the overall design of the program!
+
+This type of code is often referred to as self-documenting.
+
+This means that the code must be written so that, firstly, in the future, it would be convenient for other programmers to work with it, including its author, and secondly, taking into account the possibility of extending this code.
 
 With the commenting on the code, that's all and the call for a break sounded.
 
@@ -95,7 +102,7 @@ Write to [Discord](https://discord.gg/6GDAfXn) chat.
 
 Who are the comments for?
 
-1. person
+1. Person
 2. Console
 3. JavaScript interpreter
 
@@ -116,6 +123,11 @@ How do I disable any number of lines of code?
 1. Write a comment in the middle of the code
 2. Wrap the code in a comment
 3. Use the command `console.log`
+
+What term refers to code that has useful variable names and descriptive function names so that the developer can easily understand the purpose of the code as he reads it (without much need for explanatory comments)?
+1. Self-documenting
+2. Documenting
+3. Manuscript
 
 In order to understand how much you learned this lesson, take the test in the [mobile application](http://onelink.to/njhc95) of our school on this topic or in our [telegram bot](https://t.me/javascriptcamp_bot).
 
