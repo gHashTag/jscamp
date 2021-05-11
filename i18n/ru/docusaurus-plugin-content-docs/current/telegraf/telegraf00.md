@@ -151,7 +151,7 @@ PROVIDER_TOKEN='41018XXXX:LIVE:XXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
 Пишем в `index.js` следующий код:
 
 ```javascript title="index.js"
-const { Telegraf, Markup } = require('telegraf')
+const { Telegraf  } = require('telegraf')
 require('dotenv').config()
 
 const bot = new Telegraf(process.env.BOT_TOKEN) //сюда помещается токен, который дал botFather
