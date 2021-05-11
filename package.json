@@ -1,12 +1,13 @@
 {
-  "name": "react-native-village-github-io",
-  "version": "0.0.0",
+  "name": "javascriptcamp",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "start": "docusaurus start",
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
+    "upgrade": "yarn upgrade @docusaurus/core@2.0.0-alpha.75 @docusaurus/preset-classic@2.0.0-alpha.75",
     "gitpush": "GIT_USER=gHashTag CURRENT_BRANCH=gh-pages USE_SSH=true yarn deploy",
     "push": "yarn build && gh-pages -b master -d build",
     "ci": "yarn lint && yarn prettier:diff",
@@ -20,11 +21,11 @@
     "ar": "yarn run start -- --locale ar"
   },
   "dependencies": {
-    "@docusaurus/core": "2.0.0-alpha.72",
-    "@docusaurus/preset-classic": "2.0.0-alpha.72",
-    "@docusaurus/remark-plugin-npm2yarn": "^2.0.0-alpha.72",
-    "@docusaurus/theme-live-codeblock": "2.0.0-alpha.72",
-    "@docusaurus/theme-search-algolia": "^2.0.0-alpha.72",
+    "@docusaurus/core": "2.0.0-alpha.75",
+    "@docusaurus/preset-classic": "2.0.0-alpha.75",
+    "@docusaurus/remark-plugin-npm2yarn": "^2.0.0-alpha.75",
+    "@docusaurus/theme-live-codeblock": "2.0.0-alpha.75",
+    "@docusaurus/theme-search-algolia": "^2.0.0-alpha.75",
     "caniuse-lite": "^1.0.30001204",
     "classnames": "^2.2.6",
     "clsx": "^1.1.1",
