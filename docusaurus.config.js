@@ -22,7 +22,7 @@ module.exports = {
   scripts: [{ src: 'https://snack.expo.io/embed.js', defer: true }],
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'ru', 'zh'],
+    locales: ['en', 'ru', 'zh', 'hi', 'ar'],
     localeConfigs: {
       en: {
         label: 'English'
@@ -32,7 +32,13 @@ module.exports = {
       },
       zh: {
         label: '中文'
-      }
+      },
+      hi: {
+        label: 'हिंदी'
+      },
+      ar: {
+        label: 'عربى'
+      },
     }
   },
   themeConfig: {

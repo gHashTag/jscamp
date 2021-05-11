@@ -1,0 +1,11 @@
+---
+id: reactNavigation2-03
+title: Drawer Navigator
+sidebar_label: Drawer Navigator
+---
+
+This navigation method allows you to switch directly between different screens using a slide drawer. This slide box contains links to various screens in the application.
+
+[![Drawer Navigator](/img/rn2/03.gif)](https://youtu.be/x1BkWHncx10)
+
+[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
