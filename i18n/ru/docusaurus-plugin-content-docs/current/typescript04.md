@@ -39,7 +39,7 @@ console.log(op(2, 4)) // Работает как сложение = 6
 op = subtract
 console.log(op(6, 4)) // Сейчас как вычитание = 2
 ```
-
+<!-- 
 Здесь вначале переменная `op` указывает на функцию `sum.` И соответственно вызов `op(2, 4)` фактически будет представлять вызов `sum(2, 4)`. А затем `op` указывает на функцию `subtract.`
 
 ## Функции обратного вызова
@@ -65,89 +65,9 @@ operationFunc = (a: number, b: number): number => a * b
 console.log(mathOp(10, 20, operationFunc)) // Умножение = 200
 ```
 
-Здесь в функции `mathOp` третий парметр как раз представляет функцию, которая принимает два параметра типа `number` и возвращает число. Фактически тем самым мы можем передавать функции обратного вызова, например, при генерации событий, когда в ответ на некоторое действие срабатывает другая функция.
+Здесь в функции `mathOp` третий парметр как раз представляет функцию, которая принимает два параметра типа `number` и возвращает число. Фактически тем самым мы можем передавать функции обратного вызова, например, при генерации событий, когда в ответ на некоторое действие срабатывает другая функция. 
 
-<!-- ## Стрелочные функции
 
-Для определения функций в `TypeScript` можно использовать стрелочные функции или `arrow functions.` Стрелочные функции представляют выражения типа `(параметры) => тело функции.` Например:
-
-```javascript
-let sum = (x: number, y: number) => x + y
-
-let result = sum(15, 35) // 50
-console.log(result)
-```
-
-Тип параметров можно опускать:
-
-```jsx live
-function learnJavaScript() {
-  let sum = (x, y) => x + y
-
-  let result = sum(15, 35) // 50
-  return result
-}
-```
-
-Если стрелочная функция не требует параметров, то используются пустые круглые скобки. Если передается только один параметр, то скобки можно опустить:
-
-```jsx live
-function learnJavaScript() {
-  let square = x => x * x
-  let hello = () => 'Hello world'
-
-  return hello() + ' ' + square(7)
-}
-```
-
-Если тело функции представляет множество выражений, а не просто одно выражение, как в примере выше, тогда можно опять же заключить все выражения в фигурные скобки:
-
-```javascript
-let sum = (x: number, y: number) => {
-  x *= 2
-  return x + y
-}
-
-let result = sum(15, 35) // 65
-console.log(result)
-```
-
-Стрелочные функции можно передавать в функцию вместо параметра, который представляет собой функцию:
-
-```javascript
-function mathOp(x: number, y: number, operation: (a: number, b: number) => number): number {
-  let result = operation(x, y)
-  return result
-}
-console.log(mathOp(10, 20, (x, y) => x + y)) // 30
-console.log(mathOp(10, 20, (x, y) => x * y)) // 200
-``` -->
-<!--
-## Функциональные типы
-
-Добавим типы для функций `add` и `myAdd:`
-
-```javascript
-function add(x: number, y: number): number {
-  return x + y
-}
-
-let myAdd = function (x: number, y: number): number {
-  return x + y
-}
-```
-
-Как видно, мы добавили типы не только к параметрам, передаваемым в функцию, но и на возвращаемое функцией значение.
-
-Теперь опишем полный тип этой функции:
-
-```javascript
-let myAdd: (baseValue: number, increment: number) => number = function (x: number, y: number): number {
-  return x + y
-}
-```
-
-Функциональный тип состоит из двух частей: типов аргументов и типом возвращаемого значения. Тип возвращаемого значения определяется после `=>.` В том случае, если функция не возвращает никакого значения, должно быть указано `void.` -->
 
 ## Вопросы:
 
@@ -180,6 +100,19 @@ let myAdd: (baseValue: number, increment: number) => number = function (x: numbe
 1. [Статья "Тип функции и стрелочные функции", metanit.com](https://metanit.com/web/typescript/2.3.php)
 2. [Статья "Функции в языке TypeScript", medium.com](https://medium.com/@sergey.bakaev/%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B8-%D0%B2-%D1%8F%D0%B7%D1%8B%D0%BA%D0%B5-typescript-1cb853e09020)
 3. [Статья "Типы функций", typescript-lang.ru](http://typescript-lang.ru/docs/Functions.html)
+-->
+
+## Оплата
+
+Сейчас ты находишся на урезанной версии сайта, после оформления подписки на [Patreon](https://www.patreon.com/javascriptcamp), ты получишь полный доступ к обучающему курсу, а также доступ к серетным каналам нашего сервера в [Discord](https://discord.gg/6GDAfXn).  
+
+Качай наше [мобильное приложение](http://onelink.to/njhc95) или пройди тестирование в нашем [JavaScript телеграм боте](https://t.me/javascriptcamp_bot), а также подпишитесь на [наши новости](https://t.me/javascriptapp).
+
+
+[![Sumerian school](/img/app.jpg)](http://onelink.to/njhc95)
+
+![JavaScript Camp](/img/bandlink.png)
+
 
 ## Contributors ✨
 
@@ -197,10 +130,3 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   </tr>
  
 </table>
-
-<!-- markdownlint-restore -->
-<!-- prettier-ignore-end -->
-
-<!-- ALL-CONTRIBUTORS-LIST:END -->
-
-[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)

@@ -45,59 +45,16 @@ export class Animal {
 export { fruit, e, sum, Fruit, Animal }
 ```
 
-## Экспорт по умолчанию
+## Оплата
 
-С помощью ключевого слова `default` можно делать экспорт по умолчанию.
+Сейчас ты находишся на урезанной версии сайта, после оформления подписки на [Patreon](https://www.patreon.com/javascriptcamp), ты получишь полный доступ к обучающему курсу, а также доступ к серетным каналам нашего сервера в [Discord](https://discord.gg/6GDAfXn).  
 
-[Playground Link](https://www.typescriptlang.org/play?#code/KYDwDg9gTgLgBAE2AMwIYFcA28DGnUDOBcAqgcFHAN4BQc9cOEAdgTFOjjNABRjoAjTAEsccZqgC2wAJTUAvjXlA)
+Качай наше [мобильное приложение](http://onelink.to/njhc95) или пройди тестирование в нашем [JavaScript телеграм боте](https://t.me/javascriptcamp_bot), а также подпишитесь на [наши новости](https://t.me/javascriptapp).
 
-```jsx
-export default class User {
-    constructor(public name) {}
-}
-```
 
-## Импорт
+[![Sumerian school](/img/app.jpg)](http://onelink.to/njhc95)
 
-Подключить экспортируемую функциональность модуля можно с помощью ключевого слова `import`.
-
-[Playground Link](https://www.typescriptlang.org/play?#code/PTAEgwQQeEEfhBD4QQBEEEIgpr0BwglCsIPAUASwFsAHAewCcAXUAb1AEEAaUAIVAF9QAzMkg0AcgB0wAM4BjMniIUR-HDhAQYCZIBYQQNwggeRBQgWRBAXCCBBEDhJADCApYoQMIgkWOsDiICcC8IGkByIPmLkqAVREBTMlw8fELAAK5+ZLLyilDGyAagqvCWgMwgGKAYmI6YkO6klDT0oACGIiVMrBzcvALC4pLSUQpgsSqggEwgBpiAoiCgNqqW6piAnCB5nqAAVCVl9VIygTUhs41yADa+VMWgALygyzKCdEA)
-
-```jsx
-// Импорт пример
-import { A, B } from './scripts'
-
-// Импорт для экспорта по умолчанию
-import User from './users'
-
-// Импорт с другим именем
-import { A as a, B } from './scripts'
-
-// Импорт всех модулей
-import * as scripts from './scripts'
-let a = scripts.A
-```
-
-## Реэкспорт
-
-В модуле можно выполнить реэкспорт функционала какого-то другого модуля при помощи конструкции `export .. from`. При этом локально импорт не производится и переменная не создается.
-
-[Playground Link](https://www.typescriptlang.org/play?#code/KYDwDg9gTgLgBAbzgITgQwM5wEZwL5wBmUEAtnAOQB0A9BgMZQCWYMGFA3EA)
-
-```jsx
-export { B as b } from './scripts'
-```
-
-## Вопросы
-
-Теперь мы готовы с вами изучать _TypeScript_, но для того чтобы понять на сколько вы усвоили этот урок пройдите тест в [мобильном приложении](http://onelink.to/njhc95) в нашей школы по этой теме.
-
-![Sumerian school](/img/app.jpg)
-
-## Ссылки
-
-1. [TypeScriptLang](https://www.typescriptlang.org/docs/handbook/modules.html)
-2. [Модули](http://typescript-lang.ru/docs/Modules.html)
+![JavaScript Camp](/img/bandlink.png)
 
 ## Contributors ✨
 
@@ -109,5 +66,3 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /><a href="#financial-gHashTag" title="Financial">💵</a></td>
   </tr>
 </table>
-
-[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)

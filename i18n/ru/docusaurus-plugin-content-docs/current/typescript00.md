@@ -67,7 +67,7 @@ TypeScript при компиляции проверяет код на ошибк
 
 ![Error](https://media.giphy.com/media/KB21ni7aFuA9wB0iQD/giphy.gif)
 
-### ООП
+<!-- ### ООП
 
 TypeScript реализует многие концепции, которые свойственны `объектно-ориентированным языкам`, как, например, наследование, полиморфизм, инкапсуляция и модификаторы доступа и так далее.
 
@@ -130,7 +130,18 @@ TypeScript развивается как `OpenSource`-проект и, как и
 1. [TypeScript Lang](https://www.typescriptlang.org/)
 2. [Мысли в слух о TypeScript](https://habr.com/ru/post/272055/)
 3. [Основы TypeScript](https://habr.com/ru/company/ruvds/blog/344502/)
-4. [Сanonium](https://canonium.com/articles/typescript-introduction)
+4. [Сanonium](https://canonium.com/articles/typescript-introduction) -->
+
+## Оплата
+
+Сейчас ты находишся на урезанной версии сайта, после оформления подписки на [Patreon](https://www.patreon.com/javascriptcamp), ты получишь полный доступ к обучающему курсу, а также доступ к серетным каналам нашего сервера в [Discord](https://discord.gg/6GDAfXn).  
+
+Качай наше [мобильное приложение](http://onelink.to/njhc95) или пройди тестирование в нашем [JavaScript телеграм боте](https://t.me/javascriptcamp_bot), а также подпишитесь на [наши новости](https://t.me/javascriptapp).
+
+
+[![Sumerian school](/img/app.jpg)](http://onelink.to/njhc95)
+
+![JavaScript Camp](/img/bandlink.png)
 
 ## Contributors ✨
 
@@ -144,3 +155,5 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 </table>
 
 [![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
+
+

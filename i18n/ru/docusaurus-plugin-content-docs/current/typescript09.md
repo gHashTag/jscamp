@@ -30,144 +30,18 @@ declare module 'Animal' {
 }
 ```
 
-## Установка декларации
 
-Если декларация распространяется отдельно от библиотеки, то она скорее всего, попадет в огромный репозиторий на `github` под названием `DefinitelyTyped` содержащий огромное количество деклараций. Чтобы было проще ориентироваться в этом множестве, помимо сайта [TypeSearch](https://www.typescriptlang.org/dt/search?search=) выступающего в роли поисковика, был создан менеджер деклараций под названием `Typed`. Но о нем мы говорить не будем поскольку он применяется при работе с `TypeScript` версии меньше чем `v2.0`, поэтому речь пойдет о его развитии в образе команды пакетного менеджера `npm`, а именно `@types`.
 
-Для того чтобы установить требующуюся декларацию, в терминале необходимо выполнить команду часть которой состоит их директивы `@types` после которой, через косую черту `/`, следует имя библиотеки.
+## Оплата
 
-```jsx
-npm i -D @types/name
-```
+Сейчас ты находишся на урезанной версии сайта, после оформления подписки на [Patreon](https://www.patreon.com/javascriptcamp), ты получишь полный доступ к обучающему курсу, а также доступ к серетным каналам нашего сервера в [Discord](https://discord.gg/6GDAfXn).  
 
-![install](https://media.giphy.com/media/Y4D7k6czAciiJfQh4s/giphy.gif)
+Качай наше [мобильное приложение](http://onelink.to/njhc95) или пройди тестирование в нашем [JavaScript телеграм боте](https://t.me/javascriptcamp_bot), а также подпишитесь на [наши новости](https://t.me/javascriptapp).
 
-## Создание декларации
 
-Помимо того, что декларацию можно написать руками, её также можно сгенерировать автоматически, при условии что код написан на TypeScript. Для того, чтобы _tsc_ при компиляции генерировал декларации, нужно активировать опцию компилятора `--declaration`.
+[![Sumerian school](/img/app.jpg)](http://onelink.to/njhc95)
 
-Будет не лишним напомнить, что декларацию нужно генерировать только тогда, когда библиотека полностью готова. Точкой входа самого компилятора, служит конфигурационный файл который ему был установлен при запуске. Это означает, что если проект находится в директории `src`, то в декларации путь будет указан как `src/libname` вместо требуемого `lib`.
-
-```ts
-// Ожидается
-declare module 'libname' {
-  // ...
-}
-
-// Есть
-declare module 'src/libname' {
-  // ...
-}
-```
-
-![create](https://media.giphy.com/media/Kc1TPDRWHydtU8wDzJ/giphy.gif)
-
-## Пример
-
-Рассмотрим, как мы можем использовать заголовочные файлы, на примере использования глобальных переменных. К примеру на веб-странице определена JS переменная.
-
-![sample](https://media.giphy.com/media/dZpNUpORnh1ZAmxKiT/giphy.gif)
-
-```html
-<!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8" />
-    <title>TypeScript HTML</title>
-  </head>
-
-  <body>
-    <h1>TypeScript HTML</h1>
-    <div id="content"></div>
-    <script>
-      let globalVar = 'Hello TypeSript !'
-    </script>
-    <script src="app.js"></script>
-  </body>
-</html>
-```
-
-Получить доступ к этой переменной мы хотим в коде TypeScript в файле `app.ts`.
-
-```jsx
-class Utility {
-  static displayGlobalVar() {
-    console.log(globalVar)
-  }
-}
-
-window.onload = () => {
-  Utility.displayGlobalVar()
-}
-```
-
-При запуске приложения компилятор TS не сможет скомпилировать программу, так как для кода TS глобальная переменная пока не существует. В этом случае нам надо подключать определение глобальной переменной с помощью декларативных файлов. Для этого добавим в проект новый файл, который назовем `globals.d.ts` и который будет иметь следующее содержимое.
-
-```jsx
-declare let globalVar: string
-```
-
-С помощью ключевого слова declare в программу на TS подключается определение глобальной переменной. Также изменем файл `app.ts`.
-
-```jsx
-// <reference path="globals.d.ts" />
-
-class Utility {
-  static displayGlobalVar() {
-    console.log(gVar)
-  }
-}
-window.onload = () => {
-  Utility.displayGlobalVar()
-}
-```
-
-С помощью директивы `reference` в начале файла подключается заголовочный файл `globals.d.ts`. С помощью параметра `path` указывается путь к заголовочному файлу.
-
-Структура проекта:
-
-- app.ts
-- globals.d.ts
-- index.html
-
-При запуске файла `index.html` в консоле разработчика вы увидите фразу `Hello TypeScript!`.
-
-## Вопросы
-
-![question](https://media.giphy.com/media/Uq4ucFb5FLDStK6CUk/giphy.gif)
-
-Как называется очень важная часть TypeScript благодаря которой статическая типизация проецируется на динамический JavaScript?
-
-1. декларации
-2. интроспекция
-3. интерфейс
-
-Где размещаются декларации?
-
-1. `.d.ts`
-2. `.h`
-3. `.js`
-
-С помощью какой команды устанавливается декларация?
-
-1. `npm install -D @t/name`,
-2. `npm install -D @d/name`,
-3. `npm install -D @types/name`
-
-Каким синтаксисом нужно воспользоваться для создания декларации?
-
-1. `declare 'libname' { ... }`
-2. `module 'lib' { ... }`
-3. `declare module 'libname' { ... }`
-
-Теперь мы готовы с вами изучать TypeScript, но для того чтобы понять на сколько вы усвоили этот урок пройдите тест в [мобильном приложении](http://onelink.to/njhc95) в нашей школы по этой теме.
-
-![Sumerian school](/img/app.jpg)
-
-## Ссылки
-
-1. [TypeScriptLang](https://www.typescriptlang.org/docs/handbook/modules.html)
-2. [Модули](http://typescript-lang.ru/docs/Modules.html)
+![JavaScript Camp](/img/bandlink.png)
 
 ## Contributors ✨
 

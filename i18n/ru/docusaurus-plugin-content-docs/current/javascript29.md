@@ -14,7 +14,7 @@ import YouTube from 'react-youtube'
 
 <YouTube videoId="eObrJvg0Y5s" />
 
-## «Hello, World!» на Node.js
+<!-- ## «Hello, World!» на Node.js
 
 `Node.js®` — это JavaScript окружение построенное на движке [Chrome V8](https://v8.dev).
 
@@ -243,7 +243,7 @@ module.exports.sum = sum // export
 
 Для того чтобы понять насколько вы усвоили этот урок пройдите тест в [мобильном приложении](http://onelink.to/njhc95) в нашей школы по этой теме.
 
-![Sumerian school](/img/app.jpg)
+![Sumerian school](/img/app.jpg) -->
 
 <!-- Экспортировать желаемые элементы одним оператором в конце модуля можно командой:
 
@@ -269,11 +269,24 @@ module.exports.sum = sum // export
 2. экспорта по умолчанию (дефолтный экспорт) из модуля
 3. импортирует все значения -->
 
-## Ссылки:
+<!-- ## Ссылки:
 
 1. [MDN web doc. Статья "Модули в ECMAScript 6: будущее уже сейчас"](https://frontender.info/es6-modules/)
 2. [Статья "ES6 Modules and How to Use Import and Export in JavaScript"](https://www.digitalocean.com/community/tutorials/js-modules-es6)
-3. [Статья "require против ES6 import / export"](https://coderoad.ru/31354559/%D0%98%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-Node-js-require-%D0%BF%D1%80%D0%BE%D1%82%D0%B8%D0%B2-ES6-import-export)
+3. [Статья "require против ES6 import / export"](https://coderoad.ru/31354559/%D0%98%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-Node-js-require-%D0%BF%D1%80%D0%BE%D1%82%D0%B8%D0%B2-ES6-import-export) -->
+
+## Оплата
+
+Сейчас ты находишся на урезанной версии сайта, после оформления подписки на [Patreon](https://www.patreon.com/javascriptcamp), ты получишь полный доступ к обучающему курсу, а также доступ к серетным каналам нашего сервера в [Discord](https://discord.gg/6GDAfXn).  
+
+Качай наше [мобильное приложение](http://onelink.to/njhc95) или пройди тестирование в нашем [JavaScript телеграм боте](https://t.me/javascriptcamp_bot), а также подпишитесь на [наши новости](https://t.me/javascriptapp).
+
+[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
+
+
+[![Sumerian school](/img/app.jpg)](http://onelink.to/njhc95)
+
+![JavaScript Camp](/img/bandlink.png)
 
 ## Contributors ✨
 

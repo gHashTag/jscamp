@@ -29,7 +29,7 @@ fetch(url, { options })
 
 <YouTube videoId="ZvUMvV_YZKg" />
 
-## Параметры запроса
+<!-- ## Параметры запроса
 
 ![Option](https://media.giphy.com/media/AazZSBdhIdH9K/giphy.gif)
 
@@ -183,7 +183,20 @@ console.log(data[0].name + ' and ' + data[2].name)
 
 1. [Learn JavaScript](https://learn.javascript.ru/fetch)
 2. [MDN Web Docs](https://developer.mozilla.org/ru/docs/Web/API/Fetch_API/Using_Fetch)
-3. [JS Tutorial](https://www.javascripttutorial.net/javascript-fetch-api/)
+3. [JS Tutorial](https://www.javascripttutorial.net/javascript-fetch-api/) -->
+
+## Оплата
+
+Сейчас ты находишся на урезанной версии сайта, после оформления подписки на [Patreon](https://www.patreon.com/javascriptcamp), ты получишь полный доступ к обучающему курсу, а также доступ к серетным каналам нашего сервера в [Discord](https://discord.gg/6GDAfXn).  
+
+Качай наше [мобильное приложение](http://onelink.to/njhc95) или пройди тестирование в нашем [JavaScript телеграм боте](https://t.me/javascriptcamp_bot), а также подпишитесь на [наши новости](https://t.me/javascriptapp).
+
+[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
+
+
+[![Sumerian school](/img/app.jpg)](http://onelink.to/njhc95)
+
+![JavaScript Camp](/img/bandlink.png)
 
 ## Contributors ✨
 

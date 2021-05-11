@@ -40,7 +40,9 @@ import YouTube from 'react-youtube'
 0777 // обрабатывается как восьмеричное в нестрогой форме (511 в десятичной)
 ```
 
-## Арифметические действия
+
+
+<!-- ## Арифметические действия
 
 ![Arithmetic operation](https://media.giphy.com/media/gEvab1ilmJjA82FaSV/giphy.gif)
 
@@ -292,7 +294,20 @@ function learnJavaScript() {
 1. [MDN web docs](https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Numbers_and_dates)
 2. [Код для подростков: прекрасное руководство по программированию для начинающих, том 1: Javascript - Jeremy Moritz ](https://www.amazon.com/Code-Teens-Beginners-Programming-Javascript-ebook/dp/B07FCTLVPC)
 3. [JavaScript.ru](https://learn.javascript.ru/number)
-4. [Арифметические действия с целыми числами](https://maths-public.ru/arithmetic/actions)
+4. [Арифметические действия с целыми числами](https://maths-public.ru/arithmetic/actions) -->
+
+## Оплата
+
+Сейчас ты находишся на урезанной версии сайта, после оформления подписки на [Patreon](https://www.patreon.com/javascriptcamp), ты получишь полный доступ к обучающему курсу, а также доступ к серетным каналам нашего сервера в [Discord](https://discord.gg/6GDAfXn).  
+
+Качай наше [мобильное приложение](http://onelink.to/njhc95) или пройди тестирование в нашем [JavaScript телеграм боте](https://t.me/javascriptcamp_bot), а также подпишитесь на [наши новости](https://t.me/javascriptapp).
+
+[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
+
+
+[![Sumerian school](/img/app.jpg)](http://onelink.to/njhc95)
+
+![JavaScript Camp](/img/bandlink.png)
 
 ## Contributors ✨
 
@@ -306,4 +321,5 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   
 </table>
 
+<!-- [![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291) -->
 [![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)

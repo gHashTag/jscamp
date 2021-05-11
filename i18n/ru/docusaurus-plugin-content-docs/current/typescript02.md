@@ -33,7 +33,7 @@ isAny = {}
 console.log(isAny + ', Тип: ' + typeof isAny)
 ```
 
-### Boolean
+<!-- ### Boolean
 
 Тип `boolean` является логическим типом и представлен значениями `true` и `false`. Объявляется при помощи ключевого слова `boolean`.
 
@@ -424,7 +424,18 @@ C помощью чего можно объеденить типы?
 
 1. [TypeScript Lang](https://www.typescriptlang.org/)
 2. [Спривочник TypeScript](https://xsltdev.ru/typescript/)
-3. [Сanonium](https://canonium.com/category/typescript)
+3. [Сanonium](https://canonium.com/category/typescript) -->
+
+## Оплата
+
+Сейчас ты находишся на урезанной версии сайта, после оформления подписки на [Patreon](https://www.patreon.com/javascriptcamp), ты получишь полный доступ к обучающему курсу, а также доступ к серетным каналам нашего сервера в [Discord](https://discord.gg/6GDAfXn).  
+
+Качай наше [мобильное приложение](http://onelink.to/njhc95) или пройди тестирование в нашем [JavaScript телеграм боте](https://t.me/javascriptcamp_bot), а также подпишитесь на [наши новости](https://t.me/javascriptapp).
+
+
+[![Sumerian school](/img/app.jpg)](http://onelink.to/njhc95)
+
+![JavaScript Camp](/img/bandlink.png)
 
 ## Contributors ✨
 
@@ -438,3 +449,6 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 </table>
 
 [![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
+
+
+

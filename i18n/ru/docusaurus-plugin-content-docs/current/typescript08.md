@@ -27,7 +27,7 @@ giveFruit(myFruits)
 
 [Пример](https://www.typescriptlang.org/play?ssl=10&ssc=20&pln=1&pc=1#code/JYOwLgpgTgZghgYwgAgGJQK7DMg3gKGWRDgFsIAuZAZzClAHNCaB3CCMECa6qkDUgCNozQQHsuvZOLEAbCHBD4AvvnzycDYADcI6LDgC8yABQxM2KvuwBKZIYB8yBBOpyIAOlliGJgOQA4jooYGLI5Mh+yADUyOYGHiTkNmoa4QCe1mDU9njEZJSRAEKKpX4ANKzsnNxSAOyV4pJU8LLUKKpaulkmpJkW2TZAA)
 
-```ts
+<!-- ```ts
 interface Fruit {
   name: string
   sweetness: number
@@ -276,7 +276,7 @@ let myStr: string = myArray[0]
 console.log(myArray[0])
 ```
 
-Здесь у нас есть интерфейс `StringArray`, у которого есть сигнатура индекса. Эта сигнатура говорит о том, что, когда `StringArray` индексируется _числом_, возвращается _строка_.
+Здесь у нас есть интерфейс `StringArray`, у которого есть сигнатура индекса. Эта сигнатура говорит о том, что, когда `StringArray` индексируется _числом_, возвращается _строка_. -->
 
 <!--
 ## Типы классов
@@ -355,144 +355,17 @@ let analog = createClock(AnalogClock, 7, 32)
 
 Поскольку первый параметр `createClock` имеет тип `ClockConstructor`, в createClock _(AnalogClock, 7, 32)_ он проверяет, имеет ли `AnalogClock` правильную сигнатуру конструктора. -->
 
-## Расширение интерфейсов
+## Оплата
 
-![extends](https://media.giphy.com/media/10rV1yPKGFw4ne/giphy.gif)
+Сейчас ты находишся на урезанной версии сайта, после оформления подписки на [Patreon](https://www.patreon.com/javascriptcamp), ты получишь полный доступ к обучающему курсу, а также доступ к серетным каналам нашего сервера в [Discord](https://discord.gg/6GDAfXn).  
 
-Интерфейсы могут расширять друг друга. Это позволяет вам копировать элементы одного интерфейса в другой, что дает вам больше гибкости в том, как вы разделяете свои интерфейсы на повторно используемые компоненты.
+Качай наше [мобильное приложение](http://onelink.to/njhc95) или пройди тестирование в нашем [JavaScript телеграм боте](https://t.me/javascriptcamp_bot), а также подпишитесь на [наши новости](https://t.me/javascriptapp).
 
-[Пример](https://www.typescriptlang.org/play?#code/JYOwLgpgTgZghgYwgAgMoAs4AcUG8BQyyCA9gDYlQBcyAzmFKAOb4C+++oksiKAChBCoGJANZ5CyHCADqwACZh0NEAFcAtgCNobDgHo9yQDwggXhBAfCCA2EECsIIEEQQEIggJhArJ81eSABEEAMIDcASIIA4Qd2c-K05waHgkNABHVTgoFAgAD0gQeVo0TBwAGmQBIRFxZAIiWgUIABlBJiUVDW0oXXwyCDA6GLiUAF4i1mQ4dNR2+PxaIYgAOlIKKGRugHJNMlUIOZGx8dL5CqqlWeQARgAGNdj48ek5RXQ9gFZxw6A)
 
-```ts
-interface Shape {
-  color: string
-}
+[![Sumerian school](/img/app.jpg)](http://onelink.to/njhc95)
 
-interface PenStroke {
-  penWidth: number
-}
+![JavaScript Camp](/img/bandlink.png)
 
-// множественное расширение
-interface Square extends Shape, PenStroke {
-  sideLength: number
-}
-
-let square = {} as Square
-square.color = 'blue'
-square.sideLength = 10
-square.penWidth = 5.0
-```
-
-## Гибридные типы
-
-![gibrid](https://media.giphy.com/media/JT84rtPITBqiZ2PExw/giphy.gif)
-
-Как мы упоминали ранее, интерфейсы могут описывать более сложные типы, присутствующие в реальном мире JavaScript. Из-за динамического и гибкого характера JavaScript вы можете случайно встретить объект, который работает как комбинация некоторых типов, описанных выше.
-
-Одним из таких примеров является объект, который действует как функция и объект с дополнительными свойствами:
-
-[Пример](https://www.typescriptlang.org/play?#code/JYOwLgpgTgZghgYwgAgMIHsCu5rIN4BQyyAFAM5hxRgBcyImAtgEbQCUdFUoA5kcqEhQAbnAA2dBi2j8oEMhDAkOyYemAATAgF8CBGNgRhg6EMh6KM2IcrpWcUfPzGLkCLA+QBeZAZBGTM3JKakkmVig2fG1kODI0DyF+d2toADpBaFExb2QARgAmAGZkxPS5BTBcvwDTUii8XWI5MEwoMxSHHT0XKoRcizB7GzYCBBI8gAZRhDSKxWUxjIds3IBWNMmgA)
-
-```ts
-interface Counter {
-  (start: number): string
-  interval: number
-  reset(): void
-}
-
-function getCounter(): Counter {
-  let counter = function (start: number) {} as Counter
-  counter.interval = 123
-  counter.reset = function () {}
-  return counter
-}
-
-let c = getCounter()
-c(10)
-c.reset()
-c.interval = 5.0
-```
-
-<!-- ## Расширение классов интерфейсами
-
-Когда тип интерфейса расширяет тип класса, он наследует переменные класса, но не их реализации. Это как если бы интерфейс объявил всех переменных класса без предоставления реализации. Интерфейсы наследуют даже _private_ и _protected_ переменные базового класса. Это означает, что, когда вы создаете интерфейс, который расширяет класс _private_ или _protected_ полями, этот тип интерфейса может быть реализован только этим классом или его подклассом.
-
-Это полезно, когда у вас большая иерархия наследования, но вы хотите указать, что ваш код работает только с подклассами, которые имеют определенные свойства. Подклассы не должны быть связаны, кроме наследования от базового класса. Например:
-
-[Пример](https://www.typescriptlang.org/play?#code/MYGwhgzhAEDCD2A7ALgJ3iaBvAUNf0ADqgJYBuYyAptBMpVQFzRiICeA3DgL444koqqAGZhgNAMpUQVYPQBGMhCnSYqAD2qIAJjGVoM2PAQjTZyABQBKZmXgltXXjlCQYAIQCuyZEmgatXTgkA0wSAFtCGXCqFBgpGTkwRSp9VSMCWjM5a2xeZ1coaAAVAPd4dX9NWKC0w1xM00TLKzyePkKYAElwsABzVJD0iKiqGLjoBPNkpSH6nAB6BbhwIoByHv7BlQw16AFgeFRUcxA2fcjo2OQYAWoRMRo1qaSUupA1gDoStkIqGAAFmAyDRTIQwKgGNBtLJwJDkCQkDB4MIWERSBRqOj4H9UMhzms6AwvnxMsRyFCidRmKxOMZ8E1zLksPkgA)
-
-```jsx
-class Control {
-    private state: any;
-}
-
-interface SelectableControl extends Control {
-    select(): void;
-}
-
-class Button extends Control implements SelectableControl {
-    select() {}
-}
-
-class TextBox extends Control {
-    select() {}
-}
-
-class ImageControl implements SelectableControl {
-    private state: any;
-    select() {}
-}
-```
-
-В приведенном выше примере `SelectableControl` содержит все члены `Control`, включая свойство `private state`. Поскольку `state` является _private_ полем, только потомки `Control` могут реализовать `SelectableControl`. Это связано с тем, что только потомки элемента `Control` будут иметь закрытый элемент, созданный в той же декларации, что является обязательным требованием для совместимости закрытых членов. -->
-
-## Вопросы
-
-![question](https://media.giphy.com/media/Uq4ucFb5FLDStK6CUk/giphy.gif)
-
-Как называется способ типизации, используемый в TypeScript?
-
-1. явный
-2. утиный
-3. строгий
-
-С помощью какого ключевого слова объявляется интерфейс?
-
-1. interface
-2. class
-3. function
-
-С помощью какого символа объявляется необязательное свойство?
-
-1. `!`
-2. `?`
-3. `-`
-
-Для чего используется `readonly`?
-
-1. Только для чтения
-2. Только для записи
-3. Незнаю
-
-Позволяют ли интерфейсы описывать типы функций?
-
-1. `true`
-2. `false`
-
-С помощью какого ключевого слова расширяются интерфейсы?
-
-1. yield
-2. extends
-3. export
-
-Теперь мы готовы с вами изучать TypeScript, но для того чтобы понять на сколько вы усвоили этот урок пройдите тест в [мобильном приложении](http://onelink.to/njhc95) в нашей школы по этой теме.
-
-![Sumerian school](/img/app.jpg)
-
-## Ссылки
-
-1. [TypeScriptLang](https://www.typescriptlang.org/docs/handbook/interfaces.html)
-2. [Интерфейсы](https://metanit.com/web/typescript/3.3.php)
 
 ## Contributors ✨
 
@@ -504,5 +377,3 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /><a href="#financial-gHashTag" title="Financial">💵</a></td>
   </tr>
 </table>
-
-[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
