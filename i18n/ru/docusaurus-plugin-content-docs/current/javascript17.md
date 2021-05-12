@@ -437,7 +437,7 @@ let arr = new Array(item1, item2...)
 
 Пишите в [Discord](https://discord.gg/6GDAfXn) или телеграмм [чат](https://t.me/jscampapp), а также подписывайтесь на наши [новости](https://t.me/javascriptapp)
 
-![JavaScript Camp](/img/bandlink.png)
+ 
 
 ## Вопросы
 
@@ -518,7 +518,7 @@ let arr = new Array(item1, item2...)
 
 [![Sumerian school](/img/app.jpg)](http://onelink.to/njhc95)
 
-![JavaScript Camp](/img/bandlink.png)
+ 
 
 ## Contributors ✨
 

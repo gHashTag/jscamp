@@ -401,7 +401,7 @@ amplify notification console
 
 Пишите в [Discord](https://discord.gg/6GDAfXn) или телеграмм [чат](https://t.me/jscampapp), а также подписывайтесь на наши [новости](https://t.me/javascriptapp)
 
-![JavaScript Camp](/img/bandlink.png)
+ 
 
 ## Ссылки:
 
@@ -424,6 +424,6 @@ amplify notification console
 
 [![Sumerian school](/img/app.jpg)](http://onelink.to/njhc95)
 
-![JavaScript Camp](/img/bandlink.png)
+ 
 
 [![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)

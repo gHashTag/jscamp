@@ -111,7 +111,7 @@ tom.move(34)
 
 [![Sumerian school](/img/app.jpg)](http://onelink.to/njhc95)
 
-![JavaScript Camp](/img/bandlink.png)
+ 
 
 
 ## Contributors ✨

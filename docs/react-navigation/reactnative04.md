@@ -31,12 +31,12 @@ Now you are on a stripped-down version of the site, after subscribing to [Patreo
 
 Download our [mobile application](http://onelink.to/njhc95) or get tested in our [JavaScript telegram bot](https://t.me/javascriptcamp_bot), and also subscribe to [our news](https://t.me/javascriptapp).
 
-[![Become a Patron!](/Img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
+[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
 
 
 [![Sumerian school](/img/app.jpg)](http://onelink.to/njhc95)
 
-![JavaScript Camp](/img/bandlink.png)
+ 
 ## Links
 
 [React Navigation](https://reactnavigation.org/docs/6.x/headers)

@@ -1143,7 +1143,7 @@ export default PositionLayout
 
 Пишите в [Discord](https://discord.gg/6GDAfXn) или телеграмм [чат](https://t.me/jscampapp), а также подписывайтесь на наши [новости](https://t.me/javascriptapp)
 
-![JavaScript Camp](/img/bandlink.png)
+ 
 
 ## Вопросы
 
@@ -1249,7 +1249,7 @@ Flexbox не работает в React Native так же, как и в CSS в �
 
 [![Sumerian school](/img/app.jpg)](http://onelink.to/njhc95)
 
-![JavaScript Camp](/img/bandlink.png)
+ 
 
 ## Contributors ✨
 

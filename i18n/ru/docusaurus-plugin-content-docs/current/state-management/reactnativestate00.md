@@ -223,7 +223,7 @@ export default Todo
 
 Пишите в [Discord](https://discord.gg/6GDAfXn) или телеграмм [чат](https://t.me/jscampapp), а также подписывайтесь на наши [новости](https://t.me/javascriptapp)
 
-![JavaScript Camp](/img/bandlink.png)
+ 
 
 ## Links
 
@@ -258,7 +258,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 [![Sumerian school](/img/app.jpg)](http://onelink.to/njhc95)
 
-![JavaScript Camp](/img/bandlink.png)
+ 
 
 ## Contributors ✨
 

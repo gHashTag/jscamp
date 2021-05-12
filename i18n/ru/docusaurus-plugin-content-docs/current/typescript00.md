@@ -141,7 +141,7 @@ TypeScript развивается как `OpenSource`-проект и, как и
 
 [![Sumerian school](/img/app.jpg)](http://onelink.to/njhc95)
 
-![JavaScript Camp](/img/bandlink.png)
+ 
 
 ## Contributors ✨
 
