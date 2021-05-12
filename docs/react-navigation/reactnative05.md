@@ -73,38 +73,18 @@ const HomeScreen = ({ navigation }) => {
 }
 ```
 
-## Back Button Setting
+## Payment
 
-`createStackNavigator` provides platform-specific default settings for the back button. On iOS, this includes a label with a button that shows the title of the previous screen when the title fits into the available space, otherwise it says Back.
+Now you are on a stripped-down version of the site, after subscribing to [Patreon](https://www.patreon.com/javascriptcamp), you will get full access to the training course, as well as access to our server's private channels in [Discord](https://discord.gg/6GDAfXn).
 
-You can change the behavior of the label using `headerBackTitle` and `headerTruncatedBackTitle` [more](https://reactnavigation.org/docs/6.x/stack-navigator#headerbacktitle).
+Download our [mobile application](http://onelink.to/njhc95) or get tested in our [JavaScript telegram bot](https://t.me/javascriptcamp_bot), and also subscribe to [our news](https://t.me/javascriptapp).
 
-To customize the back button image, you can use [headerBackImage](https://reactnavigation.org/docs/6.x/stack-navigator#headerbackimage).
-
-## Overriding the back button
-
-The back button will automatically appear in the stack navigator whenever the user has the option to return from the current screen - in other words, the back button will appear whenever there is more than one screen in the stack.
-
-All in all, this is what you need. But it is possible that in some circumstances you may want to customize the back button more than you can with the options mentioned above, in which case you can set the `headerLeft` option on the React element to be rendered, just like we do this was done with `headerRight`. Alternatively, the `headerLeft` option also accepts a React component that can be used, for example, to override the `onPress` behavior of the back button. Read more about this in [API reference](https://reactnavigation.org/docs/6.x/stack-navigator#headerleft).
-
-If you want to keep the look of the back button and only override the `onPress` method, you can import the HeaderBackButton from `@response-navigation/stack`
-
-```jsx
-import { HeaderBackButton } from '@react-navigation/stack'
-```
-
-and assign this component to the `headerLeft` parameter.
-
-## Done ✅
-
-To see how well you learned this lesson, take the test in our school's [mobile app](http://onelink.to/njhc95) on this topic or in [Telegram bot](https://t.me/javascriptcamp_bot).
+[![Become a Patron!](/Img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
 
 
-![Sumerian school](/img/app.jpg)
+[![Sumerian school](/img/app.jpg)](http://onelink.to/njhc95)
 
-## Links
-
-[React Navigation](https://reactnavigation.org/docs/6.x/header-buttons)
+![JavaScript Camp](/img/bandlink.png)
 
 ## Contributors ✨
 

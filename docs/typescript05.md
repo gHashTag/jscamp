@@ -31,57 +31,19 @@ greeter.greet() // Вернет строчку Hello world
 
 A new class Greeter has been declared. This class has three items: a greeting property, a constructor, and a greet method. The last line instantiates the Greeter class using new. It calls the constructor defined earlier, creates a new object, and runs the constructor to initialize it.
 
-## Inheritance
+## Payment
 
-TypeScript uses familiar object-oriented programming approaches. One of the most fundamental approaches in class-based programming is the creation of new classes using inheritance.
+Now you are on a stripped-down version of the site, after subscribing to [Patreon](https://www.patreon.com/javascriptcamp), you will get full access to the training course, as well as access to our server's private channels in [Discord](https://discord.gg/6GDAfXn).
 
-Example:
+Download our [mobile application](http://onelink.to/njhc95) or get tested in our [JavaScript telegram bot](https://t.me/javascriptcamp_bot), and also subscribe to [our news](https://t.me/javascriptapp).
 
-```typescript
-class Animal {
-  name: string
-  constructor(theName: string) {
-    this.name = theName
-  }
-  move(distanceInMeters: number = 0) {
-    return this.name + ' moved ' + distanceInMeters + ' m.'
-  }
-}
+[![Become a Patron!](/Img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
 
-class Snake extends Animal {
-  constructor(name: string) {
-    super(name)
-  }
-  move(distanceInMeters = 5) {
-    super.move(distanceInMeters)
-  }
-}
 
-class Horse extends Animal {
-  constructor(name: string) {
-    super(name)
-  }
-  move(distanceInMeters = 45) {
-    super.move(distanceInMeters)
-  }
-}
+[![Sumerian school](/img/app.jpg)](http://onelink.to/njhc95)
 
-let sam = new Snake('Sammy the Python')
-let tom = new Horse('Tommy the Palomino')
+![JavaScript Camp](/img/bandlink.png)
 
-sam.move()
-tom.move(34)
-```
-
-Here, the `extends` keyword is used to create a subclass. The Horse and Snake classes are based on the Animal class and they access its capabilities.
-The Snake and Horse classes create a move method that overrides the move method from the Animal class, giving it functionality specific to each class.
-
-These are just the basics of working with classes. But in our course we are only getting to know the classes, since the `JavaScript` library` React Native` teaches us functional programming.
-
-## Links:
-
-1.  [Metanit](https://metanit.com/web/typescript/3.1.php)
-2.  [TypeScript-lang leadership TypeScript](http://typescript-lang.ru/docs/Classes.html)
 
 ## Contributors ✨
 

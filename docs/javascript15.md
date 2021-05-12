@@ -40,150 +40,18 @@ switch (n) {
 
 `n` - this is [boolean](https://react-native-village.github.io/docs/javascript08) condition.
 
-## Examples of
+## Payment
 
-![Math](https://media.giphy.com/media/xT1Ra5h24Eliux3UVq/giphy.gif)
+Now you are on a stripped-down version of the site, after subscribing to [Patreon](https://www.patreon.com/javascriptcamp), you will get full access to the training course, as well as access to our server's private channels in [Discord](https://discord.gg/6GDAfXn).
 
-Let's consider the simplest example 👇:
+Download our [mobile application](http://onelink.to/njhc95) or get tested in our [JavaScript telegram bot](https://t.me/javascriptcamp_bot), and also subscribe to [our news](https://t.me/javascriptapp).
 
-```jsx live
-function learnJavaScript() {
-  let a = 4
-  let str
-  switch (a) {
-    case 3:
-      str = 'Not enough'
-      break
-    case 4:
-      str = 'To the point!'
-      break
-    case 5:
-      str = 'brute force'
-      break
-    default:
-      str = "I don't know such values"
-  }
-  return str
-}
-```
+[![Become a Patron!](/Img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
 
-Here the `switch` statement will sequentially compare` a` with all the options from `case`.
-First `3`, then - since there is no match - `4`. A match is found, this option will be executed, from the line `str = 'To point!'` And further, to the nearest `break`, which will interrupt the execution.
 
-![Wow](https://media.giphy.com/media/3oriO13KTkzPwTykp2/giphy.gif)
+[![Sumerian school](/img/app.jpg)](http://onelink.to/njhc95)
 
-Consider this example 👇:
-
-```jsx live
-function learnJavaScript() {
-  let a = 'Apples'
-  let str
-  switch (a) {
-    case 'Apples':
-      str = 'I love ' + a
-      break
-    case 'Oranges':
-      str = 'I love ' + a
-      break
-    case 'Bananas':
-      str = 'I love ' + a
-      break
-    default:
-      str = 'I like other fruits'
-  }
-  return str
-}
-```
-
-Here the `switch` statement will sequentially compare `a` with all the options from `case`. But this is not a comparison of numbers, but of strings. This can be done with any data type, as long as the same data types are compared.
-
-## Replacing `if`
-
-Also, `Switch` is used to replace multiple `if`.
-
-For example, you can replace this code 👇:
-
-```jsx live
-function learnJavaScript() {
-  let number = 2
-  let str
-  if (number === 0) {
-    str = 'You entered the number 0'
-  }
-
-  if (number === 1) {
-    str = 'You entered the number 1'
-  }
-
-  if (number === 2 || number === 3) {
-    str = 'You entered the number 2, maybe 3'
-  }
-  return str
-}
-```
-
-On this 👇:
-
-```jsx live
-function learnJavaScript() {
-  let number = 2
-  let str
-  switch (number) {
-    case 0:
-      str = 'You entered the number 0'
-      break
-
-    case 1:
-      str = 'You entered the number 1'
-      break
-
-    case 2:
-    case 3:
-      str = 'You entered the number 2, maybe 3'
-      break
-  }
-  return str
-}
-```
-
-The result will be the same, but the code will become more readable and easier to work with.
-
-## Problems?
-
-![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
-
-Write to [Discord](https://discord.gg/6GDAfXn) chat.
-
-## Questions:
-
-![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
-
-Is it possible to use `switch` to compare something with regular expressions?
-
-1. Yes
-2. No
-
-What comparison operator does `switch` use?
-
-1. `=`
-2. `===`
-3. `==`
-
-Which keyword stops the comparison process in `switch`?
-
-1. `break`
-2. `stop`
-3. `default`
-
-In order to understand how much you learned this lesson, take the test in the [mobile application](http://onelink.to/njhc95) of our school on this topic or in our [telegram bot](https://t.me/javascriptcamp_bot).
-
-![Sumerian school](/img/app.jpg)
-
-## Links
-
-1.  [MDN web docs](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/switch)
-2.  [Learn JavaScript](https://learn.javascript.ru/switch)
-3.  [Справочник JavaScript](https://javascript.ru/switch)
+![JavaScript Camp](/img/bandlink.png)
 
 ## Contributors ✨
 

@@ -63,77 +63,18 @@ function learnJavaScript() {
 
 You have a closing parenthesis `)`, but there is no opening parenthesis `(`! But the parentheses always go in pairs - it cannot be that there is a closing, but there is no opening parenthesis, and vice versa.
 
-## ReferenceError
+## Payment
 
-![Error](https://media.giphy.com/media/8L0Pky6C83SzkzU55a/giphy.gif)
+Now you are on a stripped-down version of the site, after subscribing to [Patreon](https://www.patreon.com/javascriptcamp), you will get full access to the training course, as well as access to our server's private channels in [Discord](https://discord.gg/6GDAfXn).
 
-`ReferenceError` is an invalid name! The `ReferenceError` object represents an error🙅‍♂️ that occurs when accessing a variable that does not exist. For example, enter five plus alternating `5 + alternating`:
+Download our [mobile application](http://onelink.to/njhc95) or get tested in our [JavaScript telegram bot](https://t.me/javascriptcamp_bot), and also subscribe to [our news](https://t.me/javascriptapp).
 
-```jsx live
-function learnJavaScript() {
-  var error = 5
+[![Become a Patron!](/Img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
 
-  return error
-}
-```
 
-Now we have before us an error of the reference `ReferenceError`. Perhaps you have already noticed what is the matter here? Let's read the error message 💬 carefully (after all, that's why it is displayed!). It says: `variable 🔔 is not defined` - the variable is not set, this is where our problem lies! First, we have to declare the variable-in some way, say this way:
+[![Sumerian school](/img/app.jpg)](http://onelink.to/njhc95)
 
-```jsx live
-function learnJavaScript() {
-  var test = 5
-  var error = 5 + test
-
-  return error
-}
-```
-
-## TypeError
-
-A TypeError object represents an error that is thrown when a value is not of the expected type. We apply the `toUpperCase` method, which we will learn more about later, to the undefined type, and this is not allowed since this method converts the string to uppercase. Check this error in the browser console, it doesn't work in `LIVE EDITOR`.
-
-```javascript
-var foo = undefined
-foo.toUpperCase()
-```
-
-![TypeError](/img/javascript/25.jpg)
-
-## Open source
-
-We can also make mistakes, so if you find an error on the site or incorrect translation, you can easily help fix the error on the site. To do this, click on the `Edit this page` button at the very bottom of each page.
-
-## Problems?
-
-![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
-
-Write to [Discord](https://discord.gg/6GDAfXn) chat.
-
-## Questions:
-
-![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
-
-What does `Syntax Error` mean?
-
-1. Wrong order of signs
-2. Violation of the rules of the language
-3. Inappropriate parentheses
-
-What does `Reference Error` mean?
-
-1. Undeclared variable
-2. Syntax error
-3. Wrong name
-
-In order to understand how much you learned this lesson, take the test in the [mobile application](http://onelink.to/njhc95) of our school on this topic or in our [telegram bot](https://t.me/javascriptcamp_bot).
-
-![Sumerian school](/img/app.jpg)
-
-## Links
-
-1. [MDN web docs](https://developer.mozilla.org/ru/docs/Web/JavaScript/Data_structures)
-2. [Code for Teens: The Perfect Beginner's Guide to Programming, Volume 1: Javascript - Jeremy Moritz](https://www.amazon.com/Code-Teens-Beginners-Programming-Javascript-ebook/dp/B07FCTLVPC)
-3. [JavaScript.ru](https://learn.javascript.ru/types)
+![JavaScript Camp](/img/bandlink.png)
 
 ## Contributors ✨
 

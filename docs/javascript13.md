@@ -33,79 +33,18 @@ function learnJavaScript() {
 
 If any value other than `undefined` is passed to the formal parameter during the call, including one of the" false "values such as false ❎,` 0`, `" "`, `''`, `null`,`NaN`, then in this case the default value will not be assigned to the parameter. In this case, you need to write the code yourself that will catch these "false values".
 
-## Examples of
+## Payment
 
-![Math](https://media.giphy.com/media/xT1Ra5h24Eliux3UVq/giphy.gif)
+Now you are on a stripped-down version of the site, after subscribing to [Patreon](https://www.patreon.com/javascriptcamp), you will get full access to the training course, as well as access to our server's private channels in [Discord](https://discord.gg/6GDAfXn).
 
-In the default parameters, you can use the values of the previous (located to the left in the list) parameters:
+Download our [mobile application](http://onelink.to/njhc95) or get tested in our [JavaScript telegram bot](https://t.me/javascriptcamp_bot), and also subscribe to [our news](https://t.me/javascriptapp).
 
-```jsx live
-function learnJavaScript() {
-  const greet = (name, greeting, message = greeting + ' ' + name) => {
-    return [name, greeting, message]
-  }
+[![Become a Patron!](/Img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
 
-  return greet('David ', 'Hi ')
-}
-```
 
-An example of a function with and without default parameters 👇:
+[![Sumerian school](/img/app.jpg)](http://onelink.to/njhc95)
 
-```jsx live
-function learnJavaScript() {
-  const withDefaults = (a = 1, b = 3, c = 2) => {
-    // Function with default parameters
-    return [a, b, c]
-  }
-  const withoutDefaults = (a, b, c) => {
-    // Function without default parameters
-    if (a == undefined) {
-      a = 1
-    }
-    if (b == undefined) {
-      b = 3
-    }
-    if (c == undefined) {
-      c = 2
-    }
-    return [a, b, c]
-  }
-
-  return withDefaults()
-}
-```
-
-The result will be the same, but without default parameters, the code📟 can become noticeably larger.
-
-## Problems?
-
-![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
-
-Write to [Discord](https://discord.gg/6GDAfXn) chat.
-
-## Questions:
-
-![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
-
-If no value is passed to function parameters⚙️, what is their default value?
-
-1. `null`
-2. `undefined`
-3. `NaN`
-
-Are the default parameters "catching" false values?
-
-1. Yes
-2. No
-
-Is it possible to use the values of the parameters located to the left of the list in the default parameters?
-
-1. Yes
-2. No
-
-In order to understand how much you learned this lesson, take the test in the [mobile application](http://onelink.to/njhc95) of our school on this topic or in our [telegram bot](https://t.me/javascriptcamp_bot).
-
-![Sumerian school](/img/app.jpg)
+![JavaScript Camp](/img/bandlink.png)
 
 ## Links
 

@@ -40,21 +40,18 @@ export default App
 
 This is usually necessary in order to make the properties dynamic.
 
-## Questions
+## Payment
 
-What is the name of the hook for determining the value of the width and height when the screen is resized?
+Now you are on a stripped-down version of the site, after subscribing to [Patreon](https://www.patreon.com/javascriptcamp), you will get full access to the training course, as well as access to our server's private channels in [Discord](https://discord.gg/6GDAfXn).
 
-1. `useDimensions`
-2. `winDimensions`
-3. `useWindowDimensions`
+Download our [mobile application](http://onelink.to/njhc95) or get tested in our [JavaScript telegram bot](https://t.me/javascriptcamp_bot), and also subscribe to [our news](https://t.me/javascriptapp).
 
-To see how well you learned this lesson, take the test in the [mobile application](http://onelink.to/njhc95) of our school on this topic or in the [telegram bot](https://t.me/javascriptcamp_bot).
+[![Become a Patron!](/Img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
 
-![Sumerian school](/img/app.jpg)
 
-## Links:
+[![Sumerian school](/img/app.jpg)](http://onelink.to/njhc95)
 
-1. [React Native](https://reactnative.dev/docs/usewindowdimensions)
+![JavaScript Camp](/img/bandlink.png)
 
 ## Contributors ✨
 

@@ -60,149 +60,18 @@ function learnJavaScript() {
 }
 ```
 
-## Variable update
+## Payment
 
-![Update](https://media.giphy.com/media/FP47IFqWyXfdKYU6VG/giphy.gif)
+Now you are on a stripped-down version of the site, after subscribing to [Patreon](https://www.patreon.com/javascriptcamp), you will get full access to the training course, as well as access to our server's private channels in [Discord](https://discord.gg/6GDAfXn).
 
-One of the peculiarities of variables 🔔 is that their meaning can change.
-When a value is assigned to a variable 🔔, you can change (update) that value simply by specifying a different value. Let's take a look at a simple example 👇:
+Download our [mobile application](http://onelink.to/njhc95) or get tested in our [JavaScript telegram bot](https://t.me/javascriptcamp_bot), and also subscribe to [our news](https://t.me/javascriptapp).
 
-```jsx live
-function learnJavaScript() {
-  var message = 'Bob' // now message Bob
-  message = true // and now the message is true
-  message = 35 // and as a result message 35
+[![Become a Patron!](/Img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
 
-  return message
-}
-```
 
-Another feature of variables 🔔 is that they can contain almost anything, not just strings and numbers. Variables 🔔 can also contain complex data and even entire functions. You will learn more about this as you study the course further.
+[![Sumerian school](/img/app.jpg)](http://onelink.to/njhc95)
 
-::: tip Note!
-We say that variables contain values. This is an important distinction. Variables are not the values themselves! They are containers for values. Imagine that they are like little cardboard boxes📦 in which you can store things.
-:::
-
-![Variables](https://mdn.mozillademos.org/files/13506/boxes.png)
-
-![Hello World](https://media.giphy.com/media/26his8ERHOSxKuWw8/giphy.gif)
-
-## Variable naming rules
-
-![Rules](https://media.giphy.com/media/XK8I8Am1gSe17MiJ2m/giphy.gif)
-
-You can name the variable 🔔 whatever you like, but there are limitations. Generally, you should only stick to Latin characters (0-9, a-z, A-Z) and the underscore character.
-
-- The use of other symbols is not recommended because they may cause errors or be incomprehensible to an international audience.
-- Do not use underscores at the beginning of variable names 🔔 - this is used in some JavaScript constructs to denote specific things.
-- Do not use numbers at the beginning of variables 🔔. This is invalid and will result in an error.
-- It is generally accepted to stick to the so-called "lower camel case" (camelCase - so called because of the "humps" that form the first letters of words), where you glue several words, using lowercase letters for the entire first word, and then capital letters of subsequent words. We have used this for our variable names 🔔 in this article.
-- Make variable names 🔔 intuitive about what data they contain. Do not use only single letters / numbers or large long phrases.
-- Variables 🔔 are case sensitive, so `myage` and` myAge` are different variables 🔔.
-- Last but not least - you also need to avoid using JavaScript reserved words as variable names 🔔 - by that we mean the words that make up the actual JavaScript syntax! Thus, you cannot use words like var, function, let, and for for variable names 🔔. Browsers recognize them as different pieces of code and therefore errors occur.
-
-## List of reserved words
-
-![Reserved](https://media.giphy.com/media/3o6Mb3eci7bVDKBR2o/giphy.gif)
-
-We cannot call variables 🔔 with these words, since they are reserved in the JavaScript language.
-`break`, `case`, `catch`, `class`, `const`, `continue`, `debugger`, `default`, `delete`, `do`, `else`, `export`, `extends`, `finally`, `for`, `function`, `if`, `import`, `in`, `instanceof`, `new`, `return`, `super`, `switch`, `this`, `throw`, `try`, `typeof`, `var`, `void`, `while`, `with`, `yield`
-
-## Loose typing
-
-![Freedom](https://media.giphy.com/media/6901DbEbbm4o0/giphy.gif)
-
-JavaScript is a “freely typed language👅” which means that unlike some other languages👅 you do not need to specify what type of data the variable will contain (eg numbers, strings, arrays, etc.).
-
-For example, if you declare a variable 🔔 and assign a quoted value to it, the browser will treat the variable 🔔 as a string 👇:
-
-```jsx live
-function learnJavaScript() {
-  var myString = 'Hello'
-  // It will still be a string, even if it contains numbers, so be careful:
-  var myNumber = '500' // oops, it's still a string
-
-  myNumber = 500 // that's better, now it's number. Remove this line and look at the data type.
-
-  return typeof myNumber
-}
-```
-
-## Deprecated "var" keyword
-
-![Old](https://media.giphy.com/media/3orieJI3IdkKWIsAGA/giphy.gif)
-
-Usually `var` is not used in modern scripts, but it can still be hidden in old ones. This is due to the fact that it does not behave unambiguously, so instead of `var` we will use` let` for variables 🔔, and `const` for constants - constants.
-
-🔔 The break is over, let's run to the next lesson!
-
-## Problems?
-
-![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
-
-Write to [Discord](https://discord.gg/6GDAfXn) chat.
-
-## Questions:
-
-![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
-
-For whom does the `console.log` command contain information?
-
-1. User
-2. Developer
-3. JavaScript interpreter
-
-What are variables?
-
-1. Containers for values
-2. Variable values
-3. Latin letters
-
-What can variables contain?
-
-1. Only strings and numbers
-2. Numbers, strings, complex data, functions
-3. Only complex data and functions
-
-How to write a command to assign a variable?
-
-1. `var`
-2. `var` [variable name] =
-3. `var` [variable name]
-
-How do I update a variable?
-
-1. The variable cannot be updated
-2. Specify a different value for the variable
-3. Set a custom command
-
-What is missing in the variable naming rules?
-
-1. Don't use numbers at the beginning of variables
-2. Don't use reserved words
-3. Stick to Latin characters
-
-How do I write the value of a variable so that the browser treats the variable as a string?
-
-1. Without quotes
-2. In quotes
-3. In brackets
-
-Which keyword don't we use to define variables?
-
-1. `let`
-2. `const`
-3. `var`
-
-In order to understand how much you learned this lesson, take the test in the [mobile application](http://onelink.to/njhc95) of our school on this topic or in our [telegram bot](https://t.me/javascriptcamp_bot).
-
-![Sumerian school](/img/app.jpg)
-
-## Links
-
-1. [MDN web docs](https://developer.mozilla.org/ru/docs/Learn/JavaScript/Первые_шаги/Variables)
-2. [Code for Teens: The Perfect Beginner's Guide to Programming, Volume 1: Javascript - Jeremy Moritz](https://www.amazon.com/Code-Teens-Beginners-Programming-Javascript-ebook/dp/B07FCTLVPC)
-3. [JavaScript.ru](https://learn.javascript.ru/types)
+![JavaScript Camp](/img/bandlink.png)
 
 ## Contributors ✨
 
