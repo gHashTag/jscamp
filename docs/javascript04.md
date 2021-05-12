@@ -82,9 +82,7 @@ Download our [mobile application](http://onelink.to/njhc95) or get tested in our
 
 [![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
 
-
 [![Sumerian school](/img/app.jpg)](http://onelink.to/njhc95)
-
  
 
 ## Contributors ✨
