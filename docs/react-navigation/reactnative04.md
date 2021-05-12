@@ -1,7 +1,7 @@
 ---
 id: reactnative04
-title: Настройка Header
-sidebar_label: Настройка Header
+title: Setting up Header
+sidebar_label: Setting up Header
 ---
 
 We've already seen how to set the `title` in the Header, but let's take another look at that before moving on to some of the other options - repetition is the key to learning!

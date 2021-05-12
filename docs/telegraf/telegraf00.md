@@ -28,7 +28,7 @@ Telegram does not process payments from users and instead relies on different pa
 You can use any application for payment, including Telegram for computers. A customer can also leave a tip to support a favorite author, cafe or store.
 
 
-## Создаём бота в Telegram
+## How to create a bot in Telegram
 
 Telegram bot is created using another bot called [@BotFather](http://telegram.me/BotFather). We send him the command `/ newbot`, select the name that will be displayed in the contact list, and the address. For example, `Payment in Telegram bot` with the address `sber_pay_test_bot`.
 
