@@ -110,279 +110,29 @@ function learnJavaScript() {
 
 只能有一種名為 `constructor` 在課堂上。
 
-## 放棄課程
+## 支付
 
-![rejection](https://media.giphy.com/media/l2SpUoAPo0CBOkyxq/giphy.gif)
+訂閱以下內容後，您現在處於該網站的精簡版本中 [Patreon](https://www.patreon.com/javascriptcamp), 您將獲得對培訓課程的完全訪問權限，以及在以下位置訪問我們服務器的私人頻道的權限：[Discord](https://discord.gg/6GDAfXn).
 
-由於在我們學校的課程中，我們教授使用庫開發移動應用程序 [React](https://reactjs.org), 創新在哪裡 [React Hooks](https://en.reactjs.org/docs/hooks-intro.html) 允許您在不編寫類的情況下使用狀態和其他 React 功能。 因此，不再討論類，因為我們已經放棄了它們。
+下載我們的 [mobile application](http://onelink.to/njhc95) o在我們的測試中 [JavaScript telegram bot](https://t.me/javascriptcamp_bot), 並訂閱 [our news](https://t.me/javascriptapp).
 
-## 問題？
+[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
 
-![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
 
-寫給 [Discord](https://discord.gg/6GDAfXn) 聊天。
+[![Sumerian school](/img/app.jpg)](http://onelink.to/njhc95)
 
-## 問題:
-
-![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
-
-類定義的關鍵字是什麼？
-
-1. `constructor()`
-2. `class`
-3. `this`
-
-類逗號內的方法是否分開？
-
-1.是的 2.沒有
-
-多少 `constructor()` 方法可以在一堂課中嗎？
-
-1.無限 2.最多十個 3.只有一個
-
-<!-- Что такое геттеры и сеттеры?
-
-1. Это поля
-2. Это методы имитирующие поля
-3. Это свойства поля
-
-Наследуются ли частные поля и методы родительского класса, дочерним классом?
-
-1. Да
-2. Нет
-
-Когда вызывается родительскй конструктор в дочернем классе?
-
-1. Перед this
-2. После this -->
-
-為了了解您學到了多少本課程，請對 [mobile application](http://onelink.to/njhc95) 我們學校就這個話題。
-
-![Sumerian school](/img/app.jpg)
-
-<!--
-## Геттеры и сеттеры
-
-![Math](https://media.giphy.com/media/uWzbH8xJGIwOBPfzhc/giphy.gif)
-
-Геттеры и сеттеры — это вычисляемые свойства. Это методы, имитирующие поля, но позволяющие читать и записывать 🖊️ данные.
-
-Геттеры используются для получения данных, а сеттеры — для их изменения.
-
-Пример:
-
-```jsx
-class User {
-  #nameValue
-
-  constructor(name) {
-    this.name = name
-  }
-
-  get name() {
-    return this.#nameValue
-  }
-
-  set name(name) {
-    if (name === '') {
-      throw new Error('Имя пользователя не может быть пустым')
-    }
-    this.#nameValue = name
-  }
-}
-
-const user = new User('Печорин')
-user.name // вызывается геттер, Печорин
-user.name = 'Бэла' // вызывается сеттер
-
-user.name = '' // Имя пользователя не может быть пустым
-```
-
-## Наследование: extends
-
-![Throne](https://media.giphy.com/media/l1KVcMMxJJpks23cs/giphy.gif)
-
-Классы в JavaScript поддерживают наследование с помощью ключевого🗝️ слова `extends`.
-
-В выражении `class Child extends Parent { }` класс `Child` наследует от класса `Parent` конструктор, поля и методы.
-
-Создадим🏗️ дочерний класс `ContentWriter`, расширяющий родительский класс `User` 👤:
-
-```jsx
-class User {
-  name
-
-  constructor(name) {
-    this.name = name
-  }
-
-  getName() {
-    return this.name
-  }
-}
-
-class ContentWriter extends User {
-  posts = []
-}
-
-const writer = new ContentWriter('Лермонтов')
-
-writer.name // Лермонтов
-writer.getName() // Лермонтов
-writer.posts // []
-```
-
-`ContentWriter` наследует от `User` конструктор, метод `getName()` и поле `name`. В самом `ContentWriter` определяется новое поле `posts`.
-
-Обратите внимание, что частные поля и методы родительского класса не наследуются дочерними классами.
-
-### Родительский конструктор: super() в constructor()
-
-![parents](https://media.giphy.com/media/QWMjLXYuRpl5cvCQ9r/giphy.gif)
-
-Для того, чтобы вызвать конструктор родительского класса в дочернем классе, следует использовать специальную функцию⚙️ `super()`, доступную в конструкторе дочернего класса.
-
-Пусть конструктор `ContentWriter` вызывает родительский конструктор и инициализирует поле `posts` 👇 :
-
-```jsx live
-function learnJavaScript() {
-  class User {
-    name
-
-    constructor(name) {
-      this.name = name
-    }
-
-    getName() {
-      return this.name
-    }
-  }
-
-  class ContentWriter extends User {
-    posts = []
-
-    constructor(name, posts) {
-      super(name)
-      this.posts = posts
-    }
-  }
-
-  const writer = new ContentWriter('Лермонтов', ['Герой нашего времени'])
-  writer.name // Лермонтов
-  writer.posts // ['Герой нашего времени']
-
-  return writer.name //name можно заменить на posts и посмотреть результат
-}
-```
-
-`super(name)` в дочернем классе `ContentWriter` вызывает конструктор родительского класса `User`.
-
-Обратите внимание, что в дочернем конструкторе перед использованием ключевого🗝️ слова `this` вызывается `super()`. Вызов `super()` "привязывает" родительский конструктор к экземпляру.
-
-![super](https://media.giphy.com/media/10mTnPIEHNZpAs/giphy.gif)
-
-```jsx
-class Child extends Parent {
-  constructor(value1, value2) {
-    // не работает!
-    this.prop2 = value2
-    super(value1)
-  }
-}
-```
-
-## Пример
-
-![math](https://media.giphy.com/media/3orieN7HEHI0tw8x5C/giphy.gif)
-
-```jsx
-class Animal { //Создание класса Animal. Классы называют с большой буквы
-
-static type = 'ANIMAL' //При помощи ключевого слова static можно объявлять переменные внутри класса. Их можно вызвать только самим классом, т.е. Animal.type
-
-  constructor(options) { //Конструктор принимает объект options
-    this.name = options.name // Инициализация полей класса
-    this.age = options.age
-    this.hasTail = options.hasTail
-  }
-
-  voice() { //Метод для класса Animal. Можно вызвать у объекта cat как cat.voice()
-    alert('I am Animal!')
-  }
-}
-
-get ageInfo(){ //Создание геттера ageInfo
-  return this.age * 7 //Если вызвать геттер у объекта cat, то получиться 5 * 7 = 35
-}
-
-set ageInfo(newAge) { //Создание сеттера ageInfo.
-  this.age = newAge // Если выполнить у объекта cat команду cat.ageInfo = 8, то полю age присвоится значение 8
-}
-
-const cat = new Animal({ //Создание объекта при помощи класса Animal
-  name: 'Cat',
-  age: 5,
-  hasTail: true
-})
-```
-
-![Wow](https://media.giphy.com/media/3oriO13KTkzPwTykp2/giphy.gif) -->
-
-<!-- ## Вопросы:
-
-![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
-
-Для того чтобы понять, на сколько вы усвоили этот урок, пройдите тест в [мобильном приложении](http://onelink.to/njhc95) нашей школы по этой теме или в нашем [телеграм боте](https://t.me/javascriptcamp_bot).
-
-![Sumerian school](/img/app.jpg) -->
-
-<!-- Сколько методов constructor() может находится в одном классе?
-
-1. Неограниченно
-2. До десяти
-3. Только один
-
-Что такое геттеры и сеттеры?
-
-1. Это поля
-2. Это методы имитирующие поля
-3. Это свойства поля
-
-Наследуются ли частные поля и методы родительского класса, дочерним классом?
-
-1. Да
-2. Нет
-
-Когда вызывается родительскй конструктор в дочернем классе?
-
-1. Перед this
-2. После this -->
-
-## 鏈接：
-
-1.  [MDN web docs](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Classes)
-2.  [Learn JavaScript](https://learn.javascript.ru/class)
+ 
 
 ## 貢獻者 ✨
 
-感謝這些好人 ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+T向這些好人致敬([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/FELiX-RN"><img src="https://avatars0.githubusercontent.com/u/72006627?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Philipp Dvinyaninov</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/commits?author=FELiX-RN" title="Documentation">📖</a></td>
-    <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /><a href="#financial-gHashTag" title="Financial">💵</a></td>
+    <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /> <a href="https://github.com/gHashTag/react-native-village/commits?author=gHashTag" title="Documentation">📖</a></td>
     <td align="center"><a href="https://github.com/Resoner2005"><img src="https://avatars1.githubusercontent.com/u/75675814?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Resoner2005</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/issues?q=author%3AResoner2005" title="Bug reports">🐛 🎨 🖋</a></td>
-    <td align="center"><a href="https://github.com/Navernoss"><img src="https://avatars0.githubusercontent.com/u/75784137?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Navernoss</b></sub></a><br /><a href="#content-Navernoss" title="Content">🖋 🐛 🎨 </a></td>
   </tr>
   
 </table>
-
-<!-- markdownlint-restore -->
-<!-- prettier-ignore-end -->
-
-<!-- ALL-CONTRIBUTORS-LIST:END -->
 
 [![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
