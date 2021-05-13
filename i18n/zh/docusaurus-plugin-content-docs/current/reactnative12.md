@@ -55,48 +55,18 @@ const styles = StyleSheet.create({
 
 This will cause the container to be `flex: 1` on all platforms, a red background on iOS, a green background on Android, and a blue background on other platforms.
 
-## Platform-specific extensions
+## Payment
 
-If your platform's code is more complex, you should consider splitting your code into separate files. React Native will detect when a file has a `.ios.` extension or a `.android.` extension and load the appropriate framework file from other components as needed.
+Now you are on a stripped-down version of the site, after subscribing to [Patreon](https://www.patreon.com/javascriptcamp), you will get full access to the training course, as well as access to our server's private channels in [Discord](https://discord.gg/6GDAfXn).
 
-For example, suppose you have the following files in your project:
+Download our [mobile application](http://onelink.to/njhc95) or get tested in our [JavaScript telegram bot](https://t.me/javascriptcamp_bot), and also subscribe to [our news](https://t.me/javascriptapp).
 
-```jsx
-BigButton.ios.js
-BigButton.android.js
-```
+[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
 
-Then you can require the component like this:
 
-```jsx
-import BigButton from './BigButton'
-```
+[![Sumerian school](/img/app.jpg)](http://onelink.to/njhc95)
 
-React Native will automatically pick the right file based on the platform you're running.
-
-More information [here](https://reactnative.dev/docs/platform-specific-code).
-
-## Questions
-
-How many ways does React Native provide for organizing and separating your code across platforms?
-
-1. 1
-2. 2
-3. 3
-
-What is the name of the module in React Native that defines the platform on which the application runs?
-
-1. `@platform`
-2. `Platform`
-3. `platform`
-
-To see how well you learned this lesson, take the test in the [mobile application](http://onelink.to/njhc95) of our school on this topic or in the [telegram bot](https://t.me/javascriptcamp_bot).
-
-![Sumerian school](/img/app.jpg)
-
-## Links:
-
-1. [React Native](https://reactnative.dev/docs/platform-specific-code)
+ 
 
 ## Contributors ✨
 

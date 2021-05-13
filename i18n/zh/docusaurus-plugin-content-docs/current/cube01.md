@@ -1,112 +1,112 @@
 ---
 id: cube-01
-title: Сборка кубик-Рубика в Sumerian School
-sidebar_label: Сборка кубика-Рубика
+title: Assembling Rubik's Cube
+sidebar_label: Assembling Rubik's Cube
 ---
 
 import YouTube from 'react-youtube';
 
 <YouTube videoId='5WyRcKrGwMo' />
 
-## Введение
+## Introduction
 
-Для того, чтобы попасть в класс JavaScript необходимо собирать кубик Рубика. Для тех, кто ещё не умеют собирать кубик, мы обучаем по авторской методике #йогаКубикаРубика
+In order to get into the JavaScript class, you need to collect the Rubik's cube. For those who still do not know how to solve the cube, we teach according to the author's method #yogaCubicaRubica
 
-## йогаКубикаРубика
+## yogaCubicRubica
 
-#йогаКубикаРубика - так мы назвали урок по сборке кубика Рубика, разработав в нашей антишной школе простую схему по чакрам из 6 алгоритмов, чтобы подготовить ваш ум к логике и пространственному мышлению, которое так необходимо в программировании.
+#yogaCubeRubica - this is how we called the lesson on solving the Rubik's cube, having developed in our school of antiquity a simple diagram of chakras of 6 algorithms to prepare your mind for the logic and spatial thinking, which is so necessary in programming.
 
-## Схема сборки
+## Assembly diagram
 
 ![pullreqest](/img/blogging/00/7me.jpeg)
 
-1. MULADHARA - положение кубика ребро
+1. MULADHARA - cube position edge
 
-1) Собрать 4 белых лепестка вокруг желтой сердцевины
-2) Выровнить по цвету бока, перекидывая на белый крест
-3) Собрать белое основание, выравнивая угл справа вверху и цвета по сердцевине.
+1) Collect 4 white petals around the yellow core
+2) Align with the color of the side, throwing it over the white cross
+3) Assemble the white base, aligning the corner at the top right and the colors along the core.
 
 ![pullreqest](/img/blogging/00/1me.png)
 
-2. SVADHISHTHANA - положение ребро
+2. SVADHISHTHANA - rib position
 
-1) Собрать боковые два нижних ряда
-2) Желтые не трогаем
+1) Collect the side two bottom rows
+2) Do not touch yellow
 
 ![pullreqest](/img/blogging/00/2me.png)
 
-3. MANIPURA - положение лицом
+3. MANIPURA - face position
 
-1) Собрать желтый крест, основываясь на желтой полоске
+1) Collect the yellow cross based on the yellow strip
 
 ![pullreqest](/img/blogging/00/3me.png)
 
-4. ANAHATA - положение ребро
+4. ANAHATA - rib position
 
-1) Выровнить сердцевины по желтому кресту, начиная только с одной выровненной сердцевины
+1) Align the cores with the yellow cross, starting with only one aligned core
 
 ![pullreqest](/img/blogging/00/4me.png)
 
-5. VISHUDDHA - положение лицо
+5. VISHUDDHA - position face
 
-1) Выровнить мулодхарой один боковой лепесток и довыравнивать угловые с боковыми сторонами
+1) Align one side petal with mulodhara and align the corner lobes with the sides
 
 ![pullreqest](/img/blogging/00/5me.png)
 
 6. AJNA
 
-1) Направить жёлтой стороной на себя
-2) С любого правого верхнего угла делаем алгоритм до совпадения
-3) На это же угловое место перевернуть другой угл
+1) Aim the yellow side at yourself
+2) From any upper right corner, we do the algorithm until the match
+3) Flip another corner to the same corner
 
 ![pullreqest](/img/blogging/00/6me.png)
 
-## Время обучения
+## Studying time
 
-За 6 дней вы не только наизусть запомните все 6 алгоритмов, но и чакровую систему санскрита, закрепляя знания, скоростью сборки.
+In 6 days, you will not only memorize all 6 algorithms, but also the Sanskrit chakra system, consolidating knowledge by the speed of assembly.
 
-## Соревнование
+## Competition
 
-🏅 Раз в месяц в @javaScriptCamp проходят онлайн соревнования #speedCubing с призовым фондом!
-Если вы тоже хотите стать участником соревнований, то мы с радостью ждём вас в нашей школе - возможно именно вы станете победителем!
+🏅 Once a month @javaScriptCamp hosts an online #speedCubing competition with a prize pool!
+If you also want to become a participant in the competition, then we are happy to welcome you to our school - perhaps you will become the winner!
 
-Для записи на соревнование и поддержку в обучении обращайтесь в [дискорт чат](https://discord.gg/UPSeqZJT)
+To register for the competition and support in training, please contact [discort chat](https://discord.gg/UPSeqZJT)
 
-## Язык вращения
+## Rotation language
 
-Язык вращения у кубика Рубика по методу Джессики Фридрих выглядит так:
+The language of rotation of the Rubik's cube according to Jessica Friedrich's method looks like this:
 
-R - движение правой стороной по часовой стрелке
-R'- движение правой стороной против часовой стрелке
+R - move right side clockwise
+R'- movement with the right side counterclockwise
 
-U - движение верхней стороной по часовой стрелке
-U'- движение верхней стороной против часовой стрелки
+U - movement of the upper side clockwise
+U'- movement of the upper side counterclockwise
 
-F - движение фронтальней стороной по часовой стрелке
-F'- движение фротальней стороной против часовой стрелке
+F - movement by the frontal side clockwise
+F'- movement of the frotal side counterclockwise
 
-L - движение левой стороной по часовой стрелке
-L'- движение левой стороной против часовой стрелке
+L - move left side clockwise
+L'- movement left side counterclockwise
 
-D - движение нижней стороной по часовой стрелке
-D'- движение нижней стороной против часовой стрелке
+D - movement of the bottom side clockwise
+D'- movement of the lower side counterclockwise
 
-B - движение задней стороной по часовой стрелке
-B'- движение задней стороной против часовой стрелке
+B - backward movement clockwise
+B'- backward movement counterclockwise
 
-M - движение средней вертикальной стороной по часовой стрелке
-M'- движение средней вертикальной стороной против часовой стрелке
+M - movement of the middle vertical side clockwise
+M'- movement of the middle vertical side counterclockwise
 
 ## Scrambl
 
-Перед тем как собирать кубик, нам его нужно разобрать. Для этого ипользуются специальные формулы, которые называются Scrambl.
-Вот один из них:
+Before collecting the cube, we need to disassemble it. For this, special formulas are used, which are called Scrambl.
+Here is one of them:
 
 R2 F R’ F’ D2 R2 U F U’ B L2 F2 R F2 U’ L F2 L B R’ D’ L’ D’ R F
 
-## Ссылки
+## Links
 
-Discord - https://discord.gg/UPSeqZJT
+[Discord](https://discord.gg/6GDAfXn)
 
 ## Contributors ✨
 

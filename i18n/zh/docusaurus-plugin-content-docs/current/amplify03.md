@@ -4,29 +4,30 @@ title: Amplify API - AppSync - CRUD (Create Read Update Delete)
 sidebar_label: Amplify API  - AppSync
 ---
 
-AWS AppSync упрощает разработку приложений, позволяя создать универсальный API для безопасного доступа к данным, их изменения и объединения данных из нескольких источников. AppSync представляет собой управляемый сервис, который использует GraphQL, чтобы приложения могли без труда получать только необходимые им данные.
 
-С помощью AppSync можно создавать масштабируемые приложения, в том числе требующие обновлений в режиме реального времени, с использованием целого ряда источников данных, таких как хранилища данных NoSQL, реляционные базы данных, API HTTP и собственные источники данных с AWS Lambda. Для мобильных и веб‑приложений AppSync также предоставляет доступ к локальным данным, когда устройства переходят в автономный режим, и синхронизирует данные при повторном подключении к Интернету. При этом клиент может настроить порядок разрешения конфликтов.
+AWS AppSync simplifies application development by letting you create a universal API to securely access, modify, and combine data from multiple sources. AppSync is a managed service that uses GraphQL so that applications can easily retrieve only the data they need.
 
-# Преимущества:
+With AppSync, you can build scalable applications, including those requiring real-time updates, using a range of data sources such as NoSQL data stores, relational databases, HTTP APIs, and native data sources with AWS Lambda. For mobile and web applications, AppSync also provides access to local data when devices go offline and syncs data when they reconnect to the Internet. In this case, the client can customize the order of conflict resolution.
 
-## Легкое начало и развитие в ногу с бизнесом
+# Benefits:
 
-Начните работу за считанные минуты с помощью выбранного IDE (например, Xcode, Android Studio, VS Code), а также используйте интуитивно понятную консоль управления AWS AppSync или AWS Amplify CLI для автоматического создания вашего API и клиентского кода. AWS AppSync интегрируется с Amazon DynamoDB, Amazon Aurora, Amazon Elasticsearch, AWS Lambda и другими сервисами AWS, позволяя вам создавать сложные приложения с практически неограниченными производительностью и памятью, которые изменяются в зависимости от бизнес-потребностей.
+## Easy start and development in step with the business
 
-## Подписки в реальном времени и офлайн-доступ
+Get started in minutes with your chosen IDE (e.g. Xcode, Android Studio, VS Code), and use the intuitive AWS AppSync or AWS Amplify CLI management console to automatically generate your API and client code. AWS AppSync integrates with Amazon DynamoDB, Amazon Aurora, Amazon Elasticsearch, AWS Lambda, and other AWS services, allowing you to build complex applications with virtually unlimited performance and memory that change based on your business needs.
 
-AWS AppSync обеспечивает оформление подписок в реальном времени на миллионах устройств, а также офлайн-доступ к данным приложения. После повторного подключения устройства AWS AppSync синхронизирует только обновления на момент отключения устройства, а не всю базу данных. AWS AppSync предлагает определять и разрешать конфликты на стороне сервера с возможностью пользовательской настройки.
+## Live Subscriptions & Offline Access
 
-## Унифицированный и защищенный доступ к распределенным данным
+AWS AppSync provides real-time subscriptions to millions of devices and offline access to application data. Once the device is reconnected, AWS AppSync syncs only the updates at the time the device was disconnected, not the entire database. AWS AppSync offers customizable server-side conflict detection and resolution.
 
-Выполняйте сложные запросы и обобщения по нескольким источникам данных с помощью одного сетевого вызова с использованием GraphQL. AWS AppSync позволяет легко защитить данные вашего приложения, используя одновременно несколько режимов аутентификации, а также позволяет определять степень угрозы и выполнять детальный контроль доступа на уровне определения данных непосредственно из вашей схемы GraphQL.
+## Unified and secured access to distributed data
 
-В этом уроке мы будем создавать API-интерфейс GraphQL, который взаимодействует с базой данных DynamoDB NoSQL для выполнения операций CRUD (создание, чтение, обновление, удаление).
+Perform complex queries and generalizations across multiple data sources with a single network call using GraphQL. AWS AppSync makes it easy to protect your application data by using multiple authentication modes at the same time, and also allows you to determine the severity of the threat and perform granular access control at the data definition level directly from your GraphQL schema.
+
+In this tutorial we will create a GraphQL API that interacts with a DynamoDB NoSQL database to perform CRUD (create, read, update, delete) operations.
 
 ![Step01](/img/steps/01.png)
 
-## Подключаем плагин API
+## Connecting the API plugin
 
 ```bash
 amplify add api
@@ -38,7 +39,7 @@ amplify add api
 
 ## schema.graphql
 
-После выбраных пунктов откроется схема GraphQL в `amplify/backend/api/<datasourcename>/schema.graphql` куда вставляем эту модель:
+After the selected items, the GraphQL schema will open in `amplify / backend / api / <datasourcename> / schema.graphql` where we insert this model:
 
 ```graphql
 type Job @model @auth(rules: [{ allow: owner, ownerField: "owner", operations: [create, update, delete] }]) {
@@ -50,58 +51,58 @@ type Job @model @auth(rules: [{ allow: owner, ownerField: "owner", operations: [
 }
 ```
 
-Это GraphQL схема. GraphQL Transform предоставляет простую в использовании абстракцию, которая помогает быстро создавать серверные части для веб-приложений и мобильных приложений в AWS. С помощью GraphQL Transform вы определяете модель данных вашего приложения, используя язык определения схемы GraphQL (SDL), а библиотека обрабатывает преобразование определения SDL в набор полностью описательных шаблонов AWS CloudFormation, которые реализуют вашу модель данных.
+This is a GraphQL schema. GraphQL Transform provides an easy-to-use abstraction that helps you quickly build back-end for web and mobile apps on AWS. With GraphQL Transform, you define your application's data model using the GraphQL Schema Definition Language (SDL), and the library handles transforming the SDL definition into a set of fully descriptive AWS CloudFormation templates that implement your data model.
 
-При использовании вместе с такими инструментами, как Amplify CLI, GraphQL Transform упрощает процесс разработки, развертывания и поддержки API-интерфейсов GraphQL. С его помощью вы определяете свой API с помощью языка определения схемы GraphQL (SDL) и затем можете использовать автоматизацию для преобразования его в полностью описательный шаблон облачной информации, который реализует спецификацию.
-GraphQL — это спецификация API. Это язык запросов для API и среда выполнения для выполнения этих запросов с вашими данными. Он имеет некоторые сходства с REST и является лучшей заменой REST.
+When used in conjunction with tools such as Amplify CLI, GraphQL Transform simplifies the process of developing, deploying, and maintaining GraphQL APIs. With it, you define your API using the GraphQL Schema Definition Language (SDL) and then you can use automation to transform it into a fully descriptive cloud content pattern that implements the specification.
+GraphQL is an API specification. It is a query language for the API and a runtime for making those queries with your data. It shares some similarities with REST and is the best replacement for REST.
 
-GraphQL был представлен Facebook в 2015 году, хотя он использовался внутри компании с 2012 года. GraphQL позволяет клиентам определять структуру требуемых данных, и именно эта структура возвращается с сервера. Запрос данных таким способом обеспечивает гораздо более эффективный способ взаимодействия приложений на стороне клиента с API-интерфейсами, уменьшая количество неполных выборок и предотвращая избыточные выборки данных.
+GraphQL was introduced by Facebook in 2015, although it has been used internally since 2012. GraphQL allows clients to define the structure of the data they require, and it is this structure that is returned from the server. Querying data in this manner provides a much more efficient way for client-side applications to interact with APIs, reducing the number of underfetching and preventing overfetching.
 
-Подробней о GraphQL [здесь](https://medium.com/react-native-init/crud-create-read-update-delete-aws-amplify-react-native-b7543a13e5a3)
+Learn more about GraphQL [here](https://medium.com/react-native-init/crud-create-read-update-delete-aws-amplify-react-native-b7543a13e5a3)
 
-Вернемся к нашей схеме, где основными компонентами схемы GraphQL являются типы объектов, представляющий из себя тип объекта, который вы можете извлечь из вашего сервиса:
+Let's go back to our diagram, where the main components of the GraphQL schema are object types, which is the type of object that you can retrieve from your service:
 
-- `Job` — это тип объекта GraphQL(GraphQL Object Type), то есть тип с некоторыми полями. Большинство типов в вашей схеме будут объектными типами.
+- `Job` is a GraphQL Object Type, that is, a type with some fields. Most of the types in your schema will be object types.
 
-- `id position rate description owner` — поля в типе Job. Это означает, что это единственные поля, которые могут появляться в любой части запроса GraphQL, работающего с типом Job.
+- `id position rate description owner` - fields in the Job type. This means that these are the only fields that can appear in any part of a GraphQL query that works with a Job type.
 
-- `String` — это один из встроенных скалярных типов — это типы, которые разрешаются в один скалярный объект и не могут иметь подвыборов в запросе. Мы рассмотрим скалярные типы позже.
+- `String` is one of the built-in scalar types - these are types that resolve to a single scalar object and cannot have sub-selections in a query. We'll look at scalar types later.
 
-- `String!` — поле не имеет значения NULL, означает, что служба GraphQL обещает всегда давать вам значение при запросе этого поля. Вообщем это обязательное поле.
+- `String!` - field is non-null, means that GraphQL promises to always give you a value when you request this field. In general, this is a required field.
 
-## Типы
+## Types
 
-GraphQL поставляется с набором скалярных типов по умолчанию из коробки:
+GraphQL comes with a set of default scalar types out of the box:
 
-- `Int` 32-разрядное целое число со знаком.
+- `Int` A 32-bit signed integer.
 
-- `Float` значение с плавающей запятой с двойной точностью.
+- `Float` double precision floating point value.
 
-- `String` последовательность символов UTF ‐ 8.
+- `String` is a sequence of UTF - 8 characters.
 
-- `Boolean` true или false.
+- `Boolean` true or false.
 
-- `ID` скалярный тип ID представляет собой уникальный идентификатор, часто используемый для повторного получения объекта или в качестве ключа для кэша. Тип идентификатора сериализуется так же, как и строка; однако определение его как идентификатора означает, что он не предназначен для восприятия человеком.
+- The `ID` scalar type ID is a unique identifier, often used to retrieve an object or as a key for a cache. The identifier type is serialized in the same way as a string; however, defining it as an identifier means that it is not intended for human perception.
 
-## Директивы
+## Directives
 
-- `@model` — Типы объектов, помеченные `@model`, являются объектами верхнего уровня в сгенерированном API. Объекты, помеченные `@model`, хранятся в Amazon DynamoDB и могут быть защищены с помощью `@auth`, связаны с другими объектами через `@connection`
+- `@ model` - Object types marked with` @ model` are top-level objects in the generated API. Objects marked with `@ model` are stored in Amazon DynamoDB and can be protected with` @ auth`, linked to other objects with `@ connection`
 
-- `@auth` — Для взаимодействия приложений с вашим API GraphQL требуется авторизация. Ключи API лучше всего использовать для общедоступных API.
-  Типы объектов `@auth`, аннотированные `@auth`, защищены набором правил авторизации, которые предоставляют вам дополнительные элементы управления, чем авторизация верхнего уровня в API. Вы можете использовать директиву `@auth` для определений типов объектов и полей в схеме вашего проекта.
-  При использовании директивы `@auth` для определений типов объектов, которые также аннотируются `@model`, все средства распознавания, которые возвращают объекты этого типа, будут защищены.
+- `@ auth` - Authorization is required for applications to interact with your GraphQL API. API keys are best used for public APIs.
+  The @ auth object types annotated with @ auth are protected by a set of authorization rules that provide you with more controls than the top-level authorization in the API. You can use the @ auth directive to define object and field types in your project schema.
+  When using the `@ auth` directive on object type definitions that are also annotated with` @ model`, all recognizers that return objects of that type are protected.
 
-Другие директивы и подробности в [официальной документации](https://aws-amplify.github.io/docs/cli-toolchain/graphql?sdk=js#directives).
+Other directives and details in [official documentation](https://aws-amplify.github.io/docs/cli-toolchain/graphql?sdk=js#directives).
 
-Правила директивы `@auth`
+Directive rules `@auth`
 
 ```jsx
 @auth( rules: [ {allow: owner, ownerField: "owner", operations: [create, update, delete]} ])
 ```
 
-означают, что операции CREATE, UPDATE, DELETE разрешены исключительно владельцу, а операция READ всем.
+means that CREATE, UPDATE, DELETE operations are allowed only to the owner, and READ operations are allowed to all.
 
-Пришло время проверить это на деле! Поэтому пишем команду в консоле:
+It's time to put it to the test! Therefore, we write the command in the console:
 
 ```bash
 amplify mock api
@@ -109,29 +110,29 @@ amplify mock api
 
 ![amplifyMockApi](/img/dataStore/dataStore01.png)
 
-С этой командой вы можете быстро протестировать свои наработки изменения без необходимости выделять или обновлять облачные ресурсы, которые вы используете на каждом этапе. Таким образом, вы можете настроить модульные и интеграционные тесты, которые могут выполняться быстро, не затрагивая ваш облачный бэкэнд.
+With this command, you can quickly test your changelog without having to provision or update the cloud resources you use at each step. This way, you can set up unit and integration tests that can run quickly without affecting your cloud backend.
 
-# Три кита на которых стоит GraphQL:
+# Three pillars on which GraphQL stands:
 
 ## Query (READ)
 
-Проще говоря, запросы (queries) в GraphQL — это то, как вы собираетесь запрашивать данные. Вы получите именно те данные, которые вам нужны. Не больше, не меньше.
+Simply put, queries in GraphQL are how you are going to query data. You get exactly the data you need. No more no less.
 
 ## Mutation (CREATE UPDATE DELETE)
 
-Мутации в GraphQL — это способ изменения данных на сервере и получения обновленных данных обратно.
+Mutations in GraphQL are a way to change data on the server and get the updated data back.
 
 ## Subscriptions
 
-Cпособ поддерживать соединение с сервером в режиме реального времени. Это означает, что всякий раз, когда событие происходит на сервере и когда это событие вызывается, сервер будет отправлять соответствующие данные клиенту.
+A way to maintain a connection to the server in real time. This means that whenever an event occurs on the server and when that event is raised, the server will send the appropriate data to the client.
 
-Посмотреть все доступные методы нашегоо созданоого API можно нажав на Docs (Documentation Explorer) в правом верхнем углу. Значения нажимаемые, таким образом можно посмотреть все возможные запросы.
+You can see all the available methods of our created API by clicking on the Docs (Documentation Explorer) in the upper right corner. The values are clickable, so all possible queries can be viewed.
 
 ![Docs](https://miro.medium.com/max/4800/1*wcYg4qmPXOdghWgS5P1RtQ.png)
 
 ## CREATE
 
-Открываем наш API по адресу, что выдал(у каждого свой) результат команды `amplify mock api` и выполняем запрос CREATE нажимая кнопку плей.
+We open our API at the address that issued (each has its own) result of the amplify mock api command and execute the CREATE request by pressing the play button.
 
 ```graphql
 mutation Create {
@@ -154,11 +155,11 @@ mutation Create {
 
 ![create](https://miro.medium.com/max/4800/1*GwJb9ZZVB6px_QI8xKwslQ.png)
 
-Для закрепления материала, создайте еще некоторое количество вакансий.
+To consolidate the material, create some more vacancies.
 
 ## READ
 
-Получаем список всех вакансий. Вставляем запрос:
+We get a list of all vacancies. Insert the request:
 
 ```graphql
 query Read {
@@ -179,7 +180,7 @@ query Read {
 
 ## UPDATE
 
-Для обновления нам необходимо взять ID вакансии (обязательно введите свой, а не из примера) и передать его в этот запрос с изменеными данными. Например обновим поля `position` и `rate`
+To update, we need to take the vacancy ID (be sure to enter your own, not from the example) and transfer it to this request with the changed data. For example, update the fields `position` and` rate`
 
 ```graphql
 mutation Update {
@@ -198,7 +199,7 @@ mutation Update {
 
 ## DELETE
 
-Для удаления нам также как и в случае с обновлением нужно передать ID вакансии (обязательно введите свой, а не из примера).
+To delete, as in the case of the update, we need to transfer the vacancy ID (be sure to enter your own, and not from the example).
 
 ```graphql
 mutation Delete {
@@ -211,26 +212,26 @@ mutation Delete {
 
 ![delete](https://miro.medium.com/max/4800/1*vqFyPU7VVMmulZeF_zd0mg.png)
 
-## Разрешения
+## Permissions
 
-Теперь проверим работают ли наши правила, что мы указали в схеме. Обновлять, удалять и создавать может только владелец.
+Now let's check if our rules work as we indicated in the scheme. Only the owner can update, delete, and create.
 
 ```jsx
  @auth( rules: [ {allow: owner, ownerField: “owner”, operations: [create, update, delete]}, ])
 ```
 
-Чтобы сменить пользователя нажимаем на UpdateAuth в главном меню. Где произвольно обновляем Username и Email.
+To change the user click on UpdateAuth in the main menu. Where we arbitrarily update Username and Email.
 
 ![UpdateAuth](https://miro.medium.com/max/430/1*a89USnLuvHC0OXf3wdgYSA.png)
 
 ![authOptions](https://miro.medium.com/max/1400/1*BP6B8Wwe9Ldgugf2lUyyPA.png)
 
-Если отправим запрос READ, то он работает, но если мы отправим запрос UPDATE или DELETE и получаем ошибку.
-Правила работают, что и требовалось доказать!
+If we send a READ request, then it works, but if we send an UPDATE or DELETE request and get an error.
+The rules work, as required!
 
 ![](https://miro.medium.com/max/4800/1*NevLJXxyURK4JOx8qWyy4w.png)
 
-Теперь когда мы протестировали работоспособность API можно опубликовать его в облако командой:
+Now that we have tested the functionality of the API, we can publish it to the cloud with the command:
 
 ```bash
 amplify push
@@ -238,6 +239,6 @@ amplify push
 
 ![](/img/dataStore/dataStore02.png)
 
-Через несколько минут модель загружена на сервера AWS, поэтому далее мы переходим к приложению react native.
+After a few minutes, the model is uploaded to the AWS servers, so next we move on to the react native application.
 
 [![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)

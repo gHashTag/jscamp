@@ -1,60 +1,61 @@
 ---
 id: startup0
 title: Unicorn 🦄
-sidebar_label: Введение
+sidebar_label: Introduction
 ---
+
 
 > Заменим пять ✋🏻 разработчиков на одного☝🏻
 
-Если строите digital стартап, то скорее всего у вас в команде:
+If you are building a digital startup, then most likely you have in your team:
 
-- iOS разработчик 📱,
-- Android разработчик📱,
-- Backend разработчик💻,
-- Разработчик сайта 🖥 и
-- Teamlead🧙‍♂️, который хотя бы поверхностно понимает везде по чуть чуть, а в чем-то на отлично - это 5 человек.
+- iOS developer 📱,
+- Android developer📱,
+- Backend developer💻,
+- Site developer 🖥 and
+- Teamlead🧙‍♂️, who at least superficially understands a little bit everywhere, but in some respects perfectly well - these are 5 people.
 
-В наше время, благодаря платформе AWS Amplify и в частности DataStore от Amazon, можно заменить 5 разработчиков, одним full stack serverless разработчиком.
+Nowadays, thanks to the AWS Amplify platform and in particular Amazon's DataStore, you can replace 5 developers with one full stack serverless developer.
 
-Мы предоставляем возможность найти такого full stack serverless разработчика всего за 99 💲 используя наше мобильное приложение
+We provide an opportunity to find such a full stack serverless developer for only 99 💲 using our mobile application
 
-## Почему мы?
+## Why us?
 
-Потому что мы создатели первого в рунете курса по React Native и AWS Amplify. У нас учиться этой технологии и мы лично знаем успешных учеников с которыми создаем наше open source мобильное приложение.
+Because we are the creators of the first course on React Native and AWS Amplify in runet. We learn this technology and we personally know successful students with whom we create our open source mobile application.
 
-## Видео рекомендовано к просмотру!
+## Video is recommended for viewing!
 
 [![Startup Unicorn](/img/startup/startup-00.gif)](https://youtu.be/r4wuKgh-oQM)
 
-# Основные задачи мобильного приложения:
+# The main tasks of the mobile application:
 
-## 1. Решать проблемы
+## 1. Solve problems
 
-Разработчики могут описать свои проблемы, с которыми они сталкиваются в процессе разработки мобильных приложений на react-native и получить на них квалифицированную помощь.
+Developers can describe their problems they face in the process of developing mobile applications in react-native and get expert help on them.
 
 ![Solve](https://miro.medium.com/max/4800/1*ZNf3yYJJ80-UZwBZeretYg.png)
 
-## 2. Мотивировать решать проблемы
+## 2. Motivate to solve problems
 
-За успешно оказанную техническую поддержку, разработчику выдается единорог, из количества которых формируется рейтинг программистов, что в свою очередь увеличивает их шанс получить более привлекательное предложение от работодателей.
+For successfully provided technical support, the developer is issued a unicorn, from the number of which a rating of programmers is formed, which in turn increases their chance of getting a more attractive offer from employers.
 
 ![Motivate](https://miro.medium.com/max/4800/1*_BqhdLvRmLX4YN7rx5cWKA.png)
 
-## 3. Трудоустраивать
+## 3. To find employment
 
-В приложении можно создать резюме, откликнуться на вакансию и получить предложение от работодателя.
-Поиск вакансий и трудоустройство react-native разработчиков на международном рынке
+In the application, you can create a resume, apply for a vacancy and receive an offer from an employer.
+Finding vacancies and employing react-native developers in the international market
 
 ![Upwork](https://miro.medium.com/max/4800/1*RtVlTuN3yJw33SL8KT4Y4g.png)
 
-## 4. Обучать стеку технологий React Native + GraphQL + AWS Amplify
+## 4. Teach React Native + GraphQL + AWS Amplify Technology Stack
 
-На базе кода написаного для этого приложения, и выложенного в Open Source, создается учебный курс Full Stack Serverless в стеке React Native + AWS Amplify + GraphQL. На данный момент времени, являющимся самым прогрессивным стеком технологий, позволяющий создавать безопасные мобильные приложения в разы быстрей.
-Онлайн-образование по теме full stack serverless.
+Based on the code written for this application, and released in Open Source, a Full Stack Serverless tutorial is created in the React Native + AWS Amplify + GraphQL stack. At the moment, it is the most progressive technology stack that allows creating secure mobile applications many times faster.
+Online education on full stack serverless.
 
 ![Startup Unicorn](/img/startup/startup-01.png)
 
-## Текущий набор функций AWS Amplify:
+## The current set of AWS Amplify features:
 
 📦 Easy CI CD / hosting / custom domains
 
@@ -78,20 +79,20 @@ sidebar_label: Введение
 
 # Workflow
 
-Практики достаточно для любого уровня, от верстки компонентов, до кастомных хуков.
-Работа ведётся по методу управления разработкой Канбан, доска доступна [здесь](https://github.com/react-native-village/aws-amplify-react-hooks/projects/1).
+There is enough practice for any level, from component layout to custom hooks.
+The work is carried out according to the Kanban development management method, the board is available [here](https://github.com/react-native-village/aws-amplify-react-hooks/projects/1).
 
-## Задачи разделены на три типа сложности:
+## ЗTasks are divided into three types of difficulty:
 
-- UI — верстка и создание компонентов
+- UI - layout and component creation
 
-- Screens & Navigation — композиция экранов из компонентов UI
+- Screens & Navigation - composition of screens from UI components
 
-- Logic — бизнес логика приложения
+- Logic - business logic of the application
 
-Выбераете себе задачу из колонки backlog и согласуете ее со мной в [чате](https://teleg.run/reactnativeunicorn) работы над приложением или предложите свою задачу
+Choose a task for yourself from the backlog column and coordinate it with me in [chat](https://teleg.run/reactnativeunicorn) work on the application or suggest your problem
 
-Дизайн макет приложения в [Sketch](https://www.dropbox.com/s/ixqgri05i2mtu6p/%D0%94%D0%B8%D0%BC%D0%BA%D0%B0%D0%A0%D0%B5%D0%B0%D0%BA%D1%82%D0%BD%D0%B0%D1%82%D0%B8%D0%B2%D0%BD%D1%8B%D0%B9.sketch?dl=0)
+Application layout design in [Sketch](https://www.dropbox.com/s/ixqgri05i2mtu6p/%D0%94%D0%B8%D0%BC%D0%BA%D0%B0%D0%A0%D0%B5%D0%B0%D0%BA%D1%82%D0%BD%D0%B0%D1%82%D0%B8%D0%B2%D0%BD%D1%8B%D0%B9.sketch?dl=0)
 
 ## Roadmap :
 
@@ -117,11 +118,11 @@ sidebar_label: Введение
 
 ![Git flow](https://miro.medium.com/max/4800/1*ZMRPUha7OmbCJB0YvY9Bhg.png)
 
-⚛️ По roadmap и в целом всегда открыт к предложениям.
+⚛️ On the roadmap and in general, I am always open to suggestions.
 
-Приглашаю волонтеров к его созданию.
+I invite volunteers to create it.
 
-Мы любим Open Source и верим, что за ним будущее, если и вы не равнодушны к развитию коммьюнити и готовы внести свой вклад, то!
+We love Open Source and believe that the future belongs to it, if you are not indifferent to the development of the community and are ready to contribute, then!
 
 # Welcome to Unicorn 🦄
 

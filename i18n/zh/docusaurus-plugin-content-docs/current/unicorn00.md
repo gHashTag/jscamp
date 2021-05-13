@@ -1,15 +1,15 @@
 ---
 id: unicorn00
 title: UI Kit - Unicorn
-sidebar_label: Введение
+sidebar_label: Introduction
 ---
 
-Так как верстка компонентов занимает примерно до 60% от всего кода моих уроков, то я решил вынести все компоненты в отдельную библиотеку, тем самым, в последующих уроках, мы сфокусируемся на бизнес логике, а не на верстке компонентов.
-UI Kit Unicorn поддерживает темный и светлый режим.
+Since the layout of components takes about 60% of the entire code of my lessons, I decided to move all the components into a separate library, thus, in the subsequent lessons, we will focus on business logic, and not on layout of components.
+UI Kit Unicorn supports dark and light mode.
 
 ![Unicorn](/img/uikit/reactNativeUnicornUIKit.png)
 
-Благодарю 🙏🏻 контрибьюторов участвовавших в создании этой статьи и новой серии.
+Thanks to 🙏🏻 contributors who contributed to this article and the new series.
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
@@ -27,6 +27,6 @@ UI Kit Unicorn поддерживает темный и светлый режи�
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-Поехали!
+Go!
 
 [![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)

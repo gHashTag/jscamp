@@ -4,7 +4,7 @@ title: SearchBar
 sidebar_label: SearchBar
 ---
 
-Создаем компонент SearchBar, где мы будем вводить название фильма.
+Create a SearchBar component where we will enter the name of the movie.
 
 [![redux](/img/redux/04.gif)](https://youtu.be/jkKukSinD2I)
 

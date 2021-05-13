@@ -1,7 +1,7 @@
 ---
 id: unicorn01
 title: UI Kit - Unicorn
-sidebar_label: Компоненты
+sidebar_label: Components
 ---
 
 ## Avatars

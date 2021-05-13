@@ -1,14 +1,14 @@
 ---
 id: typescript04
-title: Типы функций
-sidebar_label: Типы функций
+title: Function types
+sidebar_label: Function types
 ---
 
-Как и в JavaScript, функции в `TypeScript` могут быть как `именованные,` так и `анонимные.` Это позволяет вам выбрать наиболее удобный подход для разработки вашего приложения, будь то выстраивание списка в функций в API, либо вкладывая одну функцию в другую.
+Like JavaScript, functions in `TypeScript` can be named or anonymous. This allows you to choose the most convenient approach for developing your application, whether it is building a list of functions in the API, or nesting one function within another. ...
 
-## Тип функции
+## Function type
 
-Каждая функция имеет тип, как и обычные переменные. Тип функции фактически представляет комбинацию типов параметров и типа возвращаемого значения. Например, возьмем следующую функцию:
+Each function has a type, just like regular variables. A function type actually represents a combination of parameter types and return types. For example, take the following function:
 
 ```javascript
 function sum(x: number, y: number): number {
@@ -16,15 +16,15 @@ function sum(x: number, y: number): number {
 }
 ```
 
-Она имеет тип `(x:number, y:number) => number;`, то есть принимает два параметра number и возвращает значение типа number. Названия параметров в типе функции необязательно должны соответствовать названиям конкретной функции. А перед типом возвращаемого значения ставится знак равно со стрелкой.
+It is of type `(x: number, y: number) => number;`, that is, it takes two number parameters and returns a value of type number. Parameter names in a function type do not have to match the names of a specific function. The return type is preceded by an equal sign with an arrow.
 
-И подобно тому, как определяются переменные определенного типа, можно определять переменные, которые имеют тип функции:
+And just like defining variables of a specific type, you can define variables that have a function type:
 
 ```javascript
 let op: (x: number, y: number) => number
 ```
 
-То есть переменная `op` представляет любую функцию, которая принимает два числа и которая возвращает число. Например:
+That is, the variable `op` represents any function that takes two numbers and returns a number. For example:
 
 ```javascript
 function sum(x: number, y: number): number {
@@ -43,148 +43,20 @@ op = subtract
 console.log(op(6, 4)) // Сейчас как вычитание = 2
 ```
 
-Здесь вначале переменная `op` указывает на функцию `sum.` И соответственно вызов op(2, 4) фактически будет представлять вызов sum(2, 4). А затем `op` указывает на функцию `subtract.`
+Here, at the beginning, the variable `op` points to the function` sum. `And accordingly, calling op (2, 4) will actually represent a call to sum (2, 4). And then `op` points to a function `subtract.`
 
-## Функции обратного вызова
+## Payment
 
-Тип функции можно использовать как тип переменной, но он также может применяться для определения типа параметра другой функции:
+Now you are on a stripped-down version of the site, after subscribing to [Patreon](https://www.patreon.com/javascriptcamp), you will get full access to the training course, as well as access to our server's private channels in [Discord](https://discord.gg/6GDAfXn).
 
-```javascript
-function mathOp(x: number, y: number, operation: (a: number, b: number) => number): number {
-  let result = operation(x, y)
-  return result
-}
-let operationFunc: (x: number, y: number) => number
+Download our [mobile application](http://onelink.to/njhc95) or get tested in our [JavaScript telegram bot](https://t.me/javascriptcamp_bot), and also subscribe to [our news](https://t.me/javascriptapp).
 
-operationFunc = function (a: number, b: number): number {
-  return a + b
-}
-console.log(mathOp(10, 20, operationFunc)) // Сложение = 30
+[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
 
-operationFunc = function (a: number, b: number): number {
-  return a * b
-}
-console.log(mathOp(10, 20, operationFunc)) // Умножение = 200
-```
 
-Здесь в функции `mathOp` третий парметр как раз представляет функцию, которая принимает два параметра типа number и возвращает число. Фактически тем самым мы можем передавать функции обратного вызова, например, при генерации событий, когда в ответ на некоторое действие срабатывает другая функция.
+[![Sumerian school](/img/app.jpg)](http://onelink.to/njhc95)
 
-## Стрелочные функции
-
-Для определения функций в `TypeScript` можно использовать стрелочные функции или `arrow functions.` Стрелочные функции представляют выражения типа `(параметры) => тело функции.` Например:
-
-```javascript
-let sum = (x: number, y: number) => x + y
-
-let result = sum(15, 35) // 50
-console.log(result)
-```
-
-Тип параметров можно опускать:
-
-```jsx live
-function learnJavaScript() {
-  let sum = (x, y) => x + y
-
-  let result = sum(15, 35) // 50
-  return result
-}
-```
-
-Если стрелочная функция не требует параметров, то используются пустые круглые скобки. Если передается только один параметр, то скобки можно опустить:
-
-```jsx live
-function learnJavaScript() {
-  let square = x => x * x
-  let hello = () => 'Hello world'
-
-  return hello() + ' ' + square(7)
-}
-```
-
-Если тело функции представляет множество выражений, а не просто одно выражение, как в примере выше, тогда можно опять же заключить все выражения в фигурные скобки:
-
-```javascript
-let sum = (x: number, y: number) => {
-  x *= 2
-  return x + y
-}
-
-let result = sum(15, 35) // 65
-console.log(result)
-```
-
-Стрелочные функции можно передавать в функцию вместо параметра, который представляет собой функцию:
-
-```javascript
-function mathOp(x: number, y: number, operation: (a: number, b: number) => number): number {
-  let result = operation(x, y)
-  return result
-}
-console.log(mathOp(10, 20, (x, y) => x + y)) // 30
-console.log(mathOp(10, 20, (x, y) => x * y)) // 200
-```
-
-## Функциональные типы
-
-Добавим типы для функций `add` и `myAdd:`
-
-```javascript
-function add(x: number, y: number): number {
-  return x + y
-}
-
-let myAdd = function (x: number, y: number): number {
-  return x + y
-}
-```
-
-Как видно, мы добавили типы не только к параметрам, передаваемым в функцию, но и на возвращаемое функцией значение.
-
-Теперь опишем полный тип этой функции:
-
-```javascript
-let myAdd: (baseValue: number, increment: number) => number = function (x: number, y: number): number {
-  return x + y
-}
-```
-
-Функциональный тип состоит из двух частей: типов аргументов и типом возвращаемого значения. Тип возвращаемого значения определяется после `=>.` В том случае, если функция не возвращает никакого значения, должно быть указано `void.`
-
-## Вопросы:
-
-1. Функции в `TypeScript` могут быть:
-
-- именованные и анонимные
-- архивные и распакованные
-- под Windows и MaC OS
-- типичные и не типичные
-
-2. Функция имеет тип как:
-
-- тип возвращаемого значения
-- целое число
-- только строка
-- возвращаемое значение
-
-3. Функции можно передавать в функцию вместо параметра:
-
-- Можно
-- Нельзя
-- Только в модуле
-- Только в Mac OS
-
-![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
-
-Для того чтобы понять насколько вы усвоили этот урок пройдите тест в [мобильном приложении](http://onelink.to/njhc95) в нашей школы по этой теме.
-
-![Sumerian school](/img/app.jpg)
-
-## Ссылки:
-
-1. [Статья "Тип функции и стрелочные функции", metanit.com](https://metanit.com/web/typescript/2.3.php)
-2. [Статья "Функции в языке TypeScript", medium.com](https://medium.com/@sergey.bakaev/%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B8-%D0%B2-%D1%8F%D0%B7%D1%8B%D0%BA%D0%B5-typescript-1cb853e09020)
-3. [Статья "Типы функций", typescript-lang.ru](http://typescript-lang.ru/docs/Functions.html)
+ 
 
 ## Contributors ✨
 
