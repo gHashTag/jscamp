@@ -71,8 +71,7 @@ Download our [mobile application](http://onelink.to/njhc95) or get tested in our
 
 [![Sumerian school](/img/app.jpg)](http://onelink.to/njhc95)
 
- 
-
+ Sarasvati8087#Sarasvati8087
 ## Contributors ✨
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
