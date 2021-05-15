@@ -131,7 +131,7 @@ function learnJavaScript() {
 
 ## Инкремент и декремент
 
-![increment](https://media.giphy.com/media/dX9qnaX4OH3avyMcU3/giphy.gif)
+![increment](https://media.giphy.com/media/ZZaCZyXh5yR4bkJmlR/giphy.gif)
 
 Оператор `++` (инкремент) увеличивает значение своего операнда на единицу. Если значение операнда не является числом, оператор автоматически преобразует его в число, увеличивает на единицу и возвращает результат, который присваивается обратно операнду:
 
@@ -197,6 +197,23 @@ function learnJavaScript() {
   let result = Math.round(20.49)
   return result
 }
+```
+
+## React Native
+Числа вставляются в `React Native` приложения также просто как и строки.
+
+```SnackPlayer name=index.js
+import * as React from 'react'
+import { Text } from 'react-native'
+
+const App = () => {
+  const str = 999 
+  return (
+    <Text>{str}</Text>
+)}
+
+
+export default App
 ```
 
 ## Проблемы?

@@ -217,6 +217,23 @@ function learnJavaScript() {
 
 Вот мы и познакомились с самым популярным типом данных в JavaScript и самыми часто используемыми методами к нему.
 
+## React Native
+Посмотрим на практический пример как мы можем использовать строки при создании мобильного приложения. Здесь мы создаем константу `str` и присваиваем ей значение `Hello world`. Напомню, что для того чтобы в синтаксис JSX вставлять JavaScript выражения, необходимо использовать фигурные скобки.
+
+```SnackPlayer name=index.js
+import * as React from 'react'
+import { Text } from 'react-native'
+
+const App = () => {
+  const str = 'Hello world'
+  return (
+    <Text>{str}</Text>
+)}
+
+
+export default App
+```
+
 ## Проблемы?
 
 ![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)

@@ -136,6 +136,21 @@ function learnJavaScript() {
 
 🔔 Переменка закончилась, бежим на следующий урок!
 
+## React Native
+
+Базовый пример `Hello world` рассмотренный в первом уроке содержит в себе константу `App`, содержащую в себе стрелочную функцию с которой мы детальней познакомимся в уроке про функции.
+
+```SnackPlayer name=index.js
+import * as React from 'react'
+import { Text } from 'react-native'
+
+const App = () => (
+  <Text>Hello world!</Text>
+)
+
+export default App
+```
+
 ## Проблемы?
 
 ![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)

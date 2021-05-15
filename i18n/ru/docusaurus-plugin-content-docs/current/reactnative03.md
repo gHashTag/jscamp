@@ -15,7 +15,7 @@ import * as React from 'react'
 import { Text } from 'react-native'
 
 const HelloWorld = (props) => (
-  <Text>Hello world {props.name}!</Text>
+  <Text>Hello {props.name}!</Text>
 )
 
 const App = () => (

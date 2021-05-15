@@ -154,6 +154,41 @@ function learnJavaScript() {
 
 Результат будет тот же, но код📟 станет более читабельным и удобным для работы.
 
+## React Native
+Пример использования в `React Native` приложениях.
+
+```SnackPlayer name=index.js
+import * as React from 'react'
+import { Text } from 'react-native'
+
+const App = () => {
+  const userType = 'Admin'
+  
+  return (
+    <>
+      {(() => {
+           switch (userType) {
+              case 'Admin':
+                  return (
+                    <Text>You are a Admin.</Text>
+                  )
+              case 'Manager':
+                  return (
+                    <Text>You are a Manager.</Text>
+                  )
+              default:
+                  return (
+                    <Text>You are a User.</Text>
+                  )
+           }
+        })()}
+    </>
+  )
+}
+
+export default App
+```
+
 ## Проблемы?
 
 ![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)

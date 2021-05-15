@@ -181,6 +181,21 @@ function learnJavaScript() {
 }
 ```
 
+## React Native
+
+Базовый пример `Hello world` в мобильном приложении сделанного с помощью библиотеки `React Native`. Пока не будем вдаваться в синтаксис, так как о нем мы расскажем позже, но по моему здесь все очевидно. Измените текстовый блок, где впечатайте свое имя.
+
+```SnackPlayer name=index.js
+import * as React from 'react'
+import { Text } from 'react-native'
+
+const App = () => (
+  <Text>Hello world!</Text>
+)
+
+export default App
+```
+
 ## Проблемы?
 
 ![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
