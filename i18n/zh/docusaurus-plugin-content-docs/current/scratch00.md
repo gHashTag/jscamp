@@ -1,21 +1,22 @@
 ---
 id: scratch-00
-title: Основы
-sidebar_label: Основы
+title: The basics
+sidebar_label: The basics
 ---
-## Введение
+## Introduction
 import YouTube from 'react-youtube';
 
-ОСНОВЫ первый урок по изучению языка программирования  «Scratch». Наш учитель Иван поможет вам с легкостью освоить данную тему.
+
+BASICS first lesson in learning the programming language "Scratch". Our teacher Ivan will help you master this topic with ease.
 
 <YouTube videoId='mh8zKaWimG8' />
 
-## Ссылки
+## Links
 1. [Learn JavaScript](https://learn.javascript.ru/fetch)
 2. [MDN Web Docs](https://developer.mozilla.org/ru/docs/Web/API/Fetch_API/Using_Fetch)
 3. [JS Tutorial](https://www.javascripttutorial.net/javascript-fetch-api/)
 
-Наше [мобильное приложение](http://onelink.to/njhc95)
+Our [mobile application](http://onelink.to/njhc95)
 
 ![Sumerian school](/img/app.jpg)
 

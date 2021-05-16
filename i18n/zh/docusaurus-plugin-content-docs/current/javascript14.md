@@ -91,134 +91,27 @@ function learnJavaScript() {
 
 在示例中，正則表達式查找子字符串 `banana` 在字符串中 `str`.
 
-## 錨點
+## 支付
 
-![anchor](https://media.giphy.com/media/3ohze1LSWrEGCML02Y/giphy.gif)
+訂閱以下內容後，您現在處於該網站的精簡版本中 [Patreon](https://www.patreon.com/javascriptcamp), 您將獲得對培訓課程的完全訪問權限，以及在以下位置訪問我們服務器的私人頻道的權限：[Discord](https://discord.gg/6GDAfXn).
 
-錨將模式綁定到行的開頭或結尾。 要綁定到行首，請使用 `^`, 最後，使用 `$`.
+下載我們的 [mobile application](http://onelink.to/njhc95) o在我們的測試中 [JavaScript telegram bot](https://t.me/javascriptcamp_bot), 並訂閱 [our news](https://t.me/javascriptapp).
 
-```jsx live
-function learnJavaScript() {
-  let regExp = /^banana/,
-    str = 'lime banana orange'
-  return regExp.test(str) ? 'Yes' : 'No'
-}
-```
+[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
 
-使用這種模式 `/ banana /` 您將搜索 `banana` 在整個生產線上。 如果您需要檢查字符串是否與模板完全匹配，則需要使用錨點 `/ ^ banana $ /`. `.test ()`方法將返回 `true` ✅ 僅當整行是 `banana`.
 
-## 標誌
+[![Sumerian school](/img/app.jpg)](http://onelink.to/njhc95)
 
-![Flag](https://media.giphy.com/media/ihRmRCxJuIi3pCORTL/giphy.gif)
+ 
 
-標誌用於增強正則表達式搜索。
+## 貢獻者 ✨
 
-- `g` - 搜索時，搜索所有匹配項;
-- `i` - 搜索不取決於大小寫`[Z-z]`;
-- `m` - 多線模式;
-- `s` - 開啟 **dotall** 模式，其中點 `.` 可以匹配換行符;
-- `y` - 最后索引 **lastindex** p當前正則表達式的屬性;
-- `u` - 啟用 **Unicode** 支持.
-
-以不同方式使用標誌來創建正則表達式模式
-
-<Tabs
-defaultValue="literal"
-values={[
-{label: 'Literal', value: 'literal'},
-{label: 'Construction', value: 'construction'},
-]
-}>
-<TabItem value="literal">
-
-```jsx
-let regExp = /pattern/anchor // prettier-ignore
-```
-
-請注意，這些標誌是 **integral part** 正則表達式 以後不能添加或刪除標誌。 也可以組合標誌。
-
-```jsx live
-function learnJavaScript() {
-  let regExp = /banana/i,
-    str = 'faNana RanaNA BaNanA'
-  return regExp.test(str) ? 'Yes' : 'No'
-}
-```
-
-嘗試刪除 `i` 該示例中的標誌。
-</TabItem>
-<TabItem value="construction">
-
-```jsx
-let regExp = new RegExp('pattern', 'anchor')
-```
-
-請注意，這些標誌是 **integral part** 正則表達式 以後不能添加或刪除標誌。 也可以組合標誌。
-
-```jsx live
-function learnJavaScript() {
-  let regExp = new RegExp('banana', 'i'),
-    str = 'faNana RanaNA BaNanA'
-  return regExp.test(str) ? 'Yes' : 'No'
-}
-```
-
-嘗試刪除 `i` 該示例中的標誌。 搜索現在區分大小寫。
-</TabItem>
-</Tabs>
-
-## Total
-
-該主題非常廣泛，在開發中很少被我們使用，因此，如果您有興趣，可以更詳細地了解它。 [here,](https://learn.javascript.ru/regular-expressions) [here](https://developer.mozilla.org/en/docs/Web/JavaScript/Guide/Regular_Expressions)[and here.](https://tuhub.ru/frontend/js-regexp)
-
-## 問題？
-
-![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
-
-頻道輸入 [Discord](https://discord.gg/6GDAfXn) 付款後 [Patreon](https://www.patreon.com/javascriptcamp).
-
-## 問題:
-
-![問題](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
-
-正則表達式有什麼用？
-
-1.創建模板
-2.字符串操作
-3.編輯字符串
-
-什麼字符用於字面上創建正則表達式？
-
-1. Slash `/`
-2. Backslash `\`
-3. Square brackets `[]`
-
-如何創建不允許對給定值進行進一步動態更改的正則表達式？
-
-1.從字面上看
-2.在構造函數中
-3.採用任何方法，都可以進行動態更改
-
-為了了解您學到了多少本課程，請對[mobile application](http://onelink.to/njhc95) 我們學校就這個話題。
-
-![Sumerian school](/img/app.jpg)
-
-## 鏈接
-
-1. [Learn JavaScript](https://learn.javascript.ru/regular-expressions)
-2. [MDN Web Docs](https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Regular_Expressions)
-3. [JS RegExp](https://tuhub.ru/frontend/js-regexp)
-
-## 貢獻者✨
-
-感謝這些好人([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+T向這些好人致敬([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
 <table>
-  <tr> 
-    <td align="center"><a href="https://github.com/IIo3iTiv"><img src="https://avatars1.githubusercontent.com/u/72025062?v=4?s=200" width="200px;" alt=""/><br /><sub><b>IIo3iTiv</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/commits?author=IIo3iTiv" title="Documentation">📖</a></td>
-    <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /><a href="#financial-gHashTag" title="Financial">💵</a></td>
+  <tr>
+    <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /> <a href="https://github.com/gHashTag/react-native-village/commits?author=gHashTag" title="Documentation">📖</a></td>
     <td align="center"><a href="https://github.com/Resoner2005"><img src="https://avatars1.githubusercontent.com/u/75675814?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Resoner2005</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/issues?q=author%3AResoner2005" title="Bug reports">🐛 🎨 🖋</a></td>
-    <td align="center"><a href="https://github.com/Navernoss"><img src="https://avatars0.githubusercontent.com/u/75784137?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Navernoss</b></sub></a><br /><a href="#content-Navernoss" title="Content">🖋 🐛 🎨 </a></td>
   </tr>
   
 </table>

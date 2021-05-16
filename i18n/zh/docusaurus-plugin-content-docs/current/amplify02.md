@@ -4,81 +4,81 @@ title: What is GraphQL?
 sidebar_label: GraphQL
 ---
 
-Моделирование данных в AWS Amplify осуществляется с помошью языка запросов GraphQL — это спецификация API, язык запросов для API и среда выполнения для выполнения этих запросов с вашими данными. Он имеет некоторые сходства с REST и является лучшей заменой REST.
+Data modeling in AWS Amplify is done using the GraphQL query language, which is an API specification, a query language for APIs, and a runtime for executing those queries against your data. It shares some similarities with REST and is the best replacement for REST.
 
 ![GraphQL](https://miro.medium.com/max/4800/1*CC4lauyfn1b2MdxqPrv1SA.png)
 
-GraphQL был представлен Facebook в 2015 году, хотя он использовался внутри компании с 2012 года. GraphQL позволяет клиентам определять структуру требуемых данных, и именно эта структура возвращается с сервера. Запрос данных таким способом обеспечивает гораздо более эффективный способ взаимодействия приложений на стороне клиента с API-интерфейсами, уменьшая количество неполных выборок и предотвращая избыточные выборки данных.
+GraphQL was introduced by Facebook in 2015, although it has been used internally since 2012. GraphQL allows clients to define the structure of the data they require, and it is this structure that is returned from the server. Querying data in this manner provides a much more efficient way for client-side applications to interact with APIs, reducing the number of underfetching and preventing overfetching.
 
-# Главные преимущества:
+# Main advantages:
 
-## Эффективная и гибкая выборка
+## Efficient and flexible sampling
 
-В ответе возвращаются только запрошенные данные.
+Only the requested data is returned in the response.
 
-## Более быстрый
+## Faster
 
-Вы можете сократить свой запрос, выбрав только те поля, которые хотите запросить.
+You can shorten your query by selecting only the fields you want to query.
 
-## Полезная аналитика
+## Useful analytics
 
-Так как клиент обязан в запросе указывать поля явно, сервер точно знает, какие поля действительно нужны. А это важная информация для deprecation-политики.
+Since the client is obliged to specify the fields explicitly in the request, the server knows exactly which fields are really needed. And this is important information for the deprecation policy.
 
-## Работает поверх любого источника данных и транспорта
+## Works on top of any data source and transport
 
-Важно, что GraphQL позволяет работать поверх любого источника данных и любого транспорта. В данном случае HTTP — это не панацея, GraphQL может также работать через WebSocket.
+It is important that GraphQL allows you to work on top of any data source and any transport. In this case, HTTP is not a panacea, GraphQL can also work over WebSocket.
 
-## Выборка данных с помощью одного вызова API
+## Fetching data with one API call
 
-Основное различие между GraphQL и REST заключается в том, что последние сосредоточены вокруг отдельных конечных точек, поэтому для сбора всех необходимых данных разработчик должен объединить несколько конечных точек. В то время как GraphQL фокусируется на самой задаче, в этом случае разработчик может запросить необходимые данные всего одним вызовом API.
+The main difference between GraphQL and REST is that the latter are centered around individual endpoints, so a developer must combine multiple endpoints to collect all the data needed. While GraphQL focuses on the task itself, in this case the developer can request the required data with just one API call.
 
-## Нет проблем с чрезмерным и недостаточным извлечением
+## No problem with over and under retrieval
 
-Ответы REST известны тем, что в них содержится слишком много данных или их недостаточно, что создает потребность в другом запросе. GraphQL решает эту проблему эффективности, выбирая точные данные в одном запросе.
+REST responses are known to contain too much or insufficient data, which creates the need for another request. GraphQL solves this efficiency problem by fetching accurate data in a single request.
 
-## Проверка типа “из коробки”
+## Out of the box type check
 
-Функция самоанализа GraphQL позволяет переходить по типам и определять схему, чтобы приложения запрашивали только то, что возможно, и в соответствующем формате. Тем не менее, разработчики могут видеть, что схема может запрашивать и как данные там установлены. Исходя из этого, они могут легко добавлять новые поля к существующим запросам через GraphQL IDE. Нет необходимости проверять формат данных, так как GraphQL сделает это за вас. Разработчики должны только написать разрешители (resolvers) — как данные будут получены.
+GraphQL's introspection feature allows you to traverse types and define schema so that applications only request what is possible and in the appropriate format. However, developers can see what the schema can query and how the data is set there. Based on this, they can easily add new fields to existing queries through the GraphQL IDE. There is no need to validate the data format as GraphQL does it for you. Developers only need to write resolvers - how the data will be retrieved.
 
-## Автогенерация API документации
+## Auto-generating API documentation
 
-GraphQL синхронизирует документацию с изменениями API. Поскольку API-интерфейс GraphQL тесно связан с кодом, когда поле, тип или запрос изменяются, изменяются и документы. Это приносит непосредственную пользу разработчикам, поскольку им приходится тратить меньше времени на документирование API.
+GraphQL syncs documentation with API changes. Because the GraphQL API is tightly coupled with code, when a field, type, or query changes, so do the documents. This benefits the developers directly as they spend less time documenting the API.
 
-## Эволюция API без контроля версий
+## API evolution without version control
 
-Развитие API влечет за собой проблему сохранения старой версии до тех пор, пока разработчики не перейдут на новую. Итак, с REST принято предлагать несколько версий API. Тем не менее, GraphQL устраняет необходимость в управлении версиями, отказываясь от API на уровне полей. Устаревшие поля могут быть позже удалены из схемы, не влияя на существующие запросы. GraphQL делает это возможным путем создания единого API для всего приложения, которое не ограничено конкретным механизмом хранения.
+API development entails the problem of keeping the old version until the developers move to the new one. So, with REST, it's customary to offer multiple versions of the API. However, GraphQL removes the need for version control by ditching the field-level API. Obsolete fields can later be removed from the schema without affecting existing queries. GraphQL makes this possible by creating a single API for the entire application that is not limited to a specific storage engine.
 
-## Используя единую развивающуюся версию
+## Using a single development version
 
-API-интерфейсы GraphQL предоставляют приложениям постоянный доступ к новым функциям и способствуют созданию более понятного и более удобного в обслуживании серверного кода.
+GraphQL APIs provide applications with consistent access to new functionality and help create cleaner, more maintainable server-side code.
 
-## Совместное использование кода
+## Code Sharing
 
-В GraphQL поля, используемые в нескольких запросах, могут совместно использоваться на более высоком уровне компонентов для повторного использования. Эта функция, называемая фрагментами, позволяет получать разные данные, сохраняя одно и то же поле схемы.
+In GraphQL, fields used in multiple queries can be shared at a higher level of components for reuse. This feature, called chunks, allows you to get different data while keeping the same schema field.
 
-## Подробные сообщения об ошибках
+## Detailed error messages
 
-В REST мы просто проверяем заголовки HTTP на статус ответа, основываясь на котором мы можем определить, что пошло не так и как с ним справиться. И наоборот, если при обработке запросов GraphQL возникает ошибка, серверная часть предоставит подробное сообщение об ошибке, включающее все распознаватели и ссылающуюся на конкретную часть запроса при ошибке.
-Сообщения об ошибках GraphQL не имеют определенного стандарта, поэтому вы можете выбрать — будь то трассировка стека, код ошибки для конкретного приложения или просто текст.
+In REST, we simply check the HTTP headers for the response status, based on which we can determine what went wrong and how to deal with it. Conversely, if an error occurs while processing GraphQL queries, the back-end will provide a detailed error message that includes all recognizers and referencing the specific part of the query on error.
+GraphQL error messages are not standardized, so you can choose whether it's a stack trace, an application-specific error code, or just plain text.
 
-## Права доступа
+## Access rights
 
-Создавая схему GraphQL, вы выбираете, какие функции выставлять и как они работают. В свою очередь, REST-взгляды, как правило, все или ничего. Таким образом, каждый взгляд должен иметь представление о том, что может и не может быть раскрыто в различных обстоятельствах, что не так просто сделать. В противном случае, если запрос содержит некоторую личную информацию, архитектура REST даже не откроет открытые части запрашиваемых данных.
+When you create a GraphQL schema, you choose which functions to expose and how they work. In turn, REST views are usually all or nothing. Thus, each view should have an idea of ​​what can and cannot be revealed in different circumstances, which is not so easy to do. Otherwise, if the request contains some personal information, the REST architecture won't even expose the public parts of the requested data.
 
-## Дополнительная операция
+## Additional operation
 
-В REST API-интерфейсы выполняют операции CRUD со следующими HTTP-запросами:
+In REST APIs perform CRUD operations with the following HTTP requests:
 
-- CREATE: генерировать новые записи с помощью POST
-- READ: получить данные на основе входных параметров с помощью GET
-- UPDATE: изменить записи с PUT
-- DELETE: стереть указанные данные с помощью DELETE.
+- CREATE: generate new records using POST
+- READ: get data based on input parameters using GET
+- UPDATE: change records from PUT
+- DELETE: erase the specified data with DELETE.
 
-Таким образом, GraphQL вносит в таблицу новую операцию — подписки(subscriptions), — которая позволяет клиентам получать сообщения с сервера в режиме реального времени. Подписки GraphQL могут использоваться для автоматической отправки уведомлений клиенту при добавлении нового комментария или данных или получении сообщения.
+Thus, GraphQL adds a new operation to the table - subscriptions - that allows clients to receive messages from the server in real time. GraphQL subscriptions can be used to automatically send notifications to the client when a new comment or data is added or a message is received.
 
-## Быстрое прототипирование приложений
+## Rapid application prototyping
 
-Если целью является предоставление прототипа, операции CRUD могут занимать много времени. GraphQL ускоряет этот процесс, предоставляя единую конечную точку API, которая служит прокси-сервером данных между пользовательским интерфейсом и хранилищем данных. Кроме того, скорость разработки тесно связана с улучшенным опытом разработчиков, который предлагает GraphQL: более простое кодирование с данными — рядом с пользовательским интерфейсом, многократно используемые фрагменты, меньшее внимание к обработке ошибок.
+If the goal is to provide a prototype, CRUD operations can be time consuming. GraphQL accelerates this process by providing a single API endpoint that serves as a data proxy between the user interface and the data store. In addition, development speed is closely tied to the improved developer experience that GraphQL offers: easier coding with data - next to the UI, reusable fragments, less attention to error handling.
 
 ## References:
 

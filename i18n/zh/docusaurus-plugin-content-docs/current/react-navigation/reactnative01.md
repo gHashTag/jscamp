@@ -60,97 +60,18 @@ The case of the route name is irrelevant - you can use lowercase `home` or capit
 The only required configuration for the screen is the `name` and `component` properties of the `props`. You can learn more about the other options available in the [Stack Navigator Reference](https://reactnavigation.org/docs/6.x/stack-navigator).
 :::
 
-## Setting up the navigator
-All route configuration is indicated as a props for our navigator. We haven't passed any props to our navigator, so it just uses the default configuration.
+## Payment
 
-Let's add a second screen to our stack navigator and set the main screen to render first:
+Now you are on a stripped-down version of the site, after subscribing to [Patreon](https://www.patreon.com/javascriptcamp), you will get full access to the training course, as well as access to our server's private channels in [Discord](https://discord.gg/6GDAfXn).
 
-```jsx {12-16,24} title="App.js" 
-import * as React from 'react'
-import { View, Text } from 'react-native'
-import { NavigationContainer } from '@react-navigation/native'
-import { createStackNavigator } from '@react-navigation/stack'
+Download our [mobile application](http://onelink.to/njhc95) or get tested in our [JavaScript telegram bot](https://t.me/javascriptcamp_bot), and also subscribe to [our news](https://t.me/javascriptapp).
 
-const HomeScreen = () => (
-  <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-    <Text>Home Screen</Text>
-  </View>
-)
-
-const DetailsScreen = () => (
-  <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-    <Text>Details Screen</Text>
-  </View>
-)
-
-const Stack = createStackNavigator()
-
-const App = () => (
-  <NavigationContainer>
-    <Stack.Navigator>
-      <Stack.Screen name="Home" component={HomeScreen} />
-      <Stack.Screen name="Details" component={DetailsScreen} />
-    </Stack.Navigator>
-  </NavigationContainer>
-)
-
-export default App
-```
-
-[Try this example on Snack](https://snack.expo.io/?platform=android&name=createStackNavigator%20%7C%20React%20Navigation&dependencies=%40expo%2Fvector-icons%40*%2C%40react-native-community%2Fmasked-view%40*%2Creact-native-gesture-handler%40*%2Creact-native-pager-view%40*%2Creact-native-paper%40%5E4.7.2%2Creact-native-reanimated%40*%2Creact-native-safe-area-context%40*%2Creact-native-screens%40*%2Creact-native-tab-view%40%5E3.0.0%2C%40react-navigation%2Fbottom-tabs%40%5E6.0.0-next.1%2C%40react-navigation%2Fdrawer%40%5E6.0.0-next.1%2C%40react-navigation%2Fmaterial-bottom-tabs%40%5E6.0.0-next.1%2C%40react-navigation%2Fmaterial-top-tabs%40%5E6.0.0-next.1%2C%40react-navigation%2Fnative%40%5E6.0.0-next.1%2C%40react-navigation%2Fstack%40%5E6.0.0-next.6&hideQueryParams=true&sourceUrl=https%3A%2F%2Freactnavigation.org%2Fexamples%2F6.x%2Fhello-react-navigation-full.js)
-
-Now we have two routes in our stack: `HomeScreen` and `Details`. The route can be specified using the `Screen` component. The `Screen` component takes a `name` property, which corresponds to the name of the route that we will use for navigation, and a component property, which corresponds to the component that it will display.
-
-Here the `Home` route corresponds to the HomeScreen component, and the Details route corresponds to the DetailsScreen component. The initial route for the stack is the `Home` route. Try changing it to `Details` and reloading the app (Fast Refresh React Native does not update changes from `initialRouteName` as you might expect), notice that you will now see the `Details` screen. Then bring it back to `Home` and reboot again.
-
-::: info
-the `component` property takes a component, not a render function. Do not pass inline function (for example, `component = {() => <HomeScreen />}`), otherwise your component will shutdown and remount, losing all state when re-rendering the parent component.
-:::
-
-## Defining parameters
-On each navigator screen, you can specify some parameters for the navigator, such as the title displayed in the title. These parameters can be passed in the `options` prop for each screen component:
-
-```jsx
-<Stack.Screen
-  name="Home"
-  component={HomeScreen}
-  options={{ title: 'Overview' }}
-/>
-```
-
-[Try this example on Snack](https://snack.expo.io/?platform=android&name=createStackNavigator%20%7C%20React%20Navigation&dependencies=%40expo%2Fvector-icons%40*%2C%40react-native-community%2Fmasked-view%40*%2Creact-native-gesture-handler%40*%2Creact-native-pager-view%40*%2Creact-native-paper%40%5E4.7.2%2Creact-native-reanimated%40*%2Creact-native-safe-area-context%40*%2Creact-native-screens%40*%2Creact-native-tab-view%40%5E3.0.0%2C%40react-navigation%2Fbottom-tabs%40%5E6.0.0-next.1%2C%40react-navigation%2Fdrawer%40%5E6.0.0-next.1%2C%40react-navigation%2Fmaterial-bottom-tabs%40%5E6.0.0-next.1%2C%40react-navigation%2Fmaterial-top-tabs%40%5E6.0.0-next.1%2C%40react-navigation%2Fnative%40%5E6.0.0-next.1%2C%40react-navigation%2Fstack%40%5E6.0.0-next.6&hideQueryParams=true&sourceUrl=https%3A%2F%2Freactnavigation.org%2Fexamples%2F6.x%2Fhello-react-navigation-with-options.js)
-
-Sometimes we need to specify the same parameters for all navigator screens. To do this, we can pass the `screenOptions` property to the navigator.
-
-## Transfer of additional details
-Sometimes we may need to pass additional properties to the screen. We can do this in two ways:
-- Use [React context](https://reactjs.org/docs/context.html) and wrap the navigator with a context provider to pass data to screens (recommended).
-- Use a render callback for the screen instead of specifying a component property:
-
-```jsx
-<Stack.Screen name="Home">
-  {props => <HomeScreen {...props} extraData={someData} />}
-</Stack.Screen>
-```
-
-:::info
-By default, React Navigation applies optimizations to screen components to prevent unnecessary rendering. Using a render callback removes these optimizations. So if you are using a render callback you need to make sure you are using [React.memo](https://reactjs.org/docs/react-api.html#reactmemo) or [React.PureComponent](https://reactjs.org/docs/react-api.html#reactpurecomponent) for screen components to avoid performance issues.
-:::
-
-## What's next?
-
-At this stage, a natural question arises: "How do I go from the` Home` route to the `Details` route?" This is covered in the next section.
-
-## Done ✅
-
-To see how well you learned this lesson, take the test in our school's [mobile app](http://onelink.to/njhc95) on this topic or in [Telegram bot](https://t.me/javascriptcamp_bot).
+[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
 
 
-![Sumerian school](/img/app.jpg)
+[![Sumerian school](/img/app.jpg)](http://onelink.to/njhc95)
 
-## Links
-
-[React Navigation](https://reactnavigation.org/docs/6.x/hello-react-navigation)
+ 
 
 ## Contributors ✨
 

@@ -1,26 +1,30 @@
 ---
 id: auth1-01
-title: Аутентификация
-sidebar_label: Часть I
+title: Authentication
+sidebar_label: Part I
 ---
 
-В этoй части мы настроим UI компонент аутентификации от AWS Amplify, а в следующей мы создадим его с нуля.
+import YouTube from 'react-youtube'
 
-Весь код для этой части можно найти на [GitHub](https://github.com/react-native-village/messaga/tree/Part1).
+In this part, we will configure the AWS Amplify Authentication UI component, and in the next we will create it from scratch.
 
-[![AWS Amplify](/img/auth/00.gif)](https://youtu.be/9uOGS7Pw1fo)
+All the code for this part can be found at [GitHub](https://github.com/react-native-village/messaga/tree/Part1).
 
 ![Cognito](/img/auth/auth1-03.png)
 
+## Video
+
+<YouTube videoId="QMObthDaewQ" />
+
 ![Step01](/img/steps/01.png)
 
-## Создаем новый проект ⚛️
+## Create a new project ⚛️
 
 ```bash
 react-native init auth
 ```
 
-Запускаем проект 🚀
+Launching the project 🚀
 
 iOS
 
@@ -36,12 +40,12 @@ cd auth && react-native run-android
 
 ![Step02](/img/steps/02.png)
 
-## Подключаем иконки 👾
+## Connecting icons 👾
 
-Так как иконки используются фреймворком AWS Amplify, поэтому подключаем их согласно [этой](https://github.com/oblador/react-native-vector-icons#installation) инструкции 📃.
-Проверяем наличие ошибок.
+Since the icons are used by the AWS Amplify framework, so we connect them according to [this](https://github.com/oblador/react-native-vector-icons#installation) instructions 📃.
+Checking for errors.
 
-Добавляем в App.js
+Add to App.js
 
 ```jsx
 import Icon from 'react-native-vector-icons/FontAwesome5'
@@ -57,51 +61,51 @@ const App = () => {
 
 ![Step03](/img/steps/03.png)
 
-## Регистрируем свой AWS account
+## Registering your AWS account
 
-Регистрируемся согласно [этой](https://aws-amplify.github.io/docs/) инструкции 📃 и по видеоучебнику📺 чекаем все 5 шагов.
+We register according to [this](https://aws-amplify.github.io/docs/) instructions 📃 and check all 5 steps using the video tutorial.
 
-:::caution Потребуется банковская карта 💳, где должно быть более 1\$ 💵
+::: caution You need a bank card 💳 where there must be more than 1 \ $ 💵
 
 :::
 
-Там же смотрим и ставим Amplify Command Line Interface (CLI)
+We look there and set Amplify Command Line Interface (CLI)
 
 ![Step04](/img/steps/04.png)
 
-## Инициализация AWS Amplify в проект React Native
+## Initializing AWS Amplify into a React Native Project
 
-В корневой директории проекта React Native инициализируем наш AWS Amplify проект
+In the root directory of the React Native project, we initialize our AWS Amplify project
 
 ```bash
 amplify init
 ```
 
-Отвечаем на вопросы:
+We answer the questions:
 
 ![amplify init](/img/auth/auth02.png)
 
-Проект инициализацировался 🚀
+The project was initialized 🚀
 
 ![Step05](/img/steps/05.png)
 
-## Подключаем плагин аутентификации
+## Connecting the authentication plugin
 
-Теперь, когда приложение находится в облаке, вы можете добавить некоторые функции, такие как предоставление пользователям возможности зарегистрироваться в нашем приложении и войти в систему.
+Now that the application is in the cloud, you can add some functionality, such as allowing users to register with our application and sign in.
 
-Командой
+Team
 
 ```bash
 amplify add auth
 ```
 
-подключаем функцию аутентификации. Выбираем конфигурацию по умолчанию. Это добавляет конфигурации ресурсов auth локально в ваш каталог ampify/backend/auth
+we connect the authentication function. We select the default configuration. This adds auth resource configurations locally to your ampify / backend / auth directory
 
-#### Выбираем профиль, который мы хотим использовать. default. Enter и как пользователи будут входить в систему. Email(За SMS списывают деньги).
+#### Select the profile we want to use. default. Enter and how users will log in. Email (Money is charged for SMS).
 
 ![amplify init](/img/auth/auth03.png)
 
-Отправляем изменения в облако 💭
+Submitting changes to the cloud 💭
 
 ```bash
 amplify push
@@ -111,15 +115,15 @@ amplify push
 
 ![Step06](/img/steps/06.png)
 
-## Подключаем AWS Amplify в проект React Native ⚛️
+## Connecting AWS Amplify to a React Native project ⚛️
 
-Подробности в [этой](https://aws-amplify.github.io/docs/js/react) инструкции 📃, а коротко и по прямой так:
+Details in [this](https://aws-amplify.github.io/docs/js/react) instructions 📃, but briefly and in a straight line like this:
 
 ```bash
 yarn add aws-amplify @aws-amplify/core aws-amplify-react-native amazon-cognito-identity-js @react-native-community/netinfo
 ```
 
-После установки обязательно заходим в папку ios и ставим поды
+After installation, be sure to go to the ios folder and put the pods
 
 ```bash
 cd ios && pod install && cd ..
@@ -127,11 +131,11 @@ cd ios && pod install && cd ..
 
 ![Step07](/img/steps/07.png)
 
-## Редактируем структуру проекта
+## Editing the project structure
 
-Создаем директорию /src и переносим туда файл App.js, переименовывая его в index.js
+Create the / src directory and move the App.js file there, renaming it to index.js
 
-Правим импорт в /auth/index.js и скрываем будущие предупреждения.
+Fix the import in /auth/index.js and hide future warnings.
 
 ```jsx
 import { AppRegistry, YellowBox } from 'react-native'
@@ -153,11 +157,11 @@ AppRegistry.registerComponent(appName, () => App)
 
 ![Step08](/img/steps/08.png)
 
-## Минимальная конфигурация проекта и модуль Authenticator
+## Minimum project configuration and module Authenticator
 
-Amplify.configure — конфигурация проекта
+Amplify.configure — project configuration
 
-Authenticator — Модуль [AWS Amplify Authentication](https://aws-amplify.github.io/docs/js/authentication#using-components-in-react--react-native) предоставляет API-интерфейсы аутентификации и стандартные блоки для разработчиков, которые хотят создавать возможности аутентификации пользователей.
+Authenticator — Module [AWS Amplify Authentication](https://aws-amplify.github.io/docs/js/authentication#using-components-in-react--react-native) provides authentication APIs and building blocks for developers who want to create user authentication capabilities.
 
 ```jsx
 import React from 'react'
@@ -185,15 +189,15 @@ const App = () => {
 export default App
 ```
 
-Запускаем симулятор, где нас встречает UI компонент аутентификации:
+We launch the simulator, where we are greeted by the authentication UI component:
 
 ![Cognito](/img/auth/auth04.png)
 
 ![Step09](/img/steps/09.png)
 
-## Правим инпуты в App.js
+## Editing inputs in App.js
 
-Для этого добавляем signUpConfig
+To do this, add signUpConfig
 
 ```jsx
 const signUpConfig = {
@@ -227,13 +231,13 @@ const signUpConfig = {
 
 ## Меняем тему UI 🖌
 
-Создаем точку экспорта наших будущих компонентов /src/components/index.js с содержанием
+Create an export point for our future components /src/components/index.js with content
 
 ```jsx
 export * from './AmplifyTheme'
 ```
 
-и соответствено создаем сам файл /src/components/AmplifyTheme/index.js темы с содержанием
+and accordingly create the file /src/components/AmplifyTheme/index.js of the theme with the content
 
 ```jsx
 import { StyleSheet } from 'react-native'
@@ -359,7 +363,7 @@ const AmplifyTheme = StyleSheet.create({
 export { AmplifyTheme }
 ```
 
-И подключаем тему в компонент Authenticator src/index.js
+And connect the theme to the component Authenticator src/index.js
 
 ```jsx
 import { AmplifyTheme } from './components'
@@ -370,17 +374,17 @@ import { AmplifyTheme } from './components'
 
 ![Step11](/img/steps/11.png)
 
-## Подключаем локализацию
+## We connect localization
 
-В нашем случае русский язык 🇷🇺
+In our case, the Russian language 🇷🇺
 
-Добавляем экспорт в /src/components/index.js
+Add export to /src/components/index.js
 
 ```jsx
 export * from './Localei18n'
 ```
 
-Cоздаем сам файл /src/components/Localei18n/index.js с содержанием
+Create the file /src/components/Localei18n/index.js with the content
 
 ```jsx
 import { NativeModules, Platform } from 'react-native'
@@ -448,7 +452,7 @@ import {
 />
 ```
 
-Запускаем проект, где видим, что локализация еще не применилась. Поэтому меняем в настройках своего симулятора язык на русский
+We launch the project, where we see that the localization has not yet been applied. Therefore, we change the language in the settings of our simulator to Russian
 
 ![Localei18n](/img/auth/auth06.png)
 

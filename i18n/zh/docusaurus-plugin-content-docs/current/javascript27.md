@@ -49,150 +49,27 @@ fetch('https://jsonplaceholder.typicode.com/users', {
 })
 ```
 
-## 收到回應
+## 支付
 
-![Bascketball](https://media.giphy.com/media/l0MYwdebx8o0XI56E/giphy.gif)
+訂閱以下內容後，您現在處於該網站的精簡版本中 [Patreon](https://www.patreon.com/javascriptcamp), 您將獲得對培訓課程的完全訪問權限，以及在以下位置訪問我們服務器的私人頻道的權限：[Discord](https://discord.gg/6GDAfXn).
 
-`fetch()` 方法返回 🔄 [Promise](https://react-native-village.github.io/docs/javascript24) 的對象 `Response` 類，具有以下屬性：
+下載我們的 [mobile application](http://onelink.to/njhc95) o在我們的測試中 [JavaScript telegram bot](https://t.me/javascriptcamp_bot), 並訂閱 [our news](https://t.me/javascriptapp).
 
-1. `status` - 回應碼;
-2. `statusText` - 對應於響應代碼的短信message;
-3. `ok` - 指示響應代碼成功的布爾值 (true: 200-299);
-4. `headers` - 具有響應標頭的對象，其中鍵是標頭的名稱，鍵值是與鍵對應的標頭的值;
-5. `url` - 請求發送到的URL;
-6. `body` - 輸入響應數據 `ReadableStream` 格式
-7. `bodyUsed` - 指示數據讀取的布爾值。
+[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
 
-```javascript
-fetch('https://jsonplaceholder.typicode.com/users').then(response => console.log(response))
-```
 
-## 響應處理
+[![Sumerian school](/img/app.jpg)](http://onelink.to/njhc95)
 
-![Download](https://media.giphy.com/media/ECoFRCrMgVoQg/giphy.gif)
-
-傳輸的數據格式為 `ReadableStream`. 可以使用以下方法來更改格式：
-
-1. `text()` - 將答案轉換為字符串;
-2. `json()` - 將響應轉換為JSON格式;
-3. `blob()` - c將響應轉換為Blob對象;
-4. `formData()` -響應被轉換為FormData實例;
-5. `arrayBuffer()` - 將響應轉換為ArrayBuffer對象.
-
-將響應轉換為ArrayBuffer對象.
-
-```jsx
-fetch('https://jsonplaceholder.typicode.com/users')
-  .then(response => response.json())
-  .then(data => console.log(data))
-```
-
-## 錯誤處理
-
-![Error](https://media.giphy.com/media/DHBGehJ3FSZEygszX3/giphy.gif)
-
-我們可以找出是否 `fetch()` 已使用 “狀態” 和 “確定” 屬性完成了錯誤。🙅‍♂️
-
-```jsx
-fetch('https://jsonplaceholder.typicode.com/users')
-  .then(response => {
-    if (!response.ok) {
-      console.log('Something went wrong ... Status:' + response.status)
-    } else {
-      return response.json()
-    }
-  })
-  .then(data => console.log(data))
-```
-
-With help `.catch()`
-
-```jsx
-fetch('https://jsonplaceholder.typicode.com/users')
-  .then(response => response.json())
-  .then(data => console.log(data))
-  .catch(error => console.log(error))
-```
-
-## 索取範例
-
-![Math](https://media.giphy.com/media/xT1Ra5h24Eliux3UVq/giphy.gif)
-
-```javascript
-fetch('https://jsonplaceholder.typicode.com/users')
-  .then(response => response.json())
-  .then(data => console.log(data[0].name + ' and ' + data[2].name))
-  .catch(error => console.log(error))
-```
-
-一樣，使用 `async / await` 語法，我們將在下一篇文章中更詳細地了解。
-
-```javascript
-let response = await fetch('https://jsonplaceholder.typicode.com/users')
-let data = await response.json()
-console.log(data[0].name + ' and ' + data[2].name)
-```
-
-## 問題？
-
-![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
-
-Write to [Discord](https://discord.gg/6GDAfXn) chat.
-
-## 問題:
-
-![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
-
-那是什麼 `fetch()` 方法返回？
-
-1.功能
-2.對象
-3.承諾
-
-僅在fetch（）中給出URL參數，我們得到什麼請求？
-
-1. `POST`
-2. `GET`
-3. `PUT`
-
-HTTP標頭指定了什麼參數？
-
-1. `redirect`
-2. `headers`
-3. `credentials`
-
-您應使用哪種方法將響應轉換為字符串？
-
-1. `blob()`
-2. `json()`
-3. `text()`
-
-那是什麼 `ok` 類對象的屬性均值 `Response`?
-
-1.回應碼
-2.響應碼成功
-3.從請求中讀取數據
-
-為了了解您學到了多少本課程，請對 [mobile application](http://onelink.to/njhc95) 我們學校就這個話題。
-
-![Sumerian school](/img/app.jpg)
-
-## 鏈接
-
-1. [Learn JavaScript](https://learn.javascript.ru/fetch)
-2. [MDN Web Docs](https://developer.mozilla.org/ru/docs/Web/API/Fetch_API/Using_Fetch)
-3. [JS Tutorial](https://www.javascripttutorial.net/javascript-fetch-api/)
+ 
 
 ## 貢獻者 ✨
 
-感謝這些好人 ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+T向這些好人致敬([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
 <table>
-  <tr> 
-    <td align="center"><a href="https://github.com/IIo3iTiv"><img src="https://avatars1.githubusercontent.com/u/72025062?v=4?s=200" width="200px;" alt=""/><br /><sub><b>IIo3iTiv</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/commits?author=IIo3iTiv" title="Documentation">📖</a></td>
-    <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /><a href="#financial-gHashTag" title="Financial">💵</a></td>
+  <tr>
+    <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /> <a href="https://github.com/gHashTag/react-native-village/commits?author=gHashTag" title="Documentation">📖</a></td>
     <td align="center"><a href="https://github.com/Resoner2005"><img src="https://avatars1.githubusercontent.com/u/75675814?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Resoner2005</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/issues?q=author%3AResoner2005" title="Bug reports">🐛 🎨 🖋</a></td>
-    <td align="center"><a href="https://github.com/Navernoss"><img src="https://avatars0.githubusercontent.com/u/75784137?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Navernoss</b></sub></a><br /><a href="#content-Navernoss" title="Content">🖋 🐛 🎨 </a></td>
   </tr>
   
 </table>

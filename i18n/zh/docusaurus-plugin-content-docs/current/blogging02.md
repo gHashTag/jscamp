@@ -1,100 +1,101 @@
 ---
 id: blogging-02
-title: Публикация статей в Sumerian School
-sidebar_label: Публикация статей
+title: Publishing Articles to Sumerian School
+sidebar_label: Publishing Articles
 ---
 
 import YouTube from 'react-youtube'
 
-Для создания статей в Sumerian School нужно выполнить несколько простых шагов.
 
-Если Вы не создаёте статьи, а желаете исправить ошибку или недочет, то вы можете отредактировать любую статью в пару нажатий, как это сделать показано [здесь](https://react-native-village.github.io/docs/blogging-00#редактирование-статьи). Но для начала нужно создать аккаунт `GitHub`, если не создан, и подключиться к проекту. Как это осуществить показано ниже, в `Шаге 00` и `Шаге 01`.
+To create articles in Sumerian School, you need to follow a few simple steps.
+
+If you do not create articles, but want to correct an error or defect, then you can edit any article in a couple of clicks, how to do this is shown [here](https://react-native-village.github.io/docs/blogging-00#редактирование-статьи). But first, you need to create a `GitHub` account, if not, and connect to the project. How to do this is shown below, in `Step 00` and` Step 01`.
 
 ![Step00](/img/steps/00.png)
 
-## Регистрация на GitHub
+## Sign up on GitHub
 
-Для работы над общим проектом нужно создать аккаунт на сайте [GitHub](https://github.com/). Это сервис хостинга открытых IT-проектов позволяющий удобно создавать и редактировать нескольким программистам их общий проект.
+To work on a common project, you need to create an account on the [GitHub] website (https://github.com/). This is a hosting service for open IT projects that allows you to conveniently create and edit their common project for several programmers.
 
 ![01](/img/blogging/00/01.png)
 
 ![Step01](/img/steps/01.png)
 
-## Подключение к проекту
+## Connection to the project
 
-После регистрации, перейдите к [библиотеке нашего проекта (react-native-village.github.io)](https://github.com/react-native-village/react-native-village.github.io/tree/gh-pages) и нажмите кнопку Fork в правом верхнем углу экрана.
+After registration, go to the [library of our project (react-native-village.github.io)](https://github.com/react-native-village/react-native-village.github.io/tree/gh-pages) and click the Fork button in the upper right corner of the screen.
 
 ![02](/img/blogging/00/02.png)
 
-Этим самым в своем профиле Вы создаете копию библиотеки подключаемого проекта.
+By doing this, in your profile, you create a copy of the library of the connected project.
 
 ![03](/img/blogging/00/03.png)
 
 ![Step02](/img/steps/02.png)
 
-## Скачивание проекта на свой компьютер
+## Downloading the project to your computer
 
-Есть много способов скачать проект на свой компьютер, воспользуемся популярной программой для работы с репозиториями [GitKraken](https://www.gitkraken.com/). Скачиваем и устанавливаем. При первом запуске программа предложит войти различными способами, предлагаем пункт `Sign in with GitHub`, для синхронизации `GitKraken` с аккаунтом `GitHub`.
+There are many ways to download a project to your computer, we will use the popular program for working with repositories [GitKraken](https://www.gitkraken.com/). Download and install. At the first start, the program will offer to enter in various ways, we suggest the item `Sign in with GitHub`, to synchronize` GitKraken` with the `GitHub` account.
 
 ![04](/img/blogging/00/04.png)
 
-В открывшемся окне браузера выбираем кнопку `Continue authorization`, для продолжения авторизации.
+In the browser window that opens, select the `Continue authorization` button to continue authorization.
 
 ![05](/img/blogging/00/05.png)
 
-Для завершения регистрации потребуется подтвердить синхронизацию аккаунтов.
+To complete registration, you will need to confirm the synchronization of accounts.
 
 ![06](/img/blogging/00/06.png)
 
-Таким образом, Вы связали аккаунт GitHub с GitKraken.
+This will link your GitHub account to GitKraken.
 
-Для работы над общим проектом необходимо его скачать.
-Нажимаем сочетание клавиш `Ctrl + N`, либо выбираем в главном меню пункт `File`->`Clone Repo`.
+To work on a common project, you need to download it.
+Press the key combination `Ctrl + N`, or select the item` File`-> `Clone Repo` in the main menu.
 
 ![07](/img/blogging/00/07.png)
 
-В открывшемся окне выбираем раздел `GitHub.com`. В поле `Where to clone to` выбираем путь где будет находится проект на Вашем компьютере, а в поле `Repository to clone` выбираем имя проекта находящегося на GitHub, который будет скопирован и нажимаем кнопку `Clone the repo!`
+In the window that opens, select the section `GitHub.com`. In the field `Where to clone to`, select the path where the project will be located on your computer, and in the field` Repository to clone`, select the name of the project located on GitHub, which will be copied and press the button `Clone the repo!`
 
 ![08](/img/blogging/00/08.png)
 
-После завершения загрузки проекта на ваш компьютер нажимаем кнопку `Open Now` - это откроет скачанный проект.
+After the download of the project to your computer is complete, press the button `Open Now` - this will open the downloaded project.
 
 ![09](/img/blogging/00/09.png)
 
-Так выглядит интерфейс `GitKraken` при открытом проекте.
+This is how the `GitKraken` interface looks when the project is open.
 
 ![10](/img/blogging/00/10.png)
 
 ![Step03](/img/steps/03.png)
 
-## Подключение к ветке проекта
+## Connecting to a project branch
 
-Теперь, для начала работы, Вам необходимо переключиться на ветку разработки - `gh-pages`.
-Для этого, наведите мышку на пункт `REMOTE` и нажмите кнопку `Add Remote`.
+Now, to get started, you need to switch to the development branch - `gh-pages`.
+To do this, move the mouse over the `REMOTE` item and click the` Add Remote` button.
 
 ![Branches01](/img/blogging/00/branch01.png)
 
-Откроется меню `Add Remote`.
+The `Add Remote` menu will open.
 
 ![Branches02](/img/blogging/00/branch02.png)
 
-В поле `GitHub Repo` выберите пункт `react-native-village/react-native-village.github.io`, а в поле `Name` введите любое имя для этого репозитория.
+In the `GitHub Repo` field, select` react-native-village / react-native-village.github.io`, and in the `Name` field, enter any name for this repository.
 
 ![Branches03](/img/blogging/00/branch03.png)
 
-Нажмите кнопку `Add Remote`.
+Click the button `Add Remote`.
 
 ![Branches04](/img/blogging/00/branch04.png)
 
-Начнется процесс загрузки репозитория.
+The repository download process begins.
 
 ![Branches05](/img/blogging/00/branch05.png)
 
-После окончания загрузки Вам необходимо переключиться на ветку `gh-pages`. Для этого два раза нажмите по ветке основного репозитория `gh-pages`.
+After the download is finished, you need to switch to the `gh-pages` branch. To do this, double-click on the branch of the main repository `gh-pages`.
 
 ![Branches06](/img/blogging/00/branch06.png)
 
-Таким образом вы переключитесь на ветку разработки `gh-pages`.
+This will switch you to the `gh-pages` development branch.
 
 ![Branches07](/img/blogging/00/branch07.png)
 
@@ -102,30 +103,30 @@ import YouTube from 'react-youtube'
 
 ## Подготовка к работе с кодом
 
-Убедитесь, что на компьютере установлен какой-либо редактор кода (рекомендуем [VS Code](https://code.visualstudio.com/)). Скачаем и установим пакет [Git](https://git-scm.com/downloads). Это программа для контроля версий компилируемых программ.
+Make sure you have some code editor installed on your computer (we recommend [VS Code](https://code.visualstudio.com/)). Download and install the package [Git](https://git-scm.com/downloads). It is a program for controlling the versions of compiled programs.
 
 ![11](/img/blogging/00/11.png)
 
-После запуска установщик встретит Вас стартовым окном, нажимаем кнопку `Next`.
+After starting the installer will greet you with the start window, press the button `Next`.
 
 ![12](/img/blogging/00/12.png)
 
-На данном шаге инсталятора оставляем все по стандарту.
+At this step of the installer, we leave everything as standard.
 
 ![13](/img/blogging/00/13.png)
 
-Далее инсталятор предложит Вам выбрать редактор кода по умолчанию, рекомендуем выбрать Visual Studio Code.
+Next, the installer will offer you to choose the default code editor, we recommend choosing Visual Studio Code.
 
 ![14](/img/blogging/00/14.png)
 
-При дальнейшей установке нажимаем `Next`, оставляя все чекбоксы по умолчанию (только если Вы не знаете что они означают).
+During further installation, click `Next`, leaving all the checkboxes by default (only if you do not know what they mean).
 
 ![Step05](/img/steps/05.png)
 
-## Установка пакетов
+## Installing packages
 
-Для дальнейших действий нужен установленный менеджер пакетов [Chocolatey](https://react-native-village.github.io/docs/start00#установка-chocolatey). С помощью него установим пакеты `node.js` и `yarn`.
-Для начала процесса установки последовательно выполним в оболочке PowerShell команды:
+For further actions, you need an installed package manager [Chocolatey](https://react-native-village.github.io/docs/start00#install-chocolatey). Install the packages `node.js` and` yarn` using it.
+To start the installation process, run the following commands in PowerShell:
 
 ```bash
 choco install -y nodejs.install
@@ -137,39 +138,39 @@ choco install -y nodejs.install
 choco install yarn
 ```
 
-При установке `yarn` подтвердите свой выбор буквой `Y`.
+When installing `yarn`, confirm your choice with the letter `Y`.
 
 ![15](/img/blogging/00/15.png)
 
-После завершения загрузки и установки пакетов появится сообщение об успешном выполнении операций.
+After the download and installation of the packages is complete, a success message appears.
 
 ![16](/img/blogging/00/16.png)
 
-Мы подготовили свой компьютер для создания и редактирования статей.
+We have prepared our computer for creating and editing articles.
 
 ![Step06](/img/steps/06.png)
 
-## Создание статьи
+## Creating an article
 
-Открываем проект, скопированный с `GitHub` на шаге `Шаге 02`. В оболочке `GitKraken` выбираем пункт меню `File`->`Open Repo in ...` или открываем папку с проектом вручную.
-:::info
-При установленном редакторе `Visual Studio Code` выбираем пункт меню `File` -> `Open Repo in Visual Studio Code`.
+Open the project copied from `GitHub` in step` Step 02`. In the shell `GitKraken` select the menu item` File`-> `Open Repo in ...` or open the folder with the project manually.
+::: info
+With the editor `Visual Studio Code` installed, select the menu item `File` -> `Open Repo in Visual Studio Code`.
 :::
 
 ![17](/img/blogging/00/17.png)
 
-Запустится проект в выбранном редакторе.
+The project will start in the selected editor.
 
 ![18](/img/blogging/00/18.png)
 
-Далее переходим к папке `docs` и создаем в ней новый файл. Например, `blogging00.md`
-:::note
-Созданные вами файлы должны быть с расширением \*.md
+Next, go to the `docs` folder and create a new file in it. For example, `blogging00.md`
+::: note
+The files you create must have the extension \*.md
 :::
 
 ![19](/img/blogging/00/19.png)
 
-Теперь сделаем "шапку" созданному документу. Для этого вставляем в начало документа данный код:
+Now let's create a "header" for the created document. To do this, insert this code at the beginning of the document:
 
 ```jsx
 ---
@@ -179,69 +180,69 @@ sidebar_label: ...
 ---
 ```
 
-В строке `id` запишем уникальный код документа. В строке `title` - заголовок статьи. В строке `sidebar_label` указываем название Вашей статьи, которое будет отображаться в левом боковом меню.
+In the `id` line, write the unique document code. The `title` line contains the title of the article. In the line `sidebar_label` indicate the name of your article, which will be displayed in the left side menu.
 
-Для добавления статьи в левое боковое меню сайта, необходимо добавить её имя в файл `sidebars.js`.
-Для этого в основном каталоге открываем файл `sidebars.js` и добавляем новую строку, например:
+To add an article to the left side menu of the site, you need to add its name to the file `sidebars.js`.
+To do this, open the file `sidebars.js` in the main directory and add a new line, for example:
 
 ```jsx
 ['Blogging']: ['blogging-00'],
 ```
 
-Где первое поле отвечает за название раздела в левом боковом меню, а второй параметр - это уникальный `id` статьи, который Вы присвоили ранее.
+Where the first field is responsible for the name of the section in the left side menu, and the second parameter is the unique `id` of the article that you assigned earlier.
 
 ![20](/img/blogging/00/20.png)
 
-Теперь можно приступать к набору текста.
+Now you can start typing.
 
 ![Step07](/img/steps/07.png)
 
-## Создание гифок
+## GIF creation
 
-Для того чтобы добавлять гифки, пройдите обучение в этом видео.
+To add gifs, follow the tutorial in this video.
 
 <YouTube videoId='6lGAu4SjcrQ' />
 
-## Запуск локального сервера
+## Running a local server
 
-Для проверки изменений текста в статье в режиме реального времени организуем запуск локального сервера. Для этого необходимо открыть оболочку PowerShell, перейти в папку с проектом командой `cd Полный путь до папки` и выполнить вторую команду:
+To check changes in the text in the article in real time, we will organize the launch of a local server. To do this, open the PowerShell shell, go to the folder with the project with the command `cd Full path to the folder` and execute the second command:
 
 ```bash
 yarn install
 ```
 
-Эта команда установит оболочку быстрого создания статей, `Docasaurus`. Данная оболочка устанавливается единоразово. Благодаря ей можно запустить в любой момент времени локальный сервер командой:
+This command will install the quick article creation wrapper, `Docasaurus`. This shell is installed one time. Thanks to it, you can start the local server at any time with the command:
 
 ```bash
 yarn start
 ```
 
-Локальный сервер будет работать в браузере по адресу `Localhost:3000`.
-Окно интернет-браузера с Вашим сайтом откроется автоматически и Вы сможете просматривать статью в реальном времени.
+The local server will run in the browser at `Localhost: 3000`.
+An Internet browser window with your site will open automatically and you can view the article in real time.
 
 ![Step08](/img/steps/08.png)
 
-## Проверка грамматики
+## Grammar check
 
-Перед отправкой статьи нужно убедиться что текст не содержит грамматических ошибок. Проверить свой текст можно на сайте [LanguageTool](https://www.languagetool.org/).
+Before submitting an article, you need to make sure that the text does not contain grammatical errors. You can check your text on the website [LanguageTool](https://www.languagetool.org/).
 
-Для выполнения проверки скопируйте текст статьи в поле для текста и нажмите кнопку `Check Text`. Грамматические ошибки в тексте будут подсвечены.
+To check, copy the text of the article into the text field and press the button `Check Text`. Grammar errors in the text will be highlighted.
 
 ![LanguageTool](/img/blogging/00/lgtool.png)
 
-Теперь, нажав на подсвеченное слово, Вы можете исправить грамматическую ошибку.
+Now, by clicking on the highlighted word, you can correct the grammatical error.
 
 ![LanguageTool01](/img/blogging/00/lgtool01.png)
 
 ![Step09](/img/steps/09.png)
 
-## Добавление авторов статьи и Patreon
+## Adding article authors and Patreon
 
-После завершения статьи и проверки грамматики необходимо упомянуть всех людей причастных к статье, как показано на картинке ниже.
+After completing the article and checking the grammar, you must mention all the people involved in the article, as shown in the picture below.
 
 ![Contributors00](/img/blogging/00/Contributors00.png)
 
-Для добавления авторов, откройте `PowerShell` или `Терминал` (на MacOS) при помощи команды `cd Полный путь папки проекта` перейдите в папку ранее скачанного проекта. Далее введите данную команду:
+To add authors, open `PowerShell` or` Terminal` (on MacOS) using the command `cd Full path of the project folder` go to the folder of the previously downloaded project. Then enter this command:
 
 ```bash
 yarn add --dev all-contributors-cli
@@ -249,302 +250,302 @@ yarn add --dev all-contributors-cli
 
 ![Contributors01](/img/blogging/00/Contributors01.png)
 
-Начнется процесс загрузки и установки пакета `all-contributors`. Этот пакет устанавливается единожды. Благодаря этому пакету можно добавлять людей причастных к проекту и их вклад. Для этого Вам нужно находясь в папке с проектом ввести в `PowerShell` команду:
+The process of downloading and installing the `all-contributors` package will begin. This package is installed once. Thanks to this package, you can add people involved in the project and their contributions. To do this, while in the project folder, enter the command in `PowerShell`:
 
 ```bash
 yarn all-contributors add Логин_GitHub Вклад
 ```
 
-Типы вкладов в проект описаны [здесь](https://allcontributors.org/docs/en/emoji-key), в столбце Emoji/Type.
+The types of contributions to the project are described [here](https://allcontributors.org/docs/en/emoji-key), in column Emoji/Type.
 
 ![Contributors03](/img/blogging/00/Contributors03.png)
 
-Логин можно узнать в профиле `GitHub`
+Login can be found in the profile `GitHub`
 
 ![Contributors02](/img/blogging/00/Contributors02.png)
 
-Пример:
+Example:
 
 ```bash
 yarn all-contributors add KoDim-React mentoring
 ```
 
-После этого, необходимо применить изменения командой:
+After that, you need to apply the changes with the command:
 
 ```bash
 yarn all-contributors generate
 ```
 
-Добавленные авторы автоматически появятся в конце файла README.md
+Added authors will automatically appear at the end of the file README.md
 
 ![Contributors04](/img/blogging/00/Contributors04.png)
 
-Теперь Вам необходимо скопировать весь блок этого кода и вставить в конец своей статьи.
+Now you need to copy the entire block of this code and paste it at the end of your article.
 
 ![Contributors05](/img/blogging/00/Contributors05.png)
 
-Таким образом Вы скопируете в свой проект всех пользователей записанных в `README.md`
-Для удаления пользователей не причастных к статье Вам необходимо удалить соответствующую ячейку `<td>`.
+Thus, you will copy to your project all users recorded in `README.md`
+To delete users not involved in the article, you need to delete the corresponding cell `<td>`.
 
 ![Contributors06](/img/blogging/00/Contributors06.png)
 
-Осталось добавить в конце статьи ссылку на `Patreon`:
+It remains to add a link at the end of the article to `Patreon`:
 
 ```bash
 [![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
 ```
 
-Статья готова для отправки!
+The article is ready to be sent!
 
 ![Step10](/img/steps/10.png)
 
-## Отправка статьи
+## Submitting an article
 
-После того как Вы набрали и сохранили текст, его нужно отправить на проверку. Проверка позволяет понять можно ли внедрять Вашу работу в основной код проекта. Для этого откроем программу `GitKraken` и (если проект еще не открыт) откроем заранее скачанный проект на `Шаге 02` кнопкой `Open a repo`.
+After you have typed and saved the text, you need to send it for review. The check allows you to understand whether it is possible to embed your work into the main project code. To do this, open the program `GitKraken` and (if the project is not open yet) open the previously downloaded project at` Step 02` with the button `Open a repo`.
 
 ![21](/img/blogging/00/21.png)
 
-Откроется окно Вашего проекта.
+Your project window will open.
 
 ![22](/img/blogging/00/22.png)
 
-Справа, в блоке `Unstaged Files` находятся файлы, которые Вы изменили или добавили. Для применения изменений нажимаем кнопку `Stage all changes`.
+On the right, in the `Unstaged Files` block, there are files that you have changed or added. To apply the changes, press the button `Stage all changes`.
 
 ![23](/img/blogging/00/23.png)
 
-Далее, справа внизу, у блока `Commit Message` в поле `Summary` укажем краткий комментарий того, что было сделано и нажимаем кнопку `Commit changes to ... files`.
+Further, at the bottom right, at the `Commit Message` block in the` Summary` field we indicate a brief commentary on what has been done and press the button `Commit changes to ... files`.
 
 ![24](/img/blogging/00/24.png)
 
-Для отправки изменений на сервер `GitHub` нажимаем кнопку `Push`.
+To send changes to the `GitHub` server, click the button `Push`.
 
 ![25](/img/blogging/00/25.png)
 
-Теперь нужно отправить запрос на объединение Вашей версии кода проекта c основным репозиторием. Для этого переходим на сайт `GitHub` к Вашей копии проекта и выбираем ветку `gh-pages`.
+Now you need to send a request to merge your version of the project code with the main repository. To do this, go to the site `GitHub` to your copy of the project and select the branch `gh-pages`.
 
 ![26](/img/blogging/00/26_00.png)
 
-Нажимаем кнопку `Pull request`.
+Push the button `Pull request`.
 
 ![26](/img/blogging/00/26.png)
 
-Далее оставляем комментарий проверяющему (Ревьюверу) и нажимаем кнопку `Create pull request`.
+Next, we leave a comment to the reviewer (Reviewer) and press the button `Create pull request`.
 
 ![27](/img/blogging/00/27.png)
 
-Ваш проект отправлен на проверку. Когда проверяющий убедится, что все в порядке, Ваш код будет совмещен с основным. Теперь ваша статья доступна для просмотра на любом устройстве в сети Интернет!
+Your project has been sent for review. When the reviewer is convinced that everything is in order, your code will be aligned with the main one. Now your article is available for viewing on any device on the Internet!
 
 ![Step11](/img/steps/11.png)
 
-## Редактирование статьи
+## Editing an article
 
-Сервис `GitHub` позволяет быстро и удобно редактировать уже существующие статьи. Для этого переходим на сайт `GitHub` с Вашим проектом.
+Service `GitHub` allows you to quickly and conveniently edit existing articles. To do this, go to the `GitHub` site with your project.
 
 ![28](/img/blogging/00/28.png)
 
-Затем открываем необходимый файл, для редактирования.
+Then we open the required file for editing.
 :::note
-Все статьи хранятся в папке docs.
+All articles are stored in the docs folder.
 :::
 
 ![29](/img/blogging/00/29.png)
 
-Далее нажимаем кнопку `Edit this file`.
+Then press the button `Edit this file`.
 
 ![30](/img/blogging/00/30.png)
 
-Теперь можно вносить нужные изменения.
+Now you can make the changes you want.
 
 ![31](/img/blogging/00/31.png)
 
-Для применения изменений нужно нажать на кнопку `Commit changes`. При необходимости добавляем комментарий к изменениям.
+To apply the changes, you need to click on the `Commit changes` button. If necessary, add a comment to the changes.
 
 ![32](/img/blogging/00/32.png)
 
-В итоге создаем `Pull request`, как это было показано в предыдущей теме "Создание статьи". Изменения уйдут на проверку Ревьюверу.
+As a result, we create a `Pull request`, as it was shown in the previous topic" Creating an article ". The changes will go to the Reviewer for verification.
 
 ![Step12](/img/steps/12.png)
 
-## Базовые возможности форматирования текста Docusaurus
+## Basic text formatting capabilities Docusaurus
 
-Все статьи на этом сайте пишутся при помощи `Docusaurus`. Это инструмент при помощи которого можно легко создавать такие вот интернет-документы. И как у всех прочих подобных сервисов, он имеет свой синтаксис.
+All articles on this site are written using `Docusaurus`. This is a tool with which you can easily create such Internet documents. And like all other similar services, it has its own syntax.
 
-Например, способы выделения текста:
+For example, ways to highlight text:
 
 ```jsx
 :::note
-Заметка.
+The note.
 :::
 
 :::tip
-Подсказка.
+Hint.
 :::
 
 :::info
-Информация.
+Information.
 :::
 
 :::caution
-Предупреждение!
+Warning!
 :::
 
 :::danger
-Опасность!
+Danger!
 :::
 ```
 
-Вот так это будет выглядеть на сайте:
+This is how it will look on the site:
 :::note
-Заметка.
+The note.
 :::
 
 :::tip
-Подсказка.
+Hint.
 :::
 
 :::info
-Информация.
+Information.
 :::
 
 :::caution
-Предупреждение!
+Warning!
 :::
 
 :::danger
-Опасность!
+Danger!
 :::
 
-Также можно давать темы таким окнам, например:
+You can also give themes to such windows, for example:
 
 ```jsx
-:::note Тема
-Заметка.
+:::note Subject
+The note.
 :::
 ```
 
-:::note Тема
-Заметка.
+:::note Subject
+The note.
 :::
 
-Чтобы выделить код, используется выражение:
+To highlight the code, use the expression:
 
 ````jsx
 '```jsx
-Код
+Code
 ```'
 ````
 
-(Выражение используется без кавычек)
+(Expression is used without quotes)
 
-Также можно выделять слова путем добавления ``, например:
+You can also highlight words by adding ``, for example:
 
 ```jsx
-``Пример``
+``Example``
 ```
 
-Будет выглядеть как: `Пример`
+It will look like: `Example`
 
-Можно сделать так что бы любой текст можно было скопировать одной кнопкой.
+You can make it so that any text can be copied with one button.
 
 ````jsx
 '```bash
-Пример
+Example
 ```'
 ````
 
-(Выражение используется без кавычек)
+(Expression is used without quotes)
 
-Будет выглядеть как:
+It will look like:
 
 ```bash
-Пример
+Example
 ```
 
-Для вставки ссылки необходимо использовать слудующий синтаксис:
+To insert a link, you must use the following syntax:
 
 ```jsx
-[Текст при нажатии на который открывается ссылка](Ссылка на вебсайт)
+[Text that opens a link when clicked] (Link to website)
 ```
 
-[Пример](https://github.com)
+[Example](https://github.com)
 
-Аналогично вставляются изображения.
+Images are inserted in the same way.
 
 ```jsx
-![Имя изображения, которое будет отображаться если изображение недоступно](Путь до изображения)
+![Image name to be displayed if image is not available] (Path to image)
 ```
 
-Для вставки изображения с ссылкой используется объединенный синтаксис двух предыдущих команд.
+To insert an image with a link, use the combined syntax of the previous two commands.
 
 ```jsx
-[![Текс](Путь до картинки)](Ссылка)
+[![Tex] (Path to the picture)] (Link)
 ```
 
-Это только самые базовые методы форматирования текста, больше можно узнать в [официальной документации Docusaurus](https://v2.docusaurus.io/docs/markdown-features/).
+These are just the most basic text formatting techniques, you can read more in the [official documentation Docusaurus](https://v2.docusaurus.io/docs/markdown-features/).
 
-## Вопросы:
+## Questions:
 
-Какую основную функцию выполняет `GitHub`?
+What is the main function of `GitHub`?
 
-1. Форум для программистов
-2. Хостинг открытых IT-проектов для совместной работы
-3. Облачное хранилище файлов
+1. Forum for programmers
+2. Hosting open IT projects for collaboration
+3. Cloud file storage
 
-Какую функцию выполняет кнопка `Fork` на `GitHub`?
+What is the function of the `Fork` button on` GitHub`?
 
-1. Скачивает репозиторий
-2. Делает копию репозитория в Вашем профиле
-3. Даёт доступ к основному репозиторию
+1. Downloads the repository
+2. Makes a copy of the repository in your profile
+3. Gives access to the main repository
 
-Какое расширение должно быть у файла статьи?
+What extension should the article file have?
 
 1. .doc
 2. .txt
 3. .md
 
-В какой папке хранятся статьи нашего проекта?
+In which folder are the articles of our project stored?
 
 1. docs
 2. blog
 3. src
 
-Какой командой добавляются пользователи причастные к проекту?
+What team are added users involved in the project?
 
 1. yarn all-contributors add
 2. yarn all-contributors generate
 3. yarn all-contributors init
 
-Что делает кнопка `Pull request`?
+What does the `Pull request` button do?
 
-1. Отправляет запрос на объединение Вашей версии кода проекта c основным репозиторием
-2. Отправляет изменения кода напрямую в основной репозиторий
-3. Сохраняет копию репозитория
+1. Sends a request to merge your version of the project code with the main repository
+2. Submits code changes directly to the main repository
+3. Saves a copy of the repository
 
-Что такое `Docusaurus`?
+What is `Docusaurus`?
 
-1. Инструмент для работы с кодом
-2. Инструмент для создания интернет-документов
-3. Инструмент для создания разметки
+1. Tool for working with code
+2. Tool for creating internet documents
+3. Tool for creating markup
 
-Каким из перечисленных ниже способов создается выделение текста?
+Which of the following methods is used to create a selection of text?
 
 1. ::note ::
 2. :::note :::
 3. "note"
 
-Как вставить изображение?
+How do I insert an image?
 
-1. `[Текст](Путь до изображения)`
-2. `(Текст)(Путь до изображения)`
-3. `![Текст](Путь до изображения)`
+1. `[Text] (Path to image)`
+2.` (Text) (Path to image) `
+3. `! [Text] (Path to image)`
 
-## Ссылки:
+## Links:
 
 1. [GitHub](https://github.com/)
-2. [Документация Docusaurus](https://v2.docusaurus.io/docs/)
-3. [Официальный сайт GitKraken](https://www.gitkraken.com/)
-4. [Официальный сайт Visual Studio Code](https://code.visualstudio.com/)
-5. [Сайт проверки грамматики LanguageTool](https://www.languagetool.org/)
+2. [Documentation Docusaurus](https://v2.docusaurus.io/docs/)
+3. [Official site GitKraken](https://www.gitkraken.com/)
+4. [Official site Visual Studio Code](https://code.visualstudio.com/)
+5. [Grammar Checker Site LanguageTool](https://www.languagetool.org/)
 
 ## Contributors ✨
 
