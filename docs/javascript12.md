@@ -67,7 +67,7 @@ let fruit = 'Banana'
 A variable 🔔 created in the global scope is called a `global variable` 🔔. The global variable 🔔 can be used in all child scopes.
 
 ```jsx live
-function learnFavaScript() {
+function learnJavaScript() {
   // The variable fruit is global
   let fruit = 'Banana'
   function showFruit() {
@@ -93,7 +93,7 @@ for (let i = 0; i > 5; i++) {
 Local variables 🔔 can only be used within the block in which they were declared.
 
 ```jsx
-function learnFavaScript() {
+function learnJavaScript() {
   function showFruit() {
     // The variable fruit is local
     let fruit = 'Banana'
