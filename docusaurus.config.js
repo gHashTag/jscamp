@@ -162,7 +162,7 @@ module.exports = {
             },
             {
               label: 'AWS Amplify Ru 💭',
-              href: 'https://teleg.run/awsamplify'
+              href: 'https://t.me/awsamplify'
             }
           ]
         },
@@ -223,7 +223,7 @@ module.exports = {
             },
             {
               label: 'CodeWars',
-              href: 'www.codewars.com/r/e67HyQ'
+              href: 'https://www.codewars.com/r/e67HyQ'
             }
           ]
         }
