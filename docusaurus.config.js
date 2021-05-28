@@ -222,7 +222,7 @@ module.exports = {
               href: 'https://www.twitch.tv/javascriptcamp'
             },
             {
-              label: 'CodeWars',
+              label: 'Code Wars',
               href: 'https://www.codewars.com/r/e67HyQ'
             }
           ]
