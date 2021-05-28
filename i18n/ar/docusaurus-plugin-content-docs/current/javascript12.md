@@ -67,7 +67,7 @@ let fruit = 'Banana'
 متغير🔔 تم إنشاؤه في النطاق العالمي يسمى `global variable` 🔔. المتغير الشامل 🔔 يمكن استخدامها في جميع نطاقات الأطفال.
 
 ```jsx live
-function learnFavaScript() {
+function learnJavaScript() {
   // The variable fruit is global
   let fruit = 'Banana'
   function showFruit() {
@@ -93,7 +93,7 @@ for (let i = 0; i > 5; i++) {
 المتغيرات المحلية🔔 يمكن استخدامها فقط داخل الكتلة التي تم الإعلان عنها فيها.
 
 ```jsx
-function learnFavaScript() {
+function learnJavaScript() {
   function showFruit() {
     // The variable fruit is local
     let fruit = 'Banana'

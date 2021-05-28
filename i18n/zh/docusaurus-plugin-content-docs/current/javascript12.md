@@ -67,7 +67,7 @@ let fruit = 'Banana'
 在全局範圍內創建的變量🔔稱為 `global variable`. 全局變量🔔可以在所有子作用域中使用。
 
 ```jsx live
-function learnFavaScript() {
+function learnJavaScript() {
   // The variable fruit is global
   let fruit = 'Banana'
   function showFruit() {
@@ -93,7 +93,7 @@ for (let i = 0; i > 5; i++) {
 局部變量only只能在聲明它們的塊內使用。
 
 ```jsx
-function learnFavaScript() {
+function learnJavaScript() {
   function showFruit() {
     // The variable fruit is local
     let fruit = 'Banana'
