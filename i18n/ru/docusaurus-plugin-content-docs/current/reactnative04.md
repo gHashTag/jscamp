@@ -12,7 +12,7 @@ sidebar_label: Верстка компонентов - Flexbox
 
 Прежде чем мы продолжим, предлагаю поиграть в игру [Flexbox Froggy](https://flexboxfroggy.com/#ru). Задача игры - это перемещение лягушенков на листы лилии используя для этого свойства `flexbox`.
 
-![flexbox foggy](https://media-exp1.licdn.com/dms/image/C5612AQHTOPvO_L9DjA/article-inline_image-shrink_1000_1488/0/1549509849465?e=1619049600&v=beta&t=v5FfGyN3yTfpz7cjhQeX5Nj0jpy8Fu6j-6BE09lrLcg)
+![flexbox foggy](https://flexboxfroggy.com/images/screenshot.png)
 
 > Flexbox работает в React Native так же, как и в CSS в Интернете, за некоторыми исключениями. Значения по умолчанию разные: для `flexDirection` по умолчанию используется столбец вместо строки, для `alignContent` по умолчанию используется `flex-start` вместо `stretch`, для `flexShrink` по умолчанию установлено значение `0` вместо `1`, параметр `flex` поддерживает только одно число.
 

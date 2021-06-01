@@ -12,7 +12,7 @@ Typically you will use a combination of `flexDirection`, `alignItems` and `justi
 
 Before we continue, I suggest you play the game [Flexbox Froggy](https://flexboxfroggy.com/#ru). The task of the game is to move frogs onto lily leaves using the `flexbox` property.
 
-![flexbox foggy](https://media-exp1.licdn.com/dms/image/C5612AQHTOPvO_L9DjA/article-inline_image-shrink_1000_1488/0/1549509849465?e=1619049600&v=beta&t=v5FfGyN3yTfpz7cjhQeX5Nj0jpy8Fu6j-6BE09lrLcg)
+![flexbox foggy](https://flexboxfroggy.com/images/screenshot.png)
 
 > Flexbox works in React Native just like it does CSS on the web, with a few exceptions. The defaults are different: `flexDirection` defaults to column instead of row, `alignContent` defaults to `flex-start` instead of `stretch`, `flexShrink` defaults to `0` instead of `1`, parameter `flex` only supports one number.
 
