@@ -174,6 +174,7 @@ let activity = 'drink tea'
 let bio = 'Our guest ' + name + activity + '.'
 bio // Our guest Mary drink tea.
 ```
+इसलिए हम सबसे लोकप्रिय डेटा प्रकार से परिचित हुए JavaScript और इसके लिए सबसे अधिक इस्तेमाल की जाने वाली विधियाँ।
 
 <!-- Теперь попробуйте построить строку сами.
 
