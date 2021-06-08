@@ -166,9 +166,9 @@ export * from './Header'
 
 Теперь можно импортировать компонент `Header` и проверить как все работает:
 
-```jsx title="index.js"
+```jsx title="src/index.js"
 import React from 'react'
-import { Header } from './src/components' // здесь импортируем
+import { Header } from './components' // здесь импортируем
 
 const App = () => (
   <>
@@ -177,6 +177,16 @@ const App = () => (
 )
 
 export default App
+```
+
+## Правим путь в рутовом index.js
+
+```jsx title="index.js"
+import {AppRegistry} from 'react-native';
+import App from './src'; // здесь
+import {name as appName} from './app.json';
+ 
+AppRegistry.registerComponent(appName, () => App);
 ```
 
 ## useEffect
