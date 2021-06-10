@@ -200,7 +200,7 @@ AppRegistry.registerComponent(appName, () => App)
 ```jsx title="src/index.js"
 import React, { useState, useEffect } from 'react'
 import { View } from 'react-native'
-import { Header } from './src/components'
+import { Header } from './components'
 
 const App = () => {
   const [data, setData] = useState('')
