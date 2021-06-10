@@ -288,7 +288,7 @@ export { ImageCard }
 
 Вспоминаем из прошлых уроков компонент [FlatList](https://www.jscamp.app/docs/reactnative08) благодаря которому мы создаем список наших фильмов.
 
-```jsx title="index.js"
+```jsx title="src/index.js"
 import React, { useState, useEffect } from 'react'
 import { View, FlatList, StyleSheet, Text } from 'react-native'
 import { Header, ImageCard } from './components'
