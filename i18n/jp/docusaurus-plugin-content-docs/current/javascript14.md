@@ -119,6 +119,7 @@ function learnJavaScript() {
 - `y` - プロパティの位置にある文字から検索します **lastindex** 現在の正規表現。
 - `u` - サポートが含まれています **Unicode**.
 使用する 正規表現パターンを作成するさまざまな方法のフラグ
+
 <Tabs
 defaultValue="literal"
 values={[
