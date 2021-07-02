@@ -167,7 +167,7 @@ function learnJavaScript() {
 
 ## संपूर्ण
 
-विषय बहुत व्यापक है और हमारे द्वारा विकास में शायद ही कभी उपयोग किया जाता है, इसलिए यदि आप रुचि रखते हैं, तो आप इसके बारे में अधिक विस्तार से जान सकते हैं। [यहां,](https://learn.javascript.ru/regular-expressions)[ здесь](https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Regular_Expressions)[ и здесь.](https://tuhub.ru/frontend/js-regexp)
+विषय बहुत व्यापक है और हमारे द्वारा विकास में शायद ही कभी उपयोग किया जाता है, इसलिए यदि आप रुचि रखते हैं, तो आप इसके बारे में अधिक विस्तार से जान सकते हैं। [यहां,](https://learn.javascript.ru/regular-expressions)[ यहां](https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Regular_Expressions)[ और यहाँ।](https://tuhub.ru/frontend/js-regexp)
 
 ## समस्या?
 
