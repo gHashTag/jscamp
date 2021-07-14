@@ -4,13 +4,13 @@ title: SearchBar
 sidebar_label: SearchBar
 ---
 
-##SearchBar
+## SearchBar
 SearchBar из себя будет представлять поле для ввода названия и значок лупы. Он будет помогать ориентироваться по приложению.
 
-##Создаём файл SearchBar'а
+## Создаём файл SearchBar'а
 Так как SearchBar очень похож на Header просто создаём копию Header и переименовываем в SearchBar.js.
 
-##Редактируем код SearchBar
+## Редактируем код SearchBar
 Мы создали файл, но чтобы SearchBar был им, а не вторым Header, нужно отредактировать код.
 
 ```jsx
@@ -104,7 +104,7 @@ export { SearchBar }
 export * from './Search' 
 ```
 
-##Правка HomeScreen
+## Правка HomeScreen
 Далее, чтобы SearchBar у нас отображался нужно порефакторить код HomeScreen. Сначало мы добавим импорт SearchBar, потом опять-таки добавим нужное и уберём лишнее. 
 ```jsx
 import React, { Component } from 'react'

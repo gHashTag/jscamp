@@ -4,10 +4,10 @@ title: Header
 sidebar_label: Header
 ---
 
-##Header
+## Header
 В данном уроке мы адаптируем наш прошлый header под этот курс. Погнали!
 
-##Добавим импорт иконок
+## Добавим импорт иконок
 Добавляем строчки:
 ```jsx
 import from MaterialCommunityIcons from 'react-native-init/MaterialCommunityIcons'
@@ -16,7 +16,7 @@ import from MaterialCommunityIcons from 'react-native-init/MaterialCommunityIcon
 ```jsx
 import { w, BLUE } from '../../../constants'//добавляем импорт BLUE
 ```
-##Правка кода
+## Правка кода
 Заменяем всё написанное на это
 ```jsx
 import React from 'react'
@@ -101,7 +101,7 @@ marginRight: 3
 export { Header }
 ```
 
-##Правим HomeScreen
+## Правим HomeScreen
 ```jsx
 import React, { Component } from 'react'
 import { View } from 'react-native'

@@ -4,12 +4,12 @@ title: Boilerplate
 sidebar_label: Boilerplate
 ---
 
-##Redux Boilerplate
+## Redux Boilerplate
 
 Первым делом создаём папку ./src/actions и файл index.js в ней. Как мы помним Actions является действиями пользователя. А для тех, кто забыл напомнит вот эта картинка
 ![redux](https://thumbs.gfycat.com/SociableCraftyAlpaca-max-1m..)]
 
-##Написание кода файла ./src/action/index.js
+## Написание кода файла ./src/action/index.js
 
 ```jsx
 import { 
@@ -46,7 +46,7 @@ return onError(error)
 }
 ```
 
-##Правка HomeScreen
+## Правка HomeScreen
 
 ```jsx=./src/screen1/HomeScreen.js
 import React, { Component } from 'react'
@@ -132,7 +132,7 @@ data: state.search.data
 export default connect(mapStateToProps, { searchChanged, getMovies })(HomeScreen)
 ```
 
-##Правим App.js
+## Правим App.js
 
 Установим необходимые библиотеки
 
@@ -166,7 +166,7 @@ return (
 
 export default App
 ```
-##Создание Reducers
+## Создание Reducers
 
 Для начал создадим ./src/reducer и в ней файл index.js
 ```jsx

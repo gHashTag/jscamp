@@ -4,15 +4,15 @@ title: Thunk
 sidebar_label: Thunk
 ---
 
-##Redux Thunk
+## Redux Thunk
 
 Это middleware, который позволяет нам создовать асинхронные действия, асинхронные action, потому что сам JavaScript у нас синхронный. Соответсвенно, чтобы выполнять асинхронные действия нужно использовать это промежуточное ПО. 
 
-##Установка
+## Установка
 
 В прошлом уроке, если вы не забыли мы подключили библиотек redux-thunk
 
-##Добавление actions
+## Добавление actions
 
 ```jsx=../src/types.js
 export const SEARCH_CHANGE = ‘SEARCH_CHANGE'
@@ -55,7 +55,7 @@ return onError(error)
 }
 }
 ```
-##Правка SearchReducer.js
+## Правка SearchReducer.js
 
 ```jsx=../src/reducers/SeachReducers.js
 import { 
@@ -90,7 +90,7 @@ default: return state
 }
 ```
 
-##Правка HomeScreen.js
+## Правка HomeScreen.js
 
 ```jsx=../src/components/uikit/HomeScreen.js
 import React, { Component } from 'react'
@@ -176,7 +176,7 @@ data: state.search.data
 export default connect(mapStateToProps, { searchChanged, getMovies })(HomeScreen)
 ```
 
-##Правка ImageCard.js
+## Правка ImageCard.js
 
 ```jsx=../src/components/ImageCard.js
 import React from 'react'
