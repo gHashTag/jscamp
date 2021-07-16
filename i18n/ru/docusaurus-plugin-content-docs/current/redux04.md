@@ -5,14 +5,15 @@ sidebar_label: SearchBar
 ---
 
 ## SearchBar
-SearchBar из себя будет представлять поле для ввода названия и значок лупы. Он будет помогать ориентироваться по приложению.
+SearchBar из себя будет представлять поле для ввода названия и значок лупы. Он будет помогать ориентироваться по приложению. Из чего можно сделать вывод, что это очень нужная вещь, тем более если библиотека приложения очень большая.
 
 ## Видео
 
 [![redux](/img/redux/04.gif)](https://youtu.be/jkKukSinD2I)
 
 ## Создаём файл SearchBar'а
-Так как SearchBar очень похож на Header просто создаём копию Header и переименовываем в SearchBar.js.
+
+Так как SearchBar очень уж похож на Header нужно сделать следующее: создаём копию файла Header.js в той же папке, что и сам Header и называем SearchBar.js.
 
 ## Редактируем код SearchBar
 Мы создали файл, но чтобы SearchBar был им, а не вторым Header, нужно отредактировать код.
@@ -182,3 +183,5 @@ onPress={() => navigation.navigate(STARGATE_DETAILS, ({ show: item.show }))}
 
 export default (HomeScreen)
 ```
+В данном уроке мы создали SearchBar.
+[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)

@@ -14,17 +14,21 @@ sidebar_label: Thunk
 
 ## Установка
 
-В прошлом уроке, если вы не забыли мы подключили библиотек redux-thunk
+В прошлом уроке, если вы не забыли мы подключили библиотек redux-thunk, если вы каким-то образом забыли об этом пункте просто пропишите в терминал
+
+```jsx
+yarn add redux-thunk
+```
 
 ## Добавление actions
 
-```jsx=../src/types.js
+```jsx title="../src/types.js"
 export const SEARCH_CHANGE = ‘SEARCH_CHANGE'
 export const MOVIES_FETCHED = ‘MOVIES_FETCHED'
 export const MOVIES_FAILED = ‘MOVIES_FAILED'
 ```
 
-```jsx=../src/actions/index.js
+```jsx title="../src/actions/index.js"
 import { 
 SEARCH_CHANGE,
 MOVIES_FETCHED,
@@ -61,7 +65,7 @@ return onError(error)
 ```
 ## Правка SearchReducer.js
 
-```jsx=../src/reducers/SeachReducers.js
+```jsx title="../src/reducers/SeachReducers.js"
 import { 
 SEARCH_CHANGE,
 MOVIES_FETCHED,
@@ -96,7 +100,7 @@ default: return state
 
 ## Правка HomeScreen.js
 
-```jsx=../src/components/uikit/HomeScreen.js
+```jsx title="../src/components/uikit/HomeScreen.js"
 import React, { Component } from 'react'
 import { View } from 'react-native'
 import { connect } from 'react-redux'
@@ -182,7 +186,9 @@ export default connect(mapStateToProps, { searchChanged, getMovies })(HomeScreen
 
 ## Правка ImageCard.js
 
-```jsx=../src/components/ImageCard.js
+Для корректной работы Thunk нужно порефакторить и ImageCard.
+
+```jsx title="../src/components/ImageCard.js"
 import React from 'react'
 import { TouchableOpacity, Image, View, Text, StyleSheet } from 'react-native'
 import { W } from '../../../constants'
@@ -233,3 +239,5 @@ borderRadius: 10
 
 export { ImageCard }
 ```
+В данном уроке мы добавили стороннее ПО Redux Thunk.
+[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)

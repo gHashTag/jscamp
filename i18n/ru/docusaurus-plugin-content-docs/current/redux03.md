@@ -12,7 +12,7 @@ sidebar_label: Header
 [![redux](/img/redux/03.gif)](https://youtu.be/ycNdEtBMooA)
 
 ## Добавим импорт иконок
-Добавляем строчки:
+Добавляем строчки в файл Header.js:
 ```jsx
 import from MaterialCommunityIcons from 'react-native-init/MaterialCommunityIcons'
 ```
@@ -21,7 +21,7 @@ import from MaterialCommunityIcons from 'react-native-init/MaterialCommunityIcon
 import { w, BLUE } from '../../../constants'//добавляем импорт BLUE
 ```
 ## Правка кода
-Заменяем всё написанное на это
+Заменяем всё написанное так же в Header.js на это 
 ```jsx
 import React from 'react'
 import { TouchableOpacity, View, Text, StyleSheet } from 'react-native'
@@ -106,6 +106,8 @@ export { Header }
 ```
 
 ## Правим HomeScreen
+
+В файл HomeScreen.js вставляем данный текст, советую посмотреть изменения. Этим уже мы изменим HomeScreen, что достаточно логично
 ```jsx
 import React, { Component } from 'react'
 import { View } from 'react-native'
@@ -174,4 +176,5 @@ data: state.search.data
 
 export default connect(mapStateToProps, { searchChanged, getMovies })(HomeScreen)
 ```
-Мы изменили иконки и соответственно поправили код.
+В данном уроке мы изменили иконки и в соответствии к этому поправили код, относящийся к хедеру.
+[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)

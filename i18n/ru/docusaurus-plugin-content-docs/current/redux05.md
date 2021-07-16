@@ -6,6 +6,7 @@ sidebar_label: Boilerplate
 
 ## Redux Boilerplate
 
+В данном уроке мы научимся создавать стандартный BoilerPlate шаблон для проектов Redux.
 Первым делом создаём папку ./src/actions и файл index.js в ней. Как мы помним Actions является действиями пользователя. А для тех, кто забыл напомнит вот эта картинка
 ![redux](https://thumbs.gfycat.com/SociableCraftyAlpaca-max-1mb.gif)
 
@@ -52,7 +53,7 @@ return onError(error)
 
 ## Правка HomeScreen
 
-```jsx=./src/screen1/HomeScreen.js
+```jsx title="./src/screen1/HomeScreen.js"
 import React, { Component } from 'react'
 import { View } from 'react-native'
 import { connect } from 'react-redux'
@@ -146,8 +147,9 @@ yarn add redux-devtools-extension
 ```jsx
 yarn add redux-thunk
 ```
+Если вылезли ошибки, то пропишите заново/найдите их решение и опять-таки пропишите. Если всё прошло успешно, то погнали!
 
-```jsx=./App.js
+```jsx title="./App.js"
 import React from 'react'
 import { Provider } from 'react-redux'
 import { composeWithDevTools } from 'redux-devtools-extension'
@@ -172,7 +174,7 @@ export default App
 ```
 ## Создание Reducers
 
-Для начал создадим ./src/reducer и в ней файл index.js
+Для начала создадим ./src/reducer и в ней файл index.js
 ```jsx
 import { combineReducers } from 'redux'
 import SearchReducer from './SearchReducer'
@@ -214,3 +216,5 @@ default: return state
 }
 }
 ```
+В данном уроке мы научились создавать Boilerplate шаблон для проектов Redux.
+[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)

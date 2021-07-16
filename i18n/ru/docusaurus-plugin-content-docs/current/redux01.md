@@ -55,3 +55,6 @@ store.dispatch(action2)
 
 store.getState()
 ```
+
+ В данном уроке мы познакомились с базовой концепцией Redux.
+ [![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
