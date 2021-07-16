@@ -11,7 +11,7 @@ sidebar_label: Boilerplate
 
 ## Видео
 
-[![redux](/img/redux/00.gif)](https://youtu.be/jkKukSinD2I)
+[![redux](/img/redux/00.gif)](https://youtu.be/qXfb62ik0_k)
 
 ## Написание кода файла ./src/action/index.js
 
