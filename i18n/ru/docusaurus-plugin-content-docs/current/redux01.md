@@ -8,7 +8,7 @@ sidebar_label: Концепция
 
 Для того чтобы нам легче было понять Redux нам нужно запомнить данную цепочку.
 
-![redux](https://thumbs.gfycat.com/SociableCraftyAlpaca-max-1m..)
+![redux](https://thumbs.gfycat.com/SociableCraftyAlpaca-max-1mb.gif)
 
 И так повторяется до бесконечности раз.
 

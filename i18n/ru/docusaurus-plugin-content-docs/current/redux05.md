@@ -7,7 +7,7 @@ sidebar_label: Boilerplate
 ## Redux Boilerplate
 
 Первым делом создаём папку ./src/actions и файл index.js в ней. Как мы помним Actions является действиями пользователя. А для тех, кто забыл напомнит вот эта картинка
-![redux](https://thumbs.gfycat.com/SociableCraftyAlpaca-max-1m..)]
+![redux](https://thumbs.gfycat.com/SociableCraftyAlpaca-max-1mb.gif)
 
 ## Видео
 
