@@ -9,6 +9,10 @@ sidebar_label: Boilerplate
 Первым делом создаём папку ./src/actions и файл index.js в ней. Как мы помним Actions является действиями пользователя. А для тех, кто забыл напомнит вот эта картинка
 ![redux](https://thumbs.gfycat.com/SociableCraftyAlpaca-max-1m..)]
 
+## Видео
+
+[![redux](/img/redux/00.gif)](https://youtu.be/jkKukSinD2I)
+
 ## Написание кода файла ./src/action/index.js
 
 ```jsx

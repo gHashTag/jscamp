@@ -7,6 +7,10 @@ sidebar_label: SearchBar
 ## SearchBar
 SearchBar из себя будет представлять поле для ввода названия и значок лупы. Он будет помогать ориентироваться по приложению.
 
+## Видео
+
+[![redux](/img/redux/00.gif)](https://youtu.be/jkKukSinD2I)
+
 ## Создаём файл SearchBar'а
 Так как SearchBar очень похож на Header просто создаём копию Header и переименовываем в SearchBar.js.
 

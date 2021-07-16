@@ -7,6 +7,10 @@ sidebar_label: Header
 ## Header
 В данном уроке мы адаптируем наш прошлый header под этот курс. Погнали!
 
+## Видео
+
+[![redux](/img/redux/00.gif)](https://youtu.be/ycNdEtBMooA)
+
 ## Добавим импорт иконок
 Добавляем строчки:
 ```jsx
