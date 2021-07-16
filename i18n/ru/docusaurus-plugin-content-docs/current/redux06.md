@@ -10,7 +10,7 @@ sidebar_label: Thunk
 
 ## Видео
 
-[![redux](/img/redux/00.gif)](https://youtu.be/-eE3ySQIV80)
+[![redux](/img/redux/06.gif)](https://youtu.be/-eE3ySQIV80)
 
 ## Установка
 

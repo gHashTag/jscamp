@@ -9,7 +9,7 @@ sidebar_label: Header
 
 ## Видео
 
-[![redux](/img/redux/00.gif)](https://youtu.be/ycNdEtBMooA)
+[![redux](/img/redux/03.gif)](https://youtu.be/ycNdEtBMooA)
 
 ## Добавим импорт иконок
 Добавляем строчки:

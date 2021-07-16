@@ -14,7 +14,7 @@ sidebar_label: Концепция
 
 ## Видео
 
-[![redux](/img/redux/00.gif)](https://youtu.be/3iNnqtmEgtg)
+[![redux](/img/redux/01.gif)](https://youtu.be/3iNnqtmEgtg)
 
 ## Как же познакомиться с Redux?
 

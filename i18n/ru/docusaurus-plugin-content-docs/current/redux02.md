@@ -6,13 +6,13 @@ sidebar_label: Установка
 
 ## Видео
 
-[![redux](/img/redux/00.gif)](https://youtu.be/xTjsEphn7Pg)
+[![redux](/img/redux/02.gif)](https://youtu.be/xTjsEphn7Pg)
 
 ## Установка
 Для установки репозитория проекта необходимо ввести в консоль:
 
 ```jsx
-git clone https://github.com/react-native-village/react-native-.. -b stargate2
+git clone https://github.com/react-native-village/react-native-init -b stargate2
 ```
 Далее вводим каждую из строчек по очереди:
 ```jsx

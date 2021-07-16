@@ -9,7 +9,7 @@ SearchBar из себя будет представлять поле для вв
 
 ## Видео
 
-[![redux](/img/redux/00.gif)](https://youtu.be/jkKukSinD2I)
+[![redux](/img/redux/04.gif)](https://youtu.be/jkKukSinD2I)
 
 ## Создаём файл SearchBar'а
 Так как SearchBar очень похож на Header просто создаём копию Header и переименовываем в SearchBar.js.
