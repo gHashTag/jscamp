@@ -112,7 +112,7 @@ export * from './Search'
 ## Правка HomeScreen
 Далее, чтобы SearchBar у нас отображался нужно порефакторить код HomeScreen. Сначало мы добавим импорт SearchBar, потом опять-таки добавим нужное и уберём лишнее. 
 ```jsx
-import React, { Component } from 'react'
+import React, { Component, useEffect, useState } from 'react'
 import { View } from 'react-native' 
 import { Header, Layout, ImageCard, Search } from '../components/uikit'
 import {
@@ -131,20 +131,19 @@ componentDidMount = async () => {
 try {
 const response = await fetch(url)
 const data = await response.json()
-this.setState({ data })
+useState({ data })
 } catch (e) {
 throw e
 }
 }
 
 onSearchChange = (text) => {
-this.props.searchChanged(text)
+props.searchChanged(text)
 }
 
 render() {
-const { visibleSearchbar } = this.state
-const { navigation, data } = this.props
-//console.log('this.props', this.props)
+const { visibleSearchbar } = useState
+const { navigation, data } = props
 return (
 <View>
 { visibleSearchbar ?
@@ -152,17 +151,17 @@ return (
 colorRight={'#fff'}
 iconRight="magnify"
 placeholder="Search"
-onChangeText={this.onSearchChange}
+onChangeText={useEffect.onSearchChange}
 value={movie}
-onPressRight={() => this.setState({ visibleSearchbar: false })}
-onBlur={() => this.setState({ visibleSearchbar: false })}
+onPressRight={() => useState({ visibleSearchbar: false })}
+onBlur={() => useState({ visibleSearchbar: false })}
 /> :
 <Header
 title={movie ? movie : 'Search'} 
 colorRight={'#fff'}
 iconRight="magnify"
 onPressRi
-ght={() => this.setState({ visibleSearchbar: true })}
+ght={() => useState({ visibleSearchbar: true })}
 /> 
 }
 <Layout>

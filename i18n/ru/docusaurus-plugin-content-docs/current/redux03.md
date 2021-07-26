@@ -109,7 +109,7 @@ export { Header }
 
 В файл HomeScreen.js вставляем данный текст, советую посмотреть изменения. Этим уже мы изменим HomeScreen, что достаточно логично
 ```jsx
-import React, { Component } from 'react'
+import React, { Component, useState, useEffect } from 'react'
 import { View } from 'react-native'
 import {BLUE} from '../../constants' 
 import { Header, Layout, ImageCard } from '../components/uikit' 
@@ -129,19 +129,18 @@ componentDidMount = async () => {
 try {
 const response = await fetch(url)
 const data = await response.json()
-this.setState({ data })
+useState({ data })
 } catch (e) {
 throw e
 }
 }
 onSearchChange = (text) => {
-this.props.searchChanged(text)
-this.props.getMovies(text) 
+props.searchChanged(text)
+props.getMovies(text) 
 }
 
 render() {
-const { navigation, movie, data } = this.props
-//console.log('this.props', this.props)
+const { navigation, movie, data } = props
 return (
 <View style={container}>
 <Header

@@ -101,7 +101,7 @@ default: return state
 ## Правка HomeScreen.js
 
 ```jsx title="../src/components/uikit/HomeScreen.js"
-import React, { Component } from 'react'
+import React, { Component, useEffect, useState } from 'react'
 import { View } from 'react-native'
 import { connect } from 'react-redux'
 import _ from 'lodash'
@@ -126,21 +126,20 @@ componentDidMount = async () => {
 try {
 const response = await fetch(url)
 const data = await response.json()
-this.setState({ data })
+useState({ data })
 } catch (e) {
 throw e
 }
 }
 
 onSearchChange = (text) => {
-this.props.searchChanged(text)
-this.props.getMovies(text)
+props.searchChanged(text)
+props.getMovies(text)
 }
 
 render() {
-const { visibleSearchbar } = this.state
-const { navigation, movie, data } = this.props
-//console.log('this.props', this.props)
+const { visibleSearchbar } = state
+const { navigation, movie, data } = props
 return (
 <View>
 { visibleSearchbar ?
@@ -148,16 +147,16 @@ return (
 colorRight={'#fff'}
 iconRight="magnify"
 placeholder="Search"
-onChangeText={this.onSearchChange}
+onChangeText={props.onSearchChange}
 value={movie}
-onPressRight={() => this.setState({ visibleSearchbar: false })}
-onBlur={() => this.setState({ visibleSearchbar: false })}
+onPressRight={() => useState({ visibleSearchbar: false })}
+onBlur={() => useState({ visibleSearchbar: false })}
 /> :
 <Header
 title={movie ? movie : 'Search'} 
 colorRight={'#fff'}
 iconRight="magnify"
-onPressRight={() => this.setState({ visibleSearchbar: true })}
+onPressRight={() => useState({ visibleSearchbar: true })}
 /> 
 }
 <Layout>
