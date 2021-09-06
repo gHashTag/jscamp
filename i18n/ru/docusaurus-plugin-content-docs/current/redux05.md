@@ -17,127 +17,101 @@ sidebar_label: Boilerplate
 ## Написание кода файла ./src/action/index.js
 
 ```jsx
-import { 
-SEARCH_CHANGE,
-MOVIES_FETCHED,
-MOVIES_FAILED
-} from '../types'
+import SEARCH_CHANGE from '../types'
 
 export const searchChanged = (text) => {
-return {
-type: SEARCH_CHANGE,
-payload: text
-}
-} 
-
-export const getMovies = (text) => async (dispatch) => {
-function onSuccess(success) {
-dispatch({ type: MOVIES_FETCHED, payload: success })
-return success
-}
-function onError(error) {
-dispatch({ type: MOVIES_FAILED, error })
-return error
-}
-try {
-const URL = `https://api.tvmaze.com/search/shows?q=${text}`
-const res = await fetch(URL, {
-method: 'GET'
-})
-const success = await res.json()
-return onSuccess(success)
-} catch (error) {
-return onError(error)
+    console.log('text', text)
+ return {
+     type: SEARCH_CHANGE ,
+     payload: text
+ }
 }
 ```
 
 ## Правка HomeScreen
 
 ```jsx title="./src/screen1/HomeScreen.js"
-import React, { Component } from 'react'
+import React, {Component, useState} from 'react'
 import { View } from 'react-native'
 import { connect } from 'react-redux'
-import _ from 'lodash'
-import { 
-searchChanged,
-getMovies
-} from '../actions'
-import { Header, Layout, ImageCard, Search } from '../components/uikit'
+import { searchChanged } from '../actions'
+import { Header, Layout, ImageCard, SearchBar } from '../components/uikit'
 import {
-STARGATE_DETAILS
+  STARGATE_DETAILS
 } from '../routes'
 
 const url = 'https://api.tvmaze.com/search/shows?q=stargate'
-
 class HomeScreen extends Component {
-state = {
-data: [],
-visibleSearchbar: false
-}
+  state = {
+    title: 'STAR GATE',
+    data: [],
+    visibleSearchBar: false
+  }
 
-componentDidMount = async () => {
-try {
-const response = await fetch(url)
-const data = await response.json()
-this.setState({ data })
-} catch (e) {
-throw e
-}
-}
-
-onSearchChange = (text) => {
-this.props.searchChanged(text)
-this.props.getMovies(text)
-}
-
-render() {
-const { visibleSearchbar } = this.state
-const { navigation, movie, data } = this.props
-//console.log('this.props', this.props)
-return (
-<View>
-{ visibleSearchbar ?
-<Search
-colorRight={'#fff'}
-iconRight="magnify"
-placeholder="Search"
-onChangeText={this.onSearchChange}
-value={movie}
-onPressRight={() => this.setState({ visibleSearchbar: false })}
-onBlur={() => this.setState({ visibleSearchbar: false })}
-/> :
-<Header
-title={movie ? movie : 'Search'} 
-colorRight={'#fff'}
-iconRight="magnify"
-onPressRight={() => this.setState({ visibleSearchbar: true })}
-/> 
-}
-<Layout>
-{ data.map(item => (
-<ImageCard
-data={item.show}
-key={item.show.id}
-onPress={() => navigation.navigate(STARGATE_DETAILS, ({ show: item.show }))}
-/>
-))}
-</Layout>
-</View>
-)
-}
+  componentDidMount = async () => {
+    try {
+      const response = await fetch(url)
+      const data = await response.json()
+      useState({ data })
+    } catch (e) {
+      throw e
+    }
+  }  
+  _onChangeText = text => {
+    this.props.searchChanged(text)
+  }
+  
+  render() {
+    const { title, data, visibleSearchBar } = this.state
+    const { navigation, movie } = this.props
+    //console.log('this.props', this.props)
+    return (
+      <View>
+        {
+          visibleSearchBar ?
+          <SearchBar
+           colorRight={'#fff'}
+           iconRight="magnify"
+           placeholder="Search"
+           onChangeText={this._onChangeText}
+           value={movie}
+           onPressRight={() => useState({ visibleSearchBar: false})}
+           onBlur={() => useState({ visibleSearchBar: true })}
+          /> :
+          <Header 
+          title={title} 
+          colorRight={'#fff'}
+          iconRight="magnify" 
+          onPress={() => navigation.openDrawer()}
+          onPressRight={() => useState({ visibleSearchBar: true })}
+        />
+        }
+        <Layout>
+          { data.map(item => (
+            <ImageCard
+              data={item.show}
+              key={item.show.id}
+              onPress={() => navigation.navigate(STARGATE_DETAILS, ({ show: item.show, onGoBack: this.onGoBack}))}
+            />
+          ))}
+        </Layout>
+      </View>
+    )
+  }
 }
 
 const mapStateToProps = state => {
-return {
-movie: state.search.movie,
-data: state.search.data
-}
+  return {
+    movie: state.search.movie
+  }
 }
 
-export default connect(mapStateToProps, { searchChanged, getMovies })(HomeScreen)
+export default connect(mapStateToProps, { SearchChanged })(HomeScreen) 
 ```
 
-## Правим App.js
+## Cоздание и написание App.js
+
+Создадим файл App.js.
 
 Установим необходимые библиотеки
 
@@ -159,62 +133,69 @@ import reducers from './src/reducers'
 import Screen from './src/screen1'
 
 const store = createStore(reducers, composeWithDevTools(
-applyMiddleware(ReduxThunk)
+    applyMiddleware(ReduxThunk)
 ))
 
-const App = () => {
-return (
-<Provider store={store}>
-<Screen />
-</Provider>
-)
+const App = () => { 
+    return (
+        <Provider store={store}>
+            <Screen />
+        </Provider>
+    )
 }
 
 export default App
 ```
+
+И соответственно поправим корневой index.js
+ 
+```jsx
+/** @format */
+
+import {AppRegistry} from 'react-native'
+import App from './App'
+import {name as appName} from './app.json'
+
+AppRegistry.registerComponent(appName, () => App)
+```
+
 ## Создание Reducers
 
-Для начала создадим ./src/reducer и в ней файл index.js
+Для начала создадим ./src/reducers и в ней файл index.js
 ```jsx
 import { combineReducers } from 'redux'
 import SearchReducer from './SearchReducer'
 
 export default combineReducers({
-search: SearchReducer
+    search: SearchReducer
 })
 ```
 Далее создаём SearchReducer.js в той же папке
 ```jsx
-import { 
-SEARCH_CHANGE,
-MOVIES_FETCHED,
-MOVIES_FAILED
-} from '../types'
+import SEARCH_CHANGE from '../types'
 
 const INITIAL_STATE = {
-movie: '',
-data: []
+    movie: ''
 }
-
 export default (state = INITIAL_STATE, action) => {
-switch (action.type) {
-case SEARCH_CHANGE:
-return {
-...state,
-movie: action.payload
-}
-case MOVIES_FETCHED:
-return {
-...state,
-data: action.payload
-}
-case MOVIES_FAILED:
-return {
-...state
-}
-default: return state
-}
+    console.log('action', action)
+    switch(action.type) {
+        case SEARCH_CHANGE:
+            return {
+                ...state,
+                movie: action.payload
+            }
+            default: return state
+    }
 }
 ```
+## Cоздаём types.js
+
+В папке src создаём файл types.js и пишем
+
+```jsx
+export const SEARCH_CHANGE = 'SEARCH_CHANGE'
+```
+
 В данном уроке мы научились создавать Boilerplate шаблон для проектов Redux.
 [![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
