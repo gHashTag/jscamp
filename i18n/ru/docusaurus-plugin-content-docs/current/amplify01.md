@@ -6,7 +6,7 @@ sidebar_label: Serverless
 
 # Модельная разработка
 
-Модельная разработка мобильных приложений [React Native](https://reactnative.dev) и сайтов на [React Native for Web](https://necolas.github.io/react-native-web/) с использованием фреймворка AWS Amplify.
+Модельная разработка мобильных приложений [React Native](https://reactnative.dev) и сайтов на [React Native for Web](https://necolas.github.io/react-native-web/).
 
 В программировании существует способ разработки по фичам, далее по тексту «Разработка по фичам» - это метод, при котором ставиться задача на словах с ссылкой на Zepllin и в лучшем случае прототипа в Marvel App.
 
