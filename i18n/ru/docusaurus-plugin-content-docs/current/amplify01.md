@@ -68,15 +68,9 @@ import { StyleProp, ViewStyle, TextStyle } from 'react-native'
 
 type sizeType = 'xLarge' | 'large' | 'medium' | 'small'
 
-export interface S3ObjectT {
-  bucket: string
-  region: string
-  key: string
-}
-
 interface AvatarT {
   loading: boolean
-  avatar: S3ObjectT
+  avatar: string 
   onPress?: () => void
   size?: sizeType
   viewStyle?: StyleProp<ViewStyle>
