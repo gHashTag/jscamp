@@ -4,7 +4,7 @@ title: Serverless
 sidebar_label: Serverless
 ---
 
-# Right MVP solution - Plan B
+# Модельная разработка
 
 Модельная разработка мобильных приложений [React Native](https://reactnative.dev) и сайтов на [React Native for Web](https://necolas.github.io/react-native-web/) с использованием фреймворка AWS Amplify.
 
