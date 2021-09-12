@@ -302,7 +302,8 @@ type UserProfile @model @auth(rules: [{ allow: owner, ownerField: "owner", opera
 
 Подробнее о ценах [здесь](https://aws.amazon.com/ru/appsync/pricing/)
 
-Снипет трека на тему "Модельная разработка" слушай [здесь](https://www.dropbox.com/s/zt51wbt51s1za83/Model%20development.wav?dl=0)
+## Снипет трека на тему "Модельная разработка" 
+Прослушать [здесь](https://www.dropbox.com/s/zt51wbt51s1za83/Model%20development.wav?dl=0)
 
 Текст трека - "Модельная разработка": 
 
