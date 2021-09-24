@@ -40,18 +40,32 @@ tsc -v
 
 ![tsversion](/img/typescript/01/version.png)
 
-## Payment
+## Initializing TypeScript in a project
 
-Now you are on a stripped-down version of the site, after subscribing to [Patreon](https://www.patreon.com/javascriptcamp), you will get full access to the training course, as well as access to our server's private channels in [Discord](https://discord.gg/6GDAfXn).
+All that remains to be done is to connect TypeScript to your project. To do this, you need to create a file with the extension `.ts` in the project folder, write the code and compile it.
+This can be done in PowerShell with the command:
 
-Download our [mobile application](http://onelink.to/njhc95) or get tested in our [JavaScript telegram bot](https://t.me/javascriptcamp_bot), and also subscribe to [our news](https://t.me/javascriptapp).
+```bash
+tsc
+```
 
-[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
+For example:
 
+```bash
+tsc app.ts
+```
 
-[![Sumerian school](/img/app.jpg)](http://onelink.to/njhc95)
+:::note Note
+First you need to move to the project folder. Otherwise, the file will not be found. On the command line, moving through folders is done with the command `cd`.
+:::
+The compiler will create a file with the extension `.js`. Compilation is required after each change.
 
- 
+It's that easy to work with TypeScript.
+
+## Links:
+
+1.  [TypeScript.org](https://www.typescriptlang.org/#installation)
+2.  [Metanit](https://metanit.com/web/typescript/1.2.php)
 
 ## Contributors ✨
 

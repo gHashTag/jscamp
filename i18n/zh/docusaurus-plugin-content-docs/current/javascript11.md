@@ -98,26 +98,112 @@ function learnJavaScript() {
 }
 ```
 
-## 支付
+### 數值轉換規則:
 
-訂閱以下內容後，您現在處於該網站的精簡版本中 [Patreon](https://www.patreon.com/javascriptcamp), 您將獲得對培訓課程的完全訪問權限，以及在以下位置訪問我們服務器的私人頻道的權限：[Discord](https://discord.gg/6GDAfXn).
+| Value            |                                                                              Converted to ...                                                                               |
+| ---------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| `undefined`      |                                                                                    `NaN`                                                                                    |
+| `null`           |                                                                                     `0`                                                                                     |
+| `true` /` false` |                                                                                  `1` /` 0`                                                                                  |
+| `string`         | 邊緣處留有空白。 此外，如果保留一個空字符串，則我們將得到0，否則將從非空字符串“讀取”一個數字。 錯誤時，結果為 NaN。 |
 
-下載我們的 [mobile application](http://onelink.to/njhc95) o在我們的測試中 [JavaScript telegram bot](https://t.me/javascriptcamp_bot), 並訂閱 [our news](https://t.me/javascriptapp).
+例子:
 
-[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
+```javascript
+Number('   123   ') // 123
+Number('123z') // NaN (error reading the number in place of the "z" character)
+Number(true) // 1
+Number(false) // 0
+Number(null) // 0
+Number(undefined) // NaN
+```
 
+注意 `null` 和 `undefined` 表現不同。 所以， `null` 變為零，而 `undefined` 被投射到 `NaN`.
 
-[![Sumerian school](/img/app.jpg)](http://onelink.to/njhc95)
+### 布爾轉換
 
- 
+![Transformation](https://media.giphy.com/media/JjAdpCxrdro7m/giphy.gif)
+
+邏輯轉換是最簡單的。 發生在邏輯運算中，但也可以使用功能⚙️顯式執行 `Boolean (value)`.
+
+### 布爾轉換規則:
+
+直觀上是“空”的值，例如 `0`, an empty string,`一個空字符串null`, `undefined`, 和 `NaN` 變得`false`. 所有其他值變為 `true`.
+
+```javascript
+Boolean(1) // true
+Boolean(0) // false
+Boolean('Привет!') // true
+Boolean('') // false
+```
+
+:::注意請注意，零“ 0”的行為true
+某些語言👅（例如PHP）會解釋字符串 `" 0 "` 作為 `false`. 但是在JavaScript中，如果字符串不為空，則始終為 `true`
+:::
+
+```javascript
+Boolean('0') // true
+Boolean(' ') // space is also true (any non-empty string is true)
+```
+
+## 問題？
+
+![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
+
+頻道輸入 [Discord](https://discord.gg/6GDAfXn) 付款後 [Patreon](https://www.patreon.com/javascriptcamp).
+
+## 問題:
+
+![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
+
+您應該使用哪個函數進行字符串轉換？
+
+1. `String (value)`
+2. `Boolean (value)`
+3. `Number (value)`
+
+什麼是類型轉換？
+
+1.將數據從一種類型傳輸到另一種類型
+2.將值從一種數據類型轉換為另一種數據類型
+3.用字符串表示事物
+
+類型轉換和類型轉換之間的主要區別是什麼？
+
+1.類型轉換是顯式的，類型轉換是隱式的
+2.類型轉換是隱式的，類型轉換是顯式的
+3.類型轉換是隱式的，類型轉換可以是顯式的也可以是隱式的
+
+轉換結果何時 `NaN`?
+
+1.無法將字符串顯式轉換為數字時
+2.無法將數字顯式轉換為字符串時
+3.當代碼中有錯誤時
+
+做什麼 “empty” 轉換時會變成值？
+
+1. `null`
+2. `true`
+3. `false`
+
+為了了解您學到了多少本課程，請對 [mobile application](http://onelink.to/njhc95) 我們學校就這個話題。
+
+![Sumerian school](/img/app.jpg)
+
+## 鏈接
+
+1. [MDN web docs - Typecasting](https://developer.mozilla.org/en/docs/Словарь/Type_coercion)
+2. [Code for Teens: The Perfect Beginner's Guide to Programming, Volume 1: Javascript - Jeremy Moritz](https://www.amazon.com/Code-Teens-Beginners-Programming-Javascript-ebook/dp/B07FCTLVPC)
+3. [JavaScript.ru](https://learn.javascript.ru/ifelse#blok-else)
+4. [Integer arithmetic](https://maths-public.ru/arithmetic/actions)
 
 ## 貢獻者 ✨
 
-T向這些好人致敬([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+感謝這些好人 ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
 <table>
   <tr>
-    <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /> <a href="https://github.com/gHashTag/react-native-village/commits?author=gHashTag" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /> <a href="https://github.com/gHashTag/react-native-village/commits?author=gHashTag" title="Documentation">📖</a><a href="#financial-gHashTag" title="Financial">💵</a></td>
     <td align="center"><a href="https://github.com/Resoner2005"><img src="https://avatars1.githubusercontent.com/u/75675814?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Resoner2005</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/issues?q=author%3AResoner2005" title="Bug reports">🐛 🎨 🖋</a></td>
   </tr>
   

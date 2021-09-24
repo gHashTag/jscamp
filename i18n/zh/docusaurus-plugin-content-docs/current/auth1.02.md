@@ -1,42 +1,38 @@
 ---
 id: auth1-02
-title: Authentication
-sidebar_label: Part II
+title: Аутентификация
+sidebar_label: Часть II
 ---
 
-import YouTube from 'react-youtube'
+Во-первых стандартный UI от Amplify далеко не всегда удовлетворяет UX приходящий со стороны заказчика
 
-First, the standard UI from Amplify does not always satisfy the UX coming from the customer.
-
-Secondly in the [official documentation](https://aws-amplify.github.io/docs/js/react#note-on-jwt-storage) Amplify says:
+Во-вторых в [официальной документации](https://aws-amplify.github.io/docs/js/react#note-on-jwt-storage) Amplify написано:
 
 > Data is stored unencrypted when using standard storage adapters (localStorage in the browser and AsyncStorage on React Native). Amplify gives you the option to use your own storage object to persist data. With this, you could write a thin wrapper around libraries like: react-native-keychain react-native-secure-storage Expo’s secure store
 
-This means that the authentication data is stored in an unencrypted form, and this is a risk 🕷 information security with possible negative consequences 🕸, so we will solve these two tasks in this part.
+Это значит, что данные аутентификации хранятся в не зашифрованном виде, а это риск 🕷 информационной безопасности с возможными негативными последствиями 🕸, поэтому мы решим эти две задачи в этой части.
 
-All the code for this part can be found at [GitHub](https://github.com/react-native-village/aws-amplify-react-hooks/tree/master/examples/reactNativeCRUDv2).
+Весь код для этой части можно найти на [GitHub](https://github.com/react-native-village/aws-amplify-react-hooks/tree/master/examples/reactNativeCRUDv2).
 
-## Video
-
-<YouTube videoId="QMObthDaewQ" />
+[![AWS Amplify](/img/auth/00.gif)](https://youtu.be/CM_M5cNLmK4)
 
 ![Step01](/img/steps/01.png)
 
-## Clone the repository
+## Клонируем репозиторий
 
-We will use our UI Kit, but you can easily replace it with your own or any other.
+Мы будем использовать наш UI Kit, но вы можете легко заменить его своим или любым другим.
 
 ```bash
 git clone https://github.com/fullstackserverless/auth.git
 ```
 
-go to the project folder
+переходим в папку проекта
 
 ```bash
 cd auth
 ```
 
-Install dependencies
+Устанавливаем зависимости
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -65,41 +61,41 @@ yarn
 
 ![Step02](/img/steps/02.png)
 
-## Initializing AWS Amplify in a React Native Project
+## Инициализация AWS Amplify в проекте React Native
 
-Initialize our AWS Amplify project in the root directory.
+Инициализируйте наш проект AWS Amplify в корневом каталоге.
 
 ```bash
 amplify init
 ```
 
-Answer these questions:
+Ответь на эти вопросы:
 
 ![amplify init](/img/auth/auth02.png)
 
-The project has been successfully initialized 🚀
+Проект успешно инициализирован 🚀
 
 ![Step03](/img/steps/03.png)
 
-## Connect authentication plugin
+## Подключить плагин аутентификации
 
-Now that the application is in the cloud, you can add some functionality, such as allowing users to register with our application and sign in.
+Теперь, когда приложение находится в облаке, вы можете добавить некоторые функции, такие как разрешение пользователям регистрироваться в нашем приложении и входить в систему.
 
-Use the command:
+Используйте команду:
 
 ```bash
 amplify add auth
 ```
 
-Connect the authentication function. Select the default configuration. This adds auth resource configurations locally to your directory ampify/backend/auth
+Подключите функцию аутентификации. Выберите конфигурацию по умолчанию. Это добавляет конфигурации ресурсов аутентификации локально в ваш каталог ampify/backend/auth
 
 <div class="alert alert--info" role="alert">
-  📌 Select the profile we want to use (default). Enter and how users will log in. Email (write off money for SMS).
+  📌 Выберите профиль, который мы хотим использовать(default). Введите и как пользователи будут входить. Электронная почта (списать деньги за смс).
 </div>
 
 ![amplify init](/img/auth/auth03.png)
 
-Send changes to the cloud 💭
+Отправить изменения в облако 💭
 
 ```bash
 amplify push
@@ -109,15 +105,15 @@ amplify push
 
 ![Step04](/img/steps/04.png)
 
-## Connect AWS Amplify to React Native
+## Подключите AWS Amplify к React Native
 
-Details can be found in [instructions](https://aws-amplify.github.io/docs/js/react) 📃. In short, you can add these dependencies below to connect AWS Amplify:
+Подробности можно найти в [инструкции](https://aws-amplify.github.io/docs/js/react) 📃. Короче говоря, вы можете добавить эти зависимости ниже для подключения AWS Amplify:
 
 ```bash
 yarn add aws-amplify @aws-amplify/core aws-amplify-react-native amazon-cognito-identity-js @react-native-community/netinfo
 ```
 
-After installation, be sure to go to the ios folder and put the pods
+После установки обязательно заходим в папку ios и ставим поды
 
 ```bash
 cd ios && pod install && cd ..
@@ -125,46 +121,46 @@ cd ios && pod install && cd ..
 
 ![Step05](/img/steps/05.png)
 
-## Navigation
+## Навигация
 
-Install react-navigation v5 based on this instruction [here](https://reactnavigation.org/docs/getting-started/)
-(at the time of writing this is the latest navigation version)
+Установите react-navigation v5, основываясь этой инструкции [здесь](https://reactnavigation.org/docs/getting-started/)
+(на момент написания статьи это последняя версия навигации)
 
 ```bash
 yarn add react-native-reanimated react-native-gesture-handler react-native-screens react-native-safe-area-context @react-native-community/masked-view @react-navigation/stack
 ```
 
-Add pods for iOS
+Добавить поды для iOS
 
 ```bash
 cd ios && pod install && cd ..
 ```
 
 <div class="alert alert--info" role="alert">
-📌 I recommend running the iOS and Android app after each installation, in order to avoid searching for the library that crashes the app.
+📌 Рекомендую запускать приложение для iOS и Android, после каждой установки, во избежание поиска библиотеки, из-за которой приложение вылетает.
 </div>
 
 ![Step06](/img/steps/06.png)
 
 ## react-native-keychain
 
-Add `react-native-keychain` - this is a secure keychain library for React Native.
+Добавьте `react-native-keychain` - это безопасная библиотека хранилища ключей для React Native.
 
 ```bash
 yarn add react-native-keychain
 ```
 
-Add pods for iOS
+Добавить поды для iOS
 
 ```bash
 cd ios && pod install && cd ..
 ```
 
-According to [official documentation:](https://aws-amplify.github.io/docs/js/authentication#managing-security-tokens)
+Согласно [официальной документации:](https://aws-amplify.github.io/docs/js/authentication#managing-security-tokens)
 
 > При использовании аутентификации с помощью AWS Amplify вам не нужно обновлять токены Amazon Cognito вручную. При необходимости токены автоматически обновляются библиотекой. Маркеры безопасности, такие как IdToken или AccessToken, хранятся в localStorage для браузера и в AsyncStorage для React Native. Если вы хотите хранить эти токены в более безопасном месте или использовать Amplify на стороне сервера, вы можете предоставить свой собственный объект хранения для хранения этих токенов.
 
-Modifying the file:
+Изменяем файл:
 
 ```tsx title="src/index.tsx"
 import React, { ReactElement } from 'react'
@@ -200,7 +196,7 @@ const LightTheme = {
 const MEMORY_KEY_PREFIX = '@MyStorage:'
 let dataMemory: any = {}
 class MyStorage {
-  static syncPromise = null;
+  static syncPromise = null
 
   static setItem(key: string, value: string): boolean {
     Keychain.setGenericPassword(MEMORY_KEY_PREFIX + key, value)
@@ -226,10 +222,10 @@ class MyStorage {
 Amplify.configure({
   ...awsconfig,
   Analytics: {
-    disabled: false,
+    disabled: false
   },
-  storage: MyStorage,
-});
+  storage: MyStorage
+})
 
 const App = (): ReactElement => {
   /**
@@ -242,30 +238,30 @@ const App = (): ReactElement => {
         <AppNavigator />
       </ThemeProvider>
     </>
-  );
-};
+  )
+}
 
-export default App;
+export default App
 ```
 
-AppSync supports API keys, Amazon IAM credentials, Amazon Cognito user pools, and third-party OIDC providers for client authorization. This is output from aws-exports.js when Amplify.configure () is called.
+Для авторизации клиентов AppSync поддерживает ключи API, учетные данные Amazon IAM, пулы пользователей Amazon Cognito и сторонних поставщиков OIDC. Это выводится из файла aws-exports.js при вызове Amplify.configure().
 
-When using authentication with AWS Amplify, you do not need to manually renew your Amazon Cognito tokens. The tokens are automatically updated by the library if necessary.
-Security tokens such as IdToken or AccessToken are stored in localStorage for the browser and AsyncStorage for React Native. If you want to store these tokens in a more secure location, or if you use Amplify on the server side, you can provide your own storage object to store these tokens.
+При использовании аутентификации с AWS Amplify вам не нужно обновлять токены Amazon Cognito вручную. При необходимости токены автоматически обновляются библиотекой.
+Токены безопасности, такие как IdToken или AccessToken, хранятся в localStorage для браузера и в AsyncStorage для React Native. Если вы хотите хранить эти токены в более безопасном месте или используете Amplify на стороне сервера, вы можете предоставить свой собственный объект хранения для хранения этих токенов.
 
 ![Step07](/img/steps/07.png)
 
 ## AppNavigator
 
-Create a navigation config file for our custom authentication.
-Add a welcome screen to it.
+Создайте файл конфигурации навигации для нашей пользовательской аутентификации.
+Добавьте к нему экран приветствия.
 
 ```tsx title="src/AppNavigator.tsx"
 import * as React from 'react'
 import { createStackNavigator } from '@react-navigation/stack'
 import { Hello } from './screens/Authenticator'
 
-const Stack = createStackNavigator();
+const Stack = createStackNavigator()
 
 export type RootStackParamList = {
   HELLO: undefined
@@ -275,32 +271,33 @@ const AppNavigator = () => {
   return (
     <Stack.Navigator
       screenOptions={{
-        headerShown: false,
+        headerShown: false
       }}
-      initialRouteName="HELLO">
+      initialRouteName="HELLO"
+    >
       <Stack.Screen name="HELLO" component={Hello} />
     </Stack.Navigator>
-  );
-};
+  )
+}
 
-export default AppNavigator;
+export default AppNavigator
 ```
 
 ![Step08](/img/steps/08.png)
 
 ## Hello screen
 
-Create an entry point for our authentication screens.
+Создайте точку входа для наших экранов аутентификации.
 
 ![Hello screen](/img/auth/auth1-04.png)
 
-Let's connect the welcome screen:
+Подключим экран приветствия:
 
 ```ts title="src/screens/Authenticator/index.ts"
 export * from './Hello'
 ```
 
-Create the welcome screen itself:
+Создаем сам экран приветствия:
 
 ```tsx title="src/screens/Authenticator/Hello/index.tsx"
 import React, { useEffect, useState, ReactElement } from 'react'
@@ -323,23 +320,23 @@ const Hello = ({ navigation }: HelloT): ReactElement => {
     setLoading(true)
     const key = async (): Promise<void> => {
       try {
-        const credentials = await Keychain.getInternetCredentials('auth');
+        const credentials = await Keychain.getInternetCredentials('auth')
 
         if (credentials) {
-          const {username, password} = credentials;
-          const user = await Auth.signIn(username, password);
-          setLoading(false);
-          user && onScreen('USER', navigation)();
+          const { username, password } = credentials
+          const user = await Auth.signIn(username, password)
+          setLoading(false)
+          user && onScreen('USER', navigation)()
         } else {
-          setLoading(false);
+          setLoading(false)
         }
       } catch (err) {
-        console.log('error', err); // eslint-disable-line
-        setLoading(false);
+        console.log('error', err) // eslint-disable-line
+        setLoading(false)
       }
-    };
-    key();
-  }, []); // eslint-disable-line
+    }
+    key()
+  }, []) // eslint-disable-line
   return (
     <AppContainer loading={loading}>
       <Space height={80} />
@@ -349,21 +346,21 @@ const Hello = ({ navigation }: HelloT): ReactElement => {
       <Space height={15} />
       <Button title="Sign Up" onPress={onScreen('SIGN_UP', navigation)} />
     </AppContainer>
-  );
-};
+  )
+}
 
-export {Hello};
+export { Hello }
 ```
 
-In the `useEffect` hook, we check the user's token, where if true we go to the user's screen, and if false we stay on this screen.
+В хуке `useEffect` мы проверяем токен пользователя, где в случае истины мы переходим на экран пользователя, а в случае ложного - остаемся на этом экране.
 
-Collect all changes and you will be greeted with a welcome screen.
+Соберите все изменения и встретите экран приветствия.
 
 ![Step09](/img/steps/09.png)
 
 ## SignUp screen
 
-We create a `SIGN_UP` login screen where we use the method for authentication [Auth.signUp](https://docs.amplify.aws/lib/auth/emailpassword/q/platform/js#sign-up).
+Мы создаем экран регистрации `SIGN_UP`, где для аутентификации мы используем метод [Auth.signUp](https://docs.amplify.aws/lib/auth/emailpassword/q/platform/js#sign-up).
 
 ![SignUp](/img/auth/auth1-05.png)
 
@@ -391,31 +388,31 @@ const SignUp = ({ navigation }: SignUpT): ReactElement => {
   const _onPress = async (values: { email: string; password: string; passwordConfirmation: string }): Promise<void> => {
     const { email, password, passwordConfirmation } = values
     if (password !== passwordConfirmation) {
-      setError('Passwords do not match!');
+      setError('Passwords do not match!')
     } else {
-      setLoading(true);
-      setError('');
+      setLoading(true)
+      setError('')
       try {
-        const user = await Auth.signUp(email, password);
-        await Keychain.setInternetCredentials('auth', email, password);
-        user && onScreen('CONFIRM_SIGN_UP', navigation, {email, password})();
-        setLoading(false);
+        const user = await Auth.signUp(email, password)
+        await Keychain.setInternetCredentials('auth', email, password)
+        user && onScreen('CONFIRM_SIGN_UP', navigation, { email, password })()
+        setLoading(false)
       } catch (err) {
-        setLoading(false);
+        setLoading(false)
         if (err.code === 'UserNotConfirmedException') {
-          setError('Account not verified yet');
+          setError('Account not verified yet')
         } else if (err.code === 'PasswordResetRequiredException') {
-          setError('Existing user found. Please reset your password');
+          setError('Existing user found. Please reset your password')
         } else if (err.code === 'NotAuthorizedException') {
-          setError('Forgot Password?');
+          setError('Forgot Password?')
         } else if (err.code === 'UserNotFoundException') {
-          setError('User does not exist!');
+          setError('User does not exist!')
         } else {
-          setError(err.code);
+          setError(err.code)
         }
       }
     }
-  };
+  }
 
   return (
     <>
@@ -471,17 +468,17 @@ const SignUp = ({ navigation }: SignUpT): ReactElement => {
         </Formik>
       </AppContainer>
     </>
-  );
-};
+  )
+}
 
-export {SignUp};
+export { SignUp }
 ```
 
 ![Step10](/img/steps/10.png)
 
-## Confirmation of registration ConfirmSignUp
+## Подтверждение регистрации ConfirmSignUp
 
-After a successful response from the server, we go to the confirmation screen and enter the code that came to our mail. To do this, create a screen `CONFIRM_SIGN_UP`
+После успешного ответа от сервера мы переходим на экран подтверждения и вводим код, который пришел на нашу почту. Для этого создайте экран `CONFIRM_SIGN_UP`
 
 ![ConfirmSignUp](/img/auth/auth1-06.png)
 
@@ -512,42 +509,39 @@ const ConfirmSignUp = ({ route, navigation }: ConfirmSignUpT): ReactElement => {
     setLoading(true)
     setError('')
     try {
-      const {code} = values;
-      const {email, password} = route.params;
-      await Auth.confirmSignUp(email, code, {forceAliasCreation: true});
-      const user = await Auth.signIn(email, password);
-      user && onScreen('USER', navigation)();
-      setLoading(false);
+      const { code } = values
+      const { email, password } = route.params
+      await Auth.confirmSignUp(email, code, { forceAliasCreation: true })
+      const user = await Auth.signIn(email, password)
+      user && onScreen('USER', navigation)()
+      setLoading(false)
     } catch (err) {
-      setLoading(false);
-      setError(err.message);
+      setLoading(false)
+      setError(err.message)
       if (err.code === 'UserNotConfirmedException') {
-        setError('Account not verified yet');
+        setError('Account not verified yet')
       } else if (err.code === 'PasswordResetRequiredException') {
-        setError('Existing user found. Please reset your password');
+        setError('Existing user found. Please reset your password')
       } else if (err.code === 'NotAuthorizedException') {
-        setError('Forgot Password?');
+        setError('Forgot Password?')
       } else if (err.code === 'UserNotFoundException') {
-        setError('User does not exist!');
+        setError('User does not exist!')
       }
     }
-  };
+  }
 
   const _onResend = async (): Promise<void> => {
     try {
-      const {email} = route.params;
-      await Auth.resendSignUp(email);
+      const { email } = route.params
+      await Auth.resendSignUp(email)
     } catch (err) {
-      setError(err.message);
+      setError(err.message)
     }
-  };
+  }
 
   return (
     <>
-      <AppContainer
-        title="Confirmation"
-        onPress={goBack(navigation)}
-        loading={loading}>
+      <AppContainer title="Confirmation" onPress={goBack(navigation)} loading={loading}>
         <Formik
           initialValues={{ code: '' }}
           onSubmit={(values): Promise<void> => _onPress(values)}
@@ -567,11 +561,7 @@ const ConfirmSignUp = ({ route, navigation }: ConfirmSignUpT): ReactElement => {
                 touched={touched}
                 errors={errors}
               />
-              <ButtonLink
-                title="Resend code?"
-                onPress={_onResend}
-                textStyle={{alignSelf: 'center'}}
-              />
+              <ButtonLink title="Resend code?" onPress={_onResend} textStyle={{ alignSelf: 'center' }} />
               {error !== 'Forgot Password?' && <TextError title={error} />}
               <Button title="Confirm" onPress={handleSubmit} />
               <Space height={50} />
@@ -580,33 +570,33 @@ const ConfirmSignUp = ({ route, navigation }: ConfirmSignUpT): ReactElement => {
         </Formik>
       </AppContainer>
     </>
-  );
-};
+  )
+}
 
-export {ConfirmSignUp};
+export { ConfirmSignUp }
 ```
 
-## Resend code - ResendSignUp
+## Отправить код повторно - ResendSignUp
 
-If the code doesn't arrive, we must provide the user with the option to resend the code.
-To do this, we put Auth.resendSignUp (userInfo.email) on the Resend Code button.
-In case of successful method call
+Если код не пришел, мы должны предоставить пользователю возможность повторно отправить код.
+Для этого мы помещаем Auth.resendSignUp (userInfo.email) на кнопку «Отправить код повторно».
+В случае успешного вызова метода
 
 ```jsx
-Auth.confirmSignUp(email, code, {forceAliasCreation: true});
+Auth.confirmSignUp(email, code, { forceAliasCreation: true })
 ```
 
-we have to call the method
+мы должны вызвать метод
 
 ```jsx
-Auth.signIn(email, password);
+Auth.signIn(email, password)
 ```
 
 ![Step11](/img/steps/11.png)
 
-## User screen
+## Экран пользователя
 
-After successful completion, go to the `USER` screen we create with the exit button for the app and clear tokens.
+После успешного завершения перейдите к экрану `USER`, который мы создаем с помощью кнопки выхода для приложения и очистки токенов.
 
 ![User screen](/img/auth/auth1-07.png)
 
@@ -639,29 +629,29 @@ const User = ({ navigation }: UserT): ReactElement => {
   const _onPress = async (): Promise<void> => {
     setLoading(true)
     try {
-      await Auth.signOut();
-      await Keychain.resetInternetCredentials('auth');
-      goHome(navigation)();
+      await Auth.signOut()
+      await Keychain.resetInternetCredentials('auth')
+      goHome(navigation)()
     } catch (err) {
-      setError(err.message);
+      setError(err.message)
     }
-  };
+  }
 
   return (
     <AppContainer message={error} loading={loading}>
       <Button title="Sign Out" onPress={_onPress} />
     </AppContainer>
-  );
-};
+  )
+}
 
-export {User};
+export { User }
 ```
 
 ![Step12](/img/steps/12.png)
 
-## SignIn screen - login screen
+## SignIn screen - экран входа
 
-After the user is registered, we must provide the user with the ability to log into the application through a username and password. To do this, create a screen `SIGN_IN`.
+После того, как пользователь зарегистрирован, мы должны предоставить пользователю возможность входа в приложение через логин и пароль. Для этого создаем экран `SIGN_IN`.
 
 ![SignIn screen](/img/auth/auth1-08.png)
 
@@ -711,7 +701,7 @@ const SignIn = ({ navigation }: SignUpT): ReactElement => {
         setError(code)
       }
     }
-  };
+  }
 
   return (
     <>
@@ -749,14 +739,12 @@ const SignIn = ({ navigation }: SignUpT): ReactElement => {
                 autoCapitalize="none"
                 secureTextEntry
               />
-              {error !== 'Forgot Password?' && (
-                <TextError title={error} textStyle={{alignSelf: 'center'}} />
-              )}
+              {error !== 'Forgot Password?' && <TextError title={error} textStyle={{ alignSelf: 'center' }} />}
               {error === 'Forgot Password?' && (
                 <ButtonLink
                   title={error}
                   onPress={onScreen('FORGOT', navigation, userInfo)}
-                  textStyle={{alignSelf: 'center'}}
+                  textStyle={{ alignSelf: 'center' }}
                 />
               )}
               <Button title="Sign In" onPress={handleSubmit} />
@@ -766,21 +754,21 @@ const SignIn = ({ navigation }: SignUpT): ReactElement => {
         </Formik>
       </AppContainer>
     </>
-  );
-};
+  )
+}
 
-export {SignIn};
+export { SignIn }
 ```
 
 ![Step13](/img/steps/13.png)
 
-## Forgot password screen - remember password
+## Forgot password screen - вспоминание пароля
 
-If successful, we send the user to the `USER` screen, which we have already done, and if the user has forgotten or entered the password incorrectly, we show the error" Forgot password "and suggest resetting the password.
+В случае успеха мы отправляем пользователя на экран `USER`, что мы уже сделали, и если пользователь забыл или ввел пароль неправильно, мы показываем ошибку «Забыли пароль» и предлагаем сбросить пароль.
 
 ![Forgot password](/img/auth/auth1-09.png)
 
-To do this, create a screen `FORGOT`
+Для этого создаем экран `FORGOT`
 
 ![Forgot password](/img/auth/auth1-10.png)
 
@@ -815,9 +803,9 @@ const Forgot = ({ route, navigation }: ForgotT): ReactElement => {
       user && onScreen('FORGOT_PASSWORD_SUBMIT', navigation, values)()
       setLoading(false)
     } catch (err) {
-      setError(error);
+      setError(error)
     }
-  };
+  }
 
   return (
     <>
@@ -849,17 +837,17 @@ const Forgot = ({ route, navigation }: ForgotT): ReactElement => {
         </Formik>
       </AppContainer>
     </>
-  );
-};
+  )
+}
 
-export {Forgot};
+export { Forgot }
 ```
 
 ![Step14](/img/steps/14.png)
 
 ## Forgot password submit
 
-After confirming the email, we call the `Auth.forgotPassword (email)` method and, if there is such a user, we send the user to the screen `FORGOT_PASSWORD_SUBMIT`
+После подтверждения электронной почты мы вызываем метод `Auth.forgotPassword(email)` и, если такой пользователь есть, отправляем пользователя на экран `FORGOT_PASSWORD_SUBMIT`
 
 ![ForgotPassSubmit](/img/auth/auth1-11.png)
 
@@ -897,10 +885,10 @@ const ForgotPassSubmit = ({ route, navigation }: ForgotPassSubmitT): ReactElemen
       onScreen('USER', navigation)()
       setLoading(false)
     } catch (err) {
-      setLoading(false);
-      setError(err.message);
+      setLoading(false)
+      setError(err.message)
     }
-  };
+  }
 
   return (
     <>
@@ -958,9 +946,7 @@ const ForgotPassSubmit = ({ route, navigation }: ForgotPassSubmitT): ReactElemen
                 autoCapitalize="none"
                 secureTextEntry
               />
-              {error !== '' && (
-                <TextError title={error} textStyle={{alignSelf: 'center'}} />
-              )}
+              {error !== '' && <TextError title={error} textStyle={{ alignSelf: 'center' }} />}
               <Space height={30} />
               <Button title="Confirm" onPress={handleSubmit} />
               <Space height={80} />
@@ -969,25 +955,25 @@ const ForgotPassSubmit = ({ route, navigation }: ForgotPassSubmitT): ReactElemen
         </Formik>
       </AppContainer>
     </>
-  );
-};
+  )
+}
 
-export {ForgotPassSubmit};
+export { ForgotPassSubmit }
 ```
 
-where after entering the new password code sent to the mail and confirming it, we call the password change method
+где после ввода отправленного на почту кода нового пароля и его подтверждения вызываем метод смены пароля
 
 ```jsx
-Auth.forgotPasswordSubmit(email, code, password);
+Auth.forgotPasswordSubmit(email, code, password)
 ```
 
-whose success sends the user to the screen `USER`.
+успех которого отправляет пользователя на экран `USER`.
 
 ![Step15](/img/steps/15.png)
 
-## Linking screens
+## Связывание экранов
 
-We connect all the created components to
+Все созданные компоненты подключаем в
 
 ```ts title="src/screens/Authenticator/index.ts"
 export * from './Hello'
@@ -1001,16 +987,16 @@ export * from './ConfirmSignUp'
 
 ![Step16](/img/steps/16.png)
 
-## Updating AppNavigator
+## Обновляем AppNavigator
 
-Updating the navigation config file:
+Обновление файла конфигурации навигации:
 
 ```jsx title="src/AppNavigator.tsx"
 import * as React from 'react'
 import { createStackNavigator } from '@react-navigation/stack'
 import { Hello, SignUp, SignIn, ConfirmSignUp, User, Forgot, ForgotPassSubmit } from './screens/Authenticator'
 
-const Stack = createStackNavigator();
+const Stack = createStackNavigator()
 
 export type RootStackParamList = {
   HELLO: undefined
@@ -1026,37 +1012,35 @@ const AppNavigator = (): React.ReactElement => {
   return (
     <Stack.Navigator
       screenOptions={{
-        headerShown: false,
+        headerShown: false
       }}
-      initialRouteName="HELLO">
+      initialRouteName="HELLO"
+    >
       <Stack.Screen name="HELLO" component={Hello} />
       <Stack.Screen name="SIGN_UP" component={SignUp} />
       <Stack.Screen name="SIGN_IN" component={SignIn} />
       <Stack.Screen name="FORGOT" component={Forgot} />
-      <Stack.Screen
-        name="FORGOT_PASSWORD_SUBMIT"
-        component={ForgotPassSubmit}
-      />
+      <Stack.Screen name="FORGOT_PASSWORD_SUBMIT" component={ForgotPassSubmit} />
       <Stack.Screen name="CONFIRM_SIGN_UP" component={ConfirmSignUp} />
       <Stack.Screen name="USER" component={User} />
     </Stack.Navigator>
-  );
-};
+  )
+}
 
-export default AppNavigator;
+export default AppNavigator
 ```
 
 ![Step17](/img/steps/17.png)
 
 ## Debug
 
-To understand what is happening with tokens in your application, add in
+Чтобы понять, что происходит с токенами в вашем приложении, добавьте в
 
 ```jsx title="root/index.js"
 window.LOG_LEVEL = 'DEBUG'
 ```
 
-We launch the application and get custom authentication.
+Запускаем приложение и получаем кастомную аутентификацию.
 
 ## Done ✅
 

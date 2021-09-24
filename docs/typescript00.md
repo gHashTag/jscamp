@@ -95,18 +95,7 @@ In the event that you know in advance that the project has certain frameworks of
 
 Now we are ready to learn TypeScript with you, but in order to understand how much you learned this lesson, take the test in the [mobile application](http://onelink.to/njhc95) в нашей школы по этой теме.
 
-## Payment
-
-Now you are on a stripped-down version of the site, after subscribing to [Patreon](https://www.patreon.com/javascriptcamp), you will get full access to the training course, as well as access to our server's private channels in [Discord](https://discord.gg/6GDAfXn).
-
-Download our [mobile application](http://onelink.to/njhc95) or get tested in our [JavaScript telegram bot](https://t.me/javascriptcamp_bot), and also subscribe to [our news](https://t.me/javascriptapp).
-
-[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
-
-
-[![Sumerian school](/img/app.jpg)](http://onelink.to/njhc95)
-
- 
+![Sumerian school](/img/app.jpg)
 
 ## Links
 

@@ -43,7 +43,7 @@ brew install node
 npm install -g typescript
 ```
 
-<!-- ![install_success](/img/typescript/01/install.png)
+![install_success](/img/typescript/01/install.png)
 
 Вполне возможно, что ранее уже был установлен TS. В этом случае его можно обновить до последней версии с помощью команды
 
@@ -175,18 +175,7 @@ node hello.js
 ## Ссылки:
 
 1.  [TypeScript.org](https://www.typescriptlang.org/#installation)
-2.  [Metanit](https://metanit.com/web/typescript/1.2.php) -->
-
-## Оплата
-
-Сейчас ты находишся на урезанной версии сайта, после оформления подписки на [Patreon](https://www.patreon.com/javascriptcamp), ты получишь полный доступ к обучающему курсу, а также доступ к серетным каналам нашего сервера в [Discord](https://discord.gg/6GDAfXn).  
-
-Качай наше [мобильное приложение](http://onelink.to/njhc95) или пройди тестирование в нашем [JavaScript телеграм боте](https://t.me/javascriptcamp_bot), а также подпишись на [наши новости](https://t.me/javascriptapp).
-
-
-[![Sumerian school](/img/app.jpg)](http://onelink.to/njhc95)
-
- 
+2.  [Metanit](https://metanit.com/web/typescript/1.2.php)
 
 ## Contributors ✨
 
@@ -208,6 +197,3 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 [![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
-
-
-

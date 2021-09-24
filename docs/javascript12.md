@@ -53,14 +53,18 @@ function test() {
 
 In these examples, each construct has its own scope.
 
-## Payment
+## Global scope
 
-Now you are on a stripped-down version of the site, after subscribing to [Patreon](https://www.patreon.com/javascriptcamp), you will get full access to the training course, as well as access to our server's private channels in [Discord](https://discord.gg/6GDAfXn).
+![Global](https://media.giphy.com/media/l0MYPsBLOYyFqSDte/giphy.gif)
 
-Download our [mobile application](http://onelink.to/njhc95) or get tested in our [JavaScript telegram bot](https://t.me/javascriptcamp_bot), and also subscribe to [our news](https://t.me/javascriptapp).
+When we say global scope, we mean that all other scopes are children of this one. The global scope contains variables that are declared outside all functions and blocks.
 
-[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
+```jsx
+// Global scope
+let fruit = 'Banana'
+```
 
+A variable 🔔 created in the global scope is called a `global variable` 🔔. The global variable 🔔 can be used in all child scopes.
 
 ```jsx live
 function learnJavaScript() {
@@ -74,7 +78,7 @@ function learnJavaScript() {
 }
 ```
 
- 
+## Local scope
 
 ![Local](https://media.giphy.com/media/VFwRCi6WKBUk08fliV/giphy.gif)
 

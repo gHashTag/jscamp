@@ -26,7 +26,7 @@ function learnJavaScript() {
 
 ## Видео
 
-<YouTube videoId="jCGt2AkB_C8" />
+<YouTube videoId="1zXZCVbNbkQ" />
 
 ## typeof
 
@@ -48,9 +48,7 @@ function learnJavaScript() {
 }
 ```
 
-
-
-<!-- ## Типы данных
+## Типы данных
 
 ![Data types](https://media.giphy.com/media/NPXkCN2FutVO1Nt4P9/giphy.gif)
 
@@ -181,7 +179,7 @@ null === null // true
 
 Пишите в [Discord](https://discord.gg/6GDAfXn) или телеграмм [чат](https://t.me/jscampapp), а также подписывайтесь на наши [новости](https://t.me/javascriptapp)
 
- 
+![JavaScript Camp](/img/bandlink.png)
 
 ## Вопросы:
 
@@ -273,23 +271,6 @@ null === null // true
 1. [MDN web docs](https://developer.mozilla.org/ru/docs/Web/JavaScript/Data_structures)
 2. [Код для подростков: прекрасное руководство по программированию для начинающих, том 1: Javascript - Jeremy Moritz ](https://www.amazon.com/Code-Teens-Beginners-Programming-Javascript-ebook/dp/B07FCTLVPC)
 3. [JavaScript.ru](https://learn.javascript.ru/types)
-
-
-
-[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291) -->
-
-## Оплата
-
-Сейчас ты находишся на урезанной версии сайта, после оформления подписки на [Patreon](https://www.patreon.com/javascriptcamp), ты получишь полный доступ к обучающему курсу, а также доступ к серетным каналам нашего сервера в [Discord](https://discord.gg/6GDAfXn).  
-
-Качай наше [мобильное приложение](http://onelink.to/njhc95) или пройди тестирование в нашем [JavaScript телеграм боте](https://t.me/javascriptcamp_bot), а также подпишись на [наши новости](https://t.me/javascriptapp).
-
-[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
-
-
-[![Sumerian school](/img/app.jpg)](http://onelink.to/njhc95)
-
- 
 
 ## Contributors ✨
 

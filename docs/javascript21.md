@@ -39,19 +39,137 @@ function learnJavaScript() {
 5. Because the result of `getFruit` is a function, then `showFruit` becomes not a variable🔔, but a function.
 6. The result of the whole construction is the variable `fruit`, which is inside the function `getFruit`, it became closed. Now we can only find out the value of this variable🔔, we cannot change it.
 
-## Payment
+## Examples of
 
-Now you are on a stripped-down version of the site, after subscribing to [Patreon](https://www.patreon.com/javascriptcamp), you will get full access to the training course, as well as access to our server's private channels in [Discord](https://discord.gg/6GDAfXn).
+![Math](https://media.giphy.com/media/xT1Ra5h24Eliux3UVq/giphy.gif)
 
-Download our [mobile application](http://onelink.to/njhc95) or get tested in our [JavaScript telegram bot](https://t.me/javascriptcamp_bot), and also subscribe to [our news](https://t.me/javascriptapp).
+Let's look at more examples for understanding.
 
-[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
+### Counter
 
+A counter is the simplest example to consider how a closure works.
 
-[![Sumerian school](/img/app.jpg)](http://onelink.to/njhc95)
+<!-- ![Counter](https://media.giphy.com/media/QSNvClMu5zWJW/giphy.gif) -->
 
- 
+```jsx live
+function learnJavaScript() {
+  const makeCounter = () => {
+    let x = 0
+    return () => {
+      return ++x
+    }
+  }
+  const counter = makeCounter()
+  return counter()
+}
+```
 
+### Improved counter
+
+![Counter](https://media.giphy.com/media/3o6Zt6fzS6qEbLhKWQ/giphy.gif)
+
+As a result, we will have not one function⚙️, but several at once.
+
+```jsx live
+function learnJavaScipt() {
+  let makeCounter = () => {
+    let x = 0
+    return {
+      inc: () => {
+        return ++x
+      },
+      dec: () => {
+        return --x
+      },
+      val: () => {
+        return x
+      }
+    }
+  }
+
+  let counter = makeCounter()
+  counter.inc() // 1
+  counter.inc() // 2
+  counter.inc() // 3
+  counter.inc() // 4
+  counter.dec() // 3
+  return counter.val()
+}
+```
+
+### Closure in a loop
+
+![circle](https://media.giphy.com/media/u5s2ezDicmyuA/giphy.gif)
+
+```jsx live
+function learnJavaScript() {
+  let res = []
+  for (let i = 0; i < 5; i++) {
+    res[i] = () => {
+      return i
+    }
+  }
+  return res[2]()
+}
+```
+
+### Remember the phrase
+
+![l](https://media.giphy.com/media/l4pTfqyI6TCjUW4Yo/giphy.gif)
+
+```jsx live
+function learnJavaScript() {
+  let phrase = x => {
+    return y => {
+      return x + ' ' + y
+    }
+  }
+
+  hello = phrase('Hello')
+  return hello('World')
+}
+```
+
+## Total
+
+Closures are one of the most important fundamental JavaScript concepts that every JS developer should understand. Understanding closures is one stepping stone to writing efficient, high-quality applications.
+
+## Problems?
+
+![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
+
+Write to [Discord](https://discord.gg/6GDAfXn) chat.
+
+## Questions:
+
+![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
+
+What is a closure?
+
+1. Construction
+2. Function
+3. Concept
+
+What is closure on what?
+
+1. Function on scope
+2. Variables in a function
+
+What do you need to do to access a closed variable?
+
+1. I will describe it and use it
+2. It is available
+3. The variable can only be viewed
+
+In order to understand how much you learned this lesson, take the test in the [mobile application](http://onelink.to/njhc95) of our school on this topic or in our [telegram bot](https://t.me/javascriptcamp_bot).
+
+![Sumerian school](/img/app.jpg)
+
+## Links
+
+1. [Learn JavaScript](https://learn.javascript.ru/closures)
+2. [MDN Web Docs](https://developer.mozilla.org/ru/docs/Web/JavaScript/Closures)
+3. [Замыкания JavaScript](https://medium.com/@stasonmars/понимаем-замыкания-в-javascript-раз-и-навсегда-c211805b6898)
 
 ## Contributors ✨
 

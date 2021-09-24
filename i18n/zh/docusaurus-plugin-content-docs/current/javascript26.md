@@ -55,29 +55,195 @@ function myAsyncFunction(url) {
 
 承諾與 `then()` 和 `catch()` 方法。
 
-## 支付
+### 然後
 
-訂閱以下內容後，您現在處於該網站的精簡版本中 [Patreon](https://www.patreon.com/javascriptcamp), 您將獲得對培訓課程的完全訪問權限，以及在以下位置訪問我們服務器的私人頻道的權限：[Discord](https://discord.gg/6GDAfXn).
+`then` 方法用於按肯定或否定的承諾運行函數。
 
-下載我們的 [mobile application](http://onelink.to/njhc95) o在我們的測試中 [JavaScript telegram bot](https://t.me/javascriptcamp_bot), 並訂閱 [our news](https://t.me/javascriptapp).
+![Launch](https://media.giphy.com/media/1n4FT4KRQkDvK0IO4X/giphy.gif)
 
-[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
+的語法 `then` 方法是：
 
+```jsx
+promise.then(
+  function (result) {
+    /* handle successful execution */
+  },
+  function (error) {
+    /* will handle the error */
+  }
+)
+```
 
-[![Sumerian school](/img/app.jpg)](http://onelink.to/njhc95)
+的第一個 1️⃣ 參數 `then` m方法是一個函數⚙️，當將諾言傳遞到“成功完成”狀態並接收結果時執行。
 
- 
+第二個論點 `then` 是一個函數⚙️，當promise進入帶有錯誤的完成狀態並收到錯誤時執行🙅‍♂️.
+
+![Error](https://media.giphy.com/media/iJCo9daAP0xugHhhfb/giphy.gif)
+
+一個例子 `then` 方法:
+
+```jsx
+let promise = new Promise(function (resolve, reject) {
+  setTimeout(() => resolve('done!'), 1000)
+})
+
+// resolve will run the first function passed to .then
+promise.then(
+  result => alert(result), // displays "done!" in one second
+  error => alert(error) // will not be triggered
+)
+```
+
+並且在保證中出現錯誤 🙅‍♂️ 時，將執行第二個:
+
+```jsx
+let promise = new Promise(function (resolve, reject) {
+  setTimeout(() => reject(new Error('Whoops!')), 1000)
+})
+
+// reject will run the second function passed to .then
+promise.then(
+  result => alert(result), // will not be triggered
+  error => alert(error) // prints "Error: Whoops!" one second later
+)
+```
+
+If you need to display only the result of a successful execution, then only one function can be passed to `then`:
+
+```jsx
+let promise = new Promise(resolve => {
+  setTimeout(() => resolve('done!'), 1000)
+})
+
+promise.then(alert) // will print "done!" one second later
+```
+
+### 抓住
+
+![Catch](https://media.giphy.com/media/fxeeuml8GaESfmuE4z/giphy.gif)
+
+捕捉錯誤🙅‍♂️ `catch` 使用方法。 它可以代替 `then` 顯示錯誤消息的方法。
+
+catch方法的語法為：
+
+```jsx
+let promise = new Promise((resolve, reject) => {
+  setTimeout(() => reject(new Error('Error!')), 1000)
+})
+
+promise.catch(alert) // will print "Error: Error!" one second later
+```
+
+### promise.all
+
+此方法接受一個promise數組，並返回一個新的promise，當遇到數組中的所有promise都被拒絕時，將滿足或拒絕數組中的所有promise時將滿足該新promise。
+
+![Return](https://media.giphy.com/media/Y08bx6Fea1BafzTlvc/giphy.gif)
+
+例如:
+
+```jsx
+const promise1 = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve('Promise1 completed')
+  }, 2000)
+})
+const promise2 = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve('Promise2 completed')
+  }, 1500)
+})
+Promise.all([promise1, promise2])
+  .then(data => console.log(data[0], data[1]))
+  .catch(error => console.log(error))
+```
+
+在這裡，裡面的說法 `then()` 是一個數組，其中包含承諾值的傳遞順序與傳遞給它們的順序相同 `Promise.all()`.
+
+<!-- ### promise.race
+
+![Bomerang](https://media.giphy.com/media/g0yLXvb7Ffn9rilMIm/giphy.gif)
+
+Этот метод принимает массив промисов и возвращает🔄 один 🆕 новый промис, который будет выполненным, как только встретится выполненный промис в массиве или же отклоняется, если отклоненный промис встречается раньше.
+
+Например:
+
+```jsx
+const promise1 = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve('Promise1 выполнен')
+  }, 1000)
+})
+const promise2 = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    reject('Promise2 отклонен')
+  }, 1500)
+})
+Promise.race([promise1, promise2])
+  .then(data => console.log(data)) // Promise1 выполнен
+  .catch(error => console.log(error))
+```
+
+Тут мы имеем два промиса, где один выполняется через `1` секунду, а другой отклоняется через `1.5` секунды. Как только первый 1️⃣ промис выполнен, возвращенный🔄 из `Promise.race()` промис будет иметь статус выполненного не дожидаясь статуса второго промиса.
+
+Здесь data, которая передается в `then()` является значением первого, выполненного, промиса.
+
+По итогу, `Promise.race()` дожидается первого промиса и берет его статус как статус возвращаемого🔄 промиса. -->
+
+## 問題?
+
+![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
+
+寫給 [Discord](https://discord.gg/6GDAfXn) 聊天.
+
+## 問題：
+
+![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
+
+承諾成功時調用的方法的名稱是什麼？
+
+1. `reject`
+2. `resolve`
+
+可以使用什麼方法來檢查數組中所有 promise 的實現？
+
+1. `promise.all`
+2. `promise.race`
+
+用什麼方法來捕捉承諾中的錯誤？
+
+1. `then`
+2. `catch`
+
+為了了解您學到了多少本課程，請對 [mobile application](http://onelink.to/njhc95) 我們學校就這個話題。
+
+![Sumerian school](/img/app.jpg)
+
+## 鏈接：
+
+1.  [MDN web docs](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise)
+2.  [Learn JavaScript](https://learn.javascript.ru/promise)
+3.  [Understanding Promises](https://blog.bitsrc.io/understanding-promises-in-javascript-c5248de9ff8f?gi=1e459ca846d9)
 
 ## 貢獻者 ✨
 
-T向這些好人致敬([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+T向這些好人致敬 ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /> <a href="https://github.com/gHashTag/react-native-village/commits?author=gHashTag" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/FELiX-RN"><img src="https://avatars0.githubusercontent.com/u/72006627?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Philipp Dvinyaninov</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/commits?author=FELiX-RN" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /><a href="#financial-gHashTag" title="Financial">💵</a></td>
     <td align="center"><a href="https://github.com/Resoner2005"><img src="https://avatars1.githubusercontent.com/u/75675814?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Resoner2005</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/issues?q=author%3AResoner2005" title="Bug reports">🐛 🎨 🖋</a></td>
+    <td align="center"><a href="https://github.com/Navernoss"><img src="https://avatars0.githubusercontent.com/u/75784137?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Navernoss</b></sub></a><br /><a href="#content-Navernoss" title="Content">🖋 🐛 🎨 </a></td>
   </tr>
-  
 </table>
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
 
 [![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)

@@ -32,7 +32,7 @@ console.log(greeter.greet()) // Вернет строчку Hello world
 
 Объявлен новый класс `Greeter`. Этот класс имеет три пункта: свойство `greeting`, конструктор, и метод `greet`. В последней строке создается экземпляр класса `Greeter`, используя new. Он вызывает конструктор, что определен ранее, создает новый объект, и запускает конструктор для его инициализации.
 
-<!-- ## Наследование
+## Наследование
 
 В TypeScript используются привычные подходы объектно-ориентированного программирования. Одним из самых фундаментальных подходов в области программирования на основе классов является создание новых классов с помощью наследования.
 
@@ -100,19 +100,7 @@ tom.move(34)
 ## Ссылки:
 
 1.  [Metanit](https://metanit.com/web/typescript/3.1.php)
-2.  [TypeScript-lang руководство TypeScript](http://typescript-lang.ru/docs/Classes.html) -->
-
-## Оплата
-
-Сейчас ты находишся на урезанной версии сайта, после оформления подписки на [Patreon](https://www.patreon.com/javascriptcamp), ты получишь полный доступ к обучающему курсу, а также доступ к серетным каналам нашего сервера в [Discord](https://discord.gg/6GDAfXn).  
-
-Качай наше [мобильное приложение](http://onelink.to/njhc95) или пройди тестирование в нашем [JavaScript телеграм боте](https://t.me/javascriptcamp_bot), а также подпишись на [наши новости](https://t.me/javascriptapp).
-
-
-[![Sumerian school](/img/app.jpg)](http://onelink.to/njhc95)
-
- 
-
+2.  [TypeScript-lang руководство TypeScript](http://typescript-lang.ru/docs/Classes.html)
 
 ## Contributors ✨
 
@@ -129,5 +117,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   
 </table>
 
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
 
 [![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)

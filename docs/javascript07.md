@@ -36,18 +36,209 @@ Be careful when using leading zeros! This means you don't need to put zero befor
 0777 // treated as non-strict octal (511 decimal)
 ```
 
-## Payment
+## Arithmetic operations
 
-Now you are on a stripped-down version of the site, after subscribing to [Patreon](https://www.patreon.com/javascriptcamp), you will get full access to the training course, as well as access to our server's private channels in [Discord](https://discord.gg/6GDAfXn).
+![Arithmetic operation](https://media.giphy.com/media/gEvab1ilmJjA82FaSV/giphy.gif)
 
-Download our [mobile application](http://onelink.to/njhc95) or get tested in our [JavaScript telegram bot](https://t.me/javascriptcamp_bot), and also subscribe to [our news](https://t.me/javascriptapp).
+Two or more integers can be used to form a new integer. There are many ways to compose a new integer. The way to compose a new number from two or more numbers is called arithmetic.
+In general, there are many arithmetic operations, but there are only four basic ones: addition, subtraction, multiplication and division. They are called basic, because all other actions are brought to them.
 
-[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
+The plus sign `+` is used to express addition: `4 + 4` Answer:` 8`
 
+Minus `–` for subtraction:` 7 - 6` Answer: `1`
 
-[![Sumerian school](/img/app.jpg)](http://onelink.to/njhc95)
+The asterisk `*` represents multiplication: `3 * 4` Answer:` 12`
 
- 
+Forward slash `/` division: `15 / 5` Reply:` 3`
+
+If more than one action is performed in a line, we use - (parentheses) to separate them from each other and also to make the code📟 more readable. Let's type the following sentences into the console. The answer for each of them should consist of only one digit9️⃣:
+
+```
+ 3 * (2 + 1)
+(27 + 9) / (10 - 6)
+(63 / 3 ) / (6 + 1)
+ 2 * (5 - 8 / 2) + (3 + 4)
+```
+
+Enter the following values into `LIVE EDITOR` 👇:
+
+```jsx {2} live
+function learnJavaScript() {
+  let result = 2 + 3 // here
+
+  return result
+}
+```
+
+## Combined assignment
+
+![Conbination](https://media.giphy.com/media/l2Sq8jlaqqnqBoGhG/giphy.gif)
+
+An operator is a symbolic designation of some action performed with operands in an expression (For example: `+`, `-`,`*`,`/`).
+
+The operand is some value that is processed in the program. Operands can be of any data type. The operand to the left of the operator is the left operand, the operand to the right of the operator is the right operand.
+
+The main operator of combined assignment is the equal to `=`, and it assigns the value of the right operand to the left one. That is - `x = y` assigns the value to the variable 🔔 `y`, to the variable 🔔 `x`.
+
+You have seen many times how you assign values ​​to variables 🔔 using mathematical operators. For example, like this:
+
+```javascript
+let sum = 2 + 3 // sum value 7
+```
+
+And you probably did not have time to forget that at any time you can change the value of an already known variable 🔔:
+
+```jsx live
+function learnJavaScript() {
+  let sum = 2 + 3
+  sum = sum + 3 // now the sum value is 8
+  return sum
+}
+```
+
+Assignment with addition `+ =` in order to quickly increase the value of a variable! Here are some examples:
+
+```javascript
+let value = 5
+value += 2 // value is now 7 (same as value = // value + 2)
+value += 3 // value is now 10 (same as value = // value + 3)
+value = value + value // 20 (or you can just value + = // value)
+value += value // 40 (same as value = value + // value)
+```
+
+You already guessed that such things work with other mathematical operations, right?!
+
+```javascript
+value -= 25 // value is now 15 (same as value = value - // 25)
+value *= 2 // value is now 30 (same as value = // value * 2)
+value /= 3 // value is now 10 (same as value = // value / 3)
+value // Answer: 10
+```
+
+Next, check all the listed examples in `LIVE EDITOR`:
+
+```jsx live
+function learnJavaScript() {
+  let value = 0 + 0
+  return value
+}
+```
+
+You can read more about combined assignment [here](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Assignment_Operators)
+
+## Increment and decrement
+
+![increment](https://media.giphy.com/media/dX9qnaX4OH3avyMcU3/giphy.gif)
+
+The operator `++` (increment) increases the value of its operand by one. If the value of the operand is not a number, the operator automatically converts it to a number, increments it by one, and returns the result, which is assigned back to the operand:
+
+```jsx live
+function learnJavaScript() {
+  let increment = 0
+  increment++
+  return increment
+}
+```
+
+The operator `--` (decrement) works similarly to the increment operator, but does not increase the value of its operand, but, on the contrary, decreases it by one:
+
+```jsx live
+function learnJavaScript() {
+  let decrement = 6
+  decrement--
+  return decrement
+}
+```
+
+## The modulo operator
+
+![function](https://media.giphy.com/media/seVVu09CPz2upPeU1s/giphy.gif)
+
+The `%` (percent) signifies the remainder of the division. The operator returns the integer remainder of dividing the left operand by the right. The return🔄 value always gets the sign of the dividend, not the divisor. It uses the built-in function⚙️ modulo, which is the integer remainder of dividing `let1` by `let2`.
+
+`12% 5` result` 2`
+
+`NaN% 2` results in` NaN`
+
+`1% 2` result` 1`
+
+`2% 3` result` 2`
+
+`4% 2` result` 0`
+
+`5.5% 2` result` 1.5`
+
+Check out all the listed examples in `LIVE EDITOR` and you will immediately understand everything:
+
+```jsx live
+function learnJavaScript() {
+  let modulo = 12 % 5
+  return modulo
+}
+```
+
+## Rounding
+
+![Balls](https://media.giphy.com/media/6glYLqOQ3dlok/giphy.gif)
+
+The `Math.round ()` method returns a number rounded to the nearest integer. If the fractional part of the number is greater than or equal to `0.5`, the argument will be rounded to the nearest larger integer. If the fractional part of the number is less than `0.5`, the argument will be rounded to the nearest lower integer.
+
+`result = Math.round (20.49)` Returns 20
+
+`result = Math.round (20.5)` Returns the value 21
+
+check it yourself:
+
+```jsx live
+function learnJavaScript() {
+  let result = Math.round(20.49)
+  return result
+}
+```
+
+## Problems?
+
+![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
+
+Write to [Discord](https://discord.gg/6GDAfXn) chat.
+
+## Questions:
+
+![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
+
+What arithmetic operations are called basic?
+
+1. Addition, subtraction
+2. Multiplication, division
+3. Addition, subtraction, multiplication, division
+
+What is the correct reading of `+ =`?
+
+1. Increment
+2. Assignment with addition
+3. Plus and equal
+
+How is the increment written by sign (s)?
+
+1. `++`
+2. ` --`
+3. `+`
+
+What is the sign for the remainder of the division?
+
+1. `%`
+2. `/`
+3. `\`
+
+What value will `Math.round` return when `Math.round (20.62)`is applied?
+
+1. `22`
+2. `20`
+3. `21`
+
+In order to understand how much you learned this lesson, take the test in the [mobile application](http://onelink.to/njhc95) of our school on this topic or in our [telegram bot](https://t.me/javascriptcamp_bot).
+
+![Sumerian school](/img/app.jpg)
 
 ## Links
 

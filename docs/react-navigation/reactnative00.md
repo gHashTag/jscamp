@@ -60,18 +60,40 @@ If you are on Mac and developing for iOS, you need to install modules (via Cocoa
 npx pod-install ios
 ```
 
-## Payment
+To complete the installation of `react-native-gesture-handler`, add the following at the top (make sure it is at the top and there is nothing in front of it) of your input file such as `index.js` or `App.js`:
 
-Now you are on a stripped-down version of the site, after subscribing to [Patreon](https://www.patreon.com/javascriptcamp), you will get full access to the training course, as well as access to our server's private channels in [Discord](https://discord.gg/6GDAfXn).
+```jsx
+import 'react-native-gesture-handler'
+```
+:::info
+Note. If you are developing for Android or iOS, do not skip this step, otherwise your application may crash in production, even if it works fine during development. This does not apply to other platforms.
+:::
 
-Download our [mobile application](http://onelink.to/njhc95) or get tested in our [JavaScript telegram bot](https://t.me/javascriptcamp_bot), and also subscribe to [our news](https://t.me/javascriptapp).
+Now we need to wrap the entire application in a `NavigationContainer`. You usually do this in your input file, such as `index.js` or `App.js`.
 
-[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
+```jsx
+import 'react-native-gesture-handler'
+import * as React from 'react'
+import { NavigationContainer } from '@react-navigation/native'
 
+ const App = () => {
+  return (
+    <NavigationContainer>{/* Rest of your app code */}</NavigationContainer>
+  )
+}
 
-[![Sumerian school](/img/app.jpg)](http://onelink.to/njhc95)
+export default
+```
 
- 
+## Links
+
+[React Navigation](https://reactnavigation.org/docs/6.x/getting-started)
+
+To see how well you learned this lesson, take the test in our school's [mobile app](http://onelink.to/njhc95) on this topic or in [Telegram bot](https://t.me/javascriptcamp_bot).
+
+![Sumerian school](/img/app.jpg)
+
+## Done ✅
 
 ## Contributors ✨
 

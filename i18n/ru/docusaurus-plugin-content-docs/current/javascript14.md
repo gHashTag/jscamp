@@ -22,7 +22,7 @@ JavaScript, наряду с Perl, это один из языков👅 прог
 
 ## Видео
 
-<YouTube videoId="FLff8YCBV3s" />
+<YouTube videoId="HBAejHnWk7g" />
 
 ## Сложность использования
 
@@ -74,7 +74,7 @@ let regExp = new RegExp('шаблон')
   </TabItem>
 </Tabs>
 
-<!-- ## Использование
+## Использование
 
 ![pressing the button](https://media.giphy.com/media/12hhLP67q6PqCs/giphy.gif)
 
@@ -181,7 +181,7 @@ function learnJavaScript() {
 
 Пишите в [Discord](https://discord.gg/6GDAfXn) или телеграмм [чат](https://t.me/jscampapp), а также подписывайтесь на наши [новости](https://t.me/javascriptapp)
 
- 
+![JavaScript Camp](/img/bandlink.png)
 
 ## Вопросы
 
@@ -213,20 +213,7 @@ function learnJavaScript() {
 
 1. [Learn JavaScript](https://learn.javascript.ru/regular-expressions)
 2. [MDN Web Docs](https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Regular_Expressions)
-3. [JS RegExp](https://tuhub.ru/frontend/js-regexp) -->
-
-## Оплата
-
-Сейчас ты находишся на урезанной версии сайта, после оформления подписки на [Patreon](https://www.patreon.com/javascriptcamp), ты получишь полный доступ к обучающему курсу, а также доступ к серетным каналам нашего сервера в [Discord](https://discord.gg/6GDAfXn).  
-
-Качай наше [мобильное приложение](http://onelink.to/njhc95) или пройди тестирование в нашем [JavaScript телеграм боте](https://t.me/javascriptcamp_bot), а также подпишись на [наши новости](https://t.me/javascriptapp).
-
-[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
-
-
-[![Sumerian school](/img/app.jpg)](http://onelink.to/njhc95)
-
- 
+3. [JS RegExp](https://tuhub.ru/frontend/js-regexp)
 
 ## Contributors ✨
 

@@ -26,18 +26,28 @@ The simplest example of an explicit conversion is the conversion of the double t
 
 ![doubletoint](/img/typescript/06/double-to-int.png)
 
-## Payment
+## Examples of
 
-Now you are on a stripped-down version of the site, after subscribing to [Patreon](https://www.patreon.com/javascriptcamp), you will get full access to the training course, as well as access to our server's private channels in [Discord](https://discord.gg/6GDAfXn).
+TypeScript provides built-in functions for performing type conversions.
 
-Download our [mobile application](http://onelink.to/njhc95) or get tested in our [JavaScript telegram bot](https://t.me/javascriptcamp_bot), and also subscribe to [our news](https://t.me/javascriptapp).
+You can convert a number to a string using the string constructor as shown below.
 
-[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
+```typescript
+let number: number = 42
+let numberAsString: string = String(number) //Перевод числа в строку
+```
 
+Alternatively, you can convert a string to a number.
 
-[![Sumerian school](/img/app.jpg)](http://onelink.to/njhc95)
+```typescript
+let stringAsNumber: string = '42'
+let number: number = Number(stringAsNumber)
+```
 
- 
+## Links:
+
+1.  [Metanit](https://metanit.com/web/typescript/3.9.php)
+2.  [Xsltdev](https://xsltdev.ru/typescript/004/)
 
 ## Contributors ✨
 

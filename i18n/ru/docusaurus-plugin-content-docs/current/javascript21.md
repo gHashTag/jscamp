@@ -43,9 +43,9 @@ function learnJavaScript() {
 
 ## Видео
 
-<YouTube videoId="tpOEn4PH_nE" />
+<YouTube videoId="bsWqPzc4g-8" />
 
-<!-- ## Примеры
+## Примеры
 
 ![Math](https://media.giphy.com/media/xT1Ra5h24Eliux3UVq/giphy.gif)
 
@@ -55,6 +55,7 @@ function learnJavaScript() {
 
 Счётчик, самый простой пример, на котором можно рассмотреть работу замыкания.
 
+<!-- ![Counter](https://media.giphy.com/media/QSNvClMu5zWJW/giphy.gif) -->
 
 ```jsx live
 function learnJavaScript() {
@@ -145,7 +146,7 @@ function learnJavaScript() {
 
 Пишите в [Discord](https://discord.gg/6GDAfXn) или телеграмм [чат](https://t.me/jscampapp), а также подписывайтесь на наши [новости](https://t.me/javascriptapp)
 
- 
+![JavaScript Camp](/img/bandlink.png)
 
 ## Вопросы
 
@@ -176,20 +177,7 @@ function learnJavaScript() {
 
 1. [Learn JavaScript](https://learn.javascript.ru/closures)
 2. [MDN Web Docs](https://developer.mozilla.org/ru/docs/Web/JavaScript/Closures)
-3. [Замыкания JavaScript](https://medium.com/@stasonmars/понимаем-замыкания-в-javascript-раз-и-навсегда-c211805b6898) -->
-
-## Оплата
-
-Сейчас ты находишся на урезанной версии сайта, после оформления подписки на [Patreon](https://www.patreon.com/javascriptcamp), ты получишь полный доступ к обучающему курсу, а также доступ к серетным каналам нашего сервера в [Discord](https://discord.gg/6GDAfXn).  
-
-Качай наше [мобильное приложение](http://onelink.to/njhc95) или пройди тестирование в нашем [JavaScript телеграм боте](https://t.me/javascriptcamp_bot), а также подпишись на [наши новости](https://t.me/javascriptapp).
-
-[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
-
-
-[![Sumerian school](/img/app.jpg)](http://onelink.to/njhc95)
-
- 
+3. [Замыкания JavaScript](https://medium.com/@stasonmars/понимаем-замыкания-в-javascript-раз-и-навсегда-c211805b6898)
 
 ## Contributors ✨
 

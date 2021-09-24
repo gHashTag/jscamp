@@ -4,7 +4,7 @@ title: Header
 sidebar_label: Header
 ---
 
-Refactor the code from the previous lessons and prepare the Header for the next lesson.
+Рефакторинг кода с прошлых уроков и подготовка Header к следующему уроку.
 
 [![redux](/img/redux/03.gif)](https://youtu.be/ycNdEtBMooA)
 

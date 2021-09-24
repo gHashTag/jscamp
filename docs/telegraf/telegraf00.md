@@ -206,4 +206,4 @@ Ask them in the telegram community [Bots on Telegraf](https://t.me/telegraf_ru)
 Subscribe to our [news] (https://t.me/javascriptapp) and social networks.
 
 
- 
+![JavaScript Camp](/img/bandlink.png)

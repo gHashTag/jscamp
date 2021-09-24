@@ -18,18 +18,75 @@ The `FlatList` component requires two properties: `data` and `renderItem`.
 
 This example creates a basic `FlatList` of hardcoded data. Each item in the data props is displayed as a text component. The `FlatListBasics` component then displays the `FlatList` and all text components.
 
-## Payment
+```SnackPlayer name=index.js
+import React from 'react'
+import { FlatList, StyleSheet, Text, View } from 'react-native'
 
-Now you are on a stripped-down version of the site, after subscribing to [Patreon](https://www.patreon.com/javascriptcamp), you will get full access to the training course, as well as access to our server's private channels in [Discord](https://discord.gg/6GDAfXn).
+const styles = StyleSheet.create({
+  container: {
+   flex: 1,
+   paddingTop: 22
+  },
+  item: {
+    padding: 10,
+    fontSize: 18,
+    height: 44,
+  },
+})
 
-Download our [mobile application](http://onelink.to/njhc95) or get tested in our [JavaScript telegram bot](https://t.me/javascriptcamp_bot), and also subscribe to [our news](https://t.me/javascriptapp).
+const FlatListBasics = () => {
+  return (
+    <View style={styles.container}>
+      <FlatList
+        data={[
+          {key: 'Devin'},
+          {key: 'Dan'},
+          {key: 'Dominic'},
+          {key: 'Jackson'},
+          {key: 'James'},
+          {key: 'Joel'},
+          {key: 'John'},
+          {key: 'Jillian'},
+          {key: 'Jimmy'},
+          {key: 'Julie'},
+        ]}
+        renderItem={({item}) => <Text style={styles.item}>{item.key}</Text>}
+      />
+    </View>
+  )
+}
 
-[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
+export default FlatListBasics
+```
 
+More about the component [FlatList](https://reactnative.dev/docs/flatlist)
 
-[![Sumerian school](/img/app.jpg)](http://onelink.to/njhc95)
+## Questions
 
- 
+Does the `FlatList` component display a scrollable list of data that is changing but similar in structure?
+
+1. `true`
+2. `false`
+
+What is the name of the `FlatList` property that is the source of information for the list?
+
+1. `list`
+2. `data`
+3. `renderItem`
+
+What is the name of the `FlatList` property that takes one item from the source and returns a formatted component to render?
+
+1. `list`
+2. `data`
+3. `renderItem`
+
+To see how well you learned this lesson, take the test in the [mobile application](http://onelink.to/njhc95) of our school on this topic or in the [telegram bot](https://t.me/javascriptcamp_bot).
+
+![Sumerian school](/img/app.jpg)
+
+## Links:
+
+1. [React Native](https://reactnative.dev/docs/platform-specific-code)
 
 ## Contributors ✨
 

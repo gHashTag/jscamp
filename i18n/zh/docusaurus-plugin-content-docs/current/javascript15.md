@@ -97,29 +97,114 @@ function learnJavaScript() {
 
 在這裡 `switch` 語句將按順序進行比較 `a` 與所有選項 `case`. 但這不是數字的比較，而是字符串的比較。 只要比較相同的數據類型，就可以使用任何數據類型來完成。
 
-## 支付
+## 更換 `if`
 
-訂閱以下內容後，您現在處於該網站的精簡版本中 [Patreon](https://www.patreon.com/javascriptcamp), 您將獲得對培訓課程的完全訪問權限，以及在以下位置訪問我們服務器的私人頻道的權限：[Discord](https://discord.gg/6GDAfXn).
+還 `Switch` 用於替換多個 `if`.
 
-下載我們的 [mobile application](http://onelink.to/njhc95) o在我們的測試中 [JavaScript telegram bot](https://t.me/javascriptcamp_bot), 並訂閱 [our news](https://t.me/javascriptapp).
+例如，您可以替換此代碼 👇:
 
-[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
+```jsx live
+function learnJavaScript() {
+  let number = 2
+  let str
+  if (number === 0) {
+    str = 'You entered the number 0'
+  }
 
+  if (number === 1) {
+    str = 'You entered the number 1'
+  }
 
-[![Sumerian school](/img/app.jpg)](http://onelink.to/njhc95)
+  if (number === 2 || number === 3) {
+    str = 'You entered the number 2, maybe 3'
+  }
+  return str
+}
+```
 
- 
+在這個 👇:
+
+```jsx live
+function learnJavaScript() {
+  let number = 2
+  let str
+  switch (number) {
+    case 0:
+      str = 'You entered the number 0'
+      break
+
+    case 1:
+      str = 'You entered the number 1'
+      break
+
+    case 2:
+    case 3:
+      str = 'You entered the number 2, maybe 3'
+      break
+  }
+  return str
+}
+```
+
+結果將是相同的，但是代碼將變得更具可讀性並且更易於使用。
+
+## 問題？
+
+![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
+
+寫給 [Discord](https://discord.gg/6GDAfXn) chat.
+
+## 問題:
+
+![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
+
+是否可以使用`switch`將某些內容與正則表達式進行比較？
+
+1.是的
+2.沒有
+
+比較運算符的作用 `switch` 使用？
+
+1. `=`
+2. `===`
+3. `==`
+
+哪個關鍵字停止比較過程 `switch`?
+
+1. `break`
+2. `stop`
+3. `default`
+
+為了了解您學到了多少本課程，請對 [mobile application](http://onelink.to/njhc95) 我們學校就這個話題。
+
+![Sumerian school](/img/app.jpg)
+
+## 鏈接
+
+1.  [MDN web docs](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/switch)
+2.  [Learn JavaScript](https://learn.javascript.ru/switch)
+3.  [Справочник JavaScript](https://javascript.ru/switch)
 
 ## 貢獻者 ✨
 
-T向這些好人致敬([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+感謝這些好人 ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /> <a href="https://github.com/gHashTag/react-native-village/commits?author=gHashTag" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/FELiX-RN"><img src="https://avatars0.githubusercontent.com/u/72006627?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Philipp Dvinyaninov</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/commits?author=FELiX-RN" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /><a href="#financial-gHashTag" title="Financial">💵</a></td>
     <td align="center"><a href="https://github.com/Resoner2005"><img src="https://avatars1.githubusercontent.com/u/75675814?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Resoner2005</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/issues?q=author%3AResoner2005" title="Bug reports">🐛 🎨 🖋</a></td>
+    <td align="center"><a href="https://github.com/Navernoss"><img src="https://avatars0.githubusercontent.com/u/75784137?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Navernoss</b></sub></a><br /><a href="#content-Navernoss" title="Content">🖋 🐛 🎨 </a></td>
   </tr>
   
 </table>
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
 
 [![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)

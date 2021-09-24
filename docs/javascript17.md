@@ -63,18 +63,443 @@ function learnJavaScript() {
   return fruits
 }
 ```
-## Payment
 
-Now you are on a stripped-down version of the site, after subscribing to [Patreon](https://www.patreon.com/javascriptcamp), you will get full access to the training course, as well as access to our server's private channels in [Discord](https://discord.gg/6GDAfXn).
+## length
 
-Download our [mobile application](http://onelink.to/njhc95) or get tested in our [JavaScript telegram bot](https://t.me/javascriptcamp_bot), and also subscribe to [our news](https://t.me/javascriptapp).
+The total number of elements in the array is contained in its `.length` property:
 
-[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
+```jsx live
+function learnJavaScript() {
+  let fruits = ['Apple', 'Orange', 'Plum']
 
+  return fruits.length
+}
+```
 
-[![Sumerian school](/img/app.jpg)](http://onelink.to/njhc95)
+The `length` property is automatically updated when the array changes. To be precise, it is not the number of elements in the array, but the largest numeric index plus one.
 
- 
+![Update](https://media.giphy.com/media/FP47IFqWyXfdKYU6VG/giphy.gif)
+
+For example, the only real element with a large index gives the largest possible length to the array 👇:
+
+```jsx live
+function learnJavaScript() {
+  let fruits = []
+  fruits[155] = 'Apple'
+
+  return fruits.length // 156
+}
+```
+
+Note that we usually don't use arrays this way.
+
+Another interesting fact about the `length` property is that it can be overwritten.
+
+If we manually increase ➕ it, nothing interesting happens. But if we decrease it, the array will become shorter. This process is irreversible, as we can understand from the example 👇:
+
+```jsx live
+function learnJavaScript() {
+  let arr = [1, 2, 3, 4, 5]
+
+  arr.length = 2 // shorten to two elements
+  //console.log( arr )  // [1, 2]
+
+  arr.length = 5 // return length as it was
+  //console.log( arr[3] )  // undefined: values are not restored!
+
+  return 'The real array was shortened:' + arr
+}
+```
+
+So the simplest way to clear the array is with `arr.length = 0`.
+
+## Item types
+
+![Storage](https://media.giphy.com/media/2sYaePC3iVWYBNxaVj/giphy.gif)
+
+An array can store 📦 elements of any type - number, boolean value, strings, objects, or entire functions:
+
+For example 👇:
+
+```jsx live
+function learnJavaScript() {
+  let arr = [
+    'Apple',
+    { name: 'Nikita' },
+    true,
+    function () {
+      return 'Hello'
+    }
+  ]
+  // get the element with index 1 {object} and then read its property
+  let x = arr[1].name // name Nikita
+  // get the element with index 3 (function) and execute it
+  let result1 = arr[3] // The function itself
+  let result2 = arr[3]() // 'Hello'
+
+  return 'Value of 4th element at 3rd index:' + result2
+  // + '. The function itself: '+ result1
+}
+```
+
+Note `result1 = arr [3]` contain the text of the function, and `result2 = arr [3] ()` the result of the executed function is `()` we run it.
+
+## Methods `push / pop`
+
+![binarycode](https://media.giphy.com/media/fV0oSDsZ4UgdW/giphy.gif)
+
+`Stack` is a variant of using arrays as data structures.
+
+It supports two 2️⃣ types of operations:
+
+- `push` adds a ➕ element to the end.
+
+![Add](https://media.giphy.com/media/Yqo5mjWTLGlVOIP8Dc/giphy.gif)
+
+- `pop` removes ➖ the last element.
+
+![Delete](https://media.giphy.com/media/VD4Bt6FyYWcWj0LzDK/giphy.gif)
+
+Thus, new elements are always added or removed from the "end".
+
+An example of a stack is usually a pyramid: new rings are placed on top and also taken from above.
+
+`Queue` is one of the most common uses for an array. In computer science, this is an ordered collection of elements
+
+## Methods for working with the end of an array:
+
+### push
+
+![Add to](https://media.giphy.com/media/21ODeWspDCgZNAoCIp/giphy.gif)
+
+Adds an ➕ element to the end of an array 👇:
+
+```jsx live
+function learnJavaScript() {
+  let fruits = ['Apple', 'Orange']
+
+  fruits.push('Pear')
+
+  return 'Array: ' + fruits // Apple, Orange, Pear
+}
+```
+
+### pop
+
+![Delete](https://media.giphy.com/media/26ybwwiZmci3DJdYs/giphy.gif)
+
+Removes ➖ the last element from an array and returns it 👇:
+
+```jsx live
+function learnJavaScript() {
+  let fruits = ['Apple', 'Orange', 'Pear']
+
+  let delFruits = fruits.pop() // remove the "Pear" and return it to the delFruits variable
+
+  return 'Removed item = ' + delFruits + '. Array left: ' + fruits // Apple, Orange
+}
+```
+
+## Methods for working with the beginning of an array:
+
+![start](https://media.giphy.com/media/QJvwBSGaoc4eI/giphy.gif)
+
+### shift
+
+Removes ➖ the first from the array and returns 🔄 it:
+
+![delete](https://media.giphy.com/media/4Z1XJumqDgvI9b1VZJ/giphy.gif)
+
+```jsx live
+function learnJavaScript() {
+  let fruits = ['Apple', 'Orange', 'Pear']
+
+  fruits.shift() // remove the Apple
+
+  return fruits
+}
+```
+
+### unshift
+
+Adds an ➕ element to the beginning of the array:
+
+![Plus](https://media.giphy.com/media/LgC9OQ53v5mFi/giphy.gif)
+
+```jsx live
+function learnJavaScript() {
+  let fruits = ['Apple', 'Orange', 'Pear']
+
+  fruits.unshift('Apricot')
+
+  return fruits
+}
+```
+
+The `push` and` unshift` methods can add ➕ several elements at once 👇:
+
+```jsx live
+function learnJavaScript() {
+  let fruits = ['Apple']
+
+  fruits.push('Orange', 'Pear')
+  fruits.unshift('Pineapple', 'Lemon')
+
+  return 'In an array ' + fruits.length + ' elements. ' + ' Array: ' + fruits // ["Pineapple", "Lemon", "Apple", "Orange", "Pear"]
+}
+```
+
+## Internal Array
+
+![cupboard](https://media.giphy.com/media/b90TnygrKqYqk/giphy.gif)
+
+An array is a special kind of object. The square brackets used to access the arr [0] property are essentially the usual syntax for key access, such as obj `[key]`, where obj is arr and the key is a numeric index.
+
+Arrays extend objects because they provide special methods for working with ordered collections of data, as well as a length property. “But they are still facility based.
+
+Keep in mind that in JavaScript, an array is an object and therefore behaves like an object.
+
+For example, an array is copied by reference 👇:
+
+```jsx live
+function learnJavaScript() {
+  let fruits = ['Lemon']
+
+  let copy = fruits // copied by reference (two variables refer to the same array)
+
+  copy.push('Pear') // arrays are changed by reference with one command
+
+  return '1 array:' + fruits + '2 array:' + copy // Lemon, Pear - now two elements
+}
+```
+
+What really makes arrays special is their internal representation. The JavaScript engine tries to store the elements of an array in a contiguous region of memory, one after the other. There are other optimizations that make arrays very fast.
+
+But they all become ineffective if we stop working with an array as an "ordered collection of data" and start using it like a regular object.
+
+For example, we can technically do the following:
+
+```javascript
+let fruits = [] // create an empty array
+
+fruits[99999] = 5 // create a property with a redundant index much larger than the required array length
+
+fruits.age = 25 // create a property with an arbitrary name
+```
+
+This is possible because the array is based on an object. We can assign any properties to it.
+
+:::note Possible misuse of an array!
+
+- Adding a non-numeric property (index test), for example: arr.test = 5
+- Creation of "holes", for example: adding arr [0], then arr [1000] (there is nothing in between)
+- Filling the array in reverse order, for example: arr [1000], arr [999], etc.
+
+:::
+
+Consider an array as a special structure that allows you to work with ordered data. If you need arbitrary keys, it is quite possible that a regular {} object is better suited.
+
+## Efficiency
+
+![Fast](https://media.giphy.com/media/3oriNYQX2lC6dfW2Ji/giphy.gif)
+
+The push / pop methods are fast, and the shift / unshift methods are slow.
+
+Why is it faster to work with the end of an array than with its beginning? Let's see what happens at runtime:
+
+```javascript
+fruits.shift() // remove the first element from the beginning
+```
+
+It is not enough to simply grab and remove item 0. You also need to re-number the rest of the elements.
+
+The shift operation has to do 3 things:
+
+- Remove element with index 0
+
+![Delete](https://media.giphy.com/media/VIzs0jgs8KmgVeTknN/giphy.gif)
+
+- Move all the elements to the left, re-number them, replacing `1` with `0`, `2` with `1`, etc.
+
+![Move](https://media.giphy.com/media/jSQcEjcwG53WooptHz/giphy.gif)
+
+- Update the `length` property
+
+The more elements the array contains, the longer it will take to move them, the more memory operations.
+
+But what about removing pop? He doesn't need to move anything. To remove an element at the end of an array, the pop method clears the index and decrements the length. The rest of the elements remain with the same indices.
+
+```javascript
+fruits.pop() // remove one element from the end
+```
+
+The pop method does not need to be moved. That is why it runs very quickly.
+
+The `push` method works the same way.
+
+## Iterating over elements
+
+![Object](https://media.giphy.com/media/26gs9kSN6d5PxSsQU/giphy.gif)
+
+One of the oldest ways to iterate over array elements is a `for ()` loop over numeric indices 👇:
+
+```jsx live
+// prettier-ignore
+function learnJavaScript() {
+   let result = ''
+   let arr = ['Apple', 'Orange', 'Kiwi']
+
+   for (let i = 0; i < arr.length; i++) // iterate over elements through for ()
+   result += arr[i] + ', '
+
+   return result // Apple, Orange, Kiwi
+}
+```
+
+But another version of the loop is possible for arrays, `for..of` 👇:
+
+```jsx live
+function learnJavaScript() {
+  let result = ''
+  let fruits = ['Apple', 'Orange', 'Plum']
+
+  for (let fruit of fruits) {
+    // iterate over values through `for..of`
+    result += fruit + ', '
+  }
+  return result // Apple, Orange, Plum
+}
+```
+
+The `for..of` loop does not provide access to the number of the current element, only its value, but in most cases this is more than enough, and it is also shorter.
+
+<!-- ## Псевдомассивы
+
+![Spiderman](https://media.giphy.com/media/l36kU80xPf0ojG0Erg/giphy.gif)
+
+В браузере и других программных средах также существуют так называемые "псевдомассивы" – объекты, которые выглядят, как массив. То есть, у них есть свойство `length` и индексы, но они также могут иметь дополнительные нечисловые свойства и методы, которые нам обычно не нужны. Тем не менее, цикл `for..in` выведет и их. Поэтому, если нам приходится иметь дело с объектами, похожими на массив, такие "лишние" свойства могут стать проблемой.
+
+Технически, так как массив является объектом, можно использовать и вариант `for..in` для правильного массива 👇 :
+
+```jsx live
+function learnJavaScript() {
+  let result = ''
+  let arr = ['Яблоко', 'Апельсин', 'Груша', 'Лимон']
+
+  for (let key in arr) {
+    // проходит по элементам через `for..in`
+    result += arr[key] + ' '
+  }
+  return result // Яблоко, Апельсин, Груша, Лимон
+}
+```
+
+Цикл `for..in` оптимизирован под произвольные объекты, не массивы, и поэтому в 10-100 раз медленнее. Увеличение ➕ скорости выполнения может стать проблемой.
+
+В целом, не следует использовать цикл `for..in` для массивов. Так же существуют скрытые недостатки этого способа:
+
+- цикл `for..in` выполняет перебор всех свойств объекта, а не только цифровых. -->
+
+## Multidimensional arrays
+
+![Matryoschka](https://media.giphy.com/media/XuPaGVKyJ6eyI/giphy.gif)
+
+Arrays can contain elements that are also arrays. This can be used to create омер multidimensional arrays, for example, to store 📦 matrices:
+
+```jsx live
+function learnJavaScript() {
+  let matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+  ]
+
+  return matrix[1][1] // 5, central element
+}
+```
+
+## Total
+
+![remember](https://media.giphy.com/media/l4pTfqyI6TCjUW4Yo/giphy.gif)
+
+An array is a special type of object designed to work with an ordered set of elements.
+
+Announcement🗣️:
+
+```javascript
+// square brackets (usually)
+let arr = [item1, item2 ...]
+
+// new Array (very rare)
+let arr = new Array (item1, item2 ...)
+```
+
+The call `new Array (number)` creates an array with the given length, but no elements.
+
+The length property reflects the length of the array.
+
+We can use an array as a deque using the following operations:
+
+- `push (... items)` adds ➕ items to the end of the array.
+- `pop ()` removes ➖element at the end of the array and returns it.
+- `shift ()` removes ➖ the element at the beginning of the array and returns it.
+- `unshift (... items)` adds ➕ items to the beginning of the array.
+
+To iterate over the elements of an array:
+
+- `for (let i = 0 i < arr.length i ++)` - works fastest, compatible with older browsers.
+- `for (let item of arr)` - modern syntax📖 only for item values ​​(no access to indices).
+- `for (let i in arr)` - never use for arrays!
+
+## Problems?
+
+![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
+
+Write to [Discord](https://discord.gg/6GDAfXn) chat.
+
+## Questions:
+
+![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
+
+An array is ...
+
+1. Subtype of objects with "ordered collection of data"
+2. Internal function
+3. Subtype of objects with "unordered data collection"
+
+An empty array is created:
+
+1. `let arr1 = []`
+2. `let arr2 = {}`
+3. `let arr3 = ()`
+
+The length of the array can be determined by the property:
+
+1. `pop ()`
+2. `push ()`
+3. `length`
+
+The array can store elements:
+
+1. Any type
+2. Numeric
+3. String
+
+Adding an element at the end of the array:
+
+1. `push () `
+2. `pop () `
+3. `shift () `
+
+Removing an element at the beginning of an array:
+
+1. `pop () `
+2. `shift () `
+3. `unshift () `
+
+In order to understand how much you learned this lesson, take the test in the [mobile application](http://onelink.to/njhc95) of our school on this topic or in our [telegram bot](https://t.me/javascriptcamp_bot).
+
+![Sumerian school](/img/app.jpg)
 
 ## Links
 

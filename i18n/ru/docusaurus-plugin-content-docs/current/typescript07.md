@@ -40,7 +40,7 @@ let result2 = getId<string>('abc')
 console.log(result2)
 ```
 
-<!-- В первом случае вместо параметра `T` будет испльзоваться тип `number`, поэтому в функцию мы можем передать число. Во втором случае вместо `T` используется тип `string`, поэтому во втором случае можно передать строку. Таким образом, мы можем передать в функцию объекты различных типов, но при этом сохраняется строгая типизация, каждый вариант обобщенной функции может принимать объекты только определенного типа.
+В первом случае вместо параметра `T` будет испльзоваться тип `number`, поэтому в функцию мы можем передать число. Во втором случае вместо `T` используется тип `string`, поэтому во втором случае можно передать строку. Таким образом, мы можем передать в функцию объекты различных типов, но при этом сохраняется строгая типизация, каждый вариант обобщенной функции может принимать объекты только определенного типа.
 
 Подобным образом еще можно использовать обобщенные массивы:
 
@@ -82,25 +82,150 @@ console.log(result)
 
 1.  `t`
 2.  `T`
-3.  `<T>` 
+3.  `<T>`
+
+<!--
+## Обобщенные классы и интерфейсы
+
+Кроме обобщенных функций и массивов также бывают обобщенные классы и интерфейсы:
+
+[Пример](https://www.typescriptlang.org/play?#code/MYGwhgzhAECqEFMBOAeAKgPmgbwFDWgAckBLANzABcFoB9EgEwC5o19pgB7AOwkqQCuwSpyQAKRizQBKHOwKUAFiQgA6eg2gBeaI3YBfdgHMElAJIMx0qXIIEkpgUm7QlK9XoKHDuEKdecALba0NwIAO5wiKjcAoEARsgYYgDM0rhcvJx+qiCcRmIigaom5pbSsgD0ldCATCCAfCCA7CC1gAIggAwggJIgbYCsIIBCIKFxiUi4vv5gICTANDphkfDIKHyk3EbJAORkEABma+mZENkIufli45NHpRZWVTUNze1dfdBLJCtAA)
+
+```typescript
+class User<T> {
+  private _id: T
+  constructor(id: T) {
+    this._id = id
+  }
+  getId(): T {
+    return this._id
+  }
+}
+
+let tom = new User<number>(3)
+console.log(tom.getId()) // возвращает number
+
+let alice = new User<string>('vsf')
+console.log(alice.getId()) // возвращает string
+```
+
+Только в данном случае надо учитывать, что если мы типизировали объект определенным типом, то сменить данный тип уже не получится. То есть в следующем случае второе создание объекта не будет работать, так как объект tom уже типизирован типом number:
+
+[Пример](https://www.typescriptlang.org/play?#code/MYGwhgzhAECqEFMBOAeAKgPmgbwFDWgAckBLANzABcFoB9EgEwC5o19pgB7AOwkqQCuwSpyQAKRizQBKHOwKUAFiQgA6eg2gBeaI3YBfdgHMElAJIMx0qXIIEkpgUm7QlK9XoKHDuEKdecALba0NwIAO5wiKjcAoEARsgYYgDM0rhcvJx+qiCcRmIigaom5pbS6bhFIWGR8MgofKTcRskA5GQQAGZtsgD0fdCAfCCAEiCAHCCAjCCAXCCADCBAA)
+
+```typescript
+let tom = new User<number>(3)
+console.log(tom.getId())
+tom = new User<string>('vsf') // ошибка
+```
+
+Все то же самое и с интерфейсами:
+
+```typescript
+interface IUser<T> {
+  getId(): T
+}
+
+class User<T> implements IUser<T> {
+  private _id: T
+  constructor(id: T) {
+    this._id = id
+  }
+  getId(): T {
+    return this._id
+  }
+}
+```
+
+## Ограничения обобщений
+
+Иногда необходимо использовать обобщения, однако принимать любой тип в функцию или класс вместо параметра `T` нежелательно. Например, пусть имеется следующий интерфейс и классы его реализующие:
+
+```typescript
+interface IUser {
+  getInfo()
+}
+class User implements IUser {
+  _id: number
+  _name: string
+  constructor(id: number, name: string) {
+    this._id = id
+    this._name = name
+  }
+  getInfo() {
+    console.log('id: ' + this._id + '; name: ' + this._name)
+  }
+}
+
+class Employee extends User {
+  _company: string
+  constructor(id: number, name: string, company: string) {
+    super(id, name)
+    this._company = company
+  }
+
+  getInfo() {
+    console.log('id: ' + this._id + '; name: ' + this._name + '; company:' + this._company)
+  }
+}
+```
+
+Теперь пусть у нас будет класс, выводящий информацию о пользователях:
+
+```typescript
+class UserInfo<T extends IUser> {
+  getUserInfo(user: T): void {
+    user.getInfo()
+  }
+}
+```
+
+В методе `getUserInfo` мы хотим использовать функцию `getInfo()`, предполагая, что в качестве параметра будет передаваться объект `IUser`. Но чтобы нельзя было передать объекты любого типа, а только объекты `IUser`, устанавливается ограничения с помощью ключевого слова extends.
+
+И затем мы можем использовать класс, передавая подходящие объекты:
+
+```typescript
+let tom = new User(3, 'Tom')
+let alice = new Employee(4, 'Alice', 'Microsoft')
+let userStore = new UserInfo()
+userStore.getUserInfo(tom)
+userStore.getUserInfo(alice)
+```
+
+## Ключевое слово new
+
+Чтобы создать новый объект в коде обобщений, нам надо указать, что обобщенный тип T имеет конструктор. Это означает, что вместо параметра type:T нам надо указать type: {new(): T;}. Например, следующий обобщенный интерфейс работать не будет:
+
+```typescript
+function UserFactory<T>(): T {
+  return new T() // ошибка компиляции
+}
+```
+
+Чтобы интерфейс начал работать, используем слово new:
+
+```typescript
+function userFactory<T>(type: { new (): T; }); T {
+
+    return new type()
+}
+
+
+class User {
+
+    constructor() {
+        console.log("создан объект User")
+    }
+}
+
+let user : User = userFactory(User)
+``` -->
 
 ## Ссылки:
 
 1.  [TypeScript документация](https://www.typescriptlang.org/docs/handbook/generics.html)
 2.  [Metanit](https://metanit.com/web/typescript/3.5.php)
 3.  [Canonium](https://canonium.com/articles/typescript-generics)
-
--->
-## Оплата
-
-Сейчас ты находишся на урезанной версии сайта, после оформления подписки на [Patreon](https://www.patreon.com/javascriptcamp), ты получишь полный доступ к обучающему курсу, а также доступ к серетным каналам нашего сервера в [Discord](https://discord.gg/6GDAfXn).  
-
-Качай наше [мобильное приложение](http://onelink.to/njhc95) или пройди тестирование в нашем [JavaScript телеграм боте](https://t.me/javascriptcamp_bot), а также подпишись на [наши новости](https://t.me/javascriptapp).
-
-
-[![Sumerian school](/img/app.jpg)](http://onelink.to/njhc95)
-
- 
 
 ## Contributors ✨
 
@@ -116,3 +241,10 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   </tr>
   
 </table>
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)

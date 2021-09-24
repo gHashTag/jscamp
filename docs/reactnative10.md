@@ -45,18 +45,107 @@ export default App
 In this example, `useState` is a hook. We call it to endow our functional component with internal state. React will keep this state between renders. The call to `useState` returns an array with two elements, which contains: the current value of the state (getter) and a function to update it (setter). This function can be used anywhere, for example, in an event handler.
 The only argument to useState is the initial state. In the example above, this is `0`, since our counter starts at zero. The original argument value is used only on the first render.
 
-## Payment
+## useEffect - Effect hook ⚡️
 
-Now you are on a stripped-down version of the site, after subscribing to [Patreon](https://www.patreon.com/javascriptcamp), you will get full access to the training course, as well as access to our server's private channels in [Discord](https://discord.gg/6GDAfXn).
+You've most likely had the experience of querying data, subscribing, or manually modifying the DOM from a React component before. We regard these operations as "side effects" (or "effects" for short), since they can affect the operation of other components and cannot be performed at render time.
+With the `useEffect` hook, you can execute side effects from a functional component.
 
-Download our [mobile application](http://onelink.to/njhc95) or get tested in our [JavaScript telegram bot](https://t.me/javascriptcamp_bot), and also subscribe to [our news](https://t.me/javascriptapp).
+For example, this component receives data from the server and displays it in the `FlatList` component. In order to see the data in the preview, you need to select the device `iOS` or `Android` as desired.
 
-[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
+```SnackPlayer name=index.js
+import React, { useEffect, useState } from 'react'
+import { ActivityIndicator, FlatList, Text, View } from 'react-native'
 
+const App = () => {
+  const [data, setData] = useState([])
 
-[![Sumerian school](/img/app.jpg)](http://onelink.to/njhc95)
+  useEffect(async () => {
+    let response = await fetch('https://reactnative.dev/movies.json')
+    let json = await response.json()
+    setData(json.movies)
+  }, [])
 
- 
+  return (
+    <View style={{flex: 1, padding: 24}}>
+      <FlatList
+        data={data}
+        keyExtractor={({id}, index) => id}
+        renderItem={({item}) => (
+          <Text>
+            {item.title}, {item.releaseYear}
+          </Text>
+        )}
+      />
+    </View>
+  )
+}
+
+export default App
+```
+
+## Hook rules
+
+Hooks are regular JavaScript functions, but there are two rules to follow.
+
+### Only use hooks at the top level
+
+Don't call hooks inside loops, conditionals, or nested functions. Instead, always use hooks only inside React functions, before returning any value from them. This rule ensures that the hooks are called in the same sequence each time the component is rendered. This will allow React to properly persist the hook state between multiple calls to `useState` and `useEffect`.
+
+### Only call hooks from React functions
+
+Don't call hooks from regular JavaScript functions. Instead, you can:
+
+- ✅ Call hooks from a functional React component.
+- ✅ Call hooks from a custom hook.
+  By following this rule, you can ensure that all of the component state logic is clearly visible from the source code.
+
+To follow the rules of hooks, use the [ESLint plugin](https://ru.reactjs.org/docs/hooks-rules.html#eslint-plugin)
+
+Read about how to create a custom hook yourself [here](https://ru.reactjs.org/docs/hooks-custom.html)
+
+## Questions
+
+Functions with which you can hook into React state and lifecycle methods from functional components?
+
+1. Hooks
+2. Trailers
+3. Hooks
+
+Hooks are an innovation in React that allows you to use state and other React features without writing c version classes:
+
+1. React 16.5
+2. React 16.8
+3. React 16.9
+
+What is the application state hook called?
+
+1. `useState`
+2. `useEffect`
+3. `useReduce`
+
+What hook can you use to execute side effects from a functional component?
+
+1. `useState`
+2. `useEffect`
+3. `useReduce`
+
+Are hooks called from loops, conditionals, or nested functions?
+
+1. `true`
+2. `false`
+
+Hooks can only be called from React functions?
+
+1. `true`
+2. `false`
+
+To see how well you learned this lesson, take the test in the [mobile application](http://onelink.to/njhc95) of our school on this topic or in the [telegram bot](https://t.me/javascriptcamp_bot).
+
+![Sumerian school](/img/app.jpg)
+
+## Links:
+1. [React Native](https://ru.reactjs.org/docs/hooks-intro.html)
+2. [Learn React](https://learn-reactjs.ru/training-project/app-state)
 
 ## Contributors ✨
 

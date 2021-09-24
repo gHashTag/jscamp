@@ -45,18 +45,59 @@ export class Animal {
 export { fruit, e, sum, Fruit, Animal }
 ```
 
-## Payment
+## Default export
 
-Now you are on a stripped-down version of the site, after subscribing to [Patreon](https://www.patreon.com/javascriptcamp), you will get full access to the training course, as well as access to our server's private channels in [Discord](https://discord.gg/6GDAfXn).
+Using the keyword `default` you can export by default.
 
-Download our [mobile application](http://onelink.to/njhc95) or get tested in our [JavaScript telegram bot](https://t.me/javascriptcamp_bot), and also subscribe to [our news](https://t.me/javascriptapp).
+[Playground Link](https://www.typescriptlang.org/play?#code/KYDwDg9gTgLgBAE2AMwIYFcA28DGnUDOBcAqgcFHAN4BQc9cOEAdgTFOjjNABRjoAjTAEsccZqgC2wAJTUAvjXlA)
 
-[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
+```jsx
+export default class User {
+    constructor(public name) {}
+}
+```
 
+## Import
 
-[![Sumerian school](/img/app.jpg)](http://onelink.to/njhc95)
+You can connect the exported functionality of the module using the keyword `import`.
 
- 
+[Playground Link](https://www.typescriptlang.org/play?#code/PTAEgwQQeEEfhBD4QQBEEEIgpr0BwglCsIPAUASwFsAHAewCcAXUAb1AEEAaUAIVAF9QAzMkg0AcgB0wAM4BjMniIUR-HDhAQYCZIBYQQNwggeRBQgWRBAXCCBBEDhJADCApYoQMIgkWOsDiICcC8IGkByIPmLkqAVREBTMlw8fELAAK5+ZLLyilDGyAagqvCWgMwgGKAYmI6YkO6klDT0oACGIiVMrBzcvALC4pLSUQpgsSqggEwgBpiAoiCgNqqW6piAnCB5nqAAVCVl9VIygTUhs41yADa+VMWgALygyzKCdEA)
+
+```jsx
+// Импорт пример
+import { A, B } from './scripts'
+
+// Импорт для экспорта по умолчанию
+import User from './users'
+
+// Импорт с другим именем
+import { A as a, B } from './scripts'
+
+// Импорт всех модулей
+import * as scripts from './scripts'
+let a = scripts.A
+```
+
+## Re-export
+
+In a module, you can re-export the functionality of some other module using the `export .. from` construction. In this case, no import is performed locally and the variable is not created.
+
+[Playground Link](https://www.typescriptlang.org/play?#code/KYDwDg9gTgLgBAbzgITgQwM5wEZwL5wBmUEAtnAOQB0A9BgMZQCWYMGFA3EA)
+
+```jsx
+export { B as b } from './scripts'
+```
+
+## Questions
+
+Now we are ready to study _TypeScript_ with you, but in order to understand how much you learned this lesson, take the test in the [mobile application](http://onelink.to/njhc95) in our school on this topic.
+
+![Sumerian school](/img/app.jpg)
+
+## Links
+
+1. [TypeScriptLang](https://www.typescriptlang.org/docs/handbook/modules.html)
+2. [Modules](http://typescript-lang.ru/docs/Modules.html)
 
 ## Contributors ✨
 

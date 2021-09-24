@@ -56,18 +56,143 @@ console.log(result)
 
 In this case, regardless of the type of data passed in the array, all its elements will be combined into one common string.
 
-## Payment
+## Generic Classes and Interfaces
 
-Now you are on a stripped-down version of the site, after subscribing to [Patreon](https://www.patreon.com/javascriptcamp), you will get full access to the training course, as well as access to our server's private channels in [Discord](https://discord.gg/6GDAfXn).
+In addition to generic functions and arrays, there are also generic classes and interfaces:
 
-Download our [mobile application](http://onelink.to/njhc95) or get tested in our [JavaScript telegram bot](https://t.me/javascriptcamp_bot), and also subscribe to [our news](https://t.me/javascriptapp).
+```typescript
+class User<T> {
+  private _id: T
+  constructor(id: T) {
+    this._id = id
+  }
+  getId(): T {
+    return this._id
+  }
+}
 
-[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
+let tom = new User<number>(3)
+console.log(tom.getId()) // возвращает number
+
+let alice = new User<string>('vsf')
+console.log(alice.getId()) // возвращает string
+```
+
+Only in this case, we must take into account that if we typed an object with a certain type, then changing this type will no longer work. That is, in the following case, the second object creation will not work, since the tom object is already typed with the number type:
+
+```typescript
+let tom = new User<number>(3)
+console.log(tom.getId())
+tom = new User<string>('vsf') // ошибка
+```
+
+It's the same with interfaces:
+
+```typescript
+interface IUser<T> {
+  getId(): T
+}
+
+class User<T> implements IUser<T> {
+  private _id: T
+  constructor(id: T) {
+    this._id = id
+  }
+  getId(): T {
+    return this._id
+  }
+}
+```
+
+## Generalization constraints
+
+Sometimes you need to use generics, but you don't want to accept any type in a function or class instead of the T parameter. For example, suppose you have the following interface and classes that implement it:
+
+```typescript
+interface IUser {
+  getInfo()
+}
+class User implements IUser {
+  _id: number
+  _name: string
+  constructor(id: number, name: string) {
+    this._id = id
+    this._name = name
+  }
+  getInfo() {
+    console.log('id: ' + this._id + '; name: ' + this._name)
+  }
+}
+
+class Employee extends User {
+  _company: string
+  constructor(id: number, name: string, company: string) {
+    super(id, name)
+    this._company = company
+  }
+
+  getInfo() {
+    console.log('id: ' + this._id + '; name: ' + this._name + '; company:' + this._company)
+  }
+}
+```
+
+Now let's have a class that displays information about users:
+
+```typescript
+class UserInfo<T extends IUser> {
+  getUserInfo(user: T): void {
+    user.getInfo()
+  }
+}
+```
+
+In the getUserInfo method, we want to use the getInfo () function, assuming an IUser object will be passed as a parameter. But so that you cannot pass objects of any type, but only IUser objects, constraints are set using the extends keyword.
+
+And then we can use the class by passing in the appropriate objects:
+
+```typescript
+let tom = new User(3, 'Tom')
+let alice = new Employee(4, 'Alice', 'Microsoft')
+let userStore = new UserInfo()
+userStore.getUserInfo(tom)
+userStore.getUserInfo(alice)
+```
+
+## The new keyword
+
+To create a new object in generic code, we need to indicate that the generic type T has a constructor. This means that instead of the type: T parameter, we need to specify type: {new (): T;}. For example, the following generic interface will not work:
+
+```typescript
+function UserFactory<T>(): T {
+  return new T() // ошибка компиляции
+}
+```
+
+To make the interface work, use the word new:
+
+```typescript
+function userFactory<T>(type: { new (): T; }); T {
+
+    return new type()
+}
 
 
-[![Sumerian school](/img/app.jpg)](http://onelink.to/njhc95)
+class User {
 
- 
+    constructor() {
+        console.log("создан объект User")
+    }
+}
+
+let user : User = userFactory(User)
+```
+
+## Links:
+
+1.  [TypeScript документация](https://www.typescriptlang.org/docs/handbook/generics.html)
+2.  [Metanit](https://metanit.com/web/typescript/3.5.php)
+3.  [Canonium](https://canonium.com/articles/typescript-generics)
 
 ## Contributors ✨
 

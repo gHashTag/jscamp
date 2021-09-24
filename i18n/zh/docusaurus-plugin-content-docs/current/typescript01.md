@@ -1,38 +1,38 @@
 ---
 id: typescript01
-title: Installation TypeScript
-sidebar_label: Installation
+title: Установка TypeScript
+sidebar_label: Установка
 ---
 
-To get started with TypeScript, you need to install its toolkit. You can install TypeScript through the NPM package manager.
+Для начала работы с TypeScript необходимо установить его инструментарий. Установить TypeScript можно через пакетный менеджер NPM.
 
-## Installing Node.js
+## Установка Node.js
 
-To install via NPM, you need to have Node.js installed (if not already installed). For further actions, you need an installed package manager [Chocolatey](https://react-native-village.github.io/docs/start00#установка-chocolatey). Install NPM with it.
-To start the installation process, you need to run the command in Powershell:
+Для установки через NPM необходимо установить Node.js (если он ранее не был установлен). Для дальнейших действий нужен установленный менеджер пакетов [Chocolatey](https://react-native-village.github.io/docs/start00#установка-chocolatey). С помощью него установим NPM.
+Для начала процесса установки необходимо выполнить в Powershell комманду:
 
 ```bash
 choco install -y nodejs.install
 ```
 
-## Installing TypeScript
+## Установка TypeScript
 
-To install TypeScript you need to execute the command in Powershell:
+Чтобы установить TypeScript необходимо выполнить в Powershell комманду:
 
 ```bash
 npm install -g typescript
 ```
 
-After the installation is complete, PowerShell will give you this output:
+Послу завершения установки PowerShell выдаст такой результат:
 ![install_success](/img/typescript/01/install.png)
 
-It is possible that TS has already been installed previously. In this case, it can be updated to the latest version using the command
+Вполне возможно, что ранее уже был установлен TS. В этом случае его можно обновить до последней версии с помощью команды
 
 ```bash
 npm update -g typescript
 ```
 
-To check the TypeScript version, enter the command
+Для проверки версии TypeScript необходимо ввести команду
 
 ```bash
 tsc -v
@@ -40,18 +40,32 @@ tsc -v
 
 ![tsversion](/img/typescript/01/version.png)
 
-## Payment
+## Инициализация TypeScript в проекте
 
-Now you are on a stripped-down version of the site, after subscribing to [Patreon](https://www.patreon.com/javascriptcamp), you will get full access to the training course, as well as access to our server's private channels in [Discord](https://discord.gg/6GDAfXn).
+Все что остается сделать так это подключить TypeScript к своему проекту. Для этого нужно создать файл с расширением `.ts` в папке с проектом, написать код и скомпилировать его.
+Это можно сделать в PowerShell командой:
 
-Download our [mobile application](http://onelink.to/njhc95) or get tested in our [JavaScript telegram bot](https://t.me/javascriptcamp_bot), and also subscribe to [our news](https://t.me/javascriptapp).
+```bash
+tsc
+```
 
-[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
+Например:
 
+```bash
+tsc app.ts
+```
 
-[![Sumerian school](/img/app.jpg)](http://onelink.to/njhc95)
+:::note Примечание
+Сперва необходимо переместиться в папку с проектом. Иначе файл не будет найден. В командной строке перемещение по папкам происходит при помощи команды `cd`.
+:::
+Компилятор создаст файл с расширением `.js`. После каждого изменения необходимо производить компиляцию.
 
- 
+Вот так просто работать с TypeScript.
+
+## Ссылки:
+
+1.  [TypeScript.org](https://www.typescriptlang.org/#installation)
+2.  [Metanit](https://metanit.com/web/typescript/1.2.php)
 
 ## Contributors ✨
 

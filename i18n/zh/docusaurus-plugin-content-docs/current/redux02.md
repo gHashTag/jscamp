@@ -1,10 +1,10 @@
 ---
 id: redux-02
-title: Installation
-sidebar_label: Installation
+title: Установка
+sidebar_label: Установка
 ---
 
-Setting up the Redux working environment.
+Настраиваем рабочее окружение Redux.
 
 [![redux](/img/redux/02.gif)](https://youtu.be/xTjsEphn7Pg)
 

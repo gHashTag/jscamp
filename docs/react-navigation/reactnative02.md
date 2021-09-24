@@ -69,18 +69,33 @@ Let's deal with this:
 If we call `navigation.navigate` with a route name that we did not define in the navigator, it will throw an error in development assemblies and nothing will happen in production assemblies. In other words, we can only jump to routes that have been defined in our navigator - we cannot jump to an arbitrary component.
 :::
 
-## Payment
+## Back button
+The header provided by the stack navigator will automatically include a return button when you can return from the active screen. If there is only one screen in the navigation stack, there is nothing to go back to, then there will be no back button.
 
-Now you are on a stripped-down version of the site, after subscribing to [Patreon](https://www.patreon.com/javascriptcamp), you will get full access to the training course, as well as access to our server's private channels in [Discord](https://discord.gg/6GDAfXn).
+Sometimes you need to be able to programmatically trigger this behavior, and for that you can use `navigation.goBack()`
 
-Download our [mobile application](http://onelink.to/njhc95) or get tested in our [JavaScript telegram bot](https://t.me/javascriptcamp_bot), and also subscribe to [our news](https://t.me/javascriptapp).
+```jsx
+<Button title="Go back" onPress={() => navigation.goBack()} />
+```
 
-[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
+## Back to top
+Sometimes we need to take the user back several screens at once. This is done using `navigation.popToTop()`
+
+```jsx
+<Button title="Go back to first screen in stack" onPress={() => navigation.popToTop()} />
+```
 
 
-[![Sumerian school](/img/app.jpg)](http://onelink.to/njhc95)
+## Done ✅
 
- 
+To see how well you learned this lesson, take the test in our school's [mobile app](http://onelink.to/njhc95) on this topic or in [Telegram bot](https://t.me/javascriptcamp_bot).
+
+
+![Sumerian school](/img/app.jpg)
+
+## Links
+
+[React Navigation](https://reactnavigation.org/docs/6.x/navigating)
 
 ## Contributors ✨
 

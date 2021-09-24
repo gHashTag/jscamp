@@ -65,18 +65,162 @@ export default App
 ```
 [Try this example on Snack](https://snack.expo.io/?platform=android&name=Moving%20between%20screens%20%7C%20React%20Navigation&dependencies=%40expo%2Fvector-icons%40*%2C%40react-native-community%2Fmasked-view%40*%2Creact-native-gesture-handler%40*%2Creact-native-pager-view%40*%2Creact-native-paper%40%5E4.7.2%2Creact-native-reanimated%40*%2Creact-native-safe-area-context%40*%2Creact-native-screens%40*%2Creact-native-tab-view%40%5E3.0.0%2C%40react-navigation%2Fbottom-tabs%40%5E6.0.0-next.1%2C%40react-navigation%2Fdrawer%40%5E6.0.0-next.1%2C%40react-navigation%2Fmaterial-bottom-tabs%40%5E6.0.0-next.1%2C%40react-navigation%2Fmaterial-top-tabs%40%5E6.0.0-next.1%2C%40react-navigation%2Fnative%40%5E6.0.0-next.1%2C%40react-navigation%2Fstack%40%5E6.0.0-next.6&hideQueryParams=true&sourceUrl=https%3A%2F%2Freactnavigation.org%2Fexamples%2F6.x%2Fpassing-params.js)
 
-## Payment
+## Initial parameters
+You can also pass some initial parameters to the screen. If you do not specify any parameters when you go to this screen, the initial parameters will be used. They are also shallowly combined with whatever parameters you pass. Initial parameters can be specified using the `initialParams` property:
 
-Now you are on a stripped-down version of the site, after subscribing to [Patreon](https://www.patreon.com/javascriptcamp), you will get full access to the training course, as well as access to our server's private channels in [Discord](https://discord.gg/6GDAfXn).
+```jsx
+<Stack.Screen
+  name="Details"
+  component={DetailsScreen}
+  initialParams={{ itemId: 42 }}
+/>
+```
 
-Download our [mobile application](http://onelink.to/njhc95) or get tested in our [JavaScript telegram bot](https://t.me/javascriptcamp_bot), and also subscribe to [our news](https://t.me/javascriptapp).
+## Transferring parameters to the previous screen
+Options are not only useful for transferring some data to the new screen, but they can also be useful for transferring data to the previous screen. For example, suppose you have a screen with a create post button, and the post create button opens a new screen for creating a post. After creating a message, you want to transfer the data for the message back to the previous screen.
 
-[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
+To do this, you can use the navigation method `navigate`, which acts like `goBack` if the screen already exists. You can pass parameters using navigation to pass data back:
+
+```jsx title="App.js" 
+import * as React from 'react'
+import { View, Button, TextInput, Text } from 'react-native'
+import { NavigationContainer } from '@react-navigation/native'
+import { createStackNavigator } from '@react-navigation/stack'
+
+const HomeScreen = ({ navigation, route }) => {
+  React.useEffect(() => {
+    if (route.params?.post) {
+      // Post updated, do something with `route.params.post`
+      // For example, send the post to the server
+    }
+  }, [route.params?.post])
+
+  return (
+    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <Button title="Create post" onPress={() => navigation.navigate('Details')} />
+      <Text style={{ margin: 10 }}>Post: {route.params?.post}</Text>
+    </View>
+  )
+}
+
+const DetailsScreen = ({ navigation }) => {
+  const [postText, setPostText] = React.useState('')
+
+  return (
+    <>
+      <TextInput
+        multiline
+        placeholder="What's on your mind?"
+        style={{ height: 200, padding: 10, backgroundColor: 'white' }}
+        value={postText}
+        onChangeText={setPostText}
+      />
+      <Button
+        title="Done"
+        onPress={() => {
+          // Pass params back to home screen
+          navigation.navigate('Home', { post: postText })
+        }}
+      />
+    </>
+  )
+}
+
+const Stack = createStackNavigator()
+
+const App = () => (
+  <NavigationContainer>
+    <Stack.Navigator initialRouteName="Home">
+      <Stack.Screen name="Home" component={HomeScreen} />
+      <Stack.Screen name="Details" component={DetailsScreen} />
+    </Stack.Navigator>
+  </NavigationContainer>
+)
+
+export default App
+import * as React from 'react'
+import { View, Button, TextInput, Text } from 'react-native'
+import { NavigationContainer } from '@react-navigation/native'
+import { createStackNavigator } from '@react-navigation/stack'
+
+const HomeScreen = ({ navigation, route }) => {
+  React.useEffect(() => {
+    if (route.params?.post) {
+      // Post updated, do something with `route.params.post`
+      // For example, send the post to the server
+    }
+  }, [route.params?.post])
+
+  return (
+    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <Button title="Create post" onPress={() => navigation.navigate('Details')} />
+      <Text style={{ margin: 10 }}>Post: {route.params?.post}</Text>
+    </View>
+  )
+}
+
+const DetailsScreen = ({ navigation }) => {
+  const [postText, setPostText] = React.useState('')
+
+  return (
+    <>
+      <TextInput
+        multiline
+        placeholder="What's on your mind?"
+        style={{ height: 200, padding: 10, backgroundColor: 'white' }}
+        value={postText}
+        onChangeText={setPostText}
+      />
+      <Button
+        title="Done"
+        onPress={() => {
+          // Pass params back to home screen
+          navigation.navigate('Home', { post: postText })
+        }}
+      />
+    </>
+  )
+}
+
+const Stack = createStackNavigator()
+
+const App = () => (
+  <NavigationContainer>
+    <Stack.Navigator initialRouteName="Home">
+      <Stack.Screen name="Home" component={HomeScreen} />
+      <Stack.Screen name="Details" component={DetailsScreen} />
+    </Stack.Navigator>
+  </NavigationContainer>
+)
+
+export default App
+```
+
+[Try this example on Snack](https://snack.expo.io/?platform=android&name=Configuring%20the%20header%20bar%20%7C%20React%20Navigation&dependencies=%40expo%2Fvector-icons%40*%2C%40react-native-community%2Fmasked-view%40*%2Creact-native-gesture-handler%40*%2Creact-native-pager-view%40*%2Creact-native-paper%40%5E4.7.2%2Creact-native-reanimated%40*%2Creact-native-safe-area-context%40*%2Creact-native-screens%40*%2Creact-native-tab-view%40%5E3.0.0%2C%40react-navigation%2Fbottom-tabs%40%5E6.0.0-next.1%2C%40react-navigation%2Fdrawer%40%5E6.0.0-next.1%2C%40react-navigation%2Fmaterial-bottom-tabs%40%5E6.0.0-next.1%2C%40react-navigation%2Fmaterial-top-tabs%40%5E6.0.0-next.1%2C%40react-navigation%2Fnative%40%5E6.0.0-next.1%2C%40react-navigation%2Fstack%40%5E6.0.0-next.6&hideQueryParams=true&sourceUrl=https%3A%2F%2Freactnavigation.org%2Fexamples%2F6.x%2Fpassing-params-back.js)
+
+Here, after you click "Done", the main screen's `route.params` will be updated to reflect the message text you passed in the navigation.
+
+## Passing parameters to nested navigators
+
+If you have nested navigators, you need to pass parameters a little differently. For example, suppose you have a navigator inside the `Account` screen, and you want to pass parameters to the` Settings` screen inside that navigator. You can pass parameters like this:
+
+```jsx
+navigation.navigate('Account', {
+  screen: 'Settings',
+  params: { user: 'jane' }
+})
+```
 
 
-[![Sumerian school](/img/app.jpg)](http://onelink.to/njhc95)
+## Done ✅
 
- 
+To see how well you learned this lesson, take the test in our school's [mobile app](http://onelink.to/njhc95) on this topic or in [Telegram bot](https://t.me/javascriptcamp_bot).
+
+![Sumerian school](/img/app.jpg)
+
+## Links
+
+[React Navigation](https://reactnavigation.org/docs/6.x/params)
 
 ## Contributors ✨
 

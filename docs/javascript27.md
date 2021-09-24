@@ -49,18 +49,133 @@ fetch('https://jsonplaceholder.typicode.com/users', {
 })
 ```
 
-## Payment
+## Receiving a response
 
-Now you are on a stripped-down version of the site, after subscribing to [Patreon](https://www.patreon.com/javascriptcamp), you will get full access to the training course, as well as access to our server's private channels in [Discord](https://discord.gg/6GDAfXn).
+![Bascketball](https://media.giphy.com/media/l0MYwdebx8o0XI56E/giphy.gif)
 
-Download our [mobile application](http://onelink.to/njhc95) or get tested in our [JavaScript telegram bot](https://t.me/javascriptcamp_bot), and also subscribe to [our news](https://t.me/javascriptapp).
+The `fetch()` method returns🔄 [Promise](https://react-native-village.github.io/docs/javascript24) an object of the `Response` class, which has the following properties:
 
-[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
+1. `status` - response code;
+2. `statusText` - text message 📜 corresponding to the response code;
+3. `ok` - a boolean value indicating the success of the response code (true: 200-299);
+4. `headers` - an object with response headers, in which the key is the name of the header, and the key value is the value of the header corresponding to the key;
+5. `url` - the URL to which the request was sent;
+6. `body` - response data in `ReadableStream` format
+7. `bodyUsed` - Boolean value indicating data reading.
 
+```javascript
+fetch('https://jsonplaceholder.typicode.com/users').then(response => console.log(response))
+```
 
-[![Sumerian school](/img/app.jpg)](http://onelink.to/njhc95)
+## Response handling
 
- 
+![Download](https://media.giphy.com/media/ECoFRCrMgVoQg/giphy.gif)
+
+The transmitted data is in the format `ReadableStream`. The following methods can be used to change the format:
+
+1. `text()` - converts the answer to a string;
+2. `json()` - converts the response in JSON format;
+3. `blob()` - converts the response to a Blob object;
+4. `formData()` - the response is converted into a FormData instance;
+5. `arrayBuffer()` - converts the response to an ArrayBuffer object.
+
+An example of converting a response to JSON format.
+
+```jsx
+fetch('https://jsonplaceholder.typicode.com/users')
+  .then(response => response.json())
+  .then(data => console.log(data))
+```
+
+## Error processing
+
+![Error](https://media.giphy.com/media/DHBGehJ3FSZEygszX3/giphy.gif)
+
+We can find out whether `fetch()` has completed with an error🙅‍♂️ using the "status" and "ok" properties.
+
+```jsx
+fetch('https://jsonplaceholder.typicode.com/users')
+  .then(response => {
+    if (!response.ok) {
+      console.log('Something went wrong ... Status:' + response.status)
+    } else {
+      return response.json()
+    }
+  })
+  .then(data => console.log(data))
+```
+
+With help `.catch()`
+
+```jsx
+fetch('https://jsonplaceholder.typicode.com/users')
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.log(error))
+```
+
+## Request examples
+
+![Math](https://media.giphy.com/media/xT1Ra5h24Eliux3UVq/giphy.gif)
+
+```javascript
+fetch('https://jsonplaceholder.typicode.com/users')
+  .then(response => response.json())
+  .then(data => console.log(data[0].name + ' and ' + data[2].name))
+  .catch(error => console.log(error))
+```
+
+The same, using the `async / await` syntax, which we will get to know in more detail in the next article.
+
+```javascript
+let response = await fetch('https://jsonplaceholder.typicode.com/users')
+let data = await response.json()
+console.log(data[0].name + ' and ' + data[2].name)
+```
+
+## Problems?
+
+![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
+
+Write to [Discord](https://discord.gg/6GDAfXn) chat.
+
+## Questions:
+
+![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
+
+What does the `fetch()` method return?
+
+1. Function
+2. Object
+3. Promise
+
+Given only the URL parameter in fetch (), what request do we get?
+
+1. `POST`
+2. `GET`
+3. `PUT`
+
+What parameter are HTTP headers specified?
+
+1. `redirect`
+2. `headers`
+3. `credentials`
+
+What method should you use to convert the response to a string?
+
+1. `blob()`
+2. `json()`
+3. `text()`
+
+What does the `ok` property mean for an object of class `Response`?
+
+1. Response code
+2. Success of the response code
+3. Reading data from a request
+
+In order to understand how much you learned this lesson, take the test in the [mobile application](http://onelink.to/njhc95) of our school on this topic or in our [telegram bot](https://t.me/javascriptcamp_bot).
+
+![Sumerian school](/img/app.jpg)
 
 ## Links
 

@@ -39,7 +39,7 @@ import YouTube from 'react-youtube'
 
 इसके बाद, हम परीक्षण को लागू करने की योजना बनाते हैं TypeScript, React Native, AWS Amplify, इसलिए हमारी सदस्यता लें [Twitter](https://twitter.com/jscamp_bot), खबर का पालन करने के लिए।
 
- 
+![JavaScript Camp](/img/bandlink.png)
 
 
 बॉट मुफ़्त है, लेकिन आप हमारे स्टार्टअप का समर्थन कर सकते हैं [Patreon](https://www.patreon.com/javascriptcamp)

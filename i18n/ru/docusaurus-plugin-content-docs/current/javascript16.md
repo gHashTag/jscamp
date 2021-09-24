@@ -18,7 +18,7 @@ import YouTube from 'react-youtube'
 
 ## Видео
 
-<YouTube videoId="4CwNZJpc2eA" />
+<YouTube videoId="TQmZIuS9fVE" />
 
 ## Цикл while()
 
@@ -93,7 +93,7 @@ function learnJavaScript() {
 
 Такая форма синтаксиса📖 оправдана, если вы хотите, чтобы тело цикла выполнилось хотя бы один раз, даже если условие окажется ложным ❎ . -->
 
-<!-- ## Цикл for ()
+## Цикл for ()
 
 ![Create](https://media.giphy.com/media/XaExByjWTK1V2HgDfh/giphy.gif)
 
@@ -199,7 +199,7 @@ export default App
 
 Пишите в [Discord](https://discord.gg/6GDAfXn) или телеграмм [чат](https://t.me/jscampapp), а также подписывайтесь на наши [новости](https://t.me/javascriptapp)
 
- 
+![JavaScript Camp](/img/bandlink.png)
 
 ## Вопросы:
 
@@ -264,20 +264,7 @@ while (k < 7) {
 3. [MDN web doc. Статья "Цикл while"](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/while)
 4. [Статья "Iteration", сайт Javascript Express](https://www.javascript.express/syntax/iteration)
 5. [Статья "Циклы while и for"](https://learn.javascript.ru/while-for)
-6. [Код для подростков: прекрасное руководство по программированию для начинающих, том 1: Javascript - Jeremy Moritz ](https://www.amazon.com/Code-Teens-Beginners-Programming-Javascript-ebook/dp/B07FCTLVPC) -->
-
-## Оплата
-
-Сейчас ты находишся на урезанной версии сайта, после оформления подписки на [Patreon](https://www.patreon.com/javascriptcamp), ты получишь полный доступ к обучающему курсу, а также доступ к серетным каналам нашего сервера в [Discord](https://discord.gg/6GDAfXn).  
-
-Качай наше [мобильное приложение](http://onelink.to/njhc95) или пройди тестирование в нашем [JavaScript телеграм боте](https://t.me/javascriptcamp_bot), а также подпишись на [наши новости](https://t.me/javascriptapp).
-
-[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
-
-
-[![Sumerian school](/img/app.jpg)](http://onelink.to/njhc95)
-
- 
+6. [Код для подростков: прекрасное руководство по программированию для начинающих, том 1: Javascript - Jeremy Moritz ](https://www.amazon.com/Code-Teens-Beginners-Programming-Javascript-ebook/dp/B07FCTLVPC)
 
 ## Contributors ✨
 
@@ -635,5 +622,3 @@ for (let value of iterable) {
 Для `for...in` обход перечисляемых свойств объекта осуществляется в произвольном порядке.
 
 Для `for...of` обход происходит в соответствии с тем, какой порядок определен в итерируемом объекте. -->
-
-[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)

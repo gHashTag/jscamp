@@ -33,7 +33,7 @@ let add = function (a: number, b: number): number {
 let result1 = add(1, 2)
 ```
 
-<!-- ### Параметры функции
+### Параметры функции
 
 Функция может иметь параметры, которые указываются после названия функции в скобках через запятую. Через двоеточие после имени формального параметра указывается его тип:
 
@@ -268,25 +268,13 @@ function add(x: boolean, y: boolean): boolean
 
 Для того чтобы понять насколько вы усвоили этот урок пройдите тест в [мобильном приложении](http://onelink.to/njhc95) в нашей школы по этой теме.
 
-![Sumerian school](/img/app.jpg) 
+![Sumerian school](/img/app.jpg)
 
 ## Ссылки:
 
 1. [Основы TypeScript. Функции](https://metanit.com/web/typescript/2.2.php)
 2. [Статья "TypeScript — Функции"](https://coderlessons.com/tutorials/veb-razrabotka/izuchite-mashinopis/typescript-funktsii)
 3. [Статья "TypeScript — Функции скрипта"](https://webformyself.com/typescript-funkcii-skripta/)
-
--->
-## Оплата
-
-Сейчас ты находишся на урезанной версии сайта, после оформления подписки на [Patreon](https://www.patreon.com/javascriptcamp), ты получишь полный доступ к обучающему курсу, а также доступ к серетным каналам нашего сервера в [Discord](https://discord.gg/6GDAfXn).  
-
-Качай наше [мобильное приложение](http://onelink.to/njhc95) или пройди тестирование в нашем [JavaScript телеграм боте](https://t.me/javascriptcamp_bot), а также подпишись на [наши новости](https://t.me/javascriptapp).
-
-
-[![Sumerian school](/img/app.jpg)](http://onelink.to/njhc95)
-
- 
 
 ## Contributors ✨
 
@@ -308,3 +296,4 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
+[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)

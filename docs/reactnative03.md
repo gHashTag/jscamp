@@ -33,18 +33,53 @@ export default App
 
 Using `name` as `props` allows us to customize the greeting component so that we can reuse that component for each of our greetings. This example also uses the JSX `HelloWorld` component. The ability to do this is what makes React so awesome.
 
-## Payment
+### Only for reading
 
-Now you are on a stripped-down version of the site, after subscribing to [Patreon](https://www.patreon.com/javascriptcamp), you will get full access to the training course, as well as access to our server's private channels in [Discord](https://discord.gg/6GDAfXn).
+A component declared as a function or class should never modify its `props` properties. Consider this `sum` function:
 
-Download our [mobile application](http://onelink.to/njhc95) or get tested in our [JavaScript telegram bot](https://t.me/javascriptcamp_bot), and also subscribe to [our news](https://t.me/javascriptapp).
+```jsx
+const sum = (a, b) => a + b
+```
 
-[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
+Such functions are called "clean". Because they don't change their arguments and always return the same result for the same arguments.
 
+In contrast, the following function is not clean because it changes its arguments:
 
-[![Sumerian school](/img/app.jpg)](http://onelink.to/njhc95)
+```jsx
+const count => (account, amount) => account += amount
+```
 
- 
+React is very flexible, but it has one strict rule:
+
+:::tip
+All React components should act as pure functions with respect to their `props` properties.
+:::
+
+## Questions
+
+What are the parameters for creating a component called?
+
+1. `prop`
+2. `props`
+
+A component declared as a function or class should never modify its `props` properties?
+
+1. `true`
+2. `false`
+
+Should all React components work as pure functions with respect to their `props` properties?
+
+1. `true`
+2. `false`
+
+To see how well you learned this lesson, take the test in the [mobile application](http://onelink.to/njhc95) of our school on this topic or in the [telegram bot](https://t.me/javascriptcamp_bot).
+
+![Sumerian school](/img/app.jpg)
+
+## Links:
+
+1. [React Native - official website](https://reactnative.dev/docs/tutorial)
+2. [Learn React](https://learn-reactjs.ru/basics/components-and-props)
 
 ## Contributors ✨
 

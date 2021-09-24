@@ -1,15 +1,14 @@
 ---
 id: typescript05
-title: Classes
-sidebar_label: Classes
+title: Классы
+sidebar_label: Классы
 ---
 
+TypeScript реализует объектно-ориентированный подход, в нем есть полноценная поддержка классов. Класс представляет шаблон для создания объектов и инкапсулирует функциональность, которую должен иметь объект. Класс определяет состояние и поведение, которыми обладает объект.
 
-TypeScript takes an object-oriented approach and has full class support. The class represents a template for creating objects and encapsulates the functionality that an object must have. A class defines the state and behavior that an object has.
+## Классы
 
-## Classes
-
-Let's look at a simple example of working with classes:
+Рассмотрим простой пример работы с классами:
 
 ```typescript
 class Greeter {
@@ -29,21 +28,59 @@ let greeter = new Greeter('world')
 greeter.greet() // Вернет строчку Hello world
 ```
 
-A new class Greeter has been declared. This class has three items: a greeting property, a constructor, and a greet method. The last line instantiates the Greeter class using new. It calls the constructor defined earlier, creates a new object, and runs the constructor to initialize it.
+Объявлен новый класс Greeter. Этот класс имеет три пункта: свойство greeting, конструктор, и метод greet. В последней строке создается экземпляр класса Greeter, используя new. Он вызывает конструктор, что определен ранее, создает новый объект, и запускает конструктор для его инициализации.
 
-## Payment
+## Наследование
 
-Now you are on a stripped-down version of the site, after subscribing to [Patreon](https://www.patreon.com/javascriptcamp), you will get full access to the training course, as well as access to our server's private channels in [Discord](https://discord.gg/6GDAfXn).
+В TypeScript используются привычные подходы объектно-ориентированного программирования. Одним из самых фундаментальных подходов в области программирования на основе классов является создание новых классов с помощью наследования.
 
-Download our [mobile application](http://onelink.to/njhc95) or get tested in our [JavaScript telegram bot](https://t.me/javascriptcamp_bot), and also subscribe to [our news](https://t.me/javascriptapp).
+Пример:
 
-[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
+```typescript
+class Animal {
+  name: string
+  constructor(theName: string) {
+    this.name = theName
+  }
+  move(distanceInMeters: number = 0) {
+    return this.name + ' moved ' + distanceInMeters + ' m.'
+  }
+}
 
+class Snake extends Animal {
+  constructor(name: string) {
+    super(name)
+  }
+  move(distanceInMeters = 5) {
+    super.move(distanceInMeters)
+  }
+}
 
-[![Sumerian school](/img/app.jpg)](http://onelink.to/njhc95)
+class Horse extends Animal {
+  constructor(name: string) {
+    super(name)
+  }
+  move(distanceInMeters = 45) {
+    super.move(distanceInMeters)
+  }
+}
 
- 
+let sam = new Snake('Sammy the Python')
+let tom = new Horse('Tommy the Palomino')
 
+sam.move()
+tom.move(34)
+```
+
+Здесь, ключевое слово `extends`, используется для создания подкласса. Классы Horse и Snake основаны на классе Animal и они получают доступ к его возможностям.
+Классы Snake и Horse создают метод move, который переопределяет метод move из класса Animal, придавая ему функциональность, специфичную для каждого из классов.
+
+Это только основы работы с классами. Но в нашем курсе мы только ознокамливаемся с классами, так как `JavaScript` библиотека `React Native` учит нас функцианальному программированию.
+
+## Ссылки:
+
+1.  [Metanit](https://metanit.com/web/typescript/3.1.php)
+2.  [TypeScript-lang руководство TypeScript](http://typescript-lang.ru/docs/Classes.html)
 
 ## Contributors ✨
 

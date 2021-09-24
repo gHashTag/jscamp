@@ -19,7 +19,7 @@ import YouTube from 'react-youtube'
 
 ## Видео
 
-<YouTube videoId="fBimh_vyf7w" /> 
+<YouTube videoId="P5nXzvtZgH0" /> 
 
 ## Операторы равенства
 
@@ -61,7 +61,7 @@ function learnJavaScript() {
 }
 ```
 
-<!-- ### Не равно `!=`
+### Не равно `!=`
 
 ![Equals](https://media.giphy.com/media/xT8qBit7YomT80d0M8/giphy.gif)
 
@@ -555,7 +555,7 @@ export default App
 
 Пишите в [Discord](https://discord.gg/6GDAfXn) или телеграмм [чат](https://t.me/jscampapp), а также подписывайтесь на наши [новости](https://t.me/javascriptapp)
 
- 
+![JavaScript Camp](/img/bandlink.png)
 
 ## Вопросы:
 
@@ -707,20 +707,7 @@ export default App
 ## Ссылки:
 
 1. [MDN web docs - Операторы сравнения](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Операторы_сравнения)
-2. [Код для подростков: прекрасное руководство по программированию для начинающих, том 1: Javascript - Jeremy Moritz ](https://www.amazon.com/Code-Teens-Beginners-Programming-Javascript-ebook/dp/B07FCTLVPC) -->
-
-## Оплата
-
-Сейчас ты находишся на урезанной версии сайта, после оформления подписки на [Patreon](https://www.patreon.com/javascriptcamp), ты получишь полный доступ к обучающему курсу, а также доступ к серетным каналам нашего сервера в [Discord](https://discord.gg/6GDAfXn).  
-
-Качай наше [мобильное приложение](http://onelink.to/njhc95) или пройди тестирование в нашем [JavaScript телеграм боте](https://t.me/javascriptcamp_bot), а также подпишись на [наши новости](https://t.me/javascriptapp).
-
-[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
-
-
-[![Sumerian school](/img/app.jpg)](http://onelink.to/njhc95)
-
- 
+2. [Код для подростков: прекрасное руководство по программированию для начинающих, том 1: Javascript - Jeremy Moritz ](https://www.amazon.com/Code-Teens-Beginners-Programming-Javascript-ebook/dp/B07FCTLVPC)
 
 ## Contributors ✨
 
@@ -734,5 +721,4 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 </table>
 
-<!-- [![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291) -->
 [![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)

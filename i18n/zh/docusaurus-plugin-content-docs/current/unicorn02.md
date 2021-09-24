@@ -1,17 +1,16 @@
 ---
 id: unicorn02
 title: UI Kit - Unicorn 2
-sidebar_label: Installation
+sidebar_label: Установка
 ---
 
-
-# Installation UI Kit - Unicorn
+# Установка UI Kit - Unicorn
 
 [![react-navigation](/img/uikit/00.gif)](https://youtu.be/4Cn_LdGKA_o)
 
 ![Step01](/img/steps/01.png)
 
-## Add the library
+## Добавляем библиотеку
 
 ```jsx
 yarn add react-native-unicorn-uikit
@@ -19,7 +18,7 @@ yarn add react-native-unicorn-uikit
 
 ![Step02](/img/steps/02.png)
 
-## Add dependencies
+## Добавляем зависимости
 
 ```jsx
 yarn add react-native-appearance react-native-screens @react-navigation/native @react-navigation/native-stack react-native-safe-area-context react-native-spinkit yup formik faker
@@ -29,17 +28,17 @@ yarn add react-native-appearance react-native-screens @react-navigation/native @
 
 ## react-native-vector-icons
 
-Add a library with icons
+Добавляем библиотеку с иконками
 
 ```jsx
 yarn add react-native-vector-icons
 ```
 
-Configure as written [here](https://github.com/oblador/react-native-vector-icons)
+Настраиваем как написано [здесь](https://github.com/oblador/react-native-vector-icons)
 
 ![Step04](/img/steps/04.png)
 
-## Install Pods
+## Устанавливаем Pods
 
 ```jsx
 cd ios && pod install && cd ..
@@ -47,9 +46,9 @@ cd ios && pod install && cd ..
 
 ![Step05](/img/steps/05.png)
 
-## Installing fonts
+## Установка шрифтов
 
-Create a file at the root of the project /react-native.config.js
+Создаем файл в корне проекта /react-native.config.js
 
 ```jsx
 module.exports = {
@@ -61,13 +60,13 @@ module.exports = {
 }
 ```
 
-Downloading fonts [here](https://github.com/react-native-village/react-native-unicorn/tree/master/assets/fonts) and then put them in the created directory ./assets/fonts/, and then link them.
+Качаем шрифты [здесь](https://github.com/react-native-village/react-native-unicorn/tree/master/assets/fonts) и после в cозданную директорию ./assets/fonts/ кладем их, а после линкуем.
 
 ```jsx
 react-native link
 ```
 
-We collect and if, like me, you receive these warnings: warning: duplicate output file errors, then go to Xcode and remove duplicate fonts, except for the connected ones.
+Собираем и если, как и я, получаете эти предупреждения: warning: duplicate output file errors, то перейдите в Xcode и удалите дубликаты шрифтов, кроме подключенных.
 
 ![warning: duplicate output file errors](https://miro.medium.com/max/2000/1*SwWN88tSmK2cj9qRDyTWGA.png)
 
@@ -75,7 +74,7 @@ We collect and if, like me, you receive these warnings: warning: duplicate outpu
 
 ## ThemeProvider
 
-In App.js, we connect the default themes and ThemeProvider or on the basis of [this](https://github.com/react-native-village/react-native-unicorn/blob/master/src/APIComponents.js) file, add our themes.
+B App.js подключаем дефолтные темы и ThemeProvider или на сновании [этого](https://github.com/react-native-village/react-native-unicorn/blob/master/src/APIComponents.js) файла добавляем свои темы.
 
 ```jsx
 import React, { useState } from 'react'
@@ -108,7 +107,7 @@ export default App
 
 ## All UI Kit
 
-Create a UIKit file and include a list of all components
+Создаем файл UIKit и подключаем список всех компонентов
 
 ```jsx
 // @flow
@@ -364,7 +363,7 @@ export default UIKit
 
 ## Faker
 
-Add a file with fake data src/data.js
+Добавляем файл с фейковыми данными src/data.js
 
 ```jsx
 import faker from 'faker'

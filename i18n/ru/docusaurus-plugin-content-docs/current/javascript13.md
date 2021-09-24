@@ -31,7 +31,7 @@ function learnJavaScript() {
 
 ## Видео
 
-<YouTube videoId="Xo8lVbjslpM" />
+<YouTube videoId="J89Qcz0cunw" />
 
 ### Передача других "ложных" значений
 
@@ -39,7 +39,7 @@ function learnJavaScript() {
 
 Если формальному параметру при вызове передано любое значение, отличное от `undefined`, в том числе одно из "ложных" значений, таких как false ❎ , `0`, `""`, `''`,`null`, `NaN`, то в этом случае значение по умолчанию присвоено параметру не будет. В этом случае нужно самому прописывать 🖊️ код который будет отлавливать эти "ложные значения".
 
-<!-- ## Примеры
+## Примеры
 
 ![Math](https://media.giphy.com/media/xT1Ra5h24Eliux3UVq/giphy.gif)
 
@@ -115,7 +115,7 @@ export default App
 
 Пишите в [Discord](https://discord.gg/6GDAfXn) или телеграмм [чат](https://t.me/jscampapp), а также подписывайтесь на наши [новости](https://t.me/javascriptapp)
 
- 
+![JavaScript Camp](/img/bandlink.png)
 
 ## Вопросы:
 
@@ -139,24 +139,11 @@ export default App
 
 Для того чтобы понять, на сколько вы усвоили этот урок, пройдите тест в [мобильном приложении](http://onelink.to/njhc95) нашей школы по этой теме или в нашем [телеграм боте](https://t.me/javascriptcamp_bot).
 
-![Sumerian school](/img/app.jpg) -->
+![Sumerian school](/img/app.jpg)
 
 ## Ссылки:
 
 1.  [MDN web docs](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Functions/Default_parameters)
-
-## Оплата
-
-Сейчас ты находишся на урезанной версии сайта, после оформления подписки на [Patreon](https://www.patreon.com/javascriptcamp), ты получишь полный доступ к обучающему курсу, а также доступ к серетным каналам нашего сервера в [Discord](https://discord.gg/6GDAfXn).  
-
-Качай наше [мобильное приложение](http://onelink.to/njhc95) или пройди тестирование в нашем [JavaScript телеграм боте](https://t.me/javascriptcamp_bot), а также подпишись на [наши новости](https://t.me/javascriptapp).
-
-[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
-
-
-[![Sumerian school](/img/app.jpg)](http://onelink.to/njhc95)
-
- 
 
 ## Contributors ✨
 
@@ -174,5 +161,10 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   </tr>
   
 </table>
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
 
 [![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)

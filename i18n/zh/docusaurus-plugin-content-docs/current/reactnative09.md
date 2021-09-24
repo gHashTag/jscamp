@@ -45,18 +45,23 @@ const styles = StyleSheet.create({
 export default App
 ```
 
-## Payment
+More about the [ScrollView](https://reactnative.dev/docs/scrollview#reference) component.
 
-Now you are on a stripped-down version of the site, after subscribing to [Patreon](https://www.patreon.com/javascriptcamp), you will get full access to the training course, as well as access to our server's private channels in [Discord](https://discord.gg/6GDAfXn).
+## Questions
 
-Download our [mobile application](http://onelink.to/njhc95) or get tested in our [JavaScript telegram bot](https://t.me/javascriptcamp_bot), and also subscribe to [our news](https://t.me/javascriptapp).
+If all the elements have ceased to fit on the screen, then in which component do they need to be wrapped?
 
-[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
+1. `View`
+2. `Flatlist`
+3. `ScrollView`
 
+To see how well you learned this lesson, take the test in the [mobile application](http://onelink.to/njhc95) of our school on this topic or in the [telegram bot](https://t.me/javascriptcamp_bot).
 
-[![Sumerian school](/img/app.jpg)](http://onelink.to/njhc95)
+![Sumerian school](/img/app.jpg)
 
- 
+## Links:
+
+1. [React Native](https://reactnative.dev/docs/platform-specific-code)
 
 ## Contributors ✨
 

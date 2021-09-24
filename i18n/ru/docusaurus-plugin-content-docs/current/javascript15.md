@@ -18,7 +18,7 @@ import YouTube from 'react-youtube'
 
 ## Видео
 
-<YouTube videoId="URTPq98P9dk" />
+<YouTube videoId="s2fLXDgA1wQ" />
 
 ## Синтаксис
 
@@ -46,7 +46,7 @@ switch (n) {
 
 `n` - это булеан [boolean](https://react-native-village.github.io/docs/javascript08) условие.
 
-<!-- ## Примеры
+## Примеры
 
 ![Math](https://media.giphy.com/media/xT1Ra5h24Eliux3UVq/giphy.gif)
 
@@ -195,7 +195,7 @@ export default App
 
 Пишите в [Discord](https://discord.gg/6GDAfXn) или телеграмм [чат](https://t.me/jscampapp), а также подписывайтесь на наши [новости](https://t.me/javascriptapp)
 
- 
+![JavaScript Camp](/img/bandlink.png)
 
 ## Вопросы:
 
@@ -226,20 +226,7 @@ export default App
 
 1.  [MDN web docs](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/switch)
 2.  [Learn JavaScript](https://learn.javascript.ru/switch)
-3.  [Справочник JavaScript](https://javascript.ru/switch) -->
-
-## Оплата
-
-Сейчас ты находишся на урезанной версии сайта, после оформления подписки на [Patreon](https://www.patreon.com/javascriptcamp), ты получишь полный доступ к обучающему курсу, а также доступ к серетным каналам нашего сервера в [Discord](https://discord.gg/6GDAfXn).  
-
-Качай наше [мобильное приложение](http://onelink.to/njhc95) или пройди тестирование в нашем [JavaScript телеграм боте](https://t.me/javascriptcamp_bot), а также подпишись на [наши новости](https://t.me/javascriptapp).
-
-[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
-
-
-[![Sumerian school](/img/app.jpg)](http://onelink.to/njhc95)
-
- 
+3.  [Справочник JavaScript](https://javascript.ru/switch)
 
 ## Contributors ✨
 

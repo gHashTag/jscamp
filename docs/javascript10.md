@@ -41,18 +41,336 @@ function learnJavaScript() {
 }
 ```
 
-## Payment
+### Object creation
 
-Now you are on a stripped-down version of the site, after subscribing to [Patreon](https://www.patreon.com/javascriptcamp), you will get full access to the training course, as well as access to our server's private channels in [Discord](https://discord.gg/6GDAfXn).
+![Object](https://media.giphy.com/media/2YaKpvYQEcl1WuJJTl/giphy.gif)
 
-Download our [mobile application](http://onelink.to/njhc95) or get tested in our [JavaScript telegram bot](https://t.me/javascriptcamp_bot), and also subscribe to [our news](https://t.me/javascriptapp).
+In a computer🖥️ we can represent an `object` as a cabinet with names-properties (`access keys`) signed on it. Inside the cabinet📦 drawers🧰 - data (specific information) and even smaller objects, by analogy with things. It is easy to find, delete or add (write) a new value to it by the `key`.
 
-[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
+![obj01](/img/javascript/12/01.png)
 
+These are two 2️⃣ options for creating🏗️ an empty object:
 
-[![Sumerian school](/img/app.jpg)](http://onelink.to/njhc95)
+```javascript
+// equivalent records
+let obj = {}
+let person = new Object()
+```
 
- 
+The second option is very rarely used in practice.
+
+![obj00](/img/javascript/12/00.png)
+
+## Advanced creation
+
+![Extended](https://media.giphy.com/media/2XflxzlJfoSDycf3BBu/giphy.gif)
+
+Properties can be specified directly when creating an object, through a list in curly braces like {..., `key: value,` ...} and create complex objects:
+
+```jsx live
+function learnJavaScript() {
+  const obj = {
+    age: 15,
+    name: 'John',
+    color: 'black',
+    passport: {
+      serial: 5721,
+      number: 258963,
+      date: '27.10.2015'
+    },
+    student: true
+  }
+
+  return obj.passport.date
+}
+```
+
+The created🏗️ object contains five properties with specific values, one of which is passport data, which is a built-in object. Notice how the call to distant properties or methods of the object goes. Try to return your passport number.
+
+## Adding properties
+
+![Adding](https://media.giphy.com/media/3CZ2iGe1ByKfhZxaD7/giphy.gif)
+
+There are two 2️⃣ syntax for adding properties to an object. 1️⃣ The first is a period, the second is square brackets:
+
+```javascript
+// equivalent records
+obj.age = 15
+obj['age'] = 15
+```
+
+```jsx live
+function learnJavaScript() {
+  let obj = {
+    name: 'John'
+  }
+
+  obj.age = 15
+
+  return obj.age
+}
+```
+
+Square brackets are mainly used when the `properties' name is in a` variable` 🔔:
+
+```javascript
+let nameProp = 'age'
+obj[nameProp] = 15
+```
+
+Here, through the variable 🔔 `nameProp`, we set the name of the property`"age"`, which is the key in the associative array that contains` value 15`.
+
+```jsx live
+function learnJavaScript() {
+  let obj = {
+    name: 'John'
+  }
+
+  let nameProp = 'age'
+  obj[nameProp] = 15
+
+  return obj.age
+}
+```
+
+## Accessing properties
+
+![Door](https://media.giphy.com/media/l378znZcUM7b6VDyM/giphy.gif)
+
+The property is accessed by accessing it 👇:
+
+```jsx live
+function learnJavaScript() {
+  let obj = {} // object is empty
+  obj.age = 17 // equivalent to obj ['age'] = 17 or immediately obj = {age: 17}
+
+  let result1 = obj.age // Option 1
+  let result2 = obj['age'] // Option 2
+
+  return result1 + 'or' + result2
+}
+```
+
+If the object has no such property, the result is `undefined`. Check it in your browser console.
+
+```javascrript
+let obj = {}
+obj.nokey
+```
+
+![nokey](/img/javascript/15.jpg)
+
+There will be no error🙅‍♂️ when accessing a property that does not exist, the special value `undefined` will simply return. If there is no `return` keyword inside the function, then the` undefined` value will also return - the absence of something.
+
+<!-- ## Проверка глобальной переменной
+
+![Planet](https://media.giphy.com/media/LW5vBvAb48Oe9OoEKT/giphy.gif)
+
+В JavaScript нельзя проверить существование глобальной переменной 🔔 простым `if(проверяемаяПеременная)`:
+
+```javascript
+    if (x) { ... }
+```
+
+Если `x` не определен, то конструкция if(x) вызовет `ошибку`.
+
+Распространенное решение - использовать `typeof()`:
+
+```javascript
+    if (typeof(x) != 'undefined') { ... }  // или typeof(x)
+``` -->
+
+<!--
+Однако зная, что глобальная переменная в Javascript - всего лишь свойство объекта `window` - мы можем записать проще:
+
+```javascript
+    if (window.x) { ... }   // правильный аналог if(x)
+    // или
+    if (window.x !== undefined) // аналог typeof x ..
+```
+-->
+
+<!-- :::note Cвойства объектов
+Все свойства объектов - public (общественные), т.е при определении свойства никак нельзя ограничить доступ к свойству.
+:::
+
+В JavaScript есть специальные способы для создания🏗️ `private` свойств, связанные с `замыканиями`. Они рассмотрены вместе с наследованием объектов далее по курсу. -->
+
+## Removing properties
+
+![Delete](https://media.giphy.com/media/5xaOcLwEvFOizxHVyVy/giphy.gif)
+
+Deletes ➖ property operator `delete`. Try to remove the passport number from the previous example:
+
+Create the object from the previous example in the console.
+
+```javascript
+const obj = {
+  age: 15,
+  name: 'John',
+  color: 'black',
+  passport: {
+    serial: 5721,
+    number: 258963,
+    date: '27.10.2015'
+  },
+  student: true
+}
+```
+
+Now remove the nested `passport` object
+
+```javascript
+delete obj.passport
+```
+
+Now if you refer to it, then the result will be `undefined`
+
+```javascript
+obj.passport
+```
+
+![delete obj](/img/javascript/16.jpg)
+
+## Object Methods
+
+![Description](https://media.giphy.com/media/3ohzAqLk7azQ0O6RvW/giphy.gif)
+
+As with other languages👅, JavaScript objects have `methods`.
+
+For example, let's create a `sport` object right away with the` run` method:
+
+```jsx live
+function learnJavaScript() {
+  let sport = {
+    run: n => 'John' + 'ran' + n + 'meters!'
+  }
+
+  return sport.run(300)
+}
+```
+
+### Adding a method
+
+![Add](https://media.giphy.com/media/5ns6077LTlGACuwRQR/giphy.gif)
+
+Adding a method to an existing object is simple, assign the function⚙️ `function (n) {...}` to the `sport.run` property.
+
+```jsx live
+function learnJavaScript() {
+  let sport = {}
+
+  sport.run = n => 'The athlete ran' + n + 'meters and it was' + 'Nikita'
+
+  return sport.run(350)
+}
+```
+
+<!-- :::note Обратите внимание
+Очень часто методы используют в своих расчетах свойства своего же объекта.
+::: -->
+
+This is not about classes, instantiation, and the like. Simple - you can add a new method or delete an existing one to any object at any time.
+
+<!--
+```jsx live
+function learnJavaScript() {
+  var sport = {
+    name: 'Nikita',
+    age: 18
+  }
+
+  sport.run = (n, str) => {
+    if (str === 'men') return 'Спортсмен пробежал ' + n + ' метров и это был ' + sport.name
+    if (str === 'women') return 'Спортсменка пробежала ' + n + ' метров и это была ' + sport.name
+    if (str !== 'men' || str !== 'women') return 'Человек пробежал ' + n + ' метров.'
+  }
+
+  return sport.run(350, 'women')
+}
+```
+
+Подумайте, чем можно заменить множественный `if()`. JavaScript - очень динамический язык👅. -->
+
+## Looping through object properties
+
+![enumeration](https://media.giphy.com/media/h5FIFDs6rXLpWlWWZJ/giphy.gif)
+
+To iterate over all the properties of an object, a special type of `for .. in` construction is used:
+
+```javascript
+for(let key in obj) {
+   // key - property name
+   // obj [key] - property value
+  ...
+}
+```
+
+For example 👇:
+
+```jsx live
+function learnJavaScript() {
+  let result = ''
+
+  const obj = {
+    age: 15,
+    b: 'true',
+    color: 'red'
+  }
+
+  for (let key in obj) {
+    result += key + ':' + obj[key] + ' '
+  }
+
+  return result
+}
+```
+
+And secretly, to be honest, almost any variable 🔔 is a mini-object in the JavaScript environment. So, don't be afraid to use them.
+
+## Problems?
+
+![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
+
+Write to [Discord](https://discord.gg/6GDAfXn) chat.
+
+## Questions:
+
+![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
+
+An empty object is created with the command:
+
+1. `let obj = {}`
+2. `function obj()`
+3. `let x = 10`
+
+The object stores matches:
+
+1. key: value
+2. name: surname
+3. variable = value
+
+The syntax for assigning a value to a specific key (property):
+
+1. `color () = "green" `
+2. `obj.color =" red "`
+3. `function color () =>" yellow "`
+
+An object method in JavaScript is
+
+1. Just a function added to an associative array
+2. External function
+3. Variable described outside the object
+
+Looping through object properties
+
+1. `for (let i = 0; i <= 100; i ++) {sum + = i} `
+2. `for (let key in obj) {}`
+3. `while (condition) {} `
+
+In order to understand how much you learned this lesson, take the test in the [mobile application](http://onelink.to/njhc95) of our school on this topic or in our [telegram bot](https://t.me/javascriptcamp_bot).
+
+![Sumerian school](/img/app.jpg)
 
 ## Links
 

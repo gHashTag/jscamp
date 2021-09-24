@@ -1,10 +1,10 @@
 ---
 id: redux-00
-title: Introduction
-sidebar_label: Introduction
+title: Введение
+sidebar_label: Введение
 ---
 
-We continue and begin our new course on the topic - managing the state of a mobile application with the Redux library in React Native applications. In this course, we will develop with you a mobile application that will search the database, on the server for movies. This course builds on the previous courses, but if you are not a beginner and also familiar with react navigation, then you can start with this course.
+Мы продолжаем и начинаем наш новый курс на тему — управление состоянием мобильного приложения с библиотекой Redux в React Native приложениях. В этом курсе мы разработаем с вами мобильное приложение, которое будет искать по базе данных, на сервере фильмы. Этот курс базируется на предыдущих курсах, но если вы не начинающий, а также знакомы с навигацией react navigation, то можно начать с этого курса.
 
 [![redux](/img/redux/00.gif)](https://youtu.be/KaKiJrVCUrw)
 

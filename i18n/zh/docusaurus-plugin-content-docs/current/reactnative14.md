@@ -1,10 +1,11 @@
 ---
 id: reactnative14
 title: Setting up a working environment on Windows 10
-sidebar_label: Windows 10 setup
+sidebar_label: Configuring Windows 10
 ---
 
 import YouTube from 'react-youtube'
+
 
 This article will help you set up a React Native working environment on the Windows 10 operating system.
 ::: note
@@ -18,8 +19,8 @@ The instructions depend on your operating system and on which mobile OS (Android
 
 [Chocolatey](https://chocolatey.org/install) — package manager in Windows, similar to apt-get in Linux, which allows you to install Node, Python2, etc. The Chocolatey package manager is installed via the `PowerShell` console shell. To launch `PowerShell` on the Start button, call the context menu (by pressing the right mouse button) and select the item` Windows PowerShell (administrator) `.
 
-import Tabs from '@theme/Tabs'
-import TabItem from '@theme/TabItem'
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
 <Tabs
 defaultValue="en"

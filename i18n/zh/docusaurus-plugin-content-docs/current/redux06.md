@@ -4,7 +4,7 @@ title: Thunk
 sidebar_label: Thunk
 ---
 
-And finally, we will make a request to the server and receive our films through Thunk. Redux itself is completely synchronous, you can use middleware like redux-thunk to handle asynchronous actions.
+И в завершение мы сделаем запрос на сервер и получим наши фильмы, через Thunk. Сам Redux полностью синхронный, вы можете использовать промежуточное программное обеспечение, такое как redux-thunk для обработки асинхронных действий.
 
 [![redux](/img/redux/06.gif)](https://youtu.be/-eE3ySQIV80)
 
