@@ -431,6 +431,40 @@ let arr = new Array(item1, item2...)
 - `for (let item of arr)` – современный синтаксис📖 только для значений элементов (к индексам нет доступа).
 - `for (let i in arr)` – никогда не используйте для массивов!
 
+## React Native
+React Native предоставляет набор компонентов для представления списков данных. Как правило, вам нужно использовать либо `FlatList`, либо `SectionList`. Детальней с ними мы познакомимся позже, главное сейчас вам понять, что на вход они принимают массив, который рендерит на экране.
+
+```SnackPlayer name=index.js
+import React from 'react'
+import { FlatList, StyleSheet, Text, View } from 'react-native'
+
+
+const arr = [
+  {key: 'Devin'},
+  {key: 'Dan'},
+  {key: 'Dominic'},
+  {key: 'Jackson'},
+  {key: 'James'},
+  {key: 'Joel'},
+  {key: 'John'},
+  {key: 'Jillian'},
+  {key: 'Jimmy'},
+  {key: 'Julie'}
+]
+
+const FlatListBasics = () => {
+  return (
+    <FlatList
+       data={arr}
+       renderItem={({item}) => <Text>{item.key}</Text>}
+    />
+  )
+}
+
+export default FlatListBasics
+```
+
+
 ## Проблемы?
 
 ![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)

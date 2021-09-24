@@ -4,32 +4,57 @@ title: Концепция
 sidebar_label: Концепция
 ---
 
-В этом уроке мы познакомимся с концепцией Redux.
+## Базовая концепция Redux
+
+Для того чтобы нам легче было понять Redux нам нужно запомнить данную цепочку.
+
+![redux](https://thumbs.gfycat.com/SociableCraftyAlpaca-max-1mb.gif)
+
+И так повторяется до бесконечности раз.
+
+## Видео
 
 [![redux](/img/redux/01.gif)](https://youtu.be/3iNnqtmEgtg)
 
-## Оплата
+## Как же познакомиться с Redux?
 
-Сейчас ты находишся на урезанной версии сайта, после оформления подписки на [Patreon](https://www.patreon.com/javascriptcamp), ты получишь полный доступ к обучающему курсу, а также доступ к серетным каналам нашего сервера в [Discord](https://discord.gg/6GDAfXn).  
+Можно посетить курс Stephen Grider на сайте Udemy, где он ясно всё объяснил, хоть и на английском языке. Лично я данный курс не рекомендую, ведь там устарел роутер, так же, как и кое-какие фичи. Если вам не понравится наше объяснение, то можете купить его курс.
 
-Качай наше [мобильное приложение](http://onelink.to/njhc95) или пройди тестирование в нашем [JavaScript телеграм боте](https://t.me/javascriptcamp_bot), а также подпишись на [наши новости](https://t.me/javascriptapp).
+## Пример
 
-[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
+```jsx
+const reducer = (state = [], action) => {
+if (action.type === 'split_string') {
+return action.payload.split(' ')
+} else if (action.type === 'add_character') {
+return ( ...state, action.payload)
+} 
 
+return state
+} 
 
-[![Sumerian school](/img/app.jpg)](http://onelink.to/njhc95)
+const store = Redux.createStore(reducer)
 
- 
+store.getState()
 
+const action = {
+type:'split_string', 
+payload: 'asdf'//здесь можно указать произвольные значения, ведь payload является полезной нагрузкой. 
+} 
 
-## Contributors ✨
+store.dispatch(action)
 
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+store.getState()
 
-<table>
-  <tr>
-    <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /> <a href="https://github.com/gHashTag/react-native-village/commits?author=gHashTag" title="Documentation">📖💲</a></td>
-  </tr>
-</table>
+const action2 = {
+type: 'add_character', 
+payload: 'a' 
+}
 
-[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
+store.dispatch(action2)
+
+store.getState()
+```
+
+ В данном уроке мы познакомились с базовой концепцией Redux.
+ [![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)

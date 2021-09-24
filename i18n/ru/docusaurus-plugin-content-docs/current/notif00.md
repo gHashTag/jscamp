@@ -75,7 +75,7 @@ react-native link @aws-amplify/pushnotification
 - Загрузите файл конфигурации на `android/app` и следуйте предложенной инструкции.
 - Добавьте Firebase SDK. Рассмотрим `<project>` `android` и `<app-module>` `app`
 
-  каталог в react native проект. Не забудьте добавить последнюю версию `firebase-messaging` [отсюда](https://firebase.google.com/docs/android/setup#available-libraries) а также `firebase-analytics` в `dependencies`
+  каталог в react native проект. Не забудьте добавить последнюю версию `firebase-messaging` [отсюда](https://rnfirebase.io) в  `dependencies`
 
 - Запустите проект в Android и вы увидите, подтверждение от Firebase. (вы можете пропустить этот шаг). 
 

@@ -4,32 +4,185 @@ title: SearchBar
 sidebar_label: SearchBar
 ---
 
-Создаем компонент SearchBar, где мы будем вводить название фильма.
+## SearchBar
+SearchBar из себя будет представлять поле для ввода названия и значок лупы. Он будет помогать ориентироваться по приложению. Из чего можно сделать вывод, что это очень нужная вещь, тем более если библиотека приложения очень большая.
+
+## Видео
 
 [![redux](/img/redux/04.gif)](https://youtu.be/jkKukSinD2I)
 
-## Оплата
+## Создаём файл SearchBar'а
 
-Сейчас ты находишся на урезанной версии сайта, после оформления подписки на [Patreon](https://www.patreon.com/javascriptcamp), ты получишь полный доступ к обучающему курсу, а также доступ к серетным каналам нашего сервера в [Discord](https://discord.gg/6GDAfXn).  
+Так как SearchBar очень уж похож на Header нужно сделать следующее: создаём копию файла Header.js в той же папке, что и сам Header и называем SearchBar.js.
 
-Качай наше [мобильное приложение](http://onelink.to/njhc95) или пройди тестирование в нашем [JavaScript телеграм боте](https://t.me/javascriptcamp_bot), а также подпишись на [наши новости](https://t.me/javascriptapp).
+## Редактируем код SearchBar
+Мы создали файл, но чтобы SearchBar был им, а не вторым Header, нужно отредактировать код.
 
-[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
+```jsx
+import React from 'react'
+import { TouchableOpacity, View, TextInput, StyleSheet } from 'react-native'
+import { TextInput } from 'react-native-gesture-handler'
+import { ifIphoneX } from 'react-native-iphone-x-helper'
+import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons'
+import { w, BLUE } from '../../../constants'
 
+const SearchBar  = ({
+  iconRight,
+  colorRight,
+  onPressRight,
+  onChangeText,
+  placeholder,
+  value,
+  onBlur
+}) => {
+  const { container, sub, iconRightStyle, inputStyle, searchStyle } = styles
+  return (
+    <View style={container}>
+      <View style={sub}>
+       <TextInput
+         onChangeText={onChangeText}
+         style={inputStyle}
+         placeholder={placeholder}
+         value={value}
+         onBlur={onBlur}
+       />
+      {iconRight &&
+        <TouchableOpacity onPress={onPressRight}>
+            <View style={searchStyle}>
+         <MaterialCommunityIcons name={iconRight} style={[ iconRightStyle, { color: colorRight}]} />
+         </View>
+        </TouchableOpacity>
+     }
+      </View>
+      </View>
+  )
+}
 
-[![Sumerian school](/img/app.jpg)](http://onelink.to/njhc95)
+const styles = StyleSheet.create({
+  container: {
+    flexDirection: 'row',
+    justifyContent: 'center',
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2},
+    shadowOpacity: 0.2,
+    elevation: 2,
+    paddingHorizontal: 20,
+    backgroundColor: BLUE,
+    position: 'relative',
+    ...ifIphoneX({
+      height: 122
+    }, {
+      height: 90
+    })
+  },
+  sub: {
+      justifyContent: 'space-beetween',
+      marginTop: 40,
+      alignItems: 'center',
+      flexDirection: 'row',
+      width: w - 35,
+      backgroundColor: '#fff',
+      height: 40,
+      borderRadius: 20
+  },
+  inputStyle: {
+      fontSize:18,
+      height: 23,
+      width: w - 90,
+      marginLeft: 15,
+      backgroundColor: '#fff'
+  },
+  searchStyle: {
+      justifyContent: 'center',
+      alignItems: 'center',
+      backgroundColor: 'black',
+      height: 40,
+      width: 40,
+      borderRadius: 20
+  },
+  iconRightStyle: {
+    fontSize: 30,
+    marginTop: 2
+  }
+})
 
- 
+export { SearchBar }
+```
+Код самого файла SearchBar мы поправили, теперь нужно поменять экспорты в общем index.js. Просто добавим строчку. 
+```jsx
+export * from './SearchBar' 
+```
 
+## Правка HomeScreen
+Далее, чтобы SearchBar у нас отображался нужно порефакторить код HomeScreen. Сначало мы добавим импорт SearchBar, потом опять-таки добавим нужное и уберём лишнее. 
+```jsx
+import React, {Component, useState} from 'react'
+import { View } from 'react-native'
+import { Header, Layout, ImageCard, SearchBar } from '../components/uikit'
+import {
+  STARGATE_DETAILS
+} from '../routes'
 
-## Contributors ✨
+const url = 'https://api.tvmaze.com/search/shows?q=stargate'
 
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+export default class Main extends Component {
+  state = {
+    title: 'STAR GATE',
+    data: [],
+    visibleSearchBar: false
+  }
 
-<table>
-  <tr>
-    <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /> <a href="https://github.com/gHashTag/react-native-village/commits?author=gHashTag" title="Documentation">📖💲</a></td>
-  </tr>
-</table>
-
+  componentDidMount = async () => {
+    try {
+      const response = await fetch(url)
+      const data = await response.json()
+      useState({ data })
+    } catch (e) {
+      throw e
+    }
+  }  
+  _onChangeText = text => {
+    console.log('text', text)
+  }
+  
+  render() {
+    const { title, data, visibleSearchBar } = this.state
+    const { navigation } = this.props
+    console.log('this.state', this.state)
+    return (
+      <View>
+        {
+          visibleSearchBar ?
+          <SearchBar
+           colorRight={'#fff'}
+           iconRight="magnify"
+           placeholder="Search"
+           onChangeText={this._onChangeText}
+           value={'movie'}
+           onPressRight={() => useState({ visibleSearchBar: false})}
+           onBlur={() => useState({ visibleSearchBar: true })}
+          /> :
+          <Header 
+          title={title} 
+          colorRight={'#fff'}
+          iconRight="magnify" 
+          onPress={() => navigation.openDrawer()}
+          onPressRight={() => useState({ visibleSearchBar: true })}
+        />
+        }
+        <Layout>
+          { data.map(item => (
+            <ImageCard
+              data={item.show}
+              key={item.show.id}
+              onPress={() => navigation.navigate(STARGATE_DETAILS, ({ show: item.show, onGoBack: this.onGoBack}))}
+            />
+          ))}
+        </Layout>
+      </View>
+    )
+  }
+}
+```
+В данном уроке мы создали SearchBar.
 [![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)

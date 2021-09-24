@@ -17,7 +17,7 @@ sidebar_label: Часть I
 ## Создаем новый проект ⚛️
 
 ```bash
-react-native init auth
+npx react-native init auth
 ```
 
 Запускаем проект 🚀

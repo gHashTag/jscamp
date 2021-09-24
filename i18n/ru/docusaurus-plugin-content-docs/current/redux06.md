@@ -4,32 +4,217 @@ title: Thunk
 sidebar_label: Thunk
 ---
 
-И в завершение мы сделаем запрос на сервер и получим наши фильмы, через Thunk. Сам Redux полностью синхронный, вы можете использовать промежуточное программное обеспечение, такое как redux-thunk для обработки асинхронных действий.
+## Redux Thunk
+
+Это middleware, который позволяет нам создовать асинхронные действия, асинхронные action, потому что сам JavaScript у нас синхронный. Соответсвенно, чтобы выполнять асинхронные действия нужно использовать это промежуточное ПО. 
+
+## Видео
 
 [![redux](/img/redux/06.gif)](https://youtu.be/-eE3ySQIV80)
 
-## Оплата
+## Установка
 
-Сейчас ты находишся на урезанной версии сайта, после оформления подписки на [Patreon](https://www.patreon.com/javascriptcamp), ты получишь полный доступ к обучающему курсу, а также доступ к серетным каналам нашего сервера в [Discord](https://discord.gg/6GDAfXn).  
+В прошлом уроке, если вы не забыли мы подключили библиотек redux-thunk, если вы каким-то образом забыли об этом пункте просто пропишите в терминал
 
-Качай наше [мобильное приложение](http://onelink.to/njhc95) или пройди тестирование в нашем [JavaScript телеграм боте](https://t.me/javascriptcamp_bot), а также подпишись на [наши новости](https://t.me/javascriptapp).
+```jsx
+yarn add redux-thunk
+```
 
-[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
+## Добавление actions
 
+```jsx title="../src/types.js"
+export const SEARCH_CHANGE = 'SEARCH_CHANGE'
+export const MOVIES_FETCHED = 'MOVIES_FETCHED'
+export const MOVIES_FAILED = 'MOVIES_FAILED'
+```
 
-[![Sumerian school](/img/app.jpg)](http://onelink.to/njhc95)
+```jsx title="../src/actions/index.js"
+import {
+    SEARCH_CHANGE,
+    MOVIES_FAILED,
+    MOVIES_FETCHED
+} from '../types'
 
- 
+export const searchChanged = (text) => {
+    console.log('text', text)
+ return {
+     type: SEARCH_CHANGE ,
+     payload: text
+ }
+}
 
+export const gerMovies = (text) => async (dispatch) => {
+    function onSuccess(success) {
+        dispatch({ type: MOVIES_FETCHED, payload: success})
+    }
+    function onError(error){
+        dispatch({ type: MOVIES_FAILED, error })
+    }
+    try{
+     const URL = 'https:/appi.tvmaze.com/search/show?q=${text}'
+     const res = await fetch(URL, { method: 'GET' })
+     const success = await res.json()
+     console.log('success', success)
+     return onSuccess(success)
+    }catch(error) {
+     return onError(error)   
+    }
+}
+```
+## Правка SearchReducer.js
 
-## Contributors ✨
+```jsx title="../src/reducers/SeachReducers.js"
+import { SEARCH_CHANGE, MOVIES_FETCHED, MOVIES_FAILED } from '../types'
 
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+const INITIAL_STATE = {
+  movie: '',
+  data: []
+}
 
-<table>
-  <tr>
-    <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /> <a href="https://github.com/gHashTag/react-native-village/commits?author=gHashTag" title="Documentation">📖💲</a></td>
-  </tr>
-</table>
+export default (state = INITIAL_STATE, action) => {
+  switch (action.type) {
+    case SEARCH_CHANGE:
+      return {
+        ...state,
+        movie: action.payload
+      }
+    case MOVIES_FETCHED:
+      return {
+        ...state,
+        data: action.payload
+      }
+    case MOVIES_FAILED:
+      return {
+        ...state
+      }
+    default:
+      return state
+  }
+}
+```
 
+## Правка HomeScreen.js
+
+```jsx title="../src/screen1/HomeScreen.js"
+import React, { Component, useState } from 'react'
+import { View } from 'react-native'
+import { connect } from 'react-redux'
+import { searchChanged, getMovies } from '../actions'
+import { Header, Layout, ImageCard, Search } from '../components/uikit'
+import { STARGATE_DETAILS } from '../routes'
+
+class HomeScreen extends Component {
+  state = {
+    visibleSearchbar: false
+  }
+
+  onSearchChange = text => {
+    this.props.searchChanged(text)
+    this.props.getMovies(text)
+  }
+
+  render() {
+    const { visibleSearchbar } = this.state
+    const { navigation, movie, data } = this.props
+    //console.log('this.props', this.props)
+    return (
+      <View>
+        {visibleSearchbar ? (
+          <Search
+            colorRight="#fff"
+            iconRight="magnify"
+            placeholder="Search"
+            onChangeText={this.onSearchChange}
+            value={movie}
+            onPressRight={() => useState({ visibleSearchbar: false })}
+            onBlur={() => useState({ visibleSearchbar: false })}
+          />
+        ) : (
+          <Header
+            title={movie || 'Search'}
+            colorRight="#fff"
+            iconRight="magnify"
+            onPressRight={() => useState({ visibleSearchbar: true })}
+          />
+        )}
+        <Layout>
+          {data.map(item => (
+            <ImageCard
+              data={item.show}
+              key={item.show.id}
+              onPress={() => navigation.navigate(STARGATE_DETAILS, { show: item.show })}
+            />
+          ))}
+        </Layout>
+      </View>
+    )
+  }
+}
+
+const mapStateToProps = state => ({
+  movie: state.search.movie,
+  data: state.search.data
+})
+
+export default connect(
+  mapStateToProps,
+  { searchChanged, getMovies }
+)(HomeScreen)
+```
+
+## Правка ImageCard.js
+
+Для корректной работы Thunk нужно порефакторить и ImageCard.
+
+```jsx title="../src/components/ImageCard.js"
+import React from 'react'
+import { TouchableOpacity, Image, View, Text, StyleSheet } from 'react-native'
+import { W } from '../../../constants'
+
+const styles = StyleSheet.create({
+  container: {
+    width: W / 2.4,
+    paddingVertical: 10
+  },
+  sub: {
+    shadowColor: '#000',
+    borderRadius: 10,
+    backgroundColor: 'white',
+    shadowRadius: 8,
+    shadowOffset: { width: 0, height: 5 },
+    shadowOpacity: 0.4
+  },
+  h1: {
+    paddingTop: 10,
+    fontFamily: 'AvenirNext-DemiBold',
+    fontSize: 18,
+    alignSelf: 'center',
+    textAlign: 'center'
+  },
+  cover: {
+    width: W / 2.4,
+    height: W * 0.63,
+    borderRadius: 10
+  }
+})
+
+const ImageCard = ({ data, onPress }) => {
+  const { container, sub, h1, cover } = styles
+  const { image, name } = data
+  const img = image === null ? 'http://fcrmedia.ie/wp-content/themes/fcr/assets/images/default.jpg' : image
+  return (
+    <TouchableOpacity onPress={onPress}>
+      <View style={container}>
+        <View style={sub}>
+          <Image style={cover} source={{ uri: img }} />
+        </View>
+        <Text style={h1}>{name.toUpperCase()}</Text>
+      </View>
+    </TouchableOpacity>
+  )
+}
+
+export { ImageCard }
+```
+В данном уроке мы добавили стороннее ПО Redux Thunk.
 [![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)

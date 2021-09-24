@@ -523,6 +523,32 @@ function learnJavaScript() {
 }
 ```
 
+## React Native
+Например нам нужно показать индикатор загрузки до тех пор пока дынные с сервера подгружаются, а после после показать эти данные. Пока сэмулируй это изменение вручную и заменим `false` на `true`.
+
+```SnackPlayer name=index.js
+import * as React from 'react'
+import { Text, ActivityIndicator } from 'react-native'
+
+const App = () => {
+  const fetchData = false // здесь измени на true
+
+  const data = 'Здесь был Вася!'
+
+  return (
+    <>
+      { fetchData ? 
+        <Text>{data}</Text> 
+        : 
+        <ActivityIndicator size="large" color="red" /> 
+      } 
+    </>
+)}
+
+
+export default App
+```
+
 ## Проблемы?
 
 ![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)

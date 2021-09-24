@@ -4,32 +4,198 @@ title: Boilerplate
 sidebar_label: Boilerplate
 ---
 
-Здесь мы научимся создавать стандартный боулерплейт Redux в проектах React Native
+## Redux Boilerplate
+
+В данном уроке мы научимся создавать стандартный BoilerPlate шаблон для проектов Redux.
+Первым делом создаём папку ./src/actions и файл index.js в ней. Как мы помним Actions является действиями пользователя. А для тех, кто забыл напомнит вот эта картинка
+![redux](https://thumbs.gfycat.com/SociableCraftyAlpaca-max-1mb.gif)
+
+## Видео
 
 [![redux](/img/redux/05.gif)](https://youtu.be/qXfb62ik0_k)
 
-## Оплата
+## Написание кода файла ./src/action/index.js
 
-Сейчас ты находишся на урезанной версии сайта, после оформления подписки на [Patreon](https://www.patreon.com/javascriptcamp), ты получишь полный доступ к обучающему курсу, а также доступ к серетным каналам нашего сервера в [Discord](https://discord.gg/6GDAfXn).  
+```jsx
+import SEARCH_CHANGE from '../types'
 
-Качай наше [мобильное приложение](http://onelink.to/njhc95) или пройди тестирование в нашем [JavaScript телеграм боте](https://t.me/javascriptcamp_bot), а также подпишись на [наши новости](https://t.me/javascriptapp).
+export const searchChanged = (text) => {
+    console.log('text', text)
+ return {
+     type: SEARCH_CHANGE ,
+     payload: text
+ }
+}
+```
 
-[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
+## Правка HomeScreen
 
+```jsx title="./src/screen1/HomeScreen.js"
+import React, {Component, useState} from 'react'
+import { View } from 'react-native'
+import { connect } from 'react-redux'
+import { searchChanged } from '../actions'
+import { Header, Layout, ImageCard, SearchBar } from '../components/uikit'
+import {
+  STARGATE_DETAILS
+} from '../routes'
 
-[![Sumerian school](/img/app.jpg)](http://onelink.to/njhc95)
+const url = 'https://api.tvmaze.com/search/shows?q=stargate'
+class HomeScreen extends Component {
+  state = {
+    title: 'STAR GATE',
+    data: [],
+    visibleSearchBar: false
+  }
 
+  componentDidMount = async () => {
+    try {
+      const response = await fetch(url)
+      const data = await response.json()
+      useState({ data })
+    } catch (e) {
+      throw e
+    }
+  }  
+  _onChangeText = text => {
+    this.props.searchChanged(text)
+  }
+  
+  render() {
+    const { title, data, visibleSearchBar } = this.state
+    const { navigation, movie } = this.props
+    //console.log('this.props', this.props)
+    return (
+      <View>
+        {
+          visibleSearchBar ?
+          <SearchBar
+           colorRight={'#fff'}
+           iconRight="magnify"
+           placeholder="Search"
+           onChangeText={this._onChangeText}
+           value={movie}
+           onPressRight={() => useState({ visibleSearchBar: false})}
+           onBlur={() => useState({ visibleSearchBar: true })}
+          /> :
+          <Header 
+          title={title} 
+          colorRight={'#fff'}
+          iconRight="magnify" 
+          onPress={() => navigation.openDrawer()}
+          onPressRight={() => useState({ visibleSearchBar: true })}
+        />
+        }
+        <Layout>
+          { data.map(item => (
+            <ImageCard
+              data={item.show}
+              key={item.show.id}
+              onPress={() => navigation.navigate(STARGATE_DETAILS, ({ show: item.show, onGoBack: this.onGoBack}))}
+            />
+          ))}
+        </Layout>
+      </View>
+    )
+  }
+}
+
+const mapStateToProps = state => {
+  return {
+    movie: state.search.movie
+  }
+}
+
+export default connect(mapStateToProps, { SearchChanged })(HomeScreen) 
+```
+
+## Cоздание и написание App.js
+
+Создадим файл App.js.
+
+Установим необходимые библиотеки
+
+```jsx
+yarn add redux-devtools-extension
+```
+```jsx
+yarn add redux-thunk
+```
+Если вылезли ошибки, то пропишите заново/найдите их решение и опять-таки пропишите. Если всё прошло успешно, то погнали!
+
+```jsx title="./App.js"
+import React from 'react'
+import { Provider } from 'react-redux'
+import { composeWithDevTools } from 'redux-devtools-extension'
+import { createStore, applyMiddleware } from 'redux'
+import ReduxThunk from 'redux-thunk'
+import reducers from './src/reducers'
+import Screen from './src/screen1'
+
+const store = createStore(reducers, composeWithDevTools(
+    applyMiddleware(ReduxThunk)
+))
+
+const App = () => { 
+    return (
+        <Provider store={store}>
+            <Screen />
+        </Provider>
+    )
+}
+
+export default App
+```
+
+И соответственно поправим корневой index.js
  
+```jsx
+/** @format */
 
+import {AppRegistry} from 'react-native'
+import App from './App'
+import {name as appName} from './app.json'
 
-## Contributors ✨
+AppRegistry.registerComponent(appName, () => App)
+```
 
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+## Создание Reducers
 
-<table>
-  <tr>
-    <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /> <a href="https://github.com/gHashTag/react-native-village/commits?author=gHashTag" title="Documentation">📖💲</a></td>
-  </tr>
-</table>
+Для начала создадим ./src/reducers и в ней файл index.js
+```jsx
+import { combineReducers } from 'redux'
+import SearchReducer from './SearchReducer'
 
+export default combineReducers({
+    search: SearchReducer
+})
+```
+Далее создаём SearchReducer.js в той же папке
+```jsx
+import SEARCH_CHANGE from '../types'
+
+const INITIAL_STATE = {
+    movie: ''
+}
+export default (state = INITIAL_STATE, action) => {
+    console.log('action', action)
+    switch(action.type) {
+        case SEARCH_CHANGE:
+            return {
+                ...state,
+                movie: action.payload
+            }
+            default: return state
+    }
+}
+```
+## Cоздаём types.js
+
+В папке src создаём файл types.js и пишем
+
+```jsx
+export const SEARCH_CHANGE = 'SEARCH_CHANGE'
+```
+
+В данном уроке мы научились создавать Boilerplate шаблон для проектов Redux.
 [![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
