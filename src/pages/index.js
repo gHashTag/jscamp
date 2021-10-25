@@ -136,7 +136,6 @@ const Home = () => {
         <div className={videoContainer}>
           <YouTube videoId="z5gO1PzyLwU" opts={opts} className={player} />
         </div>
-
         <Program />
 
         <header className={classnames('hero hero--primary', heroBanner)}>
