@@ -181,7 +181,7 @@ interface AvatarT {
 }
 ```
 
-Скорость - 3 - 6 компонентов в день
+Speed - 3 - 6 components per day
 ￼
 ## Step 2 - Prototype - Navigation - GraphQL Screen Model
 Compilation on Screens - The screen model is the sum of the screen models of the components on the screen. Screens are created, they are also artboards in [Sketch](https://www.sketch.com), where we combine components and position them relative to each other. At this stage, navigation is connected. As a result, we have a ready-made prototype that can be agreed with the client. Thanks to the fact that the components are typed by [TypeScript](https://www.typescriptlang.org), we can lay down the component models on the screen and set the task to deploy the backend using the [AWS Amplify](https://aws.amazon.com/ru/amplify/) framework .
