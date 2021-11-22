@@ -290,7 +290,7 @@ const styles = StyleSheet.create({
 export default DirectionLayout;
 ```
 
-# Justify Content
+## Justify Content
 
 `justifyContent` описывает, как выровнять дочерние элементы по главной оси их контейнера. Например, вы можете использовать это свойство для центрирования дочернего элемента по горизонтали в контейнере с `flexDirection`, установленным на `row`, или по вертикали внутри контейнера с `flexDirection`, установленным на `column`.
 

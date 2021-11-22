@@ -54,7 +54,7 @@ function learnJavaScript() {
 ```jsx live
 function learnJavaScript() {
   const withDefaults = (a = 1, b = 3, c = 2) => {
-    //Функия с параметрами по умолчанию
+    //Функция с параметрами по умолчанию
     return [a, b, c]
   }
   const withoutDefaults = (a, b, c) => {
