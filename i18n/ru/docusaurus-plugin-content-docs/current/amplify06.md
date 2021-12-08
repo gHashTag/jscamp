@@ -132,7 +132,7 @@ amplify pull --appId <YOUR_APP_ID> --envName <YOUR_ENV>
 Теперь давайте добавим компоненты UI в ваше приложение. Иди к своему App.js и импортируйте компонент UI. Затем поместите их в функцию визуализации. Ваш App.js файл должен выглядеть примерно так:
 
 ```jsx
-import './App.css';
+import './App.css'
 import { NewHomes, NavBar, MarketingFooter } from './ui-components'
 
 function App() {
@@ -142,10 +142,10 @@ function App() {
       <NewHomes />
       <MarketingFooter />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
 ```
 
 Мы также импортировали элемент “Navbar” и “Marketingfooter”, чтобы сделать приложение более приятным и быстрым. Чтобы протестировать свое приложение, запустите:
@@ -199,10 +199,8 @@ export default App;
 
 • Дополнительные компоненты UI (палитры цветов, карты, аватар, загрузчик файлов)
 
-## Original article
+## Ссылки
 
-Оригинальную статью вы можете посмотреть по ссылке снизу:
-
-[AWS Amplify Studio](https://aws.amazon.com/ru/blogs/mobile/aws-amplify-studio-figma-to-fullstack-react-app-with-minimal-programming)
+Оригинальную статью по [AWS Amplify Studio](https://aws.amazon.com/ru/blogs/mobile/aws-amplify-studio-figma-to-fullstack-react-app-with-minimal-programming)
 
 <!-- [![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291) -->
