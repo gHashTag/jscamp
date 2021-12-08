@@ -1,12 +1,12 @@
 ---
-id: amplify-05
-title: Model development
-sidebar_label: Model development
+id: amplify-06
+title: AWS Amplify Studio
+sidebar_label: Studio
 ---
 
-# Модельная разработка мобильных приложений [React Native](https://reactnative.dev) и сайтов на [React Native Web](https://necolas.github.io/react-native-web/).
+# AWS Amplify Studio – Figma to Fullstack React App With Minimal Programming
 
-![ModelDevs!](/img/whales.png)
+![AWS Amplify Studio](https://d2908q01vomqb2.cloudfront.net/0a57cb53ba59c46fc4b692527a38a87c78d84028/2021/12/02/ezgif-3-b98b50e3f6a6.gif)
 
 
 Перед тем как мы перейдем к стадиям "Модельной разработки", посмотрим на традиционный метод разработки приложений - «Разработка по фичам» - это метод, при котором ставиться задача с описанием функциональности и с ссылкой на [Zepllin](https://zeplin.io) и в лучшем случае ссылки на экраны прототипа в [Marvel App](https://marvelapp.com). Когда программист получает задачу на разработку фичи, то он разделяет ее на три части:
