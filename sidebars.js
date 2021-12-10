@@ -36,6 +36,7 @@ module.exports = {
       'javascript30'
     ],
     ['React Native']: [
+      'reactnative00',
       'reactnative01',
       'reactnative02',
       'reactnative03',
