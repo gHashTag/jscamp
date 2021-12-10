@@ -367,16 +367,6 @@ Just select your favorite web technology and your app will run on all available 
 
 Unfortunately, apps built with PhoneGap might suffer from poorer user experience, as web technology was created for, well, the web, not mobile apps. This makes handling animations problematic. Also, you’re risking experiencing the same issues that web apps experience, which include browser-specific bugs.
 
-If you’re interested in learning more about React Native alternatives, here’s an interesting comparative video by Academind:
-
-PhoneGap is a distribution of Apache Cordova, meaning that it’s powered by Cordova but has some extra tools you can use, which are provided by Adobe. “It promises you an “easy life” as a mobile app developer, enabling you to use any JavaScript library and framework that you’re comfortable working with.” – [Engineers](https://medium.com/@OPTASY.com/phonegap-vs-react-native-which-platform-to-choose-for-building-your-mobile-app-and-why-6eff856337bd) at Optasy.
-
-PhoneGap is easy to work with, which makes it developer-friendly. They have a lot of frameworks and libraries at their disposal. It’s based on the “write once, run on every platform” motto, so you can take advantage of cross-platform development. Just select your favorite web technology and your app will run on all available platforms, without the need to build separate versions for each one.
-
-Unfortunately, apps built with PhoneGap might suffer from poorer user experience, as web technology was created for, well, the web, not mobile apps. This makes handling animations problematic. Also, you’re risking experiencing the same issues that web apps experience, which include browser-specific bugs.
-
-If you’re interested in learning more about React Native alternatives, here’s an interesting comparative video by Academind:
-
 ## React Native – Differences in Development for Android and iOS
 
 Coming back to React Native, I’m sure you’re also wondering – how does React Native development differ for [Android and iOS](https://www.netguru.com/blog/react-native-ios-and-android)? After all, from a user point of view, both environments have their share of differences (with UI being the most apparent).
