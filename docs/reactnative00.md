@@ -74,37 +74,37 @@ Cross-platform development is the practice of building software that is compatib
 
 Cross-platform is considered [the holy grail of software development](https://hackernoon.com/getting-started-with-cross-platform-app-development-in-2019-dd2bf7f6161b) – you can build your codebase once and then run it on any platform, as opposed to software built natively for a specific platform. Developers are able to use the tools they're proficient in, like JavaScript or C#, to build platforms they’re foreign to. Software owners are also keen on it as product development, in terms of time to market and costs, is cut in half. What are some of the [characteristics of cross-platform development](https://www.netguru.com/blog/cross-platform-mobile-apps-development)?
 
-`Wider audience`
+### Wider audience
 
 You don’t have to decide which audience to target, i.e., iOS or Android users, as cross-platform software runs on both, which gives you access to a wider user base.
 
-`Platform consistency`
+### Platform consistency
 
 There are some navigation and design differences between iOS and Android, which – in cross-platform development – are dealt with by default, thanks to the shared codebase. This helps with creating a consistent app brand identity on both platforms with less effort than if built on native.
 
-`Reusable code`
+### Reusable code
 
 This is one of the greatest advantages of cross-platform development – you can build just one codebase for both Android and iOS at the same time. Native app development requires writing code separately and frequently needs two different software developers to perform the job – one for iOS and one for Android.
 
-`Quicker development`
+### Quicker development
 
 Since only one codebase is required to handle iOS and Android, and everything is in one place, product development is much quicker. Cross-platform applications are built as single projects, even though they support different devices, and a large amount of code can be reused between platforms.
 
-`Reduced costs`
+### Reduced costs
 
 Building cross-platform applications can be 30% cheaper than building native apps, all thanks to the ability to reuse code and faster development, which directly impacts the cost.
 
 What you’ve read so far might lead you to think that cross-platform development is flawless – it’s not, it has some disadvantages. Let us get into them right now.
 
-`Requires more expertise to ensure high performance`
+### Requires more expertise to ensure high performance
 
 It is a common myth that cross-platform apps perform worse than their native counterparts. For instance, both Flutter and React Native aim to run at 60 frames per second. In most cases, cross-platform applications can perform to the same standard as native apps provided that the developers have enough skill and expertise.
 
-`Harder code design`
+### Harder code design
 
 Since cross-platform apps must be responsive to various devices and platforms, it makes coding more complex. This results in more work for developers who have to include exceptions for different devices and platforms to account for the differences – especially when it comes to more complex features.
 
-`Long feature release time`
+### Long feature release time
 
 With every new feature release for Android or iOS, it takes a while to update both apps to support the new feature. Native apps are provided with the updates quicker.
 
@@ -136,7 +136,7 @@ Source: [Hackernoon](https://hackernoon.com/understanding-react-native-bridge-co
 
 This means that – if you already have a native iOS or Android app – you can still use its components or shift to React Native development. 
 
-`What makes React Native unique?`
+### What makes React Native unique?
 
 The difference between React Native and other cross-platform development solutions (for example, [Cordova and PhoneGap](https://www.netguru.com/blog/react-native-comparison) is that React Native doesn’t render WebViews in its code. It runs on actual, native views and components. This is one of the reasons for React Native’s spectacular success.
 
@@ -144,7 +144,7 @@ The difference between React Native and other cross-platform development solutio
 
 Now that you know what React Native is and how it works, it’s time to have a look at the products built with it. Here is our selection of popular React Native apps.
 
-`Facebook`
+### Facebook
 
 Facebook is one of the most popular React Native apps, and it’s no surprise we’re mentioning it first, as it gave birth to this programming language and is the main force behind its development.
 
@@ -152,7 +152,7 @@ Facebook aimed to bring all the web development benefits to mobile, like quick i
 
 ![facebook](https://www.netguru.com/hs-fs/hubfs/facebook.jpg?width=1280&name=facebook.jpg)
 
-`Skype `
+### Skype
 
 Skype is another good example of a React Native mobile app. In 2017, Skype announced that it was building a completely new app based on React Native. This brought a lot of excitement from its users, as the older version suffered from a few issues.
 
@@ -162,7 +162,7 @@ The new app was completely redesigned, from the icons to the new messaging inter
 
 Source: [twitter](https://twitter.com/reactnative/status/832648387220484097?lang=en)
 
-`Instagram`
+### Instagram
 
 Instagram decided to integrate React Native into its existing native app, starting with the Push notification view that originated as the WebView. Luckily, it wasn’t necessary to build the navigation infrastructure, as the UI was simple enough to cope without one. Using React Native allowed product teams to [improve developer velocity by 85-99%](https://instagram-engineering.com/react-native-at-instagram-dd828a9a90c7#.3h4wir4zr)
 
@@ -170,7 +170,7 @@ Instagram decided to integrate React Native into its existing native app, starti
 
 Source: [Instagram.engineering](https://instagram-engineering.com/react-native-at-instagram-dd828a9a90c7#.3h4wir4zr)
 
-`Walmart`
+### Walmart
 
 Another interesting React Native example? Walmart’s iOS and Android apps. The American grocer has been known for making bold technological decisions – and one of them was rewriting its mobile apps entirely into React Native.
 
@@ -199,7 +199,7 @@ It’s best to sum up Walmart’s opinion of React Native with [their own words]
  considering taking on a new mobile project, consider using
   React Native — we know you won’t regret it.”
 
-`SoundCloud Pulse`
+### SoundCloud Pulse
 
 SoundCloud decided to turn to React Native for the development of [SoundCloud Pulse](https://developers.soundcloud.com/blog/react-native-at-soundcloud), an app for music creators.
 
@@ -217,7 +217,7 @@ SoundCloud lauds React Native for its speed, better access to developers (which 
 
 They admit that they hit the jackpot with React Native and will be using it for future projects.
 
-`Shine`
+### Shine
 
 Shine is another great example of a React Native app. It helps its users deal with daily stress through meditation, inspiring articles, and more.
 
@@ -229,7 +229,7 @@ Source: [Netguru](https://www.netguru.com/featured/shine-awarded-well-being-app)
 
 Shine debuted in the App Store in late 2017 and was named one of the best apps of 2018 by Apple. You can read more about how Shine developed its React Native app in [Netguru’s interview with Shine’s](https://www.netguru.com/blog/interview-shine) CTO.
 
-`UberEats` 
+### UberEats 
 
 UberEats is another application that is based on React Native development. It differs from the Uber app in that it includes three parties instead of just two – restaurants, delivery-partners, and diners.
 
@@ -243,7 +243,7 @@ The team already had a lot of experience programming in React, but not enough ex
 
 Source: [Uber](https://eng.uber.com/ubereats-react-native/)
 
-`Pinterest`
+### Pinterest
 
 Pinterest engineers admit that they’ve kept an eye on React Native and were interested in discovering its possibilities ever since the framework’s debut in 2015.
 
@@ -263,7 +263,7 @@ As a result, Pinterest decided to include React Native permanently into its tech
 
 We’ve discussed the products built using React Native, so let’s move onto the advantages of React Native development and why you should choose it as a solution to build your mobile app.
 
-`Code reusability – cross-platform development` 
+### Code reusability – cross-platform development 
 
 Being able to reuse code is the biggest advantage of React Native, and it indicates that apps can run effectively on multiple platforms – which is something that CEOs and Product Owners truly appreciate. They can integrate [90% of the native framework](https://www.eteam.io/blog/ruby-on-rails-and-react-native) for reusing the code for both operational systems.
 
@@ -271,7 +271,7 @@ Engineers [at Discord say](https://blog.discord.com/why-discord-is-sticking-with
 
 Another great piece of news is that it’s possible to use the web application code for mobile app development if they’re both using React Native. It also speeds up development time as it includes pre-developed components, which are included in the open-source library.
 
-`Large developer community` 
+### Large developer community
 
 React Native is an open-source JavaScript platform that allows developers to contribute their knowledge to the framework’s development, which is freely accessible to all.
 
@@ -279,27 +279,27 @@ If any developer experiences a problem while developing an app, then they can tu
 
 There will always be someone who’ll be able to help them resolve their issues – this also has a positive impact on improving coding skills.
 
-`Cost efficiency` 
+### Cost efficiency 
 
 Another advantage of React Native development is greater cost efficiency. As mentioned earlier, this is because developers are able to use the same code to build applications for iOS and Android.
 
 It means you don’t have to hire two separate iOS and Android dev teams to finalize your project; a small team is enough to build it. The cost of developing apps in React Native is much lower than apps built using languages that don’t allow for cross-platform development.
 
-`Fast refresh`
+### Fast refresh
 
 Fast refresh allows developers to run the app while updating it to new versions and modifying the UI. Changes are visible immediately, and the developer is spared from rebuilding the entire app.
 
 This leads to two significant benefits: time savings – as programmers save time on compilation and increased productivity – since they don’t lose any state while incorporating changes into the app.
 
-`Simple UI`
+### Simple UI
 
 React Native development uses React JavaScript to build the app’s interface, which makes it more responsive and faster with reduced load time, resulting in an overall better user experience. Thanks to the reactive UI and component-based approach, the framework is perfect for building apps with both simple and complex designs.
 
-`Fast applications` 
+### Fast applications 
 
 Some claim that React Native code might have a detrimental effect on an app’s performance. Even though JavaScript won't run as fast as native code, this difference is unnoticeable to the human eye. To further prove it, we decided to run a test comparing two versions of a simple application `written in React Native and Swift` – [both achieved similar performance results.](https://www.netguru.com/blog/swift-vs-react-native)
 
-`Future-proof`
+### Future-proof
 
 Considering the pace at which the framework took over the market and its simple approach to resolving development problems, the future of React Native for cross-platform apps looks bright. Even though it has a few disadvantages, which we’ll discuss in the next section, its speed and convenience of development compensate for them.
 
@@ -309,22 +309,22 @@ With all this in mind, let’s now take a look at [why React Native potentially 
 
 Here are the top four potential drawbacks you need to be aware of before you decide on developing a [React Native app](https://www.netguru.com/blog/is-react-native-good).
 
-`Lack of some custom modules`
+### Lack of some custom modules
 
 While React Native has been around for several years now, some custom modules either leave room for improvement or are entirely missing. This means that you might need to run three separate codebases (for React Native, iOS, and Android) instead of just one.
 That being said, it’s not a common occurrence. Unless you’re developing your app from scratch or trying to hack an existing one, you likely won’t come across these issues.
 
-`Compatibility & debugging issues`
+### Compatibility & debugging issues
 
 While it may come as a surprise – after all, React Native is used by top tech players – it’s still in beta phase. Your developers might come across various issues with package compatibility or debugging tools. If your developers aren’t proficient in React Native, this might negatively impact your development as they spend time on lengthy troubleshooting.
 
-`Scalability`
+### Scalability
 
 Most of the time, React Native will work very well for you even if your app eventually grows into a highly-sophisticated, complex solution. After all, companies like Facebook and Skype have found much success with the framework and have been using it consistently for many years. That being said, some companies have decided to back out from using React Native.
 
 Airbnb, for instance, decided to use the framework for its mobile app back when the company was just an emerging startup. Over time, however, React Native proved to be unfit for the company’s growth plans, and Airbnb resorted to developing two native apps. With the current advancements in RN, and with the right software architecture choices, scalability issues can easily be prevented.
 
-`Native developers’ help needed`
+### Native developers’ help needed
 
 Remember the “bridging” feature we mentioned earlier in this post? As it showed, React Native bridges JavaScript with native mobile code. This means that if you put a developer who doesn’t have knowledge of native mobile development in charge, they will have a hard time incorporating native code into the RN codebase. As a result, you’ll need some assistance from Android or iOS developers to guide them through the process. If you’re a small company, you might not want to hire native mobile developers, as this generates additional costs.
 
@@ -334,11 +334,11 @@ One way of tackling this is by [engaging a software consultancy](https://www.net
 
 Now that you have a good understanding of what React Native is, it’s worth taking a look at some of its alternatives.
 
-`Flutter`
+### Flutter
 
 We already mentioned it Flutter earlier in this article, where we compared it to React Native.
 
-`Iconic`
+### Iconic
 
 Iconic is a complete open-source [SDK designed for hybrid mobile development](https://en.wikipedia.org/wiki/Ionic_(mobile_app_framework)), introduced in 2013 by Drifty. It uses technologies like HTML, CSS, and JavaScript, as well as platforms like PhoneGap and Cordova, to create a native-like experience.
 
@@ -346,7 +346,7 @@ Iconic is built on top of Angular, and therefore if you’re familiar with it, i
 
 In terms of performance, it’s slower than React Native as it uses WebView, but the good news is, you can test the code on any browser.
 
-`Apache Cordova`
+### Apache Cordova
 
 Apache Cordova is a [mobile application development framework](https://en.wikipedia.org/wiki/Apache_Cordova) originally introduced by Nitobi. It allows developers to build mobile apps using `CSS3, HTML5, and JavaScript` and not rely on the platform-specific APIs included in Android, iOS, or Windows Phone. Just like Iconic, Apache Cordova also uses WebView, which creates some limitations.
 
@@ -354,7 +354,7 @@ For example, iOS apps that run inside the default WebView engine run more slowly
 
 According to [Johannes Stein](https://www.toptal.com/mobile/comparing-react-native-to-cordova), freelance software engineer – “By using Cordova, you can quickly turn your existing single page application into a mobile application for different platforms, at the cost of interactions not necessarily having the native feeling to their specific platform.”
 
-`PhoneGap`
+### PhoneGap
 
 PhoneGap is a distribution of Apache Cordova, meaning that it’s powered by Cordova but has some extra tools you can use, which are provided by Adobe.
 
@@ -373,7 +373,7 @@ Coming back to React Native, I’m sure you’re also wondering – how does Rea
 
 Here are the four key areas where things work a little differently between the platforms.
 
-`Operating system`
+### Operating system
 
 When you work on your React Native app, we recommend that you use a macOS device as opposed to Windows. Why?
 
@@ -383,11 +383,11 @@ The reason for this is that Windows cannot run XCode, a development environment 
 
 So, while you can certainly build your React Native app on both operating systems, only macOS gives you a way to check if both of your Android and iOS React Native apps are working properly.
 
-`Native elements`
+### Native elements
 
 As Android and iOS apps look and function differently, they also have different components. This means that – when you’re using your React Native library – you might see a different end result for iOS and Android, even though you’re using the same component. Which leads us to...
 
-`Specific styles`
+### Specific styles
 
 iOS and Android have different styles for React Native elements. A great example is shadowing. Take a look at the screen below – notice that the green element on the Android device (right) doesn’t have the shadow seen on the iOS screenshot (left):
 
@@ -411,27 +411,27 @@ Source: [Stackoverflow](https://insights.stackoverflow.com/survey/2019#technolog
 
 You might think that since Flutter is the preferred option for programmers, it might also be the best option for building your app. Before jumping to any conclusions, [let’s see how these two frameworks compare](https://www.netguru.com/blog/flutter-vs-react-native).
 
-`Development`
+### Development
 
 Flutter is easy to get started with – all you need to do is download the Flutter package, unzip it, and create an environment variable that points to a folder inside your unzipped folder. It operates based on widgets, which come in abundance, but unfortunately, aren’t adaptive. This means that you’ll have to create platform-specific widgets manually.
 
 [React Native](https://hackernoon.com/react-native-vs-flutter-which-is-preferred-for-you-bba108f808) uses components that can be found in its various libraries. Even though their number isn’t as large as in Flutter’s case, they’re adaptive, meaning they’ll recognize the platform they run on – iOS or Android – and render the compositions appropriate for that platform.
 
-`Ecosystem`
+### Ecosystem
 
 React Native is ahead of Flutter when it comes to the ecosystem. It’s been around for longer and is supported by hundreds of packages. It actually has five times more packages than Flutter, which has over [1,450 packages](https://pub.dev/flutter/packages) at its disposal.
 
-`Performance`
+### Performance
 
 In terms of performance, Flutter will always be slightly better than React Native due to architectural differences. The latter solution uses an asynchronous bridge, which can, at times, cause performance issues.
 
 Flutter, on the other hand, makes it easy for developers to reuse the existing code. The C++ engine which Flutter runs on performs well and might give Flutter a slight advantage over React Native, which uses UI components compiled to their native equivalents. Additionally, it has the JavaScript layer, which makes it a bit slower than Flutter.
 
-`User interface`
+### User interface
 
 When it comes to the user interface, React Native is the winner. It’s more dynamic, which enhances the user experience. Flutter works well with proprietary widget sets, which are great for getting a customized UI design. React Native is based on UI native components, but RN developers can also choose from several ready-to-use, polished UI kits. These include react-native-paper and native-base.
 
-`Stability`
+### Stability
 
 In order to evaluate the frameworks’ stability, we need to take a look at a few areas: their maturity, how big the developer community is, and which companies use them.
 
@@ -443,11 +443,11 @@ However, while the numbers speak in favor of React Native as far as the volume i
 
 This leads to the conclusion that we can expect a high level of engagement in maintaining and developing the framework by the Flutter community.
 
-`Customer Base`
+### Customer Base
 
 As you saw earlier in this article, React Native has tens of top tech players in its team – from Facebook, Instagram, and Walmart to SoundCloud and Skype. However, let’s not forget by whom Flutter was developed! As a Google-bred framework, it powers not just many Google services (like Google Ads), but also the Asian tech giant, [Alibaba](https://medium.com/@alitech_2017/utilizing-flutter-best-practice-from-alibaba-236a53aa32c8).
 
-`Architecture`
+### Architecture
 
 React Native’s architecture can be built around [two patterns](https://medium.com/edge-coders/the-difference-between-flux-and-redux-71d31b118c1) – Flux (created by Facebook) and Redux (developed by the React Native community). Flux is based on unidirectional data flow, which means that each piece receives data from one place and outputs changes to another. Redux adopts Flux architecture, so it is based on the same app building method. Both of these approaches come down to keeping your application data in one place, referred to as a ‘store’.
 Flutter is based on an object-oriented language called Dart (also developed by Google). Dart can compile to both JavaScript and native code. Its architecture is based on [reactive programming](https://en.wikipedia.org/wiki/Reactive_programming) (the same paradigm that Facebook’s web library React – which powers React Native – is built in).
@@ -458,7 +458,7 @@ There are a couple of approaches to Flutter’s architecture – one is the BLoC
 
 Source: [Toptal](https://www.toptal.com/cross-platform/code-sharing-angular-dart-flutter-bloc)
 
-`Documentation`
+### Documentation
 
 In this category, Flutter is the definite winner. The framework comes with a toolkit that supports developers throughout the app development process. Also, Flutter’s documentation is considered to be both comprehensive and neatly-organized. If your developers were to experience any difficulties using documentation, the Flutter community would surely give them a helping hand.
 
