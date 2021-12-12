@@ -429,7 +429,7 @@ Flutter, on the other hand, makes it easy for developers to reuse the existing c
 
 ### User interface
 
-When it comes to the user interface, React Native is the winner. It’s more dynamic, which enhances the user experience. Flutter works well with proprietary widget sets, which are great for getting a customized UI design. React Native is based on UI native components, but RN developers can also choose from several ready-to-use, polished UI kits. These include react-native-paper and native-base.
+When it comes to the user interface, React Native is the winner. It’s more dynamic, which enhances the user experience. Flutter works well with proprietary widget sets, which are great for getting a customized UI design. React Native is based on UI native components, but RN developers can also choose from several ready-to-use, polished UI kits. These include [react-native-paper](https://callstack.github.io/react-native-paper) and [native-base](https://docs.nativebase.io).
 
 ### Stability
 
