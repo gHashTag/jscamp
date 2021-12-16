@@ -3,6 +3,7 @@ id: reactnative00
 title: Что Такое React Native
 sidebar_label: Что Такое React Native?
 ---
+import YouTube from 'react-youtube'
 
 # Что Такое React Native? Комплексное руководство для 2021
 
