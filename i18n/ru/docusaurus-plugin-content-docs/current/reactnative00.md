@@ -9,7 +9,7 @@ import YouTube from 'react-youtube'
 
 <YouTube videoId="07UKR3EgxDE" />
 
-![NetGuru](https://www.netguru.com/hs-fs/hubfs/What%20is%20React%20Native.png?width=2400&name=What%20is%20React%20Native.png)
+<!-- ![NetGuru](https://www.netguru.com/hs-fs/hubfs/What%20is%20React%20Native.png?width=2400&name=What%20is%20React%20Native.png) -->
 
 Вот уже несколько лет [React Native](https://reactnative.dev) является горячей темой в мире мобильной разработки. Неудивительно – он взял мир технологий штурмом, предложив способ разработки мобильных приложений как для iOS, так и для Android одновременно.
 
