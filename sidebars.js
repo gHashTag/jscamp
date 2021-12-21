@@ -50,6 +50,7 @@ module.exports = {
       'reactnative11',
       'reactnative12',
       'reactnative13',
+      'reactnative013',
       'reactnative14',
       'reactnative15',
       'reactnative16',
