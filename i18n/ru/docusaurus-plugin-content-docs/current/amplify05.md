@@ -10,6 +10,8 @@ import YouTube from 'react-youtube'
 
 <YouTube videoId="QWsHq1u8qKA" /> 
 
+[Слушать трек на музыкальных площадках](https://bfan.link/modelnaya-razrabotka)
+
 Модельная разработка - это метод разработки мобильных приложений, при котором мы изначально ставим задачу в виде типизируемой модели(схемы) [TypeScript](https://www.typescriptlang.org) и [GraphQL](https://graphql.org), на уровне создания тикета в таск-менеджере.
 
 Перед тем, как мы перейдем к стадиям "Модельной разработки", взглянем на традиционный метод разработки приложений - «Разработка по фичам» - это метод, при котором ставится задача с описанием функциональности и со ссылкой на [Zepllin](https://zeplin.io) и в лучшем случае ссылки на экраны прототипа в [Marvel App](https://marvelapp.com). Когда программист получает задачу на разработку фичи, то он разделяет ее на три части:
@@ -185,7 +187,6 @@ type UserProfile @model @auth(rules: [{ allow: owner, ownerField: "owner", opera
 
 Подробнее о том, как задеплоить схему в мобильном придложении на React Native можно прочитать [здесь](https://www.jscamp.app/ru/docs/amplify-04/)
 
-![ModelDevs!](/img/graphql/graphql2.png)
 
 В [AWS Amplify](https://aws.amazon.com/ru/amplify/) есть функция [DataStore](https://docs.amplify.aws/lib/datastore/getting-started/q/platform/js/), которая не только аналог [apollo-link-retry](https://www.apollographql.com/docs/react/api/link/apollo-link-retry/), а также в нее встроена настраиваемая привычная модель программирования с автоматическим контролем версий, обнаружением конфликтов и разрешением в облаке. К тому же больше не нужно писать дополнительный код, для отправки запроса на сервер после выхода приложения в онлайн, так как он идет из коробки в форме кодогенерации. Папка с моделями `models` и папка `graphql` генерируется автоматически - это изолированый слой клиента на все возможные CRUD - Create Read Update Delete ко всей базе данных вашего приложения.
 
