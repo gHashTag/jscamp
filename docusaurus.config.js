@@ -141,16 +141,8 @@
             },
             {
               label: 'React Native',
-              to: 'docs/start00'
+              to: 'docs/reactnative00'
             },
-            {
-              label: 'React Navigation 2',
-              to: 'docs/reactNavigtion2.00'
-            },
-            {
-              label: 'Redux',
-              to: 'docs/redux00'
-            }
           ]
         },
         {
@@ -159,6 +151,10 @@
             {
               label: 'Discord 💭',
               href: 'https://discord.gg/6GDAfXn'
+            },
+            {
+              label: 'Telegram Channel 📬',
+              href: 'https://t.me/javascriptapp'
             },
             {
               label: 'AWS Amplify Ru 💭',
@@ -170,16 +166,12 @@
           title: 'Social 🌎',
           items: [
             {
-              label: 'Telegram Channel 📬',
-              href: 'https://t.me/javascriptcamping'
+              label: 'Instagram',
+              href: 'https://www.instagram.com/javascriptcamp/'
             },
             {
               label: 'TikTok',
               href: 'https://vm.tiktok.com/ZSJ1dxkFu/'
-            },
-            {
-              label: 'Instagram',
-              href: 'https://www.instagram.com/javascriptcamp/'
             },
             {
               label: 'Twitter',
@@ -192,10 +184,6 @@
             {
               label: 'YouTube Ru',
               href: 'https://www.youtube.com/channel/UCOxewePwIQATdHTD3yZ2UZw'
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/react-native-village'
             },
             {
               label: 'Hashnode',
@@ -211,7 +199,7 @@
             },
             {
               label: 'Vk',
-              href: 'https://vk.com/reactnativeinit'
+              href: 'https://vk.com/javascriptcamp'
             },
             {
               label: 'Medium',
@@ -234,7 +222,7 @@
         href: 'https://opensource.facebook.com/'
       },
       // Please do not remove the credits, help to publicize Docusaurus :)
-      copyright: `Copyright © ${new Date().getFullYear()} Server Serverlesskiy 🎰 Built with Docusaurus`
+      copyright: `Copyright © ${new Date().getFullYear()} Server Serverlesskiy ⚛️ Built with Docusaurus`
     }
   },
   presets: [
