@@ -1058,7 +1058,7 @@ window.LOG_LEVEL = 'DEBUG'
 
 We launch the application and get custom authentication.
 
-![Step18](/img/steps/18.png)
+![Step18](/img/steps/19.png)
 
 ## expo secure storage
 
@@ -1070,9 +1070,9 @@ expo install expo-secure-store
 
 With secure storage you don't need to write the MyStorage class in src/index.js.
 
-Replace 'import * as Keychain from react-native-keychain' with 'import * as SecureStore from expo-secure-store' in all files.
+Replace `import * as Keychain from react-native-keychain` with `import * as SecureStore from expo-secure-store` in all files.
 
-Instead of using 'const credentials = await Keychain.getInternetCredentials()' use:
+Instead of using `const credentials = await Keychain.getInternetCredentials()` use:
 
 ```bash
 const username = await SecureStore.getItemAsync('authKeyEmail')
@@ -1081,7 +1081,6 @@ const credentials = { username, password }
 ```
 
 Similarly:
-
 
 ```bash
 await SecureStore.setItemAsync('authKeyEmail', email)
