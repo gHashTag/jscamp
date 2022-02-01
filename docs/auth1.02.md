@@ -1058,7 +1058,7 @@ window.LOG_LEVEL = 'DEBUG'
 
 We launch the application and get custom authentication.
 
-![Step16](/img/steps/16.png)
+![Step18](/img/steps/18.png)
 
 ## expo secure storage
 
