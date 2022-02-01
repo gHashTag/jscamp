@@ -1066,7 +1066,7 @@ To create secure keys in the expo project, you need to install the secure storag
 
 ```bash
 expo install expo-secure-store
-'''
+```
 
 With secure storage you don't need to write the MyStorage class in src/index.js.
 
@@ -1074,15 +1074,16 @@ Replace 'import * as Keychain from react-native-keychain' with 'import * as Secu
 
 Instead of using 'const credentials = await Keychain.getInternetCredentials()' use:
 
-'''bash
+```bash
 const username = await SecureStore.getItemAsync('authKeyEmail')
 const password = await SecureStore.getItemAsync('authKeyPassword')
 const credentials = { username, password }
-'''
+```
 
 Similarly:
 
-'''bash
+
+```bash
 await SecureStore.setItemAsync('authKeyEmail', email)
 await SecureStore.setItemAsync('authKeyPassword', password)
 
@@ -1090,7 +1091,7 @@ await SecureStore.setItemAsync('authKeyPassword', password)
 
 SecureStore.deleteItemAsync('authKeyPassword')
 SecureStore.deleteItemAsync('authKeyEmail')
-'''
+```
 
 ## Done ✅
 
