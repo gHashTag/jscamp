@@ -1058,6 +1058,40 @@ window.LOG_LEVEL = 'DEBUG'
 
 We launch the application and get custom authentication.
 
+![Step16](/img/steps/16.png)
+
+## expo secure storage
+
+To create secure keys in the expo project, you need to install the secure storage library.
+
+```bash
+expo install expo-secure-store
+'''
+
+With secure storage you don't need to write the MyStorage class in src/index.js.
+
+Replace 'import * as Keychain from react-native-keychain' with 'import * as SecureStore from expo-secure-store' in all files.
+
+Instead of using 'const credentials = await Keychain.getInternetCredentials()' use:
+
+'''bash
+const username = await SecureStore.getItemAsync('authKeyEmail')
+const password = await SecureStore.getItemAsync('authKeyPassword')
+const credentials = { username, password }
+'''
+
+Similarly:
+
+'''bash
+await SecureStore.setItemAsync('authKeyEmail', email)
+await SecureStore.setItemAsync('authKeyPassword', password)
+
+...
+
+SecureStore.deleteItemAsync('authKeyPassword')
+SecureStore.deleteItemAsync('authKeyEmail')
+'''
+
 ## Done ✅
 
 ## Contributors ✨
