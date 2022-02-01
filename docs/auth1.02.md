@@ -1065,7 +1065,7 @@ We launch the application and get custom authentication.
 To create secure keys in the expo project, you need to install the secure storage library.
 
 ```bash
-expo install expo-secure-store
+ expo install expo-secure-store
 ```
 
 With secure storage you don't need to write the MyStorage class in src/index.js.
