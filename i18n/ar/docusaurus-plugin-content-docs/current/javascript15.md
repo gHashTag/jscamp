@@ -38,7 +38,7 @@ switch (n) {
 }
 ```
 
-`n` -هذا هو[boolean](https://react-native-village.github.io/docs/javascript08) شرط.
+`n` -هذا هو[boolean](https://jscamp.app/docs/javascript08) شرط.
 
 ## أمثلة على
 
@@ -177,7 +177,7 @@ function learnJavaScript() {
 
 لفهم مقدار ما تعلمته في هذا الدرس ، قم بإجراء الاختبار في[mobile application](http://onelink.to/njhc95) من مدرستنا في هذا الموضوع.
 
-![Sumerian school](/img/app.jpg)
+![JS Camp](/img/app.jpg)
 
 ## الروابط
 

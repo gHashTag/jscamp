@@ -113,7 +113,7 @@
           position: 'left'
         },
         {
-          href: 'https://github.com/react-native-village/react-native-village.github.io',
+          href: 'https://github.com/gHashTag/jscamp/tree/gh-pages',
           label: 'GitHub 🛰',
           position: 'left'
         },

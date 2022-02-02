@@ -194,7 +194,7 @@ function learnJavaScript() {
 
 لفهم مقدار ما تعلمته في هذا الدرس ، قم بإجراء اختبار في مدرستنا [mobile application](http://onelink.to/njhc95) حول هذا الموضوع.
 
-![Sumerian school](/img/app.jpg)
+![JS Camp](/img/app.jpg)
 
 ## الروابط
 

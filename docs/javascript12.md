@@ -155,7 +155,7 @@ function learnJavaScript() {
 
 ![eye](https://media.giphy.com/media/PKl9JTqnoiKtO/giphy.gif)
 
-In the article [Change](https://react-native-village.github.io/docs/javascript03) we told you that we will not use `var`, this is related to the scope.
+In the article [Change](https://jscamp.app/docs/javascript03) we told you that we will not use `var`, this is related to the scope.
 
 1. If in the same scope you create two variables 🔔 with the same name using the keyword `let` or `const`, the interpreter warns us about this by displaying an error.
 
@@ -252,7 +252,7 @@ Where is the local variable created?
 
 In order to understand how much you learned this lesson, take the test in the [mobile application](http://onelink.to/njhc95) of our school on this topic or in our [telegram bot](https://t.me/javascriptcamp_bot).
 
-![Sumerian school](/img/app.jpg)
+![JS Camp](/img/app.jpg)
 
 ## Links
 

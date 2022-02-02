@@ -199,7 +199,7 @@ module.exports.sum = sum // export
 
 ## مجموع
 
-لذلك أكملنا الدورة التحضيرية في JavaScript قبل الدورة [mobile development](https://react-native-village.github.io/docs/start000).
+لذلك أكملنا الدورة التحضيرية في JavaScript قبل الدورة [mobile development](https://jscamp.app/docs/start000).
 
 ## مشاكل؟
 
@@ -624,7 +624,7 @@ obj.b = 4
 
 لفهم مقدار ما تعلمته في هذا الدرس ، قم بإجراء الاختبار في[mobile application](http://onelink.to/njhc95) من مدرستنا في هذا الموضوع.
 
-![Sumerian school](/img/app.jpg)
+![JS Camp](/img/app.jpg)
 
 <!-- Экспортировать желаемые элементы одним оператором в конце модуля можно командой:
 

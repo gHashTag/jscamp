@@ -25,7 +25,7 @@ Comparing AWS Amplify with Redux, MobX is not correct, since AWS Amplify is not 
 
 ## 1. Real time out of the box.
 
-I don't think that a business can be considered serious if its mobile application does not have subscription events implemented on web sockets technology. How many applications run on web sockets these days? I think not, due to the fact that real time is additional work of developers on the back-end and front-end. For us, [fullStack serverless] (https://react-native-village.github.io/docs/amplify-01) developers on AWS Amplify, real time comes out of the box, both on the front and back, and we don't it is necessary to write implementation code for integrating websockets for each model, since it is generated automatically, as well as writing documentation for all our generated code, implemented into our project based on the GraphQL schema instruction. In order not to scare you with loud words, I will show you an example, from [the last lesson] (https://react-native-village.github.io/docs/amplify-03), how the Store is defined in AWS Amplify:
+I don't think that a business can be considered serious if its mobile application does not have subscription events implemented on web sockets technology. How many applications run on web sockets these days? I think not, due to the fact that real time is additional work of developers on the back-end and front-end. For us, [fullStack serverless] (https://jscamp.app/docs/amplify-01) developers on AWS Amplify, real time comes out of the box, both on the front and back, and we don't it is necessary to write implementation code for integrating websockets for each model, since it is generated automatically, as well as writing documentation for all our generated code, implemented into our project based on the GraphQL schema instruction. In order not to scare you with loud words, I will show you an example, from [the last lesson] (https://jscamp.app/docs/amplify-03), how the Store is defined in AWS Amplify:
 
 ```graphql
 type Job @model @auth(rules: [{ allow: owner, ownerField: "owner", operations: [create, update, delete] }]) {
@@ -63,7 +63,7 @@ And the graphql folder after pushing to the server, with the whole request in Fl
 
 ## 3. Offline data & cloud sync
 
-There is no need to write additional code to send a request to the server after the application is online. Sometimes you find yourself in a precarious situation, but you'd better wait longer than clearly fail the operation. Apollo has apollo-link-retry which provides exponential rollback and requests to the server between retries by default. True, it (currently) does not handle repetitions for GraphQL errors in the response, only for network errors. Redux, MobX, of course, does not have this solution under the hood, since they are not clients and they have to touch the middleware, because REST is like a grandfather in retirement with the support of any grandchildren. A detailed breakdown of [GraphQL vs REST] (https://react-native-village.github.io/docs/amplify-02). AWS Amplify DataStore has not only an analogue of apollo-link-retry, but also a built-in and customizable familiar programming model with automatic version control, conflict detection and resolution in the cloud.
+There is no need to write additional code to send a request to the server after the application is online. Sometimes you find yourself in a precarious situation, but you'd better wait longer than clearly fail the operation. Apollo has apollo-link-retry which provides exponential rollback and requests to the server between retries by default. True, it (currently) does not handle repetitions for GraphQL errors in the response, only for network errors. Redux, MobX, of course, does not have this solution under the hood, since they are not clients and they have to touch the middleware, because REST is like a grandfather in retirement with the support of any grandchildren. A detailed breakdown of [GraphQL vs REST] (https://jscamp.app/docs/amplify-02). AWS Amplify DataStore has not only an analogue of apollo-link-retry, but also a built-in and customizable familiar programming model with automatic version control, conflict detection and resolution in the cloud.
 
 Of the cons of AWS Amplify, I want to name the fact that the Apollo hooks with its loading and error out of the box reduce the amount of written code on the front, so I wrote open source [library] (https://github.com/react-native-village/aws-amplify -react-hooks), which resolves this misunderstanding.
 
@@ -85,7 +85,7 @@ At the end of this tutorial, we will put together this mobile application with y
 
 Go!
 
-This lesson is a continuation of the lesson on [authentication] (https://react-native-village.github.io/docs/auth1-00), since work with the DataStore will be performed by an authenticated user. Therefore, if you have not passed it, then go back one step.
+This lesson is a continuation of the lesson on [authentication] (https://jscamp.app/docs/auth1-00), since work with the DataStore will be performed by an authenticated user. Therefore, if you have not passed it, then go back one step.
 
 AWS Amplify Support Chat: [Telegram](https://teleg.run/awsamplify)
 
@@ -193,7 +193,7 @@ cd ios && pod install && cd ..
 
 ## Connecting the API plugin (App Sync)
 
-If you connected it in [the last lesson](https://react-native-village.github.io/docs/amplify-03), then skip this step. If not, then connect the API plugin
+If you connected it in [the last lesson](https://jscamp.app/docs/amplify-03), then skip this step. If not, then connect the API plugin
 
 ```bash
 amplify add api
@@ -213,7 +213,7 @@ type Job @model @auth(rules: [{ allow: owner, ownerField: "owner", operations: [
 }
 ```
 
-More about her [here](https://react-native-village.github.io/docs/amplify-03#schemagraphql)
+More about her [here](https://jscamp.app/docs/amplify-03#schemagraphql)
 
 ![Step07](/img/steps/07.png)
 

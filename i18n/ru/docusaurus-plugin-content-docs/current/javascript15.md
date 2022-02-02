@@ -44,7 +44,7 @@ switch (n) {
 }
 ```
 
-`n` - это булеан [boolean](https://react-native-village.github.io/docs/javascript08) условие.
+`n` - это булеан [boolean](https://jscamp.app/docs/javascript08) условие.
 
 ## Примеры
 
@@ -220,7 +220,7 @@ export default App
 
 Для того чтобы понять, на сколько вы усвоили этот урок, пройдите тест в [мобильном приложении](http://onelink.to/njhc95) нашей школы по этой теме или в нашем [телеграм боте](https://t.me/javascriptcamp_bot).
 
-![Sumerian school](/img/app.jpg)
+![JS Camp](/img/app.jpg)
 
 ## Ссылки:
 

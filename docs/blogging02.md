@@ -1,15 +1,15 @@
 ---
 id: blogging-02
-title: Publishing Articles to Sumerian School
+title: Publishing Articles to JS Camp
 sidebar_label: Publishing Articles
 ---
 
 import YouTube from 'react-youtube'
 
 
-To create articles in Sumerian School, you need to follow a few simple steps.
+To create articles in JS Camp, you need to follow a few simple steps.
 
-If you do not create articles, but want to correct an error or defect, then you can edit any article in a couple of clicks, how to do this is shown [here](https://react-native-village.github.io/docs/blogging-00#редактирование-статьи). But first, you need to create a `GitHub` account, if not, and connect to the project. How to do this is shown below, in `Step 00` and` Step 01`.
+If you do not create articles, but want to correct an error or defect, then you can edit any article in a couple of clicks, how to do this is shown [here](https://www.jscamp.app/docs/blogging-02/#editing-an-article). But first, you need to create a `GitHub` account, if not, and connect to the project. How to do this is shown below, in `Step 00` and` Step 01`.
 
 ![Step00](/img/steps/00.png)
 
@@ -23,7 +23,7 @@ To work on a common project, you need to create an account on the [GitHub] websi
 
 ## Connection to the project
 
-After registration, go to the [library of our project (react-native-village.github.io)](https://github.com/react-native-village/react-native-village.github.io/tree/gh-pages) and click the Fork button in the upper right corner of the screen.
+After registration, go to the [library of our project (JS Camp)](https://github.com/gHashTag/jscamp/tree/gh-pages) and click the Fork button in the upper right corner of the screen.
 
 ![02](/img/blogging/00/02.png)
 
@@ -79,7 +79,7 @@ The `Add Remote` menu will open.
 
 ![Branches02](/img/blogging/00/branch02.png)
 
-In the `GitHub Repo` field, select` react-native-village / react-native-village.github.io`, and in the `Name` field, enter any name for this repository.
+In the `GitHub Repo` field, select `gHashTag/jscamp`, and in the `Name` field, enter any name for this repository.
 
 ![Branches03](/img/blogging/00/branch03.png)
 
@@ -125,7 +125,7 @@ During further installation, click `Next`, leaving all the checkboxes by default
 
 ## Installing packages
 
-For further actions, you need an installed package manager [Chocolatey](https://react-native-village.github.io/docs/start00#install-chocolatey). Install the packages `node.js` and` yarn` using it.
+For further actions, you need an installed package manager [Chocolatey](https://www.jscamp.app/docs/start00#install-chocolatey). Install the packages `node.js` and` yarn` using it.
 To start the installation process, run the following commands in PowerShell:
 
 ```bash

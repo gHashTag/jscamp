@@ -285,7 +285,7 @@ JavaScript 沒有這種語言，看起來像是最好的函數式編程語言！
 
 `this` 在不破壞所有現有應用程序的情況下，無法從JavaScript中刪除關鍵字。 但是，該怎麼辦？ 我們可以不用自己編寫🖊️我們的代碼 `this` 並且僅允許在庫中使用。 同時， [new rules](https://ru.reactjs.org/docs/hooks-rules.html#eslint-plugin) `ESLint` 被引入，禁止使用 `this`.
 
-從上一課開始 [classes](https://react-native-village.github.io/docs/javascript25#refused-classes), 我們告別 `this` 跟他們。
+從上一課開始 [classes](https://jscamp.app/docs/javascript25#refused-classes), 我們告別 `this` 跟他們。
 
 ## 問題？
 
@@ -317,7 +317,7 @@ JavaScript 沒有這種語言，看起來像是最好的函數式編程語言！
 
 為了了解您學到了多少本課程，請對 [mobile application](http://onelink.to/njhc95) of our school on this topic.
 
-![Sumerian school](/img/app.jpg)
+![JS Camp](/img/app.jpg)
 
 ## 鏈接
 

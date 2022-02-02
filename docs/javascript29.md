@@ -201,7 +201,7 @@ To check if you did everything right, save these files, open a terminal and type
 
 ## Total
 
-So we have completed the preparatory course on JavaScript before the course on [mobile development](https://react-native-village.github.io/docs/start000).
+So we have completed the preparatory course on JavaScript before the course on [mobile development](https://jscamp.app/docs/start000).
 
 ## Problems?
 
@@ -626,7 +626,7 @@ To make objects, functions, classes or variables 🔔 available to the outside w
 
 In order to understand how much you learned this lesson, take the test in the [mobile application](http://onelink.to/njhc95) of our school on this topic or in our [telegram bot](https://t.me/javascriptcamp_bot).
 
-![Sumerian school](/img/app.jpg)
+![JS Camp](/img/app.jpg)
 
 <!-- Экспортировать желаемые элементы одним оператором в конце модуля можно командой:
 

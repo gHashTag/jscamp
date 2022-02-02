@@ -285,7 +285,7 @@ We can create encapsulated objects without using this as a collection of closure
 
 The `this` keyword cannot be removed from JavaScript without destroying all existing applications. However, what can be done? We can write 🖊️ our own code without `this` and only allow it to be used in libraries. In the meantime, [new rules](https://ru.reactjs.org/docs/hooks-rules.html#eslint-plugin) `ESLint` are being introduced, prohibiting the use of `this`.
 
-Since in the last lesson we abandoned [classes](https://react-native-village.github.io/docs/javascript25#refused-classes), we say goodbye to `this` with them.
+Since in the last lesson we abandoned [classes](https://jscamp.app/docs/javascript25#refused-classes), we say goodbye to `this` with them.
 
 ## Problems?
 
@@ -317,7 +317,7 @@ JavaScript without `this` looks like the best:
 
 In order to understand how much you learned this lesson, take the test in the [mobile application](http://onelink.to/njhc95) of our school on this topic or in our [telegram bot](https://t.me/javascriptcamp_bot).
 
-![Sumerian school](/img/app.jpg)
+![JS Camp](/img/app.jpg)
 
 ## Links
 

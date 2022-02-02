@@ -17,7 +17,7 @@ import YouTube from 'react-youtube';
 
 Наше [мобильное приложение](http://onelink.to/njhc95)
 
-![Sumerian school](/img/app.jpg)
+![JS Camp](/img/app.jpg)
 
 ## Contributors ✨
 

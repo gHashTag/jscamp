@@ -201,7 +201,7 @@ module.exports.sum = sum // export
 
 ## 全部的
 
-因此，我們先完成了關於 JavaScript 的預備課程， [mobile development](https://react-native-village.github.io/docs/start000).
+因此，我們先完成了關於 JavaScript 的預備課程， [mobile development](https://jscamp.app/docs/start000).
 
 ## 問題?
 
@@ -621,7 +621,7 @@ obj.b = 4
 
 為了了解您學到了多少本課程，請對 [mobile application](http://onelink.to/njhc95) 我們學校就這個話題。
 
-![Sumerian school](/img/app.jpg)
+![JS Camp](/img/app.jpg)
 
 <!-- Экспортировать желаемые элементы одним оператором в конце модуля можно командой:
 

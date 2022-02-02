@@ -155,7 +155,7 @@ function learnJavaScript() {
 
 ![eye](https://media.giphy.com/media/PKl9JTqnoiKtO/giphy.gif)
 
-在文章中 [Change](https://react-native-village.github.io/docs/javascript03) 我們告訴你，我們不會使用 `var`, 這與範圍有關。
+在文章中 [Change](https://jscamp.app/docs/javascript03) 我們告訴你，我們不會使用 `var`, 這與範圍有關。
 
 1. 如果在同一範圍內，則使用關鍵字創建兩個具有相同名稱的變量 🔔 `let` 或者 `const`, 解釋器會通過顯示錯誤來警告我們。
 
@@ -252,7 +252,7 @@ console.log(fruit) // "Apple"
 
 為了了解您學到了多少本課程，請對[mobile application](http://onelink.to/njhc95) 我們學校就這個話題。
 
-![Sumerian school](/img/app.jpg)
+![JS Camp](/img/app.jpg)
 
 ## 鏈接
 

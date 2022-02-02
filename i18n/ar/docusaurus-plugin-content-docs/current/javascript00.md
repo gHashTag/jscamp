@@ -18,7 +18,7 @@ import YouTube from 'react-youtube'
 
 ![javaScript](https://media.giphy.com/media/ln7z2eWriiQAllfVcn/giphy.gif)
 
-لهذا ، أنشأنا تطبيقًا للهاتف المحمول [Sumerian School](http://onelink.to/njhc95), موقع [JSCamp.app](https://www.jscamp.app) و [YouTube channel](https://www.youtube.com/channel/UCR8tIQm7pu8MlPewAlUnzQw), حيث للتدريب ، نستخدم الصور الرمزية ثلاثية الأبعاد المتوفرة افتراضيًا في [Amazon Sumerian](https://aws.amazon.com/ru/sumerian/), بفضل ذلك يمكنك بسهولة إنشاء واجهات ثلاثية الأبعاد مثيرة. يتكاملون أيضًا مع [AWS](https://aws.amazon.com) خدمات لتوفير وصول سهل إلى التعلم الآلي وروبوتات المحادثة وتنفيذ التعليمات البرمجية والمزيد. باستخدام هذه الأداة ، يمكننا إنشاء مقاطع فيديو ومواد تعليمية باللغات الشائعة في العالم ونشرها على [our site](https://www.jscamp.app) و على [YouTube channel](https://www.youtube.com/channel/UCR8tIQm7pu8MlPewAlUnzQw).
+لهذا ، أنشأنا تطبيقًا للهاتف المحمول [JS Camp](http://onelink.to/njhc95), موقع [JSCamp.app](https://www.jscamp.app) و [YouTube channel](https://www.youtube.com/channel/UCR8tIQm7pu8MlPewAlUnzQw), حيث للتدريب ، نستخدم الصور الرمزية ثلاثية الأبعاد المتوفرة افتراضيًا في [Amazon Sumerian](https://aws.amazon.com/ru/sumerian/), بفضل ذلك يمكنك بسهولة إنشاء واجهات ثلاثية الأبعاد مثيرة. يتكاملون أيضًا مع [AWS](https://aws.amazon.com) خدمات لتوفير وصول سهل إلى التعلم الآلي وروبوتات المحادثة وتنفيذ التعليمات البرمجية والمزيد. باستخدام هذه الأداة ، يمكننا إنشاء مقاطع فيديو ومواد تعليمية باللغات الشائعة في العالم ونشرها على [our site](https://www.jscamp.app) و على [YouTube channel](https://www.youtube.com/channel/UCR8tIQm7pu8MlPewAlUnzQw).
 
 ## فيديو
 
@@ -129,7 +129,7 @@ Thتتكون دورة e JS من مقالات ودروس فيديو وبودكا�
 
 ## مؤلف الدورة
 
-مؤلف كتاب Java Script مسار - [Server Serverlesskiy](https://twitter.com/koshasuperstar), هو خالق الأول[React Native](https://react-native-village.github.io/docs/start000) دورة تدريبية في الإنترنت الروسي ، وكذلك أول مدون-مبرمج روسي في[AWS Comunity Builders](https://aws.amazon.com/ru/developer/community/community-builders/) برنامج من أمازون.
+مؤلف كتاب Java Script مسار - [Server Serverlesskiy](https://twitter.com/koshasuperstar), هو خالق الأول[React Native](https://jscamp.app/docs/start000) دورة تدريبية في الإنترنت الروسي ، وكذلك أول مدون-مبرمج روسي في[AWS Comunity Builders](https://aws.amazon.com/ru/developer/community/community-builders/) برنامج من أمازون.
 ## المراجعات
 
 [![Tvit](/img/javascript/twit.png)](https://twitter.com/dabit3/status/1339622771001843716)
