@@ -21,11 +21,11 @@
     "ar": "yarn run start -- --locale ar"
   },
   "dependencies": {
-    "@docusaurus/core": "2.0.0-beta.8",
-    "@docusaurus/preset-classic": "2.0.0-beta.8",
-    "@docusaurus/remark-plugin-npm2yarn": "^2.0.0-beta.8",
-    "@docusaurus/theme-live-codeblock": "2.0.0-beta.8",
-    "@docusaurus/theme-search-algolia": "^2.0.0-beta.8",
+    "@docusaurus/core": "^2.0.0-beta.15",
+    "@docusaurus/preset-classic": "^2.0.0-beta.15",
+    "@docusaurus/remark-plugin-npm2yarn": "^2.0.0-beta.15",
+    "@docusaurus/theme-live-codeblock": "^2.0.0-beta.15",
+    "@docusaurus/theme-search-algolia": "^2.0.0-beta.15",
     "caniuse-lite": "^1.0.30001204",
     "classnames": "^2.2.6",
     "clsx": "^1.1.1",
