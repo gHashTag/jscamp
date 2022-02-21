@@ -60,7 +60,7 @@ npm install react-native-reanimated react-native-gesture-handler react-native-sc
 npx pod-install ios
 ```
 
-Чтобы завершить установку `response-native-gesture-handler`, добавьте следующее вверху (убедитесь, что он находится вверху, и перед ним ничего нет) вашего входного файла, такого как `index.js` или `App.js`:
+Чтобы завершить установку `react-native-gesture-handler`, добавьте следующее вверху (убедитесь, что он находится вверху, и перед ним ничего нет) вашего входного файла, такого как `index.js` или `App.js`:
 
 ```jsx
 import 'react-native-gesture-handler'
