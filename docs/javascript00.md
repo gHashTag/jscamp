@@ -18,7 +18,7 @@ From this forecast, the demand for serverless technologies is obvious, and there
 
 ![javaScript](https://media.giphy.com/media/ln7z2eWriiQAllfVcn/giphy.gif)
 
-For this, we have created a mobile application [Sumerian School](http://onelink.to/njhc95), a site [JSCamp.app](https://www.jscamp.app) and [YouTube channel](https://www.youtube.com/channel/UCR8tIQm7pu8MlPewAlUnzQw), where for training we use 3D avatars available by default in [Amazon Sumerian](https://aws.amazon.com/ru/sumerian/), thanks to which you can easily create exciting 3D -Interfaces. They also integrate with [AWS](https://aws.amazon.com) services to provide easy access to machine learning, chatbots, code execution and more. With this tool we can create videos, educational materials in popular languages ​​of the world and publish them on [our site](https://www.jscamp.app) and on [YouTube channel](https://www.youtube.com/channel/UCR8tIQm7pu8MlPewAlUnzQw).
+For this, we have created a mobile application [JS Camp](http://onelink.to/njhc95), a site [JSCamp.app](https://www.jscamp.app) and [YouTube channel](https://www.youtube.com/channel/UCR8tIQm7pu8MlPewAlUnzQw), where for training we use 3D avatars available by default in [Amazon Sumerian](https://aws.amazon.com/ru/sumerian/), thanks to which you can easily create exciting 3D -Interfaces. They also integrate with [AWS](https://aws.amazon.com) services to provide easy access to machine learning, chatbots, code execution and more. With this tool we can create videos, educational materials in popular languages ​​of the world and publish them on [our site](https://www.jscamp.app) and on [YouTube channel](https://www.youtube.com/channel/UCR8tIQm7pu8MlPewAlUnzQw).
 
 ## Video
 
@@ -88,7 +88,7 @@ The JS course consists of articles, video tutorials, podcasts, and music tracks.
 
 ## Badges
 
-In the last update of our application, a user loyalty system was released. Now everyone who has passed the English, JavaScript, ReactNative, TypeScript, AWS Amplify exams receive the corresponding badges in our Sumerian School application, which can be downloaded for free for iOS and Android [here](http://onelink.to/njhc95). True, tests are still available only in English and JavaScript, but this year they will be on all topics.
+In the last update of our application, a user loyalty system was released. Now everyone who has passed the English, JavaScript, ReactNative, TypeScript, AWS Amplify exams receive the corresponding badges in our JS Camp application, which can be downloaded for free for iOS and Android [here](http://onelink.to/njhc95). True, tests are still available only in English and JavaScript, but this year they will be on all topics.
 
 ![Camp](https://media.giphy.com/media/MOQG4QYC2MRSU/giphy.gif)
 
@@ -134,7 +134,7 @@ We begin offline classes with the assembly of the Rubik's cube and those who col
 
 ## Course author
 
-The author of the JavaScript course - [Server Serverlesskiy](https://twitter.com/koshasuperstar), is the creator of the first [React Native](https://react-native-village.github.io/docs/start000) training course in the Russian Internet, as well as the first Russian blogger-programmer in the [AWS Comunity Builders](https://aws.amazon.com/ru/developer/community/community-builders/) program from Amazon.
+The author of the JavaScript course - [Server Serverlesskiy](https://twitter.com/koshasuperstar), is the creator of the first [React Native](https://jscamp.app/docs/start000) training course in the Russian Internet, as well as the first Russian blogger-programmer in the [AWS Comunity Builders](https://aws.amazon.com/ru/developer/community/community-builders/) program from Amazon.
 
 ## Reviews
 

@@ -265,7 +265,7 @@ function learnJavaScript() {
 3. `+ =`
 
 لفهم مقدار ما تعلمته في هذا الدرس ، قم بإجراء الاختبار في[mobile application](http://onelink.to/njhc95) من مدرستنا في هذا الموضوع.
-![Sumerian school](/img/app.jpg)
+![JS Camp](/img/app.jpg)
 
 ## الروابط
 

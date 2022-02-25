@@ -83,7 +83,7 @@ const Home = () => {
     <>
       <Layout title={`${siteConfig.title}`} description="Java Script Camp - лагерь скаутов">
         <Head>
-          <meta property="og:image" content="https://react-native-village.github.io/img/app.jpg" />
+          <meta property="og:image" content="https://jscamp.app/img/app.jpg" />
         </Head>
         <a href="https://www.patreon.com/javascriptcamp">
           <div className={classnames('image-container')}>

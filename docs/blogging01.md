@@ -14,7 +14,7 @@ Animated trainer: woman_tone4: Chris Brown, in native English, will help you mas
 ## Alphabet
 
 ALPHABET
-This is the name of the first English lesson, which is already available in our mobile app Sumerian School
+This is the name of the first English lesson, which is already available in our mobile app JS Camp
 Animated teacher 👩🏾 Chris Brown, in native English, will help you master the topic with ease 💯
 
 <YouTube videoId='oE7DRc9Ijzc' />
@@ -43,7 +43,7 @@ This series includes two main themes: sports / sports equipment ⛹🏻‍♀ �
 ## Animals
 
 The topic of animals in English is one of the first, which is taught with great interest by both children 👧🏼 and adults 🧔🏽
-Pets кие and wild 🐗 animals, birds 🦆, insects 🐝, mammals 🐋 - you can find all this in our Sumerian School mobile app 🦄
+Pets кие and wild 🐗 animals, birds 🦆, insects 🐝, mammals 🐋 - you can find all this in our JS Camp mobile app 🦄
 
 <YouTube videoId='k-faBaOPbwo' />
 
@@ -70,7 +70,7 @@ In this case, animated emotions come to the rescue - smilies 😃, which help to
 
 Smilies 🙃 are quite necessary at the current level of development of social networks, because many people spend a significant amount of time there.
 
-And in the Sumerian School mobile app 🦄 you can learn the entire palette of 😄 😂 😍 🥳 🤑 emoticons in English.
+And in the JS Camp mobile app 🦄 you can learn the entire palette of 😄 😂 😍 🥳 🤑 emoticons in English.
 
 <YouTube videoId='actCwSYL9dM' />
 
@@ -82,14 +82,14 @@ This lesson has collected many of the conventions that surround us everywhere an
 
 ## Objects
 
-This is one of the most extensive English topics in the Sumerian School mobile app 🦄
-Here are collected the most popular words with the names of objects that surround a person in the modern world: technology 🖥, cinema 🎞, money 💰 - you can find all this in our mobile application Sumerian School 🦄
+This is one of the most extensive English topics in the JS Camp mobile app 🦄
+Here are collected the most popular words with the names of objects that surround a person in the modern world: technology 🖥, cinema 🎞, money 💰 - you can find all this in our mobile application JS Camp 🦄
 
 <YouTube videoId='0zIsDnmfqfQ' />
 
 ## Travel
 
-A new lesson has been released in the Sumerian School mobile app 🦄 in which you can get acquainted with the vocabulary about travel ⛵, namely: learn new words about modes of transport 🚕 🏍 🚂 and attractions 🗽 🏯
+A new lesson has been released in the JS Camp mobile app 🦄 in which you can get acquainted with the vocabulary about travel ⛵, namely: learn new words about modes of transport 🚕 🏍 🚂 and attractions 🗽 🏯
 
 After all, travel in our time is a very popular topic 🔝
 
@@ -106,7 +106,7 @@ When learning English, you need to know how to specify the exact time of day.
 
 ## People
 
-This topic will give you a broader understanding of the age characteristics of a person 👶 👵🏾, people's professions 👩‍🎨 👨‍🚀, introduce you to some fairy-tale characters 🧜‍♀ 🦸🏻‍♂ and help you learn gestures 🤞👌🏻 in English in a mobile application Sumerian School 🦄
+This topic will give you a broader understanding of the age characteristics of a person 👶 👵🏾, people's professions 👩‍🎨 👨‍🚀, introduce you to some fairy-tale characters 🧜‍♀ 🦸🏻‍♂ and help you learn gestures 🤞👌🏻 in English in a mobile application JS Camp 🦄
 
 <YouTube videoId='9nITEQEKBxs' />
 
@@ -114,7 +114,7 @@ This topic will give you a broader understanding of the age characteristics of a
 
 Nature surrounds us everywhere 🌳 🌞 It is so beautiful 🌈 and diverse 🌹 🌼 Therefore, many people love to share their impressions of the beauties of nature they saw, for example, traveling to different countries 🌍
 
-Sumerian School 🦄 will help you study natural phenomena 🌦, landscapes 🏞, flora 🍄 and other elements of the world around us in English 😉
+JS Camp 🦄 will help you study natural phenomena 🌦, landscapes 🏞, flora 🍄 and other elements of the world around us in English 😉
 
 <YouTube videoId='Ncy7chtb0CM' />
 

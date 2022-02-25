@@ -6,7 +6,7 @@ sidebar_label: Introduction
 
 import YouTube from 'react-youtube'
 
-One of the most requested topics among the subscribers of my channel [Sumerian School](https://www.youtube.com/channel/UCR8tIQm7pu8MlPewAlUnzQw) is authentication and authorization in the React Native application. Therefore, I decided to devote a separate post to this issue and before we start coding, it is necessary to understand the definition of Authentication / Authorization.
+One of the most requested topics among the subscribers of my channel [JS Camp](https://www.youtube.com/channel/UCR8tIQm7pu8MlPewAlUnzQw) is authentication and authorization in the React Native application. Therefore, I decided to devote a separate post to this issue and before we start coding, it is necessary to understand the definition of Authentication / Authorization.
 
 > You can study the course with Expo or through the Android emulator or through any other starter.
 

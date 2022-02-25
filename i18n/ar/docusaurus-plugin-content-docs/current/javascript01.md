@@ -228,7 +228,7 @@ function learnJavaScript() {
 
 نحن الآن جاهزون لدراسة Java Script معك ، ولكن لفهم مقدار ما تعلمته في هذا الدرس ، قم بإجراء الاختبار في [mobile application](http://onelink.to/njhc95) في مدرستنا حول هذا الموضوع.
 
-![Sumerian school](/img/app.jpg)
+![JS Camp](/img/app.jpg)
 
 ## الروابط
 

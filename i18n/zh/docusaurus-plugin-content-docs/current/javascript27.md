@@ -6,7 +6,7 @@ sidebar_label: 提取 API
 
 ![@serverSerrverlesskiy](/img/javascript/headers/28.jpg)
 
- `Fetch API` 允許 JavaScript 使用HTTP請求與服務器通信，並且是XMLHttpRequest類的更好替代。 查詢由 `fetch()` 方法，返回 🔄 [Promise](https://react-native-village.github.io/docs/javascript24).
+ `Fetch API` 允許 JavaScript 使用HTTP請求與服務器通信，並且是XMLHttpRequest類的更好替代。 查詢由 `fetch()` 方法，返回 🔄 [Promise](https://jscamp.app/docs/javascript24).
 
 ![Exchange](https://media.giphy.com/media/OPQiZUC381IJ8Sh7UY/giphy.gif)
 
@@ -53,7 +53,7 @@ fetch('https://jsonplaceholder.typicode.com/users', {
 
 ![Bascketball](https://media.giphy.com/media/l0MYwdebx8o0XI56E/giphy.gif)
 
-`fetch()` 方法返回 🔄 [Promise](https://react-native-village.github.io/docs/javascript24) 的對象 `Response` 類，具有以下屬性：
+`fetch()` 方法返回 🔄 [Promise](https://jscamp.app/docs/javascript24) 的對象 `Response` 類，具有以下屬性：
 
 1. `status` - 回應碼;
 2. `statusText` - 對應於響應代碼的短信message;
@@ -175,7 +175,7 @@ HTTP標頭指定了什麼參數？
 
 為了了解您學到了多少本課程，請對 [mobile application](http://onelink.to/njhc95) 我們學校就這個話題。
 
-![Sumerian school](/img/app.jpg)
+![JS Camp](/img/app.jpg)
 
 ## 鏈接
 

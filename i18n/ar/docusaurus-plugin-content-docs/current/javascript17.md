@@ -500,7 +500,7 @@ let arr = new Array (item1, item2 ...)
 
 لفهم مقدار ما تعلمته في هذا الدرس ، قم بإجراء الاختبار على [تطبيق الهاتف المحمول] (http://onelink.to/njhc95) الخاص بمدرستنا حول هذا الموضوع.
 
-![Sumerian school](/img/app.jpg)
+![JS Camp](/img/app.jpg)
 
 ## الروابط
 

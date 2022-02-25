@@ -5,7 +5,7 @@ sidebar_label: Что Такое React Native?
 ---
 import YouTube from 'react-youtube'
 
-# Что Такое React Native? Комплексное руководство для 2021
+# Что Такое React Native? 
 
 <YouTube videoId="07UKR3EgxDE" />
 

@@ -18,7 +18,7 @@ import YouTube from 'react-youtube'
 
 ![javaScript](https://media.giphy.com/media/ln7z2eWriiQAllfVcn/giphy.gif)
 
-इसके लिए हमने एक मोबाइल एप्लिकेशन बनाया है [Sumerian School](http://onelink.to/njhc95), वेबसाइट [JSCamp.app](https://www.jscamp.app) и [YouTube चैनल](https://www.youtube.com/channel/UCR8tIQm7pu8MlPewAlUnzQw), जहां प्रशिक्षण के लिए हम डिफ़ॉल्ट रूप से उपलब्ध 3 डी अवतार का उपयोग करते हैं [Amazon Sumerian](https://aws.amazon.com/ru/sumerian/), आकर्षक 3 डी इंटरफेस बनाना आसान है। इसके अलावा, वे सेवाओं के साथ एकीकृत हैं [AWS](https://aws.amazon.com), इसलिए वे मशीन लर्निंग, चैटबॉट्स, कोड एक्ज़ीक्यूशन और अधिक तक आसान पहुँच प्रदान करते हैं। इस टूल से हम दुनिया की लोकप्रिय भाषाओं में वीडियो, शैक्षिक सामग्री बना सकते हैं और उन्हें प्रकाशित कर सकते हैं [हमारी वेबसाइट](https://www.jscamp.app) और पर [YouTube चैनल](https://www.youtube.com/channel/UCR8tIQm7pu8MlPewAlUnzQw).
+इसके लिए हमने एक मोबाइल एप्लिकेशन बनाया है [JS Camp](http://onelink.to/njhc95), वेबसाइट [JSCamp.app](https://www.jscamp.app) и [YouTube चैनल](https://www.youtube.com/channel/UCR8tIQm7pu8MlPewAlUnzQw), जहां प्रशिक्षण के लिए हम डिफ़ॉल्ट रूप से उपलब्ध 3 डी अवतार का उपयोग करते हैं [Amazon Sumerian](https://aws.amazon.com/ru/sumerian/), आकर्षक 3 डी इंटरफेस बनाना आसान है। इसके अलावा, वे सेवाओं के साथ एकीकृत हैं [AWS](https://aws.amazon.com), इसलिए वे मशीन लर्निंग, चैटबॉट्स, कोड एक्ज़ीक्यूशन और अधिक तक आसान पहुँच प्रदान करते हैं। इस टूल से हम दुनिया की लोकप्रिय भाषाओं में वीडियो, शैक्षिक सामग्री बना सकते हैं और उन्हें प्रकाशित कर सकते हैं [हमारी वेबसाइट](https://www.jscamp.app) और पर [YouTube चैनल](https://www.youtube.com/channel/UCR8tIQm7pu8MlPewAlUnzQw).
 
 ## वीडियो
 
@@ -86,7 +86,7 @@ TypeScript - Microsoft द्वारा 2012 में शुरू की ग
 
 ## बैज
 
-हमारे आवेदन के अंतिम अद्यतन में, एक उपयोगकर्ता वफादारी प्रणाली जारी की गई थी। अब हर कोई जो विषय से परीक्षा उत्तीर्ण करता है English, JavaScript, ReactNative, TypeScript, AWS Amplify हमारे आवेदन में मिलान बैज प्राप्त करें Sumerian School, जो iOS और Android के लिए मुफ्त में उपलब्ध है [यहाँ](http://onelink.to/njhc95). सच है, परीक्षण अभी भी केवल के लिए उपलब्ध हैं English и JavaScript, लेकिन यह वर्ष सभी विषयों पर होगा.
+हमारे आवेदन के अंतिम अद्यतन में, एक उपयोगकर्ता वफादारी प्रणाली जारी की गई थी। अब हर कोई जो विषय से परीक्षा उत्तीर्ण करता है English, JavaScript, ReactNative, TypeScript, AWS Amplify हमारे आवेदन में मिलान बैज प्राप्त करें JS Camp, जो iOS और Android के लिए मुफ्त में उपलब्ध है [यहाँ](http://onelink.to/njhc95). सच है, परीक्षण अभी भी केवल के लिए उपलब्ध हैं English и JavaScript, लेकिन यह वर्ष सभी विषयों पर होगा.
 
 ![Camp](https://media.giphy.com/media/MOQG4QYC2MRSU/giphy.gif)
 
@@ -125,7 +125,7 @@ TypeScript - Microsoft द्वारा 2012 में शुरू की ग
 
 ## पाठ्यक्रम लेखक
 
-पाठ्यक्रम लेखक पर Java Script - [Server Serverlesskiy](https://twitter.com/koshasuperstar), रनर ट्रेनिंग कोर्स में प्रथम के निर्माता हैं [React Native](https://react-native-village.github.io/docs/start000), 当社のウェブサイトで直接。これを行うには、次のウィンドウで追加してみてください [AWS Comunity Builders](https://aws.amazon.com/ru/developer/community/community-builders/) от Amazon.
+पाठ्यक्रम लेखक पर Java Script - [Server Serverlesskiy](https://twitter.com/koshasuperstar), रनर ट्रेनिंग कोर्स में प्रथम के निर्माता हैं [React Native](https://jscamp.app/docs/start000), 当社のウェブサイトで直接。これを行うには、次のウィンドウで追加してみてください [AWS Comunity Builders](https://aws.amazon.com/ru/developer/community/community-builders/) от Amazon.
 
 ## प्रशंसापत्र
 

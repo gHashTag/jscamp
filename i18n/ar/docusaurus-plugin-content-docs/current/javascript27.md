@@ -6,7 +6,7 @@ sidebar_label: جلب API
 
 ![@serverSerrverlesskiy](/img/javascript/headers/28.jpg)
 
-ال ** تسمح Fetch API ** لجافا سكريبت بالاتصال بالخادم باستخدام طلبات HTTP وهي بديل أفضل لفئة XMLHttpRequest. يتم تنفيذ الاستعلامات بواسطة `fetch()` الطريقة التي تعود🔄 [Promise](https://react-native-village.github.io/docs/javascript24).
+ال ** تسمح Fetch API ** لجافا سكريبت بالاتصال بالخادم باستخدام طلبات HTTP وهي بديل أفضل لفئة XMLHttpRequest. يتم تنفيذ الاستعلامات بواسطة `fetch()` الطريقة التي تعود🔄 [Promise](https://jscamp.app/docs/javascript24).
 
 ![Exchange](https://media.giphy.com/media/OPQiZUC381IJ8Sh7UY/giphy.gif)
 
@@ -53,7 +53,7 @@ fetch('https://jsonplaceholder.typicode.com/users', {
 
 ![Bascketball](https://media.giphy.com/media/l0MYwdebx8o0XI56E/giphy.gif)
 
-إرجاع طريقة `fetch ()`🔄 [Promise](https://react-native-village.github.io/docs/javascript24) كائن من فئة "Response" ، والتي لها الخصائص التالية:
+إرجاع طريقة `fetch ()`🔄 [Promise](https://jscamp.app/docs/javascript24) كائن من فئة "Response" ، والتي لها الخصائص التالية:
 
 1. `status` - كود الاستجابة
 2. `statusText` - رسالة نصية 📜 المقابلة لرمز الاستجابة ؛
@@ -175,7 +175,7 @@ console.log(data[0].name + ' and ' + data[2].name)
 
 لفهم مقدار ما تعلمته في هذا الدرس ، قم بإجراء الاختبار في [mobile application](http://onelink.to/njhc95) من مدرستنا في هذا الموضوع.
 
-![Sumerian school](/img/app.jpg)
+![JS Camp](/img/app.jpg)
 
 ## الروابط
 

@@ -325,7 +325,7 @@ However, when working with _JSX_ in TypeScript, only `as - syntax` is allowed, s
 
 Now we are ready to learn TypeScript with you, but in order to understand how much you learned this lesson, take the test in the [mobile application](http://onelink.to/njhc95) in our school on this topic.
 
-![Sumerian school](/img/app.jpg)
+![JS Camp](/img/app.jpg)
 
 ## Links
 

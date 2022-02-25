@@ -66,7 +66,7 @@ fbq('init', '3916699571736515');
 fbq('track', 'PageView');
 </script>
 <noscript><img height="1" width="1" style="display:none"
-src="https://react-native-village.github.io/assets/images/app-b1ad811d205d35252340669e9e1f7545.png"
+src="https://jscamp.app/assets/images/app-b1ad811d205d35252340669e9e1f7545.png"
 /></noscript>
 <!-- End Facebook Pixel Code -->
 <!-- Yandex.Metrika counter -->

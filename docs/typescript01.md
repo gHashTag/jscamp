@@ -8,7 +8,7 @@ To get started with TypeScript, you need to install its toolkit. You can install
 
 ## Installing Node.js
 
-To install via NPM, you need to have Node.js installed (if not already installed). For further actions, you need an installed package manager [Chocolatey](https://react-native-village.github.io/docs/start00#установка-chocolatey). Install NPM with it.
+To install via NPM, you need to have Node.js installed (if not already installed). For further actions, you need an installed package manager [Chocolatey](https://jscamp.app/docs/start00#установка-chocolatey). Install NPM with it.
 To start the installation process, you need to run the command in Powershell:
 
 ```bash

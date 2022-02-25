@@ -1,14 +1,14 @@
 ---
 id: blogging-02
-title: Публикация статей в Sumerian School
+title: Публикация статей в JS Camp
 sidebar_label: Публикация статей
 ---
 
 import YouTube from 'react-youtube'
 
-Для создания статей в Sumerian School нужно выполнить несколько простых шагов.
+Для создания статей в JS Camp нужно выполнить несколько простых шагов.
 
-Если Вы не создаёте статьи, а желаете исправить ошибку или недочет, то вы можете отредактировать любую статью в пару нажатий, как это сделать показано [здесь](https://react-native-village.github.io/docs/blogging-00#редактирование-статьи). Но для начала нужно создать аккаунт `GitHub`, если не создан, и подключиться к проекту. Как это осуществить показано ниже, в `Шаге 00` и `Шаге 01`.
+Если Вы не создаёте статьи, а желаете исправить ошибку или недочет, то вы можете отредактировать любую статью в пару нажатий, как это сделать показано [здесь](https://jscamp.app/docs/blogging-00#редактирование-статьи). Но для начала нужно создать аккаунт `GitHub`, если не создан, и подключиться к проекту. Как это осуществить показано ниже, в `Шаге 00` и `Шаге 01`.
 
 ![Step00](/img/steps/00.png)
 
@@ -22,7 +22,7 @@ import YouTube from 'react-youtube'
 
 ## Подключение к проекту
 
-После регистрации, перейдите к [библиотеке нашего проекта (react-native-village.github.io)](https://github.com/react-native-village/react-native-village.github.io/tree/gh-pages) и нажмите кнопку Fork в правом верхнем углу экрана.
+После регистрации, перейдите к [библиотеке нашего проекта (jscamp.app)](https://github.com/react-native-village/jscamp.app/tree/gh-pages) и нажмите кнопку Fork в правом верхнем углу экрана.
 
 ![02](/img/blogging/00/02.png)
 
@@ -78,7 +78,7 @@ import YouTube from 'react-youtube'
 
 ![Branches02](/img/blogging/00/branch02.png)
 
-В поле `GitHub Repo` выберите пункт `react-native-village/react-native-village.github.io`, а в поле `Name` введите любое имя для этого репозитория.
+В поле `GitHub Repo` выберите пункт `gHashTag/jscamp`, а в поле `Name` введите любое имя для этого репозитория.
 
 ![Branches03](/img/blogging/00/branch03.png)
 
@@ -124,7 +124,7 @@ import YouTube from 'react-youtube'
 
 ## Установка пакетов
 
-Для дальнейших действий нужен установленный менеджер пакетов [Chocolatey](https://react-native-village.github.io/docs/start00#установка-chocolatey). С помощью него установим пакеты `node.js` и `yarn`.
+Для дальнейших действий нужен установленный менеджер пакетов [Chocolatey](https://www.jscamp.app/docs/reactnative14#installing-chocolatey). С помощью него установим пакеты `node.js` и `yarn`.
 Для начала процесса установки последовательно выполним в оболочке PowerShell команды:
 
 ```bash

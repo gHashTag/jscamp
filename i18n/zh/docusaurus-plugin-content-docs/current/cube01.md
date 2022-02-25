@@ -1,6 +1,6 @@
 ---
 id: cube-01
-title: Сборка кубик-Рубика в Sumerian School
+title: Сборка кубик-Рубика в JS Camp
 sidebar_label: Сборка кубика-Рубика
 ---
 

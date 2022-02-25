@@ -38,7 +38,7 @@ switch (n) {
 }
 ```
 
-`n` - this is [boolean](https://react-native-village.github.io/docs/javascript08) condition.
+`n` - this is [boolean](https://jscamp.app/docs/javascript08) condition.
 
 ## Examples of
 
@@ -177,7 +177,7 @@ Which keyword stops the comparison process in `switch`?
 
 In order to understand how much you learned this lesson, take the test in the [mobile application](http://onelink.to/njhc95) of our school on this topic or in our [telegram bot](https://t.me/javascriptcamp_bot).
 
-![Sumerian school](/img/app.jpg)
+![JS Camp](/img/app.jpg)
 
 ## Links
 
