@@ -1,4 +1,5 @@
----
+	
+	---
 id: reactnative01
 title: Hello React Navigation
 sidebar_label: Hello React Navigation
@@ -11,7 +12,7 @@ sidebar_label: Hello React Navigation
 Начнем с демонстрации самого распространенного навигатора `createStackNavigator`.
 
 ## Установка библиотеки навигатора стека
-Библиотеки, которые мы установили до сих пор, представляют собой строительные блоки и общие основы для навигаторов, и каждый навигатор в React Navigation живет в своей собственной библиотеке. Чтобы использовать навигатор по стеку, нам нужно установить [@response-navigation/stack](https://github.com/react-navigation/react-navigation/tree/main/packages/stack):
+Библиотеки, которые мы установили до сих пор, представляют собой строительные блоки и общие основы для навигаторов, и каждый навигатор в React Navigation живет в своей собственной библиотеке. Чтобы использовать навигатор по стеку, нам нужно установить [@react-navigation/stack](https://github.com/react-navigation/react-navigation/tree/main/packages/stack):
 
 ```bash npm2yarn
 npm install @react-navigation/stack@next @react-native-masked-view/masked-view
@@ -162,3 +163,5 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 </table>
 
 [![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
+
+

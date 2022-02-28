@@ -120,24 +120,24 @@ Expo имеет первоклассную поддержку всех шриф�
 После этого вы можете интегрировать это в свой проект с помощью хука `useFonts` в корне вашего приложения.
 
 ```jsx
-import React from 'react';
-import { View, Text } from 'react-native';
-import AppLoading from 'expo-app-loading';
-import { useFonts, Inter_900Black } from '@expo-google-fonts/inter';
+import React from 'react'
+import { View, Text } from 'react-native'
+import AppLoading from 'expo-app-loading'
+import { useFonts, Inter_900Black } from '@expo-google-fonts/inter'
 
 export default function App() {
   let [fontsLoaded] = useFonts({
     Inter_900Black,
-  });
+  })
 
   if (!fontsLoaded) {
-    return <AppLoading />;
+    return <AppLoading />
   } else {
     return (
       <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
         <Text style={{ fontFamily: 'Inter_900Black', fontSize: 40 }}>Inter Black</Text>
       </View>
-    );
+    )
   }
 }
 ```
@@ -147,27 +147,27 @@ export default function App() {
 Чтобы создать новый проект, включающий этот пример, запустите `npx create-response-native-app --template with-custom-font` в вашем терминале.
 
 ```jsx
-import React from 'react';
-import { Text, View } from 'react-native';
-import AppLoading from 'expo-app-loading';
-import { useFonts } from 'expo-font';
+import React from 'react'
+import { Text, View } from 'react-native'
+import AppLoading from 'expo-app-loading'
+import { useFonts } from 'expo-font'
 
 export default props => {
   let [fontsLoaded] = useFonts({
     'Inter-Black': require('./assets/fonts/Inter-Black.otf'),
-  });
+  })
 
   if (!fontsLoaded) {
-    return <AppLoading />;
+    return <AppLoading />
   } else {
     return (
       <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
         <Text style={{ fontFamily: 'Inter-Black', fontSize: 40 }}>Inter Black</Text>
         <Text style={{ fontSize: 40 }}>Platform Default</Text>
       </View>
-    );
+    )
   }
-};
+}
 ```
 
 ## Получение шрифта
@@ -218,26 +218,26 @@ export default props => {
 Вот минимальный, полный пример.
 
 ```jsx
-import React from 'react';
-import { Text, View } from 'react-native';
-import AppLoading from 'expo-app-loading';
-import { useFonts } from 'expo-font';
+import React from 'react'
+import { Text, View } from 'react-native'
+import AppLoading from 'expo-app-loading'
+import { useFonts } from 'expo-font'
 
 export default props => {
   let [fontsLoaded] = useFonts({
     'Inter-SemiBoldItalic': 'https://rsms.me/inter/font-files/Inter-SemiBoldItalic.otf?v=3.12',
-  });
+  })
   if (!fontsLoaded) {
-    return <AppLoading />;
+    return <AppLoading />
   } else {
     return (
       <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
         <Text style={{ fontFamily: 'Inter-SemiBoldItalic' }}>Inter SemiBoldItalic</Text>
         <Text>Platform Default</Text>
       </View>
-    );
+    )
   }
-};
+}
 ```
 >При загрузке удаленных шрифтов убедитесь, что они обслуживаются из источника с правильно настроенным CORS. Если вы этого не сделаете, ваш удаленный шрифт может неправильно загрузиться на веб-платформе.
 
@@ -246,20 +246,20 @@ export default props => {
  Если вы не хотите использовать перехватчик `useFonts`(например, вы предпочитаете компоненты класса), вы можете использовать `Font.loadAsync` напрямую. Под капотом происходит то, что ваши шрифты загружаются с использованием `Font.loadAsync` из [библиотеки `expo-font`](https://docs.expo.dev/versions/latest/sdk/font/). Вы можете использовать это напрямую, если хотите, или если вы хотите иметь более детальный контроль над тем, когда ваши шрифты загружаются перед рендерингом.
 
 ```jsx
-import React from 'react';
-import { Text, View, StyleSheet } from 'react-native';
-import AppLoading from 'expo-app-loading';
-import * as Font from 'expo-font';
+import React from 'react'
+import { Text, View, StyleSheet } from 'react-native'
+import AppLoading from 'expo-app-loading'
+import * as Font from 'expo-font'
 
 let customFonts = {
   'Inter-Black': require('./assets/fonts/Inter-Black.otf'),
   'Inter-SemiBoldItalic': 'https://rsms.me/inter/font-files/Inter-SemiBoldItalic.otf?v=3.12',
-};
+}
 
 export default class App extends React.Component {
   state = {
     fontsLoaded: false,
-  };
+  }
 
   async _loadFontsAsync() {
     await Font.loadAsync(customFonts);
@@ -278,9 +278,9 @@ export default class App extends React.Component {
           <Text style={{ fontFamily: 'Inter-Black' }}>Inter Black</Text>
           <Text style={{ fontFamily: 'Inter-SemiBoldItalic' }}>Inter SemiBoldItalic</Text>
         </View>
-      );
+      )
     } else {
-      return <AppLoading />;
+      return <AppLoading />
     }
   }
 }
@@ -295,16 +295,16 @@ export default class App extends React.Component {
 Эта библиотека устанавливается по умолчанию в проект-шаблон, который проходит через `expo init` - она является частью пакета `expo`. Он включает популярные наборы значков, и вы можете просматривать все значки с помощью [icons.expo.fyi](https://icons.expo.fyi).
 
 ```jsx
-import * as React from 'react';
-import { View, StyleSheet } from 'react-native';
-import { Ionicons } from '@expo/vector-icons';
+import * as React from 'react'
+import { View, StyleSheet } from 'react-native'
+import { Ionicons } from '@expo/vector-icons'
 
 export default function App() {
   return (
     <View style={styles.container}>
       <Ionicons name="md-checkmark-circle" size={32} color="green" />
     </View>
-  );
+  )
 }
 
 const styles = StyleSheet.create({
@@ -313,7 +313,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
-});
+})
 ```
 Этот компонент загружает шрифт `Ionicons`, если он еще не был загружен, и отображает значок галочки, который я нашел в каталоге векторных значков, упомянутом выше. `@expo/vector-icons` построен на основе [react-native-vector-icons](https://github.com/oblador/react-native-vector-icons) и использует аналогичный API. Единственная разница в том, что `@expo/vector-icons` использует более идиоматический стиль `import`:
 `import { Ionicons } from '@expo/vector-icons’;` вместо `import Ionicons from 'react-native-vector-icons/Ionicons’;`.
@@ -329,16 +329,16 @@ const styles = StyleSheet.create({
 Возвращает ваш собственный шрифт на основе `glyphMap`, где ключ - это имя значка, а значение - либо символ UTF-8, либо его код символа. `fontFamily` - это имя шрифта, а НЕ имя файла. `ExpoAssetId` может быть любым, что вы можете передать в [Font.loadAsync](https://docs.expo.dev/versions/latest/sdk/font/#fontloadasyncobject). [Подробнее см. react-native-vector-icons](https://github.com/oblador/react-native-vector-icons/blob/master/README.md#custom-fonts).
 
 ```javascript
-import * as React from 'react';
-import * as Font from 'expo-font';
-import { createIconSet } from '@expo/vector-icons';
+import * as React from 'react'
+import * as Font from 'expo-font'
+import { createIconSet } from '@expo/vector-icons'
 
-const glyphMap = { 'icon-name': 1234, test: '∆' };
-const CustomIcon = createIconSet(glyphMap, 'FontName', 'custom-icon-font.ttf');
+const glyphMap = { 'icon-name': 1234, test: '∆' }
+const CustomIcon = createIconSet(glyphMap, 'FontName', 'custom-icon-font.ttf')
 
 export default class CustomIconExample extends React.Component {
   render() {
-    return <CustomIcon name="icon-name" size={32} color="red" />;
+    return <CustomIcon name="icon-name" size={32} color="red" />
   }
 }
 ```
@@ -349,10 +349,10 @@ export default class CustomIconExample extends React.Component {
 
 ```javascript
 // Как только ваш пользовательский шрифт будет загружен ...
-import { createIconSetFromFontello } from '@expo/vector-icons';
-import fontelloConfig from './config.json';
+import { createIconSetFromFontello } from '@expo/vector-icons'
+import fontelloConfig from './config.json'
 // И имя шрифта, и файлы, экспортированные из Fontello, скорее всего, называются "fontello".
-const Icon = createIconSetFromFontello(fontelloConfig, 'fontello', 'fontello.ttf');
+const Icon = createIconSetFromFontello(fontelloConfig, 'fontello', 'fontello.ttf')
 ```
 
 ## createIconSetFromIcoMoon
@@ -360,30 +360,30 @@ const Icon = createIconSetFromFontello(fontelloConfig, 'fontello', 'fontello.ttf
 Удобный метод для создания пользовательского шрифта на основе конфигурационного файла [IcoMoon](https://icomoon.io). Не забудьте импортировать шрифт, как описано выше, и перебросить config.json в удобное место в вашем проекте, используя `Font.loadAsync`.
 
 ```jsx
-import React from 'react';
-import { Text, View, StyleSheet } from 'react-native';
-import AppLoading from 'expo-app-loading';
-import { useFonts } from 'expo-font';
-import { createIconSetFromIcoMoon } from '@expo/vector-icons';
+import React from 'react'
+import { Text, View, StyleSheet } from 'react-native'
+import AppLoading from 'expo-app-loading'
+import { useFonts } from 'expo-font'
+import { createIconSetFromIcoMoon } from '@expo/vector-icons'
 
 const Icon = createIconSetFromIcoMoon(
   require('./assets/icomoon/selection.json'),
   'IcoMoon',
   'icomoon.ttf'
-);
+)
 
 export default function App() {
   // Load the icon font before using it
-  const [fontsLoaded] = useFonts({ IcoMoon: require('./assets/icomoon/icomoon.ttf') });
+  const [fontsLoaded] = useFonts({ IcoMoon: require('./assets/icomoon/icomoon.ttf') })
   if (!fontsLoaded) {
-    return <AppLoading />;
+    return <AppLoading />
   }
 
   return (
     <View style={styles.container}>
       <Icon name="pacman" size={50} color="red" />
     </View>
-  );
+  )
 }
 
 const styles = StyleSheet.create({
@@ -392,15 +392,15 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
-});
+})
 ```
 
 ## Изображения значков
 
 Если вы знаете, как использовать компонент react-native `<Image>`, это будет очень просто.
 ```jsx
-import * as React from 'react';
-import { Image, View, StyleSheet } from 'react-native';
+import * as React from 'react'
+import { Image, View, StyleSheet } from 'react-native'
 
 export default function App() {
   return (
@@ -411,7 +411,7 @@ export default function App() {
         style={{ width: 50, height: 50 }}
       />
     </View>
-  );
+  )
 }
 
 const styles = StyleSheet.create({
@@ -420,7 +420,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
-});
+})
 ```
 Предположим, что наш класс `SlackIcon` находится в `my-project/components/SlackIcon.js`, а наши изображения значков находятся в `my-project/assets/images`, чтобы ссылаться на изображение, которое мы используем, требовать и включать относительный путь. Вы можете предоставить версии своего значка с различной плотностью пикселей, и соответствующее изображение будет автоматически использовано для вас. В этом примере у нас на самом деле есть `slack-icon@2x.png` и `slack-icon@3x.png`, поэтому, если я просматриваю это на iPhone 6s, я увижу изображение `slack-icon@3x.png`. Подробнее об этом читайте в руководстве по изображениям в [документации по react-native](https://reactnative.dev/docs/images#static-image-resources).
 Мы также устанавливаем `fadeDuration` (свойство Android) равным `0`, потому что обычно мы хотим, чтобы значок появлялся немедленно, а не исчезал в течение нескольких сотен миллисекунд.
@@ -430,14 +430,14 @@ const styles = StyleSheet.create({
 Удобный компонент для создания кнопок со значком слева.
 
 ```jsx
-import * as React from 'react';
-import { View, StyleSheet } from 'react-native';
-import { FontAwesome } from '@expo/vector-icons';
+import * as React from 'react'
+import { View, StyleSheet } from 'react-native'
+import { FontAwesome } from '@expo/vector-icons'
 
 export default function App() {
   const loginWithFacebook = () => {
-    console.log('Button pressed');
-  };
+    console.log('Button pressed')
+  }
   
   return (
     <View style={styles.container}>
@@ -445,7 +445,7 @@ export default function App() {
         Login with Facebook
       </FontAwesome.Button>
     </View>
-  );
+  )
 }
 
 const styles = StyleSheet.create({
@@ -454,7 +454,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
-});
+})
 ```
 
 ## Итог

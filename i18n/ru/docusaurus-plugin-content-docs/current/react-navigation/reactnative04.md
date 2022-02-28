@@ -145,7 +145,7 @@ const StackScreen = () => {
 
 ## Дополнительная конфигурация
 
-Вы можете прочитать полный список доступных опций для экранов внутри навигатора стека в справочнике [createStackNavigator](https://reactnavigation.org/docs/6.x/stack-navigator/#navigationoptions-used-by-stacknavigator).
+Вы можете прочитать полный список доступных опций для экранов внутри навигатора стека в справочнике [createStackNavigator](https://reactnavigation.org/docs/native-stack-navigator#options).
 
 ## Done ✅
 
