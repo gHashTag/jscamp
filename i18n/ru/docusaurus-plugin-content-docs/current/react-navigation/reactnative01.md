@@ -1,5 +1,4 @@
-	
-	---
+---
 id: reactnative01
 title: Hello React Navigation
 sidebar_label: Hello React Navigation

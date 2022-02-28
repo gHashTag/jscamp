@@ -37,11 +37,11 @@ import { createStackNavigator } from '@react-navigation/stack'
 const HomeScreen = ({ navigation }) => (
   <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
     <Text>Home Screen</Text>
-    <Button title="Go to Profile" onPress={() => navigation.navigate('Profile', { name: 'Custom profile header' })} />
+    <Button title="Go to Details" onPress={() => navigation.navigate('Detail', { name: 'Custom details header' })} />
   </View>
 )
 
-const ProfileScreen = ({ navigation }) => (
+const DetailScreen = ({ navigation }) => (
   <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
     <Text>Profile screen</Text>
     <Button title="Go back" onPress={() => navigation.goBack()} />
@@ -54,7 +54,7 @@ const App = () => (
   <NavigationContainer>
     <Stack.Navigator>
       <Stack.Screen name="Home" component={HomeScreen} options={{ title: 'My home' }} />
-      <Stack.Screen name="Profile" component={ProfileScreen} options={({ route }) => ({ title: route.params.name })} />
+      <Stack.Screen name="Detail" component={DetailScreen} options={({ route }) => ({ title: route.params.name })} />
     </Stack.Navigator>
   </NavigationContainer>
 )
