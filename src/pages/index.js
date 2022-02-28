@@ -246,7 +246,7 @@ const arrLinks = [
   {
     id: 9,
     imageUrl: 'img/startup/AWSAmplifyHackaton.jpg',
-    hrefUrl: 'https://jscamp.hashnode.dev/java-script-camp',
+    hrefUrl: 'https://jscamp.hashnode.dev/javascript-camp',
     alt: 'Java Script Camp',
     classLink: 'imgContainer',
     classImage: 'image-mobile'
