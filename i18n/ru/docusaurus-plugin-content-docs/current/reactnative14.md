@@ -103,7 +103,7 @@ choco -v
 Приступаем к установке пакетов Node, Python2 и JDK через PowerShell командой:
 
 ```bash
-choco install -y nodejs.install python2 openjdk8
+choco install -y nodejs python2 openjdk8
 ```
 
 :::info Примечание
