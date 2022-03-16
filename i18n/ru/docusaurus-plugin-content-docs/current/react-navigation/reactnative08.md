@@ -13,14 +13,14 @@ sidebar_label: Drawer навигатор
   </video>
 </div>
 
-Прежде чем продолжить, сначала установите `@response-navigation/drawer`:
+Прежде чем продолжить, сначала установите `@react-navigation/drawer`:
 
 ```bash npm2yarn
 npm install @react-navigation/drawer
 ```
 
 ## Минимальный пример навигации на основе Drawer
-Чтобы использовать этот навигатор Drawer, импортируйте его из `@response-navigation/drawer`: (проведите пальцем вправо, чтобы открыть)
+Чтобы использовать этот навигатор Drawer, импортируйте его из `@react-navigation/drawer`: (проведите пальцем вправо, чтобы открыть)
 
 ```jsx
 import * as React from 'react'
