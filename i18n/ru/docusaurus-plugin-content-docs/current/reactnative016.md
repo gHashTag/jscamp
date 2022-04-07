@@ -144,7 +144,7 @@ export default function App() {
 
 ## Минимальный, но полный рабочий пример
 
-Чтобы создать новый проект, включающий этот пример, запустите `npx create-response-native-app --template with-custom-font` в вашем терминале.
+Чтобы создать новый проект, включающий этот пример, запустите `npx create-react-native-app --template with-custom-font` в вашем терминале.
 
 ```jsx
 import React from 'react'

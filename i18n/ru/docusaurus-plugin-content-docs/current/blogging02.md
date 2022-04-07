@@ -22,7 +22,7 @@ import YouTube from 'react-youtube'
 
 ## Подключение к проекту
 
-После регистрации, перейдите к [библиотеке нашего проекта (jscamp.app)](https://github.com/react-native-village/jscamp.app/tree/gh-pages) и нажмите кнопку Fork в правом верхнем углу экрана.
+После регистрации, перейдите к [библиотеке нашего проекта (jscamp.app)](https://github.com/gHashTag/jscamp) и нажмите кнопку Fork в правом верхнем углу экрана.
 
 ![02](/img/blogging/00/02.png)
 
