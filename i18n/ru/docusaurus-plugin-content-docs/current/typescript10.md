@@ -23,7 +23,7 @@ react-native init eCommerce --template react-native-template-typescript
 ## Устанавливаем зависимости
 
 ```bash
-yarn add eslint-plugin-import eslint-plugin-react prettier prettier-eslint eslint-plugin-prettier eslint-config-prettier eslint-plugin-react eslint-plugin-react-native eslint-plugin-react-hooks --dev
+yarn add eslint-plugin-import eslint-plugin-react eslint-plugin-react eslint-plugin-react-native eslint-plugin-react-hooks --dev
 ```
 
 ![Step02](/img/steps/02.png)
