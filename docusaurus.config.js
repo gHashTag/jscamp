@@ -50,7 +50,7 @@ module.exports = {
       contextualSearch: true
     },
     image: 'img/jscamp.jpg',
-    metadatas: [
+    metadata: [
       {
         name: 'description',
         content: 'JavaScript Camp - программа обучения JavaScript в стеке React Native, TypeScript, AWS Amplify'
@@ -71,15 +71,6 @@ module.exports = {
         content: 'https://jscamp.app/img/jscamp.jpg'
       }
     ],
-    googleAnalytics: {
-      trackingID: 'G-X2K0V4MDRW',
-      anonymizeIP: true // Should IPs be anonymized?
-    },
-    gtag: {
-      trackingID: 'GTM-M7F7469',
-      // Optional fields.
-      anonymizeIP: true // Should IPs be anonymized?
-    },
     prism: {
       id: 1,
       // eslint-disable-next-line global-require
@@ -243,6 +234,15 @@ module.exports = {
           // eslint-disable-next-line global-require
           remarkPlugins: [require('./plugins/remark-snackplayer'), require('@docusaurus/remark-plugin-npm2yarn')],
           editUrl: 'https://github.com/gHashTag/jscamp/tree/gh-pages'
+        },
+        googleAnalytics: {
+          trackingID: 'G-X2K0V4MDRW',
+          anonymizeIP: true // Should IPs be anonymized?
+        },
+        gtag: {
+          trackingID: 'GTM-M7F7469',
+          // Optional fields.
+          anonymizeIP: true // Should IPs be anonymized?
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css')
