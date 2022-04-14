@@ -6,6 +6,8 @@ sidebar_label: Dimensions
 
 import YouTube from 'react-youtube'
 
+  <YouTube videoId="-mGB0-07YM8" />
+
 `useWindowDimensions` автоматически обновляет значения ширины и высоты при изменении размера экрана. Вы можете получить ширину и высоту окна приложения следующим образом:
 
 ```jsx
