@@ -22,7 +22,7 @@ npm install @react-navigation/stack@next @react-native-masked-view/masked-view
 
 `NavigationContainer` - это компонент, который управляет нашим деревом навигации и содержит состояние навигации. Этот компонент должен оборачивать всю структуру навигаторов. Обычно мы рендерим этот компонент в корне нашего приложения, который обычно является компонентом, экспортированным из `App.js`.
 
-```jsx title="App.js"
+```jsx title="src/index.js" 
 import { View, Text } from 'react-native'
 import { NavigationContainer } from '@react-navigation/native'
 import { createStackNavigator } from '@react-navigation/stack'

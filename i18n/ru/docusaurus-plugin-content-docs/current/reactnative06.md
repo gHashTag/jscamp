@@ -6,7 +6,7 @@ sidebar_label: События нажатия - Кнопки
 
 import YouTube from 'react-youtube'
 
-<YouTube videoId="EIgcylswQL8" />
+  <YouTube videoId="EIgcylswQL8" />
 Поверхность на экране, нажатие на которую является событием, которое приводит к ответной реакции связанного с ней действия.
 
 ## Button
