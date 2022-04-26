@@ -65,7 +65,7 @@ export default App
 
 Давайте добавим второй экран к нашему навигатору стека и настроим главный экран на рендеринг первым:
 
-```jsx {12-16,24} title="App.js" 
+```jsx {12-16,24} title="src/index.js" 
 import * as React from 'react'
 import { View, Text } from 'react-native'
 import { NavigationContainer } from '@react-navigation/native'
