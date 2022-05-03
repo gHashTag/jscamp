@@ -22,7 +22,11 @@
   scripts: [{ src: 'https://snack.expo.io/embed.js', defer: true }],
   i18n: {
     defaultLocale: 'en',
+<<<<<<< HEAD
     locales: ['en', 'ru', 'zh', 'hi', 'ar'],
+=======
+    locales: ['en', 'ru', 'zh', 'jp'],
+>>>>>>> japan
     localeConfigs: {
       en: {
         label: 'English'
@@ -33,12 +37,18 @@
       zh: {
         label: '中文'
       },
+<<<<<<< HEAD
       hi: {
         label: 'हिंदी'
       },
       ar: {
         label: 'عربى'
       },
+=======
+      jp: {
+        label: '日本語'
+      }
+>>>>>>> japan
     }
   },
   themeConfig: {
@@ -74,7 +84,10 @@
         content: 'https://jscamp.app/img/jscamp.jpg'
       }
     ],
+<<<<<<< HEAD
    
+=======
+>>>>>>> japan
     prism: {
       id: 1,
       // eslint-disable-next-line global-require
@@ -226,6 +239,15 @@
           // eslint-disable-next-line global-require
           remarkPlugins: [require('./plugins/remark-snackplayer'), require('@docusaurus/remark-plugin-npm2yarn')],
           editUrl: 'https://github.com/gHashTag/jscamp/tree/gh-pages'
+        },
+        googleAnalytics: {
+          trackingID: 'G-X2K0V4MDRW',
+          anonymizeIP: true // Should IPs be anonymized?
+        },
+        gtag: {
+          trackingID: 'GTM-M7F7469',
+          // Optional fields.
+          anonymizeIP: true // Should IPs be anonymized?
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css')
