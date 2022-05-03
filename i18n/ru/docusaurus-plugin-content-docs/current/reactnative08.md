@@ -6,6 +6,8 @@ sidebar_label: FlatList - список
 
 import YouTube from 'react-youtube'
 
+  <YouTube videoId="MrWBBXzOirs" />
+
 React Native предоставляет набор компонентов для представления списков данных. Как правило, вам нужно использовать либо [FlatList](https://reactnative.dev/docs/flatlist), либо [SectionList](https://reactnative.dev/docs/sectionlist).
 
 Компонент `FlatList` отображает прокручиваемый список изменяющихся, но схожих по структуре данных. Он хорошо работает с длинными списками данных, количество элементов которых может со временем меняться. В отличие от более общего `ScrollView`, `FlatList` отображает только те элементы, которые в данный момент отображаются на экране, а не все элементы сразу.

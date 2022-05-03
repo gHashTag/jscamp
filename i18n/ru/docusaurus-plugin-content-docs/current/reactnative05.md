@@ -3,7 +3,9 @@ id: reactnative05
 title: Справка по цвету
 sidebar_label: Справка по цвету
 ---
+import YouTube from 'react-youtube'
 
+<YouTube videoId="LgiCQ5hzgrI" />
 Компоненты в React Native стилизованы с использованием JavaScript. Свойства цвета обычно соответствуют тому, как CSS работает в Интернете. Общие руководства по использованию цвета на каждой платформе можно найти ниже:
 
 - [iOS](https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/color/)

@@ -25,7 +25,7 @@ sidebar_label: Stack навигатор - Перемещение между эк
 
 ## Переход к новому экрану
 
-```jsx {6,9} title="App.js" 
+```jsx {6,9} title="src/index.js" 
 import * as React from 'react'
 import { View, Button, Text } from 'react-native'
 import { NavigationContainer } from '@react-navigation/native'

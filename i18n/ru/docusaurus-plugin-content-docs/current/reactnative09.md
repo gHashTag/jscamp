@@ -6,6 +6,8 @@ sidebar_label: ScrollView
 
 import YouTube from 'react-youtube'
 
+  <YouTube videoId="svw2RzSC5s0" />
+
 Если на экране перестали вмещаться все элементы, значит пришло время компонента `ScrollView`.
 
 ```SnackPlayer name=index.js

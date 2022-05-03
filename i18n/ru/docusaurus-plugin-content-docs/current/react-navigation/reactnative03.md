@@ -81,7 +81,7 @@ export default App
 
 Для этого вы можете использовать метод навигации `navigate`, который действует как `goBack`, если экран уже существует. Вы можете передать параметры с помощью навигации, чтобы передать данные обратно:
 
-```jsx title="App.js" 
+```jsx title="src/index.js" 
 import * as React from 'react'
 import { View, Button, TextInput, Text } from 'react-native'
 import { NavigationContainer } from '@react-navigation/native'
@@ -136,51 +136,6 @@ const App = () => (
     </Stack.Navigator>
   </NavigationContainer>
 )
-
-export default App
-import * as React from 'react'
-import { View, Button, TextInput, Text } from 'react-native'
-import { NavigationContainer } from '@react-navigation/native'
-import { createStackNavigator } from '@react-navigation/stack'
-
-const HomeScreen = ({ navigation, route }) => {
-  React.useEffect(() => {
-    if (route.params?.post) {
-      // Post updated, do something with `route.params.post`
-      // For example, send the post to the server
-    }
-  }, [route.params?.post])
-
-  return (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <Button title="Create post" onPress={() => navigation.navigate('Details')} />
-      <Text style={{ margin: 10 }}>Post: {route.params?.post}</Text>
-    </View>
-  )
-}
-
-const DetailsScreen = ({ navigation }) => {
-  const [postText, setPostText] = React.useState('')
-
-  return (
-    <>
-      <TextInput
-        multiline
-        placeholder="What's on your mind?"
-        style={{ height: 200, padding: 10, backgroundColor: 'white' }}
-        value={postText}
-        onChangeText={setPostText}
-      />
-      <Button
-        title="Done"
-        onPress={() => {
-          // Pass params back to home screen
-          navigation.navigate('Home', { post: postText })
-        }}
-      />
-    </>
-  )
-}
 
 const Stack = createStackNavigator()
 
