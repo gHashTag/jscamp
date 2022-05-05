@@ -22,11 +22,7 @@
   scripts: [{ src: 'https://snack.expo.io/embed.js', defer: true }],
   i18n: {
     defaultLocale: 'en',
-<<<<<<< HEAD
-    locales: ['en', 'ru', 'zh', 'hi', 'ar'],
-=======
-    locales: ['en', 'ru', 'zh', 'jp'],
->>>>>>> japan
+    locales: ['en', 'ru', 'zh', 'hi', 'ar', 'jp'],
     localeConfigs: {
       en: {
         label: 'English'
@@ -37,18 +33,15 @@
       zh: {
         label: '中文'
       },
-<<<<<<< HEAD
       hi: {
         label: 'हिंदी'
       },
       ar: {
         label: 'عربى'
       },
-=======
       jp: {
         label: '日本語'
       }
->>>>>>> japan
     }
   },
   themeConfig: {
@@ -84,10 +77,6 @@
         content: 'https://jscamp.app/img/jscamp.jpg'
       }
     ],
-<<<<<<< HEAD
-   
-=======
->>>>>>> japan
     prism: {
       id: 1,
       // eslint-disable-next-line global-require
