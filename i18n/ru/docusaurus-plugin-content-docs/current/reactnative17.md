@@ -110,34 +110,37 @@ module.exports = {
 ```
 
 ![Step04](/img/steps/04.png)
+## Переносим App.js
 
-## Редактируем package.json
+Создаем папку `src` и переносим туда файл App.js, переименовывая его `src/index.js`. Вставляем в него следующий код:
 
-Куда добавляем скрипты:
+```jsx title="src/index.js"
+import React from 'react'
+import { StyleSheet, Text } from 'react-native'
 
-- Симулятор. Для меня это iPhone SE так как его размер экрана минимальное требование по верстке(iPhone 3,4 уже все)
-- Линтер, который будет запрещать вам пушить до исправления всех ошибок в коде
-- Установка Pods
+const App = () => {
+  return (
+    <>
+      <Text style={styles.h1}>Hello World</Text>
+    </>
+  )
+}
 
-```jsx title="package.json"
-"scripts": {
-   "ios": "react-native run-ios --simulator='iPhone SE'",
-   "android": "react-native run-android",
-   "lint": "esw src/**",
-   "lint-watch": "esw -w --changed src/**",
-    "postinstall":"cd ./ios && pod install && cd .."
- },
-"precommit": "lint",
+const styles = StyleSheet.create({
+  h1: {
+    backgroundColor: '#BEFCE5',
+    color: '#000',
+    fontSize: 25,
+    fontWeight: '700',
+    padding: 20,
+    textAlign: 'center'
+  }
+})
+
+export default App
 ```
 
 ![Step05](/img/steps/05.png)
-
-## Переносим App.js
-
-Создаем папку `src` и переносим туда файл App.js, переименовывая его `src/index.js`
-
-![Step06](/img/steps/06.png)
-
 ## Запускаем приложение
 
 `yarn start-ios` or `yarn start-android`
