@@ -114,7 +114,7 @@ function learnJavaScript() {
 
 私たちの学校では、[React](https://ru.reactjs.org) を使用してモバイルアプリケーションを開発する方法を教えています。ここで、イノベーションは [React Hooks](https://ru.reactjs.org/docs/hooks-intro.html) です。を使用すると、クラスを記述せずに [React](https://ru.reactjs.org) の状態やその他の機能を使用できます。 したがって、クラスを放棄したので、クラスについて話すことはもう意味がありません。
 
-## 問題
+## 問題?
 
 ![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
 
