@@ -38,7 +38,7 @@
       },
       es: {
         label: 'Espanol'
-      }
+      },
       ar: {
         label: 'عربى'
       },
