@@ -16,7 +16,8 @@
     "ru": "yarn run start -- --locale ru",
     "en": "yarn run start -- --locale en",
     "zh": "yarn run start -- --locale zh",
-    "jp": "yarn run start -- --locale jp"
+    "jp": "yarn run start -- --locale jp",
+    "es": "yarn run start -- --locale es"
   },
   "dependencies": {
     "@docusaurus/core": "2.0.0-alpha.72",
