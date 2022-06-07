@@ -41,6 +41,9 @@
       },
       jp: {
         label: '日本語'
+      },
+      es: {
+        label: 'Espanol'
       }
     }
   },

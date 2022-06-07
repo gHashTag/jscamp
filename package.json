@@ -16,7 +16,9 @@
     "prettier:diff": "prettier --config .prettierrc --list-different \"**/*.{js,md}\"",
     "ru": "yarn run start -- --locale ru",
     "en": "yarn run start -- --locale en",
-    "jp": "yarn run start -- --locale jp"
+    "zh": "yarn run start -- --locale zh",
+    "jp": "yarn run start -- --locale jp",
+    "es": "yarn run start -- --locale es"
   },
   "dependencies": {
     "@docusaurus/core": "^2.0.0-beta.15",

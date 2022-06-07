@@ -6,11 +6,11 @@ sidebar_label: Fetch API
 
 ![@serverSerrverlesskiy](/img/javascript/headers/28.jpg)
 
-**Fetch API** позволяет JavaScript обмениваться данными с сервером с помощью HTTP-запросов и является более совершенной заменой классу `XMLHttpRequest`. Выполнение запросов осуществляется методом `fetch()`, который возвращает🔄 [Promise](https://react-native-village.github.io/docs/javascript24).
+** Fetch API **を使用すると、JavaScriptがHTTPリクエストを使用してサーバーと通信できるようになり、`XMLHttpRequest`クラスの代わりになります。 リクエストは`fetch（）`メソッドによって実行され、🔄を返します [Promise](https://react-native-village.github.io/docs/javascript24).
 
 ![Exchange](https://media.giphy.com/media/OPQiZUC381IJ8Sh7UY/giphy.gif)
 
-## Синтаксис
+## 構文
 
 ![Book](https://media.giphy.com/media/l0HlOBZcl7sbV6LnO/giphy.gif)
 
@@ -18,26 +18,26 @@ sidebar_label: Fetch API
 fetch(url, { options })
 ```
 
-- `url` - URL для отправки запроса;
-- `options` - параметры запроса.
+--`url`-リクエストを送信するためのURL。
+--`options`-パラメータをリクエストします。
 
-Задав метод `fetch()` без `options` вы получите GET-запрос, скачивающий данные по адресу `URL`.
+`options`なしで`fetch（） `メソッドを指定すると、`URL`アドレスにデータをダウンロードするGETリクエストを受け取ります。
 
-## Параметры запроса
+## クエリパラメータ
 
 ![Option](https://media.giphy.com/media/AazZSBdhIdH9K/giphy.gif)
 
-Вторым аргументом `{options}` принимаются параметры запроса. Список параметров:
+2番目の引数`{options}`はクエリオプションを受け入れます。 パラメータリスト：
 
-1. `method` - метод запроса (GET, POST, PUT, DELETE, HEAD);
-2. `headers` - HTTP-заголовки;
-3. `body` - тело запроса (используется при method: POST / PUT);
-4. `cache` - режим кэширования (default, reload, no-cache);
-5. `mode` - режим запроса (cors, no-cors, same-origin);
-6. `redirect` - указывает, как обрабатывать перенаправления(follow, error, manual);
-7. `referrer` - реферер запроса;
-8. `signal` - AbortSignal, прерывание запроса;
-9. `credentials` - отправка cookies вместе с запросом - mit, same-origin.
+1. `method`-リクエストメソッド（GET、POST、PUT、DELETE、HEAD）;
+2. `headers`-HTTPヘッダー。
+3. `body`-リクエストbody（メソッドに使用：POST / PUT）;
+4. `cache`-キャッシュモード（デフォルト、リロード、キャッシュなし）;
+5. `mode`-リクエストモード（cors、no-cors、same-origin）;
+6. `redirect`-リダイレクトの処理方法（フォロー、エラー、手動）を指定します。
+7. `referrer`-リファラーを要求します。
+8. `signal`-AbortSignal、リクエストの中止。
+9. `credentials`-リクエストと一緒にCookieを送信します-mit、same-origin。
 
 ```jsx
 fetch('https://jsonplaceholder.typicode.com/users', {
@@ -49,37 +49,37 @@ fetch('https://jsonplaceholder.typicode.com/users', {
 })
 ```
 
-## Получение ответа
+## 応答を得る
 
 ![Bascketball](https://media.giphy.com/media/l0MYwdebx8o0XI56E/giphy.gif)
 
-Метод `fetch()` возвращает🔄 [Promise](https://react-native-village.github.io/docs/javascript24) объект класса `Response`, который имеет следующие свойства:
+`fetch（）`メソッドは、次のプロパティを持つ`Response`クラスのオブジェクトを返します🔄 [Promise](https://react-native-village.github.io/docs/javascript24)。
 
-1. `status` - код ответа;
-2. `statusText` - текстовое 📜 сообщение, соответствующее коду ответа;
-3. `ok` - логическое значение, указывающее на успешность кода ответа (true: 200-299);
-4. `headers` - объект с заголовками ответа, в котором ключ - наименование заголовка, а значение ключа - значение соответствующего ключу заголовка;
-5. `url` - URL, на который был отправлен запрос;
-6. `body` - данные ответа в формате `ReadableStream`
-7. `bodyUsed` - логическое значение, указывающее на чтение данных.
+1. `status`-応答コード;
+2. `statusText`-応答コードに対応するテキスト📜メッセージ。
+3. `ok`-応答コードの成功を示すブール値（true：200-299）;
+4. `headers`-応答ヘッダーを持つオブジェクト。キーはヘッダーの名前であり、キーの値はキーに対応するヘッダーの値です。
+5. `url`-リクエストの送信先のURL。
+6. `body`-`ReadableStream`形式の応答データ
+7. `bodyUsed`は、データが読み取られていることを示すブール値です。
 
 ```javascript
 fetch('https://jsonplaceholder.typicode.com/users').then(response => console.log(response))
 ```
 
-## Обработка ответа
+## 応答処理
 
 ![Download](https://media.giphy.com/media/ECoFRCrMgVoQg/giphy.gif)
 
-Переданные данные находятся в формате `ReadableStream`. Для изменения формата можно использовать следующие методы:
+転送されるデータは`ReadableStream`形式です。 次の方法を使用して、形式を変更できます。
 
-1. `text()` - преобразует ответ в строку;
-2. `json()` - преобразует ответ в формате JSON;
-3. `blob()` - преобразует ответ в объект Blob;
-4. `formData()` - конвертируется ответ в экземпляр FormData;
-5. `arrayBuffer()` - преобразует ответ в объект ArrayBuffer.
+1. `text（）`-応答を文字列に変換します。
+2. `json（）`-応答をJSON形式に変換します。
+3. `blob（）`-応答をBlobオブジェクトに変換します。
+4. `formData（）`-応答をFormDataのインスタンスに変換します。
+5. `arrayBuffer（）`-応答をArrayBufferオブジェクトに変換します。
 
-Пример преобразование ответа в формат JSON.
+応答をJSON形式に変換する例。
 
 ```jsx
 fetch('https://jsonplaceholder.typicode.com/users')
@@ -87,17 +87,17 @@ fetch('https://jsonplaceholder.typicode.com/users')
   .then(data => console.log(data))
 ```
 
-## Обработка ошибок
+## エラー処理
 
 ![Error](https://media.giphy.com/media/DHBGehJ3FSZEygszX3/giphy.gif)
 
-Узнать завершился ли `fetch()` с ошибкой🙅‍♂️ мы можем с помощью свойств: "status" и "ok".
+プロパティ "status" と "ok" を使用して、 `fetch（）`がエラーで終了したかどうかを確認できます🙅‍♂️。
 
 ```jsx
 fetch('https://jsonplaceholder.typicode.com/users')
   .then(response => {
     if (!response.ok) {
-      console.log('Что-то пошло не так... Статус: ' + response.status)
+      console.log('何か問題が発生しました...ステータス： ' + response.status)
     } else {
       return response.json()
     }
@@ -105,7 +105,7 @@ fetch('https://jsonplaceholder.typicode.com/users')
   .then(data => console.log(data))
 ```
 
-При помощи `.catch()`
+助けを借りて `.catch()`
 
 ```jsx
 fetch('https://jsonplaceholder.typicode.com/users')
@@ -114,7 +114,7 @@ fetch('https://jsonplaceholder.typicode.com/users')
   .catch(error => console.log(error))
 ```
 
-## Примеры запросов
+## リクエスト例
 
 ![Math](https://media.giphy.com/media/xT1Ra5h24Eliux3UVq/giphy.gif)
 
@@ -125,7 +125,7 @@ fetch('https://jsonplaceholder.typicode.com/users')
   .catch(error => console.log(error))
 ```
 
-То же самое, при помощи синтаксиса `async/await` подробнее с которым мы познакомимся в следующей статье.
+同じように、` async / await`構文を使用します。これについては、次の記事で詳しく説明します。
 
 ```javascript
 let response = await fetch('https://jsonplaceholder.typicode.com/users')
@@ -133,51 +133,51 @@ let data = await response.json()
 console.log(data[0].name + ' and ' + data[2].name)
 ```
 
-## Проблемы?
+## 問題？
 
 ![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
 
-Пишите в [Discord](https://discord.gg/6GDAfXn) или телеграмм [чат](https://t.me/jscampapp), а также подписывайтесь на наши [новости](https://t.me/javascriptapp)
+に書き込む [Discord](https://discord.gg/6GDAfXn) または電報 [チャット](https://t.me/jscampapp), また、私たちの購読 [ニュース](https://t.me/javascriptapp)
 
-## Вопросы
+## 質問:
 
 ![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
 
-Что возвращает метод `fetch()`?
+`fetch（）`メソッドは何を返しますか？
 
-1. Функцию
-2. Объект
-3. Промис
+1. 機能
+2. オブジェクト
+3. 約束
 
-Задав в `fetch()` только параметр URL, какой запрос мы получим?
+`fetch（）`へのURLパラメータのみが与えられた場合、どのようなリクエストを取得しますか？
 
 1. `POST`
 2. `GET`
 3. `PUT`
 
-Каким параметром указываются HTTP-заголовки?
+HTTPヘッダーを指定するパラメーターはどれですか？
 
-1. `redirect`
-2. `headers`
-3. `credentials`
+1. `リダイレクト`
+2. `ヘッダー`
+3. `資格情報`
 
-Какой метод нужно использовать для преобразование ответа в строку?
+応答を文字列に変換するには、どのメソッドを使用する必要がありますか？
 
-1. `blob()`
-2. `json()`
-3. `text()`
+1. `blob（）`
+2. `json（）`
+3. `text（）`
 
-Что означает свойство `ok` у объекта класса `Response`?
+`Response`クラスオブジェクトの`ok`プロパティはどういう意味ですか？
 
-1. Код ответа
-2. Успешность кода ответа
-3. Чтение данных из запроса
+1.応答コード
+2.応答コードの成功
+3.リクエストからのデータの読み取り
 
-Для того чтобы понять насколько вы усвоили этот урок пройдите тест в [мобильном приложении](http://onelink.to/njhc95) в нашей школы по этой теме.
+このレッスンでどれだけ学んだかを理解するために、このトピックについて当校の [モバイルアプリケーション](http://onelink.to/njhc95) でテストを受けてください。
 
 ![Sumerian school](/img/app.jpg)
 
-## Ссылки
+## リンク
 
 1. [Learn JavaScript](https://learn.javascript.ru/fetch)
 2. [MDN Web Docs](https://developer.mozilla.org/ru/docs/Web/API/Fetch_API/Using_Fetch)
