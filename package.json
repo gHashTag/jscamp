@@ -17,7 +17,8 @@
     "ru": "yarn run start -- --locale ru",
     "en": "yarn run start -- --locale en",
     "zh": "yarn run start -- --locale zh",
-    "hi": "yarn run start -- --locale hi",
+    "jp": "yarn run start -- --locale jp",
+    "es": "yarn run start -- --locale es"
     "ar": "yarn run start -- --locale ar"
   },
   "dependencies": {
@@ -42,6 +43,7 @@
     "babel-eslint": "^10.1.0",
     "babel-preset-airbnb": "^5.0.0",
     "babel-preset-react-native": "^4.0.1",
+    "docusaurus": "^1.14.7",
     "docusaurus-plugin-google-adsense": "^0.1.0",
     "eslint": "^7.23.0",
     "eslint-config-airbnb": "^18.2.1",

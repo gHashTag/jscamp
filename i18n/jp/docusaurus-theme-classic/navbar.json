@@ -1,0 +1,22 @@
+{
+  "item.label.Syllabus 📚": {
+    "message": "シラバス 📚",
+    "description": "Navbar item with label Syllabus 📚"
+  },
+  "item.label.Patreon 🤑": {
+    "message": "Patreon 🤑",
+    "description": "Navbar item with label Patreon 🤑"
+  },
+  "item.label.Author 🧑🏻‍🎤": {
+    "message": "著者 🧑🏻‍🎤",
+    "description": "Navbar item with label Author 🧑🏻‍🎤"
+  },
+  "item.label.GitHub 🛰": {
+    "message": "GitHub 🛰",
+    "description": "Navbar item with label GitHub 🛰"
+  },
+  "item.label.Vacancies 🗄": {
+    "message": "欠員 🗄",
+    "description": "Navbar item with label Vacancies 🗄"
+  }
+}
