@@ -87,7 +87,7 @@ const HomeScreen = ({ navigation }) => {
 
 В общем, это то, что вам нужно. Но возможно, что в некоторых обстоятельствах вы захотите настроить кнопку «Назад» больше, чем вы можете с помощью опций, упомянутых выше, и в этом случае вы можете установить опцию `headerLeft` для элемента React, который будет отображаться, так же, как мы это делали с `headerRight`. В качестве альтернативы, опция `headerLeft` также принимает компонент React, который может использоваться, например, для переопределения поведения `onPress` кнопки возврата. Подробнее об этом читайте в [справке по API](https://reactnavigation.org/docs/6.x/stack-navigator#headerleft).
 
-Если вы хотите сохранить вид кнопки «Назад» и переопределить только метод `onPress`, вы можете импортировать HeaderBackButton из `@response-navigation/stack` 
+Если вы хотите сохранить вид кнопки «Назад» и переопределить только метод `onPress`, вы можете импортировать HeaderBackButton из `@react-navigation/stack` 
 
 ```jsx
 import { HeaderBackButton } from '@react-navigation/stack'
@@ -99,7 +99,7 @@ import { HeaderBackButton } from '@react-navigation/stack'
 
 Чтобы узнать, насколько хорошо вы усвоили этот урок, пройдите тест в [мобильном приложении](http://onelink.to/njhc95) нашей школы по этой теме или в [боте Telegram](https://t.me/javascriptcamp_bot).
 
-![Sumerian school](/img/app.jpg)
+![JS Camp](/img/app.jpg)
 
 ## Links
 

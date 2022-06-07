@@ -14,10 +14,16 @@ Prettier - Инструмент форматирования кода c подд
 
 ![Step01](/img/steps/01.png)
 
+Создаем TypeScript проект если еще не создали:
+
+```
+react-native init eCommerce --template react-native-template-typescript 
+```
+
 ## Устанавливаем зависимости
 
 ```bash
- yarn add eslint eslint-config-airbnb babel-preset-airbnb eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react eslint-watch babel-core babel-eslint babel-preset-react-native prettier prettier-eslint eslint-plugin-prettier eslint-config-prettier eslint-plugin-react eslint-plugin-react-native eslint-plugin-react-hooks --dev
+yarn add eslint-plugin-import eslint-plugin-react eslint-plugin-react eslint-plugin-react-native eslint-plugin-react-hooks --dev
 ```
 
 ![Step02](/img/steps/02.png)
@@ -29,68 +35,73 @@ Prettier - Инструмент форматирования кода c подд
 ```jsx
 module.exports = {
   root: true,
-  parser: 'babel-eslint',
-  extends: ['airbnb', 'prettier'],
-  plugins: ['react', 'react-native', 'jsx-a11y', 'import', 'react-hooks'],
-  parserOptions: {
-    ecmaFeatures: {
-      jsx: true
-    }
-  },
-  env: {
-    'react-native/react-native': true
-  },
-  rules: {
-    'no-param-reassign': 0,
-    'react-hooks/rules-of-hooks': 'error',
-    'react-hooks/exhaustive-deps': 'warn',
-    'react/jsx-filename-extension': ['off'],
-    'react/jsx-one-expression-per-line': 0,
-    'linebreak-style': ['off'],
-    'implicit-arrow-linebreak': 0,
-    'no-undef': ['error'],
-    'react/sort-comp': ['off'],
-    'react/prefer-stateless-function': ['off'],
-    'react/destructuring-assignment': 1,
-    'function-paren-newline': 0,
-    semi: ['error', 'never'],
-    'spaced-comment': 0,
-    'comma-dangle': ['error', 'never'],
-    'react/prop-types': 0,
-    'no-extra-boolean-cast': 0,
-    'quote-props': 0,
-    'object-curly-spacing': ['error', 'always'],
-    camelcase: 0,
-    'no-nested-ternary': 0,
-    'react/jsx-wrap-multilines': 0,
-    'object-curly-newline': 0,
-    'operator-linebreak': 0,
-    'no-unused-expressions': 0,
-    'global-require': 0,
-    'max-len': 0,
-    'import/no-cycle': 0,
-    'no-underscore-dangle': 0,
-    'no-return-assign': 0,
-    'import/prefer-default-export': 0,
-    'jsx-quotes': ['error', 'prefer-double'],
-    'no-console': 'error',
-    'arrow-parens': 0,
-    'eol-last': 0,
-    'react-native/no-unused-styles': 0,
-    'react-native/split-platform-components': 0,
-    'react-native/no-inline-styles': 0,
-    'react-native/no-color-literals': 0,
-    'react-native/no-raw-text': 0,
-    'consistent-return': 0
-  },
-  settings: {
-    'import/resolver': {
-      node: {
-        extensions: ['.js', '.ios.js', '.android.js']
-      }
-    }
-  }
-}
+  extends: '@react-native-community',
+  parser: '@typescript-eslint/parser',
+  plugins: [
+    '@typescript-eslint',
+    'react-native',
+    'jsx-a11y',
+    'import',
+    'react-hooks'
+  ],
+  overrides: [
+    {
+      files: ['*.ts', '*.tsx'],
+      'no-param-reassign': 0,
+      'react-hooks/rules-of-hooks': 'error',
+      'react-hooks/exhaustive-deps': 'warn',
+      'react/jsx-filename-extension': ['off'],
+      'react/jsx-one-expression-per-line': 0,
+      'linebreak-style': ['off'],
+      'implicit-arrow-linebreak': 0,
+      'no-undef': ['error'],
+      'react/sort-comp': ['off'],
+      'react/prefer-stateless-function': ['off'],
+      'react/destructuring-assignment': 1,
+      'function-paren-newline': 0,
+      semi: ['error', 'never'],
+      'spaced-comment': 0,
+      'comma-dangle': ['error', 'never'],
+      'react/prop-types': 0,
+      'no-extra-boolean-cast': 0,
+      'quote-props': 0,
+      'object-curly-spacing': ['error', 'always'],
+      camelcase: 0,
+      'no-nested-ternary': 0,
+      'react/jsx-wrap-multilines': 0,
+      'object-curly-newline': 0,
+      'operator-linebreak': 0,
+      'no-unused-expressions': 0,
+      'global-require': 0,
+      'max-len': 0,
+      'import/no-cycle': 0,
+      'no-underscore-dangle': 0,
+      'no-return-assign': 0,
+      'import/prefer-default-export': 0,
+      'jsx-quotes': ['error', 'prefer-double'],
+      'no-console': 'error',
+      'arrow-parens': 0,
+      'eol-last': 0,
+      'react-native/no-unused-styles': 0,
+      'react-native/split-platform-components': 0,
+      'react-native/no-inline-styles': 0,
+      'react-native/no-color-literals': 0,
+      'react-native/no-raw-text': 0,
+      'consistent-return': 0,
+      'import/extensions': [
+        'error',
+        'ignorePackages',
+        {
+          js: 'never',
+          jsx: 'never',
+          ts: 'never',
+          tsx: 'never',
+        },
+      ],
+    },
+  ],
+};
+
 ```
 
 ![Step03](/img/steps/03.png)
@@ -129,9 +140,8 @@ module.exports = {
    "android": "react-native run-android",
    "lint": "esw src/**",
    "lint-watch": "esw -w --changed src/**",
-    "postinstall":"cd ./ios && pod install && cd .."
+   "postinstall":"cd ./ios && pod install && cd .."
  },
-"precommit": "lint",
 ```
 
 ![Step05](/img/steps/05.png)

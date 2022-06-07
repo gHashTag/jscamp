@@ -36,12 +36,9 @@ amplify init
 
 ## Ставим зависимости:
 
-```bash
-yarn add aws-amplify @aws-amplify/pushnotification
-```
 
-```bash
-npm install --save aws-amplify @aws-amplify/pushnotification
+```bash npm2yarn
+npm install --save aws-amplify @aws-amplify/pushnotification @react-native-community/netinfo
 ```
 
 Cвязываем зависимость push-уведомлений с помощью команды:
@@ -50,16 +47,8 @@ Cвязываем зависимость push-уведомлений с помо
 react-native link @aws-amplify/pushnotification
 ```
 
-:::caution Чтобы предотвратить эту [ошибку](https://github.com/aws-amplify/amplify-js/issues/5010) в будущем, добавьте библиотеку `netinfo`. Вы можете добавить его в свой проект с помощью следующей команды (если у вас его нет):
-
-```bash
-yarn add @react-native-community/netinfo
-```
-
-```bash
-npm install --save @react-native-community/netinfo
-```
-
+:::info 
+Связывание пакетов с использованием ссылки `react-native link` стало излишним c версии React-Native `0.60.0`. Autolink был добавлен в интерфейс командной строки React-Native, что означает, что iOS теперь будет использовать `cocoapods`, а Android - `gradle`. Вы можете узнать больше об авто связывании [здесь](https://github.com/react-native-community/cli/blob/master/docs/autolinking.md).
 :::
 
 ![Step02](/img/steps/02.png)
@@ -78,17 +67,19 @@ npm install --save @react-native-community/netinfo
 
 ```java
    gradle title="android/app/build.gradle"
-      defaultConfig {
+     defaultConfig {
        applicationId "com.amplifypush"
-      }
+   }
 ```
 
-- Загрузите файл конфигурации на `android/app`.
+- Загрузите файл конфигурации на `android/app` и следуйте предложенной инструкции.
 - Добавьте Firebase SDK. Рассмотрим `<project>` `android` и `<app-module>` `app`
 
-  каталог в react native проект. Не забудьте добавить последнюю версию `firebase-messaging` [отсюда](https://firebase.google.com/docs/android/setup#available-libraries) а также `firebase-analytics` в `dependencies`
+  каталог в react native проект. Не забудьте добавить последнюю версию `firebase-messaging` [отсюда](https://rnfirebase.io) в  `dependencies`
 
-- Запустите проект в Android и вы увидите, подтверждение от Firebase. (вы можете пропустить этот шаг). 5. Открыйте `android/app/src/main/AndroidManifest.xml` и добавьте следующий код в `application`:
+- Запустите проект в Android и вы увидите, подтверждение от Firebase. (вы можете пропустить этот шаг). 
+
+5. Открыйте `android/app/src/main/AndroidManifest.xml` и добавьте следующий код в `application`:
 
 ```xml
 <!--[START Push notification config -->
@@ -153,31 +144,27 @@ npm install --save @react-native-community/netinfo
 
 1. Устанавливаем `@react-native-community/push-notification-ios`:
 
-```bash
-yarn add @react-native-community/push-notification-ios
-```
-
-```bash
+```bash npm2yarn
 npm install --save @react-native-community/push-notification-ios
 ```
 
 2. Выполните следующую команду для iOS:
 
-   ```bash
-   cd ios && pod install && cd ..
-   ```
+```bash
+  cd ios && pod install && cd ..
+```
 
 3. Добавьте уведомления iOS командой `amplify add notifications` :
 
    1. Выбирайте `APNS`:
 
-   ```bash
-   ? Choose the push notification channel to enable.
-      > APNS
-      FCM
-      Email
-      SMS
-   ```
+```bash
+  ? Choose the push notification channel to enable.
+    > APNS
+    FCM
+    Email
+    SMS
+```
 
    2. Затем вам будет предложено ввести метод аутентификации. Рекомендуется выбрать сертификат.
 

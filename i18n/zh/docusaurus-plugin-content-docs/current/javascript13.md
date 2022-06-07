@@ -23,7 +23,7 @@ function learnJavaScript() {
     return a * b
   }
   // If b is undefined, then it will be assigned a default value
-  return multiply(5, 2) // remove the comma, second argument and get 5 + 1
+  return multiply(5, 2) // remove the comma, second argument and get 5 * 1
 }
 ```
 
@@ -105,7 +105,7 @@ function learnJavaScript() {
 
 為了了解您學到了多少本課程，請對 [mobile application](http://onelink.to/njhc95) 我們學校就這個話題。
 
-![Sumerian school](/img/app.jpg)
+![JS Camp](/img/app.jpg)
 
 ## 鏈接
 

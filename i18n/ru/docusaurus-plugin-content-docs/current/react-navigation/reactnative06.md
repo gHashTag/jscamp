@@ -1,112 +1,260 @@
 ---
 id: reactnative06
-title: Вложенные навигаторы
-sidebar_label: Вложенные навигаторы
+title:  Tab навигатор
+sidebar_label: Tab навигатор
 ---
+Возможно, наиболее распространенным стилем навигации в мобильных приложениях является навигация на основе вкладок. Это могут быть вкладки внизу экрана или вверху под заголовком (или даже вместо заголовка).
 
-Вложение навигаторов означает отображение навигатора внутри экрана другого навигатора, например:
+Это руководство охватывает [createBottomTabNavigator](https://reactnavigation.org/docs/6.x/bottom-tab-navigator). Вы также можете использовать [createMaterialBottomTabNavigator](https://reactnavigation.org/docs/6.x/material-bottom-tab-navigator) и [createMaterialTopTabNavigator](https://reactnavigation.org/docs/6.x/material-top-tab-navigator) для добавления вкладок в ваше приложение.
+
+Прежде чем продолжить, сначала установите [@react-navigation/bottom-tabs](https://github.com/react-navigation/react-navigation/tree/main/packages/bottom-tabs):
+
+```bash npm2yarn
+npm install @react-navigation/bottom-tabs@next
+```
+
+## Минимальный пример навигации по вкладкам
 
 ```jsx
-const Home = () => {
-  return (
-    <Tab.Navigator>
-      <Tab.Screen name="Feed" component={Feed} />
-      <Tab.Screen name="Messages" component={Messages} />
-    </Tab.Navigator>
-  )
-}
+import * as React from 'react'
+import { Text, View } from 'react-native'
+import { NavigationContainer } from '@react-navigation/native'
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 
-const App = () => {
+const HomeScreen = () => (
+  <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+    <Text>Home!</Text>
+  </View>
+)
+
+const SettingsScreen = () => (
+  <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+    <Text>Settings!</Text>
+  </View>
+)
+
+const Tab = createBottomTabNavigator()
+
+export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen
-          name="Home"
-          component={Home}
-          options={{ headerShown: false }}
-        />
-        <Stack.Screen name="Profile" component={Profile} />
-        <Stack.Screen name="Settings" component={Settings} />
-      </Stack.Navigator>
+      <Tab.Navigator>
+        <Tab.Screen name="Home" component={HomeScreen} />
+        <Tab.Screen name="Settings" component={SettingsScreen} />
+      </Tab.Navigator>
     </NavigationContainer>
   )
 }
 ```
 
-В приведенном выше примере компонент `Home` содержит навигатор с табами. Компонент `Home` также используется для экрана `Home` в вашем навигаторе стека внутри компонента `App`. Итак, здесь навигатор вкладок вложен в навигатор стека:
+[Попробуйте этот пример на Snack](https://snack.expo.io/?platform=android&name=Configuring%20the%20header%20bar%20%7C%20React%20Navigation&dependencies=%40expo%2Fvector-icons%40*%2C%40react-native-community%2Fmasked-view%40*%2Creact-native-gesture-handler%40*%2Creact-native-pager-view%40*%2Creact-native-paper%40%5E4.7.2%2Creact-native-reanimated%40*%2Creact-native-safe-area-context%40*%2Creact-native-screens%40*%2Creact-native-tab-view%40%5E3.0.0%2C%40react-navigation%2Fbottom-tabs%40%5E6.0.0-next.1%2C%40react-navigation%2Fdrawer%40%5E6.0.0-next.1%2C%40react-navigation%2Fmaterial-bottom-tabs%40%5E6.0.0-next.1%2C%40react-navigation%2Fmaterial-top-tabs%40%5E6.0.0-next.1%2C%40react-navigation%2Fnative%40%5E6.0.0-next.1%2C%40react-navigation%2Fstack%40%5E6.0.0-next.6&hideQueryParams=true&sourceUrl=https%3A%2F%2Freactnavigation.org%2Fexamples%2F6.x%2Ftab-based-navigation-minimal.js)
 
-- `Stack.Navigator`
-  - `Home` (`Tab.Navigator`)
-    - `Feed` (`Screen`)
-    - `Messages` (`Screen`)
-  - `Profile` (`Screen`)
-  - `Settings` (`Screen`)
+## Настройка внешнего вида
 
-Вложенные навигаторы работают так же, как и обычные компоненты. Чтобы добиться желаемого поведения, часто необходимо вложить несколько навигаторов.
-
-## Как вложение навигаторов влияет на поведение
-
-При вложении навигаторов следует помнить о некоторых вещах:
-
-### Каждый навигатор хранит свою историю навигации.
-
-Например, когда вы нажимаете кнопку «Назад», находясь на экране во вложенном навигаторе стека, он вернется к предыдущему экрану внутри вложенного стека, даже если в качестве родителя есть другой навигатор.
-
-### У каждого навигатора свои параметры
-
-Например, указание опции `title` на экране, вложенном в дочерний навигатор, не повлияет на заголовок, отображаемый в родительском навигаторе.
-
-Если вы хотите добиться такого поведения, см. Руководство для [параметры экрана с вложенными навигаторами](https://reactnavigation.org/docs/6.x/screen-options-resolution#setting-parent-screen-options-based-on-child-navigators-state). Это может быть полезно, если вы визуализируете навигатор вкладок внутри навигатора стека и хотите показать заголовок активного экрана внутри навигатора вкладок в заголовке навигатора стека.
-
-### У каждого экрана в навигаторе свои параметры
-
-Например, любые параметры `params`, переданные на экран во вложенном навигаторе, находятся в prop `route` этого экрана и недоступны с экрана в родительском или дочернем навигаторе.
-
-Если вам нужно получить доступ к параметрам родительского экрана с дочернего экрана, вы можете использовать [React Context](https://reactjs.org/docs/context.html), чтобы предоставить параметры дочерним элементам.
-
-
-### Действия навигации обрабатываются текущим навигатором и всплывают, если не могут быть обработаны
-
-Например, если вы вызываете `navigation.goBack()` во вложенном экране, он вернется в родительский навигатор только в том случае, если вы уже находитесь на первом экране навигатора. Другие действия, такие как `navigate`, работают аналогично, то есть навигация будет происходить во вложенном навигаторе, и если вложенный навигатор не может ее обработать, то родительский навигатор попытается ее обработать. В приведенном выше примере при вызове `navigate('Messages')` внутри экрана `Feed` вложенный навигатор вкладок будет обрабатывать его, но если вы вызываете `navigate('Settings')`, родительский навигатор стека будет обрабатывать его. 
-
-### Специальные методы навигатора доступны в навигаторах, вложенных внутри
-
-Например, если у вас есть стек внутри навигатора drawer, методы drawer `openDrawer`, `closeDrawer`, `toggleDrawer` и т.д. Также будут доступны в `navigation` на экране внутри навигатора стека. Но предположим, что у вас есть навигатор стека в качестве родителя drawer, тогда экраны внутри навигатора стека не будут иметь доступа к этим методам, потому что они не вложены внутри drawer.
-
-Точно так же, если у вас есть навигатор по вкладкам внутри навигатора стека, экраны в навигаторе вкладок получат методы `push` и `replace` для стека в их свойствах `navigation`.
-
-Если вам нужно отправить действия вложенным дочерним навигаторам от родительского элемента, вы можете использовать [navigation.dispatch](https://reactnavigation.org/docs/6.x/navigation-prop#dispatch):
+Это похоже на то, как вы настраиваете навигатор стека - некоторые свойства устанавливаются при инициализации навигатора вкладок, а другие можно настраивать для каждого экрана в параметрах.
 
 ```jsx
-navigation.dispatch(DrawerActions.toggleDrawer())
+// You can import Ionicons from @expo/vector-icons if you use Expo or
+// react-native-vector-icons/Ionicons otherwise.
+import * as React from 'react'
+import { Text, View } from 'react-native'
+import Ionicons from 'react-native-vector-icons/Ionicons'
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
+import { NavigationContainer } from '@react-navigation/native'
+
+function HomeScreen() {
+  return (
+    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+      <Text>Home!</Text>
+    </View>
+  )
+}
+
+function SettingsScreen() {
+  return (
+    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+      <Text>Settings!</Text>
+    </View>
+  )
+}
+
+const Tab = createBottomTabNavigator()
+
+export default function App() {
+  return (
+    <NavigationContainer>
+      <Tab.Navigator
+        screenOptions={({ route }) => ({
+          tabBarIcon: ({ focused, color, size }) => {
+            let iconName
+
+            if (route.name === 'Home') {
+              iconName = focused ? 'ios-information-circle' : 'ios-information-circle-outline'
+            } else if (route.name === 'Settings') {
+              iconName = focused ? 'ios-list-box' : 'ios-list'
+            }
+
+            // You can return any component that you like here!
+            return <Ionicons name={iconName} size={size} color={color} />
+          },
+          tabBarActiveTintColor: 'tomato',
+          tabBarInactiveTintColor: 'gray'
+        })}
+      >
+        <Tab.Screen name="Home" component={HomeScreen} />
+        <Tab.Screen name="Settings" component={SettingsScreen} />
+      </Tab.Navigator>
+    </NavigationContainer>
+  )
+}
 ```
 
-### Вложенные навигаторы не получают родительские события
+[Попробуйте этот пример на Snack](https://snack.expo.io/?platform=android&name=Configuring%20the%20header%20bar%20%7C%20React%20Navigation&dependencies=%40expo%2Fvector-icons%40*%2C%40react-native-community%2Fmasked-view%40*%2Creact-native-gesture-handler%40*%2Creact-native-pager-view%40*%2Creact-native-paper%40%5E4.7.2%2Creact-native-reanimated%40*%2Creact-native-safe-area-context%40*%2Creact-native-screens%40*%2Creact-native-tab-view%40%5E3.0.0%2C%40react-navigation%2Fbottom-tabs%40%5E6.0.0-next.1%2C%40react-navigation%2Fdrawer%40%5E6.0.0-next.1%2C%40react-navigation%2Fmaterial-bottom-tabs%40%5E6.0.0-next.1%2C%40react-navigation%2Fmaterial-top-tabs%40%5E6.0.0-next.1%2C%40react-navigation%2Fnative%40%5E6.0.0-next.1%2C%40react-navigation%2Fstack%40%5E6.0.0-next.6&hideQueryParams=true&sourceUrl=https%3A%2F%2Freactnavigation.org%2Fexamples%2F6.x%2Ftab-based-navigation-icons.js)
 
-Например, если у вас есть навигатор стека, вложенный в навигатор вкладок, экраны в навигаторе стека не будут получать события, генерируемые родительским навигатором вкладок, например `tabPress`, при использовании `navigation.addListener`.
+Давайте разберем это:
 
-Чтобы получать события от родительского навигатора, вы можете явно прослушивать родительские события с помощью `navigation.getParent()`:
+- `tabBarIcon` - это поддерживаемая опция в нижнем навигаторе вкладок. Итак, мы знаем, что можем использовать его в наших компонентах экрана в prop `options`, но в этом случае мы решили поместить ее в prop `screenOptions` в `Tab.Navigator`, чтобы централизовать конфигурацию значков для удобства.
+
+- `tabBarIcon` - это функция, которой задаются параметры состояния `focused`,  `color` и `size`. Если вы посмотрите дальше в конфигурации, вы увидите `tabBarOptions`, `activeTintColor` и `inactiveTintColor`. По умолчанию используются значения по умолчанию для платформы iOS, но вы можете изменить их здесь. Цвет, который передается в `tabBarIcon`, может быть активным или неактивным, в зависимости от состояния в фокусе (сфокусирован активен). Размер - это размер значка, ожидаемый панелью вкладок.
+
+- Прочтите полный [справочник по API](https://reactnavigation.org/docs/6.x/bottom-tab-navigator) для получения дополнительной информации о параметрах конфигурации `createBottomTabNavigator`.
+
+## Добавляйте значки к иконкам
+Иногда мы хотим добавить значки к некоторым значкам. Для этого вы можете использовать параметр `tabBarBadge`:
 
 ```jsx
-const unsubscribe = navigation.getParent().addListener ('tabPress', (e) => {
-  // Сделай что-нибудь
-})
+<Tab.Screen name="Home" component={HomeScreen} options={{ tabBarBadge: 3 }} />
 ```
 
-### Пользовательский интерфейс родительского навигатора отображается поверх дочернего навигатора
+[Попробуйте этот пример на Snack](https://snack.expo.io/?platform=android&name=Getting%20started%20%7C%20React%20Navigation&dependencies=%40expo%2Fvector-icons%40*%2C%40react-native-community%2Fmasked-view%40*%2C%40react-navigation%2Fbottom-tabs%40%5E5.8.0%2C%40react-navigation%2Fdrawer%40%5E5.9.0%2C%40react-navigation%2Fmaterial-bottom-tabs%40%5E5.2.16%2C%40react-navigation%2Fmaterial-top-tabs%40%5E5.2.16%2C%40react-navigation%2Fnative%40%5E5.7.3%2C%40react-navigation%2Fstack%40%5E5.9.0%2Creact-native-paper%40%5E4.0.1%2Creact-native-reanimated%40*%2Creact-native-safe-area-context%40*%2Creact-native-gesture-handler%40*%2Creact-native-screens%40*%2Creact-native-tab-view%40%5E2.15.1&hideQueryParams=true&sourceUrl=https%3A%2F%2Freactnavigation.org%2Fexamples%2F5.x%2Ftab-based-navigation-badges.js)
 
-Например, если вы вложите навигатор стека в навигатор Drawer, вы увидите, что Drawer появляется над заголовком навигатора стека. Однако, если вы вложите навигатор Drawer внутри стека, Drawer появится под заголовком стека. Это важный момент, который следует учитывать при принятии решения о размещении ваших навигаторов.
+С точки зрения пользовательского интерфейса этот компонент готов к использованию, но вам все еще нужно найти способ правильно передать счетчик значков откуда-то еще, например, с помощью [React Context](https://reactjs.org/docs/context.html), [Redux](https://redux.js.org/), [MobX](https://mobx.js.org/) или [эмиттеров событий](https://github.com/facebook/react-native/blob/master/Libraries/vendor/emitter/EventEmitter.js).
+
+![tabs](https://reactnavigation.org/assets/images/tabs-badges-94675c8566521656189422362d92cf9e.png)
+
+## Переход между вкладками
+
+Для переключения с одной вкладки на другую используется знакомый API - `navigation.navigate`.
+
+```jsx
+const HomeScreen = ({ navigation }) => {
+  return (
+    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+      <Text>Home!</Text>
+      <Button
+        title="Go to Settings"
+        onPress={() => navigation.navigate('Settings')}
+      />
+    </View>
+  )
+}
+
+const SettingsScreen = ({ navigation }) => {
+  return (
+    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+      <Text>Settings!</Text>
+      <Button title="Go to Home" onPress={() => navigation.navigate('Home')} />
+    </View>
+  )
+}
+```
+
+[Попробуйте этот пример на Snack](https://snack.expo.io/?platform=android&name=Getting%20started%20%7C%20React%20Navigation&dependencies=%40expo%2Fvector-icons%40*%2C%40react-native-community%2Fmasked-view%40*%2C%40react-navigation%2Fbottom-tabs%40%5E5.8.0%2C%40react-navigation%2Fdrawer%40%5E5.9.0%2C%40react-navigation%2Fmaterial-bottom-tabs%40%5E5.2.16%2C%40react-navigation%2Fmaterial-top-tabs%40%5E5.2.16%2C%40react-navigation%2Fnative%40%5E5.7.3%2C%40react-navigation%2Fstack%40%5E5.9.0%2Creact-native-paper%40%5E4.0.1%2Creact-native-reanimated%40*%2Creact-native-safe-area-context%40*%2Creact-native-gesture-handler%40*%2Creact-native-screens%40*%2Creact-native-tab-view%40%5E2.15.1&hideQueryParams=true&sourceUrl=https%3A%2F%2Freactnavigation.org%2Fexamples%2F5.x%2Ftab-based-navigation-switching.js)
+
+## Навигатор стека для каждой вкладки 
+
+Обычно вкладки не просто отображают один экран - например, в своей ленте Twitter вы можете нажать на твит, и он приведет вас к новому экрану внутри этой вкладки со всеми ответами. Вы можете думать об этом как о наличии отдельных стеков навигации внутри каждой вкладки, и именно так мы будем моделировать их в React Navigation.
+
+```jsx
+import * as React from 'react'
+import { Button, Text, View } from 'react-native'
+import { NavigationContainer } from '@react-navigation/native'
+import { createStackNavigator } from '@react-navigation/stack'
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
+
+const DetailsScreen = () => {
+  return (
+    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+      <Text>Details!</Text>
+    </View>
+  )
+}
+
+const HomeScreen = ({ navigation }) => {
+  return (
+    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+      <Text>Home screen</Text>
+      <Button
+        title="Go to Details"
+        onPress={() => navigation.navigate('Details')}
+      />
+    </View>
+  )
+}
+
+const SettingsScreen = ({ navigation }) => {
+  return (
+    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+      <Text>Settings screen</Text>
+      <Button
+        title="Go to Details"
+        onPress={() => navigation.navigate('Details')}
+      />
+    </View>
+  )
+}
+
+const HomeStack = createStackNavigator()
+
+const HomeStackScreen = () => {
+  return (
+    <HomeStack.Navigator>
+      <HomeStack.Screen name="Home" component={HomeScreen} />
+      <HomeStack.Screen name="Details" component={DetailsScreen} />
+    </HomeStack.Navigator>
+  )
+}
+
+const SettingsStack = createStackNavigator()
+
+const SettingsStackScreen = () => {
+  return (
+    <SettingsStack.Navigator>
+      <SettingsStack.Screen name="Settings" component={SettingsScreen} />
+      <SettingsStack.Screen name="Details" component={DetailsScreen} />
+    </SettingsStack.Navigator>
+  )
+}
+
+const Tab = createBottomTabNavigator();
+
+const App = () => {
+  return (
+    <NavigationContainer>
+      <Tab.Navigator>
+        <Tab.Screen name="Home" component={HomeStackScreen} />
+        <Tab.Screen name="Settings" component={SettingsStackScreen} />
+      </Tab.Navigator>
+    </NavigationContainer>
+  )
+}
+
+export default App
+```
+
+[Попробуйте этот пример на Snack](https://snack.expo.io/?platform=android&name=Getting%20started%20%7C%20React%20Navigation&dependencies=%40expo%2Fvector-icons%40*%2C%40react-native-community%2Fmasked-view%40*%2C%40react-navigation%2Fbottom-tabs%40%5E5.8.0%2C%40react-navigation%2Fdrawer%40%5E5.9.0%2C%40react-navigation%2Fmaterial-bottom-tabs%40%5E5.2.16%2C%40react-navigation%2Fmaterial-top-tabs%40%5E5.2.16%2C%40react-navigation%2Fnative%40%5E5.7.3%2C%40react-navigation%2Fstack%40%5E5.9.0%2Creact-native-paper%40%5E4.0.1%2Creact-native-reanimated%40*%2Creact-native-safe-area-context%40*%2Creact-native-gesture-handler%40*%2Creact-native-screens%40*%2Creact-native-tab-view%40%5E2.15.1&hideQueryParams=true&sourceUrl=https%3A%2F%2Freactnavigation.org%2Fexamples%2F5.x%2Ftab-based-navigation-stack.js)
+
 
 
 ## Done ✅
 
 Чтобы узнать, насколько хорошо вы усвоили этот урок, пройдите тест в [мобильном приложении](http://onelink.to/njhc95) нашей школы по этой теме или в [боте Telegram](https://t.me/javascriptcamp_bot).
 
-![Sumerian school](/img/app.jpg)
+![JS Camp](/img/app.jpg)
 
 ## Links
 
-[React Navigation](https://reactnavigation.org/docs/6.x/nesting-navigators)
+[React Navigation](https://reactnavigation.org/docs/tab-based-navigation)
 
 ## Contributors ✨
 

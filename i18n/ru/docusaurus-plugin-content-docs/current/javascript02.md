@@ -91,6 +91,24 @@ function learnJavaScript() {
 
 ![Comments](https://media.giphy.com/media/SvuRLwWT0EoeErwPvB/giphy.gif)
 
+## React Native
+
+Пример того, где еще мы можем использовать комментарии в реальном `React Native` проекте. Вдруг нам нужно будет скрыть некоторый код. Для этого нам нужно обернуть его в комментарии. Обратите внимание на то, что блок с комментариями работал его необходимо завернуть в фигурные скобки, иначе библиотека `React` не поймет, что это JavaScript выражение - это специфика синтаксиса `JSX` который мы изучим по курсу позже. Попробуйте раскомментировать код и после закомментировать его обратно.
+
+```SnackPlayer name=index.js
+import * as React from 'react'
+import { Text } from 'react-native'
+
+const App = () => (
+  <>
+    <Text>Hello world!</Text>
+    {/* <Text>Здесь был Вася!</Text> */}
+  </>
+)
+
+export default App
+```
+
 ## Проблемы?
 
 ![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
@@ -98,6 +116,7 @@ function learnJavaScript() {
 Пишите в [Discord](https://discord.gg/6GDAfXn) или телеграмм [чат](https://t.me/jscampapp), а также подписывайтесь на наши [новости](https://t.me/javascriptapp)
 
 ![JavaScript Camp](/img/bandlink.png)
+
 
 ## Вопросы:
 
@@ -151,9 +170,9 @@ function learnJavaScript() {
 2. Документирование
 3. Рукопись
 
-Для того чтобы понять, на сколько вы усвоили этот урок, пройдите тест в [мобильном приложении](http://onelink.to/njhc95) нашей школы по этой теме.
+Для того чтобы понять, на сколько вы усвоили этот урок, пройдите тест в [мобильном приложении](http://onelink.to/njhc95) нашей школы по этой теме или в нашем [телеграм боте](https://t.me/javascriptcamp_bot).
 
-![Sumerian school](/img/app.jpg)
+![JS Camp](/img/app.jpg)
 
 ## Ссылки:
 

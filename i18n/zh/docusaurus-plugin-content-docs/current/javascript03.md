@@ -184,7 +184,7 @@ console.log 命令包含哪些信息？
 
 為了了解您學到了多少，請在我們學校參加考試 [移動應用](http://onelink.to/njhc95) 關於這個話題。
 
-![Sumerian school](/img/app.jpg)
+![JS Camp](/img/app.jpg)
 
 ## 鏈接
 

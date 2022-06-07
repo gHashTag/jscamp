@@ -6,6 +6,8 @@ sidebar_label: Props - параметры
 
 import YouTube from 'react-youtube'
 
+<YouTube videoId="_Hhko4wTQSY" />
+
 Большинство компонентов можно настроить при их создании с различными параметрами. Эти параметры создания называются - `props`.
 
 Ваши собственные компоненты также могут использовать `props`. Это позволяет вам создать один компонент, который будет использоваться во многих разных местах вашего приложения, с немного разными свойствами в каждом месте. Чтобы получить их значения, обратитесь к `props.YOUR_PROP_NAME` в ваших функциональных компонентах или `this.props.YOUR_PROP_NAME` в ваших компонентах класса. Вот пример:
@@ -15,7 +17,7 @@ import * as React from 'react'
 import { Text } from 'react-native'
 
 const HelloWorld = (props) => (
-  <Text>Hello world {props.name}!</Text>
+  <Text>Hello {props.name}!</Text>
 )
 
 const App = () => (
@@ -83,7 +85,7 @@ React является очень гибким, но он имеет одно с
 
 Чтобы узнать, насколько хорошо вы усвоили этот урок, пройдите тест в [мобильном приложении](http://onelink.to/njhc95) нашей школы по этой теме или в [боте Telegram](https://t.me/javascriptcamp_bot).
 
-![Sumerian school](/img/app.jpg)
+![JS Camp](/img/app.jpg)
 
 ## Ссылки:
 

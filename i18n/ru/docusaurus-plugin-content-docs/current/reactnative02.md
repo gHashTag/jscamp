@@ -6,6 +6,8 @@ sidebar_label: Базовые компоненты
 
 import YouTube from 'react-youtube'
 
+<YouTube videoId="qM0Du9lZXVI" />
+
 ## Text
 
 C этим [компонентом React](https://reactnative.dev/docs/text) для отображения текста мы уже познакомились. `Text` поддерживает вложение, стили и сенсорную обработку.
@@ -246,7 +248,7 @@ Style prop может быть обычным объектом JavaScript, а т
 
 Чтобы узнать, насколько хорошо вы усвоили этот урок, пройдите тест в [мобильном приложении](http://onelink.to/njhc95) нашей школы по этой теме или в [боте Telegram](https://t.me/javascriptcamp_bot).
 
-![Sumerian school](/img/app.jpg)
+![JS Camp](/img/app.jpg)
 
 ## Ссылки:
 

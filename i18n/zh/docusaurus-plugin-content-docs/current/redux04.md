@@ -1,11 +1,11 @@
 ---
 id: redux-04
-title: SearchBar
-sidebar_label: SearchBar
+title: 下一步是什么
+sidebar_label: 下一步是什么
 ---
 
-Создаем компонент SearchBar, где мы будем вводить название фильма.
+## 有用的连结
 
-[![redux](/img/redux/04.gif)](https://youtu.be/jkKukSinD2I)
+我建议您访问RT和redux的官方文档-https://redux-toolkit.js.org ,https://redux.js.org 供更好的理解和深入研究。
 
 [![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)

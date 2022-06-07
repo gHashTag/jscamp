@@ -18,7 +18,7 @@ import YouTube from 'react-youtube'
 
 ![javaScript](https://media.giphy.com/media/ln7z2eWriiQAllfVcn/giphy.gif)
 
-Для этого мы создали мобильное приложение [Sumerian School](http://onelink.to/njhc95), сайт [JSCamp.app](https://www.jscamp.app) и [YouTube канал](https://www.youtube.com/channel/UCR8tIQm7pu8MlPewAlUnzQw), где для обучения мы используем 3D аватаров доступных по умолчанию в [Amazon Sumerian](https://aws.amazon.com/ru/sumerian/), благодаря которым можно без труда создавать увлекательные 3D‑интерфейсы. Кроме того, они интегрированы с сервисами [AWS](https://aws.amazon.com), благодаря чему предоставляют удобный доступ к машинному обучению, чат-ботам, выполнению кода и не только. С помощью этого инструмента мы можем создавать видео, обучающие материалы на популярных языках мира и публиковать их на [нашем сайте](https://www.jscamp.app) и на [YouTube канале](https://www.youtube.com/channel/UCR8tIQm7pu8MlPewAlUnzQw).
+Для этого мы создали мобильное приложение [JS Camp](http://onelink.to/njhc95), сайт [JSCamp.app](https://www.jscamp.app) и [YouTube канал](https://www.youtube.com/channel/UCR8tIQm7pu8MlPewAlUnzQw), где для обучения мы используем 3D аватаров доступных по умолчанию в [Amazon Sumerian](https://aws.amazon.com/ru/sumerian/), благодаря которым можно без труда создавать увлекательные 3D‑интерфейсы. Кроме того, они интегрированы с сервисами [AWS](https://aws.amazon.com), благодаря чему предоставляют удобный доступ к машинному обучению, чат-ботам, выполнению кода и не только. С помощью этого инструмента мы можем создавать видео, обучающие материалы на популярных языках мира и публиковать их на [нашем сайте](https://www.jscamp.app) и на [YouTube канале](https://www.youtube.com/channel/UCR8tIQm7pu8MlPewAlUnzQw).
 
 ## Видео
 
@@ -88,7 +88,7 @@ TypeScript - язык программирования, представленн
 
 ## Значки
 
-В крайнем обновлении нашего приложения вышла система лояльности пользователей. Теперь все кто прошли экзамены по темам English, JavaScript, ReactNative, TypeScript, AWS Amplify получают соответствующие значки в нашем приложении Sumerian School, которое в бесплатном доступе для iOS и Android можно скачать [здесь](http://onelink.to/njhc95). Правда тесты пока доступны только на English и JavaScript, но в этом году будут по всем темам.
+В крайнем обновлении нашего приложения вышла система лояльности пользователей. Теперь все кто прошли экзамены по темам English, JavaScript, ReactNative, TypeScript, AWS Amplify получают соответствующие значки в нашем приложении JS Camp, которое в бесплатном доступе для iOS и Android можно скачать [здесь](http://onelink.to/njhc95). Правда тесты пока доступны только на English и JavaScript, но в этом году будут по всем темам.
 
 ![Camp](https://media.giphy.com/media/MOQG4QYC2MRSU/giphy.gif)
 
@@ -133,7 +133,7 @@ TypeScript - язык программирования, представленн
 
 ## Автор курса
 
-Автор курса по JavaScript - [Server Serverlesskiy](https://twitter.com/koshasuperstar), является создателем первого в рунете учебного курса по [React Native](https://react-native-village.github.io/docs/start000), а также первый русский блогер-программист в программе [AWS Comunity Builders](https://aws.amazon.com/ru/developer/community/community-builders/) от Amazon.
+Автор курса по JavaScript - [Server Serverlesskiy](https://twitter.com/koshasuperstar), является создателем первого в рунете учебного курса по [React Native](https://jscamp.app/docs/start000), а также первый русский блогер-программист в программе [AWS Comunity Builders](https://aws.amazon.com/ru/developer/community/community-builders/) от Amazon.
 
 ## Отзывы
 
@@ -152,9 +152,9 @@ TypeScript - язык программирования, представленн
 ![How much](https://media.giphy.com/media/VHnwACS3XAN7SZyx6O/giphy.gif)
 
 
-Теперь мы готовы с вами изучать JavaScript, но для того, чтобы понять на сколько вы усвоили этот урок пройдите тест в [мобильном приложении](http://onelink.to/njhc95) в нашей школы по этой теме.
+Для того чтобы понять, на сколько вы усвоили этот урок, пройдите тест в [мобильном приложении](http://onelink.to/njhc95) нашей школы по этой теме или в нашем [телеграм боте](https://t.me/javascriptcamp_bot).
 
-![Sumerian school](/img/app.jpg)
+![JS Camp](/img/app.jpg)
 
 ![JavaScript Camp](/img/bandlink.png)
 

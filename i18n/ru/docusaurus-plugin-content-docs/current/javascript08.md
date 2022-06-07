@@ -78,7 +78,7 @@ x != y
 ```javascript
 1 != 2 // истина
 1 != '1' // ложь
-1 != '1' // ложь
+'1' != 1 // ложь
 1 != true // ложь
 0 != false // ложь
 'foo' != 'bar' // истина
@@ -492,14 +492,7 @@ result = !value
 !0 // true
 ```
 
-В частности, двойное НЕ используют для преобразования значений к логическому типу:
 
-```jsx
-!!'non-empty string' // true
-!!null // false
-```
-
-То есть первое НЕ преобразует значение в логическое значение и возвращает обратное, а второе НЕ снова инвертирует его. В конце мы имеем простое преобразование значения в логическое.
 
 ## Условный (тернарный) оператор `?`
 
@@ -528,6 +521,32 @@ function learnJavaScript() {
 
   return output
 }
+```
+
+## React Native
+Например нам нужно показать индикатор загрузки до тех пор пока дынные с сервера подгружаются, а после после показать эти данные. Пока сэмулируй это изменение вручную и заменим `false` на `true`.
+
+```SnackPlayer name=index.js
+import * as React from 'react'
+import { Text, ActivityIndicator } from 'react-native'
+
+const App = () => {
+  const fetchData = false // здесь измени на true
+
+  const data = 'Здесь был Вася!'
+
+  return (
+    <>
+      { fetchData ? 
+        <Text>{data}</Text> 
+        : 
+        <ActivityIndicator size="large" color="red" /> 
+      } 
+    </>
+)}
+
+
+export default App
 ```
 
 ## Проблемы?
@@ -674,16 +693,16 @@ function learnJavaScript() {
 
 1. `||`
 2. `&&`
-3. `!`
+3.  оба 
 
 Чему равно `true || false`?
 
 1. `true`
 2. `false`
 
-Для того чтобы понять, на сколько вы усвоили этот урок, пройдите тест в [мобильном приложении](http://onelink.to/njhc95) нашей школы по этой теме.
+Для того чтобы понять, на сколько вы усвоили этот урок, пройдите тест в [мобильном приложении](http://onelink.to/njhc95) нашей школы по этой теме или в нашем [телеграм боте](https://t.me/javascriptcamp_bot).
 
-![Sumerian school](/img/app.jpg)
+![JS Camp](/img/app.jpg)
 
 ## Ссылки:
 

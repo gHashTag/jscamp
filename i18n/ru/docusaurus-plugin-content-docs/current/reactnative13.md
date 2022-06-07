@@ -6,6 +6,8 @@ sidebar_label: React Native init vs Expo
 
 import YouTube from 'react-youtube'
 
+  <YouTube videoId="oqflFw-KDF8" />
+
 На начальном этапе необходимо использовать какой-нибудь из стартеров. Основные конкурирующие стартеры React Native CLI и Expo, имеющие преимущество одно над другим.
 
 <YouTube videoId='r8BG3JPS8LI' />
@@ -58,6 +60,6 @@ import YouTube from 'react-youtube'
 
 Чтобы узнать, насколько хорошо вы усвоили этот урок, пройдите тест в [мобильном приложении](http://onelink.to/njhc95) нашей школы по этой теме или в [боте Telegram](https://t.me/javascriptcamp_bot).
 
-![Sumerian school](/img/app.jpg)
+![JS Camp](/img/app.jpg)
 
 [![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)

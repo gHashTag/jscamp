@@ -55,9 +55,9 @@ If more than one action is performed in a line, we use - (parentheses) to separa
 
 ```
  3 * (2 + 1)
-(3 + 9) / (10 - 6)
-(2 + 3 * 4) / (6 + 1)
- 2 * (5 - 8 / 2) * (3 + 1)
+(27 + 9) / (10 - 6)
+(63 / 3 ) / (6 + 1)
+ 2 * (5 - 8 / 2) + (3 + 4)
 ```
 
 Enter the following values into `LIVE EDITOR` 👇:
@@ -236,9 +236,9 @@ What value will `Math.round` return when `Math.round (20.62)`is applied?
 2. `20`
 3. `21`
 
-In order to understand how much you learned this lesson, take the test on the [mobile application](http://onelink.to/njhc95) of our school on this topic.
+In order to understand how much you learned this lesson, take the test in the [mobile application](http://onelink.to/njhc95) of our school on this topic or in our [telegram bot](https://t.me/javascriptcamp_bot).
 
-![Sumerian school](/img/app.jpg)
+![JS Camp](/img/app.jpg)
 
 ## Links
 

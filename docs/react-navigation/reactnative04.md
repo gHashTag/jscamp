@@ -1,7 +1,7 @@
 ---
 id: reactnative04
-title: Настройка Header
-sidebar_label: Настройка Header
+title: Setting up Header
+sidebar_label: Setting up Header
 ---
 
 We've already seen how to set the `title` in the Header, but let's take another look at that before moving on to some of the other options - repetition is the key to learning!
@@ -152,7 +152,7 @@ You can read the full list of available options for screens inside the stack nav
 To see how well you learned this lesson, take the test in our school's [mobile app](http://onelink.to/njhc95) on this topic or in [Telegram bot](https://t.me/javascriptcamp_bot).
 
 
-![Sumerian school](/img/app.jpg)
+![JS Camp](/img/app.jpg)
 
 ## Links
 

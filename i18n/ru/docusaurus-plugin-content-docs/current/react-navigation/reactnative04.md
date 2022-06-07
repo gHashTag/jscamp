@@ -37,11 +37,11 @@ import { createStackNavigator } from '@react-navigation/stack'
 const HomeScreen = ({ navigation }) => (
   <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
     <Text>Home Screen</Text>
-    <Button title="Go to Profile" onPress={() => navigation.navigate('Profile', { name: 'Custom profile header' })} />
+    <Button title="Go to Details" onPress={() => navigation.navigate('Detail', { name: 'Custom details header' })} />
   </View>
 )
 
-const ProfileScreen = ({ navigation }) => (
+const DetailScreen = ({ navigation }) => (
   <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
     <Text>Profile screen</Text>
     <Button title="Go back" onPress={() => navigation.goBack()} />
@@ -54,7 +54,7 @@ const App = () => (
   <NavigationContainer>
     <Stack.Navigator>
       <Stack.Screen name="Home" component={HomeScreen} options={{ title: 'My home' }} />
-      <Stack.Screen name="Profile" component={ProfileScreen} options={({ route }) => ({ title: route.params.name })} />
+      <Stack.Screen name="Detail" component={DetailScreen} options={({ route }) => ({ title: route.params.name })} />
     </Stack.Navigator>
   </NavigationContainer>
 )
@@ -145,13 +145,13 @@ const StackScreen = () => {
 
 ## Дополнительная конфигурация
 
-Вы можете прочитать полный список доступных опций для экранов внутри навигатора стека в справочнике [createStackNavigator](https://reactnavigation.org/docs/6.x/stack-navigator/#navigationoptions-used-by-stacknavigator).
+Вы можете прочитать полный список доступных опций для экранов внутри навигатора стека в справочнике [createStackNavigator](https://reactnavigation.org/docs/native-stack-navigator#options).
 
 ## Done ✅
 
 Чтобы узнать, насколько хорошо вы усвоили этот урок, пройдите тест в [мобильном приложении](http://onelink.to/njhc95) нашей школы по этой теме или в [боте Telegram](https://t.me/javascriptcamp_bot).
 
-![Sumerian school](/img/app.jpg)
+![JS Camp](/img/app.jpg)
 
 ## Links
 

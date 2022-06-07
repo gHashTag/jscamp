@@ -181,6 +181,21 @@ function learnJavaScript() {
 }
 ```
 
+## React Native
+
+Базовый пример `Hello world` в мобильном приложении сделанного с помощью библиотеки `React Native`. Пока не будем вдаваться в синтаксис, так как о нем мы расскажем позже, но по моему здесь все очевидно. Измените текстовый блок, где впечатайте свое имя.
+
+```SnackPlayer name=index.js
+import * as React from 'react'
+import { Text } from 'react-native'
+
+const App = () => (
+  <Text>Hello world!</Text>
+)
+
+export default App
+```
+
 ## Проблемы?
 
 ![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
@@ -229,9 +244,9 @@ function learnJavaScript() {
 2. Косая черта указывает на умножение - умножение одного числа на другое.
 3. Косая черта обозначает деление - деление одного числа на другое.
 
-Теперь мы готовы с вами изучать JavaScript, но для того чтобы понять на сколько вы усвоили этот урок пройдите тест в [мобильном приложении](http://onelink.to/njhc95) в нашей школы по этой теме.
+Для того чтобы понять, на сколько вы усвоили этот урок, пройдите тест в [мобильном приложении](http://onelink.to/njhc95) нашей школы по этой теме или в нашем [телеграм боте](https://t.me/javascriptcamp_bot).
 
-![Sumerian school](/img/app.jpg)
+![JS Camp](/img/app.jpg)
 
 
 ## Ссылки:

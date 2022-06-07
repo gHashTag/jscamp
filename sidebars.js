@@ -36,6 +36,7 @@ module.exports = {
       'javascript30'
     ],
     ['React Native']: [
+      'reactnative00',
       'reactnative01',
       'reactnative02',
       'reactnative03',
@@ -63,11 +64,15 @@ module.exports = {
       },
       {
         type: 'category',
-        label: 'State management',
+        label: 'MobX',
         items: ['state-management/reactnativestate00'],
       },
+      {
+        type: 'category',
+        label: 'Redux',
+        items: ['redux-00', 'redux-01', 'redux-02', 'redux-03', 'redux-04'],
+      }, 
     ],
-    ['Redux']: ['redux-00', 'redux-01', 'redux-02', 'redux-03', 'redux-04', 'redux-05', 'redux-06'],
     ['TypeScript']: [
       'typescript00',
       'typescript01',
@@ -83,7 +88,10 @@ module.exports = {
     ],
     ['UI Kit']: ['unicorn00', 'unicorn01', 'unicorn02'],
     ['Authentication']: ['auth1-00', 'auth1-01', 'auth1-02'],
-    ['AWS Amplify']: ['amplify-00', 'amplify-01', 'amplify-02', 'amplify-03', 'amplify-04', 'notif-00'],
+    ['AWS Amplify']: ['amplify-00', 'amplify-01', 'amplify-02', 'amplify-03', 'amplify-04', 'notif-00', 'amplify-05', 'amplify-06'],
+    ['Telegraf']: [
+      'telegraf/telegraf00'
+    ],
     ['Blogging']: ['blogging-01', 'blogging-02', 'blogging-03'],
     ['Rubik\'s Cube']: ['cube-00', 'cube-01'],
     ['Scratch']: ['scratch-00', 'scratch-01'],

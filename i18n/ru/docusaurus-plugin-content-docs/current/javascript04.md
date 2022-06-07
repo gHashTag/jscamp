@@ -59,7 +59,7 @@ let one = { firstName: 'John', lastName: 'Smith' } // object
 
 let two = () => {} // function
 
-let three 'bar' // string
+let three = 'bar' // string
 
 let four = 42 // number
 
@@ -262,9 +262,9 @@ null === null // true
 2. `SyntaxError`
 3. `null`
 
-Для того чтобы понять, на сколько вы усвоили этот урок, пройдите тест в [мобильном приложении](http://onelink.to/njhc95) нашей школы по этой теме.
+Для того чтобы понять, на сколько вы усвоили этот урок, пройдите тест в [мобильном приложении](http://onelink.to/njhc95) нашей школы по этой теме или в нашем [телеграм боте](https://t.me/javascriptcamp_bot).
 
-![Sumerian school](/img/app.jpg)
+![JS Camp](/img/app.jpg)
 
 ## Ссылки:
 

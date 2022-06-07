@@ -6,7 +6,7 @@ sidebar_label: Fetch API
 
 ![@serverSerrverlesskiy](/img/javascript/headers/28.jpg)
 
-The ** Fetch API ** allows JavaScript to communicate with the server using HTTP requests and is a better replacement for the XMLHttpRequest class. Queries are executed by the `fetch()` method, which returns🔄 [Promise](https://react-native-village.github.io/docs/javascript24).
+The ** Fetch API ** allows JavaScript to communicate with the server using HTTP requests and is a better replacement for the XMLHttpRequest class. Queries are executed by the `fetch()` method, which returns🔄 [Promise](https://jscamp.app/docs/javascript24).
 
 ![Exchange](https://media.giphy.com/media/OPQiZUC381IJ8Sh7UY/giphy.gif)
 
@@ -53,7 +53,7 @@ fetch('https://jsonplaceholder.typicode.com/users', {
 
 ![Bascketball](https://media.giphy.com/media/l0MYwdebx8o0XI56E/giphy.gif)
 
-The `fetch()` method returns🔄 [Promise](https://react-native-village.github.io/docs/javascript24) an object of the `Response` class, which has the following properties:
+The `fetch()` method returns🔄 [Promise](https://jscamp.app/docs/javascript24) an object of the `Response` class, which has the following properties:
 
 1. `status` - response code;
 2. `statusText` - text message 📜 corresponding to the response code;
@@ -173,9 +173,9 @@ What does the `ok` property mean for an object of class `Response`?
 2. Success of the response code
 3. Reading data from a request
 
-In order to understand how much you learned this lesson, take the test on the [mobile application](http://onelink.to/njhc95) of our school on this topic.
+In order to understand how much you learned this lesson, take the test in the [mobile application](http://onelink.to/njhc95) of our school on this topic or in our [telegram bot](https://t.me/javascriptcamp_bot).
 
-![Sumerian school](/img/app.jpg)
+![JS Camp](/img/app.jpg)
 
 ## Links
 

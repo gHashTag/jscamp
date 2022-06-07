@@ -44,7 +44,7 @@ switch (n) {
 }
 ```
 
-`n` - это булеан [boolean](https://react-native-village.github.io/docs/javascript08) условие.
+`n` - это булеан [boolean](https://jscamp.app/docs/javascript08) условие.
 
 ## Примеры
 
@@ -154,6 +154,41 @@ function learnJavaScript() {
 
 Результат будет тот же, но код📟 станет более читабельным и удобным для работы.
 
+## React Native
+Пример использования в `React Native` приложениях.
+
+```SnackPlayer name=index.js
+import * as React from 'react'
+import { Text } from 'react-native'
+
+const App = () => {
+  const userType = 'Admin'
+  
+  return (
+    <>
+      {(() => {
+           switch (userType) {
+              case 'Admin':
+                  return (
+                    <Text>You are a Admin.</Text>
+                  )
+              case 'Manager':
+                  return (
+                    <Text>You are a Manager.</Text>
+                  )
+              default:
+                  return (
+                    <Text>You are a User.</Text>
+                  )
+           }
+        })()}
+    </>
+  )
+}
+
+export default App
+```
+
 ## Проблемы?
 
 ![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
@@ -183,9 +218,9 @@ function learnJavaScript() {
 2. `stop`
 3. `default`
 
-Для того чтобы понять, на сколько вы усвоили этот урок, пройдите тест в [мобильном приложении](http://onelink.to/njhc95) нашей школы по этой теме.
+Для того чтобы понять, на сколько вы усвоили этот урок, пройдите тест в [мобильном приложении](http://onelink.to/njhc95) нашей школы по этой теме или в нашем [телеграм боте](https://t.me/javascriptcamp_bot).
 
-![Sumerian school](/img/app.jpg)
+![JS Camp](/img/app.jpg)
 
 ## Ссылки:
 

@@ -25,7 +25,7 @@ sidebar_label: Stack навигатор - Перемещение между эк
 
 ## Переход к новому экрану
 
-```jsx {6,9} title="App.js" 
+```jsx {6,9} title="src/index.js" 
 import * as React from 'react'
 import { View, Button, Text } from 'react-native'
 import { NavigationContainer } from '@react-navigation/native'
@@ -91,7 +91,7 @@ export default App
 
 Чтобы узнать, насколько хорошо вы усвоили этот урок, пройдите тест в [мобильном приложении](http://onelink.to/njhc95) нашей школы по этой теме или в [боте Telegram](https://t.me/javascriptcamp_bot).
 
-![Sumerian school](/img/app.jpg)
+![JS Camp](/img/app.jpg)
 
 ## Links
 

@@ -41,7 +41,7 @@ brew install watchman
 [CocoaPods](https://cocoapods.org/) - это мощное и одновременно изящное средство управления зависимостями Cocoa-библиотек, которые разработчики используют в своих iOS и MacOS проектах.
 
 ```bash
-sudo gem install cocoapods
+brew install cocoapods
 ```
 
 ## XCode
@@ -155,7 +155,7 @@ export default App
 
 Чтобы узнать, насколько хорошо вы усвоили этот урок, пройдите тест в [мобильном приложении](http://onelink.to/njhc95) нашей школы по этой теме или в [боте Telegram](https://t.me/javascriptcamp_bot).
 
-![Sumerian school](/img/app.jpg)
+![JS Camp](/img/app.jpg)
 
 ## Ссылки
 

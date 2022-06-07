@@ -7,7 +7,7 @@
  * @format
  */
 
-module.exports = {
+ module.exports = {
   title: 'JavaScript Camp',
   tagline: 'программа обучения JavaScript',
   url: 'https://jscamp.app',
@@ -22,7 +22,7 @@ module.exports = {
   scripts: [{ src: 'https://snack.expo.io/embed.js', defer: true }],
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'ru', 'zh', 'jp', 'es'],
+    locales: ['en', 'ru', 'zh', 'hi', 'ar', 'jp'],
     localeConfigs: {
       en: {
         label: 'English'
@@ -32,6 +32,12 @@ module.exports = {
       },
       zh: {
         label: '中文'
+      },
+      hi: {
+        label: 'हिंदी'
+      },
+      ar: {
+        label: 'عربى'
       },
       jp: {
         label: '日本語'
@@ -104,7 +110,7 @@ module.exports = {
           position: 'left'
         },
         {
-          href: 'https://github.com/react-native-village/react-native-village.github.io',
+          href: 'https://github.com/gHashTag/jscamp/tree/gh-pages',
           label: 'GitHub 🛰',
           position: 'left'
         },
@@ -132,16 +138,8 @@ module.exports = {
             },
             {
               label: 'React Native',
-              to: 'docs/start00'
+              to: 'docs/reactnative00'
             },
-            {
-              label: 'React Navigation 2',
-              to: 'docs/reactNavigtion2.00'
-            },
-            {
-              label: 'Redux',
-              to: 'docs/redux00'
-            }
           ]
         },
         {
@@ -152,8 +150,12 @@ module.exports = {
               href: 'https://discord.gg/6GDAfXn'
             },
             {
+              label: 'Telegram Channel 📬',
+              href: 'https://t.me/javascriptapp'
+            },
+            {
               label: 'AWS Amplify Ru 💭',
-              href: 'https://teleg.run/awsamplify'
+              href: 'https://t.me/awsamplify'
             }
           ]
         },
@@ -161,16 +163,12 @@ module.exports = {
           title: 'Social 🌎',
           items: [
             {
-              label: 'Telegram Channel 📬',
-              href: 'https://t.me/javascriptcamping'
+              label: 'Instagram',
+              href: 'https://www.instagram.com/javascriptcamp/'
             },
             {
               label: 'TikTok',
               href: 'https://vm.tiktok.com/ZSJ1dxkFu/'
-            },
-            {
-              label: 'Instagram',
-              href: 'https://www.instagram.com/javascriptcamp/'
             },
             {
               label: 'Twitter',
@@ -183,10 +181,6 @@ module.exports = {
             {
               label: 'YouTube Ru',
               href: 'https://www.youtube.com/channel/UCOxewePwIQATdHTD3yZ2UZw'
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/react-native-village'
             },
             {
               label: 'Hashnode',
@@ -202,7 +196,7 @@ module.exports = {
             },
             {
               label: 'Vk',
-              href: 'https://vk.com/reactnativeinit'
+              href: 'https://vk.com/javascriptcamp'
             },
             {
               label: 'Medium',
@@ -213,8 +207,8 @@ module.exports = {
               href: 'https://www.twitch.tv/javascriptcamp'
             },
             {
-              label: 'CodeWars',
-              href: 'www.codewars.com/r/e67HyQ'
+              label: 'Code Wars',
+              href: 'https://www.codewars.com/r/e67HyQ'
             }
           ]
         }
@@ -225,7 +219,7 @@ module.exports = {
         href: 'https://opensource.facebook.com/'
       },
       // Please do not remove the credits, help to publicize Docusaurus :)
-      copyright: `Copyright © ${new Date().getFullYear()} Server Serverlesskiy 🎰 Built with Docusaurus`
+      copyright: `Copyright © ${new Date().getFullYear()} Server Serverlesskiy ⚛️ Built with Docusaurus`
     }
   },
   presets: [
@@ -249,7 +243,16 @@ module.exports = {
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css')
-        }
+        },
+        googleAnalytics: {
+          trackingID: 'G-X2K0V4MDRW',
+          anonymizeIP: true // Should IPs be anonymized?
+        },
+        gtag: {
+          trackingID: 'GTM-M7F7469',
+          // Optional fields.
+          anonymizeIP: true // Should IPs be anonymized?
+        },
       }
     ]
   ]

@@ -1,6 +1,6 @@
 ---
 id: unicorn02
-title: UI Kit - Unicorn
+title: UI Kit - Unicorn 2
 sidebar_label: Installation
 ---
 

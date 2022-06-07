@@ -168,6 +168,31 @@ function learnJavaScript() {
 
 Практически всегда, когда известно количество необходимых итераций, вы скорее будете работать с `for`, нежели с `while`. В связи с этим циклы `for` так популярны. Существуют и другие циклы, но они не столь популярны и при желании можете познакомиться с ними [здесь](https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/%D0%A6%D0%B8%D0%BA%D0%BB%D1%8B_%D0%B8_%D0%B8%D1%82%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%B8).
 
+## React Native
+Пример использования в `React Native` приложениях.
+
+```SnackPlayer name=index.js
+import * as React from 'react'
+import { Text } from 'react-native'
+
+const App = () => {
+  const list = []
+
+  for (let i = 0; i <= 10; i++) {
+    list.push(<Text>{i}</Text>)
+  }
+  
+  return (
+    <>
+      {list}
+    </>
+  )
+}
+
+export default App
+```
+
+
 ## Проблемы?
 
 ![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
@@ -228,9 +253,9 @@ while (k < 7) {
 2. Прерывание
 3. Зацикливание
 
-Для того чтобы понять, на сколько вы усвоили этот урок, пройдите тест в [мобильном приложении](http://onelink.to/njhc95) нашей школы по этой теме.
+Для того чтобы понять, на сколько вы усвоили этот урок, пройдите тест в [мобильном приложении](http://onelink.to/njhc95) нашей школы по этой теме или в нашем [телеграм боте](https://t.me/javascriptcamp_bot).
 
-![Sumerian school](/img/app.jpg)
+![JS Camp](/img/app.jpg)
 
 ## Ссылки:
 

@@ -130,6 +130,7 @@ const styles = StyleSheet.create({
 })
 
 const Header = ({ title }) => {
+  const { textStyle, viewStyle } = styles
   return (
     <View style={viewStyle}>
       <Text style={textStyle}>{title}</Text>
@@ -166,7 +167,7 @@ export * from './Header'
 
 Теперь можно импортировать компонент `Header` и проверить как все работает:
 
-```jsx title="index.js"
+```jsx title="src/index.js"
 import React from 'react'
 import { Header } from './src/components' // здесь импортируем
 
@@ -179,6 +180,16 @@ const App = () => (
 export default App
 ```
 
+## Правим рутовый index.js
+
+``` jsx title="index.js"
+import {AppRegistry} from 'react-native';
+import App from './src'; // здесь
+import {name as appName} from './app.json';
+
+AppRegistry.registerComponent(appName, () => App)
+```
+
 ## useEffect
 
 Что если нам нужно отобразить данные с сервера?
@@ -187,10 +198,10 @@ export default App
 1. Получаем данные с сервера через `fetch` в хуке `useEffect`
 2. Передаем данные в хук `useState`
 
-```jsx title="index.js"
+```jsx title="src/index.js"
 import React, { useState, useEffect } from 'react'
 import { View } from 'react-native'
-import { Header } from './src/components'
+import { Header } from './components'
 
 const App = () => {
   const [data, setData] = useState('')
@@ -278,7 +289,7 @@ export { ImageCard }
 
 Вспоминаем из прошлых уроков компонент [FlatList](https://www.jscamp.app/docs/reactnative08) благодаря которому мы создаем список наших фильмов.
 
-```jsx title="index.js"
+```jsx title="src/index.js"
 import React, { useState, useEffect } from 'react'
 import { View, FlatList, StyleSheet, Text } from 'react-native'
 import { Header, ImageCard } from './components'
@@ -341,6 +352,6 @@ export default App
 
 Чтобы узнать, насколько хорошо вы усвоили этот урок, пройдите тест в [мобильном приложении](http://onelink.to/njhc95) нашей школы по этой теме или в [боте Telegram](https://t.me/javascriptcamp_bot).
 
-![Sumerian school](/img/app.jpg)
+![JS Camp](/img/app.jpg)
 
 [![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)

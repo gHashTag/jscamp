@@ -83,7 +83,7 @@ const Home = () => {
     <>
       <Layout title={`${siteConfig.title}`} description="Java Script Camp - лагерь скаутов">
         <Head>
-          <meta property="og:image" content="https://react-native-village.github.io/img/app.jpg" />
+          <meta property="og:image" content="https://jscamp.app/img/app.jpg" />
         </Head>
         <a href="https://www.patreon.com/javascriptcamp">
           <div className={classnames('image-container')}>
@@ -136,7 +136,6 @@ const Home = () => {
         <div className={videoContainer}>
           <YouTube videoId="z5gO1PzyLwU" opts={opts} className={player} />
         </div>
-
         <Program />
 
         <header className={classnames('hero hero--primary', heroBanner)}>
@@ -247,7 +246,7 @@ const arrLinks = [
   {
     id: 9,
     imageUrl: 'img/startup/AWSAmplifyHackaton.jpg',
-    hrefUrl: 'https://jscamp.hashnode.dev/java-script-camp',
+    hrefUrl: 'https://jscamp.hashnode.dev/javascript-camp',
     alt: 'Java Script Camp',
     classLink: 'imgContainer',
     classImage: 'image-mobile'

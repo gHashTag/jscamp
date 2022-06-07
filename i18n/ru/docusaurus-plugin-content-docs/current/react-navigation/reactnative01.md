@@ -11,7 +11,7 @@ sidebar_label: Hello React Navigation
 Начнем с демонстрации самого распространенного навигатора `createStackNavigator`.
 
 ## Установка библиотеки навигатора стека
-Библиотеки, которые мы установили до сих пор, представляют собой строительные блоки и общие основы для навигаторов, и каждый навигатор в React Navigation живет в своей собственной библиотеке. Чтобы использовать навигатор по стеку, нам нужно установить [@response-navigation/stack](https://github.com/react-navigation/react-navigation/tree/main/packages/stack):
+Библиотеки, которые мы установили до сих пор, представляют собой строительные блоки и общие основы для навигаторов, и каждый навигатор в React Navigation живет в своей собственной библиотеке. Чтобы использовать навигатор по стеку, нам нужно установить [@react-navigation/stack](https://github.com/react-navigation/react-navigation/tree/main/packages/stack):
 
 ```bash npm2yarn
 npm install @react-navigation/stack@next @react-native-masked-view/masked-view
@@ -22,7 +22,7 @@ npm install @react-navigation/stack@next @react-native-masked-view/masked-view
 
 `NavigationContainer` - это компонент, который управляет нашим деревом навигации и содержит состояние навигации. Этот компонент должен оборачивать всю структуру навигаторов. Обычно мы рендерим этот компонент в корне нашего приложения, который обычно является компонентом, экспортированным из `App.js`.
 
-```jsx title="App.js"
+```jsx title="src/index.js" 
 import { View, Text } from 'react-native'
 import { NavigationContainer } from '@react-navigation/native'
 import { createStackNavigator } from '@react-navigation/stack'
@@ -65,7 +65,7 @@ export default App
 
 Давайте добавим второй экран к нашему навигатору стека и настроим главный экран на рендеринг первым:
 
-```jsx {12-16,24} title="App.js" 
+```jsx {12-16,24} title="src/index.js" 
 import * as React from 'react'
 import { View, Text } from 'react-native'
 import { NavigationContainer } from '@react-navigation/native'
@@ -145,7 +145,7 @@ export default App
 
 Чтобы узнать, насколько хорошо вы усвоили этот урок, пройдите тест в [мобильном приложении](http://onelink.to/njhc95) нашей школы по этой теме или в [боте Telegram](https://t.me/javascriptcamp_bot).
 
-![Sumerian school](/img/app.jpg)
+![JS Camp](/img/app.jpg)
 
 ## Links
 
@@ -162,3 +162,5 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 </table>
 
 [![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
+
+
