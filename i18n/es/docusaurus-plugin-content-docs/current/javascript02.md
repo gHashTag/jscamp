@@ -1,74 +1,73 @@
 ---
 id: javascript02
-title: Комментарии
-sidebar_label: Комментарии
+title: Comentarios
+sidebar_label: Comentarios
 ---
 
 import YouTube from 'react-youtube'
 
 ![@serverSerrverlesskiy](/img/javascript/headers/02.jpg)
 
-## Что такое комментарии?
+## ¿Qué son los comentarios?
 
-В JavaScript есть несколько способов указать комментарии в коде 📟
+JavaScript tiene varias formas de indicar comentarios en el código 📟
 
-Порой при написании 🖊️ кода вам необходимо будет снабдить его пояснениями, предназначенными только для людей 👨 , а не для компьютера. Возможно, это будет некое послание к себе из прошлого (к Будущему Мне!) по поводу той или иной вещи в программном коде. А может, это будет просто указание, что запустить нужно лишь такую-то часть кода, а прочее надлежит опустить. Словом, в любом подобном случае вам необходимо будет прибегнуть к помощи комментариев.
-Комментарии 🗣️ используются для добавления ➕ подсказок, заметок 🔖 , предложений или предупреждений. Они могут упростить чтение и понимание 💡 кода. Также они могут быть использованы для предотвращения 🛑 выполнения кода (этот приём практикуется при отладке кода).
+A veces, al escribir código 🖊️, deberá proporcionarle explicaciones destinadas solo a personas 👨 y no a una computadora. Tal vez sea algún tipo de mensaje del pasado (¡para el yo del futuro!) sobre esto o aquello en el código del programa. O tal vez solo sea una indicación de que solo se debe ejecutar tal o cual parte del código, y el resto debe omitirse. En una palabra, en tal caso, deberá recurrir a la ayuda de los comentarios.
+Los comentarios 🗣️ se utilizan para agregar ➕ pistas, notas 🔖, sugerencias o advertencias. Pueden hacer que el código 💡 sea más fácil de leer y comprender. También se pueden usar para evitar que se ejecute el código 🛑 (esta técnica se practica al depurar código).
 
-В JavaScript есть несколько способов указать комментарии 🗣️ в коде.
+En JavaScript, hay varias formas de incluir comentarios 🗣️ en tu código.
 
-## Видео
+## Video
 
 <YouTube videoId="zCvKMw5QHRw" /> 
 
-## Однострочный комментарий
+## Comentario de una sola línea
 
-![Slash](https://media.giphy.com/media/bKXMS0NjXoyaY/giphy.gif)
+![Barra oblicua](https://media.giphy.com/media/bKXMS0NjXoyaY/giphy.gif)
 
-Первый 1️⃣ способ `// комментарий` 🗣️ в этом случае весь текст 📜 в строке после двойного слэша будет комментарием 🗣️ . Когда интерпретатор видит два 2️⃣ слэша подряд `//`, он сразу понимает, что всё, что идёт далее до конца строки, можно смело проигнорировать. Пока не обращайте внимание на синтаксис 📖 кода, с ним мы детально познакомимся чуть позже.
+La primera 1️⃣ manera `//comentario` 🗣️ en este caso, todo el texto 📜 en la línea después de la doble barra inclinada será un comentario 🗣️. Cuando el intérprete ve dos barras diagonales de 2️⃣ seguidas `//`, inmediatamente entiende que todo lo que viene más allá del final de la línea se puede ignorar de manera segura. Ignora la sintaxis del código 📖 por ahora, lo veremos en detalle un poco más tarde.
 
 ```jsx live
 function learnJavaScript() {
-  // Это комментарий в строке
+  // Este es un comentario de línea
+  var hello = 'Hello world!!!'
+
+  return hello
+}
+```
+## Comentario de varias líneas
+
+![Comentarios](https://media.giphy.com/media/UevalSWg5twQeqpc8Q/giphy.gif)
+
+La segunda forma 2️⃣ es `/* */`, que es más flexible que la primera 1️⃣. Tan pronto como el intérprete ve `/*`, piensa: "Sí, así que hasta que vea `*/`, ¡puedo ignorar cualquier cosa aquí!"
+Por ejemplo, puedes usarlo en una línea 1️⃣ 👇:
+
+```jsx live
+function learnJavaScript() {
+  /* este es un comentario de una sola linea */
   var hello = 'Hello world!!!'
 
   return hello
 }
 ```
 
-## Многострочный комментарий
-
-![Coments](https://media.giphy.com/media/UevalSWg5twQeqpc8Q/giphy.gif)
-
-Второй 2️⃣ способ - это `/* */`, такой способ более гибок, чем первый 1️⃣ . Как только интерпретатор видит `/*`, он думает: "Ага, значит, пока я не увижу `*/`, то могу ни на что здесь не обращать никакого внимания!"
-Например, вы можете использовать его в одной 1️⃣ строке 👇 :
+O puedes hacer un comentario de varias líneas 🗣️ como se muestra aquí 👇:
 
 ```jsx live
 function learnJavaScript() {
-  /* Это однострочный комментарий */
+  /* Este comentario ocupa varias líneas.
+     Tenga en cuenta que no tiene que romper un comentario hasta que lo haya terminado. */
   var hello = 'Hello world!!!'
-
+  /* Escribe tu comentario aqui */
   return hello
 }
 ```
 
-Либо вы можете сделать многострочный комментарий 🗣️ , как показано здесь 👇 :
+## Comentar en medio del código.
 
-```jsx live
-function learnJavaScript() {
-  /*Этот комментарий располагается на нескольких линиях. 
-     Обратите внимание, что вам не нужно обрывать комментарий, пока вы его не закончите*/
-  var hello = 'Hello world!!!'
-  /* Напишите здесь свой комментарий */
-  return hello
-}
-```
+![Entre](https://media.giphy.com/media/fnjIiBNo38IHS/giphy.gif)
 
-## Комментарий посреди кода
-
-![Among](https://media.giphy.com/media/fnjIiBNo38IHS/giphy.gif)
-
-Также, если пожелаете, то вы можете использовать такое комментирование 🗣️ посреди строки кода. Хотя это может ухудшить читабельность кода👇 :
+Además, si lo deseas, puedes usar este comentario 🗣️ en medio de una línea de código. Aunque esto puede empeorar la legibilidad del código 👇:
 
 ```jsx live
 function learnJavaScript() {
@@ -79,21 +78,21 @@ function learnJavaScript() {
 }
 ```
 
-Однако есть способы уменьшить потребность в комментариях. Мы можем использовать определенные методы кодирования для уточнения нашего кода, просто используя преимущества языка программирования в наших интересах.
+Sin embargo, hay maneras de reducir la necesidad de comentarios. Podemos usar ciertas técnicas de codificación para refinar nuestro código simplemente aprovechando el lenguaje de programación a nuestro favor.
 
-Это не только облегчает понимание нашего кода, но и помогает улучшить общий дизайн программы!
+¡Esto no solo hace que nuestro código sea más fácil de entender, sino que también ayuda a mejorar el diseño general del programa!
 
-Этот тип кода часто называют самодокументированием.
+Este tipo de código a menudo se denomina autodocumentado.
 
-Это значит что код надо писать так, чтобы, во-первых, с ним, в будущем, удобно было бы работать другим программистам, включая его автора, а во-вторых — с учётом возможности расширения этого кода.
+Esto significa que el código debe estar escrito de tal manera que, en primer lugar, sea conveniente que otros programadores trabajen con él en el futuro, incluido su autor, y en segundo lugar, teniendo en cuenta la posibilidad de expandir este código.
 
-С комментированием кода все и прозвучал звонок на перемену🔔 .
+Al comentar el código, todo estaba llamado a cambiar🔔.
 
 ![Comments](https://media.giphy.com/media/SvuRLwWT0EoeErwPvB/giphy.gif)
 
 ## React Native
 
-Пример того, где еще мы можем использовать комментарии в реальном `React Native` проекте. Вдруг нам нужно будет скрыть некоторый код. Для этого нам нужно обернуть его в комментарии. Обратите внимание на то, что блок с комментариями работал его необходимо завернуть в фигурные скобки, иначе библиотека `React` не поймет, что это JavaScript выражение - это специфика синтаксиса `JSX` который мы изучим по курсу позже. Попробуйте раскомментировать код и после закомментировать его обратно.
+Un ejemplo de dónde más podemos usar comentarios en un proyecto `React Native` real. De repente necesitaremos esconder algún código. Para hacer esto, necesitamos envolverlo en un comentario. Tenga en cuenta que el bloque con comentarios funcionó, debe estar entre llaves, de lo contrario, la biblioteca `React` no entenderá que esta es una expresión de JavaScript; esta es una especificidad de la sintaxis `JSX`, que estudiaremos en el curso más tarde. Intente descomentar el código y luego vuelva a comentarlo.
 
 ```SnackPlayer name=index.js
 import * as React from 'react'
@@ -109,75 +108,75 @@ const App = () => (
 export default App
 ```
 
-## Проблемы?
+## ¿Problemas?
 
 ![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
 
-Пишите в [Discord](https://discord.gg/6GDAfXn) или телеграмм [чат](https://t.me/jscampapp), а также подписывайтесь на наши [новости](https://t.me/javascriptapp)
+Escribe en [Discord](https://discord.gg/6GDAfXn) o Telegram [chat](https://t.me/jscampapp) y suscríbete a nuestras [noticias](https://t.me/javascript).
 
 ![JavaScript Camp](/img/bandlink.png)
 
 
-## Вопросы:
+## Preguntas:
 
 ![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
 
-Для кого предназначены комментарии?
+¿Para quién son los comentarios?
 
-1. Человек
-2. Консоль
-3. Интерпретатор JavaScript
+1. persona
+2. Consola
+3. Intérprete de JavaScript
 
-Для чего используются комментарии?
+¿Para qué sirven los comentarios?
 
-1. Добавление подсказок, заметок, предложений
-2. Для выполнения запросов
-3. Для предотвращения выполнения кода
+1. Agrega pistas, notas, sugerencias
+2. Para cumplir con las solicitudes
+3. Para evitar la ejecución de código
 
-Какого из способов указания комментария в коде JavaScript не существует?
+¿Qué forma de especificar un comentario en código JavaScript no existe?
 
 1. `(' ')`
 2. `//`
 3. `/* */`
 
-Как отключить любое количество строк кода?
+¿Cómo deshabilitar cualquier número de líneas de código?
 
-1. Написать комментарий посреди кода
-2. Обернуть код в комментарий
-3. Использовать команду `console.log`
+1. Escribe un comentario en medio del código.
+2. Envuelve el código en un comentario
+3. Usa el comando `console.log`
 
-Интерпретатор JavaScript \_\_\_\_ любые найденные комментарии.
+Intérprete de JavaScript \_\_\_\_ cualquier comentario encontrado.
 
-1. Выполняет
-2. Игнорирует
-3. Компилирует
+1. Realiza
+2. Ignora
+3. Compila
 
-Какой символ обозначает однострочный комментарий?
+¿Cuál es el símbolo para un comentario de una sola línea?
 
 1. `//`
 2. `\\`
 3. `||`
 
-Какие символы необходимо ввести, чтобы начать комментарий блока?
+¿Qué caracteres se deben ingresar para iniciar un comentario de bloque?
 
 1. `/*`
 2. `*\\`
 3. `//`
 
-Какой термин относится к коду, который имеет полезные имена переменных и описательных имен функций, чтобы разработчику было легко понять цель кода, когда он его читает (без особой необходимости в пояснительных комментариях)?
+¿Qué término se refiere al código que tiene nombres útiles de variables y nombres de funciones descriptivos para que sea fácil para el desarrollador comprender el propósito del código cuando lo lee (sin mucha necesidad de comentarios explicativos)?
 
-1. Самодокументирование
-2. Документирование
-3. Рукопись
+1. Autodocumentación
+2. Documentación
+3. Manuscrito
 
-Для того чтобы понять, на сколько вы усвоили этот урок, пройдите тест в [мобильном приложении](http://onelink.to/njhc95) нашей школы по этой теме или в нашем [телеграм боте](https://t.me/javascriptcamp_bot).
+Para comprender cuánto ha aprendido esta lección, realice una prueba en la [aplicación móvil](http://onelink.to/njhc95) de nuestra escuela sobre este tema o en nuestro [bot de Telegram](https://t.me/javascriptcamp_bot).
 
 ![JS Camp](/img/app.jpg)
 
-## Ссылки:
+## Enlaces:
 
 1. [MDN web docs](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Lexical_grammar)
-2. [Код для подростков: прекрасное руководство по программированию для начинающих, том 1: Javascript - Jeremy Moritz ](https://www.amazon.com/Code-Teens-Beginners-Programming-Javascript-ebook/dp/B07FCTLVPC)
+2. [Código para adolescentes: la gran guía de programación para principiantes Volumen 1: Javascript - Jeremy Moritz](https://www.amazon.com/Code-Teens-Beginners-Programming-Javascript-ebook/dp/B07FCTLVPC)
 3. [JavaScript.ru](https://learn.javascript.ru/types)
 
 ## Contributors ✨

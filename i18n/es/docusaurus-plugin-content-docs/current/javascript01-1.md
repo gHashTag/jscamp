@@ -8,35 +8,35 @@ import YouTube from 'react-youtube'
 
 ![javascript bot](/img/javascript/JSBot.jpg)
 
-С помощью [этого Telegram бота](https://t.me/javascriptcamp_bot) вы сможете протестировать свои знания по основам JavaScript.
+Con [este bot de Telegram](https://t.me/javascriptcamp_bot) puede probar su conocimiento de los fundamentos de JavaScript.
 
 ![javascript bot](/img/javascript/telegrambot.jpg)
 
-Мы используем вопросы, которые взяли из 29 тем [нашего курса](https://www.jscamp.app/docs/javascript01/) по основам JavaScript. Подробней [о нас](https://www.jscamp.app/ru/docs/javascript00/) можно почитать в прошлой публикации.
-В результате ответа на все вопросы тебя ждет оценка твоего уровня знаний.
+Usamos preguntas que se toman de 29 temas [de nuestro curso](https://www.jscamp.app/docs/javascript01/) sobre los fundamentos de JavaScript. Se pueden encontrar más detalles [sobre nosotros](https://www.jscamp.app/ru/docs/javascript00/) en la publicación anterior.
+Como resultado de responder a todas las preguntas, recibirá una evaluación de su nivel de conocimiento.
 
 ![javascript bot result](https://miro.medium.com/max/1400/1*KCe76zg2M56lT-234Xi1NA.png)
 
 ## Telegraph.js
 
-Наш бот реализован на фреймворке [Telegraph.js](https://telegraf.js.org/)
+Nuestro bot está implementado en el marco [Telegraph.js](https://telegraf.js.org/)
 
 ![Telegraph.js](/img/javascript/telegraf.jpg)
 
 
 ## Internationalization (i18n)
 
-[Сейчас бот](https://github.com/gHashTag/javascriptcamp_bot/tree/heroku/src/quiz) общается на английском и русском языках, но ты можешь отправить pull request на своем родном.
+[Ahora el bot](https://github.com/gHashTag/javascriptcamp_bot/tree/heroku/src/quiz) se comunica en inglés y ruso, pero puede enviar una solicitud de incorporación de cambios en su idioma nativo.
 
 ![i18n](/img/javascript/i18n.png)
 
-## Что дальше?
+## Que sigue?
 
-Далее мы планируем реализовать тестирование по TypeScript, React Native, AWS Amplify, поэтому подпишись на наш [Twitter](https://twitter.com/jscamp_bot), чтобы следить за новостями.
+A continuación, planeamos implementar pruebas en TypeScript, React Native, AWS Amplify, así que suscríbase a nuestro [Twitter](https://twitter.com/jscamp_bot) para seguir las noticias.
 
-![JavaScript Camp](/img/bandlink.png)
+![Campamento JavaScript](/img/bandlink.png)
 
 
-Бот бесплатный, но вы можете поддержать наш стартап через [Patreon](https://www.patreon.com/javascriptcamp)
+El bot es gratuito, pero puedes apoyar nuestra puesta en marcha a través de [Patreon](https://www.patreon.com/javascriptcamp)
 
 [![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)

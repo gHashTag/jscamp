@@ -8,158 +8,158 @@ import YouTube from 'react-youtube'
 
 [![serverServerlesskiy](/img/javascript/headers/00.jpg)](https://www.instagram.com/serverserverlessky/)
 
-> «Мы прогнозируем, что использование [serverless](https://www.jscamp.app/en/docs/amplify-01) будет стремительно расти. Мы также прогнозируем, что локальные гибридные облачные приложения со временем будут сокращаться, хотя некоторые развертывания могут сохраняться из-за нормативных ограничений и правил управления данными.
+> “Predecimos que el uso [serverless](https://www.jscamp.app/en/docs/amplify-01) se disparará. También predecimos que las aplicaciones de nube híbrida en las instalaciones disminuirán con el tiempo, aunque algunas implementaciones pueden persistir debido a la administración de datos y las restricciones regulatorias.
 
-> Бессерверные вычисления станут стандартной вычислительной парадигмой в эпоху облаков, в значительной степени, заменив серверные вычисления и тем самым закрыв эру клиент-сервер."
+> La informática sin servidor se convertirá en el paradigma informático estándar en la era de la nube, reemplazando en gran medida a la informática de servidor y, por lo tanto, poniendo fin a la era cliente-servidor”.
 
 > [Cloud Programming Simplified: A Berkeley View on Serverless Computing](https://www2.eecs.berkeley.edu/Pubs/TechRpts/2019/EECS-2019-3.pdf), February 10, 2019
 
-Из этого прогноза очевиден спрос на serverless технологии, а значит и на обучающие этим технологиям ресурсы. Поэтому мы организовали школу программирования, где обучаем serverless технологиям AWS Amplify, а также подготавливаем к ним обучая [английскому языку по Эмоджи](https://www.jscamp.app/docs/blogging-01/U), [JavaScript](https://www.jscamp.app/ru/docs/javascript01), [React Native](https://www.jscamp.app/ru/docs/start000) и [TypeScript](https://www.jscamp.app/ru/docs/typescript00).
+De esta previsión se desprende claramente que existe una necesidad de tecnologías serverless y, por tanto, de recursos para la formación en estas tecnologías. Es por eso que creamos una escuela de codificación donde enseñamos y nos preparamos para las tecnologías sin servidor de AWS Amplify al enseñar [Inglés con emoji](https://www.jscamp.app/docs/blogging-01/U), [JavaScript](https://www.jscamp.app/en/docs/javascript01), [React Native](https://www.jscamp.app/en/docs/start000) y [TypeScript](https://www.jscamp.app/ru/docs/typescript00).
 
 ![javaScript](https://media.giphy.com/media/ln7z2eWriiQAllfVcn/giphy.gif)
 
-Для этого мы создали мобильное приложение [JS Camp](http://onelink.to/njhc95), сайт [JSCamp.app](https://www.jscamp.app) и [YouTube канал](https://www.youtube.com/channel/UCR8tIQm7pu8MlPewAlUnzQw), где для обучения мы используем 3D аватаров доступных по умолчанию в [Amazon Sumerian](https://aws.amazon.com/ru/sumerian/), благодаря которым можно без труда создавать увлекательные 3D‑интерфейсы. Кроме того, они интегрированы с сервисами [AWS](https://aws.amazon.com), благодаря чему предоставляют удобный доступ к машинному обучению, чат-ботам, выполнению кода и не только. С помощью этого инструмента мы можем создавать видео, обучающие материалы на популярных языках мира и публиковать их на [нашем сайте](https://www.jscamp.app) и на [YouTube канале](https://www.youtube.com/channel/UCR8tIQm7pu8MlPewAlUnzQw).
+Para ello, hemos creado una aplicación móvil [JS Camp](http://onelink.to/njhc95), un sitio web [JSCamp.app](https://www.jscamp.app) y un [canal de YouTube](https://www.youtube.com/channel/UCR8tIQm7pu8MlPewAlUnzQw), donde para el entrenamiento usamos avatares 3D disponibles por defecto en [Amazon Sumerian](https://aws.amazon.com/ru/sumerian/), gracias a que puede crear fácilmente interfaces 3D fascinantes. También se integran con los servicios de [AWS](https://aws.amazon.com), lo que le brinda fácil acceso al aprendizaje automático, chatbots, ejecución de código y más. Con esta herramienta, podemos crear videos, tutoriales en idiomas populares del mundo y publicarlos en [nuestro sitio web](https://www.jscamp.app) y [canal de YouTube](https://www.youtube.com/channel/UCR8tIQm7pu8MlPewAlUnzQw).
 
-## Видео
+## Video
 
 <YouTube videoId="z5gO1PzyLwU" />
 
-## Цель программы
+## Propósito del programa
 
-Подготовить к курсу по мобильной разработке в стеке React Native / TypeScript / AWS Amplify и к сертификации в [AWS Certification](https://aws.amazon.com/ru/certification/), где в процессе подготовки, вы получите широкий набор экспертных знаний, ресурсов и программ. Мы поможем вам эффективно подтвердить свой опыт в облачных технологиях и в мобильной разработке, нужной каждому бизнесу в наше время.
+Prepárese para un curso de desarrollo móvil React Native / TypeScript / AWS Amplify y para la certificación en [AWS Certification](https://aws.amazon.com/ru/certification/), donde en el proceso de preparación, recibirá una amplia variedad de conocimientos expertos, recursos y programas. Lo ayudaremos a demostrar de manera efectiva su experiencia en la nube y el desarrollo móvil que todas las empresas necesitan en estos días.
 
 ![AWS](https://entrackr.com/wp-content/uploads/2018/05/Amazon_smart_home_2.gif)
 
 ## JavaScript Camp - JS Camp
 
-На создание нашего [онлайн курса по JavaScript](https://www.jscamp.app/ru/docs/javascript01), на популярных языках мира, нас вдохновила книга [Код для подростков: JavaScript - Jeremy Moritz](https://www.amazon.com/Code-Teens-Beginners-Programming-Javascript-ebook/dp/B07FCTLVPC). Уникальность книги в том, что она адаптирована для изучения детьми своей простотой изложения, ее недостаток лишь в том, что количество изложенных в ней тем не достаточно для создания реальных проектов. Поэтому мы поставили перед собой задачу - Создать книгу "JavaScript for Kids" c подготовкой к изучению курса по мобильной разработке на библиотеке [React Native](https://reactnative.dev). Мы создали курс из 29 тем, который сейчас проходят даже школьники с 10-ти лет. Как вы считаете получилось ли у нас решить эту задачу? 
+Nuestro [curso de JavaScript en línea](https://www.jscamp.app/en/docs/javascript01), en idiomas populares del mundo, se inspiró en el libro [Código para adolescentes: JavaScript - Jeremy Moritz](https://www.amazon.com/Code-Teens-Beginners-Programming-Javascript-ebook/dp/B07FCTLVPC). La singularidad del libro es que está adaptado para el estudio de los niños por su sencillez de presentación, su único inconveniente es que la cantidad de temas presentados en él no es suficiente para crear proyectos reales. Por lo tanto, nos propusimos la tarea: crear un libro "JavaScript para niños" con preparación para estudiar el curso sobre desarrollo móvil en la biblioteca [React Native](https://reactnative.dev). Hemos creado un curso de 29 temas, que ahora están tomando incluso escolares desde los 10 años. ¿Cómo crees que logramos resolver este problema?
 
 ![JavaScript](https://media.giphy.com/media/dC3EHvqJ61hNReoxMV/giphy.gif)
 
-На данный момент времени в [нашем мобильном приложении](http://onelink.to/njhc95) реализованы тесты по английскому языку и JavaScript. Для реализации этого кейса мы использовали сервисы [AWS Amplify](https://aws.amazon.com). Подробней о том как мы реализовали сервис аутентификации можно почитать [здесь](https://www.jscamp.app/docs/auth1-01), а также как мы подключили сервис App Sync [здесь](https://www.jscamp.app/docs/amplify-03).
+Actualmente, [nuestra aplicación móvil](http://onelink.to/njhc95) tiene cuestionarios en inglés y JavaScript. Para implementar este caso, utilizamos los servicios de [AWS Amplify](https://aws.amazon.com). Puede leer más sobre cómo implementamos el servicio de autenticación [aquí](https://www.jscamp.app/docs/auth1-01), así como también cómo conectamos el servicio App Sync [aquí](https://www.jscamp.app/docs/amplify-03).
 
-## App Sync
+## AppSync
 
-[AWS AppSync](https://www.jscamp.app/ru/docs/amplify-03) упрощает разработку приложений, позволяя создать универсальный API для безопасного доступа к данным, их изменения и объединения данных из нескольких источников. AppSync представляет собой управляемый сервис, который использует [GraphQL](https://graphql.org), чтобы приложения могли без труда получать только необходимые им данные.
+[AWS AppSync](https://www.jscamp.app/en/docs/amplify-03) simplifica el desarrollo de aplicaciones mediante la creación de una API universal para acceder, modificar y fusionar de forma segura datos de múltiples fuentes. AppSync es un servicio administrado que utiliza [GraphQL](https://graphql.org) para facilitar que las aplicaciones obtengan solo los datos que necesitan.
 
 ## GraphQL
 
-Это спецификация API, язык запросов для API и среда выполнения для выполнения этих запросов с вашими данными. Он имеет некоторые сходства с REST и является лучшей заменой REST. [GraphQL](https://graphql.org) был представлен Facebook в 2015 году, хотя он использовался внутри компании с 2012 года.
+Es la especificación de la API, el lenguaje de consulta para la API y el tiempo de ejecución para realizar esas consultas en sus datos. Tiene algunas similitudes con REST y es un mejor reemplazo para REST. [GraphQL](https://graphql.org) fue introducido por Facebook en 2015, aunque ha estado en uso internamente desde 2012.
 
 ![GraphQL](https://fundor333.com/post/2018/graphql-and-working-with-it/graphql-request.gif)
 
-## Английский по эмодзи
+## Inglés por emoji
 
-Так как английский язык является основой языков программирования, а в России, откуда я родом, это не родной язык, то мы понимая это, подготовили программу по изучению английского языка в игровой форме по эмодзи. Эмодзи на столько вошли в нашу жизнь, что про них снимают [фильмы](https://youtu.be/r8pJt4dK_s4). На данный момент в курсе представлено 700 слов, которые разделены на 12 тем: alphabet, numbers, food and drink, animals, activity, clothes, travel, objects, symbols, time, people, nature. Курс также подходит тем, кто хочет хорошо ориентироваться во всей палитре эмодзи для создания эмоциональных постов в социальных медиа. Видео плейлист по этой теме доступен [здесь](https://www.jscamp.app/docs/blogging-01/).
+Dado que el inglés es la base de los lenguajes de programación, y en Rusia, de donde vengo, este no es mi idioma nativo, al darnos cuenta de esto, hemos preparado un programa para aprender inglés de una manera lúdica usando emoji. Los emoji han entrado tanto en nuestras vidas que se hacen sobre ellos [películas](https://youtu.be/r8pJt4dK_s4). Por el momento, el curso contiene 700 palabras, que se dividen en 12 temas: alfabeto, números, comida y bebida, animales, actividad, ropa, viajes, objetos, símbolos, tiempo, personas, naturaleza. El curso también es adecuado para aquellos que quieren estar bien versados ​​en toda la paleta de emoji para crear publicaciones emocionales en las redes sociales. Una lista de reproducción de videos sobre este tema está disponible [aquí](https://www.jscamp.app/docs/blogging-01/).
 
 ![Emoji](https://media.giphy.com/media/3EkXc1k1q5kk0/giphy.gif)
 
 ## React Native
 
-Кто не знает [React Native](https://reactnative.dev) - это библиотека по созданию интерфейсов под iOS и Android, AR/VR и создания сайтов от Facebook. Как вы считаете получилось ли у нас решить эту задачу? Напишите мне об этом лично в [Discord](https://discord.gg/6GDAfXn). Мы создали курс из 29 тем, который сейчас проходят даже школьники с 10-ти лет. С React Native - прямая дорога в мобильную разработку. Наш курс ориентирован для тех, кто совсем с нуля и лучше начать с нами, так как сэкономите время и вам не потребуется изучать HTML и CSS, набивая руку на сайтах. C React Native мы верстаем UI интерфейсы на JS объектах, поэтому с одним знанием JavaScript можно ворваться с нами по прямой сразу в мобильную разработку.
-В этом курсе собраны знания, которые минимум необходимы для создания мобильных приложений на библиотеке React Native c AWS Amplify.
+Quién no lo sabe [React Native](https://reactnative.dev) es una biblioteca para crear interfaces para iOS y Android, AR/VR y crear sitios desde Facebook. ¿Cómo crees que logramos resolver este problema? Escríbame personalmente en [Discord](https://discord.gg/6GDAfXn). Hemos creado un curso de 29 temas, que ahora están tomando incluso escolares desde los 10 años. Con React Native: un camino directo al desarrollo móvil. Nuestro curso está dirigido a aquellos que están completamente desde cero y es mejor comenzar con nosotros, ya que ahorrará tiempo y no necesitará aprender HTML y CSS para obtener sitios. Con React Native, construimos interfaces de interfaz de usuario en objetos JS, por lo que con solo el conocimiento de JavaScript, puede iniciarse en el desarrollo móvil de inmediato con nosotros.
+Este curso contiene los conocimientos mínimos necesarios para crear aplicaciones móviles basadas en la biblioteca React Native con AWS Amplify.
 
 ![ReactNative](https://media.giphy.com/media/eNAsjO55tPbgaor7ma/giphy.gif)
 
 ## AWS Amplify
 
-[AWS Amplify](https://aws.amazon.com/en/amplify/) – это набор средств и сервисов, которые могут совместно или по отдельности использовать разработчики веб-интерфейсов и мобильных приложений для создания масштабируемых комплексных приложений на базе AWS. С помощью Amplify можно настраивать серверные части приложений и подключать приложения за считаные минуты, развертывать статические веб-приложения несколькими щелчками мыши и легко управлять содержимым приложений за пределами консоли AWS.
-Amplify поддерживает популярные веб-платформы, в частности JavaScript, React, Angular, Vue, Next.js, а также мобильные платформы, в частности Android, iOS, React Native, Ionic, Flutter (предварительная версия). Быстрый выход на рынок с AWS Amplify.
+[AWS Amplify](https://aws.amazon.com/en/amplify/) es un conjunto de herramientas y servicios que los desarrolladores web y móviles pueden compartir o utilizar para crear aplicaciones integrales escalables en AWS. Con Amplify, puede descubrir backends de aplicaciones y aplicaciones en minutos, implementar aplicaciones web implementadas con unos pocos clics y administrar fácilmente el contenido de las aplicaciones fuera de la consola de AWS.
+Amplify admite plataformas web populares como JavaScript, React, Angular, Vue, Next.js y plataformas móviles como Android, iOS, React Native, Ionic, Flutter (versión preliminar). Llegue al mercado rápidamente con AWS Amplify.
 
-## TypeScript
+## Mecanografiado
 
-JavaScript изначально создавался, чтобы делать веб-страницы живыми. Из-за простоты его использования, он завоевал популярность и его начали использовать практически на всех платформах. Код JavaScript строится на скриптах, которые по задумке должны быть не большими и быстрыми. Разработчики не задумывались, что на JavaScript будут писать приложения с большим количеством кода. В связи с чем у больших приложений, написанных на JavaScript возникают проблемы. Вот некоторые из них:
+JavaScript se creó originalmente para hacer que las páginas web cobraran vida. Debido a su facilidad de uso, se apoderó de la web y comenzó a usarse prácticamente en Internet.El código JavaScript está construido sobre scripts, que, por diseño, no deben ser anchos y rápidos. Los desarrolladores no pensaron en el hecho de que las aplicaciones con un código promedio grande están escritas en JavaScript. Hay problemas con aplicaciones grandes escritas en JavaScript. Sobre algunos de ellos:
 
-1. Из-за интерпретируемости языка узнать об ошибке можно только после выполнения кода;
-2. Сложность использования практик объектно-ориентированного программирования;
-3. Динамическая типизация.
+1. Debido a la interpretabilidad del lenguaje, solo puede averiguarlo después de ejecutar el código;
+2. La complejidad de utilizar las prácticas de la programación orientada a objetos;
+3. Mecanografía dinámica.
 
-Для решения таких проблем был создан язык программирования TypeScript.
+Para resolver tales problemas, se creó el lenguaje de programación TypeScript.
 
 ![TypeScript](https://serokell.io/files/0u/0ufu1q21.js-ts.jpg)
 
-TypeScript - язык программирования, представленный Microsoft в 2012 году и позиционируемый как средство разработки веб-приложений, расширяющее возможности JavaScript. TypeScript является обратно совместимым с JavaScript и компилируется в последний. Фактически, после компиляции программу на TypeScript можно выполнять в любом современном браузере или использовать совместно с серверной платформой Node.js. Код на TypeScript выглядит почти так же, как и код на JS и если у вас есть опыт frontend-разработки, изучить TypeScript достаточно просто. Особенно учитывая, что вы можете писать JS-код прямо в TS-скриптах. Поэтому мы решили [преподавать](https://www.jscamp.app/ru/docs/typescript00) его в нашем it-лагере JS Camp.
+TypeScript es un lenguaje de programación introducido por Microsoft en 2012 y posicionado como una herramienta de desarrollo de aplicaciones web que amplía las capacidades de JavaScript. TypeScript es compatible con versiones anteriores de JavaScript y se compila con JavaScript. De hecho, una vez compilado, un programa TypeScript puede ejecutarse en cualquier navegador moderno o usarse junto con el marco del lado del servidor Node.js. El código TypeScript tiene casi el mismo aspecto que el código JS, y si tiene experiencia con el desarrollo front-end, aprender TypeScript es bastante fácil. Especialmente teniendo en cuenta que puede escribir código JS directamente en scripts TS. Así que decidimos [aprender](https://www.jscamp.app/en/docs/typescript00) en nuestro JS Camp.
 
-## Музыкальный альбом
+## Álbum de música
 
-Курс по JS состоит из статей, видео тутариалов, подкастов и музыкальных треков. Мы создали первый в истории музыкальный альбом из 31 трека по языку программирования JavaScript, который доступен на всех музыкальных площадках: [iTunes](https://music.apple.com/ru/playlist/js-ru/pl.u-2dmLuaMVMW6), [Spotify](https://open.spotify.com/album/7EERTMekG9NPv6BCHPOCAU?si=dXCVmbA2QlSD2IVEuWb3YA), [Yandex Music](https://music.yandex.ru/album/14321761), [Vk](https://vk.com/music/album/-2000606760_10606760_436eb2cad88220d169), [Ok](https://ok.ru/music/album/122915405411131), [SoundCloud](https://soundcloud.com/serverlesskiy/sets/javascript) на русском языке. Приглашаю исполнить его и на твоем, отличным от русского, родном языке.
+El curso de JS consta de artículos, tutoriales en vídeo, podcasts y pistas de música. Hemos creado el primer álbum de música de 31 pistas en el lenguaje de programación JavaScript, que está disponible en todas las plataformas de música: [iTunes](https://music.apple.com/ru/playlist/js-ru/pl.u-2dmLuaMVMW6), [Spotify](https://open.spotify.com/album/7EERTMekG9NPv6BCHPOCAU?si=dXCVmbA2QlSD2IVEuWb3YA), [Yandex.Music](https://music.yandex.ru/album/14321761), [Vk](https://ok.ru/music/album/-2000606760_10606760_436eb2cad88220d169), [OK](https://ok.ru/music/album/122915405411131), [SoundCloud](https://soundcloud.com/serverlessskiy/conjuntos/javascript) en ruso. Los invito a hacer esto en su idioma nativo que no sea ruso.
 
-![@serverSerrverlesskiy](/img/jscamp/music.jpg)
+![@serverServerlessskiy](/img/jscamp/music.jpg)
 
-## Значки
+## Iconos
 
-В крайнем обновлении нашего приложения вышла система лояльности пользователей. Теперь все кто прошли экзамены по темам English, JavaScript, ReactNative, TypeScript, AWS Amplify получают соответствующие значки в нашем приложении JS Camp, которое в бесплатном доступе для iOS и Android можно скачать [здесь](http://onelink.to/njhc95). Правда тесты пока доступны только на English и JavaScript, но в этом году будут по всем темам.
+En la última actualización de nuestra aplicación, se estrenó un sistema de fidelización de usuarios. Ahora, todos los que aprobaron los exámenes en inglés, JavaScript, ReactNative, TypeScript, AWS Amplify reciben las insignias correspondientes en nuestra aplicación JS Camp, que se puede descargar gratis para iOS y Android [aquí](http://onelink.to/njhc95). Cierto, ahora las pruebas solo están disponibles en inglés y JavaScript, pero este año estarán en todas las materias.
 
 ![Camp](https://media.giphy.com/media/MOQG4QYC2MRSU/giphy.gif)
 
 ## Open Source
 
-Наш проект доступен [Open Source](https://github.com/fullstackserverless/Sumerian), поэтому вы также можете участвовать в его развитии. Мы призываем к переводу [сайта](https://github.com/gHashTag/jscamp) на отличные от английского, русского и китайского языка, поэтому каждый может внести в него свой вклад.
+Nuestro proyecto está disponible [Open Source](https://github.com/fullstackserverless/Sumerian), por lo que tú también puedes participar en su desarrollo. Alentamos la traducción del [sitio web](https://github.com/gHashTag/jscamp) a otros idiomas que no sean inglés, ruso y chino, para que todos puedan contribuir.
 
 ![open source](https://media.giphy.com/media/7FgmaCJgUAMxRWatWB/giphy.gif)
 
-## YouTube сериал
+## Serie de youtube
 
-Мы также запустили видео-сериал на русском языке с участием детей. Если вы хотите заняться развитем своего ребенка с интеграцией его в наш проект на своем родном языке с нашей франшизой, то пишите нам в [Discord](https://discord.gg/6GDAfXn).
+También lanzamos una serie de videos en ruso con la participación de niños. Si desea participar en el desarrollo de su hijo con la integración en nuestro proyecto en su idioma nativo con nuestra franquicia, escríbanos a [Discord](https://discord.gg/6GDAfXn).
 
 <YouTube videoId="H6RmU-Hi0EI" />
 
-## Программа JS Camp
+## Programa de Campamento JS
 
-Офлайн занятия мы начинаем со сборки кубика Рубика и те кто собирал кубик Рубика поступает в первый класс.
+Empezamos las clases offline con el montaje del Cubo de Rubik y los que hayan recogido el Cubo de Rubik entran a primer grado.
 
 <YouTube videoId="k1iAmkolXkU" />
 
 
-💛 Первый класс - JavaScript, учитель Fiona Miller.
+💛 Primer grado - JavaScript por la profesora Fiona Miller.
 
 ![JavaScript](/img/teachers/FionaMiller.jpg)
 
-💚 Второй класс - React Native, разработка и верстка системы атомарных компонентов в мобильных приложениях iOS, Android, а также в системах AR/VR дополненной и виртуальной реальностью с библиотекой от Facebook. Учитель Grace Willie.
+💚 La segunda clase es React Native, desarrollo y maquetación de un sistema de componentes atómicos en aplicaciones móviles para iOS, Android, así como en sistemas AR/VR de realidad virtual y aumentada con librería de Facebook. Profesora de Grace Willie.
 
 ![Grace Willie](/img/teachers/GraceWillie.jpg)
 
-💙 Третий класс - TypeScript, типизация системы атомарных компонентов, учитель Maya Lakshmi.
+💙 Tercera clase - TypeScript, mecanografía del sistema de componentes atómicos, profesora Maya Lakshmi.
 
 ![Maya Lakshmi](/img/teachers/MayaLakshmi.jpg)
 
-💜 Четвертый класс - AWS Amplify, бессерверные вычисления на функциях AWS Amplify. Учитель Server Serverlesskiy.
+💜 La cuarta clase es AWS Amplify, computación sin servidor basada en funciones de AWS Amplify. Servidor Serverlesskiy profesor.
 
 ![Server Serverlesskiy](/img/teachers/ServerServerlesskiy.jpg)
 
-🤍 Дополнительный курс видео блоггера - пилотирование обучающих аватаров для наших обучающих видео курсов, хостов технологии AWS Sumerian. Учитель Preston Wild.
+🤍 Curso de blogger en video opcional: evaluación de avatares de tutoriales para nuestros cursos en video de tutoriales, anfitriones tecnológicos de AWS Sumerian. Profesor Preston Wild.
 
 ![Preston Wild](/img/teachers/PrestonWild.jpg)
 
-## Автор курса
+## Autor del curso
 
-Автор курса по JavaScript - [Server Serverlesskiy](https://twitter.com/koshasuperstar), является создателем первого в рунете учебного курса по [React Native](https://jscamp.app/docs/start000), а также первый русский блогер-программист в программе [AWS Comunity Builders](https://aws.amazon.com/ru/developer/community/community-builders/) от Amazon.
+El autor del curso JavaScript - [Server Serverlesskiy](https://twitter.com/koshasuperstar), es el creador del primer curso de capacitación en RuNet [React Native](https://jscamp.app/docs/start000) , así como el primer bloguero programador ruso en el programa [AWS Community Builders](https://aws.amazon.com/ru/developer/community/community-builders/) de Amazon.
 
-## Отзывы
+## Reseñas
 
 [![Tvit](/img/javascript/twit.png)](https://twitter.com/dabit3/status/1339622771001843716)
 
-### Перевод:
+### Traducción:
 
-Это музыкальное видео по AWS Community Builder совершенно другого уровня 🔥 😅
+Este video musical de AWS Community Builder está en otro nivel 🔥 😅
 
-Это курс по мобильной разработке в стеке React Native / TypeScript / AWS Amplify и для сертификации в AWS Certification. Стоит проверить!
+Este es un curso de desarrollo móvil para la pila React Native / TypeScript / AWS Amplify y para la certificación de AWS. ¡Vale la pena echarle un vistazo!
 
-## Процесс обучения
+## Proceso de aprendizaje
 
-Обучение проходит в приложениях: [YouTube](https://www.youtube.com/c/JavaScriptCampRU), [Discord](https://discord.gg/6GDAfXn), [Twitch](https://www.twitch.tv/javascriptcamp), [TikTok](https://vm.tiktok.com/ZSvrWxFB), [Instagram](https://www.instagram.com/javascriptcamp), [Telegram](https://t.me/javascriptcamping), [Vkontakte](https://vk.com/javascriptcamp), [Одноклассники](https://ok.ru/group/58601728245977), [Linkedin](https://www.linkedin.com/in/raoffonom) и [Facebook](https://www.facebook.com/javascriptcamp).
+El entrenamiento se lleva a cabo en las aplicaciones: [YouTube](https://www.youtube.com/c/JavaScriptCampRU), [Discord](https://discord.gg/6GDAfXn), [Twitch](https://www.twitch.tv/javascriptcamp), [TikTok](https://vm.tiktok.com/ZSvrWxFB), [Instagram](https://www.instagram.com/javascriptcamp), [Telegram](https://t.me/javascriptcamping), [Vkontakte](https://vk.com/javascriptcamp), [Odnoklassniki](https://ok.ru/group/58601728245977), [Linkedin](https://www.linkedin.com/in/raoffonom) y [Facebook](https://www.facebook.com/javascriptcamp).
 
 ![How much](https://media.giphy.com/media/VHnwACS3XAN7SZyx6O/giphy.gif)
 
 
-Для того чтобы понять, на сколько вы усвоили этот урок, пройдите тест в [мобильном приложении](http://onelink.to/njhc95) нашей школы по этой теме или в нашем [телеграм боте](https://t.me/javascriptcamp_bot).
+Para comprender cuánto ha aprendido esta lección, realice una prueba en la [aplicación móvil](http://onelink.to/njhc95) de nuestra escuela sobre este tema o en nuestro [bot de Telegram](https://t.me/javascriptcamp_bot).
 
 ![JS Camp](/img/app.jpg)
 
 ![JavaScript Camp](/img/bandlink.png)
 
-## Оплата
+## Pago
 
-Обучение бесплатно, но вы можете поддержать наш стартап через [Patreon](https://www.patreon.com/bePatron?u=31769291).
+La educación es gratuita, pero puedes apoyar nuestra puesta en marcha a través de [Patreon](https://www.patreon.com/bePatron?u=31769291).
 
 [![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
