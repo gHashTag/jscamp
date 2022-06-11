@@ -1,36 +1,36 @@
 ---
 id: javascript05
-title: Ошибки
-sidebar_label: Ошибки
+title: Errores
+sidebar_label: Errores
 ---
 
 import YouTube from 'react-youtube'
 
 ![@serverSerrverlesskiy](/img/javascript/headers/05.jpg)
 
-Вы точно, как и все мы, будете совершать ошибки🙅‍♂️ в коде📟. Программные ошибки🙅‍♂️ называют багами. Баг - означает ошибку🙅‍♂️ в программе💾 или в системе, из-за которой программа выдает неожиданное поведение и, как следствие, результат. Большинство программных ошибок🙅‍♂️ возникают из-за ошибок🙅‍♂️, допущенных разработчиками программы в её исходном коде📟, либо в её дизайне.
+Definitivamente cometerás errores 🙅‍♂️ en el código 📟, como todos nosotros. Los errores de software🙅‍♂️ se llaman errores. Error: significa un error 🙅‍♂️ en el programa 💾 o en el sistema, por lo que el programa produce un comportamiento inesperado y, como resultado, el resultado. La mayoría de los errores de programación 🙅‍♂️ se deben a errores 🙅‍♂️ que cometen los desarrolladores del programa, ya sea en su código fuente 📟 o en su diseño.
 
 ![error](https://media.giphy.com/media/1VT3UNeWdijUSMpRL4/giphy.gif)
 
-В значении «неуловимой технической ошибки🙅‍♂️» слово «жучок» (англ. bug) употреблялось задолго до появления компьютеров🖥️ персоналом телеграфных и телефонных компаний в отношении неполадок с электрооборудованием и радиотехникой. В 1878 году Томас Эдисон писал:
+En el sentido de “error técnico esquivo 🙅‍♂️”, la palabra “bug” (error en inglés) fue utilizada mucho antes de la llegada de las computadoras 🖥️ por el personal de las compañías telefónicas y de telégrafos en relación con problemas con equipos eléctricos y de ingeniería de radio. En 1878 Thomas Edison escribió:
 
-> «Так было со всеми моими изобретениями. 1️⃣ Первый шаг — интуиция, которая приходит как вспышка, затем возникают трудности — устройство отказывается работать, и именно тогда проявляются «жучки» — так называют эти мелкие ошибки и трудности — и требуются месяцы пристального наблюдения, исследований и усилий, прежде чем дело дойдёт до коммерческого успеха или неудачи».
+> “Así fue con todos mis inventos. 1️⃣ El primer paso es la intuición, que llega como un relámpago, luego surgen las dificultades: el dispositivo se niega a funcionar, y es entonces cuando aparecen los "errores", como se llama a estos pequeños errores y dificultades, y se necesitan meses de observación minuciosa, investigación y esfuerzo antes de que llegue al éxito o al fracaso comercial.
 
-Отладка – это процесс поиска и исправления ошибок🙅‍♂️ в скрипте.
+La depuración es el proceso de encontrar y corregir errores 🙅‍♂️ en un script.
 
 [Wikipedia](https://ru.wikipedia.org/wiki/Программная_ошибка🙅‍♂️)
 
-## Видео
+## Video
 
 <YouTube videoId="xJtVop2fAxg" />
 
-## Самые частые ошибки
+## Errores más comunes
 
 ![Teacher](https://media.giphy.com/media/27c3zdaY6eeIAwp7Qi/giphy.gif)
 
-Надеюсь вы уже успели встретить свои первые ошибки🙅‍♂️ в процессе написания кода. Почему надеюсь? Потому что ошибки🙅‍♂️ - это наши учителя, которые показывают нам, что мы делаем неправильно в своем коде📟 и компьютер🖥️, точнее интерпретатор кода📟, нас попросту не может понять. Ошибки🙅‍♂️ при написании кода📟 случаются практически каждый день. Штука в том, чтобы уметь прочесть сообщение💬 об ошибке🙅‍♂️, которое выдаст вам машина🚗, чтобы оперативно найти и исправить недочёт в написанном коде📟. Чем больше вы изучаете JavaScript, тем больше начинаете ценить сообщения💬 об ошибках🙅‍♂️ - зачастую они очень верно показывают, где же вы допустили промах.
+Espero que ya hayas encontrado tus primeros errores 🙅‍♂️ en el proceso de escribir código. ¿Por qué esperanza? Porque los errores 🙅‍♂️ son nuestros maestros que nos muestran lo que estamos haciendo mal en nuestro código 📟 y la computadora 🖥️, más precisamente el intérprete de código 📟, simplemente no puede entendernos. Los errores🙅‍♂️ al escribir código📟 suceden casi todos los días. El truco es poder leer el mensaje de error 💬 sobre el error 🙅‍♂️ que te dará la máquina 🚗 para encontrar y corregir rápidamente la falla en el código escrito 📟. Cuanto más aprenda JavaScript, más comenzará a apreciar los 💬 mensajes de error 🙅‍♂️: a menudo le muestran exactamente dónde se equivocó.
 
-Пара самых популярных типов ошибок🙅‍♂️ в коде📟:
+Un par de los tipos de errores más populares 🙅‍♂️ en el código 📟:
 
 ## SyntaxError
 
@@ -48,10 +48,10 @@ function learnJavaScript() {
 
 Ответ: `SyntaxError: Unexpected token ;`
 
-Cинтаксическая ошибка🙅‍♂️, означает всего лишь, что в теле вашего предложения содержится ошибка🙅‍♂️. Другими словами, то, что вы написали, не является правильным с точки зрения языка👅 JavaScript. Интерпретатор не может прочесть ваше предложение и не знает, что с ним нужно делать. `Unexpected token ;` означает, что интерпретатор прочёл что-то, чего прочесть вовсе не ожидал: в нашем случае — точку с запятой `;`.
+Un error de sintaxis 🙅‍♂️ solo significa que el cuerpo de tu oración contiene un error 🙅‍♂️. En otras palabras, lo que escribiste no es correcto en términos del lenguaje 👅 JavaScript. El intérprete no puede leer su oración y no sabe qué hacer con ella. `Token inesperado;` significa que el intérprete leyó algo que no esperaba leer en absoluto: en nuestro caso, un punto y coma `;`.
 
-Еще раз ошибемся🙅‍♂️!
-Введем в консоле пять плюс три и скобка в конце `5+3)`.
+¡Otra vez equivocado 🙅‍♂️!
+Escribe en la consola cinco más tres y el paréntesis al final `5+3)`.
 
 ```jsx live
 function learnJavaScript() {
@@ -61,13 +61,13 @@ function learnJavaScript() {
 }
 ```
 
-У вас есть закрывающая скобка `)`, но нет скобки открывающей `(`! А ведь скобки всегда ходят парами — не может быть, чтобы была закрывающая, но не нашлось открывающей скобки, и наоборот.
+Tiene una llave de cierre `)`, pero no una llave de apertura `(`! Pero los corchetes siempre vienen en pares: no puede haber una llave de cierre pero no una llave de apertura, y viceversa.
 
 ## ReferenceError
 
 ![Error](https://media.giphy.com/media/8L0Pky6C83SzkzU55a/giphy.gif)
 
-`ReferenceError` - неправильное имя! Объект `ReferenceError` представляет ошибку🙅‍♂️, возникающую при обращении к несуществующей переменной. Например введите пять плюс переменая `5 + переменая`:
+¡`ReferenceError` es un nombre no válido! El objeto `ReferenceError` representa un error 🙅‍♂️ que ocurre cuando se accede a una variable inexistente. Por ejemplo, ingrese cinco más variable `5 + variable`:
 
 ```jsx live
 function learnJavaScript() {
@@ -77,7 +77,7 @@ function learnJavaScript() {
 }
 ```
 
-Теперь перед нами ошибка обращения `ReferenceError`. Быть может, вы уже заметили, в чём здесь дело? Давайте внимательно прочтём сообщение💬 об ошибке (ведь для этого, в конце концов, оно и выдаётся!). Там сказано: `переменная 🔔 is not defined` — переменная не задана, вот в этом-то и кроется наша проблема! Сперва мы должны объявить🗣️ переменную каким-нибудь, скажем, таким образом:
+Ahora tenemos un error de llamada `ReferenceError`. ¿Quizás ya has notado cuál es el problema aquí? Leamos atentamente el mensaje de error 💬 (¡después de todo, para eso es, después de todo!). Dice: `la variable 🔔 no está definida`: la variable no está configurada, ¡y aquí es donde radica nuestro problema! Primero necesitamos declarar la variable 🗣️ de alguna manera, digamos así:
 
 ```jsx live
 function learnJavaScript() {
@@ -90,7 +90,7 @@ function learnJavaScript() {
 
 ## TypeError
 
-Объект TypeError представляет ошибку, возникающую, когда значение имеет не ожидаемый тип. Мы применяем метод `toUpperCase`, с которым подробно познакомимся позже, к типу undefined, а это не допустимо так как этот метод преобразует строку в верхний регистр. Проверьте эту ошибку в консоле браузера, так как в `LIVE EDITOR` она не работает.
+El objeto TypeError representa el error que ocurre cuando un valor no es del tipo esperado. Estamos aplicando el método `toUpperCase`, al que llegaremos con más detalle más adelante, en el tipo indefinido, que no está permitido porque este método convierte la cadena a mayúsculas. Verifique este error en la consola de su navegador ya que no funciona en `LIVE EDITOR`.
 
 ```javascript
 let foo = undefined
@@ -99,49 +99,49 @@ foo.toUpperCase()
 
 ![TypeError](/img/javascript/25.jpg)
 
-## Помощь
+## Ayuda
 
-Мы также можем ошибаться, поэтому если вы обнаружите ошибку на сайте или не точность в переводе, то можете легко помочь исправить ошибку на сайте. Для этого нужно нажать на кнопку `Отредактировать эту страницу` в самом низу каждой странице.
+También podemos cometer errores, por lo que si encuentra un error en el sitio o una inexactitud en la traducción, puede ayudar fácilmente a corregir el error en el sitio. Para hacer esto, haga clic en el botón `Editar esta página` en la parte inferior de cada página.
 
-## Проблемы?
+## ¿Problemas?
 
 ![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
 
-Пишите в [Discord](https://discord.gg/6GDAfXn) или телеграмм [чат](https://t.me/jscampapp), а также подписывайтесь на наши [новости](https://t.me/javascriptapp)
+Escribe en [Discord](https://discord.gg/6GDAfXn) o Telegram [chat](https://t.me/jscampapp) y suscríbete a nuestras [noticias](https://t.me/javascriptapp)
 
 ![JavaScript Camp](/img/bandlink.png)
 
-## Вопросы:
+## Preguntas:
 
 ![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
 
-Что означает `Syntax Error`?
+¿Qué significa `Syntax Error`?
 
-1. Неправильный порядок знаков
-2. Нарушение правил языка
-3. Неуместные скобки
+1. Orden incorrecto de los signos
+2. Violación de las reglas del idioma.
+3. Soportes inapropiados
 
-Что означает `Reference Error`?
+¿Qué significa `Reference Error`?
 
-1. Необъявленная переменная
-2. Синтаксическая ошибка
-3. Не верный тип
+1. Variable no declarada
+2. Error de sintaxis
+3. Tipo incorrecto
 
-Какого рода ошибку вы получите, если попытаетесь запустить этот оператор? \n`let sum = (9 + ; 3)`
+¿Qué tipo de error obtendrá si intenta ejecutar esta instrucción? \n `let sum = (9 +; 3)`
 
 1. `undefined`
-2. `SyntaxError` (здесь неожиданно появился ';'. Его следовало переместить в правую часть закрывающей скобки).
+2. `SyntaxError` (el ';' apareció de repente aquí. Debería haberse movido al lado derecho del paréntesis de cierre).
 3. `11;`
 
-Для того чтобы понять, на сколько вы усвоили этот урок, пройдите тест в [мобильном приложении](http://onelink.to/njhc95) нашей школы по этой теме или в нашем [телеграм боте](https://t.me/javascriptcamp_bot).
+Para comprender cuánto ha aprendido esta lección, realice una prueba en la [aplicación móvil](http://onelink.to/njhc95) de nuestra escuela sobre este tema o en nuestro [bot de Telegram](https://t.me/javascriptcamp_bot).
 
 ![JS Camp](/img/app.jpg)
 
 
-## Ссылки:
+## Enlaces:
 
 1. [MDN web docs](https://developer.mozilla.org/ru/docs/Web/JavaScript/Data_structures)
-2. [Код для подростков: прекрасное руководство по программированию для начинающих, том 1: Javascript - Jeremy Moritz ](https://www.amazon.com/Code-Teens-Beginners-Programming-Javascript-ebook/dp/B07FCTLVPC)
+2. [Código para adolescentes: la gran guía de programación para principiantes Volumen 1: Javascript - Jeremy Moritz](https://www.amazon.com/Code-Teens-Beginners-Programming-Javascript-ebook/dp/B07FCTLVPC)
 3. [JavaScript.ru](https://learn.javascript.ru/types)
 
 ## Contributors ✨

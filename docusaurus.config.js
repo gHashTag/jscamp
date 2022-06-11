@@ -37,7 +37,7 @@
         label: '日本語'
       },
       es: {
-        label: 'Espanol'
+        label: 'Spanish'
       },
       ar: {
         label: 'عربى'

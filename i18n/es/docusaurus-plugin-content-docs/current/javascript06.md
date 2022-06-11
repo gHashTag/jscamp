@@ -1,42 +1,42 @@
 ---
 id: javascript06
-title: Строки
-sidebar_label: Строки
+title: Líneas
+sidebar_label: Líneas
 ---
 
 import YouTube from 'react-youtube'
 
 ![@serverSerrverlesskiy](/img/javascript/headers/06.jpg)
 
-В JavaScript любые текстовые 📜 данные являются строками. Однако, не забывайте, что в строке могут быть записаны и числа. Пожалуй, из всех типов данных строками вы будете пользоваться наиболее часто. Разберем все варианты создания🏗️ новой строки.
+En JavaScript, cualquier dato de texto 📜 es una cadena. Sin embargo, no olvide que los números también se pueden escribir en una cadena. De todos los tipos de datos, probablemente usará más cadenas. Analicemos todas las opciones para crear una nueva línea.
 
-## Видео
+## Video
 
-<YouTube videoId="ocQTm9K2vdo" />
+<YouTube videoId="ocQTm9K2vdo"/>
 
-## Одинарные или двойные кавычки
+## Comillas simples o dobles
 
 ![quotation marks](https://media.giphy.com/media/7cSTvZ4hI6ABZkcTwk/giphy.gif)
 
-Для создания🏗️ строки используются либо ‘одинарные’, либо “двойные” кавычки.
+Para crear una cadena 🏗️, se utilizan comillas "simples" o "dobles".
 
 ```jsx
 let single = 'Hello World'
 let double = "Hello World" // prettier-ignore
 ```
 
-Можно пользоваться и теми, и другими, главное, если вы начинаете строку одинарной, хотя внутри могут быть двойные, завершить ее надлежит также одинарной. И, соответственно, с двойными кавычками.
+Puedes usar ambos, lo más importante, si comienzas una sola línea, aunque puede haber dobles dentro, también debe completarse con una sola. Y, en consecuencia, con comillas dobles.
 
 ```jsx
 let double = "Don't you think so, d'Artagnan?"
 let single = '"I think so, indeed!" - cried he.'
 ```
 
-## Обратный слэш
+## barra invertida
 
 ![shielding](https://media.giphy.com/media/3og0IPizf4zPR6VMt2/giphy.gif)
 
-Если внутри строки используются те же кавычки, что стоят и снаружи, то их нужно экранировать при помощи обратного слэша - так называемого «символа экранирования». Он добавляется ➕ перед входящей в строку кавычкой `\'`, чтобы она не обозначала окончание строки.
+Si se usan las mismas comillas dentro de la cadena que afuera, entonces deben escaparse con una barra invertida, el llamado "carácter de escape". Se añade ➕ antes de las comillas `\'` en la cadena para que no indique el final de la línea.
 
 ```jsx live
 // prettier-ignore
@@ -46,26 +46,26 @@ function learnJavaScript() {
 }
 ```
 
-Заметим, что обратный слеш `\` служит лишь для корректного прочтения строки интерпретатором, но он не записывается 🖊️ в строку после её прочтения. Когда строка сохраняется в оперативную память, в неё не добавляется ➕ символ `\`. Вы можете явно увидеть это в выводах.
+Tenga en cuenta que la barra invertida `\` solo sirve para que el intérprete lea correctamente la cadena, pero no escribe 🖊️ en la cadena después de haberla leído. Cuando una cadena se guarda en la RAM, no se le agrega ningún carácter `\`. Esto se puede ver claramente en la salida.
 
-## Обратные кавычки
+## comillas back
 
 ![Dollar](https://media.giphy.com/media/26BoCwvDEWXnGlLyM/giphy.gif)
 
-В написании строки можно обойтись и без обратного слэша, если использовать \`обратные\` кавычки.
+Al escribir una cadena, también puede prescindir de una barra invertida si usa comillas \`back\`.
 
-Одинарные и двойные кавычки работают, по сути, одинаково, а если использовать обратные кавычки, то в такую строку мы сможем вставлять произвольные JavaScript выражения, обернув их в символ доллара с фигурными скобками `${…}` 👇 :
+Las comillas simples y dobles funcionan esencialmente de la misma manera, y si usa comillas inversas, podemos insertar expresiones JavaScript arbitrarias en dicha cadena envolviéndolas en un carácter de dólar con llaves `${…}` 👇:
 
 ```jsx live
 function learnJavaScript() {
-  let name = 'Марк'
-  return `Привет, ${name}!`
+  let name = 'Marcos'
+  return `Hola, ${name}!`
 }
 ```
 
-Интерполяция строк - это удобный способ подставлять значения переменных в строки. Шаблонная строка это тоже самое, что и интерполяция. Шаблонная строка в ES6 пришла на замену обычной строке. Интерполяция работает только с обратными кавычками. Посмотрим на практике, какие правила существует при использовании интерполяций.
+La interpolación de cadenas es una forma conveniente de sustituir valores de variables en cadenas. La cadena de plantilla es lo mismo que la interpolación. La cadena de plantilla en ES6 reemplazó a la cadena normal. La interpolación solo funciona con acentos graves. Veamos en la práctica qué reglas existen al usar interpolaciones.
 
-Еще одно преимущество обратных кавычек – они могут занимать более одной строки.
+Otra ventaja de los acentos graves es que pueden abarcar más de una línea.
 
 ```jsx live
 function learnJavaScript() {
@@ -78,38 +78,38 @@ function learnJavaScript() {
 }
 ```
 
-Многострочные строки также можно создавать🏗️ с помощью одинарных и двойных кавычек, используя так называемый «символ перевода строки», который записывается как `\n`. Все спецсимволы, в JavaScript, начинаются с обратного слеша `\` Правда проверить мы это можем в консоле браузера(`LIVE EDITOR` отображает не корректно).
+También se pueden crear cadenas de varias líneas🏗️ usando comillas simples y dobles, usando el llamado "carácter de nueva línea", que se escribe como `\n`. Todos los caracteres especiales en JavaScript comienzan con una barra invertida `\` Cierto, podemos verificar esto en la consola del navegador (`LIVE EDITOR` no se muestra correctamente).
 
 ```jsx
 let guestList = 'Guests:\n * John\n * Pete\n * Mary'
 
-guestList // список гостей, состоящий из нескольких строк
+guestList // lista de invitados de varias líneas
 ```
 
 ![console](/img/javascript/12.png)
 
-## Строки неизменяемы
+## Las cadenas son inmutables
 
 ![Tree](https://media.giphy.com/media/YxlUxrYGw2w9y/giphy.gif)
 
-Содержимое строки в JavaScript нельзя изменить. Нельзя взять символ посередине и заменить его. Как только строка создана🏗️ — она такая навсегда.
-Можно создать🏗️ новую строку и записать её в ту же самую переменную вместо старой.
+El contenido de una cadena en JavaScript no se puede cambiar. No puede tomar el símbolo en el medio y reemplazarlo. Tan pronto como se crea la línea🏗️, es así para siempre.
+Puede crear🏗️ una nueva cadena y escribirla en la misma variable en lugar de la anterior.
 
 ```jsx live
 function learnJavaScript() {
   let str = 'Hi'
-  str = 'P' + str[1] // заменяем строку
+  str = 'P' + str[1] // reemplazar cadena
   return str
 }
 ```
 
-## Популярные методы строк
+## Métodos de cadenas populares
 
-### Длина строки
+### Longitud de la línea
 
 ![Length](https://media.giphy.com/media/Y1GK5MEiRa3OSVsxHK/giphy.gif)
 
-Свойство `length` возвращает🔄 количество кодовых📟 значений в строке.
+La propiedad `longitud` devuelve 🔄 el número de valores de código 📟 en la cadena.
 
 ```jsx live
 function learnJavaScript() {
@@ -118,13 +118,13 @@ function learnJavaScript() {
 }
 ```
 
-Обратите внимание, `\n` — это один спецсимвол, поэтому здесь всё правильно: длина строки 3.
+Tenga en cuenta que `\n` es un carácter especial, por lo que todo es correcto aquí: la longitud de la cadena es 3.
 
-### Доступ к символам
+### Acceso de personajes
 
 ![Door](https://media.giphy.com/media/xUA7aLpVxPVEoEPXji/giphy.gif)
 
-Существует два 2️⃣ способа добраться до конкретного символа в строке. В первом способе используется метод `charAt()`. Первый 1️⃣ символ занимает нулевую позицию:
+Hay dos 2️⃣ formas de llegar a un carácter específico en una cadena. El primer método usa el método `charAt()`. El primer carácter 1️⃣ ocupa la posición cero:
 
 ```jsx live
 function learnJavaScript() {
@@ -133,7 +133,7 @@ function learnJavaScript() {
 }
 ```
 
-Получить символ также можно с помощью квадратных скобок:
+También puede obtener un carácter usando corchetes:
 
 ```jsx live
 function learnJavaScript() {
@@ -142,13 +142,13 @@ function learnJavaScript() {
 }
 ```
 
-Квадратные скобки — современный способ получить символ, в то время как `charAt` существует в основном по историческим причинам.
+Los corchetes son la forma moderna de obtener un carácter, mientras que `charAt` existe principalmente por razones históricas.
 
-### Изменение регистра символов
+### Cambiando el caso de los caracteres
 
 ![Capital letter](https://media.giphy.com/media/3orifcBbnezczHmU8g/giphy.gif)
 
-Чтобы преобразовать буквы строки в заглавные, используйте метод `toUpperCase()`.
+Para convertir las letras de una cadena a mayúsculas, utilice el método `toUpperCase()`.
 
 ```jsx live
 function learnJavaScript() {
@@ -157,7 +157,7 @@ function learnJavaScript() {
 }
 ```
 
-в строчные `toLowerCase()`
+a minúsculas `toLowerCase()`
 
 ```jsx live
 function learnJavaScript() {
@@ -166,11 +166,11 @@ function learnJavaScript() {
 }
 ```
 
-### Конкатенaция(сцепление) строки
+### Concatenación de cadenas
 
 ![Chain](https://media.giphy.com/media/l3q2EOu4nu1D8uJKU/giphy.gif)
 
-Чтобы построить строку из существующих строк, используйте знак плюс `+` для объединения строк.
+Para construir una cadena a partir de cadenas existentes, use el signo más `+` para concatenar cadenas.
 
 ```jsx
 let name = 'Mary '
@@ -215,10 +215,11 @@ function learnJavaScript() {
 }
 ``` -->
 
-Вот мы и познакомились с самым популярным типом данных в JavaScript и самыми часто используемыми методами к нему.
+Así que nos familiarizamos con el tipo de datos más popular en JavaScript y los métodos más utilizados para ello.
 
-## React Native
-Посмотрим на практический пример как мы можем использовать строки при создании мобильного приложения. Здесь мы создаем константу `str` и присваиваем ей значение `Hello world`. Напомню, что для того чтобы в синтаксис JSX вставлять JavaScript выражения, необходимо использовать фигурные скобки.
+## Reaсt Native
+
+Veamos un ejemplo práctico de cómo podemos usar cadenas al crear una aplicación móvil. Aquí creamos una constante `str` y le asignamos el valor `Hello world`. Permítame recordarle que para insertar expresiones de JavaScript en la sintaxis JSX, debe usar llaves.
 
 ```SnackPlayer name=index.js
 import * as React from 'react'
@@ -234,80 +235,80 @@ const App = () => {
 export default App
 ```
 
-## Проблемы?
+## ¿Problemas?
 
 ![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
 
-Пишите в [Discord](https://discord.gg/6GDAfXn) или телеграмм [чат](https://t.me/jscampapp), а также подписывайтесь на наши [новости](https://t.me/javascriptapp)
+Escribe en [Discord](https://discord.gg/6GDAfXn) o Telegram [chat](https://t.me/jscampapp) y suscríbete a nuestras [noticias](https://t.me/javascriptapp)
 
 ![JavaScript Camp](/img/bandlink.png)
 
-## Вопросы:
+## Preguntas:
 
 ![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
 
-Как в JavaScript не записываются строки \_\_\_?
+¿Cómo JavaScript no escribe cadenas \_\_\_?
 
-1. в одинарных кавычках
-2. в обратных слэшах
-3. в обратных кавычках
+1. entre comillas simples
+2. en barras invertidas
+3. entre comillas posteriores
 
-Для чего в строке не используется обратный слэш?
+¿Por qué no se usa una barra invertida en una cadena?
 
-1. Для экранирования
-2. Для записи спецсимволов
-3. Для окончания строки
+1. Para blindaje
+2. Para escribir caracteres especiales
+3. Para terminar una línea
 
-Выберете «символ перевода строки»
+Seleccione "carácter de nueva línea"
 
 1. `\n`
 2. `\`
 3. `\*`
 
-Какую букву вернет `'sport'[3]`?
+¿Qué letra devolverá `'sport'[3]`?
 
 1. `o`
 2. `r`
-3. Ничего не вернет
+3. No devolverá nada
 
-Как изменить символ в строке JavaScript?
+¿Cómo cambiar un carácter en una cadena de JavaScript?
 
-1. Изменить строку
-2. Добраться до символа и заменить его
-3. Создать новую строку и записать её в ту же самую переменную вместо старой
+1. Cambiar línea
+2. Ve al símbolo y reemplázalo
+3. Cree una nueva cadena y escríbala en la misma variable en lugar de la anterior
 
-Какой метод используется, чтобы сделать буквы заглавными?
+¿Qué método se utiliza para escribir en mayúsculas?
 
 1. `toUpperCase()`
 2. `toLowerCase()`
 3. `toLowercase()`
 
-Какой знак используется для объединения строк?
+¿Qué carácter se usa para concatenar cadenas?
 
 1. `=`
 2. `+`
 3. `+=`
 
-Всякий раз, когда у вас есть открывающая \_\_\_\_, вам всегда нужно иметь закрывающую \_\_\_\_.
+Cada vez que tenga una apertura \_\_\_\_, siempre necesita tener un cierre \_\_\_\_.
 
-1. точка
-2. кавычка
-3. переменая
+1. punto
+2. cita
+3. cambiando
 
-Строка состоит из одного или нескольких отдельных \_\_\_.
+Una línea consta de uno o más \_\_\_ separados.
 
-1. символов
-2. аргументов
-3. параметров
+1. personajes
+2. argumentos
+3. Opciones
 
-Для того чтобы понять, на сколько вы усвоили этот урок, пройдите тест в [мобильном приложении](http://onelink.to/njhc95) нашей школы по этой теме или в нашем [телеграм боте](https://t.me/javascriptcamp_bot).
+Para comprender cuánto ha aprendido esta lección, realice una prueba en la [aplicación móvil](http://onelink.to/njhc95) de nuestra escuela sobre este tema o en nuestro [bot de Telegram](https://t.me/javascriptcamp_bot).
 
 ![JS Camp](/img/app.jpg)
 
-## Сcылки:
+## Enlaces:
 
 1. [MDN web docs](https://developer.mozilla.org/ru/docs/Web/JavaScript/Data_structures)
-2. [Код для подростков: прекрасное руководство по программированию для начинающих, том 1: Javascript - Jeremy Moritz ](https://www.amazon.com/Code-Teens-Beginners-Programming-Javascript-ebook/dp/B07FCTLVPC)
+2. [Código para adolescentes: la gran guía de programación para principiantes Volumen 1: Javascript - Jeremy Moritz](https://www.amazon.com/Code-Teens-Beginners-Programming-Javascript-ebook/dp/B07FCTLVPC)
 3. [JavaScript.ru](https://learn.javascript.ru/types)
 
 ## Contributors ✨
