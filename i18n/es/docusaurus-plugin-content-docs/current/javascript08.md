@@ -1,41 +1,41 @@
 ---
 id: javascript08
-title: Истина или ложь?
-sidebar_label: Истина или ложь?
+title: ¿Verdadero o falso?
+sidebar_label: ¿Verdadero o falso?
 ---
 
 import YouTube from 'react-youtube'
 
 ![@serverSerrverlesskiy](/img/javascript/headers/08.jpg)
 
-В этой главе будет много нового, но уж очень сложно быть не должно: ведь, в общем-то, всё вертится вокруг простой идеи — истина или ложь?
+Habrá muchas cosas nuevas en este capítulo, pero no debería ser muy difícil: después de todo, en general, todo gira en torno a una idea simple: ¿verdadero o falso?
 
-До сих пор мы всегда имели дело лишь с примитивными типами данных — с числами и строками.
-Быть может, вам уже встречался термин "примитивный" применительно к программированию? Если нет, я поясню: "примитивный" (ещё говорят "простой") означает, что этот тип данных не является объектом (к этому моменту мы ещё вернёмся) и не имеет встроенных методов работы (то есть функций⚙️).
+Hasta ahora, siempre hemos tratado solo con tipos de datos primitivos, con números y cadenas.
+¿Quizás ya conoces el término "primitivo" en relación con la programación? Si no, aclaro: "primitivo" (también llamado "simple") significa que este tipo de datos no es un objeto (volveremos a este punto) y no tiene métodos de trabajo incorporados (es decir, funciones⚙️ ).
 
 ![True](https://media.giphy.com/media/gLWLC3fjwG56p3H4uC/giphy.gif)
 
-Тип данных, который вам обязательно понадобятся, называется булевым `boolean`, или логическим. Булевый тип всегда имеет значение либо `true` ✅ - истина, либо `false` ❎ - ложь. И только так, и никак иначе! Он либо врёт, либо говорит правду — пан или пропал, свет включен или выключен, либо есть, либо нет. Вы либо сделали домашнее задание, либо нет. Только два 2️⃣ значения `true` ✅ или `false`.
+El tipo de datos que definitivamente necesitará se llama booleano `boolean` o lógico. El tipo booleano siempre tiene el valor `true` ✅ - verdadero, o `false` ❎ - falso. ¡Y sólo de esta manera, y nada más! Está mintiendo o diciendo la verdad: acertar o fallar, encender o apagar las luces, estar allí o no. O hiciste tu tarea o no la hiciste. Solo dos valores de 2️⃣ `true` ✅ o `false`.
 
-## Видео
+## Video
 
 <YouTube videoId="P5nXzvtZgH0" /> 
 
-## Операторы равенства
+## Operadores de igualdad
 
 ![Operator](https://media.giphy.com/media/9r1n7HzkPT9sM1Wp0G/giphy.gif)
 
-Булевы значения приходятся как нельзя кстати, когда нам необходимо что-то сравнить в JavaScript. Когда такая необходимость появляется, мы сразу же вызываем операторы сравнения.
-Сейчас мы последовательно изучим все восемь операторов сравнения, но штука в том, что в результате работы каждого из них мы всё равно
-всегда останемся с булевым значением — либо `true` ✅ , либо `false` ❎ .
+Los valores booleanos son útiles cuando necesitamos comparar algo en JavaScript. Cuando surge tal necesidad, llamamos inmediatamente a los operadores de comparación.
+Ahora estudiaremos secuencialmente los ocho operadores de comparación, pero la cosa es que como resultado del trabajo de cada uno de ellos, todavía
+siempre nos quedará un valor booleano, ya sea `true` ✅ o `false` ❎.
 
-### Равно `==`
+### Es igual a `==`
 
 ![Justice](https://media.giphy.com/media/3o85xDf6hr7ajhVL9K/giphy.gif)
 
-Оператор равно сначала приводит операнды к одному типу, и затем применяет строгое сравнение. Если оба операнда являются объектами, то JavaScript сравнивает внутренние ссылки, которые равны в том случае, если они ссылаются на один и тот же объект в памяти.
+El operador de igualdad primero convierte los operandos al mismo tipo y luego aplica una comparación estricta. Si ambos operandos son objetos, entonces JavaScript compara las referencias internas que son iguales si se refieren al mismo objeto en la memoria.
 
-Синтаксис📖:
+Sintaxis📖:
 
 ```javascript
 x == y
@@ -44,15 +44,15 @@ x == y
 Примеры:
 
 ```javascript
-1 == 1 // истина
-'1' == 1 // истина
-1 == '1' // истина
-3 == 5 // ложь
-0 == false // истина
-'foo' == 'bar' // ложь
+1 == 1 // verdadero
+'1' == 1 // verdadero
+1 == '1' // verdadero
+3 == 5 // Falso
+0 == false // verdadero
+'foo' == 'bar' // Falso
 ```
 
-Введите по очереди примеры в переменную 🔔 `bool` нашего `LIVE EDITOR`
+Ingrese los ejemplos uno por uno en la variable 🔔 `bool` de nuestro `LIVE EDITOR`
 
 ```jsx live
 function learnJavaScript() {
@@ -61,30 +61,30 @@ function learnJavaScript() {
 }
 ```
 
-### Не равно `!=`
+### No es igual a `!=`
 
 ![Equals](https://media.giphy.com/media/xT8qBit7YomT80d0M8/giphy.gif)
 
-Оператор не равно возвращает🔄 `true` ✅ в том случае, если операнды не равны. Он аналогичен оператору равенства, перед сравнением приводит операнды к одному типу. В случае если оба операнда являются объектами, JavaScript сравнивает внутренние ссылки, которые не равны в том случае, если относятся к разным объектам в памяти.
+El operador no igual devuelve 🔄 `false` ✅ si los operandos no son iguales. Es similar al operador de igualdad, convierte los operandos al mismo tipo antes de comparar. Si ambos operandos son objetos, JavaScript compara las referencias internas que no son iguales si se refieren a diferentes objetos en la memoria.
 
-Синтаксис📖:
+Sintaxis📖:
 
 ```javascript
 x != y
 ```
 
-Примеры:
+Ejemplos:
 
 ```javascript
-1 != 2 // истина
-1 != '1' // ложь
-'1' != 1 // ложь
-1 != true // ложь
-0 != false // ложь
-'foo' != 'bar' // истина
+1 != 2 // verdadero
+1 != '1' // Falso
+'1' != 1 // Falso
+1 != true // Falso
+0 != false // Falso
+'foo' != 'bar' // verdadero
 ```
 
-Введите по очереди примеры в переменную 🔔 `bool` нашего `LIVE EDITOR`
+Ingrese los ejemplos uno por uno en la variable 🔔 `bool` de nuestro `LIVE EDITOR`
 
 ```jsx live
 function learnJavaScript() {
@@ -93,13 +93,13 @@ function learnJavaScript() {
 }
 ```
 
-### Строго равно `===`
+### Estrictamente igual a `===`
 
 ![equality](https://media.giphy.com/media/4W0ZwRP8y7pQtcUMyQ/giphy.gif)
 
-Оператор возвращает🔄 истину в том случае, если операнды строго равны. В отличие от оператора равно, данный оператор не приводит операнды к одному типу.
+El operador devuelve 🔄 verdadero si los operandos son estrictamente iguales. A diferencia del operador de igualdad, este operador no convierte operandos al mismo tipo.
 
-Синтаксис📖:
+Sintaxis📖:
 
 ```javascript
 x === y
@@ -108,14 +108,14 @@ x === y
 Примеры:
 
 ```javascript
-3 === 3 // истина
-3 === '3' // ложь
-'foo' === 'foo' // истина
+3 === 3 // verdadero
+3 === '3' // Falso
+'foo' === 'foo' // verdadero
 ```
 
-Оператор чётко следит за тем, чтобы и значение, и тип были строго идентичными. В случае с `3 === '3'` значение, конечно, идентично, однако тип — нет: ведь первое число, а второе строка.
+El operador se asegura de que tanto el valor como el tipo sean estrictamente idénticos. En el caso de `3 === '3'`, el valor es, por supuesto, idéntico, pero el tipo no lo es: después de todo, el primero es un número y el segundo es una cadena.
 
-Введите по очереди примеры в переменную 🔔 `bool` нашего `LIVE EDITOR`
+Ingrese los ejemplos uno por uno en la variable 🔔 `bool` de nuestro `LIVE EDITOR`
 
 ```jsx live
 function learnJavaScript() {
@@ -124,26 +124,26 @@ function learnJavaScript() {
 }
 ```
 
-### Строго не равно `!==`
+### Estrictamente no es igual a `!==`
 
 ![ruler](https://media.giphy.com/media/tPK9Fyl1gyIkU6XbZv/giphy.gif)
 
-Оператор строго не равно возвращает🔄 истину в том случае, если операнды не равны, или их типы отличаются друг от друга.
+El operador estrictamente no igual devuelve 🔄 verdadero si los operandos no son iguales o sus tipos son diferentes.
 
-Синтаксис📖:
+Sintaxis📖:
 
 ```javascript
 x !== y
 ```
 
-Примеры:
+Ejemplos:
 
 ```javascript
-3 !== '3' // истина
-4 !== 3 // истина
+3 !== '3' // verdadero
+4 !== 3 // verdadero
 ```
 
-Введите по очереди примеры в переменную 🔔 `bool` нашего `LIVE EDITOR`
+Ingrese los ejemplos uno por uno en la variable 🔔 `bool` de nuestro `LIVE EDITOR`
 
 ```jsx live
 function learnJavaScript() {
@@ -152,34 +152,34 @@ function learnJavaScript() {
 }
 ```
 
-Почему не надо использовать `==` и `!=`? А потому, что такой необходимости, в общем-то, никогда и нет. В любом возможном случае, когда вы можете их использовать, всегда можно использовать и строгие `===` и `!==`. Если же вы желаете большей гибкости в ответе (скажем, чтобы с одинаковым успехом принималось как `1`, так и `'1'` или `true` ✅ ), то можно просто включить нужные варианты ответа в сам код📟 (не меняя при этом `===`).
+¿Por qué no usar `==` y `!=`? Sino porque tal necesidad, en general, nunca existe. En todos los casos posibles en los que pueda usarlos, siempre puede usar estrictos `===` y `!==`. Si desea más flexibilidad en la respuesta (por ejemplo, que tanto `1` como `'1'` o `true` ✅ se acepten con el mismo éxito), simplemente puede incluir las opciones de respuesta deseadas en el código en sí📟 (sin cambiando este `===`).
 
-:::info Просто уясните правило
-Никогда не используйте `==` или `!=`
+:::info Solo entiende la regla
+Nunca use `==` o `!=`
 :::
 
-## Операторы сравнения
+## Operadores de comparación
 
-### Больше `>`
+### Más `>`
 
 ![not equal](https://media.giphy.com/media/jPfQcPdmI9bTXpa7hi/giphy.gif)
 
-Оператор больше возвращает🔄 истину в том случае, если значение левого операнда больше, чем правого.
+El operador mayor que devuelve 🔄 verdadero si el valor del operando izquierdo es mayor que el valor del operando derecho.
 
-Синтаксис📖:
+Sintaxis📖:
 
 ```javascript
 x > y
 ```
 
-Примеры:
+Ejemplos:
 
 ```javascript
-4 > 3 // истина
-1 > 5 // ложь
+4 > 3 // verdadero
+1 > 5 // Falso
 ```
 
-Введите по очереди примеры в переменную 🔔 `bool` в `LIVE EDITOR`
+Introduce los ejemplos uno por uno en la variable 🔔 `bool` en `LIVE EDITOR`
 
 ```jsx live
 function learnJavaScript() {
@@ -188,13 +188,13 @@ function learnJavaScript() {
 }
 ```
 
-### Меньше `<`
+### Menos que `<`
 
 ![small](https://media.giphy.com/media/82tNeaMTlEsdW/giphy.gif)
 
-Оператор меньше, возвращает🔄 истину в том случае, если значение операнда слева меньше, чем значение операнда справа.
+El operador menor que devuelve 🔄 verdadero si el valor del operando de la izquierda es menor que el valor del operando de la derecha.
 
-Синтаксис📖:
+Sintaxis📖:
 
 ```javascript
 x < y
@@ -203,11 +203,11 @@ x < y
 Примеры:
 
 ```javascript
-3 < 4 // истина
-5 < 2 // ложь
+3 < 4 // verdadero
+5 < 2 // falso
 ```
 
-Введите по очереди примеры в переменную 🔔 `bool` нашего `LIVE EDITOR`
+Ingrese los ejemplos uno por uno en la variable 🔔 `bool` de nuestro `LIVE EDITOR`
 
 ```jsx live
 function learnJavaScript() {
@@ -216,26 +216,26 @@ function learnJavaScript() {
 }
 ```
 
-### Больше или равно `>=`
+### Mayor o igual que `>=`
 
 ![comparison operator](https://media.giphy.com/media/icJA0VF7ntoEL18Jez/giphy.gif)
 
-Оператор больше или равно, возвращает🔄 истину в том случае, если значение операнда слева больше или равно значению операнда справа.
+El operador mayor que o igual devuelve 🔄 verdadero si el valor del operando de la izquierda es mayor o igual que el valor del operando de la derecha.
 
-Синтаксис📖:
+Sintaxis📖:
 
 ```javascript
 x >= y
 ```
 
-Примеры:
+Ejemplos:
 
 ```javascript
-4 >= 3 // истина
-3 >= 3 // истина
+4 >= 3 // verdadero
+3 >= 3 // verdadero
 ```
 
-Введите по очереди примеры в переменную 🔔 `bool` 👇 :
+Ingrese los ejemplos uno por uno en la variable 🔔 `bool` 👇:
 
 ```jsx live
 function learnJavaScript() {
@@ -244,13 +244,13 @@ function learnJavaScript() {
 }
 ```
 
-### Меньше или равно `<=`
+### Menor o igual que `<=`
 
 ![less](https://media.giphy.com/media/UQbDc6dyK6WjpCXMvt/giphy.gif)
 
-Оператор меньше или равно, возвращает🔄 истину в том случае, если значение операнда слева меньше, или равно значению операнда справа.
+El operador menor o igual devuelve 🔄 verdadero si el valor del operando de la izquierda es menor o igual que el valor del operando de la derecha.
 
-Синтаксис📖:
+Sintaxis📖:
 
 ```javascript
 x <= y
@@ -259,11 +259,11 @@ x <= y
 Примеры:
 
 ```javascript
-3 <= 4 // истина
-3 <= 3 // истина
+3 <= 4 // verdadero
+3 <= 3 // verdadero
 ```
 
-Введите по очереди примеры в переменную 🔔 `bool` 👇 :
+Ingrese los ejemplos uno por uno en la variable 🔔 `bool` 👇:
 
 ```jsx live
 function learnJavaScript() {
@@ -272,42 +272,42 @@ function learnJavaScript() {
 }
 ```
 
-## Условные конструкции
+## Construcciones condicionales
 
 ![boolean](https://media.giphy.com/media/12W5Sg2koWYnwA/giphy.gif)
 
-Вы, должно быть, думаете: "Ну, все эти булевы-логические штуки — это было очень просто... Наверное, они довольно бесполезны, и используют их нечасто". Как бы не так! Логические значения используются в программировании более чем постоянно и всего чаще — в форме условных конструкций (или выражений).
+Debes estar pensando: "Bueno, todo este asunto de la lógica booleana era muy simple... Deben ser bastante inútiles y no se usan muy a menudo". ¡No importa cómo! Los valores booleanos se usan más que constantemente en la programación y, con mayor frecuencia, en forma de construcciones condicionales (o expresiones).
 
-### А что такое "условная конструкция"?
+### ¿Qué es una "construcción condicional"?
 
 ![thoughtful](https://media.giphy.com/media/IyyGGEMZhZIZwAxnUS/giphy.gif)
 
-Хороший вопрос! Условная конструкция — это такое предложение, которое используется для запуска определённых блоков кода📟 согласно заданному условию. Условие (например, при сравнении `x === y`) всегда возвращает🔄 логическое значение — либо `true` ✅ , либо `false` ❎ . Соответственно, если значение `true` ✅ , то код следует запустить, в противном же случае блок кода📟 следует пропустить. Рассмотрим несколько примеров.
+¡Buena pregunta! Una construcción condicional es una oración que se usa para ejecutar ciertos bloques de código 📟 de acuerdo con una condición dada. La condición (por ejemplo, al comparar `x === y`) siempre devuelve🔄 un valor booleano, ya sea `true` ✅ o `false` ❎. En consecuencia, si el valor es `true` ✅, entonces se debe ejecutar el código; de lo contrario, se debe omitir el bloque de código📟. Veamos algunos ejemplos.
 
-### Условные выражения с `if`
+### Expresiones condicionales con `if`
 
 ![Instruction manual](https://media.giphy.com/media/2mDSs3gPUyrcMqtheg/giphy.gif)
 
-Конструкция `if` выполняет `инструкцию1`, если условие `true` ✅, если условие `false` ❎, то выполняется `инструкция2`.
+La construcción `si` ejecuta `instrucción1` si la condición es `true` ✅, si la condición es `false` ❎, entonces se ejecuta `instrucción2`.
 
-Синтаксис📖:
+Sintaxis📖:
 
 ```javascript
-if (условие) {
-  инструкции1
+if (condición) {
+  instrucciones1
 } else {
-  инструкции2
+  instrucciones2
 }
 ```
 
-`условие` -
-Выражение, которое является либо истинным, либо ложным.
+`condición` -
+Una expresión que es verdadera o falsa.
 
-`инструкция1` -
-Инструкция, выполняемая в случае, если значение `условиe` истинно `true` ✅ . Может быть любой инструкцией в том числе и вложенным `if`. Когда никакого действия не требуется, может использоваться пустая инструкция.
+`instrucción1` -
+La instrucción que se ejecutará si el valor de `condición` es verdadero `true` ✅ . Puede ser cualquier declaración, incluido `if` anidado. Cuando no se requiere ninguna acción, se puede usar una declaración vacía.
 
-`инструкция2` -
-Инструкция, выполняемая в случае, если значение `условиe` ложно `false`❎ . Может быть любой инструкцией, в том числе и вложенным `if`. Инструкции тоже можно группировать в блок. Измените год в переменной 🔔 `whatIsTheYearNow` и обратите внимание на вывод.
+`instrucción2` -
+La instrucción a ejecutar si el valor de `condición` es falso `false`❎. Tal vez cualquier declaración, incluido `if` anidado. Las instrucciones también se pueden agrupar en un bloque. Cambie el año en la variable 🔔 `whatIsTheYearNow` y observe el resultado.
 
 ```jsx live
 function learnJavaScript() {
@@ -323,17 +323,17 @@ function learnJavaScript() {
 }
 ```
 
-### `if` не только с булевыми значениями
+### `if` no solo con valores booleanos
 
 ![No](https://media.giphy.com/media/ftqLysT45BJMagKFuk/giphy.gif)
 
-Условные выражения могут работать не только с булевыми значениями, то есть с такими, которые не точно `true` ✅ или `false` ❎ Так что мы, в общем-то, спокойно можем использовать их в скобках, как и булевы значения.
+Las expresiones condicionales pueden funcionar no solo con valores booleanos, es decir, con aquellos que no son exactamente `true` ✅ o `false` ❎ Entonces, en general, podemos usarlos con seguridad entre paréntesis, al igual que los valores booleanos.
 
-- Все целые числа, кроме нуля — `true` ✅
-- Cтрока с хотя бы одним символом `true` ✅
-- Пустая строка - это `false` ❎
+- Todos los enteros excepto cero — `true` ✅
+- Cadena con al menos un carácter `true` ✅
+- Una cadena vacía es `false` ❎
 
-Давайте попробуем, введите значения в переменную 🔔 `bool` 👇 :
+Intentémoslo, ingrese valores en la variable 🔔 `bool` 👇:
 
 ```jsx live
 function learnJavaScript() {
@@ -349,11 +349,11 @@ function learnJavaScript() {
 }
 ```
 
-### Операторы сравнения в выражениях с `if`
+### Operadores de comparación en expresiones con `if`
 
 ![made for each other](https://media.giphy.com/media/6yxIP39EMwP7IlIA28/giphy.gif)
 
-До сих пор мы с вами имели дело со сравнениями или с условными выражениями с `if`, но пока мы не использовали их вместе, а ведь они просто созданы🏗️ друг для друга!
+Hasta ahora, hemos tratado con comparaciones o con expresiones condicionales con `if`, pero hasta ahora no las hemos usado juntas, ¡sino que están hechas 🏗️ la una para la otra!
 
 ```jsx live
 function learnJavaScript() {
@@ -362,17 +362,17 @@ function learnJavaScript() {
   let output
 
   if (year < 2020) {
-    output = 'меньше 2020'
+    output = 'menos de 2020'
   } else {
-    output = 'больше 2020'
+    output = 'más 2020'
   }
   return output
 }
 ```
 
-### Несколько условий `else if`
+### Múltiples condiciones `else if`
 
-Иногда, нужно проверить несколько вариантов условия. Для этого используется блок `else if`. Измените год и смотрите вывод.
+A veces, es necesario comprobar varias variantes de una condición. El bloque `else if` se usa para esto. Cambie el año y vea la salida.
 
 ```jsx live
 function learnJavaScript() {
@@ -381,37 +381,37 @@ function learnJavaScript() {
   let output
 
   if (year < 2020) {
-    output = 'меньше 2020'
+    output = 'menos de 2020'
   } else if (year > 2020) {
-    output = 'больше 2020'
+    output = 'más 2020'
   } else {
-    output = 'равно 2020'
+    output = 'es igual a 2020'
   }
   return output
 }
 ```
 
-## Логические операторы
+## Operadores booleanos
 
-В JavaScript есть три логических оператора: `||` (ИЛИ), `&&` (И) и `!` (НЕ).
+JavaScript tiene tres operadores lógicos: `||` (O), `&&` (Y) y `!` (NO).
 
-Несмотря на своё название, данные операторы могут применяться к значениям любых типов. Полученные результаты также могут иметь различный тип.
+A pesar de su nombre, estos operadores se pueden aplicar a valores de cualquier tipo. Los resultados obtenidos también pueden ser de otro tipo.
 
-Давайте рассмотрим их подробнее.
+Veámoslos con más detalle.
 
-### `||` (ИЛИ)
+### `||` (O)
 
-Оператор «ИЛИ» выглядит как двойной символ вертикальной черты:
+El operador "OR" parece un carácter de barra doble:
 
 ```jsx
 result = a || b
 ```
 
-Традиционно в программировании ИЛИ предназначено только для манипулирования булевыми значениями: в случае, если какой-либо из аргументов `true`, он вернёт `true`, в противоположной ситуации возвращается `false`.
+Tradicionalmente en la programación, OR solo está destinado a manipular valores booleanos: si alguno de los argumentos es `true`, devolverá `true`, de lo contrario devolverá `false`.
 
-В JavaScript, как мы увидим далее, этот оператор работает несколько иным образом. Но давайте сперва посмотрим, что происходит с булевыми значениями.
+En JavaScript, como veremos más adelante, este operador funciona de forma ligeramente diferente. Pero primero veamos qué sucede con los valores booleanos.
 
-Существует всего четыре возможные логические комбинации:
+Sólo hay cuatro combinaciones lógicas posibles:
 
 ```jsx
 true || true // true
@@ -420,9 +420,9 @@ true || false // true
 false || false // false
 ```
 
-Как мы можем наблюдать, результат операций всегда равен `true`, за исключением случая, когда оба аргумента `false`.
+Como podemos ver, el resultado de las operaciones siempre es `true`, excepto cuando ambos argumentos son `false`.
 
-Обычно оператор `||` используется в `if` для проверки истинности любого из заданных условий.
+Por lo general, el operador `||` se usa en un `si` para probar la veracidad de cualquier condición dada.
 
 ```jsx live
 function learnJavaScript() {
@@ -430,7 +430,7 @@ function learnJavaScript() {
   let result = ''
 
   if (hour < 10 || hour > 18) {
-    result = 'Магазин закрыт'
+    result = 'La tienda está cerrada'
   }
 
   return result
@@ -439,13 +439,13 @@ function learnJavaScript() {
 
 ### `&&` (И)
 
-Оператор И пишется как два амперсанда `&&`:
+El operador AND se escribe como dos símbolos de unión `&&`:
 
 ```jsx
 result = a && b
 ```
 
-В традиционном программировании И возвращает `true`, если оба аргумента истинны, а иначе – `false`:
+En la programación tradicional, AND devuelve "true" si ambos argumentos son verdaderos y "false" en caso contrario:
 
 ```jsx
 true && true // true
@@ -470,22 +470,22 @@ function learnJavaScript() {
 }
 ```
 
-### `!` (НЕ)
+### `!` (NO)
 
-Оператор НЕ представлен восклицательным знаком `!`.
+El operador NOT se representa con un signo de exclamación `!`.
 
-Синтаксис довольно прост:
+La sintaxis es bastante simple:
 
 ```jsx
 result = !value
 ```
 
-Оператор принимает один аргумент и выполняет следующие действия:
+El operador toma un argumento y hace lo siguiente:
 
-Сначала приводит аргумент к логическому типу `true/false`.
-Затем возвращает противоположное значение.
+Primero convierte el argumento en el booleano `true/false`.
+Luego devuelve el valor opuesto.
 
-Например:
+Por ejemplo:
 
 ```jsx
 !true // false
@@ -494,25 +494,25 @@ result = !value
 
 
 
-## Условный (тернарный) оператор `?`
+## Operador condicional (ternario) `?`
 
 ![question mark](https://media.giphy.com/media/wH4rY2nPnEnp6/giphy.gif)
 
-Единственный оператор в JavaScript, принимающий три операнда: `условие`, за которым следует знак вопроса `?`, затем `выражение`, которое выполняется, если условие истинно, сопровождается двоеточием `:`, и, наконец, `выражение`, которое выполняется, если условие ложно. Он часто используется в качестве укороченного варианта условного оператора `if`.
+El único operador en JavaScript que toma tres operandos: `condición` seguida de un signo de interrogación `?`, luego `expresión`, que se ejecuta si la condición es verdadera, seguida de dos puntos `:` y finalmente `expresión`, que se ejecuta si la condición es falsa. A menudo se usa como una versión abreviada de la declaración condicional `si`.
 
-Синтаксис📖:
+Sintaxis📖:
 
 ```javascript
-условие ? выражение1 : выражение2
+condición ? expresión1 : expresión2
 ```
 
-Параметры:
+Opciones:
 
-`условие` - Выражение, принимающее значение `true` ✅ или `false` ❎ .
+`condición` - Una expresión que se evalúa como `true` ✅ o `false` ❎ .
 
-`выражение1`, `выражение2` - Выражения, значения которых могут принадлежать любому типу.
+`expresión1`, `expresión2` - Expresiones cuyos valores pueden pertenecer a cualquier tipo.
 
-Пример 👇 :
+Ejemplo 👇:
 
 ```jsx live
 function learnJavaScript() {
@@ -524,7 +524,8 @@ function learnJavaScript() {
 ```
 
 ## React Native
-Например нам нужно показать индикатор загрузки до тех пор пока дынные с сервера подгружаются, а после после показать эти данные. Пока сэмулируй это изменение вручную и заменим `false` на `true`.
+
+Por ejemplo, necesitamos mostrar un indicador de carga siempre que se carguen los datos del servidor, y luego mostrar estos datos. Por ahora, emule este cambio manualmente y reemplace `false` con `true`.
 
 ```SnackPlayer name=index.js
 import * as React from 'react'
@@ -549,165 +550,165 @@ const App = () => {
 export default App
 ```
 
-## Проблемы?
+## ¿Problemas?
 
 ![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
 
-Пишите в [Discord](https://discord.gg/6GDAfXn) или телеграмм [чат](https://t.me/jscampapp), а также подписывайтесь на наши [новости](https://t.me/javascriptapp)
+Escribe en [Discord](https://discord.gg/6GDAfXn) o Telegram [chat](https://t.me/jscampapp) y suscríbete a nuestras [noticias](https://t.me/javascriptapp)
 
 ![JavaScript Camp](/img/bandlink.png)
 
-## Вопросы:
+## Preguntas:
 
 ![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
 
-Какой синтаксис используется в операторе равно?
+¿Cuál es la sintaxis del operador igual?
 
 1. `x == y`
 2. `x = y`
 3. `x -- y`
 
-В каком случае оператор не равно возвращает `true`?
+¿En qué caso el operador no igual devuelve `true`?
 
-1. Если операнды не равны
-2. Если операнды равны
-3. Если оба операнда являются объектами
+1. Si los operandos no son iguales
+2. Si los operandos son iguales
+3. Si ambos operandos son objetos
 
-Чем оператор равно отличается от строго равно?
+¿En qué se diferencia el operador de igualdad de estrictamente igual?
 
-1. Строго равно не приводит операнды к одному типу
-2. Строго равно приводит операнды к одному типу
-3. Строго равно следит за тем, чтобы значение было идентичным, а тип нет
+1. Estrictamente igual no convierte operandos al mismo tipo
+2. Estrictamente iguales lanzan operandos al mismo tipo
+3. Estrictamente igual asegura que el valor es idéntico, pero el tipo no es
 
-Какой синтаксис у оператора строго не равно?
+¿Cuál es la sintaxis del operador estrictamente no igual?
 
 1. `!=`
 2. `!==`
 3. `==!`
 
-В каком случае оператор больше возвращает ложь?
+¿En qué caso el operador más que devuelve falso?
 
-1. Если значение левого операнда больше, чем правого
-2. Если значение правого операнда больше, чем левого
-3. Если значения операнд одинаковые
+1. Si el valor del operando izquierdo es mayor que el valor del operando derecho
+2. Si el valor del operando derecho es mayor que el izquierdo
+3. Si los valores del operando son iguales
 
-Какой синтаксис у оператора больше или равно?
+¿Cuál es la sintaxis del operador mayor o igual que?
 
 1. `>=`
 2. `> =>`
 3. `> <=`
 
-В каком примере оператор меньше или равно вернёт истину?
+¿En qué ejemplo el operador menor o igual devolvería verdadero?
 
 1. `4 <= 5`
 2. `5 <= 4`
 3. `3 <= 2`
 
-Что такое условие?
+¿Qué es una condición?
 
-1. Инструкция
-2. Выражение
-3. Значение
+1. instrucción
+2. Expresión
+3. Significado
 
-Какой блок используется, чтобы проверить несколько вариантов условия?
+¿Qué bloque se usa para probar múltiples variantes de una condición?
 
 1. `else if`
 2. `if`
 3. `for`
 
-Какой оператор принимает 3 операнда?
+¿Qué operador toma 3 operandos?
 
-1. Условный (тернарный) оператор
-2. Больше или равно
-3. Меньше или равно
+1. Operador condicional (ternario)
+2. Mayor o igual
+3. Menor o igual
 
-Какой оператор сравнения предпочтительнее для проверки - значения не равны?
+¿Qué operador de comparación es preferible para verificar: los valores no son iguales?
 
 1. `===`
 2. `!=`
 3. `!==`
 
-Какие два оператора сравнения рекомендуют не использовать в коде?
+¿Qué dos operadores de comparación se recomienda no usar en el código?
 
-1. `> и <`
-2. `== и !=`
-3. `=> и <=`
+1. `> y <`
+2. `== y !=`
+3. `=> y <=`
 
-Какой оператор сравнения проверяет, меньше ли значение справа или равно значению слева?
+¿Qué operador de comparación comprueba si el valor de la derecha es menor o igual que el valor de la izquierda?
 
 1. `<=`
 2. `=>`
 3. `>=`
 
-Какие общие инструкции в кодировании используются для выполнения определенных блоков кода на основе заданного условия?
+¿Cuáles son las instrucciones generales de codificación que se utilizan para ejecutar ciertos bloques de código en función de una condición dada?
 
-1. Логическое выражение
-2. Условное выражение
-3. Разные выражения
+1. Expresión booleana
+2. Expresión condicional
+3. Expresiones misceláneas
 
-Какого рода оператор запускается только тогда, когда условие для блока `if` принимает значение `false`?
+¿Qué tipo de declaración solo se ejecuta cuando la condición para el bloque `if` se evalúa como `false`?
 
 1. `if`
 2. `else if`
 3. `else`
 
-Операторы сравнения всегда дают значение `true` или `false`.
+Los operadores de comparación siempre se evalúan como "true" o "false".
 
 1. `true`
 2. `false`
 
-Иногда внутри оператора `else` можно использовать операторы сравнения.
+A veces, los operadores de comparación se pueden usar dentro de la instrucción `else`.
 
 1. `true`
 2. `false`
 
-Оператор `if / else` может использоваться только вне функции.
+La declaración `if / else` solo se puede usar fuera de una función.
 
 1. `true`
 2. `false`
 
-Подобно операторам сравнения, операторы \_\_\_ (`&&`, `||` и `!`) Отлично работают в условных операторах.
+Al igual que los operadores de comparación, los operadores \_\_\_ (`&&`, `||` y `!`) funcionan muy bien en declaraciones condicionales.
 
-1. условия
-2. сравнения
-3. логики
+1. condiciones
+2. comparaciones
+3. lógica
 
-Чему равно `53 >= 53 && !(51 <= 52)`?
+¿Qué es `53 >= 53 && !(51 <= 52)`?
 
 1. `true`
 2. `false`
 
-Если условие в скобках блока `if` возвращает ложь, какой синтаксис можно использовать для проверки другого условия перед преобразованием в блок `else`?
+Si una condición entre paréntesis de un bloque `if` devuelve falso, ¿qué sintaxis se puede usar para probar otra condición antes de convertirla en un bloque `else`?
 
 1. `else if`
 2. `if`
 3. `else`
 
-Как называется единственный логический оператор, который всегда возвращает логическое значение? Какой символ у этого логического оператора?
+¿Cuál es el nombre del único operador lógico que siempre devuelve un valor booleano? ¿Cuál es el símbolo de este operador lógico?
 
 1. `!`
 2. `||`
 3. `&&`
 
-Как называется логический оператор, который вернет истинное значение, если оно имеет истинное значение с обеих сторон? Какой символ у этого логического оператора?
+¿Cuál es el nombre del operador lógico que devolverá verdadero si es verdadero en ambos lados? ¿Cuál es el símbolo de este operador lógico?
 
 1. `||`
 2. `&&`
-3.  оба 
+3. ambas cosas
 
-Чему равно `true || false`?
+¿Qué es `true || false`?
 
 1. `true`
 2. `false`
 
-Для того чтобы понять, на сколько вы усвоили этот урок, пройдите тест в [мобильном приложении](http://onelink.to/njhc95) нашей школы по этой теме или в нашем [телеграм боте](https://t.me/javascriptcamp_bot).
+Para comprender cuánto ha aprendido esta lección, realice una prueba en la [aplicación móvil](http://onelink.to/njhc95) de nuestra escuela sobre este tema o en nuestro [bot de Telegram](https://t.me/javascriptcamp_bot).
 
 ![JS Camp](/img/app.jpg)
 
-## Ссылки:
+## Enlaces:
 
-1. [MDN web docs - Операторы сравнения](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Операторы_сравнения)
-2. [Код для подростков: прекрасное руководство по программированию для начинающих, том 1: Javascript - Jeremy Moritz ](https://www.amazon.com/Code-Teens-Beginners-Programming-Javascript-ebook/dp/B07FCTLVPC)
+1. [Documentos web de MDN - Operadores de comparación](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Операторы_сравнения)
+2. [Código para adolescentes: la gran guía de programación para principiantes Volumen 1: Javascript - Jeremy Moritz](https://www.amazon.com/Code-Teens-Beginners-Programming-Javascript-ebook/dp/B07FCTLVPC)
 
 ## Contributors ✨
 

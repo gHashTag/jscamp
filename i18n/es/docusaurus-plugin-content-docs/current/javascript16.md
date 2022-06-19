@@ -1,52 +1,52 @@
 ---
 id: javascript16
-title: Циклы
-sidebar_label: Циклы
+title: Ciclos
+sidebar_label: Ciclos
 ---
 
 import YouTube from 'react-youtube'
 
 ![@serverSerrverlesskiy](/img/javascript/headers/17.jpg)
 
-Когда какое-то действие необходимо повторить большое количество раз, в программировании используются циклы. Например, нужно вывести 200 раз на экран текст 📜 «Hello, World!» 🌎 . Вместо двухсоткратного повторения одной и той же команды вывода текста 📜 часто создается цикл, который повторяет 200 раз то, что написано 🖊️ в теле цикла. Каждое повторение называется итерацией.
+Cuando alguna acción necesita repetirse una gran cantidad de veces, los bucles se utilizan en la programación. Por ejemplo, debe mostrar el texto 📜 "¡Hola, mundo!" 200 veces en la pantalla. 🌎 . En lugar de repetir el mismo comando de salida de texto 📜 200 veces, a menudo se crea un bucle que repite 200 veces lo que está escrito 🖊️ en el cuerpo del bucle. Cada repetición se llama iteración.
 
 ![cycle](https://media.giphy.com/media/Pkck2unt0XQfc4gs3R/giphy.gif)
 
-Итерация в программировании — в широком смысле — организация обработки данных, при которой действия повторяются многократно, не приводя при этом к вызовам 📞 самих себя (в отличие от рекурсии). В узком смысле — один шаг итерационного, циклического процесса.
+Iteración en programación, en un sentido amplio, la organización del procesamiento de datos, en la que las acciones se repiten muchas veces, sin dar lugar a llamadas 📞 de sí mismas (a diferencia de la recursividad). En un sentido estricto, es un paso de un proceso iterativo y cíclico.
 
-Цикл в JavaScript (да и во всех прочих языках👅) — это блок кода📟 , который повторяет сам себя, пока известное условие остаётся истинным. Существует множество различных видов циклов, но все они по сути делают тоже самое: повторяют какое-либо действие несколько раз.
+Un bucle en JavaScript (y en todos los demás idiomas👅) es un bloque de código📟 que se repite mientras una condición conocida sigue siendo cierta. Hay muchos tipos diferentes de bucles, pero básicamente todos hacen lo mismo: repetir una acción varias veces.
 
-## Видео
+## Video
 
 <YouTube videoId="TQmZIuS9fVE" />
 
-## Цикл while()
+## bucle while()
 
 ![While](https://media.giphy.com/media/WS6CDvvyNDrhZRFBtT/giphy.gif)
 
-Оператор `while` создает🏗️ цикл, выполняющий заданную инструкцию, пока истинно проверяемое условие. Логическое значение условия вычисляется ➕ перед исполнением тела цикла.
+La declaración `while` crea🏗️ un bucle que ejecuta la instrucción dada mientras la condición que se está probando es verdadera. El valor lógico de la condición se evalúa ➕ antes de que se ejecute el cuerpo del ciclo.
 
-### Синтаксис
+### Sintaxis
 
 ![Boock](https://media.giphy.com/media/LkjlH3rVETgsg/giphy.gif)
 
 ```javascript
 while (условие) {
-  инструкция // код алгоритма - инструкции
+  инструкция // código de algoritmo - instrucciones
 }
 ```
 
-`условие` - выражение, логическое значение которого проверяется каждый раз перед заходом в цикл. Если значение истинно - `true`✅ , то исполняется инструкция. Когда значение становится ложным - `false`❎ , мы выходим из цикла.
+`condición` es una expresión cuyo valor booleano se comprueba cada vez antes de entrar en el bucle. Si el valor es verdadero - `true`✅, entonces se ejecuta la instrucción. Cuando el valor se vuelve falso - `false`❎, salimos del ciclo.
 
-`инструкция` - это код📟 алгоритма, который исполняется каждый раз, пока истинно условие. Чтобы выполнить несколько инструкций в цикле, используйте блочный ❌ оператор `{ ... }` для их группировки. При использовании 1 команды в теле цикла фигурные скобки можно не ставить.
+`instrucción` es el código📟 del algoritmo que se ejecuta cada vez que la condición es verdadera. Para ejecutar varias instrucciones en un bucle, use el operador de bloque ❌ `{ ... }` para agruparlas. Cuando se usa 1 comando en el cuerpo del bucle, se pueden omitir las llaves.
 
-Перед вами простейший пример цикла `while(условие) {...}`
+Aquí está el ejemplo más simple de un bucle `while(condición) {...}`
 
 ```jsx live
 function learnJavaScript() {
-  let count = 0 // count - счётчик
+  let count = 0 // contar - contador
   let result = 'Счет: '
-  // изменить счет на любой
+  // cambiar cuenta a cualquiera
   while (count < 10) {
     result += count + ', '
     count++
@@ -56,11 +56,11 @@ function learnJavaScript() {
 }
 ```
 
-Cчётчик `count` в примере имеет значение `0`. Условием нашего цикла (оно прописано 🖊️ в скобках) задано, что блок с кодом будет повторять себя снова и снова до тех пор, пока (то есть собственно `while`) `count` меньше `10`.
+El contador `count` en el ejemplo tiene el valor `0`. La condición de nuestro ciclo (está escrito 🖊️ entre paréntesis) es que el bloque con el código se repetirá una y otra vez hasta que (es decir, en realidad `while`) `count` sea menor que `10`.
 
-Поскольку начальное значение `0` меньше `10`, код📟 запускается. Каждый раз интерпретатор заново проверяет ✔️ условие, если условие всё ещё истинно `true` ✅ , то код📟 будет запущен вновь. Каждый раз мы увеличиваем значение счётчика на `1`. Так как в противном случае значение бы оставалось на `0`, отчего наше условие `счётчик < 10` оставалось бы всегда истинным, а наш код📟 бы зациклился навечно!
+Dado que el valor inicial `0` es menor que `10`, se ejecuta el código📟. Cada vez que el intérprete vuelve a verificar ✔️ la condición, si la condición sigue siendo verdadera `true` ✅, entonces el código📟 se ejecutará nuevamente. Cada vez incrementamos el valor del contador en `1`. De lo contrario, el valor permanecería en '0', lo que haría que nuestra condición 'contador < 10' siempre se mantuviera verdadera, ¡y nuestro código 📟 se repetiría para siempre!
 
-В итоге после `10` циклов он станет равным `10`. После этого интерпретатор завершит цикл так как условие `false` ❎ и перейдёт к финальным строчкам нашего кода📟 .
+Como resultado, después de '10' ciclos, será igual a '10'. Después de eso, el intérprete finalizará el bucle ya que la condición es `false` ❎ e irá a las líneas finales de nuestro código📟 .
 
 <!-- ## Цикл do … while
 
@@ -93,30 +93,30 @@ function learnJavaScript() {
 
 Такая форма синтаксиса📖 оправдана, если вы хотите, чтобы тело цикла выполнилось хотя бы один раз, даже если условие окажется ложным ❎ . -->
 
-## Цикл for ()
+## bucle for ()
 
 ![Create](https://media.giphy.com/media/XaExByjWTK1V2HgDfh/giphy.gif)
 
-Выражение `for` создаёт🏗️ цикл, состоящий из трех 3️⃣ необязательных выражений в круглых скобках, разделённых точками с запятой.
+La expresión `for` crea🏗️ un bucle que consta de tres expresiones opcionales 3️⃣ entre paréntesis, separadas por punto y coma.
 
-### Синтаксис
+### Sintaxis
 
 ![Book](https://media.giphy.com/media/l1J9HWBKLp20YfNAY/giphy.gif)
 
 ```javascript
-for ([инициализация]; [условие]; [финальное выражение])
-  { выражение }
+for ([inicialización]; [condición]; [expresión final])
+   { expresión }
 ```
 
-`инициализация` - выражение или определение переменных. Это выражение может опционально объявлять🗣️ новые переменные с помощью ключевого🗝️ слова `let`. Эти переменные видимы только в цикле `for`, т.е. в той же области области видимости (для безопасности).
+`inicialización` es una expresión o definición de variables. Esta expresión puede declarar opcionalmente🗣️ nuevas variables usando la palabra clave `let`. Estas variables solo son visibles en el bucle `for`, es decir, en el mismo ámbito (por seguridad).
 
-`условие` - выражение, выполняющееся на каждой интерации цикла. Если выражение истинно, цикл выполняется. Условие не является обязательным. Если его нет, условие всегда считается истиной. Если выражение ложно, выполнение `for` завершается.
+`condición` es una expresión que se ejecuta en cada integración de bucle. Si la expresión es verdadera, se ejecuta el ciclo. La condición es opcional. Si no está presente, la condición siempre se considera verdadera. Si la expresión es falsa, la ejecución `for` finaliza.
 
-`финальное выражение` - выражение, выполняющееся в конце интерации цикла. Происходит до следующего выполнения условия. Обычно используется для `увеличения++`, `уменьшения--` или `обновления i += 5` переменной 🔔 счётчика.
+`expresión final`: la expresión que se ejecuta al final de la integración del bucle. Ocurre hasta que se cumple la siguiente condición. Usualmente se usa para `incrementar++`, `decrementar--` o `actualizar i += 5` de la variable de contador 🔔.
 
-`выражение` - выполняемый код📟 алгоритма, пока условие цикла `истинно`. Чтоб выполнить множество выражений в цикле, используйте блок `{ ... }` для группировки этих выражений. Чтобы не выполнять никакого выражения в цикле, используйте пустое выражение `for (;;;)`.
+`expresión`: código ejecutable📟 del algoritmo mientras la condición del ciclo es `verdadera`. Para ejecutar múltiples expresiones en un ciclo, use un bloque `{ ... }` para agrupar estas expresiones. Para no ejecutar ninguna expresión en el bucle, utilice una expresión `for (;;;)` vacía.
 
-Посчитаем сумму чисел от 0 до 100 👇 :
+Calculemos la suma de los números del 0 al 100 👇 :
 
 ```jsx live
 function learnJavaScript() {
@@ -129,16 +129,16 @@ function learnJavaScript() {
 }
 ```
 
-Помните, когда мы писали наш 1️⃣ первый `while( )`, что происходило с нашим счётчиком? Мы выяснили, что очень важно, чтобы он постоянно изменялся (в этом нам помог `инкремент ++`). Потому как, если забыть про это, то код📟 попадёт в `бесконечную петлю циклов`.
+¿Recuerdas cuando escribimos nuestro 1️⃣ primero `while()` qué pasó con nuestro contador? Descubrimos que es muy importante que cambie constantemente (el `incremento ++` nos ayudó con esto). Porque si lo olvida, el código 📟 caerá en un "bucle infinito de ciclos".
 
-Что ж, подобные ситуации случаются довольно регулярно с `while‑циклами`, именно поэтому `for` сделали со встроенным счётчиком!
+Bueno, situaciones como esta suceden con bastante frecuencia con `while-loops`, ¡por lo que `for` se hizo con un contador incorporado!
 
-### Пример цикла for
+### Ejemplo de bucle
 
 ![hmm](https://media.giphy.com/media/l3nSILUHhuVDuWSnC/giphy.gif)
 
-Впервые видя перед собой синтаксис📖 `цикла for`, можно подумать 🤔 , что это что‑то весьма странное. Но изучить 🧑‍🎓 его всё равно следует, поскольку вы встретите
-подобное много раз:
+Al ver la sintaxis 📖 de un bucle `for` por primera vez frente a ti, podrías pensar 🤔 que esto es algo muy extraño. Pero igual deberías estudiarlo 🧑‍🎓, porque te encontrarás
+así muchas veces:
 
 ```jsx live
 function learnJavaScript() {
@@ -154,22 +154,23 @@ function learnJavaScript() {
 
 ![Wow](https://media.giphy.com/media/3oriO13KTkzPwTykp2/giphy.gif)
 
-Ну как, узнали? А должны были! Ведь это практически тот же код📟 , что мы использовали для `while` цикла в начале главы! Три части цикла отделены друг от друга точкой с запятой; все они были и в том цикле `while`, но в других местах. Давайте разберём подробнее:
+Bueno, ¿cómo lo supiste? ¡Y deberían haberlo hecho! ¡Es prácticamente el mismo código 📟 que usamos para el bucle `while` al principio del capítulo! Las tres partes del bucle están separadas entre sí por punto y coma; todos estaban en ese bucle `while`, pero en diferentes lugares. Miremos más de cerca:
 
-![for](/img/javascript/14/00.png)
+![para](/img/javascript/14/00.png)
 
-1. Первым делом мы объявляем счетчик-переменную 🔔 `let i = 0`. Именно в самой функции и вне данного цикла данная `i` будет отсутствовать, а это безопасно!
-2. Далее мы задаём условие, которое интерпретатор будет проверять перед каждой итерацией цикла (чтобы определить, а стоит ли вообще запускать код по новой). Итерацией называют один виток цикла (например, если у нас было 10 циклов запуска, то можно сказать, что имели место 10 итераций кода).
-3. Третьей частью нашего кода является `инкремент ++` (или же `декремент --`). Он запускается в конце каждой итерации, чтобы всякий раз менять нашу переменную 🔔 .
+1. En primer lugar, declaramos un contador de variables 🔔 `let i = 0`. Es en la función misma y fuera de este ciclo que esta `i` estará ausente, ¡y esto es seguro!
+2. A continuación, establecemos una condición que el intérprete verificará antes de cada iteración del ciclo (para determinar si vale la pena volver a ejecutar el código). Una iteración se llama una iteración del bucle (por ejemplo, si tuviéramos 10 ciclos de ejecución, entonces podemos decir que hubo 10 iteraciones del código).
+3. La tercera parte de nuestro código es `incremento ++` (o `decremento --`). Se ejecuta al final de cada iteración para cambiar nuestra variable 🔔 cada vez.
 
-## Заключение
+## Conclusión
 
-![The and](https://media.giphy.com/media/l1Lc1Kn9hImgpx5Re/giphy.gif)
+![El y](https://media.giphy.com/media/l1Lc1Kn9hImgpx5Re/giphy.gif)
 
-Практически всегда, когда известно количество необходимых итераций, вы скорее будете работать с `for`, нежели с `while`. В связи с этим циклы `for` так популярны. Существуют и другие циклы, но они не столь популярны и при желании можете познакомиться с ними [здесь](https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/%D0%A6%D0%B8%D0%BA%D0%BB%D1%8B_%D0%B8_%D0%B8%D1%82%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%B8).
+Casi siempre, cuando se conoce el número de iteraciones requeridas, trabajará con `for` en lugar de `while`. Esta es la razón por la que los bucles `for` son tan populares. Hay otros ciclos, pero no son tan populares y, si lo desea, puede familiarizarse con ellos [aquí](https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/%D0%A6%D0%B8%D0%BA%D0%BB%D1%8B_%D0%B8_%D0%B8%D1%82%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%B8).
 
-## React Native
-Пример использования в `React Native` приложениях.
+## Reaccionar nativo
+
+Un ejemplo de uso en aplicaciones `React Native`.
 
 ```SnackPlayer name=index.js
 import * as React from 'react'
@@ -193,78 +194,78 @@ export default App
 ```
 
 
-## Проблемы?
+## ¿Problemas?
 
-![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
+![Problema](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
 
-Пишите в [Discord](https://discord.gg/6GDAfXn) или телеграмм [чат](https://t.me/jscampapp), а также подписывайтесь на наши [новости](https://t.me/javascriptapp)
+Escribe en [Discord](https://discord.gg/6GDAfXn) o Telegram [chat](https://t.me/jscampapp) y suscríbete a nuestras [noticias](https://t.me/javascriptapp)
 
 ![JavaScript Camp](/img/bandlink.png)
 
-## Вопросы:
+## Preguntas:
 
-![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
+![Pregunta](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
 
-Как называется блок кода, повторяющий себя снова и снова, пока заданное условие не перестанет быть истинным?
+¿Cuál es el nombre de un bloque de código que se repite una y otra vez hasta que una condición dada deja de ser cierta?
 
-1. Цикл
-2. Условие
-3. Инициализация
+1. Bucle
+2. Condición
+3. Inicialización
 
-Какой из двух операторов цикла является более популярным?
+¿Cuál de las dos declaraciones de bucle es más popular?
 
 1. `for`
 2. `while`
 3. `break`
 
-Сколько сообщений выдаст в консоль следующий код?
+¿Cuántos mensajes imprimirá el siguiente código en la consola?
 
 ```javascript
 let k = 0
 while (k < 7) {
-  console.log('ещё строчка!')
+  console.log('¡una línea más!')
 }
 ```
 
 1. `7`
 2. `8`
-3. `бесконечно`
+3. `infinitamente`
 
-При помощи какого символа отделяются друг от друга находящиеся в скобках части цикла `for`?
+¿Qué carácter separa las partes entre paréntesis del bucle `for` entre sí?
 
 1. `&&`
 2. `;`
 3. `.`
 
-Если `_______` всегда будет оставаться истинным, то код может застрять в бесконечном `_______`.
+Si `_______` siempre se mantiene verdadero, entonces el código puede atascarse en un `_______` infinito.
 
-1. условие/цикле
-2. цикл/условии
+1. condición/bucle
+2.ciclo/condición
 
-Как называется среднее `_____` из трёх заключённых в скобки частей цикла `for`?
+¿Cómo se llama el `_____` del medio de las tres partes entre paréntesis de un bucle `for`?
 
-1. Выражение
-2. Условие
-3. Приращение
+1. Expresión
+2. Condición
+3. Incremento
 
-Назовите термин, которым обозначается разовое (шаговое) прохождение цикла?
+¿Cuál es el término que denota un pasaje único (paso a paso) de un ciclo?
 
-1. Итерация
-2. Прерывание
-3. Зацикливание
+1. Iteración
+2. Interrumpir
+3. Bucle
 
-Для того чтобы понять, на сколько вы усвоили этот урок, пройдите тест в [мобильном приложении](http://onelink.to/njhc95) нашей школы по этой теме или в нашем [телеграм боте](https://t.me/javascriptcamp_bot).
+Para comprender cuánto ha aprendido esta lección, realice una prueba en la [aplicación móvil](http://onelink.to/njhc95) de nuestra escuela sobre este tema o en nuestro [bot de Telegram](https://t.me/javascriptcamp_bot).
 
 ![JS Camp](/img/app.jpg)
 
-## Ссылки:
+## Enlaces:
 
-1. [MDN web doc. Статья "Цикл do...while"](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/do...while)
-2. [MDN web doc. Статья "Цикл for"](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/for)
-3. [MDN web doc. Статья "Цикл while"](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/while)
-4. [Статья "Iteration", сайт Javascript Express](https://www.javascript.express/syntax/iteration)
-5. [Статья "Циклы while и for"](https://learn.javascript.ru/while-for)
-6. [Код для подростков: прекрасное руководство по программированию для начинающих, том 1: Javascript - Jeremy Moritz ](https://www.amazon.com/Code-Teens-Beginners-Programming-Javascript-ebook/dp/B07FCTLVPC)
+1. [Documento web de MDN. Artículo "El bucle do...while"](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/do...while)
+2. [Documento web de MDN. Artículo "For Loop"](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/for)
+3. [Documento web de MDN. Artículo "bucle while"](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/while)
+4. [Artículo "Iteración", sitio de Javascript Express](https://www.javascript.express/syntax/iteration)
+5. [Artículo "bucles while y for"](https://learn.javascript.ru/while-for)
+6. [Código para adolescentes: la gran guía de programación para principiantes Volumen 1: Javascript - Jeremy Moritz](https://www.amazon.com/Code-Teens-Beginners-Programming-Javascript-ebook/dp/B07FCTLVPC)
 
 ## Contributors ✨
 

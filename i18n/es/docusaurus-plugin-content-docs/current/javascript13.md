@@ -1,49 +1,49 @@
 ---
 id: javascript13
-title: Параметры по умолчанию
-sidebar_label: Параметры по умолчанию
+title: Opciones predeterminadas
+sidebar_label: Opciones predeterminadas
 ---
 
 import YouTube from 'react-youtube'
 
 ![@serverSerrverlesskiy](/img/javascript/headers/25.jpg)
 
-Параметры по умолчанию позволяют задавать параметрам функции⚙️ значения по умолчанию в случае, если функция⚙️ вызвана без аргументов, или если параметру явным образом передано значение `undefined`.
+Los parámetros predeterminados permiten que los parámetros de la función⚙️ se establezcan en valores predeterminados si la función⚙️ se llama sin argumentos, o si al parámetro se le pasa explícitamente el valor `undefined`.
 
 ![Teacher](https://media.giphy.com/media/3ohc10nduj1irsuzgA/giphy.gif)
 
-В JavaScript параметры функции⚙️, которым при ее вызове не передаются значения, принимают по умолчанию значение `undefined`. Однако в некоторых случаях может быть полезно задать иное значение по умолчанию. Именно для таких случаев предназначены параметры по умолчанию.
+En JavaScript, los parámetros de función⚙️ a los que no se les pasa un valor cuando se les llama, por defecto son `undefined`. Sin embargo, en algunos casos puede ser útil establecer un valor predeterminado diferente. Esto es exactamente para lo que son los ajustes predeterminados.
 
-## Синтаксис
+## Sintaxis
 
 ![book](https://media.giphy.com/media/l0HlOBZcl7sbV6LnO/giphy.gif)
 
 ```jsx live
 function learnJavaScript() {
   const multiply = (a, b = 1) => {
-    //Значение по умолчанию у b равно 1
+    // El valor predeterminado de b es 1
     return a * b
   }
-  //Если b будет undefined, то ему присвоится значение по умолчанию
-  return multiply(5, 2) // удалите запятую, второй аргумент и получите 5 * 1
+  // Si b no está definido, se le asignará un valor predeterminado.
+  return multiply(5, 2) // elimine la coma, el segundo argumento y obtenga 5 * 1
 }
 ```
 
-## Видео
+## Video
 
-<YouTube videoId="J89Qcz0cunw" />
+<VideoId de YouTube="J89Qcz0cunw" />
 
-### Передача других "ложных" значений
+### Pasar otros valores "falsos"
 
 ![basketball](https://media.giphy.com/media/3oEdv5e5Zd2gsczAhG/giphy.gif)
 
-Если формальному параметру при вызове передано любое значение, отличное от `undefined`, в том числе одно из "ложных" значений, таких как false ❎ , `0`, `""`, `''`,`null`, `NaN`, то в этом случае значение по умолчанию присвоено параметру не будет. В этом случае нужно самому прописывать 🖊️ код который будет отлавливать эти "ложные значения".
+Si se pasa cualquier valor que no sea `undefined` al parámetro formal cuando se llama, incluido uno de los valores "falsos" como false ❎ , `0`, `""`, `''`, `null`, `NaN `, en este caso, el valor predeterminado no se asignará al parámetro. En este caso, debe escribir 🖊️ el código usted mismo que detectará estos "valores falsos".
 
-## Примеры
+## Ejemplos
 
 ![Math](https://media.giphy.com/media/xT1Ra5h24Eliux3UVq/giphy.gif)
 
-В параметрах по умолчанию можно использовать значения предыдущих (расположеннных левее в списке) параметров:
+En los parámetros predeterminados, puede usar los valores de los parámetros anteriores (ubicados a la izquierda en la lista):
 
 ```jsx live
 function learnJavaScript() {
@@ -55,16 +55,16 @@ function learnJavaScript() {
 }
 ```
 
-Пример функции с параметрами по умолчанию и без них 👇 :
+Un ejemplo de una función con y sin parámetros predeterminados 👇:
 
 ```jsx live
 function learnJavaScript() {
   const withDefaults = (a = 1, b = 3, c = 2) => {
-    //Функия с параметрами по умолчанию
+    // Función con parámetros por defecto
     return [a, b, c]
   }
   const withoutDefaults = (a, b, c) => {
-    //Функция без параметров по умолчанию
+    // Función sin parámetros predeterminados
     if (a == undefined) {
       a = 1
     }
@@ -85,8 +85,7 @@ function learnJavaScript() {
 
 ## React Native
 
-Большинство компонентов можно настроить при их создании с различными параметрами. Эти параметры создания называются - `props`. Обратите внимание на то, что в третий компонент `HelloWorld` мы не передаем `name` поэтому рапечатывается имя `Вася`
-
+Большинство компонентов можно настроить при их создании с различными параметрами. Эти параметры создания называются - `props`. Обратите внимание на то, что в третий компонент `HelloWorld` мы не передаем `name` поэтому распечатывается имя `john`
 
 ```SnackPlayer name=index.js
 import * as React from 'react'
@@ -107,43 +106,43 @@ const App = () => (
 export default App
 ```
 
-Использование `name` в качестве `props` позволяет нам настроить компонент приветствия, чтобы мы могли повторно использовать этот компонент для каждого из наших приветствий. В этом примере также используется компонент `HelloWorld` в JSX. Способность делать это - вот что делает React таким крутым.
+El uso de `name` como `props` nos permite personalizar el componente de saludo para que podamos reutilizar ese componente para cada uno de nuestros saludos. Este ejemplo también usa el componente `HelloWorld` en JSX. La capacidad de hacer esto es lo que hace que React sea tan genial.
 
-## Проблемы?
+## ¿Problemas?
 
-![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
+![Problema](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
 
-Пишите в [Discord](https://discord.gg/6GDAfXn) или телеграмм [чат](https://t.me/jscampapp), а также подписывайтесь на наши [новости](https://t.me/javascriptapp)
+Escribe en [Discord](https://discord.gg/6GDAfXn) o Telegram [chat](https://t.me/jscampapp) y suscríbete a nuestras [noticias](https://t.me/javascriptapp)
 
-![JavaScript Camp](/img/bandlink.png)
+![Campamento JavaScript](/img/bandlink.png)
 
-## Вопросы:
+## Preguntas:
 
-![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
+![Pregunta](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
 
-Если параметрам функции⚙️ не передано значение, какое значение они принимают по умолчанию?
+Si no se pasa ningún valor a los parámetros de la función⚙️, ¿qué valor toman por defecto?
 
 1. `null`
 2. `undefined`
 3. `NaN`
 
-Параметры по умолчанию "отлавливают" ложные значения?
+¿Los parámetros predeterminados "capturan" valores falsos?
 
 1. `true`
 2. `false`
 
-Можно ли в параметрах по умолчанию использовать значения параметров расположенных левее в списке?
+¿Es posible utilizar los valores de los parámetros ubicados a la izquierda en la lista en los parámetros predeterminados?
 
 1. `true`
 2. `false`
 
-Для того чтобы понять, на сколько вы усвоили этот урок, пройдите тест в [мобильном приложении](http://onelink.to/njhc95) нашей школы по этой теме или в нашем [телеграм боте](https://t.me/javascriptcamp_bot).
+Para comprender cuánto ha aprendido esta lección, realice una prueba en la [aplicación móvil](http://onelink.to/njhc95) de nuestra escuela sobre este tema o en nuestro [bot de Telegram](https://t.me/javascriptcamp_bot).
 
 ![JS Camp](/img/app.jpg)
 
-## Ссылки:
+## Enlaces:
 
-1.  [MDN web docs](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Functions/Default_parameters)
+1. [MDN web docs](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Functions/Default_parameters)
 
 ## Contributors ✨
 

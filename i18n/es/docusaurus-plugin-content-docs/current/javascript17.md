@@ -1,70 +1,70 @@
 ---
 id: javascript17
-title: Массивы
-sidebar_label: Массивы
+title: arreglos
+sidebar_label: arreglos
 ---
 
 import YouTube from 'react-youtube'
 
 ![@serverSerrverlesskiy](/img/javascript/headers/18.jpg)
 
-Для хранения 📦 упорядоченных коллекций существует особая структура данных, которая называется массив `Array`.
+Para almacenar 📦 colecciones ordenadas, existe una estructura de datos especial llamada `Array`.
 
 ![Storage](https://media.giphy.com/media/3orif6FORJ98Z11xzq/giphy.gif)
 
-`Массив` - упорядоченная коллекция данных, в которой присутствуют 1-й, 2-й, 3-й элементы и т.д. Например, она понадобится нам для хранения 📦 списка чего-либо: пользователей, товаров, элементов сайта и т.д.
+`Array` - una colección ordenada de datos, que contiene los elementos 1, 2, 3, etc. Por ejemplo, lo necesitamos para almacenar una 📦 lista de algo: usuarios, productos, elementos del sitio, etc.
 
-## Видео
+## Video
 
 <YouTube videoId="4NS5yxWNulQ" />
 
-## Создание
+## Creación
 
 ![create](https://media.giphy.com/media/3oEduXdm2gjnrsJBOo/giphy.gif)
 
-Существует два 2️⃣ варианта для создания🏗️ пустого массива:
+Hay dos 2️⃣ opciones para crear una matriz vacía🏗️:
 
 ```javascript
 let arr = new Array(5)
-// new Array(5) - создаёт массив без элементов (к которым просто так нельзя обратится), но с заданной длиной.
+// new Array(5) - crea una matriz sin elementos (a la que no se puede acceder así), pero con una longitud dada.
 let arr = []
 ```
 
-Практически всегда используется второй вариант 2️⃣ синтаксиса📖. В скобках мы можем указать начальные значения элементов:
+Casi siempre se usa la segunda variante de la sintaxis 2️⃣📖. Entre paréntesis, podemos especificar los valores iniciales de los elementos:
 
 ```jsx live
 function learnJavaScript() {
-  let fruits = ['Яблоко', 'Апельсин', 'Слива']
+  let fruits = ['Manzana', 'Naranja', 'Ciruela']
 
   return fruits.toString()
 }
 ```
 
-Элементы массива нумеруются, начиная с нуля 0️⃣ .
+Los elementos de la matriz se numeran a partir de cero 0️⃣.
 
-Мы можем получить элемент, указав его номер в квадратных скобках 👇 :
+Podemos obtener un elemento dando su número entre corchetes 👇:
 
 ```jsx live
 function learnJavaScript() {
-  let fruits = ['Яблоко', 'Апельсин', 'Слива']
+  let fruits = ['Manzana', 'Naranja', 'Ciruela']
 
   return fruits[0]
 }
 ```
 
-Мы можем заменить 🖊️ элемент:
+Podemos reemplazar el elemento 🖊️:
 
 ```javascript
-fruits[2] = 'Груша' // теперь ["Яблоко", "Апельсин", "Груша"]
+fruits[2] = 'Pera' // ahora ["Manzana", "Naranja", "Pera"]
 ```
 
-…Или добавить 🆕 новый к существующему массиву 👇 :
+…O agregue un nuevo 🆕 a una matriz existente 👇:
 
 ```jsx live
 function learnJavaScript() {
-  let fruits = ['Яблоко ', 'Апельсин ', 'Слива ']
-  fruits[2] = 'Груша '
-  fruits[3] = 'Лимон ' // теперь ["Яблоко", "Апельсин", "Груша", "Лимон"]
+  let fruits = ['Manzana', 'Naranja', 'Ciruela']
+  fruits[2] = 'Pera'
+  fruits[3] = 'Limón' // ahora ["Manzana", "Naranja", "Pera", "Limón"]
 
   return fruits
 }
@@ -72,21 +72,21 @@ function learnJavaScript() {
 
 ## length
 
-Общее число элементов массива содержится в его свойстве `.length`:
+El número total de elementos de la matriz está contenido en su propiedad `.length`:
 
 ```jsx live
 function learnJavaScript() {
-  let fruits = ['Яблоко', 'Апельсин', 'Слива']
+  let fruits = ['Manzana', 'Naranja', 'Ciruela'']
 
   return fruits.length
 }
 ```
 
-Свойство `length` автоматически обновляется при изменении массива. Если быть точными, это не количество элементов массива, а наибольший цифровой индекс плюс один.
+La propiedad `longitud` se actualiza automáticamente cuando cambia la matriz. Para ser precisos, este no es el número de elementos de la matriz, sino el índice digital más grande más uno.
 
 ![Update](https://media.giphy.com/media/FP47IFqWyXfdKYU6VG/giphy.gif)
 
-Например, единственный реальный элемент, имеющий большой индекс, даёт наибольшую возможную длину массиву 👇 :
+Por ejemplo, el único elemento real que tiene un índice grande le da la mayor longitud posible a la matriz 👇:
 
 ```jsx live
 function learnJavaScript() {
@@ -97,96 +97,92 @@ function learnJavaScript() {
 }
 ```
 
-Обратите внимание, что обычно мы не используем массивы таким образом.
+Tenga en cuenta que normalmente no usamos matrices de esta manera.
 
-Ещё один интересный факт о свойстве `length` – его можно перезаписать.
+Otro hecho interesante sobre la propiedad `length` es que se puede sobrescribir.
 
-Если мы вручную увеличим ➕ его, ничего интересного не произойдёт. Зато, если мы уменьшим➖ его, массив станет короче. Этот процесс необратим, как мы можем понять из примера 👇 :
+Si lo aumentamos manualmente ➕, no pasará nada interesante. Por otro lado, si lo reducimos➖, la matriz se hará más corta. Este proceso es irreversible, como podemos entender del ejemplo 👇:
 
 ```jsx live
 function learnJavaScript() {
   let arr = [1, 2, 3, 4, 5]
 
-  arr.length = 2 // укорачиваем до двух элементов
-  //console.log( arr )  // [1, 2]
+  arr.length = 2 // acortar a dos elementos
+   //consola.log(arr) // [1, 2]
 
-  arr.length = 5 // возвращаем length как было
-  //console.log( arr[3] )  // undefined: значения не восстановились!
-
-  return 'Реальный массив укоротился:' + arr
+  arr.length = 5 // devuelve la longitud tal como estaba
+   //console.log( arr[3] ) // undefined: ¡no se recuperaron valores!
+  
+  return 'Matriz real acortada:' + arr
 }
 ```
 
-Таким образом, самый простой способ очистить массив – это `arr.length = 0` .
+Entonces, la forma más fácil de borrar una matriz es `arr.length = 0`.
 
-## Типы элементов
+## Tipos de elementos
 
 ![Storage](https://media.giphy.com/media/2sYaePC3iVWYBNxaVj/giphy.gif)
 
-В массиве могут храниться 📦 элементы любого типа - число, булевое значение, строки, объекты или целые функции⚙️:
+Una matriz puede almacenar 📦 elementos de cualquier tipo: número, valor booleano, cadenas, objetos o funciones completas⚙️:
 
-Например 👇 :
+Por ejemplo 👇:
 
 ```jsx live
 function learnJavaScript() {
   let arr = [
-    'Яблоко',
-    { name: 'Никита' },
+    'Manzana',
+    { name: 'Nikita' },
     true,
     function () {
-      return 'Привет'
+      return 'Hola'
     }
   ]
-  // получить элемент с индексом 1 {объект} и затем считать его свойство
-  let x = arr[1].name // имя Никита
-  // получить элемент с индексом 3 (функция) и выполнить её
-  let result1 = arr[3] // Сама функция
-  let result2 = arr[3]() // 'Привет'
+  // obtenga el elemento en el índice 1 {objeto} y luego lea su propiedad
+  let x = arr[1].name // nombre nikita
+  // obtener el elemento en el índice 3 (función) y ejecutarlo
+  let result1 = arr[3] // La función en sí
+  let result2 = arr[3]() // 'Hola'
 
-  return 'Значение 4-го элемента с 3-м индексом: ' + result2
-  // + '. Сама функция: ' + result1
+  return 'Valor del 4to elemento con 3er índice: ' + result2
+  // + '. La función en sí: ' + result1
 }
 ```
 
-Обратите внимание `result1 = arr[3]` содержить текст 📜 функции⚙️, а `result2 = arr[3]()` результат выполненной функции⚙️ - `()` мы её запускаем.
+Tenga en cuenta que `result1 = arr[3]` contiene el texto 📜 de la función⚙️, y `result2 = arr[3]()` es el resultado de la función ejecutada⚙️ - `()` lo ejecutamos.
 
-## Методы `push/pop`
+## Métodos `push/pop`
 
 ![binarycode](https://media.giphy.com/media/fV0oSDsZ4UgdW/giphy.gif)
 
-`Стек` - вариант применения массивов как структуры данных.
+`Stack` es una variante del uso de matrices como estructuras de datos.
 
-Она поддерживает два 2️⃣ вида операций:
+Admite dos 2️⃣ tipos de operaciones:
 
-- `push` добавляет ➕ элемент в конец.
+- `pop` elimina ➖ el último elemento.
 
-![Add](https://media.giphy.com/media/Yqo5mjWTLGlVOIP8Dc/giphy.gif)
+![Eliminar](https://media.giphy.com/media/VD4Bt6FyYWcWj0LzDK/giphy.gif)
 
-- `pop` удаляет ➖ последний элемент.
+Por lo tanto, siempre se agregan o eliminan nuevos elementos del "final".
 
-![Delete](https://media.giphy.com/media/VD4Bt6FyYWcWj0LzDK/giphy.gif)
+Un ejemplo de una pila suele ser una pirámide: los anillos nuevos se colocan en la parte superior y también se toman desde arriba.
 
-Таким образом, новые элементы всегда добавляются или удаляются из "конца".
+`Queue` es uno de los usos más comunes para una matriz. En informática🖥️, este es el nombre de una colección ordenada de elementos
 
-Примером стека обычно служит пирамидка: новые кольца кладутся наверх и берутся тоже сверху.
-
-`Очередь` – один из самых распространённых вариантов применения массива. В области компьютерных🖥️ наук так называется упорядоченная коллекция элементов
-
-## Методы работы с концом массива:
+## Métodos para trabajar con el final de una matriz:
 
 ### push
 
 ![Add to](https://media.giphy.com/media/21ODeWspDCgZNAoCIp/giphy.gif)
 
-Добавляет ➕ элемент в конец массива 👇 :
+Agrega ➕ un elemento al final de la matriz 👇:
 
 ```jsx live
 function learnJavaScript() {
-  let fruits = [' Яблоко', ' Апельсин']
+  let fruits = ['Manzana naranja']
 
-  fruits.push(' Груша')
+  fruits.push(' Pera')
 
-  return 'Массив: ' + fruits // Яблоко, Апельсин, Груша
+  return 'Formación: ' + fruits // manzana, naranja, pera
 }
 ```
 
@@ -194,32 +190,32 @@ function learnJavaScript() {
 
 ![Delete](https://media.giphy.com/media/26ybwwiZmci3DJdYs/giphy.gif)
 
-Удаляет ➖ последний элемент из массива и возвращает его 👇 :
+Elimina ➖ el último elemento de una matriz y lo devuelve 👇:
 
 ```jsx live
 function learnJavaScript() {
-  let fruits = [' Яблоко', ' Апельсин', ' Груша']
+  let fruits = [' Manzana', 'Naranja', 'Pera']
 
-  let delFruits = fruits.pop() // удаляем "Груша" и возвращаем его в переменную delFruits
-
-  return 'Удален элемент = ' + delFruits + '. Остался массив: ' + fruits // Яблоко, Апельсин
+  let delFruits = fruits.pop() // eliminar "Pear" y devolverlo a la variable delFruits
+  
+  return 'Elemento eliminado = ' + delFruits + '. Matriz restante: ' + fruits // Manzana naranja
 }
 ```
 
-## Методы работы с началом массива:
+## Métodos para trabajar con el comienzo de una matriz:
 
 ![start](https://media.giphy.com/media/QJvwBSGaoc4eI/giphy.gif)
 
 ### shift
 
-Удаляет ➖ из массива первый и возвращает🔄 его:
+Elimina el primer ➖ de la matriz y lo devuelve 🔄:
 
 ![delete](https://media.giphy.com/media/4Z1XJumqDgvI9b1VZJ/giphy.gif)
 
 ```jsx live
 function learnJavaScript() {
-  let fruits = ['Яблоко ', 'Апельсин ', 'Груша ']
-  fruits.shift() // удаляем Яблоко
+  let fruits = ['Manzana ', 'Naranja', 'Pera']
+  fruits.shift() // eliminar manzana
 
   return fruits
 }
@@ -227,155 +223,155 @@ function learnJavaScript() {
 
 ### unshift
 
-Добавляет ➕ элемент в начало массива:
+Agrega un elemento ➕ al comienzo de la matriz:
 
 ![Plus](https://media.giphy.com/media/LgC9OQ53v5mFi/giphy.gif)
 
 ```jsx live
 function learnJavaScript() {
-  let fruits = ['Яблоко ', 'Апельсин ', 'Груша ']
-  fruits.unshift('Абрикос ')
+  let fruits = ['Manzana ', 'Naranja', 'Pera']
+  fruits.unshift('Albaricoque')
 
   return fruits
 }
 ```
 
-Методы `push` и `unshift` могут добавлять ➕ сразу несколько элементов 👇 :
+Los métodos `push` y `unshift` pueden agregar ➕ varios elementos a la vez 👇:
 
 ```jsx live
 function learnJavaScript() {
-  let fruits = ['Яблоко']
+  let fruits = ['Manzana']
 
-  fruits.push('Апельсин', 'Груша')
-  fruits.unshift('Ананас', 'Лимон')
+  fruits.push('naranja', 'pera')
+  fruits.unshift('Piña', 'Limón')
 
-  return 'В массиве ' + fruits.length + ' элементов. ' + ' Массив: ' + fruits // ["Ананас", "Лимон", "Яблоко", "Апельсин", "Груша"]
+  return 'en matriz ' + fruits.length + ' elementos. ' + ' Formación: ' + fruits // ["Piña", "Limón", "Manzana", "Naranja", "Pera"]
 }
 ```
 
-## Внутреннее устройство массива
+## Arreglo interno
 
 ![cupboard](https://media.giphy.com/media/b90TnygrKqYqk/giphy.gif)
 
-Массив – это особый подвид объектов. Квадратные скобки, используемые для того, чтобы получить доступ к свойству `arr[0]` – это по сути обычный синтаксис📖 доступа по ключу, как `obj[key],` где в роли `obj` у нас `arr`, а в качестве ключа – числовой индекс.
+Una matriz es un subconjunto especial de objetos. Los corchetes que se usan para acceder a la propiedad `arr[0]` son básicamente la sintaxis normal📖 del acceso de clave, como `obj[key]`, donde tenemos `arr` como `obj` y como clave: un índice numérico .
 
-Массивы расширяют объекты, так как предусматривают специальные методы для работы с упорядоченными коллекциями данных, а также свойство `length.` Но в основе всё равно лежит объект.
+Las matrices amplían los objetos, ya que proporcionan métodos especiales para trabajar con colecciones ordenadas de datos, así como una propiedad `length`, pero el objeto sigue estando en el centro.
 
-Следует помнить, что в JavaScript массив является объектом и, следовательно, ведёт себя как объект.
+Tenga en cuenta que en JavaScript una matriz es un objeto y, por lo tanto, se comporta como un objeto.
 
-Например, массив копируется по ссылке 👇 :
+Por ejemplo, una matriz se copia por referencia 👇:
 
 ```jsx live
 function learnJavaScript() {
-  let fruits = [' Лимон']
+  let fruits = [' Limón']
 
-  let copy = fruits // копируется по ссылке (две переменные ссылаются на один и тот же массив)
+  let copy = fruits // copiado por referencia (dos variables se refieren a la misma matriz)
 
-  copy.push(' Груша') // массивы меняются по ссылке одной командой
+  copy.push(' Груша') // las matrices se cambian por referencia con un comando
 
-  return '1 массив: ' + fruits + ' 2 массив: ' + copy // Лимон, Груша - теперь два элемента
+  return '1 matriz: ' + fruits + ' 2 matriz: ' + copy // Limón, Pera - ahora dos elementos
 }
 ```
 
-Что действительно делает массивы особенными – это их внутреннее представление. Движок JavaScript старается хранить элементы массива в непрерывной области памяти, один за другим. Существуют и другие способы оптимизации, благодаря которым массивы работают очень быстро.
+Lo que realmente hace que las matrices sean especiales es su representación interna. El motor de JavaScript intenta almacenar los elementos de una matriz en un área de memoria contigua, uno tras otro. Hay otras optimizaciones que hacen que las matrices sean muy rápidas.
 
-Но все они утратят эффективность, если мы перестанем работать с массивом как с "упорядоченной коллекцией данных" и начнём использовать его как обычный объект.
+Pero todos ellos pierden su eficacia si dejamos de trabajar con una matriz como una "colección ordenada de datos" y comenzamos a utilizarla como un objeto normal.
 
-Например, технически мы можем сделать следующее:
+Por ejemplo, técnicamente podemos hacer lo siguiente:
 
 ```javascript
-let fruits = [] // создаём пустой массив
+let fruits = [] // crear una matriz vacía
 
-fruits[99999] = 5 // создаём свойство с избыточным индексом, намного превышающим необходимую длину массива
+fruits[99999] = 5 // cree una propiedad con un exceso de índice que sea mucho más grande que la longitud requerida de la matriz
 
-fruits.age = 25 // создаём свойство с произвольным именем
+fruits.age = 25 // crear una propiedad con un nombre arbitrario
 ```
 
-Это возможно, потому что в основе массива лежит объект. Мы можем присвоить ему любые свойства.
+Esto es posible porque una matriz se basa en un objeto. Podemos asignarle cualquier propiedad.
 
-:::note Варианты неправильного применения массива!
+::: nota ¡Uso incorrecto de una matriz!
 
-- Добавление нечислового свойства (индекса test), например: arr.test = 5
-- Создание «дыр», например: добавление arr[0], затем arr[1000] (между ними ничего нет)
-- Заполнение массива в обратном порядке, например: arr[1000], arr[999] и т.д.
+- Agregar una propiedad no numérica (prueba de índice), por ejemplo: arr.test = 5
+- Crear "agujeros", por ejemplo: agregar arr[0] luego arr[1000] (nada en el medio)
+- Llenar la matriz en orden inverso, por ejemplo: arr[1000], arr[999], etc.
 
 :::
 
-Массив следует считать особой структурой, позволяющей работать с упорядоченными данными. Если вам нужны произвольные ключи, вполне возможно, лучше подойдёт обычный объект {}.
+Una matriz debe considerarse una estructura especial que le permite trabajar con datos ordenados. Si necesita claves arbitrarias, un objeto simple {} podría ser mejor.
 
-## Эффективность
+## Eficiencia
 
 ![Fast](https://media.giphy.com/media/3oriNYQX2lC6dfW2Ji/giphy.gif)
 
-Методы `push/pop` выполняются быстро, а методы `shift/unshift` – медленно.
+Los métodos `push/pop` son rápidos, mientras que los métodos `shift/unshift` son lentos.
 
-Почему работать с концом массива быстрее, чем с его началом? Давайте посмотрим, что происходит во время выполнения:
+¿Por qué es más rápido trabajar con el final de una matriz que con su comienzo? Veamos qué sucede en tiempo de ejecución:
 
 ```javascript
-fruits.shift() // удаляем первый элемент с начала
+fruits.shift() // quitar el primer elemento del principio
 ```
 
-Просто взять и удалить элемент с номером 0 недостаточно. Нужно также заново пронумеровать остальные элементы.
+No basta con tomar y eliminar el elemento con el número 0. También necesita volver a numerar el resto de los elementos.
 
-Операция `shift` должна выполнить 3 действия:
+La operación `shift` debe hacer 3 cosas:
 
-- Удалить элемент с индексом 0
+- Eliminar elemento en el índice 0
 
 ![Delete](https://media.giphy.com/media/VIzs0jgs8KmgVeTknN/giphy.gif)
 
-- Сдвинуть все элементы влево, заново пронумеровать их, заменив `1` на `0`, `2` на `1` и т.д.
+- Desplace todos los elementos a la izquierda, vuelva a numerarlos, reemplazando `1` con `0`, `2` con `1`, etc.
 
 ![Move](https://media.giphy.com/media/jSQcEjcwG53WooptHz/giphy.gif)
 
-- Обновить свойство `length`
+- Actualizar la propiedad `length`
 
-Чем больше элементов содержит массив, тем больше времени потребуется для того, чтобы их переместить, больше операций с памятью.
+Cuantos más elementos contenga la matriz, más tiempo llevará moverlos, más operaciones de memoria.
 
-А что же с удалением `pop`? Ему не нужно ничего перемещать. Чтобы удалить элемент в конце массива, метод `pop` очищает индекс и уменьшает значение `length`. Остальные элементы остаются с теми же индексами.
+¿Qué pasa con la eliminación de `pop`? No necesita mover nada. Para eliminar un elemento al final de una matriz, el método `pop` borra el índice y disminuye el valor de `length`. Los elementos restantes permanecen en los mismos índices.
 
 ```javascript
-fruits.pop() // удаляем один элемент с конца
+fruits.pop() // eliminar un elemento del final
 ```
 
-Метод `pop` не требует перемещения. Именно поэтому он выполняется очень быстро.
+El método `pop` no requiere un movimiento. Por eso corre muy rápido.
 
-Аналогично работает метод `push`.
+El método `push` funciona de manera similar.
 
-## Перебор элементов
+## Iterar sobre elementos
 
 ![Object](https://media.giphy.com/media/26gs9kSN6d5PxSsQU/giphy.gif)
 
-Одним из самых старых способов перебора элементов массива является цикл `for( )` по цифровым индексам 👇 :
+Una de las formas más antiguas de iterar sobre los elementos de una matriz es el bucle `for()` sobre índices numéricos 👇:
 
 ```jsx live
 // prettier-ignore
 function learnJavaScript() {
   let result = ''
-  let arr = ['Яблоко', 'Апельсин', 'Киви']
+  let arr = ['Manzana', 'Naranja', 'Kiwi']
   
-  for (let i = 0; i < arr.length; i++) // проходит по элементам через for( )
+  for (let i = 0; i < arr.length; i++) // itera sobre los elementos con for()
   result += arr[i] + ' '
 
-  return result // Яблоко, Апельсин, Киви
+  return result // manzana, naranja, kiwi
 }
 ```
 
-Но для массивов возможен и другой вариант цикла, `for..of` 👇 :
+Pero para matrices, también es posible otra versión del ciclo, `for..of` 👇 :
 
 ```jsx live
 function learnJavaScript() {
   let result = ''
-  let fruits = ['Яблоко', 'Апельсин', 'Слива']
+  let fruits = ['Manzana', 'Naranja', 'Ciruela']
 
   for (let fruit of fruits) {
-    // проходит по значениям через `for..of`
+    // itera sobre los valores a través de `for..of`
     result += fruit + ' '
   }
-  return result // Яблоко, Апельсин, Слива
+  return result // manzana, naranja, ciruela
 }
 ```
 
-Цикл `for..of` не предоставляет доступа к номеру текущего элемента, только к его значению, но в большинстве случаев этого более чем достаточно, а также это короче.
+El bucle `for..of` no proporciona acceso al número del elemento actual, solo a su valor, pero en la mayoría de los casos esto es más que suficiente, y también es más corto.
 
 <!-- ## Псевдомассивы
 
@@ -404,11 +400,11 @@ function learnJavaScript() {
 
 - цикл `for..in` выполняет перебор всех свойств объекта, а не только цифровых. -->
 
-## Многомерные массивы
+## Matrices multidimensionales
 
 ![Matryoschka](https://media.giphy.com/media/XuPaGVKyJ6eyI/giphy.gif)
 
-Массивы могут содержать элементы, которые тоже являются массивами. Это можно использовать для создания🏗️ многомерных массивов, например, для хранения 📦 матриц:
+Los arreglos pueden contener elementos que también son arreglos. Esto se puede usar para crear 🏗️ matrices multidimensionales, por ejemplo, para almacenar 📦 matrices:
 
 ```jsx live
 function learnJavaScript() {
@@ -418,45 +414,46 @@ function learnJavaScript() {
     [7, 8, 9]
   ]
 
-  return matrix[1][1] // 5, центральный элемент
+  return matrix[1][1] // 5, elemento central
 }
 ```
 
-## Итого
+## Total
 
 ![remember](https://media.giphy.com/media/l4pTfqyI6TCjUW4Yo/giphy.gif)
 
-Массив – это особый тип объекта, предназначенный для работы с упорядоченным набором элементов.
+Una matriz es un tipo especial de objeto diseñado para trabajar con un conjunto ordenado de elementos.
 
-Объявление🗣️:
+Anuncio🗣️:
 
 ```javascript
-// квадратные скобки (обычно)
+// corchetes (normalmente)
 let arr = [item1, item2...]
 
-// new Array (очень редко)
+// nueva matriz (muy rara)
 let arr = new Array(item1, item2...)
 ```
 
-Вызов `new Array(number)` создаёт🏗️ массив с заданной длиной, но без элементов.
+Llamar a `nueva matriz (número)` crea🏗️ una matriz con la longitud dada pero sin elementos.
 
-Свойство `length` отражает длину массива.
+La propiedad `longitud` refleja la longitud de la matriz.
 
-Мы можем использовать массив как двустороннюю очередь, используя следующие операции:
+Podemos usar una matriz como un deque usando las siguientes operaciones:
 
-- `push(...items)` добавляет ➕ items в конец массива.
-- `pop()` удаляет ➖элемент в конце массива и возвращает его.
-- `shift()` удаляет ➖ элемент в начале массива и возвращает его.
-- `unshift(...items)` добавляет ➕ items в начало массива.
+- `push(...items)` agrega ➕ elementos al final de la matriz.
+- `pop()` elimina el elemento ➖ al final de la matriz y lo devuelve.
+- `shift()` elimina ➖ el elemento al principio de la matriz y lo devuelve.
+- `unshift(...items)` agrega ➕ elementos al comienzo de la matriz.
 
-Чтобы перебрать элементы массива:
+Para iterar sobre los elementos de una matriz:
 
-- `for (let i=0 i<arr.length i++)` – работает быстрее всего, совместим со старыми браузерами.
-- `for (let item of arr)` – современный синтаксис📖 только для значений элементов (к индексам нет доступа).
-- `for (let i in arr)` – никогда не используйте для массивов!
+- `for (let i=0 i<arr.length i++)` - funciona más rápido, compatible con navegadores más antiguos.
+- `for (let item of arr)` - sintaxis moderna📖 solo para valores de elementos (sin acceso a índices).
+- `for (let i in arr)` - ¡nunca lo use para arreglos!
 
 ## React Native
-React Native предоставляет набор компонентов для представления списков данных. Как правило, вам нужно использовать либо `FlatList`, либо `SectionList`. Детальней с ними мы познакомимся позже, главное сейчас вам понять, что на вход они принимают массив, который рендерит на экране.
+
+React Native proporciona un conjunto de componentes para representar listas de datos. Por lo general, debe usar `FlatList` o `SectionList`. Los conoceremos con más detalle más adelante, lo principal ahora es entender que toman una matriz como entrada, que se representa en la pantalla.
 
 ```SnackPlayer name=index.js
 import React from 'react'
@@ -489,81 +486,81 @@ export default FlatListBasics
 ```
 
 
-## Проблемы?
+## ¿Problemas?
 
 ![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
 
-Пишите в [Discord](https://discord.gg/6GDAfXn) или телеграмм [чат](https://t.me/jscampapp), а также подписывайтесь на наши [новости](https://t.me/javascriptapp)
+Escribe en [Discord](https://discord.gg/6GDAfXn) o Telegram [chat](https://t.me/jscampapp) y suscríbete a nuestras [noticias](https://t.me/javascriptapp)
 
 ![JavaScript Camp](/img/bandlink.png)
 
-## Вопросы
+## Preguntas
 
 ![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
 
-Массив – это ...
+La matriz es...
 
-1. Подвид объектов с "упорядоченной коллекцией данных"
-2. Внутренная функция
-3. Подвид объектов с "не упорядоченной коллекцией данных"
+1. Subtipo de objetos con una "colección ordenada de datos"
+2. Función interna
+3. Subtipo de objetos con "recopilación desordenada de datos"
 
-Пустой массив создается:
+Se crea una matriz vacía:
 
 1. `let arr2 = { }`
 2. `let arr1 = [ ]`
 3. `let arr3 = ( )`
 
-Длину массива можно определить свойством:
+La longitud de una matriz se puede determinar mediante una propiedad:
 
 1. `pop`
 2. `push`
 3. `length`
 
-В массиве могут храниться элементы:
+Una matriz puede almacenar elementos:
 
-1. Любого типа
-2. Числовые
-3. Строковые
+1. Cualquier tipo
+2. numérico
+3. Cuerda
 
-Добавление элемента в конце массива:
+Agregar un elemento al final de una matriz:
 
 1. `push`
 2. `pop`
 3. `shift`
 
-Удаление элемента в начале массива:
+Eliminando un elemento al comienzo de una matriz:
 
 1. `pop`
 2. `shift`
-3. `unshift`
+3. `unshift`'
 
-\_\_\_\_ в массиве - это число, представляющее позицию любого заданного элемента в массиве.
+\_\_\_\_ en una matriz es un número que representa la posición de cualquier elemento dado en la matriz.
 
-1. индекс
-2. длина
-3. функция
+1. índice
+2. longitud
+3. función
 
-Какое значение следует поместить в квадратные скобки, чтобы получить первый элемент в массиве? \n `myArray[]`
+¿Qué valor debe colocarse entre corchetes para obtener el primer elemento de la matriz? \n `miArray[]`
 
 1. `0`
 2. `1`
 3. `2`
 
-Использование метода `.pop()` для массива будет \_\_\_ и \_\_\_ последний элемент массива.
+Usar el método `.pop()` en una matriz será \_\_\_ y \_\_\_ el último elemento de la matriz.
 
-1. "удалять / возвращать"
-2. "возвращать / удалять"
+1. "eliminar / devolver"
+2. "devolver/borrar"
 
-Для того чтобы понять, на сколько вы усвоили этот урок, пройдите тест в [мобильном приложении](http://onelink.to/njhc95) нашей школы по этой теме или в нашем [телеграм боте](https://t.me/javascriptcamp_bot).
+Para comprender cuánto ha aprendido esta lección, realice una prueba en la [aplicación móvil](http://onelink.to/njhc95) de nuestra escuela sobre este tema o en nuestro [bot de Telegram](https://t.me/javascriptcamp_bot).
 
-![JS Camp](/img/app.jpg)
+![Campamento JS](/img/app.jpg)
 
-## Ссылки
+## Enlaces
 
-1. [Статья "Массивы"](https://learn.javascript.ru/array)
-2. [MDN web doc. Статья "Массивы"](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array)
-3. [Статья "JavaScript массивы"](https://basicweb.ru/javascript/js_array.php)
-4. [Код для подростков: прекрасное руководство по программированию для начинающих, том 1: Javascript - Jeremy Moritz ](https://www.amazon.com/Code-Teens-Beginners-Programming-Javascript-ebook/dp/B07FCTLVPC)
+1. [Artículo "Matrices"](https://learn.javascript.ru/array)
+2. [Documento web de MDN. Artículo "Matrices"](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array)
+3. [Artículo "Arreglos de JavaScript"](https://basicweb.ru/javascript/js_array.php)
+4. [Código para adolescentes: la gran guía de programación para principiantes Volumen 1: Javascript - Jeremy Moritz](https://www.amazon.com/Code-Teens-Beginners-Programming-Javascript-ebook/dp/B07FCTLVPC)
 
 ## Contributors ✨
 

@@ -1,121 +1,121 @@
 ---
 id: javascript12
-title: Блочная область видимости
-sidebar_label: Блочная область видимости
+title: Ámbito de bloque
+sidebar_label: Ámbito de bloque
 ---
 
 import YouTube from 'react-youtube'
 
 ![@serverSerrverlesskiy](/img/javascript/headers/12.jpg)
 
-Область видимости (англ. Scope) - часть программы, в пределах которой переменная доступна для использования. <!--Для переменной, областью видимости будет та часть программы в которой она "видна" и может быть использована программистом.--> При создании🏗️ `.js` файла мы создаём🏗️ область видимости целого файла, для создания🏗️ внутренней области видимости, нужно объявить🗣️ её с помощью фигурных скобок `{ ... }`.
+Alcance (alcance en inglés): una parte del programa dentro de la cual la variable está disponible para su uso. <!--Para una variable, el alcance será la parte del programa en la que es "visible" y puede ser utilizada por el programador.--> Al crear🏗️ el archivo `.js`, creamos🏗️ el alcance de todo el archivo, para crear🏗️ alcance interno, debe declararlo🗣️ usando corchetes `{ ... }`.
 
 ![file](https://media.giphy.com/media/3o6Ztk7NosfLVRqcpy/giphy.gif)
 
 ```jsx
-// Первая область видимости
+// primer alcance
 let fruit = 'Banana'
 {
-  // Вторая область видимости
+  // Segundo alcance
   let fruit = 'Apple'
   {
-    // Третья область видимости
+    // Tercer alcance
     let fruit = 'Lime'
   }
 }
 ```
 
-В этом примере мы создали🏗️ три переменные в разных областях видимости, в которых находится своя версия переменной `fruit`, поэтому ошибки🙅‍♂️ не возникают, но если попытаться в одной области видимости создать🏗️ две переменные с одним именем, то возникнет ошибка🙅‍♂️.
+En este ejemplo, creamos 🏗️ tres variables en diferentes ámbitos, que contienen su propia versión de la variable `fruta`, por lo que no se producen errores 🙅‍♂️, pero si intenta crear 🏗️ dos variables con el mismo nombre en el mismo ámbito , entonces ocurrirá un error 🙅.
 
 ```jsx
-// Первая область видимости
+// primer alcance
 let fruit = 'Banana'
 {
-  // Вторая область видимости
+  // Segundo alcance
   let fruit = 'Apple'
-  let fruit = 'Lime' // Здесь возникнет ошибка
+  let fruit = 'Lime' // Aquí se producirá un error.
 }
 ```
 
-При создании🏗️ различных конструкций вы также создаёте🏗️ и область видимости этой конструкции, так как используете блок из фигурных скобок `{ ... }`.
+Cuando crea 🏗️ varias construcciones, también crea 🏗️ el alcance de esta construcción, porque usa un bloque de corchetes `{ ... }`.
 
 ```jsx
 if (true) {
-  // Область видимости условного оператора
+  // Alcance de una declaración condicional
 }
 
 for (let i = 0; i > 5; i++) {
-  // Область видимости цикла
+  // Alcance de bucle
 }
 
 function test() {
-  // Область видимости функции
+  // Alcance de la función
 }
 ```
 
-В этих примерах у каждой конструкции своя область видимости.
+En estos ejemplos, cada construcción tiene su propio alcance.
 
-## Видео
+## Video
 
 <YouTube videoId="p-wmzCW_2C8" />
 
-## Глобальная область видимости
+## Alcance global
 
 ![Global](https://media.giphy.com/media/l0MYPsBLOYyFqSDte/giphy.gif)
 
-Говоря глобальная область видимости, мы подразумеваем, что все остальные области видимости являются дочерними по отношению к этой. В глобальной области видимости находятся переменные, объявленные🗣️ вне всех функций⚙️ и блоков.
+Cuando decimos alcance global, queremos decir que todos los demás alcances son hijos de este. El alcance global contiene variables declaradas🗣️ fuera de todas las funciones⚙️ y bloques.
 
 ```jsx
-// Глобальная область видимости
+// Alcance global
 let fruit = 'Banana'
 ```
 
-Переменная 🔔 созданная в глобальной области видимости называется `глобальной переменной` 🔔 . Глобальную переменную 🔔 можно использовать во всех дочерних областях видимости.
+Una variable 🔔 creada en el ámbito global se denomina `variable global` 🔔. La variable global 🔔 se puede utilizar en todos los ámbitos secundarios.
 
 ```jsx live
 function learnJavaScript() {
-  // Переменная fruit является глобальной
+  // La variable fruts es global.
   let fruit = 'Banana'
   function showFruit() {
-    // Поэтому мы можем использовать её внутри функции
+    // Entonces podemos usarlo dentro de una función.
     return fruit
   }
   return showFruit()
 }
 ```
 
-## Локальная область видимости
+## Ámbito local
 
 ![Local](https://media.giphy.com/media/VFwRCi6WKBUk08fliV/giphy.gif)
 
-В локальной области видимости находятся переменные, объявленные🗣️ в определенной части кода📟 . К примеру переменные, созданные🏗️ внутри цикла, будут локальными.
+El alcance local contiene variables declaradas🗣️ en una determinada parte del código📟. Por ejemplo, las variables creadas 🏗️ dentro del bucle serán locales.
 
 ```jsx
 for (let i = 0; i > 5; i++) {
-  // Переменная i является локальной
+  // La variable i es local
 }
 ```
 
-Использовать локальные переменные 🔔 можно только внутри блока, в котором они были объявлены.
+Las variables locales 🔔 solo pueden usarse dentro del bloque en el que fueron declaradas.
 
 ```jsx
 function learnJavaScript() {
   function showFruit() {
-    // Переменная fruit является локальной
+    // La variable fruit es local.
     let fruit = 'Banana'
   }
-  // Поэтому мы не можем использовать её вне функции
+  // Por lo tanto, no podemos usarlo fuera de una función.
   return fruit
 }
 
 // ReferenceError: fruit is not defined
 ```
 
-## Примеры
+## Ejemplos
 
 ![Math](https://media.giphy.com/media/xT1Ra5h24Eliux3UVq/giphy.gif)
 
-Используем две переменные 🔔 с одинаковым именем в разных областях видимости. Функция `otherFruit()` возвращает переменную 🔔 `fruit` из той области видимости, в которой она инициализирована, как `Lime`
+Usamos dos variables 🔔 con el mismo nombre en diferentes ámbitos. La función `otherFruit()` devuelve la variable 🔔 `fruts` desde el ámbito en el que se inicializa como `Lime`
 
 ```jsx live
 function learnJavaScript() {
@@ -128,7 +128,7 @@ function learnJavaScript() {
 }
 ```
 
-Если мы уберём `let` из функции `otherFruit()`, то вместо создания переменной 🔔 мы её перезаписываем 🖊️.
+Si eliminamos `let` de la función `otherFruit()`, en lugar de crear una variable 🔔 la sobrescribimos 🖊️.
 
 ```jsx live
 function learnJavaScript() {
@@ -141,7 +141,7 @@ function learnJavaScript() {
 }
 ```
 
-Что, если мы попытаемся вызвать локальную переменную 🔔 в родительской области видимости? Возникает ошибка, из-за того, что мы пытаемся в глобальной области видимости вызвать переменную 🔔 , которую мы не создавали.
+¿Qué sucede si tratamos de llamar a una variable local 🔔 en el ámbito principal? Ocurre un error porque estamos tratando de llamar a una variable 🔔 en el alcance global, que no creamos.
 
 ```javascript
 function learnJavaScript() {
@@ -157,13 +157,13 @@ function learnJavaScript() {
 
 ![Primer](https://media.giphy.com/media/M33UV4NDvkTHa/giphy.gif)
 
-## Запрет на var
+## Prohibición de var
 
 ![eye](https://media.giphy.com/media/PKl9JTqnoiKtO/giphy.gif)
 
-В статье [Переменка](https://jscamp.app/docs/javascript03) мы вам сказали, что использовать `var` не будем, связано это как раз с областью видимости.
+En el artículo [Variable](https://jscamp.app/docs/javascript03) le dijimos que no usaremos `var`, está conectado solo con el alcance.
 
-1. Если в одной области видимости вы создадите две переменные 🔔 с одним именем с помощью ключевого слова `let` или `const`, то интерпретатор нас предупреждает об этом, выводя ошибку.
+1. Si crea dos variables 🔔 con el mismo nombre en el mismo ámbito utilizando la palabra clave `let` o `const`, el intérprete nos advierte sobre esto mostrando un error.
 
 ```jsx
 function learnJavaScript() {
@@ -174,7 +174,7 @@ function learnJavaScript() {
 }
 ```
 
-Но, если с помощью `var` вы создадите переменные 🔔 с одинаковым именем, то он её переназначит.
+Pero, si usando `var` creas variables 🔔 con el mismo nombre, entonces las reasignará.
 
 ```jsx live
 function learnJavaScript() {
@@ -184,9 +184,9 @@ function learnJavaScript() {
 }
 ```
 
-Ошибки🙅‍♂️ не возникает, т.к. `var` перезаписал переменную `fruit`
+El error 🙅‍♂️ no ocurre porque `var` sobrescribió la variable `fruit`
 
-2. Создав глобальную переменную 🔔 с помощью `var` мы можем изменить её из локальной области видимости, создав ещё одну переменную 🔔 с таким же именем с помощью `var`. Область действия `var` ограничивается либо функцией, либо скриптом.
+2. Habiendo creado una variable global 🔔 usando `var`, podemos cambiarla desde el alcance local creando otra variable 🔔 con el mismo nombre usando `var`. El alcance de `var` está limitado a una función o un script.
 
 ```jsx live
 function learnJavaScript() {
@@ -198,7 +198,7 @@ function learnJavaScript() {
 }
 ```
 
-3. Переменные 🔔 созданные с `var` считаются объявленными с самого начала запуска скрипта, вне зависимости от того, в каком месте находится объявление.
+3. Las variables 🔔 creadas con `var` se consideran declaradas desde el comienzo de la ejecución del script, independientemente de dónde se encuentre la declaración.
 
 ```jsx live
 function learnJavaScript() {
@@ -208,11 +208,11 @@ function learnJavaScript() {
 }
 ```
 
-4. В JavaScript до ES6 блочных областей видимости не было. Т.е. любая переменная созданная с помощью ключевого слова `var` внутри блока будет видима и за его пределами.
+4. Antes de ES6, JavaScript no tenía alcances de bloque. Aquellos. cualquier variable creada con la palabra clave `var` dentro del bloque también será visible fuera del bloque.
 
 ```javascript
 if (true) {
-  var fruit = 'Apple' // переменная будет видна за пределами данного блока
+  var fruit = 'Apple' // la variable será visible fuera de este bloque
 }
 console.log(fruit) // "Apple"
 ```
@@ -221,48 +221,48 @@ console.log(fruit) // "Apple"
 
 ```javascript
 if (true) {
-  let fruit = 'Apple' // переменная не будет видна за пределами данного блока
+  let fruit = 'Apple' // la variable no será visible fuera de este bloque
 }
 console.log(fruit) // "Apple"
 ```
 
 ![javascript](/img/javascript/29.jpg)
 
-Из-за перечисленных причин, разработчики отказались от использования `var`
+Debido a las razones anteriores, los desarrolladores han abandonado el uso de `var`
 
-## Проблемы?
+## ¿Problemas?
 
 ![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
 
-Пишите в [Discord](https://discord.gg/6GDAfXn) или телеграмм [чат](https://t.me/jscampapp), а также подписывайтесь на наши [новости](https://t.me/javascriptapp)
+Escribe en [Discord](https://discord.gg/6GDAfXn) o Telegram [chat](https://t.me/jscampapp) y suscríbete a nuestras [noticias](https://t.me/javascriptapp)
 
 ![JavaScript Camp](/img/bandlink.png)
 
-## Вопросы
+## Preguntas
 
-![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
+![Pregunta](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
 
-Когда мы создаём самую первую область видимости?
+¿Cuándo creamos el primer alcance?
 
-1. При создании цикла
-2. При создании файла
-3. При создании блока
+1. Al crear un bucle
+2. Al crear un archivo
+3. Al crear un bloque
 
-При создании условного оператора создаётся ли новая область видимости?
+Al crear una declaración condicional, ¿se crea un nuevo alcance?
 
 1. `true`
 2. `false`
 
-Где создаётся локальная переменная?
+¿Dónde se crea la variable local?
 
-1. Внутри блока, в котором она объявлена
-2. Вне всех блоков
+1. Dentro del bloque en el que se declara
+2. Fuera de todos los bloques
 
-Для того чтобы понять насколько вы усвоили этот урок пройдите тест в [мобильном приложении](http://onelink.to/njhc95) в нашей школы по этой теме.
+Para comprender cuánto ha aprendido en esta lección, realice la prueba en [aplicación móvil](http://onelink.to/njhc95) en nuestra escuela sobre este tema.
 
 ![JS Camp](/img/app.jpg)
 
-## Ссылки
+## Enlaces
 
 1. [JavaScript Scope](https://css-tricks.com/javascript-scope-closures/)
 2. [Learn JavaScript](https://learn.javascript.ru/closure)

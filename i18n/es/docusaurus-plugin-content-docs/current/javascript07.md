@@ -1,61 +1,61 @@
 ---
 id: javascript07
-title: Числа
-sidebar_label: Числа
+title: Números
+sidebar_label: Números
 ---
 
 import YouTube from 'react-youtube'
 
 ![@serverSerrverlesskiy](/img/javascript/headers/07.jpg)
 
-В современном JavaScript существует два 2️⃣ типа чисел:
+Hay dos tipos de números 2️⃣ en JavaScript moderno:
 
 ### `number`
 
-Обычные числа в JavaScript хранятся в 64-битном формате IEEE-754, который также называют «числа с плавающей точкой двойной точности» (double precision floating point numbers). Это числа, которые мы будем использовать чаще всего. Целые числа не рассматриваются как отдельный тип чисел. В дополнение к числам с плавающей запятой, к числовому типу данных относятся также три символьные величины: `Infinity`, `-Infinity`, и `NaN` (не-число).
+Los números regulares en JavaScript se almacenan en el formato IEEE-754 de 64 bits, también conocido como números de coma flotante de doble precisión. Estos son los números que usaremos con más frecuencia. Los números enteros no se tratan como un tipo de número separado. Además de los números de punto flotante, también hay tres valores de caracteres que son numéricos: `Infiniy`, `-Infinity` y `NaN` (no es un número).
 
 ![Numbers](https://media.giphy.com/media/JtBZm3Getg3dqxK0zP/giphy.gif)
 
-## Видео
+## Video
 
 <YouTube videoId="wltQLqPeOyc" /> 
 
 ### `bigInt`
 
-Числа дают возможность работать с целыми числами произвольной длины. Они нужны достаточно редко и используются в случаях, когда необходимо работать со значениями за пределами максимального безопасного целочисленного значения `Number`.
+Los números hacen posible trabajar con enteros de longitud arbitraria. Rara vez se necesitan y se utilizan en los casos en que es necesario trabajar con valores más allá del valor entero seguro máximo `Number`.
 
-Любое число, пусть даже десятичная дробь с уймой знаков после запятой, никогда не берётся в кавычки.
+Cualquier número, incluso una fracción decimal con muchos lugares decimales, nunca se cita.
 
-Вы можете использовать четыре типа числовых литералов: десятичный, двоичный, восьмеричный и шестнадцатеричный. Так как три последних используются довольно редко, то мы опустим их детальное описание 🖊️ , ну а любопытные могут познакомиться с ними [здесь](https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Numbers_and_dates).
+Puede utilizar cuatro tipos de literales numéricos: decimal, binario, octal y hexadecimal. Dado que los últimos tres se usan muy raramente, omitiremos su descripción detallada 🖊️, pero los curiosos pueden familiarizarse con ellos [aquí](https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Numbers_and_dates).
 
 :::caution
-Будьте внимательны при использование нулей в начале чисел! Значит не надо ставить ноль перед десятичным числом.
+¡Tenga cuidado al usar ceros a la izquierda! Así que no necesitas poner un cero antes del número decimal.
 :::
 
 ```jsx
 1234567890
 42
 
-0888 // 888 обрабатывается как десятичное
-0777 // обрабатывается как восьмеричное в нестрогой форме (511 в десятичной)
+0888 // 888 se trata como decimal
+0777 // procesado como octal no estricto (511 en decimal)
 ```
 
-## Арифметические действия
+## Operaciones aritmeticas
 
 ![Arithmetic operation](https://media.giphy.com/media/gEvab1ilmJjA82FaSV/giphy.gif)
 
-По двум или нескольким целым числам можно составить новое целое число. Способов составлять новое целое число очень много. Способ составлять новое число по двум или нескольким числам называется арифметическим действием.
-Вообще арифметических действий много, но основных только четыре: сложение, вычитание, умножение и деление. Они названы основными, ибо все остальные действия приводятся к ним.
+Se pueden usar dos o más enteros para formar un nuevo entero. Hay muchas maneras de componer un nuevo entero. La forma de componer un nuevo número a partir de dos o más números se llama aritmética.
+En general, hay muchas operaciones aritméticas, pero solo hay cuatro básicas: suma, resta, multiplicación y división. Se llaman básicos, porque todas las demás acciones se reducen a ellos.
 
-Знак плюс `+` используется для выражения сложения: `4 + 4` Ответ: `8`
+El signo más `+` se usa para expresar la suma: `4 + 4` Respuesta: `8`
 
-Минус `–` для вычитания: `7 - 6` Ответ: `1`
+Menos `–` para restar: `7 - 6` Respuesta: `1`
 
-Звёздочкой `*` изображается умножение: `3 * 4` Ответ: `12`
+Un asterisco `*` representa la multiplicación: `3 * 4` Respuesta: `12`
 
-Прямым слэшем `/` деление: `15 / 5` Ответ: `3`
+Barra diagonal `/` división: `15 / 5` Respuesta: `3`
 
-Если в строке совершается более одного действия, то, чтобы отделить их друг от друга, а также сделать код📟 более читабельным, мы пользуемся — (скобками). Давайте наберём следующие предложения в консоли. Ответ по каждому из них должен состоять только из одной цифры9️⃣:
+Si se realiza más de una acción en una línea, para separarlas y también para hacer que el código 📟 sea más legible, usamos - (paréntesis). Escribamos las siguientes oraciones en la consola. La respuesta para cada uno de ellos debe consistir en un solo dígito 9️⃣:
 
 ```
  3 * (2 + 1)
@@ -64,86 +64,86 @@ import YouTube from 'react-youtube'
  3 * (5 - 8 / 2) * (2 + 1)
 ```
 
-Введите в `LIVE EDITOR` перечисленые значения 👇 :
+Introduce los siguientes valores en `LIVE EDITOR` 👇:
 
 ```jsx {2} live
 function learnJavaScript() {
-  let result = 2 + 3 // здесь
+  let result = 2 + 3 // aquí
   return result
 }
 ```
 
-## Комбинированное присваивание
+## Asignación combinada
 
-![Conbination](https://media.giphy.com/media/l2Sq8jlaqqnqBoGhG/giphy.gif)
+![Combinación](https://media.giphy.com/media/l2Sq8jlaqqnqBoGhG/giphy.gif)
 
-Оператор представляет собой символическое обозначение некоторого действия, выполняемого с операндами в выражении(Например: `+`, `-`, `*`, `/`).
+Un operador es una designación simbólica de alguna acción realizada en operandos en una expresión (por ejemplo: `+`, `-`, `*`, `/`).
 
-Операнд представляет собой некоторую величину, обрабатываемую в программе. Операнды могут относиться к любому типу данных. Операнд слева от оператора - левый операнд, операнд справа от оператора - правый операнд.
+El operando es algún valor procesado en el programa. Los operandos pueden ser de cualquier tipo de datos. El operando a la izquierda del operador es el operando izquierdo, el operando a la derecha del operador es el operando derecho.
 
-Основной оператор комбинированного присваивания - это знак равно `=`, он и присваивает значение правого операнда, левому. То есть - `x = y` присваивает значение переменной 🔔 `y`, переменной 🔔 `x`.
+El operador básico de asignación combinada es el signo igual `=`, que asigna el valor del operando derecho al operando izquierdo. Es decir - `x = y` asigna un valor a la variable 🔔 `y`, la variable 🔔 `x`.
 
-Вы уже не раз видели, как при помощи математических операторов происходит присваивание значений переменным 🔔 . Например, так:
+Ya has visto cómo los operadores matemáticos asignan valores a las variables 🔔. Por ejemplo, así:
 
 ```javascript
-let sum = 2 + 3 // значение суммы 7
+let sum = 2 + 3 // valor de suma 7
 ```
 
-А ещё вы, наверное, не успели позабыть, что в любой момент можно изменить значение уже известной переменной 🔔 :
+Y probablemente no tuviste tiempo de olvidar que en cualquier momento puedes cambiar el valor de una variable ya conocida 🔔:
 
 ```jsx live
 function learnJavaScript() {
   let sum = 2 + 3
-  sum = sum + 3 // теперь значение суммы стало 8
+  sum = sum + 3 // ahora el valor de la suma es 8
   return sum
 }
 ```
 
-Присваивание со сложением `+=` для того, чтобы быстро увеличить значение переменной! Вот вам несколько примеров:
+¡Asignación con adición `+=` para aumentar rápidamente el valor de una variable! Aquí hay algunos ejemplos para ti:
 
 ```javascript
-let значение = 5
-значение += 2 // значение теперь 7 (то же самое, что значение = // значение + 2)
-значение += 3 // значение теперь 10 (то же самое, что значение = // значение + 3)
-значение = значение + значение // 20 (а можно просто значение += // значение)
-значение += значение // 40 (то же самое, что значение = значение + // значение)
+let sentido = 5
+sentido += 2 // el valor ahora es 7 (igual que valor = // valor + 2)
+sentido += 3 // el valor ahora es 10 (igual que valor = // valor + 3)
+sentido = sentido + sentido // 20 (o simplemente valor += // valor)
+sentido += sentido // 40 (igual que valor = valor + // valor)
 ```
 
 Вы ведь уже догадались, что подобные штуки работают и с прочими математическими действиями, да?!
 
 ```javascript
-значение –= 25 // значение теперь 15 (то же, что и значение = значение − // 25)
-значение -= 2 // значение теперь 30 (то же самое, что значение = // значение - 2)
-значение /= 3 // значение теперь 10 (то же самое, что значение = // value / 3)
-значение // Ответ: 10
+sentido –= 25 // el valor ahora es 15 (igual que valor = valor − // 25)
+sentido -= 2 // el valor ahora es 30 (igual que valor = // valor - 2)
+sentido /= 3 // el valor ahora es 10 (igual que valor = // valor / 3)
+sentido // Respuesta: 10
 ```
 
-Далее проверьте все перечисленые примеры в `LIVE EDITOR`:
+A continuación, compruebe todos los ejemplos enumerados en `LIVE EDITOR`:
 
 ```jsx live
 function learnJavaScript() {
-  let значение = 0 + 0
-  return значение
+  let sentido = 0 + 0
+  return sentido
 }
 ```
 
-Подробней о комбинированном присваивании можно почитать [здесь](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Assignment_Operators)
+Puede leer más sobre la asignación combinada [aquí](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Assignment_Operators)
 
-## Инкремент и декремент
+## incrementar y decrementar
 
 ![increment](https://media.giphy.com/media/ZZaCZyXh5yR4bkJmlR/giphy.gif)
 
-Оператор `++` (инкремент) увеличивает значение своего операнда на единицу. Если значение операнда не является числом, оператор автоматически преобразует его в число, увеличивает на единицу и возвращает результат, который присваивается обратно операнду:
+El operador `++` (incremento) aumenta el valor de su operando en uno. Si el valor del operando no es un número, el operador lo convierte automáticamente en un número, lo incrementa en uno y devuelve el resultado, que se vuelve a asignar al operando:
 
 ```jsx live
 function learnJavaScript() {
-  let increment = 0
-  increment++
-  return increment
+  let incremento = 0
+  incremento++
+  return incremento
 }
 ```
 
-Оператор `--` (декремент) работает аналогично оператору инкремент, но не увеличивает значение своего операнда, а наоборот, уменьшает его на единицу:
+El operador `--` (decremento) funciona de manera similar al operador de incremento, pero no aumenta el valor de su operando, sino que, por el contrario, lo disminuye en uno:
 
 ```jsx live
 function learnJavaScript() {
@@ -153,25 +153,25 @@ function learnJavaScript() {
 }
 ```
 
-## Оператор modulo
+## operador de módulo
 
 ![function](https://media.giphy.com/media/seVVu09CPz2upPeU1s/giphy.gif)
 
-Знаком `%` (процентов) мы обозначаем остаток от деления. Оператор возвращает🔄 целый остаток от деления левого операнда на правый. Возвращаемое🔄 значение всегда получает знак делимого, а не делителя. Он использует встроенную функцию⚙️ modulo, для получения результата, которая является целочисленным остатком деления `let1` на `let2`.
+El signo `%` (por ciento) denotamos el resto de la división. El operador devuelve 🔄 el resto entero después de dividir el operando izquierdo por el operando derecho. El valor 🔄 devuelto siempre toma el signo del dividendo, no del divisor. Utiliza la función integrada ⚙️ módulo para obtener el resultado, que es el resto entero de dividir `let1` por `let2`.
 
-`12 % 5` результат `2`
+`12 % 5` resultado `2`
 
-`NaN % 2` результат `NaN`
+`NaN % 2` da como resultado `NaN`
 
-`1 % 2` результат `1`
+`1 % 2` resultado `1`
 
-`2 % 3` результат `2`
+`2 % 3` resultado `2`
 
-`4 % 2` результат `0`
+`4 % 2` resultado `0`
 
-`5.5 % 2` результат `1.5`
+`5.5 % 2` da como resultado `1.5`
 
-Проверьте все перечисленые примеры в `LIVE EDITOR` и сразу все поймете:
+Compruebe todos los ejemplos enumerados en `LIVE EDITOR` e inmediatamente comprenderá todo:
 
 ```jsx live
 function learnJavaScript() {
@@ -180,17 +180,17 @@ function learnJavaScript() {
 }
 ```
 
-## Округление
+## redondeo
 
 ![Balls](https://media.giphy.com/media/6glYLqOQ3dlok/giphy.gif)
 
-Метод `Math.round()` возвращает🔄 число, округлённое к ближайшему целому. Если дробная часть числа больше, либо равна `0,5`, аргумент будет округлён до ближайшего большего целого. Если дробная часть числа меньше `0,5`, аргумент будет округлён до ближайшего меньшего целого.
+El método `Math.round()` devuelve el número 🔄 redondeado al entero más cercano. Si la parte fraccionaria del número es mayor o igual a `0.5`, el argumento se redondeará al entero superior más cercano. Si la parte fraccionaria del número es menor que '0,5', el argumento se redondeará al entero menor más cercano.
 
-`result = Math.round(20.49)` Вернёт значение 20
+`resultado = Math.round(20.49)` Devuelve el valor 20
 
-`result = Math.round(20.5)` Вернёт значение 21
+`resultado = Math.round(20.5)` Devuelve el valor 21
 
-проверьте сами:
+compruébelo usted mismo:
 
 ```jsx live
 function learnJavaScript() {
@@ -200,7 +200,8 @@ function learnJavaScript() {
 ```
 
 ## React Native
-Числа вставляются в `React Native` приложения также просто как и строки.
+
+Los números se insertan en las aplicaciones `React Native` con la misma facilidad que las cadenas.
 
 ```SnackPlayer name=index.js
 import * as React from 'react'
@@ -216,100 +217,100 @@ const App = () => {
 export default App
 ```
 
-## Проблемы?
+## ¿Problemas?
 
 ![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
 
-Пишите в [Discord](https://discord.gg/6GDAfXn) или телеграмм [чат](https://t.me/jscampapp), а также подписывайтесь на наши [новости](https://t.me/javascriptapp)
+Escribe en [Discord](https://discord.gg/6GDAfXn) o Telegram [chat](https://t.me/jscampapp) y suscríbete a nuestras [noticias](https://t.me/javascriptapp)
 
 ![JavaScript Camp](/img/bandlink.png)
 
-## Вопросы:
+## Preguntas:
 
 ![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
 
-Какие арифметические действия названы основными?
+¿Cuáles son las operaciones aritméticas básicas?
 
-1. Сложение, вычитание
-2. Умножение, деление
-3. Сложение, вычитание, умножение, деление
+1. Suma, resta
+2. Multiplicación, división
+3. Sumas, restas, multiplicaciones, divisiones
 
-Как правильно читается `+=`?
+¿Cuál es la forma correcta de leer `+=`?
 
-1. Инкремент
-2. Присваивание со сложением
-3. Плюс и равно
+1. Incremento
+2. Asignación con adición
+3. Más e igual
 
-Как инкремент записывается знаком(знаками)?
+¿Cómo se escribe un incremento con signo(s)?
 
-1. `++`
+1.`++`
 2. `--`
 3. `+`
 
-Каким знаком обозначается остаток от деления?
+¿Cuál es el símbolo del resto de una división?
 
 1. `%`
 2. `/`
 3. `\`
 
-Какое значение `Math.round` вернёт при действии `Math.round (20.62)`?
+¿Qué valor devolverá `Math.round` cuando se aplique `Math.round (20.62)`?
 
 1. `22`
 2. `20`
 3. `21`
 
-Какой специальный символ вы могли бы использовать, чтобы упростить это задание? \n `myVariable = myVariable * 2`
+¿Qué carácter especial podrías usar para hacer esta tarea más fácil? \n `myVariable = myVariable * 2`
 
 1. `=*`
 2. `*=`
 3. `*`
 
-Какой символ используется для обозначения модуля(остаток от деления) в JavaScript?
+¿Cuál es el símbolo que se usa para representar el módulo (resto de la división) en JavaScript?
 
 1. `%`
 2. `$`
 3. `&`
 
-Каков самый простой (то есть самый короткий) способ записать это (используя специальный символ)? Как называется специальный символ?\n `myVariable = myVariable + 1`
+¿Cuál es la forma más fácil (es decir, la más corta) de escribir esto (usando un carácter especial)? ¿Cuál es el nombre del carácter especial?\n `myVariable = myVariable + 1`
 
 1. `myVariable++`
 2. `myVariable+`
 3. `myVariable+=`
 
-Каков самый простой (то есть самый короткий) способ записать это (используя специальный символ)? Как называется специальный символ? \n `myVariable = myVariable - 1`
+¿Cuál es la forma más fácil (es decir, la más corta) de escribir esto (usando un carácter especial)? ¿Cómo se llama el personaje especial? \n `myVariable = myVariable - 1`
 
 1. `myVariable--`
 2. `myVariable-`
 3. `myVariable-=`
 
-Если бы вы писали программу для определения четности или нечетности значения, какое число вы бы использовали после оператора по модулю?
+Si tuviera que escribir un programa para determinar si un valor es par o impar, ¿qué número usaría después del operador módulo?
 
 1. `2`
 2. `4`
 3. `0`
 
-Какой специальный символ вы могли бы использовать, чтобы упростить это задание?\n `myValue = myValue - 8`
+¿Qué carácter especial podría usar para facilitar esta tarea?\n `myValue = myValue - 8`
 
 1. `- (myValue - 8)`
 2. `-= (myValue -= 8)`
 3. `=- (myValue =- 8)`
 
-Каково собирательное имя символов, которые сначала выполняют операцию с переменной, а затем присваивают новое значение той же переменной (например, +=, -=, \*= и /=)?
+¿Cuál es el nombre colectivo de los símbolos que primero realizan una operación en una variable y luego asignan un nuevo valor a la misma variable (por ejemplo, +=, -=, \*= y /=)?
 
-1. Комбинированое присвоение
-2. Математическое присвоение
-3. Условное присвоение
+1. Asignación combinada
+2. Tarea matemática
+3. Cesión condicional
 
-Для того чтобы понять, на сколько вы усвоили этот урок, пройдите тест в [мобильном приложении](http://onelink.to/njhc95) нашей школы по этой теме или в нашем [телеграм боте](https://t.me/javascriptcamp_bot).
+Para comprender cuánto ha aprendido esta lección, realice una prueba en la [aplicación móvil](http://onelink.to/njhc95) de nuestra escuela sobre este tema o en nuestro [bot de Telegram](https://t.me/javascriptcamp_bot).
 
 ![JS Camp](/img/app.jpg)
 
-## Ссылки:
+## Enlaces:
 
 1. [MDN web docs](https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Numbers_and_dates)
-2. [Код для подростков: прекрасное руководство по программированию для начинающих, том 1: Javascript - Jeremy Moritz ](https://www.amazon.com/Code-Teens-Beginners-Programming-Javascript-ebook/dp/B07FCTLVPC)
+2. [Código para adolescentes: la gran guía de programación para principiantes Volumen 1: Javascript - Jeremy Moritz](https://www.amazon.com/Code-Teens-Beginners-Programming-Javascript-ebook/dp/B07FCTLVPC)
 3. [JavaScript.ru](https://learn.javascript.ru/number)
-4. [Арифметические действия с целыми числами](https://maths-public.ru/arithmetic/actions)
+4. [Operaciones aritméticas con números enteros](https://maths-public.ru/arithmetic/actions)
 
 ## Contributors ✨
 

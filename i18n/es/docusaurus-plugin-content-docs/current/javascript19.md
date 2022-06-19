@@ -1,56 +1,55 @@
 ---
 id: javascript19
-title: Методы перебора массива (map, filter, reduce)
-sidebar_label: Методы перебора массива (map, filter, reduce)
+title: Métodos de iteración de matriz (map, filter, reduce)
+sidebar_label: Métodos de iteración de matriz (map, filter, reduce)
 ---
 
 import YouTube from 'react-youtube'
 
 ![@serverSerrverlesskiy](/img/javascript/headers/22.jpg)
 
-Язык👅 JavaScript оказывает явное предпочтение массивам перед другими структурами данных. У них много удобных специфических фишек, например, целый набор перебирающих методов: `map`, `filter`, `reduce`.
+El lenguaje JavaScript tiene una clara preferencia por las matrices sobre otras estructuras de datos. Tienen muchas características específicas convenientes, por ejemplo, un conjunto completo de métodos de iteración: `map`, `filter`, `reduce`.
 
 ## map
 
 ![Create](https://media.giphy.com/media/ffd0F6WNcRJMQ/giphy.gif)
 
-Метод `map()` создаёт🏗️ новый🆕 массив с результатом вызова указанной функции⚙️ для каждого элемента массива.
+El método `map()` crea🏗️ una nueva🆕 matriz con el resultado de llamar a la función especificada⚙️ para cada elemento de la matriz.
 
-## Видео
+## Video
 
 <YouTube videoId="lEBJ5bqRrg8" />
 
-### Синтаксис
+### Sintaxis
 
 ![Book](https://media.giphy.com/media/s6OiiampNcye4/giphy.gif)
 
 ```javascript
 let new_array = arr.map(function callback( currentValue[, index[, array]]) {
-    // Возвращает элемент для new_array
+    // Devuelve el elemento para new_array
 }[, thisArg])
 ```
+El método `map` llama a la función `callback` pasada ⚙️ una vez para cada elemento, en el orden en que aparecen, y construye 🆕 una nueva matriz a partir de los resultados de su llamada. La función ⚙️ `callback` solo se llama para índices de matriz que tienen valores asignados, incluido `undefined`. No se llama para elementos de matriz faltantes (es decir, índices que nunca se establecieron, eliminaron o nunca se les asignó un valor).
 
-Метод `map` вызывает переданную функцию⚙️ `callback` один раз для каждого элемента, в порядке их появления и конструирует 🆕 новый массив из результатов её вызова. Функция⚙️ `callback` вызывается только для индексов массива, имеющих присвоенные значения, включая `undefined`. Она не вызывается для пропущенных элементов массива (то есть для индексов, которые никогда не были заданы, были удалены или им никогда не было присвоено значение).
+La función ⚙️ `callback` se llama con tres argumentos:
 
-Функция⚙️ `callback` вызывается с тремя аргументами:
+- valor del elemento,
+- índice de elementos
+- y la matriz a través de la cual se realiza el paso.
 
-- значением элемента,
-- индексом элемента
-- и массивом, по которому осуществляется проход.
+Si el parámetro `thisArg` se pasó al método `map`, se usará como el valor de `this` al llamar a `callback`. De lo contrario, `undefined` se usará como el valor de `this`. En última instancia, el valor de `this` visto desde la función `callback`⚙️ se determina de acuerdo con las reglas habituales para definir `this` visto desde la función⚙️.
 
-Если в метод `map` был передан параметр `thisArg`, при вызове `callback` он будет использоваться в качестве значения `this`. В противном случае в качестве значения `this` будет использоваться значение `undefined`. В конечном итоге значение `this`, наблюдаемое из функции⚙️ `callback`, определяется согласно обычным правилам определения `this`, видимого из функции⚙️.
+El método `map` no cambia la matriz a la que se llamó (¡aunque la función ⚙️ puede hacerlo!).
 
-Метод `map` не изменяет массив, для которого он был вызван (хотя функция⚙️ может это делать!).
+El rango de elementos procesados ​​por el método `map` se establece antes de la primera llamada a la función ⚙️ `devolución de llamada`. Los elementos agregados a la matriz después de que el método `map` haya comenzado a ejecutarse no serán visitados por la función ⚙️ `callback`. Si los elementos de matriz existentes son modificados por la función ⚙️ `callback`, sus valores pasados ​​a la función⚙️ serán los valores en el momento en que el método `map` los visite. Los elementos eliminados no serán visitados.
 
-Диапазон элементов, обрабатываемых методом `map`, устанавливается до первого вызова функции⚙️ `callback`. Элементы, добавленные в массив после начала выполнения метода `map`, не будут посещены функцией⚙️ `callback`. Если существующие элементы массива изменяются функцией⚙️ `callback`, их значения, переданные в функцию⚙️, будут значениями на тот момент времени, когда метод `map` посетит их. Удалённые элементы посещены не будут.
-
-### Примеры:
+### Ejemplos:
 
 ![Math](https://media.giphy.com/media/xT1Ra5h24Eliux3UVq/giphy.gif)
 
-#### простой пример
+#### ejemplo sencillo
 
-У вас есть массив со множеством объектов, каждый из которых представляет отдельного человека👨. Тут может быть очень много данных: имя, возраст, цвет волос и любимый персонаж из кинематографа, но в данный момент всё это не требуется – вы хотите получить только массив паспортных номеров этих людей, чтобы выдать им всем пропуска на конференцию.
+Tienes una matriz con muchos objetos, cada uno representando a una persona diferente👨. Puede haber una gran cantidad de datos aquí: nombre, edad, color de cabello y personaje de película favorito, pero por el momento todo esto no es obligatorio; solo desea obtener una serie de números de pasaporte de estas personas para darles una conferencia. pasa
 
 ```jsx live
 function learnJavaScript() {
@@ -67,7 +66,7 @@ function learnJavaScript() {
 }
 ```
 
-#### В определенных случаях вам может понадобится отобразить массив объектов с выбранными ключами в виде строки 👇 :
+#### En ciertos casos, es posible que deba mostrar una matriz de objetos con teclas seleccionadas como una cadena 👇:
 
 ```jsx live
 function learnJavaScript() {
@@ -84,11 +83,11 @@ function learnJavaScript() {
 }
 ```
 
-#### Создание массива значений Фаренгейта из массива значений Цельсия:
+#### Crear una matriz de valores Fahrenheit a partir de una matriz de valores Celsius:
 
 ![Thermometer](https://media.giphy.com/media/W23dJLsAW5knUU27Fv/giphy.gif)
 
-Пример с обработкой каждого элемента массива заданной формулой 👇 :
+Un ejemplo con el procesamiento de cada elemento de la matriz con una fórmula dada 👇:
 
 ```jsx live
 function learnJavaScript() {
@@ -113,7 +112,7 @@ function learnJavaScript() {
 }
 ``` -->
 
-#### Отображение массива чисел с использованием функции, содержащей аргумент 👇 :
+#### Mostrando una matriz de números usando una función que contiene un argumento 👇:
 
 ```jsx live
 function learnJavaScript() {
@@ -161,11 +160,11 @@ function learnJavaScript() {
 
 ![filter](https://media.giphy.com/media/xT5LMGupUKCHb7DnFu/giphy.gif)
 
-Метод `filter()` создаёт 🆕 новый массив со всеми элементами, прошедшими проверку, задаваемую в передаваемой функции⚙️.
+El método `filter()` crea 🆕 una nueva matriz con todos los elementos que pasan la prueba especificada en la función pasada⚙️.
 
-Результатом работы `filter` всегда является массив. Если функция⚙️ для элемента возвращает🔄 `true` ✅ (или любое "правдивое" значение), этот элемент попадает в результат, иначе – не попадает.
+El resultado de `filter` es siempre una matriz. Si la función ⚙️ para un elemento devuelve 🔄 `true` ✅ (o cualquier valor "verdadero"), ese elemento se incluye en el resultado; de lo contrario, no.
 
-### Синтаксис
+### Sintaxis
 
 ![write](https://media.giphy.com/media/6Do13TV1OfOF2/giphy.gif)
 
@@ -173,31 +172,31 @@ function learnJavaScript() {
 let newArray = arr.filter(function callback(element[, index, [array]])[, thisArg])
 ```
 
-### Описание
+### Descripción
 
 ![m](https://media.giphy.com/media/DQaeCdCqhHWx3n4dvH/giphy.gif)
 
-Метод `filter()` вызывает переданную функцию⚙️ `callback` один раз для каждого элемента, присутствующего в массиве, и конструирует новый массив со всеми значениями, для которых функция⚙️ `callback` вернула `true` ✅ или значение, становящееся `true` ✅ при приведении в `boolean`. Функция⚙️ `callback` вызывается только для индексов массива, имеющих присвоенные значения; она не вызывается для индексов, которые были удалены или им значения никогда не присваивались. Элементы массива, не прошедшие проверку функцией⚙️ `callback`, просто пропускаются и не включаются в 🆕 новый массив.
+El método `filter()` llama a la función pasada⚙️ `callback` una vez por cada elemento presente en la matriz y construye una nueva matriz con todos los valores para los que la⚙️ función `callback` devolvió `true` ✅ o un valor que se convierte en `true` ✅ cuando se convierte en `boolean`. La función ⚙️ `callback` se llama solo para índices de matriz que tienen valores asignados; no se llama para índices que se han descartado o nunca se les ha asignado un valor. Los elementos de la matriz que fallan en la función ⚙️ `callback` simplemente se omiten y no se incluyen en la 🆕 nueva matriz.
 
-Функция⚙️ `callback` вызывается с тремя аргументами:
+La función ⚙️ `callback` se llama con tres argumentos:
 
-- значение элемента;
-- индекс элемента;
-- массив, по которому осуществляется проход.
+- valor del elemento;
+- índice de elementos;
+- la matriz a través de la cual se realiza el paso.
 
-Если в метод `filter()` был передан параметр `thisArg`, при вызове функции⚙️ он будет использоваться в качестве значения `this`. В противном случае в качестве значения `this` будет использоваться значение `undefined`. В конечном итоге значение `this`, наблюдаемое из функции⚙️, определяется согласно обычным правилам определения `this`, видимого из функции⚙️.
+Si se pasó un parámetro `thisArg` al método `filter()`, se usará como el valor de `this` al llamar a la función⚙️. De lo contrario, `undefined` se usará como el valor de `this`. En última instancia, el valor de `this` visto desde una función⚙️ se determina de acuerdo con las reglas habituales para definir `this` visto desde una función⚙️.
 
-Метод `filter()` не изменяет массив, для которого он был вызван.
+El método `filter()` no cambia la matriz a la que fue llamado.
 
-Диапазон элементов, обрабатываемых методом `filter()`, устанавливается до первого вызова функции⚙️ `callback`. Элементы, добавленные в массив после начала выполнения метода `filter()`, не будут посещены функцией⚙️ `callback`. Если существующие элементы массива изменятся, значения, переданные в функцию⚙️ `callback`, будут значениями на тот момент времени, когда метод `filter()` посетит их. Удалённые элементы посещены не будут.
+El rango de elementos procesados ​​por el método `filter()` se establece antes de la primera llamada a la función ⚙️ `callback`. Los elementos agregados a la matriz después de que el método `filter()` haya comenzado a ejecutarse no serán visitados por la función ⚙️ `callback`. Si los elementos existentes de la matriz cambian, los valores pasados ​​a la función ⚙️ `callback` serán los valores en el momento en que el método `filter()` los visite. Los elementos eliminados no serán visitados.
 
-### Пример
+### Ejemplo
 
 ![math](https://media.giphy.com/media/3orieN7HEHI0tw8x5C/giphy.gif)
 
-#### Отфильтровывание всех маленьких значений
+#### Filtrado de todos los valores pequeños
 
-Следующий пример использует `filter()` для создания🏗️ отфильтрованного массива, все элементы которого больше или равны `value`, а все меньшие `value` удалены.
+El siguiente ejemplo usa `filter()` para crear una matriz filtrada 🏗️ con todos los elementos mayores o iguales a `value` y todos los menores que `value` eliminados.
 
 ```jsx live
 function learnJavaScript() {
@@ -215,47 +214,47 @@ function learnJavaScript() {
 
 ![count](https://media.giphy.com/media/xUPGcqaVH1cDeKZTBS/giphy.gif)
 
-Метод `reduce` также запускается в контексте массива и вызывает функцию⚙️ для каждого элемента, но помимо этого, он аккумулирует результаты всех вызовов в одно значение. Этим поведением можно управлять.
+El método `reduce` también se ejecuta en el contexto de una matriz y llama a la función ⚙️ para cada elemento, pero además, acumula los resultados de todas las llamadas en un solo valor. Este comportamiento se puede controlar.
 
-`reduce` предназначен не для того, чтобы изменять элементы коллекции, как `map`. Его задача – подсчитать "сумму" всех элементов тем или иным способом, и вернуть ее.
+`reduce` no pretende cambiar los elementos de una colección como lo hace `map`. Su tarea es calcular la "suma" de todos los elementos de una forma u otra y devolverla.
 
-Результирующим значением может быть что угодно: число, строка, объект, массив – все зависит от задачи, которую решает JavaScript разработчик.
+El valor resultante puede ser cualquier cosa: un número, una cadena, un objeto, una matriz; todo depende de la tarea que esté resolviendo el desarrollador de JavaScript.
 
-Метод `reduce` принимает 2 параметра:
+El método `reduce` toma 2 parámetros:
 
-- функция, как и `map`, который будет вызван последовательно для каждого элемента коллекции;
-- начальное значение аккумулятора.
+- una función, como `map`, que se llamará secuencialmente para cada elemento de la colección;
+- el valor inicial del acumulador.
 
-В функции⚙️ тоже 2 аргумента:
+La función ⚙️ también tiene 2 argumentos:
 
-- первый – это накопленное значение (аккумулятор);
-- непосредственно элемент массива.
+- el primero es el valor acumulado (acumulador);
+- elemento de matriz directamente.
 
-### Синтаксис
+### Sintaxis
 
 ```javascript
 array.reduce(function callback[, initialValue])
 ```
 
-### Описание
+### Descripción
 
-![describe](https://media.giphy.com/media/3orieVr84udUl4wbQs/giphy.gif)
+![describir](https://media.giphy.com/media/3orieVr84udUl4wbQs/giphy.gif)
 
-Метод `reduce()` выполняет функцию⚙️ `callback` один раз для каждого элемента, присутствующего в массиве, за исключением пустот, принимая четыре аргумента: начальное значение (или значение от предыдущего вызова `callback`), значение текущего элемента, текущий индекс и массив, по которому происходит итерация.
+El método `reduce()` ejecuta la función ⚙️ `callback` una vez para cada elemento presente en el arreglo, excepto los vacíos, tomando cuatro argumentos: el valor inicial (o el valor de la anterior llamada `callback`), el valor de el elemento actual, el índice actual y la matriz para iterar.
 
-При первом вызове функции⚙️, параметры `accumulator` и `currentValue` могут принимать одно из двух значений. Если при вызове `reduce()` передан аргумент `initialValue`, то значение `accumulator` будет равным значению `initialValue`, а значение `currentValue` будет равным первому значению в массиве. Если аргумент `initialValue` не задан, то значение `accumulator` будет равным первому значению в массиве, а значение `currentValue` будет равным второму значению в массиве.
+Cuando se llama a la función por primera vez⚙️, los parámetros `accumulator` y `currentValue` pueden tomar uno de dos valores. Si se pasa el argumento `valorinicial` al llamar a `reduce()`, entonces el valor de `accumulator` será igual al valor de `initialValue`, y el valor de `currentValue` será igual al primer valor en el formación. Si no se proporciona el argumento `initialValue`, entonces el valor de `acumulador` será igual al primer valor de la matriz, y el valor de `currentValue` será igual al segundo valor de la matriz.
 
-Если массив пустой и аргумент `initialValue` не указан, будет брошено исключение `TypeError`. Если массив состоит только из одного элемента (независимо от его положения в массиве) и аргумент `initialValue` не указан, или если аргумент `initialValue` указан, но массив пустой, то будет возвращено🔄 одно это значение, без вызова функции⚙️ `callback`.
+Si la matriz está vacía y no se proporciona ningún argumento `initialValue`, se lanzará una excepción `TypeError`. Si la matriz consta de un solo elemento (independientemente de su posición en la matriz) y no se especifica el argumento `initialValue`, o si se especifica el argumento `initialValue`, pero la matriz está vacía, entonces se devolverá este valor🔄 sin llamar a la función⚙️ `callback`.
 
-### Начальное значение аккумулятора
+### Valor inicial del acumulador
 
 ![hatchng](https://media.giphy.com/media/xT1R9Qy80qNb8oQGGc/giphy.gif)
 
-Разберемся с начальным значением. В примере оно равно `0`, так как мы считаем численное значение – сумму возрастов. На месте нуля может быть любое другое число/строка (пустая или нет)/объект/массив – любое значение, с которого вы начинаете аккумуляцию. Для примера объединим имена всех друзей в одну строчку 👇 :
+Echemos un vistazo al valor inicial. En el ejemplo, es igual a `0`, ya que estamos contando un valor numérico: la suma de las edades. En lugar de cero, puede haber cualquier otro número/cadena (vacía o no)/objeto/matriz: cualquier valor desde el que comience la acumulación. Por ejemplo, combinemos los nombres de todos los amigos en una línea 👇:
 
 ```jsx live
 function learnJavaScript() {
-  const friends = [
+  const Amigos = [
     { passport: '03005988', name: 'Joseph Francis Tribbiani Jr', age: 32, sex: 'm' },
     { passport: '03005989', name: 'Chandler Muriel Bing', age: 33, sex: 'm' },
     { passport: '03005990', name: 'Ross Eustace Geller', age: 33, sex: 'm' },
@@ -270,13 +269,13 @@ function learnJavaScript() {
 }
 ```
 
-Здесь исходным значением послужила строка `"Friends:"`, к которой постепенно добавились имена всех друзей.
+Aquí, el valor inicial fue la cadena `"Amigos:"`, a la que se agregaron gradualmente los nombres de todos los amigos.
 
-Если вы не указываете исходное значение явно, им неявно становится первый 1️⃣ элемент массива. В этом случае функция⚙️ для него уже не вызывается.
+Si no especifica explícitamente un valor de origen, implícitamente se convierte en el primer elemento 1️⃣ de la matriz. En este caso, ya no se llama a la función ⚙️.
 
-### Пример
+### Ejemplo
 
-#### Суммирование всех значений в массиве:
+#### Suma de todos los valores en una matriz:
 
 ```jsx live
 function learnJavaScript() {
@@ -290,7 +289,7 @@ function learnJavaScript() {
 }
 ```
 
-И тоже самое в одну строчку кода:
+Y lo mismo en una línea de código:
 
 ```jsx live
 function learnJavaScript() {
@@ -340,11 +339,11 @@ function learnJavaScript() {
 
 ![unity](https://media.giphy.com/media/jTf2Io0LtBXGZddOVE/giphy.gif)
 
-Программирование на JavaScript поддерживает удобный паттерн чейнинг (`chaining`) – объединение нескольких функций⚙️ в одну цепочку с последовательной передачей результата.
+La programación de JavaScript admite un patrón conveniente de "encadenamiento": combina varias funciones ⚙️ en una cadena con transferencia secuencial del resultado.
 
-Все три разобранных метода вызываются в контексте массива, а два 2️⃣ из них еще и возвращают🔄 массив. Таким образом, их очень легко объединить.
+Los tres métodos analizados se llaman en el contexto de una matriz, y dos 2️⃣ de ellos también devuelven una matriz. Por lo tanto, son muy fáciles de combinar.
 
-Например, посчитаем общий возраст всех мальчиков 👇 :
+Por ejemplo, calculemos la edad total de todos los niños 👇:
 
 ```jsx live
 function learnJavaScript() {
@@ -363,7 +362,7 @@ function learnJavaScript() {
 }
 ```
 
-Или соберем номера паспортов девочек, чтобы купить им билеты на самолет до Лас-Вегаса 👇 :
+O recopilemos los números de pasaporte de las niñas para comprarles boletos de avión a Las Vegas 👇:
 
 ```jsx live
 function learnJavaScript() {
@@ -380,66 +379,66 @@ function learnJavaScript() {
 }
 ```
 
-## Заключение
+## Conclusión
 
-С использованием этих замечательных функций⚙️ код📟 стало читать удобнее. Итак, ниже приведен список статей, в которых более подробна рассмотрена эта тема.
+Con el uso de estas maravillosas funciones⚙️ el código📟 se ha vuelto más legible. Entonces, a continuación hay una lista de artículos que cubren este tema con más detalle.
 
-## Проблемы?
+## ¿Problemas?
 
 ![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
 
-Пишите в [Discord](https://discord.gg/6GDAfXn) или телеграмм [чат](https://t.me/jscampapp), а также подписывайтесь на наши [новости](https://t.me/javascriptapp)
+Escribe en [Discord](https://discord.gg/6GDAfXn) o Telegram [chat](https://t.me/jscampapp) y suscríbete a nuestras [noticias](https://t.me/javascriptapp)
 
 ![JavaScript Camp](/img/bandlink.png)
 
-## Вопросы:
+## Preguntas:
 
-![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
+![Pregunta](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
 
-Функция, вызываемая для каждого элемента массива?
+¿Función llamada para cada elemento de la matriz?
 
 1. `currentValue`
 2. `array`
 3. `callback`
 
-Метод, который создаёт🏗️ новый массив с результатом вызова указанной функции для каждого элемента массива:
+Un método que crea🏗️ una nueva matriz con el resultado de llamar a la función especificada para cada elemento de la matriz:
 
 1. `map`
 2. `filter`
 3. `reduce`
 
-Результирующим значением метода `reduce` может выступать:
+El valor del resultado del método `reduce` puede ser:
 
-1. Число
-2. Массив
-3. Что угодно
+1. Número
+2. matriz
+3. Cualquier cosa
 
-Суммирование всех значений в массиве достигается методом:
-
-1. `map`
-2. `filter`
-3. `reduce`
-
-Метод, который создаёт🏗️ новый массив со всеми элементами, прошедшими проверку, задаваемую в передаваемой функции:
+La suma de todos los valores en una matriz se logra mediante el método:
 
 1. `map`
 2. `filter`
 3. `reduce`
 
-Объединение нескольких функций в одну цепочку с последовательной передачей результата:
+Un método que crea🏗️ una nueva matriz con todos los elementos que pasaron la prueba especificada en la función aprobada:
+
+1. `map`
+2. `filter`
+3. `reduce`
+
+Combinación de varias funciones en una cadena con transferencia secuencial del resultado:
 
 1. unity
 2. chaining
 3. merger
 
-Для того чтобы понять, на сколько вы усвоили этот урок, пройдите тест в [мобильном приложении](http://onelink.to/njhc95) нашей школы по этой теме или в нашем [телеграм боте](https://t.me/javascriptcamp_bot).
+Para comprender cuánto ha aprendido esta lección, realice una prueba en la [aplicación móvil](http://onelink.to/njhc95) de nuestra escuela sobre este tema o en nuestro [bot de Telegram](https://t.me/javascriptcamp_bot).
 
 ![JS Camp](/img/app.jpg)
 
-## Ссылки:
+## Enlaces:
 
-1. [Упрости свой JavaScript – используй map, reduce и filter](https://proglib.io/p/javascript-map-reduce-filter)
-2. [15 Полезных javascript примеров map(), reduce() и filter()](https://webdevblog.ru/15-poleznyh-javascript-primerov-map-reduce-i-filter)
+1. [Simplifique su JavaScript: use mapa, reduzca y filtre](https://proglib.io/p/javascript-map-reduce-filter)
+2. [15 ejemplos útiles de javascript de map(), reduce() y filter()](https://webdevblog.ru/15-poleznyh-javascript-primerov-map-reduce-i-filter)
 3. [Array.prototype.map()](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
 4. [Array.prototype.filter()](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
 5. [Array.prototype.reduce()](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)

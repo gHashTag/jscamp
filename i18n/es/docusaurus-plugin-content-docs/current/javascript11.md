@@ -1,20 +1,20 @@
 ---
 id: javascript11
-title: Преобразование и приведение типов
-sidebar_label: Преобразование и приведение типов
+title: Tipo de conversión y fundición
+sidebar_label: Tipo de conversión y fundición
 ---
 
 import YouTube from 'react-youtube'
 
 ![@serverSerrverlesskiy](/img/javascript/headers/09.jpg)
 
-## Приведение типов (type coercion)
+## Escriba coerción
 
-Это автоматическое или неявное преобразование значений из одного типа данных в другой (например, строки в число). Преобразование типа похоже на приведение типа, потому что они оба преобразуют значения из одного типа данных в другой с одним ключевым🗝️ различием — приведение типа является неявным, тогда как преобразование типа может быть неявным или явным.
+Esta es una conversión automática o implícita de valores de un tipo de datos a otro (por ejemplo, una cadena a un número). La conversión de tipos es similar a la conversión de tipos porque ambos convierten valores de un tipo de datos a otro con una diferencia clave: la conversión de tipos es implícita, mientras que la conversión de tipos puede ser implícita o explícita.
 
 ![transformation](https://media.giphy.com/media/xT4uQr9H3EDL7Ha2hq/giphy.gif)
 
-Примеры 👇 :
+Ejemplos 👇:
 
 ```jsx live
 function learnJavaScript() {
@@ -25,10 +25,9 @@ function learnJavaScript() {
   return sum
 }
 ```
+En el ejemplo anterior, JavaScript convierte el número `9` en una cadena y luego concatena los dos valores 2️⃣, lo que da como resultado la cadena `59`. JavaScript podía elegir entre una cadena o un número y eligió usar una cadena.
 
-В приведённом выше примере JavaScript приводит число `9` в строку, а затем объединяет два 2️⃣ значения вместе, в результате получается строка `59`. JavaScript имел выбор между строкой или числом и решил использовать строку.
-
-Компилятор мог привести строку `5` к числу и вернуть сумму `14`, но он этого не сделал. Чтобы получить этот результат, вам нужно явно преобразовать строку `5` в число, используя метод `Number()`👇 :
+El compilador podría haber convertido la cadena `5` en un número y devolver la suma `14`, pero no lo hizo. Para obtener este resultado, debe convertir explícitamente la cadena `5` en un número mediante el método `Number()`👇:
 
 ```jsx live
 function learnJavaScript() {
@@ -39,21 +38,21 @@ function learnJavaScript() {
   return sum
 }
 ```
-## Видео
+## Video
 
 <YouTube videoId="Ay82Lut-CS8" /> 
 
-## Преобразование типов (type conversion)
+## Tipo de conversión
 
 ![Transformation](https://media.giphy.com/media/l2SpMMVivErM0Q7jG/giphy.gif)
 
-Означает передачу данных из одного типа данных в другой. Неявное преобразование происходит, когда компилятор автоматически присваивает (назначает) типы данных, но исходный код📟 также может явно требовать преобразования для завершения.
+Significa la transferencia de datos de un tipo de datos a otro. La conversión implícita ocurre cuando el compilador asigna automáticamente tipos de datos, pero el código fuente📟 también puede requerir explícitamente una conversión para completarse.
 
-### Строковое преобразование
+### Conversión de cadenas
 
 ![Transformation](https://media.giphy.com/media/RLVHPJJv7jY1q/giphy.gif)
 
-Строковое преобразование происходит, когда требуется представление чего-либо в виде строки. Например, мы можем использовать функцию `String(value)`, чтобы преобразовать значение к строке 👇 :
+Una conversión de cadena ocurre cuando algo debe representarse como una cadena. Por ejemplo, podemos usar la función `String(value)` para convertir un valor en una cadena 👇:
 
 ```jsx live
 function learnJavaScript() {
@@ -64,13 +63,13 @@ function learnJavaScript() {
 }
 ```
 
-Преобразование происходит очевидным образом. `true` ✅ становится `"true"` ✅
+La transformación se produce de forma evidente. `true` ✅ se convierte en `"true"` ✅
 
-### Численное преобразование
+### Conversión numérica
 
 ![Transformation](https://media.giphy.com/media/4H5nOUqX7FywOGpCF7/giphy.gif)
 
-Численное преобразование происходит в математических функциях⚙️ и выражениях.
+La conversión numérica ocurre en funciones matemáticas⚙️ y expresiones.
 
 ```jsx live
 function learnJavaScript() {
@@ -80,7 +79,7 @@ function learnJavaScript() {
 }
 ```
 
-Мы можем использовать функцию `Number(value)`, чтобы явно преобразовать `value` к числу 👇 :
+Podemos usar la función `Número (valor)` para convertir explícitamente `value` en un número 👇:
 
 ```jsx live
 function learnJavaScript() {
@@ -91,128 +90,128 @@ function learnJavaScript() {
 }
 ```
 
-Явное преобразование часто применяется, когда мы ожидаем получить число из строкового контекста, например из текстовых 📜 полей форм.
+La conversión explícita se usa a menudo cuando esperamos obtener un número de un contexto de cadena, como campos de formulario de texto 📜.
 
-Если строка не может быть явно приведена к числу, то результатом преобразования будет `NaN` (англ. Not-a-Number, "не число"). Например 👇:
+Si la cadena no se puede convertir explícitamente en un número, el resultado de la conversión será `NaN` (del inglés Not-a-Number, "no es un número"). Por ejemplo 👇:
 
 ```jsx live
 function learnJavaScript() {
-  let age = Number('Любая строка вместо числа')
+  let age = Number('Cualquier cadena en lugar de un número')
 
   return age
 }
 ```
 
-### Правила численного преобразования:
+### Reglas de conversión numérica:
 
-| Значение         |                                                                           Преобразуется в…                                                                           |
+| Sentido          |                                                                           convertido                                                                          |
 | ---------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 | `undefined`      |                                                                                `NaN`                                                                                 |
 | `null `          |                                                                                 `0`                                                                                  |
 | `true` / `false` |                                                                              `1` / `0`                                                                               |
-| `string`         | Пробельные символы по краям обрезаются. Далее, если остаётся пустая строка, то получаем 0, иначе из непустой строки «считывается» число. При ошибке🙅‍♂️ результат NaN. |
+| `string`         | Los caracteres de espacio en blanco se cortan en los bordes. Además, si queda una cadena vacía, obtenemos 0; de lo contrario, se "lee" un número de una cadena no vacía. En caso de error🙅‍♂️ el resultado es NaN. |
 
-Примеры:
+Ejemplos:
 
 ```javascript
 Number('   123   ') // 123
-Number('123z') // NaN (ошибка чтения числа на месте символа "z")
+Number('123z') // NaN (error al leer el número en lugar del carácter "z")
 Number(true) // 1
 Number(false) // 0
 Number(null) // 0
 Number(undefined) // NaN
 ```
 
-Учтите, что `null` и `undefined` ведут себя по-разному. Так, `null` становится нулём, тогда как `undefined` приводится к `NaN`.
+Tenga en cuenta que `null` e `undefined` se comportan de manera diferente. Entonces `null` se convierte en nulo, mientras que `undefined` se convierte en `NaN`.
 
-### Логическое преобразование
+### Transformación booleana
 
 ![Transformation](https://media.giphy.com/media/JjAdpCxrdro7m/giphy.gif)
 
-Логическое преобразование самое простое. Происходит в логических операциях, но также может быть выполнено явно с помощью функции⚙️ `Boolean(value)`.
+La transformación lógica es la más simple. Ocurre en operaciones lógicas, pero también se puede hacer explícitamente con la función ⚙️ `Boolean(value)`.
 
-### Правила логического преобразования:
+### Reglas de transformación lógica:
 
-Значения, которые интуитивно "пустые", вроде `0`, пустой строки, `null`, `undefined`и `NaN`, становятся `false`. Все остальные значения становятся `true`.
+Los valores que son intuitivamente "vacíos", como `0`, la cadena vacía, `null`, `undefined` y `NaN`, se convierten en `false`. Todos los demás valores se vuelven `true`.
 
 ```javascript
 Boolean(1) // true
 Boolean(0) // false
-Boolean('Привет!') // true
+Boolean('¡Hola!') // true
 Boolean('') // false
 ```
 
-Более короткий способ функкции `Boolean`  двойное НЕ(!!) используют для преобразования значений к логическому типу:
+Se utiliza una forma más corta de la función `Boolean` double NOT(!!) para convertir valores a un valor booleano:
 
 ```jsx
 !!'non-empty string' // true
 !!null // false
 ```
 
-То есть первое НЕ преобразует значение в логическое значение и возвращает обратное, а второе НЕ снова инвертирует его. В конце мы имеем простое преобразование значения в логическое.
+Es decir, el primero NO convierte el valor a booleano y devuelve lo contrario, y el segundo NO lo vuelve a invertir. Al final, tenemos una simple conversión de valor a booleano.
 
-:::caution Заметим, что строчка с нулём "0" — это true
-Некоторые языки👅 (к примеру, PHP) воспринимают строку `"0"` как `false`. Но в JavaScript, если строка не пустая, то она всегда `true`
+:::precaución Tenga en cuenta que la cadena con cero "0" es verdadera
+Algunos lenguajes👅 (como PHP) tratan la cadena `"0"` como `false`. Pero en JavaScript, si la cadena no está vacía, siempre es `false`.
 
 :::
 
 ```javascript
-Boolean('0') // true
-Boolean(' ') // пробел это тоже true (любая непустая строка это true)
+Boolean('0') // verdadero
+Boolean(' ') // el espacio también es verdadero (cualquier cadena no vacía es verdadera)
 ```
 
-## Проблемы?
+## ¿Problemas?
 
 ![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
 
-Пишите в [Discord](https://discord.gg/6GDAfXn) или телеграмм [чат](https://t.me/jscampapp), а также подписывайтесь на наши [новости](https://t.me/javascriptapp)
+Escribe en [Discord](https://discord.gg/6GDAfXn) o Telegram [chat](https://t.me/jscampapp) y suscríbete a nuestras [noticias](https://t.me/javascriptapp)
 
 ![JavaScript Camp](/img/bandlink.png)
 
-## Вопросы:
+## Preguntas:
 
 ![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
 
-Какую функцию нужно использовать для строкового преобразования?
+¿Qué función se debe usar para la conversión de cadenas?
 
 1.  `Boolean(value)`
 2.  `String(value)`
 3.  `Number(value)`
 
-Что такое приведение типов?
+¿Qué es la conversión de tipos?
 
-1.  Передача данных из одного типа в другой
-2.  Преобразование значений из одного типа данных в другой
-3.  Представление чего-либо в виде строки
+1. Pasar datos de un tipo a otro
+2. Convertir valores de un tipo de datos a otro
+3. Representar algo como una cadena
 
-Какое ключевое различие между приведением типов и преобразованием типов?
+¿Cuál es la diferencia clave entre la conversión de tipos y la conversión de tipos?
 
-1. Приведение типа явное, а преобразование типа неявное
-2. Приведение типа неявное, а преобразование типа явное
-3. Приведение типа неявное, а преобразование типа может быть и явным и неявным
+1. La conversión de tipos es explícita y la conversión de tipos es implícita.
+2. La conversión de tipos es implícita y la conversión de tipos es explícita.
+3. La conversión de tipos es implícita y la conversión de tipos puede ser tanto explícita como implícita.
 
-В каком случае результатом преобразования будет `NaN`?
+¿En qué caso el resultado de la conversión será `NaN`?
 
-1.  Когда строка не может быть явно приведена к числу
-2.  Когда число не может быть явно приведено к строке
-3.  Когда в коде есть ошибка
+1. Cuando una cadena no se puede convertir explícitamente en un número
+2. Cuando un número no se puede convertir explícitamente en una cadena
+3. Cuando hay un error en el código
 
-Чем становятся «пустые» значения при преобразовании?
+¿En qué se convierten los valores "vacíos" cuando se convierten?
 
 1.  `null`
 2.  `true`
 3.  `false`
 
-Для того чтобы понять, на сколько вы усвоили этот урок, пройдите тест в [мобильном приложении](http://onelink.to/njhc95) нашей школы по этой теме или в нашем [телеграм боте](https://t.me/javascriptcamp_bot).
+Para comprender cuánto ha aprendido esta lección, realice una prueba en la [aplicación móvil](http://onelink.to/njhc95) de nuestra escuela sobre este tema o en nuestro [bot de Telegram](https://t.me/javascriptcamp_bot).
 
 ![JS Camp](/img/app.jpg)
 
-## Ссылки:
+## Enlaces:
 
-1. [MDN web docs - Приведение типов](https://developer.mozilla.org/ru/docs/Словарь/Type_coercion)
-2. [ для подростков: прекрасное руководство по программированию для начинающих, том 1: Javascript - Jeremy Moritz ](https://www.amazon.com/Code-Teens-Beginners-Programming-Javascript-ebook/dp/B07FCTLVPC)
+1. [Documentos web de MDN: conversión de tipos](https://developer.mozilla.org/ru/docs/Словарь/Type_coercion)
+2. [para adolescentes: La gran guía de programación para principiantes Volumen 1: Javascript - Jeremy Moritz](https://www.amazon.com/Code-Teens-Beginners-Programming-Javascript-ebook/dp/B07FCTLVPC)
 3. [JavaScript.ru](https://learn.javascript.ru/ifelse#blok-else)
-4. [Арифметические действия с целыми числами](https://maths-public.ru/arithmetic/actions)
+4. [Operaciones aritméticas con números enteros](https://maths-public.ru/arithmetic/actions)
 
 ## Contributors ✨
 

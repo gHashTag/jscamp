@@ -1,44 +1,44 @@
 ---
 id: javascript14
-title: Регулярные выражения
-sidebar_label: Регулярные выражения
+title: Expresiones regulares
+sidebar_label: Expresiones regulares
 ---
 
 import YouTube from 'react-youtube'
 
 ![@serverSerrverlesskiy](/img/javascript/headers/13.jpg)
 
-Регулярные выражения (англ. _regular expressions_) — формальный язык👅 поиска и осуществления манипуляций со строками в тексте 📜 , основанный на использовании метасимволов.
+Las expresiones regulares (inglés _regular expressions_) es un lenguaje formal 👅 para buscar y manipular cadenas en texto 📜 basado en el uso de metacaracteres.
 
-Регулярные выражения позволяют:
+Las expresiones regulares le permiten:
 
-- Искать текст в строке
-- Заменять подстроки в строке
-- Извлекать информацию из строки
+- Buscar texto en una cadena
+- Reemplazar subcadenas en una cadena
+- Extraer información de una cadena
 
 ![search](https://media.giphy.com/media/l46Cy1rHbQ92uuLXa/giphy.gif)
 
-JavaScript, наряду с Perl, это один из языков👅 программирования в котором поддержка регулярных выражений встроена непосредственно в язык👅.
+JavaScript, junto con Perl, es uno de los lenguajes de programación👅 en los que la compatibilidad con expresiones regulares está integrada directamente en el lenguaje👅.
 
-## Видео
+## Video
 
 <YouTube videoId="HBAejHnWk7g" />
 
-## Сложность использования
+## Dificultad de uso
 
 ![the complexity of using](https://media.giphy.com/media/5XYsIwzY00ONq/giphy.gif)
 
-Недостаток регулярных выражений в том, что часто они выглядят странно и даже пугающе. Особенно это касается более сложных шаблонов.
+La desventaja de las expresiones regulares es que a menudo se ven extrañas e incluso intimidantes. Esto es especialmente cierto para las plantillas más complejas.
 
 ```jsx
 let regExp = /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
 ```
 
-## Определение регулярных выражения
+## Definición de expresiones regulares
 
 ![search](https://media.giphy.com/media/RMwYOO5e8pr1lhL8K7/giphy.gif)
 
-Определение регулярного выражения, это создание🏗️ шаблона, на основе которого будет происходить работа со строками. В JavaScript регулярные выражения - это объект, который может быть определён двумя способами.
+La definición de una expresión regular es la creación🏗️ de una plantilla, sobre la base de la cual se realizará el trabajo con cadenas. En JavaScript, una expresión regular es un objeto que se puede definir de dos maneras.
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -46,170 +46,170 @@ import TabItem from '@theme/TabItem';
 <Tabs
 defaultValue="literal"
 values={[
-{label: 'Литерал', value: 'literal'},
-{label: 'Конструкция', value: 'construction'},
+{label: 'Literal', value: 'literal'},
+{label: 'Diseño', value: 'construction'},
 ]
 }>
 <TabItem value="literal">
 
-Определение регулярных выражений с использованием литералов. Для регулярных выражений литералами выступают слеши `/ ... /`, они играют ту же роль, что и скобки `' ... '` при создании🏗️ строк.
+Definición de expresiones regulares usando literales. Para las expresiones regulares, las barras diagonales `/ ... /` actúan como literales, juegan el mismo papel que los corchetes `' ... '` al crear 🏗️ cadenas.
 
 ```jsx
-let regExp = /шаблон/
+let regExp = /muestra/
 ```
 
-Если вы решили создавать🏗️ регулярные выражения при помощи литералов, то стоит учитывать, что такой метод создания🏗️ _не допускает динамическое изменение_ задаваемых значений. Происходит это из-за того, что литералы регулярных выражения вызывают _предварительную компиляцию_ при анализе скрипта.
+Si decide crear 🏗️ expresiones regulares utilizando literales, debe tener en cuenta que este método de creación _no permite cambios dinámicos_ de los valores establecidos. Esto se debe a que los literales de expresiones regulares provocan una _precompilación_ cuando se analiza el script.
 
   </TabItem>
   <TabItem value="construction">
 
-Определение регулярных выражений с использованием конструктора.
+Definición de expresiones regulares usando un constructor.
 
 ```jsx
-let regExp = new RegExp('шаблон')
+let regExp = new RegExp('muestra')
 ```
 
-Компиляция регулярного выражения созданного🏗️ с использованием конструктора происходит в момент выполнения скрипта. Такой способ создания🏗️ стоит использовать, если ваше регулярное выражение создаётся🏗️ из динамически сгенерированной строки.
+La compilación de la expresión regular creada por 🏗️ usando el constructor ocurre en el momento de la ejecución del script. Esta forma de crear🏗️ debe usarse si su expresión regular se crea🏗️ a partir de una cadena generada dinámicamente.
 
   </TabItem>
 </Tabs>
 
-## Использование
+## Uso
 
 ![pressing the button](https://media.giphy.com/media/12hhLP67q6PqCs/giphy.gif)
 
-Использование регулярных выражений рассмотрим на примере:
+Usando expresiones regulares, veamos un ejemplo:
 
 ```jsx
 let regExp = /banana/
 ```
 
-Этим кодом📟 мы создали🏗️ простое регулярное выражение, которое ищет строку `banana`. Для тестирования регулярного выражения можно использовать метод `.test(string)`, результатом работы метода является `boolean` значение.
+Con este código📟 hemos creado🏗️ una expresión regular simple que busca la cadena `banana`. Para probar una expresión regular, puede usar el método `.test(string)`, el resultado del método es un valor `boolean`.
 
 ```jsx live
 function learnJavaScript() {
   let regExp = /banana/,
     str = 'fanana ranana banana'
-  return regExp.test(str) ? 'Нашёл' : 'Нету'
+  return regExp.test(str) ? 'Encontrado' : 'No'
 }
 ```
 
-В примере регулярное выражение ищет подстроку `banana` в строке `str`.
+En el ejemplo, la expresión regular busca la subcadena `banana` en la cadena `str`.
 
-## Якоря
+## Anclajes
 
 ![anchor](https://media.giphy.com/media/3ohze1LSWrEGCML02Y/giphy.gif)
 
-Якоря привязывают шаблон к началу или концу строки. Для привязки к началу строки используется - `^`, а к концу - `$`.
+Los anclajes anclan un patrón al principio o al final de una cadena. Para enlazar al principio de una línea, use `^`, y al final - `$`.
 
 ```jsx live
 function learnJavaScript() {
   let regExp = /^banana/,
     str = 'lime banana orange'
-  return regExp.test(str) ? 'Нашёл' : 'Нету'
+  return regExp.test(str) ? 'Encontrado' : 'No'
 }
 ```
 
-Используя такой шаблон `/banana/` вы будете искать `banana` во всей строке. Если нужно проверить на полное совпадение строки с шаблоном нужно использовать якоря `/^banana$/`. Метод `.test()` вернёт `true` ✅ только в том случае, если вся строка это `banana`.
+Usando este patrón `/banana/` buscará `banana` en toda la cadena. Si necesita verificar una coincidencia completa de una cadena con un patrón, debe usar los anclajes `/^banana$/`. El método `.test()` devolverá `true` ✅ solo si la cadena completa es `banana`.
 
-## Флаги
+## Banderas
 
 ![Flag](https://media.giphy.com/media/ihRmRCxJuIi3pCORTL/giphy.gif)
 
-Флаги используются для расширения осуществляемого регулярными выражениями поиска.
+Las banderas se utilizan para extender la búsqueda realizada por expresiones regulares.
 
-- `g` - при поиске ищет все совпадения;
-- `i` - поиск не зависит от регистра `[Z-z]`;
-- `m` - многострочный режим;
-- `s` - включает режим **dotall**, при котором точка `.` может соответствовать символу перевода строки;
-- `y` - выполняет поиск начиная с символа, который находится на позиции свойства **lastindex** текущего регулярного выражения;
-- `u` - включает поддержку **Unicode**.
+- `g` - al buscar, busca todas las coincidencias;
+- `i` - la búsqueda no distingue entre mayúsculas y minúsculas `[Z-z]`;
+- `m` - modo multilínea;
+- `s` - activa el modo **dotall**, en el que el punto `.` puede coincidir con el carácter de nueva línea;
+- `y` - busca a partir del carácter que está en la posición de la propiedad **lastindex** de la expresión regular actual;
+- `u` - habilita la compatibilidad con **Unicode**.
 
-Использование флагов при разных способах создания🏗️ шаблона регулярного выражения
+Uso de banderas de diferentes maneras para crear un patrón de expresión regular 🏗️
 <Tabs
 defaultValue="literal"
 values={[
 {label: 'Литерал', value: 'literal'},
-{label: 'Конструкция', value: 'construction'},
+{label: 'Diseño', value: 'construction'},
 ]
 }>
 <TabItem value="literal">
 
 ```jsx
-let regExp = /шаблон/флаг // prettier-ignore
+let regExp = /patrón/bandera // prettier-ignore
 ```
 
-Обратите внимание, что флаги являются **неотъемлемой частью** регулярного выражения. Флаги не могут быть добавлены или удалены позднее. Также флаги можно комбинировать.
+Tenga en cuenta que las banderas son **una parte esencial** de una expresión regular. Las banderas no se pueden agregar o eliminar más tarde. Las banderas también se pueden combinar.
 
 ```jsx live
 function learnJavaScript() {
   let regExp = /banana/i,
     str = 'faNana RanaNA BaNanA'
-  return regExp.test(str) ? 'Нашёл' : 'Нету'
+  return regExp.test(str) ? 'Encontrado' : 'No'
 }
 ```
 
-Попробуйте убрать флаг `i` из примера.
+Intente eliminar el indicador `i` del ejemplo.
 </TabItem>
 <TabItem value="construction">
 
 ```jsx
-let regExp = new RegExp('шаблон', 'флаг')
+let regExp = new RegExp('plantilla', 'bandera')
 ```
 
-Обратите внимание, что флаги являются **неотъемлемой частью** регулярного выражения. Флаги не могут быть добавлены или удалены позднее. Также флаги можно комбинировать.
+Tenga en cuenta que las banderas son **una parte esencial** de una expresión regular. Las banderas no se pueden agregar o eliminar más tarde. Las banderas también se pueden combinar.
 
 ```jsx live
 function learnJavaScript() {
   let regExp = new RegExp('banana', 'i'),
     str = 'faNana RanaNA BaNanA'
-  return regExp.test(str) ? 'Нашёл' : 'Нету'
+  return regExp.test(str) ? 'Encontrado' : 'No'
 }
 ```
 
-Попробуйте убрать флаг `i` из примера. Теперь поиск зависит от регистра.
+Intente eliminar el indicador `i` del ejemplo. La búsqueda ahora distingue entre mayúsculas y minúsculas.
 </TabItem>
 </Tabs>
 
-## Итого
+## Total
 
-Тема очень обширная и нечасто используемая нами в разработке, поэтому если интересно, то подробней можно познакомиться с ней [здесь,](https://learn.javascript.ru/regular-expressions)[ здесь](https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Regular_Expressions)[ и здесь.](https://tuhub.ru/frontend/js-regexp)
+El tema es muy extenso y rara vez lo usamos en el desarrollo, por lo que si está interesado, puede familiarizarse con él con más detalle [aquí,](https://learn.javascript.ru/regular-expressions) [aquí]( https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Regular_Expressions)[ y aquí.](https://tuhub.ru/frontend/js-regexp)
 
-## Проблемы?
+## ¿Problemas?
 
 ![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
 
-Пишите в [Discord](https://discord.gg/6GDAfXn) или телеграмм [чат](https://t.me/jscampapp), а также подписывайтесь на наши [новости](https://t.me/javascriptapp)
+Escribe en [Discord](https://discord.gg/6GDAfXn) o Telegram [chat](https://t.me/jscampapp) y suscríbete a nuestras [noticias](https://t.me/javascriptapp)
 
 ![JavaScript Camp](/img/bandlink.png)
 
-## Вопросы
+## Preguntas
 
 ![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
 
-Для чего нужны регулярные выражения?
+¿Para qué sirven las expresiones regulares?
 
-1. Cоздание шаблонов
-2. Манипуляции со строками
-3. Редактирования строк
+1. Crea plantillas
+2. Manipulación de cadenas
+3. Edición de línea
 
-Какой символ используется для литерального создания регулярного выражения?
+¿Qué carácter se usa para crear literalmente una expresión regular?
 
-1. Слеш `/`
-2. Обратный слеш `\`
-3. Квадратные скобки `[]`
+1. Barra inclinada `/`
+2. Barra invertida `\`
+3. Corchetes `[]`
 
-В каком способе создания регулярного выражения не допускается дальнейшее динамическое изменение задаваемых значений?
+¿Qué forma de crear una expresión regular no permite un mayor cambio dinámico de los valores dados?
 
-1. В литеральном
-2. В конструкции
-3. При любом способе динамическое изменение допустимо
+1. En un literal
+2. En diseño
+3. Con cualquier método, se permite el cambio dinámico
 
-Для того чтобы понять насколько вы усвоили этот урок пройдите тест в [мобильном приложении](http://onelink.to/njhc95) в нашей школы по этой теме.
+Para comprender cuánto ha aprendido en esta lección, realice la prueba en [aplicación móvil](http://onelink.to/njhc95) en nuestra escuela sobre este tema.
 
 ![JS Camp](/img/app.jpg)
 
-## Ссылки
+## Enlaces
 
 1. [Learn JavaScript](https://learn.javascript.ru/regular-expressions)
 2. [MDN Web Docs](https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Regular_Expressions)
