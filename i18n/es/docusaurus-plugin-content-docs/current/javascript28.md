@@ -8,13 +8,13 @@ import YouTube from 'react-youtube'
 
 ![@serverSerrverlesskiy](/img/javascript/headers/29.jpg)
 
-Существует специальный синтаксис 📖 для работы с промисами, который называется `async/await`.
+Hay una sintaxis especial 📖 para tratar con promesas llamada `async/await`.
 
-## Создание асинхронной функции
+## Crear una función asíncrona
 
-![creature](https://media.giphy.com/media/4T7e4DmcrP9du/giphy.gif)
+![criatura](https://media.giphy.com/media/4T7e4DmcrP9du/giphy.gif)
 
-Асинхронная функция⚙️ определяется выражением асинхронной функции⚙️. Базовая функция⚙️ выглядит так:
+Una función asincrónica⚙️ se define mediante una expresión de función asincrónica⚙️. La función básica⚙️ se ve así:
 
 ```javascript
 async function foo() {
@@ -23,7 +23,7 @@ async function foo() {
 }
 ```
 
-Мы определяем функцию⚙️ как асинхронную с помощью `async`. Это ключевое🗝️ слово может использоваться с любым синтаксисом📖 объявления🗣️ функции⚙️:
+Definimos una función⚙️ como asíncrona con `async`. Esta palabra clave🗝️ se puede usar con cualquier sintaxis📖 de declaración de función🗣️⚙️:
 
 ```javascript
 // Function Declaration
@@ -43,10 +43,10 @@ class Bar {
 
 ![Stops](https://media.giphy.com/media/WrgAGkGrh0MD1Z2gkO/giphy.gif)
 
-Как только мы определили функцию⚙️ как асинхронную, мы можем использовать ключевое🗝️ слово `await`.
-Это ключевое🗝️ слово помещается перед вызовом промиса, оно приостанавливает выполнение функции⚙️ до тех пор, пока промис не будет выполнен или отклонён.
+Una vez que hemos definido una función⚙️ como asíncrona, podemos usar la palabra clave 🗝️ `await`.
+Esta palabra clave 🗝️ se coloca antes de llamar a la promesa, suspende la ejecución de la función ⚙️ hasta que se cumpla o rechace la promesa.
 
-## Видео
+## Video
 
 <YouTube videoId="5KVQ4pcJOrU" />
 
@@ -54,9 +54,9 @@ class Bar {
 
 ![run](https://media.giphy.com/media/3N0fFF5xxcZrO/giphy.gif)
 
-У нас есть ключевое🗝️ слово `async`, которое мы помещаем перед объявлением🗣️ функции⚙️, чтобы сделать ее асинхронной. Асинхронная функция⚙️ — это функция⚙️, которая предвосхищает возможность использования ключевого🗝️ слова `await` для запуска асинхронного кода📟 .
+Tenemos la palabra clave `async` que ponemos antes de la declaración 🗣️ de la función⚙️ para que sea asíncrona. Una función asincrónica⚙️ es una función⚙️ que anticipa la capacidad de usar la palabra clave `await`🗝️ para ejecutar código asincrónico📟.
 
-Попробуйте набрать в консоли браузера следующее:
+Intente escribir lo siguiente en la consola de su navegador:
 
 ```javascript
 function hello() {
@@ -65,9 +65,9 @@ function hello() {
 hello()
 ```
 
-Функция⚙️ вернет 'Hello'. Ничего необычного.
+La función ⚙️ devolverá 'Hello'. Nada inusual.
 
-Но что если мы превратим ее в асинхронную функцию⚙️? Попробуйте сделать следующее:
+Pero, ¿y si lo convertimos en una función asíncrona⚙️? Intenta hacer lo siguiente:
 
 ```javascript
 async function hello() {
@@ -78,9 +78,9 @@ hello()
 
 ![Promise](https://media.giphy.com/media/GFtJhEvG3681y/giphy.gif)
 
-Теперь вызов функции⚙️ возвращает🔄 обещание. Это одна из особенностей асинхронных функций⚙️ — они возвращают🔄 значения, которые гарантировано преобразуются в обещания.
+Ahora llamar a la función⚙️ devuelve🔄 una promesa. Esta es una de las características de las funciones asincrónicas⚙️: devuelven🔄 valores que se garantiza que se convertirán en promesas.
 
-Вы также можете создать🏗️ асинхронное функциональное⚙️ выражение, например, так:
+También puede crear una 🏗️ expresión de función asincrónica ⚙️ así:
 
 ```javascript
 // Function Expression
@@ -90,7 +90,7 @@ let hello = async function () {
 hello()
 ```
 
-Также можно использовать стрелочные функции⚙️:
+También puedes usar funciones de flecha⚙️:
 
 ```javascript
 let hello = async () => {
@@ -98,31 +98,31 @@ let hello = async () => {
 }
 ```
 
-Все эти функции⚙️ делают одно и тоже.
+Todas estas funciones⚙️ hacen lo mismo.
 
-Для того, чтобы получить значение завершенного обещания, мы можем использовать блок `.then()`:
+Para obtener el valor de la promesa completada, podemos usar el bloque `.then()`:
 
 ```javascript
 hello().then(value => console.log(value))
 ```
 
-… или даже так:
+... o incluso así:
 
 ```javascript
 hello().then(console.log)
 ```
 
-Таким образом, добавление ключевого🗝️ слова `async` заставляет функцию⚙️ возвращать🔄 обещание вместо значения. Кроме того, это позволяет синхронным функциям избегать любых накладных расходов, связанных с запуском и поддержкой использования `await`. Простое добавление `async` перед функцией⚙️ обеспечивает автоматическую оптимизацию кода📟 движком JS.
+Entonces, agregar la palabra clave `async` hace que la función 🗝️ devuelva una promesa en lugar de un valor. También permite funciones sincrónicas para evitar cualquier sobrecarga asociada con el inicio y el mantenimiento del uso de `await`. Simplemente agregar `async` delante de una función⚙️ garantiza que el motor JS optimice automáticamente el código📟.
 
 ## Await
 
 ![Wait](https://media.giphy.com/media/myPdoRAlad0J2/giphy.gif)
 
-Преимущества асинхронных функций⚙️ становятся еще более очевидными, когда вы комбинируете их с ключевым🗝️ словом `await`. Оно может быть добавлено перед любой основанной на обещаниях функцией⚙️, чтобы заставить ее дожидаться завершения обещания, а затем вернуть результат. После этого выполняется следующий блок кода📟 .
+Los beneficios de las funciones asincrónicas⚙️ se vuelven aún más evidentes cuando las combina con la palabra clave🗝️ `esperar`. Se puede agregar antes de cualquier función basada en promesas⚙️ para que espere a que se complete la promesa y luego devuelva el resultado. Después de eso, se ejecuta el siguiente bloque de código📟.
 
-Вы можете использовать `await` при вызове любой функции⚙️, возвращающей🔄 обещание, включая функции⚙️ `Web API`.
+Puede usar `await` al llamar a cualquier función⚙️ que devuelva🔄 una promesa, incluidas las funciones de `Web API`⚙️.
 
-Синтаксис📖:
+Sintaxis📖:
 
 ```javascript
 let response = await fetch('https://jsonplaceholder.typicode.com/users')
@@ -210,13 +210,13 @@ let response = await fetch('coffee.jpg')
 
 Когда меньше блоков `.then()` для оборачивания кода📟 , все это выглядит как синхронный код📟 , поэтому он интуитивно понятен. -->
 
-## Обработка ошибок с `try...catch`
+## Manejo de errores con `try...catch`
 
-![code rewriting](https://media.giphy.com/media/ZVik7pBtu9dNS/giphy.gif)
+![reescritura de código](https://media.giphy.com/media/ZVik7pBtu9dNS/giphy.gif)
 
-Если вы хотите добавить обработку ошибок, у вас есть несколько вариантов.
+Si desea agregar el manejo de errores, tiene varias opciones.
 
-Вы можете использовать синхронную структуру `try...catch` вместе с `async/await`:
+Puede usar una estructura `try...catch` sincrónica junto con `async/await`:
 
 ```javascript
 async function myFetch() {
@@ -232,9 +232,9 @@ async function myFetch() {
 myFetch()
 ```
 
-Блок `catch(){}` принимает объект ошибки🙅‍♂️, который мы назвали `e`. Теперь мы можем вывести его в консоль, это позволит нам получить сообщение💬 о том, в каком месте кода📟 произошла ошибка🙅‍♂️.
+El bloque `catch(){}` acepta un objeto de error🙅‍♂️ al que llamamos `e`. Ahora podemos imprimirlo en la consola, esto nos permitirá recibir un mensaje 💬 sobre en qué parte del código 📟 ocurrió el error 🙅‍♂️.
 
-Целенаправленно создадим ошибку в `url` и посмотрим на вывод ошибки.
+Vamos a crear deliberadamente un error en la `url` y mirar el resultado del error.
 
 ```javascript
 async function myFetch() {
@@ -252,56 +252,56 @@ myFetch()
 
 ![fetch error](/img/javascript/17.jpg)
 
-## Итого
+## Total
 
-![Conclusion](https://media.giphy.com/media/3o6ZsVl2hv8ZnhSXug/giphy.gif)
+![Conclusión](https://media.giphy.com/media/3o6ZsVl2hv8ZnhSXug/giphy.gif)
 
-`Async/await` позволяет писать 🖊️ асинхронный код, который легко читать и поддерживать. Шесть причин почему его лучше использовать вместо промисов читайте [здесь](https://habr.com/ru/company/ruvds/blog/326074/).
+`Async/await` te permite escribir 🖊️ código asíncrono que es fácil de leer y mantener. Lea seis razones por las que es mejor usarlo en lugar de promesas [aquí](https://habr.com/ru/company/ruvds/blog/326074/).
 
-## Проблемы?
+## ¿Problemas?
 
-![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
+![Problema](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
 
-Пишите в [Discord](https://discord.gg/6GDAfXn) или телеграмм [чат](https://t.me/jscampapp), а также подписывайтесь на наши [новости](https://t.me/javascriptapp)
+Escribe en [Discord](https://discord.gg/6GDAfXn) o Telegram [chat](https://t.me/jscampapp) y suscríbete a nuestras [noticias](https://t.me/javascriptapp)
 
 ![JavaScript Camp](/img/bandlink.png)
 
-## Вопросы:
+## Preguntas:
 
-![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
+![Pregunta](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
 
-Где помещается ключевое слово `async`?
+¿Dónde se coloca la palabra clave `async`?
 
-1. Перед объявлением функции
-2. После объявления функции
-3. В теле функции
+1. Antes de la declaración de la función
+2. Después de la declaración de la función
+3. En el cuerpo de la función
 
-В каких функциях работает `await`?
+¿En qué funciones funciona `await`?
 
-1. Только в синхронных функциях
-2. Только в асинхронных функциях
-3. В любых функциях
+1. Solo en funciones síncronas
+2. Solo en funciones asíncronas
+3. En cualquier función
 
-Асинхронная функция - это:
+Una función asíncrona es:
 
-1. Это функция, которая определяется ключевым словом `async`
-2. Это функция, которая предвосхищает возможность использования ключевого слова `await`
-3. Оба варианта верны
+1. Esta es una función definida por la palabra clave `async`
+2. Esta es una característica que anticipa la posibilidad de usar la palabra clave `await`
+3. Ambas opciones son correctas
 
-Преимуществом `async/await` является:
+La ventaja de `async/await` es:
 
-1. Собственный код является заблокированным
-2. Лаконичный и чистый код
+1. El código propio está bloqueado
+2. Código conciso y limpio
 
-Для того чтобы понять, на сколько вы усвоили этот урок, пройдите тест в [мобильном приложении](http://onelink.to/njhc95) нашей школы по этой теме или в нашем [телеграм боте](https://t.me/javascriptcamp_bot).
+Para comprender cuánto ha aprendido esta lección, realice una prueba en la [aplicación móvil](http://onelink.to/njhc95) de nuestra escuela sobre este tema o en nuestro [bot de Telegram](https://t.me/javascriptcamp_bot).
 
 ![JS Camp](/img/app.jpg)
 
-## Ссылки:
+## Enlaces:
 
 1. [Async-await](https://learn.javascript.ru/async-await)
-2. [Как освоить Async / Await в JavaScript на реальных примерах](https://webformyself.com/async-await-v-javascript-na-primerax)
-3. [Асинхронное программирование с async/await](https://habr.com/ru/post/491012/)
+2. [Cómo dominar Async/Await en JavaScript con ejemplos reales](https://webformyself.com/async-await-v-javascript-na-primerax)
+3. [Programación asíncrona con async/await](https://habr.com/en/post/491012/)
 
 ## Contributors ✨
 

@@ -1,24 +1,24 @@
 ---
 id: javascript30
-title: Задачи по JavaScirpt
-sidebar_label: Практика
+title: tareas de JavaScript
+sidebar_label: Práctica
 ---
 
 import YouTube from 'react-youtube'
 
-Теория это хорошо, но без практики как лететь с одним крылом, поэтому в этом разделе мы будем решать задачи по JavaScript. Задачи мы взяли с сайта [Codewars](https://www.codewars.com/r/e67HyQ) - это сайт, где вы можете прокачать свои способности не только по JavaScript, но и по другим языкам программирования.
+La teoría es buena, pero sin práctica, cómo volar con un ala, por lo que en esta sección resolveremos problemas en JavaScript. Tomamos las tareas del sitio [Codewars](https://www.codewars.com/r/e67HyQ): este es un sitio donde puede mejorar sus habilidades no solo en JavaScript, sino también en otros lenguajes de programación.
 
-## Найдите числа, которые делятся на заданное число
+## Encuentra números que son divisibles por un número dado
 
-Завершите функцию, которая принимает два аргумента и возвращает все числа, которые делятся на данный делитель. Первый аргумент - это массив чисел, а второй - делитель.
+Completa una función que toma dos argumentos y devuelve todos los números que son divisibles por el divisor dado. El primer argumento es una matriz de números y el segundo es un divisor.
 
-### Пример
+### Ejemplo
 
 ```jsx
 divisibleBy([1, 2, 3, 4, 5, 6], 2) == [2, 4, 6]
 ```
 
-### Практика
+### Práctica
 
 ```jsx live
 function learnJavaScript() {
@@ -29,22 +29,22 @@ function learnJavaScript() {
 }
 ```
 
-### Ответ
+### Responder
 
-Смотрите ответ только в том случае, если не смогли решить задачу сами.
+Vea la respuesta solo si no pudo resolver el problema usted mismo.
 
 <YouTube videoId="eFtGZcUyZoc" />
 
-## В два раза старше
+## el doble de viejo
 
-Ваша функция принимает два аргумента:
+Su función toma dos argumentos:
 
-- текущий возраст отца (лет)
-- текущий возраст сына (лет)
+- edad actual del padre (años)
+- edad actual del hijo (años)
 
-Подсчитайте, сколько лет назад отец был вдвое старше сына (или через сколько лет он будет вдвое старше).
+Calcula cuántos años hace que el padre tenía el doble de la edad de su hijo (o dentro de cuántos años tendrá el doble).
 
-### Практика
+### Práctica
 
 ```jsx live
 function learnJavaScript() {
@@ -55,15 +55,15 @@ function learnJavaScript() {
 }
 ```
 
-### Ответ
+### Responder
 
 <YouTube videoId="uAeHGNYvSKU" />
 
-## Считайте нечетные числа ниже `n`
+## Contar números impares debajo de `n`
 
-Если задано число `n`, вернуть количество положительных нечетных чисел меньше `n`, ЛЕГКО!
+Dado un número `n`, ¡devolver el número de números impares positivos menores que `n` es FÁCIL!
 
-### Пример
+### Ejemplo
 
 ```jsx
 oddCount(7) //=> 3, i.e [1, 3, 5]
@@ -81,17 +81,17 @@ function learnJavaScript() {
 }
 ```
 
-### Ответ
+### responder
 
 <YouTube videoId="E1W-EQY_RLw" />
 
-## Преобразуйте строку в число!
+## ¡Convierte una cadena en un número!
 
-Нам нужна функция, которая может преобразовывать строку в число. Какие способы добиться этого вы знаете?
+Necesitamos una función que pueda convertir una cadena en un número. ¿Qué formas conoces para lograr esto?
 
-Примечание: не волнуйтесь, все входные данные будут строками, и каждая строка является вполне допустимым представлением целого числа.
+Nota: no se preocupe, todas las entradas serán cadenas, y cada cadena es una representación perfectamente válida de un número entero.
 
-### Пример
+### Ejemplo
 
 ```jsx
 stringToNumber('1234') == 1234
@@ -100,7 +100,7 @@ stringToNumber('1405') == 1405
 stringToNumber('-7') == -7
 ```
 
-### Практика
+### Práctica
 
 ```jsx live
 function learnJavaScript() {
@@ -111,25 +111,25 @@ function learnJavaScript() {
 }
 ```
 
-### Ответ
+### responder
 
 <YouTube videoId="zSr7bA2BnI4" />
 
-## Итого
+## Total
 
-Весь видео плейлист по этой теме можно посмотреть на нашем [YouTube канале](https://www.youtube.com/playlist?list=PLth6QPteH5guJiD0Ifa7_byNUW3GYdvNR).
+La lista de reproducción de videos completa sobre este tema se puede ver en nuestro [canal de YouTube](https://www.youtube.com/playlist?list=PLth6QPteH5guJiD0Ifa7_byNUW3GYdvNR).
 
-На татами в [Codewars](https://www.codewars.com/r/e67HyQ) оденься в кимоно.
+En el tatami de [Codewars](https://www.codewars.com/r/e67HyQ) ponte un kimono.
 
-JavaScript теперь твое главное звено!
+¡JavaScript es ahora tu enlace principal!
 
 <YouTube videoId="GAbsjQF9i0c" />
 
 
-## Проблемы?
+## ¿Problemas?
 
-![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
+![Problema](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
 
-Пишите в [Discord](https://discord.gg/6GDAfXn) или телеграмм [чат](https://t.me/jscampapp), а также подписывайтесь на наши [новости](https://t.me/javascriptapp)
+Escribe en [Discord](https://discord.gg/6GDAfXn) o Telegram [chat](https://t.me/jscampapp) y suscríbete a nuestras [noticias](https://t.me/javascriptapp)
 
 ![JavaScript Camp](/img/bandlink.png)

@@ -1,6 +1,6 @@
 ---
 id: javascript26
-title: Promise - отложенные и асинхронные вычисления
+title: Promise – cálculos diferidos y asíncronos
 sidebar_label: Promise
 ---
 
@@ -8,95 +8,95 @@ import YouTube from 'react-youtube'
 
 ![@serverSerrverlesskiy](/img/javascript/headers/27.jpg)
 
-Promise(Обещание) — это объект который содержит будущее значение асинхронной операции. Например, если вы запрашиваете некоторые данные с сервера, промис обещает нам получить эти данные, которые мы сможем использовать в будущем.
+Promise es un objeto que contiene el valor futuro de una operación asíncrona. Por ejemplo, si solicita algunos datos del servidor, la promesa nos promete obtener estos datos, que podemos usar en el futuro.
 
 ![math](https://media.giphy.com/media/4JVTF9zR9BicshFAb7/giphy.gif)
 
-Вначале промис имеет статус `pending` ("ожидание"), затем – одно из: `fulfilled` ("выполнено успешно") или `rejected` ("выполнено с ошибкой🙅‍♂️").
+Al principio, la promesa tiene el estado `pending`, luego uno de: `fulfilled` (exitoso) o `rejected`(fracaso🙅‍♂️).
 
-![promise states](/img/javascript/23/promise.png)
+![estados de promesa](/img/javascript/23/promise.png)
 
-1. `Pending` - Промис ожидает, если результат не готов. То есть, ожидает завершение чего-либо (например, завершения асинхронной операции).
-2. `Fulfilled` - Промис решен, если результат доступен. То есть, что-то завершило свое выполнение(например, асинхронная операция) и все прошло успешно.
-3. `Rejected` - Промиc отклонен, если произошла ошибка в процессе выполнения.
+1. `Pending` - La promesa está pendiente si el resultado no está listo. Es decir, esperar a que se complete algo (por ejemplo, que se complete una operación asincrónica).
+2. `Fulfilled` - La promesa se resuelve si el resultado está disponible. Es decir, algo completó su ejecución (por ejemplo, una operación asíncrona) y todo fue exitoso.
+3. `Rejected` - Promesa rechazada si ocurrió un error durante la ejecución.
 
-## Видео
+## Video
 
 <YouTube videoId="gwauVA2cIVo" />
 
-## Создание промиса
+## Creación de promesas
 
-![Plus](https://media.giphy.com/media/Yqo5mjWTLGlVOIP8Dc/giphy.gif)
+![Más](https://media.giphy.com/media/Yqo5mjWTLGlVOIP8Dc/giphy.gif)
 
-Объект `Promise` создается🏗️ при помощи ключевого🗝️ слова new и своего конструктора.
-Конструктор Промисов принимает один аргумент, обратный вызов, также известный как исполнительная функция⚙️, которая принимает 2 обратных вызова, `resolve` и `reject`.
+El objeto `Promise` se crea🏗️ usando la nueva palabra clave🗝️ y su constructor.
+El constructor Promise toma un argumento, una devolución de llamada, también conocida como función ejecutor⚙️, que toma 2 devoluciones de llamada, `resolve` y `reject`.
 
-Исполнительная функция⚙️ выполняется сразу же после создания🏗️ промиса. Промис становится выполненным при помощи вызова `resolve()`, а отклоненным при помощи `reject()`.
+La función ejecutiva⚙️ se ejecuta inmediatamente después de la creación🏗️ de la promesa. Se hace una promesa para ser cumplida con una llamada a `resolve()` y rechazada con `reject()`.
 
 ```jsx
 const promise = new Promise((resolve, reject) => {
   if (allWentWell) {
-    resolve('Все прошло отлично!')
+    resolve('¡Todo salió a la perfección!')
   } else {
-    reject('Что-то пошло не так')
+    reject('Algo salió mal')
   }
 })
 ```
 
-`resolve()` и `reject()` принимают один аргумент, который может быть строкой, числом, логическим выражением, массивом или объектом.
+`resolve()` y `reject()` toman un argumento, que puede ser una cadena, un número, un booleano, una matriz o un objeto.
 
-Чтобы снабдить функцию⚙️ функционалом⚙️ обещаний, нужно просто вернуть в ней объект `Promise`:
+Para proporcionar una función⚙️ con la funcionalidad⚙️ de las promesas, solo necesita devolver un objeto `Promise` en ella:
 
 ```jsx
 function myAsyncFunction(url) {
   return new Promise((resolve, reject) => {
-    //код функции
+    // Código de función
   })
 }
 ```
 
-## Использование промиса
+## Promesa de uso
 
-![Help](https://media.giphy.com/media/iigqhSTOKmb6wDObGb/giphy.gif)
+![Ayuda](https://media.giphy.com/media/iigqhSTOKmb6wDObGb/giphy.gif)
 
-Промисы используются при помощи методов `then()` и `catch()`.
+Las promesas se usan con los métodos `then()` y `catch()`.
 
-### then
+###después
 
-Метод `then` используется для запуска функций⚙️ при положительном и отрицательном результате промиса.
+El método `then` se usa para ejecutar funciones ⚙️ en un resultado positivo y negativo de una promesa.
 
-![Launch](https://media.giphy.com/media/1n4FT4KRQkDvK0IO4X/giphy.gif)
+![Lanzamiento](https://media.giphy.com/media/1n4FT4KRQkDvK0IO4X/giphy.gif)
 
-Синтаксис📖 метода `then`:
+Sintaxis📖 del método `then`:
 
 ```jsx
 promise.then(
   function (result) {
-    /* обработает успешное выполнение */
+    /*manejar el éxito*/
   },
   function (error) {
-    /* обработает ошибку */
+    /* manejará el error */
   }
 )
 ```
 
-Первый 1️⃣ аргумент метода `then` – функция⚙️, которая выполняется, когда промис переходит в состояние "выполнен успешно", и получает результат.
+El primer argumento 1️⃣ del método `then` es una función⚙️ que se ejecuta cuando la promesa pasa al estado "éxito" y obtiene el resultado.
 
-Второй аргумент `then` – функция⚙️, которая выполняется, когда промис переходит в состояние "выполнен с ошибкой🙅‍♂️", и получает ошибку🙅‍♂️.
+El segundo argumento `then` es una función⚙️ que se ejecuta cuando la promesa pasa al estado "fallido🙅‍♂️" y recibe un error🙅‍♂️.
 
 ![Error](https://media.giphy.com/media/iJCo9daAP0xugHhhfb/giphy.gif)
 
-Пример метода `then`:
+Un ejemplo del método `then`:
 
 ```jsx
 let promise = new Promise(function (resolve, reject) {
   setTimeout(() => resolve('done!'), 1000)
 })
 
-// resolve запустит первую функцию, переданную в .then
+// resolve ejecutará la primera función pasada a .then
 promise.then(
-  result => alert(result), // выведет "done!" через одну секунду
-  error => alert(error) // не будет запущена
+  result => alert(result), // mostrará "hecho!" en un segundo
+  error => alert(error) // No comenzará
 )
 ```
 
@@ -107,56 +107,56 @@ let promise = new Promise(function (resolve, reject) {
   setTimeout(() => reject(new Error('Whoops!')), 1000)
 })
 
-// reject запустит вторую функцию, переданную в .then
+// reject ejecutará la segunda función pasada a .then
 promise.then(
-  result => alert(result), // не будет запущена
-  error => alert(error) // выведет "Error: Whoops!" спустя одну секунду
+  result => alert(result), // No comenzará
+  error => alert(error) // mostrará "Error: ¡Ups!" después de un segundo
 )
 ```
 
-Если нужно вывести только результат успешного выполения, то в `then` можно передать только одну функцию⚙️:
+Si necesita mostrar solo el resultado de una ejecución exitosa, entonces solo se puede pasar una función a `then`⚙️:
 
 ```jsx
 let promise = new Promise(resolve => {
   setTimeout(() => resolve('done!'), 1000)
 })
 
-promise.then(alert) // выведет "done!" спустя одну секунду
+promise.then(alert) // mostrará "done!" después de un segundo
 ```
 
 ### catch
 
 ![Catch](https://media.giphy.com/media/fxeeuml8GaESfmuE4z/giphy.gif)
 
-Для отлова ошибок🙅‍♂️ используется метод `catch`. Его можно использовать вместо метода `then` для вывода сообщений💬 об ошибке🙅‍♂️.
+El método `catch` se utiliza para detectar errores🙅‍♂️. Se puede usar en lugar del método `then` para mostrar mensajes de error💬 sobre errores🙅‍♂️.
 
-Синтаксис📖 метода catch:
+Sintaxis📖 del método catch:
 
 ```jsx
 let promise = new Promise((resolve, reject) => {
-  setTimeout(() => reject(new Error('Ошибка!')), 1000)
+  setTimeout(() => reject(new Error('¡Error!')), 1000)
 })
 
-promise.catch(alert) // выведет "Error: Ошибка!" спустя одну секунду
+promise.catch(alert) // mostrará "Error: ¡Error!" después de un segundo
 ```
 
 ### promise.all
 
-Этот метод берет массив промисов и возвращает🔄 🆕 новый промис, который будет выполненным, когда все промисы внутри массива выполнены или отклонен, как только встречается промис, который отклоняется.
+Este método toma una matriz de promesas y devuelve 🔄 🆕 una nueva promesa, que se cumplirá cuando todas las promesas dentro de la matriz se cumplan o se rechacen tan pronto como se cumpla una promesa que se rechace.
 
-![Return](https://media.giphy.com/media/Y08bx6Fea1BafzTlvc/giphy.gif)
+![Regresar](https://media.giphy.com/media/Y08bx6Fea1BafzTlvc/giphy.gif)
 
-Например:
+Por ejemplo:
 
 ```jsx
 const promise1 = new Promise((resolve, reject) => {
   setTimeout(() => {
-    resolve('Promise1 выполнен')
+    resolve('Promise1 cumplida')
   }, 2000)
 })
 const promise2 = new Promise((resolve, reject) => {
   setTimeout(() => {
-    resolve('Promise2 выполнен')
+    resolve('Promise2 cumplida')
   }, 1500)
 })
 Promise.all([promise1, promise2])
@@ -164,7 +164,7 @@ Promise.all([promise1, promise2])
   .catch(error => console.log(error))
 ```
 
-Здесь аргументом внутри `then()` выступает массив, который содержит значения промисов в том же порядке, в котором они передавались в `Promise.all()`.
+Aquí, el argumento dentro de `then()` es una matriz que contiene los valores prometidos en el mismo orden en que se pasaron a `Promise.all()`.
 
 <!-- ### promise.race
 
@@ -196,24 +196,24 @@ Promise.race([promise1, promise2])
 
 По итогу, `Promise.race()` дожидается первого промиса и берет его статус как статус возвращаемого🔄 промиса. -->
 
-## Проблемы?
+## ¿Problemas?
 
-![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
+![Problema](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
 
-Пишите в [Discord](https://discord.gg/6GDAfXn) или телеграмм [чат](https://t.me/jscampapp), а также подписывайтесь на наши [новости](https://t.me/javascriptapp)
+Escribe en [Discord](https://discord.gg/6GDAfXn) o Telegram [chat](https://t.me/jscampapp) y suscríbete a nuestras [noticias](https://t.me/javascriptapp)
 
-![JavaScript Camp](/img/bandlink.png)
+![Campamento JavaScript](/img/bandlink.png)
 
-## Вопросы:
+## Preguntas:
 
-![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
+![Pregunta](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
 
-Как называется метод который вызывается при успешном выполнении промиса?
+¿Cuál es el nombre del método que se llama cuando la promesa es exitosa?
 
 1. `reject`
 2. `resolve`
 
-Каким методом можно проверить выполнение всех промисов в массиве?
+¿Qué método se puede usar para verificar el cumplimiento de todas las promesas en una matriz?
 
 1. `promise.all`
 2. `promise.race`
@@ -228,20 +228,20 @@ Promise.race([promise1, promise2])
 1. `promise.all`
 2. `promise.race` -->
 
-Какой метод служит для отлова ошибок в промисах?
+¿Qué método se utiliza para detectar errores en las promesas?
 
 1. `then`
 2. `catch`
 
-Для того чтобы понять, на сколько вы усвоили этот урок, пройдите тест в [мобильном приложении](http://onelink.to/njhc95) нашей школы по этой теме или в нашем [телеграм боте](https://t.me/javascriptcamp_bot).
+Para comprender cuánto ha aprendido esta lección, realice una prueba en la [aplicación móvil](http://onelink.to/njhc95) de nuestra escuela sobre este tema o en nuestro [bot de Telegram](https://t.me/javascriptcamp_bot).
 
-![JS Camp](/img/app.jpg)
+![Campamento JS](/img/app.jpg)
 
-## Ссылки:
+## Enlaces:
 
-1.  [MDN web docs](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise)
-2.  [Learn JavaScript](https://learn.javascript.ru/promise)
-3.  [Understanding Promises](https://blog.bitsrc.io/understanding-promises-in-javascript-c5248de9ff8f?gi=1e459ca846d9)
+1. [Documentos web de MDN](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise)
+2. [Aprender JavaScript](https://learn.javascript.ru/promise)
+3. [Comprender las promesas](https://blog.bitsrc.io/understanding-promises-in-javascript-c5248de9ff8f?gi=1e459ca846d9)
 
 ## Contributors ✨
 

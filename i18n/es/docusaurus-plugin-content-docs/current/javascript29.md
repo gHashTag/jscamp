@@ -8,101 +8,101 @@ import YouTube from 'react-youtube'
 
 ![@serverSerrverlesskiy](/img/javascript/headers/31.jpg)
 
-Чтобы сделать объекты, функции, классы или переменные 🔔 доступными для внешнего мира, достаточно просто экспортировать их, а затем импортировать, где это необходимо, в другие файлы проекта.
+Para hacer que objetos, funciones, clases o variables 🔔 estén disponibles para el mundo exterior, simplemente expórtelos y luego impórtelos, cuando sea necesario, a otros archivos de proyecto.
 
-## Видео
+## Video
 
 <YouTube videoId="eObrJvg0Y5s" />
 
 ## «Hello, World!» на Node.js
 
-`Node.js®` — это JavaScript окружение построенное на движке [Chrome V8](https://v8.dev).
+`Node.js®` es un entorno de JavaScript basado en el motor [Chrome V8](https://v8.dev).
 
-Начнем работу с `Node.js` просто набрав node в консоли:
+Comencemos con `Node.js` simplemente escribiendo node en la consola:
 
 ```javascript
 $ node
 >
 ```
 
-Если он у вас не стоит, то [скачайте](https://nodejs.org) его и установите на свой компьютер.
+Si no lo tiene, [descárguelo](https://nodejs.org) e instálelo en su computadora.
 
 ![Node](https://media.giphy.com/media/kdFc8fubgS31b8DsVu/giphy.gif)
 
-А теперь давайте попробуем что-то напечатать:
+Ahora intentemos imprimir algo:
 
 ```javascript
 $ node
 > console.log('hello from Node.js')
-// После нажатия Enter вы получите следующее:
+// Después de presionar Enter, obtendrá lo siguiente:
 hello from Node.js
 undefined
 ```
 
 ![Export](https://media.giphy.com/media/3ohzAiaRIBBrge2jQc/giphy.gif)
 
-Не стесняйтесь эспериментировать с `Node.js` с помощью этого интерфейса: обычно тестируют небольшие фрагменты кода здесь, если не целесообразно помещать их сразу в файл.
+Siéntase libre de experimentar con `Node.js` usando esta interfaz: es común probar pequeños fragmentos de código aquí si no es práctico ponerlos todos en un archivo.
 
-Пришло время создать наше приложение Hello Node.js!
+¡Es hora de crear nuestra aplicación Hello Node.js!
 
-Начнем с создания файла `index.js`. Следующей командой мы создаем папку `myProject` и входим в нее.
+Comencemos por crear el archivo `index.js`. Con el siguiente comando creamos la carpeta `myProject` y entramos en ella.
 
 ```bash
 mkdir myProject && cd myProject
 ```
 
-Теперь создаем сам файл `index.js`
+Ahora creamos el propio archivo `index.js`
 
 ```bash
 touch index.js
 ```
 
-Откройте свой редактор кода или скачайте и установите его. Мы рекомендуем [VS Code](https://code.visualstudio.com).
+Abra su editor de código o descárguelo e instálelo. Recomendamos [VS Code](https://code.visualstudio.com).
 
-Откройте редактор кода и добавьте в него папку созданого нами проекта.
+Abra el editor de código y agregue la carpeta del proyecto que creamos.
 
-![new prroject](/img/javascript/18.jpg)
+![nuevo proyecto](/img/javascript/18.jpg)
 
-Теперь откройте боковое меню нажав этот значок.
+Ahora abra el menú lateral haciendo clic en este icono.
 
-![new prroject](/img/javascript/19.jpg)
+![nuevo proyecto](/img/javascript/19.jpg)
 
-Cкопируйте в него следующий фрагмент кода:
+Copie el siguiente fragmento de código en él:
 
 ```javascript
 // index.js
 console.log('hello from Node.js')
 ```
 
-Чтобы запустить этот файл, вы должны снова открыть свой терминал и перейти в каталог, в котором размещён `index.js`.
+Para ejecutar este archivo, debe abrir su terminal nuevamente y cambiar al directorio donde se encuentra `index.js`.
 
-В `VS Code` это можно сделать нажав на эти значки.
+En `VS Code` esto se puede hacer haciendo clic en estos iconos.
 
-![new prroject](/img/javascript/20.jpg)
+![nuevo proyecto](/img/javascript/20.jpg)
 
-И выбрать таб `TERMINAL`
+Y selecciona la pestaña `TERMINAL`
 
-![new prroject](/img/javascript/21.jpg)
+![nuevo proyecto](/img/javascript/21.jpg)
 
-Как только вы успешно переместитесь в нужное место, запустите файл, используя команду
+Una vez que haya navegado con éxito a la ubicación deseada, ejecute el archivo con el comando
 
 ```javascript
 node index.js
 ```
 
-Вы увидите, что эта команда будет выдавать тот же результат, что и раньше, выводя строку непосредственно в терминале.
+Verá que este comando producirá el mismo resultado que antes, enviando la cadena directamente a la terminal.
 
 ![new prroject](/img/javascript/22.jpg)
 
-## Модульность приложения
+## Modularidad de la aplicación
 
-![Export](https://media.giphy.com/media/3o7btSt2Et1GgIaDAY/source.gif)
+![Exportar](https://media.giphy.com/media/3o7btSt2Et1GgIaDAY/source.gif)
 
-Пришло время перейти на следующий уровень! Давайте создадим что-то более сложное, разделив наш исходный код на несколько JavaScript-файлов с целью удобочитаемости и поддерживаемости.
+¡Es hora de pasar al siguiente nivel! Vamos a crear algo más complejo dividiendo nuestro código fuente en varios archivos JavaScript en aras de la legibilidad y el mantenimiento.
 
-### Структура проекта
+### Estructura del proyecto
 
-Создайте следующую структуру каталогов (с пустыми файлами), но пока не создавайте `package.json,` мы сгенерируем его автоматически на следующем шаге:
+Cree la siguiente estructura de directorios (con archivos vacíos), pero no cree `package.json' todavía, lo generaremos automáticamente en el siguiente paso:
 
 ```javascript
 ├── app
@@ -112,15 +112,15 @@ node index.js
 └── package.json
 ```
 
-Чтобы создать новый файл или папку в `VS Code` нажмите соответствующую иконку как показано на картинке.
+Para crear un nuevo archivo o carpeta en `VS Code`, haga clic en el icono correspondiente como se muestra en la imagen.
 
-![new file](/img/javascript/23.jpg)
+![archivo nuevo](/img/javascript/23.jpg)
 
 ### package.json
 
-Каждый проект `Node.js` начинается с создания файла `package.json`. Вы можете думать о нем как о JSON-представлении приложения и его зависимостей. Он содержит имя вашего приложения, автора (вас) и все зависимости, необходимые для запуска приложения. Это карта вашего проекта.
+Cada proyecto `Node.js` comienza con la creación de un archivo `package.json`. Puede considerarlo como una representación JSON de la aplicación y sus dependencias. Contiene el nombre de su aplicación, el autor (usted) y todas las dependencias necesarias para ejecutar la aplicación. Este es el mapa de tu proyecto.
 
-Вы можете интерактивно генерировать файл `package.json` с помощью команды
+Puede generar interactivamente un archivo `package.json` con el comando
 
 ![npm](https://media.giphy.com/media/gHnBLyeYE6hboT3t3o/giphy.gif)
 
@@ -128,7 +128,7 @@ node index.js
 npm init
 ```
 
-в терминале. После запуска команды вас попросят ввести некоторые данные, например имя вашего приложения, версию, описание и так далее. Не нужно беспокоиться, просто нажимайте `Enter`, пока не получите сформированный JSON и вопрос `is it ok`?. Нажмите `Enter` в последний раз и вуаля: ваш `package.json` был автоматически сгенерирован и помещен в папку вашего приложения. Если вы откроете этот файл в своей IDE, он будет очень похож на фрагмент кода ниже.
+en la terminal Después de ejecutar el comando, se le pedirá que ingrese cierta información, como el nombre de su aplicación, la versión, la descripción, etc. No se preocupe, simplemente presione 'Enter' hasta que obtenga el JSON generado y la pregunta `¿está bien?`. Presione `Enter` una última vez y listo: su `package.json` se ha generado automáticamente y se ha colocado en la carpeta de su aplicación. Si abre este archivo en su IDE, se verá muy similar al fragmento de código a continuación.
 
 ```json
 // package.json
@@ -145,41 +145,41 @@ npm init
 }
 ```
 
-Хорошей практикой является добавление стартового скрипта в ваш пакет `package.json`. Поэтому добавьте в объект `scripts` строчку:
+Es una buena práctica agregar un script de inicio a su paquete `package.json`. Así que agregue esta línea al objeto `scripts`:
 
 ```json
 "scripts": {
-  "start": "node index.js", // эту строчку
+  "start": "node index.js", // esta línea
   "test": "echo \"Error: no test specified\" && exit 1"
 }
 ```
 
-Как только вы это сделаете, вы можете запустить приложение с помощью команды `npm start`.
+Una vez que haya hecho eso, puede iniciar la aplicación con el comando `npm start`.
 
-## Импорт
+## Importar
 
-Теперь давайте вернемся к первому созданному вами файлу под названием `index.js`. Рекомендуется оставить этот файл очень компактным: только подключение самого приложения (файл `index.js` из подкаталога `/app`, созданного ранее). Скопируйте следующий код в свой файл `index.js` и сохраните:
+Ahora regresemos al primer archivo que creó llamado `index.js`. Se recomienda mantener este archivo muy compacto: solo incluye la aplicación en sí (el archivo `index.js` del subdirectorio `/app` creado anteriormente). Copie el siguiente código en su archivo `index.js` y guárdelo:
 
 ```javascript
 // index.js
 require('./app/index')
 ```
 
-или сокращеная запись для всех файлов `index.js`
+o abreviatura para todos los archivos `index.js`
 
 ```javascript
 // index.js
 require('./app')
 ```
 
-Если не указан конкретный файл, то интерпретатор кода ищет файл `index.js` и заходит в него. Вот так просто мы подключили свой первый файл в проект.
+Si no se especifica un archivo específico, el intérprete de código busca el archivo `index.js` y lo ingresa. Así, incluimos nuestro primer archivo en el proyecto.
 
-![Export](https://media.giphy.com/media/W6Lidy1RgOl3kYdARr/giphy.gif)
+![Exportar](https://media.giphy.com/media/W6Lidy1RgOl3kYdARr/giphy.gif)
 
-## Экспорт
+## Exportar
 
-Теперь пришло время приступить к созданию реального приложения. Откройте файл `index.js` из папки `/app`, чтобы создать очень простой пример: добавление массива чисел. В этом случае файл `index.js` будет содержать только числа, которые мы хотим добавить, а логика, требующая вычислений, должна быть помещена в отдельный модуль в файле `calc.js`.
-Вставьте этот код в файл `index.js` в каталоге `/app`.
+Ahora es el momento de comenzar a construir la aplicación real. Abra el archivo `index.js` de la carpeta `/app` para crear un ejemplo muy simple: agregar una matriz de números. En este caso, el archivo `index.js` contendrá solo los números que queremos agregar, y la lógica que requiere cálculos debe colocarse en un módulo separado en el archivo `calc.js`.
+Pegue este código en el archivo `index.js` en el directorio `/app`.
 
 ```javascript
 // app/index.js
@@ -190,7 +190,7 @@ const result = calc.sum(numbersToAdd)
 console.log(`The result is: ${result}`)
 ```
 
-Теперь вставьте фактическую бизнес-логику в файл `calc.js,` который можно найти в той же папке.
+Ahora pegue la lógica comercial real en el archivo `calc.js` que se puede encontrar en la misma carpeta.
 
 ```javascript
 // app/calc.js
@@ -201,47 +201,46 @@ const sum = arr => {
 module.exports.sum = sum // export
 ```
 
-В этом файле мы создали функцию `sum` и экспортировали ее, сделали доступными в других файлах проекта.
+En este archivo, creamos la función `sum` y la exportamos, la hicimos disponible en otros archivos de proyecto.
 
-Чтобы проверить, всё ли вы сделали правильно, сохраните эти файлы, откройте терминал и введите `npm start` или `node index.js`. Если все сделали правильно, то получите ответ: `19.` Если что-то пошло не так, внимательно просмотрите лог в консоли и найдите проблему на его основе.
+Para verificar si hizo todo bien, guarde estos archivos, abra una terminal y escriba `npm start` o `node index.js`. Si todo se hizo correctamente, obtendrá la respuesta: `19.` Si algo salió mal, revise cuidadosamente el registro en la consola y encuentre el problema basado en él.
 
 ![new file](/img/javascript/24.jpg)
 
-## Итого
+## Total
 
-Вот мы и завершили с вами подготовительный, перед курсом по [мобильной разработке](https://jscamp.app/docs/start000), курс по JavaScript.
+Así que completamos el curso preparatorio sobre JavaScript antes del curso [desarrollo móvil](https://jscamp.app/docs/start000).
 
-## Проблемы?
+## ¿Problemas?
 
-![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
+![Problema](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
 
-Пишите в [Discord](https://discord.gg/6GDAfXn) или телеграмм [чат](https://t.me/jscampapp), а также подписывайтесь на наши [новости](https://t.me/javascriptapp)
+Escribe en [Discord](https://discord.gg/6GDAfXn) o Telegram [chat](https://t.me/jscampapp) y suscríbete a nuestras [noticias](https://t.me/javascriptapp)
 
-![JavaScript Camp](/img/bandlink.png)
+![Campamento JavaScript](/img/bandlink.png)
 
+## Preguntas:
 
-## Вопросы:
+![Pregunta](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
 
-![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
+Para hacer que los objetos, funciones, clases o variables 🔔 estén disponibles para el mundo exterior, debe:
 
-Чтобы сделать объекты, функции, классы или переменные 🔔 доступными для внешнего мира, необходимо:
+1. Exportarlos y luego importarlos
+2. Importarlos y luego exportarlos
 
-1. Экспортировать их, а затем импортировать
-2. Импортировать их, а затем экспортировать
+`Node.js®` es:
 
-`Node.js®` это:
+1. Lenguaje de programación
+2. Entorno de JavaScript basado en el motor Chrome V8
+3. Navegador
 
-1. Язык программирования
-2. JavaScript окружение построенное на движке Chrome V8
-3. Браузер
+`package.json` es:
 
-`package.json` это:
+1. Entorno de JavaScript basado en el motor Chrome V8
+2. Representación JSON de la aplicación y sus dependencias
+3. Lenguaje de programación JSON
 
-1. JavaScript окружение построенное на движке Chrome V8
-2. JSON-представление приложения и его зависимостей
-3. Язык программирования JSON
-
-Для того чтобы понять насколько вы усвоили этот урок пройдите тест в [мобильном приложении](http://onelink.to/njhc95) в нашей школы по этой теме.
+Para comprender cuánto ha aprendido en esta lección, realice la prueba en [aplicación móvil](http://onelink.to/njhc95) en nuestra escuela sobre este tema.
 
 ![JS Camp](/img/app.jpg)
 
@@ -269,11 +268,11 @@ module.exports.sum = sum // export
 2. экспорта по умолчанию (дефолтный экспорт) из модуля
 3. импортирует все значения -->
 
-## Ссылки:
+## Enlaces:
 
-1. [MDN web doc. Статья "Модули в ECMAScript 6: будущее уже сейчас"](https://frontender.info/es6-modules/)
-2. [Статья "ES6 Modules and How to Use Import and Export in JavaScript"](https://www.digitalocean.com/community/tutorials/js-modules-es6)
-3. [Статья "require против ES6 import / export"](https://coderoad.ru/31354559/%D0%98%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-Node-js-require-%D0%BF%D1%80%D0%BE%D1%82%D0%B8%D0%B2-ES6-import-export)
+1. [Documento web de MDN. Artículo "Módulos en ECMAScript 6: el futuro es ahora"](https://frontender.info/es6-modules/)
+2. [Artículo "Módulos ES6 y cómo usar la importación y exportación en JavaScript"](https://www.digitalocean.com/community/tutorials/js-modules-es6)
+3. [Artículo "requerir frente a importación/exportación de ES6"](https://coderoad.ru/31354559/%D0%98%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-Node-js-require-%D0%BF%D1%80%D0%BE%D1%82%D0%B8%D0%B2-ES6-import-export)
 
 ## Contributors ✨
 

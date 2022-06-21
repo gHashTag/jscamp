@@ -1,22 +1,22 @@
 ---
 id: javascript25
-title: Асинхронность Event loop
-sidebar_label: Асинхронность Event loop
+title: asincronía Event loop
+sidebar_label: asincronía Event loop
 ---
 
 import YouTube from 'react-youtube'
 
 ![@serverSerrverlesskiy](/img/javascript/headers/26.jpg)
 
-## Асинхронность
+## asincronía
 
-В JavaScript асинхронность — основной инструмент, который обрабатывает запросы параллельно с загрузкой веб-страницы. Сейчас невозможно представить интернет, где все запросы на сервер отправлялись бы с перезагрузкой страницы.
+En JavaScript, la asincronía es la herramienta principal que procesa las solicitudes en paralelo con la carga de una página web. Ahora es imposible imaginar Internet, donde todas las solicitudes al servidor se enviarían con una recarga de página.
 
-Любые данные от сервера запрашиваются асинхронно: отправляется запрос (XMLHttpRequest или XHR), и код📟 не ждёт его возвращения🔄, продолжая выполняться. Когда же сервер отвечает, объект XHR получает уведомление об этом и запускает функцию⚙️ обратного вызова — `callback`, который передали в него перед отправкой запроса.
+Cualquier dato del servidor se solicita de forma asíncrona: se envía una solicitud (XMLHttpRequest o XHR), y el código📟 no espera su devolución🔄, continuando su ejecución. Cuando el servidor responde, se notifica al objeto XHR y se activa la función de `callback` que se le pasó antes de enviar la solicitud.
 
-Если правильно использовать инструменты языка👅, то выполнение запроса, который происходит последовательно и в одном потоке, никак не мешает приёму событий и реакции на них — человек👨 спокойно работает с интерфейсом, не замечая лагов, сбоев и зависаний.
+Si usa las herramientas de lenguaje👅 correctamente, entonces la ejecución de una solicitud que ocurre secuencialmente y en un hilo no interfiere con la recepción de eventos y la reacción a ellos de ninguna manera: una persona👨 trabaja tranquilamente con la interfaz, sin notar retrasos, bloqueos y se congela
 
-## Видео
+## Video
 
 <YouTube videoId="vQbBNRyeshw" />
 
@@ -24,25 +24,25 @@ import YouTube from 'react-youtube'
 
 ![Queue](https://media.giphy.com/media/5YuhLwDgrgtRVwI7OY/giphy.gif)
 
-`Event loop` в JavaScript — менеджер асинхронных вызовов.
+`Event loop` en JavaScript es un administrador de llamadas asíncrono.
 
-Чтобы этот хитрый процесс слаженно работал, в JavaScript реализован механизм для управления очерёдностью исполнения кода📟 . Поскольку это однопоточный язык👅, возникла необходимость "вклиниваться" в текущий контекст исполнения. Этот механизм называется `event loop` — событийный цикл.
+Para que este complicado proceso funcione sin problemas, JavaScript implementa un mecanismo para controlar el orden de ejecución del código📟. Dado que este es un lenguaje de subproceso único👅, era necesario "encajar" en el contexto de ejecución actual. Este mecanismo se llama `event loop` - un ciclo de eventos.
 
-С английского `loop` переводится как "петля", что отлично отражает смысл: мы имеем дело с закольцованной очередью.
+Del inglés `loop` se traduce como "bucle", lo que refleja perfectamente el significado: estamos tratando con una cola en bucle.
 
-`Event loop` регулирует последовательность исполнения контекстов — стек. Он формируется, когда сработало событие или была вызвана функция⚙️. Реакция на событие помещается в очередь исполнения, в `event loop`, который последовательно, с каждым циклом выполняет попадающий в него код📟 . При этом привязанная к событию функция⚙️ вызывается следующей после текущего контекста исполнения.
+`Event loop` regula la secuencia de ejecución de contextos - la pila. Se genera cuando se dispara un evento o se llama a una función⚙️. La reacción al evento se coloca en la cola de ejecución, en el `event loop`, que secuencialmente, con cada ciclo, ejecuta el código que ingresa📟. En este caso, la función vinculada al evento⚙️ se llama después del contexto de ejecución actual.
 
-В JavaScript постоянно работают связанные между собой синхронная и асинхронная очереди выполнения. Синхронная — `stack` — формирует очередь и пробрасывает в асинхронную — `event loop` — вызовы функций⚙️, которые будут выполнены после текущего запланированного исполняемого контекста.
+En JavaScript, las colas de ejecución sincrónicas y asincrónicas se ejecutan constantemente. Synchronous - `stack` - forma una cola y reenvía a asíncrono - `event loop` - llamadas de función⚙️ que se ejecutarán después del contexto ejecutable programado actual.
 
-Чтобы данные находились в консистентном состоянии, каждая функция⚙️ должна быть выполнена до конца. Это обусловлено однопоточностью JavaScript и некоторыми другими особенностями, например характерными для функциональных ⚙️языков👅 программирования замыканиями. Поэтому единственный поток представлен в виде очереди контекстов исполнения, в которой и происходит "вклинивание" функций⚙️, прошедших через цикл событий.
+Para que los datos estén en un estado consistente, cada función⚙️ debe ejecutarse hasta el final. Esto se debe al subproceso único de JavaScript y algunas otras características, como los cierres que son característicos de los lenguajes de programación funcionales. Por lo tanto, el único hilo se representa como una cola de contextos de ejecución, en la que tiene lugar el “cuñado” de funciones⚙️ que han pasado por el bucle de eventos.
 
-## Описание
+## Descripción
 
-JavaScript это однопоточный язык: одновременно может выполняться только одна задача. Обычно в этом нет ничего сложного, но теперь представьте, что вы запускаете задачу, которая занимает 30 секунд... Да. Во время этой задачи мы ждем 30 секунд, прежде чем что-либо еще может произойти (по умолчанию JavaScript запускается в главном потоке браузера, поэтому весь пользовательский интерфейс будет ждать)😬 Сейчас 2021 год, никто не хочет медленный сайт который тупит.
+JavaScript es un lenguaje de subproceso único: solo se puede ejecutar una tarea a la vez. Normalmente esto no es difícil, pero ahora imagina que estás ejecutando una tarea que toma 30 segundos... Sí. Durante esta tarea, esperamos 30 segundos antes de que ocurra algo más (JavaScript se ejecuta en el hilo principal del navegador de forma predeterminada, por lo que toda la interfaz de usuario esperará)😬 Es 2021, nadie quiere un sitio lento que sea tonto.
 
-К счастью, браузер предоставляет нам некоторые функции, которые сам механизм JavaScript не предоставляет: Web API. Который включает в себя DOM API, setTimeout, HTTP-запросы и так далее. Это может помочь нам создать асинхронное неблокирующее поведение 🚀.
+Afortunadamente, el navegador nos proporciona una funcionalidad que el propio motor de JavaScript no proporciona: la Web API. Que incluye DOM API, setTimeout, solicitudes HTTP, etc. Esto puede ayudarnos a crear un comportamiento asíncrono sin bloqueo 🚀.
 
-Когда мы вызываем функцию, она добавляется в call stack(стек вызовов). Стек вызовов является частью механизма JS, это не зависит от браузера. Это классический взгляд на стек, т.е `first in`, `last out`. Когда функция возвращает значение, она "выталкивается" из стека.
+Cuando llamamos a una función, se agrega a la pila de llamadas. La pila de llamadas es parte del motor JS, es independiente del navegador. Esta es la vista clásica de la pila, es decir, "primero en entrar", "último en salir". Cuando una función devuelve un valor, se "saca" de la pila.
 
 ```javascript
 function great() {
@@ -59,25 +59,25 @@ respond()
 
 ![stack](/img/javascript/27/stack.gif)
 
-Функция `respond` возвращает функцию `setTimeout`. `SetTimeout` предоставляется нам через `Web-API`: он позволяет нам делить задачи, не блокируя основной поток. `Callback` функция, которую мы передали в функцию `setTimeout`, лямбда функция `() => {return 'Hey'}` добавляется в `Web-API`. Тем временем `setTimeout` и `responde` извлекаются из стека и возвращают свои значения.
+La función `respond` devuelve la función `setTimeout`. `SetTimeout` se nos proporciona a través de `Web-API`: nos permite dividir tareas sin bloquear el hilo principal. La función `Callback` que pasamos a la función `setTimeout`, la función lambda `() => {return 'Hey'}` se agrega a `Web-API`. Mientras tanto, `setTimeout` y `responde` se extraen de la pila y devuelven sus valores.
 
 ![timer](/img/javascript/27/timer.gif)
 
-В `Web-API` таймер работает до тех пор, пока второй аргумент, который мы передали ему, не подождет 1000 мс. `Callback` не сразу добавляется в стек вызовов, а передается в нечто, называемое очередью.
+En `Web-API`, el temporizador se ejecuta hasta que el segundo argumento que le pasamos espera 1000 ms. `Callback` no se agrega inmediatamente a la pila de llamadas, sino que se pasa a algo llamado cola.
 
 ![queue](/img/javascript/27/queue.gif)
 
-Это может сбивать с толку: это не означает, что `callback` функция добавляется в стек вызовов (таким образом, возвращает значение) через 1000 мс! Он просто добавляется в очередь через 1000 мс. Но в этой очереди, функция должна ждать пока придет ее черёд.
+Esto puede ser confuso: ¡no significa que la función de devolución de llamada se agregue a la pila de llamadas (devolviendo así un valor) después de 1000 ms! Simplemente se agrega a la cola después de 1000 ms. Pero en esta cola, la función debe esperar hasta que llegue su turno.
 
-Теперь это та часть, которую мы все ждали... Время для `event loop` выполнить единственную задачу: соединить очередь со стеком вызовов! Если стек вызовов пуст, то есть, если все ранее вызванные функции вернули свои значения и были извлечены из стека, первый элемент в очереди добавляется в стек вызовов. В этом случае никакие другие функции не были вызваны, что означает, что стек вызовов был пуст к тому времени, когда `callback` функция была первым элементом в очереди.
+Ahora bien, esta es la parte que todos hemos estado esperando... Es hora de que el `event loop` haga una sola tarea: ¡conectar la cola a la pila de llamadas! Si la pila de llamadas está vacía, es decir, si todas las funciones llamadas anteriormente han devuelto sus valores y se han extraído de la pila, el primer elemento de la cola se agrega a la pila de llamadas. En este caso, no se llamó a ninguna otra función, lo que significa que la pila de llamadas estaba vacía cuando la función `callback` fue el primer elemento de la cola.
 
 ![qtoc](/img/javascript/27/qtoc.gif)
 
-`callback` добавляется в стек вызовов, вызывается и возвращает значение, а также извлекается из стека.
+`callback` se agrega a la pila de llamadas, se llama y se devuelve, y se extrae de la pila.
 
-![result](/img/javascript/27/res.gif)
+![resultado](/img/javascript/27/res.gif)
 
-Смотреть весело, но вы не сможете полностью понять тему, не работая с ней снова и снова. Попробуйте выяснить, что появится в консоли, если мы запустим следующее:
+Es divertido de ver, pero no puedes entender completamente un tema sin trabajar con él una y otra vez. Intente averiguar qué aparecerá en la consola si ejecutamos lo siguiente:
 
 ```jsx
 const foo = () => console.log('First')
@@ -89,46 +89,46 @@ foo()
 baz()
 ```
 
-Давайте посмотрим, что происходит, когда мы запускаем этот код в браузере:
+Veamos qué sucede cuando ejecutamos este código en el navegador:
 
 ![br](/img/javascript/27/br.gif)
 
-Мы вызываем `bar`, которая возвращает функцию `setTimeout`.
-`Callback` который мы передали в `setTimeout` добавляется в `Web API`, функция `setTimeout` и `bar` извлекаются из стека вызовов.
+Llamamos a `bar` que devuelve la función `setTimeout`.
+La `Callback` que pasamos a `setTimeout` se agrega a `Web API`, la función `setTimeout` y la `bar` se extraen de la pila de llamadas.
 
-Таймер запускается, тем временем `foo` вызывается и записывает в журнал `First`. `foo` возвращает `undefined`, `baz` вызывается и `callback` добавляется в очередь
-`baz` логирует `Third`. Цикл обработки событий видит, что коллстек пуст после возврата `baz`, после чего колбэк добавляется в стек вызовов.
-`Callback` логирует `Second`.
+El temporizador se inicia, mientras tanto se llama a `foo` y se registra `First`. `foo` devuelve `undefined`, se llama a `baz` y se agrega `callback` a la cola
+`baz` registra `Third`. El ciclo de eventos ve que la pila de llamadas está vacía después de que regresa `baz`, después de lo cual la devolución de llamada se agrega a la pila de llamadas.
+`Callback` registra `Second`.
 
-Надеюсь, что это заставит вас чувствовать себя более уверено с циклом событий `event loop`!
+¡Espero que esto te haga sentir más seguro con el  `event loop`!
 
-Не беспокойтесь, если это все еще кажется запутанным, самое важное - понять, откуда могут возникнуть определенные ошибки или специфическое поведение.
+No se preocupe si esto todavía le parece confuso, lo más importante es comprender de dónde pueden provenir ciertos errores o comportamientos específicos.
 
-## Проблемы?
+## ¿Problemas?
 
-![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
+![Problema](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
 
-Пишите в [Discord](https://discord.gg/6GDAfXn) или телеграмм [чат](https://t.me/jscampapp), а также подписывайтесь на наши [новости](https://t.me/javascriptapp)
+Escribe en [Discord](https://discord.gg/6GDAfXn) o Telegram [chat](https://t.me/jscampapp) y suscríbete a nuestras [noticias](https://t.me/javascriptapp)
 
 ![JavaScript Camp](/img/bandlink.png)
 
-## Вопросы:
+## Preguntas:
 
-![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
+![Pregunta](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
 
-Асинхронность - это:
+La asincronía es:
 
-1. Инструмент, который выводит контекст исполнения функции из синхронного потока
-2. Инструмент, который исполняет код построчно
-3. Инструмент, который обрабатывает запросы параллельно с загрузкой веб-страниц
+1. Una herramienta que muestra el contexto de ejecución de una función desde un hilo síncrono
+2. Una herramienta que ejecuta código línea por línea
+3. Una herramienta que procesa solicitudes en paralelo con la carga de la página web
 
-Менеджер асинхронных вызовов:
+Administrador de llamadas asíncronas:
 
 1. `stack`
 2. `Event loop`
-3. `Объекты высшего класса`
+3. `Objetos de clase superior`
 
-Инструмент, выполняющий код с задержкой в миллисекундах:
+Una herramienta que ejecuta código con un retraso de milisegundos:
 
 1. `delay`
 2. `heap`
@@ -354,17 +354,17 @@ redButton.click();
 
 -->
 
-Для того чтобы понять, на сколько вы усвоили этот урок, пройдите тест в [мобильном приложении](http://onelink.to/njhc95) нашей школы по этой теме или в нашем [телеграм боте](https://t.me/javascriptcamp_bot).
+Para comprender cuánto ha aprendido esta lección, realice una prueba en la [aplicación móvil](http://onelink.to/njhc95) de nuestra escuela sobre este tema o en nuestro [bot de Telegram](https://t.me/javascriptcamp_bot).
 
-![JS Camp](/img/app.jpg)
+![Campamento JS](/img/app.jpg)
 
-## Ссылки:
+## Enlaces:
 
-1. [Объяснение работы EventLoop в JavaScript](https://medium.com/devschacht/javascript-eventloop-explained-f2dcf84e36ee)
-2. [Как управлять event loop в JavaScript](https://skillbox.ru/media/code/event_loop_chast_1)
-3. [Справочник javascript](https://javascript.ru/settimeout)
-4. [Статья: Объяснение Event Loop в Javascript с помощью визуализации](https://bool.dev/blog/detail/obyasnenie-event-loop-v-javascript-s-pomoshchyu-vizualizatsii)
-5. [Статья: JavaScript Visualized: Promises & Async/Await](https://medium.com/@lydiahallie/javascript-visualized-promises-async-await-a3f1aad8a943)
+1. [Explicación de JavaScript EventLoop](https://medium.com/devschacht/javascript-eventloop-explained-f2dcf84e36ee)
+2. [Cómo controlar el bucle de eventos en JavaScript](https://skillbox.ru/media/code/event_loop_chast_1)
+3. [referencia de javascript](https://javascript.ru/settimeout)
+4. [Artículo: Bucle de eventos de Javascript explicado con visualización](https://bool.dev/blog/detail/obyasnenie-event-loop-v-javascript-s-pomoshchyu-vizualizatsii)
+5. [Artículo: Visualización de JavaScript: Promesas y Async/Await](https://medium.com/@lydiahallie/javascript-visualized-promises-async-await-a3f1aad8a943)
 
 ## Contributors ✨
 
