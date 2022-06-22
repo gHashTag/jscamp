@@ -7,6 +7,8 @@
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
+    "write-translations": "docusaurus write-translations",
+    "write-heading-ids": "docusaurus write-heading-ids",
     "upgrade": "yarn upgrade @docusaurus/core@2.0.0-beta.8 @docusaurus/preset-classic@2.0.0-beta.8",
     "gitpush": "GIT_USER=gHashTag CURRENT_BRANCH=gh-pages USE_SSH=true yarn deploy",
     "push": "yarn build && gh-pages -b master -d build",
@@ -18,7 +20,8 @@
     "en": "yarn run start -- --locale en",
     "zh": "yarn run start -- --locale zh",
     "jp": "yarn run start -- --locale jp",
-    "es": "yarn run start -- --locale es"
+    "es": "yarn run start -- --locale es",
+    "ar": "yarn run start -- --locale ar"
   },
   "dependencies": {
     "@docusaurus/core": "^2.0.0-beta.15",

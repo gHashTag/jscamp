@@ -33,8 +33,11 @@
       zh: {
         label: '中文'
       },
-      hi: {
-        label: 'हिंदी'
+      jp: {
+        label: '日本語'
+      },
+      es: {
+        label: 'Spanish'
       },
       ar: {
         label: 'عربى'

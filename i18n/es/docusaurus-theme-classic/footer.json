@@ -1,0 +1,86 @@
+{
+  "link.title.Syllabus 📚": {
+    "message": "Syllabus 📚",
+    "description": "The title of the footer links column with title=Syllabus 📚 in the footer"
+  },
+  "link.title.Community 💛": {
+    "message": "Community 💛",
+    "description": "The title of the footer links column with title=Community 💛 in the footer"
+  },
+  "link.title.Social 🌎": {
+    "message": "Social 🌎",
+    "description": "The title of the footer links column with title=Social 🌎 in the footer"
+  },
+  "link.item.label.JavaScript": {
+    "message": "JavaScript",
+    "description": "The label of footer link with label=JavaScript linking to docs/javascript00"
+  },
+  "link.item.label.React Native": {
+    "message": "React Native",
+    "description": "The label of footer link with label=React Native linking to docs/reactnative00"
+  },
+  "link.item.label.Discord 💭": {
+    "message": "Discord 💭",
+    "description": "The label of footer link with label=Discord 💭 linking to https://discord.gg/6GDAfXn"
+  },
+  "link.item.label.Telegram Channel 📬": {
+    "message": "Telegram Channel 📬",
+    "description": "The label of footer link with label=Telegram Channel 📬 linking to https://t.me/javascriptapp"
+  },
+  "link.item.label.AWS Amplify Ru 💭": {
+    "message": "AWS Amplify Ru 💭",
+    "description": "The label of footer link with label=AWS Amplify Ru 💭 linking to https://t.me/awsamplify"
+  },
+  "link.item.label.Instagram": {
+    "message": "Instagram",
+    "description": "The label of footer link with label=Instagram linking to https://www.instagram.com/javascriptcamp/"
+  },
+  "link.item.label.TikTok": {
+    "message": "TikTok",
+    "description": "The label of footer link with label=TikTok linking to https://vm.tiktok.com/ZSJ1dxkFu/"
+  },
+  "link.item.label.Twitter": {
+    "message": "Twitter",
+    "description": "The label of footer link with label=Twitter linking to https://twitter.com/serverlesskiy"
+  },
+  "link.item.label.YouTube En": {
+    "message": "YouTube En",
+    "description": "The label of footer link with label=YouTube En linking to https://www.youtube.com/channel/UCR8tIQm7pu8MlPewAlUnzQw"
+  },
+  "link.item.label.YouTube Ru": {
+    "message": "YouTube Ru",
+    "description": "The label of footer link with label=YouTube Ru linking to https://www.youtube.com/channel/UCOxewePwIQATdHTD3yZ2UZw"
+  },
+  "link.item.label.Hashnode": {
+    "message": "Hashnode",
+    "description": "The label of footer link with label=Hashnode linking to https://jscamp.hashnode.dev"
+  },
+  "link.item.label.Dev.to": {
+    "message": "Dev.to",
+    "description": "The label of footer link with label=Dev.to linking to https://dev.to/playra"
+  },
+  "link.item.label.Facebook": {
+    "message": "Facebook",
+    "description": "The label of footer link with label=Facebook linking to https://www.facebook.com/javascriptcamp"
+  },
+  "link.item.label.Vk": {
+    "message": "Vk",
+    "description": "The label of footer link with label=Vk linking to https://vk.com/javascriptcamp"
+  },
+  "link.item.label.Medium": {
+    "message": "Medium",
+    "description": "The label of footer link with label=Medium linking to https://medium.com/react-native-init"
+  },
+  "link.item.label.Twitch": {
+    "message": "Twitch",
+    "description": "The label of footer link with label=Twitch linking to https://www.twitch.tv/javascriptcamp"
+  },
+  "link.item.label.Code Wars": {
+    "message": "Code Wars",
+    "description": "The label of footer link with label=Code Wars linking to https://www.codewars.com/r/e67HyQ"
+  },
+  "copyright": {
+    "message": "Copyright © 2022 Server Serverlesskiy ⚛️ Built with Docusaurus",
+    "description": "The footer copyright"
+  }
+}
