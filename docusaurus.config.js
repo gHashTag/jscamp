@@ -22,7 +22,7 @@
   scripts: [{ src: 'https://snack.expo.io/embed.js', defer: true }],
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'ru', 'zh', 'jp', 'es'],
+    locales: ['en', 'ru', 'zh', 'hi', 'ar', 'jp'],
     localeConfigs: {
       en: {
         label: 'English'
@@ -42,6 +42,12 @@
       ar: {
         label: 'عربى'
       },
+      jp: {
+        label: '日本語'
+      },
+      es: {
+        label: 'Espanol'
+      }
     }
   },
   themeConfig: {

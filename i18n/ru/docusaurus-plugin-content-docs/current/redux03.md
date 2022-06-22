@@ -1,246 +1,139 @@
 ---
 id: redux-03
-title: Header
-sidebar_label: Header
+title: StargateQuery
+sidebar_label: StargateQuery
 ---
 
-## Header
-В данном уроке мы адаптируем наш прошлый Header под этот курс. Если кто не помнит Header'ом называют "шапку" сайта, верхнюю часть веб-страницы. Погнали! 
+## Что мы узнаем
 
-## Видео
+Мы узнаем как извлекать данные используя RTK(Redux ToolKit)
 
-[![redux](/img/redux/03.gif)](https://youtu.be/ycNdEtBMooA)
+## Что такое RTK Query
 
-## Добавим импорт иконок
-Добавляем строчки в файл Header.js:
+RTK Query — это расширенный инструмент для выборки и кэширования данных, разработанный для упрощения типичных случаев загрузки данных в веб-приложение.
+
+
+## Установка
+Для установки репозитория проекта необходимо ввести в консоль:
+
 ```jsx
-import from MaterialCommunityIcons from 'react-native-init/MaterialCommunityIcons'
+git clone https://github.com/gHashTag/stargate2.git
 ```
-И
+Далее в папке проекта:
 ```jsx
-import { w, BLUE } from '../../../constants'//добавляем импорт BLUE
+yarn // либо используем npm install
 ```
-## Правка кода
-Заменяем всё написанное так же в Header.js на это 
+И потом:
 ```jsx
-import React from 'react'
-import { TouchableOpacity, View, Text, StyleSheet } from 'react-native'
-import { ifIphoneX } from 'react-native-iphone-x-helper'
-import Ionicons from 'react-native-vector-icons/Ionicons'
-import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons'
-import { w, BLUE } from '../../../constants'
+npx react-native run-android // или run-ios
+```
+## Создание службы
 
-const Header = ({
-  iconLeft,
-  iconRight,
-  colorLeft,
-  colorRight,
-  title,
-  onPressLeft,
-  onPressRight
-}) => {
-  const { container, textStyle, iconLeftStyle, iconRightStyle } = styles
+В папке `src/store/movieApi` вы увидите следующее:
+
+```js
+import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
+
+export const movieApi = createApi({
+  reducerPath: 'movieApi',
+  baseQuery: fetchBaseQuery({
+    baseUrl: 'https://api.tvmaze.com/search/'
+  }),
+  endpoints: build => ({
+    getMovie: build.query({
+      query: name => `shows?q=${name}`
+    })
+  })
+})
+
+export const { useGetMovieQuery } = movieApi
+```
+Тут мы используем поисковую систему фильмов от https://api.tvmaze.com, для того чтобы получать о них информацию по ссылке(чтобы лучше понять можете перейти по ссылке: http://api.tvmaze.com/search/shows?q=stargate. Вы увидите массив данных в котором информация о фильмах)
+
+## Добавление службы в Store
+
+Служба RTKQ генерирует «редуктор фрагментов», который должен быть включен в корневой редуктор Redux. И еще специальное промежуточное программное обеспечение, которое обрабатывает выборку данных. Оба должны быть добавлены в магазин Redux.
+
+```js
+import { configureStore } from '@reduxjs/toolkit'
+import { movieApi } from './movieApi'
+
+export const store = configureStore({
+  reducer: {
+    [movieApi.reducerPath]: movieApi.reducer
+  },
+  middleware: getMiddleware => getMiddleware().concat(movieApi.middleware)
+})
+```
+После ваше приложение должно быть обернуто в `<Provider store={store}>` 
+
+## Почти готово
+
+Теперь вы можете использовать сгенерированный хук `useGetMovieQuery` в своих компонентах!
+
+```js
+import React, { useState } from 'react'
+import { View, FlatList, Text } from 'react-native'
+import { SafeAreaView } from 'react-native-safe-area-context'
+import { EmptyList, Header, ImageCard, Loading, Search } from '../../components'
+import { nanoid } from 'nanoid/non-secure'
+import { useGetMovieQuery } from '../../store/movieApi'
+
+export function HomeScreen({ navigation }) {
+  const [visibleSearch, setVisibleSearch] = useState(false)
+  const [filterText, setFilterText] = useState('stargate')
+
+  const { data, error, isLoading } = useGetMovieQuery(filterText) // передаем текст поиска
+  function onSearch(text) {
+    setFilterText(text ? text : 'stargate')
+  }
   return (
-    <View style={container}>
-      {iconLeft &&
-        <TouchableOpacity onPress={onPressLeft}>
-          <Ionicons name={iconLeft} style={iconLeftStyle} color={colorLeft} />
-        </TouchableOpacity>
-      }
-      <Text numberOfLines={1} ellipsizeMode="tail" style={textStyle}>{title}</Text>
-      {iconRight &&
-        <TouchableOpacity onPress={onPressRight}>
-         <MaterialCommunityIcons name={iconRight} style={[ iconRightStyle, { color: colorRight}]} />
-        </TouchableOpacity>
-     }
-     <Text numberOfLines={1} ellipsizeMode="tail" style={textStyle}>{title}</Text>
-      </View>
+    <SafeAreaView style={{ flex: 1 }}>
+      {visibleSearch ? (
+        <Search
+          colorRight={'#fff'}
+          iconRight="magnify"
+          placeholder="Search"
+          value={filterText}
+          onSubmit={onSearch}
+          onBlur={() => setVisibleSearch(false)}
+        />
+      ) : (
+        <Header
+          title={'Search'}
+          colorRight={'#fff'}
+          iconRight="magnify"
+          onPressRight={() => setVisibleSearch(true)}
+        />
+      )}
+      {isLoading ? (
+        <Loading />
+      ) : data.length === 0 ? (
+        <EmptyList />
+      ) : (
+        <FlatList
+          data={data.filter(a => (a?.show?.image?.original ? true : false))}
+          numColumns={2}
+          ListHeaderComponent={<View style={{ height: 20 }} />}
+          ListFooterComponent={<View style={{ height: 100 }} />}
+          contentContainerStyle={{ alignItems: 'center' }}
+          keyExtractor={() => nanoid()}
+          showsVerticalScrollIndicator={false}
+          renderItem={({ item, index }) => (
+            <ImageCard
+              data={item}
+              onPress={() => navigation.navigate('DETAIL_SCREEN', { data: item.show })}
+            />
+          )}
+        />
+      )}
+    </SafeAreaView>
   )
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 2},
-    shadowOpacity: 0.2,
-    elevation: 2,
-    paddingHorizontal: 20,
-    backgroundColor: BLUE,
-    position: 'relative',
-    ...ifIphoneX({
-      height: 122
-    }, {
-      height: 90
-    })
-  },
-  textStyle: {
-    color: '#fff',
-    fontSize: 28,
-    width: w - 75,
-    fontFamily: 'AvenirNext-DemiBold',
-    ...ifIphoneX({
-      paddingTop: 75 
-    }, {
-      paddingTop: 40
-    })
-  },
-  iconLeftStyle: {
-    ...ifIphoneX({
-      paddingTop: 75 
-    }, {
-      paddingTop: 40
-    }),
-    fontSize: 35
-  },
-  iconRightStyle: {
-    ...ifIphoneX({
-      paddingTop: 75 
-    }, {
-      paddingTop: 44
-    }),
-    fontSize: 30,
-    marginRight: 3
-  }
-})
-
-export { Header }
 ```
 
-## Правим HomeScreen
+## Итог
 
-В файл HomeScreen.js вставляем данный текст, советую посмотреть изменения. Этим уже мы изменим HomeScreen, что достаточно логично
-```jsx
-import React, {Component} from 'react'
-import { View } from 'react-native'
-import { Header, Layout, ImageCard } from '../components/uikit'
-import {
-  STARGATE_DETAILS
-} from '../routes'
-import { BLUE, WHITE } from '../../constants'
+Мы научились брать удаленные данные с сервера с помощью Redux ToolKit Query!
 
-const url = 'https://api.tvmaze.com/search/shows?q=stargate'
-
-export default class Main extends Component {
-  state = {
-    title: 'STAR GATE',
-    data: []
-  }
-
-  componentDidMount = async () => {
-    try {
-      const response = await fetch(url)
-      const data = await response.json()
-      useState({ data })
-    } catch (e) {
-      throw e
-    }
-  }
-
-  onGoBack = (someDataFromChildren) => {
-    console.log('someDataFromChildren', someDataFromChildren)
-  }
-
-  render() {
-    const { title, data } = this.state
-    const { navigation } = this.props
-    console.log('this.state', this.state)
-    return (
-      <View>
-        <Header 
-          title={title} 
-          colorRight={'#fff'}
-          iconRight="magnify" 
-          onPress={() => navigation.openDrawer()}
-        />
-        <Layout>
-          { data.map(item => (
-            <ImageCard
-              data={item.show}
-              key={item.show.id}
-              onPress={() => navigation.navigate(STARGATE_DETAILS, ({ show: item.show, onGoBack: this.onGoBack}))}
-            />
-          ))}
-        </Layout>
-      </View>
-    )
-  }
-}
-```
-
-## Правка DetailsScreen
-
-```jsx
-import React, { PureComponent } from 'react'
-import { View, ScrollView, Text, StyleSheet } from 'react-native'
-import { Header, ImageBigCard } from '../components/uikit'
-import { WHITE, BLUE, w } from '../../constants'
-
-export default class DelailsScreen extends PureComponent {
-  componentWillUnmount() {
-    const { onGoBack } = this.props.navigation.state.params
-    onGoBack && onGoBack('Hello from children')
-  }
-
-  render() {
-    const { show } = this.props.navigation.state.params
-    const { image, name, summary} = show
-    const { navigation } = this.props
-    const data = { image, name }
-    const { container, sub, h1, h2 } = styles 
-    return (
-      <View style={container}>
-        <Header
-          detail
-          title={name}
-          onPress={() => navigation.goBack()}
-          iconLeft='ios-arrow-back'
-          headerColor={BLUE}
-          colorLeft={WHITE}
-        />
-        <ScrollView>
-          <View style={sub}>
-            <ImageBigCard data={data} />
-            <Text style={h1}>{name.toUpperCase()}</Text>
-            <Text style={h2}>{summary.replace(/<[^>]+>/g, '')}</Text>
-          </View>
-        </ScrollView>
-      </View>
-    )
-  }
-}
-
-const styles = StyleSheet.create({
-  container: {
-    backgroundColor: WHITE
-  },
-  sub: {
-    flex: 1,
-    alignItems: 'center',
-    marginBottom: 150,
-    backgroundColor: WHITE
-  },
-  cover: {
-    width: w,
-    height: w * 1.5,
-    borderRadius: 10
-  },
-  h1: {
-    fontFamily: 'AvenirNext-DemiBold',
-    fontSize: 30,
-    padding: 15,
-    textAlign: 'center'
-  },
-  h2: {
-    fontFamily: 'AvenirNext-DemiBold',
-    fontSize: 15,
-    textAlign: 'center',
-    color: 'grey',
-    paddingHorizontal: 15
-  }
-})
-```
-
-В данном уроке мы изменили иконки и в соответствии к этому поправили код, относящийся к хедеру.
 [![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)

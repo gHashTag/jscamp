@@ -70,7 +70,7 @@ module.exports = {
       {
         type: 'category',
         label: 'Redux',
-        items: ['redux-00', 'redux-01', 'redux-02', 'redux-03', 'redux-04', 'redux-05', 'redux-06'],
+        items: ['redux-00', 'redux-01', 'redux-02', 'redux-03', 'redux-04'],
       }, 
     ],
     ['TypeScript']: [

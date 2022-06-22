@@ -6,6 +6,8 @@ sidebar_label: Базовые компоненты
 
 import YouTube from 'react-youtube'
 
+<YouTube videoId="qM0Du9lZXVI" />
+
 ## Text
 
 C этим [компонентом React](https://reactnative.dev/docs/text) для отображения текста мы уже познакомились. `Text` поддерживает вложение, стили и сенсорную обработку.

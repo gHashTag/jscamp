@@ -11,24 +11,44 @@ import React from 'react'
 import { Text } from 'react-native'
 import { NavigationContainer } from '@react-navigation/native'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
+import { createStackNavigator } from '@react-navigation/stack'
 
+const Stack = createStackNavigator()
 const Tab = createBottomTabNavigator()
 
 function Feed() {
-  return <Text>Hello world!</Text>
+  return <Text>Feed!</Text>
 }
 
 function Messages() {
-  return <Text>Hello world!</Text>
+  return <Text>Messages!</Text>
+}
+
+function Home() {
+  return (
+    <Tab.Navigator>
+      <Tab.Screen name="Feed" component={Feed} />
+      <Tab.Screen name="Messages" component={Messages} />
+    </Tab.Navigator>
+  )
+}
+
+function Profile() {
+  return <Text>Profile!</Text>
+}
+
+function Settings() {
+  return <Text>Settings!</Text>
 }
 
 function App() {
   return (
     <NavigationContainer>
-      <Tab.Navigator>
-        <Tab.Screen name="Feed" component={Feed} />
-        <Tab.Screen name="Messages" component={Messages} />
-      </Tab.Navigator>
+      <Stack.Navigator>
+        <Stack.Screen name="Home" component={Home} options={{ headerShown: false }} />
+        <Stack.Screen name="Profile" component={Profile} />
+        <Stack.Screen name="Settings" component={Settings} />
+      </Stack.Navigator>
     </NavigationContainer>
   )
 }
@@ -71,35 +91,6 @@ export default App
 ### Действия навигации обрабатываются текущим навигатором и всплывают, если не могут быть обработаны
 
 Например, если вы вызываете `navigation.goBack()` во вложенном экране, он вернется в родительский навигатор только в том случае, если вы уже находитесь на первом экране навигатора. Другие действия, такие как `navigate`, работают аналогично, то есть навигация будет происходить во вложенном навигаторе, и если вложенный навигатор не может ее обработать, то родительский навигатор попытается ее обработать. В приведенном выше примере при вызове `navigate('Messages')` внутри экрана `Feed` вложенный навигатор вкладок будет обрабатывать его, но если вы вызываете `navigate('Settings')`, родительский навигатор стека будет обрабатывать его. 
-
-### Специальные методы навигатора доступны в навигаторах, вложенных внутри
-
-Например, если у вас есть стек внутри навигатора drawer, методы drawer `openDrawer`, `closeDrawer`, `toggleDrawer` и т.д. Также будут доступны в `navigation` на экране внутри навигатора стека. Но предположим, что у вас есть навигатор стека в качестве родителя drawer, тогда экраны внутри навигатора стека не будут иметь доступа к этим методам, потому что они не вложены внутри drawer.
-
-Точно так же, если у вас есть навигатор по вкладкам внутри навигатора стека, экраны в навигаторе вкладок получат методы `push` и `replace` для стека в их свойствах `navigation`.
-
-Если вам нужно отправить действия вложенным дочерним навигаторам от родительского элемента, вы можете использовать [navigation.dispatch](https://reactnavigation.org/docs/6.x/navigation-prop#dispatch):
-
-```jsx
-navigation.dispatch(DrawerActions.toggleDrawer())
-```
-
-### Вложенные навигаторы не получают родительские события
-
-Например, если у вас есть навигатор стека, вложенный в навигатор вкладок, экраны в навигаторе стека не будут получать события, генерируемые родительским навигатором вкладок, например `tabPress`, при использовании `navigation.addListener`.
-
-Чтобы получать события от родительского навигатора, вы можете явно прослушивать родительские события с помощью `navigation.getParent()`:
-
-```jsx
-const unsubscribe = navigation.getParent().addListener ('tabPress', (e) => {
-  // Сделай что-нибудь
-})
-```
-
-### Пользовательский интерфейс родительского навигатора отображается поверх дочернего навигатора
-
-Например, если вы вложите навигатор стека в навигатор Drawer, вы увидите, что Drawer появляется над заголовком навигатора стека. Однако, если вы вложите навигатор Drawer внутри стека, Drawer появится под заголовком стека. Это важный момент, который следует учитывать при принятии решения о размещении ваших навигаторов.
-
 
 ## Done ✅
 

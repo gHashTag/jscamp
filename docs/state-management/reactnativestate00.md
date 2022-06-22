@@ -133,7 +133,7 @@ This conceptual picture can be applied to the above example or to any other appl
 
 Create a folder `store`, where we will have the file `todo.js` in which we add the application logic.
 
-```jsx title="src/score/todo.js"
+```jsx title="src/store/todo.js"
 import { makeAutoObservable } from 'mobx'
 
 class Todo {
@@ -171,18 +171,18 @@ class Todo {
 export default new Todo()
 ```
 
-### UI слой ToDo листа
+### UI layout ToDo list
 
-```jsx
+```jsx title="src/index.js"
 import React, { useState } from 'react'
 import { View, Text, Button, ScrollView, TextInput } from 'react-native'
 import CheckBox from '@react-native-community/checkbox'
 import { observer } from 'mobx-react-lite'
-import { nanoid } from 'nanoid'
+import uuid from 'react-native-uuid'
 import TodoStore from './store/todo'
 
 // wrap the component in an observer to track changes in the Mobx store
-const Todo = observer(() => {
+const App = observer(() => {
   // create a hook state for the input
   const [text, setText] = useState('')
 
@@ -191,7 +191,7 @@ const Todo = observer(() => {
       {/* Create a field for entering the text of the task */ }
       <TextInput style={{ height: 40 }} placeholder="Create" onChangeText={t => setText(t)} defaultValue={text} />
       {/* We create a button for creating a task and on onPress we hang the function for creating an issue in the Mobx store */ }
-      <Button title="Add Todo" onPress={() => TodoStore.createTodo({ id: nanoid(), title: text })} />
+      <Button title="Add Todo" onPress={() => TodoStore.createTodo({ id: uuid.v4(), title: text })} />
       {/* We create a list of tasks, where we get them from the Mobx store */ }
       {TodoStore.todos.map(({ id, title, completed }) => (
         <View
@@ -214,7 +214,7 @@ const Todo = observer(() => {
   )
 })
 
-export default Todo
+export default App
 ```
 
 ## Problems?

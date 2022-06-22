@@ -16,35 +16,53 @@ npm install @react-navigation/bottom-tabs@next
 ## A minimal example of tab navigation
 
 ```jsx
-import * as React from 'react'
-import { Text, View } from 'react-native'
+import React from 'react'
+import { Text } from 'react-native'
 import { NavigationContainer } from '@react-navigation/native'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
+import { createStackNavigator } from '@react-navigation/stack'
 
-const HomeScreen = () => (
-  <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-    <Text>Home!</Text>
-  </View>
-)
-
-const SettingsScreen = () => (
-  <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-    <Text>Settings!</Text>
-  </View>
-)
-
+const Stack = createStackNavigator()
 const Tab = createBottomTabNavigator()
 
-export default function App() {
+function Feed() {
+  return <Text>Feed!</Text>
+}
+
+function Messages() {
+  return <Text>Messages!</Text>
+}
+
+function Home() {
+  return (
+    <Tab.Navigator>
+      <Tab.Screen name="Feed" component={Feed} />
+      <Tab.Screen name="Messages" component={Messages} />
+    </Tab.Navigator>
+  )
+}
+
+function Profile() {
+  return <Text>Profile!</Text>
+}
+
+function Settings() {
+  return <Text>Settings!</Text>
+}
+
+function App() {
   return (
     <NavigationContainer>
-      <Tab.Navigator>
-        <Tab.Screen name="Home" component={HomeScreen} />
-        <Tab.Screen name="Settings" component={SettingsScreen} />
-      </Tab.Navigator>
+      <Stack.Navigator>
+        <Stack.Screen name="Home" component={Home} options={{ headerShown: false }} />
+        <Stack.Screen name="Profile" component={Profile} />
+        <Stack.Screen name="Settings" component={Settings} />
+      </Stack.Navigator>
     </NavigationContainer>
   )
 }
+
+export default App
 ```
 
 [Try this example on Snack](https://snack.expo.io/?platform=android&name=Configuring%20the%20header%20bar%20%7C%20React%20Navigation&dependencies=%40expo%2Fvector-icons%40*%2C%40react-native-community%2Fmasked-view%40*%2Creact-native-gesture-handler%40*%2Creact-native-pager-view%40*%2Creact-native-paper%40%5E4.7.2%2Creact-native-reanimated%40*%2Creact-native-safe-area-context%40*%2Creact-native-screens%40*%2Creact-native-tab-view%40%5E3.0.0%2C%40react-navigation%2Fbottom-tabs%40%5E6.0.0-next.1%2C%40react-navigation%2Fdrawer%40%5E6.0.0-next.1%2C%40react-navigation%2Fmaterial-bottom-tabs%40%5E6.0.0-next.1%2C%40react-navigation%2Fmaterial-top-tabs%40%5E6.0.0-next.1%2C%40react-navigation%2Fnative%40%5E6.0.0-next.1%2C%40react-navigation%2Fstack%40%5E6.0.0-next.6&hideQueryParams=true&sourceUrl=https%3A%2F%2Freactnavigation.org%2Fexamples%2F6.x%2Ftab-based-navigation-minimal.js)
