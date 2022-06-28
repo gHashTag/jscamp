@@ -54,7 +54,6 @@
     googleAdsense: {
       dataAdClient: 'ca-pub-5291507187121449'
     },
-    hideableSidebar: true,
     algolia: {
       appId: 'ONIGVMP8QH',
       apiKey: '4b22eba94660cfe3f3e4083ad49b11b6',
