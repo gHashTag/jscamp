@@ -159,10 +159,11 @@ const Home = () => {
                 <Translate>Subscribe</Translate>{' '}
               </Link>
             </h3>
-
-            {/* <a href="https://www.patreon.com/javascriptcamp">
-              <img src={useBaseUrl('img/jscamp/Button 10$.png')} alt="" />
-            </a> */}
+            <div className='imgContainer svbizImg'>
+              <a href={'https://svbiz.ru'}>
+                <img src={useBaseUrl(`img/svbiz.png`)} alt={'alt'} className={'image-mobile'} />
+              </a>
+            </div>
           </div>
         </header>
       </Layout>
@@ -297,7 +298,8 @@ const Program = () => {
   return (
     <>
       <div className={classnames('image-container')}>
-        {arrLinks.map(item => {
+        {arrLinks.map(item => 
+        {console.log(item.classImage)
           return (
             <a className={item.classLink} href={item.hrefUrl ? item.hrefUrl : '##'} key={item.id}>
               <img src={useBaseUrl(`${item.imageUrl}`)} alt={item.alt} className={item.classImage} />
