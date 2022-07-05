@@ -159,6 +159,9 @@ const Home = () => {
                 <Translate>Subscribe</Translate>{' '}
               </Link>
             </h3>
+            <h1 className='hForSvbiz'>
+              <Translate>Our franchise will pack:</Translate>
+            </h1>
             <div className='imgContainer svbizImg'>
               <a href={'https://svbiz.ru'}>
                 <img src={useBaseUrl(`img/svbiz.png`)} alt={'alt'} className={'image-mobile'} />
