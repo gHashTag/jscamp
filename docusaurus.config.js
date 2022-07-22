@@ -102,8 +102,8 @@
           position: 'left'
         },
         {
-          href: 'https://www.patreon.com/javascriptcamp',
-          label: 'Patreon 🤑',
+          href: 'https://securepayments.sberbank.ru/payment/docsite/payform-1.html?token=v4n03g5ftf3gm3t1cg4g7qgddt&def=%7B%22amount%22:%225000.00%22%7D&def=%7B%22description%22:%22JS%2520Camp%2520online%2520-%25201%2520%25D0%25BC%25D0%25B5%25D1%2581%25D1%258F%25D1%2586%22%7D&ask=email&ask=%7B%22name%22:%22Full_Name%22,%22placeholder%22:%22%22,%22label%22:%22Full%20Name%22%7D&ask=%7B%22name%22:%22Phone%22,%22placeholder%22:%22%22,%22label%22:%22Phone%22%7D&lang=ru',
+          label: 'Online 🤑',
           position: 'left'
         },
         {
