@@ -93,7 +93,7 @@ module.exports = {
       'telegraf/telegraf00'
     ],
     ['Blogging']: ['blogging-01', 'blogging-02', 'blogging-03'],
-    ['Rubik\'s Cube']: ['cube-00', 'cube-01'],
+    ['Rubik\'s Cube']: ['cube-00'],
     ['Scratch']: ['scratch-00', 'scratch-01'],
     ['Startup']: ['startup00', 'startup01', 'startup02']
   }
