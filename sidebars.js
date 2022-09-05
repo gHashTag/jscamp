@@ -3,7 +3,7 @@ module.exports = {
   someSidebar: {
     ['JavaScript']: [
       'javascript00',
-      'javascript01-1',
+      
       'javascript01',
       'javascript02',
       'javascript03',
@@ -33,7 +33,8 @@ module.exports = {
       'javascript27',
       'javascript28',
       'javascript29',
-      'javascript30'
+      'javascript30',
+      'javascript01-1'
     ],
     ['React Native']: [
       'reactnative00',
