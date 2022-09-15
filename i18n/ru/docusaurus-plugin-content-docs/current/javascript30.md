@@ -1,6 +1,6 @@
 ---
 id: javascript30
-title: Задачи по JavaScirpt
+title: Задачи по JavaScript
 sidebar_label: Практика
 ---
 
