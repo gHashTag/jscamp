@@ -58,6 +58,7 @@ module.exports = {
       'reactnative18',
       'reactnative19',
       'reactnative20',
+      'reactnative21',
       {
         type: 'category',
         label: 'React Navigation',
