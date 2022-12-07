@@ -36,9 +36,6 @@
       jp: {
         label: '日本語'
       },
-      es: {
-        label: 'Spanish'
-      },
       ar: {
         label: 'عربى'
       },
@@ -46,7 +43,7 @@
         label: '日本語'
       },
       es: {
-        label: 'Espanol'
+        label: 'español'
       }
     }
   },
