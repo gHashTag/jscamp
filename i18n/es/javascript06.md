@@ -1,42 +1,42 @@
 ---
 id: javascript06
-title: Strings
-sidebar_label: Strings
+title: Líneas
+sidebar_label: Líneas
 ---
 
 import YouTube from 'react-youtube'
 
 ![@serverSerrverlesskiy](/img/javascript/headers/06.jpg)
 
-In JavaScript, any text data is strings. However, do not forget that numbers can also be written in a string. Of all the data types, you will probably use strings the most. Let's analyze all the options for creating a new line.
+En JavaScript, cualquier dato de texto 📜 es una cadena. Sin embargo, no olvide que los números también se pueden escribir en una cadena. De todos los tipos de datos, probablemente usará más cadenas. Analicemos todas las opciones para crear una nueva línea.
 
-<!-- ## Video
+## Video
 
-<YouTube videoId="ocQTm9K2vdo" /> -->
+<YouTube videoId="ocQTm9K2vdo"/>
 
-## Single or double quotes
+## Comillas simples o dobles
 
 ![quotation marks](https://media.giphy.com/media/7cSTvZ4hI6ABZkcTwk/giphy.gif)
 
-Either ‘single’ or “double” quotes are used to create strings.
+Para crear una cadena 🏗️, se utilizan comillas "simples" o "dobles".
 
 ```jsx
 let single = 'Hello World'
 let double = "Hello World" // prettier-ignore
 ```
 
-You can use both of them, the main thing is that if you start a line with a single one, although there may be doubles inside, it must also be completed with a single one. And, accordingly, with double quotes.
+Puedes usar ambos, lo más importante, si comienzas una sola línea, aunque puede haber dobles dentro, también debe completarse con una sola. Y, en consecuencia, con comillas dobles.
 
 ```jsx
 let double = "Don't you think so, d'Artagnan?"
 let single = '"I think so, indeed!" - cried he.'
 ```
 
-## Backslash
+## barra invertida
 
 ![shielding](https://media.giphy.com/media/3og0IPizf4zPR6VMt2/giphy.gif)
 
-If the same quotes are used inside the string as outside, then they must be escaped with a backslash - the so-called "escape character". It is appended ➕ before the enclosing quotation mark `\ '' so that it does not indicate the end of the line.
+Si se usan las mismas comillas dentro de la cadena que afuera, entonces deben escaparse con una barra invertida, el llamado "carácter de escape". Se añade ➕ antes de las comillas `\'` en la cadena para que no indique el final de la línea.
 
 ```jsx live
 // prettier-ignore
@@ -46,24 +46,26 @@ function learnJavaScript() {
 }
 ```
 
-Note that the backslash `\` is only used to correctly read the string by the interpreter, but it is not written 🖊️ to the string after it has been read. When a string is saved to main memory, the `\` character is not added to it. You can clearly see this in the findings.
+Tenga en cuenta que la barra invertida `\` solo sirve para que el intérprete lea correctamente la cadena, pero no escribe 🖊️ en la cadena después de haberla leído. Cuando una cadena se guarda en la RAM, no se le agrega ningún carácter `\`. Esto se puede ver claramente en la salida.
 
-## Back quotes
+## comillas back
 
 ![Dollar](https://media.giphy.com/media/26BoCwvDEWXnGlLyM/giphy.gif)
 
-In writing a string, you can do without a backslash by using \ `back \` quotes.
+Al escribir una cadena, también puede prescindir de una barra invertida si usa comillas \`back\`.
 
-Single and double quotes work essentially the same way, and if you use back quotes, we can insert arbitrary JavaScript expressions into such a string by wrapping them in a dollar sign with curly braces `$ {...}` 👇:
+Las comillas simples y dobles funcionan esencialmente de la misma manera, y si usa comillas inversas, podemos insertar expresiones JavaScript arbitrarias en dicha cadena envolviéndolas en un carácter de dólar con llaves `${…}` 👇:
 
 ```jsx live
 function learnJavaScript() {
-  const sum = (a, b) => a + b // this is a function, we'll get to know it later in the course
-  return `1 + 2 = ${sum(1, 2)}`
+  let name = 'Marcos'
+  return `Hola, ${name}!`
 }
 ```
 
-Another advantage of backticks is that they can span more than one line.
+La interpolación de cadenas es una forma conveniente de sustituir valores de variables en cadenas. La cadena de plantilla es lo mismo que la interpolación. La cadena de plantilla en ES6 reemplazó a la cadena normal. La interpolación solo funciona con acentos graves. Veamos en la práctica qué reglas existen al usar interpolaciones.
+
+Otra ventaja de los acentos graves es que pueden abarcar más de una línea.
 
 ```jsx live
 function learnJavaScript() {
@@ -76,38 +78,38 @@ function learnJavaScript() {
 }
 ```
 
-Multiline strings can also be created with single and double quotation marks, using the so-called "line feed" character, which is written as `\ n`. All special characters, in JavaScript, begin with a backslash `\` True, we can check this in the browser console (`LIVE EDITOR` does not display correctly).
+También se pueden crear cadenas de varias líneas🏗️ usando comillas simples y dobles, usando el llamado "carácter de nueva línea", que se escribe como `\n`. Todos los caracteres especiales en JavaScript comienzan con una barra invertida `\` Cierto, podemos verificar esto en la consola del navegador (`LIVE EDITOR` no se muestra correctamente).
 
 ```jsx
 let guestList = 'Guests:\n * John\n * Pete\n * Mary'
 
-guestList // multi-line guest list
+guestList // lista de invitados de varias líneas
 ```
 
 ![console](/img/javascript/12.png)
 
-## Strings are immutable
+## Las cadenas son inmutables
 
 ![Tree](https://media.giphy.com/media/YxlUxrYGw2w9y/giphy.gif)
 
-The content of a string in JavaScript cannot be changed. You cannot take the symbol in the middle and replace it. Once a string is created🏗️ - it is like that forever.
-You can create a new string and write it to the same variable instead of the old one.
+El contenido de una cadena en JavaScript no se puede cambiar. No puede tomar el símbolo en el medio y reemplazarlo. Tan pronto como se crea la línea🏗️, es así para siempre.
+Puede crear🏗️ una nueva cadena y escribirla en la misma variable en lugar de la anterior.
 
 ```jsx live
 function learnJavaScript() {
   let str = 'Hi'
-  str = 'P' + str[1] // replace string
+  str = 'P' + str[1] // reemplazar cadena
   return str
 }
 ```
 
-## Popular string methods
+## Métodos de cadenas populares
 
-### String length
+### Longitud de la línea
 
 ![Length](https://media.giphy.com/media/Y1GK5MEiRa3OSVsxHK/giphy.gif)
 
-The `length` property returns the number of code values in the string.
+La propiedad `longitud` devuelve 🔄 el número de valores de código 📟 en la cadena.
 
 ```jsx live
 function learnJavaScript() {
@@ -116,13 +118,13 @@ function learnJavaScript() {
 }
 ```
 
-Please note that `\ n` is one special character, so everything is correct here: the length of the string is 3.
+Tenga en cuenta que `\n` es un carácter especial, por lo que todo es correcto aquí: la longitud de la cadena es 3.
 
-### Access to symbols
+### Acceso de personajes
 
 ![Door](https://media.giphy.com/media/xUA7aLpVxPVEoEPXji/giphy.gif)
 
-There are two 2️⃣ ways to get to a specific character in a string. The first method uses the `charAt ()` method. The first 1️⃣ character is at position zero:
+Hay dos 2️⃣ formas de llegar a un carácter específico en una cadena. El primer método usa el método `charAt()`. El primer carácter 1️⃣ ocupa la posición cero:
 
 ```jsx live
 function learnJavaScript() {
@@ -131,7 +133,7 @@ function learnJavaScript() {
 }
 ```
 
-You can also get a symbol using square brackets:
+También puede obtener un carácter usando corchetes:
 
 ```jsx live
 function learnJavaScript() {
@@ -140,13 +142,13 @@ function learnJavaScript() {
 }
 ```
 
-Square brackets are the modern way to get a character, while `charAt` exists mainly for historical reasons.
+Los corchetes son la forma moderna de obtener un carácter, mientras que `charAt` existe principalmente por razones históricas.
 
-### Change case of characters
+### Cambiando el caso de los caracteres
 
 ![Capital letter](https://media.giphy.com/media/3orifcBbnezczHmU8g/giphy.gif)
 
-To convert the letters of a string to uppercase, use the `toUpperCase ()` method.
+Para convertir las letras de una cadena a mayúsculas, utilice el método `toUpperCase()`.
 
 ```jsx live
 function learnJavaScript() {
@@ -155,7 +157,7 @@ function learnJavaScript() {
 }
 ```
 
-to lowercase `toLowerCase ()`
+a minúsculas `toLowerCase()`
 
 ```jsx live
 function learnJavaScript() {
@@ -164,11 +166,11 @@ function learnJavaScript() {
 }
 ```
 
-### Concatenate (concatenate) a string
+### Concatenación de cadenas
 
 ![Chain](https://media.giphy.com/media/l3q2EOu4nu1D8uJKU/giphy.gif)
 
-To construct a string from existing strings, use the plus sign `+` to concatenate the strings.
+Para construir una cadena a partir de cadenas existentes, use el signo más `+` para concatenar cadenas.
 
 ```jsx
 let name = 'Mary '
@@ -203,7 +205,7 @@ function learnJavaScript() {
 }
 ```
 
-И `+=` for assignment with union.
+И `+=` для присвоения с объединением.
 
 ```jsx live
 function learnJavaScript() {
@@ -213,74 +215,100 @@ function learnJavaScript() {
 }
 ``` -->
 
-So we got acquainted with the most popular data type in JavaScript and the most commonly used methods for it.
+Así que nos familiarizamos con el tipo de datos más popular en JavaScript y los métodos más utilizados para ello.
 
-## Problems?
+## Reaсt Native
+
+Veamos un ejemplo práctico de cómo podemos usar cadenas al crear una aplicación móvil. Aquí creamos una constante `str` y le asignamos el valor `Hello world`. Permítame recordarle que para insertar expresiones de JavaScript en la sintaxis JSX, debe usar llaves.
+
+```SnackPlayer name=index.js
+import * as React from 'react'
+import { Text } from 'react-native'
+
+const App = () => {
+  const str = 'Hello world'
+  return (
+    <Text>{str}</Text>
+)}
+
+
+export default App
+```
+
+## ¿Problemas?
 
 ![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
 
-Write to [Discord](https://discord.gg/6GDAfXn) chat.
+Escribe en [Discord](https://discord.gg/6GDAfXn) o Telegram [chat](https://t.me/jscampapp) y suscríbete a nuestras [noticias](https://t.me/javascriptapp)
 
-## Questions:
+![JavaScript Camp](/img/bandlink.png)
+
+## Preguntas:
 
 ![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
 
-How strings are not written in JavaScript?
+¿Cómo JavaScript no escribe cadenas \_\_\_?
 
-1. In single quotes
-2. In backslashes
-3. In back quotes
+1. entre comillas simples
+2. en barras invertidas
+3. entre comillas posteriores
 
-Why isn't a backslash used in a string?
+¿Por qué no se usa una barra invertida en una cadena?
 
-1. For shielding
-2. To write special characters
-3. To end the line
+1. Para blindaje
+2. Para escribir caracteres especiales
+3. Para terminar una línea
 
-Find the line with the error🙅‍♂️
+Seleccione "carácter de nueva línea"
 
-1. let str = \ `It's not complicated \`
-2. let str = "'I think so, indeed!' - cried he. "
-3. let str = 'My slogan: "Don't worry, be happy!"'
-
-Select "line feed character"
-
-1. `\ n`
+1. `\n`
 2. `\`
-3. `\ *`
+3. `\*`
 
-What letter will `'sport' [3]` return?
+¿Qué letra devolverá `'sport'[3]`?
 
 1. `o`
 2. `r`
-3. Will not return anything
+3. No devolverá nada
 
-How do I change a character in a JavaScript string?
+¿Cómo cambiar un carácter en una cadena de JavaScript?
 
-1. Change the line
-2. Get to the symbol and replace it
-3. Create a new line and write it to the same variable instead of the old one
+1. Cambiar línea
+2. Ve al símbolo y reemplázalo
+3. Cree una nueva cadena y escríbala en la misma variable en lugar de la anterior
 
-What method is used to capitalize letters?
+¿Qué método se utiliza para escribir en mayúsculas?
 
-1. `'Interface'.toUpperCase()`
-2. `'Interface' [0] .toLowerCase()`
-3. `'Interface'.toLowerCase()`
+1. `toUpperCase()`
+2. `toLowerCase()`
+3. `toLowercase()`
 
-What character is used to concatenate strings?
+¿Qué carácter se usa para concatenar cadenas?
 
 1. `=`
 2. `+`
-3. `+ =`
+3. `+=`
 
-In order to understand how much you learned this lesson, take the test on the [mobile application](http://onelink.to/njhc95) of our school on this topic.
+Cada vez que tenga una apertura \_\_\_\_, siempre necesita tener un cierre \_\_\_\_.
 
-![Sumerian school](/img/app.jpg)
+1. punto
+2. cita
+3. cambiando
 
-## Links
+Una línea consta de uno o más \_\_\_ separados.
+
+1. personajes
+2. argumentos
+3. Opciones
+
+Para comprender cuánto ha aprendido esta lección, realice una prueba en la [aplicación móvil](http://onelink.to/njhc95) de nuestra escuela sobre este tema o en nuestro [bot de Telegram](https://t.me/javascriptcamp_bot).
+
+![JS Camp](/img/app.jpg)
+
+## Enlaces:
 
 1. [MDN web docs](https://developer.mozilla.org/ru/docs/Web/JavaScript/Data_structures)
-2. [Code for Teens: The Perfect Beginner's Guide to Programming, Volume 1: Javascript - Jeremy Moritz](https://www.amazon.com/Code-Teens-Beginners-Programming-Javascript-ebook/dp/B07FCTLVPC)
+2. [Código para adolescentes: la gran guía de programación para principiantes Volumen 1: Javascript - Jeremy Moritz](https://www.amazon.com/Code-Teens-Beginners-Programming-Javascript-ebook/dp/B07FCTLVPC)
 3. [JavaScript.ru](https://learn.javascript.ru/types)
 
 ## Contributors ✨

@@ -1,103 +1,109 @@
 ---
 id: javascript09
-title: Functions
-sidebar_label: Functions
+title: Funciones
+sidebar_label: Funciones
 ---
+
+import YouTube from 'react-youtube'
 
 ![@serverSerrverlesskiy](/img/javascript/headers/10.jpg)
 
-Functions⚙️ are needed so as not to repeat the same code📟 in many places in the program algorithm. In modern programs, functions are the main "building blocks".
+Se necesitan funciones⚙️ para no repetir el mismo código📟 en muchos lugares del algoritmo del programa. En los programas modernos, las funciones son los "bloques" básicos.
 
 ## Don’t repeat yourself
 
-DRY (rus. Do not repeat yourself) is a software development principle aimed at reducing the repetition of information of various kinds, especially in systems with many layers of abstraction. Functions are exactly the type of data that serves this design principle.
+DRY (ruso no repetir) es un principio de desarrollo de software destinado a reducir la repetición de información de varios tipos, especialmente en sistemas con muchas capas de abstracción. Las funciones son exactamente el tipo de datos que sirven a este principio de diseño.
 
-## Select function name
+## Video
 
-Function⚙️ is action! Therefore, the function name is usually a verb. It should be simple, precise, and describe the action of the function, so that the programmer reading the code📟 has a good understanding of what the function does.
+<YouTube videoId="3rEcxqlkJNE" /> 
+
+## Elegir un nombre de función
+
+¡Función ⚙️ es acción! Por lo tanto, el nombre de la función suele ser un verbo. Debe ser simple, preciso y describir la acción de la función para que el programador que lea el código tenga una idea correcta de lo que hace la función.
 
 ![Choice](https://media.giphy.com/media/VbEloWwOz3QqYBsqIZ/giphy.gif)
 
-As a rule, verb prefixes are used, indicating the general nature of the action, followed by a clarification. Typically, development teams have conventions about the meaning of these prefixes.
+Por regla general, se utilizan prefijos verbales que denotan el carácter general de la acción, seguidos de una aclaración. Por lo general, los equipos de desarrollo tienen convenciones con respecto a los significados de estos prefijos.
 
-For example, functions⚙️ starting with `` show '' usually show something.
+Por ejemplo, las funciones ⚙️ que comienzan con `"show"` generalmente muestran algo.
 
-Functions⚙️ starting with ...
-
-```
-"get .." - return a value,
-"calc .." - something is being calculated,
-"create .." - create something,
-"check .." - check something and return a boolean value, etc.
-```
-
-Examples of such names:
+Características ⚙️ comenzando con…
 
 ```javascript
-showMessage (..) // shows the message
-getAge (..) // returns age (in some value)
-calcSum (..) // calculates the sum and returns the result
-createForm (..) // creates a form (and usually returns it)
-checkPermission (..) // checks access by returning true / false
+"get..." – valor de retorno🔄,
+"calc..." - calcular algo,
+"create..." - crear algo,
+"check..." - verificar algo y devolver un valor booleano, etc.
 ```
 
-Thanks to prefixes, at the first glance at the name of a function, it becomes clear what its code is doing and what value it can return🔄.
+Ejemplos de tales nombres:
 
-In any case, you and your team need to understand exactly what a prefix means and what a function⚙️ can and cannot do with it.
+```javascript
+showMessage(..) // mostrar el mensaje
+getAge(..) // devuelve la edad (en algún valor)
+calcSum(..) // calcula la suma y devuelve el resultado
+createForm(..) // crea un formulario (y generalmente devuelve uno)
+checkPermission(..) // comprueba el acceso, devolviendo verdadero/falso
+```
 
-:::note Ultra-short function names⚙️
-Function names⚙️ that are used very often are sometimes made extra short.
+Gracias a los prefijos, a simple vista el nombre de una función queda claro qué hace su código📟 y qué valor puede devolver🔄.
 
-For example, the jQuery framework has a function⚙️ named `$`. In the Lodash library, the main function⚙️ is represented by the underscore name \ \_
+En cualquier caso, usted y su equipo deben comprender exactamente qué significa el prefijo y qué puede y no puede hacer la función⚙️ con él.
 
-These are exceptions. Basically, function names should be reasonably short and descriptive 🖊️.
+:::note Nombres de funciones súper cortos⚙️
+Los nombres de funciones⚙️ que se usan mucho a veces se hacen muy cortos.
+
+Por ejemplo, el marco jQuery tiene una función ⚙️ denominada `$`. En la biblioteca de Lodash, la función principal ⚙️ está representada por el nombre del guión bajo \_
+
+Estas son excepciones. En general, los nombres de las funciones deben ser moderadamente breves y descriptivos 🖊️.
 :::
 
-### Functions === Comments
+### Funciones === Comentarios
 
 ![cut](https://media.giphy.com/media/kf2bxcoZD8UmY/giphy.gif)
 
-Functions⚙️ should be short and only do one thing. If it's something big, it makes sense to split the function⚙️ into several smaller ones. Following this rule is definitely helpful, especially in teamwork.
+Las funciones⚙️ deben ser cortas y hacer una sola cosa. Si es algo grande, tiene sentido dividir la función⚙️ en varias más pequeñas. Definitivamente es útil seguir esta regla, especialmente en el trabajo en equipo.
 
-Small functions⚙️ not only make testing and debugging easier - the very existence of such functions⚙️ serves as good comments.
+Las funciones pequeñas⚙️ no solo facilitan las pruebas y la depuración, sino que la existencia misma de tales funciones⚙️ sirve como buenos comentarios.
 
-## Function declaration
+## Declaración de función
 
 ![Announcement](https://media.giphy.com/media/2A5zHrIPvo8MNnkAXl/giphy.gif)
 
-To create functions⚙️ we use a function declaration⚙️.
+Para crear funciones⚙️ usamos una declaración de función🗣️⚙️.
 
-First comes the keyword `function`, followed by the name of the function, then the list of parameters in parentheses separated by commas (in the given example it is empty) and, finally, the code📟 of the function, also called the“ body of the function ”, inside curly braces ...
+Primero viene la palabra clave🗝️ palabra `funcion`, luego el nombre de la funcion⚙️, luego la lista de parámetros entre paréntesis separados por comas (en el ejemplo anterior está vacío) y finalmente el código📟 de la funcion⚙️, también llamada el “cuerpo de la funcion⚙️”, dentro de corchetes.
 
-This classic way of writing 🖊️ functions is called `Function Declaration`.
+Esta forma clásica de escribir funciones 🖊️ se llama `Declaración de funcion`.
 
-Syntax📖:
+Sintaxis📖:
 
 ```javascript
-function name (parameters) {
-   ... body ... // Algorithm
-   returnTotalValue
+function nombre (opciones) {
+  ... тело ...  // Algoritmo
+  return valorFinal
 }
 ```
 
-:::note Attention!
-If no return is specified, the function returns undefined instead, and by default it is assumed that the function ends with an empty return stub, executing only internal scripts.
+:::nota ¡Atención!
+Si no se especifica `return`, la función⚙️ devuelve🔄 `undefined` en su lugar y, de forma predeterminada, se considera que la función⚙️ finaliza con un resguardo `return` vacío, ejecutando solo scripts internos.
 :::
 
-In JavaScript, apart from the classic `Function Declaration` method, you can create a function⚙️ by using:
+En JavaScript, puede crear una función⚙️ además del método clásico de `Declaración de función` de la siguiente manera:
 
 - `Function Expression`
-- `Arrow Function (arrow functions)`
+- `Arrow Function(funciones de flecha)`
 
-A Function Expression is a declaration🗣️ of a function⚙️ that is part of an expression (for example, an assignment).
+`Expresión de función` es una declaración 🗣️ de una función⚙️ que forma parte de alguna expresión (por ejemplo, asignación).
 
 ```javascript
-const name = function (parameters) {
-  // instructions
+const имя = function (параметры) {
+  // instrucciones
 }
 ```
 
-Let's compare `Function Declaration` and` Function Expression`:
+Compare `Declaración de función` y `Expresión de función`:
 
 ```javascript
 // Function Declaration
@@ -111,28 +117,28 @@ const sum = function (num1, num2) {
 }
 ```
 
-The syntax for Arrow Function will be introduced later in this chapter. This is the simplified and most commonly used way of writing functions.
+La sintaxis para `Arrow Function(funciones de flecha)` se presentará más adelante en este capítulo. Esta es la forma simplificada y más utilizada de escribir funciones 🖊️.
 
-## Function call
+## Llamada de función
 
-To call a function⚙️ and execute it, you need to refer to it by name and then specify two parentheses `myMessages()`:
+Para llamar a una función⚙️ y ejecutarla, debe referirse a ella por su nombre y luego especificar dos paréntesis `myMessage()`:
 
 ```javascript
-// function declaration
+// declaración de función
 function myMessage() {
   let str = 'Hello!'
 }
 
-myMessage() // function call
+myMessage() // Llamada de función
 ```
 
-Note that in this example the function is called but does not return a value.
+Tenga en cuenta que en este ejemplo, se llama a la función ⚙️ pero no devuelve un valor 🔄.
 
-## Functions with return
+## Funciones con retorno
 
 ![Return](https://media.giphy.com/media/Y08bx6Fea1BafzTlvc/giphy.gif)
 
-In order for a function to return something, the keyword `return` (point of exit or return of the result) and the return value are specified in its body.
+Para que una función⚙️ devuelva algo🔄, en su cuerpo se indica la palabra clave🗝️ `return` (punto de salida o retorno🔄 del resultado) y el valor de retorno🔄.
 
 ```jsx live
 function showNumberFive() {
@@ -140,17 +146,17 @@ function showNumberFive() {
 }
 ```
 
-Experiment, replace the original number 9️⃣ with the number of your years.
+Experimenta, pon en lugar del número original 9️⃣ el número de tus años.
 
-:::tip Remember!
-By declaring a function and then calling it, we in any case get the result of the algorithm (previously described actions) in the function body теле.
+:::consejo ¡Recuerda!
+Al declarar🗣️ una función⚙️ y luego llamarla, en cualquier caso, obtenemos el resultado de ejecutar el algoritmo (acciones descritas anteriormente) en el cuerpo de la función⚙️.
 :::
 
-## Function inside another function
+## Función dentro de otra función
 
 ![Matryoschka](https://media.giphy.com/media/bFhSvsdyaCy4g0d2lU/giphy.gif)
 
-Inside a function⚙️ you can place other functions⚙️. For example, the function⚙️ `showNumberFive()` will return the number 5️⃣, the value of which will be displayed through the call to the function learn `learnJavaScript()`.
+Dentro de una función⚙️ puedes colocar otras funciones⚙️. Por ejemplo, la función⚙️ `showNumberFive()` devolverá el número 5️⃣, cuyo valor se mostrará mediante la llamada a la función⚙️ `learnJavaScript()`.
 
 ```jsx live
 function learnJavaScript() {
@@ -161,14 +167,14 @@ function learnJavaScript() {
 }
 ```
 
-Let's go through all this step by step:
+Veamos todo esto paso a paso:
 
-- The keyword `function` indicates to the interpreter that the following code is user-defined, that is, a created by you, and not a built-in function.
-- Written in camelCase `showNumberFive` ​​is the custom name for this function. For the interpreter, in general, it makes no difference exactly what this function is called, but it is better to give the functions names that clearly indicate what exactly they do.
-- `()` brackets are a required element of any function. Sometimes one, two or more variables are enclosed in brackets 🔔, in our case there is nothing in the brackets.
-- The body of the function itself must be enclosed in curly braces `{}` - the essence of the program algorithm.
-- The body of the function itself is usually indented to the right (using the TAB key). This is not necessary for the execution of the program, but it is necessary for teamwork, since it greatly facilitates the readability of the code.
-- The keyword `return` means that whenever we call this function, the value will be passed, that is," returned ", to the interpreter, therefore it is called the" return value of the function ".
+- La palabra clave `función` le dice al intérprete que el siguiente código está definido por el usuario, es decir, usted lo creó y no es una función integrada.
+- Escrito 🖊️ en mayúsculas y minúsculas `showNumberFive` ​​​​es el nombre personalizado para esta función. Para el intérprete, en general, no importa cómo se llame exactamente a esta función, pero es mejor dar nombres a las funciones que indiquen claramente qué hacen exactamente.
+- Los corchetes `()` son un elemento obligatorio de cualquier función. A veces una, dos o más variables 🔔 se encierran entre paréntesis, en nuestro caso no hay nada entre paréntesis.
+- Las llaves `{}` deben contener el cuerpo de la función en sí, la esencia del algoritmo del programa.
+- El cuerpo de la función en sí se sangra habitualmente a la derecha (usando la tecla TAB). Esto no es necesario para la ejecución del programa, pero sí para el trabajo en equipo, ya que facilita mucho la legibilidad del código.
+- La palabra clave `return` significa que cada vez que llamemos a esta función, el valor se pasará, es decir, se "devolverá" al intérprete, por lo que se llama "valor de retorno de la función".
 
 <!-- Еще один пример 👇 :
 
@@ -181,24 +187,24 @@ function sum() {
 }
 ```
 
-In the function `sum ()`, the variables `x` and` y` with values are declared, the variable 🔔 `z` is declared and, according to the given algorithm, we perform the calculation (addition of 2 numbers), and the result is output through` return`.
+В функции⚙️ `sum()` объявляются🗣️ переменные `x` и `y` со значениями, объявляется🗣️ переменная 🔔 `z` и по заданному алгоритму производим расчет (сложение 2-х чисел), а результат выводим через `return`.
 
-If necessary, you can call the function При several times. For example, assign our function to the value of two different variables:
+При необходимости обращаться к функции⚙️ можно несколько раз. Например в значение двух разных переменых присвоить нашу функцию⚙️:
 
-javascript
-let x1 = sum ()
+```javascript
+let x1 = sum()
 
-let y1 = sum ()
-``
+let y1 = sum()
+```
 
-This example clearly shows one of the main purposes of functions⚙️: getting rid of code duplication! A function⚙️ can be run multiple times in different places in your code📟. ->
+Этот пример явно показывает одно из главных предназначений функций⚙️: избавление от дублирования кода📟 ! Функцию⚙️ можно запускать множества раз в разных участках вашего кода📟 . -->
 
-## Parameters and function arguments
+## Parámetros y argumentos de la función
 
 ![couple](https://media.giphy.com/media/3o7TKO3AC2o5cOkZfG/giphy.gif)
 
-Let's declare🗣️ one more function но, but with a variable in parentheses.
-When the function also contains the variable 🔔 in brackets, we will call it a formal parameter (undefined in advance, we do not know what the value of x will be). Most functions⚙️ will have parameters, but sometimes we will come across functions⚙️ without them.
+Declaremos🗣️ una función más⚙️, pero con una variable entre paréntesis.
+Cuando una función ⚙️ tiene una variable 🔔 entre paréntesis, la llamaremos parámetro formal (indefinido de antemano, no sabemos cuál será el valor de x). La mayoría de las funciones⚙️ tendrán parámetros, pero a veces veremos funciones⚙️ sin ellos.
 
 ```javascript
 function addThree(x) {
@@ -206,21 +212,21 @@ function addThree(x) {
 }
 ```
 
-After the declaration🗣️ of the function⚙️ and its parameters, we can call (run) the "code block" with a specific value (for example: 5).
-We will call this assignment an argument:
+Después de declarar🗣️ la función⚙️ y sus parámetros, podemos llamar (ejecutar) un "bloque de código" con un valor específico (por ejemplo: 5).
+Llamaremos a esta asignación de valor un argumento:
 
 ```javascript
 addThree(5)
 
-// Answer: 8
+Responder: 8
 ```
 
-In our example, the number 5️⃣ is the function argument - a specific value passed into the function⚙️.
-As soon as our function⚙️ received its argument, it immediately assigned its value to the variable x (which is a formal parameter of our function⚙️).
+En nuestro ejemplo, el número 5️⃣ es un argumento de función: un valor específico pasado dentro de la función⚙️.
+Tan pronto como nuestra función⚙️ recibió su argumento, inmediatamente asignó su valor a la variable x (que es el parámetro formal de nuestra función⚙️).
 
-### Code example📟:
+### Ejemplo de código📟:
 
-Experiment 👇:
+Experimento 👇:
 
 ```jsx live
 function learnJavaScript() {
@@ -232,23 +238,23 @@ function learnJavaScript() {
 }
 ```
 
-### Difference between parameters and arguments
+### Diferencia entre parámetros y argumentos
 
 ![Dedefencce](https://media.giphy.com/media/l41YkuPROHQj0fjRS/giphy.gif)
 
-Consists of the following:
+Consiste en lo siguiente:
 
-`argument` is a specific value that we" passed "to the function⚙️ when calling it in parentheses. This value or set of values is assigned to the formal parameters of this function⚙️.
+`argumento` es un valor específico que "pasamos" a la función⚙️ cuando la llamamos entre paréntesis. Este valor o conjunto de valores se asigna a los parámetros formales de esta función⚙️.
 
-`parameter` is the name of a variable 🔔 specified in the function declaration and waiting to be assigned a specific value at the time of the function call. The value assigned to the parameter is the argument.
+`parámetro` es el nombre de una variable 🔔, especificada en la declaración de la función y esperando a que se le asigne un valor específico en el momento en que se llama a la función. El valor asignado al parámetro es el argumento.
 
-Many programmers use these terms (argument and parameter) interchangeably, but we understood the difference.
+Muchos programadores usan estos términos (argumento y parámetro) indistintamente, pero entendemos la diferencia.
 
-## Example:
+## Ejemplo:
 
 ![Mathematics](https://media.giphy.com/media/3o7btPCcdNniyf0ArS/giphy.gif)
 
-Let's try to declare🗣️ a function по for calculating on two sides of the rectangle perimeter, the parameters of which will expect two 2️⃣ numbers as their value. Please note that if you have more than one parameter, then they must be separated from each other with a comma.
+Intentemos declarar🗣️ una función⚙️ para calcular en dos lados del perímetro de un rectángulo, cuyos parámetros esperarán dos números 2️⃣ como su valor. Tenga en cuenta que si tiene más de un parámetro, deben estar separados entre sí por una coma.
 
 ```jsx live
 function learnJavaScript() {
@@ -259,23 +265,23 @@ function learnJavaScript() {
 }
 ```
 
-When we call this function⚙️, we will have to give it two 2️⃣ numbers as arguments - the values of the sides of a particular rectangle (separated from each other by a comma):
+Cuando llamemos a esta función⚙️, necesitaremos darle dos números 2️⃣ como argumentos: los valores de los lados de un rectángulo en particular (separados entre sí por una coma):
 
 ```javascript
 calcPrym(7, 8)
 
-// Answer: 30
+Responder: 30
 ```
 
-Oh, thanks a lot, computer🖥️!
+¡Oh, muchas gracias, computadora 🖥️!
 
-By passing other values to the function⚙️, it will immediately calculate the perimeters of other rectangles as well.
+Pasando otros valores a la función ⚙️, inmediatamente calculará los perímetros de otros rectángulos.
 
-:::info Once again!
-One of the main purposes of functions⚙️ is to get rid of code duplication📟 and the ability to call them multiple times to solve your problems.
+:::info ¡Una vez más!
+Uno de los propósitos principales de las funciones⚙️ es deshacerse de la duplicación de código📟 y la capacidad de llamarlas varias veces para resolver sus problemas.
 :::
 
-## Built-in functions
+## Funciones integradas
 
 ![Integration](https://media.giphy.com/media/F0NHdHQRjr9f2/giphy.gif)
 
@@ -283,50 +289,51 @@ One of the main purposes of functions⚙️ is to get rid of code duplication�
 
 ![Secret](https://media.giphy.com/media/l1J9BGJOQMbkbpWVy/giphy.gif)
 
-A way to output (log) debug information to the console only for developers (users will not be able to see it; as you know, most people are not even aware of the existence of the console itself, and not that about secret "logs"!).
+Una forma de enviar (registrar) información de depuración a la consola solo para desarrolladores (los usuarios no podrán verla; como saben, la mayoría de las personas ni siquiera sospechan la existencia de la consola en sí, ¡y mucho menos los "registros" secretos! ).
 
-Press the keyboard shortcut `Ctrl + Shift + I` in the Google Chrome browser and type in the` Console` tab:
-
-```javascript
-console.log('Top Secret! For Developers Only!')
-```
-
-As the name of the function⚙️ implies, we print the "log" (that is, information about the system operation) to the console; developers use this good superpower all the time. For example, when you had error messages, you saw exactly this in the console - the interpreter gave ("logged") information about the system operation to the console so that you could read and correct the necessary parameters. In a word, a very useful thing. You will have to resort to using `console.log ()` more than once or twice 2️⃣, so remember this function⚙️!
-
-Enter the following commands line by line:
+Presiona el atajo de teclado 🎹 `Ctrl + Shift + I` en el navegador Google Chrome y en la pestaña `Consola` escribe:
 
 ```javascript
-console.log ('Print any message you want')
-console.log ('just put some' + 'string here)
-let myMessage = 'You can also use variables as an argument!'
-console.log (myMessage)s
+console.log('¡Ultra secreto! ¡Solo para desarrolladores!')
 ```
 
-While you're playing with the console logs, I'll show you another trick. Our good old friend - backslash will help me to do it!
+Como implica el nombre de la función ⚙️, mostramos "log" (es decir, información sobre el funcionamiento del sistema) en la consola; los desarrolladores usan esta buena súper habilidad todo el tiempo. Digamos, cuando tuvo mensajes de error💬 sobre errores🙅‍♂️, vio exactamente esto en la consola: el intérprete emitió ("registró") información sobre el funcionamiento del sistema en la consola para que pudiera leer y corregir los parámetros necesarios. . En una palabra, algo muy útil. Tendrás que usar `console.log()` más de una o dos veces, ¡así que recuerda esta función⚙️!
 
-With its assistance, `\ n` you can split your code📟 line by line. Try it yourself!
-Enter the following commands line by line:
+Ingrese los siguientes comandos línea por línea:
 
 ```javascript
-console.log('You can split any text  n into many  n lines.')
-console.log('Here is the first.  nAnd here is the 2nd.  n3-i  n4-i  n5-i!')
+console.log('Imprime el mensaje que quieras')
+console.log('simplemente escriba algo aquí' + 'cadena')
+let myMessage = '¡También puedes usar variables como argumento!'
+consola.log(miMensaje)
 ```
 
-This `\ n` thing actually has many useful practical uses. For example, you can draw a bear in the [ASCII] encoding (https://ru.wikipedia.org/wiki/ASCII) in the console. Type in the console:
+Mientras juegas con los registros de la consola, te mostraré un truco más. ¡Nuestro buen viejo amigo, la barra invertida, me ayudará a hacerlo!
+
+Con su ayuda `\n` puedes descifrar tu código 📟 línea por línea. ¡Inténtalo tú mismo!
+Ingrese los siguientes comandos línea por línea:
 
 ```javascript
-console.log("c ___ c  n /. \\ n \\ _ T _ /  n / '' \\ n (/. \\)  n / '; -;' \\ n () /   () ")
+console.log('Puede dividir cualquier texto\n en muchas\n líneas.')
+console.log('Aquí está el primero.\nY aquí está el 2.º.\n3.º\n4.º\n5.º!')
 ```
 
-Is it clear why this is so?
+Esta cosa `\n` en realidad tiene muchos usos prácticos útiles. Por ejemplo, puede dibujar en 📟 [ASCII](https://ru.wikipedia.org/wiki/ASCII) codificando un oso en la consola. Escriba en la consola:
 
-Each `\ n` specifies a transition to a new line, so that subsequent characters seem to" go down "below, and voila! We have made a significant contribution to the development of society by drawing a cute bear!
+```javascript
+console.log(" c___c\n /. .\\\n \\_T_/\n /' '\\\n(/ . \\)\n/';‑;'\\\n()/ \\()")
+```
+
+¿Está claro por qué esto es así?
+
+Cada `\n` establece una nueva línea, de modo que los caracteres subsiguientes parecen "descender" debajo, ¡y listo! ¡Hemos hecho una contribución seria al desarrollo de la sociedad dibujando un lindo oso!
 
 ### Math.random()
 
 ![Random](https://media.giphy.com/media/3o6ozoD1ByqYv7ARIk/giphy.gif)
 
-Another useful built-in function⚙️: `Math.random()`. Please note that, unlike the previous ones, the name of this function⚙️ begins with an uppercase letter `M`. There is a reason for this, the uppercase and lowercase letters in JavaScript differ in their internal codes📟. In every language👅, be it Russian, English or JavaScript, there are always some exceptions to the rule. This is one of them. All other variables and functions⚙️ that you come across should be written with a lowercase letter. Remember that register is important, and if the name `Math.random()` starts with `math`, then the function⚙️ simply won't run!
+Otra función integrada útil⚙️: `Math.random()`. Tenga en cuenta que, a diferencia de las anteriores, el nombre de esta función ⚙️ comienza con una letra mayúscula `'M'`. Hay razones para esto, las letras mayúsculas y minúsculas en JavaScript se distinguen por códigos internos📟.
+En todos los idiomas👅, ya sea ruso, inglés o JavaScript, siempre hay algunas excepciones a las reglas. Aqui esta uno de ellos. Todas las demás variables y funciones ⚙️ que encuentre deben escribirse con una letra minúscula. Recuerda que las mayúsculas y minúsculas son importantes, y si el nombre de `Math.random()` comienza con `math`, ¡la función⚙️ simplemente no se ejecutará!
 
 ```jsx live
 function learnJavaScript() {
@@ -334,9 +341,9 @@ function learnJavaScript() {
 }
 ```
 
-A new number every time! The function returns a random real number between 0 and 1.
+Cada vez que un nuevo número! La función ⚙️ devuelve un número real aleatorio entre 0 y 1.
 
-Let's update the equation 👇:
+Modernicemos la ecuación 👇:
 
 ```jsx live
 function learnJavaScript() {
@@ -344,13 +351,13 @@ function learnJavaScript() {
 }
 ```
 
-If you suddenly need a random number in the range of 0 to 100, then this function will be very useful to you.
+Si de repente necesita un número aleatorio en el rango de 0 a 100, entonces esta función⚙️ le será muy útil.
 
 ### Math.floor()
 
 ![Floor](https://media.giphy.com/media/uTAZTQi8dX1VGa4pXT/giphy.gif)
 
-This function⚙️ takes a number or digit5️⃣ as an argument and then rounds them down.
+Esta función⚙️ toma un número o digit5️⃣ como argumento y lo redondea hacia abajo cuando se recibe.
 
 ```javascript
 Math.floor(10.7) // 10
@@ -368,7 +375,7 @@ function learnJavaScript() {
 
 ![rounding](https://media.giphy.com/media/g4G287ogD1fmgqwVjS/giphy.gif)
 
-`Math.round (x)` vice versa to the nearest integer, without any tenths after the decimal point.
+`Math.round(x)` es al revés, al entero más cercano, sin decimales.
 
 ```javascript
 Math.round(10.7) // 11
@@ -386,60 +393,60 @@ function learnJavaScript() {
 
 ![Words](https://media.giphy.com/media/Utt80M7ucSJyiGdbLi/giphy.gif)
 
-Have you EVER noticed THAT SOME messages ARE TOO MANY CAPITAL WORDS?
-Well, that’s what we’ll learn now.
+¿Alguna vez has notado que ALGUNOS mensajes 💬 tienen DEMASIADAS PALABRAS EN MAYÚSCULAS?
+Bueno, eso es lo que vamos a aprender ahora.
 
-You can easily take any string and return its new version, separated by uppercase 🖊️ letters (i.e. upper / lower case), using the built-in method `.toUpperCase() / .toLowerCase()`. And, accordingly, you can return any string in lowercase letters (that is, in lowercase).
+Puede tomar fácilmente cualquier cadena y devolver su nueva versión en mayúsculas 🖊️ (es decir, mayúsculas/minúsculas) utilizando el método integrado `.toUpperCase() / .toLowerCase()`. Y, en consecuencia, puede devolver cualquier cadena en minúsculas (es decir, en minúsculas).
 
-Remember that a method is just a function, attached to the object described, in this case a generic string.
+Recuerda que un `método es solo una función` adjunta a un objeto 🖊️ descrito, en este caso una cadena genérica.
 
-It works like this, `.toUpperCase()` in uppercase 🖊️ letters 👇:
-
-```jsx live
-function learnJavaScript() {
-  return 'I like pizza!'.toUpperCase()
-}
-```
-
-And `.toLowerCase()` in lowercase:
+Funciona así, `.toUpperCase()` en mayúsculas 🖊️ letras 👇:
 
 ```jsx live
 function learnJavaScript() {
-  return 'LISTEN, WELL ENOUGH YOU SHOULD ALREADY.'.toLowerCase()
+  return '¡Me gusta la pizza!'.toUpperCase()
 }
 ```
 
-## Now all together!
+А `.toLowerCase()` в строчные:
+
+```jsx live
+function learnJavaScript() {
+  return 'ESCUCHA, DEJA DE GRITAR YA.'.toLowerCase()
+}
+```
+
+## ¡Y ahora todo está junto!
 
 ![Mix](https://media.giphy.com/media/WTdOnTQJwTHmhifwGE/giphy.gif)
 
-Let's try to mix a small cocktail from the functions we just learned⚙️.
+Intentemos mezclar un pequeño cóctel de las funciones que acabamos de aprender⚙️.
 
 ```jsx live
 function learnJavaScript() {
-  // randomNumber - a random number from 0 to 1
+  // randomNumber - un número aleatorio entre 0 y 1
   let randomNumber = Math.random()
-  // Multiply our random number by 100 to get a number between [0; 100] by shifting the comma 2 places to the right
+  // Multiplique nuestro número aleatorio por 100 para obtener un número entre [0; 100] desplazando el punto decimal 2 lugares a la derecha
   let number100 = randomNumber * 100
-  // Use Math.floor () to round TO THE LOWER SIDE
-  let task = 'A number between 0 and 100 was selected:'
+  // Use Math.floor() para redondear hacia ABAJO
+  let task = 'Выбрано число от 0 до 100: '
   let numberBig = Math.floor(number100)
-  // Outputting the result
+  // Salida de resultados
   return task + numberBig
 }
 ```
 
-Hopefully, none of the above turned out to be a difficult task for you, and you understand everything. If not, then take your time to review each line and comments to it.
+Espero que nada de lo que hice haya resultado una tarea difícil para ti y hayas entendido todo. Si no, tómese su tiempo para revisar cada línea y sus comentarios.
 
-## Arrow Function (arrow functions)
+## Arrow Function (funciones de flecha)
 
 ![Arrow](https://media.giphy.com/media/xT9IgAakXAITtXIWje/giphy.gif)
 
-There is an even simpler and concise syntaxтакс for creating functions⚙️, which is often better than other kinds.
+Existe una sintaxis📖 aún más simple y concisa para crear funciones⚙️ que a menudo es mejor que otros tipos.
 
-So, the classic version of writing 🖊️ function⚙️:
+Entonces, la versión clásica de grabación 🖊️ funciona⚙️:
 
-Function Declaration:
+Declaración de funciones:
 
 ```javascript
 function func1(arg1, arg2, ...argN) {
@@ -455,62 +462,62 @@ let func1 = function (arg1, arg2, ...argN) {
 }
 ```
 
-Such code📟 creates a function⚙️ `func1` with arguments `arg1, .. argN` and calculates `expression` - a set of actions of the algorithm on the right side using them, returning the result of calculations through the keyword` return`.
+Este código📟 crea una función⚙️ `func1` con argumentos `arg1, .. argN` y calcula `expression` - un conjunto de acciones del algoritmo en el lado derecho usándolas, devolviendo🔄 el resultado de los cálculos a través de la palabra clave `return `.
 
-Now let's use the `Arrow functions`:
+Ahora apliquemos funciones de flecha - `Funciones de flecha`:
 
 ```javascript
 let func1 = (arg1, arg2, ...argN) => expression
 ```
 
-In other words, this is a shorter version of such a notation 🖊️.
+Другими словами, это более короткий вариант такой записи 🖊️ .
 
-:::note How!
-`=>` we have replaced `{return ...}` on the right side and allowed us not to write the keyword `function` on the left side!
+:::note ¡Cómo!
+`=>` reemplazó `{ return ... }` en el lado derecho y nos permitió no escribir 🖊️ la palabra clave 🗝️ `function` en el lado izquierdo.
 :::
 
-Let's take a look at a concrete example 👇:
+Veamos un ejemplo concreto 👇:
 
 ```jsx live
 function learnJavaScript() {
-  // The original form of the function for adding 2 numbers
+  // La forma original de la función de suma de 2 números
   let calcSum1 = function (a, b) {
     return a + b
   }
-  // Arrow form (no word `function` and` return`)
+  // Forma de flecha (sin palabra `función` y `retorno`)
   let calcSum2 = (a, b) => a + b
 
-  return calcSum1(5, 2) + ' или ' + calcSum2(5, 2) // 7 or 7
+  return calcSum1(5, 2) + ' или ' + calcSum2(5, 2) // 7 o 7
 }
 ```
 
-Both options are correct! `function` is almost never used in modern writing of code📟, so use arrow functions!
+¡Ambas opciones son correctas! `función` casi nunca se usa en el código 🖊️ moderno📟, ¡así que usa "funciones de flecha⚙️"!
 
-### Only one argument
+### Solo un argumento
 
 ![only one](https://media.giphy.com/media/3o6MbjZirZUc6cYpz2/giphy.gif)
 
-If we have only one argument, then the parentheses around the parameters can be omitted, making the notation even shorter `let num2 = n => n * 2`
+Si solo tenemos un argumento, entonces se pueden omitir los paréntesis alrededor de los parámetros, haciendo que la notación sea aún más corta `let num2 = n => n * 2`
 
 ```jsx live
 function learnJavaScript() {
-  // The original form of the function for adding 2 numbers:
+  // La forma original de la función de suma de 2 números:
   let num1 = function (n) {
     return n * 2
   }
 
-  // remove the parentheses around n
+  // eliminar corchetes alrededor de n
   let num2 = (n) => n * 2 // prettier-ignore
 
   return num1(7) + ' или ' + num2(7) // 14
 }
 ```
 
-### If there are no arguments
+### Si no hay argumentos
 
 ![no](https://media.giphy.com/media/LOEI8jsNKPmzdJYvhJ/giphy.gif)
 
-If there are no arguments, then to avoid double `==`, use `empty parentheses` 👇:
+Si no hay argumentos, entonces para evitar el doble `==`, se especifican `paréntesis vacíos` 👇:
 
 ```jsx live
 function learnJavaScript() {
@@ -520,22 +527,22 @@ function learnJavaScript() {
 }
 ```
 
-The arrow functions are convenient and very compact!
+¡Las `"funciones de flecha"` son prácticas y muy compactas!
 
-## Self-Executing Functions (IIFE)
+## Funciones autoejecutables(IIFE)
 
 ![Start](https://media.giphy.com/media/xTiTnmeJ1bBGONMCBy/giphy.gif)
 
-`Immediately Invoked Function Expression` is a JavaScript function that is executed immediately after it has been defined. JavaScript allows you to create, in addition to ordinary and arrow functions, also anonymous functions⚙️ that play an important role in JavaScript.
+Una 'Expresión de función invocada inmediatamente' es una función de JavaScript que se ejecuta inmediatamente después de haber sido definida. JavaScript le permite crear, además de funciones ordinarias y de flecha, también funciones anónimas⚙️ que juegan un papel importante en JavaScript.
 
-### Anonymous functions
+### Funciones anónimas
 
 ![Anonym](https://media.giphy.com/media/m3lszq64i1k2s/giphy.gif)
 
-If after `function` there is a name - the function⚙️ is named, otherwise anonymous.
-Anonymous functions⚙️ are often created and run immediately. Another important difference is that named functions are⚙️ declared🗣️ and anonymous functions are created using the function statement.
+Si hay un nombre después de `función`, se nombra la función⚙️, en todos los demás casos es anónima.
+Las funciones anónimas⚙️ a menudo se crean y ejecutan de inmediato. Otra diferencia importante es que las funciones con nombre⚙️ se declaran🗣️, mientras que las anónimas se crean utilizando la declaración de función.
 
-Type the following code in the Google Chrome console:
+Escribe el siguiente código en la consola de Google Chrome:
 
 ```
 (function (num1, num2) {
@@ -543,117 +550,196 @@ Type the following code in the Google Chrome console:
 })(7, 4)
 ```
 
-Self-invocation is created by parentheses at the end of a function⚙️ that tell the interpreter to run that function⚙️ immediately.
+Una autoinvocación se crea mediante paréntesis al final de una función⚙️ que le dice al intérprete que la función⚙️ debe ejecutarse de inmediato.
 
-## Conclusion
+## Conclusión
 
 ![conclusion](https://media.giphy.com/media/8Bksh0hra9RcZcSNSO/giphy.gif)
 
-By understanding arrow and normal functions⚙️, you can pass functions to variable objects🔔 and rebuild your code📟 in modules. Functions of this kind can also be used to create and return🔄 other functions⚙️. Here we are already talking about closure, which we will talk about in the next series.
+Una vez que comprenda la esencia de las funciones regulares y de flecha⚙️, podrá pasar funciones a objetos variables 🔔 y reconstruir código 📟 en módulos. Las funciones de este tipo también se pueden usar para crear y devolver 🔄 otras funciones ⚙️. Aquí ya estamos hablando del cierre, del que hablaremos en la próxima serie.
 
-## Problems?
+## Reaccionar nativo
+
+Los componentes de React Native son los componentes básicos de la biblioteca `react-native`, a partir de la cual creamos interfaces para aplicaciones. Conceptualmente, los componentes son similares a las funciones de JavaScript.
+La forma más fácil de declarar un componente es escribir una función de JavaScript. ¿Recuerdas el ejemplo de la primera serie `Hello world`?
+
+```SnackPlayer name=index.js
+import * as React from 'react'
+import { Text } from 'react-native'
+
+const App = () => (
+  <Text>Hello world!</Text>
+)
+
+export default App
+```
+
+Compliquemos el ejemplo y creemos un botón, haciendo clic en el cual llamará a la función `onPress`, donde puede implementar la funcionalidad que necesita.
+
+```SnackPlayer name=index.js
+import React from 'react'
+import { Button } from 'react-native'
+
+const App = (props) => {
+  const onPress = () => console.log('click')
+
+  return (
+    <Button title="Press me" onPress={onPress} />
+  )
+}
+
+export default App
+```
+
+
+## ¿Problemas?
 
 ![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
 
-Write to [Discord](https://discord.gg/6GDAfXn) chat.
+Escribe en [Discord](https://discord.gg/6GDAfXn) o Telegram [chat](https://t.me/jscampapp) y suscríbete a nuestras [noticias](https://t.me/javascriptapp)
 
-## Questions:
+![JavaScript Camp](/img/bandlink.png)
 
-![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
+## Preguntas
 
-How is a function declared?
+![question](https://media.giphy.com/media/Uq4ucFb5FLDStK6CUk/giphy.gif)
 
-1. function name (parameters, separated by commas) {
-   // body, function code
-   }
-2. procedure name (parameters) {
-   // body, function code
-   }
-3. let name (s) {}
-
-Exit or return point of result in function?
+¿Punto de salida o retorno en una función?
 
 1. `Esc`
 2. `return`
 3. `Hello`
 
-The `return` keyword inside the function body:
+Palabra clave `return` dentro del cuerpo de la función \_\_\_
 
-1. mandatory
-2. optional
-3. differently
+1. requerido
+2. opcional
+3. de manera diferente
 
-The function is given
+Dada una función
 
 ```javascript
-function addThree(x) {
-  return x + 3
-}
+const addThree = x => x + 3
 
 addThree(20)
 ```
 
-Define a formal parameter:
+Defina un parámetro formal:
 
 1. `20`
 2. `x`
 3. `x + 3`
 
-The function is given
+Dada una función
 
 ```javascript
-function addThree(x) {
-  return x + 3
-}
+const addThree = x => x + 3
 
 addThree(20)
 ```
 
-Define an argument:
+Defina un argumento:
 
 1. `20`
 2. `x`
 3. `x + 3`
 
-Where is the built-in function?
+¿Para quién contiene información el comando `console.log`?
+
+1. Usuario
+2. Desarrollador
+3. Intérprete de JavaScript
+
+¿Dónde está la función incorporada?
 
 1. `console.log()`
 2. `myMessage()`
-3. `return ()`
+3. `return()`
 
-What syntax do arrow functions use?
+¿Qué sintaxis usan las funciones de flecha?
 
-1. `Forward()`
+1. `Вперед()`
 2. `=>`
-3. `go.Arrow`
+3. `go.Стрелка`
 
-Using arrow functions allows?
+El uso de funciones de flecha permite?
 
-1. Write code more compact and safer
-2. Increases the structure of the code
-3. Allows using new variables
+1. Escriba código de forma más compacta y segura
+2. Aumenta la estructura del código
+3. Te permite usar nuevas variables
 
-A self-executing function is
+Una función autoejecutable es
 
-1. A function that is executed immediately after it has been defined
-2. Built-in function in JavaScript
-3. This is a common procedure that performs a sequence of commands
+1. Una función que se ejecuta inmediatamente después de haber sido definida
+2. Función integrada en JavaScript
+3. Este es un procedimiento ordinario que ejecuta una secuencia de comandos
 
-In order to understand how much you learned this lesson, take the test on the [mobile application](http://onelink.to/njhc95) of our school on this topic.
+¿Qué símbolos rodean el cuerpo de la función?
 
-![Sumerian school](/img/app.jpg)
+1. Corchetes `{y}`
+2. `()`
+3. `=>`
 
-## Links
+¿Qué acrónimo se utiliza para describir la intención de los buenos desarrolladores de evitar repetir bloques de código similares una y otra vez?
+
+1. D.R.Y. (No te repitas - No te repitas)
+2. R.Y. (Repítete a ti mismo - Repítete a ti mismo)
+
+Si se pasan múltiples valores a una función, ¿qué carácter se usa para separarlos?
+
+1. `,`
+2. `.`
+3. `/`
+
+¿Qué función incorporada es buena para enviar mensajes secretos a los desarrolladores (oa usted mismo mientras depura su propio sitio web) que los usuarios probablemente no verán?
+
+1. `console.log()`
+2. `Math.floor()`
+3. `Math.random()`
+
+La función de aleatorización integrada devuelve un valor mayor que \_\_\_\_ pero menor que \_\_\_\_.
+
+1. `0 и 100(Math.random())`
+2. `0 и 1(Math.random())`
+3. `1 и 0(Math.random())`
+
+¿Qué función incorporada redondea cualquier número al entero más cercano?
+
+1. `Math.floor()`
+2. `Math.max()`
+3. `Math.random()`
+
+Una función puede estar envuelta en otra función.
+
+1. `false`
+2. `true`
+
+Al evaluar las llamadas a funciones anidadas, el intérprete las evaluará internamente.
+
+1. `false`
+2. `true`
+
+¿Qué método (función) puede usar para convertir una cadena para usar letras mayúsculas?
+
+1. `toUpperCase()`
+2. `toLowerCase()`
+3. `Math.max()`
+
+Para comprender cuánto ha aprendido esta lección, realice una prueba en la [aplicación móvil](http://onelink.to/njhc95) de nuestra escuela sobre este tema o en nuestro [bot de Telegram](https://t.me/javascriptcamp_bot).
+
+![JS Camp](/img/app.jpg)
+
+## Enlaces:
 
 1. [MDN web docs - Function](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Function)
-2. [Learn.javascript.ru - Статья "Функции"](https://learn.javascript.ru/function-basics)
-3. [Learn.javascript.ru - Статья "Функции-стрелки"](https://learn.javascript.ru/arrow-functions-basics)
-4. [Анонимные и самовыполняющиеся функции в JavaScript](https://webformyself.com/anonimnye-i-samovypolnyayushhiesya-funkcii-v-javascript/)
-5. [Developer.mozilla.org - Статья "Math"](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Math)
-6. [Developer.mozilla.org - Статья "Стрелочные функции"](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
-7. [Basicweb.ru - Статья "JavaScript функции"](https://basicweb.ru/javascript/js_function.php)
-8. [Javascript.ru - Статья "Функции"](https://javascript.ru/basic/functions)
-9. [Code for Teens: The Perfect Beginner's Guide to Programming, Volume 1: Javascript - Jeremy Moritz](https://www.amazon.com/Code-Teens-Beginners-Programming-Javascript-ebook/dp/B07FCTLVPC)
+2. [Learn.javascript.ru - Artículo "Funciones"](https://learn.javascript.ru/function-basics)
+3. [Learn.javascript.ru - Artículo "Funciones de flecha"](https://learn.javascript.ru/arrow-functions-basics)
+4. [Funciones anónimas y autoejecutables en JavaScript](https://webformyself.com/anonimnye-i-samovypolnyayushhiesya-funkcii-v-javascript/)
+5. [Developer.mozilla.org - Artículo "Math"](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Math)
+6. [Developer.mozilla.org - Artículo de funciones de flecha](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
+7. [Basicweb.ru - Artículo "Funciones de JavaScript"](https://basicweb.ru/javascript/js_function.php)
+8. [Javascript.ru - Artículo "Funciones"](https://javascript.ru/basic/functions)
+9. [Código para adolescentes: la gran guía de programación para principiantes Volumen 1: Javascript - Jeremy Moritz](https://www.amazon.com/Code-Teens-Beginners-Programming-Javascript-ebook/dp/B07FCTLVPC)
 
 ## Contributors ✨
 
@@ -669,7 +755,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/Resoner2005"><img src="https://avatars1.githubusercontent.com/u/75675814?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Resoner2005</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/issues?q=author%3AResoner2005" title="Bug reports">🐛 🎨 🖋</a></td>
     <td align="center"><a href="https://github.com/Navernoss"><img src="https://avatars0.githubusercontent.com/u/75784137?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Navernoss</b></sub></a><br /><a href="#content-Navernoss" title="Content">🖋 🐛 🎨 </a></td>
   </tr>
-
+  
 </table>
 
 <!-- markdownlint-restore -->
@@ -678,7 +764,3 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 [![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
-
-```
-
-```

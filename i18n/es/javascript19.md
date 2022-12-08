@@ -1,50 +1,55 @@
 ---
 id: javascript19
-title: Array iteration methods(map, filter, reduce)
-sidebar_label: map, filter, reduce
+title: Métodos de iteración de matriz (map, filter, reduce)
+sidebar_label: Métodos de iteración de matriz (map, filter, reduce)
 ---
+
+import YouTube from 'react-youtube'
 
 ![@serverSerrverlesskiy](/img/javascript/headers/22.jpg)
 
-The JavaScript language has a clear preference for arrays over other data structures. They have a lot of convenient specific tricks, for example, a whole set of iterating methods: `map`,` filter`, `reduce`.
+El lenguaje JavaScript tiene una clara preferencia por las matrices sobre otras estructuras de datos. Tienen muchas características específicas convenientes, por ejemplo, un conjunto completo de métodos de iteración: `map`, `filter`, `reduce`.
 
 ## map
 
 ![Create](https://media.giphy.com/media/ffd0F6WNcRJMQ/giphy.gif)
 
-The `map ()` method creates🏗️ a new с array with the result of calling the specified function⚙️ for each element of the array.
+El método `map()` crea🏗️ una nueva🆕 matriz con el resultado de llamar a la función especificada⚙️ para cada elemento de la matriz.
 
-### Syntax
+## Video
+
+<YouTube videoId="lEBJ5bqRrg8" />
+
+### Sintaxis
 
 ![Book](https://media.giphy.com/media/s6OiiampNcye4/giphy.gif)
 
 ```javascript
 let new_array = arr.map(function callback( currentValue[, index[, array]]) {
-    // Returns the item for new_array
+    // Devuelve el elemento para new_array
 }[, thisArg])
 ```
+El método `map` llama a la función `callback` pasada ⚙️ una vez para cada elemento, en el orden en que aparecen, y construye 🆕 una nueva matriz a partir de los resultados de su llamada. La función ⚙️ `callback` solo se llama para índices de matriz que tienen valores asignados, incluido `undefined`. No se llama para elementos de matriz faltantes (es decir, índices que nunca se establecieron, eliminaron o nunca se les asignó un valor).
 
-The `map` method calls the passed `callback` function once for each element, in the order of their occurrence, and constructs a new array from the results of its call. The `callback` function is called only for array indices that have assigned values, including `undefined`. It is not called for missing array elements (that is, for indices that were never specified, deleted, or never assigned a value).
+La función ⚙️ `callback` se llama con tres argumentos:
 
-The function⚙️ `callback` is called with three arguments:
+- valor del elemento,
+- índice de elementos
+- y la matriz a través de la cual se realiza el paso.
 
-- the value of the element,
-- element index
-- and the array through which the passage is carried out.
+Si el parámetro `thisArg` se pasó al método `map`, se usará como el valor de `this` al llamar a `callback`. De lo contrario, `undefined` se usará como el valor de `this`. En última instancia, el valor de `this` visto desde la función `callback`⚙️ se determina de acuerdo con las reglas habituales para definir `this` visto desde la función⚙️.
 
-If the `thisArg` parameter was passed to the `map` method, it will be used as the `this` value when `callback` is called. Otherwise, the `this` value will be `undefined`. Ultimately, the value of `this` as seen from the `callback` function is determined according to the usual rules for defining `this` as seen from a function.
+El método `map` no cambia la matriz a la que se llamó (¡aunque la función ⚙️ puede hacerlo!).
 
-The `map` method does not modify the array for which it was called (although the function⚙️ can do that!).
+El rango de elementos procesados ​​por el método `map` se establece antes de la primera llamada a la función ⚙️ `devolución de llamada`. Los elementos agregados a la matriz después de que el método `map` haya comenzado a ejecutarse no serán visitados por la función ⚙️ `callback`. Si los elementos de matriz existentes son modificados por la función ⚙️ `callback`, sus valores pasados ​​a la función⚙️ serán los valores en el momento en que el método `map` los visite. Los elementos eliminados no serán visitados.
 
-The range of elements processed by the `map` method is set before the first call to the `callback` function. Items added to the array after the start of the `map` method will not be visited by the `callback` function. If the existing elements of the array are modified by the `callback` function, their values ​​passed to the function will be the values ​​at the time when the `map` method visits them. Deleted items will not be visited.
-
-### Examples:
+### Ejemplos:
 
 ![Math](https://media.giphy.com/media/xT1Ra5h24Eliux3UVq/giphy.gif)
 
-#### simple example
+#### ejemplo sencillo
 
-You have an array with many objects, each representing a different person👨. There can be a lot of data here: name, age, hair color and favorite character from the cinema, but at the moment all this is not required - you only want to get an array of passport numbers of these people in order to give them all conference passes.
+Tienes una matriz con muchos objetos, cada uno representando a una persona diferente👨. Puede haber una gran cantidad de datos aquí: nombre, edad, color de cabello y personaje de película favorito, pero por el momento todo esto no es obligatorio; solo desea obtener una serie de números de pasaporte de estas personas para darles una conferencia. pasa
 
 ```jsx live
 function learnJavaScript() {
@@ -61,7 +66,7 @@ function learnJavaScript() {
 }
 ```
 
-#### In certain cases, you may need to display an array of objects with the selected keys as a string 👇:
+#### En ciertos casos, es posible que deba mostrar una matriz de objetos con teclas seleccionadas como una cadena 👇:
 
 ```jsx live
 function learnJavaScript() {
@@ -78,11 +83,11 @@ function learnJavaScript() {
 }
 ```
 
-#### Creating an array of Fahrenheit values from an array of Celsius values:
+#### Crear una matriz de valores Fahrenheit a partir de una matriz de valores Celsius:
 
 ![Thermometer](https://media.giphy.com/media/W23dJLsAW5knUU27Fv/giphy.gif)
 
-An example with processing each element of an array with a given formula 👇:
+Un ejemplo con el procesamiento de cada elemento de la matriz con una fórmula dada 👇:
 
 ```jsx live
 function learnJavaScript() {
@@ -107,7 +112,7 @@ function learnJavaScript() {
 }
 ``` -->
 
-#### Displaying an array of numbers using a function that takes an argument 👇:
+#### Mostrando una matriz de números usando una función que contiene un argumento 👇:
 
 ```jsx live
 function learnJavaScript() {
@@ -155,11 +160,11 @@ function learnJavaScript() {
 
 ![filter](https://media.giphy.com/media/xT5LMGupUKCHb7DnFu/giphy.gif)
 
-The `filter ()` method creates 🆕 a new array with all the elements that have passed the check specified in the passed function⚙️.
+El método `filter()` crea 🆕 una nueva matriz con todos los elementos que pasan la prueba especificada en la función pasada⚙️.
 
-The result of a filter is always an array. If a function⚙️ for an element returns🔄 `true` ✅ (or any" true "value), this element is included in the result, otherwise it is not included.
+El resultado de `filter` es siempre una matriz. Si la función ⚙️ para un elemento devuelve 🔄 `true` ✅ (o cualquier valor "verdadero"), ese elemento se incluye en el resultado; de lo contrario, no.
 
-### Syntax
+### Sintaxis
 
 ![write](https://media.giphy.com/media/6Do13TV1OfOF2/giphy.gif)
 
@@ -167,31 +172,31 @@ The result of a filter is always an array. If a function⚙️ for an element re
 let newArray = arr.filter(function callback(element[, index, [array]])[, thisArg])
 ```
 
-### Description
+### Descripción
 
 ![m](https://media.giphy.com/media/DQaeCdCqhHWx3n4dvH/giphy.gif)
 
-The `filter()` method calls the passed `callback` function once for each element present in the array and constructs a new array with all values ​​for which the `callback` function returned `true` or a value that becomes `true` ✅ when cast to `boolean`. The `callback` function is called only for array indices that have assigned values; it is not called for indexes that have been dropped or have never been assigned values. Array elements that have not been checked by the `callback` function are simply skipped and not included in the 🆕 new array.
+El método `filter()` llama a la función pasada⚙️ `callback` una vez por cada elemento presente en la matriz y construye una nueva matriz con todos los valores para los que la⚙️ función `callback` devolvió `true` ✅ o un valor que se convierte en `true` ✅ cuando se convierte en `boolean`. La función ⚙️ `callback` se llama solo para índices de matriz que tienen valores asignados; no se llama para índices que se han descartado o nunca se les ha asignado un valor. Los elementos de la matriz que fallan en la función ⚙️ `callback` simplemente se omiten y no se incluyen en la 🆕 nueva matriz.
 
-The function⚙️ `callback` is called with three arguments:
+La función ⚙️ `callback` se llama con tres argumentos:
 
-- the value of the element;
-- element index;
-- the array through which the passage is carried out.
+- valor del elemento;
+- índice de elementos;
+- la matriz a través de la cual se realiza el paso.
 
-If the `thisArg` parameter was passed to the `filter()` method, it will be used as the `this` value when the function is called. Otherwise, the `this` value will be `undefined`. Ultimately, the value of `this` as seen from a function⚙️ is determined according to the usual rules for defining `this` as seen from a function⚙️.
+Si se pasó un parámetro `thisArg` al método `filter()`, se usará como el valor de `this` al llamar a la función⚙️. De lo contrario, `undefined` se usará como el valor de `this`. En última instancia, el valor de `this` visto desde una función⚙️ se determina de acuerdo con las reglas habituales para definir `this` visto desde una función⚙️.
 
-The `filter()` method does not modify the array on which it was called.
+El método `filter()` no cambia la matriz a la que fue llamado.
 
-The range of elements processed by the `filter()` method is set before the first call to the `callback` function. Items added to the array after the start of the `filter()` method will not be visited by the `callback` function. If the existing array elements change, the values ​​passed to the `callback` function will be the values ​​at the time when the`filter()`method visits them. Deleted items will not be visited.
+El rango de elementos procesados ​​por el método `filter()` se establece antes de la primera llamada a la función ⚙️ `callback`. Los elementos agregados a la matriz después de que el método `filter()` haya comenzado a ejecutarse no serán visitados por la función ⚙️ `callback`. Si los elementos existentes de la matriz cambian, los valores pasados ​​a la función ⚙️ `callback` serán los valores en el momento en que el método `filter()` los visite. Los elementos eliminados no serán visitados.
 
-### Example
+### Ejemplo
 
 ![math](https://media.giphy.com/media/3orieN7HEHI0tw8x5C/giphy.gif)
 
-#### Filtering out all small values
+#### Filtrado de todos los valores pequeños
 
-The following example uses `filter()` to create a filtered array with all elements greater than or equal to `value`, and all elements less than `value` removed.
+El siguiente ejemplo usa `filter()` para crear una matriz filtrada 🏗️ con todos los elementos mayores o iguales a `value` y todos los menores que `value` eliminados.
 
 ```jsx live
 function learnJavaScript() {
@@ -209,47 +214,47 @@ function learnJavaScript() {
 
 ![count](https://media.giphy.com/media/xUPGcqaVH1cDeKZTBS/giphy.gif)
 
-The reduce method also runs in the context of an array and calls a function⚙️ for each element, but it also accumulates the results of all calls into a single value. This behavior can be controlled.
+El método `reduce` también se ejecuta en el contexto de una matriz y llama a la función ⚙️ para cada elemento, pero además, acumula los resultados de todas las llamadas en un solo valor. Este comportamiento se puede controlar.
 
-reduce is not meant to modify the elements of a collection like map. Its task is to calculate the "sum" of all elements in one way or another, and return it.
+`reduce` no pretende cambiar los elementos de una colección como lo hace `map`. Su tarea es calcular la "suma" de todos los elementos de una forma u otra y devolverla.
 
-The resulting value can be anything: a number, a string, an object, an array - it all depends on the problem that the JavaScript developer is solving.
+El valor resultante puede ser cualquier cosa: un número, una cadena, un objeto, una matriz; todo depende de la tarea que esté resolviendo el desarrollador de JavaScript.
 
-The reduce method takes 2 parameters:
+El método `reduce` toma 2 parámetros:
 
-- a function, like `map`, which will be called sequentially for each element of the collection;
-  is the initial value of the accumulator.
+- una función, como `map`, que se llamará secuencialmente para cada elemento de la colección;
+- el valor inicial del acumulador.
 
-The function⚙️ also has 2 arguments:
+La función ⚙️ también tiene 2 argumentos:
 
-- the first is the accumulated value (accumulator);
-- directly an element of the array.
+- el primero es el valor acumulado (acumulador);
+- elemento de matriz directamente.
 
-### Syntax
+### Sintaxis
 
 ```javascript
 array.reduce(function callback[, initialValue])
 ```
 
-### Description
+### Descripción
 
-![describe](https://media.giphy.com/media/3orieVr84udUl4wbQs/giphy.gif)
+![describir](https://media.giphy.com/media/3orieVr84udUl4wbQs/giphy.gif)
 
-The reduce () method executes the callback function once for each element in the array, excluding voids, taking four arguments: the initial value (or the value from a previous callback), the value of the current element, the current index, and the array to iterate over.
+El método `reduce()` ejecuta la función ⚙️ `callback` una vez para cada elemento presente en el arreglo, excepto los vacíos, tomando cuatro argumentos: el valor inicial (o el valor de la anterior llamada `callback`), el valor de el elemento actual, el índice actual y la matriz para iterar.
 
-The first time the function is called⚙️, the accumulator and currentValue parameters can take one of two values. If the `initialValue` argument is passed in the call to reduce (), then the value of `accumulator` will be equal to the value of `initialValue` and the value of `currentValue` will be equal to the first value in the array. If no initialValue is specified, accumulator will be equal to the first value in the array, and currentValue will be equal to the second value in the array.
+Cuando se llama a la función por primera vez⚙️, los parámetros `accumulator` y `currentValue` pueden tomar uno de dos valores. Si se pasa el argumento `valorinicial` al llamar a `reduce()`, entonces el valor de `accumulator` será igual al valor de `initialValue`, y el valor de `currentValue` será igual al primer valor en el formación. Si no se proporciona el argumento `initialValue`, entonces el valor de `acumulador` será igual al primer valor de la matriz, y el valor de `currentValue` será igual al segundo valor de la matriz.
 
-If the array is empty and no `initialValue` argument is specified, a `TypeError` exception will be thrown. If the array consists of only one element (regardless of its position in the array) and the `initialValue` argument is not specified, or if the `initialValue` argument is specified, but the array is empty, then this value will be returned, without calling the function⚙️ `callback` ...
+Si la matriz está vacía y no se proporciona ningún argumento `initialValue`, se lanzará una excepción `TypeError`. Si la matriz consta de un solo elemento (independientemente de su posición en la matriz) y no se especifica el argumento `initialValue`, o si se especifica el argumento `initialValue`, pero la matriz está vacía, entonces se devolverá este valor🔄 sin llamar a la función⚙️ `callback`.
 
-### Initial battery value
+### Valor inicial del acumulador
 
 ![hatchng](https://media.giphy.com/media/xT1R9Qy80qNb8oQGGc/giphy.gif)
 
-Let's figure out the initial value. In the example, it is equal to `0`, since we are calculating the numerical value - the sum of the ages. In place of zero, there can be any other number / string (empty or not) / object / array - whatever value you start accumulating from. For example, let's combine the names of all friends in one line 👇:
+Echemos un vistazo al valor inicial. En el ejemplo, es igual a `0`, ya que estamos contando un valor numérico: la suma de las edades. En lugar de cero, puede haber cualquier otro número/cadena (vacía o no)/objeto/matriz: cualquier valor desde el que comience la acumulación. Por ejemplo, combinemos los nombres de todos los amigos en una línea 👇:
 
 ```jsx live
 function learnJavaScript() {
-  const friends = [
+  const Amigos = [
     { passport: '03005988', name: 'Joseph Francis Tribbiani Jr', age: 32, sex: 'm' },
     { passport: '03005989', name: 'Chandler Muriel Bing', age: 33, sex: 'm' },
     { passport: '03005990', name: 'Ross Eustace Geller', age: 33, sex: 'm' },
@@ -264,13 +269,13 @@ function learnJavaScript() {
 }
 ```
 
-Here, the initial value was the string `" Friends: "`, to which the names of all friends were gradually added.
+Aquí, el valor inicial fue la cadena `"Amigos:"`, a la que se agregaron gradualmente los nombres de todos los amigos.
 
-If you do not specify the original value explicitly, the first 1️⃣ element of the array becomes implicitly. In this case, the function⚙️ for it is no longer called.
+Si no especifica explícitamente un valor de origen, implícitamente se convierte en el primer elemento 1️⃣ de la matriz. En este caso, ya no se llama a la función ⚙️.
 
-### Example
+### Ejemplo
 
-#### Sum all values in an array:
+#### Suma de todos los valores en una matriz:
 
 ```jsx live
 function learnJavaScript() {
@@ -284,7 +289,7 @@ function learnJavaScript() {
 }
 ```
 
-And the same thing in one line of code:
+Y lo mismo en una línea de código:
 
 ```jsx live
 function learnJavaScript() {
@@ -334,11 +339,11 @@ function learnJavaScript() {
 
 ![unity](https://media.giphy.com/media/jTf2Io0LtBXGZddOVE/giphy.gif)
 
-JavaScript programming supports the convenient `chaining` pattern - combining multiple functions⚙️ into one chain with sequential transmission of the result.
+La programación de JavaScript admite un patrón conveniente de "encadenamiento": combina varias funciones ⚙️ en una cadena con transferencia secuencial del resultado.
 
-All three parsed methods are called in the context of an array, and two 2️⃣ of them also return an array. Thus, it is very easy to combine them.
+Los tres métodos analizados se llaman en el contexto de una matriz, y dos 2️⃣ de ellos también devuelven una matriz. Por lo tanto, son muy fáciles de combinar.
 
-For example, let's calculate the total age of all boys 👇:
+Por ejemplo, calculemos la edad total de todos los niños 👇:
 
 ```jsx live
 function learnJavaScript() {
@@ -357,7 +362,7 @@ function learnJavaScript() {
 }
 ```
 
-Or we can collect the girls' passport numbers to buy them plane tickets to Las Vegas 👇:
+O recopilemos los números de pasaporte de las niñas para comprarles boletos de avión a Las Vegas 👇:
 
 ```jsx live
 function learnJavaScript() {
@@ -374,70 +379,66 @@ function learnJavaScript() {
 }
 ```
 
-## Conclusion
+## Conclusión
 
-With these great features⚙️ the code📟 becomes easier to read. So, below is a list of articles that go into more detail on this topic.
+Con el uso de estas maravillosas funciones⚙️ el código📟 se ha vuelto más legible. Entonces, a continuación hay una lista de artículos que cubren este tema con más detalle.
 
-## Problems?
+## ¿Problemas?
 
 ![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
 
-Write to [Discord](https://discord.gg/6GDAfXn) chat.
+Escribe en [Discord](https://discord.gg/6GDAfXn) o Telegram [chat](https://t.me/jscampapp) y suscríbete a nuestras [noticias](https://t.me/javascriptapp)
 
-## Questions:
+![JavaScript Camp](/img/bandlink.png)
 
-![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
+## Preguntas:
 
-A function to be called for each element of an array?
+![Pregunta](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
+
+¿Función llamada para cada elemento de la matriz?
 
 1. `currentValue`
 2. `array`
 3. `callback`
 
-A method that creates a new array with the result of calling the specified function for each element of the array:
+Un método que crea🏗️ una nueva matriz con el resultado de llamar a la función especificada para cada elemento de la matriz:
 
 1. `map`
 2. `filter`
 3. `reduce`
 
-The resulting value of the reduce method can be:
+El valor del resultado del método `reduce` puede ser:
 
-1. Number
-2. Array
-3. Anything
+1. Número
+2. matriz
+3. Cualquier cosa
 
-Summing all values ​​in an array is achieved by the method:
-
-1. `map`
-2. `filter`
-3. `reduce`
-
-Optional parameter or value used as `this` when calling the `callback` function:
-
-1. `array`
-2. `index`
-3. `thisArg`
-
-A method that creates a new array with all the elements that passed the validation specified in the passed function:
+La suma de todos los valores en una matriz se logra mediante el método:
 
 1. `map`
 2. `filter`
 3. `reduce`
 
-Combining several functions into one chain with sequential transfer of the result:
+Un método que crea🏗️ una nueva matriz con todos los elementos que pasaron la prueba especificada en la función aprobada:
+
+1. `map`
+2. `filter`
+3. `reduce`
+
+Combinación de varias funciones en una cadena con transferencia secuencial del resultado:
 
 1. unity
 2. chaining
 3. merger
 
-In order to understand how much you learned this lesson, take the test on the [mobile application](http://onelink.to/njhc95) of our school on this topic.
+Para comprender cuánto ha aprendido esta lección, realice una prueba en la [aplicación móvil](http://onelink.to/njhc95) de nuestra escuela sobre este tema o en nuestro [bot de Telegram](https://t.me/javascriptcamp_bot).
 
-![Sumerian school](/img/app.jpg)
+![JS Camp](/img/app.jpg)
 
-## Links
+## Enlaces:
 
-1. [Simplify your JavaScript - use map, reduce and filter](https://proglib.io/p/javascript-map-reduce-filter)
-2. [15 useful javascript examples of map, reduce and filter](https://webdevblog.ru/15-poleznyh-javascript-primerov-map-reduce-i-filter)
+1. [Simplifique su JavaScript: use mapa, reduzca y filtre](https://proglib.io/p/javascript-map-reduce-filter)
+2. [15 ejemplos útiles de javascript de map(), reduce() y filter()](https://webdevblog.ru/15-poleznyh-javascript-primerov-map-reduce-i-filter)
 3. [Array.prototype.map()](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
 4. [Array.prototype.filter()](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
 5. [Array.prototype.reduce()](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)

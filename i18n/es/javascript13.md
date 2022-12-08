@@ -1,43 +1,49 @@
 ---
 id: javascript13
-title: Default parameters
-sidebar_label: Default parameters
+title: Opciones predeterminadas
+sidebar_label: Opciones predeterminadas
 ---
+
+import YouTube from 'react-youtube'
 
 ![@serverSerrverlesskiy](/img/javascript/headers/25.jpg)
 
-Default parameters allow you to set default values for function parameters if the function is called without arguments, or if the parameter is explicitly passed the value `undefined`.
+Los parámetros predeterminados permiten que los parámetros de la función⚙️ se establezcan en valores predeterminados si la función⚙️ se llama sin argumentos, o si al parámetro se le pasa explícitamente el valor `undefined`.
 
 ![Teacher](https://media.giphy.com/media/3ohc10nduj1irsuzgA/giphy.gif)
 
-In JavaScript, function parameters⚙️ that are not passed values when called are defaulted to `undefined`. However, in some cases it may be useful to set a different default value. This is where the default options are intended.
+En JavaScript, los parámetros de función⚙️ a los que no se les pasa un valor cuando se les llama, por defecto son `undefined`. Sin embargo, en algunos casos puede ser útil establecer un valor predeterminado diferente. Esto es exactamente para lo que son los ajustes predeterminados.
 
-## Syntax
+## Sintaxis
 
 ![book](https://media.giphy.com/media/l0HlOBZcl7sbV6LnO/giphy.gif)
 
 ```jsx live
 function learnJavaScript() {
   const multiply = (a, b = 1) => {
-    // The default value b is 1
+    // El valor predeterminado de b es 1
     return a * b
   }
-  // If b is undefined, then it will be assigned a default value
-  return multiply(5, 2) // remove the comma, second argument and get 5 + 1
+  // Si b no está definido, se le asignará un valor predeterminado.
+  return multiply(5, 2) // elimine la coma, el segundo argumento y obtenga 5 * 1
 }
 ```
 
-### Passing other "false" values
+## Video
+
+<VideoId de YouTube="J89Qcz0cunw" />
+
+### Pasar otros valores "falsos"
 
 ![basketball](https://media.giphy.com/media/3oEdv5e5Zd2gsczAhG/giphy.gif)
 
-If any value other than `undefined` is passed to the formal parameter during the call, including one of the" false "values such as false ❎,` 0`, `" "`, `''`, `null`,`NaN`, then in this case the default value will not be assigned to the parameter. In this case, you need to write the code yourself that will catch these "false values".
+Si se pasa cualquier valor que no sea `undefined` al parámetro formal cuando se llama, incluido uno de los valores "falsos" como false ❎ , `0`, `""`, `''`, `null`, `NaN `, en este caso, el valor predeterminado no se asignará al parámetro. En este caso, debe escribir 🖊️ el código usted mismo que detectará estos "valores falsos".
 
-## Examples of
+## Ejemplos
 
 ![Math](https://media.giphy.com/media/xT1Ra5h24Eliux3UVq/giphy.gif)
 
-In the default parameters, you can use the values of the previous (located to the left in the list) parameters:
+En los parámetros predeterminados, puede usar los valores de los parámetros anteriores (ubicados a la izquierda en la lista):
 
 ```jsx live
 function learnJavaScript() {
@@ -49,16 +55,16 @@ function learnJavaScript() {
 }
 ```
 
-An example of a function with and without default parameters 👇:
+Un ejemplo de una función con y sin parámetros predeterminados 👇:
 
 ```jsx live
 function learnJavaScript() {
   const withDefaults = (a = 1, b = 3, c = 2) => {
-    // Function with default parameters
+    // Función con parámetros por defecto
     return [a, b, c]
   }
   const withoutDefaults = (a, b, c) => {
-    // Function without default parameters
+    // Función sin parámetros predeterminados
     if (a == undefined) {
       a = 1
     }
@@ -75,41 +81,68 @@ function learnJavaScript() {
 }
 ```
 
-The result will be the same, but without default parameters, the code📟 can become noticeably larger.
+Результат будет тот же, но без параметров по умолчанию код📟 может стать заметно больше.
 
-## Problems?
+## React Native
 
-![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
+Большинство компонентов можно настроить при их создании с различными параметрами. Эти параметры создания называются - `props`. Обратите внимание на то, что в третий компонент `HelloWorld` мы не передаем `name` поэтому распечатывается имя `john`
 
-Write to [Discord](https://discord.gg/6GDAfXn) chat.
+```SnackPlayer name=index.js
+import * as React from 'react'
+import { Text } from 'react-native'
 
-## Questions:
+const HelloWorld = ({ name = 'Вася' }) => (
+  <Text>Hello {name}!</Text>
+)
 
-![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
+const App = () => (
+  <>
+    <HelloWorld name='Luk' />
+    <HelloWorld name='John' />
+    <HelloWorld /> 
+  </>
+)
 
-If no value is passed to function parameters⚙️, what is their default value?
+export default App
+```
+
+El uso de `name` como `props` nos permite personalizar el componente de saludo para que podamos reutilizar ese componente para cada uno de nuestros saludos. Este ejemplo también usa el componente `HelloWorld` en JSX. La capacidad de hacer esto es lo que hace que React sea tan genial.
+
+## ¿Problemas?
+
+![Problema](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
+
+Escribe en [Discord](https://discord.gg/6GDAfXn) o Telegram [chat](https://t.me/jscampapp) y suscríbete a nuestras [noticias](https://t.me/javascriptapp)
+
+![Campamento JavaScript](/img/bandlink.png)
+
+## Preguntas:
+
+![Pregunta](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
+
+Si no se pasa ningún valor a los parámetros de la función⚙️, ¿qué valor toman por defecto?
 
 1. `null`
 2. `undefined`
 3. `NaN`
 
-Are the default parameters "catching" false values?
+¿Los parámetros predeterminados "capturan" valores falsos?
 
-1. Yes
-2. No
+1. `true`
+2. `false`
 
-Is it possible to use the values of the parameters located to the left of the list in the default parameters?
+¿Es posible utilizar los valores de los parámetros ubicados a la izquierda en la lista en los parámetros predeterminados?
 
-1. Yes
-2. No
+1. `true`
+2. `false`
 
-In order to understand how much you learned this lesson, take the test on the [mobile application](http://onelink.to/njhc95) of our school on this topic.
+Para comprender cuánto ha aprendido esta lección, realice una prueba en la [aplicación móvil](http://onelink.to/njhc95) de nuestra escuela sobre este tema o en nuestro [bot de Telegram](https://t.me/javascriptcamp_bot).
 
-![Sumerian school](/img/app.jpg)
+![JS Camp](/img/app.jpg)
 
-## Links
+## Enlaces:
 
-1.  [MDN web docs](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Functions/Default_parameters)
+1. [MDN web docs](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Functions/Default_parameters)
 
 ## Contributors ✨
 

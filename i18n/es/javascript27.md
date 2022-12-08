@@ -4,13 +4,15 @@ title: Fetch API
 sidebar_label: Fetch API
 ---
 
+import YouTube from 'react-youtube'
+
 ![@serverSerrverlesskiy](/img/javascript/headers/28.jpg)
 
-The ** Fetch API ** allows JavaScript to communicate with the server using HTTP requests and is a better replacement for the XMLHttpRequest class. Queries are executed by the `fetch()` method, which returns🔄 [Promise](https://react-native-village.github.io/docs/javascript24).
+La **Fetch API** permite que JavaScript se comunique con el servidor mediante solicitudes HTTP y es un mejor reemplazo para la clase `XMLHttpRequest`. Las solicitudes se realizan mediante el método `fetch()`, que devuelve 🔄 [Promise](https://jscamp.app/docs/javascript24).
 
 ![Exchange](https://media.giphy.com/media/OPQiZUC381IJ8Sh7UY/giphy.gif)
 
-## Syntax
+## Sintaxis
 
 ![Book](https://media.giphy.com/media/l0HlOBZcl7sbV6LnO/giphy.gif)
 
@@ -18,26 +20,29 @@ The ** Fetch API ** allows JavaScript to communicate with the server using HTTP 
 fetch(url, { options })
 ```
 
-- `url` - URL for sending the request;
-- `options` - request parameters.
+- `url` - URL para enviar la solicitud;
+- `options` - parámetros de solicitud.
 
-By specifying the `fetch()` method without `options`, you will receive a GET request that fetch data from the `URL`.
+Al especificar el método `fetch()` sin `options`, recibirá una solicitud GET que descarga los datos en la dirección `URL`.
 
-## Parameters request
+## Video
+<YouTube videoId="ZvUMvV_YZKg" />
 
-![Option](https://media.giphy.com/media/AazZSBdhIdH9K/giphy.gif)
+## Parámetros de consulta
 
-The second argument to `{options}` accepts request parameters. Parameter list:
+![Opción](https://media.giphy.com/media/AazZSBdhIdH9K/giphy.gif)
 
-1. `method` - request method (GET, POST, PUT, DELETE, HEAD);
-2. `headers` - HTTP headers;
-3. `body` - request body (used for method: POST / PUT);
-4. `cache` - caching mode (default, reload, no-cache);
-5. `mode` - request mode (cors, no-cors, same-origin);
-6. `redirect` - specifies how to handle redirects (follow, error, manual);
-7. `referrer` - request referrer;
-8. `signal` - AbortSignal, interrupt request;
-9. `credentials` - sending cookies along with the request - mit, same-origin.
+El segundo argumento `{options}` acepta opciones de consulta. Lista de parámetros:
+
+1. `method` - método de solicitud (GET, POST, PUT, DELETE, HEAD);
+2. `headers`: encabezados HTTP;
+3. `body` - cuerpo de la solicitud (usado para el método: POST / PUT);
+4. `cache`: modo de almacenamiento en caché (predeterminado, recargar, sin caché);
+5. `mode` - modo de solicitud (cors, no-cors, mismo origen);
+6. `redirect`: especifica cómo manejar los redireccionamientos (seguimiento, error, manual);
+7. `referrer` - referencia de solicitud;
+8. `signal` - AbortSignal, solicitud de cancelación;
+9. `credentials` - envío de cookies junto con la solicitud - mit, mismo origen.
 
 ```jsx
 fetch('https://jsonplaceholder.typicode.com/users', {
@@ -49,37 +54,37 @@ fetch('https://jsonplaceholder.typicode.com/users', {
 })
 ```
 
-## Receiving a response
+## Obtener una respuesta
 
-![Bascketball](https://media.giphy.com/media/l0MYwdebx8o0XI56E/giphy.gif)
+![Baloncesto](https://media.giphy.com/media/l0MYwdebx8o0XI56E/giphy.gif)
 
-The `fetch()` method returns🔄 [Promise](https://react-native-village.github.io/docs/javascript24) an object of the `Response` class, which has the following properties:
+El método `fetch()` devuelve🔄 [Promise](https://jscamp.app/docs/javascript24) un objeto de la clase `Response`, que tiene las siguientes propiedades:
 
-1. `status` - response code;
-2. `statusText` - text message 📜 corresponding to the response code;
-3. `ok` - a boolean value indicating the success of the response code (true: 200-299);
-4. `headers` - an object with response headers, in which the key is the name of the header, and the key value is the value of the header corresponding to the key;
-5. `url` - the URL to which the request was sent;
-6. `body` - response data in `ReadableStream` format
-7. `bodyUsed` - Boolean value indicating data reading.
+1. `status` - código de respuesta;
+2. `statusText` - mensaje de texto 📜 correspondiente al código de respuesta;
+3. `ok`: un valor booleano que indica el éxito del código de respuesta (verdadero: 200-299);
+4. `headers`: un objeto con encabezados de respuesta, en el que la clave es el nombre del encabezado y el valor de la clave es el valor del encabezado correspondiente a la clave;
+5. `url`: la URL a la que se envió la solicitud;
+6. `body` - datos de respuesta en formato `ReadableStream`
+7. `bodyUsed` es un valor booleano que indica que se están leyendo los datos.
 
 ```javascript
 fetch('https://jsonplaceholder.typicode.com/users').then(response => console.log(response))
 ```
 
-## Response handling
+## Manejo de la respuesta
 
-![Download](https://media.giphy.com/media/ECoFRCrMgVoQg/giphy.gif)
+![Descargar](https://media.giphy.com/media/ECoFRCrMgVoQg/giphy.gif)
 
-The transmitted data is in the format `ReadableStream`. The following methods can be used to change the format:
+Los datos transferidos están en formato `ReadableStream`. Puede utilizar los siguientes métodos para cambiar el formato:
 
-1. `text()` - converts the answer to a string;
-2. `json()` - converts the response in JSON format;
-3. `blob()` - converts the response to a Blob object;
-4. `formData()` - the response is converted into a FormData instance;
-5. `arrayBuffer()` - converts the response to an ArrayBuffer object.
+1. `text()` - convierte la respuesta en una cadena;
+2. `json()` - convierte la respuesta en formato JSON;
+3. `blob()`: convierte la respuesta en un objeto Blob;
+4. `formData()` - convierte la respuesta en una instancia de FormData;
+5. `arrayBuffer()`: convierte la respuesta en un objeto ArrayBuffer.
 
-An example of converting a response to JSON format.
+Un ejemplo de cómo convertir una respuesta al formato JSON.
 
 ```jsx
 fetch('https://jsonplaceholder.typicode.com/users')
@@ -87,17 +92,17 @@ fetch('https://jsonplaceholder.typicode.com/users')
   .then(data => console.log(data))
 ```
 
-## Error processing
+## Procesamiento de errores
 
 ![Error](https://media.giphy.com/media/DHBGehJ3FSZEygszX3/giphy.gif)
 
-We can find out whether `fetch()` has completed with an error🙅‍♂️ using the "status" and "ok" properties.
+Podemos averiguar si `fetch()` terminó con un error🙅‍♂️ usando las propiedades: "status" y "ok".
 
 ```jsx
 fetch('https://jsonplaceholder.typicode.com/users')
   .then(response => {
     if (!response.ok) {
-      console.log('Something went wrong ... Status:' + response.status)
+      console.log('Algo salió mal... Estado:' + response.status)
     } else {
       return response.json()
     }
@@ -105,7 +110,7 @@ fetch('https://jsonplaceholder.typicode.com/users')
   .then(data => console.log(data))
 ```
 
-With help `.catch()`
+При помощи `.catch()`
 
 ```jsx
 fetch('https://jsonplaceholder.typicode.com/users')
@@ -114,7 +119,7 @@ fetch('https://jsonplaceholder.typicode.com/users')
   .catch(error => console.log(error))
 ```
 
-## Request examples
+## Solicitar ejemplos
 
 ![Math](https://media.giphy.com/media/xT1Ra5h24Eliux3UVq/giphy.gif)
 
@@ -125,7 +130,7 @@ fetch('https://jsonplaceholder.typicode.com/users')
   .catch(error => console.log(error))
 ```
 
-The same, using the `async / await` syntax, which we will get to know in more detail in the next article.
+Lo mismo, utilizando la sintaxis `async/await`, de la que aprenderemos más en el próximo artículo.
 
 ```javascript
 let response = await fetch('https://jsonplaceholder.typicode.com/users')
@@ -133,51 +138,47 @@ let data = await response.json()
 console.log(data[0].name + ' and ' + data[2].name)
 ```
 
-## Problems?
+## ¿Problemas?
 
-![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
+![Problema](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
 
-Write to [Discord](https://discord.gg/6GDAfXn) chat.
+Escribe en [Discord](https://discord.gg/6GDAfXn) o Telegram [chat](https://t.me/jscampapp) y suscríbete a nuestras [noticias](https://t.me/javascriptapp)
 
-## Questions:
+![Campamento JavaScript](/img/bandlink.png)
+
+## Preguntas
 
 ![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
 
-What does the `fetch()` method return?
+¿Qué devuelve el método `fetch()`?
 
-1. Function
-2. Object
+1. Función
+2. Objeto
 3. Promise
 
-Given only the URL parameter in fetch (), what request do we get?
+Dado solo un parámetro de URL para `fetch()`, ¿qué solicitud recibimos?
 
 1. `POST`
 2. `GET`
 3. `PUT`
 
-What parameter are HTTP headers specified?
+¿Qué parámetro especifica los encabezados HTTP?
 
 1. `redirect`
 2. `headers`
 3. `credentials`
 
-What method should you use to convert the response to a string?
+¿Qué método se debe usar para convertir la respuesta en una cadena?
 
 1. `blob()`
 2. `json()`
 3. `text()`
 
-What does the `ok` property mean for an object of class `Response`?
+Para comprender cuánto ha aprendido en esta lección, realice la prueba en [aplicación móvil](http://onelink.to/njhc95) en nuestra escuela sobre este tema.
 
-1. Response code
-2. Success of the response code
-3. Reading data from a request
+![Campamento JS](/img/app.jpg)
 
-In order to understand how much you learned this lesson, take the test on the [mobile application](http://onelink.to/njhc95) of our school on this topic.
-
-![Sumerian school](/img/app.jpg)
-
-## Links
+## Enlaces
 
 1. [Learn JavaScript](https://learn.javascript.ru/fetch)
 2. [MDN Web Docs](https://developer.mozilla.org/ru/docs/Web/API/Fetch_API/Using_Fetch)

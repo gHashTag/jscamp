@@ -1,21 +1,23 @@
 ---
 id: javascript10
-title: Objects
-sidebar_label: Objects
+title: Objetos
+sidebar_label: Objetos
 ---
+
+import YouTube from 'react-youtube'
 
 ![@serverSerrverlesskiy](/img/javascript/headers/11.jpg)
 
-Objects are like a closet📦 for storing and transporting other types of data.
-JavaScript is designed around a simple paradigm. The concept is based on simple objects. An object is a collection of properties, and each property consists of a name (key) and a value associated with that name. The property value can be a function⚙️, which can be called a method of an object, or any other type.
+Los objetos son como un armario 📦 para cosas, diseñado para almacenar 📦 y transportar otro tipo de datos.
+JavaScript está diseñado en torno a un paradigma simple. El concepto se basa en objetos simples. Un objeto es un conjunto de propiedades, y cada propiedad consta de un nombre (clave) y un valor asociado con ese nombre. El valor de la propiedad puede ser una función⚙️ que se puede llamar método de objeto o cualquier otro tipo.
 
 ![Object](https://media.giphy.com/media/xTiTnFEfyt0vqhQzDi/giphy.gif)
 
-In this article, we'll cover the most basic properties of JavaScript objects, creating and modifying, and enumerating properties.
+En este artículo, veremos las propiedades más básicas de los objetos de JavaScript, creando🏗️ y cambiando, enumerando propiedades.
 
-An object in JavaScript is a simple associative array or, in other words, a "hash". It stores any key: value matches and has several standard methods.
+Un objeto en JavaScript es solo una matriz asociativa o, en otras palabras, un "hash". Almacena cualquier coincidencia `"clave: valor" y tiene varios métodos estándar.
 
-Objects in JavaScript, like objects in real life (a person👨, a bus, a building, etc.) have several named (key🗝️) parameters (age, name, hair color, status) with specific values (15, John, black, 'true') ✅:
+Los objetos en JavaScript, como los objetos en la vida real (persona👨, autobús, edificio, etc.) tienen varios parámetros con nombre (clave🗝️) (edad, nombre, color de cabello, estado) con valores específicos (15, Juan, negro, 'verdadero') ✅ :
 
 ```javascript
 let obj = {
@@ -26,46 +28,49 @@ let obj = {
 }
 ```
 
-An object method in JavaScript is simply a function️ that is added to an associative array.
+Un método de objeto en JavaScript es solo una función que se ha agregado a una matriz asociativa.
 
 ```jsx live
 function learnJavaScript() {
   let obj = {
-    // properties: values
+    // propiedades : valores
     age: 15,
     name: 'John',
-    // method: function
+    // método : función
     say: () => 'Hello!'
   }
   return obj.say()
 }
 ```
+## Video
 
-### Object creation
+<YouTube videoId="3rEcxqlkJNE" /> 
+
+### Crear un objeto
 
 ![Object](https://media.giphy.com/media/2YaKpvYQEcl1WuJJTl/giphy.gif)
 
-In a computer🖥️ we can represent an `object` as a cabinet with names-properties (`access keys`) signed on it. Inside the cabinet📦 drawers🧰 - data (specific information) and even smaller objects, by analogy with things. It is easy to find, delete or add (write) a new value to it by the `key`.
+En una computadora🖥️, podemos representar un `objeto` en forma de gabinete📦 con nombres de propiedad (`claves de acceso`) firmados en él. Dentro de los cajones📦 del gabinete🧰 hay datos (información específica) e incluso puede haber objetos más pequeños, similares a cosas. Es fácil encontrar, borrar o agregar (escribir) un nuevo `valor` mediante `clave`.
 
 ![obj01](/img/javascript/12/01.png)
 
-These are two 2️⃣ options for creating🏗️ an empty object:
+Estas son dos 2️⃣ opciones para crear🏗️ un objeto vacío:
 
 ```javascript
-// equivalent records
+// эквивалентные записи
 let obj = {}
 let person = new Object()
 ```
 
-The second option is very rarely used in practice.
+La segunda opción se usa muy raramente en la práctica.
 
 ![obj00](/img/javascript/12/00.png)
 
-## Advanced creation
+## Creación avanzada
 
 ![Extended](https://media.giphy.com/media/2XflxzlJfoSDycf3BBu/giphy.gif)
 
-Properties can be specified directly when creating an object, through a list in curly braces like {..., `key: value,` ...} and create complex objects:
+Las propiedades se pueden especificar directamente al crear🏗️ un objeto, a través de una lista entre llaves de la forma {..., `clave: valor,` ...} y crear🏗️ objetos complejos:
 
 ```jsx live
 function learnJavaScript() {
@@ -85,16 +90,16 @@ function learnJavaScript() {
 }
 ```
 
-The created🏗️ object contains five properties with specific values, one of which is passport data, which is a built-in object. Notice how the call to distant properties or methods of the object goes. Try to return your passport number.
+El objeto 🏗️ creado contiene cinco propiedades con valores específicos, uno de los cuales son datos de pasaporte, que es un objeto integrado. Preste atención a cómo se accede a las propiedades o métodos remotos del objeto. Trate de recuperar su número de pasaporte.
 
-## Adding properties
+## Agregando propiedades
 
 ![Adding](https://media.giphy.com/media/3CZ2iGe1ByKfhZxaD7/giphy.gif)
 
-There are two 2️⃣ syntax for adding properties to an object. 1️⃣ The first is a period, the second is square brackets:
+Hay dos 2️⃣ sintaxis para agregar propiedades a un objeto. 1️⃣ El primero es un punto, el segundo son corchetes:
 
 ```javascript
-// equivalent records
+// entradas equivalentes
 obj.age = 15
 obj['age'] = 15
 ```
@@ -111,14 +116,14 @@ function learnJavaScript() {
 }
 ```
 
-Square brackets are mainly used when the `properties' name is in a` variable` 🔔:
+Los corchetes se usan principalmente cuando el `nombre de la propiedad` (propiedades) está en una `variable` 🔔:
 
 ```javascript
 let nameProp = 'age'
 obj[nameProp] = 15
 ```
 
-Here, through the variable 🔔 `nameProp`, we set the name of the property`"age"`, which is the key in the associative array that contains` value 15`.
+Aquí, a través de la variable 🔔 `nameProp`, establecemos el nombre de la propiedad `"edad"`, que es la clave en la matriz asociativa, que contiene `valor 15`.
 
 ```jsx live
 function learnJavaScript() {
@@ -133,25 +138,25 @@ function learnJavaScript() {
 }
 ```
 
-## Accessing properties
+## Acceso a la propiedad
 
 ![Door](https://media.giphy.com/media/l378znZcUM7b6VDyM/giphy.gif)
 
-The property is accessed by accessing it 👇:
+Se accede a una propiedad accediendo a ella 👇 :
 
 ```jsx live
 function learnJavaScript() {
-  let obj = {} // object is empty
-  obj.age = 17 // equivalent to obj ['age'] = 17 or immediately obj = {age: 17}
+  let obj = {} // el objeto esta vacio
+   obj.age = 17 // equivalente a obj['age']=17 o simplemente obj={age:17}
 
-  let result1 = obj.age // Option 1
-  let result2 = obj['age'] // Option 2
+  let result1 = obj.age // Opción 1
+   let result2 = obj['age'] // Opción 2
 
-  return result1 + 'or' + result2
+  return result1 + ' o ' + result2
 }
 ```
 
-If the object has no such property, the result is `undefined`. Check it in your browser console.
+Si el objeto `no tiene tal propiedad`, entonces el resultado es `'indefinido'`. Compruébalo en la consola de tu navegador.
 
 ```javascrript
 let obj = {}
@@ -160,7 +165,7 @@ obj.nokey
 
 ![nokey](/img/javascript/15.jpg)
 
-There will be no error🙅‍♂️ when accessing a property that does not exist, the special value `undefined` will simply return. If there is no `return` keyword inside the function, then the` undefined` value will also return - the absence of something.
+No habrá ningún error 🙅‍♂️ al acceder a una propiedad inexistente, solo se devolverá el valor especial `undefined`. Si no hay una palabra clave 🗝️ `return` dentro de la función ⚙️, también se devolverá el valor `undefined`: la ausencia de algo.
 
 <!-- ## Проверка глобальной переменной
 
@@ -196,13 +201,13 @@ There will be no error🙅‍♂️ when accessing a property that does not exis
 
 В JavaScript есть специальные способы для создания🏗️ `private` свойств, связанные с `замыканиями`. Они рассмотрены вместе с наследованием объектов далее по курсу. -->
 
-## Removing properties
+## Eliminando propiedades
 
 ![Delete](https://media.giphy.com/media/5xaOcLwEvFOizxHVyVy/giphy.gif)
 
-Deletes ➖ property operator `delete`. Try to remove the passport number from the previous example:
+Elimina una propiedad con el operador `delete`. Intente eliminar el número de pasaporte del ejemplo anterior:
 
-Create the object from the previous example in the console.
+Cree un objeto del ejemplo anterior en la consola.
 
 ```javascript
 const obj = {
@@ -218,13 +223,13 @@ const obj = {
 }
 ```
 
-Now remove the nested `passport` object
+Y ahora elimine el objeto `pasaporte` anidado
 
 ```javascript
 delete obj.passport
 ```
 
-Now if you refer to it, then the result will be `undefined`
+Ahora, si recurrimos a él, como resultado obtenemos `undefined`
 
 ```javascript
 obj.passport
@@ -232,35 +237,35 @@ obj.passport
 
 ![delete obj](/img/javascript/16.jpg)
 
-## Object Methods
+## Métodos de objetos
 
 ![Description](https://media.giphy.com/media/3ohzAqLk7azQ0O6RvW/giphy.gif)
 
-As with other languages👅, JavaScript objects have `methods`.
+Al igual que otros lenguajes👅, los objetos de JavaScript tienen `métodos`.
 
-For example, let's create a `sport` object right away with the` run` method:
+Por ejemplo, vamos a crear🏗️ el objeto `sport` inmediatamente con el método `run`:
 
 ```jsx live
 function learnJavaScript() {
   let sport = {
-    run: n => 'John' + 'ran' + n + 'meters!'
+    run: n => ' John ' + ' corrió ' + n + ' metros! '
   }
 
   return sport.run(300)
 }
 ```
 
-### Adding a method
+### Agregar un método
 
 ![Add](https://media.giphy.com/media/5ns6077LTlGACuwRQR/giphy.gif)
 
-Adding a method to an existing object is simple, assign the function⚙️ `function (n) {...}` to the `sport.run` property.
+Agregar un método a un objeto existente es tan simple como asignar una función ⚙️ `function(n) { ... }` a la propiedad `sport.run`.
 
 ```jsx live
 function learnJavaScript() {
   let sport = {}
 
-  sport.run = n => 'The athlete ran' + n + 'meters and it was' + 'Nikita'
+  sport.run = n => 'El atleta corrió' + n + ' metros y era ' + 'Nikita'
 
   return sport.run(350)
 }
@@ -270,7 +275,7 @@ function learnJavaScript() {
 Очень часто методы используют в своих расчетах свойства своего же объекта.
 ::: -->
 
-This is not about classes, instantiation, and the like. Simple - you can add a new method or delete an existing one to any object at any time.
+No se trata de clases, crear🏗️ instancias y cosas por el estilo. Simple: puede agregar un nuevo método a cualquier objeto en cualquier momento o eliminar uno existente.
 
 <!--
 ```jsx live
@@ -292,21 +297,21 @@ function learnJavaScript() {
 
 Подумайте, чем можно заменить множественный `if()`. JavaScript - очень динамический язык👅. -->
 
-## Looping through object properties
+## Iterando sobre las propiedades del objeto
 
 ![enumeration](https://media.giphy.com/media/h5FIFDs6rXLpWlWWZJ/giphy.gif)
 
-To iterate over all the properties of an object, a special type of `for .. in` construction is used:
+Para enumerar todas las propiedades de un objeto, se utiliza un tipo especial de construcción `for .. in`:
 
 ```javascript
 for(let key in obj) {
-   // key - property name
-   // obj [key] - property value
+// key - nombre de la propiedad
+   // obj[key] - valor de propiedad
   ...
 }
 ```
 
-For example 👇:
+Например 👇 :
 
 ```jsx live
 function learnJavaScript() {
@@ -319,66 +324,110 @@ function learnJavaScript() {
   }
 
   for (let key in obj) {
-    result += key + ':' + obj[key] + ' '
+    result += key + ': ' + obj[key] + ' '
   }
 
   return result
 }
 ```
 
-And secretly, to be honest, almost any variable 🔔 is a mini-object in the JavaScript environment. So, don't be afraid to use them.
+Y en secreto, para ser honesto, casi cualquier variable 🔔 es un miniobjeto en el entorno de JavaScript. Así que no tengas miedo de usarlos.
 
-## Problems?
+## Reaccionar nativo
+
+Por ejemplo, necesitamos mostrar el nombre del objeto `obj`, luego lo haremos así:
+
+```SnackPlayer name=index.js
+import React from 'react'
+import { Text } from 'react-native'
+
+const App = () => {
+  const obj = {
+    age: 15,
+    name: 'John',
+    color: 'black',
+    passport: {
+      serial: 5721,
+      number: 258963,
+      date: '27.10.2015'
+    },
+    student: true
+  }  
+
+  return (
+    <Text>{obj.name}</Text>
+  )
+}
+
+export default App
+```
+
+Intente mostrar otros datos, como la serie del pasaporte.
+
+## ¿Problemas?
 
 ![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
 
-Write to [Discord](https://discord.gg/6GDAfXn) chat.
+Escribe en [Discord](https://discord.gg/6GDAfXn) o Telegram [chat](https://t.me/jscampapp) y suscríbete a nuestras [noticias](https://t.me/javascriptapp)
 
-## Questions:
+![JavaScript Camp](/img/bandlink.png)
+
+## Preguntas
 
 ![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
 
-An empty object is created with the command:
+Se crea un objeto vacío con el comando:
 
 1. `let obj = {}`
 2. `function obj()`
-3. `let x = 10`
+3. `sea x = 10`
 
-The object stores matches:
+El objeto almacena coincidencias:
 
-1. key: value
-2. name: surname
-3. variable = value
+1. er nombre : apellido
+2. variable = valor
+3. clave: valor
 
-The syntax for assigning a value to a specific key (property):
+Sintaxis para asignar un valor a una clave específica (propiedad):
 
-1. `color () = "green" `
-2. `obj.color =" red "`
-3. `function color () =>" yellow "`
+1. `color() = "green"`
+2. `obj.color = "red"`
+3. `function color () => "yellow"`
 
-An object method in JavaScript is
+Un método de objeto en JavaScript es
 
-1. Just a function added to an associative array
-2. External function
-3. Variable described outside the object
+1. Solo una función agregada a una matriz asociativa
+2. Función externa
+3. Variable declarada fuera del objeto
 
-Looping through object properties
+Iterando sobre las propiedades del objeto
 
-1. `for (let i = 0; i <= 100; i ++) {sum + = i} `
-2. `for (let key in obj) {}`
-3. `while (condition) {} `
+1. `for (let i = 0; i <= 100; i++) { sum += i }`
+2. `for(let key in obj) { }`
+3. `while (условие) { }`
 
-In order to understand how much you learned this lesson, take the test on the [mobile application](http://onelink.to/njhc95) of our school on this topic.
+En JavaScript, un objeto es una colección de propiedades (valores con nombre).
 
-![Sumerian school](/img/app.jpg)
+1. `true`
+2. `false`
 
-## Links
+Cuando la propiedad de un objeto es una función, tiene un nombre especial: `madre`.
 
-1. [MDN web doc. Developer.mozilla.org - Статья "Типы данных JavaScript и структуры данных"](https://developer.mozilla.org/ru/docs/Web/JavaScript/Data_structures)
-2. [MDN web doc. Developer.mozilla.org - Статья "Инициализация объектов"](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Object_initialize)
-3. [Статья "Object Types"](https://www.javascript.express/types/object_types)
-4. [Статья "Объекты", сайт Learn.javascript.ru](https://learn.javascript.ru/object)
-5. [Code for Teens: The Perfect Beginner's Guide to Programming, Volume 1: Javascript - Jeremy Moritz](https://www.amazon.com/Code-Teens-Beginners-Programming-Javascript-ebook/dp/B07FCTLVPC)
+1. `true`
+2. `false` Tiene un nombre especial: `clase`
+3. `false` Tiene un nombre especial: `método`
+
+Para comprender cuánto ha aprendido esta lección, realice una prueba en la [aplicación móvil](http://onelink.to/njhc95) de nuestra escuela sobre este tema o en nuestro [bot de Telegram](https://t.me/javascriptcamp_bot).
+
+![JS Camp](/img/app.jpg)
+
+## Enlaces:
+
+1. [Documento web de MDN. Developer.mozilla.org - Artículo "Tipos de datos y estructuras de datos de JavaScript"](https://developer.mozilla.org/ru/docs/Web/JavaScript/Data_structures)
+2. [Documento web de MDN. Developer.mozilla.org - Artículo "Inicialización de objetos"](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Object_initialize)
+3. [Artículo "Tipos de objetos"](https://www.javascript.express/types/object_types)
+4. [Artículo "Objetos", sitio Learn.javascript.ru](https://learn.javascript.ru/object)
+5. [Código para adolescentes: la gran guía de programación para principiantes Volumen 1: Javascript - Jeremy Moritz](https://www.amazon.com/Code-Teens-Beginners-Programming-Javascript-ebook/dp/B07FCTLVPC)
 
 ## Contributors ✨
 

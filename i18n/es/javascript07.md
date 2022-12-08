@@ -1,146 +1,149 @@
 ---
 id: javascript07
-title: Numbers
-sidebar_label: Numbers
+title: Números
+sidebar_label: Números
 ---
 
 import YouTube from 'react-youtube'
 
 ![@serverSerrverlesskiy](/img/javascript/headers/07.jpg)
 
-There are two 2️⃣ types of numbers in modern JavaScript:
+Hay dos tipos de números 2️⃣ en JavaScript moderno:
 
 ### `number`
 
-Ordinary numbers in JavaScript are stored in the 64-bit IEEE-754 format, also called double precision floating point numbers. These are the numbers we will use most often. Integers are not considered a separate type of numbers. In addition to floating point numbers, the numeric data type also includes three character values: `Infinity`,` -Infinity`, and `NaN` (non-number).
+Los números regulares en JavaScript se almacenan en el formato IEEE-754 de 64 bits, también conocido como números de coma flotante de doble precisión. Estos son los números que usaremos con más frecuencia. Los números enteros no se tratan como un tipo de número separado. Además de los números de punto flotante, también hay tres valores de caracteres que son numéricos: `Infiniy`, `-Infinity` y `NaN` (no es un número).
 
 ![Numbers](https://media.giphy.com/media/JtBZm3Getg3dqxK0zP/giphy.gif)
 
+## Video
+
+<YouTube videoId="wltQLqPeOyc" /> 
+
 ### `bigInt`
 
-Numbers make it possible to work with integers of arbitrary length. They are rarely needed and are used in cases where you need to work with values ​​outside the maximum safe integer value `Number`.
+Los números hacen posible trabajar con enteros de longitud arbitraria. Rara vez se necesitan y se utilizan en los casos en que es necesario trabajar con valores más allá del valor entero seguro máximo `Number`.
 
-Any number, even a decimal fraction with a lot of decimal places, is never quoted.
+Cualquier número, incluso una fracción decimal con muchos lugares decimales, nunca se cita.
 
-You can use four types of numeric literals: decimal, binary, octal, and hexadecimal. Since the last three are used quite rarely, we will omit their detailed description 🖊️, but the curious can get acquainted with them [here](https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Numbers_and_dates).
+Puede utilizar cuatro tipos de literales numéricos: decimal, binario, octal y hexadecimal. Dado que los últimos tres se usan muy raramente, omitiremos su descripción detallada 🖊️, pero los curiosos pueden familiarizarse con ellos [aquí](https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Numbers_and_dates).
 
 :::caution
-Be careful when using leading zeros! This means you don't need to put zero before the decimal number.
+¡Tenga cuidado al usar ceros a la izquierda! Así que no necesitas poner un cero antes del número decimal.
 :::
 
 ```jsx
 1234567890
 42
 
-0888 // 888 is treated as decimal
-0777 // treated as non-strict octal (511 decimal)
+0888 // 888 se trata como decimal
+0777 // procesado como octal no estricto (511 en decimal)
 ```
 
-## Arithmetic operations
+## Operaciones aritmeticas
 
 ![Arithmetic operation](https://media.giphy.com/media/gEvab1ilmJjA82FaSV/giphy.gif)
 
-Two or more integers can be used to form a new integer. There are many ways to compose a new integer. The way to compose a new number from two or more numbers is called arithmetic.
-In general, there are many arithmetic operations, but there are only four basic ones: addition, subtraction, multiplication and division. They are called basic, because all other actions are brought to them.
+Se pueden usar dos o más enteros para formar un nuevo entero. Hay muchas maneras de componer un nuevo entero. La forma de componer un nuevo número a partir de dos o más números se llama aritmética.
+En general, hay muchas operaciones aritméticas, pero solo hay cuatro básicas: suma, resta, multiplicación y división. Se llaman básicos, porque todas las demás acciones se reducen a ellos.
 
-The plus sign `+` is used to express addition: `4 + 4` Answer:` 8`
+El signo más `+` se usa para expresar la suma: `4 + 4` Respuesta: `8`
 
-Minus `–` for subtraction:` 7 - 6` Answer: `1`
+Menos `–` para restar: `7 - 6` Respuesta: `1`
 
-The asterisk `*` represents multiplication: `3 * 4` Answer:` 12`
+Un asterisco `*` representa la multiplicación: `3 * 4` Respuesta: `12`
 
-Forward slash `/` division: `15 / 5` Reply:` 3`
+Barra diagonal `/` división: `15 / 5` Respuesta: `3`
 
-If more than one action is performed in a line, we use - (parentheses) to separate them from each other and also to make the code📟 more readable. Let's type the following sentences into the console. The answer for each of them should consist of only one digit9️⃣:
+Si se realiza más de una acción en una línea, para separarlas y también para hacer que el código 📟 sea más legible, usamos - (paréntesis). Escribamos las siguientes oraciones en la consola. La respuesta para cada uno de ellos debe consistir en un solo dígito 9️⃣:
 
 ```
  3 * (2 + 1)
-(3 + 9) / (10 - 6)
-(2 + 3 * 4) / (6 + 1)
- 2 * (5 - 8 / 2) * (3 + 1)
+(3 + 24) / (10 - 7)
+(2 + 5 * 5) / (6 -  3)
+ 3 * (5 - 8 / 2) * (2 + 1)
 ```
 
-Enter the following values into `LIVE EDITOR` 👇:
+Introduce los siguientes valores en `LIVE EDITOR` 👇:
 
 ```jsx {2} live
 function learnJavaScript() {
-  let result = 2 + 3 // here
-
+  let result = 2 + 3 // aquí
   return result
 }
 ```
 
-## Combined assignment
+## Asignación combinada
 
-![Conbination](https://media.giphy.com/media/l2Sq8jlaqqnqBoGhG/giphy.gif)
+![Combinación](https://media.giphy.com/media/l2Sq8jlaqqnqBoGhG/giphy.gif)
 
-An operator is a symbolic designation of some action performed with operands in an expression (For example: `+`, `-`,`*`,`/`).
+Un operador es una designación simbólica de alguna acción realizada en operandos en una expresión (por ejemplo: `+`, `-`, `*`, `/`).
 
-The operand is some value that is processed in the program. Operands can be of any data type. The operand to the left of the operator is the left operand, the operand to the right of the operator is the right operand.
+El operando es algún valor procesado en el programa. Los operandos pueden ser de cualquier tipo de datos. El operando a la izquierda del operador es el operando izquierdo, el operando a la derecha del operador es el operando derecho.
 
-The main operator of combined assignment is the equal to `=`, and it assigns the value of the right operand to the left one. That is - `x = y` assigns the value to the variable 🔔 `y`, to the variable 🔔 `x`.
+El operador básico de asignación combinada es el signo igual `=`, que asigna el valor del operando derecho al operando izquierdo. Es decir - `x = y` asigna un valor a la variable 🔔 `y`, la variable 🔔 `x`.
 
-You have seen many times how you assign values ​​to variables 🔔 using mathematical operators. For example, like this:
+Ya has visto cómo los operadores matemáticos asignan valores a las variables 🔔. Por ejemplo, así:
 
 ```javascript
-let sum = 2 + 3 // sum value 7
+let sum = 2 + 3 // valor de suma 7
 ```
 
-And you probably did not have time to forget that at any time you can change the value of an already known variable 🔔:
+Y probablemente no tuviste tiempo de olvidar que en cualquier momento puedes cambiar el valor de una variable ya conocida 🔔:
 
 ```jsx live
 function learnJavaScript() {
   let sum = 2 + 3
-  sum = sum + 3 // now the sum value is 8
+  sum = sum + 3 // ahora el valor de la suma es 8
   return sum
 }
 ```
 
-Assignment with addition `+ =` in order to quickly increase the value of a variable! Here are some examples:
+¡Asignación con adición `+=` para aumentar rápidamente el valor de una variable! Aquí hay algunos ejemplos para ti:
 
 ```javascript
-let value = 5
-value += 2 // value is now 7 (same as value = // value + 2)
-value += 3 // value is now 10 (same as value = // value + 3)
-value = value + value // 20 (or you can just value + = // value)
-value += value // 40 (same as value = value + // value)
+let sentido = 5
+sentido += 2 // el valor ahora es 7 (igual que valor = // valor + 2)
+sentido += 3 // el valor ahora es 10 (igual que valor = // valor + 3)
+sentido = sentido + sentido // 20 (o simplemente valor += // valor)
+sentido += sentido // 40 (igual que valor = valor + // valor)
 ```
 
-You already guessed that such things work with other mathematical operations, right?!
+Вы ведь уже догадались, что подобные штуки работают и с прочими математическими действиями, да?!
 
 ```javascript
-value -= 25 // value is now 15 (same as value = value - // 25)
-value *= 2 // value is now 30 (same as value = // value * 2)
-value /= 3 // value is now 10 (same as value = // value / 3)
-value // Answer: 10
+sentido –= 25 // el valor ahora es 15 (igual que valor = valor − // 25)
+sentido -= 2 // el valor ahora es 30 (igual que valor = // valor - 2)
+sentido /= 3 // el valor ahora es 10 (igual que valor = // valor / 3)
+sentido // Respuesta: 10
 ```
 
-Next, check all the listed examples in `LIVE EDITOR`:
+A continuación, compruebe todos los ejemplos enumerados en `LIVE EDITOR`:
 
 ```jsx live
 function learnJavaScript() {
-  let value = 0 + 0
-  return value
+  let sentido = 0 + 0
+  return sentido
 }
 ```
 
-You can read more about combined assignment [here](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Assignment_Operators)
+Puede leer más sobre la asignación combinada [aquí](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Assignment_Operators)
 
-## Increment and decrement
+## incrementar y decrementar
 
-![increment](https://media.giphy.com/media/dX9qnaX4OH3avyMcU3/giphy.gif)
+![increment](https://media.giphy.com/media/ZZaCZyXh5yR4bkJmlR/giphy.gif)
 
-The operator `++` (increment) increases the value of its operand by one. If the value of the operand is not a number, the operator automatically converts it to a number, increments it by one, and returns the result, which is assigned back to the operand:
+El operador `++` (incremento) aumenta el valor de su operando en uno. Si el valor del operando no es un número, el operador lo convierte automáticamente en un número, lo incrementa en uno y devuelve el resultado, que se vuelve a asignar al operando:
 
 ```jsx live
 function learnJavaScript() {
-  let increment = 0
-  increment++
-  return increment
+  let incremento = 0
+  incremento++
+  return incremento
 }
 ```
 
-The operator `--` (decrement) works similarly to the increment operator, but does not increase the value of its operand, but, on the contrary, decreases it by one:
+El operador `--` (decremento) funciona de manera similar al operador de incremento, pero no aumenta el valor de su operando, sino que, por el contrario, lo disminuye en uno:
 
 ```jsx live
 function learnJavaScript() {
@@ -150,25 +153,25 @@ function learnJavaScript() {
 }
 ```
 
-## The modulo operator
+## operador de módulo
 
 ![function](https://media.giphy.com/media/seVVu09CPz2upPeU1s/giphy.gif)
 
-The `%` (percent) signifies the remainder of the division. The operator returns the integer remainder of dividing the left operand by the right. The return🔄 value always gets the sign of the dividend, not the divisor. It uses the built-in function⚙️ modulo, which is the integer remainder of dividing `let1` by `let2`.
+El signo `%` (por ciento) denotamos el resto de la división. El operador devuelve 🔄 el resto entero después de dividir el operando izquierdo por el operando derecho. El valor 🔄 devuelto siempre toma el signo del dividendo, no del divisor. Utiliza la función integrada ⚙️ módulo para obtener el resultado, que es el resto entero de dividir `let1` por `let2`.
 
-`12% 5` result` 2`
+`12 % 5` resultado `2`
 
-`NaN% 2` results in` NaN`
+`NaN % 2` da como resultado `NaN`
 
-`1% 2` result` 1`
+`1 % 2` resultado `1`
 
-`2% 3` result` 2`
+`2 % 3` resultado `2`
 
-`4% 2` result` 0`
+`4 % 2` resultado `0`
 
-`5.5% 2` result` 1.5`
+`5.5 % 2` da como resultado `1.5`
 
-Check out all the listed examples in `LIVE EDITOR` and you will immediately understand everything:
+Compruebe todos los ejemplos enumerados en `LIVE EDITOR` e inmediatamente comprenderá todo:
 
 ```jsx live
 function learnJavaScript() {
@@ -177,17 +180,17 @@ function learnJavaScript() {
 }
 ```
 
-## Rounding
+## redondeo
 
 ![Balls](https://media.giphy.com/media/6glYLqOQ3dlok/giphy.gif)
 
-The `Math.round ()` method returns a number rounded to the nearest integer. If the fractional part of the number is greater than or equal to `0.5`, the argument will be rounded to the nearest larger integer. If the fractional part of the number is less than `0.5`, the argument will be rounded to the nearest lower integer.
+El método `Math.round()` devuelve el número 🔄 redondeado al entero más cercano. Si la parte fraccionaria del número es mayor o igual a `0.5`, el argumento se redondeará al entero superior más cercano. Si la parte fraccionaria del número es menor que '0,5', el argumento se redondeará al entero menor más cercano.
 
-`result = Math.round (20.49)` Returns 20
+`resultado = Math.round(20.49)` Devuelve el valor 20
 
-`result = Math.round (20.5)` Returns the value 21
+`resultado = Math.round(20.5)` Devuelve el valor 21
 
-check it yourself:
+compruébelo usted mismo:
 
 ```jsx live
 function learnJavaScript() {
@@ -196,56 +199,118 @@ function learnJavaScript() {
 }
 ```
 
-## Problems?
+## React Native
+
+Los números se insertan en las aplicaciones `React Native` con la misma facilidad que las cadenas.
+
+```SnackPlayer name=index.js
+import * as React from 'react'
+import { Text } from 'react-native'
+
+const App = () => {
+  const str = 999 
+  return (
+    <Text>{str}</Text>
+)}
+
+
+export default App
+```
+
+## ¿Problemas?
 
 ![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
 
-Write to [Discord](https://discord.gg/6GDAfXn) chat.
+Escribe en [Discord](https://discord.gg/6GDAfXn) o Telegram [chat](https://t.me/jscampapp) y suscríbete a nuestras [noticias](https://t.me/javascriptapp)
 
-## Questions:
+![JavaScript Camp](/img/bandlink.png)
+
+## Preguntas:
 
 ![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
 
-What arithmetic operations are called basic?
+¿Cuáles son las operaciones aritméticas básicas?
 
-1. Addition, subtraction
-2. Multiplication, division
-3. Addition, subtraction, multiplication, division
+1. Suma, resta
+2. Multiplicación, división
+3. Sumas, restas, multiplicaciones, divisiones
 
-What is the correct reading of `+ =`?
+¿Cuál es la forma correcta de leer `+=`?
 
-1. Increment
-2. Assignment with addition
-3. Plus and equal
+1. Incremento
+2. Asignación con adición
+3. Más e igual
 
-How is the increment written by sign (s)?
+¿Cómo se escribe un incremento con signo(s)?
 
-1. `++`
-2. ` --`
+1.`++`
+2. `--`
 3. `+`
 
-What is the sign for the remainder of the division?
+¿Cuál es el símbolo del resto de una división?
 
 1. `%`
 2. `/`
 3. `\`
 
-What value will `Math.round` return when `Math.round (20.62)`is applied?
+¿Qué valor devolverá `Math.round` cuando se aplique `Math.round (20.62)`?
 
 1. `22`
 2. `20`
 3. `21`
 
-In order to understand how much you learned this lesson, take the test on the [mobile application](http://onelink.to/njhc95) of our school on this topic.
+¿Qué carácter especial podrías usar para hacer esta tarea más fácil? \n `myVariable = myVariable * 2`
 
-![Sumerian school](/img/app.jpg)
+1. `=*`
+2. `*=`
+3. `*`
 
-## Links
+¿Cuál es el símbolo que se usa para representar el módulo (resto de la división) en JavaScript?
+
+1. `%`
+2. `$`
+3. `&`
+
+¿Cuál es la forma más fácil (es decir, la más corta) de escribir esto (usando un carácter especial)? ¿Cuál es el nombre del carácter especial?\n `myVariable = myVariable + 1`
+
+1. `myVariable++`
+2. `myVariable+`
+3. `myVariable+=`
+
+¿Cuál es la forma más fácil (es decir, la más corta) de escribir esto (usando un carácter especial)? ¿Cómo se llama el personaje especial? \n `myVariable = myVariable - 1`
+
+1. `myVariable--`
+2. `myVariable-`
+3. `myVariable-=`
+
+Si tuviera que escribir un programa para determinar si un valor es par o impar, ¿qué número usaría después del operador módulo?
+
+1. `2`
+2. `4`
+3. `0`
+
+¿Qué carácter especial podría usar para facilitar esta tarea?\n `myValue = myValue - 8`
+
+1. `- (myValue - 8)`
+2. `-= (myValue -= 8)`
+3. `=- (myValue =- 8)`
+
+¿Cuál es el nombre colectivo de los símbolos que primero realizan una operación en una variable y luego asignan un nuevo valor a la misma variable (por ejemplo, +=, -=, \*= y /=)?
+
+1. Asignación combinada
+2. Tarea matemática
+3. Cesión condicional
+
+Para comprender cuánto ha aprendido esta lección, realice una prueba en la [aplicación móvil](http://onelink.to/njhc95) de nuestra escuela sobre este tema o en nuestro [bot de Telegram](https://t.me/javascriptcamp_bot).
+
+![JS Camp](/img/app.jpg)
+
+## Enlaces:
 
 1. [MDN web docs](https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Numbers_and_dates)
-2. [Code for Teens: The Perfect Beginner's Guide to Programming, Volume 1: Javascript - Jeremy Moritz](https://www.amazon.com/Code-Teens-Beginners-Programming-Javascript-ebook/dp/B07FCTLVPC)
+2. [Código para adolescentes: la gran guía de programación para principiantes Volumen 1: Javascript - Jeremy Moritz](https://www.amazon.com/Code-Teens-Beginners-Programming-Javascript-ebook/dp/B07FCTLVPC)
 3. [JavaScript.ru](https://learn.javascript.ru/number)
-4. [Integer arithmetic](https://maths-public.ru/arithmetic/actions)
+4. [Operaciones aritméticas con números enteros](https://maths-public.ru/arithmetic/actions)
 
 ## Contributors ✨
 

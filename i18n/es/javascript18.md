@@ -1,119 +1,124 @@
 ---
 id: javascript18
-title: Rest and Spread
-sidebar_label: Rest and Spread
+title: Operadores de Rest y Spread
+sidebar_label: Operadores de Rest y Spread
 ---
+
+import YouTube from 'react-youtube'
 
 ![@serverSerrverlesskiy](/img/javascript/headers/19.jpg)
 
-Many built-in JavaScript functions support an arbitrary number of arguments.
+Muchas funciones integradas de ⚙️ JavaScript admiten una cantidad arbitraria de argumentos.
 
-For example:
+Por ejemplo:
 
-`Math.max (arg1, arg2, ..., argN)` - calculates the maximum number of the passed arguments.
+`Math.max(arg1, arg2, ..., argN)` - Calcula el número máximo de los argumentos dados.
 
-`Math.min (arg1, arg2, ..., argN)` - returns the minimum value of the passed arguments.
+`Math.min(arg1, arg2, ..., argN)` - devuelve🔄 el valor mínimo de los argumentos pasados.
 
-In this article, we will learn how to do the same with our own functions and how to pass parameters to such functions as an array.
+En este artículo, aprenderemos cómo hacer lo mismo con nuestras propias funciones⚙️ y cómo pasar parámetros de matriz a dichas funciones⚙️.
 
-## Remaining parameters `(... rest)`
+## Video
+
+<YouTube videoId="9Qt7c5lEF_4" />
+
+## Parámetros residuales `(...rest)`
 
 ![Parametrs](https://media.giphy.com/media/3osxYoufeOGOA7xiX6/giphy.gif)
 
-You can call a function⚙️ with any number of arguments, regardless of how it was defined.
+Puede llamar a una función⚙️ con cualquier cantidad de argumentos, independientemente de cómo se haya definido.
 
-For example 👇:
+Por ejemplo 👇:
 
 ```jsx live
 function learnJavaScript() {
   let summa = (a, b, c) => {
     return a + b + c
-  } // Sum of 3 numbers
+  } // Suma de 3 números
 
   return summa(1, 2, 3, 4, 5, 6, 7)
 }
 ```
 
-Extra arguments will not cause an error, but of course only the first three will be counted.
+Los argumentos adicionales no generarán un error, pero, por supuesto, solo se contarán los tres primeros.
 
-### ES6 concept
+### Concepto ES6
 
 ![Idea](https://media.giphy.com/media/3o6Mbj2w67HnPQKgcE/giphy.gif)
 
-Starting with the ES6 standard, a concept has appeared like `... rest` - residual parameters.
+Desde el estándar ES6, ha aparecido el concepto de cómo `...rest` son parámetros de descanso.
 
 ```jsx
 let goFun = (...rest) => {
-  // Algorithm
+  // Algoritmo
 }
 ```
 
-Free parameters can be indicated with three dots `...`. It literally means: "collect the remaining parameters and put them in an array."
+Los parámetros libres se pueden indicar con tres puntos `...`. Literalmente, esto significa: "reunir los parámetros restantes y colocarlos en una matriz".
 
-For example, let's collect all the arguments into an array `args`👇:
+Por ejemplo, recopilemos todos los argumentos en una matriz `args`👇:
 
 ```jsx live
 function learnJavaScript() {
   let sumAll = (...args) => {
-    // args — name of the array of passed arguments
+    // args es el nombre de la matriz de argumentos pasados
     let sum = 0
-    for (let arg of args) if (typeof arg === 'number') sum += arg // sum - will collect the sum of all numeric arguments
+    for (let arg of args) if (typeof arg === 'number') sum += arg // sum: se recopilará la suma de todos los argumentos numéricos
     return sum
   }
   return sumAll(1, 2, 3, 4, 5, 6, 7, 'React', 'Native')
 }
 ```
 
-The answer is already 28 and no errors🙅‍♂️! Try changing the arguments or the dimension of the array.
+La respuesta ya es 28 y sin errores 🙅‍♂️! Detalle para cambiar los argumentos o la dimensión de la matriz.
 
-### Multiple parameters
+### Múltiples opciones
 
-We can put the first few parameters in variables 🔔, and collect the rest into an array.
-This means that you can simply insert `... rest`, but only instead of the last parameter of the function.
+Podemos poner los primeros parámetros en variables 🔔 y recopilar el resto en una matriz.
+Esto significa que simplemente puede insertar `...rest`, pero solo en lugar del último parámetro de función.
 
 ![paste](https://media.giphy.com/media/3o6ZtafpgSpvIaKhMI/giphy.gif)
 
 ```jsx
 let goFun = (first, second, ...rest) => {
-  // Algorithm
+  // Algoritmo
 }
 ```
 
-In the example below, the first two 2️⃣ arguments to the function will become the first and last name, and the third and subsequent arguments will become the array `titles [i]` 👇:
+En el siguiente ejemplo, los dos primeros argumentos de la función 2️⃣ se convertirán en el nombre y el apellido, y el tercer argumento y los subsiguientes se convertirán en la matriz `titles[i]` 👇:
 
 ```jsx live
 function learnJavaScript() {
   let free = ''
   let showName = (firstName, lastName, ...titles) => {
-    free = firstName + ' ' + lastName // First name + Last name
+    free = firstName + ' ' + lastName // Nombre + Apellido
     return titles[0] + ' ' + titles[1]
   }
-  // The rest of the parameters will go to the titles = ["React", "Native"] array
-  // titles [0] // React
-  // titles [1] // Native
+  // Los parámetros restantes irán a una matriz. titles = ["React", "Native"]
+  // titles[0]  // React
+  // titles[1]  // Native
 
-  let result = showName('Julius', 'Caesar', 'React', 'Native')
+  let result = showName('Юлий', 'Цезарь', 'React', 'Native')
 
-  return free + ' or ' + result
+  return free + ' или ' + result
 }
 ```
 
-### Possible mistakes
+### Posibles errores
 
 ![error](https://media.giphy.com/media/xTiN0L7EW5trfOvEk0/giphy.gif)
 
-Residual parameters must be at the end, so you cannot write 🖊️ anything after them.
-This will throw an error:
+Los parámetros residuales deben colocarse al final, por lo que no puede escribir 🖊️ nada después de ellos.
+Esto arrojará un `error`:
 
 ```jsx
-function f(arg1, ...rest, arg2) {   // arg2 после ...rest ?
-  // Mistake!
+function f(arg1, ...rest, arg2) {   // arg2 después...rest ?
+  // ¡Error!
 }
 ```
 
-:::note Remember
-`... rest` must always be last.
-
+:::note Recuerda
+`...descanso` siempre debe ser lo último.
 :::
 
 <!-- ### Опасный "arguments"
@@ -130,13 +135,13 @@ Cтрелочные функции⚙️ не имеют `arguments[]` как и
 
 Если мы обратимся к `arguments` из стрелочной функции⚙️, то получим аргументы внешней "классической" функции⚙️. Соответственно, для более удобной работы с аргументами лучше использовать только остаточные параметры `...rest`. -->
 
-## Spread operator `... spread`
+## Operador de propagación `...spread`
 
 ![operators](https://media.giphy.com/media/3o6Mbfd5fQszubehmE/giphy.gif)
 
-We learned how to get an array from a parameter list, but sometimes you need to do the opposite - stuff the array into the called function⚙️.
+Aprendimos cómo obtener una matriz a partir de una lista de parámetros, pero a veces es necesario hacer lo contrario: insertar la matriz en una función llamada⚙️.
 
-For example, there is a built-in function ⚙️ `Math.max`. It returns the largest number in the list:
+Por ejemplo, hay una función integrada ⚙️ `Math.max`. Devuelve 🔄 el número más grande de la lista:
 
 ```jsx live
 function learnJavaScript() {
@@ -144,44 +149,44 @@ function learnJavaScript() {
 }
 ```
 
-### Not so simple
+### No es tan simple
 
 ![Index_finger](https://media.giphy.com/media/4ZcYCubFNk8AUHcZVw/giphy.gif)
 
-Let's say we have an array of numbers `[3, 5, 1]`. How to call `Math.max` for it?
+Digamos que tenemos una matriz de números `[3, 5, 1]`. ¿Cómo llamar a `Math.max` para ello?
 
-You can't just insert them - `Math.max` expects to get a list of numbers, not a single array.
+No puede simplemente insertarlos así: `Math.max` espera obtener una lista de números, no una sola matriz.
 
 ```jsx live
 function learnJavaScript() {
   let arr = [3, 5, 1, 17, 14, 8, 2, 11]
-  return Math.max(arr) // NaN - значение будет не определено
+  return Math.max(arr) // NaN - el valor será indefinido
 }
 ```
 
-Of course, we can enter numbers manually: `Math.max (arr[0], arr[1], ar[2]).`
+Por supuesto, podemos ingresar números manualmente: `Math.max(arr[0], arr[1], arr[2]).`
 
-But, firstly, it looks bad, and, secondly, we do not always know how many arguments there will be. There can be a lot of them, or not at all.
+Pero, en primer lugar, se ve mal y, en segundo lugar, no siempre sabemos cuántos argumentos habrá. Puede haber muchos de ellos, o ninguno.
 
-### Occurrence of parameters
+### Ocurrencia de parámetro
 
 ![Transform](https://media.giphy.com/media/xT4uQr9H3EDL7Ha2hq/giphy.gif)
 
-The `...spread` operator will help us here. It is similar to residual parameters - it also uses `...`, but does the exact opposite.
+Aquí es donde el operador de propagación `...spread` resulta útil. Es similar a los parámetros residuales: también usa `...`, pero hace exactamente lo contrario.
 
-When the `...spread` functionality is used in a function call, it converts the `arr` array object to an argument list.
+Cuando la función ⚙️ `...spread` se usa en una llamada de función⚙️, convertirá el objeto de matriz `arr` en una lista de argumentos.
 
-For `Math.max` 👇:
+Para `Math.max` 👇:
 
 ```jsx live
 function learnJavaScript() {
   let arr = [3, 5, 1, 17, 14, 8, 2, 11]
 
-  return Math.max(...arr) // the ... arr operator converts the array `arr` to an argument list
+  return Math.max(...arr) // el operador ...arr convierte la matriz `arr` en una lista de argumentos
 }
 ```
 
-In the same way, we can pass multiple iterables 👇:
+De la misma manera, podemos pasar múltiples iterables 👇:
 
 ```jsx live
 function learnJavaScript() {
@@ -193,13 +198,13 @@ function learnJavaScript() {
 }
 ```
 
-Cool! A very flexible approach to programming. You can also combine the spread operator with normal values.
+¡Enfriar! Un enfoque muy flexible de la programación. También puede combinar el operador de propagación con valores regulares.
 
-### Merging Arrays
+### Fusiones de matriz
 
 ![Merger](https://media.giphy.com/media/rytLWOErAX1F6/giphy.gif)
 
-The spread operator `... spread` can also be used to merge arrays 👇:
+El operador de propagación `...spread` también se puede usar para fusionar matrices 👇:
 
 ```jsx live
 function learnJavaScript() {
@@ -207,103 +212,104 @@ function learnJavaScript() {
   let arr2 = [4, 2, 8]
 
   let merged = [100, ...arr1, 500, ...arr2]
-  let str = 'Массив: ' + merged
+  let str = 'Formación: ' + merged
 
   return <b>{str}</b>
 }
 ```
 
-### Converting to string
+### Convertir a cadena
 
 ![Transform](https://media.giphy.com/media/RLVHPJJv7jY1q/giphy.gif)
 
-The `... spread` operator functionality works with any iterable object.
+La funcionalidad ⚙️ del operador de propagación `...spread` funciona en cualquier objeto iterable.
 
-For example, the spread operator is suitable for converting a string into an array of characters 👇:
+Por ejemplo, el operador de expansión es adecuado para convertir una cadena en una matriz de caracteres 👇:
 
 ```javascript
-let str = 'Hey, Alex!'
+let str = '¡Oye Alex!'
 let result = [...str]
 ```
 
 ![spread](/img/javascript/13.jpg)
 
-Let's see what happens. Under the hood, the spread operator uses iterators to iterate over the elements. Just like `for..of` does.
+Veamos qué pasa. Debajo del capó, el operador de propagación usa iteradores para iterar sobre los elementos. Tal como lo hace `for..of`.
 
-The `for..of` loop iterates over the string as a sequence of characters, so from` ... str` it turns out "P", "p", "and", "in", "e", "t" ...
-The resulting characters are collected into an array using the standard array declaration🗣️ `[... str] .`
+El bucle `for..of` itera sobre la cadena como una secuencia de caracteres, por lo que `...str` produce "Q", "y", "e"...
+Los caracteres resultantes se recopilan en una matriz utilizando la declaración de matriz 🗣️ estándar `[...str]`.
 
-We can also use `Array.from` for this task. It also converts an iterable (such as a string) to an array 👇:
+También podemos usar `Array.from` para esta tarea. También convierte el objeto iterable (como una cadena) en una matriz 👇:
 
 ```javascript
-let str = 'Hello'
-Array.from(str) // "H", "e", "l", "l", "o"
-// Array.from converts an iterable to an array
+let str = 'Oye'
+Array.from(str) // "Q", "y", "e"
+// Array.from convierte el objeto iterable en una matriz
 ```
 
 ![spread](/img/javascript/14.jpg)
 
-The result is the same as `[...str]`. But there is a difference between `Array.from(obj)` and `[...obj] `:
+El resultado es similar a `[...str].` Pero hay una diferencia entre `Array.from(obj)` y `[...obj]`:
 
-- `Array.from` works with both pseudo-arrays and iterables.
-- The `... spread` operator works `only` with iterable objects.
+- `Array.from` funciona tanto con pseudo-matrices como con iterables.
+- El operador de propagación `...spread` funciona `solo` con iterables.
 
-Therefore, `Array.from` is a more general method.
+Por lo tanto, `Array.from` es un método más general.
 
 ## Total
 
 ![Elipsis](https://media.giphy.com/media/UWXLULrP5KGDC/giphy.gif)
 
-When we see `"..."` in code код, it can be either the residual parameters `...rest` or the extension operator` ...spread`.
+Cuando vemos `"..."` en el código 📟, puede ser `...rest` parámetros residuales o `...spread` operador de propagación.
 
-How to distinguish them from each other:
+Cómo distinguirlos:
 
-- If `...` is located at the end of the function argument list, then these are "residual parameters". It collects the rest of the unspecified arguments and makes an array of them.
-- If `...` occurs in a function call or elsewhere, it is an "extension operator". It extracts elements from an array to initialize the function.
+- Si `...` está ubicado al final de la lista de argumentos de la función, entonces estos son "parámetros residuales". Recopila los argumentos no especificados restantes y crea una matriz a partir de ellos.
+- Si `...` ocurre en una llamada de función o en otro lugar, entonces es un "operador de extensión". Recupera elementos de la matriz para inicializar la función.
 
-It is useful to remember:
+Bueno para recordar:
 
-- Residual parameters are used to create new functions with an undefined number of arguments.
-- Using the spread operator, you can insert an array into a function that, by default, works with a regular list of arguments.
-  “Together, these constructs make it easy to convert sets of values ​​to and from arrays.
+- Los parámetros residuales se utilizan para crear nuevas funciones con un número indefinido de argumentos.
+- Con el operador de propagación, puede insertar una matriz en una función que, de forma predeterminada, funciona con una lista de argumentos regulares.
+- Juntas, estas construcciones facilitan la conversión de conjuntos de valores en matrices y viceversa.
 
-## Problems?
+## ¿Problemas?
 
 ![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
 
-Write to [Discord](https://discord.gg/6GDAfXn) chat.
+Escribe en [Discord](https://discord.gg/6GDAfXn) o Telegram [chat](https://t.me/jscampapp) y suscríbete a nuestras [noticias](https://t.me/javascriptapp)
 
-## Questions:
+![JavaScript Camp](/img/bandlink.png)
+
+## Preguntas
 
 ![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
 
-If `...` is located at the end of the function argument list, then we are dealing with:
+Si `...` está ubicado al final de la lista de argumentos de la función, entonces estamos tratando con:
 
-1. Residual parameter
-2. Expansion operator
-3. Random indicators
+1. Parámetro residual
+2. Operador de extensión
+3. Indicadores aleatorios
 
-To create a function with an undefined number of arguments, use:
+Para crear una función con un número indefinido de argumentos, utilice:
 
-1. Residual parameters `...rest`
-2. The spread operator `...spread`
-3. External call functions
+1. Parámetros residuales `...rest`
+2. Operador de propagación `...spread`
+3. Funciones de llamadas externas
 
-You can combine two arrays into one using:
+Puede fusionar dos matrices en una usando:
 
-1. Expansion operator
-2. The `Array.from` operator
-3. Residual parameter
+1. El operador de expansión `...rest`
+2. Operador de propagación `...spread`
 
-In order to understand how much you learned this lesson, take the test on the [mobile application](http://onelink.to/njhc95) of our school on this topic.
+Para comprender cuánto ha aprendido esta lección, realice una prueba en la [aplicación móvil](http://onelink.to/njhc95) de nuestra escuela sobre este tema o en nuestro [bot de Telegram](https://t.me/javascriptcamp_bot).
 
-![Sumerian school](/img/app.jpg)
+![JS Camp](/img/app.jpg)
 
-## Links
+## Enlaces
 
-1. [MDN web doc. Spread syntax article](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/spread_syntax)
-2. [Residual Parameters and the Spread Operator article](https://learn.javascript.ru/rest-parameters-spread-operator)
-3. [The article "The spread and rest operator"](https://medium.com/@stasonmars/%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D1%80-spread-%D0%B8-rest-%D0%BF%D0%B0%D1%80%D0%B0%D0%BC%D0%B5%D1%82%D1%80%D1%8B-%D0%B2-javascript-22eb33cb0825)
+1. [Documento web de MDN. Artículo "sintaxis extendida"](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/spread_syntax)
+2. [Artículo "Parámetros residuales y operador de extensión"](https://learn.javascript.ru/rest-parameters-spread-operator)
+3. [Artículo "Operador de Spread y Rest"](https://medium.com/@stasonmars/%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D1%80-spread-%D0%B8-rest-%D0%BF%D0%B0%D1%80%D0%B0%D0%BC%D0%B5%D1%82%D1%80%D1%8B-%D0%B2-javascript-22eb33cb0825)
 
 ## Contributors ✨
 

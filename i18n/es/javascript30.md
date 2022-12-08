@@ -1,24 +1,24 @@
 ---
 id: javascript30
-title: JavaScript tasks
-sidebar_label: Practice
+title: tareas de JavaScript
+sidebar_label: Práctica
 ---
 
 import YouTube from 'react-youtube'
 
-Theory is good, but without practice how to fly with one wing, so in this section we will solve problems in JavaScript. We took the tasks from the [Codewars](https://www.codewars.com/r/e67HyQ) - site this is a site where you can improve your skills not only in JavaScript, but also in other programming languages.
+La teoría es buena, pero sin práctica, cómo volar con un ala, por lo que en esta sección resolveremos problemas en JavaScript. Tomamos las tareas del sitio [Codewars](https://www.codewars.com/r/e67HyQ): este es un sitio donde puede mejorar sus habilidades no solo en JavaScript, sino también en otros lenguajes de programación.
 
-## Find numbers that are divisible by a given number
+## Encuentra números que son divisibles por un número dado
 
-Complete a function that takes two arguments and returns all numbers that are divisible by the given divisor. The first argument is an array of numbers and the second is a divisor.
+Completa una función que toma dos argumentos y devuelve todos los números que son divisibles por el divisor dado. El primer argumento es una matriz de números y el segundo es un divisor.
 
-### Example
+### Ejemplo
 
 ```jsx
 divisibleBy([1, 2, 3, 4, 5, 6], 2) == [2, 4, 6]
 ```
 
-### Practice
+### Práctica
 
 ```jsx live
 function learnJavaScript() {
@@ -29,22 +29,22 @@ function learnJavaScript() {
 }
 ```
 
-### Answer
+### Responder
 
-See the answer only if you could not solve the problem yourself.
+Vea la respuesta solo si no pudo resolver el problema usted mismo.
 
 <YouTube videoId="eFtGZcUyZoc" />
 
-## Twice as old
+## el doble de viejo
 
-Your function takes two arguments:
+Su función toma dos argumentos:
 
-- father's current age (years)
-- the current age of the son (years)
+- edad actual del padre (años)
+- edad actual del hijo (años)
 
-Calculate how many years ago a father was twice as old as his son, or in how many years he will be twice as old.
+Calcula cuántos años hace que el padre tenía el doble de la edad de su hijo (o dentro de cuántos años tendrá el doble).
 
-### Practice
+### Práctica
 
 ```jsx live
 function learnJavaScript() {
@@ -55,22 +55,22 @@ function learnJavaScript() {
 }
 ```
 
-### Answer
+### Responder
 
 <YouTube videoId="uAeHGNYvSKU" />
 
-## Count odd numbers below `n`
+## Contar números impares debajo de `n`
 
-If number `n` is given, return the number of positive odd numbers less than `n`, EASY!
+Dado un número `n`, ¡devolver el número de números impares positivos menores que `n` es FÁCIL!
 
-### Example
+### Ejemplo
 
 ```jsx
 oddCount(7) //=> 3, i.e [1, 3, 5]
 oddCount(15) //=> 7, i.e [1, 3, 5, 7, 9, 11, 13]
 ```
 
-### Practice
+### Практика
 
 ```jsx live
 function learnJavaScript() {
@@ -81,17 +81,17 @@ function learnJavaScript() {
 }
 ```
 
-### Answer
+### responder
 
 <YouTube videoId="E1W-EQY_RLw" />
 
-## Convert string to number!
+## ¡Convierte una cadena en un número!
 
-We need a function that can convert a string to a number. What ways do you know to achieve this?
+Necesitamos una función que pueda convertir una cadena en un número. ¿Qué formas conoces para lograr esto?
 
-Note: Don't worry, all inputs will be strings, and each string is a perfectly valid integer representation.
+Nota: no se preocupe, todas las entradas serán cadenas, y cada cadena es una representación perfectamente válida de un número entero.
 
-### Example
+### Ejemplo
 
 ```jsx
 stringToNumber('1234') == 1234
@@ -100,7 +100,7 @@ stringToNumber('1405') == 1405
 stringToNumber('-7') == -7
 ```
 
-### Practice
+### Práctica
 
 ```jsx live
 function learnJavaScript() {
@@ -111,16 +111,25 @@ function learnJavaScript() {
 }
 ```
 
-### Answer
+### responder
 
 <YouTube videoId="zSr7bA2BnI4" />
 
 ## Total
 
-The entire video playlist on this topic can be viewed on our [YouTube channel](https://www.youtube.com/playlist?list=PLth6QPteH5guJiD0Ifa7_byNUW3GYdvNR).
+La lista de reproducción de videos completa sobre este tema se puede ver en nuestro [canal de YouTube](https://www.youtube.com/playlist?list=PLth6QPteH5guJiD0Ifa7_byNUW3GYdvNR).
 
-On the tatami at [Codewars](https://www.codewars.com/r/e67HyQ), put on a kimono.
+En el tatami de [Codewars](https://www.codewars.com/r/e67HyQ) ponte un kimono.
 
-JavaScript is now your main link!
+¡JavaScript es ahora tu enlace principal!
 
 <YouTube videoId="GAbsjQF9i0c" />
+
+
+## ¿Problemas?
+
+![Problema](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
+
+Escribe en [Discord](https://discord.gg/6GDAfXn) o Telegram [chat](https://t.me/jscampapp) y suscríbete a nuestras [noticias](https://t.me/javascriptapp)
+
+![JavaScript Camp](/img/bandlink.png)

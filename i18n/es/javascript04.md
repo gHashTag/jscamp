@@ -1,45 +1,45 @@
 ---
 id: javascript04
-title: Data types
-sidebar_label: Data types
+title: Tipos de datos
+sidebar_label: Tipos de datos
 ---
 
 import YouTube from 'react-youtube'
 
 ![@serverSerrverlesskiy](/img/javascript/headers/04.jpg)
 
-## Dynamic typing
+## Dinámicamente típico
 
-JavaScript is a loosely typed or dynamic language. This means that you do not need to define the type of the variable 🔔 in advance.
+JavaScript es un lenguaje poco escrito o rico. Esto significa que no necesita definir el tipo de instalación 🔔 de antemano.
 
 ![Dinamics](https://media.giphy.com/media/26uf759LlDftqZNVm/giphy.gif)
 
-The type will be determined automatically during program execution. It also means that you can use one variable 🔔 to store 📦 different types of data 👇:
+El tipo se determinará automáticamente durante la ejecución del programa. También significa que puede usar una variable 🔔 para almacenar 📦 diferentes tipos de datos 👇:
 
 ```jsx live
 function learnJavaScript() {
-  let foo = 42 // now foo is of type number
-  foo = 'bar' //and now foo is of type string
+  let foo = 42 // ahora foo es de tipo número
+  foo = 'bar' // y ahora foo es de tipo string
   return typeof foo
 }
 ```
 
-<!-- ## Video
+## Video
 
-<YouTube videoId="1zXZCVbNbkQ" /> -->
+<YouTube videoId="1zXZCVbNbkQ" />
 
 ## typeof
 
-In order to understand the data type contained in a variable, the `typeof` operator is used. The `typeof` operator returns the type of the argument.
-It has two syntaxes, with brackets and without:
+Para comprender el tipo de datos contenidos en una variable, se utiliza el operador `typeof`. El operador `typeof` devuelve el tipo del argumento.
+Tiene dos sintaxis: con y sin corchetes:
 
-- Operator syntax: `typeof x`
+- Sintaxis del operador: `typeof x`
 
-- Function syntax: `typeof (x)`
+- Sintaxis de la función: `typeof(x)`
 
-They work the same, but the first syntax is shorter.
+Funcionan igual, pero la primera sintaxis es más corta.
 
-The result of `typeof` is a string containing the type.
+El resultado de `typeof` es una cadena que contiene el tipo.
 
 ```jsx live
 function learnJavaScript() {
@@ -48,18 +48,18 @@ function learnJavaScript() {
 }
 ```
 
-## Data types
+## Tipos de datos
 
 ![Data types](https://media.giphy.com/media/NPXkCN2FutVO1Nt4P9/giphy.gif)
 
-The JavaScript standard defines 9 data types. Get to know each of them by outputting to the console and then I will tell you about each of them in more detail.
+El estándar JavaScript define 9 tipos de datos. Familiarícese con cada uno de ellos saliendo a la consola y luego le contaré 🗣️ sobre cada uno de ellos con más detalle.
 
 ```javascript
 let one = { firstName: 'John', lastName: 'Smith' } // object
 
 let two = () => {} // function
 
-let three 'bar' // string
+let three = 'bar' // string
 
 let four = 42 // number
 
@@ -74,76 +74,76 @@ let eight // undefined
 let nine = Symbol() // symbol
 ```
 
-## Objects
+## Objetos
 
 ![cupboard](https://media.giphy.com/media/l2Sq0NFJlJC5Dqb7y/giphy.gif)
 
-In computer terminology, an object is a value in memory that can be referenced by an identifier. In JavaScript, an object can be thought of as a collection of properties. It's like a closet for storing other types of data.
+En la terminología informática, el tipo de "objeto" es un valor en la memoria al que se puede hacer referencia mediante un identificador. En JavaScript, un objeto puede considerarse como un conjunto de propiedades. Es como un armario 🗄️ para almacenar 📦 otros tipos de datos.
 
-## Functions
+## Funciones
 
 ![Function](https://media.giphy.com/media/FuSJ5C7SSHlZCxjC6q/giphy.gif)
 
-Functions⚙️ `function` are ordinary objects that have the additional ability to be called for execution.
+Las funciones⚙️ `función` son objetos ordinarios que tienen la capacidad adicional de ser llamados para su ejecución.
 
-## Primitive values
+## Valores primitivos
 
-![Primitive](https://media.giphy.com/media/rBdWc61BPFVYc/giphy.gif)
+![Primitivo](https://media.giphy.com/media/rBdWc61BPFVYc/giphy.gif)
 
-All data types in JavaScript, except for objects, are immutable (values cannot be modified, only overwritten with a new full value). For example, unlike the C language, where a string can be corrected character by character, in JavaScript the strings are re-created only completely. Values of these types are called "primitive values".
+Todos los tipos de datos en JavaScript, excepto los objetos, son inmutables (los valores no se pueden modificar, solo se sobrescriben con un nuevo valor completo). Por ejemplo, a diferencia del lenguaje 👅 C, donde la cadena se puede ajustar carácter por carácter, en JavaScript las cadenas se recrean 🏗️ solo por completo. Los valores de este tipo se denominan "valores primitivos".
 
-## Text strings
+## Cadenas de texto
 
-![text](https://media.giphy.com/media/26n6AaCcCajAyZx04/giphy.gif)
+![texto](https://media.giphy.com/media/26n6AaCcCajAyZx04/giphy.gif)
 
-In JavaScript, the type `string` is used to represent text data.
+JavaScript usa el tipo `string` para representar datos de texto 📜.
 
-## Numbers
+## Números
 
-![Numbers](https://media.giphy.com/media/xT5LMMneIRG1UJquOI/giphy.gif)
+![Números](https://media.giphy.com/media/xT5LMMneIRG1UJquOI/giphy.gif)
 
-The numeric data type `number` represents both integer values and floating point numbers.
+El tipo de datos numérico `number` representa tanto valores enteros como de punto flotante.
 
 ## BigInt
 
-![giant](https://media.giphy.com/media/LZGipmRpX6uwE/giphy.gif)
+![gigante](https://media.giphy.com/media/LZGipmRpX6uwE/giphy.gif)
 
-In JavaScript, the `number` type cannot contain numbers greater than (253-1) (i.e. 9007199254740991), or less than - (253-1) for negative numbers. This technical limitation is due to their internal representation.
+En JavaScript, el tipo `number` no puede contener números mayores que (253-1) (es decir, 9007199254740991), o menores que -(253-1) para números negativos. Esta limitación técnica se debe a su representación interna.
 
-For most cases, this is sufficient. But sometimes we need really gigantic numbers, like in cryptography or when using a "timestamp" with microseconds.
+Para la mayoría de los casos esto es suficiente. Pero a veces necesitamos números realmente gigantescos, por ejemplo, en criptografía o cuando usamos una marca de tiempo ("timestamp") con microsegundos.
 
-The `bigInt` type was added to JavaScript to allow for arbitrary length integers.
+El tipo `bigInt` se agregó a JavaScript para que sea posible trabajar con números enteros de longitud arbitraria.
 
-## Boolean data type
+## tipo de datos booleano
 
-The boolean type `boolean` represents a logical entity and has two 2️⃣ values: `true` ✅
+El tipo booleano `booleano` representa una entidad booleana y tiene dos valores 2️⃣: `true` ✅ (verdadero)
 
 ![true](https://media.giphy.com/media/ap6wcjRyi8HoA/giphy.gif)
 
-and `false` ❎
+y `false` ❎ (falso).
 
 ![False](https://media.giphy.com/media/HNOVuT5AvCK1fgvp1m/giphy.gif)
 
-This type is usually used to store 📦 yes / no values: true ✅ means “yes, right,” and false ❎ means “no, wrong”.
+Este tipo se usa típicamente para almacenar valores de 📦 sí/no: verdadero ✅ significa "sí, correcto" y falso ❎ significa "no, incorrecto".
 
 ## Null
 
 ![Null](https://media.giphy.com/media/26hkhPJ5hmdD87HYA/giphy.gif)
 
-This data type has only one value: `null`. This value is specially designated as a primitive, since it is indeed a visible primitive in behavior. But at the same time, all other Objects are inherited from `null`, therefore, despite the fact that `null` returns a primitive value, its type is an object.
-For example, you can assign it to the default value.
+Este tipo de datos tiene un solo valor: `null`. Es un valor etiquetado específicamente como primitivo, ya que en realidad se comporta como un primitivo visible. Pero al mismo tiempo, todos los demás Objetos se heredan de `null`, por lo que, a pesar de que `null` devuelve un valor primitivo, su tipo es un objeto.
+Por ejemplo, puede asignarle un valor predeterminado.
 
 ## Undefined
 
 ![Unndefined](https://media.giphy.com/media/PkKzNQjwPy7GvxZbfe/giphy.gif)
 
-A variable 🔔 that has not been assigned a value will have the value `undefined`.
+Una variable 🔔 a la que no se le haya asignado un valor tendrá el valor `indefinido`.
 
-### Differences between null and undefined
+### Diferencias entre null e undefined
 
 ![Spiderman](https://media.giphy.com/media/l36kU80xPf0ojG0Erg/giphy.gif)
 
-`null` is the definite value of the absence of an object, while` undefined` denotes ambiguity. For example, you can check this in the browser console:
+`null` es el valor definido de la ausencia de un objeto, mientras que `undefined` significa indefinido. Por ejemplo, puede verificar esto en la consola del navegador:
 
 ```javascript
 let TestVar
@@ -151,7 +151,7 @@ console.log(TestVar) // undefined
 console.log(typeof TestVar) // undefined
 ```
 
-`null` is an assignment value. It can be assigned to a variable 🔔 as a representation with no value:
+`null` es el valor de asignación. Se puede asignar a una variable 🔔 como una representación sin valor:
 
 ```javascript
 let TestVar = null
@@ -159,7 +159,7 @@ console.log(TestVar) // null
 console.log(typeof TestVar) // object
 ```
 
-It is clear from the previous examples that `undefined` and `null` are two 2️⃣ different types: `undefined` is the type itself (undefined), and` null` is an object.
+De los ejemplos anteriores queda claro que `undefined` y `null` son dos 2️⃣ tipos diferentes: `undefined` es el tipo en sí mismo (undefined) y `null` es un objeto.
 
 ```javascript
 null === undefined // false
@@ -167,70 +167,109 @@ null == undefined // true
 null === null // true
 ```
 
-## Data type Symbol
+## Tipo de datos Símbolo (Symbol)
 
 ![Symbol](https://media.giphy.com/media/QvSGhHq8CrVzq/giphy.gif)
 
-The `Symbol` type is a unique and immutable primitive value that can be used as a key for a property of an object. This type is so rarely used in real work that we will not even consider it in this course.
+El tipo de símbolo `Symbol` es un valor primitivo único e inmutable que se puede utilizar como clave para una propiedad de objeto. Este tipo se usa tan raramente en el trabajo real que ni siquiera lo consideraremos en el marco de este curso.
 
-## Problems?
+## ¿Problemas?
 
 ![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
 
-Write to [Discord](https://discord.gg/6GDAfXn) chat.
+Escribe en [Discord](https://discord.gg/6GDAfXn) o Telegram [chat](https://t.me/jscampapp) y suscríbete a nuestras [noticias](https://t.me/javascriptapp)
 
-## Questions:
+![JavaScript Camp](/img/bandlink.png)
+
+## Preguntas:
 
 ![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
 
-What is the `typeof` operator used for?
+¿Para qué se utiliza el operador `typeof`?
 
-1. To determine the data type
-2. To output the data type to the console
-3. To enter a new variable
+1. Para definir el tipo de datos
+2. Para enviar el tipo de datos a la consola
+3. Para ingresar una nueva variable
 
-How many data types does the JavaScript standard define?
+¿Cuántos tipos de datos define el estándar de JavaScript?
 
-1.7
-2.9
-3.5
+1. `7`
+2. `9`
+3. `5`
 
-What data type contains a set of properties?
+¿Qué tipo de datos contiene un conjunto de propiedades?
 
 1. `function`
 2. `string`
 3. `object`
 
-Can a string be adjusted character by character in JavaScript?
+¿Es posible editar una cadena carácter por carácter en JavaScript?
 
-1. Yes
-2. Possibly in special cases
-3. No, the lines are re-created only completely
+1. Sí
+2. Posiblemente en casos especiales
+3. No, las líneas solo se recrean por completo
 
-What data type makes it possible to work with integers of arbitrary length?
+¿Qué tipo de datos hace posible trabajar con números enteros de longitud arbitraria?
 
 1. `number`
 2. `string`
-3. `bigint`
+3. `bigInt`
 
-Which value is not of type `boolean`?
+¿Qué valor no tiene el tipo booleano `boolean`?
 
 1. `false`
 2. `null`
 3. `true`
 
-Which data type has a value that can be used as a key for an object property?
+¿Qué tipo de datos tiene un valor que se puede usar como clave para una propiedad de objeto?
 
-1.` undefined` 2.` symbol` 3.` null`
+1. `undefined`
+2. `symbol`
+3. `null`
 
-In order to understand how much you learned this lesson, take a test in our school [mobile application](http://onelink.to/njhc95) on this topic.
+¿Cuál es el tipo de datos de la variable `whatTypeAmI` después de ejecutar esta instrucción? \n `let whatTypeAmI = 5`
 
-![Sumerian school](/img/app.jpg)
+1. `integer`
+2. `number`
+3. `string`
 
-## Links
+¿Qué tipo de datos es posiblemente el tipo de datos más utilizado en JavaScript?
+
+1. `integer`
+2. `number`
+3. `string`
+
+¿Cuál es el nombre del tipo de datos primitivo, lo que significa que no se ha asignado ningún otro valor?
+
+1. `undefined`
+2. `symbol`
+3. `null`
+
+¿Cuál es el nombre de un tipo de datos primitivo que básicamente no significa nada (ni nulo, ni cadena vacía, ni indefinido, ni falso, etc.)?
+
+1. `undefined`
+2. `boolean`
+3. `null`
+
+¿Cuántos valores posibles para el tipo de datos nulo?
+
+1. `1 возможное значение (null)`
+2. `2 возможных значения (null, undefined)`
+
+¿Cuál es el significado de `myMessage` después de esta línea? \n `let myMessage`
+
+1. `undefined`
+2. `SyntaxError`
+3. `null`
+
+Para comprender cuánto ha aprendido esta lección, realice una prueba en la [aplicación móvil](http://onelink.to/njhc95) de nuestra escuela sobre este tema o en nuestro [bot de Telegram](https://t.me/javascriptcamp_bot).
+
+![JS Camp](/img/app.jpg)
+
+## Enlaces:
 
 1. [MDN web docs](https://developer.mozilla.org/ru/docs/Web/JavaScript/Data_structures)
-2. [Code for Teens: The Perfect Beginner's Guide to Programming, Volume 1: Javascript - Jeremy Moritz](https://www.amazon.com/Code-Teens-Beginners-Programming-Javascript-ebook/dp/B07FCTLVPC)
+2. [Código para adolescentes: la gran guía de programación para principiantes Volumen 1: Javascript - Jeremy Moritz](https://www.amazon.com/Code-Teens-Beginners-Programming-Javascript-ebook/dp/B07FCTLVPC)
 3. [JavaScript.ru](https://learn.javascript.ru/types)
 
 ## Contributors ✨

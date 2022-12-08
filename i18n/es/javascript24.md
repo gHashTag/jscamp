@@ -1,19 +1,21 @@
 ---
 id: javascript24
-title: Ban on "this"
-sidebar_label: Ban on "this"
+title: Prohibición de "esto"
+sidebar_label: Prohibición de "esto"
 ---
+
+import YouTube from 'react-youtube'
 
 ![@serverSerrverlesskiy](/img/javascript/headers/24.jpg)
 
-Removing the `this` keyword from JavaScript makes the language better!
+¡Eliminar la palabra clave `this`🗝️ de JavaScript hace que el lenguaje👅 sea mejor!
 
-This is because `this` depends on how the function was called, not where it was defined. Therefore, JavaScript's `this` is a source of much language confusion пут.
+La razón es que 'esto' depende de cómo se llamó a la función⚙️, no de dónde se definió. Por lo tanto, `this` en JavaScript es una fuente de gran confusión en el lenguaje👅.
 
-Using this ensures that the function works on the exact object in the context of which it was called.
-Through the `this` method, you can not only refer to any property of the object, but also pass a reference to the entire object itself somewhere (reducing the security of the application).
+El uso de `this` asegura que la función opera en el objeto exacto en el contexto en el que se llama.
+A través del método `this`, no solo puede acceder a cualquier propiedad del objeto, sino también pasar a algún lugar una referencia al objeto completo (reduciendo la seguridad de la aplicación).
 
-The value of `this` is called the calling context and will be determined when the function is called. For example, a function like this, declared without an object, is perfectly valid:
+El valor de `this` se denomina contexto de la llamada y se determinará en el momento en que se llame a la función. Por ejemplo, una función como esta, declarada sin objeto, es perfectamente válida:
 
 ```javascript
 functionsay Hi() {
@@ -21,13 +23,13 @@ functionsay Hi() {
 }
 ```
 
-This function does not yet know what this will be. This will be revealed when the program is executed.
+Esta función aún no sabe qué será `this`. Esto quedará claro cuando se ejecute el programa.
 
-If the same function is run in the context of different objects, it will receive a different `this`:
+Si la misma función se ejecuta en el contexto de diferentes objetos, recibirá un `this` diferente:
 
 ```javascript
-var user = { firstName: 'John' }
-var admin = { firstName: 'Admin' }
+var user = { firstName: 'Joni' }
+var admin = { firstName: 'administración' }
 
 function funcName() {
   console.log(this.firstName)
@@ -35,25 +37,29 @@ function funcName() {
 user.f = funcName
 admin.g = funcName
 
-// this is equal to the object before point:
+//this es igual al objeto antes del punto:
 user.f() // Joni
-admin.g() // Admin
-admin['g']() // Admin (access to the object is implemented through square brackets)
+admin.g() // administración
+admin['g']() //Admin (el acceso al objeto se implementa entre corchetes)
 ```
 
-So, the value of `this` does not depend on how the function was created, it is determined exclusively at the time of the call.
+Entonces, el valor de `this` no depende de cómo se creó la función, se determina únicamente en el momento de la llamada.
 
-## `this` and its disadvantages
+## Video
 
-Methods are functions that are stored in objects. In order for the function⚙️ to know which object to work on, use `this`.
+<YouTube videoId="/BS9zo9wVoTk" /> 
+
+## `this` y sus desventajas
+
+Los métodos son funciones⚙️ que se almacenan en objetos. Para que la función⚙️ sepa en qué objeto trabajar, use `this.`
 
 ![Poor](https://media.giphy.com/media/fQJbwrRJdHyMOP7RPH/giphy.gif)
 
-But `this` loses context in many situations (return value unknown):
+Pero `this` pierde contexto en muchas situaciones (se desconoce el valor de retorno🔄):
 
-- loses context inside nested functions
-- loses context in callbacks
-- `this` loses context when the method is used as an event handler.
+- pierde contexto dentro de funciones anidadas
+- pierde contexto en las devoluciones de llamada
+- `this` pierde contexto cuando el método se usa como controlador de eventos.
 
 <!-- Давайте возьмем случай компонента `React`, который создает🏗️ поисковый запрос. В обоих методах, используемых в качестве обработчиков событий, при исползовании `this` теряется контекст:
 
@@ -123,13 +129,13 @@ timer.timerId // secret не такой уже секретный
 
 Удаление `this` означает отсутствие пользовательских прототипов в целом. -->
 
-## Best language
+## Mejor idioma
 
-![The_best](https://media.giphy.com/media/ZBn3ZRvCbWz2PS3Rbg/giphy.gif)
+![Lo_mejor](https://media.giphy.com/media/ZBn3ZRvCbWz2PS3Rbg/giphy.gif)
 
-JavaScript is both a functional programming language and a prototype-based language. If we get rid of this, we are left with JavaScript as a functional programming language. This is even better!
+JavaScript es tanto un lenguaje de programación funcional como un lenguaje basado en prototipos. Si nos deshacemos de `this`, nos quedamos con JavaScript como un lenguaje de programación funcional⚙️👅. ¡Es aún mejor!
 
-At the same time, without `this` JavaScript offers a new, unique way to do object-oriented programming without classes and inheritance.
+Al mismo tiempo, sin `this`, JavaScript ofrece 🆕 una forma nueva y única de hacer programación orientada a objetos sin clases ni herencia.
 
 <!-- ### Объектно-ориентированное программирование без this
 
@@ -270,60 +276,61 @@ function learnJavaScript() {
 
 В данном примере метод `reduce` запускается в контексте массива и вызывает функцию⚙️ для каждого элемента. Но помимо этого, он аккумулирует результаты всех вызовов в одно значение. Его задача – подсчитать "сумму" всех элементов и вернуть ее. -->
 
-## Abandoning this
+## Rechazar this
 
-![remember](https://media.giphy.com/media/S52I9r5QfB4fIBS6WV/giphy.gif)
+![recordar](https://media.giphy.com/media/S52I9r5QfB4fIBS6WV/giphy.gif)
 
-The best way to avoid `this` related problems is not to use `this` at all!
+¡La mejor manera de evitar problemas con `this` es no usar `this` en absoluto!
 
 :::note JavaScript
-JavaScript without this looks like the best functional programming language!
-
+¡JavaScript sin esto parece el mejor lenguaje de programación funcional⚙️👅!
 :::
 
-We can create encapsulated objects without using this as a collection of closures. With the help of [React Hooks](https://reactjs.org/docs/hooks-intro.html) we can create stateful components🏗️ without `this`.
+Podemos crear 🏗️ objetos encapsulados sin usar `this` como colecciones de cierre. Con [React Hooks](https://ru.reactjs.org/docs/hooks-intro.html) podemos crear 🏗️ sin "este" componentes con estado.
 
-The `this` keyword cannot be removed from JavaScript without destroying all existing applications. However, what can be done? We can write 🖊️ our own code without `this` and only allow it to be used in libraries. In the meantime, [new rules](https://ru.reactjs.org/docs/hooks-rules.html#eslint-plugin) `ESLint` are being introduced, prohibiting the use of `this`.
+La palabra clave `this` no se puede eliminar de JavaScript sin romper todas las aplicaciones existentes. Sin embargo, ¿qué se puede hacer? Podemos escribir 🖊️ nuestro propio código sin `this` y permitir que se use solo en bibliotecas. Mientras tanto, se están introduciendo [nuevas reglas](https://ru.reactjs.org/docs/hooks-rules.html#eslint-plugin) `ESLint` para prohibir el uso de `this`.
 
-Since in the last lesson we abandoned [classes](https://react-native-village.github.io/docs/javascript25#refused-classes), we say goodbye to `this` with them.
+Como abandonamos en la última lección [classes](https://jscamp.app/docs/javascript25#classes-rejection), también nos despedimos de `this`.
 
-## Problems?
+## ¿Problemas?
 
-![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
+![Problema](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
 
-Write to [Discord](https://discord.gg/6GDAfXn) chat.
+Escribe en [Discord](https://discord.gg/6GDAfXn) o Telegram [chat](https://t.me/jscampapp) y suscríbete a nuestras [noticias](https://t.me/javascriptapp)
 
-## Questions:
+![Campamento JavaScript](/img/bandlink.png)
 
-![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
+## Preguntas
 
-The `this` keyword is -
+![Pregunta](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
 
-1. The object to which the method belongs
-2. First argument in the function
-3. Set of properties
+¿Es posible prescindir de `this`:
 
-Is it possible to do without this:
+1. Puedes, y es mejor no usarlo en absoluto
+2. Posible, pero no aconsejable
+3. Es imposible, porque `this` no se puede eliminar de JavaScript
 
-1. You can, and it is better not to use at all
-2. It is possible, but not advisable
-3. It is impossible, because `this` cannot be removed from JavaScript
+<!-- Использование `this`:
 
-JavaScript without `this` looks like the best:
+1. Понижает безопасность кода
+2. Повышает безопасность кода
+3. Не влияет на безопасность -->
 
-1. Functional programming language
-2. Procedural programming language
-3. Logical programming language
+JavaScript sin `this` se ve mejor:
 
-In order to understand how much you learned this lesson, take the test on the [mobile application](http://onelink.to/njhc95) of our school on this topic.
+1. Lenguaje de programación funcional
+2. Lenguaje de programación procedimental
+3. Lenguaje de programación lógica
 
-![Sumerian school](/img/app.jpg)
+Para comprender cuánto ha aprendido esta lección, realice una prueba en la [aplicación móvil](http://onelink.to/njhc95) de nuestra escuela sobre este tema o en nuestro [bot de Telegram](https://t.me/javascriptcamp_bot).
 
-## Links
+![JS Camp](/img/app.jpg)
 
-1. [Removing the 'this' keyword from JavaScript makes the language better](https://webformyself.com/udalenie-klyuchevogo-slova-this-iz-javascript/)
-2. [The article "The this keyword in JavaScript"](https://habr.com/ru/post/464163/)
-3. [MDN web doc. Article "this"](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/this)
+## Enlaces
+
+1. [Artículo "Eliminar la palabra clave 'esto' de JavaScript mejora el lenguaje"](https://webformyself.com/udalenie-klyuchevogo-slova-this-iz-javascript/)
+2. [Artículo "La palabra clave this en JavaScript"](https://habr.com/es/post/464163/)
+3. [Documento web de MDN. Artículo "esto"](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/this)
 
 ## Contributors ✨
 

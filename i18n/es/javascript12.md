@@ -1,115 +1,121 @@
 ---
 id: javascript12
-title: Block Scope
-sidebar_label: Block Scope
+title: Ámbito de bloque
+sidebar_label: Ámbito de bloque
 ---
+
+import YouTube from 'react-youtube'
 
 ![@serverSerrverlesskiy](/img/javascript/headers/12.jpg)
 
-Scope is a part of a program within which a variable is available for use. When creating🏗️ `.js` file, we create🏗️ the scope of the whole file to create🏗️ the internal scope , you must declare it with curly braces `{...}`.
+Alcance (alcance en inglés): una parte del programa dentro de la cual la variable está disponible para su uso. <!--Para una variable, el alcance será la parte del programa en la que es "visible" y puede ser utilizada por el programador.--> Al crear🏗️ el archivo `.js`, creamos🏗️ el alcance de todo el archivo, para crear🏗️ alcance interno, debe declararlo🗣️ usando corchetes `{ ... }`.
 
 ![file](https://media.giphy.com/media/3o6Ztk7NosfLVRqcpy/giphy.gif)
 
 ```jsx
-// First scope
+// primer alcance
 let fruit = 'Banana'
 {
-  // Second scope
+  // Segundo alcance
   let fruit = 'Apple'
   {
-    // Third scope
+    // Tercer alcance
     let fruit = 'Lime'
   }
 }
 ```
 
-In this example, we have created🏗️ three variables in different scopes, which have their own version of the `fruit` variable, so no errors🙅‍♂️ occur, but if you try to create🏗️ two variables with the same name in the same scope, an error will occur🙅 ‍♂️.
+En este ejemplo, creamos 🏗️ tres variables en diferentes ámbitos, que contienen su propia versión de la variable `fruta`, por lo que no se producen errores 🙅‍♂️, pero si intenta crear 🏗️ dos variables con el mismo nombre en el mismo ámbito , entonces ocurrirá un error 🙅.
 
 ```jsx
-// First scope
+// primer alcance
 let fruit = 'Banana'
 {
-  // Second scope
+  // Segundo alcance
   let fruit = 'Apple'
-  let fruit = 'Lime' // An error will occur here
+  let fruit = 'Lime' // Aquí se producirá un error.
 }
 ```
 
-When creating🏗️ various constructs, you also create a scope for that construct, since you use a block of curly braces `{...}`.
+Cuando crea 🏗️ varias construcciones, también crea 🏗️ el alcance de esta construcción, porque usa un bloque de corchetes `{ ... }`.
 
 ```jsx
 if (true) {
-  // Scope of the conditional operator
+  // Alcance de una declaración condicional
 }
 
 for (let i = 0; i > 5; i++) {
-  // Scope of the cycle
+  // Alcance de bucle
 }
 
 function test() {
-  // Function scope
+  // Alcance de la función
 }
 ```
 
-In these examples, each construct has its own scope.
+En estos ejemplos, cada construcción tiene su propio alcance.
 
-## Global scope
+## Video
+
+<YouTube videoId="p-wmzCW_2C8" />
+
+## Alcance global
 
 ![Global](https://media.giphy.com/media/l0MYPsBLOYyFqSDte/giphy.gif)
 
-When we say global scope, we mean that all other scopes are children of this one. The global scope contains variables that are declared outside all functions and blocks.
+Cuando decimos alcance global, queremos decir que todos los demás alcances son hijos de este. El alcance global contiene variables declaradas🗣️ fuera de todas las funciones⚙️ y bloques.
 
 ```jsx
-// Global scope
+// Alcance global
 let fruit = 'Banana'
 ```
 
-A variable 🔔 created in the global scope is called a `global variable` 🔔. The global variable 🔔 can be used in all child scopes.
+Una variable 🔔 creada en el ámbito global se denomina `variable global` 🔔. La variable global 🔔 se puede utilizar en todos los ámbitos secundarios.
 
 ```jsx live
-function learnFavaScript() {
-  // The variable fruit is global
+function learnJavaScript() {
+  // La variable fruts es global.
   let fruit = 'Banana'
   function showFruit() {
-    // Therefore, we can use it inside a function
+    // Entonces podemos usarlo dentro de una función.
     return fruit
   }
   return showFruit()
 }
 ```
 
-## Local scope
+## Ámbito local
 
 ![Local](https://media.giphy.com/media/VFwRCi6WKBUk08fliV/giphy.gif)
 
-The local scope contains variables that are declared🗣️ in a specific part of the code📟. For example, variables created inside a loop will be local.
+El alcance local contiene variables declaradas🗣️ en una determinada parte del código📟. Por ejemplo, las variables creadas 🏗️ dentro del bucle serán locales.
 
 ```jsx
 for (let i = 0; i > 5; i++) {
-  // Variable i is local
+  // La variable i es local
 }
 ```
 
-Local variables 🔔 can only be used within the block in which they were declared.
+Las variables locales 🔔 solo pueden usarse dentro del bloque en el que fueron declaradas.
 
 ```jsx
-function learnFavaScript() {
+function learnJavaScript() {
   function showFruit() {
-    // The variable fruit is local
+    // La variable fruit es local.
     let fruit = 'Banana'
   }
-  // Therefore, we cannot use it outside the function.
+  // Por lo tanto, no podemos usarlo fuera de una función.
   return fruit
 }
 
 // ReferenceError: fruit is not defined
 ```
 
-## Examples
+## Ejemplos
 
 ![Math](https://media.giphy.com/media/xT1Ra5h24Eliux3UVq/giphy.gif)
 
-We use two variables 🔔 with the same name in different scopes. The `otherFruit()` function returns a 🔔 `fruit` variable from the scope in which it is initialized as` Lime`
+Usamos dos variables 🔔 con el mismo nombre en diferentes ámbitos. La función `otherFruit()` devuelve la variable 🔔 `fruts` desde el ámbito en el que se inicializa como `Lime`
 
 ```jsx live
 function learnJavaScript() {
@@ -122,7 +128,7 @@ function learnJavaScript() {
 }
 ```
 
-If we remove `let` from the`otherFruit()`function, then instead of creating a variable 🔔 we overwrite it 🖊️.
+Si eliminamos `let` de la función `otherFruit()`, en lugar de crear una variable 🔔 la sobrescribimos 🖊️.
 
 ```jsx live
 function learnJavaScript() {
@@ -135,7 +141,7 @@ function learnJavaScript() {
 }
 ```
 
-What if we try to call a local variable 🔔 in the parent scope? An error occurs due to the fact that we are trying in the global scope to call a variable 🔔, which we did not create.
+¿Qué sucede si tratamos de llamar a una variable local 🔔 en el ámbito principal? Ocurre un error porque estamos tratando de llamar a una variable 🔔 en el alcance global, que no creamos.
 
 ```javascript
 function learnJavaScript() {
@@ -151,13 +157,13 @@ function learnJavaScript() {
 
 ![Primer](https://media.giphy.com/media/M33UV4NDvkTHa/giphy.gif)
 
-## Denying var
+## Prohibición de var
 
 ![eye](https://media.giphy.com/media/PKl9JTqnoiKtO/giphy.gif)
 
-In the article [Change](https://react-native-village.github.io/docs/javascript03) we told you that we will not use `var`, this is related to the scope.
+En el artículo [Variable](https://jscamp.app/docs/javascript03) le dijimos que no usaremos `var`, está conectado solo con el alcance.
 
-1. If in the same scope you create two variables 🔔 with the same name using the keyword `let` or `const`, the interpreter warns us about this by displaying an error.
+1. Si crea dos variables 🔔 con el mismo nombre en el mismo ámbito utilizando la palabra clave `let` o `const`, el intérprete nos advierte sobre esto mostrando un error.
 
 ```jsx
 function learnJavaScript() {
@@ -168,7 +174,7 @@ function learnJavaScript() {
 }
 ```
 
-But, if you create variables with the same name with `var`, it will reassign it.
+Pero, si usando `var` creas variables 🔔 con el mismo nombre, entonces las reasignará.
 
 ```jsx live
 function learnJavaScript() {
@@ -178,9 +184,9 @@ function learnJavaScript() {
 }
 ```
 
-Error🙅‍♂️ does not occur, because `var` has overwritten the variable` fruit`
+El error 🙅‍♂️ no ocurre porque `var` sobrescribió la variable `fruit`
 
-2. Having created a global variable 🔔 with `var`, we can change it from the local scope by creating another variable 🔔 with the same name with `var`. The scope of `var` is limited to either a function or a script.
+2. Habiendo creado una variable global 🔔 usando `var`, podemos cambiarla desde el alcance local creando otra variable 🔔 con el mismo nombre usando `var`. El alcance de `var` está limitado a una función o un script.
 
 ```jsx live
 function learnJavaScript() {
@@ -192,7 +198,7 @@ function learnJavaScript() {
 }
 ```
 
-3. Variables 🔔 created with `var` are considered declared from the very beginning of script execution, regardless of where the declaration is located.
+3. Las variables 🔔 creadas con `var` se consideran declaradas desde el comienzo de la ejecución del script, independientemente de dónde se encuentre la declaración.
 
 ```jsx live
 function learnJavaScript() {
@@ -202,11 +208,11 @@ function learnJavaScript() {
 }
 ```
 
-4. JavaScript did not have block scopes before ES6. Those. any variable created with the `var` keyword inside a block will be visible outside of it.
+4. Antes de ES6, JavaScript no tenía alcances de bloque. Aquellos. cualquier variable creada con la palabra clave `var` dentro del bloque también será visible fuera del bloque.
 
 ```javascript
 if (true) {
-  var fruit = 'Apple' // the variable will be visible outside the given block
+  var fruit = 'Apple' // la variable será visible fuera de este bloque
 }
 console.log(fruit) // "Apple"
 ```
@@ -215,46 +221,48 @@ console.log(fruit) // "Apple"
 
 ```javascript
 if (true) {
-  let fruit = 'Apple' // the variable will not be visible outside the given block
+  let fruit = 'Apple' // la variable no será visible fuera de este bloque
 }
 console.log(fruit) // "Apple"
 ```
 
 ![javascript](/img/javascript/29.jpg)
 
-Due to the listed reasons, the developers decided not to use `var`
+Debido a las razones anteriores, los desarrolladores han abandonado el uso de `var`
 
-## Problems?
+## ¿Problemas?
 
 ![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
 
-Write to [Discord](https://discord.gg/6GDAfXn) chat.
+Escribe en [Discord](https://discord.gg/6GDAfXn) o Telegram [chat](https://t.me/jscampapp) y suscríbete a nuestras [noticias](https://t.me/javascriptapp)
 
-## Questions:
+![JavaScript Camp](/img/bandlink.png)
 
-![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
+## Preguntas
 
-When do we create the very first scope?
+![Pregunta](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
 
-1. When creating a cycle
-2. When creating a file
-3. When creating a block
+¿Cuándo creamos el primer alcance?
 
-When creating a conditional statement, is a new scope created?
+1. Al crear un bucle
+2. Al crear un archivo
+3. Al crear un bloque
 
-1. Yes
-2. No
+Al crear una declaración condicional, ¿se crea un nuevo alcance?
 
-Where is the local variable created?
+1. `true`
+2. `false`
 
-1. In a certain part of the code
-2. Outside of all blocks
+¿Dónde se crea la variable local?
 
-In order to understand how much you learned this lesson, take the test on the [mobile application](http://onelink.to/njhc95) of our school on this topic.
+1. Dentro del bloque en el que se declara
+2. Fuera de todos los bloques
 
-![Sumerian school](/img/app.jpg)
+Para comprender cuánto ha aprendido en esta lección, realice la prueba en [aplicación móvil](http://onelink.to/njhc95) en nuestra escuela sobre este tema.
 
-## Links
+![JS Camp](/img/app.jpg)
+
+## Enlaces
 
 1. [JavaScript Scope](https://css-tricks.com/javascript-scope-closures/)
 2. [Learn JavaScript](https://learn.javascript.ru/closure)

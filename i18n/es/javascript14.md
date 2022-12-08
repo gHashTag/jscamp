@@ -1,38 +1,44 @@
 ---
 id: javascript14
-title: Regular expressions
-sidebar_label: Regular expressions
+title: Expresiones regulares
+sidebar_label: Expresiones regulares
 ---
+
+import YouTube from 'react-youtube'
 
 ![@serverSerrverlesskiy](/img/javascript/headers/13.jpg)
 
-Regular expressions are a formal language for searching and manipulating strings in a text based on the use of metacharacters.
+Las expresiones regulares (inglés _regular expressions_) es un lenguaje formal 👅 para buscar y manipular cadenas en texto 📜 basado en el uso de metacaracteres.
 
-Regular expressions allow you to:
+Las expresiones regulares le permiten:
 
-- Search for text in a string
-- Replace substrings in a string
-- Extract information from a string
+- Buscar texto en una cadena
+- Reemplazar subcadenas en una cadena
+- Extraer información de una cadena
 
 ![search](https://media.giphy.com/media/l46Cy1rHbQ92uuLXa/giphy.gif)
 
-JavaScript, along with Perl, is one of the programming languages in which regular expression support is built directly into the language.
+JavaScript, junto con Perl, es uno de los lenguajes de programación👅 en los que la compatibilidad con expresiones regulares está integrada directamente en el lenguaje👅.
 
-## Difficulty to use
+## Video
+
+<YouTube videoId="HBAejHnWk7g" />
+
+## Dificultad de uso
 
 ![the complexity of using](https://media.giphy.com/media/5XYsIwzY00ONq/giphy.gif)
 
-The disadvantage of regular expressions is that they often look strange and even intimidating. This is especially true for more complex templates.
+La desventaja de las expresiones regulares es que a menudo se ven extrañas e incluso intimidantes. Esto es especialmente cierto para las plantillas más complejas.
 
 ```jsx
 let regExp = /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
 ```
 
-## Defining regular expressions
+## Definición de expresiones regulares
 
 ![search](https://media.giphy.com/media/RMwYOO5e8pr1lhL8K7/giphy.gif)
 
-The definition of a regular expression is the creation of a template on the basis of which work with strings will take place. In JavaScript, regular expressions are an object that can be defined in two ways.
+La definición de una expresión regular es la creación🏗️ de una plantilla, sobre la base de la cual se realizará el trabajo con cadenas. En JavaScript, una expresión regular es un objeto que se puede definir de dos maneras.
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -41,169 +47,169 @@ import TabItem from '@theme/TabItem';
 defaultValue="literal"
 values={[
 {label: 'Literal', value: 'literal'},
-{label: 'Construction', value: 'construction'},
+{label: 'Diseño', value: 'construction'},
 ]
 }>
 <TabItem value="literal">
 
-Defining regular expressions using literals. For regular expressions, slashes `/ ... /` are literals, they play the same role as the parentheses `` ... '' when creating strings.
+Definición de expresiones regulares usando literales. Para las expresiones regulares, las barras diagonales `/ ... /` actúan como literales, juegan el mismo papel que los corchetes `' ... '` al crear 🏗️ cadenas.
 
 ```jsx
-let regExp = /pattern/
+let regExp = /muestra/
 ```
 
-If you decide to create regular expressions using literals, then it should be borne in mind that this method of creation _does not allow dynamic changes_ in the specified values. This is due to the fact that regular expression literals cause _precompilation_ when the script is parsed.
+Si decide crear 🏗️ expresiones regulares utilizando literales, debe tener en cuenta que este método de creación _no permite cambios dinámicos_ de los valores establecidos. Esto se debe a que los literales de expresiones regulares provocan una _precompilación_ cuando se analiza el script.
 
   </TabItem>
-  
   <TabItem value="construction">
 
-Defining regular expressions using a constructor.
+Definición de expresiones regulares usando un constructor.
 
 ```jsx
-let regExp = new RegExp('pattern')
+let regExp = new RegExp('muestra')
 ```
 
-The compilation of the regular expression created🏗️ using the constructor occurs at the time of the script execution. This way of creating is worth using if your regular expression is being created созда from a dynamically generated string.
+La compilación de la expresión regular creada por 🏗️ usando el constructor ocurre en el momento de la ejecución del script. Esta forma de crear🏗️ debe usarse si su expresión regular se crea🏗️ a partir de una cadena generada dinámicamente.
 
   </TabItem>
 </Tabs>
 
-## Using
+## Uso
 
 ![pressing the button](https://media.giphy.com/media/12hhLP67q6PqCs/giphy.gif)
 
-Let's look at the use of regular expressions using an example:
+Usando expresiones regulares, veamos un ejemplo:
 
 ```jsx
 let regExp = /banana/
 ```
 
-With this code📟 we have created🏗️ a simple regular expression that searches for the string `banana`. To test a regular expression, you can use the `.test(string)` method, the result of the method is a `boolean` value.
+Con este código📟 hemos creado🏗️ una expresión regular simple que busca la cadena `banana`. Para probar una expresión regular, puede usar el método `.test(string)`, el resultado del método es un valor `boolean`.
 
 ```jsx live
 function learnJavaScript() {
   let regExp = /banana/,
     str = 'fanana ranana banana'
-  return regExp.test(str) ? 'Yes' : 'No'
+  return regExp.test(str) ? 'Encontrado' : 'No'
 }
 ```
 
-In the example, the regular expression looks for the substring `banana` in the string` str`.
+En el ejemplo, la expresión regular busca la subcadena `banana` en la cadena `str`.
 
-## Anchors
+## Anclajes
 
 ![anchor](https://media.giphy.com/media/3ohze1LSWrEGCML02Y/giphy.gif)
 
-Anchors tie a pattern to the beginning or end of a line. To bind to the beginning of a line, use `^`, and to the end, use `$`.
+Los anclajes anclan un patrón al principio o al final de una cadena. Para enlazar al principio de una línea, use `^`, y al final - `$`.
 
 ```jsx live
 function learnJavaScript() {
   let regExp = /^banana/,
     str = 'lime banana orange'
-  return regExp.test(str) ? 'Yes' : 'No'
+  return regExp.test(str) ? 'Encontrado' : 'No'
 }
 ```
 
-Using this pattern `/ banana /` you will search for `banana` in the whole line. If you need to check for a complete match of a string with a template, you need to use the anchors `/ ^ banana $ /`. The `.test ()` method will return `true` ✅ only if the whole line is` banana`.
+Usando este patrón `/banana/` buscará `banana` en toda la cadena. Si necesita verificar una coincidencia completa de una cadena con un patrón, debe usar los anclajes `/^banana$/`. El método `.test()` devolverá `true` ✅ solo si la cadena completa es `banana`.
 
-## Flags
+## Banderas
 
 ![Flag](https://media.giphy.com/media/ihRmRCxJuIi3pCORTL/giphy.gif)
 
-Flags are used to enhance regular expression searches.
+Las banderas se utilizan para extender la búsqueda realizada por expresiones regulares.
 
-- `g` - when searching, searches for all matches;
-- `i` - search does not depend on case`[Z-z]`;
-- `m` - multi-line mode;
-- `s` - turns on the **dotall** mode, in which the dot` .` can match a line feed character;
-- `y` - searches starting from the character that is at the position of the ** lastindex **property** of the current regular expression;
-- `u` - enables **Unicode** support.
+- `g` - al buscar, busca todas las coincidencias;
+- `i` - la búsqueda no distingue entre mayúsculas y minúsculas `[Z-z]`;
+- `m` - modo multilínea;
+- `s` - activa el modo **dotall**, en el que el punto `.` puede coincidir con el carácter de nueva línea;
+- `y` - busca a partir del carácter que está en la posición de la propiedad **lastindex** de la expresión regular actual;
+- `u` - habilita la compatibilidad con **Unicode**.
 
-Using flags in different ways to create a regular expression pattern
-
+Uso de banderas de diferentes maneras para crear un patrón de expresión regular 🏗️
 <Tabs
 defaultValue="literal"
 values={[
-{label: 'Literal', value: 'literal'},
-{label: 'Construction', value: 'construction'},
+{label: 'Литерал', value: 'literal'},
+{label: 'Diseño', value: 'construction'},
 ]
 }>
 <TabItem value="literal">
 
 ```jsx
-let regExp = /pattern/anchor // prettier-ignore
+let regExp = /patrón/bandera // prettier-ignore
 ```
 
-Please note that the flags are **integral part** of the regular expression. Flags cannot be added or removed later. Also flags can be combined.
+Tenga en cuenta que las banderas son **una parte esencial** de una expresión regular. Las banderas no se pueden agregar o eliminar más tarde. Las banderas también se pueden combinar.
 
 ```jsx live
 function learnJavaScript() {
   let regExp = /banana/i,
     str = 'faNana RanaNA BaNanA'
-  return regExp.test(str) ? 'Yes' : 'No'
+  return regExp.test(str) ? 'Encontrado' : 'No'
 }
 ```
 
-Try removing the `i` flag from the example.
+Intente eliminar el indicador `i` del ejemplo.
 </TabItem>
 <TabItem value="construction">
 
 ```jsx
-let regExp = new RegExp('pattern', 'anchor')
+let regExp = new RegExp('plantilla', 'bandera')
 ```
 
-Please note that the flags are **integral part** of the regular expression. Flags cannot be added or removed later. Also flags can be combined.
+Tenga en cuenta que las banderas son **una parte esencial** de una expresión regular. Las banderas no se pueden agregar o eliminar más tarde. Las banderas también se pueden combinar.
 
 ```jsx live
 function learnJavaScript() {
   let regExp = new RegExp('banana', 'i'),
     str = 'faNana RanaNA BaNanA'
-  return regExp.test(str) ? 'Yes' : 'No'
+  return regExp.test(str) ? 'Encontrado' : 'No'
 }
 ```
 
-Try removing the `i` flag from the example. The search is now case sensitive.
+Intente eliminar el indicador `i` del ejemplo. La búsqueda ahora distingue entre mayúsculas y minúsculas.
 </TabItem>
 </Tabs>
 
 ## Total
 
-The topic is very extensive and rarely used by us in development, so if you're interested, you can get acquainted with it in more detail [here,](https://learn.javascript.ru/regular-expressions) [here](https://developer.mozilla.org/en/docs/Web/JavaScript/Guide/Regular_Expressions)[and here.](https://tuhub.ru/frontend/js-regexp)
+El tema es muy extenso y rara vez lo usamos en el desarrollo, por lo que si está interesado, puede familiarizarse con él con más detalle [aquí,](https://learn.javascript.ru/regular-expressions) [aquí]( https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Regular_Expressions)[ y aquí.](https://tuhub.ru/frontend/js-regexp)
 
-## Problems?
+## ¿Problemas?
 
 ![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
 
-Write to [Discord](https://discord.gg/6GDAfXn) chat.
+Escribe en [Discord](https://discord.gg/6GDAfXn) o Telegram [chat](https://t.me/jscampapp) y suscríbete a nuestras [noticias](https://t.me/javascriptapp)
 
-## Questions:
+![JavaScript Camp](/img/bandlink.png)
+
+## Preguntas
 
 ![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
 
-What are regular expressions for?
+¿Para qué sirven las expresiones regulares?
 
-1. Creation of templates
-2. String manipulation
-3. Editing strings
+1. Crea plantillas
+2. Manipulación de cadenas
+3. Edición de línea
 
-What character is used to literally create a regular expression?
+¿Qué carácter se usa para crear literalmente una expresión regular?
 
-1. Slash `/`
-2. Backslash `\`
-3. Square brackets `[]`
+1. Barra inclinada `/`
+2. Barra invertida `\`
+3. Corchetes `[]`
 
-What is the way to create a regular expression that does not allow further dynamic changes to the given values?
+¿Qué forma de crear una expresión regular no permite un mayor cambio dinámico de los valores dados?
 
-1. In literal
-2. In the constructor
-3. With any method, dynamic change is permissible
+1. En un literal
+2. En diseño
+3. Con cualquier método, se permite el cambio dinámico
 
-In order to understand how much you learned this lesson, take the test on the [mobile application](http://onelink.to/njhc95) of our school on this topic.
+Para comprender cuánto ha aprendido en esta lección, realice la prueba en [aplicación móvil](http://onelink.to/njhc95) en nuestra escuela sobre este tema.
 
-![Sumerian school](/img/app.jpg)
+![JS Camp](/img/app.jpg)
 
-## Links
+## Enlaces
 
 1. [Learn JavaScript](https://learn.javascript.ru/regular-expressions)
 2. [MDN Web Docs](https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Regular_Expressions)
