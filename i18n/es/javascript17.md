@@ -1,64 +1,70 @@
 ---
 id: javascript17
-title: Arrays
-sidebar_label: Arrays
+title: arreglos
+sidebar_label: arreglos
 ---
+
+import YouTube from 'react-youtube'
 
 ![@serverSerrverlesskiy](/img/javascript/headers/18.jpg)
 
-To store ordered collections, there is a special data structure called an `Array`.
+Para almacenar 📦 colecciones ordenadas, existe una estructura de datos especial llamada `Array`.
 
 ![Storage](https://media.giphy.com/media/3orif6FORJ98Z11xzq/giphy.gif)
 
-`Array` - an ordered collection of data, which contains the 1st, 2nd, 3rd elements, etc. For example, we need it to store 📦 a list of something: users, products, site elements, etc.
+`Array` - una colección ordenada de datos, que contiene los elementos 1, 2, 3, etc. Por ejemplo, lo necesitamos para almacenar una 📦 lista de algo: usuarios, productos, elementos del sitio, etc.
 
-## Creation
+## Video
+
+<YouTube videoId="4NS5yxWNulQ" />
+
+## Creación
 
 ![create](https://media.giphy.com/media/3oEduXdm2gjnrsJBOo/giphy.gif)
 
-There are 2️⃣ options for creating🏗️ an empty array:
+Hay dos 2️⃣ opciones para crear una matriz vacía🏗️:
 
 ```javascript
 let arr = new Array(5)
-// new Array(5) - creates an array with no elements (which cannot be accessed just like that), but with a given length.
+// new Array(5) - crea una matriz sin elementos (a la que no se puede acceder así), pero con una longitud dada.
 let arr = []
 ```
 
-The second variant 2️⃣ syntax📖 is almost always used. In parentheses, we can indicate the initial values of the elements:
+Casi siempre se usa la segunda variante de la sintaxis 2️⃣📖. Entre paréntesis, podemos especificar los valores iniciales de los elementos:
 
 ```jsx live
 function learnJavaScript() {
-  let fruits = ['Apple', 'Orange', 'Plum']
+  let fruits = ['Manzana', 'Naranja', 'Ciruela']
 
   return fruits.toString()
 }
 ```
 
-The array elements are numbered starting from zero 0️⃣.
+Los elementos de la matriz se numeran a partir de cero 0️⃣.
 
-We can get an element by specifying its number in square brackets 👇:
+Podemos obtener un elemento dando su número entre corchetes 👇:
 
 ```jsx live
 function learnJavaScript() {
-  let fruits = ['Apple', 'Orange', 'Plum']
+  let fruits = ['Manzana', 'Naranja', 'Ciruela']
 
   return fruits[0]
 }
 ```
 
-We can replace the 🖊️ element:
+Podemos reemplazar el elemento 🖊️:
 
 ```javascript
-fruits[2] = 'Plum' // now ["Apple", "Orange", "Plum"]
+fruits[2] = 'Pera' // ahora ["Manzana", "Naranja", "Pera"]
 ```
 
-... Or add 🆕 a new one to the existing array 👇:
+…O agregue un nuevo 🆕 a una matriz existente 👇:
 
 ```jsx live
 function learnJavaScript() {
-  let fruits = ['Apple', 'Orange', 'Plum']
-  fruits[2] = 'Pear'
-  fruits[3] = 'Lemon' // теперь ["Apple", "Orange", "Pear", "Lemon"]
+  let fruits = ['Manzana', 'Naranja', 'Ciruela']
+  fruits[2] = 'Pera'
+  fruits[3] = 'Limón' // ahora ["Manzana", "Naranja", "Pera", "Limón"]
 
   return fruits
 }
@@ -66,121 +72,117 @@ function learnJavaScript() {
 
 ## length
 
-The total number of elements in the array is contained in its `.length` property:
+El número total de elementos de la matriz está contenido en su propiedad `.length`:
 
 ```jsx live
 function learnJavaScript() {
-  let fruits = ['Apple', 'Orange', 'Plum']
+  let fruits = ['Manzana', 'Naranja', 'Ciruela'']
 
   return fruits.length
 }
 ```
 
-The `length` property is automatically updated when the array changes. To be precise, it is not the number of elements in the array, but the largest numeric index plus one.
+La propiedad `longitud` se actualiza automáticamente cuando cambia la matriz. Para ser precisos, este no es el número de elementos de la matriz, sino el índice digital más grande más uno.
 
 ![Update](https://media.giphy.com/media/FP47IFqWyXfdKYU6VG/giphy.gif)
 
-For example, the only real element with a large index gives the largest possible length to the array 👇:
+Por ejemplo, el único elemento real que tiene un índice grande le da la mayor longitud posible a la matriz 👇:
 
 ```jsx live
 function learnJavaScript() {
   let fruits = []
-  fruits[155] = 'Apple'
+  fruits[155] = 'Яблоко'
 
   return fruits.length // 156
 }
 ```
 
-Note that we usually don't use arrays this way.
+Tenga en cuenta que normalmente no usamos matrices de esta manera.
 
-Another interesting fact about the `length` property is that it can be overwritten.
+Otro hecho interesante sobre la propiedad `length` es que se puede sobrescribir.
 
-If we manually increase ➕ it, nothing interesting happens. But if we decrease it, the array will become shorter. This process is irreversible, as we can understand from the example 👇:
+Si lo aumentamos manualmente ➕, no pasará nada interesante. Por otro lado, si lo reducimos➖, la matriz se hará más corta. Este proceso es irreversible, como podemos entender del ejemplo 👇:
 
 ```jsx live
 function learnJavaScript() {
   let arr = [1, 2, 3, 4, 5]
 
-  arr.length = 2 // shorten to two elements
-  //console.log( arr )  // [1, 2]
+  arr.length = 2 // acortar a dos elementos
+   //consola.log(arr) // [1, 2]
 
-  arr.length = 5 // return length as it was
-  //console.log( arr[3] )  // undefined: values are not restored!
-
-  return 'The real array was shortened:' + arr
+  arr.length = 5 // devuelve la longitud tal como estaba
+   //console.log( arr[3] ) // undefined: ¡no se recuperaron valores!
+  
+  return 'Matriz real acortada:' + arr
 }
 ```
 
-So the simplest way to clear the array is with `arr.length = 0`.
+Entonces, la forma más fácil de borrar una matriz es `arr.length = 0`.
 
-## Item types
+## Tipos de elementos
 
 ![Storage](https://media.giphy.com/media/2sYaePC3iVWYBNxaVj/giphy.gif)
 
-An array can store 📦 elements of any type - number, boolean value, strings, objects, or entire functions:
+Una matriz puede almacenar 📦 elementos de cualquier tipo: número, valor booleano, cadenas, objetos o funciones completas⚙️:
 
-For example 👇:
+Por ejemplo 👇:
 
 ```jsx live
 function learnJavaScript() {
   let arr = [
-    'Apple',
+    'Manzana',
     { name: 'Nikita' },
     true,
     function () {
-      return 'Hello'
+      return 'Hola'
     }
   ]
-  // get the element with index 1 {object} and then read its property
-  let x = arr[1].name // name Nikita
-  // get the element with index 3 (function) and execute it
-  let result1 = arr[3] // The function itself
-  let result2 = arr[3]() // 'Hello'
+  // obtenga el elemento en el índice 1 {objeto} y luego lea su propiedad
+  let x = arr[1].name // nombre nikita
+  // obtener el elemento en el índice 3 (función) y ejecutarlo
+  let result1 = arr[3] // La función en sí
+  let result2 = arr[3]() // 'Hola'
 
-  return 'Value of 4th element at 3rd index:' + result2
-  // + '. The function itself: '+ result1
+  return 'Valor del 4to elemento con 3er índice: ' + result2
+  // + '. La función en sí: ' + result1
 }
 ```
 
-Note `result1 = arr [3]` contain the text of the function, and `result2 = arr [3] ()` the result of the executed function is `()` we run it.
+Tenga en cuenta que `result1 = arr[3]` contiene el texto 📜 de la función⚙️, y `result2 = arr[3]()` es el resultado de la función ejecutada⚙️ - `()` lo ejecutamos.
 
-## Methods `push / pop`
+## Métodos `push/pop`
 
 ![binarycode](https://media.giphy.com/media/fV0oSDsZ4UgdW/giphy.gif)
 
-`Stack` is a variant of using arrays as data structures.
+`Stack` es una variante del uso de matrices como estructuras de datos.
 
-It supports two 2️⃣ types of operations:
+Admite dos 2️⃣ tipos de operaciones:
 
-- `push` adds a ➕ element to the end.
+- `pop` elimina ➖ el último elemento.
 
-![Add](https://media.giphy.com/media/Yqo5mjWTLGlVOIP8Dc/giphy.gif)
+![Eliminar](https://media.giphy.com/media/VD4Bt6FyYWcWj0LzDK/giphy.gif)
 
-- `pop` removes ➖ the last element.
+Por lo tanto, siempre se agregan o eliminan nuevos elementos del "final".
 
-![Delete](https://media.giphy.com/media/VD4Bt6FyYWcWj0LzDK/giphy.gif)
+Un ejemplo de una pila suele ser una pirámide: los anillos nuevos se colocan en la parte superior y también se toman desde arriba.
 
-Thus, new elements are always added or removed from the "end".
+`Queue` es uno de los usos más comunes para una matriz. En informática🖥️, este es el nombre de una colección ordenada de elementos
 
-An example of a stack is usually a pyramid: new rings are placed on top and also taken from above.
-
-`Queue` is one of the most common uses for an array. In computer science, this is an ordered collection of elements
-
-## Methods for working with the end of an array:
+## Métodos para trabajar con el final de una matriz:
 
 ### push
 
 ![Add to](https://media.giphy.com/media/21ODeWspDCgZNAoCIp/giphy.gif)
 
-Adds an ➕ element to the end of an array 👇:
+Agrega ➕ un elemento al final de la matriz 👇:
 
 ```jsx live
 function learnJavaScript() {
-  let fruits = ['Apple', 'Orange']
+  let fruits = ['Manzana naranja']
 
-  fruits.push('Pear')
+  fruits.push(' Pera')
 
-  return 'Array: ' + fruits // Apple, Orange, Pear
+  return 'Formación: ' + fruits // manzana, naranja, pera
 }
 ```
 
@@ -188,33 +190,32 @@ function learnJavaScript() {
 
 ![Delete](https://media.giphy.com/media/26ybwwiZmci3DJdYs/giphy.gif)
 
-Removes ➖ the last element from an array and returns it 👇:
+Elimina ➖ el último elemento de una matriz y lo devuelve 👇:
 
 ```jsx live
 function learnJavaScript() {
-  let fruits = ['Apple', 'Orange', 'Pear']
+  let fruits = [' Manzana', 'Naranja', 'Pera']
 
-  let delFruits = fruits.pop() // remove the "Pear" and return it to the delFruits variable
-
-  return 'Removed item = ' + delFruits + '. Array left: ' + fruits // Apple, Orange
+  let delFruits = fruits.pop() // eliminar "Pear" y devolverlo a la variable delFruits
+  
+  return 'Elemento eliminado = ' + delFruits + '. Matriz restante: ' + fruits // Manzana naranja
 }
 ```
 
-## Methods for working with the beginning of an array:
+## Métodos para trabajar con el comienzo de una matriz:
 
 ![start](https://media.giphy.com/media/QJvwBSGaoc4eI/giphy.gif)
 
 ### shift
 
-Removes ➖ the first from the array and returns 🔄 it:
+Elimina el primer ➖ de la matriz y lo devuelve 🔄:
 
 ![delete](https://media.giphy.com/media/4Z1XJumqDgvI9b1VZJ/giphy.gif)
 
 ```jsx live
 function learnJavaScript() {
-  let fruits = ['Apple', 'Orange', 'Pear']
-
-  fruits.shift() // remove the Apple
+  let fruits = ['Manzana ', 'Naranja', 'Pera']
+  fruits.shift() // eliminar manzana
 
   return fruits
 }
@@ -222,156 +223,155 @@ function learnJavaScript() {
 
 ### unshift
 
-Adds an ➕ element to the beginning of the array:
+Agrega un elemento ➕ al comienzo de la matriz:
 
 ![Plus](https://media.giphy.com/media/LgC9OQ53v5mFi/giphy.gif)
 
 ```jsx live
 function learnJavaScript() {
-  let fruits = ['Apple', 'Orange', 'Pear']
-
-  fruits.unshift('Apricot')
+  let fruits = ['Manzana ', 'Naranja', 'Pera']
+  fruits.unshift('Albaricoque')
 
   return fruits
 }
 ```
 
-The `push` and` unshift` methods can add ➕ several elements at once 👇:
+Los métodos `push` y `unshift` pueden agregar ➕ varios elementos a la vez 👇:
 
 ```jsx live
 function learnJavaScript() {
-  let fruits = ['Apple']
+  let fruits = ['Manzana']
 
-  fruits.push('Orange', 'Pear')
-  fruits.unshift('Pineapple', 'Lemon')
+  fruits.push('naranja', 'pera')
+  fruits.unshift('Piña', 'Limón')
 
-  return 'In an array ' + fruits.length + ' elements. ' + ' Array: ' + fruits // ["Pineapple", "Lemon", "Apple", "Orange", "Pear"]
+  return 'en matriz ' + fruits.length + ' elementos. ' + ' Formación: ' + fruits // ["Piña", "Limón", "Manzana", "Naranja", "Pera"]
 }
 ```
 
-## Internal Array
+## Arreglo interno
 
 ![cupboard](https://media.giphy.com/media/b90TnygrKqYqk/giphy.gif)
 
-An array is a special kind of object. The square brackets used to access the arr [0] property are essentially the usual syntax for key access, such as obj `[key]`, where obj is arr and the key is a numeric index.
+Una matriz es un subconjunto especial de objetos. Los corchetes que se usan para acceder a la propiedad `arr[0]` son básicamente la sintaxis normal📖 del acceso de clave, como `obj[key]`, donde tenemos `arr` como `obj` y como clave: un índice numérico .
 
-Arrays extend objects because they provide special methods for working with ordered collections of data, as well as a length property. “But they are still facility based.
+Las matrices amplían los objetos, ya que proporcionan métodos especiales para trabajar con colecciones ordenadas de datos, así como una propiedad `length`, pero el objeto sigue estando en el centro.
 
-Keep in mind that in JavaScript, an array is an object and therefore behaves like an object.
+Tenga en cuenta que en JavaScript una matriz es un objeto y, por lo tanto, se comporta como un objeto.
 
-For example, an array is copied by reference 👇:
+Por ejemplo, una matriz se copia por referencia 👇:
 
 ```jsx live
 function learnJavaScript() {
-  let fruits = ['Lemon']
+  let fruits = [' Limón']
 
-  let copy = fruits // copied by reference (two variables refer to the same array)
+  let copy = fruits // copiado por referencia (dos variables se refieren a la misma matriz)
 
-  copy.push('Pear') // arrays are changed by reference with one command
+  copy.push(' Груша') // las matrices se cambian por referencia con un comando
 
-  return '1 array:' + fruits + '2 array:' + copy // Lemon, Pear - now two elements
+  return '1 matriz: ' + fruits + ' 2 matriz: ' + copy // Limón, Pera - ahora dos elementos
 }
 ```
 
-What really makes arrays special is their internal representation. The JavaScript engine tries to store the elements of an array in a contiguous region of memory, one after the other. There are other optimizations that make arrays very fast.
+Lo que realmente hace que las matrices sean especiales es su representación interna. El motor de JavaScript intenta almacenar los elementos de una matriz en un área de memoria contigua, uno tras otro. Hay otras optimizaciones que hacen que las matrices sean muy rápidas.
 
-But they all become ineffective if we stop working with an array as an "ordered collection of data" and start using it like a regular object.
+Pero todos ellos pierden su eficacia si dejamos de trabajar con una matriz como una "colección ordenada de datos" y comenzamos a utilizarla como un objeto normal.
 
-For example, we can technically do the following:
+Por ejemplo, técnicamente podemos hacer lo siguiente:
 
 ```javascript
-let fruits = [] // create an empty array
+let fruits = [] // crear una matriz vacía
 
-fruits[99999] = 5 // create a property with a redundant index much larger than the required array length
+fruits[99999] = 5 // cree una propiedad con un exceso de índice que sea mucho más grande que la longitud requerida de la matriz
 
-fruits.age = 25 // create a property with an arbitrary name
+fruits.age = 25 // crear una propiedad con un nombre arbitrario
 ```
 
-This is possible because the array is based on an object. We can assign any properties to it.
+Esto es posible porque una matriz se basa en un objeto. Podemos asignarle cualquier propiedad.
 
-:::note Possible misuse of an array!
+::: nota ¡Uso incorrecto de una matriz!
 
-- Adding a non-numeric property (index test), for example: arr.test = 5
-- Creation of "holes", for example: adding arr [0], then arr [1000] (there is nothing in between)
-- Filling the array in reverse order, for example: arr [1000], arr [999], etc.
+- Agregar una propiedad no numérica (prueba de índice), por ejemplo: arr.test = 5
+- Crear "agujeros", por ejemplo: agregar arr[0] luego arr[1000] (nada en el medio)
+- Llenar la matriz en orden inverso, por ejemplo: arr[1000], arr[999], etc.
 
 :::
 
-Consider an array as a special structure that allows you to work with ordered data. If you need arbitrary keys, it is quite possible that a regular {} object is better suited.
+Una matriz debe considerarse una estructura especial que le permite trabajar con datos ordenados. Si necesita claves arbitrarias, un objeto simple {} podría ser mejor.
 
-## Efficiency
+## Eficiencia
 
 ![Fast](https://media.giphy.com/media/3oriNYQX2lC6dfW2Ji/giphy.gif)
 
-The push / pop methods are fast, and the shift / unshift methods are slow.
+Los métodos `push/pop` son rápidos, mientras que los métodos `shift/unshift` son lentos.
 
-Why is it faster to work with the end of an array than with its beginning? Let's see what happens at runtime:
+¿Por qué es más rápido trabajar con el final de una matriz que con su comienzo? Veamos qué sucede en tiempo de ejecución:
 
 ```javascript
-fruits.shift() // remove the first element from the beginning
+fruits.shift() // quitar el primer elemento del principio
 ```
 
-It is not enough to simply grab and remove item 0. You also need to re-number the rest of the elements.
+No basta con tomar y eliminar el elemento con el número 0. También necesita volver a numerar el resto de los elementos.
 
-The shift operation has to do 3 things:
+La operación `shift` debe hacer 3 cosas:
 
-- Remove element with index 0
+- Eliminar elemento en el índice 0
 
 ![Delete](https://media.giphy.com/media/VIzs0jgs8KmgVeTknN/giphy.gif)
 
-- Move all the elements to the left, re-number them, replacing `1` with `0`, `2` with `1`, etc.
+- Desplace todos los elementos a la izquierda, vuelva a numerarlos, reemplazando `1` con `0`, `2` con `1`, etc.
 
 ![Move](https://media.giphy.com/media/jSQcEjcwG53WooptHz/giphy.gif)
 
-- Update the `length` property
+- Actualizar la propiedad `length`
 
-The more elements the array contains, the longer it will take to move them, the more memory operations.
+Cuantos más elementos contenga la matriz, más tiempo llevará moverlos, más operaciones de memoria.
 
-But what about removing pop? He doesn't need to move anything. To remove an element at the end of an array, the pop method clears the index and decrements the length. The rest of the elements remain with the same indices.
+¿Qué pasa con la eliminación de `pop`? No necesita mover nada. Para eliminar un elemento al final de una matriz, el método `pop` borra el índice y disminuye el valor de `length`. Los elementos restantes permanecen en los mismos índices.
 
 ```javascript
-fruits.pop() // remove one element from the end
+fruits.pop() // eliminar un elemento del final
 ```
 
-The pop method does not need to be moved. That is why it runs very quickly.
+El método `pop` no requiere un movimiento. Por eso corre muy rápido.
 
-The `push` method works the same way.
+El método `push` funciona de manera similar.
 
-## Iterating over elements
+## Iterar sobre elementos
 
 ![Object](https://media.giphy.com/media/26gs9kSN6d5PxSsQU/giphy.gif)
 
-One of the oldest ways to iterate over array elements is a `for ()` loop over numeric indices 👇:
+Una de las formas más antiguas de iterar sobre los elementos de una matriz es el bucle `for()` sobre índices numéricos 👇:
 
 ```jsx live
 // prettier-ignore
 function learnJavaScript() {
-   let result = ''
-   let arr = ['Apple', 'Orange', 'Kiwi']
+  let result = ''
+  let arr = ['Manzana', 'Naranja', 'Kiwi']
+  
+  for (let i = 0; i < arr.length; i++) // itera sobre los elementos con for()
+  result += arr[i] + ' '
 
-   for (let i = 0; i < arr.length; i++) // iterate over elements through for ()
-   result += arr[i] + ', '
-
-   return result // Apple, Orange, Kiwi
+  return result // manzana, naranja, kiwi
 }
 ```
 
-But another version of the loop is possible for arrays, `for..of` 👇:
+Pero para matrices, también es posible otra versión del ciclo, `for..of` 👇 :
 
 ```jsx live
 function learnJavaScript() {
   let result = ''
-  let fruits = ['Apple', 'Orange', 'Plum']
+  let fruits = ['Manzana', 'Naranja', 'Ciruela']
 
   for (let fruit of fruits) {
-    // iterate over values through `for..of`
-    result += fruit + ', '
+    // itera sobre los valores a través de `for..of`
+    result += fruit + ' '
   }
-  return result // Apple, Orange, Plum
+  return result // manzana, naranja, ciruela
 }
 ```
 
-The `for..of` loop does not provide access to the number of the current element, only its value, but in most cases this is more than enough, and it is also shorter.
+El bucle `for..of` no proporciona acceso al número del elemento actual, solo a su valor, pero en la mayoría de los casos esto es más que suficiente, y también es más corto.
 
 <!-- ## Псевдомассивы
 
@@ -400,11 +400,11 @@ function learnJavaScript() {
 
 - цикл `for..in` выполняет перебор всех свойств объекта, а не только цифровых. -->
 
-## Multidimensional arrays
+## Matrices multidimensionales
 
 ![Matryoschka](https://media.giphy.com/media/XuPaGVKyJ6eyI/giphy.gif)
 
-Arrays can contain elements that are also arrays. This can be used to create омер multidimensional arrays, for example, to store 📦 matrices:
+Los arreglos pueden contener elementos que también son arreglos. Esto se puede usar para crear 🏗️ matrices multidimensionales, por ejemplo, para almacenar 📦 matrices:
 
 ```jsx live
 function learnJavaScript() {
@@ -414,7 +414,7 @@ function learnJavaScript() {
     [7, 8, 9]
   ]
 
-  return matrix[1][1] // 5, central element
+  return matrix[1][1] // 5, elemento central
 }
 ```
 
@@ -422,91 +422,145 @@ function learnJavaScript() {
 
 ![remember](https://media.giphy.com/media/l4pTfqyI6TCjUW4Yo/giphy.gif)
 
-An array is a special type of object designed to work with an ordered set of elements.
+Una matriz es un tipo especial de objeto diseñado para trabajar con un conjunto ordenado de elementos.
 
-Announcement🗣️:
+Anuncio🗣️:
 
 ```javascript
-// square brackets (usually)
-let arr = [item1, item2 ...]
+// corchetes (normalmente)
+let arr = [item1, item2...]
 
-// new Array (very rare)
-let arr = new Array (item1, item2 ...)
+// nueva matriz (muy rara)
+let arr = new Array(item1, item2...)
 ```
 
-The call `new Array (number)` creates an array with the given length, but no elements.
+Llamar a `nueva matriz (número)` crea🏗️ una matriz con la longitud dada pero sin elementos.
 
-The length property reflects the length of the array.
+La propiedad `longitud` refleja la longitud de la matriz.
 
-We can use an array as a deque using the following operations:
+Podemos usar una matriz como un deque usando las siguientes operaciones:
 
-- `push (... items)` adds ➕ items to the end of the array.
-- `pop ()` removes ➖element at the end of the array and returns it.
-- `shift ()` removes ➖ the element at the beginning of the array and returns it.
-- `unshift (... items)` adds ➕ items to the beginning of the array.
+- `push(...items)` agrega ➕ elementos al final de la matriz.
+- `pop()` elimina el elemento ➖ al final de la matriz y lo devuelve.
+- `shift()` elimina ➖ el elemento al principio de la matriz y lo devuelve.
+- `unshift(...items)` agrega ➕ elementos al comienzo de la matriz.
 
-To iterate over the elements of an array:
+Para iterar sobre los elementos de una matriz:
 
-- `for (let i = 0 i < arr.length i ++)` - works fastest, compatible with older browsers.
-- `for (let item of arr)` - modern syntax📖 only for item values ​​(no access to indices).
-- `for (let i in arr)` - never use for arrays!
+- `for (let i=0 i<arr.length i++)` - funciona más rápido, compatible con navegadores más antiguos.
+- `for (let item of arr)` - sintaxis moderna📖 solo para valores de elementos (sin acceso a índices).
+- `for (let i in arr)` - ¡nunca lo use para arreglos!
 
-## Problems?
+## React Native
+
+React Native proporciona un conjunto de componentes para representar listas de datos. Por lo general, debe usar `FlatList` o `SectionList`. Los conoceremos con más detalle más adelante, lo principal ahora es entender que toman una matriz como entrada, que se representa en la pantalla.
+
+```SnackPlayer name=index.js
+import React from 'react'
+import { FlatList, StyleSheet, Text, View } from 'react-native'
+
+
+const arr = [
+  {key: 'Devin'},
+  {key: 'Dan'},
+  {key: 'Dominic'},
+  {key: 'Jackson'},
+  {key: 'James'},
+  {key: 'Joel'},
+  {key: 'John'},
+  {key: 'Jillian'},
+  {key: 'Jimmy'},
+  {key: 'Julie'}
+]
+
+const FlatListBasics = () => {
+  return (
+    <FlatList
+       data={arr}
+       renderItem={({item}) => <Text>{item.key}</Text>}
+    />
+  )
+}
+
+export default FlatListBasics
+```
+
+
+## ¿Problemas?
 
 ![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
 
-Write to [Discord](https://discord.gg/6GDAfXn) chat.
+Escribe en [Discord](https://discord.gg/6GDAfXn) o Telegram [chat](https://t.me/jscampapp) y suscríbete a nuestras [noticias](https://t.me/javascriptapp)
 
-## Questions:
+![JavaScript Camp](/img/bandlink.png)
+
+## Preguntas
 
 ![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
 
-An array is ...
+La matriz es...
 
-1. Subtype of objects with "ordered collection of data"
-2. Internal function
-3. Subtype of objects with "unordered data collection"
+1. Subtipo de objetos con una "colección ordenada de datos"
+2. Función interna
+3. Subtipo de objetos con "recopilación desordenada de datos"
 
-An empty array is created:
+Se crea una matriz vacía:
 
-1. `let arr1 = []`
-2. `let arr2 = {}`
-3. `let arr3 = ()`
+1. `let arr2 = { }`
+2. `let arr1 = [ ]`
+3. `let arr3 = ( )`
 
-The length of the array can be determined by the property:
+La longitud de una matriz se puede determinar mediante una propiedad:
 
-1. `pop ()`
-2. `push ()`
+1. `pop`
+2. `push`
 3. `length`
 
-The array can store elements:
+Una matriz puede almacenar elementos:
 
-1. Any type
-2. Numeric
-3. String
+1. Cualquier tipo
+2. numérico
+3. Cuerda
 
-Adding an element at the end of the array:
+Agregar un elemento al final de una matriz:
 
-1. `push () `
-2. `pop () `
-3. `shift () `
+1. `push`
+2. `pop`
+3. `shift`
 
-Removing an element at the beginning of an array:
+Eliminando un elemento al comienzo de una matriz:
 
-1. `pop () `
-2. `shift () `
-3. `unshift () `
+1. `pop`
+2. `shift`
+3. `unshift`'
 
-In order to understand how much you learned this lesson, take the test on the [mobile application](http://onelink.to/njhc95) of our school on this topic.
+\_\_\_\_ en una matriz es un número que representa la posición de cualquier elemento dado en la matriz.
 
-![Sumerian school](/img/app.jpg)
+1. índice
+2. longitud
+3. función
 
-## Links
+¿Qué valor debe colocarse entre corchetes para obtener el primer elemento de la matriz? \n `miArray[]`
 
-1. [Article "Arrays"](https://learn.javascript.ru/array)
-2. [MDN web doc. Article "Arrays"](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array)
-3. [JavaScript Arrays](https://basicweb.ru/javascript/js_array.php)
-4. [Code for Teens: The Perfect Beginner's Guide to Programming, Volume 1: Javascript - Jeremy Moritz](https://www.amazon.com/Code-Teens-Beginners-Programming-Javascript-ebook/dp/B07FCTLVPC)
+1. `0`
+2. `1`
+3. `2`
+
+Usar el método `.pop()` en una matriz será \_\_\_ y \_\_\_ el último elemento de la matriz.
+
+1. "eliminar / devolver"
+2. "devolver/borrar"
+
+Para comprender cuánto ha aprendido esta lección, realice una prueba en la [aplicación móvil](http://onelink.to/njhc95) de nuestra escuela sobre este tema o en nuestro [bot de Telegram](https://t.me/javascriptcamp_bot).
+
+![Campamento JS](/img/app.jpg)
+
+## Enlaces
+
+1. [Artículo "Matrices"](https://learn.javascript.ru/array)
+2. [Documento web de MDN. Artículo "Matrices"](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array)
+3. [Artículo "Arreglos de JavaScript"](https://basicweb.ru/javascript/js_array.php)
+4. [Código para adolescentes: la gran guía de programación para principiantes Volumen 1: Javascript - Jeremy Moritz](https://www.amazon.com/Code-Teens-Beginners-Programming-Javascript-ebook/dp/B07FCTLVPC)
 
 ## Contributors ✨
 

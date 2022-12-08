@@ -1,20 +1,22 @@
 ---
 id: javascript23
-title: Classes
-sidebar_label: Classes
+title: Clases
+sidebar_label: Clases
 ---
+
+import YouTube from 'react-youtube'
 
 ![@serverSerrverlesskiy](/img/javascript/headers/23.jpg)
 
-JavaScript uses the prototypal inheritance model: each object inherits the fields (properties) and methods of the prototype object.
+JavaScript usa un modelo de herencia de prototipo: cada objeto hereda los campos (propiedades) y métodos del objeto prototipo.
 
 ## class
 
-The keyword `class` is used to define a class:
+La palabra clave `class` se utiliza para definir una clase:
 
 ```jsx
 class MyClass {
-  // class methods
+  // métodos de clase
   constructor() { ... }
   method1() { ... }
   method2() { ... }
@@ -23,59 +25,62 @@ class MyClass {
 }
 ```
 
-This syntax is called a class declaration.
+Esta sintaxis📖 se llama declaración de clase🗣️.
 
 ![Class](https://media.giphy.com/media/cYaBD8kxE4PZudHBRA/giphy.gif)
 
-:::note Methods in the class are not comma separated
-Class syntax differs from object literals. No commas are required inside classes.
-
+:::note Los métodos en una clase no están separados por una coma
+La sintaxis📖 de las clases es diferente de los objetos literales. No se requieren comas dentro de las clases.
 :::
 
-The class may not have a name. A class expression can be used to assign a class to a variable 🔔:
+La clase puede no tener un nombre. Con una expresión de clase, puede asignar una clase a una variable 🔔:
 
 ```jsx
 const UserClass = class {
-  // class body
+  // cuerpo de clase
 }
 ```
 
-Classes can be exported as modules. Here's an example of the default export:
+Las clases se pueden exportar como módulos. Este es un ejemplo de una exportación predeterminada:
 
 ```jsx
 export default class User {
-  // class body
+  // cuerpo de clase
 }
 ```
 
-And here's an example of a named export:
+Y aquí hay un ejemplo de una exportación con nombre:
 
 ```jsx
 export class User {
-  // class body
+  // cuerpo de clase
 }
 ```
 
-The class becomes useful when you instantiate the class. An instance is an object that contains the data and behavior described by 🖊️
-class.
+Una clase se vuelve útil cuando crea una instancia de la clase. Una instancia es un objeto que contiene los datos y el comportamiento descrito 🖊️
+clase.
 
-The `new` operator creates an instance of a class in JavaScript like this: `instance = new Class()`.
+El operador `new` crea🏗️ una instancia de una clase en JavaScript como esta: `instance = new Class()`.
 
-For example, you can create🏗️ an instance of the User class👤 using the `new` operator:
+Por ejemplo, puede crear una instancia 🏗️ de la clase Usuario 👤 usando el operador `new`:
 
 ```jsx
 const myUser = new User()
 ```
 
-`new User()` creates an instance of the `User` class 👤.
+`new User()` crea🏗️ una instancia de la clase  `User` 👤.
 
-## Initialization: constructor ()
+## Video
+
+<YouTube videoId="rR_ZHhkx_O0" />
+
+## Inicialización: constructor()
 
 ![spangeBob](https://media.giphy.com/media/3oriNZoNvn73MZaFYk/giphy.gif)
 
-`constructor (...)` is a special method in the body of the class that initializes an instance. This is the place where you can set initial values for the fields or make any adjustments to the objects.
+`constructor(...)` es un método especial en el cuerpo de una clase que inicializa una instancia. Este es el lugar donde puede establecer los valores iniciales de los campos o realizar cualquier ajuste en los objetos.
 
-In the following example, the constructor sets the initial value of the `name` field:
+En el siguiente ejemplo, el constructor establece el valor inicial del campo `name`:
 
 ```jsx
 class User {
@@ -85,11 +90,11 @@ class User {
 }
 ```
 
-The `constructor` of the `User` class takes one parameter, `name`, which is used to set the initial value of the `this.name` field.
+El `constructor` de la clase `User` toma un parámetro `name`, que se usa para establecer el valor inicial del campo 'este.nombre'.
 
-Inside the constructor, the value of `this` is equal to the newly created instance.
+Dentro del constructor, el valor de `this` es igual a la instancia 🏗️ recién creada.
 
-The arguments used to instantiate the class become parameters to the constructor 👇:
+Los argumentos utilizados para instanciar la clase se convierten en parámetros del constructor 👇:
 
 ```jsx live
 function learnJavaScript() {
@@ -100,49 +105,51 @@ function learnJavaScript() {
     }
   }
 
-  const user = new User('Jon Snow') // Here you can change the value
+  const user = new User('Jon Snow') // Aquí puedes cambiar el valor
   return user.name
 }
 ```
 
-The `name` parameter inside the constructor is `Jon Snow`.
+El parámetro `name` dentro del constructor se establece en `Jon Snow`.
 
-If you do not define a constructor for a class, a default constructor is created. The default constructor is an empty function⚙️ that does not modify the instance.
+Si no define un constructor para una clase, se crea un constructor 🏗️ predeterminado. El constructor predeterminado es una función vacía⚙️ que no modifica la instancia.
 
-There can be only one method named `constructor` in a class.
+Una clase solo puede tener un método llamado `constructor`.
 
-## Discarding classes
+## Clases de rechazo
 
 ![rejection](https://media.giphy.com/media/l2SpUoAPo0CBOkyxq/giphy.gif)
 
-Since in the course of our school we teach to develop mobile applications using the library [React](https://reactjs.org), where is the innovation [React Hooks](https://en.reactjs.org/docs/hooks-intro.html) allows you to use state and other React features without writing classes. Therefore, it makes no sense to talk about classes anymore, since we have abandoned them.
+Ya que en el curso de nuestra escuela enseñamos a desarrollar aplicaciones móviles utilizando la biblioteca [React] (https://ru.reactjs.org), donde la innovación es [React Hooks](https://ru.reactjs.org/docs/hooks-intro.html) te permite usar el estado y otras características de [React](https://ru.reactjs.org) sin escribir clases. Por lo tanto, ya no tiene sentido hablar de clases, ya que las hemos abandonado.
 
-## Problems?
+## ¿Problemas?
 
 ![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
 
-Write to [Discord](https://discord.gg/6GDAfXn) chat.
+Escribe en [Discord](https://discord.gg/6GDAfXn) o Telegram [chat](https://t.me/jscampapp) y suscríbete a nuestras [noticias](https://t.me/javascriptapp)
 
-## Questions:
+![JavaScript Camp](/img/bandlink.png)
 
-![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
+## Preguntas:
 
-What is the keyword for class definition?
+![Pregunta](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
+
+¿Cuál es la palabra clave para definir una clase?
 
 1. `constructor()`
 2. `class`
 3. `this`
 
-Are methods inside a class comma separated?
+Si los métodos dentro de una clase están separados por una coma.
 
-1. Yes
-2. No
+1. `true`
+2. `false`
 
-How many `constructor()` methods can there be in one class?
+¿Cuántos métodos `constructor()` pueden estar en una clase?
 
-1. Unlimited
-2. Up to ten
-3. Only one
+1. Ilimitado
+2. Hasta diez
+3. Solo uno
 
 <!-- Что такое геттеры и сеттеры?
 
@@ -160,9 +167,9 @@ How many `constructor()` methods can there be in one class?
 1. Перед this
 2. После this -->
 
-In order to understand how much you learned this lesson, take the test on the [mobile application](http://onelink.to/njhc95) of our school on this topic.
+Para comprender cuánto ha aprendido esta lección, realice una prueba en la [aplicación móvil](http://onelink.to/njhc95) de nuestra escuela sobre este tema o en nuestro [bot de Telegram](https://t.me/javascriptcamp_bot).
 
-![Sumerian school](/img/app.jpg)
+![JS Camp](/img/app.jpg)
 
 <!--
 ## Геттеры и сеттеры
@@ -336,9 +343,9 @@ const cat = new Animal({ //Создание объекта при помощи �
 
 ![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
 
-Для того чтобы понять, на сколько вы усвоили этот урок, пройдите тест в [мобильном приложении](http://onelink.to/njhc95) нашей школы по этой теме.
+Для того чтобы понять, на сколько вы усвоили этот урок, пройдите тест в [мобильном приложении](http://onelink.to/njhc95) нашей школы по этой теме или в нашем [телеграм боте](https://t.me/javascriptcamp_bot).
 
-![Sumerian school](/img/app.jpg) -->
+![JS Camp](/img/app.jpg) -->
 
 <!-- Сколько методов constructor() может находится в одном классе?
 
@@ -362,7 +369,7 @@ const cat = new Animal({ //Создание объекта при помощи �
 1. Перед this
 2. После this -->
 
-## Links:
+## Enlaces:
 
 1.  [MDN web docs](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Classes)
 2.  [Learn JavaScript](https://learn.javascript.ru/class)

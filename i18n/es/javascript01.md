@@ -10,86 +10,90 @@ import YouTube from 'react-youtube'
 
 ## JavaScript
 
-Previously, to create a 🏗️ digital startup, a team was needed from:
+Anteriormente, para crear una 🏗️ startup digital, necesitabas un equipo de:
 
-- iOS developer 📱,
-- Android developer 📱,
-- Developer backend 💻,
-- Developer for the web 🖥
-  and
-- Teamlead 🧙‍♂️ who
-  everywhere on top
-  and in one thing perfectly -
-  it is 5️⃣ people!
+- Desarrollador de iOS 📱,
+- Desarrollador de Android 📱,
+- Backend de desarrollador 💻,
+- Desarrollador web 🖥
+   y
+- Teamlead 🧙‍♂️, quien
+   por todas partes
+   y en una cosa perfectamente -
+   ¡¡Son 5️⃣ personas!!
 
 ![Hello World](https://media.giphy.com/media/jTICSwJwDz3wa1PQmk/giphy.gif)
 
-Today, thanks to JavaScript, it is possible to replace 5️⃣ developers with one JavaScript developer using the technology stack that we teach in our school.
+Hoy, gracias a JavaScript, es posible reemplazar 5️⃣ desarrolladores con un desarrollador de JavaScript usando la pila de tecnología que enseñamos en nuestra escuela.
 
-JavaScript is a programming language that makes it possible to implement complex behaviors on web pages and more. In JavaScript, you can write sites ℹ️, servers, mobile 📱 and desktop 💻 applications, as well as applications for augmented and virtual reality.
+JavaScript es un lenguaje de programación 👅 que te permite implementar comportamientos complejos en páginas web y más allá. JavaScript se puede usar para escribir sitios web ℹ️, servidores, aplicaciones móviles 📱 y de escritorio 💻, así como aplicaciones para realidad aumentada y virtual.
 
-JavaScript is the first of the most popular programming languages ​​among European developers. This data was obtained by the authors of [research](https://www.oreilly.com/programming/free/files/2016-european-software-development-salary-survey.pdf) from the O'Reilly company as a result of a survey of more than 1300 programmers from 27 countries.
+JavaScript es el primero de los lenguajes de programación más populares entre los desarrolladores europeos. Los autores de [el estudio](https://www.oreilly.com/programming/free/files/2016-european-software-development-salary-survey.pdf) obtuvieron estos datos de O'Reilly como resultado de una encuesta de más de 1300 programadores de 27 países.
 
-## Syntax
+## Video
 
-![Hello World](https://media.giphy.com/media/1n67EigjECnOUc6rhS/giphy.gif)
+<YouTube videoId="H6RmU-Hi0EI" />
 
-JavaScript, like many other programming languages👅, has a strict syntax📖. Syntax 📖 is a section of grammar that studies sentences and how to combine words within a sentence. Computers 🖥️ are not as smart as humans 👨: they cannot “just understand” 🤷 what you mean. The machine 🚗 will be able to understand you only if you communicate 💬 with it strictly in the forms of expression that it expects from you. This expected form of expression is called the 📖 syntax.
+## Sintaxis
 
-## Work environment
+![Hola mundo](https://media.giphy.com/media/1n67EigjECnOUc6rhS/giphy.gif)
 
-![first](https://media.giphy.com/media/9CffOPMLx0Hf2/giphy.gif)
+JavaScript, como muchos otros lenguajes de programación 👅, tiene una sintaxis estricta 📖. La sintaxis 📖 es una sección de gramática que estudia las oraciones y cómo se pueden combinar las palabras dentro de una oración. Las computadoras 🖥️ no son tan inteligentes como los humanos 👨: no son capaces de "simplemente entender" 🤷 lo que quieres decir. La máquina 🚗 puede entenderte solo si te comunicas 💬 con ella estrictamente en las formas de expresión que espera de ti. Esta forma esperada de la expresión se llama sintaxis 📖.
 
-1️⃣ First, you need a desktop computer or laptop.
+## Ambiente de trabajo
 
-2️⃣ Secondly, the computer must have an operating system installed: Windows MacOS or Linux.
+![primero](https://media.giphy.com/media/9CffOPMLx0Hf2/giphy.gif)
 
-3️⃣ Thirdly, a browser must be installed on the computer, in our lessons we will use Google Chrome, but others can be used. Chrome, who is not in the know, is a browser, that is, a program for viewing web pages.
+1️⃣ Primero, necesitarás una computadora de escritorio 🖥️ o una laptop.
 
-If you still do not have Google Chrome installed, you can download it [here](https://www.google.com/intl/com/chrome/?brand=CHBD&gclid=CjwKCAjwtNf6BRAwEiwAkt6UQlNVpi-CLILLC8x3U0PcR5d3xmP3MQVD2T2) any other browser (Firefox, Safari, Edge or Internet Explorer) by simply typing 🔎 "download Chrome" into the search bar and following the further instructions.
+2️⃣ En segundo lugar, el sistema operativo debe estar instalado en la computadora 🖥️: Windows MacOS o Linux.
 
-After downloading and installing Google Chrome, open it and enter 🧑‍💻 in the address bar:
+3️⃣ En tercer lugar, se debe instalar un navegador en la computadora 🖥️, en nuestras lecciones usaremos Google Chrome, pero se pueden usar otros. Chrome, que no está en el conocimiento, es un navegador, es decir, un programa para ver páginas web.
+
+Si aún no tiene Google Chrome instalado, puede descargarlo [aquí](https://www.google.com/intl/com/chrome/?brand=CHBD&gclid=CjwKCAjwtNf6BRAwEiwAkt6UQlNVpi-CLILLC8x3U0PcR5d3xmP3tehcet_dM7j2W9hVDTXPU_TlrhoCV28QAvD_BwE) cualquier otro navegador (o usando) Firefox, Safari, Edge o Internet Explorer) simplemente escribiendo en la barra de búsqueda 🔎 "descargar Chrome" y siguiendo las instrucciones.
+
+Después de descargar e instalar Google Chrome, ábrelo e ingresa 🧑‍💻 en la barra de direcciones:
 
 ```
 about:blank
 ```
 
-Press ENTER.
-And the browser will open a new blank page.
+Presione ENTRAR.
+Y el navegador abrirá una nueva página en blanco.
 
 ![about blank](/img/javascript/00.png)
 
-## Browser console
+## Consola del navegador
 
-![Code](https://media.giphy.com/media/AOSwwqVjNZlDO/giphy.gif)
+![Código](https://media.giphy.com/media/AOSwwqVjNZlDO/giphy.gif)
 
-It's time to get acquainted with one of the main developer tools - the browser console.
+Es hora de familiarizarse con una de las principales herramientas de desarrollo: la consola del navegador.
 
-Basically, our course can be taken directly on our website, but sometimes we will need to use the browser console, so we will now get to know it.
+Básicamente, nuestro curso se puede tomar directamente en nuestro sitio web, pero en ocasiones necesitaremos usar la consola del navegador, por lo que lo conoceremos ahora.
 
-### Open console
+### Abrir consola
 
-Since you are now an aspiring programmer 🖥️, you can use it too! To bring up the console, simply press the 🔘 `CTRL, SHIFT (or COMMAND and OPTION if you have a Mac) and J` keys together.
+Como ahora eres un programador-desarrollador principiante 🖥️, ¡también puedes usarlo! Para abrir la consola, simplemente presione las teclas 🔘 🎹 `CTRL, SHIFT (o COMMAND y OPTION si tiene una Mac) y J` juntas.
 
-Pressing the key combination will open a new 🆕 menu bar and you will see an angle bracket in the upper left corner of the page. By the way, if you move the cursor to the edge of the area where it turns into a double arrow, then by pressing and holding the left button, you can stretch the console window. Be sure to do this so you have more room to inject your code📟.
+Después de presionar la combinación de teclas 🎹, se abrirá una nueva barra de menú 🆕 y en la esquina superior izquierda de la página verá un paréntesis angular. Por cierto, si mueves el cursor 🖱️ al borde del área donde se convierte en una flecha doble, al mantener presionado el botón izquierdo, puedes estirar la ↔️ ventana de la consola 🪟. Asegúrate de hacer esto para que tengas más espacio para ingresar el código 📟.
 
 ![console](/img/javascript/01.png)
 
-If the combination `CTRL + SHIFT + J` or `COMMAND + OPTION + J` for some reason does not work, you can enter the console by right-clicking on an empty space on the page 🖱️, select the Inspect (View code📟) and then click Console on the menu bar.
+Si la combinación `CTRL+SHIFT+J (o COMMAND+OPTION+J)` no funciona por alguna razón, puede ingresar a la consola haciendo clic en un espacio vacío en la página con el botón derecho del mouse 🖱️, seleccione el elemento Inspeccionar desde el menú contextual (Ver código📟) y luego haga clic en Consola en la barra de menú.
 
 ![Inspect](/img/javascript/02.png)
 
-## Hello world program
+## Primer programa Hello World
 
-"Hello, world!" - A program that outputs the phrase "Hello, world!" To the screen or other device 🌎
+"Hello World" - Programa (¡Hola, mundo!), cuyo resultado es la visualización en la pantalla u otro dispositivo de la frase "¡Hola, mundo!" 🌎
 
-This is usually the first example of a program in a programming textbook, and for many students, this is the first experience in learning a new language👅.
+Este suele ser el primer ejemplo de un programa en los libros de texto de programación y, para muchos estudiantes, dicho programa es la primera experiencia al aprender un nuevo idioma👅.
 
-Now that the console window is open in front of you and you have stretched it in a convenient way, click the mouse to the right of the angle bracket `>`.
+Ahora que la ventana de la consola 🪟 está abierta frente a usted y la ha estirado de manera conveniente, haga clic con el mouse a la derecha del paréntesis angular `>`.
 
 ![not equal](https://media.giphy.com/media/jPfQcPdmI9bTXpa7hi/giphy.gif)
 
-A blinking cursor🖱️ appears on the line, indicating that you can start typing. You will now type your first lines of code📟. Enter the following text 📜 (including quotation marks):
+Aparecerá un cursor 🖱️ parpadeante en la línea, lo que indica que puede comenzar a escribir 📜. Ahora escribirás tus primeras líneas de código 📟. Ingresa el siguiente texto 📜 (con comillas):
 
 ```
 "Hello world!"
@@ -98,64 +102,66 @@ A blinking cursor🖱️ appears on the line, indicating that you can start typi
 ![Hello world!](/img/javascript/03.png)
 ![Hello World](https://media.giphy.com/media/xiOgHgY2ceKhm46cAj/giphy.gif)
 
-Press ENTER. The console will return your text on the next line 📜: "Hello World!". Through the browser console, we communicate directly with the JavaScript engine - this is such a program, or, in other words, an interpreter that executes code written in JavaScript.
+Presione ENTRAR. La consola devolverá su texto 📜 en la siguiente línea: "¡Hola mundo!" en inglés. A través de la consola del navegador, nos comunicamos directamente 💬 con el motor de JavaScript: este es un programa de este tipo o, en otras palabras, un intérprete que ejecuta el código 📟 escrito en JavaScript.
 
 ![Hello world!](/img/javascript/04.png)
 
-Now you can be proud that you wrote and executed the first JavaScript code with your own hands!
+¡Ahora puedes estar orgulloso de que tú mismo escribiste y ejecutaste el primer código 📟 en JavaScript 👅!
 
-Then press the key\_ UP_ARROW ⬆️ (up arrow) and you will see your text 📜 "Hello World!". Next, move the cursor🖱️ to the beginning of the line and type the following text instead 📜:
+Luego, presione la tecla 🎹 UP_ARROW ⬆️ (flecha hacia arriba) y verá su texto 📜 "¡Hola mundo!" en inglés. Luego, mueve el cursor 🖱️ al comienzo de la línea y escribe el siguiente texto 📜 en su lugar:
 
 ```javascript
 var hello = 'Hello world!'
 ```
 
-and press ENTER. In the console you will see the answer: `undefined`. Everything goes according to plan! Now type:
+y presione ENTRAR. En la consola verás la respuesta: `undefined`. ¡Todo va según lo planeado! Ahora escribe:
 
 ```javascript
 hello
 ```
 
-and press ENTER. If you did everything correctly, the console will return a message in the line 💬 "Hello, World!". Here we have created a variable and assigned a value to it.
+y presione ENTRAR. Si hiciste todo bien, la consola devolverá el mensaje 💬 "¡Hola, mundo!" en la línea. Aquí hemos creado una variable 🏗️ y le hemos asignado un valor.
 
 ![Hello world!](/img/javascript/05.png)
 
-And, of course, this is the minimum that can be done in the browser console. Further more!
-Let's try addition: ➕
+Y por supuesto, esto es lo mínimo de lo que puedes hacer en la consola del navegador. ¡Es más!
+Intentemos la suma: ➕
 
 ```javascript
 2 + 2
-// Console response: 4
+// Respuesta de la consola: 4
 ```
 
-Addition and Subtraction: ➕ ➖
+Adición y sustracción: ➕ ➖
 
 ```javascript
 6 + 4 - 5
-// Console response: 5
+// Respuesta de la consola: 5
 ```
 
-Multiplication: ✖️
+Multiplicación: ✖️
 
 ```javascript
 5 * 5
-// Console response: 25
+// Respuesta de la consola: 25
 ```
 
-Division: ➗
+División: ➗
 
 ```javascript
 25 / 5
-// Console response: 5
+// Respuesta de la consola: 5
 ```
 
-And any other mathematical operations ...
+Y cualquier otra operación matemática...
+
+
 
 ## Live editor
 
 ![Live editor](https://media.giphy.com/media/l1KVcrdl7rJpFnY2s/giphy.gif)
 
-The JavaScript code is executed by the JavaScript engine of the browser. Through the console, we access it directly. Further, in order not to write the entire training course in the browser and jump through windows from our site to the browser console and vice versa, we will write the code in the `Live Coding` mode right on our site. To do this, try to add the word Hello in the next window `LIVE EDITOR`. In `RESULT`, you should get` Hello World` 🌎.
+El código 📟 JavaScript es ejecutado por el motor JavaScript del navegador. A través de la consola accedemos directamente a ella. Además, para no escribir todo el tutorial en el navegador y saltar a través de las ventanas de nuestro sitio a la consola del navegador y viceversa, escribiremos el código 📟 en el modo "Codificación en vivo" directamente en nuestro sitio web. Para hacer esto, intente agregar la palabra Hola, la palabra Mundo en la siguiente ventana de `LIVE EDITOR`. En `RESULTADO` deberías obtener `Hello World` 🌎.
 
 ```jsx live
 function learnJavaScript() {
@@ -165,7 +171,7 @@ function learnJavaScript() {
 }
 ```
 
-Now try playing with math operations 👇:
+Ahora intenta jugar con operaciones matemáticas 👇:
 
 ```jsx live
 function learnJavaScript() {
@@ -175,60 +181,78 @@ function learnJavaScript() {
 }
 ```
 
-## Problems?
+## React Native
+
+Un ejemplo básico de `Hello world` en una aplicación móvil hecha con la biblioteca `React Native`. No entraremos en la sintaxis por ahora, ya que hablaremos de ella más adelante, pero en mi opinión, todo es obvio aquí. Cambia el bloque de texto donde escribes tu nombre.
+
+```SnackPlayer name=index.js
+import * as React from 'react'
+import { Text } from 'react-native'
+
+const App = () => (
+  <Text>Hello world!</Text>
+)
+
+export default App
+```
+
+## ¿Problemas?
 
 ![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
 
-Write to [Discord](https://discord.gg/6GDAfXn) chat.
+Escribe en [Discord](https://discord.gg/6GDAfXn) o Telegram [chat](https://t.me/jscampapp) y suscríbete a nuestras [noticias](https://t.me/javascriptapp)
 
-## Questions
+![JavaScript Camp](/img/bandlink.png)
+
+## Preguntas
 
 ![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
 
-What URL (address) do I need to enter into Chrome's address bar to open a completely blank browser tab?
+¿Qué URL (dirección) se debe ingresar en la barra de direcciones de Chrome para abrir una pestaña del navegador completamente vacía?
 
-1. blank
-2. about.blank
-3. about: blank
+1. acerca de: añadir
+2. sobre.nuevo
+3. acerca de: en blanco
 
-What's the keyboard shortcut to open the console in Chrome?
+¿Qué método abreviado de teclado abre la consola en Chrome (Windows)?
 
-1. Ctrl + Shift + P
-2. Ctrl + Shift + J
-3. Ctrl + P
+1. Ctrl+Mayús+P
+2. Ctrl+Mayús+J
+3. Ctrl+P
 
-What is the symbol for the addition operation?
+¿Qué significa el símbolo `+` al realizar operaciones matemáticas en JavaScript?
 
-1. `+ /`
-2. `+ \`
-3. `+`
+1. Concatenación
+2. El signo más significa suma - suma de números
+3. Asignación: se asigna un valor a una variable
 
-What is the symbol for the subtraction operation?
+¿Qué significa el símbolo `-` al realizar operaciones matemáticas en JavaScript?
 
-1. `/`
-2. `- \`
-3. ` -`
+1. División
+2. Resta
+3. Asignación: se asigna un valor a una variable
 
-What is the symbol for the multiplication operation?
+¿Cuál es el símbolo de la multiplicación?
 
-1. `×`
-2. `* /`
-3. `*`
+1. `%`
+2. `*`
+3. `/`
 
-What is the symbol for the division operation?
+¿Qué significa el símbolo `/` al realizar operaciones matemáticas en JavaScript?
 
-1. `/`
-2. `\`
-3. `% `
+1. Este no es un símbolo para operaciones matemáticas.
+2. La barra inclinada indica multiplicación: la multiplicación de un número por otro.
+3. La barra inclinada denota división: la división de un número por otro.
 
-Now we are ready to study JavaScript with you, but in order to understand how much you learned this lesson take the test in [mobile application](http://onelink.to/njhc95) in our school on this topic.
+Para comprender cuánto ha aprendido esta lección, realice una prueba en la [aplicación móvil](http://onelink.to/njhc95) de nuestra escuela sobre este tema o en nuestro [bot de Telegram](https://t.me/javascriptcamp_bot).
 
-![Sumerian school](/img/app.jpg)
+![JS Camp](/img/app.jpg)
 
-## Links
+
+## Enlaces:
 
 1. [MDN web docs](https://developer.mozilla.org/en/docs/Learn/JavaScript)
-2. [Code for Teens: The Perfect Beginner's Guide to Programming, Volume 1: Javascript - Jeremy Moritz](https://www.amazon.com/Code-Teens-Beginners-Programming-Javascript-ebook/dp/B07FCTLVPC)
+2. [Código para adolescentes: la gran guía de programación para principiantes Volumen 1: Javascript - Jeremy Moritz](https://www.amazon.com/Code-Teens-Beginners-Programming-Javascript-ebook/dp/B07FCTLVPC)
 
 ## Contributors ✨
 
@@ -239,6 +263,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /> <a href="https://github.com/gHashTag/react-native-village/commits?author=gHashTag" title="Documentation">📖</a></td>
     <td align="center"><a href="https://github.com/Resoner2005"><img src="https://avatars1.githubusercontent.com/u/75675814?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Resoner2005</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/issues?q=author%3AResoner2005" title="Bug reports">🐛 🎨 🖋</a></td>
   </tr>
+  
 </table>
 
 [![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)

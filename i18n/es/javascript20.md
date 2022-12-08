@@ -1,41 +1,46 @@
 ---
 id: javascript20
-title: Destructuring arrays and objects
-sidebar_label: Destructuring
+title: Destrucción de arreglos y objetos.
+sidebar_label: Destrucción de arreglos y objetos.
 ---
+
+import YouTube from 'react-youtube'
 
 ![@serverSerrverlesskiy](/img/javascript/headers/30.jpg)
 
-Destructuring in JavaScript is an assignment syntax that allows you to conveniently extract data from arrays and objects in one line.
+La desestructuración en JavaScript es una sintaxis de asignación que le permite extraer datos de forma conveniente, en una sola línea, de matrices y objetos.
 
-## Object destructuring
+## Desestructuración de objetos
 
 ![object](https://media.giphy.com/media/3o85xx7Yll3UyNVQf6/giphy.gif)
 
 ```jsx live
 function learnJavaScript() {
-  // Create a `fruit` object
+  // Создаём объект `fruit`
   let fruit = {
     title: 'banana',
     group: 'tropical',
     quantity: 5
   }
 
-  // Destructuring the `fruit` object
+  // Destrucción del objeto `fruit`
   let { title, group, quantity } = fruit
 
-  // Display `title`
+  // Mostrar `title`
   return title
 }
 ```
+Las propiedades `title`, `group` y `quantity` repiten la estructura del objeto `fruta` y copian sus valores en variables idénticas 🔔 ubicadas en `{...}`. Por lo tanto, si intercambia las variables 🔔 en `{...}`, entonces el código funcionará igual de bien, intente intercambiar las variables 🔔 en el ejemplo anterior.
 
-The properties `title`,` group` and `quantity` repeat the structure of the object` fruit` and copy their values into identical variables 🔔 found in `{...}`. Therefore, if you swap the variables 🔔 in `{...}`, then the code will work just as well, try swapping the variables 🔔 in the example above.
+## Video
 
-### Nested object
+<YouTube videoId="AGB030qG0zA" />
+
+### objeto anidado
 
 ![bookmark](https://media.giphy.com/media/3og0IDyqVFNH7qFpAI/giphy.gif)
 
-We can also destructure the nested object.
+También podemos desestructurar un objeto anidado.
 
 ```jsx live
 function learnJavaScript() {
@@ -57,9 +62,9 @@ function learnJavaScript() {
 }
 ```
 
-### Other names
+### Otros nombres
 
-If you need to use variable names 🔔 other than property names, the following syntax will work:
+Si necesita usar nombres de variables 🔔 que no sean nombres de propiedades, esta sintaxis funcionará:
 
 ```jsx live
 function learnJavaScript() {
@@ -75,9 +80,9 @@ function learnJavaScript() {
 }
 ```
 
-### Default values
+### Valores predeterminados
 
-If in `{...}` you write a property variable 🔔 which will not be found, then it will be assigned the value `undefined`. To assign a default value to a variable 🔔, you can assign that value to it. If you try to assign a value to a variable 🔔 whose properties are found, then the property value will be assigned to it. Let's look at an example.
+Si en `{...}` escribes una variable 🔔 propiedades que no se encuentran, entonces se le asignará el valor `undefined`. Para asignar un valor predeterminado a una variable 🔔, se le puede asignar este valor. Si intenta asignar un valor a una variable 🔔 cuyas propiedades se encuentran, se le asignará el valor de la propiedad. Veamos un ejemplo.
 
 ![Dafault](https://media.giphy.com/media/3oEduLzte7jSNmq4z6/giphy.gif)
 
@@ -92,13 +97,13 @@ function learnJavaScript() {
 }
 ```
 
-The `title` contains the property value, not what we assign to it. The `group` property does not exist in the` fruit` object, and we have not assigned any values to the variable 🔔. The property `quantity` also does not exist, but we assigned the value` 5` to the variable 🔔.
+`title` muestra el valor de la propiedad, no lo que le asignamos. La propiedad `group` no existe en el objeto `fruit` y no hemos asignado ningún valor a la variable 🔔. La propiedad `quantity` tampoco existe, pero le hemos asignado el valor `5` a la variable 🔔.
 
-### Remainder
+### Resto
 
 ![octatok](https://media.giphy.com/media/hvddF1vHatFIgQspUB/giphy.gif)
 
-If you need to get one variable 🔔 from an object, and group the rest into another object, then use `...` before the variable 🔔 from which the object with the remaining properties will be created.
+Si necesita obtener una variable 🔔 de un objeto y agrupar el resto en otro objeto, utilice `...` antes de la variable 🔔 a partir de la cual se creará el objeto con las propiedades restantes.
 
 ```jsx live
 function learnJavaScript() {
@@ -113,28 +118,28 @@ function learnJavaScript() {
 }
 ```
 
-## Destructuring arrays
+## Desestructuración de arreglos
 
-Destructuring of an array is the same as for an object. The only difference is that the values of the array elements will be assigned to the variables 🔔 in the order in which the elements are defined.
+La desestructuración de una matriz ocurre de la misma manera que la de un objeto. La única diferencia es que los valores de los elementos de la matriz se asignarán a las variables 🔔 en el orden en que se definen los elementos.
 
 ![Take](https://media.giphy.com/media/IuBlckSD7dQv6/giphy.gif)
 
 ```jsx live
 function learnJavaScript() {
-  // Create an array `fruit`
+  // Crear una matriz `fruit`
   let fruit = ['banana', 'tropical', 5]
 
-  // Destruct the `fruit` array
+  // Destrucción de la matriz `fruit`
   let [title, group, quantity] = fruit
 
-  // Display
+  // Visualización en la pantalla
   return `${title}, ${group}, ${quantity}`
 }
 ```
 
-### Remainder
+### Resto
 
-By analogy with objects, the remainder works.
+Por analogía con los objetos, el resto funciona.
 
 ```jsx live
 function learnJavaScript() {
@@ -146,9 +151,9 @@ function learnJavaScript() {
 }
 ```
 
-### Copy of array
+### Copia de matriz
 
-An example of creating a copy of an array.
+Un ejemplo de creación de una copia 🏗️ de una matriz.
 
 ![Copia](https://media.giphy.com/media/GI1KnTxySlrCE/giphy.gif)
 
@@ -162,11 +167,11 @@ function learnJavaScript() {
 }
 ```
 
-### Concatenating arrays
+### Unión de arreglos
 
 ![add](https://media.giphy.com/media/3gMrhfFtWHq9XxtqPy/giphy.gif)
 
-An example of combining arrays into one.
+Un ejemplo de combinación de arreglos en uno.
 
 ```jsx live
 function learnJavaScript() {
@@ -178,47 +183,44 @@ function learnJavaScript() {
 }
 ```
 
-## Problems?
+## ¿Problemas?
 
 ![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
 
-Write to [Discord](https://discord.gg/6GDAfXn) chat.
+Escribe en [Discord](https://discord.gg/6GDAfXn) o Telegram [chat](https://t.me/jscampapp) y suscríbete a nuestras [noticias](https://t.me/javascriptapp)
 
-## Questions:
+![JavaScript Camp](/img/bandlink.png)
+
+## preguntas
 
 ![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
 
-Destructuring is it?
+¿Desestructurar es?
 
-1. Function
-2. Syntax
-3. Object
+1. Función
+2. Sintaxis
+3. Objeto
 
-Is it necessary, when destructuring an object, to put variables in the same order as they are in the object?
+Al desestructurar un objeto, ¿es necesario poner las variables en el mismo orden que están en el objeto?
 
-1. Yes
-2. No
+1. `true`
+2. `false`
 
-What will be assigned to a variable if no identical property is found in the object?
+¿Qué se asignará a una variable si no se encuentra una propiedad idéntica en el objeto?
 
 1. `error`
 2. `undefined`
 3. `unknown`
 
-Is the order of elements in an object important when it is destructed?
+Para comprender cuánto ha aprendido en esta lección, realice la prueba en [aplicación móvil] (http://onelink.to/njhc95) en nuestra escuela sobre este tema.
 
-1. Yes
-2. No
+![JS Camp](/img/app.jpg)
 
-In order to understand how much you learned this lesson, take the test on the [mobile application](http://onelink.to/njhc95) of our school on this topic.
-
-![Sumerian school](/img/app.jpg)
-
-## Links
+## Enlaces
 
 1. [Learn JavaScript](https://learn.javascript.ru/destructuring-assignment)
 2. [MDN Web Docs](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
-3. [Destructuring in ES6](https://medium.com/@stasonmars/деструктуризация-в-es6-полное-руководство-b865bb71f376)
+3. [Desestructuración en ES6](https://medium.com/@stasonmars/деструктуризация-в-es6-полное-руководство-b865bb71f376)
 
 ## Contributors ✨
 

@@ -1,22 +1,24 @@
 ---
 id: javascript21
-title: Closure
-sidebar_label: Closure
+title: 'cierre'
+sidebar_label: cierre
 ---
+
+import YouTube from 'react-youtube'
 
 ![@serverSerrverlesskiy](/img/javascript/headers/20.jpg)
 
-A closure is a function⚙️ that has access to an external function⚙️ even after the external function️ has terminated. A closure is needed to provide an internal function with access to the scope of an external function️, but at the same time close access from the external environment to the variables of the internal function⚙️.
+Un cierre es una función⚙️ que tiene acceso a una función externa⚙️ incluso después de que la función externa haya terminado. El cierre es necesario para brindar acceso de la función interna al alcance de la función externa️, pero al mismo tiempo cerrar el acceso desde el entorno externo a las variables de la función interna⚙️.
 
 ![Snake](https://media.giphy.com/media/3oFzmdjqH15YebLQ52/giphy.gif)
 
-Requirements for creating a closure:
+Requisitos para crear un 🏗️ Cierre:
 
-1. An external function that is called in the code.
-2. The outer function contains the inner function.
-3. As a result, the outer function returns the inner one.
+1. Una función externa que se llama en el código.
+2. Hay una función interior en la función exterior.
+3. Como resultado, la función externa devuelve la interna.
 
-Let's consider creating a closure using an example:
+Considere crear un cierre 🏗️ usando un ejemplo:
 
 ```jsx live
 function learnJavaScript() {
@@ -32,22 +34,26 @@ function learnJavaScript() {
 }
 ```
 
-1. In the example, we have created an external function `getFruit`;
-2. Inside `getFruit` created an internal function `show`.
-3. The getFruit function returns the show function as a result.
-4. Further in the code, we assigned the result of the `getFruit` function to the variable `showFruit`.
-5. Because the result of `getFruit` is a function, then `showFruit` becomes not a variable🔔, but a function.
-6. The result of the whole construction is the variable `fruit`, which is inside the function `getFruit`, it became closed. Now we can only find out the value of this variable🔔, we cannot change it.
+1. En el ejemplo, hemos creado una función externa `getFruit`;
+2. Dentro de `getFruit` se creó una función interna `show`.
+3. La función `getFruit` devuelve la función `show` como resultado.
+4. A continuación en el código, asignamos el resultado de la función `getFruit` a la variable `showFruit`.
+5. Porque el resultado de `getFruit` es una función, entonces `showFruit` no se convierte en una variable🔔, sino en una función.
+6. El resultado de toda la construcción fue la variable 🔔 `fruit` ubicada dentro de la función `getFruit`, se cerró. Ahora solo podemos averiguar el valor de esta variable 🔔, no se puede cambiar.
 
-## Examples of
+## Video
+
+<YouTube videoId="bsWqPzc4g-8" />
+
+## Ejemplos
 
 ![Math](https://media.giphy.com/media/xT1Ra5h24Eliux3UVq/giphy.gif)
 
-Let's look at more examples for understanding.
+Considere más ejemplos para comprender.
 
-### Counter
+### Encimera
 
-A counter is the simplest example to consider how a closure works.
+El mostrador, el ejemplo más sencillo sobre el que se puede considerar el trabajo del cierre.
 
 <!-- ![Counter](https://media.giphy.com/media/QSNvClMu5zWJW/giphy.gif) -->
 
@@ -64,11 +70,11 @@ function learnJavaScript() {
 }
 ```
 
-### Improved counter
+### Contador mejorado
 
-![Counter](https://media.giphy.com/media/3o6Zt6fzS6qEbLhKWQ/giphy.gif)
+![Contador](https://media.giphy.com/media/3o6Zt6fzS6qEbLhKWQ/giphy.gif)
 
-As a result, we will have not one function⚙️, but several at once.
+Como resultado, no tendremos una función⚙️, sino varias a la vez.
 
 ```jsx live
 function learnJavaScipt() {
@@ -97,7 +103,7 @@ function learnJavaScipt() {
 }
 ```
 
-### Closure in a loop
+### Cerrando en un bucle
 
 ![circle](https://media.giphy.com/media/u5s2ezDicmyuA/giphy.gif)
 
@@ -113,7 +119,7 @@ function learnJavaScript() {
 }
 ```
 
-### Remember the phrase
+### Recordamos la frase
 
 ![l](https://media.giphy.com/media/l4pTfqyI6TCjUW4Yo/giphy.gif)
 
@@ -132,44 +138,46 @@ function learnJavaScript() {
 
 ## Total
 
-Closures are one of the most important fundamental JavaScript concepts that every JS developer should understand. Understanding closures is one stepping stone to writing efficient, high-quality applications.
+Los cierres son uno de los conceptos fundamentales más importantes en JavaScript y deben ser entendidos por todos los desarrolladores de JS. Comprender los cierres 💡 es uno de los pasos para escribir aplicaciones 🖊️ eficientes y de alta calidad.
 
-## Problems?
+## ¿Problemas?
 
 ![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
 
-Write to [Discord](https://discord.gg/6GDAfXn) chat.
+Escribe en [Discord](https://discord.gg/6GDAfXn) o Telegram [chat](https://t.me/jscampapp) y suscríbete a nuestras [noticias](https://t.me/ aplicación javascript )
 
-## Questions:
+![JavaScript Camp](/img/bandlink.png)
+
+## preguntas
 
 ![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
 
-What is a closure?
+¿Qué es un cierre?
 
-1. Construction
-2. Function
-3. Concept
+1. Construcción
+2. Una función que tiene acceso a una función externa
+3. Concepto
 
-What is closure on what?
+En un cierre, ¿qué está cerrado a qué?
 
-1. Function on scope
-2. Variables in a function
+1. Función en el alcance
+2. Variables en funciones
 
-What do you need to do to access a closed variable?
+¿Qué hay que hacer para acceder a una variable cerrada?
 
-1. I will describe it and use it
-2. It is available
-3. The variable can only be viewed
+1. Lo describiré y lo usaré.
+2. Está disponible
+3. La variable solo se puede ver
 
-In order to understand how much you learned this lesson, take the test on the [mobile application](http://onelink.to/njhc95) of our school on this topic.
+Para comprender cuánto ha aprendido esta lección, realice una prueba en la [aplicación móvil](http://onelink.to/njhc95) de nuestra escuela sobre este tema o en nuestro [bot de Telegram](https://t.me/javascriptcamp_bot).
 
-![Sumerian school](/img/app.jpg)
+![JS Camp](/img/app.jpg)
 
-## Links
+## Enlaces
 
 1. [Learn JavaScript](https://learn.javascript.ru/closures)
 2. [MDN Web Docs](https://developer.mozilla.org/ru/docs/Web/JavaScript/Closures)
-3. [Замыкания JavaScript](https://medium.com/@stasonmars/понимаем-замыкания-в-javascript-раз-и-навсегда-c211805b6898)
+3. [Cierres de JavaScript](https://medium.com/@stasonmars/понимаем-замыкания-в-javascript-раз-и-навсегда-c211805b6898)
 
 ## Contributors ✨
 

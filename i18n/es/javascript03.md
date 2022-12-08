@@ -10,19 +10,19 @@ import YouTube from 'react-youtube'
 
 ## Variables
 
-Variables 🔔 (Variables, abbreviated as `var`) are a container, for values such as numbers used in addition ➕, or a string that we could use as part of a sentence, and other data types that we'll get to know later.
+Las variables 🔔 (Variables, abreviadas como `var`) son un contenedor 📦 de valores como números usados ​​además ➕ o una cadena que podríamos usar como parte de una oración, así como otros tipos de datos a los que llegaremos saber más tarde.
 
 ![Container](https://media.giphy.com/media/0T0FUiZl51VPCLsqLR/giphy.gif)
 
-<!-- ## Video
+## Video
 
-<YouTube videoId="gCqxA_JOtmw" /> -->
+<YouTube videoId="gCqxA_JOtmw" />
 
-## Variable declaration
+## Declaración de variables
 
 ![Announcement](https://media.giphy.com/media/cYaBD8kxE4PZudHBRA/giphy.gif)
 
-To use a variable, you must first create it, or, more precisely, declare a variable. To do this, we introduce the keyword `var` followed by the name you want to give your variable. The instruction below creates (in other words: declares or defines) a variable named "message":
+Para usar una variable, primero debe crearla 🏗️, o para ser más precisos, declarar 🗣️ la variable. Para ello ingresamos la 🗝️ palabra clave `var` seguida del nombre que le quieres dar a tu variable. La siguiente declaración crea 🏗️ (en otras palabras: declara 🗣️ o define) una variable llamada "message":
 
 ```jsx live
 function learnJavaScript() {
@@ -32,176 +32,222 @@ function learnJavaScript() {
 }
 ```
 
-Here we create a variable 🔔 `message`. Currently ⏱️ it does not contain a value, to be more precise, the variable contains an empty string.
+Aquí creamos una variable 🔔 `message`. Actualmente ⏱️ no contiene un valor, para ser más precisos, la variable contiene una cadena vacía.
 
-## Assigning a value to a variable
+## Asignar un valor a una variable
 
 ![Memory](https://media.giphy.com/media/3o6ZtafpgSpvIaKhMI/giphy.gif)
 
-Once the variable 🔔 is declared, it can be assigned a value. To do this, write 🖊️ variable name 🔔, followed by an equal sign `=`, followed by the value you want to assign. For example 👇:
+Una vez que se declara una variable 🔔, se le puede asignar un valor. Para ello, escribe 🖊️ el nombre de la variable 🔔, seguido de un signo de igual `=` seguido del valor que deseas asignar. Por ejemplo 👇:
 
 ```jsx live
 function learnJavaScript() {
   var message
   message = 'My name is ...'
-  // We can access it using the variable name
+  // Podemos acceder a ella usando el nombre de la variable
   return message
 }
 ```
 
-In `RESULT`, the value that you assigned to the variable 🔔 returned in the console. Play around 🎮 with the values of a variable 🔔, for example, complete the expression with your name.
+En `RESULT` el valor que le asignaste a la variable 🔔 devolvió en la consola. Juega 🎮 con los valores de la variable 🔔, por ejemplo, completa la expresión con tu propio nombre.
 
-For brevity, you can combine the declaration of a variable 🔔 and writing 🖊️ in one line 👇:
+Para abreviar, puede combinar la declaración de variable 🔔 y la entrada 🖊️ en una sola línea 👇:
 
 ```jsx live
 function learnJavaScript() {
-  var message = 'Hello!' // define a variable and assign a value to it
+  var message = 'Hello!' // definir una variable y asignarle un valor
   return message
 }
 ```
 
-## Variable update
+## Actualización de variables
 
 ![Update](https://media.giphy.com/media/FP47IFqWyXfdKYU6VG/giphy.gif)
 
-One of the peculiarities of variables 🔔 is that their meaning can change.
-When a value is assigned to a variable 🔔, you can change (update) that value simply by specifying a different value. Let's take a look at a simple example 👇:
+Una de las características de las variables 🔔 es que su valor puede cambiar.
+Cuando a una variable 🔔 se le asigna un valor, puede cambiar (actualizar) ese valor simplemente especificando un valor diferente. Echemos un vistazo a un ejemplo simple 👇:
 
 ```jsx live
 function learnJavaScript() {
-  var message = 'Bob' // now message Bob
-  message = true // and now the message is true
-  message = 35 // and as a result message 35
+  var message = 'Bob' // ahora envíale un message a Bob
+  message = true // y ahora el message es verdadero
+  message = 35 // y finalmente message 35
 
   return message
 }
 ```
 
-Another feature of variables 🔔 is that they can contain almost anything, not just strings and numbers. Variables 🔔 can also contain complex data and even entire functions. You will learn more about this as you study the course further.
+Otra característica de las variables 🔔 es que pueden contener casi cualquier cosa, no solo cadenas y números. Las variables 🔔 también pueden contener datos complejos e incluso funciones completas. Aprenderá más sobre esto a medida que avance en el curso.
 
-::: tip Note!
-We say that variables contain values. This is an important distinction. Variables are not the values themselves! They are containers for values. Imagine that they are like little cardboard boxes📦 in which you can store things.
+:::tip ¡En una nota!
+Decimos que las variables contienen valores. Esta es una distinción importante. ¡Las variables no son valores en sí mismas! Son contenedores 📦 de valores. Imagina que son como cajitas de cartón 📦 en las que puedes guardar cosas.
 :::
 
 ![Variables](https://mdn.mozillademos.org/files/13506/boxes.png)
 
 ![Hello World](https://media.giphy.com/media/26his8ERHOSxKuWw8/giphy.gif)
 
-## Variable naming rules
+## Convenciones de nomenclatura de variables
 
 ![Rules](https://media.giphy.com/media/XK8I8Am1gSe17MiJ2m/giphy.gif)
 
-You can name the variable 🔔 whatever you like, but there are limitations. Generally, you should only stick to Latin characters (0-9, a-z, A-Z) and the underscore character.
+Puedes nombrar la variable 🔔 como quieras, pero hay limitaciones. Como regla general, solo debe ceñirse a los caracteres latinos (0-9, a-z, A-Z) y el guión bajo.
 
-- The use of other symbols is not recommended because they may cause errors or be incomprehensible to an international audience.
-- Do not use underscores at the beginning of variable names 🔔 - this is used in some JavaScript constructs to denote specific things.
-- Do not use numbers at the beginning of variables 🔔. This is invalid and will result in an error.
-- It is generally accepted to stick to the so-called "lower camel case" (camelCase - so called because of the "humps" that form the first letters of words), where you glue several words, using lowercase letters for the entire first word, and then capital letters of subsequent words. We have used this for our variable names 🔔 in this article.
-- Make variable names 🔔 intuitive about what data they contain. Do not use only single letters / numbers or large long phrases.
-- Variables 🔔 are case sensitive, so `myage` and` myAge` are different variables 🔔.
-- Last but not least - you also need to avoid using JavaScript reserved words as variable names 🔔 - by that we mean the words that make up the actual JavaScript syntax! Thus, you cannot use words like var, function, let, and for for variable names 🔔. Browsers recognize them as different pieces of code and therefore errors occur.
+- No se recomienda el uso de otros caracteres porque pueden causar errores o ser incomprensibles para una audiencia internacional.
+- No use guiones bajos al principio de los nombres de las variables 🔔 - esto se usa en algunas construcciones de JavaScript para indicar cosas específicas.
+- No utilice números al principio de las variables 🔔 . Esto no está permitido y dará como resultado un error.
+- Es común apegarse a las llamadas "minúsculas de camello" (camel case - llamado así por las "jorobas" que forman las primeras letras de las palabras), donde se unen varias palabras, usando letras minúsculas para toda la primera palabra, y luego las letras mayúsculas de las palabras subsiguientes. Usamos esto para nuestros nombres de variables 🔔 en este artículo.
+- Haz nombres de variables 🔔 para que sea intuitivamente claro qué datos contienen. No use solo letras/números individuales o frases grandes y largas.
+- Las variables 🔔 distinguen entre mayúsculas y minúsculas, por lo que `myage` y `myAge` son variables diferentes 🔔.
+- Y una última cosa: también debe evitar el uso de palabras reservadas de JavaScript como nombres de variables 🔔 - ¡Con eso nos referimos a las palabras que componen la sintaxis de JavaScript real! Por lo tanto, no puede usar palabras como var, function, let y for para nombres de variables 🔔. Los navegadores los reconocen como piezas de código diferentes y, por lo tanto, se producen errores.
 
-## List of reserved words
+## Lista de palabras reservadas
 
 ![Reserved](https://media.giphy.com/media/3o6Mb3eci7bVDKBR2o/giphy.gif)
 
-We cannot call variables 🔔 with these words, since they are reserved in the JavaScript language.
+No podemos llamar a las variables 🔔 con estas palabras, ya que están reservadas en el lenguaje JavaScript.
+
 `break`, `case`, `catch`, `class`, `const`, `continue`, `debugger`, `default`, `delete`, `do`, `else`, `export`, `extends`, `finally`, `for`, `function`, `if`, `import`, `in`, `instanceof`, `new`, `return`, `super`, `switch`, `this`, `throw`, `try`, `typeof`, `var`, `void`, `while`, `with`, `yield`
 
-## Loose typing
+## Mecanografía gratis
 
 ![Freedom](https://media.giphy.com/media/6901DbEbbm4o0/giphy.gif)
 
-JavaScript is a “freely typed language👅” which means that unlike some other languages👅 you do not need to specify what type of data the variable will contain (eg numbers, strings, arrays, etc.).
+JavaScript es un "lenguaje de escritura libre👅", lo que significa que, a diferencia de otros idiomas👅, no es necesario especificar qué tipo de datos contendrá la variable 🔔 (como números, cadenas, matrices, etc.).
 
-For example, if you declare a variable 🔔 and assign a quoted value to it, the browser will treat the variable 🔔 as a string 👇:
+Por ejemplo, si declara una variable 🔔 y le asigna un valor entre comillas, el navegador tratará la variable 🔔 como una cadena 👇:
 
 ```jsx live
 function learnJavaScript() {
   var myString = 'Hello'
-  // It will still be a string, even if it contains numbers, so be careful:
-  var myNumber = '500' // oops, it's still a string
+  // Seguirá siendo una cadena incluso si contiene números, así que tenga cuidado:
+  var myNumber = '500' // Vaya, sigue siendo una cadena (string)
 
-  myNumber = 500 // that's better, now it's number. Remove this line and look at the data type.
+  myNumber = 500 // así que algo mejor, ahora este número (number). Elimine esta línea y observe el tipo de datos.
 
   return typeof myNumber
 }
 ```
 
-## Deprecated "var" keyword
+## Palabra clave "var" en desuso
 
 ![Old](https://media.giphy.com/media/3orieJI3IdkKWIsAGA/giphy.gif)
 
-Usually `var` is not used in modern scripts, but it can still be hidden in old ones. This is due to the fact that it does not behave unambiguously, so instead of `var` we will use` let` for variables 🔔, and `const` for constants - constants.
+`var` normalmente no se usa en los scripts modernos, pero aún puede estar oculto en los más antiguos. Esto se debe al hecho de que se comporta de manera ambigua, por lo que en lugar de `var` usaremos `let` para variables 🔔 y `const` para constantes - constantes.
 
-🔔 The break is over, let's run to the next lesson!
+🔔 ¡Se acabó el descanso, corre a la siguiente lección!
 
-## Problems?
+## React Native
+
+El ejemplo básico `Hola mundo` discutido en la primera lección contiene la constante `App`, que contiene una función de flecha, que conoceremos con más detalle en la lección sobre funciones.
+
+```SnackPlayer name=index.js
+import * as React from 'react'
+import { Text } from 'react-native'
+
+const App = () => (
+  <Text>Hello world!</Text>
+)
+
+export default App
+```
+
+## ¿Problemas?
 
 ![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
 
-Write to [Discord](https://discord.gg/6GDAfXn) chat.
+Escribe en [Discord](https://discord.gg/6GDAfXn) o Telegram [chat](https://t.me/jscampapp) y suscríbete a nuestras [noticias](https://t.me/javascriptapp)
 
-## Questions:
+![JavaScript Camp](/img/bandlink.png)
+
+## Preguntas:
 
 ![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
 
-For whom does the `console.log` command contain information?
+¿Qué son las variables?
 
-1. User
-2. Developer
-3. JavaScript interpreter
+1. Contenedores de valores
+2. Valores variables
+3. letras latinas
 
-What are variables?
+¿Qué pueden contener las variables?
 
-1. Containers for values
-2. Variable values
-3. Latin letters
+1. Solo cadenas y números
+2. Todo tipo de datos
+3. Solo datos y funciones complejas
 
-What can variables contain?
-
-1. Only strings and numbers
-2. Numbers, strings, complex data, functions
-3. Only complex data and functions
-
-How to write a command to assign a variable?
+¿Cómo escribir un comando de asignación de variables?
 
 1. `var`
-2. `var` [variable name] =
-3. `var` [variable name]
+2. `var` [nombre de la variable] =
+3. `var` [nombre de la variable]
 
-How do I update a variable?
+¿Cómo actualizar una variable?
 
-1. The variable cannot be updated
-2. Specify a different value for the variable
-3. Set a custom command
+1. La variable no se puede actualizar
+2. Especifique un valor diferente para la variable
+3. Establecer un comando especial
 
-What is missing in the variable naming rules?
+¿Qué no está en las reglas para nombrar variables?
 
-1. Don't use numbers at the beginning of variables
-2. Don't use reserved words
-3. Stick to Latin characters
+1. Números al principio de las variables
+2. No uses palabras reservadas
+3. Cíñete a los caracteres latinos
 
-How do I write the value of a variable so that the browser treats the variable as a string?
+¿Cómo establecer el valor de una variable para que el navegador trate la variable como una cadena?
 
-1. Without quotes
-2. In quotes
-3. In brackets
+1. Sin comillas
+2. citado
+3. Entre paréntesis
 
-Which keyword don't we use to define variables?
+¿Qué palabra clave no usamos para definir variables?
 
 1. `let`
 2. `const`
 3. `var`
 
-In order to understand how much you learned this lesson, take a test in our school [mobile application](http://onelink.to/njhc95) on this topic.
+¿Qué tipo de mayúsculas (es decir, mayúsculas y minúsculas) se deben usar en los nombres de variables en JavaScript?
 
-![Sumerian school](/img/app.jpg)
+1. case
+2. camel
+3. camelCase
 
-## Links
+¿Es esta sintaxis de JavaScript válida? ¿Si no, porque no?
+
+```jsx
+let myMood = \"Curious about JavaScript\" \n let myMood = \"Excited to use my new superpowers\"\n myMood
+```
+
+1. Segunda variable sin `let`
+2. Realmente
+3 error de sintaxis
+
+¿Qué significa un solo signo igual en una declaración?
+
+1. Compara
+2. Se asigna valor a una variable
+3. Igualdad
+
+¿Qué palabra clave debe usarse para crear cualquier variable que sepa que no se cambiará?
+
+1. `let`
+2. `const`
+3. `var`
+
+¿Cuándo debería usar la palabra clave `var` en su propio código?
+
+1. Nunca
+2. Siempre
+3. A menudo
+
+Para comprender cuánto ha aprendido esta lección, realice una prueba en la [aplicación móvil](http://onelink.to/njhc95) de nuestra escuela sobre este tema o en nuestro [bot de Telegram](https://t.me/javascriptcamp_bot).
+
+![JS Camp](/img/app.jpg)
+
+## Enlaces:
 
 1. [MDN web docs](https://developer.mozilla.org/ru/docs/Learn/JavaScript/Первые_шаги/Variables)
-2. [Code for Teens: The Perfect Beginner's Guide to Programming, Volume 1: Javascript - Jeremy Moritz](https://www.amazon.com/Code-Teens-Beginners-Programming-Javascript-ebook/dp/B07FCTLVPC)
+2. [Código para adolescentes: la gran guía de programación para principiantes Volumen 1: Javascript - Jeremy Moritz](https://www.amazon.com/Code-Teens-Beginners-Programming-Javascript-ebook/dp/B07FCTLVPC)
 3. [JavaScript.ru](https://learn.javascript.ru/types)
 
 ## Contributors ✨
@@ -213,7 +259,30 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /> <a href="https://github.com/gHashTag/react-native-village/commits?author=gHashTag" title="Documentation">📖</a></td>
     <td align="center"><a href="https://github.com/Resoner2005"><img src="https://avatars1.githubusercontent.com/u/75675814?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Resoner2005</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/issues?q=author%3AResoner2005" title="Bug reports">🐛 🎨 🖋</a></td>
   </tr>
-  
+
 </table>
 
 [![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
+
+<!-- ## Супер команда console.log()
+
+Перед тем как продолжить, я познакомлю вас с супер секретной и супер полезной командой `console.log()`, которую вы будете очень и очень часто использовать во время разработки программ.
+Так вот, чтобы вывести в консоль отладочную информацию только для разработчиков (пользователи её увидеть не смогут; как вы знаете, большинство людей не подозревает даже о существовании самой консоли, а не то что о секретных «логах»!), напишите:
+
+```javascript
+console.log('Совершенно секретно! Только для разработчиков!')
+````
+
+Как видно из названия функции, мы выводим в консоль «лог» (то есть информацию о работе системы). Этой доброй суперспособностью разработчики пользуются постоянно. Скажем, когда у вас были сообщения об ошибках, вы видели в консоли именно это — интерпретатор выдавал («логгировал») в консоль информацию о работе системы, чтобы вы могли прочесть и исправить нужные параметры. Словом, очень полезная штука. Вам не раз и не два придётся прибегнуть к помощи console.log, так что запомните эту функцию!
+
+```javascript
+console.log('Выведите любое сообщение, какое пожелаете')
+console.log('просто введите сюда какую-нибудь ' + 'строку')
+var сообщение = 'А ещё в качестве аргумента можно использовать переменные!'
+console.log(сообщение)
+var чтоНужноИзучить = 'JavaScript'
+console.log('Я изучу ' + чтоНужноИзучить) -->
+
+```
+
+```

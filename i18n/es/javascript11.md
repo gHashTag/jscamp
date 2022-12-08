@@ -1,18 +1,20 @@
 ---
 id: javascript11
-title: Type conversion and casting
-sidebar_label: Type conversion and casting
+title: Tipo de conversión y fundición
+sidebar_label: Tipo de conversión y fundición
 ---
+
+import YouTube from 'react-youtube'
 
 ![@serverSerrverlesskiy](/img/javascript/headers/09.jpg)
 
-## Type coercion (type coercion)
+## Escriba coerción
 
-It is an automatic or implicit conversion of values from one data type to another (for example, a string to a number). Type conversions are similar to type conversions because they both convert values from one data type to another, with one key difference - type conversion is implicit, while type conversion can be implicit or explicit.
+Esta es una conversión automática o implícita de valores de un tipo de datos a otro (por ejemplo, una cadena a un número). La conversión de tipos es similar a la conversión de tipos porque ambos convierten valores de un tipo de datos a otro con una diferencia clave: la conversión de tipos es implícita, mientras que la conversión de tipos puede ser implícita o explícita.
 
 ![transformation](https://media.giphy.com/media/xT4uQr9H3EDL7Ha2hq/giphy.gif)
 
-Examples 👇:
+Ejemplos 👇:
 
 ```jsx live
 function learnJavaScript() {
@@ -23,10 +25,9 @@ function learnJavaScript() {
   return sum
 }
 ```
+En el ejemplo anterior, JavaScript convierte el número `9` en una cadena y luego concatena los dos valores 2️⃣, lo que da como resultado la cadena `59`. JavaScript podía elegir entre una cadena o un número y eligió usar una cadena.
 
-In the example above, JavaScript casts the number `9` into a string, and then concatenates the two 2️⃣ values together, resulting in the string `59`. JavaScript had a choice between string or number and chose to use string.
-
-The compiler could convert the string `5` to a number and return the sum of `14`, but it did not. To get this result, you need to explicitly convert the string `5` to a number using the` Number()` 👇 method:
+El compilador podría haber convertido la cadena `5` en un número y devolver la suma `14`, pero no lo hizo. Para obtener este resultado, debe convertir explícitamente la cadena `5` en un número mediante el método `Number()`👇:
 
 ```jsx live
 function learnJavaScript() {
@@ -37,18 +38,21 @@ function learnJavaScript() {
   return sum
 }
 ```
+## Video
 
-## Type conversion
+<YouTube videoId="Ay82Lut-CS8" /> 
+
+## Tipo de conversión
 
 ![Transformation](https://media.giphy.com/media/l2SpMMVivErM0Q7jG/giphy.gif)
 
-Means the transfer of data from one data type to another. Implicit conversion occurs when the compiler automatically assigns (assigns) data types, but the source code may also explicitly require the conversion to complete.
+Significa la transferencia de datos de un tipo de datos a otro. La conversión implícita ocurre cuando el compilador asigna automáticamente tipos de datos, pero el código fuente📟 también puede requerir explícitamente una conversión para completarse.
 
-### String conversion
+### Conversión de cadenas
 
 ![Transformation](https://media.giphy.com/media/RLVHPJJv7jY1q/giphy.gif)
 
-String conversion occurs when you want to represent something as a string. For example, we can use the `String (value)` function to convert a value to a string 👇:
+Una conversión de cadena ocurre cuando algo debe representarse como una cadena. Por ejemplo, podemos usar la función `String(value)` para convertir un valor en una cadena 👇:
 
 ```jsx live
 function learnJavaScript() {
@@ -59,13 +63,13 @@ function learnJavaScript() {
 }
 ```
 
-The transformation takes place in an obvious way. `true` ✅ becomes`"true"`✅
+La transformación se produce de forma evidente. `true` ✅ se convierte en `"true"` ✅
 
-### Numeric conversion
+### Conversión numérica
 
 ![Transformation](https://media.giphy.com/media/4H5nOUqX7FywOGpCF7/giphy.gif)
 
-Numerical conversion occurs in math functions and expressions.
+La conversión numérica ocurre en funciones matemáticas⚙️ y expresiones.
 
 ```jsx live
 function learnJavaScript() {
@@ -75,7 +79,7 @@ function learnJavaScript() {
 }
 ```
 
-We can use the `Number (value)` function to explicitly convert `value` to a number 👇:
+Podemos usar la función `Número (valor)` para convertir explícitamente `value` en un número 👇:
 
 ```jsx live
 function learnJavaScript() {
@@ -86,116 +90,128 @@ function learnJavaScript() {
 }
 ```
 
-Explicit conversion is often used when we expect to get a number from a string context, such as text fields in forms.
+La conversión explícita se usa a menudo cuando esperamos obtener un número de un contexto de cadena, como campos de formulario de texto 📜.
 
-If the string cannot be explicitly cast to a number, then the conversion result will be `NaN` (Not-a-Number, "not a number "). For example 👇:
+Si la cadena no se puede convertir explícitamente en un número, el resultado de la conversión será `NaN` (del inglés Not-a-Number, "no es un número"). Por ejemplo 👇:
 
 ```jsx live
 function learnJavaScript() {
-  let age = Number('Any string instead of a number')
+  let age = Number('Cualquier cadena en lugar de un número')
 
   return age
 }
 ```
 
-### Numeric conversion rules:
+### Reglas de conversión numérica:
 
-| Value            |                                                                              Converted to ...                                                                               |
-| ---------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| `undefined`      |                                                                                    `NaN`                                                                                    |
-| `null`           |                                                                                     `0`                                                                                     |
-| `true` /` false` |                                                                                  `1` /` 0`                                                                                  |
-| `string`         | White space is trimmed at the edges. Further, if an empty string remains, then we get 0, otherwise a number is "read" from a non-empty string. On error, the result is NaN. |
+| Sentido          |                                                                           convertido                                                                          |
+| ---------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| `undefined`      |                                                                                `NaN`                                                                                 |
+| `null `          |                                                                                 `0`                                                                                  |
+| `true` / `false` |                                                                              `1` / `0`                                                                               |
+| `string`         | Los caracteres de espacio en blanco se cortan en los bordes. Además, si queda una cadena vacía, obtenemos 0; de lo contrario, se "lee" un número de una cadena no vacía. En caso de error🙅‍♂️ el resultado es NaN. |
 
-Examples:
+Ejemplos:
 
 ```javascript
 Number('   123   ') // 123
-Number('123z') // NaN (error reading the number in place of the "z" character)
+Number('123z') // NaN (error al leer el número en lugar del carácter "z")
 Number(true) // 1
 Number(false) // 0
 Number(null) // 0
 Number(undefined) // NaN
 ```
 
-Note that `null` and` undefined` behave differently. So, `null` becomes zero, while` undefined` is cast to `NaN`.
+Tenga en cuenta que `null` e `undefined` se comportan de manera diferente. Entonces `null` se convierte en nulo, mientras que `undefined` se convierte en `NaN`.
 
-### Boolean conversion
+### Transformación booleana
 
 ![Transformation](https://media.giphy.com/media/JjAdpCxrdro7m/giphy.gif)
 
-The logical transformation is the simplest. Occurs in logical operations, but can also be performed explicitly with the function⚙️ `Boolean (value)`.
+La transformación lógica es la más simple. Ocurre en operaciones lógicas, pero también se puede hacer explícitamente con la función ⚙️ `Boolean(value)`.
 
-### Boolean conversion rules:
+### Reglas de transformación lógica:
 
-Values that are intuitively "empty" such as `0`, an empty string,` null`, `undefined`, and` NaN` become `false`. All other values become `true`.
+Los valores que son intuitivamente "vacíos", como `0`, la cadena vacía, `null`, `undefined` y `NaN`, se convierten en `false`. Todos los demás valores se vuelven `true`.
 
 ```javascript
 Boolean(1) // true
 Boolean(0) // false
-Boolean('Привет!') // true
+Boolean('¡Hola!') // true
 Boolean('') // false
 ```
 
-:::caution Note that the line with zero "0" is true
-Some languages👅 (for example PHP) interpret the string `" 0 "` as `false`. But in JavaScript, if a string is not empty, then it is always `true`
+Se utiliza una forma más corta de la función `Boolean` double NOT(!!) para convertir valores a un valor booleano:
+
+```jsx
+!!'non-empty string' // true
+!!null // false
+```
+
+Es decir, el primero NO convierte el valor a booleano y devuelve lo contrario, y el segundo NO lo vuelve a invertir. Al final, tenemos una simple conversión de valor a booleano.
+
+:::precaución Tenga en cuenta que la cadena con cero "0" es verdadera
+Algunos lenguajes👅 (como PHP) tratan la cadena `"0"` como `false`. Pero en JavaScript, si la cadena no está vacía, siempre es `false`.
+
 :::
 
 ```javascript
-Boolean('0') // true
-Boolean(' ') // space is also true (any non-empty string is true)
+Boolean('0') // verdadero
+Boolean(' ') // el espacio también es verdadero (cualquier cadena no vacía es verdadera)
 ```
 
-## Problems?
+## ¿Problemas?
 
 ![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
 
-Write to [Discord](https://discord.gg/6GDAfXn) chat.
+Escribe en [Discord](https://discord.gg/6GDAfXn) o Telegram [chat](https://t.me/jscampapp) y suscríbete a nuestras [noticias](https://t.me/javascriptapp)
 
-## Questions:
+![JavaScript Camp](/img/bandlink.png)
+
+## Preguntas:
 
 ![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
 
-Which function should you use for string conversion?
+¿Qué función se debe usar para la conversión de cadenas?
 
-1. `String (value)`
-2. `Boolean (value)`
-3. `Number (value)`
+1.  `Boolean(value)`
+2.  `String(value)`
+3.  `Number(value)`
 
-What is typecasting?
+¿Qué es la conversión de tipos?
 
-1. Transferring data from one type to another
-2. Converting values ​​from one data type to another
-3. Representation of something as a string
+1. Pasar datos de un tipo a otro
+2. Convertir valores de un tipo de datos a otro
+3. Representar algo como una cadena
 
-What is the key difference between typecasting and typecasting?
+¿Cuál es la diferencia clave entre la conversión de tipos y la conversión de tipos?
 
-1. Type casting is explicit, and type conversion is implicit
-2. Type casting is implicit, and type conversion is explicit
-3. Type conversion is implicit, and type conversion can be both explicit and implicit
+1. La conversión de tipos es explícita y la conversión de tipos es implícita.
+2. La conversión de tipos es implícita y la conversión de tipos es explícita.
+3. La conversión de tipos es implícita y la conversión de tipos puede ser tanto explícita como implícita.
 
-When would the conversion result be `NaN`?
+¿En qué caso el resultado de la conversión será `NaN`?
 
-1. When a string cannot be explicitly cast to a number
-2. When a number cannot be explicitly cast to a string
-3. When there is an error in the code
+1. Cuando una cadena no se puede convertir explícitamente en un número
+2. Cuando un número no se puede convertir explícitamente en una cadena
+3. Cuando hay un error en el código
 
-What do “empty” values ​​become when converted?
+¿En qué se convierten los valores "vacíos" cuando se convierten?
 
-1. `null`
-2. `true`
-3. `false`
+1.  `null`
+2.  `true`
+3.  `false`
 
-In order to understand how much you learned this lesson, take the test on the [mobile application](http://onelink.to/njhc95) of our school on this topic.
+Para comprender cuánto ha aprendido esta lección, realice una prueba en la [aplicación móvil](http://onelink.to/njhc95) de nuestra escuela sobre este tema o en nuestro [bot de Telegram](https://t.me/javascriptcamp_bot).
 
-![Sumerian school](/img/app.jpg)
+![JS Camp](/img/app.jpg)
 
-## Links
+## Enlaces:
 
-1. [MDN web docs - Typecasting](https://developer.mozilla.org/en/docs/Словарь/Type_coercion)
-2. [Code for Teens: The Perfect Beginner's Guide to Programming, Volume 1: Javascript - Jeremy Moritz](https://www.amazon.com/Code-Teens-Beginners-Programming-Javascript-ebook/dp/B07FCTLVPC)
+1. [Documentos web de MDN: conversión de tipos](https://developer.mozilla.org/ru/docs/Словарь/Type_coercion)
+2. [para adolescentes: La gran guía de programación para principiantes Volumen 1: Javascript - Jeremy Moritz](https://www.amazon.com/Code-Teens-Beginners-Programming-Javascript-ebook/dp/B07FCTLVPC)
 3. [JavaScript.ru](https://learn.javascript.ru/ifelse#blok-else)
-4. [Integer arithmetic](https://maths-public.ru/arithmetic/actions)
+4. [Operaciones aritméticas con números enteros](https://maths-public.ru/arithmetic/actions)
 
 ## Contributors ✨
 

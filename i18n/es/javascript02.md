@@ -1,130 +1,182 @@
 ---
 id: javascript02
-title: Comments
-sidebar_label: Comments
+title: Comentarios
+sidebar_label: Comentarios
 ---
 
 import YouTube from 'react-youtube'
 
 ![@serverSerrverlesskiy](/img/javascript/headers/02.jpg)
 
-## What are comments?
+## ¿Qué son los comentarios?
 
-JavaScript has several ways to specify comments in code 📟
+JavaScript tiene varias formas de indicar comentarios en el código 📟
 
-Sometimes, when writing 🖊️ the code, you will need to provide explanations that are intended only for humans а and not for the computer. Perhaps it will be some kind of message to yourself from the past (to the Future Me!) About this or that thing in the program code. Or maybe it will just be an indication that you need to run only such and such a part of the code, and the rest should be omitted. In short, in any such case, you will need to resort to the help of comments.
-Comments 🗣️ are used to add ➕ hints, notes 🔖, suggestions or warnings. They can make the code easier to read and understand. They can also be used to prevent 🛑 code execution (this is a common practice when debugging code).
+A veces, al escribir código 🖊️, deberá proporcionarle explicaciones destinadas solo a personas 👨 y no a una computadora. Tal vez sea algún tipo de mensaje del pasado (¡para el yo del futuro!) sobre esto o aquello en el código del programa. O tal vez solo sea una indicación de que solo se debe ejecutar tal o cual parte del código, y el resto debe omitirse. En una palabra, en tal caso, deberá recurrir a la ayuda de los comentarios.
+Los comentarios 🗣️ se utilizan para agregar ➕ pistas, notas 🔖, sugerencias o advertencias. Pueden hacer que el código 💡 sea más fácil de leer y comprender. También se pueden usar para evitar que se ejecute el código 🛑 (esta técnica se practica al depurar código).
 
-JavaScript has several ways to specify comments 🗣️ in code.
+En JavaScript, hay varias formas de incluir comentarios 🗣️ en tu código.
 
-<!-- ## Video
+## Video
 
-<YouTube videoId="zCvKMw5QHRw" /> -->
+<YouTube videoId="zCvKMw5QHRw" /> 
 
-## Single line comment
+## Comentario de una sola línea
 
-![Slash](https://media.giphy.com/media/bKXMS0NjXoyaY/giphy.gif)
+![Barra oblicua](https://media.giphy.com/media/bKXMS0NjXoyaY/giphy.gif)
 
-The first 1️⃣ way is `// comment` 🗣️ in this case all text 📜 in the line after the double slash will be a comment 🗣️. When the interpreter sees two 2️⃣ slashes in a row `//`, it immediately understands that everything that goes further to the end of the line can be safely ignored. For now, ignore the syntax 📖 of the code, we will get to know it in detail a little later.
+La primera 1️⃣ manera `//comentario` 🗣️ en este caso, todo el texto 📜 en la línea después de la doble barra inclinada será un comentario 🗣️. Cuando el intérprete ve dos barras diagonales de 2️⃣ seguidas `//`, inmediatamente entiende que todo lo que viene más allá del final de la línea se puede ignorar de manera segura. Ignora la sintaxis del código 📖 por ahora, lo veremos en detalle un poco más tarde.
 
 ```jsx live
 function learnJavaScript() {
-  // This is a comment on the line
+  // Este es un comentario de línea
+  var hello = 'Hello world!!!'
+
+  return hello
+}
+```
+## Comentario de varias líneas
+
+![Comentarios](https://media.giphy.com/media/UevalSWg5twQeqpc8Q/giphy.gif)
+
+La segunda forma 2️⃣ es `/* */`, que es más flexible que la primera 1️⃣. Tan pronto como el intérprete ve `/*`, piensa: "Sí, así que hasta que vea `*/`, ¡puedo ignorar cualquier cosa aquí!"
+Por ejemplo, puedes usarlo en una línea 1️⃣ 👇:
+
+```jsx live
+function learnJavaScript() {
+  /* este es un comentario de una sola linea */
   var hello = 'Hello world!!!'
 
   return hello
 }
 ```
 
-## Multi-line comment
-
-![Coments](https://media.giphy.com/media/UevalSWg5twQeqpc8Q/giphy.gif)
-
-The second 2️⃣ way is `/ * * /`, which is more flexible than the first 1️⃣. As soon as the interpreter sees `/ *`, it thinks: "Yeah, so until I see`* /`, I can not pay any attention to anything here!"
-For example, you can use it in one 1️⃣ line 👇:
+O puedes hacer un comentario de varias líneas 🗣️ como se muestra aquí 👇:
 
 ```jsx live
 function learnJavaScript() {
-  /* This is a one-line comment */
+  /* Este comentario ocupa varias líneas.
+     Tenga en cuenta que no tiene que romper un comentario hasta que lo haya terminado. */
   var hello = 'Hello world!!!'
-
+  /* Escribe tu comentario aqui */
   return hello
 }
 ```
 
-Alternatively, you can make a multi-line comment 🗣️ as shown here 👇:
+## Comentar en medio del código.
 
-```jsx live
-function learnJavaScript() {
-  /* This comment spans multiple lines.
-      Please note that you do not need to terminate the comment until you have finished */
-  var hello = 'Hello world!!!'
-  /* Write your comment here */
-  return hello
-}
-```
+![Entre](https://media.giphy.com/media/fnjIiBNo38IHS/giphy.gif)
 
-## Comment in the middle of the code
-
-![Among](https://media.giphy.com/media/fnjIiBNo38IHS/giphy.gif)
-
-Also, if you wish, you can use this commenting 🗣️ in the middle of a line of code. Although this may impair the readability of the code👇:
+Además, si lo deseas, puedes usar este comentario 🗣️ en medio de una línea de código. Aunque esto puede empeorar la legibilidad del código 👇:
 
 ```jsx live
 function learnJavaScript() {
   var x = ''
-  var hello = 'Hello ' + x /* insert the value x */ + '!'
+  var hello = 'Hello ' + x /* вставьте значение x */ + '!'
 
   return hello
 }
 ```
 
-With the commenting on the code, that's all and the call for a break sounded.
+Sin embargo, hay maneras de reducir la necesidad de comentarios. Podemos usar ciertas técnicas de codificación para refinar nuestro código simplemente aprovechando el lenguaje de programación a nuestro favor.
+
+¡Esto no solo hace que nuestro código sea más fácil de entender, sino que también ayuda a mejorar el diseño general del programa!
+
+Este tipo de código a menudo se denomina autodocumentado.
+
+Esto significa que el código debe estar escrito de tal manera que, en primer lugar, sea conveniente que otros programadores trabajen con él en el futuro, incluido su autor, y en segundo lugar, teniendo en cuenta la posibilidad de expandir este código.
+
+Al comentar el código, todo estaba llamado a cambiar🔔.
 
 ![Comments](https://media.giphy.com/media/SvuRLwWT0EoeErwPvB/giphy.gif)
 
-## Problems?
+## React Native
+
+Un ejemplo de dónde más podemos usar comentarios en un proyecto `React Native` real. De repente necesitaremos esconder algún código. Para hacer esto, necesitamos envolverlo en un comentario. Tenga en cuenta que el bloque con comentarios funcionó, debe estar entre llaves, de lo contrario, la biblioteca `React` no entenderá que esta es una expresión de JavaScript; esta es una especificidad de la sintaxis `JSX`, que estudiaremos en el curso más tarde. Intente descomentar el código y luego vuelva a comentarlo.
+
+```SnackPlayer name=index.js
+import * as React from 'react'
+import { Text } from 'react-native'
+
+const App = () => (
+  <>
+    <Text>Hello world!</Text>
+    {/* <Text>Здесь был Вася!</Text> */}
+  </>
+)
+
+export default App
+```
+
+## ¿Problemas?
 
 ![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
 
-Write to [Discord](https://discord.gg/6GDAfXn) chat.
+Escribe en [Discord](https://discord.gg/6GDAfXn) o Telegram [chat](https://t.me/jscampapp) y suscríbete a nuestras [noticias](https://t.me/javascriptapp)
 
-## Questions:
+![JavaScript Camp](/img/bandlink.png)
+
+
+## Preguntas:
 
 ![Question](https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif)
 
-Who are the comments for?
+¿Para quién son los comentarios?
 
-1. person
-2. Console
-3. JavaScript interpreter
+1. persona
+2. Consola
+3. Intérprete de JavaScript
 
-What are comments not used for?
+¿Para qué sirven los comentarios?
 
-1. Adding tips, notes, suggestions
-2. As part of the program code
-3. To prevent code execution
+1. Agrega pistas, notas, sugerencias
+2. Para cumplir con las solicitudes
+3. Para evitar la ejecución de código
 
-Which way of specifying a comment in JavaScript code does not exist?
+¿Qué forma de especificar un comentario en código JavaScript no existe?
 
-1. `('')`
+1. `(' ')`
 2. `//`
-3. `/ * * /`
+3. `/* */`
 
-How do I disable any number of lines of code?
+¿Cómo deshabilitar cualquier número de líneas de código?
 
-1. Write a comment in the middle of the code
-2. Wrap the code in a comment
-3. Use the command `console.log`
+1. Escribe un comentario en medio del código.
+2. Envuelve el código en un comentario
+3. Usa el comando `console.log`
 
-In order to understand how much you learned this lesson, take a test in our school [mobile application](http://onelink.to/njhc95) on this topic.
+Intérprete de JavaScript \_\_\_\_ cualquier comentario encontrado.
 
-![Sumerian school](/img/app.jpg)
+1. Realiza
+2. Ignora
+3. Compila
 
-## Links
+¿Cuál es el símbolo para un comentario de una sola línea?
+
+1. `//`
+2. `\\`
+3. `||`
+
+¿Qué caracteres se deben ingresar para iniciar un comentario de bloque?
+
+1. `/*`
+2. `*\\`
+3. `//`
+
+¿Qué término se refiere al código que tiene nombres útiles de variables y nombres de funciones descriptivos para que sea fácil para el desarrollador comprender el propósito del código cuando lo lee (sin mucha necesidad de comentarios explicativos)?
+
+1. Autodocumentación
+2. Documentación
+3. Manuscrito
+
+Para comprender cuánto ha aprendido esta lección, realice una prueba en la [aplicación móvil](http://onelink.to/njhc95) de nuestra escuela sobre este tema o en nuestro [bot de Telegram](https://t.me/javascriptcamp_bot).
+
+![JS Camp](/img/app.jpg)
+
+## Enlaces:
 
 1. [MDN web docs](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Lexical_grammar)
-2. [Код для подростков: прекрасное руководство по программированию для начинающих, том 1: Javascript - Jeremy Moritz ](https://www.amazon.com/Code-Teens-Beginners-Programming-Javascript-ebook/dp/B07FCTLVPC)
+2. [Código para adolescentes: la gran guía de programación para principiantes Volumen 1: Javascript - Jeremy Moritz](https://www.amazon.com/Code-Teens-Beginners-Programming-Javascript-ebook/dp/B07FCTLVPC)
 3. [JavaScript.ru](https://learn.javascript.ru/types)
 
 ## Contributors ✨
