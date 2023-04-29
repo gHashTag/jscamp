@@ -196,7 +196,7 @@ const App = () => {
 
   useEffect(async () => {
     try {
-      const response = await fetch('https://s3.eu-central-1.wasabisys.com/ghashtag/RNForKids/00-Init/data.json')
+      const response = await fetch('https://leelachakra.com/resource/stargate/data.json')
       const json = await response.json()
       setData(json)
     } catch (e) {
@@ -287,7 +287,7 @@ const App = () => {
 
   useEffect(async () => {
     try {
-      const response = await fetch('https://s3.eu-central-1.wasabisys.com/ghashtag/RNForKids/00-Init/data.json')
+      const response = await fetch('https://leelachakra.com/resource/stargate/data.json')
       const json = await response.json()
       console.log(`json`, json)
       setData(json)
