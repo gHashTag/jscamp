@@ -11,7 +11,7 @@ sidebar_label: Header buttons
 Самый распространенный способ взаимодействия с заголовком - нажать кнопку слева или справа от заголовка. Давайте добавим кнопку в правую часть заголовка (одно из самых сложных мест для касания на всем экране, в зависимости от пальца и размера телефона, но также и нормальное место для размещения кнопок).
 
 
-```jsx
+```
 const StackScreen = () => {
   return (
     <Stack.Navigator>
@@ -22,7 +22,7 @@ const StackScreen = () => {
           headerTitle: props => <LogoTitle />,
           headerRight: () => (
             <Button
-              onPress={() => alert('This is a button!')}
+              onPress={() => console.log('This is a button!')}
               title="Info"
               color="#fff"
             />
