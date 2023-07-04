@@ -8,7 +8,7 @@ import YouTube from 'react-youtube'
 
 ![@serverSerrverlesskiy](/img/javascript/headers/05.jpg)
 
-與我們其他人一樣，您肯定會在代碼中犯錯誤 🙅 軟件錯誤 🙅‍♂️ 稱為錯誤。 錯誤-表示程序 💾 或系統中的錯誤，由於該錯誤，程序會產生意外的行為，並因此導致結果。 大多數軟件錯誤是由程序開發人員在其源代碼或設計中所犯的錯誤引起的。
+與我們其他人一樣，您肯定會在代碼中犯錯誤 🙅 軟件錯誤  稱為錯誤。 錯誤-表示程序 💾 或系統中的錯誤，由於該錯誤，程序會產生意外的行為，並因此導致結果。 大多數軟件錯誤是由程序開發人員在其源代碼或設計中所犯的錯誤引起的。
 
 ![錯誤](https://media.giphy.com/media/1VT3UNeWdijUSMpRL4/giphy.gif)
 
@@ -18,7 +18,7 @@ import YouTube from 'react-youtube'
 
 調試是在腳本中查找並修復錯誤的過程。
 
-[Wikipedia](https://ru.wikipedia.org/wiki/Программная_ошибка🙅‍♂️)
+[Wikipedia](https://ru.wikipedia.org/wiki/Программная_ошибка)
 
 <!-- ## Видео
 
@@ -28,15 +28,15 @@ import YouTube from 'react-youtube'
 
 ![老師](https://media.giphy.com/media/27c3zdaY6eeIAwp7Qi/giphy.gif)
 
-希望您在編寫代碼的過程中遇到了第一個錯誤。 為什麼希望？ 因為錯誤 🙅‍♂️ 是我們的老師，向我們展示我們在代碼中做錯了什麼 📟，而計算機 🖥️，或更確切地說是代碼解釋器 📟，簡直無法理解我們。 幾乎每天都會發生編寫代碼時的錯誤。 訣竅是能夠讀取機器將為您提供的錯誤消息，以便快速找到並修復編寫的代碼中的缺陷。 您對 JavaScript 的了解越多，您對錯誤消息的理解就越多-它們通常可以非常準確地顯示出您出了錯的地方。
+希望您在編寫代碼的過程中遇到了第一個錯誤。 為什麼希望？ 因為錯誤  是我們的老師，向我們展示我們在代碼中做錯了什麼 ，而計算機     ️，或更確切地說是代碼解釋器 ，簡直無法理解我們。 幾乎每天都會發生編寫代碼時的錯誤。 訣竅是能夠讀取機器將為您提供的錯誤消息，以便快速找到並修復編寫的代碼中的缺陷。 您對 JavaScript 的了解越多，您對錯誤消息的理解就越多-它們通常可以非常準確地顯示出您出了錯的地方。
 
-代碼 код 中最常見的幾種錯誤類型 🙅‍♂️：
+代碼 код 中最常見的幾種錯誤類型 ：
 
 ## 語法錯誤
 
 ![錯誤](https://media.giphy.com/media/TqiwHbFBaZ4ti/giphy.gif)
 
-`語法錯誤` - 違反語言規則 правил。 例如，輸入 9 加分號 `9 +;` 👇:
+`語法錯誤` - 違反語言規則 правил。 例如，輸入 9 加分號 `9 +;` :
 
 ```jsx live
 function learnJavaScript() {
@@ -48,9 +48,9 @@ function learnJavaScript() {
 
 Reply: `SyntaxError: Unexpected token;`
 
-語法錯誤 🙅‍♂️ 僅僅意味著句子的主體中存在錯誤 error‍ 🙅️。 換句話說，您寫的內容在 JavaScript 方面是不正確的。 口譯員無法閱讀您的句子，也不知道該如何處理。 “意外的令牌；”表示解釋器已讀取了它根本不希望讀取的內容：在我們的例子中，是分號 `;`.
+語法錯誤  僅僅意味著句子的主體中存在錯誤 error‍ 🙅️。 換句話說，您寫的內容在 JavaScript 方面是不正確的。 口譯員無法閱讀您的句子，也不知道該如何處理。 “意外的令牌；”表示解釋器已讀取了它根本不希望讀取的內容：在我們的例子中，是分號 `;`.
 
-讓我們再犯一個錯誤 🙅‍♂️！
+讓我們再犯一個錯誤 ！
 讓我們在控制台中輸入 5 加 3，並在末尾輸入括號 `5 + 3)`.
 
 ```jsx live
@@ -77,7 +77,7 @@ function learnJavaScript() {
 }
 ```
 
-現在我們前面有一個引用`ReferenceError`的錯誤。 也許您已經註意到這裡發生了什麼事？ 讓我們仔細閱讀錯誤消息（（畢竟，這就是它顯示出來的原因！）。 它說：“變量 🔔 未定義”-未設置變量，這就是我們的問題所在！ 首先，我們必須以某種方式聲明變量，例如：
+現在我們前面有一個引用`ReferenceError`的錯誤。 也許您已經註意到這裡發生了什麼事？ 讓我們仔細閱讀錯誤消息（（畢竟，這就是它顯示出來的原因！）。 它說：“變量  未定義”-未設置變量，這就是我們的問題所在！ 首先，我們必須以某種方式聲明變量，例如：
 
 ```jsx live
 function learnJavaScript() {
@@ -136,7 +136,7 @@ foo.toUpperCase()
 
 <table>
   <tr>
-    <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /> <a href="https://github.com/gHashTag/react-native-village/commits?author=gHashTag" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /> <a href="https://github.com/gHashTag/react-native-village/commits?author=gHashTag" title="Documentation">  </a></td>
     <td align="center"><a href="https://github.com/Resoner2005"><img src="https://avatars1.githubusercontent.com/u/75675814?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Resoner2005</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/issues?q=author%3AResoner2005" title="Bug reports">🐛 🎨 🖋</a></td>
   </tr>
   

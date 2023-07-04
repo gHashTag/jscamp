@@ -10,12 +10,12 @@ import YouTube from 'react-youtube'
 
 ## 動的型付け
 
-JavaScript 弱い型の言語または動的言語です。これは、変数のタイプを事前に定義する必要がないことを意味します🔔
+JavaScript 弱い型の言語または動的言語です。これは、変数のタイプを事前に定義する必要がないことを意味します
 .
 
 ![Dinamics](https://media.giphy.com/media/26uf759LlDftqZNVm/giphy.gif)
 
-タイプは、プログラムの実行中に自動的に決定されます。また、1つの変数🔔を使用して📦さまざまなタイプのデータを格納できることも意味します。 👇 :
+タイプは、プログラムの実行中に自動的に決定されます。また、1つの変数を使用してさまざまなタイプのデータを格納できることも意味します。  :
 
 ```jsx live
 function learnJavaScript() {
@@ -81,7 +81,7 @@ let nine = Symbol() // symbol
 
 コンピュータ用語では、オブジェクトタイプ `object` — これは、識別子で参照できるメモリ内の値です。に
  JavaScript オブジェクトは、プロパティのセットと見なすことができます。クローゼットみたい
- 🗄️ 保管用 📦 他のデータ型.
+ 🗄️ 保管用  他のデータ型.
 
 ## 関数
 
@@ -95,13 +95,13 @@ let nine = Symbol() // symbol
 ![Primitive](https://media.giphy.com/media/rBdWc61BPFVYc/giphy.gif)
 
 のすべてのデータ型 JavaScript, オブジェクトを除いて、不変です（値は変更できませんが、新しい完全な値で上書きされるだけです）。たとえば、文字列を文字ごとに修正できるC言語とは対照的に、
- JavaScript 線が再作成されます🏗️ 完全にのみ。これらのタイプの値は「プリミティブ値」と呼ばれます.
+ JavaScript 線が再作成されます 完全にのみ。これらのタイプの値は「プリミティブ値」と呼ばれます.
 
 ## テキスト文字列
 
 ![text](https://media.giphy.com/media/26n6AaCcCajAyZx04/giphy.gif)
 
-に JavaScript テキストの提示のため 📜 テキストの提示のため `string`.
+に JavaScript テキストの提示のため  テキストの提示のため `string`.
 
 ## 数字
 
@@ -121,28 +121,28 @@ let nine = Symbol() // symbol
 
 ## ブールデータ型
 
-ブール値 `boolean` 論理エンティティを表し、2つあります 2️⃣ 意味: `true` ✅ 
+ブール値 `boolean` 論理エンティティを表し、2つあります 2️⃣ 意味: `true`  
 
 ![true](https://media.giphy.com/media/ap6wcjRyi8HoA/giphy.gif)
 
-そして `false` ❎ .
+そして `false`  .
 
 ![False](https://media.giphy.com/media/HNOVuT5AvCK1fgvp1m/giphy.gif)
 
-このタイプは通常、保管に使用されます 📦 値はい/いいえ： true ✅ 「はい、そうです」を意味し、 false ❎ 「いいえ、正しくありません」という意味です。
+このタイプは通常、保管に使用されます  値はい/いいえ： true  「はい、そうです」を意味し、 false  「いいえ、正しくありません」という意味です。
 
 ## Null
 
 ![Null](https://media.giphy.com/media/26hkhPJ5hmdD87HYA/giphy.gif)
 
-このデータ型の値は1つだけです: `null`. この値は、実際には動作において目に見えるプリミティブであるため、プリミティブとして特別に指定されています。しかし同時にから `null` したがって、他のすべてのオブジェクトは継承されます。 `null` 戻り値🔄 пプリミティブ値であり、その型はオブジェクトです。
+このデータ型の値は1つだけです: `null`. この値は、実際には動作において目に見えるプリミティブであるため、プリミティブとして特別に指定されています。しかし同時にから `null` したがって、他のすべてのオブジェクトは継承されます。 `null` 戻り値 пプリミティブ値であり、その型はオブジェクトです。
 たとえば、デフォルト値に割り当てることができます。
 
 ## Undefined
 
 ![Unndefined](https://media.giphy.com/media/PkKzNQjwPy7GvxZbfe/giphy.gif)
 
-変数 🔔 , 値が割り当てられていないものが重要になります `undefined`.
+変数  , 値が割り当てられていないものが重要になります `undefined`.
 
 ### 間の違い null そして undefined
 
@@ -246,7 +246,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <table>
   <tr>
-    <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /> <a href="https://github.com/gHashTag/react-native-village/commits?author=gHashTag" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /> <a href="https://github.com/gHashTag/react-native-village/commits?author=gHashTag" title="Documentation">  </a></td>
     <td align="center"><a href="https://github.com/Resoner2005"><img src="https://avatars1.githubusercontent.com/u/75675814?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Resoner2005</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/issues?q=author%3AResoner2005" title="Bug reports">🐛 🎨 🖋</a></td>
   </tr>
   

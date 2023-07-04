@@ -13,7 +13,7 @@ Have you come across the term "primitive" in programming before? If not, I'll ex
 
 ![True](https://media.giphy.com/media/peBw21sPZnlqE/giphy.gif)
 
-The data type that you will definitely need is called boolean, or boolean. Boolean type always has the value either `true` ✅ - true, or` false` ❎ - false. And only this way, and nothing else! He is either lying or telling the truth - pan or disappear, the light is on or off, or there is or not. You either did your homework or you didn't. Only two 2️⃣ values are `true` ✅ or` false`.
+The data type that you will definitely need is called boolean, or boolean. Boolean type always has the value either `true`  - true, or` false`  - false. And only this way, and nothing else! He is either lying or telling the truth - pan or disappear, the light is on or off, or there is or not. You either did your homework or you didn't. Only two 2️⃣ values are `true`  or` false`.
 
 ## Equality operators
 
@@ -21,7 +21,7 @@ The data type that you will definitely need is called boolean, or boolean. Boole
 
 Boolean values come in handy when we need to compare something in JavaScript. When the need arises, we immediately call the comparison operators.
 Now we will sequentially study all eight comparison operators, but the thing is that as a result of each of them, we do not care
-we will always be left with a boolean value - either `true` ✅ or `false` ❎.
+we will always be left with a boolean value - either `true`  or `false` .
 
 ### Equals `==`
 
@@ -29,7 +29,7 @@ we will always be left with a boolean value - either `true` ✅ or `false` ❎.
 
 The equals operator first converts the operands to the same type, and then applies strict comparison. If both operands are objects, then JavaScript compares internal references that are equal if they refer to the same object in memory.
 
-Syntax📖:
+Syntax  :
 
 ```javascript
 x == y
@@ -46,7 +46,7 @@ Examples:
 'foo' == 'bar' // false
 ```
 
-Enter the examples one by one into the 🔔 `bool` variable of our `LIVE EDITOR`
+Enter the examples one by one into the  `bool` variable of our `LIVE EDITOR`
 
 ```jsx live
 function learnJavaScript() {
@@ -59,9 +59,9 @@ function learnJavaScript() {
 
 ![Equals](https://media.giphy.com/media/xT8qBit7YomT80d0M8/giphy.gif)
 
-The not equal operator returns🔄 `true` ✅ if the operands are not equal. It is similar to the equality operator, converting the operands to the same type before comparing. If both operands are objects, JavaScript compares internal references that are not equal if they refer to different objects in memory.
+The not equal operator returns `true`  if the operands are not equal. It is similar to the equality operator, converting the operands to the same type before comparing. If both operands are objects, JavaScript compares internal references that are not equal if they refer to different objects in memory.
 
-Syntax📖:
+Syntax  :
 
 ```javascript
 x != y
@@ -78,7 +78,7 @@ Examples:
 'foo'! = 'bar' // true
 ```
 
-Enter the examples one by one into the 🔔 `bool` variable of our `LIVE EDITOR`
+Enter the examples one by one into the  `bool` variable of our `LIVE EDITOR`
 
 ```jsx live
 function learnJavaScript() {
@@ -93,7 +93,7 @@ function learnJavaScript() {
 
 The operator returns true if the operands are strictly equal. Unlike the equals operator, this operator does not cast operands to the same type.
 
-Syntax📖:
+Syntax  :
 
 ```javascript
 x === y
@@ -109,7 +109,7 @@ Examples:
 
 The operator makes sure that both the value and the type are strictly identical. In the case of `3 === '3'`, the value is, of course, identical, but the type is not: the first is a number, and the second is a string.
 
-Enter the examples one by one into the 🔔 `bool` variable of our `LIVE EDITOR`
+Enter the examples one by one into the  `bool` variable of our `LIVE EDITOR`
 
 ```jsx live
 function learnJavaScript() {
@@ -124,7 +124,7 @@ function learnJavaScript() {
 
 The strictly not equal operator returns true if the operands are not equal or their types differ from each other.
 
-Syntax📖:
+Syntax  :
 
 ```javascript
 x !== y
@@ -137,7 +137,7 @@ Examples:
 4 !== 3 // true
 ```
 
-Enter the examples one by one into the 🔔 `bool` variable of our `LIVE EDITOR`
+Enter the examples one by one into the  `bool` variable of our `LIVE EDITOR`
 
 ```jsx live
 function learnJavaScript() {
@@ -146,7 +146,7 @@ function learnJavaScript() {
 }
 ```
 
-Why not use `==` and `! =`? But because, in general, there is never such a need. Whenever you can use them, you can always use both the strict `===` and `! ==`. If you want more flexibility in the answer (say, so that both `1` and `'1'` or `true` are equally accepted ✅), then you can simply include the desired answer options in the code itself (without changing this `===`).
+Why not use `==` and `! =`? But because, in general, there is never such a need. Whenever you can use them, you can always use both the strict `===` and `! ==`. If you want more flexibility in the answer (say, so that both `1` and `'1'` or `true` are equally accepted ), then you can simply include the desired answer options in the code itself (without changing this `===`).
 
 :::info Just understand the rule
 Never use `==` or `! =`
@@ -160,7 +160,7 @@ Never use `==` or `! =`
 
 The more operator returns true if the value of the left operand is greater than that of the right one.
 
-Syntax📖:
+Syntax  :
 
 ```javascript
 x > y
@@ -173,7 +173,7 @@ Examples:
 1 > 5 // false
 ```
 
-Enter the examples one by one into the variable 🔔 `bool` in `LIVE EDITOR`
+Enter the examples one by one into the variable  `bool` in `LIVE EDITOR`
 
 ```jsx live
 function learnJavaScript() {
@@ -188,7 +188,7 @@ function learnJavaScript() {
 
 The less than operator returns true if the value of the operand on the left is less than the value of the operand on the right.
 
-Syntax📖:
+Syntax  :
 
 ```javascript
 x < y
@@ -201,7 +201,7 @@ Examples:
 5 < 2 // false
 ```
 
-Enter the examples one by one into the 🔔 `bool` variable of our `LIVE EDITOR`
+Enter the examples one by one into the  `bool` variable of our `LIVE EDITOR`
 
 ```jsx live
 function learnJavaScript() {
@@ -216,7 +216,7 @@ function learnJavaScript() {
 
 The operator is greater than or equal to, returns true if the value of the operand on the left is greater than or equal to the value of the operand on the right.
 
-Syntax📖:
+Syntax  :
 
 ```javascript
 x >= y
@@ -229,7 +229,7 @@ Examples:
 3 >= 3 // true
 ```
 
-Enter the examples in the 🔔 `bool` variable one by one:
+Enter the examples in the  `bool` variable one by one:
 
 ```jsx live
 function learnJavaScript() {
@@ -244,7 +244,7 @@ function learnJavaScript() {
 
 The operator is less than or equal, returns true if the value of the operand on the left is less than or equal to the value of the operand on the right.
 
-Syntax📖:
+Syntax  :
 
 ```javascript
 x <= y
@@ -257,7 +257,7 @@ Examples:
 3 <= 3 // true
 ```
 
-Enter the examples in the 🔔 `bool` variable one by one:
+Enter the examples in the  `bool` variable one by one:
 
 ```jsx live
 function learnJavaScript() {
@@ -276,15 +276,15 @@ You must be thinking, "Well, all this boolean logic thing was very simple ... Th
 
 ![thoughtful](https://media.giphy.com/media/IyyGGEMZhZIZwAxnUS/giphy.gif)
 
-Good question! A conditional is a clause that is used to run certain blocks of code📟 according to a given condition. The condition (for example, when comparing `x === y`) always returns a boolean value - either` true` ✅ or `false` ❎. Accordingly, if the value is `true` ✅, then the code should be run, otherwise the code block should be skipped. Let's look at some examples.
+Good question! A conditional is a clause that is used to run certain blocks of code according to a given condition. The condition (for example, when comparing `x === y`) always returns a boolean value - either` true`  or `false` . Accordingly, if the value is `true` , then the code should be run, otherwise the code block should be skipped. Let's look at some examples.
 
 ### Conditional Expressions with `if`
 
 ![Instruction manual](https://media.giphy.com/media/2mDSs3gPUyrcMqtheg/giphy.gif)
 
-The `if` construction executes` instruction1`, if the condition is `true` ✅, if the condition is` false` ❎, then `instruction2` is executed.
+The `if` construction executes` instruction1`, if the condition is `true` , if the condition is` false` , then `instruction2` is executed.
 
-Syntax📖:
+Syntax  :
 
 ```javascript
 if (condition) {
@@ -298,10 +298,10 @@ if (condition) {
 An expression that is either true or false.
 
 `instruction1` -
-An instruction executed if the value of `condition` is true ✅. Can be any statement, including a nested `if`. An empty statement can be used when no action is required.
+An instruction executed if the value of `condition` is true . Can be any statement, including a nested `if`. An empty statement can be used when no action is required.
 
 `instruction2` -
-An instruction to execute if the value of `condition` is false. Can be any statement, including a nested `if`. Instructions can also be grouped into a block. Change the year in the 🔔 `whatIsTheYearNow` variable and note the output.
+An instruction to execute if the value of `condition` is false. Can be any statement, including a nested `if`. Instructions can also be grouped into a block. Change the year in the  `whatIsTheYearNow` variable and note the output.
 
 ```jsx live
 function learnJavaScript() {
@@ -321,13 +321,13 @@ function learnJavaScript() {
 
 ![No](https://media.giphy.com/media/ftqLysT45BJMagKFuk/giphy.gif)
 
-Conditional expressions can work not only with boolean values, that is, with those that are not exactly `true` ✅ or` false` ❎ So, in general, we can safely use them in parentheses, as well as boolean values.
+Conditional expressions can work not only with boolean values, that is, with those that are not exactly `true`  or` false`  So, in general, we can safely use them in parentheses, as well as boolean values.
 
-- All integers, except zero - `true` ✅
-- A string with at least one `true` character ✅
-- An empty string is `false` ❎
+- All integers, except zero - `true` 
+- A string with at least one `true` character 
+- An empty string is `false` 
 
-Let's try it, enter values into the 🔔 `bool` 👇 variable:
+Let's try it, enter values into the  `bool`  variable:
 
 ```jsx live
 function learnJavaScript() {
@@ -391,7 +391,7 @@ function learnJavaScript() {
 
 The only JavaScript operator that accepts three operands: `condition` followed by a question mark `?`, Then `expression`, which is executed if the condition is true, followed by a colon `:`, and finally, `expression` which is executed if the condition is false. It is often used as a shorthand for an `if` statement.
 
-Syntax📖:
+Syntax  :
 
 ```javascript
 condition ? expression1 : expression2
@@ -399,11 +399,11 @@ condition ? expression1 : expression2
 
 Parameters:
 
-`condition` - An expression that takes the value `true` ✅ or `false` ❎.
+`condition` - An expression that takes the value `true`  or `false` .
 
 `expression1`,` expression2` - Expressions whose values can be of any type.
 
-Example 👇:
+Example :
 
 ```jsx live
 function learnJavaScript() {
@@ -497,7 +497,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <table>
   <tr>
-    <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /> <a href="https://github.com/gHashTag/react-native-village/commits?author=gHashTag" title="Documentation">📖</a><a href="#financial-gHashTag" title="Financial">💵</a></td>
+    <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /> <a href="https://github.com/gHashTag/react-native-village/commits?author=gHashTag" title="Documentation">  </a><a href="#financial-gHashTag" title="Financial">💵</a></td>
     <td align="center"><a href="https://github.com/Resoner2005"><img src="https://avatars1.githubusercontent.com/u/75675814?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Resoner2005</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/issues?q=author%3AResoner2005" title="Bug reports">🐛 🎨 🖋</a></td>
   </tr>
   

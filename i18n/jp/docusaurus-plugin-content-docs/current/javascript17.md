@@ -10,7 +10,7 @@ sidebar_label: 配列
 
 ![Storage](https://media.giphy.com/media/3orif6FORJ98Z11xzq/giphy.gif)
 
-'Array'は、1番目、2番目、3番目の要素などのデータの順序付けられたコレクションです。 存在する。 たとえば、ユーザー、製品📦、サイト要素などのリストを格納する必要があります。
+'Array'は、1番目、2番目、3番目の要素などのデータの順序付けられたコレクションです。 存在する。 たとえば、ユーザー、製品、サイト要素などのリストを格納する必要があります。
 
 ## 創作
 
@@ -24,7 +24,7 @@ let arr = new Array(5)
 let arr = []
 ```
 
-2️⃣構文の第二のバージョンは、ほとんどの場合、使用されています📖:
+2️⃣構文の第二のバージョンは、ほとんどの場合、使用されています  :
 
 ```jsx live
 function learnJavaScript() {
@@ -36,7 +36,7 @@ function learnJavaScript() {
 
 配列要素には、ゼロから始まる番号が付けられます0️⃣。
 
-角括弧でその番号を指定することで要素を取得できます 👇 :
+角括弧でその番号を指定することで要素を取得できます  :
 
 ```jsx live
 function learnJavaScript() {
@@ -52,7 +52,7 @@ function learnJavaScript() {
 fruits[2] = '梨' // 今 ["アップル", "オレンジ", "梨"]
 ```
 
-...または、既存の配列に新しいものを追加します👇 :
+...または、既存の配列に新しいものを追加します :
 
 ```jsx live
 function learnJavaScript() {
@@ -80,7 +80,7 @@ function learnJavaScript() {
 
 ![Update](https://media.giphy.com/media/FP47IFqWyXfdKYU6VG/giphy.gif)
 
-たとえば、大きなインデックスを持つ唯一の実数要素は、配列に可能な最大の長さを与えます 👇 :
+たとえば、大きなインデックスを持つ唯一の実数要素は、配列に可能な最大の長さを与えます  :
 
 ```jsx live
 function learnJavaScript() {
@@ -95,7 +95,7 @@ function learnJavaScript() {
 
 `Length`プロパティに関するもう一つの興味深い事実は、それが上書きされる可能性があるということです。
 
-手動で増やすと、興味深いことは何も起こりません。 しかし、それを減らすと、配列は短くなります。 この例から理解できるように、このプロセスは不可逆的です 👇 :
+手動で増やすと、興味深いことは何も起こりません。 しかし、それを減らすと、配列は短くなります。 この例から理解できるように、このプロセスは不可逆的です  :
 
 ```jsx live
 function learnJavaScript() {
@@ -117,9 +117,9 @@ function learnJavaScript() {
 
 ![Storage](https://media.giphy.com/media/2sYaePC3iVWYBNxaVj/giphy.gif)
 
-この配列には、数値、ブール値、文字列、オブジェクト、または整数関数など、任意の型の📦要素を格納できます⚙️:
+この配列には、数値、ブール値、文字列、オブジェクト、または整数関数など、任意の型の要素を格納できます⚙️:
 
-例えば 👇 :
+例えば  :
 
 ```jsx live
 function learnJavaScript() {
@@ -142,7 +142,7 @@ function learnJavaScript() {
 }
 ```
 
-注意を払う `result1 = arr[3]` テキストを含む 📜 関数 ⚙️, しかし、 `result2 = arr[3]()` 実行された関数の結果 ⚙️ - `()` 私たちはそれを起動しています.
+注意を払う `result1 = arr[3]` テキストを含む  関数 ⚙️, しかし、 `result2 = arr[3]()` 実行された関数の結果 ⚙️ - `()` 私たちはそれを起動しています.
 
 ## メソッド `push/pop`
 
@@ -164,7 +164,7 @@ function learnJavaScript() {
 
 積み重ねの例は通常ピラミッドである:新しいリングは上に置かれ、上から余りに取られる。
 
-'キュー'は、配列の最も一般的な使用法の1つです。💻 コンピュータサイエンスの分野では、これは要素の順序付けられたコレクションの名前です。
+'キュー'は、配列の最も一般的な使用法の1つです。   コンピュータサイエンスの分野では、これは要素の順序付けられたコレクションの名前です。
 
 ## 配列の末尾を操作する方法:
 
@@ -172,7 +172,7 @@ function learnJavaScript() {
 
 ![Add to](https://media.giphy.com/media/21ODeWspDCgZNAoCIp/giphy.gif)
 
-配列の最後に要素を追加します➕ 👇 :
+配列の最後に要素を追加します➕  :
 
 ```jsx live
 function learnJavaScript() {
@@ -188,7 +188,7 @@ function learnJavaScript() {
 
 ![Delete](https://media.giphy.com/media/26ybwwiZmci3DJdYs/giphy.gif)
 
-配列から最後の要素を削除し、それを返します➖ 👇 :
+配列から最後の要素を削除し、それを返します➖  :
 
 ```jsx live
 function learnJavaScript() {
@@ -206,7 +206,7 @@ function learnJavaScript() {
 
 ### shift
 
-配列から最初のものを削除し、それを返します🔄:
+配列から最初のものを削除し、それを返します:
 
 ![delete](https://media.giphy.com/media/4Z1XJumqDgvI9b1VZJ/giphy.gif)
 
@@ -234,7 +234,7 @@ function learnJavaScript() {
 }
 ```
 
-メソッド `push` と `unshift` 彼らは追加することができます ➕ 一度にいくつかの要素 👇 :
+メソッド `push` と `unshift` 彼らは追加することができます ➕ 一度にいくつかの要素  :
 
 ```jsx live
 function learnJavaScript() {
@@ -251,13 +251,13 @@ function learnJavaScript() {
 
 ![cupboard](https://media.giphy.com/media/b90TnygrKqYqk/giphy.gif)
 
-配列はオブジェクトの特別な亜種です。 プロパティへのアクセスに使用される角括弧 `arr[0]` – これは基本的に通常の構文です📖 キーアクセス, どのように `obj[key],` どこの役割で `obj` 私達は持っています `arr`, そして、キーとして-数値インデックス。
+配列はオブジェクトの特別な亜種です。 プロパティへのアクセスに使用される角括弧 `arr[0]` – これは基本的に通常の構文です   キーアクセス, どのように `obj[key],` どこの役割で `obj` 私達は持っています `arr`, そして、キーとして-数値インデックス。
 
 配列は、順序付きのデータコレクションとプロパティを操作するための特別なメソッドを提供するため、オブジェクトを拡張します `length.` しかし、基礎はまだオブジェクトです。
 
 JavaScriptでは、配列はオブジェクトであるため、オブジェクトのように動作することを覚えておく必要があります。
 
-たとえば、配列は参照によってコピーされます 👇 :
+たとえば、配列は参照によってコピーされます  :
 
 ```jsx live
 function learnJavaScript() {
@@ -339,7 +339,7 @@ fruits.pop() // 最後から1つの要素を削除する
 
 ![Object](https://media.giphy.com/media/26gs9kSN6d5PxSsQU/giphy.gif)
 
-配列要素を反復処理する最も古い方法の1つはループです `for( )` デジタルインデックスによる 👇 :
+配列要素を反復処理する最も古い方法の1つはループです `for( )` デジタルインデックスによる  :
 
 ```jsx live
 // prettier-ignore
@@ -354,7 +354,7 @@ function learnJavaScript() {
 }
 ```
 
-しかし、配列の場合、別のループオプションも可能です, `for..of` 👇 :
+しかし、配列の場合、別のループオプションも可能です, `for..of`  :
 
 ```jsx live
 function learnJavaScript() {
@@ -377,7 +377,7 @@ function learnJavaScript() {
 
 В браузере и других программных средах также существуют так называемые "псевдомассивы" – объекты, которые выглядят, как массив. То есть, у них есть свойство `length` и индексы, но они также могут иметь дополнительные нечисловые свойства и методы, которые нам обычно не нужны. Тем не менее, цикл `for..in` выведет и их. Поэтому, если нам приходится иметь дело с объектами, похожими на массив, такие "лишние" свойства могут стать проблемой.
 
-Технически, так как массив является объектом, можно использовать и вариант `for..in` для правильного массива 👇 :
+Технически, так как массив является объектом, можно использовать и вариант `for..in` для правильного массива  :
 
 ```jsx live
 function learnJavaScript() {
@@ -402,7 +402,7 @@ function learnJavaScript() {
 
 ![Matryoschka](https://media.giphy.com/media/XuPaGVKyJ6eyI/giphy.gif)
 
-配列には、配列でもある要素を含めることができます。 これは、作成するために使用することができます🏗️ たとえば、ストレージ用の多次元配列 📦 行列:
+配列には、配列でもある要素を含めることができます。 これは、作成するために使用することができます たとえば、ストレージ用の多次元配列  行列:
 
 ```jsx live
 function learnJavaScript() {
@@ -422,7 +422,7 @@ function learnJavaScript() {
 
 配列は、順序付けされた要素のセットで動作するように設計された特別なタイプのオブジェクトです。
 
-広告🗣️:
+広告:
 
 ```javascript
 // 角括弧 (通常は)
@@ -432,7 +432,7 @@ let arr = [item1, item2...]
 let arr = new Array(item1, item2...)
 ```
 
-チャレンジ `new Array(number)` 作成します 🏗️ 指定された長さの配列ですが、要素はありません。
+チャレンジ `new Array(number)` 作成します  指定された長さの配列ですが、要素はありません。
 
 プロパティ `length` 配列の長さを反映します。
 
@@ -446,7 +446,7 @@ let arr = new Array(item1, item2...)
 配列要素を反復処理するには:
 
 - `for (let i=0 i<arr.length i++)` – 古いブラウザとの互換性、最速で動作します。
-- `for (let item of arr)` – 現代の構文 📖 要素値に対してのみ(インデックスへのアクセスはありません)。
+- `for (let item of arr)` – 現代の構文    要素値に対してのみ(インデックスへのアクセスはありません)。
 - `for (let i in arr)` – 配列には絶対に使用しないでください！
 
 ## 問題?
@@ -515,7 +515,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/KoDim-React"><img src="https://avatars1.githubusercontent.com/u/72087863?v=4?s=200" width="200px " alt=""/><br /><sub><b>Dmitriy K.</b></sub></a><br /><a href="#mentoring-KoDim-React" title="Mentoring">📖</a></td>
+    <td align="center"><a href="https://github.com/KoDim-React"><img src="https://avatars1.githubusercontent.com/u/72087863?v=4?s=200" width="200px " alt=""/><br /><sub><b>Dmitriy K.</b></sub></a><br /><a href="#mentoring-KoDim-React" title="Mentoring">  </a></td>
     <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px " alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /><a href="#financial-gHashTag" title="Financial">💵</a></td>
     <td align="center"><a href="https://github.com/Resoner2005"><img src="https://avatars1.githubusercontent.com/u/75675814?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Resoner2005</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/issues?q=author%3AResoner2005" title="Bug reports">🐛 🎨 🖋</a></td>
     <td align="center"><a href="https://github.com/Navernoss"><img src="https://avatars0.githubusercontent.com/u/75784137?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Navernoss</b></sub></a><br /><a href="#content-Navernoss" title="Content">🖋 🐛 🎨 </a></td>

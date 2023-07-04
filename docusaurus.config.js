@@ -159,7 +159,7 @@
           ]
         },
         {
-          title: 'Social 🌎',
+          title: 'Social ',
           items: [
             {
               label: 'Instagram',

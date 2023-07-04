@@ -8,13 +8,13 @@ import YouTube from 'react-youtube'
 
 ![@serverSerrverlesskiy](/img/javascript/headers/17.jpg)
 
-Cuando alguna acción necesita repetirse una gran cantidad de veces, los bucles se utilizan en la programación. Por ejemplo, debe mostrar el texto 📜 "¡Hola, mundo!" 200 veces en la pantalla. 🌎 . En lugar de repetir el mismo comando de salida de texto 📜 200 veces, a menudo se crea un bucle que repite 200 veces lo que está escrito 🖊️ en el cuerpo del bucle. Cada repetición se llama iteración.
+Cuando alguna acción necesita repetirse una gran cantidad de veces, los bucles se utilizan en la programación. Por ejemplo, debe mostrar el texto  "¡Hola, mundo!" 200 veces en la pantalla.  . En lugar de repetir el mismo comando de salida de texto  200 veces, a menudo se crea un bucle que repite 200 veces lo que está escrito  en el cuerpo del bucle. Cada repetición se llama iteración.
 
 ![cycle](https://media.giphy.com/media/Pkck2unt0XQfc4gs3R/giphy.gif)
 
 Iteración en programación, en un sentido amplio, la organización del procesamiento de datos, en la que las acciones se repiten muchas veces, sin dar lugar a llamadas 📞 de sí mismas (a diferencia de la recursividad). En un sentido estricto, es un paso de un proceso iterativo y cíclico.
 
-Un bucle en JavaScript (y en todos los demás idiomas👅) es un bloque de código📟 que se repite mientras una condición conocida sigue siendo cierta. Hay muchos tipos diferentes de bucles, pero básicamente todos hacen lo mismo: repetir una acción varias veces.
+Un bucle en JavaScript (y en todos los demás idiomas ) es un bloque de código que se repite mientras una condición conocida sigue siendo cierta. Hay muchos tipos diferentes de bucles, pero básicamente todos hacen lo mismo: repetir una acción varias veces.
 
 ## Video
 
@@ -24,7 +24,7 @@ Un bucle en JavaScript (y en todos los demás idiomas👅) es un bloque de códi
 
 ![While](https://media.giphy.com/media/WS6CDvvyNDrhZRFBtT/giphy.gif)
 
-La declaración `while` crea🏗️ un bucle que ejecuta la instrucción dada mientras la condición que se está probando es verdadera. El valor lógico de la condición se evalúa ➕ antes de que se ejecute el cuerpo del ciclo.
+La declaración `while` crea un bucle que ejecuta la instrucción dada mientras la condición que se está probando es verdadera. El valor lógico de la condición se evalúa ➕ antes de que se ejecute el cuerpo del ciclo.
 
 ### Sintaxis
 
@@ -36,9 +36,9 @@ while (условие) {
 }
 ```
 
-`condición` es una expresión cuyo valor booleano se comprueba cada vez antes de entrar en el bucle. Si el valor es verdadero - `true`✅, entonces se ejecuta la instrucción. Cuando el valor se vuelve falso - `false`❎, salimos del ciclo.
+`condición` es una expresión cuyo valor booleano se comprueba cada vez antes de entrar en el bucle. Si el valor es verdadero - `true`, entonces se ejecuta la instrucción. Cuando el valor se vuelve falso - `false`, salimos del ciclo.
 
-`instrucción` es el código📟 del algoritmo que se ejecuta cada vez que la condición es verdadera. Para ejecutar varias instrucciones en un bucle, use el operador de bloque ❌ `{ ... }` para agruparlas. Cuando se usa 1 comando en el cuerpo del bucle, se pueden omitir las llaves.
+`instrucción` es el código del algoritmo que se ejecuta cada vez que la condición es verdadera. Para ejecutar varias instrucciones en un bucle, use el operador de bloque ❌ `{ ... }` para agruparlas. Cuando se usa 1 comando en el cuerpo del bucle, se pueden omitir las llaves.
 
 Aquí está el ejemplo más simple de un bucle `while(condición) {...}`
 
@@ -56,17 +56,17 @@ function learnJavaScript() {
 }
 ```
 
-El contador `count` en el ejemplo tiene el valor `0`. La condición de nuestro ciclo (está escrito 🖊️ entre paréntesis) es que el bloque con el código se repetirá una y otra vez hasta que (es decir, en realidad `while`) `count` sea menor que `10`.
+El contador `count` en el ejemplo tiene el valor `0`. La condición de nuestro ciclo (está escrito  entre paréntesis) es que el bloque con el código se repetirá una y otra vez hasta que (es decir, en realidad `while`) `count` sea menor que `10`.
 
-Dado que el valor inicial `0` es menor que `10`, se ejecuta el código📟. Cada vez que el intérprete vuelve a verificar ✔️ la condición, si la condición sigue siendo verdadera `true` ✅, entonces el código📟 se ejecutará nuevamente. Cada vez incrementamos el valor del contador en `1`. De lo contrario, el valor permanecería en '0', lo que haría que nuestra condición 'contador < 10' siempre se mantuviera verdadera, ¡y nuestro código 📟 se repetiría para siempre!
+Dado que el valor inicial `0` es menor que `10`, se ejecuta el código. Cada vez que el intérprete vuelve a verificar ✔️ la condición, si la condición sigue siendo verdadera `true` , entonces el código se ejecutará nuevamente. Cada vez incrementamos el valor del contador en `1`. De lo contrario, el valor permanecería en '0', lo que haría que nuestra condición 'contador < 10' siempre se mantuviera verdadera, ¡y nuestro código  se repetiría para siempre!
 
-Como resultado, después de '10' ciclos, será igual a '10'. Después de eso, el intérprete finalizará el bucle ya que la condición es `false` ❎ e irá a las líneas finales de nuestro código📟 .
+Como resultado, después de '10' ciclos, será igual a '10'. Después de eso, el intérprete finalizará el bucle ya que la condición es `false`  e irá a las líneas finales de nuestro código .
 
 <!-- ## Цикл do … while
 
 ![Check](https://media.giphy.com/media/PijzuUzUhm7hcWinGn/giphy.gif)
 
-Проверку ✔️ условия можно разместить под телом цикла, используя специальный синтаксис📖 `do .. while`:
+Проверку ✔️ условия можно разместить под телом цикла, используя специальный синтаксис   `do .. while`:
 
 ```javascript
 do {
@@ -74,9 +74,9 @@ do {
 } while (условие)
 ```
 
-Цикл сначала выполнит тело, а затем проверит ✔️ условие (condition - `состояние`), и пока его значение равно `true` ✅ , он будет выполняться снова и снова.
+Цикл сначала выполнит тело, а затем проверит ✔️ условие (condition - `состояние`), и пока его значение равно `true`  , он будет выполняться снова и снова.
 
-Например, посчитаем сумму чисел от `0` до `25` 👇 :
+Например, посчитаем сумму чисел от `0` до `25`  :
 
 ```jsx live
 function learnJavaScript() {
@@ -91,13 +91,13 @@ function learnJavaScript() {
 }
 ```
 
-Такая форма синтаксиса📖 оправдана, если вы хотите, чтобы тело цикла выполнилось хотя бы один раз, даже если условие окажется ложным ❎ . -->
+Такая форма синтаксиса   оправдана, если вы хотите, чтобы тело цикла выполнилось хотя бы один раз, даже если условие окажется ложным  . -->
 
 ## bucle for ()
 
 ![Create](https://media.giphy.com/media/XaExByjWTK1V2HgDfh/giphy.gif)
 
-La expresión `for` crea🏗️ un bucle que consta de tres expresiones opcionales 3️⃣ entre paréntesis, separadas por punto y coma.
+La expresión `for` crea un bucle que consta de tres expresiones opcionales 3️⃣ entre paréntesis, separadas por punto y coma.
 
 ### Sintaxis
 
@@ -108,15 +108,15 @@ for ([inicialización]; [condición]; [expresión final])
    { expresión }
 ```
 
-`inicialización` es una expresión o definición de variables. Esta expresión puede declarar opcionalmente🗣️ nuevas variables usando la palabra clave `let`. Estas variables solo son visibles en el bucle `for`, es decir, en el mismo ámbito (por seguridad).
+`inicialización` es una expresión o definición de variables. Esta expresión puede declarar opcionalmente nuevas variables usando la palabra clave `let`. Estas variables solo son visibles en el bucle `for`, es decir, en el mismo ámbito (por seguridad).
 
 `condición` es una expresión que se ejecuta en cada integración de bucle. Si la expresión es verdadera, se ejecuta el ciclo. La condición es opcional. Si no está presente, la condición siempre se considera verdadera. Si la expresión es falsa, la ejecución `for` finaliza.
 
-`expresión final`: la expresión que se ejecuta al final de la integración del bucle. Ocurre hasta que se cumple la siguiente condición. Usualmente se usa para `incrementar++`, `decrementar--` o `actualizar i += 5` de la variable de contador 🔔.
+`expresión final`: la expresión que se ejecuta al final de la integración del bucle. Ocurre hasta que se cumple la siguiente condición. Usualmente se usa para `incrementar++`, `decrementar--` o `actualizar i += 5` de la variable de contador .
 
-`expresión`: código ejecutable📟 del algoritmo mientras la condición del ciclo es `verdadera`. Para ejecutar múltiples expresiones en un ciclo, use un bloque `{ ... }` para agrupar estas expresiones. Para no ejecutar ninguna expresión en el bucle, utilice una expresión `for (;;;)` vacía.
+`expresión`: código ejecutable del algoritmo mientras la condición del ciclo es `verdadera`. Para ejecutar múltiples expresiones en un ciclo, use un bloque `{ ... }` para agrupar estas expresiones. Para no ejecutar ninguna expresión en el bucle, utilice una expresión `for (;;;)` vacía.
 
-Calculemos la suma de los números del 0 al 100 👇 :
+Calculemos la suma de los números del 0 al 100  :
 
 ```jsx live
 function learnJavaScript() {
@@ -129,7 +129,7 @@ function learnJavaScript() {
 }
 ```
 
-¿Recuerdas cuando escribimos nuestro 1️⃣ primero `while()` qué pasó con nuestro contador? Descubrimos que es muy importante que cambie constantemente (el `incremento ++` nos ayudó con esto). Porque si lo olvida, el código 📟 caerá en un "bucle infinito de ciclos".
+¿Recuerdas cuando escribimos nuestro 1️⃣ primero `while()` qué pasó con nuestro contador? Descubrimos que es muy importante que cambie constantemente (el `incremento ++` nos ayudó con esto). Porque si lo olvida, el código  caerá en un "bucle infinito de ciclos".
 
 Bueno, situaciones como esta suceden con bastante frecuencia con `while-loops`, ¡por lo que `for` se hizo con un contador incorporado!
 
@@ -137,7 +137,7 @@ Bueno, situaciones como esta suceden con bastante frecuencia con `while-loops`, 
 
 ![hmm](https://media.giphy.com/media/l3nSILUHhuVDuWSnC/giphy.gif)
 
-Al ver la sintaxis 📖 de un bucle `for` por primera vez frente a ti, podrías pensar 🤔 que esto es algo muy extraño. Pero igual deberías estudiarlo 🧑‍🎓, porque te encontrarás
+Al ver la sintaxis    de un bucle `for` por primera vez frente a ti, podrías pensar 🤔 que esto es algo muy extraño. Pero igual deberías estudiarlo 🎓, porque te encontrarás
 así muchas veces:
 
 ```jsx live
@@ -154,13 +154,13 @@ function learnJavaScript() {
 
 ![Wow](https://media.giphy.com/media/3oriO13KTkzPwTykp2/giphy.gif)
 
-Bueno, ¿cómo lo supiste? ¡Y deberían haberlo hecho! ¡Es prácticamente el mismo código 📟 que usamos para el bucle `while` al principio del capítulo! Las tres partes del bucle están separadas entre sí por punto y coma; todos estaban en ese bucle `while`, pero en diferentes lugares. Miremos más de cerca:
+Bueno, ¿cómo lo supiste? ¡Y deberían haberlo hecho! ¡Es prácticamente el mismo código  que usamos para el bucle `while` al principio del capítulo! Las tres partes del bucle están separadas entre sí por punto y coma; todos estaban en ese bucle `while`, pero en diferentes lugares. Miremos más de cerca:
 
 ![para](/img/javascript/14/00.png)
 
-1. En primer lugar, declaramos un contador de variables 🔔 `let i = 0`. Es en la función misma y fuera de este ciclo que esta `i` estará ausente, ¡y esto es seguro!
+1. En primer lugar, declaramos un contador de variables  `let i = 0`. Es en la función misma y fuera de este ciclo que esta `i` estará ausente, ¡y esto es seguro!
 2. A continuación, establecemos una condición que el intérprete verificará antes de cada iteración del ciclo (para determinar si vale la pena volver a ejecutar el código). Una iteración se llama una iteración del bucle (por ejemplo, si tuviéramos 10 ciclos de ejecución, entonces podemos decir que hubo 10 iteraciones del código).
-3. La tercera parte de nuestro código es `incremento ++` (o `decremento --`). Se ejecuta al final de cada iteración para cambiar nuestra variable 🔔 cada vez.
+3. La tercera parte de nuestro código es `incremento ++` (o `decremento --`). Se ejecuta al final de cada iteración para cambiar nuestra variable  cada vez.
 
 ## Conclusión
 
@@ -276,7 +276,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/KoDim-React"><img src="https://avatars1.githubusercontent.com/u/72087863?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy K.</b></sub></a><br /><a href="#mentoring-KoDim-React" title="Mentoring">📖</a></td>
+    <td align="center"><a href="https://github.com/KoDim-React"><img src="https://avatars1.githubusercontent.com/u/72087863?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy K.</b></sub></a><br /><a href="#mentoring-KoDim-React" title="Mentoring">  </a></td>
     <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /><a href="#financial-gHashTag" title="Financial">💵</a></td>
     <td align="center"><a href="https://github.com/Resoner2005"><img src="https://avatars1.githubusercontent.com/u/75675814?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Resoner2005</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/issues?q=author%3AResoner2005" title="Bug reports">🐛 🎨 🖋</a></td>
     <td align="center"><a href="https://github.com/Navernoss"><img src="https://avatars0.githubusercontent.com/u/75784137?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Navernoss</b></sub></a><br /><a href="#content-Navernoss" title="Content">🖋 🐛 🎨 </a></td>

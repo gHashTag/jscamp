@@ -8,7 +8,7 @@ import YouTube from 'react-youtube'
 
 ![@serverSerrverlesskiy](/img/javascript/headers/28.jpg)
 
-La **Fetch API** permite que JavaScript se comunique con el servidor mediante solicitudes HTTP y es un mejor reemplazo para la clase `XMLHttpRequest`. Las solicitudes se realizan mediante el método `fetch()`, que devuelve 🔄 [Promise](https://jscamp.app/docs/javascript24).
+La **Fetch API** permite que JavaScript se comunique con el servidor mediante solicitudes HTTP y es un mejor reemplazo para la clase `XMLHttpRequest`. Las solicitudes se realizan mediante el método `fetch()`, que devuelve  [Promise](https://jscamp.app/docs/javascript24).
 
 ![Exchange](https://media.giphy.com/media/OPQiZUC381IJ8Sh7UY/giphy.gif)
 
@@ -58,10 +58,10 @@ fetch('https://jsonplaceholder.typicode.com/users', {
 
 ![Baloncesto](https://media.giphy.com/media/l0MYwdebx8o0XI56E/giphy.gif)
 
-El método `fetch()` devuelve🔄 [Promise](https://jscamp.app/docs/javascript24) un objeto de la clase `Response`, que tiene las siguientes propiedades:
+El método `fetch()` devuelve [Promise](https://jscamp.app/docs/javascript24) un objeto de la clase `Response`, que tiene las siguientes propiedades:
 
 1. `status` - código de respuesta;
-2. `statusText` - mensaje de texto 📜 correspondiente al código de respuesta;
+2. `statusText` - mensaje de texto  correspondiente al código de respuesta;
 3. `ok`: un valor booleano que indica el éxito del código de respuesta (verdadero: 200-299);
 4. `headers`: un objeto con encabezados de respuesta, en el que la clave es el nombre del encabezado y el valor de la clave es el valor del encabezado correspondiente a la clave;
 5. `url`: la URL a la que se envió la solicitud;
@@ -96,7 +96,7 @@ fetch('https://jsonplaceholder.typicode.com/users')
 
 ![Error](https://media.giphy.com/media/DHBGehJ3FSZEygszX3/giphy.gif)
 
-Podemos averiguar si `fetch()` terminó con un error🙅‍♂️ usando las propiedades: "status" y "ok".
+Podemos averiguar si `fetch()` terminó con un error usando las propiedades: "status" y "ok".
 
 ```jsx
 fetch('https://jsonplaceholder.typicode.com/users')
@@ -190,7 +190,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <table>
   <tr> 
-    <td align="center"><a href="https://github.com/IIo3iTiv"><img src="https://avatars1.githubusercontent.com/u/72025062?v=4?s=200" width="200px;" alt=""/><br /><sub><b>IIo3iTiv</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/commits?author=IIo3iTiv" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/IIo3iTiv"><img src="https://avatars1.githubusercontent.com/u/72025062?v=4?s=200" width="200px;" alt=""/><br /><sub><b>IIo3iTiv</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/commits?author=IIo3iTiv" title="Documentation">  </a></td>
     <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /><a href="#financial-gHashTag" title="Financial">💵</a></td>
     <td align="center"><a href="https://github.com/Resoner2005"><img src="https://avatars1.githubusercontent.com/u/75675814?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Resoner2005</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/issues?q=author%3AResoner2005" title="Bug reports">🐛 🎨 🖋</a></td>
     <td align="center"><a href="https://github.com/Navernoss"><img src="https://avatars0.githubusercontent.com/u/75784137?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Navernoss</b></sub></a><br /><a href="#content-Navernoss" title="Content">🖋 🐛 🎨 </a></td>

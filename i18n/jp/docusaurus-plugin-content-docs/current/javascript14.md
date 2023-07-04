@@ -6,7 +6,7 @@ sidebar_label: 正規表現
 
 ![@serverSerrverlesskiy](/img/javascript/headers/13.jpg)
 
-正規表現. _regular expressions_) — メタ文字の使用に基づいて、テキスト内の文字列を検索および操作するための形式言語📜。
+正規表現. _regular expressions_) — メタ文字の使用に基づいて、テキスト内の文字列を検索および操作するための形式言語。
 
 正規表現を使用すると、次のことができます。
 
@@ -46,7 +46,7 @@ values={[
 }>
 <TabItem value="literal">
 
-リテラルを使用した正規表現の定義。正規表現の場合、スラッシュはリテラルです `/ ... /`, それらは括弧と同じ役割を果たします `' ... '` 🏗️文字列を作成するとき.
+リテラルを使用した正規表現の定義。正規表現の場合、スラッシュはリテラルです `/ ... /`, それらは括弧と同じ役割を果たします `' ... '` 文字列を作成するとき.
 
 ```jsx
 let regExp = /テンプレート/
@@ -63,7 +63,7 @@ let regExp = /テンプレート/
 let regExp = new RegExp('テンプレート')
 ```
 
-コンストラクターを使用して作成された正規表現のコンパイル🏗️は、スクリプトの実行時に行われます。この作成方法🏗️は、動的に生成された文字列から正規表現を作成する場合に使用する価値があります。
+コンストラクターを使用して作成された正規表現のコンパイルは、スクリプトの実行時に行われます。この作成方法は、動的に生成された文字列から正規表現を作成する場合に使用する価値があります。
 
   </TabItem>
 </Tabs>
@@ -78,7 +78,7 @@ let regExp = new RegExp('テンプレート')
 let regExp = /banana/
 ```
 
-このコードで📟私たちは文字列を検索する単純な正規表現を作成しました🏗️ `banana`. 正規表現をテストするには、次の方法を使用できます。 `.test(string)`, メソッドの結果は次のとおりです。 `boolean` 値.
+このコードで私たちは文字列を検索する単純な正規表現を作成しました `banana`. 正規表現をテストするには、次の方法を使用できます。 `.test(string)`, メソッドの結果は次のとおりです。 `boolean` 値.
 
 ```jsx live
 function learnJavaScript() {
@@ -104,7 +104,7 @@ function learnJavaScript() {
 }
 ```
 
-このようなテンプレートを使用する `/banana/` あなたは探しているでしょう `banana` 全行で。文字列とテンプレートが完全に一致するかどうかを確認する必要がある場合は、アンカーを使用する必要があります `/^banana$/`. 方法 `.test()` 戻ります `true` ✅ 行全体が `banana`.
+このようなテンプレートを使用する `/banana/` あなたは探しているでしょう `banana` 全行で。文字列とテンプレートが完全に一致するかどうかを確認する必要がある場合は、アンカーを使用する必要があります `/^banana$/`. 方法 `.test()` 戻ります `true`  行全体が `banana`.
 
 ## フラグ
 
@@ -214,7 +214,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <table>
   <tr> 
-    <td align="center"><a href="https://github.com/IIo3iTiv"><img src="https://avatars1.githubusercontent.com/u/72025062?v=4?s=200" width="200px;" alt=""/><br /><sub><b>IIo3iTiv</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/commits?author=IIo3iTiv" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/IIo3iTiv"><img src="https://avatars1.githubusercontent.com/u/72025062?v=4?s=200" width="200px;" alt=""/><br /><sub><b>IIo3iTiv</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/commits?author=IIo3iTiv" title="Documentation">  </a></td>
     <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /><a href="#financial-gHashTag" title="Financial">💵</a></td>
     <td align="center"><a href="https://github.com/Resoner2005"><img src="https://avatars1.githubusercontent.com/u/75675814?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Resoner2005</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/issues?q=author%3AResoner2005" title="Bug reports">🐛 🎨 🖋</a></td>
     <td align="center"><a href="https://github.com/Navernoss"><img src="https://avatars0.githubusercontent.com/u/75784137?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Navernoss</b></sub></a><br /><a href="#content-Navernoss" title="Content">🖋 🐛 🎨 </a></td>

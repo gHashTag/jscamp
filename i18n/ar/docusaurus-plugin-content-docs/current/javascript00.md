@@ -136,7 +136,7 @@ Thتتكون دورة e JS من مقالات ودروس فيديو وبودكا�
 
 ### تحويل:
 
-هذا مستوى مختلف تمامًا من الفيديو الموسيقي في AWS Community Builder 🔥 😅
+هذا مستوى مختلف تمامًا من الفيديو الموسيقي في AWS Community Builder  
 
 هذه دورة تطوير الأجهزة المحمولة حول React Native / Type Script / AWS Amplify Stack و AWS Certification. يستحق التدقيق!
 

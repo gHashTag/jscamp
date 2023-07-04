@@ -12,7 +12,7 @@ It is an automatic or implicit conversion of values from one data type to anothe
 
 ![transformation](https://media.giphy.com/media/xT4uQr9H3EDL7Ha2hq/giphy.gif)
 
-Examples 👇:
+Examples :
 
 ```jsx live
 function learnJavaScript() {
@@ -26,7 +26,7 @@ function learnJavaScript() {
 
 In the example above, JavaScript casts the number `9` into a string, and then concatenates the two 2️⃣ values together, resulting in the string `59`. JavaScript had a choice between string or number and chose to use string.
 
-The compiler could convert the string `5` to a number and return the sum of `14`, but it did not. To get this result, you need to explicitly convert the string `5` to a number using the` Number()` 👇 method:
+The compiler could convert the string `5` to a number and return the sum of `14`, but it did not. To get this result, you need to explicitly convert the string `5` to a number using the` Number()`  method:
 
 ```jsx live
 function learnJavaScript() {
@@ -48,7 +48,7 @@ Means the transfer of data from one data type to another. Implicit conversion oc
 
 ![Transformation](https://media.giphy.com/media/RLVHPJJv7jY1q/giphy.gif)
 
-String conversion occurs when you want to represent something as a string. For example, we can use the `String (value)` function to convert a value to a string 👇:
+String conversion occurs when you want to represent something as a string. For example, we can use the `String (value)` function to convert a value to a string :
 
 ```jsx live
 function learnJavaScript() {
@@ -59,7 +59,7 @@ function learnJavaScript() {
 }
 ```
 
-The transformation takes place in an obvious way. `true` ✅ becomes`"true"`✅
+The transformation takes place in an obvious way. `true`  becomes`"true"`
 
 ### Numeric conversion
 
@@ -75,7 +75,7 @@ function learnJavaScript() {
 }
 ```
 
-We can use the `Number (value)` function to explicitly convert `value` to a number 👇:
+We can use the `Number (value)` function to explicitly convert `value` to a number :
 
 ```jsx live
 function learnJavaScript() {
@@ -88,7 +88,7 @@ function learnJavaScript() {
 
 Explicit conversion is often used when we expect to get a number from a string context, such as text fields in forms.
 
-If the string cannot be explicitly cast to a number, then the conversion result will be `NaN` (Not-a-Number, "not a number "). For example 👇:
+If the string cannot be explicitly cast to a number, then the conversion result will be `NaN` (Not-a-Number, "not a number "). For example :
 
 ```jsx live
 function learnJavaScript() {
@@ -138,7 +138,7 @@ Boolean('') // false
 ```
 
 :::caution Note that the line with zero "0" is true
-Some languages👅 (for example PHP) interpret the string `" 0 "` as `false`. But in JavaScript, if a string is not empty, then it is always `true`
+Some languages  (for example PHP) interpret the string `" 0 "` as `false`. But in JavaScript, if a string is not empty, then it is always `true`
 :::
 
 ```javascript
@@ -205,7 +205,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <table>
   <tr>
-    <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /> <a href="https://github.com/gHashTag/react-native-village/commits?author=gHashTag" title="Documentation">📖</a><a href="#financial-gHashTag" title="Financial">💵</a></td>
+    <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /> <a href="https://github.com/gHashTag/react-native-village/commits?author=gHashTag" title="Documentation">  </a><a href="#financial-gHashTag" title="Financial">💵</a></td>
     <td align="center"><a href="https://github.com/Resoner2005"><img src="https://avatars1.githubusercontent.com/u/75675814?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Resoner2005</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/issues?q=author%3AResoner2005" title="Bug reports">🐛 🎨 🖋</a></td>
   </tr>
   

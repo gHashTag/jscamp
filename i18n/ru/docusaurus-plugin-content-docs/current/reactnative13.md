@@ -58,7 +58,7 @@ import YouTube from 'react-youtube'
 1. Expo
 2. React Native Cli
 
-## Done ✅
+## Done 
 
 Чтобы узнать, насколько хорошо вы усвоили этот урок, пройдите тест в [мобильном приложении](http://onelink.to/njhc95) нашей школы по этой теме или в [боте Telegram](https://t.me/javascriptcamp_bot).
 

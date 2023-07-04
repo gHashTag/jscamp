@@ -10,23 +10,23 @@ import YouTube from 'react-youtube'
 
 ## JavaScript
 
-Previously, to create a 🏗️ digital startup, a team was needed from:
+Previously, to create a  digital startup, a team was needed from:
 
-- iOS developer 📱,
-- Android developer 📱,
-- Developer backend 💻,
-- Developer for the web 🖥
+- iOS developer  ,
+- Android developer  ,
+- Developer backend   ,
+- Developer for the web     
   and
-- Teamlead 🧙‍♂️ who
+- Teamlead       who
   everywhere on top
   and in one thing perfectly -
-  it is 5️⃣ people!
+  it is     people!
 
 ![Hello World](https://media.giphy.com/media/jTICSwJwDz3wa1PQmk/giphy.gif)
 
-Today, thanks to JavaScript, it is possible to replace 5️⃣ developers with one JavaScript developer using the technology stack that we teach in our school.
+Today, thanks to JavaScript, it is possible to replace     developers with one JavaScript developer using the technology stack that we teach in our school.
 
-JavaScript is a programming language that makes it possible to implement complex behaviors on web pages and more. In JavaScript, you can write sites ℹ️, servers, mobile 📱 and desktop 💻 applications, as well as applications for augmented and virtual reality.
+JavaScript is a programming language that makes it possible to implement complex behaviors on web pages and more. In JavaScript, you can write sites  , servers, mobile   and desktop    applications, as well as applications for augmented and virtual reality.
 
 JavaScript is the first of the most popular programming languages ​​among European developers. This data was obtained by the authors of [research](https://www.oreilly.com/programming/free/files/2016-european-software-development-salary-survey.pdf) from the O'Reilly company as a result of a survey of more than 1300 programmers from 27 countries.
 
@@ -34,7 +34,7 @@ JavaScript is the first of the most popular programming languages ​​among Eu
 
 ![Hello World](https://media.giphy.com/media/1n67EigjECnOUc6rhS/giphy.gif)
 
-JavaScript, like many other programming languages👅, has a strict syntax📖. Syntax 📖 is a section of grammar that studies sentences and how to combine words within a sentence. Computers 🖥️ are not as smart as humans 👨: they cannot “just understand” 🤷 what you mean. The machine 🚗 will be able to understand you only if you communicate 💬 with it strictly in the forms of expression that it expects from you. This expected form of expression is called the 📖 syntax.
+JavaScript, like many other programming languages , has a strict syntax  . Syntax    is a section of grammar that studies sentences and how to combine words within a sentence. Computers     ️ are not as smart as humans : they cannot “just understand”  what you mean. The machine    will be able to understand you only if you communicate  with it strictly in the forms of expression that it expects from you. This expected form of expression is called the    syntax.
 
 ## Work environment
 
@@ -46,9 +46,9 @@ JavaScript, like many other programming languages👅, has a strict syntax📖. 
 
 3️⃣ Thirdly, a browser must be installed on the computer, in our lessons we will use Google Chrome, but others can be used. Chrome, who is not in the know, is a browser, that is, a program for viewing web pages.
 
-If you still do not have Google Chrome installed, you can download it [here](https://www.google.com/intl/com/chrome/?brand=CHBD&gclid=CjwKCAjwtNf6BRAwEiwAkt6UQlNVpi-CLILLC8x3U0PcR5d3xmP3MQVD2T2) any other browser (Firefox, Safari, Edge or Internet Explorer) by simply typing 🔎 "download Chrome" into the search bar and following the further instructions.
+If you still do not have Google Chrome installed, you can download it [here](https://www.google.com/intl/com/chrome/?brand=CHBD&gclid=CjwKCAjwtNf6BRAwEiwAkt6UQlNVpi-CLILLC8x3U0PcR5d3xmP3MQVD2T2) any other browser (Firefox, Safari, Edge or Internet Explorer) by simply typing  "download Chrome" into the search bar and following the further instructions.
 
-After downloading and installing Google Chrome, open it and enter 🧑‍💻 in the address bar:
+After downloading and installing Google Chrome, open it and enter  in the address bar:
 
 ```
 about:blank
@@ -69,27 +69,27 @@ Basically, our course can be taken directly on our website, but sometimes we wil
 
 ### Open console
 
-Since you are now an aspiring programmer 🖥️, you can use it too! To bring up the console, simply press the 🔘 `CTRL, SHIFT (or COMMAND and OPTION if you have a Mac) and J` keys together.
+Since you are now an aspiring programmer     ️, you can use it too! To bring up the console, simply press the 🔘 `CTRL, SHIFT (or COMMAND and OPTION if you have a Mac) and J` keys together.
 
-Pressing the key combination will open a new 🆕 menu bar and you will see an angle bracket in the upper left corner of the page. By the way, if you move the cursor to the edge of the area where it turns into a double arrow, then by pressing and holding the left button, you can stretch the console window. Be sure to do this so you have more room to inject your code📟.
+Pressing the key combination will open a new    menu bar and you will see an angle bracket in the upper left corner of the page. By the way, if you move the cursor to the edge of the area where it turns into a double arrow, then by pressing and holding the left button, you can stretch the console window. Be sure to do this so you have more room to inject your code.
 
 ![console](/img/javascript/01.png)
 
-If the combination `CTRL + SHIFT + J` or `COMMAND + OPTION + J` for some reason does not work, you can enter the console by right-clicking on an empty space on the page 🖱️, select the Inspect (View code📟) and then click Console on the menu bar.
+If the combination `CTRL + SHIFT + J` or `COMMAND + OPTION + J` for some reason does not work, you can enter the console by right-clicking on an empty space on the page , select the Inspect (View code) and then click Console on the menu bar.
 
 ![Inspect](/img/javascript/02.png)
 
 ## Hello world program
 
-"Hello, world!" - A program that outputs the phrase "Hello, world!" To the screen or other device 🌎
+"Hello, world!" - A program that outputs the phrase "Hello, world!" To the screen or other device 
 
-This is usually the first example of a program in a programming textbook, and for many students, this is the first experience in learning a new language👅.
+This is usually the first example of a program in a programming textbook, and for many students, this is the first experience in learning a new language .
 
 Now that the console window is open in front of you and you have stretched it in a convenient way, click the mouse to the right of the angle bracket `>`.
 
 ![not equal](https://media.giphy.com/media/jPfQcPdmI9bTXpa7hi/giphy.gif)
 
-A blinking cursor🖱️ appears on the line, indicating that you can start typing. You will now type your first lines of code📟. Enter the following text 📜 (including quotation marks):
+A blinking cursor appears on the line, indicating that you can start typing. You will now type your first lines of code. Enter the following text  (including quotation marks):
 
 ```
 "Hello world!"
@@ -98,13 +98,13 @@ A blinking cursor🖱️ appears on the line, indicating that you can start typi
 ![Hello world!](/img/javascript/03.png)
 ![Hello World](https://media.giphy.com/media/xiOgHgY2ceKhm46cAj/giphy.gif)
 
-Press ENTER. The console will return your text on the next line 📜: "Hello World!". Through the browser console, we communicate directly with the JavaScript engine - this is such a program, or, in other words, an interpreter that executes code written in JavaScript.
+Press ENTER. The console will return your text on the next line : "Hello World!". Through the browser console, we communicate directly with the JavaScript engine - this is such a program, or, in other words, an interpreter that executes code written in JavaScript.
 
 ![Hello world!](/img/javascript/04.png)
 
 Now you can be proud that you wrote and executed the first JavaScript code with your own hands!
 
-Then press the key\_ UP_ARROW ⬆️ (up arrow) and you will see your text 📜 "Hello World!". Next, move the cursor🖱️ to the beginning of the line and type the following text instead 📜:
+Then press the key\_ UP_ARROW ⬆️ (up arrow) and you will see your text  "Hello World!". Next, move the cursor to the beginning of the line and type the following text instead :
 
 ```javascript
 var hello = 'Hello world!'
@@ -116,7 +116,7 @@ and press ENTER. In the console you will see the answer: `undefined`. Everything
 hello
 ```
 
-and press ENTER. If you did everything correctly, the console will return a message in the line 💬 "Hello, World!". Here we have created a variable and assigned a value to it.
+and press ENTER. If you did everything correctly, the console will return a message in the line  "Hello, World!". Here we have created a variable and assigned a value to it.
 
 ![Hello world!](/img/javascript/05.png)
 
@@ -155,7 +155,7 @@ And any other mathematical operations ...
 
 ![Live editor](https://media.giphy.com/media/l1KVcrdl7rJpFnY2s/giphy.gif)
 
-The JavaScript code is executed by the JavaScript engine of the browser. Through the console, we access it directly. Further, in order not to write the entire training course in the browser and jump through windows from our site to the browser console and vice versa, we will write the code in the `Live Coding` mode right on our site. To do this, try to add the word Hello in the next window `LIVE EDITOR`. In `RESULT`, you should get` Hello World` 🌎.
+The JavaScript code is executed by the JavaScript engine of the browser. Through the console, we access it directly. Further, in order not to write the entire training course in the browser and jump through windows from our site to the browser console and vice versa, we will write the code in the `Live Coding` mode right on our site. To do this, try to add the word Hello in the next window `LIVE EDITOR`. In `RESULT`, you should get` Hello World` .
 
 ```jsx live
 function learnJavaScript() {
@@ -165,7 +165,7 @@ function learnJavaScript() {
 }
 ```
 
-Now try playing with math operations 👇:
+Now try playing with math operations :
 
 ```jsx live
 function learnJavaScript() {
@@ -241,7 +241,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <table>
   <tr>
-    <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /> <a href="https://github.com/gHashTag/react-native-village/commits?author=gHashTag" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /> <a href="https://github.com/gHashTag/react-native-village/commits?author=gHashTag" title="Documentation">  </a></td>
     <td align="center"><a href="https://github.com/Resoner2005"><img src="https://avatars1.githubusercontent.com/u/75675814?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Resoner2005</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/issues?q=author%3AResoner2005" title="Bug reports">🐛 🎨 🖋</a></td>
   </tr>
 </table>

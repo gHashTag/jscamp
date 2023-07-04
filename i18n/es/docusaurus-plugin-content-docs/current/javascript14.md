@@ -8,7 +8,7 @@ import YouTube from 'react-youtube'
 
 ![@serverSerrverlesskiy](/img/javascript/headers/13.jpg)
 
-Las expresiones regulares (inglés _regular expressions_) es un lenguaje formal 👅 para buscar y manipular cadenas en texto 📜 basado en el uso de metacaracteres.
+Las expresiones regulares (inglés _regular expressions_) es un lenguaje formal   para buscar y manipular cadenas en texto  basado en el uso de metacaracteres.
 
 Las expresiones regulares le permiten:
 
@@ -18,7 +18,7 @@ Las expresiones regulares le permiten:
 
 ![search](https://media.giphy.com/media/l46Cy1rHbQ92uuLXa/giphy.gif)
 
-JavaScript, junto con Perl, es uno de los lenguajes de programación👅 en los que la compatibilidad con expresiones regulares está integrada directamente en el lenguaje👅.
+JavaScript, junto con Perl, es uno de los lenguajes de programación  en los que la compatibilidad con expresiones regulares está integrada directamente en el lenguaje .
 
 ## Video
 
@@ -38,7 +38,7 @@ let regExp = /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]
 
 ![search](https://media.giphy.com/media/RMwYOO5e8pr1lhL8K7/giphy.gif)
 
-La definición de una expresión regular es la creación🏗️ de una plantilla, sobre la base de la cual se realizará el trabajo con cadenas. En JavaScript, una expresión regular es un objeto que se puede definir de dos maneras.
+La definición de una expresión regular es la creación de una plantilla, sobre la base de la cual se realizará el trabajo con cadenas. En JavaScript, una expresión regular es un objeto que se puede definir de dos maneras.
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -52,13 +52,13 @@ values={[
 }>
 <TabItem value="literal">
 
-Definición de expresiones regulares usando literales. Para las expresiones regulares, las barras diagonales `/ ... /` actúan como literales, juegan el mismo papel que los corchetes `' ... '` al crear 🏗️ cadenas.
+Definición de expresiones regulares usando literales. Para las expresiones regulares, las barras diagonales `/ ... /` actúan como literales, juegan el mismo papel que los corchetes `' ... '` al crear  cadenas.
 
 ```jsx
 let regExp = /muestra/
 ```
 
-Si decide crear 🏗️ expresiones regulares utilizando literales, debe tener en cuenta que este método de creación _no permite cambios dinámicos_ de los valores establecidos. Esto se debe a que los literales de expresiones regulares provocan una _precompilación_ cuando se analiza el script.
+Si decide crear  expresiones regulares utilizando literales, debe tener en cuenta que este método de creación _no permite cambios dinámicos_ de los valores establecidos. Esto se debe a que los literales de expresiones regulares provocan una _precompilación_ cuando se analiza el script.
 
   </TabItem>
   <TabItem value="construction">
@@ -69,7 +69,7 @@ Definición de expresiones regulares usando un constructor.
 let regExp = new RegExp('muestra')
 ```
 
-La compilación de la expresión regular creada por 🏗️ usando el constructor ocurre en el momento de la ejecución del script. Esta forma de crear🏗️ debe usarse si su expresión regular se crea🏗️ a partir de una cadena generada dinámicamente.
+La compilación de la expresión regular creada por  usando el constructor ocurre en el momento de la ejecución del script. Esta forma de crear debe usarse si su expresión regular se crea a partir de una cadena generada dinámicamente.
 
   </TabItem>
 </Tabs>
@@ -84,7 +84,7 @@ Usando expresiones regulares, veamos un ejemplo:
 let regExp = /banana/
 ```
 
-Con este código📟 hemos creado🏗️ una expresión regular simple que busca la cadena `banana`. Para probar una expresión regular, puede usar el método `.test(string)`, el resultado del método es un valor `boolean`.
+Con este código hemos creado una expresión regular simple que busca la cadena `banana`. Para probar una expresión regular, puede usar el método `.test(string)`, el resultado del método es un valor `boolean`.
 
 ```jsx live
 function learnJavaScript() {
@@ -110,7 +110,7 @@ function learnJavaScript() {
 }
 ```
 
-Usando este patrón `/banana/` buscará `banana` en toda la cadena. Si necesita verificar una coincidencia completa de una cadena con un patrón, debe usar los anclajes `/^banana$/`. El método `.test()` devolverá `true` ✅ solo si la cadena completa es `banana`.
+Usando este patrón `/banana/` buscará `banana` en toda la cadena. Si necesita verificar una coincidencia completa de una cadena con un patrón, debe usar los anclajes `/^banana$/`. El método `.test()` devolverá `true`  solo si la cadena completa es `banana`.
 
 ## Banderas
 
@@ -125,7 +125,7 @@ Las banderas se utilizan para extender la búsqueda realizada por expresiones re
 - `y` - busca a partir del carácter que está en la posición de la propiedad **lastindex** de la expresión regular actual;
 - `u` - habilita la compatibilidad con **Unicode**.
 
-Uso de banderas de diferentes maneras para crear un patrón de expresión regular 🏗️
+Uso de banderas de diferentes maneras para crear un patrón de expresión regular 
 <Tabs
 defaultValue="literal"
 values={[
@@ -221,7 +221,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <table>
   <tr> 
-    <td align="center"><a href="https://github.com/IIo3iTiv"><img src="https://avatars1.githubusercontent.com/u/72025062?v=4?s=200" width="200px;" alt=""/><br /><sub><b>IIo3iTiv</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/commits?author=IIo3iTiv" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/IIo3iTiv"><img src="https://avatars1.githubusercontent.com/u/72025062?v=4?s=200" width="200px;" alt=""/><br /><sub><b>IIo3iTiv</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/commits?author=IIo3iTiv" title="Documentation">  </a></td>
     <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /><a href="#financial-gHashTag" title="Financial">💵</a></td>
     <td align="center"><a href="https://github.com/Resoner2005"><img src="https://avatars1.githubusercontent.com/u/75675814?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Resoner2005</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/issues?q=author%3AResoner2005" title="Bug reports">🐛 🎨 🖋</a></td>
     <td align="center"><a href="https://github.com/Navernoss"><img src="https://avatars0.githubusercontent.com/u/75784137?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Navernoss</b></sub></a><br /><a href="#content-Navernoss" title="Content">🖋 🐛 🎨 </a></td>

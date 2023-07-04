@@ -6,13 +6,13 @@ sidebar_label: 配列反復法 (map, filter, reduce)
 
 ![@serverSerrverlesskiy](/img/javascript/headers/22.jpg)
 
-👅JavaScript言語は、他のデータ構造よりも配列を明確に優先します。 それらには多くの便利な特定の機能があります。たとえば、反復メソッドのセット全体： `map`、` filter`、`reduce`です。
+ JavaScript言語は、他のデータ構造よりも配列を明確に優先します。 それらには多くの便利な特定の機能があります。たとえば、反復メソッドのセット全体： `map`、` filter`、`reduce`です。
 
 ## map
 
 ![Create](https://media.giphy.com/media/ffd0F6WNcRJMQ/giphy.gif)
 
-`map（）`メソッドは、配列の各要素に対して指定された関数⚙️を呼び出した結果を使用して、🏗️新しい🆕配列を作成します。
+`map（）`メソッドは、配列の各要素に対して指定された関数⚙️を呼び出した結果を使用して、新しい  配列を作成します。
 
 ### 構文
 
@@ -24,7 +24,7 @@ let new_array = arr.map(function callback( currentValue[, index[, array]]) {
 }[, thisArg])
 ```
 
-`map`メソッドは、渡された⚙️`callback`関数を要素ごとに表示順に1回呼び出し、呼び出しの結果から新しい配列を作成します🆕。 ⚙️`callback`関数は、`undefined`を含む値が割り当てられている配列インデックスに対してのみ呼び出されます。 欠落している配列要素（つまり、設定、削除、または値が割り当てられていないインデックス）に対しては呼び出されません。
+`map`メソッドは、渡された⚙️`callback`関数を要素ごとに表示順に1回呼び出し、呼び出しの結果から新しい配列を作成します  。 ⚙️`callback`関数は、`undefined`を含む値が割り当てられている配列インデックスに対してのみ呼び出されます。 欠落している配列要素（つまり、設定、削除、または値が割り当てられていないインデックス）に対しては呼び出されません。
 
 ⚙️`callback`関数は、次の3つの引数で呼び出されます。
 
@@ -44,7 +44,7 @@ let new_array = arr.map(function callback( currentValue[, index[, array]]) {
 
 #### 簡単な例
 
-多くのオブジェクトを含む配列があり、それぞれが異なる人物を表しています👨。 ここには、名前、年齢、髪の色、お気に入りの映画のキャラクターなど、多くのデータが含まれている可能性がありますが、現時点ではこれらすべては必須ではありません。すべての会議を行うために、これらの人々のパスポート番号の配列を取得するだけです。パスします。
+多くのオブジェクトを含む配列があり、それぞれが異なる人物を表しています。 ここには、名前、年齢、髪の色、お気に入りの映画のキャラクターなど、多くのデータが含まれている可能性がありますが、現時点ではこれらすべては必須ではありません。すべての会議を行うために、これらの人々のパスポート番号の配列を取得するだけです。パスします。
 
 ```jsx live
 function learnJavaScript() {
@@ -61,7 +61,7 @@ function learnJavaScript() {
 }
 ```
 
-場合によっては、選択したキーを持つオブジェクトの配列を文字列として表示したい場合があります👇：
+場合によっては、選択したキーを持つオブジェクトの配列を文字列として表示したい場合があります：
 
 ```jsx live
 function learnJavaScript() {
@@ -82,7 +82,7 @@ function learnJavaScript() {
 
 ![Thermometer](https://media.giphy.com/media/W23dJLsAW5knUU27Fv/giphy.gif)
 
-与えられた式で配列の各要素を処理する例👇：
+与えられた式で配列の各要素を処理する例：
 
 ```jsx live
 function learnJavaScript() {
@@ -97,7 +97,7 @@ function learnJavaScript() {
 <!-- ### Отображение массива чисел на массив квадратных корней
 
 Отображение таблицы пользователей в виде читаемой строки только с указанными ключами
-Следующий код📟 берёт массив чисел и создаёт 🆕 новый массив, содержащий квадратные корни чисел из первого массива.
+Следующий код берёт массив чисел и создаёт    новый массив, содержащий квадратные корни чисел из первого массива.
 
 ```jsx live
 function learnJavaScript() {
@@ -107,7 +107,7 @@ function learnJavaScript() {
 }
 ``` -->
 
-引数を含む関数を使用して数値の配列を表示する👇：
+引数を含む関数を使用して数値の配列を表示する：
 
 ```jsx live
 function learnJavaScript() {
@@ -123,7 +123,7 @@ function learnJavaScript() {
 
 #### Обобщённое использование `map`
 
-Этот пример показывает, как использовать `map` на объекте строки `String` для получения массива байт в кодировке `ASCII`, представляющего значения символов 👇 :
+Этот пример показывает, как использовать `map` на объекте строки `String` для получения массива байт в кодировке `ASCII`, представляющего значения символов  :
 
 ```jsx live
 function learnJavaScript() {
@@ -155,9 +155,9 @@ function learnJavaScript() {
 
 ![filter](https://media.giphy.com/media/xT5LMGupUKCHb7DnFu/giphy.gif)
 
-`filter（）`メソッドは、合格した関数⚙️で指定されたテストに合格したすべての要素を含む新しい配列を作成します🆕。
+`filter（）`メソッドは、合格した関数⚙️で指定されたテストに合格したすべての要素を含む新しい配列を作成します  。
 
-`filter`の結果は常に配列です。 要素の関数⚙️が🔄`true`✅（または任意の「true」値）を返す場合、その要素は結果に含まれます。それ以外の場合は含まれません。
+`filter`の結果は常に配列です。 要素の関数⚙️が`true`（または任意の「true」値）を返す場合、その要素は結果に含まれます。それ以外の場合は含まれません。
 
 ### 構文
 
@@ -171,7 +171,7 @@ let newArray = arr.filter(function callback(element[, index, [array]])[, thisArg
 
 ![m](https://media.giphy.com/media/DQaeCdCqhHWx3n4dvH/giphy.gif)
 
-`filter（）`メソッドは、配列に存在する要素ごとに渡された⚙️ `callback`関数を1回呼び出し、⚙️`callback`関数が`true`✅または`boolean`にキャストすると`true`✅になります。 ⚙️`callback`関数は、値が割り当てられている配列インデックスに対してのみ呼び出されます。ドロップされた、または値が割り当てられたことがないインデックスに対しては呼び出されません。 ⚙️`callback`関数に失敗した配列要素は単にスキップされ、🆕新しい配列には含まれません。
+`filter（）`メソッドは、配列に存在する要素ごとに渡された⚙️ `callback`関数を1回呼び出し、⚙️`callback`関数が`true`または`boolean`にキャストすると`true`になります。 ⚙️`callback`関数は、値が割り当てられている配列インデックスに対してのみ呼び出されます。ドロップされた、または値が割り当てられたことがないインデックスに対しては呼び出されません。 ⚙️`callback`関数に失敗した配列要素は単にスキップされ、  新しい配列には含まれません。
 
 ⚙️`callback`関数は、次の3つの引数で呼び出されます。
 
@@ -191,7 +191,7 @@ let newArray = arr.filter(function callback(element[, index, [array]])[, thisArg
 
 #### すべての小さな値を除外する
 
-次の例では、 `filter（）`を使用して、`value`以上のすべての要素と`value`未満のすべての要素が削除された🏗️フィルター処理された配列を作成します。
+次の例では、 `filter（）`を使用して、`value`以上のすべての要素と`value`未満のすべての要素が削除されたフィルター処理された配列を作成します。
 
 ```jsx live
 function learnJavaScript() {
@@ -239,13 +239,13 @@ array.reduce(function callback[, initialValue])
 
 関数⚙️が初めて呼び出されるとき、`accumulator`および`currentValue`パラメーターは2つの値のいずれかを取ることができます。 `reduce（）`の呼び出しで `initialValue`引数が渡された場合、`accumulator`の値は`initialValue`の値に等しくなり、`currentValue`の値は最初の値に等しくなります配列内。 `initialValue`引数が指定されていない場合、` accumulator`の値は配列の最初の値に等しくなり、`currentValue`の値は配列の2番目の値に等しくなります。
 
-配列が空で、 `initialValue`引数が指定されていない場合、`TypeError`例外がスローされます。配列が（配列内の位置に関係なく）1つの要素のみで構成され、 `initialValue`引数が指定されていない場合、または` initialValue`引数が指定されているが配列が空の場合、この値が返されます🔄関数⚙️`callback`を呼び出さずに。
+配列が空で、 `initialValue`引数が指定されていない場合、`TypeError`例外がスローされます。配列が（配列内の位置に関係なく）1つの要素のみで構成され、 `initialValue`引数が指定されていない場合、または` initialValue`引数が指定されているが配列が空の場合、この値が返されます関数⚙️`callback`を呼び出さずに。
 
 ### アキュムレータの初期値
 
 ![hatchng](https://media.giphy.com/media/xT1R9Qy80qNb8oQGGc/giphy.gif)
 
-初期値を見てみましょう。 この例では、年齢の合計である数値をカウントしているため、これは`0`に等しくなります。 ゼロの代わりに、他の任意の数値/文字列（空かどうか）/オブジェクト/配列（累積を開始する任意の値）を指定できます。 たとえば、すべての友達の名前を1行にまとめましょう👇：
+初期値を見てみましょう。 この例では、年齢の合計である数値をカウントしているため、これは`0`に等しくなります。 ゼロの代わりに、他の任意の数値/文字列（空かどうか）/オブジェクト/配列（累積を開始する任意の値）を指定できます。 たとえば、すべての友達の名前を1行にまとめましょう：
 
 ```jsx live
 function learnJavaScript() {
@@ -298,7 +298,7 @@ function learnJavaScript() {
 
 ![transform](https://media.giphy.com/media/dVleMgtOlPE6Q/giphy.gif)
 
-Код📟 решает задачу преобразования массива массивов в один плоский массив. Результат первой итерации будет равен: `[…[], …[1, 2, 3]]` что означает, что он преобразуется в `[1, 2, 3]` — это значение мы предоставляем как `acc` на второй итерации и так далее.
+Код решает задачу преобразования массива массивов в один плоский массив. Результат первой итерации будет равен: `[…[], …[1, 2, 3]]` что означает, что он преобразуется в `[1, 2, 3]` — это значение мы предоставляем как `acc` на второй итерации и так далее.
 
 ```jsx live
 function learnJavaScript() {
@@ -336,9 +336,9 @@ function learnJavaScript() {
 
 JavaScriptプログラミングは、便利な「チェーン」パターンをサポートしています。複数の関数⚙️を1つのチェーンに結合し、結果を順次転送します。
 
-解析された3つのメソッドはすべて配列のコンテキストで呼び出され、そのうちの2つの2️⃣も🔄配列を返します。 したがって、それらを組み合わせるのは非常に簡単です。
+解析された3つのメソッドはすべて配列のコンテキストで呼び出され、そのうちの2つの2️⃣も配列を返します。 したがって、それらを組み合わせるのは非常に簡単です。
 
-たとえば、すべての男の子の合計年齢を計算してみましょう👇：
+たとえば、すべての男の子の合計年齢を計算してみましょう：
 
 ```jsx live
 function learnJavaScript() {
@@ -357,7 +357,7 @@ function learnJavaScript() {
 }
 ```
 
-または、女の子のパスポート番号を集めて、ラスベガス行きの飛行機のチケットを購入しましょう👇：
+または、女の子のパスポート番号を集めて、ラスベガス行きの飛行機のチケットを購入しましょう：
 
 ```jsx live
 function learnJavaScript() {
@@ -376,7 +376,7 @@ function learnJavaScript() {
 
 ## 結論
 
-これらの優れた機能を使用して⚙️コード📟が読みやすくなりました。 したがって、以下はこのトピックをより詳細にカバーする記事のリストです。
+これらの優れた機能を使用して⚙️コードが読みやすくなりました。 したがって、以下はこのトピックをより詳細にカバーする記事のリストです。
 
 ## 問題？
 
@@ -394,7 +394,7 @@ function learnJavaScript() {
 2. `array`
 3. `callback`
 
-配列の各要素に対して指定された関数を呼び出した結果で🏗️新しい配列を作成するメソッド：
+配列の各要素に対して指定された関数を呼び出した結果で新しい配列を作成するメソッド：
 
 1. `map`
 2. `filter`
@@ -418,7 +418,7 @@ function learnJavaScript() {
 2. `index`
 3. `thisArg`
 
-合格した関数で指定されたテストに合格したすべての要素を含む新しい配列を🏗️作成するメソッド：
+合格した関数で指定されたテストに合格したすべての要素を含む新しい配列を作成するメソッド：
 
 1. `map`
 2. `filter`
@@ -451,7 +451,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/AlisaNasibullina"><img src="https://avatars3.githubusercontent.com/u/74646904?s=460&v=4" width="200px;" alt=""/><br /><sub><b>AlisaNasibullina</b></sub></a><br /><a href="#mentoring-KoDim-React" title="Mentoring">📖</a></td>
+    <td align="center"><a href="https://github.com/AlisaNasibullina"><img src="https://avatars3.githubusercontent.com/u/74646904?s=460&v=4" width="200px;" alt=""/><br /><sub><b>AlisaNasibullina</b></sub></a><br /><a href="#mentoring-KoDim-React" title="Mentoring">  </a></td>
     <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /><a href="#financial-gHashTag" title="Financial">💵</a></td>
     <td align="center"><a href="https://github.com/Resoner2005"><img src="https://avatars1.githubusercontent.com/u/75675814?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Resoner2005</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/issues?q=author%3AResoner2005" title="Bug reports">🐛 🎨 🖋</a></td>
     <td align="center"><a href="https://github.com/Navernoss"><img src="https://avatars0.githubusercontent.com/u/75784137?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Navernoss</b></sub></a><br /><a href="#content-Navernoss" title="Content">🖋 🐛 🎨 </a></td>

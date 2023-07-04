@@ -29,7 +29,7 @@ function learnJavaScript() {
 }
 ```
 
-屬性 `title`,`group` 和 `quantity` 重複對象的結構 `fruit` 並將它們的值複製到相同的變量中 `{...}`. 因此，如果在中交換變量 the `{...}`, 那麼代碼也將正常工作，請嘗試在上面的示例中交換變量 🔔
+屬性 `title`,`group` 和 `quantity` 重複對象的結構 `fruit` 並將它們的值複製到相同的變量中 `{...}`. 因此，如果在中交換變量 the `{...}`, 那麼代碼也將正常工作，請嘗試在上面的示例中交換變量 
 
 ### 嵌套對象
 
@@ -77,7 +77,7 @@ function learnJavaScript() {
 
 ### 默認值
 
-如果在 `{...}` 您編寫一個找不到的屬性變量 then，然後為其分配值 `undefined`. 要將默認值分配給變量 🔔，可以為其分配值。 如果嘗試將值賦給已找到其屬性的變量,，則將為其分配屬性值。 讓我們來看一個例子。
+如果在 `{...}` 您編寫一個找不到的屬性變量 then，然後為其分配值 `undefined`. 要將默認值分配給變量 ，可以為其分配值。 如果嘗試將值賦給已找到其屬性的變量,，則將為其分配屬性值。 讓我們來看一個例子。
 
 ![Dafault](https://media.giphy.com/media/3oEduLzte7jSNmq4z6/giphy.gif)
 
@@ -92,13 +92,13 @@ function learnJavaScript() {
 }
 ```
 
-`title` 包含屬性值，而不是我們為其分配的值。 這 `group` 該屬性不存在 `fruit` 對象，並且我們尚未為變量分配任何值 🔔 物業 `quantity` 也不存在，但我們分配了值 `5` 到變量 🔔.
+`title` 包含屬性值，而不是我們為其分配的值。 這 `group` 該屬性不存在 `fruit` 對象，並且我們尚未為變量分配任何值  物業 `quantity` 也不存在，但我們分配了值 `5` 到變量 .
 
 ### 餘
 
 ![octatok](https://media.giphy.com/media/hvddF1vHatFIgQspUB/giphy.gif)
 
-如果需要從一個對像中獲取一個變量 🔔，並將其餘變量分組到另一個對像中，請使用 `...` 在變量之前，將從中創建具有其餘屬性的對象。
+如果需要從一個對像中獲取一個變量 ，並將其餘變量分組到另一個對像中，請使用 `...` 在變量之前，將從中創建具有其餘屬性的對象。
 
 ```jsx live
 function learnJavaScript() {
@@ -115,7 +115,7 @@ function learnJavaScript() {
 
 ## 解構數組
 
-數組的解構與對象的解構相同。 唯一的區別是，數組元素的值將按照元素定義的順序分配給變量 🔔。
+數組的解構與對象的解構相同。 唯一的區別是，數組元素的值將按照元素定義的順序分配給變量 。
 
 ![Take](https://media.giphy.com/media/IuBlckSD7dQv6/giphy.gif)
 
@@ -222,7 +222,7 @@ Write to [Discord](https://discord.gg/6GDAfXn) chat.
 
 <table>
   <tr> 
-    <td align="center"><a href="https://github.com/IIo3iTiv"><img src="https://avatars1.githubusercontent.com/u/72025062?v=4?s=200" width="200px;" alt=""/><br /><sub><b>IIo3iTiv</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/commits?author=IIo3iTiv" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/IIo3iTiv"><img src="https://avatars1.githubusercontent.com/u/72025062?v=4?s=200" width="200px;" alt=""/><br /><sub><b>IIo3iTiv</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/commits?author=IIo3iTiv" title="Documentation">  </a></td>
     <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /><a href="#financial-gHashTag" title="Financial">💵</a></td>
     <td align="center"><a href="https://github.com/Resoner2005"><img src="https://avatars1.githubusercontent.com/u/75675814?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Resoner2005</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/issues?q=author%3AResoner2005" title="Bug reports">🐛 🎨 🖋</a></td>
     <td align="center"><a href="https://github.com/Navernoss"><img src="https://avatars0.githubusercontent.com/u/75784137?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Navernoss</b></sub></a><br /><a href="#content-Navernoss" title="Content">🖋 🐛 🎨 </a></td>

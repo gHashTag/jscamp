@@ -6,7 +6,7 @@ sidebar_label: Fetch API
 
 ![@serverSerrverlesskiy](/img/javascript/headers/28.jpg)
 
-The ** Fetch API ** allows JavaScript to communicate with the server using HTTP requests and is a better replacement for the XMLHttpRequest class. Queries are executed by the `fetch()` method, which returns🔄 [Promise](https://react-native-village.github.io/docs/javascript24).
+The ** Fetch API ** allows JavaScript to communicate with the server using HTTP requests and is a better replacement for the XMLHttpRequest class. Queries are executed by the `fetch()` method, which returns [Promise](https://react-native-village.github.io/docs/javascript24).
 
 ![Exchange](https://media.giphy.com/media/OPQiZUC381IJ8Sh7UY/giphy.gif)
 
@@ -53,10 +53,10 @@ fetch('https://jsonplaceholder.typicode.com/users', {
 
 ![Bascketball](https://media.giphy.com/media/l0MYwdebx8o0XI56E/giphy.gif)
 
-The `fetch()` method returns🔄 [Promise](https://react-native-village.github.io/docs/javascript24) an object of the `Response` class, which has the following properties:
+The `fetch()` method returns [Promise](https://react-native-village.github.io/docs/javascript24) an object of the `Response` class, which has the following properties:
 
 1. `status` - response code;
-2. `statusText` - text message 📜 corresponding to the response code;
+2. `statusText` - text message  corresponding to the response code;
 3. `ok` - a boolean value indicating the success of the response code (true: 200-299);
 4. `headers` - an object with response headers, in which the key is the name of the header, and the key value is the value of the header corresponding to the key;
 5. `url` - the URL to which the request was sent;
@@ -91,7 +91,7 @@ fetch('https://jsonplaceholder.typicode.com/users')
 
 ![Error](https://media.giphy.com/media/DHBGehJ3FSZEygszX3/giphy.gif)
 
-We can find out whether `fetch()` has completed with an error🙅‍♂️ using the "status" and "ok" properties.
+We can find out whether `fetch()` has completed with an error using the "status" and "ok" properties.
 
 ```jsx
 fetch('https://jsonplaceholder.typicode.com/users')
@@ -191,7 +191,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <table>
   <tr> 
-    <td align="center"><a href="https://github.com/IIo3iTiv"><img src="https://avatars1.githubusercontent.com/u/72025062?v=4?s=200" width="200px;" alt=""/><br /><sub><b>IIo3iTiv</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/commits?author=IIo3iTiv" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/IIo3iTiv"><img src="https://avatars1.githubusercontent.com/u/72025062?v=4?s=200" width="200px;" alt=""/><br /><sub><b>IIo3iTiv</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/commits?author=IIo3iTiv" title="Documentation">  </a></td>
     <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /><a href="#financial-gHashTag" title="Financial">💵</a></td>
     <td align="center"><a href="https://github.com/Resoner2005"><img src="https://avatars1.githubusercontent.com/u/75675814?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Resoner2005</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/issues?q=author%3AResoner2005" title="Bug reports">🐛 🎨 🖋</a></td>
     <td align="center"><a href="https://github.com/Navernoss"><img src="https://avatars0.githubusercontent.com/u/75784137?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Navernoss</b></sub></a><br /><a href="#content-Navernoss" title="Content">🖋 🐛 🎨 </a></td>

@@ -67,7 +67,7 @@ export default App
 2. Flatlist
 3. ScrollView
 
-## Done ✅
+## Done 
 
 
 ## Ссылки:

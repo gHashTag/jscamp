@@ -10,11 +10,11 @@ import YouTube from 'react-youtube'
 
 ## الكتابة الديناميكية
 
-JavaScript هي لغة مكتوبة بشكل فضفاض أو ديناميكي. هذا يعني أنك لست بحاجة إلى تحديد نوع المتغير🔔 مقدما.
+JavaScript هي لغة مكتوبة بشكل فضفاض أو ديناميكي. هذا يعني أنك لست بحاجة إلى تحديد نوع المتغير مقدما.
 
 ![Dinamics](https://media.giphy.com/media/26uf759LlDftqZNVm/giphy.gif)
 
-سيتم تحديد النوع تلقائيًا أثناء تنفيذ البرنامج. هذا يعني أيضًا أنه يمكنك استخدام متغير واحد 🔔 للتخزين 📦 أنواع مختلفة من البيانات👇:
+سيتم تحديد النوع تلقائيًا أثناء تنفيذ البرنامج. هذا يعني أيضًا أنه يمكنك استخدام متغير واحد  للتخزين  أنواع مختلفة من البيانات:
 
 ```jsx live
 function learnJavaScript() {
@@ -112,15 +112,15 @@ let nine = Symbol() // symbol
 
 ## نوع البيانات المنطقية
 
-النوع المنطقي `boolean` يمثل كيانًا منطقيًا وله قيمتان 2️⃣: `true` ✅
+النوع المنطقي `boolean` يمثل كيانًا منطقيًا وله قيمتان 2️⃣: `true` 
 
 ![true](https://media.giphy.com/media/ap6wcjRyi8HoA/giphy.gif)
 
-and `false` ❎
+and `false` 
 
 ![False](https://media.giphy.com/media/HNOVuT5AvCK1fgvp1m/giphy.gif)
 
-يستخدم هذا النوع عادةً لتخزين قيم 📦 نعم / لا: صحيح يعني "نعم ، صحيح" وخطأ ❎ يعني "لا ، خطأ".
+يستخدم هذا النوع عادةً لتخزين قيم  نعم / لا: صحيح يعني "نعم ، صحيح" وخطأ  يعني "لا ، خطأ".
 
 ##لا شيء
 
@@ -132,7 +132,7 @@ and `false` ❎
 
 ![Unndefined](https://media.giphy.com/media/PkKzNQjwPy7GvxZbfe/giphy.gif)
 
-المتغير 🔔 الذي لم يتم تعيين قيمة له سيكون له القيمة `undefined`.
+المتغير  الذي لم يتم تعيين قيمة له سيكون له القيمة `undefined`.
 
 ### الاختلافات بين null و undefined
 
@@ -146,7 +146,7 @@ console.log(TestVar) // undefined
 console.log(typeof TestVar) // undefined
 ```
 
-`null` هي قيمة الإسناد. يمكن إسنادها إلى متغير 🔔 كتمثيل بدون قيمة:
+`null` هي قيمة الإسناد. يمكن إسنادها إلى متغير  كتمثيل بدون قيمة:
 ```javascript
 let TestVar = null
 console.log(TestVar) // null
@@ -228,7 +228,7 @@ Tنوع "الرمز" هو قيمة بدائية فريدة وغير قابلة �
 
 <table>
   <tr>
-    <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /> <a href="https://github.com/gHashTag/react-native-village/commits?author=gHashTag" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /> <a href="https://github.com/gHashTag/react-native-village/commits?author=gHashTag" title="Documentation">  </a></td>
     <td align="center"><a href="https://github.com/Resoner2005"><img src="https://avatars1.githubusercontent.com/u/75675814?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Resoner2005</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/issues?q=author%3AResoner2005" title="Bug reports">🐛 🎨 🖋</a></td>
   </tr>
   

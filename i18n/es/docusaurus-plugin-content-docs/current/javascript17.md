@@ -8,11 +8,11 @@ import YouTube from 'react-youtube'
 
 ![@serverSerrverlesskiy](/img/javascript/headers/18.jpg)
 
-Para almacenar 📦 colecciones ordenadas, existe una estructura de datos especial llamada `Array`.
+Para almacenar  colecciones ordenadas, existe una estructura de datos especial llamada `Array`.
 
 ![Storage](https://media.giphy.com/media/3orif6FORJ98Z11xzq/giphy.gif)
 
-`Array` - una colección ordenada de datos, que contiene los elementos 1, 2, 3, etc. Por ejemplo, lo necesitamos para almacenar una 📦 lista de algo: usuarios, productos, elementos del sitio, etc.
+`Array` - una colección ordenada de datos, que contiene los elementos 1, 2, 3, etc. Por ejemplo, lo necesitamos para almacenar una  lista de algo: usuarios, productos, elementos del sitio, etc.
 
 ## Video
 
@@ -22,7 +22,7 @@ Para almacenar 📦 colecciones ordenadas, existe una estructura de datos especi
 
 ![create](https://media.giphy.com/media/3oEduXdm2gjnrsJBOo/giphy.gif)
 
-Hay dos 2️⃣ opciones para crear una matriz vacía🏗️:
+Hay dos 2️⃣ opciones para crear una matriz vacía:
 
 ```javascript
 let arr = new Array(5)
@@ -30,7 +30,7 @@ let arr = new Array(5)
 let arr = []
 ```
 
-Casi siempre se usa la segunda variante de la sintaxis 2️⃣📖. Entre paréntesis, podemos especificar los valores iniciales de los elementos:
+Casi siempre se usa la segunda variante de la sintaxis 2️⃣  . Entre paréntesis, podemos especificar los valores iniciales de los elementos:
 
 ```jsx live
 function learnJavaScript() {
@@ -42,7 +42,7 @@ function learnJavaScript() {
 
 Los elementos de la matriz se numeran a partir de cero 0️⃣.
 
-Podemos obtener un elemento dando su número entre corchetes 👇:
+Podemos obtener un elemento dando su número entre corchetes :
 
 ```jsx live
 function learnJavaScript() {
@@ -52,13 +52,13 @@ function learnJavaScript() {
 }
 ```
 
-Podemos reemplazar el elemento 🖊️:
+Podemos reemplazar el elemento :
 
 ```javascript
 fruits[2] = 'Pera' // ahora ["Manzana", "Naranja", "Pera"]
 ```
 
-…O agregue un nuevo 🆕 a una matriz existente 👇:
+…O agregue un nuevo    a una matriz existente :
 
 ```jsx live
 function learnJavaScript() {
@@ -86,7 +86,7 @@ La propiedad `longitud` se actualiza automáticamente cuando cambia la matriz. P
 
 ![Update](https://media.giphy.com/media/FP47IFqWyXfdKYU6VG/giphy.gif)
 
-Por ejemplo, el único elemento real que tiene un índice grande le da la mayor longitud posible a la matriz 👇:
+Por ejemplo, el único elemento real que tiene un índice grande le da la mayor longitud posible a la matriz :
 
 ```jsx live
 function learnJavaScript() {
@@ -101,7 +101,7 @@ Tenga en cuenta que normalmente no usamos matrices de esta manera.
 
 Otro hecho interesante sobre la propiedad `length` es que se puede sobrescribir.
 
-Si lo aumentamos manualmente ➕, no pasará nada interesante. Por otro lado, si lo reducimos➖, la matriz se hará más corta. Este proceso es irreversible, como podemos entender del ejemplo 👇:
+Si lo aumentamos manualmente ➕, no pasará nada interesante. Por otro lado, si lo reducimos➖, la matriz se hará más corta. Este proceso es irreversible, como podemos entender del ejemplo :
 
 ```jsx live
 function learnJavaScript() {
@@ -123,9 +123,9 @@ Entonces, la forma más fácil de borrar una matriz es `arr.length = 0`.
 
 ![Storage](https://media.giphy.com/media/2sYaePC3iVWYBNxaVj/giphy.gif)
 
-Una matriz puede almacenar 📦 elementos de cualquier tipo: número, valor booleano, cadenas, objetos o funciones completas⚙️:
+Una matriz puede almacenar  elementos de cualquier tipo: número, valor booleano, cadenas, objetos o funciones completas⚙️:
 
-Por ejemplo 👇:
+Por ejemplo :
 
 ```jsx live
 function learnJavaScript() {
@@ -148,7 +148,7 @@ function learnJavaScript() {
 }
 ```
 
-Tenga en cuenta que `result1 = arr[3]` contiene el texto 📜 de la función⚙️, y `result2 = arr[3]()` es el resultado de la función ejecutada⚙️ - `()` lo ejecutamos.
+Tenga en cuenta que `result1 = arr[3]` contiene el texto  de la función⚙️, y `result2 = arr[3]()` es el resultado de la función ejecutada⚙️ - `()` lo ejecutamos.
 
 ## Métodos `push/pop`
 
@@ -166,7 +166,7 @@ Por lo tanto, siempre se agregan o eliminan nuevos elementos del "final".
 
 Un ejemplo de una pila suele ser una pirámide: los anillos nuevos se colocan en la parte superior y también se toman desde arriba.
 
-`Queue` es uno de los usos más comunes para una matriz. En informática🖥️, este es el nombre de una colección ordenada de elementos
+`Queue` es uno de los usos más comunes para una matriz. En informática    ️, este es el nombre de una colección ordenada de elementos
 
 ## Métodos para trabajar con el final de una matriz:
 
@@ -174,7 +174,7 @@ Un ejemplo de una pila suele ser una pirámide: los anillos nuevos se colocan en
 
 ![Add to](https://media.giphy.com/media/21ODeWspDCgZNAoCIp/giphy.gif)
 
-Agrega ➕ un elemento al final de la matriz 👇:
+Agrega ➕ un elemento al final de la matriz :
 
 ```jsx live
 function learnJavaScript() {
@@ -190,7 +190,7 @@ function learnJavaScript() {
 
 ![Delete](https://media.giphy.com/media/26ybwwiZmci3DJdYs/giphy.gif)
 
-Elimina ➖ el último elemento de una matriz y lo devuelve 👇:
+Elimina ➖ el último elemento de una matriz y lo devuelve :
 
 ```jsx live
 function learnJavaScript() {
@@ -208,7 +208,7 @@ function learnJavaScript() {
 
 ### shift
 
-Elimina el primer ➖ de la matriz y lo devuelve 🔄:
+Elimina el primer ➖ de la matriz y lo devuelve :
 
 ![delete](https://media.giphy.com/media/4Z1XJumqDgvI9b1VZJ/giphy.gif)
 
@@ -236,7 +236,7 @@ function learnJavaScript() {
 }
 ```
 
-Los métodos `push` y `unshift` pueden agregar ➕ varios elementos a la vez 👇:
+Los métodos `push` y `unshift` pueden agregar ➕ varios elementos a la vez :
 
 ```jsx live
 function learnJavaScript() {
@@ -253,13 +253,13 @@ function learnJavaScript() {
 
 ![cupboard](https://media.giphy.com/media/b90TnygrKqYqk/giphy.gif)
 
-Una matriz es un subconjunto especial de objetos. Los corchetes que se usan para acceder a la propiedad `arr[0]` son básicamente la sintaxis normal📖 del acceso de clave, como `obj[key]`, donde tenemos `arr` como `obj` y como clave: un índice numérico .
+Una matriz es un subconjunto especial de objetos. Los corchetes que se usan para acceder a la propiedad `arr[0]` son básicamente la sintaxis normal   del acceso de clave, como `obj[key]`, donde tenemos `arr` como `obj` y como clave: un índice numérico .
 
 Las matrices amplían los objetos, ya que proporcionan métodos especiales para trabajar con colecciones ordenadas de datos, así como una propiedad `length`, pero el objeto sigue estando en el centro.
 
 Tenga en cuenta que en JavaScript una matriz es un objeto y, por lo tanto, se comporta como un objeto.
 
-Por ejemplo, una matriz se copia por referencia 👇:
+Por ejemplo, una matriz se copia por referencia :
 
 ```jsx live
 function learnJavaScript() {
@@ -341,7 +341,7 @@ El método `push` funciona de manera similar.
 
 ![Object](https://media.giphy.com/media/26gs9kSN6d5PxSsQU/giphy.gif)
 
-Una de las formas más antiguas de iterar sobre los elementos de una matriz es el bucle `for()` sobre índices numéricos 👇:
+Una de las formas más antiguas de iterar sobre los elementos de una matriz es el bucle `for()` sobre índices numéricos :
 
 ```jsx live
 // prettier-ignore
@@ -356,7 +356,7 @@ function learnJavaScript() {
 }
 ```
 
-Pero para matrices, también es posible otra versión del ciclo, `for..of` 👇 :
+Pero para matrices, también es posible otra versión del ciclo, `for..of`  :
 
 ```jsx live
 function learnJavaScript() {
@@ -379,7 +379,7 @@ El bucle `for..of` no proporciona acceso al número del elemento actual, solo a 
 
 В браузере и других программных средах также существуют так называемые "псевдомассивы" – объекты, которые выглядят, как массив. То есть, у них есть свойство `length` и индексы, но они также могут иметь дополнительные нечисловые свойства и методы, которые нам обычно не нужны. Тем не менее, цикл `for..in` выведет и их. Поэтому, если нам приходится иметь дело с объектами, похожими на массив, такие "лишние" свойства могут стать проблемой.
 
-Технически, так как массив является объектом, можно использовать и вариант `for..in` для правильного массива 👇 :
+Технически, так как массив является объектом, можно использовать и вариант `for..in` для правильного массива  :
 
 ```jsx live
 function learnJavaScript() {
@@ -404,7 +404,7 @@ function learnJavaScript() {
 
 ![Matryoschka](https://media.giphy.com/media/XuPaGVKyJ6eyI/giphy.gif)
 
-Los arreglos pueden contener elementos que también son arreglos. Esto se puede usar para crear 🏗️ matrices multidimensionales, por ejemplo, para almacenar 📦 matrices:
+Los arreglos pueden contener elementos que también son arreglos. Esto se puede usar para crear  matrices multidimensionales, por ejemplo, para almacenar  matrices:
 
 ```jsx live
 function learnJavaScript() {
@@ -424,7 +424,7 @@ function learnJavaScript() {
 
 Una matriz es un tipo especial de objeto diseñado para trabajar con un conjunto ordenado de elementos.
 
-Anuncio🗣️:
+Anuncio:
 
 ```javascript
 // corchetes (normalmente)
@@ -434,7 +434,7 @@ let arr = [item1, item2...]
 let arr = new Array(item1, item2...)
 ```
 
-Llamar a `nueva matriz (número)` crea🏗️ una matriz con la longitud dada pero sin elementos.
+Llamar a `nueva matriz (número)` crea una matriz con la longitud dada pero sin elementos.
 
 La propiedad `longitud` refleja la longitud de la matriz.
 
@@ -448,7 +448,7 @@ Podemos usar una matriz como un deque usando las siguientes operaciones:
 Para iterar sobre los elementos de una matriz:
 
 - `for (let i=0 i<arr.length i++)` - funciona más rápido, compatible con navegadores más antiguos.
-- `for (let item of arr)` - sintaxis moderna📖 solo para valores de elementos (sin acceso a índices).
+- `for (let item of arr)` - sintaxis moderna   solo para valores de elementos (sin acceso a índices).
 - `for (let i in arr)` - ¡nunca lo use para arreglos!
 
 ## React Native
@@ -571,7 +571,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/KoDim-React"><img src="https://avatars1.githubusercontent.com/u/72087863?v=4?s=200" width="200px " alt=""/><br /><sub><b>Dmitriy K.</b></sub></a><br /><a href="#mentoring-KoDim-React" title="Mentoring">📖</a></td>
+    <td align="center"><a href="https://github.com/KoDim-React"><img src="https://avatars1.githubusercontent.com/u/72087863?v=4?s=200" width="200px " alt=""/><br /><sub><b>Dmitriy K.</b></sub></a><br /><a href="#mentoring-KoDim-React" title="Mentoring">  </a></td>
     <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px " alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /><a href="#financial-gHashTag" title="Financial">💵</a></td>
     <td align="center"><a href="https://github.com/Resoner2005"><img src="https://avatars1.githubusercontent.com/u/75675814?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Resoner2005</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/issues?q=author%3AResoner2005" title="Bug reports">🐛 🎨 🖋</a></td>
     <td align="center"><a href="https://github.com/Navernoss"><img src="https://avatars0.githubusercontent.com/u/75784137?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Navernoss</b></sub></a><br /><a href="#content-Navernoss" title="Content">🖋 🐛 🎨 </a></td>

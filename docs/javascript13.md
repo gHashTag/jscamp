@@ -31,7 +31,7 @@ function learnJavaScript() {
 
 ![basketball](https://media.giphy.com/media/3oEdv5e5Zd2gsczAhG/giphy.gif)
 
-If any value other than `undefined` is passed to the formal parameter during the call, including one of the" false "values such as false ❎,` 0`, `" "`, `''`, `null`,`NaN`, then in this case the default value will not be assigned to the parameter. In this case, you need to write the code yourself that will catch these "false values".
+If any value other than `undefined` is passed to the formal parameter during the call, including one of the" false "values such as false ,` 0`, `" "`, `''`, `null`,`NaN`, then in this case the default value will not be assigned to the parameter. In this case, you need to write the code yourself that will catch these "false values".
 
 ## Examples of
 
@@ -49,7 +49,7 @@ function learnJavaScript() {
 }
 ```
 
-An example of a function with and without default parameters 👇:
+An example of a function with and without default parameters :
 
 ```jsx live
 function learnJavaScript() {
@@ -75,7 +75,7 @@ function learnJavaScript() {
 }
 ```
 
-The result will be the same, but without default parameters, the code📟 can become noticeably larger.
+The result will be the same, but without default parameters, the code can become noticeably larger.
 
  [![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)
 
@@ -122,7 +122,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/FELiX-RN"><img src="https://avatars0.githubusercontent.com/u/72006627?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Philipp Dvinyaninov</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/commits?author=FELiX-RN" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/FELiX-RN"><img src="https://avatars0.githubusercontent.com/u/72006627?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Philipp Dvinyaninov</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/commits?author=FELiX-RN" title="Documentation">  </a></td>
     <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /><a href="#financial-gHashTag" title="Financial">💵</a></td>
     <td align="center"><a href="https://github.com/Resoner2005"><img src="https://avatars1.githubusercontent.com/u/75675814?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Resoner2005</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/issues?q=author%3AResoner2005" title="Bug reports">🐛 🎨 🖋</a></td>
     <td align="center"><a href="https://github.com/Navernoss"><img src="https://avatars0.githubusercontent.com/u/75784137?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Navernoss</b></sub></a><br /><a href="#content-Navernoss" title="Content">🖋 🐛 🎨 </a></td>

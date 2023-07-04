@@ -10,12 +10,12 @@ import YouTube from 'react-youtube'
 
 ## 有什麼評論？
 
-JavaScript 有幾種方法可以在代碼中指定註釋 📟
+JavaScript 有幾種方法可以在代碼中指定註釋 
 
 有時，在編寫代碼時，您將需要提供僅適用於人類的解釋，而不適用於計算機。 也許這將是過去（給我未來）給自己的某種信息，關於程序代碼中的這一點或那件事。 也許這只是表明您只需要運行代碼的這一部分，其餘部分應省略。 簡而言之，在任何情況下，您都需要藉助註釋的幫助。
-註釋 🗣️ 用於添加➕提示，註釋 🔖 建議或警告。 它們可以使代碼更易於閱讀和理解。 它們還可以用於阻止執行代碼（這是調試代碼時的常見做法）。
+註釋  用於添加➕提示，註釋  建議或警告。 它們可以使代碼更易於閱讀和理解。 它們還可以用於阻止執行代碼（這是調試代碼時的常見做法）。
 
-JavaScript有幾種方法可以在代碼中指定註釋 🗣️
+JavaScript有幾種方法可以在代碼中指定註釋 
 
 <!-- ## Video
 
@@ -25,7 +25,7 @@ JavaScript有幾種方法可以在代碼中指定註釋 🗣️
 
 ![Slash](https://media.giphy.com/media/bKXMS0NjXoyaY/giphy.gif)
 
-第一種 1️⃣ 方式是`// comment`🗣️，在這種情況下，雙斜杠之後的所有文本will都是註釋comment️。 當解釋器看到連續兩個斜杠“ //”時，它立即知道可以安全地忽略行尾的所有內容。 現在，忽略代碼的語法，稍後我們將詳細了解它 📖  📜
+第一種 1️⃣ 方式是`// comment`，在這種情況下，雙斜杠之後的所有文本will都是註釋comment️。 當解釋器看到連續兩個斜杠“ //”時，它立即知道可以安全地忽略行尾的所有內容。 現在，忽略代碼的語法，稍後我們將詳細了解它     
 
 ```jsx live
 function learnJavaScript() {
@@ -41,7 +41,7 @@ function learnJavaScript() {
 ![Coments](https://media.giphy.com/media/UevalSWg5twQeqpc8Q/giphy.gif)
 
 第二種 2️⃣ 方法是`/ * * /`，它比第一種 1️⃣ 方法更靈活。 解釋器一看到`/ *`，就會想：“是的，所以直到我看到`* /`，我什麼都不能注意！”
-例如，您可以在一條 1️⃣ 行中使用它 👇:
+例如，您可以在一條 1️⃣ 行中使用它 :
 
 ```jsx live
 function learnJavaScript() {
@@ -52,7 +52,7 @@ function learnJavaScript() {
 }
 ```
 
-或者，您可以進行多行評論 🗣️，如下所示 👇:
+或者，您可以進行多行評論 ，如下所示 :
 
 ```jsx live
 function learnJavaScript() {
@@ -68,7 +68,7 @@ function learnJavaScript() {
 
 ![Among](https://media.giphy.com/media/fnjIiBNo38IHS/giphy.gif)
 
-另外，如果您願意，可以在一行代碼的中間使用此註釋 🗣️。 儘管這可能會損害代碼的可讀性👇:
+另外，如果您願意，可以在一行代碼的中間使用此註釋 。 儘管這可能會損害代碼的可讀性:
 
 ```jsx live
 function learnJavaScript() {
@@ -133,7 +133,7 @@ function learnJavaScript() {
 
 <table>
   <tr>
-    <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /> <a href="https://github.com/gHashTag/react-native-village/commits?author=gHashTag" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /> <a href="https://github.com/gHashTag/react-native-village/commits?author=gHashTag" title="Documentation">  </a></td>
     <td align="center"><a href="https://github.com/Resoner2005"><img src="https://avatars1.githubusercontent.com/u/75675814?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Resoner2005</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/issues?q=author%3AResoner2005" title="Bug reports">🐛 🎨 🖋</a></td>
   </tr>
   

@@ -6,7 +6,7 @@ sidebar_label: Block Scope
 
 ![@serverSerrverlesskiy](/img/javascript/headers/12.jpg)
 
-Scope is a part of a program within which a variable is available for use. When creating🏗️ `.js` file, we create🏗️ the scope of the whole file to create🏗️ the internal scope , you must declare it with curly braces `{...}`.
+Scope is a part of a program within which a variable is available for use. When creating `.js` file, we create the scope of the whole file to create the internal scope , you must declare it with curly braces `{...}`.
 
 ![file](https://media.giphy.com/media/3o6Ztk7NosfLVRqcpy/giphy.gif)
 
@@ -23,7 +23,7 @@ let fruit = 'Banana'
 }
 ```
 
-In this example, we have created🏗️ three variables in different scopes, which have their own version of the `fruit` variable, so no errors🙅‍♂️ occur, but if you try to create🏗️ two variables with the same name in the same scope, an error will occur🙅 ‍♂️.
+In this example, we have created three variables in different scopes, which have their own version of the `fruit` variable, so no errors occur, but if you try to create two variables with the same name in the same scope, an error will occur🙅 ‍♂️.
 
 ```jsx
 // First scope
@@ -35,7 +35,7 @@ let fruit = 'Banana'
 }
 ```
 
-When creating🏗️ various constructs, you also create a scope for that construct, since you use a block of curly braces `{...}`.
+When creating various constructs, you also create a scope for that construct, since you use a block of curly braces `{...}`.
 
 ```jsx
 if (true) {
@@ -64,7 +64,7 @@ When we say global scope, we mean that all other scopes are children of this one
 let fruit = 'Banana'
 ```
 
-A variable 🔔 created in the global scope is called a `global variable` 🔔. The global variable 🔔 can be used in all child scopes.
+A variable  created in the global scope is called a `global variable` . The global variable  can be used in all child scopes.
 
 ```jsx live
 function learnJavaScript() {
@@ -82,7 +82,7 @@ function learnJavaScript() {
 
 ![Local](https://media.giphy.com/media/VFwRCi6WKBUk08fliV/giphy.gif)
 
-The local scope contains variables that are declared🗣️ in a specific part of the code📟. For example, variables created inside a loop will be local.
+The local scope contains variables that are declared in a specific part of the code. For example, variables created inside a loop will be local.
 
 ```jsx
 for (let i = 0; i > 5; i++) {
@@ -90,7 +90,7 @@ for (let i = 0; i > 5; i++) {
 }
 ```
 
-Local variables 🔔 can only be used within the block in which they were declared.
+Local variables  can only be used within the block in which they were declared.
 
 ```jsx
 function learnJavaScript() {
@@ -109,7 +109,7 @@ function learnJavaScript() {
 
 ![Math](https://media.giphy.com/media/xT1Ra5h24Eliux3UVq/giphy.gif)
 
-We use two variables 🔔 with the same name in different scopes. The `otherFruit()` function returns a 🔔 `fruit` variable from the scope in which it is initialized as` Lime`
+We use two variables  with the same name in different scopes. The `otherFruit()` function returns a  `fruit` variable from the scope in which it is initialized as` Lime`
 
 ```jsx live
 function learnJavaScript() {
@@ -122,7 +122,7 @@ function learnJavaScript() {
 }
 ```
 
-If we remove `let` from the`otherFruit()`function, then instead of creating a variable 🔔 we overwrite it 🖊️.
+If we remove `let` from the`otherFruit()`function, then instead of creating a variable  we overwrite it .
 
 ```jsx live
 function learnJavaScript() {
@@ -135,7 +135,7 @@ function learnJavaScript() {
 }
 ```
 
-What if we try to call a local variable 🔔 in the parent scope? An error occurs due to the fact that we are trying in the global scope to call a variable 🔔, which we did not create.
+What if we try to call a local variable  in the parent scope? An error occurs due to the fact that we are trying in the global scope to call a variable , which we did not create.
 
 ```javascript
 function learnJavaScript() {
@@ -157,7 +157,7 @@ function learnJavaScript() {
 
 In the article [Change](https://jscamp.app/docs/javascript03) we told you that we will not use `var`, this is related to the scope.
 
-1. If in the same scope you create two variables 🔔 with the same name using the keyword `let` or `const`, the interpreter warns us about this by displaying an error.
+1. If in the same scope you create two variables  with the same name using the keyword `let` or `const`, the interpreter warns us about this by displaying an error.
 
 ```jsx
 function learnJavaScript() {
@@ -178,9 +178,9 @@ function learnJavaScript() {
 }
 ```
 
-Error🙅‍♂️ does not occur, because `var` has overwritten the variable` fruit`
+Error does not occur, because `var` has overwritten the variable` fruit`
 
-2. Having created a global variable 🔔 with `var`, we can change it from the local scope by creating another variable 🔔 with the same name with `var`. The scope of `var` is limited to either a function or a script.
+2. Having created a global variable  with `var`, we can change it from the local scope by creating another variable  with the same name with `var`. The scope of `var` is limited to either a function or a script.
 
 ```jsx live
 function learnJavaScript() {
@@ -192,7 +192,7 @@ function learnJavaScript() {
 }
 ```
 
-3. Variables 🔔 created with `var` are considered declared from the very beginning of script execution, regardless of where the declaration is located.
+3. Variables  created with `var` are considered declared from the very beginning of script execution, regardless of where the declaration is located.
 
 ```jsx live
 function learnJavaScript() {
@@ -271,7 +271,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr> 
-    <td align="center"><a href="https://github.com/IIo3iTiv"><img src="https://avatars1.githubusercontent.com/u/72025062?v=4?s=200" width="200px;" alt=""/><br /><sub><b>IIo3iTiv</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/commits?author=IIo3iTiv" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/IIo3iTiv"><img src="https://avatars1.githubusercontent.com/u/72025062?v=4?s=200" width="200px;" alt=""/><br /><sub><b>IIo3iTiv</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/commits?author=IIo3iTiv" title="Documentation">  </a></td>
     <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /><a href="#financial-gHashTag" title="Financial">💵</a></td>
     <td align="center"><a href="https://github.com/Resoner2005"><img src="https://avatars1.githubusercontent.com/u/75675814?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Resoner2005</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/issues?q=author%3AResoner2005" title="Bug reports">🐛 🎨 🖋</a></td>
     <td align="center"><a href="https://github.com/Navernoss"><img src="https://avatars0.githubusercontent.com/u/75784137?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Navernoss</b></sub></a><br /><a href="#content-Navernoss" title="Content">🖋 🐛 🎨 </a></td>

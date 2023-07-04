@@ -8,7 +8,7 @@ import YouTube from 'react-youtube'
 
 ![@serverSerrverlesskiy](/img/javascript/headers/06.jpg)
 
-に JavaScript 任意のテキスト 📜 データは文字列です。ただし、数字は文字列で書くこともできることを忘れないでください。すべてのデータ型の中で、おそらく文字列を最もよく使用します。作成するためのすべてのオプションを分析します🏗️ 改行.
+に JavaScript 任意のテキスト  データは文字列です。ただし、数字は文字列で書くこともできることを忘れないでください。すべてのデータ型の中で、おそらく文字列を最もよく使用します。作成するためのすべてのオプションを分析します 改行.
 
 ## ビデオ
 
@@ -18,7 +18,7 @@ import YouTube from 'react-youtube'
 
 ![quotation marks](https://media.giphy.com/media/7cSTvZ4hI6ABZkcTwk/giphy.gif)
 
-作成用🏗️ 文字列は「一重引用符」または「二重引用符」のいずれかを使用します.
+作成用 文字列は「一重引用符」または「二重引用符」のいずれかを使用します.
 
 ```jsx
 let single = 'Hello World'
@@ -46,7 +46,7 @@ function learnJavaScript() {
 }
 ```
 
-バックスラッシュに注意してください `\` インタプリタによる文字列の正しい読み取りにのみ役立ちますが、書き込まれません 🖊️ それを読んだ後の行に。文字列がRAMに保存されるとき、その文字列は追加されません。➕ シンボル `\`. 調査結果でこれをはっきりと見ることができます。
+バックスラッシュに注意してください `\` インタプリタによる文字列の正しい読み取りにのみ役立ちますが、書き込まれません  それを読んだ後の行に。文字列がRAMに保存されるとき、その文字列は追加されません。➕ シンボル `\`. 調査結果でこれをはっきりと見ることができます。
 
 ## バッククォート
 
@@ -54,7 +54,7 @@ function learnJavaScript() {
 
 文字列を書く際に、を使用すれば、バックスラッシュなしで行うことができます \`逆行する\` 引用符.
 
-一重引用符と二重引用符は基本的に同じように機能します。逆引用符を使用すると、任意に挿入できます。 JavaScript 一重引用符と二重引用符は基本的に同じように機能します。逆引用符を使用すると、任意に挿入できます。 `${…}` 👇 :
+一重引用符と二重引用符は基本的に同じように機能します。逆引用符を使用すると、任意に挿入できます。 JavaScript 一重引用符と二重引用符は基本的に同じように機能します。逆引用符を使用すると、任意に挿入できます。 `${…}`  :
 
 ```jsx live
 function learnJavaScript() {
@@ -76,7 +76,7 @@ function learnJavaScript() {
 }
 ```
 
-複数行の文字列も作成できます🏗️ 一重引用符と二重引用符を使用し、いわゆる「改行」文字を使用します。 `\n`. のすべての特殊文字 Java Script, バックスラッシュで開始します `\` (`LIVE EDITOR` 正しく表示されない).
+複数行の文字列も作成できます 一重引用符と二重引用符を使用し、いわゆる「改行」文字を使用します。 `\n`. のすべての特殊文字 Java Script, バックスラッシュで開始します `\` (`LIVE EDITOR` 正しく表示されない).
 
 ```jsx
 let guestList = 'Guests:\n * John\n * Pete\n * Mary'
@@ -90,7 +90,7 @@ guestList // 複数行のゲストリスト
 
 ![Tree](https://media.giphy.com/media/YxlUxrYGw2w9y/giphy.gif)
 
-の行内容 JavaScript 変えられない。真ん中の記号を取り替えることはできません。ラインが作成されたら🏗️ — 彼女は永遠にそのようです。あなたが作成することができます🏗️ 新しい行を作成し、古い行ではなく同じ変数に書き込みます。
+の行内容 JavaScript 変えられない。真ん中の記号を取り替えることはできません。ラインが作成されたら — 彼女は永遠にそのようです。あなたが作成することができます 新しい行を作成し、古い行ではなく同じ変数に書き込みます。
 
 ```jsx live
 function learnJavaScript() {
@@ -106,7 +106,7 @@ function learnJavaScript() {
 
 ![Length](https://media.giphy.com/media/Y1GK5MEiRa3OSVsxHK/giphy.gif)
 
-プロパティ `length` 戻り値🔄 コードの数📟 文字列内の値。
+プロパティ `length` 戻り値 コードの数 文字列内の値。
 
 ```jsx live
 function learnJavaScript() {
@@ -235,7 +235,7 @@ function learnJavaScript() {
 2. 特殊文字を書くには
 3. 行を終了するには
 
-エラーのある行を見つける🙅‍♂️
+エラーのある行を見つける
 
 1. let str = \`It's not complicated\`
 2. let str ="'I think so, indeed!' - cried he."
@@ -290,7 +290,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/Alena-Maitri"><img src="https://avatars1.githubusercontent.com/u/72432063?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Alena Yanbukhtina</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/commits?author=Alena-Maitri" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/Alena-Maitri"><img src="https://avatars1.githubusercontent.com/u/72432063?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Alena Yanbukhtina</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/commits?author=Alena-Maitri" title="Documentation">  </a></td>
     <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /><a href="#financial-gHashTag" title="Financial">💵</a></td>
     <td align="center"><a href="https://github.com/Resoner2005"><img src="https://avatars1.githubusercontent.com/u/75675814?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Resoner2005</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/issues?q=author%3AResoner2005" title="Bug reports">🐛 🎨 🖋</a></td>
   </tr>

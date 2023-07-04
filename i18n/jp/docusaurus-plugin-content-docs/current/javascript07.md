@@ -22,7 +22,7 @@ import YouTube from 'react-youtube'
 
 小数点以下の桁数が多い小数であっても、数値が引用されることはありません。
 
-10進数、2進数、8進数、16進数の4種類の数値リテラルを使用できます。最後の3つはめったに使用されないため、詳細な説明は省略します。🖊️ , まあ、好奇心旺盛な人はそれらを知ることができます [ここに](https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Numbers_and_dates).
+10進数、2進数、8進数、16進数の4種類の数値リテラルを使用できます。最後の3つはめったに使用されないため、詳細な説明は省略します。 , まあ、好奇心旺盛な人はそれらを知ることができます [ここに](https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Numbers_and_dates).
 
 :::caution
 先行ゼロを使用するときは注意してください！これは、10進数の前にゼロを置く必要がないことを意味します。
@@ -51,7 +51,7 @@ import YouTube from 'react-youtube'
 
 スラッシュ `/` スラッシュ: `15 / 5` 回答: `3`
 
-1行に複数のアクションが実行される場合は、それらを互いに分離し、コードを作成します📟 より読みやすくするために、-（括弧）を使用します。次の文章をコンソールに入力してみましょう。それぞれの答えは1桁だけで構成されている必要があります。9️⃣:
+1行に複数のアクションが実行される場合は、それらを互いに分離し、コードを作成します より読みやすくするために、-（括弧）を使用します。次の文章をコンソールに入力してみましょう。それぞれの答えは1桁だけで構成されている必要があります。9️⃣:
 
 ```
  3 * (2 + 1)
@@ -60,7 +60,7 @@ import YouTube from 'react-youtube'
  2 * (5 - 8 / 2) * (3 + 1)
 ```
 
-入力してください `LIVE EDITOR` 記載されている値 👇 :
+入力してください `LIVE EDITOR` 記載されている値  :
 
 ```jsx {2} live
 function learnJavaScript() {
@@ -77,15 +77,15 @@ function learnJavaScript() {
 
 オペランドは、プログラムで処理される値を表します。オペランドは、任意のデータ型にすることができます。演算子の左側のオペランドは左側のオペランドであり、演算子の右側のオペランドは右側のオペランドです。
 
-結合代入の主な演算子は次のようになります `=`, 右のオペランドの値を左のオペランドに割り当てます。つまり、 - `x = y` 変数に値を割り当てます 🔔 `y`, 変数 🔔 `x`.
+結合代入の主な演算子は次のようになります `=`, 右のオペランドの値を左のオペランドに割り当てます。つまり、 - `x = y` 変数に値を割り当てます  `y`, 変数  `x`.
 
-数学演算子を使用して変数に値を割り当てる方法を何度も見てきました🔔。たとえば、次のようになります。
+数学演算子を使用して変数に値を割り当てる方法を何度も見てきました。たとえば、次のようになります。
 
 ```javascript
 let sum = 2 + 3 // 合計の値 7
 ```
 
-そして、おそらく、既知の変数の値をいつでも変更できることを忘れる時間はありませんでした。🔔 :
+そして、おそらく、既知の変数の値をいつでも変更できることを忘れる時間はありませんでした。 :
 
 ```jsx live
 function learnJavaScript() {
@@ -153,7 +153,7 @@ function learnJavaScript() {
 
 ![function](https://media.giphy.com/media/seVVu09CPz2upPeU1s/giphy.gif)
 
-符号 `%`（パーセント）除算の余りを示します。演算子は、左のオペランドを右で除算した余りの整数を返します。戻り値🔄は、除数ではなく、常に被除数の符号を取得します。組み込み関数⚙️モジュロを使用して、除算の整数剰余である結果を取得します。 `let1` на `let2`.
+符号 `%`（パーセント）除算の余りを示します。演算子は、左のオペランドを右で除算した余りの整数を返します。戻り値は、除数ではなく、常に被除数の符号を取得します。組み込み関数⚙️モジュロを使用して、除算の整数剰余である結果を取得します。 `let1` на `let2`.
 
 `12 % 5` 結果 `2`
 
@@ -252,7 +252,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <table>
   <tr>
-    <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /> <a href="https://github.com/gHashTag/react-native-village/commits?author=gHashTag" title="Documentation">📖</a><a href="#financial-gHashTag" title="Financial">💵</a></td>
+    <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /> <a href="https://github.com/gHashTag/react-native-village/commits?author=gHashTag" title="Documentation">  </a><a href="#financial-gHashTag" title="Financial">💵</a></td>
     <td align="center"><a href="https://github.com/Resoner2005"><img src="https://avatars1.githubusercontent.com/u/75675814?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Resoner2005</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/issues?q=author%3AResoner2005" title="Bug reports">🐛 🎨 🖋</a></td>
   </tr>
   

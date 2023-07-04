@@ -23,15 +23,15 @@ class MyClass {
 }
 ```
 
-この構文📖はクラス宣言🗣️と呼ばれます。
+この構文  はクラス宣言と呼ばれます。
 
 ![Class](https://media.giphy.com/media/cYaBD8kxE4PZudHBRA/giphy.gif)
 
 :::note クラス内のメソッドはコンマで区切られていません
-📖クラスの構文は、オブジェクトリテラルとは異なります。 クラス内ではカンマは必要ありません。
+  クラスの構文は、オブジェクトリテラルとは異なります。 クラス内ではカンマは必要ありません。
 :::
 
-クラスに名前がない場合があります。 クラス式を使用すると、クラスを変数に割り当てることができます🔔：
+クラスに名前がない場合があります。 クラス式を使用すると、クラスを変数に割り当てることができます：
 
 ```jsx
 const UserClass = class {
@@ -55,18 +55,18 @@ export class User {
 }
 ```
 
-クラスは、クラスのインスタンスを作成するときに役立ちます。 インスタンスは、説明されているデータと動作を含むオブジェクトです🖊️
+クラスは、クラスのインスタンスを作成するときに役立ちます。 インスタンスは、説明されているデータと動作を含むオブジェクトです
 クラス。
 
-`new`演算子は、次のようにJavaScriptでクラスのインスタンスを作成します🏗️：` instance = new Class（）`。
+`new`演算子は、次のようにJavaScriptでクラスのインスタンスを作成します：` instance = new Class（）`。
 
-たとえば、 `new`演算子を使用して、User👤クラスの🏗️インスタンスを作成できます。
+たとえば、 `new`演算子を使用して、User👤クラスのインスタンスを作成できます。
 
 ```jsx
 const myUser = new User()
 ```
 
-`new User（）`は`User`クラスのインスタンスを作成します🏗️👤。
+`new User（）`は`User`クラスのインスタンスを作成します👤。
 
 ## 初期化：constructor()
 
@@ -86,9 +86,9 @@ class User {
 
 `User`クラスの`constructor`は、`this.name`フィールドの初期値を設定するために使用される1つの`name`パラメータを取ります。
 
-コンストラクター内では、`this`の値は新しく作成された🏗️インスタンスと同じです。
+コンストラクター内では、`this`の値は新しく作成されたインスタンスと同じです。
 
-クラスをインスタンス化するために使用される引数は、コンストラクターパラメーターになります👇：
+クラスをインスタンス化するために使用される引数は、コンストラクターパラメーターになります：
 
 ```jsx live
 function learnJavaScript() {
@@ -106,7 +106,7 @@ function learnJavaScript() {
 
 コンストラクター内の`name`パラメーターは`JonSnow`に設定されています。
 
-クラスのコンストラクターを定義しない場合は、🏗️デフォルトのコンストラクターが作成されます。 デフォルトのコンストラクターは、インスタンスを変更しない空の関数⚙️です。
+クラスのコンストラクターを定義しない場合は、デフォルトのコンストラクターが作成されます。 デフォルトのコンストラクターは、インスタンスを変更しない空の関数⚙️です。
 
 クラスは`constructor`という名前のメソッドを1つだけ持つことができます。
 
@@ -166,7 +166,7 @@ function learnJavaScript() {
 
 ![Math](https://media.giphy.com/media/uWzbH8xJGIwOBPfzhc/giphy.gif)
 
-Геттеры и сеттеры — это вычисляемые свойства. Это методы, имитирующие поля, но позволяющие читать и записывать 🖊️ данные.
+Геттеры и сеттеры — это вычисляемые свойства. Это методы, имитирующие поля, но позволяющие читать и записывать  данные.
 
 Геттеры используются для получения данных, а сеттеры — для их изменения.
 
@@ -207,7 +207,7 @@ user.name = '' // Имя пользователя не может быть пу�
 
 В выражении `class Child extends Parent { }` класс `Child` наследует от класса `Parent` конструктор, поля и методы.
 
-Создадим🏗️ дочерний класс `ContentWriter`, расширяющий родительский класс `User` 👤:
+Создадим дочерний класс `ContentWriter`, расширяющий родительский класс `User` 👤:
 
 ```jsx
 class User {
@@ -243,7 +243,7 @@ writer.posts // []
 
 Для того, чтобы вызвать конструктор родительского класса в дочернем классе, следует использовать специальную функцию⚙️ `super()`, доступную в конструкторе дочернего класса.
 
-Пусть конструктор `ContentWriter` вызывает родительский конструктор и инициализирует поле `posts` 👇 :
+Пусть конструктор `ContentWriter` вызывает родительский конструктор и инициализирует поле `posts`  :
 
 ```jsx live
 function learnJavaScript() {
@@ -373,7 +373,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/FELiX-RN"><img src="https://avatars0.githubusercontent.com/u/72006627?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Philipp Dvinyaninov</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/commits?author=FELiX-RN" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/FELiX-RN"><img src="https://avatars0.githubusercontent.com/u/72006627?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Philipp Dvinyaninov</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/commits?author=FELiX-RN" title="Documentation">  </a></td>
     <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /><a href="#financial-gHashTag" title="Financial">💵</a></td>
     <td align="center"><a href="https://github.com/Resoner2005"><img src="https://avatars1.githubusercontent.com/u/75675814?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Resoner2005</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/issues?q=author%3AResoner2005" title="Bug reports">🐛 🎨 🖋</a></td>
     <td align="center"><a href="https://github.com/Navernoss"><img src="https://avatars0.githubusercontent.com/u/75784137?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Navernoss</b></sub></a><br /><a href="#content-Navernoss" title="Content">🖋 🐛 🎨 </a></td>

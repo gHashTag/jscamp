@@ -6,13 +6,13 @@ sidebar_label: Cycles
 
 ![@serverSerrverlesskiy](/img/javascript/headers/17.jpg)
 
-When an action needs to be repeated a large number of times, cycles are used in programming. For example, you need to display the text 📜 "Hello, World!" 🌎. Instead of repeating the same text output command 📜 two hundred times, a loop is often created that repeats 200 times what is written 🖊️ in the body of the loop. Each repetition is called an iteration.
+When an action needs to be repeated a large number of times, cycles are used in programming. For example, you need to display the text  "Hello, World!" . Instead of repeating the same text output command  two hundred times, a loop is often created that repeats 200 times what is written  in the body of the loop. Each repetition is called an iteration.
 
 ![cycle](https://media.giphy.com/media/Pkck2unt0XQfc4gs3R/giphy.gif)
 
 Iteration in programming - in the broadest sense - the organization of data processing in which actions are repeated many times, without leading to calls 📞 themselves (as opposed to recursion). In a narrow sense, it is one step in an iterative, cyclical process.
 
-A loop in JavaScript (and in all other languages👅) is a block of code📟 that repeats itself as long as a known condition is true. There are many different types of loops, but they all essentially do the same thing: they repeat an action several times.
+A loop in JavaScript (and in all other languages ) is a block of code that repeats itself as long as a known condition is true. There are many different types of loops, but they all essentially do the same thing: they repeat an action several times.
 
 ## The while() loop
 
@@ -30,7 +30,7 @@ while (condition) {
 }
 ```
 
-`condition` is an expression whose boolean value is checked each time before entering the loop. If the value is true - `true`✅, then the instruction is executed. When the value becomes false - `false`❎, we exit the loop.
+`condition` is an expression whose boolean value is checked each time before entering the loop. If the value is true - `true`, then the instruction is executed. When the value becomes false - `false`, we exit the loop.
 
 An instruction is an algorithm code that is executed every time the condition is true. To execute multiple instructions in a loop, use the `{...}` block operator to group them. When using 1 command in the body of the loop, curly braces can be omitted.
 
@@ -51,15 +51,15 @@ function learnJavaScript() {
 
 The `count` in the example is `0`. The condition of our loop (it is written скоб in brackets) is that the block with the code will repeat itself over and over until (that is, the actual `while`) `count` is less than `10`.
 
-Since the initial value of `0` is less than` 10`, the code📟 runs. Each time the interpreter re-checks the ✔️ condition, if the condition is still true, then the code📟 will be run again. Each time we increment the counter value by `1`. Otherwise, the value would remain at `0`, so our condition `counter <10` would always remain true, and our code📟 would loop forever!
+Since the initial value of `0` is less than` 10`, the code runs. Each time the interpreter re-checks the ✔️ condition, if the condition is still true, then the code will be run again. Each time we increment the counter value by `1`. Otherwise, the value would remain at `0`, so our condition `counter <10` would always remain true, and our code would loop forever!
 
-As a result, after `10` cycles it will become `10`. After that, the interpreter will terminate the loop since the condition is `false` ❎ and go to the final lines of our code📟.
+As a result, after `10` cycles it will become `10`. After that, the interpreter will terminate the loop since the condition is `false`  and go to the final lines of our code.
 
 <!-- ## Цикл do … while
 
 ![Check](https://media.giphy.com/media/PijzuUzUhm7hcWinGn/giphy.gif)
 
-Проверку ✔️ условия можно разместить под телом цикла, используя специальный синтаксис📖 `do .. while`:
+Проверку ✔️ условия можно разместить под телом цикла, используя специальный синтаксис   `do .. while`:
 
 ```javascript
 do {
@@ -67,9 +67,9 @@ do {
 } while (условие)
 ```
 
-Цикл сначала выполнит тело, а затем проверит ✔️ условие (condition - `состояние`), и пока его значение равно `true` ✅ , он будет выполняться снова и снова.
+Цикл сначала выполнит тело, а затем проверит ✔️ условие (condition - `состояние`), и пока его значение равно `true`  , он будет выполняться снова и снова.
 
-Например, посчитаем сумму чисел от `0` до `25` 👇 :
+Например, посчитаем сумму чисел от `0` до `25`  :
 
 ```jsx live
 function learnJavaScript() {
@@ -84,7 +84,7 @@ function learnJavaScript() {
 }
 ```
 
-Такая форма синтаксиса📖 оправдана, если вы хотите, чтобы тело цикла выполнилось хотя бы один раз, даже если условие окажется ложным ❎ . -->
+Такая форма синтаксиса   оправдана, если вы хотите, чтобы тело цикла выполнилось хотя бы один раз, даже если условие окажется ложным  . -->
 
 ## The for() loop
 
@@ -105,11 +105,11 @@ for ([initialization]; [condition]; [final expression])
 
 `condition` is an expression that is executed at each iteration of the loop. If the expression is true, the loop is executed. The condition is optional. If not, the condition is always considered true. If the expression is false, execution of `for` is terminated.
 
-`final expression` - an expression that is executed at the end of the loop iteration. Occurs until the next condition is met. Usually used to `increment ++`, `decrement -` or `update i + = 5` of a counter variable 🔔.
+`final expression` - an expression that is executed at the end of the loop iteration. Occurs until the next condition is met. Usually used to `increment ++`, `decrement -` or `update i + = 5` of a counter variable .
 
 `expression` - executable code of the algorithm while the condition of the loop is `true`. To execute multiple expressions in a loop, use the `{...}` block to group those expressions. To avoid executing any expression in a loop, use an empty `for (;;;)` expression.
 
-Let's calculate the sum of numbers from 0 to 100 👇:
+Let's calculate the sum of numbers from 0 to 100 :
 
 ```jsx live
 function learnJavaScript() {
@@ -122,7 +122,7 @@ function learnJavaScript() {
 }
 ```
 
-Remember when we wrote our 1️⃣ first `while()` what happened to our counter? We found that it is very important that it constantly changes (`increment ++` helped us with this). Because if you forget about it, then the code📟 will fall into an `infinite loop of loops`.
+Remember when we wrote our 1️⃣ first `while()` what happened to our counter? We found that it is very important that it constantly changes (`increment ++` helped us with this). Because if you forget about it, then the code will fall into an `infinite loop of loops`.
 
 Well, situations like this happen quite regularly with `while-loops`, which is why `for` was done with a built-in counter!
 
@@ -130,7 +130,7 @@ Well, situations like this happen quite regularly with `while-loops`, which is w
 
 ![hmm](https://media.giphy.com/media/l3nSILUHhuVDuWSnC/giphy.gif)
 
-When you first see the syntax📖 of a `loop for`, you might think 🤔 that this is something very strange. But you should still study it 🧑‍🎓, since you will meet
+When you first see the syntax   of a `loop for`, you might think 🤔 that this is something very strange. But you should still study it 🎓, since you will meet
 like this many times:
 
 ```jsx live
@@ -147,13 +147,13 @@ function learnJavaScript() {
 
 ![Wow](https://media.giphy.com/media/3oriO13KTkzPwTykp2/giphy.gif)
 
-Well, did you know? They should have! After all, this is practically the same code📟 that we used for the `while` loop at the beginning of the chapter! The three parts of the cycle are separated by semicolons; they were all in that while loop, but in different places. Let's take a closer look:
+Well, did you know? They should have! After all, this is practically the same code that we used for the `while` loop at the beginning of the chapter! The three parts of the cycle are separated by semicolons; they were all in that while loop, but in different places. Let's take a closer look:
 
 ![for](/img/javascript/14/00.png)
 
 1. First, we declare a counter variable - `let i = 0`. It is in the function itself and outside this loop that this `i` will be absent, and this is safe!
 2. Next, we set a condition that the interpreter will check before each iteration of the loop (to determine whether it is worth starting the code at all). An iteration is called one iteration of the loop (for example, if we had 10 startup cycles, then we can say that there were 10 code iterations).
-3. The third part of our code is `increment ++` (or `decrement --`). It runs at the end of each iteration to change our variable every time 🔔.
+3. The third part of our code is `increment ++` (or `decrement --`). It runs at the end of each iteration to change our variable every time .
 
 ## Conclusion
 
@@ -258,7 +258,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/KoDim-React"><img src="https://avatars1.githubusercontent.com/u/72087863?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy K.</b></sub></a><br /><a href="#mentoring-KoDim-React" title="Mentoring">📖</a></td>
+    <td align="center"><a href="https://github.com/KoDim-React"><img src="https://avatars1.githubusercontent.com/u/72087863?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy K.</b></sub></a><br /><a href="#mentoring-KoDim-React" title="Mentoring">  </a></td>
     <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /><a href="#financial-gHashTag" title="Financial">💵</a></td>
     <td align="center"><a href="https://github.com/Resoner2005"><img src="https://avatars1.githubusercontent.com/u/75675814?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Resoner2005</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/issues?q=author%3AResoner2005" title="Bug reports">🐛 🎨 🖋</a></td>
     <td align="center"><a href="https://github.com/Navernoss"><img src="https://avatars0.githubusercontent.com/u/75784137?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Navernoss</b></sub></a><br /><a href="#content-Navernoss" title="Content">🖋 🐛 🎨 </a></td>

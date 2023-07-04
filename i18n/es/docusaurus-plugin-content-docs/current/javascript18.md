@@ -14,7 +14,7 @@ Por ejemplo:
 
 `Math.max(arg1, arg2, ..., argN)` - Calcula el número máximo de los argumentos dados.
 
-`Math.min(arg1, arg2, ..., argN)` - devuelve🔄 el valor mínimo de los argumentos pasados.
+`Math.min(arg1, arg2, ..., argN)` - devuelve el valor mínimo de los argumentos pasados.
 
 En este artículo, aprenderemos cómo hacer lo mismo con nuestras propias funciones⚙️ y cómo pasar parámetros de matriz a dichas funciones⚙️.
 
@@ -28,7 +28,7 @@ En este artículo, aprenderemos cómo hacer lo mismo con nuestras propias funcio
 
 Puede llamar a una función⚙️ con cualquier cantidad de argumentos, independientemente de cómo se haya definido.
 
-Por ejemplo 👇:
+Por ejemplo :
 
 ```jsx live
 function learnJavaScript() {
@@ -56,7 +56,7 @@ let goFun = (...rest) => {
 
 Los parámetros libres se pueden indicar con tres puntos `...`. Literalmente, esto significa: "reunir los parámetros restantes y colocarlos en una matriz".
 
-Por ejemplo, recopilemos todos los argumentos en una matriz `args`👇:
+Por ejemplo, recopilemos todos los argumentos en una matriz `args`:
 
 ```jsx live
 function learnJavaScript() {
@@ -70,11 +70,11 @@ function learnJavaScript() {
 }
 ```
 
-La respuesta ya es 28 y sin errores 🙅‍♂️! Detalle para cambiar los argumentos o la dimensión de la matriz.
+La respuesta ya es 28 y sin errores ! Detalle para cambiar los argumentos o la dimensión de la matriz.
 
 ### Múltiples opciones
 
-Podemos poner los primeros parámetros en variables 🔔 y recopilar el resto en una matriz.
+Podemos poner los primeros parámetros en variables  y recopilar el resto en una matriz.
 Esto significa que simplemente puede insertar `...rest`, pero solo en lugar del último parámetro de función.
 
 ![paste](https://media.giphy.com/media/3o6ZtafpgSpvIaKhMI/giphy.gif)
@@ -85,7 +85,7 @@ let goFun = (first, second, ...rest) => {
 }
 ```
 
-En el siguiente ejemplo, los dos primeros argumentos de la función 2️⃣ se convertirán en el nombre y el apellido, y el tercer argumento y los subsiguientes se convertirán en la matriz `titles[i]` 👇:
+En el siguiente ejemplo, los dos primeros argumentos de la función 2️⃣ se convertirán en el nombre y el apellido, y el tercer argumento y los subsiguientes se convertirán en la matriz `titles[i]` :
 
 ```jsx live
 function learnJavaScript() {
@@ -108,7 +108,7 @@ function learnJavaScript() {
 
 ![error](https://media.giphy.com/media/xTiN0L7EW5trfOvEk0/giphy.gif)
 
-Los parámetros residuales deben colocarse al final, por lo que no puede escribir 🖊️ nada después de ellos.
+Los parámetros residuales deben colocarse al final, por lo que no puede escribir  nada después de ellos.
 Esto arrojará un `error`:
 
 ```jsx
@@ -127,7 +127,7 @@ function f(arg1, ...rest, arg2) {   // arg2 después...rest ?
 
 Все аргументы функции⚙️ находятся в псевдомассиве `arguments` под своими порядковыми номерами.
 
-Но доступ через массив `arguments[]` можно найти только в старом коде📟 . Не применяйте его!
+Но доступ через массив `arguments[]` можно найти только в старом коде . Не применяйте его!
 
 :::note Внимание
 Cтрелочные функции⚙️ не имеют `arguments[]` как и собственного `this.`
@@ -141,7 +141,7 @@ Cтрелочные функции⚙️ не имеют `arguments[]` как и
 
 Aprendimos cómo obtener una matriz a partir de una lista de parámetros, pero a veces es necesario hacer lo contrario: insertar la matriz en una función llamada⚙️.
 
-Por ejemplo, hay una función integrada ⚙️ `Math.max`. Devuelve 🔄 el número más grande de la lista:
+Por ejemplo, hay una función integrada ⚙️ `Math.max`. Devuelve  el número más grande de la lista:
 
 ```jsx live
 function learnJavaScript() {
@@ -176,7 +176,7 @@ Aquí es donde el operador de propagación `...spread` resulta útil. Es similar
 
 Cuando la función ⚙️ `...spread` se usa en una llamada de función⚙️, convertirá el objeto de matriz `arr` en una lista de argumentos.
 
-Para `Math.max` 👇:
+Para `Math.max` :
 
 ```jsx live
 function learnJavaScript() {
@@ -186,7 +186,7 @@ function learnJavaScript() {
 }
 ```
 
-De la misma manera, podemos pasar múltiples iterables 👇:
+De la misma manera, podemos pasar múltiples iterables :
 
 ```jsx live
 function learnJavaScript() {
@@ -204,7 +204,7 @@ function learnJavaScript() {
 
 ![Merger](https://media.giphy.com/media/rytLWOErAX1F6/giphy.gif)
 
-El operador de propagación `...spread` también se puede usar para fusionar matrices 👇:
+El operador de propagación `...spread` también se puede usar para fusionar matrices :
 
 ```jsx live
 function learnJavaScript() {
@@ -224,7 +224,7 @@ function learnJavaScript() {
 
 La funcionalidad ⚙️ del operador de propagación `...spread` funciona en cualquier objeto iterable.
 
-Por ejemplo, el operador de expansión es adecuado para convertir una cadena en una matriz de caracteres 👇:
+Por ejemplo, el operador de expansión es adecuado para convertir una cadena en una matriz de caracteres :
 
 ```javascript
 let str = '¡Oye Alex!'
@@ -236,9 +236,9 @@ let result = [...str]
 Veamos qué pasa. Debajo del capó, el operador de propagación usa iteradores para iterar sobre los elementos. Tal como lo hace `for..of`.
 
 El bucle `for..of` itera sobre la cadena como una secuencia de caracteres, por lo que `...str` produce "Q", "y", "e"...
-Los caracteres resultantes se recopilan en una matriz utilizando la declaración de matriz 🗣️ estándar `[...str]`.
+Los caracteres resultantes se recopilan en una matriz utilizando la declaración de matriz  estándar `[...str]`.
 
-También podemos usar `Array.from` para esta tarea. También convierte el objeto iterable (como una cadena) en una matriz 👇:
+También podemos usar `Array.from` para esta tarea. También convierte el objeto iterable (como una cadena) en una matriz :
 
 ```javascript
 let str = 'Oye'
@@ -259,7 +259,7 @@ Por lo tanto, `Array.from` es un método más general.
 
 ![Elipsis](https://media.giphy.com/media/UWXLULrP5KGDC/giphy.gif)
 
-Cuando vemos `"..."` en el código 📟, puede ser `...rest` parámetros residuales o `...spread` operador de propagación.
+Cuando vemos `"..."` en el código , puede ser `...rest` parámetros residuales o `...spread` operador de propagación.
 
 Cómo distinguirlos:
 
@@ -320,7 +320,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/KoDim-React"><img src="https://avatars1.githubusercontent.com/u/72087863?v=4?s=200" width="200px " alt=""/><br /><sub><b>Dmitriy K.</b></sub></a><br /><a href="#mentoring-KoDim-React" title="Mentoring">📖</a></td>
+    <td align="center"><a href="https://github.com/KoDim-React"><img src="https://avatars1.githubusercontent.com/u/72087863?v=4?s=200" width="200px " alt=""/><br /><sub><b>Dmitriy K.</b></sub></a><br /><a href="#mentoring-KoDim-React" title="Mentoring">  </a></td>
     <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px " alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /><a href="#financial-gHashTag" title="Financial">💵</a></td>
     <td align="center"><a href="https://github.com/Resoner2005"><img src="https://avatars1.githubusercontent.com/u/75675814?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Resoner2005</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/issues?q=author%3AResoner2005" title="Bug reports">🐛 🎨 🖋</a></td>
     <td align="center"><a href="https://github.com/Navernoss"><img src="https://avatars0.githubusercontent.com/u/75784137?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Navernoss</b></sub></a><br /><a href="#content-Navernoss" title="Content">🖋 🐛 🎨 </a></td>

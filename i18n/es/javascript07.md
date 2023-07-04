@@ -22,7 +22,7 @@ Numbers make it possible to work with integers of arbitrary length. They are rar
 
 Any number, even a decimal fraction with a lot of decimal places, is never quoted.
 
-You can use four types of numeric literals: decimal, binary, octal, and hexadecimal. Since the last three are used quite rarely, we will omit their detailed description 🖊️, but the curious can get acquainted with them [here](https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Numbers_and_dates).
+You can use four types of numeric literals: decimal, binary, octal, and hexadecimal. Since the last three are used quite rarely, we will omit their detailed description , but the curious can get acquainted with them [here](https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Numbers_and_dates).
 
 :::caution
 Be careful when using leading zeros! This means you don't need to put zero before the decimal number.
@@ -51,7 +51,7 @@ The asterisk `*` represents multiplication: `3 * 4` Answer:` 12`
 
 Forward slash `/` division: `15 / 5` Reply:` 3`
 
-If more than one action is performed in a line, we use - (parentheses) to separate them from each other and also to make the code📟 more readable. Let's type the following sentences into the console. The answer for each of them should consist of only one digit9️⃣:
+If more than one action is performed in a line, we use - (parentheses) to separate them from each other and also to make the code more readable. Let's type the following sentences into the console. The answer for each of them should consist of only one digit9️⃣:
 
 ```
  3 * (2 + 1)
@@ -60,7 +60,7 @@ If more than one action is performed in a line, we use - (parentheses) to separa
  2 * (5 - 8 / 2) * (3 + 1)
 ```
 
-Enter the following values into `LIVE EDITOR` 👇:
+Enter the following values into `LIVE EDITOR` :
 
 ```jsx {2} live
 function learnJavaScript() {
@@ -78,15 +78,15 @@ An operator is a symbolic designation of some action performed with operands in 
 
 The operand is some value that is processed in the program. Operands can be of any data type. The operand to the left of the operator is the left operand, the operand to the right of the operator is the right operand.
 
-The main operator of combined assignment is the equal to `=`, and it assigns the value of the right operand to the left one. That is - `x = y` assigns the value to the variable 🔔 `y`, to the variable 🔔 `x`.
+The main operator of combined assignment is the equal to `=`, and it assigns the value of the right operand to the left one. That is - `x = y` assigns the value to the variable  `y`, to the variable  `x`.
 
-You have seen many times how you assign values ​​to variables 🔔 using mathematical operators. For example, like this:
+You have seen many times how you assign values ​​to variables  using mathematical operators. For example, like this:
 
 ```javascript
 let sum = 2 + 3 // sum value 7
 ```
 
-And you probably did not have time to forget that at any time you can change the value of an already known variable 🔔:
+And you probably did not have time to forget that at any time you can change the value of an already known variable :
 
 ```jsx live
 function learnJavaScript() {
@@ -154,7 +154,7 @@ function learnJavaScript() {
 
 ![function](https://media.giphy.com/media/seVVu09CPz2upPeU1s/giphy.gif)
 
-The `%` (percent) signifies the remainder of the division. The operator returns the integer remainder of dividing the left operand by the right. The return🔄 value always gets the sign of the dividend, not the divisor. It uses the built-in function⚙️ modulo, which is the integer remainder of dividing `let1` by `let2`.
+The `%` (percent) signifies the remainder of the division. The operator returns the integer remainder of dividing the left operand by the right. The return value always gets the sign of the dividend, not the divisor. It uses the built-in function⚙️ modulo, which is the integer remainder of dividing `let1` by `let2`.
 
 `12% 5` result` 2`
 
@@ -255,7 +255,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <table>
   <tr>
-    <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /> <a href="https://github.com/gHashTag/react-native-village/commits?author=gHashTag" title="Documentation">📖</a><a href="#financial-gHashTag" title="Financial">💵</a></td>
+    <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /> <a href="https://github.com/gHashTag/react-native-village/commits?author=gHashTag" title="Documentation">  </a><a href="#financial-gHashTag" title="Financial">💵</a></td>
     <td align="center"><a href="https://github.com/Resoner2005"><img src="https://avatars1.githubusercontent.com/u/75675814?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Resoner2005</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/issues?q=author%3AResoner2005" title="Bug reports">🐛 🎨 🖋</a></td>
   </tr>
   

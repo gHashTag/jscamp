@@ -10,7 +10,7 @@ import YouTube from 'react-youtube'
 
 ## 變數
 
-變量 🔔（Variables，縮寫為`var`）是用於存儲值的容器，例如用於加法的數字或可用作句子一部分的字符串，以及稍後將學習的其他數據類型。
+變量 （Variables，縮寫為`var`）是用於存儲值的容器，例如用於加法的數字或可用作句子一部分的字符串，以及稍後將學習的其他數據類型。
 
 ![Container](https://media.giphy.com/media/0T0FUiZl51VPCLsqLR/giphy.gif)
 
@@ -32,13 +32,13 @@ function learnJavaScript() {
 }
 ```
 
-在這裡，我們創建一個變量 🔔 message。 當前 ⏱️ 它不包含值，更確切地說，變量包含一個空字符串。
+在這裡，我們創建一個變量  message。 當前 ⏱️ 它不包含值，更確切地說，變量包含一個空字符串。
 
 ## 給變量賦值
 
 ![Memory](https://media.giphy.com/media/3o6ZtafpgSpvIaKhMI/giphy.gif)
 
-一旦聲明了變量 🔔，就可以為其分配一個值。 為此，請寫 🖊️ 變量名 🔔，後跟等號“ =”，然後是要分配的值。 例如 👇:
+一旦聲明了變量 ，就可以為其分配一個值。 為此，請寫  變量名 ，後跟等號“ =”，然後是要分配的值。 例如 :
 
 ```jsx live
 function learnJavaScript() {
@@ -49,9 +49,9 @@ function learnJavaScript() {
 }
 ```
 
-在“結果”中，您分配給變量 🔔 的值在控制台中返回。 在 🔔 中使用變量 values 的值進行操作，例如，用您的名字完成表達式。
+在“結果”中，您分配給變量  的值在控制台中返回。 在  中使用變量 values 的值進行操作，例如，用您的名字完成表達式。
 
-為了簡潔起見，您可以將變量 declaration 的聲明與在一行中編寫 🖊️ 組合起來 👇：
+為了簡潔起見，您可以將變量 declaration 的聲明與在一行中編寫  組合起來 ：
 
 ```jsx live
 function learnJavaScript() {
@@ -64,8 +64,8 @@ function learnJavaScript() {
 
 ![Update](https://media.giphy.com/media/FP47IFqWyXfdKYU6VG/giphy.gif)
 
-變量 🔔 的特點之一是它們的含義可以改變。
-將值分配給變量 🔔 後，只需指定其他值即可更改（更新）該值。 讓我們看一個簡單的示例 👇：
+變量  的特點之一是它們的含義可以改變。
+將值分配給變量  後，只需指定其他值即可更改（更新）該值。 讓我們看一個簡單的示例 ：
 
 ```jsx live
 function learnJavaScript() {
@@ -77,7 +77,7 @@ function learnJavaScript() {
 }
 ```
 
-變量 🔔 的另一個特徵是它們可以包含幾乎所有內容，而不僅僅是字符串和數字。 變量 🔔 還可以包含複雜數據甚至整個函數。 隨著您進一步學習本課程，您將學到更多有關此的知識。
+變量  的另一個特徵是它們可以包含幾乎所有內容，而不僅僅是字符串和數字。 變量  還可以包含複雜數據甚至整個函數。 隨著您進一步學習本課程，您將學到更多有關此的知識。
 
 ::: tip Note!
 我們說變量包含值。 這是一個重要的區別。 變量不是自己的值！ 它們是價值的容器。 想像一下，它們就像小紙板箱一樣，可以在其中存放東西。
@@ -93,7 +93,7 @@ function learnJavaScript() {
 
 您可以隨意命名變量,，但有限制。 通常，您應僅使用拉丁字符（0-9，a-z，A-Z）和下劃線字符。
 
--不建議使用其他符號，因為它們可能會引起錯誤或國際聽眾難以理解。 -請勿在變量名 beginning 的開頭使用下劃線-在某些 JavaScript 構造中用於表示特定內容。 -不要在變量 🔔 的開頭使用數字。這是無效的，將導致錯誤。 -通常都堅持使用所謂的“小寫駝峰大寫”（camelCase-之所以稱為“駝峰”，是因為形成單詞的第一個字母的“駝峰”），在其中粘貼多個單詞，整個前一個單詞使用小寫字母單詞，然後是後續單詞的大寫字母。在本文中，我們已將其用作變量名 🔔。 -使變量名 🔔 直觀了解它們包含的數據。請勿僅使用單個字母/數字或較大的長短語。 -變量 🔔 區分大小寫，因此`myage`和`myAge`是不同的變量 🔔。 -最後但並非最不重要的一點-您還需要避免將 JavaScript 保留字用作變量名 🔔-意思是構成實際 JavaScript 語法的字！因此，您不能將 var，function，let 和 for 等詞用於變量名 🔔。瀏覽器將它們識別為不同的代碼段，因此會發生錯誤。
+-不建議使用其他符號，因為它們可能會引起錯誤或國際聽眾難以理解。 -請勿在變量名 beginning 的開頭使用下劃線-在某些 JavaScript 構造中用於表示特定內容。 -不要在變量  的開頭使用數字。這是無效的，將導致錯誤。 -通常都堅持使用所謂的“小寫駝峰大寫”（camelCase-之所以稱為“駝峰”，是因為形成單詞的第一個字母的“駝峰”），在其中粘貼多個單詞，整個前一個單詞使用小寫字母單詞，然後是後續單詞的大寫字母。在本文中，我們已將其用作變量名 。 -使變量名  直觀了解它們包含的數據。請勿僅使用單個字母/數字或較大的長短語。 -變量  區分大小寫，因此`myage`和`myAge`是不同的變量 。 -最後但並非最不重要的一點-您還需要避免將 JavaScript 保留字用作變量名 -意思是構成實際 JavaScript 語法的字！因此，您不能將 var，function，let 和 for 等詞用於變量名 。瀏覽器將它們識別為不同的代碼段，因此會發生錯誤。
 
 ## 保留字列表
 
@@ -108,7 +108,7 @@ function learnJavaScript() {
 
 JavaScript 是一種“自由類型語言”，這意味著與某些其他語言不同，您無需指定變量將包含哪種數據類型（例如，數字，字符串，數組等）。
 
-例如，如果您聲明變量 🔔 並為其分配一個帶引號的值，則瀏覽器會將變量 🔔 視為字符串 👇:
+例如，如果您聲明變量  並為其分配一個帶引號的值，則瀏覽器會將變量  視為字符串 :
 
 ```jsx live
 function learnJavaScript() {
@@ -126,9 +126,9 @@ function learnJavaScript() {
 
 ![Old](https://media.giphy.com/media/3orieJI3IdkKWIsAGA/giphy.gif)
 
-通常在現代腳本中不使用 var，但仍可以在舊腳本中將其隱藏。 這是由於事實並非如此，因此，我們將使用`let`表示變量 🔔，而不是`var`表示常量-常量。
+通常在現代腳本中不使用 var，但仍可以在舊腳本中將其隱藏。 這是由於事實並非如此，因此，我們將使用`let`表示變量 ，而不是`var`表示常量-常量。
 
-🔔 休息已經結束，讓我們繼續下一課！
+ 休息已經結束，讓我們繼續下一課！
 
 ## 問題？
 
@@ -198,7 +198,7 @@ console.log 命令包含哪些信息？
 
 <table>
   <tr>
-    <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /> <a href="https://github.com/gHashTag/react-native-village/commits?author=gHashTag" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /> <a href="https://github.com/gHashTag/react-native-village/commits?author=gHashTag" title="Documentation">  </a></td>
     <td align="center"><a href="https://github.com/Resoner2005"><img src="https://avatars1.githubusercontent.com/u/75675814?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Resoner2005</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/issues?q=author%3AResoner2005" title="Bug reports">🐛 🎨 🖋</a></td>
   </tr>
   

@@ -25,15 +25,15 @@ class MyClass {
 }
 ```
 
-Esta sintaxis📖 se llama declaración de clase🗣️.
+Esta sintaxis   se llama declaración de clase.
 
 ![Class](https://media.giphy.com/media/cYaBD8kxE4PZudHBRA/giphy.gif)
 
 :::note Los métodos en una clase no están separados por una coma
-La sintaxis📖 de las clases es diferente de los objetos literales. No se requieren comas dentro de las clases.
+La sintaxis   de las clases es diferente de los objetos literales. No se requieren comas dentro de las clases.
 :::
 
-La clase puede no tener un nombre. Con una expresión de clase, puede asignar una clase a una variable 🔔:
+La clase puede no tener un nombre. Con una expresión de clase, puede asignar una clase a una variable :
 
 ```jsx
 const UserClass = class {
@@ -57,18 +57,18 @@ export class User {
 }
 ```
 
-Una clase se vuelve útil cuando crea una instancia de la clase. Una instancia es un objeto que contiene los datos y el comportamiento descrito 🖊️
+Una clase se vuelve útil cuando crea una instancia de la clase. Una instancia es un objeto que contiene los datos y el comportamiento descrito 
 clase.
 
-El operador `new` crea🏗️ una instancia de una clase en JavaScript como esta: `instance = new Class()`.
+El operador `new` crea una instancia de una clase en JavaScript como esta: `instance = new Class()`.
 
-Por ejemplo, puede crear una instancia 🏗️ de la clase Usuario 👤 usando el operador `new`:
+Por ejemplo, puede crear una instancia  de la clase Usuario 👤 usando el operador `new`:
 
 ```jsx
 const myUser = new User()
 ```
 
-`new User()` crea🏗️ una instancia de la clase  `User` 👤.
+`new User()` crea una instancia de la clase  `User` 👤.
 
 ## Video
 
@@ -92,9 +92,9 @@ class User {
 
 El `constructor` de la clase `User` toma un parámetro `name`, que se usa para establecer el valor inicial del campo 'este.nombre'.
 
-Dentro del constructor, el valor de `this` es igual a la instancia 🏗️ recién creada.
+Dentro del constructor, el valor de `this` es igual a la instancia  recién creada.
 
-Los argumentos utilizados para instanciar la clase se convierten en parámetros del constructor 👇:
+Los argumentos utilizados para instanciar la clase se convierten en parámetros del constructor :
 
 ```jsx live
 function learnJavaScript() {
@@ -112,7 +112,7 @@ function learnJavaScript() {
 
 El parámetro `name` dentro del constructor se establece en `Jon Snow`.
 
-Si no define un constructor para una clase, se crea un constructor 🏗️ predeterminado. El constructor predeterminado es una función vacía⚙️ que no modifica la instancia.
+Si no define un constructor para una clase, se crea un constructor  predeterminado. El constructor predeterminado es una función vacía⚙️ que no modifica la instancia.
 
 Una clase solo puede tener un método llamado `constructor`.
 
@@ -176,7 +176,7 @@ Para comprender cuánto ha aprendido esta lección, realice una prueba en la [ap
 
 ![Math](https://media.giphy.com/media/uWzbH8xJGIwOBPfzhc/giphy.gif)
 
-Геттеры и сеттеры — это вычисляемые свойства. Это методы, имитирующие поля, но позволяющие читать и записывать 🖊️ данные.
+Геттеры и сеттеры — это вычисляемые свойства. Это методы, имитирующие поля, но позволяющие читать и записывать  данные.
 
 Геттеры используются для получения данных, а сеттеры — для их изменения.
 
@@ -217,7 +217,7 @@ user.name = '' // Имя пользователя не может быть пу�
 
 В выражении `class Child extends Parent { }` класс `Child` наследует от класса `Parent` конструктор, поля и методы.
 
-Создадим🏗️ дочерний класс `ContentWriter`, расширяющий родительский класс `User` 👤:
+Создадим дочерний класс `ContentWriter`, расширяющий родительский класс `User` 👤:
 
 ```jsx
 class User {
@@ -253,7 +253,7 @@ writer.posts // []
 
 Для того, чтобы вызвать конструктор родительского класса в дочернем классе, следует использовать специальную функцию⚙️ `super()`, доступную в конструкторе дочернего класса.
 
-Пусть конструктор `ContentWriter` вызывает родительский конструктор и инициализирует поле `posts` 👇 :
+Пусть конструктор `ContentWriter` вызывает родительский конструктор и инициализирует поле `posts`  :
 
 ```jsx live
 function learnJavaScript() {
@@ -383,7 +383,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/FELiX-RN"><img src="https://avatars0.githubusercontent.com/u/72006627?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Philipp Dvinyaninov</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/commits?author=FELiX-RN" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/FELiX-RN"><img src="https://avatars0.githubusercontent.com/u/72006627?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Philipp Dvinyaninov</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/commits?author=FELiX-RN" title="Documentation">  </a></td>
     <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /><a href="#financial-gHashTag" title="Financial">💵</a></td>
     <td align="center"><a href="https://github.com/Resoner2005"><img src="https://avatars1.githubusercontent.com/u/75675814?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Resoner2005</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/issues?q=author%3AResoner2005" title="Bug reports">🐛 🎨 🖋</a></td>
     <td align="center"><a href="https://github.com/Navernoss"><img src="https://avatars0.githubusercontent.com/u/75784137?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Navernoss</b></sub></a><br /><a href="#content-Navernoss" title="Content">🖋 🐛 🎨 </a></td>

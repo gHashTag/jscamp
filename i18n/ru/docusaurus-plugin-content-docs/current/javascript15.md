@@ -14,7 +14,7 @@ import YouTube from 'react-youtube'
 
 ![comparison](https://media.giphy.com/media/icJA0VF7ntoEL18Jez/giphy.gif)
 
-Если условие совпадает, то выполняется блок кода📟 , связанный с соответствующим `case`. Если ни одно условие не подошло, то выполняется код📟 , указанный в блоке `default`, если он есть. Для выхода из конструкции используется команда `break`. Если ее не указывать, автоматически выполнится блок кода📟 в следующем `case` и т.д. Поэтому `break` используем в наших скриптах обязательно, чтобы не гонять интерпретатор по всем `case` тем самым снижая производительность скрипта.
+Если условие совпадает, то выполняется блок кода , связанный с соответствующим `case`. Если ни одно условие не подошло, то выполняется код , указанный в блоке `default`, если он есть. Для выхода из конструкции используется команда `break`. Если ее не указывать, автоматически выполнится блок кода в следующем `case` и т.д. Поэтому `break` используем в наших скриптах обязательно, чтобы не гонять интерпретатор по всем `case` тем самым снижая производительность скрипта.
 
 ## Видео
 
@@ -50,7 +50,7 @@ switch (n) {
 
 ![Math](https://media.giphy.com/media/xT1Ra5h24Eliux3UVq/giphy.gif)
 
-Рассмотрим простейший пример 👇 :
+Рассмотрим простейший пример  :
 
 ```jsx live
 function learnJavaScript() {
@@ -78,7 +78,7 @@ function learnJavaScript() {
 
 ![Wow](https://media.giphy.com/media/3oriO13KTkzPwTykp2/giphy.gif)
 
-Рассмотрим такой пример 👇 :
+Рассмотрим такой пример  :
 
 ```jsx live
 function learnJavaScript() {
@@ -107,7 +107,7 @@ function learnJavaScript() {
 
 Также `Switch` используется чтобы заменить множественные `if`.
 
-Например, можно заменить данный код 👇 :
+Например, можно заменить данный код  :
 
 ```jsx live
 function learnJavaScript() {
@@ -128,7 +128,7 @@ function learnJavaScript() {
 }
 ```
 
-На этот 👇 :
+На этот  :
 
 ```jsx live
 function learnJavaScript() {
@@ -152,7 +152,7 @@ function learnJavaScript() {
 }
 ```
 
-Результат будет тот же, но код📟 станет более читабельным и удобным для работы.
+Результат будет тот же, но код станет более читабельным и удобным для работы.
 
 ## React Native
 Пример использования в `React Native` приложениях.
@@ -239,7 +239,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/FELiX-RN"><img src="https://avatars0.githubusercontent.com/u/72006627?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Philipp Dvinyaninov</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/commits?author=FELiX-RN" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/FELiX-RN"><img src="https://avatars0.githubusercontent.com/u/72006627?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Philipp Dvinyaninov</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/commits?author=FELiX-RN" title="Documentation">  </a></td>
     <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /><a href="#financial-gHashTag" title="Financial">💵</a></td>
     <td align="center"><a href="https://github.com/Resoner2005"><img src="https://avatars1.githubusercontent.com/u/75675814?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Resoner2005</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/issues?q=author%3AResoner2005" title="Bug reports">🐛 🎨 🖋</a></td>
     <td align="center"><a href="https://github.com/Navernoss"><img src="https://avatars0.githubusercontent.com/u/75784137?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Navernoss</b></sub></a><br /><a href="#content-Navernoss" title="Content">🖋 🐛 🎨 </a></td>

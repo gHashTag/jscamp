@@ -142,7 +142,7 @@ The author of the JavaScript course - [Server Serverlesskiy](https://twitter.com
 
 ### Transfer:
 
-This is a completely different level of AWS Community Builder music video 🔥 😅
+This is a completely different level of AWS Community Builder music video  
 
 This is a mobile development course on the React Native / TypeScript / AWS Amplify Stack and for AWS Certification. Worth checking out!
 

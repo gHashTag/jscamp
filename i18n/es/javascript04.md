@@ -10,11 +10,11 @@ import YouTube from 'react-youtube'
 
 ## Dynamic typing
 
-JavaScript is a loosely typed or dynamic language. This means that you do not need to define the type of the variable 🔔 in advance.
+JavaScript is a loosely typed or dynamic language. This means that you do not need to define the type of the variable  in advance.
 
 ![Dinamics](https://media.giphy.com/media/26uf759LlDftqZNVm/giphy.gif)
 
-The type will be determined automatically during program execution. It also means that you can use one variable 🔔 to store 📦 different types of data 👇:
+The type will be determined automatically during program execution. It also means that you can use one variable  to store  different types of data :
 
 ```jsx live
 function learnJavaScript() {
@@ -116,15 +116,15 @@ The `bigInt` type was added to JavaScript to allow for arbitrary length integers
 
 ## Boolean data type
 
-The boolean type `boolean` represents a logical entity and has two 2️⃣ values: `true` ✅
+The boolean type `boolean` represents a logical entity and has two 2️⃣ values: `true` 
 
 ![true](https://media.giphy.com/media/ap6wcjRyi8HoA/giphy.gif)
 
-and `false` ❎
+and `false` 
 
 ![False](https://media.giphy.com/media/HNOVuT5AvCK1fgvp1m/giphy.gif)
 
-This type is usually used to store 📦 yes / no values: true ✅ means “yes, right,” and false ❎ means “no, wrong”.
+This type is usually used to store  yes / no values: true  means “yes, right,” and false  means “no, wrong”.
 
 ## Null
 
@@ -137,7 +137,7 @@ For example, you can assign it to the default value.
 
 ![Unndefined](https://media.giphy.com/media/PkKzNQjwPy7GvxZbfe/giphy.gif)
 
-A variable 🔔 that has not been assigned a value will have the value `undefined`.
+A variable  that has not been assigned a value will have the value `undefined`.
 
 ### Differences between null and undefined
 
@@ -151,7 +151,7 @@ console.log(TestVar) // undefined
 console.log(typeof TestVar) // undefined
 ```
 
-`null` is an assignment value. It can be assigned to a variable 🔔 as a representation with no value:
+`null` is an assignment value. It can be assigned to a variable  as a representation with no value:
 
 ```javascript
 let TestVar = null
@@ -241,7 +241,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <table>
   <tr>
-    <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /> <a href="https://github.com/gHashTag/react-native-village/commits?author=gHashTag" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /> <a href="https://github.com/gHashTag/react-native-village/commits?author=gHashTag" title="Documentation">  </a></td>
     <td align="center"><a href="https://github.com/Resoner2005"><img src="https://avatars1.githubusercontent.com/u/75675814?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Resoner2005</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/issues?q=author%3AResoner2005" title="Bug reports">🐛 🎨 🖋</a></td>
   </tr>
   

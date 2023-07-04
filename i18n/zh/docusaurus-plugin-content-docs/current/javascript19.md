@@ -12,7 +12,7 @@ JavaScript語言顯然比其他數據結構更喜歡數組。 它們有很多方
 
 ![Create](https://media.giphy.com/media/ffd0F6WNcRJMQ/giphy.gif)
 
-`map ()` 方法創建一個 🏗️ 新的с數組，結果是為數組的每個元素調用指定的函數⚙️。
+`map ()` 方法創建一個  新的с數組，結果是為數組的每個元素調用指定的函數⚙️。
 
 ### 句法
 
@@ -44,7 +44,7 @@ let new_array = arr.map(function callback( currentValue[, index[, array]]) {
 
 #### 簡單的例子
 
-您有一個包含許多對象的數組，每個對象代表一個不同的人👨 這裡可以有很多數據：電影院的名稱，年齡，頭髮顏色和喜歡的角色，但目前並不需要所有這些信息-您只想獲取這些人的護照號碼才能給他們 所有會議通行證。
+您有一個包含許多對象的數組，每個對象代表一個不同的人 這裡可以有很多數據：電影院的名稱，年齡，頭髮顏色和喜歡的角色，但目前並不需要所有這些信息-您只想獲取這些人的護照號碼才能給他們 所有會議通行證。
 
 ```jsx live
 function learnJavaScript() {
@@ -61,7 +61,7 @@ function learnJavaScript() {
 }
 ```
 
-#### In certain cases, you may need to display an array of objects with the selected keys as a string 👇:
+#### In certain cases, you may need to display an array of objects with the selected keys as a string :
 
 ```jsx live
 function learnJavaScript() {
@@ -82,7 +82,7 @@ function learnJavaScript() {
 
 ![Thermometer](https://media.giphy.com/media/W23dJLsAW5knUU27Fv/giphy.gif)
 
-使用給定公式處理數組的每個元素的示例 👇:
+使用給定公式處理數組的每個元素的示例 :
 
 ```jsx live
 function learnJavaScript() {
@@ -97,7 +97,7 @@ function learnJavaScript() {
 <!-- ### Отображение массива чисел на массив квадратных корней
 
 Отображение таблицы пользователей в виде читаемой строки только с указанными ключами
-Следующий код📟 берёт массив чисел и создаёт 🆕 новый массив, содержащий квадратные корни чисел из первого массива.
+Следующий код берёт массив чисел и создаёт    новый массив, содержащий квадратные корни чисел из первого массива.
 
 ```jsx live
 function learnJavaScript() {
@@ -107,7 +107,7 @@ function learnJavaScript() {
 }
 ``` -->
 
-#### 使用帶有參數的函數顯示數字數組 👇:
+#### 使用帶有參數的函數顯示數字數組 :
 
 ```jsx live
 function learnJavaScript() {
@@ -123,7 +123,7 @@ function learnJavaScript() {
 
 #### Обобщённое использование `map`
 
-Этот пример показывает, как использовать `map` на объекте строки `String` для получения массива байт в кодировке `ASCII`, представляющего значения символов 👇 :
+Этот пример показывает, как использовать `map` на объекте строки `String` для получения массива байт в кодировке `ASCII`, представляющего значения символов  :
 
 ```jsx live
 function learnJavaScript() {
@@ -157,7 +157,7 @@ function learnJavaScript() {
 
 `filter ()` 方法將創建一個新數組，其中包含所有已通過傳遞函數中指定的檢查的元素⚙️。
 
-過濾器的結果始終是一個數組。 如果元素的函數⚙️返回 🔄 `true` ✅ （或任何“ true”值），則此元素將包含在結果中，否則將不包括在內。
+過濾器的結果始終是一個數組。 如果元素的函數⚙️返回  `true`  （或任何“ true”值），則此元素將包含在結果中，否則將不包括在內。
 
 ### 句法
 
@@ -171,7 +171,7 @@ let newArray = arr.filter(function callback(element[, index, [array]])[, thisArg
 
 ![m](https://media.giphy.com/media/DQaeCdCqhHWx3n4dvH/giphy.gif)
 
-`filter()` 方法調用傳遞的 `callback` 對數組中存在的每個元素執行一次功能，並構造一個具有所有值的新數組 `callback` 函數返回 `true` 或變成 `true` ✅ 當投射到 `boolean`. `callback` 僅對已分配值的數組索引調用該函數； 對於已刪除或從未分配值的索引，不會調用它。 數組元素尚未被 `callback` 函數只是被跳過，不包含在 🆕 數組中。
+`filter()` 方法調用傳遞的 `callback` 對數組中存在的每個元素執行一次功能，並構造一個具有所有值的新數組 `callback` 函數返回 `true` 或變成 `true`  當投射到 `boolean`. `callback` 僅對已分配值的數組索引調用該函數； 對於已刪除或從未分配值的索引，不會調用它。 數組元素尚未被 `callback` 函數只是被跳過，不包含在    數組中。
 
 功能 ⚙️ `callback` 用三個參數調用：
 
@@ -245,7 +245,7 @@ reduce（）方法對數組中的每個元素（不包括void）執行一次回�
 
 ![hatchng](https://media.giphy.com/media/xT1R9Qy80qNb8oQGGc/giphy.gif)
 
-讓我們找出初始值。 在示例中，它等於 `0`, 因為我們正在計算數值-年齡的總和。 代替零，可以有任何其他數字/字符串（空或非空）/對象/數組-您從中開始累積的任何值。 例如，讓我們在一行中合併所有朋友的名字 👇:
+讓我們找出初始值。 在示例中，它等於 `0`, 因為我們正在計算數值-年齡的總和。 代替零，可以有任何其他數字/字符串（空或非空）/對象/數組-您從中開始累積的任何值。 例如，讓我們在一行中合併所有朋友的名字 :
 
 ```jsx live
 function learnJavaScript() {
@@ -298,7 +298,7 @@ function learnJavaScript() {
 
 ![transform](https://media.giphy.com/media/dVleMgtOlPE6Q/giphy.gif)
 
-Код📟 решает задачу преобразования массива массивов в один плоский массив. Результат первой итерации будет равен: `[…[], …[1, 2, 3]]` что означает, что он преобразуется в `[1, 2, 3]` — это значение мы предоставляем как `acc` на второй итерации и так далее.
+Код решает задачу преобразования массива массивов в один плоский массив. Результат первой итерации будет равен: `[…[], …[1, 2, 3]]` что означает, что он преобразуется в `[1, 2, 3]` — это значение мы предоставляем как `acc` на второй итерации и так далее.
 
 ```jsx live
 function learnJavaScript() {
@@ -338,7 +338,7 @@ JavaScript 編程支持便捷 `chaining` 模式-將多個功能組合成一個�
 
 所有三個解析的方法都在數組的上下文中調用，其中兩個2️⃣還返回一個數組。 因此，將它們組合起來非常容易。
 
-例如，讓我們計算所有男孩的總年齡 👇:
+例如，讓我們計算所有男孩的總年齡 :
 
 ```jsx live
 function learnJavaScript() {
@@ -357,7 +357,7 @@ function learnJavaScript() {
 }
 ```
 
-或者我們可以收集女孩的護照號碼以購買前往拉斯維加斯的機票👇:
+或者我們可以收集女孩的護照號碼以購買前往拉斯維加斯的機票:
 
 ```jsx live
 function learnJavaScript() {
@@ -376,7 +376,7 @@ function learnJavaScript() {
 
 ## 結論
 
-有了這些強大的功能⚙️，代碼📟變得更易於閱讀。 因此，下面是有關此主題的更多文章的列表。
+有了這些強大的功能⚙️，代碼變得更易於閱讀。 因此，下面是有關此主題的更多文章的列表。
 
 ## 問題？
 
@@ -451,7 +451,7 @@ reduce方法的結果值可以是：
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/AlisaNasibullina"><img src="https://avatars3.githubusercontent.com/u/74646904?s=460&v=4" width="200px;" alt=""/><br /><sub><b>AlisaNasibullina</b></sub></a><br /><a href="#mentoring-KoDim-React" title="Mentoring">📖</a></td>
+    <td align="center"><a href="https://github.com/AlisaNasibullina"><img src="https://avatars3.githubusercontent.com/u/74646904?s=460&v=4" width="200px;" alt=""/><br /><sub><b>AlisaNasibullina</b></sub></a><br /><a href="#mentoring-KoDim-React" title="Mentoring">  </a></td>
     <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /><a href="#financial-gHashTag" title="Financial">💵</a></td>
     <td align="center"><a href="https://github.com/Resoner2005"><img src="https://avatars1.githubusercontent.com/u/75675814?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Resoner2005</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/issues?q=author%3AResoner2005" title="Bug reports">🐛 🎨 🖋</a></td>
     <td align="center"><a href="https://github.com/Navernoss"><img src="https://avatars0.githubusercontent.com/u/75784137?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Navernoss</b></sub></a><br /><a href="#content-Navernoss" title="Content">🖋 🐛 🎨 </a></td>

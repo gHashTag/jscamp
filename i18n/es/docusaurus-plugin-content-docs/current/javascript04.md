@@ -10,11 +10,11 @@ import YouTube from 'react-youtube'
 
 ## Dinámicamente típico
 
-JavaScript es un lenguaje poco escrito o rico. Esto significa que no necesita definir el tipo de instalación 🔔 de antemano.
+JavaScript es un lenguaje poco escrito o rico. Esto significa que no necesita definir el tipo de instalación  de antemano.
 
 ![Dinamics](https://media.giphy.com/media/26uf759LlDftqZNVm/giphy.gif)
 
-El tipo se determinará automáticamente durante la ejecución del programa. También significa que puede usar una variable 🔔 para almacenar 📦 diferentes tipos de datos 👇:
+El tipo se determinará automáticamente durante la ejecución del programa. También significa que puede usar una variable  para almacenar  diferentes tipos de datos :
 
 ```jsx live
 function learnJavaScript() {
@@ -52,7 +52,7 @@ function learnJavaScript() {
 
 ![Data types](https://media.giphy.com/media/NPXkCN2FutVO1Nt4P9/giphy.gif)
 
-El estándar JavaScript define 9 tipos de datos. Familiarícese con cada uno de ellos saliendo a la consola y luego le contaré 🗣️ sobre cada uno de ellos con más detalle.
+El estándar JavaScript define 9 tipos de datos. Familiarícese con cada uno de ellos saliendo a la consola y luego le contaré  sobre cada uno de ellos con más detalle.
 
 ```javascript
 let one = { firstName: 'John', lastName: 'Smith' } // object
@@ -78,7 +78,7 @@ let nine = Symbol() // symbol
 
 ![cupboard](https://media.giphy.com/media/l2Sq0NFJlJC5Dqb7y/giphy.gif)
 
-En la terminología informática, el tipo de "objeto" es un valor en la memoria al que se puede hacer referencia mediante un identificador. En JavaScript, un objeto puede considerarse como un conjunto de propiedades. Es como un armario 🗄️ para almacenar 📦 otros tipos de datos.
+En la terminología informática, el tipo de "objeto" es un valor en la memoria al que se puede hacer referencia mediante un identificador. En JavaScript, un objeto puede considerarse como un conjunto de propiedades. Es como un armario 🗄️ para almacenar  otros tipos de datos.
 
 ## Funciones
 
@@ -90,13 +90,13 @@ Las funciones⚙️ `función` son objetos ordinarios que tienen la capacidad ad
 
 ![Primitivo](https://media.giphy.com/media/rBdWc61BPFVYc/giphy.gif)
 
-Todos los tipos de datos en JavaScript, excepto los objetos, son inmutables (los valores no se pueden modificar, solo se sobrescriben con un nuevo valor completo). Por ejemplo, a diferencia del lenguaje 👅 C, donde la cadena se puede ajustar carácter por carácter, en JavaScript las cadenas se recrean 🏗️ solo por completo. Los valores de este tipo se denominan "valores primitivos".
+Todos los tipos de datos en JavaScript, excepto los objetos, son inmutables (los valores no se pueden modificar, solo se sobrescriben con un nuevo valor completo). Por ejemplo, a diferencia del lenguaje   C, donde la cadena se puede ajustar carácter por carácter, en JavaScript las cadenas se recrean  solo por completo. Los valores de este tipo se denominan "valores primitivos".
 
 ## Cadenas de texto
 
 ![texto](https://media.giphy.com/media/26n6AaCcCajAyZx04/giphy.gif)
 
-JavaScript usa el tipo `string` para representar datos de texto 📜.
+JavaScript usa el tipo `string` para representar datos de texto .
 
 ## Números
 
@@ -116,15 +116,15 @@ El tipo `bigInt` se agregó a JavaScript para que sea posible trabajar con núme
 
 ## tipo de datos booleano
 
-El tipo booleano `booleano` representa una entidad booleana y tiene dos valores 2️⃣: `true` ✅ (verdadero)
+El tipo booleano `booleano` representa una entidad booleana y tiene dos valores 2️⃣: `true`  (verdadero)
 
 ![true](https://media.giphy.com/media/ap6wcjRyi8HoA/giphy.gif)
 
-y `false` ❎ (falso).
+y `false`  (falso).
 
 ![False](https://media.giphy.com/media/HNOVuT5AvCK1fgvp1m/giphy.gif)
 
-Este tipo se usa típicamente para almacenar valores de 📦 sí/no: verdadero ✅ significa "sí, correcto" y falso ❎ significa "no, incorrecto".
+Este tipo se usa típicamente para almacenar valores de  sí/no: verdadero  significa "sí, correcto" y falso  significa "no, incorrecto".
 
 ## Null
 
@@ -137,7 +137,7 @@ Por ejemplo, puede asignarle un valor predeterminado.
 
 ![Unndefined](https://media.giphy.com/media/PkKzNQjwPy7GvxZbfe/giphy.gif)
 
-Una variable 🔔 a la que no se le haya asignado un valor tendrá el valor `indefinido`.
+Una variable  a la que no se le haya asignado un valor tendrá el valor `indefinido`.
 
 ### Diferencias entre null e undefined
 
@@ -151,7 +151,7 @@ console.log(TestVar) // undefined
 console.log(typeof TestVar) // undefined
 ```
 
-`null` es el valor de asignación. Se puede asignar a una variable 🔔 como una representación sin valor:
+`null` es el valor de asignación. Se puede asignar a una variable  como una representación sin valor:
 
 ```javascript
 let TestVar = null
@@ -278,7 +278,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <table>
   <tr>
-    <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /> <a href="https://github.com/gHashTag/react-native-village/commits?author=gHashTag" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /> <a href="https://github.com/gHashTag/react-native-village/commits?author=gHashTag" title="Documentation">  </a></td>
     <td align="center"><a href="https://github.com/Resoner2005"><img src="https://avatars1.githubusercontent.com/u/75675814?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Resoner2005</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/issues?q=author%3AResoner2005" title="Bug reports">🐛 🎨 🖋</a></td>
   </tr>
   

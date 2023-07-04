@@ -14,7 +14,7 @@ DRY（rus。不要重複自己）是一種軟件開發原理，旨在減少各�
 
 ## 選擇功能名稱
 
-功能⚙️是行動！ 因此，函數名稱通常是動詞。 它應該簡單，精確並描述函數的作用，以便程序員閱讀代碼 📟 對函數的功能有很好的理解。
+功能⚙️是行動！ 因此，函數名稱通常是動詞。 它應該簡單，精確並描述函數的作用，以便程序員閱讀代碼  對函數的功能有很好的理解。
 
 ![Choice](https://media.giphy.com/media/VbEloWwOz3QqYBsqIZ/giphy.gif)
 
@@ -41,7 +41,7 @@ createForm (..) // creates a form (and usually returns it)
 checkPermission (..) // checks access by returning true / false
 ```
 
-有了前綴，乍一看一個函數的名字，就很清楚它的代碼在做什麼，可以返回什麼值。🔄.
+有了前綴，乍一看一個函數的名字，就很清楚它的代碼在做什麼，可以返回什麼值。.
 
 無論如何，您和您的團隊需要準確了解前綴的含義以及and️可以使用和不能使用的功能。
 
@@ -50,7 +50,7 @@ checkPermission (..) // checks access by returning true / false
 
 例如，jQuery框架具有一個名為的函數⚙️`$`. 在Lodash庫中，主要功能⚙️由下劃線名稱表示 \ \_
 
-這些是例外。 基本上，函數名稱應該簡短而具有描述性 🖊️.
+這些是例外。 基本上，函數名稱應該簡短而具有描述性 .
 :::
 
 ### 功能 === 評論
@@ -67,11 +67,11 @@ checkPermission (..) // checks access by returning true / false
 
 要創建函數，我們使用函數聲明。
 
-首先是關鍵字 `function`, 然後是函數的名稱，然後是用逗號分隔的括號中的參數列表（在給定的示例中，該列表為空），最後是該函數的代碼📟，也稱為“函數的主體”，位於大括號內 大括號...
+首先是關鍵字 `function`, 然後是函數的名稱，然後是用逗號分隔的括號中的參數列表（在給定的示例中，該列表為空），最後是該函數的代碼，也稱為“函數的主體”，位於大括號內 大括號...
 
-🖊️函數的這種經典編寫方法稱為“函數聲明”。
+函數的這種經典編寫方法稱為“函數聲明”。
 
-句法 📖:
+句法   :
 
 ```javascript
 function name (parameters) {
@@ -89,7 +89,7 @@ function name (parameters) {
 - `Function Expression`
 - `Arrow Function (arrow functions)`
 
-函數表達式是函數的聲明🗣️，它是表達式的一部分（例如，賦值）.
+函數表達式是函數的聲明，它是表達式的一部分（例如，賦值）.
 
 ```javascript
 const name = function (parameters) {
@@ -150,7 +150,7 @@ function showNumberFive() {
 
 ![Matryoschka](https://media.giphy.com/media/bFhSvsdyaCy4g0d2lU/giphy.gif)
 
-在功能⚙️內部，您可以放置其他功能⚙️。 例如，函數⚙️ `showNumberFive()` 將返回數字5️⃣，其值將通過調用函數Learn來顯示`learnJavaScript()`.
+在功能⚙️內部，您可以放置其他功能⚙️。 例如，函數⚙️ `showNumberFive()` 將返回數字   ，其值將通過調用函數Learn來顯示`learnJavaScript()`.
 
 ```jsx live
 function learnJavaScript() {
@@ -170,7 +170,7 @@ function learnJavaScript() {
 -函數本身的主體通常向右縮進（使用TAB鍵）。 這對於程序的執行不是必需的，但對於團隊合作則是必需的，因為它極大地促進了代碼的可讀性。
 - T他關鍵字 `return` m可以看出，每當我們調用此函數時，都會傳遞值，即," returned ", 因此，它被稱為“函數的返回值”。
 
-<!-- Еще один пример 👇 :
+<!-- Еще один пример  :
 
 ```jsx live
 function sum() {
@@ -181,7 +181,7 @@ function sum() {
 }
 ```
 
-В функции⚙️ `sum()` объявляются🗣️ переменные `x` и `y` со значениями, объявляется🗣️ переменная 🔔 `z` и по заданному алгоритму производим расчет (сложение 2-х чисел), а результат выводим через `return`.
+В функции⚙️ `sum()` объявляются переменные `x` и `y` со значениями, объявляется переменная  `z` и по заданному алгоритму производим расчет (сложение 2-х чисел), а результат выводим через `return`.
 
 При необходимости обращаться к функции⚙️ можно несколько раз. Например в значение двух разных переменых присвоить нашу функцию⚙️:
 
@@ -191,7 +191,7 @@ let x1 = sum()
 let y1 = sum()
 ```
 
-Этот пример явно показывает одно из главных предназначений функций⚙️: избавление от дублирования кода📟 ! Функцию⚙️ можно запускать множества раз в разных участках вашего кода📟 . -->
+Этот пример явно показывает одно из главных предназначений функций⚙️: избавление от дублирования кода ! Функцию⚙️ можно запускать множества раз в разных участках вашего кода . -->
 
 ## 參數和函數參數
 
@@ -206,7 +206,7 @@ function addThree(x) {
 }
 ```
 
-在聲明函數🗣️及其參數之後，我們可以調用（運行）具有特定值（例如：5）的“代碼塊”。
+在聲明函數及其參數之後，我們可以調用（運行）具有特定值（例如：5）的“代碼塊”。
 我們將此賦值稱為參數：
 
 ```javascript
@@ -215,12 +215,12 @@ addThree(5)
 // Answer: 8
 ```
 
-在我們的示例中，數字5️⃣是函數參數-傳遞給函數⚙️的特定值。
+在我們的示例中，數字   是函數參數-傳遞給函數⚙️的特定值。
 我們的函數⚙️收到參數後，立即將其值分配給變量x（這是函數⚙的形式參數）。
 
-### 代碼示例📟:
+### 代碼示例:
 
-實驗 👇:
+實驗 :
 
 ```jsx live
 function learnJavaScript() {
@@ -267,12 +267,12 @@ calcPrym(7, 8)
 // Answer: 30
 ```
 
-哦，非常感謝，計算機🖥️！
+哦，非常感謝，計算機    ️！
 
 通過將其他值傳遞給函數⚙️，它還將立即計算其他矩形的周長。
 
 :::信息再次！
-函數⚙️的主要目的之一是擺脫代碼重複📟，並具有多次調用它們以解決問題的能力。
+函數⚙️的主要目的之一是擺脫代碼重複，並具有多次調用它們以解決問題的能力。
 :::
 
 ## 內建功能
@@ -326,7 +326,7 @@ console.log("c ___ c  n /. \\ n \\ _ T _ /  n / '' \\ n (/. \\)  n / '; -;' \\ n
 
 ![Random](https://media.giphy.com/media/3o6ozoD1ByqYv7ARIk/giphy.gif)
 
-另一個有用的內置函數⚙️： `Math.random()`. 請注意，與以前的函數不同，此函數的名稱⚙️以大寫字母開頭 `M`. T這是一個原因，JavaScript中的大寫和小寫字母內部代碼不同 📟. 在每種語言中，無論是俄語，英語還是JavaScript，該規則總是有一些例外。 這就是其中之一。 您遇到的所有其他變量和函數⚙️應該用小寫字母書寫。 請記住，註冊很重要，如果名稱 `Math.random()` 以。。開始 `math`, 然後功能⚙️根本就不會運行！
+另一個有用的內置函數⚙️： `Math.random()`. 請注意，與以前的函數不同，此函數的名稱⚙️以大寫字母開頭 `M`. T這是一個原因，JavaScript中的大寫和小寫字母內部代碼不同 . 在每種語言中，無論是俄語，英語還是JavaScript，該規則總是有一些例外。 這就是其中之一。 您遇到的所有其他變量和函數⚙️應該用小寫字母書寫。 請記住，註冊很重要，如果名稱 `Math.random()` 以。。開始 `math`, 然後功能⚙️根本就不會運行！
 
 ```jsx live
 function learnJavaScript() {
@@ -336,7 +336,7 @@ function learnJavaScript() {
 
 每次都有新號碼！ 該函數返回0到1之間的隨機實數。
 
-讓我們更新方程式 👇:
+讓我們更新方程式 :
 
 ```jsx live
 function learnJavaScript() {
@@ -350,7 +350,7 @@ function learnJavaScript() {
 
 ![Floor](https://media.giphy.com/media/uTAZTQi8dX1VGa4pXT/giphy.gif)
 
-⚙️函數將數字或digit5️⃣作為自變量，然後將其四捨五入。
+⚙️函數將數字或digit   作為自變量，然後將其四捨五入。
 
 ```javascript
 Math.floor(10.7) // 10
@@ -389,11 +389,11 @@ function learnJavaScript() {
 您是否曾經註意到某些消息中的大寫單詞太多？
 好吧，這就是我們現在要學習的內容。
 
-您可以使用內置方法輕鬆獲取任何字符串並返回其新版本，並以大寫🖊️字母（即大寫/小寫）分隔 `.toUpperCase() / .toLowerCase()`.並且，因此，您可以返回任何以小寫字母（即小寫）的字符串。
+您可以使用內置方法輕鬆獲取任何字符串並返回其新版本，並以大寫字母（即大寫/小寫）分隔 `.toUpperCase() / .toLowerCase()`.並且，因此，您可以返回任何以小寫字母（即小寫）的字符串。
 
 請記住，方法只是附加到所描述對象的函數，在這種情況下為通用字符串。
 
-像這樣 `.toUpperCase()` in個大寫🖊️字母👇:
+像這樣 `.toUpperCase()` in個大寫字母:
 
 ```jsx live
 function learnJavaScript() {
@@ -437,7 +437,7 @@ function learnJavaScript() {
 
 創建函數⚙️甚至有一種更簡單明了的語法такс，通常比其他類型要好。
 
-因此，編寫🖊️函數⚙️的經典版本：
+因此，編寫函數⚙️的經典版本：
 
 功能聲明：
 
@@ -455,7 +455,7 @@ let func1 = function (arg1, arg2, ...argN) {
 }
 ```
 
-這樣的代碼📟創建一個函數⚙️ `func1` 帶參數 `arg1, .. argN` 併計算 `expression` - 一組使用它們的右側算法的操作，通過關鍵字返回計算結果 `return`.
+這樣的代碼創建一個函數⚙️ `func1` 帶參數 `arg1, .. argN` 併計算 `expression` - 一組使用它們的右側算法的操作，通過關鍵字返回計算結果 `return`.
 
 現在讓我們使用 `Arrow functions`:
 
@@ -463,13 +463,13 @@ let func1 = function (arg1, arg2, ...argN) {
 let func1 = (arg1, arg2, ...argN) => expression
 ```
 
-換句話說，這是這種表示法的縮寫 🖊️.
+換句話說，這是這種表示法的縮寫 .
 
 :::note How!
 `=>` we have replaced `{return ...}` on the right side and allowed us not to write the keyword `function` on the left side!
 :::
 
-讓我們看一個具體的例子 👇:
+讓我們看一個具體的例子 :
 
 ```jsx live
 function learnJavaScript() {
@@ -510,7 +510,7 @@ function learnJavaScript() {
 
 ![no](https://media.giphy.com/media/LOEI8jsNKPmzdJYvhJ/giphy.gif)
 
-如果沒有參數，則避免重複 `==`, 使用 `empty parentheses` 👇:
+如果沒有參數，則避免重複 `==`, 使用 `empty parentheses` :
 
 ```jsx live
 function learnJavaScript() {
@@ -533,7 +533,7 @@ function learnJavaScript() {
 ![Anonym](https://media.giphy.com/media/m3lszq64i1k2s/giphy.gif)
 
 如果之後 `function` 有一個名字-函數⚙️已命名，否則為匿名。
-匿名函數⚙️通常會創建並立即運行。 另一個重要的區別是，已命名的函數是⚙️聲明的🗣️，而匿名函數是使用function語句創建的。
+匿名函數⚙️通常會創建並立即運行。 另一個重要的區別是，已命名的函數是⚙️聲明的，而匿名函數是使用function語句創建的。
 
 在Google Chrome控制台中輸入以下代碼：
 
@@ -549,7 +549,7 @@ function learnJavaScript() {
 
 ![conclusion](https://media.giphy.com/media/8Bksh0hra9RcZcSNSO/giphy.gif)
 
-通過了解箭頭和正常函數⚙️，您可以將函數傳遞給變量對象🔔並在模塊中重建代碼。 這種函數也可以用於創建和返回其他函數⚙️。 在這裡，我們已經在討論閉包了，我們將在下一個系列中討論閉包。
+通過了解箭頭和正常函數⚙️，您可以將函數傳遞給變量對象並在模塊中重建代碼。 這種函數也可以用於創建和返回其他函數⚙️。 在這裡，我們已經在討論閉包了，我們將在下一個系列中討論閉包。
 
 ## 問題？
 
@@ -664,7 +664,7 @@ addThree(20)
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/KoDim-React"><img src="https://avatars1.githubusercontent.com/u/72087863?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy K.</b></sub></a><br /><a href="#mentoring-KoDim-React" title="Mentoring">📖</a></td>
+    <td align="center"><a href="https://github.com/KoDim-React"><img src="https://avatars1.githubusercontent.com/u/72087863?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy K.</b></sub></a><br /><a href="#mentoring-KoDim-React" title="Mentoring">  </a></td>
     <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /><a href="#financial-gHashTag" title="Financial">💵</a></td>
     <td align="center"><a href="https://github.com/Resoner2005"><img src="https://avatars1.githubusercontent.com/u/75675814?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Resoner2005</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/issues?q=author%3AResoner2005" title="Bug reports">🐛 🎨 🖋</a></td>
     <td align="center"><a href="https://github.com/Navernoss"><img src="https://avatars0.githubusercontent.com/u/75784137?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Navernoss</b></sub></a><br /><a href="#content-Navernoss" title="Content">🖋 🐛 🎨 </a></td>

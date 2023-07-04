@@ -10,7 +10,7 @@ Promise是包含異步操作的將來值的對象。 例如，如果您從服務
 
 ![math](https://media.giphy.com/media/4JVTF9zR9BicshFAb7/giphy.gif)
 
-首先，諾言具有地位 `pending`, 那麼它具有以下之一： `fulfilled` ("成功完成") or `rejected` (" 錯誤完成🙅‍♂️ ").
+首先，諾言具有地位 `pending`, 那麼它具有以下之一： `fulfilled` ("成功完成") or `rejected` (" 錯誤完成 ").
 
 ![promise states](/img/javascript/23/promise.png)
 
@@ -76,7 +76,7 @@ promise.then(
 
 的第一個 1️⃣ 參數 `then` m方法是一個函數⚙️，當將諾言傳遞到“成功完成”狀態並接收結果時執行。
 
-第二個論點 `then` 是一個函數⚙️，當promise進入帶有錯誤的完成狀態並收到錯誤時執行🙅‍♂️.
+第二個論點 `then` 是一個函數⚙️，當promise進入帶有錯誤的完成狀態並收到錯誤時執行.
 
 ![Error](https://media.giphy.com/media/iJCo9daAP0xugHhhfb/giphy.gif)
 
@@ -94,7 +94,7 @@ promise.then(
 )
 ```
 
-並且在保證中出現錯誤 🙅‍♂️ 時，將執行第二個:
+並且在保證中出現錯誤  時，將執行第二個:
 
 ```jsx
 let promise = new Promise(function (resolve, reject) {
@@ -122,7 +122,7 @@ promise.then(alert) // will print "done!" one second later
 
 ![Catch](https://media.giphy.com/media/fxeeuml8GaESfmuE4z/giphy.gif)
 
-捕捉錯誤🙅‍♂️ `catch` 使用方法。 它可以代替 `then` 顯示錯誤消息的方法。
+捕捉錯誤 `catch` 使用方法。 它可以代替 `then` 顯示錯誤消息的方法。
 
 catch方法的語法為：
 
@@ -164,7 +164,7 @@ Promise.all([promise1, promise2])
 
 ![Bomerang](https://media.giphy.com/media/g0yLXvb7Ffn9rilMIm/giphy.gif)
 
-Этот метод принимает массив промисов и возвращает🔄 один 🆕 новый промис, который будет выполненным, как только встретится выполненный промис в массиве или же отклоняется, если отклоненный промис встречается раньше.
+Этот метод принимает массив промисов и возвращает один    новый промис, который будет выполненным, как только встретится выполненный промис в массиве или же отклоняется, если отклоненный промис встречается раньше.
 
 Например:
 
@@ -184,11 +184,11 @@ Promise.race([promise1, promise2])
   .catch(error => console.log(error))
 ```
 
-Тут мы имеем два промиса, где один выполняется через `1` секунду, а другой отклоняется через `1.5` секунды. Как только первый 1️⃣ промис выполнен, возвращенный🔄 из `Promise.race()` промис будет иметь статус выполненного не дожидаясь статуса второго промиса.
+Тут мы имеем два промиса, где один выполняется через `1` секунду, а другой отклоняется через `1.5` секунды. Как только первый 1️⃣ промис выполнен, возвращенный из `Promise.race()` промис будет иметь статус выполненного не дожидаясь статуса второго промиса.
 
 Здесь data, которая передается в `then()` является значением первого, выполненного, промиса.
 
-По итогу, `Promise.race()` дожидается первого промиса и берет его статус как статус возвращаемого🔄 промиса. -->
+По итогу, `Promise.race()` дожидается первого промиса и берет его статус как статус возвращаемого промиса. -->
 
 ## 問題?
 
@@ -234,7 +234,7 @@ T向這些好人致敬 ([emoji key](https://allcontributors.org/docs/en/emoji-ke
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/FELiX-RN"><img src="https://avatars0.githubusercontent.com/u/72006627?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Philipp Dvinyaninov</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/commits?author=FELiX-RN" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/FELiX-RN"><img src="https://avatars0.githubusercontent.com/u/72006627?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Philipp Dvinyaninov</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/commits?author=FELiX-RN" title="Documentation">  </a></td>
     <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /><a href="#financial-gHashTag" title="Financial">💵</a></td>
     <td align="center"><a href="https://github.com/Resoner2005"><img src="https://avatars1.githubusercontent.com/u/75675814?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Resoner2005</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/issues?q=author%3AResoner2005" title="Bug reports">🐛 🎨 🖋</a></td>
     <td align="center"><a href="https://github.com/Navernoss"><img src="https://avatars0.githubusercontent.com/u/75784137?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Navernoss</b></sub></a><br /><a href="#content-Navernoss" title="Content">🖋 🐛 🎨 </a></td>

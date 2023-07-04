@@ -36,7 +36,7 @@ We now know what first-class functions are. You can start with higher-order func
 
 ![Higher](https://media.giphy.com/media/WS4yajVBkb3lIwDIKd/giphy.gif)
 
-These are functions⚙️ that take a function⚙️ as an argument or return🔄 a function⚙️ as output.
+These are functions⚙️ that take a function⚙️ as an argument or return a function⚙️ as output.
 
 For example, these higher-order functions are built into the language: `map()` `filter()` and `reduce()`
 
@@ -44,7 +44,7 @@ For example, these higher-order functions are built into the language: `map()` `
 
 ![Edit_number](https://media.giphy.com/media/xT5LMMneIRG1UJquOI/giphy.gif)
 
-Let's say we have an array of numbers. We want to create a new🆕 array that will contain the doubled values of the first one. Let's see how we can solve this problem with and without a higher-order function.
+Let's say we have an array of numbers. We want to create a new   array that will contain the doubled values of the first one. Let's see how we can solve this problem with and without a higher-order function.
 
 #### Without higher order function:
 
@@ -118,13 +118,13 @@ function learnJavaScript() {
 }
 ```
 
-We reflash 🆕 a new array in one line of code📟.
+We reflash    a new array in one line of code.
 
 ### Example # 3. With condition check `.filter()`
 
 ![Check](https://media.giphy.com/media/Rd6sn03ncIklmprvy6/giphy.gif)
 
-We have an array that contains objects with properties: name and age. We need to create🏗️ an array that will only contain adults (ie, age greater than or equal to 18).
+We have an array that contains objects with properties: name and age. We need to create an array that will only contain adults (ie, age greater than or equal to 18).
 
 Without a higher-order function (classic - through the `for ()` and `push ()` loops):
 
@@ -194,14 +194,14 @@ function learnJavaScript() {
 }
 ```
 
-In the example above, we have created our own higher-order function `mapFor()`, which takes an array `arr` and a callback function`fn`. This function loops through this array and calls the callback function `fn` inside the `newArray.push()` for each iteration, calculating the number of characters in the words of the array, the calculation algorithm of which is described 🖊️ in the form of the 2nd variable 🔔.
+In the example above, we have created our own higher-order function `mapFor()`, which takes an array `arr` and a callback function`fn`. This function loops through this array and calls the callback function `fn` inside the `newArray.push()` for each iteration, calculating the number of characters in the words of the array, the calculation algorithm of which is described  in the form of the 2nd variable .
 
 ::: note callback
 A callback function is a function passed to another function as an argument, which is then called upon completion of an action.
 
 :::
 
-The `callback` function⚙️ `fn` takes the current element of the array and returns🔄 the length of the current element, which is now stored in `newArray`. After the `For()` loop completes, `newArray` returns the length of the elements in `lenArray`.
+The `callback` function⚙️ `fn` takes the current element of the array and returns the length of the current element, which is now stored in `newArray`. After the `For()` loop completes, `newArray` returns the length of the elements in `lenArray`.
 
 <!-- Поэксперементируйте, используя стрелочные функции:
 
@@ -220,13 +220,13 @@ function learnJavaScript() {
 }
 ```
 
-Обратите внимание на синтаксис📖:
+Обратите внимание на синтаксис  :
 
 при передаче функции⚙️ say в качестве параметра скобки `()` не указываются, т.к. в параметре функция⚙️ не вызывается, а передается целиком. Функция⚙️ `say` является аргументом функции⚙️ `userInput().` -->
 
 Remember, any algorithm, no matter how small, consists of 3 stages:
 
-- Stage 1 - Initialization of variables 🔔 and functions
+- Stage 1 - Initialization of variables  and functions
 - Stage 2 - Higher order function (logic)
 - Stage 3 - Conclusion of the answer.
 
@@ -250,7 +250,7 @@ function learnJavaScript() {
 
 <!-- ![The and](https://media.giphy.com/media/xT1XH3yj7ujmm2h40o/giphy.gif) -->
 
-We learned what higher-order functions are and took a look at several of them already built into the language👅. We learned to create them on our own.
+We learned what higher-order functions are and took a look at several of them already built into the language . We learned to create them on our own.
 
 Without going into details, higher-order functions⚙️ can be said as follows: these are functions⚙️ that can take a function⚙️ as an argument and even return a function⚙️.
 
@@ -304,7 +304,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/KoDim-React"><img src="https://avatars1.githubusercontent.com/u/72087863?v=4?s=200" width="200px " alt=""/><br /><sub><b>Dmitriy K.</b></sub></a><br /><a href="#mentoring-KoDim-React" title="Mentoring">📖</a></td>
+    <td align="center"><a href="https://github.com/KoDim-React"><img src="https://avatars1.githubusercontent.com/u/72087863?v=4?s=200" width="200px " alt=""/><br /><sub><b>Dmitriy K.</b></sub></a><br /><a href="#mentoring-KoDim-React" title="Mentoring">  </a></td>
     <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px " alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /><a href="#financial-gHashTag" title="Financial">💵</a></td>
     <td align="center"><a href="https://github.com/Resoner2005"><img src="https://avatars1.githubusercontent.com/u/75675814?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Resoner2005</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/issues?q=author%3AResoner2005" title="Bug reports">🐛 🎨 🖋</a></td>
     <td align="center"><a href="https://github.com/Navernoss"><img src="https://avatars0.githubusercontent.com/u/75784137?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Navernoss</b></sub></a><br /><a href="#content-Navernoss" title="Content">🖋 🐛 🎨 </a></td>

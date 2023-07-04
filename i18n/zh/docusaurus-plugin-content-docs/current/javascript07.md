@@ -51,7 +51,7 @@ Be careful when using leading zeros! This means you don't need to put zero befor
 
 正斜杠 `/` 師： `15 / 5` 回复：` 3`
 
-如果一行中執行了多個動作，則使用-（括號）將它們彼此分開，並使代碼 📟 更具可讀性。 讓我們在控制台中輸入以下語句。 他們每個人的答案應該只包含一位數字 9️⃣:
+如果一行中執行了多個動作，則使用-（括號）將它們彼此分開，並使代碼  更具可讀性。 讓我們在控制台中輸入以下語句。 他們每個人的答案應該只包含一位數字 9️⃣:
 
 ```
  3 * (2 + 1)
@@ -60,7 +60,7 @@ Be careful when using leading zeros! This means you don't need to put zero befor
  2 * (5 - 8 / 2) * (3 + 1)
 ```
 
-將以下值輸入 `LIVE EDITOR` 👇:
+將以下值輸入 `LIVE EDITOR` :
 
 ```jsx {2} live
 function learnJavaScript() {
@@ -78,15 +78,15 @@ function learnJavaScript() {
 
 操作數是在程序中處理的某個值。 操作數可以是任何數據類型。 運算符左側的操作數是左側操作數，運算符右側的操作數是右側操作數。
 
-組合分配的主要算子等於 `=`, 並將右操作數的值賦給左一個。 那是 - `x = y` 將值分配給變量 🔔 `y`, 到變量 🔔 `x`.
+組合分配的主要算子等於 `=`, 並將右操作數的值賦給左一個。 那是 - `x = y` 將值分配給變量  `y`, 到變量  `x`.
 
-您已經多次看到如何為變量分配值 🔔 使用數學運算符。 例如，像這樣：
+您已經多次看到如何為變量分配值  使用數學運算符。 例如，像這樣：
 
 ```javascript
 let sum = 2 + 3 // sum value 7
 ```
 
-您可能沒有時間忘記在任何時候都可以更改已知變量的值 🔔:
+您可能沒有時間忘記在任何時候都可以更改已知變量的值 :
 
 ```jsx live
 function learnJavaScript() {
@@ -154,7 +154,7 @@ function learnJavaScript() {
 
 ![function](https://media.giphy.com/media/seVVu09CPz2upPeU1s/giphy.gif)
 
- `%` （百分比）表示除法的其餘部分。 運算符返回左操作數除以右的整數餘數。 收益 🔄 值總是得到除數的符號，而不是除數。 它使用內置函數⚙️模，這是除法的整數餘數 ⚙️ `let1`通過 `let2`.
+ `%` （百分比）表示除法的其餘部分。 運算符返回左操作數除以右的整數餘數。 收益  值總是得到除數的符號，而不是除數。 它使用內置函數⚙️模，這是除法的整數餘數 ⚙️ `let1`通過 `let2`.
 
 `12% 5` result` 2`
 
@@ -253,7 +253,7 @@ function learnJavaScript() {
 
 <table>
   <tr>
-    <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /> <a href="https://github.com/gHashTag/react-native-village/commits?author=gHashTag" title="Documentation">📖</a><a href="#financial-gHashTag" title="Financial">💵</a></td>
+    <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /> <a href="https://github.com/gHashTag/react-native-village/commits?author=gHashTag" title="Documentation">  </a><a href="#financial-gHashTag" title="Financial">💵</a></td>
     <td align="center"><a href="https://github.com/Resoner2005"><img src="https://avatars1.githubusercontent.com/u/75675814?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Resoner2005</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/issues?q=author%3AResoner2005" title="Bug reports">🐛 🎨 🖋</a></td>
   </tr>
   

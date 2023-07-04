@@ -6,7 +6,7 @@ sidebar_label: جلب API
 
 ![@serverSerrverlesskiy](/img/javascript/headers/28.jpg)
 
-ال ** تسمح Fetch API ** لجافا سكريبت بالاتصال بالخادم باستخدام طلبات HTTP وهي بديل أفضل لفئة XMLHttpRequest. يتم تنفيذ الاستعلامات بواسطة `fetch()` الطريقة التي تعود🔄 [Promise](https://jscamp.app/docs/javascript24).
+ال ** تسمح Fetch API ** لجافا سكريبت بالاتصال بالخادم باستخدام طلبات HTTP وهي بديل أفضل لفئة XMLHttpRequest. يتم تنفيذ الاستعلامات بواسطة `fetch()` الطريقة التي تعود [Promise](https://jscamp.app/docs/javascript24).
 
 ![Exchange](https://media.giphy.com/media/OPQiZUC381IJ8Sh7UY/giphy.gif)
 
@@ -53,10 +53,10 @@ fetch('https://jsonplaceholder.typicode.com/users', {
 
 ![Bascketball](https://media.giphy.com/media/l0MYwdebx8o0XI56E/giphy.gif)
 
-إرجاع طريقة `fetch ()`🔄 [Promise](https://jscamp.app/docs/javascript24) كائن من فئة "Response" ، والتي لها الخصائص التالية:
+إرجاع طريقة `fetch ()` [Promise](https://jscamp.app/docs/javascript24) كائن من فئة "Response" ، والتي لها الخصائص التالية:
 
 1. `status` - كود الاستجابة
-2. `statusText` - رسالة نصية 📜 المقابلة لرمز الاستجابة ؛
+2. `statusText` - رسالة نصية  المقابلة لرمز الاستجابة ؛
 3. `ok` - قيمة منطقية تشير إلى نجاح رمز الاستجابة (صواب: 200-299) ؛;
 4. `headers` - كائن برؤوس استجابة ، حيث يكون المفتاح هو اسم الرأس ، وقيمة المفتاح هي قيمة الرأس المقابلة للمفتاح ؛
 5. `url` - عنوان URL الذي تم إرسال الطلب إليه ؛
@@ -91,7 +91,7 @@ fetch('https://jsonplaceholder.typicode.com/users')
 
 ![Error](https://media.giphy.com/media/DHBGehJ3FSZEygszX3/giphy.gif)
 
-يمكننا معرفة ما إذا كان `fetch()` hكما اكتمل مع وجود خطأ🙅‍♂️ باستخدام خصائص "الحالة" و "موافق".
+يمكننا معرفة ما إذا كان `fetch()` hكما اكتمل مع وجود خطأ باستخدام خصائص "الحالة" و "موافق".
 
 ```jsx
 fetch('https://jsonplaceholder.typicode.com/users')
@@ -189,7 +189,7 @@ console.log(data[0].name + ' and ' + data[2].name)
 
 <table>
   <tr> 
-    <td align="center"><a href="https://github.com/IIo3iTiv"><img src="https://avatars1.githubusercontent.com/u/72025062?v=4?s=200" width="200px;" alt=""/><br /><sub><b>IIo3iTiv</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/commits?author=IIo3iTiv" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/IIo3iTiv"><img src="https://avatars1.githubusercontent.com/u/72025062?v=4?s=200" width="200px;" alt=""/><br /><sub><b>IIo3iTiv</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/commits?author=IIo3iTiv" title="Documentation">  </a></td>
     <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /><a href="#financial-gHashTag" title="Financial">💵</a></td>
     <td align="center"><a href="https://github.com/Resoner2005"><img src="https://avatars1.githubusercontent.com/u/75675814?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Resoner2005</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/issues?q=author%3AResoner2005" title="Bug reports">🐛 🎨 🖋</a></td>
     <td align="center"><a href="https://github.com/Navernoss"><img src="https://avatars0.githubusercontent.com/u/75784137?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Navernoss</b></sub></a><br /><a href="#content-Navernoss" title="Content">🖋 🐛 🎨 </a></td>

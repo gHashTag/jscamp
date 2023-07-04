@@ -10,7 +10,7 @@ A Promise is an object that contains the future value of an asynchronous operati
 
 ![math](https://media.giphy.com/media/4JVTF9zR9BicshFAb7/giphy.gif)
 
-At first, the promise has the status `pending`, then it has one of: `fulfilled` ("successfully completed") or `rejected` (" completed with an error🙅‍♂️ ").
+At first, the promise has the status `pending`, then it has one of: `fulfilled` ("successfully completed") or `rejected` (" completed with an error ").
 
 ![promise states](/img/javascript/23/promise.png)
 
@@ -76,7 +76,7 @@ promise.then(
 
 The first 1️⃣ argument of the `then` method is a function⚙️ that is executed when the promise is passed to the" completed successfully "state and receives the result.
 
-The second argument to `then` is a function⚙️ that is executed when a promise enters the completed with error state and receives an error🙅‍♂️.
+The second argument to `then` is a function⚙️ that is executed when a promise enters the completed with error state and receives an error.
 
 ![Error](https://media.giphy.com/media/iJCo9daAP0xugHhhfb/giphy.gif)
 
@@ -94,7 +94,7 @@ promise.then(
 )
 ```
 
-And in case of an error 🙅‍♂️ in a promise, the second will be executed:
+And in case of an error  in a promise, the second will be executed:
 
 ```jsx
 let promise = new Promise(function (resolve, reject) {
@@ -122,7 +122,7 @@ promise.then(alert) // will print "done!" one second later
 
 ![Catch](https://media.giphy.com/media/fxeeuml8GaESfmuE4z/giphy.gif)
 
-To catch errors🙅‍♂️, the `catch` method is used. It can be used instead of the `then` method to display error messages.
+To catch errors, the `catch` method is used. It can be used instead of the `then` method to display error messages.
 
 The syntax for the catch method is:
 
@@ -164,7 +164,7 @@ Here, the argument inside `then()` is an array that contains the values of the p
 
 ![Bomerang](https://media.giphy.com/media/g0yLXvb7Ffn9rilMIm/giphy.gif)
 
-Этот метод принимает массив промисов и возвращает🔄 один 🆕 новый промис, который будет выполненным, как только встретится выполненный промис в массиве или же отклоняется, если отклоненный промис встречается раньше.
+Этот метод принимает массив промисов и возвращает один    новый промис, который будет выполненным, как только встретится выполненный промис в массиве или же отклоняется, если отклоненный промис встречается раньше.
 
 Например:
 
@@ -184,11 +184,11 @@ Promise.race([promise1, promise2])
   .catch(error => console.log(error))
 ```
 
-Тут мы имеем два промиса, где один выполняется через `1` секунду, а другой отклоняется через `1.5` секунды. Как только первый 1️⃣ промис выполнен, возвращенный🔄 из `Promise.race()` промис будет иметь статус выполненного не дожидаясь статуса второго промиса.
+Тут мы имеем два промиса, где один выполняется через `1` секунду, а другой отклоняется через `1.5` секунды. Как только первый 1️⃣ промис выполнен, возвращенный из `Promise.race()` промис будет иметь статус выполненного не дожидаясь статуса второго промиса.
 
 Здесь data, которая передается в `then()` является значением первого, выполненного, промиса.
 
-По итогу, `Promise.race()` дожидается первого промиса и берет его статус как статус возвращаемого🔄 промиса. -->
+По итогу, `Promise.race()` дожидается первого промиса и берет его статус как статус возвращаемого промиса. -->
 
  [![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)
 
@@ -236,7 +236,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/FELiX-RN"><img src="https://avatars0.githubusercontent.com/u/72006627?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Philipp Dvinyaninov</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/commits?author=FELiX-RN" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/FELiX-RN"><img src="https://avatars0.githubusercontent.com/u/72006627?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Philipp Dvinyaninov</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/commits?author=FELiX-RN" title="Documentation">  </a></td>
     <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /><a href="#financial-gHashTag" title="Financial">💵</a></td>
     <td align="center"><a href="https://github.com/Resoner2005"><img src="https://avatars1.githubusercontent.com/u/75675814?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Resoner2005</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/issues?q=author%3AResoner2005" title="Bug reports">🐛 🎨 🖋</a></td>
     <td align="center"><a href="https://github.com/Navernoss"><img src="https://avatars0.githubusercontent.com/u/75784137?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Navernoss</b></sub></a><br /><a href="#content-Navernoss" title="Content">🖋 🐛 🎨 </a></td>

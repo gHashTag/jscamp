@@ -77,7 +77,7 @@ Answer these questions:
 
 ![amplify init](/img/auth/auth02.png)
 
-The project has been successfully initialized 🚀
+The project has been successfully initialized 
 
 ![Step03](/img/steps/03.png)
 
@@ -1058,7 +1058,7 @@ window.LOG_LEVEL = 'DEBUG'
 
 We launch the application and get custom authentication.
 
-## Done ✅
+## Done 
 
 ## Contributors ✨
 
@@ -1066,7 +1066,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <table>
   <tr>
-    <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /> <a href="https://github.com/gHashTag/react-native-village/commits?author=gHashTag" title="Documentation">📖</a><a href="#financial-gHashTag" title="Financial">💵</a></td>
+    <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /> <a href="https://github.com/gHashTag/react-native-village/commits?author=gHashTag" title="Documentation">  </a><a href="#financial-gHashTag" title="Financial">💵</a></td>
   </tr>
 </table>
 

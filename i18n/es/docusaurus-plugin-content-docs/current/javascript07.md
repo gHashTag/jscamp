@@ -26,7 +26,7 @@ Los números hacen posible trabajar con enteros de longitud arbitraria. Rara vez
 
 Cualquier número, incluso una fracción decimal con muchos lugares decimales, nunca se cita.
 
-Puede utilizar cuatro tipos de literales numéricos: decimal, binario, octal y hexadecimal. Dado que los últimos tres se usan muy raramente, omitiremos su descripción detallada 🖊️, pero los curiosos pueden familiarizarse con ellos [aquí](https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Numbers_and_dates).
+Puede utilizar cuatro tipos de literales numéricos: decimal, binario, octal y hexadecimal. Dado que los últimos tres se usan muy raramente, omitiremos su descripción detallada , pero los curiosos pueden familiarizarse con ellos [aquí](https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Numbers_and_dates).
 
 :::caution
 ¡Tenga cuidado al usar ceros a la izquierda! Así que no necesitas poner un cero antes del número decimal.
@@ -55,7 +55,7 @@ Un asterisco `*` representa la multiplicación: `3 * 4` Respuesta: `12`
 
 Barra diagonal `/` división: `15 / 5` Respuesta: `3`
 
-Si se realiza más de una acción en una línea, para separarlas y también para hacer que el código 📟 sea más legible, usamos - (paréntesis). Escribamos las siguientes oraciones en la consola. La respuesta para cada uno de ellos debe consistir en un solo dígito 9️⃣:
+Si se realiza más de una acción en una línea, para separarlas y también para hacer que el código  sea más legible, usamos - (paréntesis). Escribamos las siguientes oraciones en la consola. La respuesta para cada uno de ellos debe consistir en un solo dígito 9️⃣:
 
 ```
  3 * (2 + 1)
@@ -64,7 +64,7 @@ Si se realiza más de una acción en una línea, para separarlas y también para
  3 * (5 - 8 / 2) * (2 + 1)
 ```
 
-Introduce los siguientes valores en `LIVE EDITOR` 👇:
+Introduce los siguientes valores en `LIVE EDITOR` :
 
 ```jsx {2} live
 function learnJavaScript() {
@@ -81,15 +81,15 @@ Un operador es una designación simbólica de alguna acción realizada en operan
 
 El operando es algún valor procesado en el programa. Los operandos pueden ser de cualquier tipo de datos. El operando a la izquierda del operador es el operando izquierdo, el operando a la derecha del operador es el operando derecho.
 
-El operador básico de asignación combinada es el signo igual `=`, que asigna el valor del operando derecho al operando izquierdo. Es decir - `x = y` asigna un valor a la variable 🔔 `y`, la variable 🔔 `x`.
+El operador básico de asignación combinada es el signo igual `=`, que asigna el valor del operando derecho al operando izquierdo. Es decir - `x = y` asigna un valor a la variable  `y`, la variable  `x`.
 
-Ya has visto cómo los operadores matemáticos asignan valores a las variables 🔔. Por ejemplo, así:
+Ya has visto cómo los operadores matemáticos asignan valores a las variables . Por ejemplo, así:
 
 ```javascript
 let sum = 2 + 3 // valor de suma 7
 ```
 
-Y probablemente no tuviste tiempo de olvidar que en cualquier momento puedes cambiar el valor de una variable ya conocida 🔔:
+Y probablemente no tuviste tiempo de olvidar que en cualquier momento puedes cambiar el valor de una variable ya conocida :
 
 ```jsx live
 function learnJavaScript() {
@@ -157,7 +157,7 @@ function learnJavaScript() {
 
 ![function](https://media.giphy.com/media/seVVu09CPz2upPeU1s/giphy.gif)
 
-El signo `%` (por ciento) denotamos el resto de la división. El operador devuelve 🔄 el resto entero después de dividir el operando izquierdo por el operando derecho. El valor 🔄 devuelto siempre toma el signo del dividendo, no del divisor. Utiliza la función integrada ⚙️ módulo para obtener el resultado, que es el resto entero de dividir `let1` por `let2`.
+El signo `%` (por ciento) denotamos el resto de la división. El operador devuelve  el resto entero después de dividir el operando izquierdo por el operando derecho. El valor  devuelto siempre toma el signo del dividendo, no del divisor. Utiliza la función integrada ⚙️ módulo para obtener el resultado, que es el resto entero de dividir `let1` por `let2`.
 
 `12 % 5` resultado `2`
 
@@ -184,7 +184,7 @@ function learnJavaScript() {
 
 ![Balls](https://media.giphy.com/media/6glYLqOQ3dlok/giphy.gif)
 
-El método `Math.round()` devuelve el número 🔄 redondeado al entero más cercano. Si la parte fraccionaria del número es mayor o igual a `0.5`, el argumento se redondeará al entero superior más cercano. Si la parte fraccionaria del número es menor que '0,5', el argumento se redondeará al entero menor más cercano.
+El método `Math.round()` devuelve el número  redondeado al entero más cercano. Si la parte fraccionaria del número es mayor o igual a `0.5`, el argumento se redondeará al entero superior más cercano. Si la parte fraccionaria del número es menor que '0,5', el argumento se redondeará al entero menor más cercano.
 
 `resultado = Math.round(20.49)` Devuelve el valor 20
 
@@ -318,7 +318,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <table>
   <tr>
-    <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /> <a href="https://github.com/gHashTag/react-native-village/commits?author=gHashTag" title="Documentation">📖</a><a href="#financial-gHashTag" title="Financial">💵</a></td>
+    <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /> <a href="https://github.com/gHashTag/react-native-village/commits?author=gHashTag" title="Documentation">  </a><a href="#financial-gHashTag" title="Financial">💵</a></td>
     <td align="center"><a href="https://github.com/Resoner2005"><img src="https://avatars1.githubusercontent.com/u/75675814?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Resoner2005</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/issues?q=author%3AResoner2005" title="Bug reports">🐛 🎨 🖋</a></td>
   </tr>
   

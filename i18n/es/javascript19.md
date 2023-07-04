@@ -12,7 +12,7 @@ The JavaScript language has a clear preference for arrays over other data struct
 
 ![Create](https://media.giphy.com/media/ffd0F6WNcRJMQ/giphy.gif)
 
-The `map ()` method creates🏗️ a new с array with the result of calling the specified function⚙️ for each element of the array.
+The `map ()` method creates a new с array with the result of calling the specified function⚙️ for each element of the array.
 
 ### Syntax
 
@@ -44,7 +44,7 @@ The range of elements processed by the `map` method is set before the first call
 
 #### simple example
 
-You have an array with many objects, each representing a different person👨. There can be a lot of data here: name, age, hair color and favorite character from the cinema, but at the moment all this is not required - you only want to get an array of passport numbers of these people in order to give them all conference passes.
+You have an array with many objects, each representing a different person. There can be a lot of data here: name, age, hair color and favorite character from the cinema, but at the moment all this is not required - you only want to get an array of passport numbers of these people in order to give them all conference passes.
 
 ```jsx live
 function learnJavaScript() {
@@ -61,7 +61,7 @@ function learnJavaScript() {
 }
 ```
 
-#### In certain cases, you may need to display an array of objects with the selected keys as a string 👇:
+#### In certain cases, you may need to display an array of objects with the selected keys as a string :
 
 ```jsx live
 function learnJavaScript() {
@@ -82,7 +82,7 @@ function learnJavaScript() {
 
 ![Thermometer](https://media.giphy.com/media/W23dJLsAW5knUU27Fv/giphy.gif)
 
-An example with processing each element of an array with a given formula 👇:
+An example with processing each element of an array with a given formula :
 
 ```jsx live
 function learnJavaScript() {
@@ -97,7 +97,7 @@ function learnJavaScript() {
 <!-- ### Отображение массива чисел на массив квадратных корней
 
 Отображение таблицы пользователей в виде читаемой строки только с указанными ключами
-Следующий код📟 берёт массив чисел и создаёт 🆕 новый массив, содержащий квадратные корни чисел из первого массива.
+Следующий код берёт массив чисел и создаёт    новый массив, содержащий квадратные корни чисел из первого массива.
 
 ```jsx live
 function learnJavaScript() {
@@ -107,7 +107,7 @@ function learnJavaScript() {
 }
 ``` -->
 
-#### Displaying an array of numbers using a function that takes an argument 👇:
+#### Displaying an array of numbers using a function that takes an argument :
 
 ```jsx live
 function learnJavaScript() {
@@ -123,7 +123,7 @@ function learnJavaScript() {
 
 #### Обобщённое использование `map`
 
-Этот пример показывает, как использовать `map` на объекте строки `String` для получения массива байт в кодировке `ASCII`, представляющего значения символов 👇 :
+Этот пример показывает, как использовать `map` на объекте строки `String` для получения массива байт в кодировке `ASCII`, представляющего значения символов  :
 
 ```jsx live
 function learnJavaScript() {
@@ -155,9 +155,9 @@ function learnJavaScript() {
 
 ![filter](https://media.giphy.com/media/xT5LMGupUKCHb7DnFu/giphy.gif)
 
-The `filter ()` method creates 🆕 a new array with all the elements that have passed the check specified in the passed function⚙️.
+The `filter ()` method creates    a new array with all the elements that have passed the check specified in the passed function⚙️.
 
-The result of a filter is always an array. If a function⚙️ for an element returns🔄 `true` ✅ (or any" true "value), this element is included in the result, otherwise it is not included.
+The result of a filter is always an array. If a function⚙️ for an element returns `true`  (or any" true "value), this element is included in the result, otherwise it is not included.
 
 ### Syntax
 
@@ -171,7 +171,7 @@ let newArray = arr.filter(function callback(element[, index, [array]])[, thisArg
 
 ![m](https://media.giphy.com/media/DQaeCdCqhHWx3n4dvH/giphy.gif)
 
-The `filter()` method calls the passed `callback` function once for each element present in the array and constructs a new array with all values ​​for which the `callback` function returned `true` or a value that becomes `true` ✅ when cast to `boolean`. The `callback` function is called only for array indices that have assigned values; it is not called for indexes that have been dropped or have never been assigned values. Array elements that have not been checked by the `callback` function are simply skipped and not included in the 🆕 new array.
+The `filter()` method calls the passed `callback` function once for each element present in the array and constructs a new array with all values ​​for which the `callback` function returned `true` or a value that becomes `true`  when cast to `boolean`. The `callback` function is called only for array indices that have assigned values; it is not called for indexes that have been dropped or have never been assigned values. Array elements that have not been checked by the `callback` function are simply skipped and not included in the    new array.
 
 The function⚙️ `callback` is called with three arguments:
 
@@ -245,7 +245,7 @@ If the array is empty and no `initialValue` argument is specified, a `TypeError`
 
 ![hatchng](https://media.giphy.com/media/xT1R9Qy80qNb8oQGGc/giphy.gif)
 
-Let's figure out the initial value. In the example, it is equal to `0`, since we are calculating the numerical value - the sum of the ages. In place of zero, there can be any other number / string (empty or not) / object / array - whatever value you start accumulating from. For example, let's combine the names of all friends in one line 👇:
+Let's figure out the initial value. In the example, it is equal to `0`, since we are calculating the numerical value - the sum of the ages. In place of zero, there can be any other number / string (empty or not) / object / array - whatever value you start accumulating from. For example, let's combine the names of all friends in one line :
 
 ```jsx live
 function learnJavaScript() {
@@ -298,7 +298,7 @@ function learnJavaScript() {
 
 ![transform](https://media.giphy.com/media/dVleMgtOlPE6Q/giphy.gif)
 
-Код📟 решает задачу преобразования массива массивов в один плоский массив. Результат первой итерации будет равен: `[…[], …[1, 2, 3]]` что означает, что он преобразуется в `[1, 2, 3]` — это значение мы предоставляем как `acc` на второй итерации и так далее.
+Код решает задачу преобразования массива массивов в один плоский массив. Результат первой итерации будет равен: `[…[], …[1, 2, 3]]` что означает, что он преобразуется в `[1, 2, 3]` — это значение мы предоставляем как `acc` на второй итерации и так далее.
 
 ```jsx live
 function learnJavaScript() {
@@ -338,7 +338,7 @@ JavaScript programming supports the convenient `chaining` pattern - combining mu
 
 All three parsed methods are called in the context of an array, and two 2️⃣ of them also return an array. Thus, it is very easy to combine them.
 
-For example, let's calculate the total age of all boys 👇:
+For example, let's calculate the total age of all boys :
 
 ```jsx live
 function learnJavaScript() {
@@ -357,7 +357,7 @@ function learnJavaScript() {
 }
 ```
 
-Or we can collect the girls' passport numbers to buy them plane tickets to Las Vegas 👇:
+Or we can collect the girls' passport numbers to buy them plane tickets to Las Vegas :
 
 ```jsx live
 function learnJavaScript() {
@@ -376,7 +376,7 @@ function learnJavaScript() {
 
 ## Conclusion
 
-With these great features⚙️ the code📟 becomes easier to read. So, below is a list of articles that go into more detail on this topic.
+With these great features⚙️ the code becomes easier to read. So, below is a list of articles that go into more detail on this topic.
 
  [![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)
 
@@ -453,7 +453,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/AlisaNasibullina"><img src="https://avatars3.githubusercontent.com/u/74646904?s=460&v=4" width="200px;" alt=""/><br /><sub><b>AlisaNasibullina</b></sub></a><br /><a href="#mentoring-KoDim-React" title="Mentoring">📖</a></td>
+    <td align="center"><a href="https://github.com/AlisaNasibullina"><img src="https://avatars3.githubusercontent.com/u/74646904?s=460&v=4" width="200px;" alt=""/><br /><sub><b>AlisaNasibullina</b></sub></a><br /><a href="#mentoring-KoDim-React" title="Mentoring">  </a></td>
     <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /><a href="#financial-gHashTag" title="Financial">💵</a></td>
     <td align="center"><a href="https://github.com/Resoner2005"><img src="https://avatars1.githubusercontent.com/u/75675814?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Resoner2005</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/issues?q=author%3AResoner2005" title="Bug reports">🐛 🎨 🖋</a></td>
     <td align="center"><a href="https://github.com/Navernoss"><img src="https://avatars0.githubusercontent.com/u/75784137?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Navernoss</b></sub></a><br /><a href="#content-Navernoss" title="Content">🖋 🐛 🎨 </a></td>

@@ -32,7 +32,7 @@ We answer questions:
 
 ![Initialize Amplify](/img/notification/notif_amplify_init.png)
 
-The project was initialized 🚀
+The project was initialized 
 
 ## We add dependencies:
 
@@ -392,7 +392,7 @@ amplify notification console
 
 10. You will receive a success message as shown below. ![Success](/img/notification/notif_testing_message_success.png) After a couple of seconds, you will see a push notification on your device: ![Push notification result](/img/notification/notif_android_push_result.png)
 
-## Done ✅
+## Done 
 
 ## Links:
 

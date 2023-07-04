@@ -141,7 +141,7 @@ El autor del curso JavaScript - [Server Serverlesskiy](https://twitter.com/kosha
 
 ### Traducción:
 
-Este video musical de AWS Community Builder está en otro nivel 🔥 😅
+Este video musical de AWS Community Builder está en otro nivel  
 
 Este es un curso de desarrollo móvil para la pila React Native / TypeScript / AWS Amplify y para la certificación de AWS. ¡Vale la pena echarle un vistazo!
 

@@ -14,7 +14,7 @@ El lenguaje JavaScript tiene una clara preferencia por las matrices sobre otras 
 
 ![Create](https://media.giphy.com/media/ffd0F6WNcRJMQ/giphy.gif)
 
-El método `map()` crea🏗️ una nueva🆕 matriz con el resultado de llamar a la función especificada⚙️ para cada elemento de la matriz.
+El método `map()` crea una nueva   matriz con el resultado de llamar a la función especificada⚙️ para cada elemento de la matriz.
 
 ## Video
 
@@ -29,7 +29,7 @@ let new_array = arr.map(function callback( currentValue[, index[, array]]) {
     // Devuelve el elemento para new_array
 }[, thisArg])
 ```
-El método `map` llama a la función `callback` pasada ⚙️ una vez para cada elemento, en el orden en que aparecen, y construye 🆕 una nueva matriz a partir de los resultados de su llamada. La función ⚙️ `callback` solo se llama para índices de matriz que tienen valores asignados, incluido `undefined`. No se llama para elementos de matriz faltantes (es decir, índices que nunca se establecieron, eliminaron o nunca se les asignó un valor).
+El método `map` llama a la función `callback` pasada ⚙️ una vez para cada elemento, en el orden en que aparecen, y construye    una nueva matriz a partir de los resultados de su llamada. La función ⚙️ `callback` solo se llama para índices de matriz que tienen valores asignados, incluido `undefined`. No se llama para elementos de matriz faltantes (es decir, índices que nunca se establecieron, eliminaron o nunca se les asignó un valor).
 
 La función ⚙️ `callback` se llama con tres argumentos:
 
@@ -49,7 +49,7 @@ El rango de elementos procesados ​​por el método `map` se establece antes d
 
 #### ejemplo sencillo
 
-Tienes una matriz con muchos objetos, cada uno representando a una persona diferente👨. Puede haber una gran cantidad de datos aquí: nombre, edad, color de cabello y personaje de película favorito, pero por el momento todo esto no es obligatorio; solo desea obtener una serie de números de pasaporte de estas personas para darles una conferencia. pasa
+Tienes una matriz con muchos objetos, cada uno representando a una persona diferente. Puede haber una gran cantidad de datos aquí: nombre, edad, color de cabello y personaje de película favorito, pero por el momento todo esto no es obligatorio; solo desea obtener una serie de números de pasaporte de estas personas para darles una conferencia. pasa
 
 ```jsx live
 function learnJavaScript() {
@@ -66,7 +66,7 @@ function learnJavaScript() {
 }
 ```
 
-#### En ciertos casos, es posible que deba mostrar una matriz de objetos con teclas seleccionadas como una cadena 👇:
+#### En ciertos casos, es posible que deba mostrar una matriz de objetos con teclas seleccionadas como una cadena :
 
 ```jsx live
 function learnJavaScript() {
@@ -87,7 +87,7 @@ function learnJavaScript() {
 
 ![Thermometer](https://media.giphy.com/media/W23dJLsAW5knUU27Fv/giphy.gif)
 
-Un ejemplo con el procesamiento de cada elemento de la matriz con una fórmula dada 👇:
+Un ejemplo con el procesamiento de cada elemento de la matriz con una fórmula dada :
 
 ```jsx live
 function learnJavaScript() {
@@ -102,7 +102,7 @@ function learnJavaScript() {
 <!-- ### Отображение массива чисел на массив квадратных корней
 
 Отображение таблицы пользователей в виде читаемой строки только с указанными ключами
-Следующий код📟 берёт массив чисел и создаёт 🆕 новый массив, содержащий квадратные корни чисел из первого массива.
+Следующий код берёт массив чисел и создаёт    новый массив, содержащий квадратные корни чисел из первого массива.
 
 ```jsx live
 function learnJavaScript() {
@@ -112,7 +112,7 @@ function learnJavaScript() {
 }
 ``` -->
 
-#### Mostrando una matriz de números usando una función que contiene un argumento 👇:
+#### Mostrando una matriz de números usando una función que contiene un argumento :
 
 ```jsx live
 function learnJavaScript() {
@@ -128,7 +128,7 @@ function learnJavaScript() {
 
 #### Обобщённое использование `map`
 
-Этот пример показывает, как использовать `map` на объекте строки `String` для получения массива байт в кодировке `ASCII`, представляющего значения символов 👇 :
+Этот пример показывает, как использовать `map` на объекте строки `String` для получения массива байт в кодировке `ASCII`, представляющего значения символов  :
 
 ```jsx live
 function learnJavaScript() {
@@ -160,9 +160,9 @@ function learnJavaScript() {
 
 ![filter](https://media.giphy.com/media/xT5LMGupUKCHb7DnFu/giphy.gif)
 
-El método `filter()` crea 🆕 una nueva matriz con todos los elementos que pasan la prueba especificada en la función pasada⚙️.
+El método `filter()` crea    una nueva matriz con todos los elementos que pasan la prueba especificada en la función pasada⚙️.
 
-El resultado de `filter` es siempre una matriz. Si la función ⚙️ para un elemento devuelve 🔄 `true` ✅ (o cualquier valor "verdadero"), ese elemento se incluye en el resultado; de lo contrario, no.
+El resultado de `filter` es siempre una matriz. Si la función ⚙️ para un elemento devuelve  `true`  (o cualquier valor "verdadero"), ese elemento se incluye en el resultado; de lo contrario, no.
 
 ### Sintaxis
 
@@ -176,7 +176,7 @@ let newArray = arr.filter(function callback(element[, index, [array]])[, thisArg
 
 ![m](https://media.giphy.com/media/DQaeCdCqhHWx3n4dvH/giphy.gif)
 
-El método `filter()` llama a la función pasada⚙️ `callback` una vez por cada elemento presente en la matriz y construye una nueva matriz con todos los valores para los que la⚙️ función `callback` devolvió `true` ✅ o un valor que se convierte en `true` ✅ cuando se convierte en `boolean`. La función ⚙️ `callback` se llama solo para índices de matriz que tienen valores asignados; no se llama para índices que se han descartado o nunca se les ha asignado un valor. Los elementos de la matriz que fallan en la función ⚙️ `callback` simplemente se omiten y no se incluyen en la 🆕 nueva matriz.
+El método `filter()` llama a la función pasada⚙️ `callback` una vez por cada elemento presente en la matriz y construye una nueva matriz con todos los valores para los que la⚙️ función `callback` devolvió `true`  o un valor que se convierte en `true`  cuando se convierte en `boolean`. La función ⚙️ `callback` se llama solo para índices de matriz que tienen valores asignados; no se llama para índices que se han descartado o nunca se les ha asignado un valor. Los elementos de la matriz que fallan en la función ⚙️ `callback` simplemente se omiten y no se incluyen en la    nueva matriz.
 
 La función ⚙️ `callback` se llama con tres argumentos:
 
@@ -196,7 +196,7 @@ El rango de elementos procesados ​​por el método `filter()` se establece an
 
 #### Filtrado de todos los valores pequeños
 
-El siguiente ejemplo usa `filter()` para crear una matriz filtrada 🏗️ con todos los elementos mayores o iguales a `value` y todos los menores que `value` eliminados.
+El siguiente ejemplo usa `filter()` para crear una matriz filtrada  con todos los elementos mayores o iguales a `value` y todos los menores que `value` eliminados.
 
 ```jsx live
 function learnJavaScript() {
@@ -244,13 +244,13 @@ El método `reduce()` ejecuta la función ⚙️ `callback` una vez para cada el
 
 Cuando se llama a la función por primera vez⚙️, los parámetros `accumulator` y `currentValue` pueden tomar uno de dos valores. Si se pasa el argumento `valorinicial` al llamar a `reduce()`, entonces el valor de `accumulator` será igual al valor de `initialValue`, y el valor de `currentValue` será igual al primer valor en el formación. Si no se proporciona el argumento `initialValue`, entonces el valor de `acumulador` será igual al primer valor de la matriz, y el valor de `currentValue` será igual al segundo valor de la matriz.
 
-Si la matriz está vacía y no se proporciona ningún argumento `initialValue`, se lanzará una excepción `TypeError`. Si la matriz consta de un solo elemento (independientemente de su posición en la matriz) y no se especifica el argumento `initialValue`, o si se especifica el argumento `initialValue`, pero la matriz está vacía, entonces se devolverá este valor🔄 sin llamar a la función⚙️ `callback`.
+Si la matriz está vacía y no se proporciona ningún argumento `initialValue`, se lanzará una excepción `TypeError`. Si la matriz consta de un solo elemento (independientemente de su posición en la matriz) y no se especifica el argumento `initialValue`, o si se especifica el argumento `initialValue`, pero la matriz está vacía, entonces se devolverá este valor sin llamar a la función⚙️ `callback`.
 
 ### Valor inicial del acumulador
 
 ![hatchng](https://media.giphy.com/media/xT1R9Qy80qNb8oQGGc/giphy.gif)
 
-Echemos un vistazo al valor inicial. En el ejemplo, es igual a `0`, ya que estamos contando un valor numérico: la suma de las edades. En lugar de cero, puede haber cualquier otro número/cadena (vacía o no)/objeto/matriz: cualquier valor desde el que comience la acumulación. Por ejemplo, combinemos los nombres de todos los amigos en una línea 👇:
+Echemos un vistazo al valor inicial. En el ejemplo, es igual a `0`, ya que estamos contando un valor numérico: la suma de las edades. En lugar de cero, puede haber cualquier otro número/cadena (vacía o no)/objeto/matriz: cualquier valor desde el que comience la acumulación. Por ejemplo, combinemos los nombres de todos los amigos en una línea :
 
 ```jsx live
 function learnJavaScript() {
@@ -303,7 +303,7 @@ function learnJavaScript() {
 
 ![transform](https://media.giphy.com/media/dVleMgtOlPE6Q/giphy.gif)
 
-Код📟 решает задачу преобразования массива массивов в один плоский массив. Результат первой итерации будет равен: `[…[], …[1, 2, 3]]` что означает, что он преобразуется в `[1, 2, 3]` — это значение мы предоставляем как `acc` на второй итерации и так далее.
+Код решает задачу преобразования массива массивов в один плоский массив. Результат первой итерации будет равен: `[…[], …[1, 2, 3]]` что означает, что он преобразуется в `[1, 2, 3]` — это значение мы предоставляем как `acc` на второй итерации и так далее.
 
 ```jsx live
 function learnJavaScript() {
@@ -343,7 +343,7 @@ La programación de JavaScript admite un patrón conveniente de "encadenamiento"
 
 Los tres métodos analizados se llaman en el contexto de una matriz, y dos 2️⃣ de ellos también devuelven una matriz. Por lo tanto, son muy fáciles de combinar.
 
-Por ejemplo, calculemos la edad total de todos los niños 👇:
+Por ejemplo, calculemos la edad total de todos los niños :
 
 ```jsx live
 function learnJavaScript() {
@@ -362,7 +362,7 @@ function learnJavaScript() {
 }
 ```
 
-O recopilemos los números de pasaporte de las niñas para comprarles boletos de avión a Las Vegas 👇:
+O recopilemos los números de pasaporte de las niñas para comprarles boletos de avión a Las Vegas :
 
 ```jsx live
 function learnJavaScript() {
@@ -381,7 +381,7 @@ function learnJavaScript() {
 
 ## Conclusión
 
-Con el uso de estas maravillosas funciones⚙️ el código📟 se ha vuelto más legible. Entonces, a continuación hay una lista de artículos que cubren este tema con más detalle.
+Con el uso de estas maravillosas funciones⚙️ el código se ha vuelto más legible. Entonces, a continuación hay una lista de artículos que cubren este tema con más detalle.
 
 ## ¿Problemas?
 
@@ -401,7 +401,7 @@ Escribe en [Discord](https://discord.gg/6GDAfXn) o Telegram [chat](https://t.me/
 2. `array`
 3. `callback`
 
-Un método que crea🏗️ una nueva matriz con el resultado de llamar a la función especificada para cada elemento de la matriz:
+Un método que crea una nueva matriz con el resultado de llamar a la función especificada para cada elemento de la matriz:
 
 1. `map`
 2. `filter`
@@ -419,7 +419,7 @@ La suma de todos los valores en una matriz se logra mediante el método:
 2. `filter`
 3. `reduce`
 
-Un método que crea🏗️ una nueva matriz con todos los elementos que pasaron la prueba especificada en la función aprobada:
+Un método que crea una nueva matriz con todos los elementos que pasaron la prueba especificada en la función aprobada:
 
 1. `map`
 2. `filter`
@@ -452,7 +452,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/AlisaNasibullina"><img src="https://avatars3.githubusercontent.com/u/74646904?s=460&v=4" width="200px;" alt=""/><br /><sub><b>AlisaNasibullina</b></sub></a><br /><a href="#mentoring-KoDim-React" title="Mentoring">📖</a></td>
+    <td align="center"><a href="https://github.com/AlisaNasibullina"><img src="https://avatars3.githubusercontent.com/u/74646904?s=460&v=4" width="200px;" alt=""/><br /><sub><b>AlisaNasibullina</b></sub></a><br /><a href="#mentoring-KoDim-React" title="Mentoring">  </a></td>
     <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /><a href="#financial-gHashTag" title="Financial">💵</a></td>
     <td align="center"><a href="https://github.com/Resoner2005"><img src="https://avatars1.githubusercontent.com/u/75675814?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Resoner2005</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/issues?q=author%3AResoner2005" title="Bug reports">🐛 🎨 🖋</a></td>
     <td align="center"><a href="https://github.com/Navernoss"><img src="https://avatars0.githubusercontent.com/u/75784137?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Navernoss</b></sub></a><br /><a href="#content-Navernoss" title="Content">🖋 🐛 🎨 </a></td>

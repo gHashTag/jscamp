@@ -31,7 +31,7 @@ function learnJavaScript() {
 
 ![basketball](https://media.giphy.com/media/3oEdv5e5Zd2gsczAhG/giphy.gif)
 
-إذا كانت أي قيمة بخلاف `undefined` يتم تمريرها إلى المعلمة الرسمية أثناء المكالمة ، بما في ذلك إحدى القيم "false" مثل false ❎,` 0`, `" "`, `''`, `null`,`NaN`, ثم في هذه الحالة لن يتم تعيين القيمة الافتراضية للمعامل. في هذه الحالة ، تحتاج إلى كتابة الرمز بنفسك الذي سيلتقط هذه "القيم الخاطئة".
+إذا كانت أي قيمة بخلاف `undefined` يتم تمريرها إلى المعلمة الرسمية أثناء المكالمة ، بما في ذلك إحدى القيم "false" مثل false ,` 0`, `" "`, `''`, `null`,`NaN`, ثم في هذه الحالة لن يتم تعيين القيمة الافتراضية للمعامل. في هذه الحالة ، تحتاج إلى كتابة الرمز بنفسك الذي سيلتقط هذه "القيم الخاطئة".
 
 ## أمثلة على
 
@@ -49,7 +49,7 @@ function learnJavaScript() {
 }
 ```
 
-مثال على وظيفة مع أو بدون معلمات افتراضية👇:
+مثال على وظيفة مع أو بدون معلمات افتراضية:
 
 ```jsx live
 function learnJavaScript() {
@@ -75,7 +75,7 @@ function learnJavaScript() {
 }
 ```
 
-ستكون النتيجة هي نفسها ، لكن بدون المعلمات الافتراضية ، ستكون الشفرة📟 يمكن أن تصبح أكبر بشكل ملحوظ.
+ستكون النتيجة هي نفسها ، لكن بدون المعلمات الافتراضية ، ستكون الشفرة يمكن أن تصبح أكبر بشكل ملحوظ.
 
 ## مشاكل؟
 
@@ -119,7 +119,7 @@ function learnJavaScript() {
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/FELiX-RN"><img src="https://avatars0.githubusercontent.com/u/72006627?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Philipp Dvinyaninov</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/commits?author=FELiX-RN" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/FELiX-RN"><img src="https://avatars0.githubusercontent.com/u/72006627?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Philipp Dvinyaninov</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/commits?author=FELiX-RN" title="Documentation">  </a></td>
     <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /><a href="#financial-gHashTag" title="Financial">💵</a></td>
     <td align="center"><a href="https://github.com/Resoner2005"><img src="https://avatars1.githubusercontent.com/u/75675814?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Resoner2005</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/issues?q=author%3AResoner2005" title="Bug reports">🐛 🎨 🖋</a></td>
     <td align="center"><a href="https://github.com/Navernoss"><img src="https://avatars0.githubusercontent.com/u/75784137?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Navernoss</b></sub></a><br /><a href="#content-Navernoss" title="Content">🖋 🐛 🎨 </a></td>

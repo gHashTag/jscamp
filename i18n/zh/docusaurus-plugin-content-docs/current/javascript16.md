@@ -6,13 +6,13 @@ sidebar_label: 週期數
 
 ![@serverSerrverlesskiy](/img/javascript/headers/17.jpg)
 
-當一個動作需要重複很多次時，在編程中會使用循環。 例如，您需要顯示文本 📜 "Hello, World!" 🌎. 與其重複相同的文本輸出命令 📜 200次，通常是創建一個循環，該循環重複循環主體中所寫內容的200倍。 每次重複稱為一次迭代。
+當一個動作需要重複很多次時，在編程中會使用循環。 例如，您需要顯示文本  "Hello, World!" . 與其重複相同的文本輸出命令  200次，通常是創建一個循環，該循環重複循環主體中所寫內容的200倍。 每次重複稱為一次迭代。
 
 ![cycle](https://media.giphy.com/media/Pkck2unt0XQfc4gs3R/giphy.gif)
 
 編程中的迭代-從最廣泛的意義上講-數據處理的組織，在該過程中，動作被重複多次，而不會導致自身調用（與遞歸相反）。 從狹義上講，這是一個循環迭代過程中的一步。
 
-JavaScript（以及所有其他語言）中的循環是一段代碼 📟 只要已知條件為真，該循環便會重複。 循環有很多不同的類型，但是它們基本上都做相同的事情：它們重複執行幾次動作。
+JavaScript（以及所有其他語言）中的循環是一段代碼  只要已知條件為真，該循環便會重複。 循環有很多不同的類型，但是它們基本上都做相同的事情：它們重複執行幾次動作。
 
 ## The while() 循環
 
@@ -30,7 +30,7 @@ while (condition) {
 }
 ```
 
-`condition` 是一個表達式，每次進入循環之前都會檢查其布爾值。 如果值為true - `true`✅ 然後執行指令。 當值變為假時 - `false`❎, 我們退出循環。
+`condition` 是一個表達式，每次進入循環之前都會檢查其布爾值。 如果值為true - `true` 然後執行指令。 當值變為假時 - `false`, 我們退出循環。
 
 指令是每當條件為真時執行的算法代碼。 要循環執行多個指令，請使用 `{...}` 阻止運算符將它們分組。 在循環主體中使用1個命令時，可省略花括號。
 
@@ -51,15 +51,15 @@ function learnJavaScript() {
 
 `count`在示例中是`0`。 循環的條件（在括號中用скоб表示）是帶有代碼的塊將不斷重複直到（即，實際 `while`) `count` 小於 `10`.
 
-自初始值 `0` 小於 `10`, 代碼📟運行。 每次口譯員重新檢查 ✔️ 條件，如果條件仍然為真，則將再次運行代碼 📟。 每次我們將計數器值增加 `1`. 否則，該值將保持在 `0`, 所以我們的條件` <10` 將永遠保持為真，我們的代碼將永遠循環！
+自初始值 `0` 小於 `10`, 代碼運行。 每次口譯員重新檢查 ✔️ 條件，如果條件仍然為真，則將再次運行代碼 。 每次我們將計數器值增加 `1`. 否則，該值將保持在 `0`, 所以我們的條件` <10` 將永遠保持為真，我們的代碼將永遠循環！
 
-結果，之後 `10` 週期將變成 `10`. 在那之後，解釋器將終止循環，因為條件是 `false` ❎ 然後轉到我們代碼的最後幾行 📟
+結果，之後 `10` 週期將變成 `10`. 在那之後，解釋器將終止循環，因為條件是 `false`  然後轉到我們代碼的最後幾行 
 
 <!-- ## Цикл do … while
 
 ![Check](https://media.giphy.com/media/PijzuUzUhm7hcWinGn/giphy.gif)
 
-Проверку ✔️ условия можно разместить под телом цикла, используя специальный синтаксис📖 `do .. while`:
+Проверку ✔️ условия можно разместить под телом цикла, используя специальный синтаксис   `do .. while`:
 
 ```javascript
 do {
@@ -67,9 +67,9 @@ do {
 } while (условие)
 ```
 
-Цикл сначала выполнит тело, а затем проверит ✔️ условие (condition - `состояние`), и пока его значение равно `true` ✅ , он будет выполняться снова и снова.
+Цикл сначала выполнит тело, а затем проверит ✔️ условие (condition - `состояние`), и пока его значение равно `true`  , он будет выполняться снова и снова.
 
-Например, посчитаем сумму чисел от `0` до `25` 👇 :
+Например, посчитаем сумму чисел от `0` до `25`  :
 
 ```jsx live
 function learnJavaScript() {
@@ -84,7 +84,7 @@ function learnJavaScript() {
 }
 ```
 
-Такая форма синтаксиса📖 оправдана, если вы хотите, чтобы тело цикла выполнилось хотя бы один раз, даже если условие окажется ложным ❎ . -->
+Такая форма синтаксиса   оправдана, если вы хотите, чтобы тело цикла выполнилось хотя бы один раз, даже если условие окажется ложным  . -->
 
 ## The for() 循環
 
@@ -105,11 +105,11 @@ for ([initialization]; [condition]; [final expression])
 
 `condition` 是在循環的每次迭代中執行的表達式。 如果表達式為true，則執行循環。 條件是可選的。 如果不是，則始終認為該條件為真。 如果表達式為假，則執行 `for` 終止。
 
-`final expression` - 在循環迭代結束時執行的表達式。 發生直到滿足下一個條件。 通常用來 `increment ++`, `decrement -` or `update i + = 5` 一個計數器變量 🔔
+`final expression` - 在循環迭代結束時執行的表達式。 發生直到滿足下一個條件。 通常用來 `increment ++`, `decrement -` or `update i + = 5` 一個計數器變量 
 
 `expression` - 循環條件為時算法的可執行代碼 `true`. 要在循環中執行多個表達式，請使用 `{...}` 阻止將這些表達式分組。 為避免在循環中執行任何表達式，請使用空 `for (;;;)` 表達。
 
-讓我們計算0到100之間的數字總和 👇:
+讓我們計算0到100之間的數字總和 :
 
 ```jsx live
 function learnJavaScript() {
@@ -122,7 +122,7 @@ function learnJavaScript() {
 }
 ```
 
-還記得我們寫第一本書的時候 1️⃣  `while()` 我們的櫃檯怎麼了？ 我們發現不斷變化非常重要 (`increment ++` helped us with this). 因為如果您忘記它，那麼代碼 📟 將落入 `infinite loop of loops`.
+還記得我們寫第一本書的時候 1️⃣  `while()` 我們的櫃檯怎麼了？ 我們發現不斷變化非常重要 (`increment ++` helped us with this). 因為如果您忘記它，那麼代碼  將落入 `infinite loop of loops`.
 
 好吧，這種情況經常發生 `while-loops`, 這就是為什麼 `for` 用內置計數器完成的！
 
@@ -130,7 +130,7 @@ function learnJavaScript() {
 
 ![hmm](https://media.giphy.com/media/l3nSILUHhuVDuWSnC/giphy.gif)
 
-當您第一次看到a的語法時 📖  `loop for`, 您可能會認為🤔這很奇怪。 但是您仍然應該學習🧑‍🧑，因為您將會見面
+當您第一次看到a的語法時     `loop for`, 您可能會認為🤔這很奇怪。 但是您仍然應該學習🧑，因為您將會見面
 這樣多次：
 
 ```jsx live
@@ -153,7 +153,7 @@ function learnJavaScript() {
 
 1. 首先，我們聲明一個計數器變量 - `let i = 0`. 正是在函數本身和這個循環之外 `i` 會缺席，這很安全！
 2.接下來，我們設置一個條件，解釋器將在循環的每次迭代之前進行檢查（以確定是否值得啟動代碼）。 一次迭代稱為循環的一次迭代（例如，如果我們有10個啟動週期，則可以說有10個代碼迭代）。
-3.我們代碼的第三部分是 `increment ++` (or `decrement --`). 它在每次迭代結束時運行，以每次更改我們的變量 🔔
+3.我們代碼的第三部分是 `increment ++` (or `decrement --`). 它在每次迭代結束時運行，以每次更改我們的變量 
 
 ## 結論
 
@@ -256,7 +256,7 @@ while (n <= maxNumer) {
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/KoDim-React"><img src="https://avatars1.githubusercontent.com/u/72087863?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy K.</b></sub></a><br /><a href="#mentoring-KoDim-React" title="Mentoring">📖</a></td>
+    <td align="center"><a href="https://github.com/KoDim-React"><img src="https://avatars1.githubusercontent.com/u/72087863?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy K.</b></sub></a><br /><a href="#mentoring-KoDim-React" title="Mentoring">  </a></td>
     <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /><a href="#financial-gHashTag" title="Financial">💵</a></td>
     <td align="center"><a href="https://github.com/Resoner2005"><img src="https://avatars1.githubusercontent.com/u/75675814?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Resoner2005</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/issues?q=author%3AResoner2005" title="Bug reports">🐛 🎨 🖋</a></td>
     <td align="center"><a href="https://github.com/Navernoss"><img src="https://avatars0.githubusercontent.com/u/75784137?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Navernoss</b></sub></a><br /><a href="#content-Navernoss" title="Content">🖋 🐛 🎨 </a></td>

@@ -30,7 +30,7 @@ function learnJavaScript() {
   return title
 }
 ```
-Las propiedades `title`, `group` y `quantity` repiten la estructura del objeto `fruta` y copian sus valores en variables idénticas 🔔 ubicadas en `{...}`. Por lo tanto, si intercambia las variables 🔔 en `{...}`, entonces el código funcionará igual de bien, intente intercambiar las variables 🔔 en el ejemplo anterior.
+Las propiedades `title`, `group` y `quantity` repiten la estructura del objeto `fruta` y copian sus valores en variables idénticas  ubicadas en `{...}`. Por lo tanto, si intercambia las variables  en `{...}`, entonces el código funcionará igual de bien, intente intercambiar las variables  en el ejemplo anterior.
 
 ## Video
 
@@ -64,7 +64,7 @@ function learnJavaScript() {
 
 ### Otros nombres
 
-Si necesita usar nombres de variables 🔔 que no sean nombres de propiedades, esta sintaxis funcionará:
+Si necesita usar nombres de variables  que no sean nombres de propiedades, esta sintaxis funcionará:
 
 ```jsx live
 function learnJavaScript() {
@@ -82,7 +82,7 @@ function learnJavaScript() {
 
 ### Valores predeterminados
 
-Si en `{...}` escribes una variable 🔔 propiedades que no se encuentran, entonces se le asignará el valor `undefined`. Para asignar un valor predeterminado a una variable 🔔, se le puede asignar este valor. Si intenta asignar un valor a una variable 🔔 cuyas propiedades se encuentran, se le asignará el valor de la propiedad. Veamos un ejemplo.
+Si en `{...}` escribes una variable  propiedades que no se encuentran, entonces se le asignará el valor `undefined`. Para asignar un valor predeterminado a una variable , se le puede asignar este valor. Si intenta asignar un valor a una variable  cuyas propiedades se encuentran, se le asignará el valor de la propiedad. Veamos un ejemplo.
 
 ![Dafault](https://media.giphy.com/media/3oEduLzte7jSNmq4z6/giphy.gif)
 
@@ -97,13 +97,13 @@ function learnJavaScript() {
 }
 ```
 
-`title` muestra el valor de la propiedad, no lo que le asignamos. La propiedad `group` no existe en el objeto `fruit` y no hemos asignado ningún valor a la variable 🔔. La propiedad `quantity` tampoco existe, pero le hemos asignado el valor `5` a la variable 🔔.
+`title` muestra el valor de la propiedad, no lo que le asignamos. La propiedad `group` no existe en el objeto `fruit` y no hemos asignado ningún valor a la variable . La propiedad `quantity` tampoco existe, pero le hemos asignado el valor `5` a la variable .
 
 ### Resto
 
 ![octatok](https://media.giphy.com/media/hvddF1vHatFIgQspUB/giphy.gif)
 
-Si necesita obtener una variable 🔔 de un objeto y agrupar el resto en otro objeto, utilice `...` antes de la variable 🔔 a partir de la cual se creará el objeto con las propiedades restantes.
+Si necesita obtener una variable  de un objeto y agrupar el resto en otro objeto, utilice `...` antes de la variable  a partir de la cual se creará el objeto con las propiedades restantes.
 
 ```jsx live
 function learnJavaScript() {
@@ -120,7 +120,7 @@ function learnJavaScript() {
 
 ## Desestructuración de arreglos
 
-La desestructuración de una matriz ocurre de la misma manera que la de un objeto. La única diferencia es que los valores de los elementos de la matriz se asignarán a las variables 🔔 en el orden en que se definen los elementos.
+La desestructuración de una matriz ocurre de la misma manera que la de un objeto. La única diferencia es que los valores de los elementos de la matriz se asignarán a las variables  en el orden en que se definen los elementos.
 
 ![Take](https://media.giphy.com/media/IuBlckSD7dQv6/giphy.gif)
 
@@ -153,7 +153,7 @@ function learnJavaScript() {
 
 ### Copia de matriz
 
-Un ejemplo de creación de una copia 🏗️ de una matriz.
+Un ejemplo de creación de una copia  de una matriz.
 
 ![Copia](https://media.giphy.com/media/GI1KnTxySlrCE/giphy.gif)
 
@@ -228,7 +228,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <table>
   <tr> 
-    <td align="center"><a href="https://github.com/IIo3iTiv"><img src="https://avatars1.githubusercontent.com/u/72025062?v=4?s=200" width="200px;" alt=""/><br /><sub><b>IIo3iTiv</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/commits?author=IIo3iTiv" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/IIo3iTiv"><img src="https://avatars1.githubusercontent.com/u/72025062?v=4?s=200" width="200px;" alt=""/><br /><sub><b>IIo3iTiv</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/commits?author=IIo3iTiv" title="Documentation">  </a></td>
     <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /><a href="#financial-gHashTag" title="Financial">💵</a></td>
     <td align="center"><a href="https://github.com/Resoner2005"><img src="https://avatars1.githubusercontent.com/u/75675814?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Resoner2005</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/issues?q=author%3AResoner2005" title="Bug reports">🐛 🎨 🖋</a></td>
     <td align="center"><a href="https://github.com/Navernoss"><img src="https://avatars0.githubusercontent.com/u/75784137?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Navernoss</b></sub></a><br /><a href="#content-Navernoss" title="Content">🖋 🐛 🎨 </a></td>

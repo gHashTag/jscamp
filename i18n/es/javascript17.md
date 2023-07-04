@@ -10,13 +10,13 @@ To store ordered collections, there is a special data structure called an `Array
 
 ![Storage](https://media.giphy.com/media/3orif6FORJ98Z11xzq/giphy.gif)
 
-`Array` - an ordered collection of data, which contains the 1st, 2nd, 3rd elements, etc. For example, we need it to store 📦 a list of something: users, products, site elements, etc.
+`Array` - an ordered collection of data, which contains the 1st, 2nd, 3rd elements, etc. For example, we need it to store  a list of something: users, products, site elements, etc.
 
 ## Creation
 
 ![create](https://media.giphy.com/media/3oEduXdm2gjnrsJBOo/giphy.gif)
 
-There are 2️⃣ options for creating🏗️ an empty array:
+There are 2️⃣ options for creating an empty array:
 
 ```javascript
 let arr = new Array(5)
@@ -24,7 +24,7 @@ let arr = new Array(5)
 let arr = []
 ```
 
-The second variant 2️⃣ syntax📖 is almost always used. In parentheses, we can indicate the initial values of the elements:
+The second variant 2️⃣ syntax   is almost always used. In parentheses, we can indicate the initial values of the elements:
 
 ```jsx live
 function learnJavaScript() {
@@ -36,7 +36,7 @@ function learnJavaScript() {
 
 The array elements are numbered starting from zero 0️⃣.
 
-We can get an element by specifying its number in square brackets 👇:
+We can get an element by specifying its number in square brackets :
 
 ```jsx live
 function learnJavaScript() {
@@ -46,13 +46,13 @@ function learnJavaScript() {
 }
 ```
 
-We can replace the 🖊️ element:
+We can replace the  element:
 
 ```javascript
 fruits[2] = 'Plum' // now ["Apple", "Orange", "Plum"]
 ```
 
-... Or add 🆕 a new one to the existing array 👇:
+... Or add    a new one to the existing array :
 
 ```jsx live
 function learnJavaScript() {
@@ -80,7 +80,7 @@ The `length` property is automatically updated when the array changes. To be pre
 
 ![Update](https://media.giphy.com/media/FP47IFqWyXfdKYU6VG/giphy.gif)
 
-For example, the only real element with a large index gives the largest possible length to the array 👇:
+For example, the only real element with a large index gives the largest possible length to the array :
 
 ```jsx live
 function learnJavaScript() {
@@ -95,7 +95,7 @@ Note that we usually don't use arrays this way.
 
 Another interesting fact about the `length` property is that it can be overwritten.
 
-If we manually increase ➕ it, nothing interesting happens. But if we decrease it, the array will become shorter. This process is irreversible, as we can understand from the example 👇:
+If we manually increase ➕ it, nothing interesting happens. But if we decrease it, the array will become shorter. This process is irreversible, as we can understand from the example :
 
 ```jsx live
 function learnJavaScript() {
@@ -117,9 +117,9 @@ So the simplest way to clear the array is with `arr.length = 0`.
 
 ![Storage](https://media.giphy.com/media/2sYaePC3iVWYBNxaVj/giphy.gif)
 
-An array can store 📦 elements of any type - number, boolean value, strings, objects, or entire functions:
+An array can store  elements of any type - number, boolean value, strings, objects, or entire functions:
 
-For example 👇:
+For example :
 
 ```jsx live
 function learnJavaScript() {
@@ -172,7 +172,7 @@ An example of a stack is usually a pyramid: new rings are placed on top and also
 
 ![Add to](https://media.giphy.com/media/21ODeWspDCgZNAoCIp/giphy.gif)
 
-Adds an ➕ element to the end of an array 👇:
+Adds an ➕ element to the end of an array :
 
 ```jsx live
 function learnJavaScript() {
@@ -188,7 +188,7 @@ function learnJavaScript() {
 
 ![Delete](https://media.giphy.com/media/26ybwwiZmci3DJdYs/giphy.gif)
 
-Removes ➖ the last element from an array and returns it 👇:
+Removes ➖ the last element from an array and returns it :
 
 ```jsx live
 function learnJavaScript() {
@@ -206,7 +206,7 @@ function learnJavaScript() {
 
 ### shift
 
-Removes ➖ the first from the array and returns 🔄 it:
+Removes ➖ the first from the array and returns  it:
 
 ![delete](https://media.giphy.com/media/4Z1XJumqDgvI9b1VZJ/giphy.gif)
 
@@ -236,7 +236,7 @@ function learnJavaScript() {
 }
 ```
 
-The `push` and` unshift` methods can add ➕ several elements at once 👇:
+The `push` and` unshift` methods can add ➕ several elements at once :
 
 ```jsx live
 function learnJavaScript() {
@@ -259,7 +259,7 @@ Arrays extend objects because they provide special methods for working with orde
 
 Keep in mind that in JavaScript, an array is an object and therefore behaves like an object.
 
-For example, an array is copied by reference 👇:
+For example, an array is copied by reference :
 
 ```jsx live
 function learnJavaScript() {
@@ -341,7 +341,7 @@ The `push` method works the same way.
 
 ![Object](https://media.giphy.com/media/26gs9kSN6d5PxSsQU/giphy.gif)
 
-One of the oldest ways to iterate over array elements is a `for ()` loop over numeric indices 👇:
+One of the oldest ways to iterate over array elements is a `for ()` loop over numeric indices :
 
 ```jsx live
 // prettier-ignore
@@ -356,7 +356,7 @@ function learnJavaScript() {
 }
 ```
 
-But another version of the loop is possible for arrays, `for..of` 👇:
+But another version of the loop is possible for arrays, `for..of` :
 
 ```jsx live
 function learnJavaScript() {
@@ -379,7 +379,7 @@ The `for..of` loop does not provide access to the number of the current element,
 
 В браузере и других программных средах также существуют так называемые "псевдомассивы" – объекты, которые выглядят, как массив. То есть, у них есть свойство `length` и индексы, но они также могут иметь дополнительные нечисловые свойства и методы, которые нам обычно не нужны. Тем не менее, цикл `for..in` выведет и их. Поэтому, если нам приходится иметь дело с объектами, похожими на массив, такие "лишние" свойства могут стать проблемой.
 
-Технически, так как массив является объектом, можно использовать и вариант `for..in` для правильного массива 👇 :
+Технически, так как массив является объектом, можно использовать и вариант `for..in` для правильного массива  :
 
 ```jsx live
 function learnJavaScript() {
@@ -404,7 +404,7 @@ function learnJavaScript() {
 
 ![Matryoschka](https://media.giphy.com/media/XuPaGVKyJ6eyI/giphy.gif)
 
-Arrays can contain elements that are also arrays. This can be used to create омер multidimensional arrays, for example, to store 📦 matrices:
+Arrays can contain elements that are also arrays. This can be used to create омер multidimensional arrays, for example, to store  matrices:
 
 ```jsx live
 function learnJavaScript() {
@@ -424,7 +424,7 @@ function learnJavaScript() {
 
 An array is a special type of object designed to work with an ordered set of elements.
 
-Announcement🗣️:
+Announcement:
 
 ```javascript
 // square brackets (usually)
@@ -448,7 +448,7 @@ We can use an array as a deque using the following operations:
 To iterate over the elements of an array:
 
 - `for (let i = 0 i < arr.length i ++)` - works fastest, compatible with older browsers.
-- `for (let item of arr)` - modern syntax📖 only for item values ​​(no access to indices).
+- `for (let item of arr)` - modern syntax   only for item values ​​(no access to indices).
 - `for (let i in arr)` - never use for arrays!
 
  [![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)
@@ -519,7 +519,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/KoDim-React"><img src="https://avatars1.githubusercontent.com/u/72087863?v=4?s=200" width="200px " alt=""/><br /><sub><b>Dmitriy K.</b></sub></a><br /><a href="#mentoring-KoDim-React" title="Mentoring">📖</a></td>
+    <td align="center"><a href="https://github.com/KoDim-React"><img src="https://avatars1.githubusercontent.com/u/72087863?v=4?s=200" width="200px " alt=""/><br /><sub><b>Dmitriy K.</b></sub></a><br /><a href="#mentoring-KoDim-React" title="Mentoring">  </a></td>
     <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px " alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /><a href="#financial-gHashTag" title="Financial">💵</a></td>
     <td align="center"><a href="https://github.com/Resoner2005"><img src="https://avatars1.githubusercontent.com/u/75675814?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Resoner2005</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/issues?q=author%3AResoner2005" title="Bug reports">🐛 🎨 🖋</a></td>
     <td align="center"><a href="https://github.com/Navernoss"><img src="https://avatars0.githubusercontent.com/u/75784137?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Navernoss</b></sub></a><br /><a href="#content-Navernoss" title="Content">🖋 🐛 🎨 </a></td>

@@ -8,7 +8,7 @@ import YouTube from 'react-youtube'
 
 ![@serverSerrverlesskiy](/img/javascript/headers/12.jpg)
 
-Alcance (alcance en inglés): una parte del programa dentro de la cual la variable está disponible para su uso. <!--Para una variable, el alcance será la parte del programa en la que es "visible" y puede ser utilizada por el programador.--> Al crear🏗️ el archivo `.js`, creamos🏗️ el alcance de todo el archivo, para crear🏗️ alcance interno, debe declararlo🗣️ usando corchetes `{ ... }`.
+Alcance (alcance en inglés): una parte del programa dentro de la cual la variable está disponible para su uso. <!--Para una variable, el alcance será la parte del programa en la que es "visible" y puede ser utilizada por el programador.--> Al crear el archivo `.js`, creamos el alcance de todo el archivo, para crear alcance interno, debe declararlo usando corchetes `{ ... }`.
 
 ![file](https://media.giphy.com/media/3o6Ztk7NosfLVRqcpy/giphy.gif)
 
@@ -25,7 +25,7 @@ let fruit = 'Banana'
 }
 ```
 
-En este ejemplo, creamos 🏗️ tres variables en diferentes ámbitos, que contienen su propia versión de la variable `fruta`, por lo que no se producen errores 🙅‍♂️, pero si intenta crear 🏗️ dos variables con el mismo nombre en el mismo ámbito , entonces ocurrirá un error 🙅.
+En este ejemplo, creamos  tres variables en diferentes ámbitos, que contienen su propia versión de la variable `fruta`, por lo que no se producen errores , pero si intenta crear  dos variables con el mismo nombre en el mismo ámbito , entonces ocurrirá un error 🙅.
 
 ```jsx
 // primer alcance
@@ -37,7 +37,7 @@ let fruit = 'Banana'
 }
 ```
 
-Cuando crea 🏗️ varias construcciones, también crea 🏗️ el alcance de esta construcción, porque usa un bloque de corchetes `{ ... }`.
+Cuando crea  varias construcciones, también crea  el alcance de esta construcción, porque usa un bloque de corchetes `{ ... }`.
 
 ```jsx
 if (true) {
@@ -63,14 +63,14 @@ En estos ejemplos, cada construcción tiene su propio alcance.
 
 ![Global](https://media.giphy.com/media/l0MYPsBLOYyFqSDte/giphy.gif)
 
-Cuando decimos alcance global, queremos decir que todos los demás alcances son hijos de este. El alcance global contiene variables declaradas🗣️ fuera de todas las funciones⚙️ y bloques.
+Cuando decimos alcance global, queremos decir que todos los demás alcances son hijos de este. El alcance global contiene variables declaradas fuera de todas las funciones⚙️ y bloques.
 
 ```jsx
 // Alcance global
 let fruit = 'Banana'
 ```
 
-Una variable 🔔 creada en el ámbito global se denomina `variable global` 🔔. La variable global 🔔 se puede utilizar en todos los ámbitos secundarios.
+Una variable  creada en el ámbito global se denomina `variable global` . La variable global  se puede utilizar en todos los ámbitos secundarios.
 
 ```jsx live
 function learnJavaScript() {
@@ -88,7 +88,7 @@ function learnJavaScript() {
 
 ![Local](https://media.giphy.com/media/VFwRCi6WKBUk08fliV/giphy.gif)
 
-El alcance local contiene variables declaradas🗣️ en una determinada parte del código📟. Por ejemplo, las variables creadas 🏗️ dentro del bucle serán locales.
+El alcance local contiene variables declaradas en una determinada parte del código. Por ejemplo, las variables creadas  dentro del bucle serán locales.
 
 ```jsx
 for (let i = 0; i > 5; i++) {
@@ -96,7 +96,7 @@ for (let i = 0; i > 5; i++) {
 }
 ```
 
-Las variables locales 🔔 solo pueden usarse dentro del bloque en el que fueron declaradas.
+Las variables locales  solo pueden usarse dentro del bloque en el que fueron declaradas.
 
 ```jsx
 function learnJavaScript() {
@@ -115,7 +115,7 @@ function learnJavaScript() {
 
 ![Math](https://media.giphy.com/media/xT1Ra5h24Eliux3UVq/giphy.gif)
 
-Usamos dos variables 🔔 con el mismo nombre en diferentes ámbitos. La función `otherFruit()` devuelve la variable 🔔 `fruts` desde el ámbito en el que se inicializa como `Lime`
+Usamos dos variables  con el mismo nombre en diferentes ámbitos. La función `otherFruit()` devuelve la variable  `fruts` desde el ámbito en el que se inicializa como `Lime`
 
 ```jsx live
 function learnJavaScript() {
@@ -128,7 +128,7 @@ function learnJavaScript() {
 }
 ```
 
-Si eliminamos `let` de la función `otherFruit()`, en lugar de crear una variable 🔔 la sobrescribimos 🖊️.
+Si eliminamos `let` de la función `otherFruit()`, en lugar de crear una variable  la sobrescribimos .
 
 ```jsx live
 function learnJavaScript() {
@@ -141,7 +141,7 @@ function learnJavaScript() {
 }
 ```
 
-¿Qué sucede si tratamos de llamar a una variable local 🔔 en el ámbito principal? Ocurre un error porque estamos tratando de llamar a una variable 🔔 en el alcance global, que no creamos.
+¿Qué sucede si tratamos de llamar a una variable local  en el ámbito principal? Ocurre un error porque estamos tratando de llamar a una variable  en el alcance global, que no creamos.
 
 ```javascript
 function learnJavaScript() {
@@ -163,7 +163,7 @@ function learnJavaScript() {
 
 En el artículo [Variable](https://jscamp.app/docs/javascript03) le dijimos que no usaremos `var`, está conectado solo con el alcance.
 
-1. Si crea dos variables 🔔 con el mismo nombre en el mismo ámbito utilizando la palabra clave `let` o `const`, el intérprete nos advierte sobre esto mostrando un error.
+1. Si crea dos variables  con el mismo nombre en el mismo ámbito utilizando la palabra clave `let` o `const`, el intérprete nos advierte sobre esto mostrando un error.
 
 ```jsx
 function learnJavaScript() {
@@ -174,7 +174,7 @@ function learnJavaScript() {
 }
 ```
 
-Pero, si usando `var` creas variables 🔔 con el mismo nombre, entonces las reasignará.
+Pero, si usando `var` creas variables  con el mismo nombre, entonces las reasignará.
 
 ```jsx live
 function learnJavaScript() {
@@ -184,9 +184,9 @@ function learnJavaScript() {
 }
 ```
 
-El error 🙅‍♂️ no ocurre porque `var` sobrescribió la variable `fruit`
+El error  no ocurre porque `var` sobrescribió la variable `fruit`
 
-2. Habiendo creado una variable global 🔔 usando `var`, podemos cambiarla desde el alcance local creando otra variable 🔔 con el mismo nombre usando `var`. El alcance de `var` está limitado a una función o un script.
+2. Habiendo creado una variable global  usando `var`, podemos cambiarla desde el alcance local creando otra variable  con el mismo nombre usando `var`. El alcance de `var` está limitado a una función o un script.
 
 ```jsx live
 function learnJavaScript() {
@@ -198,7 +198,7 @@ function learnJavaScript() {
 }
 ```
 
-3. Las variables 🔔 creadas con `var` se consideran declaradas desde el comienzo de la ejecución del script, independientemente de dónde se encuentre la declaración.
+3. Las variables  creadas con `var` se consideran declaradas desde el comienzo de la ejecución del script, independientemente de dónde se encuentre la declaración.
 
 ```jsx live
 function learnJavaScript() {
@@ -277,7 +277,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr> 
-    <td align="center"><a href="https://github.com/IIo3iTiv"><img src="https://avatars1.githubusercontent.com/u/72025062?v=4?s=200" width="200px;" alt=""/><br /><sub><b>IIo3iTiv</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/commits?author=IIo3iTiv" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/IIo3iTiv"><img src="https://avatars1.githubusercontent.com/u/72025062?v=4?s=200" width="200px;" alt=""/><br /><sub><b>IIo3iTiv</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/commits?author=IIo3iTiv" title="Documentation">  </a></td>
     <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /><a href="#financial-gHashTag" title="Financial">💵</a></td>
     <td align="center"><a href="https://github.com/Resoner2005"><img src="https://avatars1.githubusercontent.com/u/75675814?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Resoner2005</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/issues?q=author%3AResoner2005" title="Bug reports">🐛 🎨 🖋</a></td>
     <td align="center"><a href="https://github.com/Navernoss"><img src="https://avatars0.githubusercontent.com/u/75784137?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Navernoss</b></sub></a><br /><a href="#content-Navernoss" title="Content">🖋 🐛 🎨 </a></td>

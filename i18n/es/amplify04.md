@@ -139,7 +139,7 @@ We answer the questions:
 
 ![amplify init](/img/auth/auth02.png)
 
-The project was initialized 🚀
+The project was initialized 
 
 ![Step04](/img/steps/04.png)
 
@@ -590,7 +590,7 @@ export { User }
 
 Putting the application together and testing
 
-## Done ✅
+## Done 
 
 ## References:
 

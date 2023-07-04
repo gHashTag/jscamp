@@ -12,7 +12,7 @@ Promise es un objeto que contiene el valor futuro de una operación asíncrona. 
 
 ![math](https://media.giphy.com/media/4JVTF9zR9BicshFAb7/giphy.gif)
 
-Al principio, la promesa tiene el estado `pending`, luego uno de: `fulfilled` (exitoso) o `rejected`(fracaso🙅‍♂️).
+Al principio, la promesa tiene el estado `pending`, luego uno de: `fulfilled` (exitoso) o `rejected`(fracaso).
 
 ![estados de promesa](/img/javascript/23/promise.png)
 
@@ -28,10 +28,10 @@ Al principio, la promesa tiene el estado `pending`, luego uno de: `fulfilled` (e
 
 ![Más](https://media.giphy.com/media/Yqo5mjWTLGlVOIP8Dc/giphy.gif)
 
-El objeto `Promise` se crea🏗️ usando la nueva palabra clave🗝️ y su constructor.
+El objeto `Promise` se crea usando la nueva palabra clave🗝️ y su constructor.
 El constructor Promise toma un argumento, una devolución de llamada, también conocida como función ejecutor⚙️, que toma 2 devoluciones de llamada, `resolve` y `reject`.
 
-La función ejecutiva⚙️ se ejecuta inmediatamente después de la creación🏗️ de la promesa. Se hace una promesa para ser cumplida con una llamada a `resolve()` y rechazada con `reject()`.
+La función ejecutiva⚙️ se ejecuta inmediatamente después de la creación de la promesa. Se hace una promesa para ser cumplida con una llamada a `resolve()` y rechazada con `reject()`.
 
 ```jsx
 const promise = new Promise((resolve, reject) => {
@@ -67,7 +67,7 @@ El método `then` se usa para ejecutar funciones ⚙️ en un resultado positivo
 
 ![Lanzamiento](https://media.giphy.com/media/1n4FT4KRQkDvK0IO4X/giphy.gif)
 
-Sintaxis📖 del método `then`:
+Sintaxis   del método `then`:
 
 ```jsx
 promise.then(
@@ -82,7 +82,7 @@ promise.then(
 
 El primer argumento 1️⃣ del método `then` es una función⚙️ que se ejecuta cuando la promesa pasa al estado "éxito" y obtiene el resultado.
 
-El segundo argumento `then` es una función⚙️ que se ejecuta cuando la promesa pasa al estado "fallido🙅‍♂️" y recibe un error🙅‍♂️.
+El segundo argumento `then` es una función⚙️ que se ejecuta cuando la promesa pasa al estado "fallido" y recibe un error.
 
 ![Error](https://media.giphy.com/media/iJCo9daAP0xugHhhfb/giphy.gif)
 
@@ -100,7 +100,7 @@ promise.then(
 )
 ```
 
-А в случае ошибки🙅‍♂️ в промисе – выполнится вторая:
+А в случае ошибки в промисе – выполнится вторая:
 
 ```jsx
 let promise = new Promise(function (resolve, reject) {
@@ -128,9 +128,9 @@ promise.then(alert) // mostrará "done!" después de un segundo
 
 ![Catch](https://media.giphy.com/media/fxeeuml8GaESfmuE4z/giphy.gif)
 
-El método `catch` se utiliza para detectar errores🙅‍♂️. Se puede usar en lugar del método `then` para mostrar mensajes de error💬 sobre errores🙅‍♂️.
+El método `catch` se utiliza para detectar errores. Se puede usar en lugar del método `then` para mostrar mensajes de error sobre errores.
 
-Sintaxis📖 del método catch:
+Sintaxis   del método catch:
 
 ```jsx
 let promise = new Promise((resolve, reject) => {
@@ -142,7 +142,7 @@ promise.catch(alert) // mostrará "Error: ¡Error!" después de un segundo
 
 ### promise.all
 
-Este método toma una matriz de promesas y devuelve 🔄 🆕 una nueva promesa, que se cumplirá cuando todas las promesas dentro de la matriz se cumplan o se rechacen tan pronto como se cumpla una promesa que se rechace.
+Este método toma una matriz de promesas y devuelve     una nueva promesa, que se cumplirá cuando todas las promesas dentro de la matriz se cumplan o se rechacen tan pronto como se cumpla una promesa que se rechace.
 
 ![Regresar](https://media.giphy.com/media/Y08bx6Fea1BafzTlvc/giphy.gif)
 
@@ -170,7 +170,7 @@ Aquí, el argumento dentro de `then()` es una matriz que contiene los valores pr
 
 ![Bomerang](https://media.giphy.com/media/g0yLXvb7Ffn9rilMIm/giphy.gif)
 
-Этот метод принимает массив промисов и возвращает🔄 один 🆕 новый промис, который будет выполненным, как только встретится выполненный промис в массиве или же отклоняется, если отклоненный промис встречается раньше.
+Этот метод принимает массив промисов и возвращает один    новый промис, который будет выполненным, как только встретится выполненный промис в массиве или же отклоняется, если отклоненный промис встречается раньше.
 
 Например:
 
@@ -190,11 +190,11 @@ Promise.race([promise1, promise2])
   .catch(error => console.log(error))
 ```
 
-Тут мы имеем два промиса, где один выполняется через `1` секунду, а другой отклоняется через `1.5` секунды. Как только первый 1️⃣ промис выполнен, возвращенный🔄 из `Promise.race()` промис будет иметь статус выполненного не дожидаясь статуса второго промиса.
+Тут мы имеем два промиса, где один выполняется через `1` секунду, а другой отклоняется через `1.5` секунды. Как только первый 1️⃣ промис выполнен, возвращенный из `Promise.race()` промис будет иметь статус выполненного не дожидаясь статуса второго промиса.
 
 Здесь data, которая передается в `then()` является значением первого, выполненного, промиса.
 
-По итогу, `Promise.race()` дожидается первого промиса и берет его статус как статус возвращаемого🔄 промиса. -->
+По итогу, `Promise.race()` дожидается первого промиса и берет его статус как статус возвращаемого промиса. -->
 
 ## ¿Problemas?
 
@@ -252,7 +252,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/FELiX-RN"><img src="https://avatars0.githubusercontent.com/u/72006627?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Philipp Dvinyaninov</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/commits?author=FELiX-RN" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/FELiX-RN"><img src="https://avatars0.githubusercontent.com/u/72006627?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Philipp Dvinyaninov</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/commits?author=FELiX-RN" title="Documentation">  </a></td>
     <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /><a href="#financial-gHashTag" title="Financial">💵</a></td>
     <td align="center"><a href="https://github.com/Resoner2005"><img src="https://avatars1.githubusercontent.com/u/75675814?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Resoner2005</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/issues?q=author%3AResoner2005" title="Bug reports">🐛 🎨 🖋</a></td>
     <td align="center"><a href="https://github.com/Navernoss"><img src="https://avatars0.githubusercontent.com/u/75784137?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Navernoss</b></sub></a><br /><a href="#content-Navernoss" title="Content">🖋 🐛 🎨 </a></td>

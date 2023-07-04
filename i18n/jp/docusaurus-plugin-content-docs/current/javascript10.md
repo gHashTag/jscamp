@@ -15,7 +15,7 @@ JavaScript シンプルなパラダイムで設計されています。コンセ
 
 のオブジェクト JavaScript 通常の連想配列、つまり「ハッシュ」です。それはすべての一致を保存します `"キー: 値"` およびいくつかの標準メソッドがあります。
 
-のオブジェクト JavaScript 現実世界のオブジェクト (人👨、バス、建物など) のように、特定の値を持ついくつかの名前付き (key壁紙) パラメータ (年齢、名前、髪の色、ステータス) があります。 (15, John, black, 'true') ✅ :
+のオブジェクト JavaScript 現実世界のオブジェクト (人、バス、建物など) のように、特定の値を持ついくつかの名前付き (key壁紙) パラメータ (年齢、名前、髪の色、ステータス) があります。 (15, John, black, 'true')  :
 
 ```javascript
 let obj = {
@@ -111,14 +111,14 @@ function learnJavaScript() {
 }
 ```
 
-角括弧は主に次の場合に使用されます。 `プロパティ名` (properties) にあります `変数` 🔔 :
+角括弧は主に次の場合に使用されます。 `プロパティ名` (properties) にあります `変数`  :
 
 ```javascript
 let nameProp = 'age'
 obj[nameProp] = 15
 ```
 
-ここで変数を介して 🔔 `nameProp` プロパティの名前を設定します `"age"`, これは、ある連想配列のキーです。 `値 15`.
+ここで変数を介して  `nameProp` プロパティの名前を設定します `"age"`, これは、ある連想配列のキーです。 `値 15`.
 
 ```jsx live
 function learnJavaScript() {
@@ -137,7 +137,7 @@ function learnJavaScript() {
 
 ![Door](https://media.giphy.com/media/l378znZcUM7b6VDyM/giphy.gif)
 
-プロパティは、それにアクセスすることによってアクセスされます 👇 :
+プロパティは、それにアクセスすることによってアクセスされます  :
 
 ```jsx live
 function learnJavaScript() {
@@ -250,7 +250,7 @@ for(let key in obj) {
 }
 ```
 
-例えば 👇 :
+例えば  :
 
 ```jsx live
 function learnJavaScript() {
@@ -270,7 +270,7 @@ function learnJavaScript() {
 }
 ```
 
-そして密かに、正直言って、ほとんどすべての変数 🔔 環境内のミニオブジェクトです JavaScript. したがって、それらを使用することを恐れないでください。.
+そして密かに、正直言って、ほとんどすべての変数  環境内のミニオブジェクトです JavaScript. したがって、それらを使用することを恐れないでください。.
 
 ## 問題?
 
@@ -333,7 +333,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/KoDim-React"><img src="https://avatars1.githubusercontent.com/u/72087863?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy K.</b></sub></a><br /><a href="#mentoring-KoDim-React" title="Mentoring">📖</a></td>
+    <td align="center"><a href="https://github.com/KoDim-React"><img src="https://avatars1.githubusercontent.com/u/72087863?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy K.</b></sub></a><br /><a href="#mentoring-KoDim-React" title="Mentoring">  </a></td>
     <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /><a href="#financial-gHashTag" title="Financial">💵</a></td>
     <td align="center"><a href="https://github.com/Resoner2005"><img src="https://avatars1.githubusercontent.com/u/75675814?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Resoner2005</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/issues?q=author%3AResoner2005" title="Bug reports">🐛 🎨 🖋</a></td>
     <td align="center"><a href="https://github.com/Navernoss"><img src="https://avatars0.githubusercontent.com/u/75784137?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Navernoss</b></sub></a><br /><a href="#content-Navernoss" title="Content">🖋 🐛 🎨 </a></td>

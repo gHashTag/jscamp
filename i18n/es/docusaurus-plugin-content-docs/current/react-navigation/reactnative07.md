@@ -101,7 +101,7 @@ const unsubscribe = navigation.getParent().addListener ('tabPress', (e) => {
 Например, если вы вложите навигатор стека в навигатор Drawer, вы увидите, что Drawer появляется над заголовком навигатора стека. Однако, если вы вложите навигатор Drawer внутри стека, Drawer появится под заголовком стека. Это важный момент, который следует учитывать при принятии решения о размещении ваших навигаторов.
 
 
-## Done ✅
+## Done 
 
 Чтобы узнать, насколько хорошо вы усвоили этот урок, пройдите тест в [мобильном приложении](http://onelink.to/njhc95) нашей школы по этой теме или в [боте Telegram](https://t.me/javascriptcamp_bot).
 
@@ -117,7 +117,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <table>
   <tr>
-    <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /> <a href="https://github.com/gHashTag/react-native-village/commits?author=gHashTag" title="Documentation">📖💲</a></td>
+    <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /> <a href="https://github.com/gHashTag/react-native-village/commits?author=gHashTag" title="Documentation">  💲</a></td>
   </tr>
 </table>
 

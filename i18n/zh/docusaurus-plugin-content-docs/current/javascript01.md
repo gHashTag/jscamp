@@ -10,23 +10,23 @@ import YouTube from 'react-youtube'
 
 ## JavaScript
 
-🏗️以前，要創建數字化創業公司，需要來自以下方面的團隊：
+以前，要創建數字化創業公司，需要來自以下方面的團隊：
 
-- iOS開發人員📱
-- Android開發人員 📱
-- 開發者後端 💻
-- 網絡開發人員 🖥
+- iOS開發人員 
+- Android開發人員  
+- 開發者後端   
+- 網絡開發人員     
   和
-- 🧙‍♂️ 領隊誰
+-       領隊誰
   無處不在
   一件事完美 -
   是5個⃣人！
 
 ![你好世界](https://media.giphy.com/media/jTICSwJwDz3wa1PQmk/giphy.gif)
 
-如今，借助JavaScript，可以使用我們學校教授的技術堆棧，用一名JavaScript開發人員替換 5️⃣ 開發人員。
+如今，借助JavaScript，可以使用我們學校教授的技術堆棧，用一名JavaScript開發人員替換     開發人員。
 
-JavaScript是一種編程語言，可以在網頁等上實現複雜的行為。 在JavaScript中，您可以編寫站點 ℹ️，服務器，移動 📱 和桌面 💻 應用程序，以及用於增強現實和虛擬現實的應用程序。
+JavaScript是一種編程語言，可以在網頁等上實現複雜的行為。 在JavaScript中，您可以編寫站點  ，服務器，移動   和桌面    應用程序，以及用於增強現實和虛擬現實的應用程序。
 
 JavaScript是歐洲開發人員中最流行的編程語言之一。 該數據由以下作者獲得 [研究](https://www.oreilly.com/programming/free/files/2016-european-software-development-salary-survey.pdf) 來自O'Reilly公司的調查結果來自27個國家/地區的1300多名程序員。
 
@@ -34,7 +34,7 @@ JavaScript是歐洲開發人員中最流行的編程語言之一。 該數據由
 
 ![你好世界](https://media.giphy.com/media/1n67EigjECnOUc6rhS/giphy.gif)
 
-像許多其他編程語言一樣，JavaScript具有嚴格的語法。 語法 📖 是語法的一部分，用於研究句子以及如何在句子中組合單詞。 🖥️ 計算機不如人類 👨 聰明：它們無法“僅僅理解” 🤷 您的意思。 僅當您嚴格按照機器from期望的表達方式與機器進行通信時，機器 🚗 才能理解您。 這種預期的表達形式稱為 📖 語法。
+像許多其他編程語言一樣，JavaScript具有嚴格的語法。 語法    是語法的一部分，用於研究句子以及如何在句子中組合單詞。     ️ 計算機不如人類  聰明：它們無法“僅僅理解”  您的意思。 僅當您嚴格按照機器from期望的表達方式與機器進行通信時，機器    才能理解您。 這種預期的表達形式稱為    語法。
 
 ## 工作環境
 
@@ -46,9 +46,9 @@ JavaScript是歐洲開發人員中最流行的編程語言之一。 該數據由
 
 3️⃣ 第三，必須在計算機上安裝瀏覽器，在我們的課程中，我們將使用Google Chrome，但可以使用其他瀏覽器。 未知的Chrome瀏覽器是瀏覽器，即用於查看網頁的程序。
 
-如果您仍未安裝 Google Chrome 瀏覽器，則可以下載 [這裡](https://www.google.com/intl/com/chrome/?brand=CHBD&gclid=CjwKCAjwtNf6BRAwEiwAkt6UQlNVpi-CLILLC8x3U0PcR5d3xmP3MQVD2T2) 任何其他瀏覽器（Firefox，Safari，Edge或Internet Explorer），只需在搜索欄中輸入🔎“下載Chrome”並按照進一步的說明進行操作即可。
+如果您仍未安裝 Google Chrome 瀏覽器，則可以下載 [這裡](https://www.google.com/intl/com/chrome/?brand=CHBD&gclid=CjwKCAjwtNf6BRAwEiwAkt6UQlNVpi-CLILLC8x3U0PcR5d3xmP3MQVD2T2) 任何其他瀏覽器（Firefox，Safari，Edge或Internet Explorer），只需在搜索欄中輸入“下載Chrome”並按照進一步的說明進行操作即可。
 
-下載並安裝Google Chrome後，將其打開並在地址欄中輸入🧑‍💻：
+下載並安裝Google Chrome後，將其打開並在地址欄中輸入  ：
 
 ```
 關於：空白
@@ -69,27 +69,27 @@ JavaScript是歐洲開發人員中最流行的編程語言之一。 該數據由
 
 ### 打開控制台
 
-由於您現在是一位有抱負的程序員🖥️，因此您也可以使用它！ 要調出控制台，只需同時按 🔘`CTRL，SHIFT（如果使用Mac，則按COMMAND和OPTION）和J`鍵。
+由於您現在是一位有抱負的程序員    ️，因此您也可以使用它！ 要調出控制台，只需同時按 🔘`CTRL，SHIFT（如果使用Mac，則按COMMAND和OPTION）和J`鍵。
 
-按下組合鍵將打開一個新的 🆕 菜單欄，您將在頁面的左上角看到尖括號。 順便說一句，如果將光標移動到變成雙箭頭的區域的邊緣，然後按住左鍵，則可以拉伸控制台窗口。 確保這樣做，以便您有更多的空間來插入代碼 📟
+按下組合鍵將打開一個新的    菜單欄，您將在頁面的左上角看到尖括號。 順便說一句，如果將光標移動到變成雙箭頭的區域的邊緣，然後按住左鍵，則可以拉伸控制台窗口。 確保這樣做，以便您有更多的空間來插入代碼 
 
 ![安慰](/img/javascript/01.png)
 
-如果由於某些原因而無法使用`CTRL + SHIFT + J`或`COMMAND + OPTION + J`的組合，則可以通過右鍵單擊🖱️頁面上的空白處進入控制台，選擇Inspect（查看代碼 ），然後單擊菜單欄上的控制台。
+如果由於某些原因而無法使用`CTRL + SHIFT + J`或`COMMAND + OPTION + J`的組合，則可以通過右鍵單擊頁面上的空白處進入控制台，選擇Inspect（查看代碼 ），然後單擊菜單欄上的控制台。
 
 ![檢查](/img/javascript/02.png)
 
 ## 你好世界計劃
 
-“你好世界！” -（Hello world！）輸出短語“ Hello world！”的程序。 到屏幕或其他設備🌎
+“你好世界！” -（Hello world！）輸出短語“ Hello world！”的程序。 到屏幕或其他設備
 
-這通常是編程教科書中程序的第一個示例，對於許多學生來說，這是學習新語言的第一個經驗。👅
+這通常是編程教科書中程序的第一個示例，對於許多學生來說，這是學習新語言的第一個經驗。 
 
 現在，控制台窗口已在您面前打開，並且已以方便的方式將其拉伸，請單擊尖括號右側的鼠標`>`.
 
 ![不相等](https://media.giphy.com/media/jPfQcPdmI9bTXpa7hi/giphy.gif)
 
-行上閃爍的光標 🖱️ 出現，表示您可以開始輸入。 現在，您將輸入第一行代碼 📟。 輸入以下文本 📜（包括引號：
+行上閃爍的光標  出現，表示您可以開始輸入。 現在，您將輸入第一行代碼 。 輸入以下文本 （包括引號：
 
 ```
 "你好世界!"
@@ -104,7 +104,7 @@ JavaScript是歐洲開發人員中最流行的編程語言之一。 該數據由
 
 現在，您可以用自己的雙手編寫並執行第一個JavaScript代碼，感到自豪！
 
-然後按下鍵\ _ UP_ARROW ⬆️（向上箭頭），您將看到文本 📜 “ Hello World！”。 或“ Hello world！” 用英語。 接下來，將光標🖱️ 移動到該行的開頭，然後鍵入以下文本代替 📜：
+然後按下鍵\ _ UP_ARROW ⬆️（向上箭頭），您將看到文本  “ Hello World！”。 或“ Hello world！” 用英語。 接下來，將光標 移動到該行的開頭，然後鍵入以下文本代替 ：
 
 ```javascript
 var hello = 'Hello world!'
@@ -155,7 +155,7 @@ hello
 
 ![現場編輯](https://media.giphy.com/media/l1KVcrdl7rJpFnY2s/giphy.gif)
 
-JavaScript代碼由瀏覽器的JavaScript引擎執行。 通過控制台，我們直接訪問它。 此外，為了不將整個培訓課程寫在瀏覽器中，而是從我們的站點跳到瀏覽器控制台，反之亦然，我們將在網站上以“實時編碼”模式編寫代碼。 為此，請在下一個窗口“ LIVE EDITOR”中添加單詞Hello，單詞World。 在`RESULT`中，您應該得到`Hello World` 🌎
+JavaScript代碼由瀏覽器的JavaScript引擎執行。 通過控制台，我們直接訪問它。 此外，為了不將整個培訓課程寫在瀏覽器中，而是從我們的站點跳到瀏覽器控制台，反之亦然，我們將在網站上以“實時編碼”模式編寫代碼。 為此，請在下一個窗口“ LIVE EDITOR”中添加單詞Hello，單詞World。 在`RESULT`中，您應該得到`Hello World` 
 
 ```jsx live
 function learnJavaScript() {
@@ -165,7 +165,7 @@ function learnJavaScript() {
 }
 ```
 
-現在嘗試玩數學運算 👇:
+現在嘗試玩數學運算 :
 
 ```jsx live
 function learnJavaScript() {
@@ -242,7 +242,7 @@ T向這些好人致敬([emoji key](https://allcontributors.org/docs/en/emoji-key
 
 <table>
   <tr>
-    <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /> <a href="https://github.com/gHashTag/react-native-village/commits?author=gHashTag" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /> <a href="https://github.com/gHashTag/react-native-village/commits?author=gHashTag" title="Documentation">  </a></td>
     <td align="center"><a href="https://github.com/Resoner2005"><img src="https://avatars1.githubusercontent.com/u/75675814?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Resoner2005</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/issues?q=author%3AResoner2005" title="Bug reports">🐛 🎨 🖋</a></td>
   </tr>
   

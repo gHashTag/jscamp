@@ -79,7 +79,7 @@ import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment'
 
 ## 學習過程
 
-培訓在 [Discord](https://discord.gg/6GDAfXn) 支付訂閱費用後，即可通過秘密的Java腳本聊天形式訪問該應用程序 🖊️ JavaScript Camp.
+培訓在 [Discord](https://discord.gg/6GDAfXn) 支付訂閱費用後，即可通過秘密的Java腳本聊天形式訪問該應用程序  JavaScript Camp.
 
 ![How much](https://media.giphy.com/media/bEu3CsR2RXdu5rBssw/giphy.gif)
 

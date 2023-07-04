@@ -19,7 +19,7 @@ sidebar_label: 高階関数
 
 ![First_class](https://media.giphy.com/media/l2Jecm1l0wnJ2kQDu/giphy.gif)
 
-すでにJavaScriptを学んでいる場合は、JavaScriptが関数⚙️をファーストクラスのオブジェクトとして扱うと聞いたことがあるかもしれません。 JavaScriptでは、関数⚙️は他の関数型プログラミング言語と同じようにオブジェクトです👅⚙️。
+すでにJavaScriptを学んでいる場合は、JavaScriptが関数⚙️をファーストクラスのオブジェクトとして扱うと聞いたことがあるかもしれません。 JavaScriptでは、関数⚙️は他の関数型プログラミング言語と同じようにオブジェクトです ⚙️。
 JavaScriptでは、関数⚙️は特殊なタイプのオブジェクトです。 これらは`Function`オブジェクトです。 例えば：
 
 ```jsx live
@@ -36,15 +36,15 @@ function learnJavaScript() {
 
 ![Higher](https://media.giphy.com/media/WS4yajVBkb3lIwDIKd/giphy.gif)
 
-これらは、関数⚙️を引数として取るか、🔄関数⚙️を出力として返す関数⚙️です。
+これらは、関数⚙️を引数として取るか、関数⚙️を出力として返す関数⚙️です。
 
-たとえば、これらの高階関数⚙️は言語に組み込まれています👅： `map（）` `filter（）`および `reduce（）`
+たとえば、これらの高階関数⚙️は言語に組み込まれています ： `map（）` `filter（）`および `reduce（）`
 
 ### 例1。 番号を変更する`.push`
 
 ![Edit_number](https://media.giphy.com/media/xT5LMMneIRG1UJquOI/giphy.gif)
 
-数字の配列があるとしましょう。 最初の配列の2倍の値を含む🏗️新しい配列🆕を作成したいと思います。 高階関数⚙️がある場合とない場合で、この問題をどのように解決できるかを見てみましょう。
+数字の配列があるとしましょう。 最初の配列の2倍の値を含む新しい配列  を作成したいと思います。 高階関数⚙️がある場合とない場合で、この問題をどのように解決できるかを見てみましょう。
 
 #### 高階関数なし：
 
@@ -91,7 +91,7 @@ function learnJavaScript() {
 
 ![Math](https://media.giphy.com/media/3o7btPCcdNniyf0ArS/giphy.gif)
 
-さまざまな人々の誕生年を含む配列があるとしましょう。 彼らの年齢を保持するために🏗️配列を作成する必要があります。
+さまざまな人々の誕生年を含む配列があるとしましょう。 彼らの年齢を保持するために配列を作成する必要があります。
 
 例：高階関数なし⚙️（クラシック- `for（）`ループと` push（） `を介して）
 
@@ -118,13 +118,13 @@ function learnJavaScript() {
 }
 ```
 
-点滅🆕1行のコードで新しい配列📟。
+点滅  1行のコードで新しい配列。
 
 ### 例3。 `.filter（）`条件チェックを使用
 
 ![Check](https://media.giphy.com/media/Rd6sn03ncIklmprvy6/giphy.gif)
 
-nameとageのプロパティを持つオブジェクトを含む配列があります。 大人（つまり、18歳以上）のみを含む🏗️配列を作成する必要があります。
+nameとageのプロパティを持つオブジェクトを含む配列があります。 大人（つまり、18歳以上）のみを含む配列を作成する必要があります。
 
 高階関数なし（クラシック- `for（）`ループと `push（）`を介して）：
 
@@ -170,8 +170,8 @@ function learnJavaScript() {
 
 ![Create](https://media.giphy.com/media/3ohzdWsUVRcZC2L7Ms/giphy.gif)
 
-これまで、言語に組み込まれた高階関数⚙️を見てきました👅。 それでは、そのような関数を自分たちで作成しましょう⚙️。
-JavaScriptに組み込みの`map`メソッドがないことを想像してみてください。 高階🏗️関数⚙️を作成することで、自分で書くことができます。
+これまで、言語に組み込まれた高階関数⚙️を見てきました 。 それでは、そのような関数を自分たちで作成しましょう⚙️。
+JavaScriptに組み込みの`map`メソッドがないことを想像してみてください。 高階関数⚙️を作成することで、自分で書くことができます。
 
 文字列配列があり、それを数値の配列に変換したいとします。各要素は、元の配列からの要素の長さを表します。
 
@@ -194,13 +194,13 @@ function learnJavaScript() {
 }
 ```
 
-上記の例では、配列`arr`とコールバック関数`fn`を受け取る独自の高階関数`mapFor（）`を作成しました。この関数は、指定された配列をループし、内部で`fn`コールバック関数を呼び出します。各反復の`newArray.push関数（）`は、配列のワード内の文字数を計算します。その計算アルゴリズムは、2番目の変数として🖊️記述されています🔔。
+上記の例では、配列`arr`とコールバック関数`fn`を受け取る独自の高階関数`mapFor（）`を作成しました。この関数は、指定された配列をループし、内部で`fn`コールバック関数を呼び出します。各反復の`newArray.push関数（）`は、配列のワード内の文字数を計算します。その計算アルゴリズムは、2番目の変数として記述されています。
 
 :::note callback
 コールバック関数⚙️は、引数として別の関数⚙️に渡される関数⚙️であり、アクションが完了すると呼び出されます。
 :::
 
-`Callback`関数⚙️`fn`は現在の配列要素を受け取り、🔄現在の要素の長さを返します。これは現在`newArray`に格納されています。 `For（）`ループが完了すると、`newArray`は🔄`lenArray`の要素の長さを返します。
+`Callback`関数⚙️`fn`は現在の配列要素を受け取り、現在の要素の長さを返します。これは現在`newArray`に格納されています。 `For（）`ループが完了すると、`newArray`は`lenArray`の要素の長さを返します。
 
 <!-- Поэксперементируйте, используя стрелочные функции:
 
@@ -219,13 +219,13 @@ function learnJavaScript() {
 }
 ```
 
-Обратите внимание на синтаксис📖:
+Обратите внимание на синтаксис  :
 
 при передаче функции⚙️ say в качестве параметра скобки `()` не указываются, т.к. в параметре функция⚙️ не вызывается, а передается целиком. Функция⚙️ `say` является аргументом функции⚙️ `userInput().` -->
 
 任意に小さいアルゴリズムは、次の3つの段階で構成されていることを忘れないでください。
 
-- ステージ1-変数の初期化🔔と関数
+- ステージ1-変数の初期化と関数
 - ステージ2-高階関数（ロジック）
 - ステージ3-答えの結論。
 
@@ -249,9 +249,9 @@ function learnJavaScript() {
 
 <!-- ![The and](https://media.giphy.com/media/xT1XH3yj7ujmm2h40o/giphy.gif) -->
 
-高階関数とは何かを学び、すでに言語に組み込まれている関数のいくつかを整理しました👅。 自分で🏗️それらを作成することを学びました。
+高階関数とは何かを学び、すでに言語に組み込まれている関数のいくつかを整理しました 。 自分でそれらを作成することを学びました。
 
-詳細に立ち入ることなく、高階関数⚙️は次のように言うことができます。これらは、関数⚙️を引数として取り、🔄関数⚙️を返すことができる関数⚙️です。
+詳細に立ち入ることなく、高階関数⚙️は次のように言うことができます。これらは、関数⚙️を引数として取り、関数⚙️を返すことができる関数⚙️です。
 
 ## 問題？
 
@@ -301,7 +301,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/KoDim-React"><img src="https://avatars1.githubusercontent.com/u/72087863?v=4?s=200" width="200px " alt=""/><br /><sub><b>Dmitriy K.</b></sub></a><br /><a href="#mentoring-KoDim-React" title="Mentoring">📖</a></td>
+    <td align="center"><a href="https://github.com/KoDim-React"><img src="https://avatars1.githubusercontent.com/u/72087863?v=4?s=200" width="200px " alt=""/><br /><sub><b>Dmitriy K.</b></sub></a><br /><a href="#mentoring-KoDim-React" title="Mentoring">  </a></td>
     <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px " alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /><a href="#financial-gHashTag" title="Financial">💵</a></td>
     <td align="center"><a href="https://github.com/Resoner2005"><img src="https://avatars1.githubusercontent.com/u/75675814?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Resoner2005</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/issues?q=author%3AResoner2005" title="Bug reports">🐛 🎨 🖋</a></td>
     <td align="center"><a href="https://github.com/Navernoss"><img src="https://avatars0.githubusercontent.com/u/75784137?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Navernoss</b></sub></a><br /><a href="#content-Navernoss" title="Content">🖋 🐛 🎨 </a></td>

@@ -46,7 +46,7 @@ function learnJavaScript() {
 }
 ```
 
-Note that the backslash `\` is only used to correctly read the string by the interpreter, but it is not written 🖊️ to the string after it has been read. When a string is saved to main memory, the `\` character is not added to it. You can clearly see this in the findings.
+Note that the backslash `\` is only used to correctly read the string by the interpreter, but it is not written  to the string after it has been read. When a string is saved to main memory, the `\` character is not added to it. You can clearly see this in the findings.
 
 ## Back quotes
 
@@ -54,7 +54,7 @@ Note that the backslash `\` is only used to correctly read the string by the int
 
 In writing a string, you can do without a backslash by using \ `back \` quotes.
 
-Single and double quotes work essentially the same way, and if you use back quotes, we can insert arbitrary JavaScript expressions into such a string by wrapping them in a dollar sign with curly braces `$ {...}` 👇:
+Single and double quotes work essentially the same way, and if you use back quotes, we can insert arbitrary JavaScript expressions into such a string by wrapping them in a dollar sign with curly braces `$ {...}` :
 
 ```jsx live
 function learnJavaScript() {
@@ -90,7 +90,7 @@ guestList // multi-line guest list
 
 ![Tree](https://media.giphy.com/media/YxlUxrYGw2w9y/giphy.gif)
 
-The content of a string in JavaScript cannot be changed. You cannot take the symbol in the middle and replace it. Once a string is created🏗️ - it is like that forever.
+The content of a string in JavaScript cannot be changed. You cannot take the symbol in the middle and replace it. Once a string is created - it is like that forever.
 You can create a new string and write it to the same variable instead of the old one.
 
 ```jsx live
@@ -239,7 +239,7 @@ Why isn't a backslash used in a string?
 2. To write special characters
 3. To end the line
 
-Find the line with the error🙅‍♂️
+Find the line with the error
 
 1. let str = \ `It's not complicated \`
 2. let str = "'I think so, indeed!' - cried he. "
@@ -294,7 +294,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/Alena-Maitri"><img src="https://avatars1.githubusercontent.com/u/72432063?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Alena Yanbukhtina</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/commits?author=Alena-Maitri" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/Alena-Maitri"><img src="https://avatars1.githubusercontent.com/u/72432063?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Alena Yanbukhtina</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/commits?author=Alena-Maitri" title="Documentation">  </a></td>
     <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /><a href="#financial-gHashTag" title="Financial">💵</a></td>
     <td align="center"><a href="https://github.com/Resoner2005"><img src="https://avatars1.githubusercontent.com/u/75675814?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Resoner2005</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/issues?q=author%3AResoner2005" title="Bug reports">🐛 🎨 🖋</a></td>
   </tr>

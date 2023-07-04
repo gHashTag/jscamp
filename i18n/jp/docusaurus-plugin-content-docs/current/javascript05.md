@@ -8,17 +8,17 @@ import YouTube from 'react-youtube'
 
 ![@serverSerrverlesskiy](/img/javascript/headers/05.jpg)
 
-私たちの他の人と同じように、あなたは間違いを犯します。🙅‍♂️ コードで📟. ソフトウェアエラー🙅‍♂️ バグと呼ばれます。バグはエラーを意味します🙅‍♂️ プログラムで💾 プログラムで🙅‍♂️ エラーが原因で発生する🙅‍♂️, дプログラムの開発者がソースコードで省略している📟, そのデザインのいずれか.
+私たちの他の人と同じように、あなたは間違いを犯します。 コードで. ソフトウェアエラー バグと呼ばれます。バグはエラーを意味します プログラムで💾 プログラムで エラーが原因で発生する, дプログラムの開発者がソースコードで省略している, そのデザインのいずれか.
 
 ![error](https://media.giphy.com/media/1VT3UNeWdijUSMpRL4/giphy.gif)
 
-「とらえどころのない技術的エラー」の意味で🙅‍♂️» 「バグ」という言葉（eng. bug) コンピュータが登場するずっと前に使用されていた🖥️ 電気機器および無線機器の問題に関する電信および電話会社の担当者。 1878年にトーマスエジソンは書いた：
+「とらえどころのない技術的エラー」の意味で» 「バグ」という言葉（eng. bug) コンピュータが登場するずっと前に使用されていた    ️ 電気機器および無線機器の問題に関する電信および電話会社の担当者。 1878年にトーマスエジソンは書いた：
 
 > «これは私のすべての発明に当てはまりました。 1️⃣ 最初のステップは直感であり、それはフラッシュのようになり、次に問題が発生します-デバイスは動作を拒否します、そしてそれはバグが現れるときです-これらの小さな間違いや困難が呼ばれるように-そしてそれまでに数ヶ月の綿密な観察、研究、努力が必要ですそれは商業的な成功または失敗になります。」
 
-デバッグは、エラーを見つけて修正するプロセスです。🙅‍♂️ スクリプト内。
+デバッグは、エラーを見つけて修正するプロセスです。 スクリプト内。
 
-[Wikipedia](https://ru.wikipedia.org/wiki/Программная_ошибка🙅‍♂️)
+[Wikipedia](https://ru.wikipedia.org/wiki/Программная_ошибка)
 
 ## ビデオ
 
@@ -28,15 +28,15 @@ import YouTube from 'react-youtube'
 
 ![Teacher](https://media.giphy.com/media/27c3zdaY6eeIAwp7Qi/giphy.gif)
 
-私はあなたがすでにあなたの最初の間違いに遭遇したことを望みます。🙅‍♂️ コードを書く過程で。なぜ希望するのですか？間違いだから🙅‍♂️ - これらは私たちのコードで私たちが間違っていることを私たちに示す私たちの教師です📟 とコンピューター🖥️, т対面コードインタープリター📟, 私たちは単に理解することはできません。エラー🙅‍♂️ コードを書くとき📟 ほぼ毎日起こります。秘訣はメッセージを読めるようにすることです。💬 ほぼ毎日起こります。秘訣はメッセージを読めるようにすることです。🙅‍♂️, 機械があなたに与えるもの🚗, 書かれたコードの欠陥をすばやく見つけて修正する📟. 勉強すればするほど JavaScript, メッセージに感謝すればするほど💬 間違いについて🙅‍♂️ - 彼らはしばしばあなたが間違った場所を非常に正確に示します。
+私はあなたがすでにあなたの最初の間違いに遭遇したことを望みます。 コードを書く過程で。なぜ希望するのですか？間違いだから - これらは私たちのコードで私たちが間違っていることを私たちに示す私たちの教師です とコンピューター    ️, т対面コードインタープリター, 私たちは単に理解することはできません。エラー コードを書くとき ほぼ毎日起こります。秘訣はメッセージを読めるようにすることです。 ほぼ毎日起こります。秘訣はメッセージを読めるようにすることです。, 機械があなたに与えるもの  , 書かれたコードの欠陥をすばやく見つけて修正する. 勉強すればするほど JavaScript, メッセージに感謝すればするほど 間違いについて - 彼らはしばしばあなたが間違った場所を非常に正確に示します。
 
-最も一般的なタイプのエラーのカップル🙅‍♂️ コードで📟:
+最も一般的なタイプのエラーのカップル コードで:
 
 ## SyntaxError
 
 ![Error](https://media.giphy.com/media/TqiwHbFBaZ4ti/giphy.gif)
 
-`Syntax Error` - 言語規則の違反👅. たとえば、9とセミコロンを入力します`9 + ;`👇:
+`Syntax Error` - 言語規則の違反 . たとえば、9とセミコロンを入力します`9 + ;`:
 
 ```jsx live
 function learnJavaScript() {
@@ -48,9 +48,9 @@ function learnJavaScript() {
 
 回答: `SyntaxError: Unexpected token ;`
 
-構文エラー🙅‍♂️, 文章の本文に間違いがあることを意味します🙅‍♂️。言い換えれば、あなたが書いたものは言語の観点からは正しくありません👅 JavaScript. 通訳はあなたの文章を読むことができず、それをどうするかわかりません. `Unexpected token ;` 通訳者がまったく読むことを期待していなかったものを読んだことを意味します：私たちの場合、セミコロン `;`.
+構文エラー, 文章の本文に間違いがあることを意味します。言い換えれば、あなたが書いたものは言語の観点からは正しくありません  JavaScript. 通訳はあなたの文章を読むことができず、それをどうするかわかりません. `Unexpected token ;` 通訳者がまったく読むことを期待していなかったものを読んだことを意味します：私たちの場合、セミコロン `;`.
 
-もう一度間違えましょう🙅‍♂️!
+もう一度間違えましょう!
 コンソールに5プラス3と最後に括弧を入力してみましょう `5+3)`.
 
 ```jsx live
@@ -67,7 +67,7 @@ function learnJavaScript() {
 
 ![Error](https://media.giphy.com/media/8L0Pky6C83SzkzU55a/giphy.gif)
 
-`ReferenceError` - 間違った名前！オブジェクト `ReferenceError` 存在しない変数にアクセスするときに発生するエラー🙅‍♂️を表します。たとえば、5プラス交互に入力します `5 + переменая`:
+`ReferenceError` - 間違った名前！オブジェクト `ReferenceError` 存在しない変数にアクセスするときに発生するエラーを表します。たとえば、5プラス交互に入力します `5 + переменая`:
 
 ```jsx live
 function learnJavaScript() {
@@ -77,7 +77,7 @@ function learnJavaScript() {
 }
 ```
 
-今、私たちは治療の誤りがあります `ReferenceError`.おそらくあなたはここで何が問題なのかすでに気づいていますか？エラーメッセージを注意深く読みましょう（結局のところ、それが発行されたものです！）。それは言う： `переменная 🔔 is not defined` — 変数が設定されていません。ここに問題があります。まず、次のように、何らかの方法で変数を宣言する必要があります。
+今、私たちは治療の誤りがあります `ReferenceError`.おそらくあなたはここで何が問題なのかすでに気づいていますか？エラーメッセージを注意深く読みましょう（結局のところ、それが発行されたものです！）。それは言う： `переменная  is not defined` — 変数が設定されていません。ここに問題があります。まず、次のように、何らかの方法で変数を宣言する必要があります。
 
 ```jsx live
 function learnJavaScript() {
@@ -139,7 +139,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <table>
   <tr>
-    <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /> <a href="https://github.com/gHashTag/react-native-village/commits?author=gHashTag" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /> <a href="https://github.com/gHashTag/react-native-village/commits?author=gHashTag" title="Documentation">  </a></td>
     <td align="center"><a href="https://github.com/Resoner2005"><img src="https://avatars1.githubusercontent.com/u/75675814?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Resoner2005</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/issues?q=author%3AResoner2005" title="Bug reports">🐛 🎨 🖋</a></td>
   </tr>
   

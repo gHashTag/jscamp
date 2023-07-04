@@ -8,12 +8,12 @@ sidebar_label: コメント（1）
 
 ## コメントとは何ですか？
 
-JavaScriptには、コードでコメントを指定する方法がいくつかあります。 📟
+JavaScriptには、コードでコメントを指定する方法がいくつかあります。 
 
-時々書くとき 🖊️ コード、あなたはそれに人々だけを対象とした説明を提供する必要があります 👨 , コンピューター用ではありません。おそらくそれは、過去から（未来の私へ！）あなた自身へのある種のメッセージであり、プログラムコードのこれまたはそのことについてです。あるいは、コードのそのような部分とそのような部分だけを実行する必要があり、残りは省略すべきであることを示しているだけかもしれません。要するに、そのような場合には、コメントの助けを借りる必要があります。
-コメント（1） 🗣️ 追加するために使用されます ➕ ヒント、メモ 🔖 , 提案または警告。彼らは読みやすく、理解しやすくすることができます 💡 コード。それらはまた防ぐのに使用することができます 🛑 コードの実行（この手法は、コードをデバッグするときに実行されます）。
+時々書くとき  コード、あなたはそれに人々だけを対象とした説明を提供する必要があります  , コンピューター用ではありません。おそらくそれは、過去から（未来の私へ！）あなた自身へのある種のメッセージであり、プログラムコードのこれまたはそのことについてです。あるいは、コードのそのような部分とそのような部分だけを実行する必要があり、残りは省略すべきであることを示しているだけかもしれません。要するに、そのような場合には、コメントの助けを借りる必要があります。
+コメント（1）  追加するために使用されます ➕ ヒント、メモ  , 提案または警告。彼らは読みやすく、理解しやすくすることができます 💡 コード。それらはまた防ぐのに使用することができます  コードの実行（この手法は、コードをデバッグするときに実行されます）。
 
-コードの実行（この手法は、コードをデバッグするときに実行されます）。 🗣️ コードで。
+コードの実行（この手法は、コードをデバッグするときに実行されます）。  コードで。
 ## ビデオ
 
 <YouTube videoId="zCvKMw5QHRw" />
@@ -22,7 +22,7 @@ JavaScriptには、コードでコメントを指定する方法がいくつか�
 
 ![Slash](https://media.giphy.com/media/bKXMS0NjXoyaY/giphy.gif)
 
-最初 1️⃣ 仕方 `// コメント` 🗣️ この場合、テキスト全体 📜 二重スラッシュの後の行にコメントがあります 🗣️ . 通訳が2つ見たとき 2️⃣ 続けてスラッシュ `//`, 彼は、行の終わりまで続くすべてのものを安全に無視できることをすぐに理解します。まだ構文に注意を払わないでください 📖 コードについては、少し後で詳しく説明します。
+最初 1️⃣ 仕方 `// コメント`  この場合、テキスト全体  二重スラッシュの後の行にコメントがあります  . 通訳が2つ見たとき 2️⃣ 続けてスラッシュ `//`, 彼は、行の終わりまで続くすべてのものを安全に無視できることをすぐに理解します。まだ構文に注意を払わないでください    コードについては、少し後で詳しく説明します。
 
 ```jsx live
 function learnJavaScript() {
@@ -38,7 +38,7 @@ function learnJavaScript() {
 ![Coments](https://media.giphy.com/media/UevalSWg5twQeqpc8Q/giphy.gif)
 
 2番目 2️⃣ 方法は `/* */`, この方法は、最初の方法よりも柔軟性があります 1️⃣ . 通訳が見たらすぐに `/*`, 彼は考えます：「ええ、それは私が見るまで意味します `*/`, ここでは何も気にしない！」
-たとえば、1つで使用できます 1️⃣ ライン 👇 :
+たとえば、1つで使用できます 1️⃣ ライン  :
 
 ```jsx live
 function learnJavaScript() {
@@ -49,7 +49,7 @@ function learnJavaScript() {
 }
 ```
 
-または、複数行コメントを作成できます 🗣️ , ここに示すように 👇 :
+または、複数行コメントを作成できます  , ここに示すように  :
 
 ```jsx live
 function learnJavaScript() {
@@ -65,7 +65,7 @@ function learnJavaScript() {
 
 ![Among](https://media.giphy.com/media/fnjIiBNo38IHS/giphy.gif)
 
-また、必要に応じて、このようなコメントを使用できます。 🗣️ コード行の途中。これはコードの可読性を損なう可能性がありますが👇 :
+また、必要に応じて、このようなコメントを使用できます。  コード行の途中。これはコードの可読性を損なう可能性がありますが :
 
 ```jsx live
 function learnJavaScript() {
@@ -76,7 +76,7 @@ function learnJavaScript() {
 }
 ```
 
-コードへのコメントで、それがすべてであり、変更の呼び出しが鳴りました🔔 .
+コードへのコメントで、それがすべてであり、変更の呼び出しが鳴りました .
 
 ![Comments](https://media.giphy.com/media/SvuRLwWT0EoeErwPvB/giphy.gif)
 
@@ -129,7 +129,7 @@ function learnJavaScript() {
 
 <table>
   <tr>
-    <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /> <a href="https://github.com/gHashTag/react-native-village/commits?author=gHashTag" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /> <a href="https://github.com/gHashTag/react-native-village/commits?author=gHashTag" title="Documentation">  </a></td>
     <td align="center"><a href="https://github.com/Resoner2005"><img src="https://avatars1.githubusercontent.com/u/75675814?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Resoner2005</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/issues?q=author%3AResoner2005" title="Bug reports">🐛 🎨 🖋</a></td>
   </tr>
   

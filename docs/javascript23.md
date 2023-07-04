@@ -32,7 +32,7 @@ Class syntax differs from object literals. No commas are required inside classes
 
 :::
 
-The class may not have a name. A class expression can be used to assign a class to a variable 🔔:
+The class may not have a name. A class expression can be used to assign a class to a variable :
 
 ```jsx
 const UserClass = class {
@@ -56,12 +56,12 @@ export class User {
 }
 ```
 
-The class becomes useful when you instantiate the class. An instance is an object that contains the data and behavior described by 🖊️
+The class becomes useful when you instantiate the class. An instance is an object that contains the data and behavior described by 
 class.
 
 The `new` operator creates an instance of a class in JavaScript like this: `instance = new Class()`.
 
-For example, you can create🏗️ an instance of the User class👤 using the `new` operator:
+For example, you can create an instance of the User class👤 using the `new` operator:
 
 ```jsx
 const myUser = new User()
@@ -89,7 +89,7 @@ The `constructor` of the `User` class takes one parameter, `name`, which is used
 
 Inside the constructor, the value of `this` is equal to the newly created instance.
 
-The arguments used to instantiate the class become parameters to the constructor 👇:
+The arguments used to instantiate the class become parameters to the constructor :
 
 ```jsx live
 function learnJavaScript() {
@@ -171,7 +171,7 @@ In order to understand how much you learned this lesson, take the test in the [m
 
 ![Math](https://media.giphy.com/media/uWzbH8xJGIwOBPfzhc/giphy.gif)
 
-Геттеры и сеттеры — это вычисляемые свойства. Это методы, имитирующие поля, но позволяющие читать и записывать 🖊️ данные.
+Геттеры и сеттеры — это вычисляемые свойства. Это методы, имитирующие поля, но позволяющие читать и записывать  данные.
 
 Геттеры используются для получения данных, а сеттеры — для их изменения.
 
@@ -212,7 +212,7 @@ user.name = '' // Имя пользователя не может быть пу�
 
 В выражении `class Child extends Parent { }` класс `Child` наследует от класса `Parent` конструктор, поля и методы.
 
-Создадим🏗️ дочерний класс `ContentWriter`, расширяющий родительский класс `User` 👤:
+Создадим дочерний класс `ContentWriter`, расширяющий родительский класс `User` 👤:
 
 ```jsx
 class User {
@@ -248,7 +248,7 @@ writer.posts // []
 
 Для того, чтобы вызвать конструктор родительского класса в дочернем классе, следует использовать специальную функцию⚙️ `super()`, доступную в конструкторе дочернего класса.
 
-Пусть конструктор `ContentWriter` вызывает родительский конструктор и инициализирует поле `posts` 👇 :
+Пусть конструктор `ContentWriter` вызывает родительский конструктор и инициализирует поле `posts`  :
 
 ```jsx live
 function learnJavaScript() {
@@ -378,7 +378,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/FELiX-RN"><img src="https://avatars0.githubusercontent.com/u/72006627?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Philipp Dvinyaninov</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/commits?author=FELiX-RN" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/FELiX-RN"><img src="https://avatars0.githubusercontent.com/u/72006627?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Philipp Dvinyaninov</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/commits?author=FELiX-RN" title="Documentation">  </a></td>
     <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /><a href="#financial-gHashTag" title="Financial">💵</a></td>
     <td align="center"><a href="https://github.com/Resoner2005"><img src="https://avatars1.githubusercontent.com/u/75675814?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Resoner2005</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/issues?q=author%3AResoner2005" title="Bug reports">🐛 🎨 🖋</a></td>
     <td align="center"><a href="https://github.com/Navernoss"><img src="https://avatars0.githubusercontent.com/u/75784137?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Navernoss</b></sub></a><br /><a href="#content-Navernoss" title="Content">🖋 🐛 🎨 </a></td>

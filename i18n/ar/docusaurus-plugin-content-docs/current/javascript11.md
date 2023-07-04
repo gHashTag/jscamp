@@ -12,7 +12,7 @@ sidebar_label: اكتب التحويل والصب
 
 ![transformation](https://media.giphy.com/media/xT4uQr9H3EDL7Ha2hq/giphy.gif)
 
-أمثلة👇:
+أمثلة:
 
 ```jsx live
 function learnJavaScript() {
@@ -26,7 +26,7 @@ function learnJavaScript() {
 
 في المثال أعلاه ، تضع JavaScript الرقم `9` في سلسلة ، ثم تربط القيمتين 2️⃣ معًا ، مما ينتج عنه السلسلة` 59`. كان لجافا سكريبت الاختيار بين سلسلة أو رقم واختار استخدام سلسلة.
 
-يمكن للمترجم تحويل السلسلة `5` إلى رقم وإرجاع مجموع` 14` ، لكنه لم يفعل. للحصول على هذه النتيجة ، تحتاج إلى تحويل السلسلة `5` صراحةً إلى رقم باستخدام` Number()` 👇 طريقة:
+يمكن للمترجم تحويل السلسلة `5` إلى رقم وإرجاع مجموع` 14` ، لكنه لم يفعل. للحصول على هذه النتيجة ، تحتاج إلى تحويل السلسلة `5` صراحةً إلى رقم باستخدام` Number()`  طريقة:
 
 ```jsx live
 function learnJavaScript() {
@@ -48,7 +48,7 @@ function learnJavaScript() {
 
 ![Transformation](https://media.giphy.com/media/RLVHPJJv7jY1q/giphy.gif)
 
-Sيحدث تحويل tring عندما تريد تمثيل شيء ما كسلسلة. على سبيل المثال ، يمكننا استخدام `String (value)` وظيفة لتحويل قيمة إلى سلسلة 👇:
+Sيحدث تحويل tring عندما تريد تمثيل شيء ما كسلسلة. على سبيل المثال ، يمكننا استخدام `String (value)` وظيفة لتحويل قيمة إلى سلسلة :
 
 ```jsx live
 function learnJavaScript() {
@@ -59,7 +59,7 @@ function learnJavaScript() {
 }
 ```
 
-يحدث التحول بطريقة واضحة. `true` ✅ يصبح`"true"`✅
+يحدث التحول بطريقة واضحة. `true`  يصبح`"true"`
 
 ### التحويل الرقمي
 
@@ -75,7 +75,7 @@ function learnJavaScript() {
 }
 ```
 
-يمكننا استخدام `Number (value)` وظيفة لتحويل صراحة `value` إلى رقم 👇:
+يمكننا استخدام `Number (value)` وظيفة لتحويل صراحة `value` إلى رقم :
 
 ```jsx live
 function learnJavaScript() {
@@ -88,7 +88,7 @@ function learnJavaScript() {
 
 غالبًا ما يتم استخدام التحويل الصريح عندما نتوقع الحصول على رقم من سياق سلسلة ، مثل الحقول النصية في النماذج.
 
-إذا تعذر تحويل السلسلة بشكل صريح إلى رقم ، فستكون نتيجة التحويل "NaN" (ليس رقمًا ، "وليس رقمًا"). علي سبيل المثال👇:
+إذا تعذر تحويل السلسلة بشكل صريح إلى رقم ، فستكون نتيجة التحويل "NaN" (ليس رقمًا ، "وليس رقمًا"). علي سبيل المثال:
 
 ```jsx live
 function learnJavaScript() {
@@ -138,7 +138,7 @@ Boolean('') // false
 ```
 
 :::تنبيه لاحظ أن السطر الذي يحتوي على صفر "0" صحيح
-بعض اللغات👅 (على سبيل المثال PHP) فسر السلسلة `" 0 "` as `false`. لكن في JavaScript ، إذا لم تكن السلسلة فارغة ، فهي دائمًا`true`
+بعض اللغات  (على سبيل المثال PHP) فسر السلسلة `" 0 "` as `false`. لكن في JavaScript ، إذا لم تكن السلسلة فارغة ، فهي دائمًا`true`
 :::
 
 ```javascript
@@ -203,7 +203,7 @@ Boolean(' ') // space is also true (any non-empty string is true)
 
 <table>
   <tr>
-    <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /> <a href="https://github.com/gHashTag/react-native-village/commits?author=gHashTag" title="Documentation">📖</a><a href="#financial-gHashTag" title="Financial">💵</a></td>
+    <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /> <a href="https://github.com/gHashTag/react-native-village/commits?author=gHashTag" title="Documentation">  </a><a href="#financial-gHashTag" title="Financial">💵</a></td>
     <td align="center"><a href="https://github.com/Resoner2005"><img src="https://avatars1.githubusercontent.com/u/75675814?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Resoner2005</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/issues?q=author%3AResoner2005" title="Bug reports">🐛 🎨 🖋</a></td>
   </tr>
   

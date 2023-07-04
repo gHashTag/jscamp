@@ -220,6 +220,6 @@ Editing the work configuration typescript.
 
 `yarn start-ios` or `yarn start-android`
 
-## Done ✅
+## Done 
 
 [![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)

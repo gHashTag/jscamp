@@ -78,7 +78,7 @@ AWS Amplify поддерживает Amazon Cognito различными спо�
 
 ![cognito](/img/auth/auth01.png)
 
-CODING TIME 👨🏼‍💻👩🏻‍💻
+CODING TIME 🏼‍  👩🏻‍  
 
 ![cognito](https://media.giphy.com/media/836HiJc7pgzy8iNXCn/giphy.gif)
 
@@ -88,7 +88,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <table>
   <tr>
-    <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /> <a href="https://github.com/gHashTag/react-native-village/commits?author=gHashTag" title="Documentation">📖</a><a href="#financial-gHashTag" title="Financial">💵</a></td>
+    <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /> <a href="https://github.com/gHashTag/react-native-village/commits?author=gHashTag" title="Documentation">  </a><a href="#financial-gHashTag" title="Financial">💵</a></td>
   </tr>
 </table>
 

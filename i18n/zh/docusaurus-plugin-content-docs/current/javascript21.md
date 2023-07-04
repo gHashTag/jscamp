@@ -36,8 +36,8 @@ function learnJavaScript() {
 2. 裡面 `getFruit` 創建了一個內部功能 `show`.
 3. getFruit函數返回show函數作為結果。
 4.在代碼中，我們進一步分配了 `getFruit` 對變量起作用 `showFruit`.
-5. 因為結果 `getFruit` 是一個函數，那麼 `showFruit` 變成不是變量🔔，而是一個函數。
-6.整體構造的結果是變量 `fruit`, 在函數內部 `getFruit`, 它關閉了。 現在我們只能找出該變量的值🔔，我們無法對其進行更改。
+5. 因為結果 `getFruit` 是一個函數，那麼 `showFruit` 變成不是變量，而是一個函數。
+6.整體構造的結果是變量 `fruit`, 在函數內部 `getFruit`, 它關閉了。 現在我們只能找出該變量的值，我們無法對其進行更改。
 
 ## 示例
 
@@ -180,7 +180,7 @@ Write to [Discord](https://discord.gg/6GDAfXn) chat.
 <!-- markdownlint-disable -->
 <table>
   <tr> 
-    <td align="center"><a href="https://github.com/IIo3iTiv"><img src="https://avatars1.githubusercontent.com/u/72025062?v=4?s=200" width="200px;" alt=""/><br /><sub><b>IIo3iTiv</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/commits?author=IIo3iTiv" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/IIo3iTiv"><img src="https://avatars1.githubusercontent.com/u/72025062?v=4?s=200" width="200px;" alt=""/><br /><sub><b>IIo3iTiv</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/commits?author=IIo3iTiv" title="Documentation">  </a></td>
     <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /><a href="#financial-gHashTag" title="Financial">💵</a></td>
     <td align="center"><a href="https://github.com/Resoner2005"><img src="https://avatars1.githubusercontent.com/u/75675814?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Resoner2005</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/issues?q=author%3AResoner2005" title="Bug reports">🐛 🎨 🖋</a></td>
     <td align="center"><a href="https://github.com/Navernoss"><img src="https://avatars0.githubusercontent.com/u/75784137?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Navernoss</b></sub></a><br /><a href="#content-Navernoss" title="Content">🖋 🐛 🎨 </a></td>

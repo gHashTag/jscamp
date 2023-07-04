@@ -8,9 +8,9 @@ import YouTube from 'react-youtube'
 
 ![@serverSerrverlesskiy](/img/javascript/headers/24.jpg)
 
-¡Eliminar la palabra clave `this`🗝️ de JavaScript hace que el lenguaje👅 sea mejor!
+¡Eliminar la palabra clave `this`🗝️ de JavaScript hace que el lenguaje  sea mejor!
 
-La razón es que 'esto' depende de cómo se llamó a la función⚙️, no de dónde se definió. Por lo tanto, `this` en JavaScript es una fuente de gran confusión en el lenguaje👅.
+La razón es que 'esto' depende de cómo se llamó a la función⚙️, no de dónde se definió. Por lo tanto, `this` en JavaScript es una fuente de gran confusión en el lenguaje .
 
 El uso de `this` asegura que la función opera en el objeto exacto en el contexto en el que se llama.
 A través del método `this`, no solo puede acceder a cualquier propiedad del objeto, sino también pasar a algún lugar una referencia al objeto completo (reduciendo la seguridad de la aplicación).
@@ -55,13 +55,13 @@ Los métodos son funciones⚙️ que se almacenan en objetos. Para que la funci�
 
 ![Poor](https://media.giphy.com/media/fQJbwrRJdHyMOP7RPH/giphy.gif)
 
-Pero `this` pierde contexto en muchas situaciones (se desconoce el valor de retorno🔄):
+Pero `this` pierde contexto en muchas situaciones (se desconoce el valor de retorno):
 
 - pierde contexto dentro de funciones anidadas
 - pierde contexto en las devoluciones de llamada
 - `this` pierde contexto cuando el método se usa como controlador de eventos.
 
-<!-- Давайте возьмем случай компонента `React`, который создает🏗️ поисковый запрос. В обоих методах, используемых в качестве обработчиков событий, при исползовании `this` теряется контекст:
+<!-- Давайте возьмем случай компонента `React`, который создает поисковый запрос. В обоих методах, используемых в качестве обработчиков событий, при исползовании `this` теряется контекст:
 
 ```SnackPlayer
 import React, { Component } from 'react'
@@ -106,7 +106,7 @@ export default SearchForm
 
 ![No](https://media.giphy.com/media/d2ZcfODrNWlA5Gg0/giphy.gif)
 
-`this` создает🏗️ проблемы безопасности. Все объявленные🗣️ элементы `this` являются публичными.
+`this` создает проблемы безопасности. Все объявленные элементы `this` являются публичными.
 
 ```javascript
 class Timer {
@@ -133,9 +133,9 @@ timer.timerId // secret не такой уже секретный
 
 ![Lo_mejor](https://media.giphy.com/media/ZBn3ZRvCbWz2PS3Rbg/giphy.gif)
 
-JavaScript es tanto un lenguaje de programación funcional como un lenguaje basado en prototipos. Si nos deshacemos de `this`, nos quedamos con JavaScript como un lenguaje de programación funcional⚙️👅. ¡Es aún mejor!
+JavaScript es tanto un lenguaje de programación funcional como un lenguaje basado en prototipos. Si nos deshacemos de `this`, nos quedamos con JavaScript como un lenguaje de programación funcional⚙️ . ¡Es aún mejor!
 
-Al mismo tiempo, sin `this`, JavaScript ofrece 🆕 una forma nueva y única de hacer programación orientada a objetos sin clases ni herencia.
+Al mismo tiempo, sin `this`, JavaScript ofrece    una forma nueva y única de hacer programación orientada a objetos sin clases ni herencia.
 
 <!-- ### Объектно-ориентированное программирование без this
 
@@ -150,11 +150,11 @@ Al mismo tiempo, sin `this`, JavaScript ofrece 🆕 una forma nueva y única de 
 
 ![Brains](https://media.giphy.com/media/xThuWl1CsJUCg2qEDu/giphy.gif)
 
-Чистые объекты данных содержат только данные и не имеют поведения. Любое вычисленное поле будет заполнено при создании🏗️. Чистые объекты данных должны быть неизменными. Нам нужен `Object.freeze()` при их создании🏗️. -->
+Чистые объекты данных содержат только данные и не имеют поведения. Любое вычисленное поле будет заполнено при создании. Чистые объекты данных должны быть неизменными. Нам нужен `Object.freeze()` при их создании. -->
 
 <!-- ### Объекты поведения
 
-Объекты поведения будут представлять собой коллекциями закрытий, имеющих одно и то же частное состояние. Давайте создадим🏗️ объект `Timer` без использования `this`.
+Объекты поведения будут представлять собой коллекциями закрытий, имеющих одно и то же частное состояние. Давайте создадим объект `Timer` без использования `this`.
 
 ![Twins](https://media.giphy.com/media/YpwwoFKZJrE4g/giphy.gif) -->
 
@@ -207,15 +207,15 @@ function learnJavaScript() {
 
 ![Memory](https://media.giphy.com/media/3o6ZtafpgSpvIaKhMI/giphy.gif)
 
-Система прототипов лучше в плане использования памяти. Все методы создаются🏗️ только один раз в объекте-прототипе и используются всеми экземплярами.
+Система прототипов лучше в плане использования памяти. Все методы создаются только один раз в объекте-прототипе и используются всеми экземплярами.
 
-Затраты памяти на создание🏗️ объектов поведения с использованием закрытий при создании🏗️ тысяч одинаковых объектов значительны. Но чаще всего в приложении создается🏗️ несколько объектов поведения. Если мы возьмем, например, объект поведения хранилища, в приложении будет только один его экземпляр, поэтому при использовании закрытий для его создания🏗️ не требуется никаких дополнительных затрат памяти.
+Затраты памяти на создание объектов поведения с использованием закрытий при создании тысяч одинаковых объектов значительны. Но чаще всего в приложении создается несколько объектов поведения. Если мы возьмем, например, объект поведения хранилища, в приложении будет только один его экземпляр, поэтому при использовании закрытий для его создания не требуется никаких дополнительных затрат памяти.
 
 В приложении могут быть сотни или тысячи чистых объектов данных. Чистые объекты данных не используют закрытия, поэтому нет затрат памяти.
 
 ### Компоненты без this
 
-`this` может потребоваться для многих компонентов, например, в `React` или `Vue`. В `React` мы можем создавать🏗️ функциональные компоненты без сохранения 📦 состояния `thi`s`, как чистые функции.
+`this` может потребоваться для многих компонентов, например, в `React` или `Vue`. В `React` мы можем создавать функциональные компоненты без сохранения  состояния `thi`s`, как чистые функции.
 
 ```javascript
 function ListItem({ todo }){
@@ -227,7 +227,7 @@ function ListItem({ todo }){
   );
 ```
 
-Можно создавать🏗️ компоненты с сохранением состояния без использования `this` с помощью `React Hooks`. Рассмотрим следующий пример:
+Можно создавать компоненты с сохранением состояния без использования `this` с помощью `React Hooks`. Рассмотрим следующий пример:
 
 ```javascript
 import React, { useState } from 'react'
@@ -262,7 +262,7 @@ function SearchForm({ onSearch }) {
 
 Если мы избавимся от `this`, мы также должны избавиться от `arguments[]`, поскольку у них одинаковое поведение динамического связывания.
 
-Избавиться от этого `arguments[]` довольно легко. Мы просто используем 🆕 новый синтаксис📖 параметра `...rest`. На этот раз параметр `...rest` является объектом массива:
+Избавиться от этого `arguments[]` довольно легко. Мы просто используем    новый синтаксис   параметра `...rest`. На этот раз параметр `...rest` является объектом массива:
 
 ```jsx live
 function learnJavaScript() {
@@ -283,12 +283,12 @@ function learnJavaScript() {
 ¡La mejor manera de evitar problemas con `this` es no usar `this` en absoluto!
 
 :::note JavaScript
-¡JavaScript sin esto parece el mejor lenguaje de programación funcional⚙️👅!
+¡JavaScript sin esto parece el mejor lenguaje de programación funcional⚙️ !
 :::
 
-Podemos crear 🏗️ objetos encapsulados sin usar `this` como colecciones de cierre. Con [React Hooks](https://ru.reactjs.org/docs/hooks-intro.html) podemos crear 🏗️ sin "este" componentes con estado.
+Podemos crear  objetos encapsulados sin usar `this` como colecciones de cierre. Con [React Hooks](https://ru.reactjs.org/docs/hooks-intro.html) podemos crear  sin "este" componentes con estado.
 
-La palabra clave `this` no se puede eliminar de JavaScript sin romper todas las aplicaciones existentes. Sin embargo, ¿qué se puede hacer? Podemos escribir 🖊️ nuestro propio código sin `this` y permitir que se use solo en bibliotecas. Mientras tanto, se están introduciendo [nuevas reglas](https://ru.reactjs.org/docs/hooks-rules.html#eslint-plugin) `ESLint` para prohibir el uso de `this`.
+La palabra clave `this` no se puede eliminar de JavaScript sin romper todas las aplicaciones existentes. Sin embargo, ¿qué se puede hacer? Podemos escribir  nuestro propio código sin `this` y permitir que se use solo en bibliotecas. Mientras tanto, se están introduciendo [nuevas reglas](https://ru.reactjs.org/docs/hooks-rules.html#eslint-plugin) `ESLint` para prohibir el uso de `this`.
 
 Como abandonamos en la última lección [classes](https://jscamp.app/docs/javascript25#classes-rejection), también nos despedimos de `this`.
 
@@ -341,7 +341,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/KoDim-React"><img src="https://avatars1.githubusercontent.com/u/72087863?v=4?s=200" width="200px " alt=""/><br /><sub><b>Dmitriy K.</b></sub></a><br /><a href="#mentoring-KoDim-React" title="Mentoring">📖</a></td>
+    <td align="center"><a href="https://github.com/KoDim-React"><img src="https://avatars1.githubusercontent.com/u/72087863?v=4?s=200" width="200px " alt=""/><br /><sub><b>Dmitriy K.</b></sub></a><br /><a href="#mentoring-KoDim-React" title="Mentoring">  </a></td>
     <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px " alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /><a href="#financial-gHashTag" title="Financial">💵</a></td>
     <td align="center"><a href="https://github.com/Resoner2005"><img src="https://avatars1.githubusercontent.com/u/75675814?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Resoner2005</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/issues?q=author%3AResoner2005" title="Bug reports">🐛 🎨 🖋</a></td>
     <td align="center"><a href="https://github.com/Navernoss"><img src="https://avatars0.githubusercontent.com/u/75784137?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Navernoss</b></sub></a><br /><a href="#content-Navernoss" title="Content">🖋 🐛 🎨 </a></td>

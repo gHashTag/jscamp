@@ -12,7 +12,7 @@ sidebar_label: 類型轉換和轉換
 
 ![transformation](https://media.giphy.com/media/xT4uQr9H3EDL7Ha2hq/giphy.gif)
 
-例子 👇:
+例子 :
 
 ```jsx live
 function learnJavaScript() {
@@ -26,7 +26,7 @@ function learnJavaScript() {
 
 在上面的示例中，JavaScript強制轉換為數字 `9` 成一個字符串，然後將兩個2️⃣值連接在一起，得到字符串 `59`. JavaScript可以在字符串或數字之間選擇，然後選擇使用字符串。
 
-編譯器可以轉換字符串 `5` 到一個數字並返回 `14`, 但事實並非如此。 要獲得此結果，您需要顯式轉換字符串 `5` 到使用 `Number()` 👇 方法:
+編譯器可以轉換字符串 `5` 到一個數字並返回 `14`, 但事實並非如此。 要獲得此結果，您需要顯式轉換字符串 `5` 到使用 `Number()`  方法:
 
 ```jsx live
 function learnJavaScript() {
@@ -48,7 +48,7 @@ function learnJavaScript() {
 
 ![Transformation](https://media.giphy.com/media/RLVHPJJv7jY1q/giphy.gif)
 
-當您想將某些東西表示為字符串時，就會發生字符串轉換。 例如，我們可以使用 `String (value)` 將值轉換為字符串的函數 👇:
+當您想將某些東西表示為字符串時，就會發生字符串轉換。 例如，我們可以使用 `String (value)` 將值轉換為字符串的函數 :
 
 ```jsx live
 function learnJavaScript() {
@@ -59,7 +59,7 @@ function learnJavaScript() {
 }
 ```
 
-轉換以明顯的方式發生。 `true` ✅ 變成`"true"`✅
+轉換以明顯的方式發生。 `true`  變成`"true"`
 
 ### 數值轉換
 
@@ -75,7 +75,7 @@ function learnJavaScript() {
 }
 ```
 
-我們可以使用 `Number (value)` 函數顯式轉換 `value` 到一個數字 👇:
+我們可以使用 `Number (value)` 函數顯式轉換 `value` 到一個數字 :
 
 ```jsx live
 function learnJavaScript() {
@@ -88,7 +88,7 @@ function learnJavaScript() {
 
 當我們期望從字符串上下文中獲取數字（例如表單中的文本字段）時，通常會使用顯式轉換。
 
-如果無法將字符串顯式轉換為數字，則轉換結果將為 `NaN` (非數字, "not a number "). 例如 👇:
+如果無法將字符串顯式轉換為數字，則轉換結果將為 `NaN` (非數字, "not a number "). 例如 :
 
 ```jsx live
 function learnJavaScript() {
@@ -138,7 +138,7 @@ Boolean('') // false
 ```
 
 :::注意請注意，零“ 0”的行為true
-某些語言👅（例如PHP）會解釋字符串 `" 0 "` 作為 `false`. 但是在JavaScript中，如果字符串不為空，則始終為 `true`
+某些語言 （例如PHP）會解釋字符串 `" 0 "` 作為 `false`. 但是在JavaScript中，如果字符串不為空，則始終為 `true`
 :::
 
 ```javascript
@@ -203,7 +203,7 @@ Boolean(' ') // space is also true (any non-empty string is true)
 
 <table>
   <tr>
-    <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /> <a href="https://github.com/gHashTag/react-native-village/commits?author=gHashTag" title="Documentation">📖</a><a href="#financial-gHashTag" title="Financial">💵</a></td>
+    <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /> <a href="https://github.com/gHashTag/react-native-village/commits?author=gHashTag" title="Documentation">  </a><a href="#financial-gHashTag" title="Financial">💵</a></td>
     <td align="center"><a href="https://github.com/Resoner2005"><img src="https://avatars1.githubusercontent.com/u/75675814?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Resoner2005</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/issues?q=author%3AResoner2005" title="Bug reports">🐛 🎨 🖋</a></td>
   </tr>
   

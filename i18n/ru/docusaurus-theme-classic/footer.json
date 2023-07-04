@@ -7,9 +7,9 @@
     "message": "Community 💛",
     "description": "The title of the footer links column with title=Community 💛 in the footer"
   },
-  "link.title.Social 🌎": {
-    "message": "Social 🌎",
-    "description": "The title of the footer links column with title=Social 🌎 in the footer"
+  "link.title.Social ": {
+    "message": "Social ",
+    "description": "The title of the footer links column with title=Social  in the footer"
   },
   "link.item.label.JavaScript": {
     "message": "JavaScript",
@@ -47,29 +47,29 @@
     "message": "Patreon 🤑",
     "description": "The label of footer link with label=Patreon 🤑 linking to https://www.patreon.com/javascriptcamp"
   },
-  "link.item.label.Instagram 🌎": {
-    "message": "Instagram 🌎",
-    "description": "The label of footer link with label=Instagram 🌎 linking to https://www.instagram.com/javascriptcamp/"
+  "link.item.label.Instagram ": {
+    "message": "Instagram ",
+    "description": "The label of footer link with label=Instagram  linking to https://www.instagram.com/javascriptcamp/"
   },
   "link.item.label.GitHub 🛰": {
     "message": "GitHub 🛰",
     "description": "The label of footer link with label=GitHub 🛰 linking to https://github.com/react-native-village"
   },
-  "link.item.label.Dev.to 🌎": {
-    "message": "Dev.to 🌎",
-    "description": "The label of footer link with label=Dev.to 🌎 linking to https://dev.to/playra"
+  "link.item.label.Dev.to ": {
+    "message": "Dev.to ",
+    "description": "The label of footer link with label=Dev.to  linking to https://dev.to/playra"
   },
-  "link.item.label.Facebook 🌎": {
-    "message": "Facebook 🌎",
-    "description": "The label of footer link with label=Facebook 🌎 linking to https://www.facebook.com/javascriptcamp"
+  "link.item.label.Facebook ": {
+    "message": "Facebook ",
+    "description": "The label of footer link with label=Facebook  linking to https://www.facebook.com/javascriptcamp"
   },
-  "link.item.label.Vk 🌎": {
-    "message": "Vk 🌎",
-    "description": "The label of footer link with label=Vk 🌎 linking to https://vk.com/reactnativeinit"
+  "link.item.label.Vk ": {
+    "message": "Vk ",
+    "description": "The label of footer link with label=Vk  linking to https://vk.com/reactnativeinit"
   },
-  "link.item.label.Medium 🌎": {
-    "message": "Medium 🌎",
-    "description": "The label of footer link with label=Medium 🌎 linking to https://medium.com/react-native-init"
+  "link.item.label.Medium ": {
+    "message": "Medium ",
+    "description": "The label of footer link with label=Medium  linking to https://medium.com/react-native-init"
   },
   "copyright": {
     "message": "Copyright © 2021 Server Serverlesskiy 🎰 Built with Docusaurus",

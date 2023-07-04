@@ -80,7 +80,7 @@ let regExp = new RegExp('pattern')
 let regExp = /banana/
 ```
 
-مع هذا الرمز📟 أنشأنا🏗️ تعبير عادي بسيط يبحث عن السلسلة`banana`. لاختبار تعبير عادي ، يمكنك استخدام `.test(string)` الطريقة ، نتيجة الطريقة أ `boolean` القيمة.
+مع هذا الرمز أنشأنا تعبير عادي بسيط يبحث عن السلسلة`banana`. لاختبار تعبير عادي ، يمكنك استخدام `.test(string)` الطريقة ، نتيجة الطريقة أ `boolean` القيمة.
 
 ```jsx live
 function learnJavaScript() {
@@ -106,7 +106,7 @@ function learnJavaScript() {
 }
 ```
 
-باستخدام هذا النمط`/ banana /` سوف تبحث عن `banana` في الخط كله. إذا كنت بحاجة إلى التحقق من وجود تطابق كامل لسلسلة مع قالب ، فأنت بحاجة إلى استخدام المراسي`/ ^ banana $ /`. The `.test ()` طريقة العودة`true` ✅ فقط إذا كان الخط كله` banana`.
+باستخدام هذا النمط`/ banana /` سوف تبحث عن `banana` في الخط كله. إذا كنت بحاجة إلى التحقق من وجود تطابق كامل لسلسلة مع قالب ، فأنت بحاجة إلى استخدام المراسي`/ ^ banana $ /`. The `.test ()` طريقة العودة`true`  فقط إذا كان الخط كله` banana`.
 
 ## أعلام
 
@@ -216,7 +216,7 @@ Try removing the `i` flag from the example. The search is now case sensitive.
 
 <table>
   <tr> 
-    <td align="center"><a href="https://github.com/IIo3iTiv"><img src="https://avatars1.githubusercontent.com/u/72025062?v=4?s=200" width="200px;" alt=""/><br /><sub><b>IIo3iTiv</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/commits?author=IIo3iTiv" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/IIo3iTiv"><img src="https://avatars1.githubusercontent.com/u/72025062?v=4?s=200" width="200px;" alt=""/><br /><sub><b>IIo3iTiv</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/commits?author=IIo3iTiv" title="Documentation">  </a></td>
     <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /><a href="#financial-gHashTag" title="Financial">💵</a></td>
     <td align="center"><a href="https://github.com/Resoner2005"><img src="https://avatars1.githubusercontent.com/u/75675814?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Resoner2005</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/issues?q=author%3AResoner2005" title="Bug reports">🐛 🎨 🖋</a></td>
     <td align="center"><a href="https://github.com/Navernoss"><img src="https://avatars0.githubusercontent.com/u/75784137?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Navernoss</b></sub></a><br /><a href="#content-Navernoss" title="Content">🖋 🐛 🎨 </a></td>

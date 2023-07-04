@@ -83,7 +83,7 @@ AWS Amplify supports Amazon Cognito in a variety of ways. First of all, you can 
 When you use Amazon Cognito Identity to create your user pool, you only pay for your monthly active users (MAU). MAUs are users who have performed at least one identification operation during a calendar month: registration, authorization, token renewal or password change. Subsequent sessions of active users and inactive users during this calendar month are not charged.
 ![cognito](/img/auth/auth01.png)
 
-CODING TIME 👨🏼‍💻👩🏻‍💻
+CODING TIME 🏼‍  👩🏻‍  
 
 ![cognito](https://media.giphy.com/media/836HiJc7pgzy8iNXCn/giphy.gif)
 
@@ -93,7 +93,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <table>
   <tr>
-    <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /> <a href="https://github.com/gHashTag/react-native-village/commits?author=gHashTag" title="Documentation">📖</a><a href="#financial-gHashTag" title="Financial">💵</a></td>
+    <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /> <a href="https://github.com/gHashTag/react-native-village/commits?author=gHashTag" title="Documentation">  </a><a href="#financial-gHashTag" title="Financial">💵</a></td>
   </tr>
 </table>
 

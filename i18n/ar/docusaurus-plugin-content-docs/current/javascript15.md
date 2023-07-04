@@ -12,7 +12,7 @@ sidebar_label: تبديل حالة البناء
 
 ![comparison](https://media.giphy.com/media/icJA0VF7ntoEL18Jez/giphy.gif)
 
-إذا تطابق الشرط ، فإن كتلة التعليمات البرمجية📟 المرتبطة المقابلة `case` يتم تنفيذ. إذا لم يتطابق أي من الشروط ، فسيكون الرمز المحدد في ملف `default`كتلة ، إن وجدت ، يتم تنفيذها. للخروج من البناء ، استخدم`break` أمر. إذا لم تحدده ، فسيتم تنفيذ كتلة التعليمات البرمجية تلقائيًا في التالي `case`, إلخ. لذلك نستخدمها `break` في نصوصنا ، حتى لا نشغل المترجم الفوري`cases`, وبالتالي تقليل أداء البرنامج النصي.
+إذا تطابق الشرط ، فإن كتلة التعليمات البرمجية المرتبطة المقابلة `case` يتم تنفيذ. إذا لم يتطابق أي من الشروط ، فسيكون الرمز المحدد في ملف `default`كتلة ، إن وجدت ، يتم تنفيذها. للخروج من البناء ، استخدم`break` أمر. إذا لم تحدده ، فسيتم تنفيذ كتلة التعليمات البرمجية تلقائيًا في التالي `case`, إلخ. لذلك نستخدمها `break` في نصوصنا ، حتى لا نشغل المترجم الفوري`cases`, وبالتالي تقليل أداء البرنامج النصي.
 
 ## بناء الجملة
 
@@ -44,7 +44,7 @@ switch (n) {
 
 ![Math](https://media.giphy.com/media/xT1Ra5h24Eliux3UVq/giphy.gif)
 
-لنفكر في أبسط مثال👇:
+لنفكر في أبسط مثال:
 
 ```jsx live
 function learnJavaScript() {
@@ -72,7 +72,7 @@ function learnJavaScript() {
 
 ![Wow](https://media.giphy.com/media/3oriO13KTkzPwTykp2/giphy.gif)
 
-تأمل هذا المثال👇:
+تأمل هذا المثال:
 
 ```jsx live
 function learnJavaScript() {
@@ -101,7 +101,7 @@ function learnJavaScript() {
 
 أيضًا ، يتم استخدام "Switch" لاستبدال "if" المتعددة.
 
-على سبيل المثال ، يمكنك استبدال هذا الرمز👇:
+على سبيل المثال ، يمكنك استبدال هذا الرمز:
 
 ```jsx live
 function learnJavaScript() {
@@ -122,7 +122,7 @@ function learnJavaScript() {
 }
 ```
 
-على هذا 👇:
+على هذا :
 
 ```jsx live
 function learnJavaScript() {
@@ -194,7 +194,7 @@ function learnJavaScript() {
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/FELiX-RN"><img src="https://avatars0.githubusercontent.com/u/72006627?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Philipp Dvinyaninov</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/commits?author=FELiX-RN" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/FELiX-RN"><img src="https://avatars0.githubusercontent.com/u/72006627?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Philipp Dvinyaninov</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/commits?author=FELiX-RN" title="Documentation">  </a></td>
     <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /><a href="#financial-gHashTag" title="Financial">💵</a></td>
     <td align="center"><a href="https://github.com/Resoner2005"><img src="https://avatars1.githubusercontent.com/u/75675814?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Resoner2005</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/issues?q=author%3AResoner2005" title="Bug reports">🐛 🎨 🖋</a></td>
     <td align="center"><a href="https://github.com/Navernoss"><img src="https://avatars0.githubusercontent.com/u/75784137?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Navernoss</b></sub></a><br /><a href="#content-Navernoss" title="Content">🖋 🐛 🎨 </a></td>

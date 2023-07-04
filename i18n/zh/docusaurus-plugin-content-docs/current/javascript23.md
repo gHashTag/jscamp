@@ -32,7 +32,7 @@ class MyClass {
 
 :::
 
-該類可能沒有名稱。 類表達式可用於將類分配給變量 🔔:
+該類可能沒有名稱。 類表達式可用於將類分配給變量 :
 
 ```jsx
 const UserClass = class {
@@ -56,7 +56,7 @@ export class User {
 }
 ```
 
-當您實例化該類時，該類將變得有用。 實例是一個對象，其中包含 🖊️ 類描述的數據和行為。
+當您實例化該類時，該類將變得有用。 實例是一個對象，其中包含  類描述的數據和行為。
 
 `new` 運算符在 JavaScript 中創建一個類的實例，如下所示： `instance = new Class()`.
 
@@ -88,7 +88,7 @@ class User {
 
 在構造函數中，值 `this` 等於新創建的實例。
 
-用於實例化類的參數成為構造函數的參數 👇:
+用於實例化類的參數成為構造函數的參數 :
 
 ```jsx live
 function learnJavaScript() {
@@ -165,7 +165,7 @@ function learnJavaScript() {
 
 ![Math](https://media.giphy.com/media/uWzbH8xJGIwOBPfzhc/giphy.gif)
 
-Геттеры и сеттеры — это вычисляемые свойства. Это методы, имитирующие поля, но позволяющие читать и записывать 🖊️ данные.
+Геттеры и сеттеры — это вычисляемые свойства. Это методы, имитирующие поля, но позволяющие читать и записывать  данные.
 
 Геттеры используются для получения данных, а сеттеры — для их изменения.
 
@@ -206,7 +206,7 @@ user.name = '' // Имя пользователя не может быть пу�
 
 В выражении `class Child extends Parent { }` класс `Child` наследует от класса `Parent` конструктор, поля и методы.
 
-Создадим🏗️ дочерний класс `ContentWriter`, расширяющий родительский класс `User` 👤:
+Создадим дочерний класс `ContentWriter`, расширяющий родительский класс `User` 👤:
 
 ```jsx
 class User {
@@ -242,7 +242,7 @@ writer.posts // []
 
 Для того, чтобы вызвать конструктор родительского класса в дочернем классе, следует использовать специальную функцию⚙️ `super()`, доступную в конструкторе дочернего класса.
 
-Пусть конструктор `ContentWriter` вызывает родительский конструктор и инициализирует поле `posts` 👇 :
+Пусть конструктор `ContentWriter` вызывает родительский конструктор и инициализирует поле `posts`  :
 
 ```jsx live
 function learnJavaScript() {
@@ -372,7 +372,7 @@ const cat = new Animal({ //Создание объекта при помощи �
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/FELiX-RN"><img src="https://avatars0.githubusercontent.com/u/72006627?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Philipp Dvinyaninov</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/commits?author=FELiX-RN" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/FELiX-RN"><img src="https://avatars0.githubusercontent.com/u/72006627?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Philipp Dvinyaninov</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/commits?author=FELiX-RN" title="Documentation">  </a></td>
     <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /><a href="#financial-gHashTag" title="Financial">💵</a></td>
     <td align="center"><a href="https://github.com/Resoner2005"><img src="https://avatars1.githubusercontent.com/u/75675814?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Resoner2005</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/issues?q=author%3AResoner2005" title="Bug reports">🐛 🎨 🖋</a></td>
     <td align="center"><a href="https://github.com/Navernoss"><img src="https://avatars0.githubusercontent.com/u/75784137?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Navernoss</b></sub></a><br /><a href="#content-Navernoss" title="Content">🖋 🐛 🎨 </a></td>

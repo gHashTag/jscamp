@@ -12,7 +12,7 @@ sidebar_label: 開關盒構造
 
 ![comparison](https://media.giphy.com/media/icJA0VF7ntoEL18Jez/giphy.gif)
 
-如果條件匹配，則代碼塊📟與相應的 `case` 被執行。 如果沒有條件匹配，則在 `default` block, 如果有，則執行。 要退出施工，請使用 `break` c命令。 如果未指定，則代碼塊將在下一個步驟中自動執行 `case`, 等等. 因此，我們使用 `break` 在我們的腳本中，以免全部運行解釋器 `cases`, 從而降低了腳本的性能。
+如果條件匹配，則代碼塊與相應的 `case` 被執行。 如果沒有條件匹配，則在 `default` block, 如果有，則執行。 要退出施工，請使用 `break` c命令。 如果未指定，則代碼塊將在下一個步驟中自動執行 `case`, 等等. 因此，我們使用 `break` 在我們的腳本中，以免全部運行解釋器 `cases`, 從而降低了腳本的性能。
 
 ## 句法
 
@@ -44,7 +44,7 @@ switch (n) {
 
 ![Math](https://media.giphy.com/media/xT1Ra5h24Eliux3UVq/giphy.gif)
 
-讓我們考慮最簡單的例子👇:
+讓我們考慮最簡單的例子:
 
 ```jsx live
 function learnJavaScript() {
@@ -72,7 +72,7 @@ function learnJavaScript() {
 
 ![Wow](https://media.giphy.com/media/3oriO13KTkzPwTykp2/giphy.gif)
 
-考慮這個例子 👇:
+考慮這個例子 :
 
 ```jsx live
 function learnJavaScript() {
@@ -101,7 +101,7 @@ function learnJavaScript() {
 
 還 `Switch` 用於替換多個 `if`.
 
-例如，您可以替換此代碼 👇:
+例如，您可以替換此代碼 :
 
 ```jsx live
 function learnJavaScript() {
@@ -122,7 +122,7 @@ function learnJavaScript() {
 }
 ```
 
-在這個 👇:
+在這個 :
 
 ```jsx live
 function learnJavaScript() {
@@ -194,7 +194,7 @@ function learnJavaScript() {
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/FELiX-RN"><img src="https://avatars0.githubusercontent.com/u/72006627?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Philipp Dvinyaninov</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/commits?author=FELiX-RN" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/FELiX-RN"><img src="https://avatars0.githubusercontent.com/u/72006627?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Philipp Dvinyaninov</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/commits?author=FELiX-RN" title="Documentation">  </a></td>
     <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /><a href="#financial-gHashTag" title="Financial">💵</a></td>
     <td align="center"><a href="https://github.com/Resoner2005"><img src="https://avatars1.githubusercontent.com/u/75675814?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Resoner2005</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/issues?q=author%3AResoner2005" title="Bug reports">🐛 🎨 🖋</a></td>
     <td align="center"><a href="https://github.com/Navernoss"><img src="https://avatars0.githubusercontent.com/u/75784137?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Navernoss</b></sub></a><br /><a href="#content-Navernoss" title="Content">🖋 🐛 🎨 </a></td>

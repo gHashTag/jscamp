@@ -12,7 +12,7 @@ sidebar_label: RestおよびSpread演算子
 
 `Math.max(arg1, arg2, ..., argN)` – 渡された引数から最大数を計算します。
 
-`Math.min(arg1, arg2, ..., argN)` - 渡された引数から🔄最小値を返します。
+`Math.min(arg1, arg2, ..., argN)` - 渡された引数から最小値を返します。
 
 この記事では、独自の関数で同じことを行う方法⚙️と、そのような関数に配列パラメーターを渡す方法⚙️を学習します。
 
@@ -22,7 +22,7 @@ sidebar_label: RestおよびSpread演算子
 
 定義方法に関係なく、任意の数の引数を使用して関数⚙️を呼び出すことができます。
 
-たとえば👇：
+たとえば：
 
 ```jsx live
 function learnJavaScript() {
@@ -50,7 +50,7 @@ let goFun = (...rest) => {
 
 無料のオプションは、3つのドット`...`で表すことができます。 文字通り、これは「残りのパラメータを収集して配列に入れる」ことを意味します。
 
-たとえば、すべての引数を配列 `args`👇に集めましょう：
+たとえば、すべての引数を配列 `args`に集めましょう：
 
 ```jsx live
 function learnJavaScript() {
@@ -64,11 +64,11 @@ function learnJavaScript() {
 }
 ```
 
-答えはすでに28で、エラーはありません🙅‍♂️！ 引数と配列の次元を変更してみてください。
+答えはすでに28で、エラーはありません！ 引数と配列の次元を変更してみてください。
 
 ### 複数のオプション
 
-最初のいくつかのパラメーターを変数に入れて🔔、残りを配列に集めることができます。
+最初のいくつかのパラメーターを変数に入れて、残りを配列に集めることができます。
 これは、最後の関数パラメータの代わりにのみ、`...rest`を挿入できることを意味します。
 
 ![paste](https://media.giphy.com/media/3o6ZtafpgSpvIaKhMI/giphy.gif)
@@ -79,7 +79,7 @@ let goFun = (first, second, ...rest) => {
 }
 ```
 
-以下の例では、最初の2つの2️⃣関数の引数が名前と最後の名前になり、3番目以降の引数が `titles [i]`配列になります👇：
+以下の例では、最初の2つの2️⃣関数の引数が名前と最後の名前になり、3番目以降の引数が `titles [i]`配列になります：
 
 ```jsx live
 function learnJavaScript() {
@@ -102,7 +102,7 @@ function learnJavaScript() {
 
 ![error](https://media.giphy.com/media/xTiN0L7EW5trfOvEk0/giphy.gif)
 
-残りのパラメーターは最後に配置する必要があるため、その後に🖊️を書き込むことはできません。
+残りのパラメーターは最後に配置する必要があるため、その後にを書き込むことはできません。
 これは`エラー`をスローします：
 
 ```jsx
@@ -121,7 +121,7 @@ function f(arg1, ...rest, arg2) {   // arg2 後 ...rest ?
 
 Все аргументы функции⚙️ находятся в псевдомассиве `arguments` под своими порядковыми номерами.
 
-Но доступ через массив `arguments[]` можно найти только в старом коде📟 . Не применяйте его!
+Но доступ через массив `arguments[]` можно найти только в старом коде . Не применяйте его!
 
 :::note Внимание
 Cтрелочные функции⚙️ не имеют `arguments[]` как и собственного `this.`
@@ -135,7 +135,7 @@ Cтрелочные функции⚙️ не имеют `arguments[]` как и
 
 パラメータのリストから配列を取得する方法を学びましたが、逆のことを行う必要がある場合もあります。配列を呼び出された関数にプッシュします⚙️。
 
-たとえば、組み込み関数⚙️`Math.max`があります。 リストから最大数を返します🔄：
+たとえば、組み込み関数⚙️`Math.max`があります。 リストから最大数を返します：
 
 ```jsx live
 function learnJavaScript() {
@@ -170,7 +170,7 @@ function learnJavaScript() {
 
 ⚙️`...spread`関数が関数呼び出し⚙️で使用されると、`arr`配列オブジェクトが引数のリストに変換されます。
 
-`Math.max`の場合👇：
+`Math.max`の場合：
 
 ```jsx live
 function learnJavaScript() {
@@ -180,7 +180,7 @@ function learnJavaScript() {
 }
 ```
 
-同様に、複数の反復可能オブジェクトを渡すことができます👇：
+同様に、複数の反復可能オブジェクトを渡すことができます：
 
 ```jsx live
 function learnJavaScript() {
@@ -198,7 +198,7 @@ function learnJavaScript() {
 
 ![Merger](https://media.giphy.com/media/rytLWOErAX1F6/giphy.gif)
 
-スプレッド演算子`...Spread`を使用して、配列をマージすることもできます👇：
+スプレッド演算子`...Spread`を使用して、配列をマージすることもできます：
 
 ```jsx live
 function learnJavaScript() {
@@ -218,7 +218,7 @@ function learnJavaScript() {
 
 `... Spread` Spread演算子の⚙️機能は、任意の反復可能なオブジェクトで機能します。
 
-たとえば、展開演算子は、文字列を文字の配列に変換するのに適しています👇：
+たとえば、展開演算子は、文字列を文字の配列に変換するのに適しています：
 
 ```javascript
 let str = 'おい, Alex!'
@@ -228,9 +228,9 @@ let result = [...str]
 しばらく様子を見てみましょう。 内部的には、スプレッド演算子はイテレータを使用して要素を反復処理します。 `for..of`と同じように。
 
 `for..of`ループは文字列を文字のシーケンスとして繰り返すため、` ...str`は"P"、 "p"、 "u"、 "v"、 "e"、"t"を生成します。 ..
-結果の文字は、標準の配列宣言を使用して配列に収集されます🗣️`[...str]。`
+結果の文字は、標準の配列宣言を使用して配列に収集されます`[...str]。`
 
-このタスクには`Array.from`を使用することもできます。 また、反復可能なオブジェクト（文字列など）を配列に変換します👇：
+このタスクには`Array.from`を使用することもできます。 また、反復可能なオブジェクト（文字列など）を配列に変換します：
 
 ```javascript
 let str = 'おい'
@@ -250,7 +250,7 @@ Array.from(str) // "お" "い"
 
 ![Elipsis](https://media.giphy.com/media/UWXLULrP5KGDC/giphy.gif)
 
-コード📟に`"... "`が表示されている場合は、`...rest`残差パラメーターまたは`...spread`スプレッド演算子のいずれかです。
+コードに`"... "`が表示されている場合は、`...rest`残差パラメーターまたは`...spread`スプレッド演算子のいずれかです。
 
 それらを区別する方法：
 
@@ -310,7 +310,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/KoDim-React"><img src="https://avatars1.githubusercontent.com/u/72087863?v=4?s=200" width="200px " alt=""/><br /><sub><b>Dmitriy K.</b></sub></a><br /><a href="#mentoring-KoDim-React" title="Mentoring">📖</a></td>
+    <td align="center"><a href="https://github.com/KoDim-React"><img src="https://avatars1.githubusercontent.com/u/72087863?v=4?s=200" width="200px " alt=""/><br /><sub><b>Dmitriy K.</b></sub></a><br /><a href="#mentoring-KoDim-React" title="Mentoring">  </a></td>
     <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px " alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /><a href="#financial-gHashTag" title="Financial">💵</a></td>
     <td align="center"><a href="https://github.com/Resoner2005"><img src="https://avatars1.githubusercontent.com/u/75675814?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Resoner2005</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/issues?q=author%3AResoner2005" title="Bug reports">🐛 🎨 🖋</a></td>
     <td align="center"><a href="https://github.com/Navernoss"><img src="https://avatars0.githubusercontent.com/u/75784137?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Navernoss</b></sub></a><br /><a href="#content-Navernoss" title="Content">🖋 🐛 🎨 </a></td>

@@ -12,7 +12,7 @@ sidebar_label: 型変換とキャスト
 
 ![transformation](https://media.giphy.com/media/xT4uQr9H3EDL7Ha2hq/giphy.gif)
 
-の例 👇 :
+の例  :
 
 ```jsx live
 function learnJavaScript() {
@@ -26,7 +26,7 @@ function learnJavaScript() {
 
 上記の例では JavaScript 番号を与える `9` 文字列に変換し、2 つの 2️⃣ 値を連結して文字列を生成します `59`. JavaScript 文字列または数値のいずれかを選択でき、文字列を使用することにしました。
 
-コンパイラは次の行をもたらした可能性があります `5` 番号に戻り、金額を返す `14`, しかし、彼はしませんでした。この結果を取得するには、文字列を明示的に変換する必要があります `5` メソッドを使用して数値に `Number()`👇 :
+コンパイラは次の行をもたらした可能性があります `5` 番号に戻り、金額を返す `14`, しかし、彼はしませんでした。この結果を取得するには、文字列を明示的に変換する必要があります `5` メソッドを使用して数値に `Number()` :
 
 ```jsx live
 function learnJavaScript() {
@@ -48,7 +48,7 @@ function learnJavaScript() {
 
 ![Transformation](https://media.giphy.com/media/RLVHPJJv7jY1q/giphy.gif)
 
-文字列変換は、何かを文字列として表現したいときに発生します。たとえば、次の関数を使用できます。 `String(value)`, 値を文字列に変換するには 👇 :
+文字列変換は、何かを文字列として表現したいときに発生します。たとえば、次の関数を使用できます。 `String(value)`, 値を文字列に変換するには  :
 
 ```jsx live
 function learnJavaScript() {
@@ -59,7 +59,7 @@ function learnJavaScript() {
 }
 ```
 
-変容は明らかな方法で起こる. `true` ✅ になる `"true"` ✅
+変容は明らかな方法で起こる. `true`  になる `"true"` 
 
 ### 数値変換
 
@@ -75,7 +75,7 @@ function learnJavaScript() {
 }
 ```
 
-機能を使用できます `Number(value)`, 明示的に変換する `value` 数に 👇 :
+機能を使用できます `Number(value)`, 明示的に変換する `value` 数に  :
 
 ```jsx live
 function learnJavaScript() {
@@ -88,7 +88,7 @@ function learnJavaScript() {
 
 明示的な変換は、文字列のコンテキストから、たとえばテキスト 壁紙 フォーム フィールドから数値を取得することを期待している場合によく使用されます。.
 
-文字列を数値に明示的にキャストできない場合、変換結果は次のようになります。 `NaN` (英語. Not-a-Number, "数字ではありません」）。たとえば、 👇:
+文字列を数値に明示的にキャストできない場合、変換結果は次のようになります。 `NaN` (英語. Not-a-Number, "数字ではありません」）。たとえば、 :
 
 ```jsx live
 function learnJavaScript() {
@@ -205,7 +205,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <table>
   <tr>
-    <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /> <a href="https://github.com/gHashTag/react-native-village/commits?author=gHashTag" title="Documentation">📖</a><a href="#financial-gHashTag" title="Financial">💵</a></td>
+    <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /> <a href="https://github.com/gHashTag/react-native-village/commits?author=gHashTag" title="Documentation">  </a><a href="#financial-gHashTag" title="Financial">💵</a></td>
     <td align="center"><a href="https://github.com/Resoner2005"><img src="https://avatars1.githubusercontent.com/u/75675814?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Resoner2005</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/issues?q=author%3AResoner2005" title="Bug reports">🐛 🎨 🖋</a></td>
   </tr>
   

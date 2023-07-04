@@ -32,7 +32,7 @@ amplify init
 
 ![Initialize Amplify](/img/notification/notif_amplify_init.png)
 
-Проект инициализацировался 🚀
+Проект инициализацировался 
 
 ## Ставим зависимости:
 
@@ -392,7 +392,7 @@ amplify notification console
 
 10. Вы получите сообщение об успехе, как показано ниже. ![Success](/img/notification/notif_testing_message_success.png) Через пару секунд Вы увидите push-уведомление на своем устройстве: ![Push notification result](/img/notification/notif_android_push_result.png)
 
-## Done ✅
+## Done 
 
 ## Ссылки:
 

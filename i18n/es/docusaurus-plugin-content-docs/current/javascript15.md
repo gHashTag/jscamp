@@ -14,7 +14,7 @@ En este caso, la igualdad está implícita en el sentido del operador de igualda
 
 ![comparison](https://media.giphy.com/media/icJA0VF7ntoEL18Jez/giphy.gif)
 
-Si la condición coincide, se ejecuta el bloque de código 📟 asociado con el `case` correspondiente. Si ninguna de las condiciones coincide, entonces se ejecuta el código 📟 especificado en el bloque "predeterminado", si corresponde. El comando `break` se usa para salir de la construcción. Si no se especifica, automáticamente se ejecutará el bloque de código 📟 del siguiente `case`, y así sucesivamente. Por lo tanto, usamos `break` en nuestros scripts, para no conducir al intérprete a través de todos los `case`, lo que reduce el rendimiento del script.
+Si la condición coincide, se ejecuta el bloque de código  asociado con el `case` correspondiente. Si ninguna de las condiciones coincide, entonces se ejecuta el código  especificado en el bloque "predeterminado", si corresponde. El comando `break` se usa para salir de la construcción. Si no se especifica, automáticamente se ejecutará el bloque de código  del siguiente `case`, y así sucesivamente. Por lo tanto, usamos `break` en nuestros scripts, para no conducir al intérprete a través de todos los `case`, lo que reduce el rendimiento del script.
 
 ## Video
 
@@ -50,7 +50,7 @@ switch (n) {
 
 ![Math](https://media.giphy.com/media/xT1Ra5h24Eliux3UVq/giphy.gif)
 
-Considere el ejemplo más simple 👇:
+Considere el ejemplo más simple :
 
 ```jsx live
 function learnJavaScript() {
@@ -78,7 +78,7 @@ Primero `3`, luego, dado que no hay coincidencia, `4`. Si se encuentra una coinc
 
 ![Wow](https://media.giphy.com/media/3oriO13KTkzPwTykp2/giphy.gif)
 
-Considere este ejemplo 👇:
+Considere este ejemplo :
 
 ```jsx live
 function learnJavaScript() {
@@ -107,7 +107,7 @@ Aquí, el operador `switch` comparará secuencialmente `a` con todas las opcione
 
 También `Switch` se usa para reemplazar múltiples `if`.
 
-Por ejemplo, puede reemplazar este código con 👇:
+Por ejemplo, puede reemplazar este código con :
 
 ```jsx live
 function learnJavaScript() {
@@ -128,7 +128,7 @@ function learnJavaScript() {
 }
 ```
 
-На этот 👇 :
+На этот  :
 
 ```jsx live
 function learnJavaScript() {
@@ -152,7 +152,7 @@ function learnJavaScript() {
 }
 ```
 
-El resultado será el mismo, pero el código 📟 será más legible y fácil de trabajar.
+El resultado será el mismo, pero el código  será más legible y fácil de trabajar.
 
 ## Reaccionar nativo
 
@@ -238,7 +238,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/FELiX-RN"><img src="https://avatars0.githubusercontent.com/u/72006627?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Philipp Dvinyaninov</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/commits?author=FELiX-RN" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/FELiX-RN"><img src="https://avatars0.githubusercontent.com/u/72006627?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Philipp Dvinyaninov</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/commits?author=FELiX-RN" title="Documentation">  </a></td>
     <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /><a href="#financial-gHashTag" title="Financial">💵</a></td>
     <td align="center"><a href="https://github.com/Resoner2005"><img src="https://avatars1.githubusercontent.com/u/75675814?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Resoner2005</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/issues?q=author%3AResoner2005" title="Bug reports">🐛 🎨 🖋</a></td>
     <td align="center"><a href="https://github.com/Navernoss"><img src="https://avatars0.githubusercontent.com/u/75784137?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Navernoss</b></sub></a><br /><a href="#content-Navernoss" title="Content">🖋 🐛 🎨 </a></td>

@@ -134,7 +134,7 @@ TypeScript - このような問題を解決するために、プログラミン�
 
 ### 転送:
 
-これはのミュージックビデオです AWS Community Builder 完全に異なるレベル 🔥 😅
+これはのミュージックビデオです AWS Community Builder 完全に異なるレベル  
 
 これは、スタックでのモバイル開発に関するコースです。 React Native / Type Script / AWS Amplify との認証のために AWS Certification. チェックアウトする価値がある!
 

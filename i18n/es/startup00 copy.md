@@ -9,11 +9,11 @@ sidebar_label: Introduction
 
 If you are building a digital startup, then most likely you have in your team:
 
-- iOS developer 📱,
-- Android developer📱,
-- Backend developer💻,
-- Site developer 🖥 and
-- Teamlead🧙‍♂️, who at least superficially understands a little bit everywhere, but in some respects perfectly well - these are 5 people.
+- iOS developer  ,
+- Android developer ,
+- Backend developer  ,
+- Site developer      and
+- Teamlead     , who at least superficially understands a little bit everywhere, but in some respects perfectly well - these are 5 people.
 
 Nowadays, thanks to the AWS Amplify platform and in particular Amazon's DataStore, you can replace 5 developers with one full stack serverless developer.
 
@@ -57,17 +57,17 @@ Online education on full stack serverless.
 
 ## The current set of AWS Amplify features:
 
-📦 Easy CI CD / hosting / custom domains
+ Easy CI CD / hosting / custom domains
 
 🛢 Serverless DBs & functions
 
 🤖 ML & AI
 
-📱 GraphQL
+  GraphQL
 
 📊 Analytics
 
-💻 Offline & RT
+   Offline & RT
 
 📣 Chat
 
@@ -96,15 +96,15 @@ Application layout design in [Sketch](https://www.dropbox.com/s/ixqgri05i2mtu6p/
 
 ## Roadmap :
 
-✅ Authentication 🔐
+ Authentication 🔐
 
-✅ CRUD (Create Read Update Delete)
+ CRUD (Create Read Update Delete)
 
-✅ UI Kit — Unicorn
+ UI Kit — Unicorn
 
-✅ DataStore
+ DataStore
 
-✅ Notification
+ Notification
 
 - Data Modeling in Depth
 

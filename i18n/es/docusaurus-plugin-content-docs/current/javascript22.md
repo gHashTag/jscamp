@@ -25,7 +25,7 @@ Para comprender completamente este concepto, primero debe comprender la programa
 
 ![First_class](https://media.giphy.com/media/l2Jecm1l0wnJ2kQDu/giphy.gif)
 
-Si ya está aprendiendo JavaScript, es posible que haya escuchado que JavaScript trata las funciones⚙️ como objetos de primera clase. En JavaScript, las funciones⚙️ son objetos, al igual que en otros lenguajes de programación funcional👅⚙️.
+Si ya está aprendiendo JavaScript, es posible que haya escuchado que JavaScript trata las funciones⚙️ como objetos de primera clase. En JavaScript, las funciones⚙️ son objetos, al igual que en otros lenguajes de programación funcional ⚙️.
 En JavaScript, las funciones⚙️ son un tipo especial de objeto. Estos son objetos `Function`. Por ejemplo:
 
 ```jsx live
@@ -44,13 +44,13 @@ Ahora sabemos qué son las funciones de primera clase⚙️. Puede pasar a funci
 
 Estas son funciones⚙️ que toman una función⚙️ como argumento o devuelven una función⚙️ como salida.
 
-Por ejemplo, estas funciones⚙️ de orden superior están integradas en el lenguaje👅: `map()` `filter()` y `reduce()`
+Por ejemplo, estas funciones⚙️ de orden superior están integradas en el lenguaje : `map()` `filter()` y `reduce()`
 
 ### Ejemplo 1. Cambiar números `.push`
 
 ![Edit_number](https://media.giphy.com/media/xT5LMMneIRG1UJquOI/giphy.gif)
 
-Digamos que tenemos una matriz de números. Queremos crear una 🏗️nueva🆕 matriz que contendrá los valores duplicados de la primera. Veamos cómo podemos resolver este problema con y sin una función de orden superior⚙️.
+Digamos que tenemos una matriz de números. Queremos crear una nueva   matriz que contendrá los valores duplicados de la primera. Veamos cómo podemos resolver este problema con y sin una función de orden superior⚙️.
 
 #### Sin función de orden superior:
 
@@ -97,7 +97,7 @@ function learnJavaScript() {
 
 ![Math](https://media.giphy.com/media/3o7btPCcdNniyf0ArS/giphy.gif)
 
-Digamos que tenemos una matriz que contiene los años de nacimiento de diferentes personas. Necesitamos crear una matriz 🏗️ que almacene su edad.
+Digamos que tenemos una matriz que contiene los años de nacimiento de diferentes personas. Necesitamos crear una matriz  que almacene su edad.
 
 Por ejemplo: sin una función de orden superior⚙️ (clásico: a través de un bucle `for()` y `push()`)
 
@@ -124,13 +124,13 @@ function learnJavaScript() {
 }
 ```
 
-Parpadeando 🆕 una nueva matriz en una línea de código📟.
+Parpadeando    una nueva matriz en una línea de código.
 
 ### Ejemplo #3. Con verificación de condición `.filter()`
 
 ![Check](https://media.giphy.com/media/Rd6sn03ncIklmprvy6/giphy.gif)
 
-Tenemos una matriz que contiene objetos con propiedades: nombre y edad. Necesitamos crear🏗️ una matriz que contenga solo adultos (es decir, edad mayor o igual a 18).
+Tenemos una matriz que contiene objetos con propiedades: nombre y edad. Necesitamos crear una matriz que contenga solo adultos (es decir, edad mayor o igual a 18).
 
 Sin una función de orden superior (clásica - a través de un bucle `for()` y `push()`):
 
@@ -176,8 +176,8 @@ function learnJavaScript() {
 
 ![Create](https://media.giphy.com/media/3ohzdWsUVRcZC2L7Ms/giphy.gif)
 
-Hasta ahora, hemos estado analizando funciones de orden superior⚙️ que están integradas en el lenguaje👅. Ahora vamos a crear esa función nosotros mismos⚙️.
-Imagina que JavaScript no tiene un método `map` integrado. Podemos escribirlo nosotros mismos creando una 🏗️función⚙️ de orden superior.
+Hasta ahora, hemos estado analizando funciones de orden superior⚙️ que están integradas en el lenguaje . Ahora vamos a crear esa función nosotros mismos⚙️.
+Imagina que JavaScript no tiene un método `map` integrado. Podemos escribirlo nosotros mismos creando una función⚙️ de orden superior.
 
 Digamos que tenemos una matriz de cadenas y queremos convertirla en una matriz de números, donde cada elemento representa la longitud de los elementos de la matriz original.
 
@@ -200,13 +200,13 @@ function learnJavaScript() {
 }
 ```
 
-En el ejemplo anterior, creamos nuestra propia función de orden superior `mapFor()`, que toma una matriz `arr` y una función de devolución de llamada `fn`. Esta función recorre la matriz dada y llama a la función de devolución de llamada `fn` dentro la `newArray.push()` para cada iteración, calculando el número de caracteres en las palabras de la matriz, cuyo algoritmo de cálculo se describe 🖊️ como una segunda variable 🔔.
+En el ejemplo anterior, creamos nuestra propia función de orden superior `mapFor()`, que toma una matriz `arr` y una función de devolución de llamada `fn`. Esta función recorre la matriz dada y llama a la función de devolución de llamada `fn` dentro la `newArray.push()` para cada iteración, calculando el número de caracteres en las palabras de la matriz, cuyo algoritmo de cálculo se describe  como una segunda variable .
 
 :::nota devolución de llamada
 Una función de devolución de llamada⚙️ es una función⚙️ que se pasa a otra función⚙️ como argumento, que luego se llama cuando se completa alguna acción.
 :::
 
-La función `Callback`⚙️ `fn` toma el elemento de matriz actual y devuelve🔄 la longitud del elemento actual, que ahora está almacenado en `newArray`. Después de que se complete el bucle `For()`, `newArray` devuelve🔄 la longitud de los elementos en `lenArray`.
+La función `Callback`⚙️ `fn` toma el elemento de matriz actual y devuelve la longitud del elemento actual, que ahora está almacenado en `newArray`. Después de que se complete el bucle `For()`, `newArray` devuelve la longitud de los elementos en `lenArray`.
 
 <!-- Поэксперементируйте, используя стрелочные функции:
 
@@ -225,13 +225,13 @@ function learnJavaScript() {
 }
 ```
 
-Обратите внимание на синтаксис📖:
+Обратите внимание на синтаксис  :
 
 при передаче функции⚙️ say в качестве параметра скобки `()` не указываются, т.к. в параметре функция⚙️ не вызывается, а передается целиком. Функция⚙️ `say` является аргументом функции⚙️ `userInput().` -->
 
 Помните, любой сколь угодно малый алгоритм состоит из 3-х этапов:
 
-- 1 этап - Инициализация переменных 🔔 и функций
+- 1 этап - Инициализация переменных  и функций
 - 2 этап - Функция высшего порядка (логика)
 - 3 этап - Вывод ответа.
 
@@ -255,9 +255,9 @@ function learnJavaScript() {
 
 <!-- ![El y](https://media.giphy.com/media/xT1XH3yj7ujmm2h40o/giphy.gif) -->
 
-Aprendimos qué son las funciones de orden superior y desmantelamos varias de ellas ya integradas en el lenguaje👅. Aprendió a crear los suyos.
+Aprendimos qué son las funciones de orden superior y desmantelamos varias de ellas ya integradas en el lenguaje . Aprendió a crear los suyos.
 
-Sin entrar en detalles, sobre funciones⚙️ de orden superior, podemos decir esto: son funciones⚙️ que pueden tomar una función⚙️ como argumento e incluso devolver🔄 una función⚙️.
+Sin entrar en detalles, sobre funciones⚙️ de orden superior, podemos decir esto: son funciones⚙️ que pueden tomar una función⚙️ como argumento e incluso devolver una función⚙️.
 
 ## ¿Problemas?
 
@@ -309,7 +309,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/KoDim-React"><img src="https://avatars1.githubusercontent.com/u/72087863?v=4?s=200" width="200px " alt=""/><br /><sub><b>Dmitriy K.</b></sub></a><br /><a href="#mentoring-KoDim-React" title="Mentoring">📖</a></td>
+    <td align="center"><a href="https://github.com/KoDim-React"><img src="https://avatars1.githubusercontent.com/u/72087863?v=4?s=200" width="200px " alt=""/><br /><sub><b>Dmitriy K.</b></sub></a><br /><a href="#mentoring-KoDim-React" title="Mentoring">  </a></td>
     <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px " alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /><a href="#financial-gHashTag" title="Financial">💵</a></td>
     <td align="center"><a href="https://github.com/Resoner2005"><img src="https://avatars1.githubusercontent.com/u/75675814?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Resoner2005</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/issues?q=author%3AResoner2005" title="Bug reports">🐛 🎨 🖋</a></td>
     <td align="center"><a href="https://github.com/Navernoss"><img src="https://avatars0.githubusercontent.com/u/75784137?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Navernoss</b></sub></a><br /><a href="#content-Navernoss" title="Content">🖋 🐛 🎨 </a></td>

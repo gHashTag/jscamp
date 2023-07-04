@@ -8,16 +8,16 @@ import YouTube from 'react-youtube'
 
 ![@serverSerrverlesskiy](/img/javascript/headers/11.jpg)
 
-Los objetos son como un armario 📦 para cosas, diseñado para almacenar 📦 y transportar otro tipo de datos.
+Los objetos son como un armario  para cosas, diseñado para almacenar  y transportar otro tipo de datos.
 JavaScript está diseñado en torno a un paradigma simple. El concepto se basa en objetos simples. Un objeto es un conjunto de propiedades, y cada propiedad consta de un nombre (clave) y un valor asociado con ese nombre. El valor de la propiedad puede ser una función⚙️ que se puede llamar método de objeto o cualquier otro tipo.
 
 ![Object](https://media.giphy.com/media/xTiTnFEfyt0vqhQzDi/giphy.gif)
 
-En este artículo, veremos las propiedades más básicas de los objetos de JavaScript, creando🏗️ y cambiando, enumerando propiedades.
+En este artículo, veremos las propiedades más básicas de los objetos de JavaScript, creando y cambiando, enumerando propiedades.
 
 Un objeto en JavaScript es solo una matriz asociativa o, en otras palabras, un "hash". Almacena cualquier coincidencia `"clave: valor" y tiene varios métodos estándar.
 
-Los objetos en JavaScript, como los objetos en la vida real (persona👨, autobús, edificio, etc.) tienen varios parámetros con nombre (clave🗝️) (edad, nombre, color de cabello, estado) con valores específicos (15, Juan, negro, 'verdadero') ✅ :
+Los objetos en JavaScript, como los objetos en la vida real (persona, autobús, edificio, etc.) tienen varios parámetros con nombre (clave🗝️) (edad, nombre, color de cabello, estado) con valores específicos (15, Juan, negro, 'verdadero')  :
 
 ```javascript
 let obj = {
@@ -50,11 +50,11 @@ function learnJavaScript() {
 
 ![Object](https://media.giphy.com/media/2YaKpvYQEcl1WuJJTl/giphy.gif)
 
-En una computadora🖥️, podemos representar un `objeto` en forma de gabinete📦 con nombres de propiedad (`claves de acceso`) firmados en él. Dentro de los cajones📦 del gabinete🧰 hay datos (información específica) e incluso puede haber objetos más pequeños, similares a cosas. Es fácil encontrar, borrar o agregar (escribir) un nuevo `valor` mediante `clave`.
+En una computadora    ️, podemos representar un `objeto` en forma de gabinete con nombres de propiedad (`claves de acceso`) firmados en él. Dentro de los cajones del gabinete hay datos (información específica) e incluso puede haber objetos más pequeños, similares a cosas. Es fácil encontrar, borrar o agregar (escribir) un nuevo `valor` mediante `clave`.
 
 ![obj01](/img/javascript/12/01.png)
 
-Estas son dos 2️⃣ opciones para crear🏗️ un objeto vacío:
+Estas son dos 2️⃣ opciones para crear un objeto vacío:
 
 ```javascript
 // эквивалентные записи
@@ -70,7 +70,7 @@ La segunda opción se usa muy raramente en la práctica.
 
 ![Extended](https://media.giphy.com/media/2XflxzlJfoSDycf3BBu/giphy.gif)
 
-Las propiedades se pueden especificar directamente al crear🏗️ un objeto, a través de una lista entre llaves de la forma {..., `clave: valor,` ...} y crear🏗️ objetos complejos:
+Las propiedades se pueden especificar directamente al crear un objeto, a través de una lista entre llaves de la forma {..., `clave: valor,` ...} y crear objetos complejos:
 
 ```jsx live
 function learnJavaScript() {
@@ -90,7 +90,7 @@ function learnJavaScript() {
 }
 ```
 
-El objeto 🏗️ creado contiene cinco propiedades con valores específicos, uno de los cuales son datos de pasaporte, que es un objeto integrado. Preste atención a cómo se accede a las propiedades o métodos remotos del objeto. Trate de recuperar su número de pasaporte.
+El objeto  creado contiene cinco propiedades con valores específicos, uno de los cuales son datos de pasaporte, que es un objeto integrado. Preste atención a cómo se accede a las propiedades o métodos remotos del objeto. Trate de recuperar su número de pasaporte.
 
 ## Agregando propiedades
 
@@ -116,14 +116,14 @@ function learnJavaScript() {
 }
 ```
 
-Los corchetes se usan principalmente cuando el `nombre de la propiedad` (propiedades) está en una `variable` 🔔:
+Los corchetes se usan principalmente cuando el `nombre de la propiedad` (propiedades) está en una `variable` :
 
 ```javascript
 let nameProp = 'age'
 obj[nameProp] = 15
 ```
 
-Aquí, a través de la variable 🔔 `nameProp`, establecemos el nombre de la propiedad `"edad"`, que es la clave en la matriz asociativa, que contiene `valor 15`.
+Aquí, a través de la variable  `nameProp`, establecemos el nombre de la propiedad `"edad"`, que es la clave en la matriz asociativa, que contiene `valor 15`.
 
 ```jsx live
 function learnJavaScript() {
@@ -142,7 +142,7 @@ function learnJavaScript() {
 
 ![Door](https://media.giphy.com/media/l378znZcUM7b6VDyM/giphy.gif)
 
-Se accede a una propiedad accediendo a ella 👇 :
+Se accede a una propiedad accediendo a ella  :
 
 ```jsx live
 function learnJavaScript() {
@@ -165,13 +165,13 @@ obj.nokey
 
 ![nokey](/img/javascript/15.jpg)
 
-No habrá ningún error 🙅‍♂️ al acceder a una propiedad inexistente, solo se devolverá el valor especial `undefined`. Si no hay una palabra clave 🗝️ `return` dentro de la función ⚙️, también se devolverá el valor `undefined`: la ausencia de algo.
+No habrá ningún error  al acceder a una propiedad inexistente, solo se devolverá el valor especial `undefined`. Si no hay una palabra clave 🗝️ `return` dentro de la función ⚙️, también se devolverá el valor `undefined`: la ausencia de algo.
 
 <!-- ## Проверка глобальной переменной
 
 ![Planet](https://media.giphy.com/media/LW5vBvAb48Oe9OoEKT/giphy.gif)
 
-В JavaScript нельзя проверить существование глобальной переменной 🔔 простым `if(проверяемаяПеременная)`:
+В JavaScript нельзя проверить существование глобальной переменной  простым `if(проверяемаяПеременная)`:
 
 ```javascript
     if (x) { ... }
@@ -199,7 +199,7 @@ No habrá ningún error 🙅‍♂️ al acceder a una propiedad inexistente, so
 Все свойства объектов - public (общественные), т.е при определении свойства никак нельзя ограничить доступ к свойству.
 :::
 
-В JavaScript есть специальные способы для создания🏗️ `private` свойств, связанные с `замыканиями`. Они рассмотрены вместе с наследованием объектов далее по курсу. -->
+В JavaScript есть специальные способы для создания `private` свойств, связанные с `замыканиями`. Они рассмотрены вместе с наследованием объектов далее по курсу. -->
 
 ## Eliminando propiedades
 
@@ -241,9 +241,9 @@ obj.passport
 
 ![Description](https://media.giphy.com/media/3ohzAqLk7azQ0O6RvW/giphy.gif)
 
-Al igual que otros lenguajes👅, los objetos de JavaScript tienen `métodos`.
+Al igual que otros lenguajes , los objetos de JavaScript tienen `métodos`.
 
-Por ejemplo, vamos a crear🏗️ el objeto `sport` inmediatamente con el método `run`:
+Por ejemplo, vamos a crear el objeto `sport` inmediatamente con el método `run`:
 
 ```jsx live
 function learnJavaScript() {
@@ -275,7 +275,7 @@ function learnJavaScript() {
 Очень часто методы используют в своих расчетах свойства своего же объекта.
 ::: -->
 
-No se trata de clases, crear🏗️ instancias y cosas por el estilo. Simple: puede agregar un nuevo método a cualquier objeto en cualquier momento o eliminar uno existente.
+No se trata de clases, crear instancias y cosas por el estilo. Simple: puede agregar un nuevo método a cualquier objeto en cualquier momento o eliminar uno existente.
 
 <!--
 ```jsx live
@@ -295,7 +295,7 @@ function learnJavaScript() {
 }
 ```
 
-Подумайте, чем можно заменить множественный `if()`. JavaScript - очень динамический язык👅. -->
+Подумайте, чем можно заменить множественный `if()`. JavaScript - очень динамический язык . -->
 
 ## Iterando sobre las propiedades del objeto
 
@@ -311,7 +311,7 @@ for(let key in obj) {
 }
 ```
 
-Например 👇 :
+Например  :
 
 ```jsx live
 function learnJavaScript() {
@@ -331,7 +331,7 @@ function learnJavaScript() {
 }
 ```
 
-Y en secreto, para ser honesto, casi cualquier variable 🔔 es un miniobjeto en el entorno de JavaScript. Así que no tengas miedo de usarlos.
+Y en secreto, para ser honesto, casi cualquier variable  es un miniobjeto en el entorno de JavaScript. Así que no tengas miedo de usarlos.
 
 ## Reaccionar nativo
 
@@ -438,7 +438,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/KoDim-React"><img src="https://avatars1.githubusercontent.com/u/72087863?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy K.</b></sub></a><br /><a href="#mentoring-KoDim-React" title="Mentoring">📖</a></td>
+    <td align="center"><a href="https://github.com/KoDim-React"><img src="https://avatars1.githubusercontent.com/u/72087863?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy K.</b></sub></a><br /><a href="#mentoring-KoDim-React" title="Mentoring">  </a></td>
     <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /><a href="#financial-gHashTag" title="Financial">💵</a></td>
     <td align="center"><a href="https://github.com/Resoner2005"><img src="https://avatars1.githubusercontent.com/u/75675814?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Resoner2005</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/issues?q=author%3AResoner2005" title="Bug reports">🐛 🎨 🖋</a></td>
     <td align="center"><a href="https://github.com/Navernoss"><img src="https://avatars0.githubusercontent.com/u/75784137?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Navernoss</b></sub></a><br /><a href="#content-Navernoss" title="Content">🖋 🐛 🎨 </a></td>

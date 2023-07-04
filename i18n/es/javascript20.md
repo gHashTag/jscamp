@@ -29,7 +29,7 @@ function learnJavaScript() {
 }
 ```
 
-The properties `title`,` group` and `quantity` repeat the structure of the object` fruit` and copy their values into identical variables 🔔 found in `{...}`. Therefore, if you swap the variables 🔔 in `{...}`, then the code will work just as well, try swapping the variables 🔔 in the example above.
+The properties `title`,` group` and `quantity` repeat the structure of the object` fruit` and copy their values into identical variables  found in `{...}`. Therefore, if you swap the variables  in `{...}`, then the code will work just as well, try swapping the variables  in the example above.
 
 ### Nested object
 
@@ -59,7 +59,7 @@ function learnJavaScript() {
 
 ### Other names
 
-If you need to use variable names 🔔 other than property names, the following syntax will work:
+If you need to use variable names  other than property names, the following syntax will work:
 
 ```jsx live
 function learnJavaScript() {
@@ -77,7 +77,7 @@ function learnJavaScript() {
 
 ### Default values
 
-If in `{...}` you write a property variable 🔔 which will not be found, then it will be assigned the value `undefined`. To assign a default value to a variable 🔔, you can assign that value to it. If you try to assign a value to a variable 🔔 whose properties are found, then the property value will be assigned to it. Let's look at an example.
+If in `{...}` you write a property variable  which will not be found, then it will be assigned the value `undefined`. To assign a default value to a variable , you can assign that value to it. If you try to assign a value to a variable  whose properties are found, then the property value will be assigned to it. Let's look at an example.
 
 ![Dafault](https://media.giphy.com/media/3oEduLzte7jSNmq4z6/giphy.gif)
 
@@ -92,13 +92,13 @@ function learnJavaScript() {
 }
 ```
 
-The `title` contains the property value, not what we assign to it. The `group` property does not exist in the` fruit` object, and we have not assigned any values to the variable 🔔. The property `quantity` also does not exist, but we assigned the value` 5` to the variable 🔔.
+The `title` contains the property value, not what we assign to it. The `group` property does not exist in the` fruit` object, and we have not assigned any values to the variable . The property `quantity` also does not exist, but we assigned the value` 5` to the variable .
 
 ### Remainder
 
 ![octatok](https://media.giphy.com/media/hvddF1vHatFIgQspUB/giphy.gif)
 
-If you need to get one variable 🔔 from an object, and group the rest into another object, then use `...` before the variable 🔔 from which the object with the remaining properties will be created.
+If you need to get one variable  from an object, and group the rest into another object, then use `...` before the variable  from which the object with the remaining properties will be created.
 
 ```jsx live
 function learnJavaScript() {
@@ -115,7 +115,7 @@ function learnJavaScript() {
 
 ## Destructuring arrays
 
-Destructuring of an array is the same as for an object. The only difference is that the values of the array elements will be assigned to the variables 🔔 in the order in which the elements are defined.
+Destructuring of an array is the same as for an object. The only difference is that the values of the array elements will be assigned to the variables  in the order in which the elements are defined.
 
 ![Take](https://media.giphy.com/media/IuBlckSD7dQv6/giphy.gif)
 
@@ -228,7 +228,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <table>
   <tr> 
-    <td align="center"><a href="https://github.com/IIo3iTiv"><img src="https://avatars1.githubusercontent.com/u/72025062?v=4?s=200" width="200px;" alt=""/><br /><sub><b>IIo3iTiv</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/commits?author=IIo3iTiv" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/IIo3iTiv"><img src="https://avatars1.githubusercontent.com/u/72025062?v=4?s=200" width="200px;" alt=""/><br /><sub><b>IIo3iTiv</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/commits?author=IIo3iTiv" title="Documentation">  </a></td>
     <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /><a href="#financial-gHashTag" title="Financial">💵</a></td>
     <td align="center"><a href="https://github.com/Resoner2005"><img src="https://avatars1.githubusercontent.com/u/75675814?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Resoner2005</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/issues?q=author%3AResoner2005" title="Bug reports">🐛 🎨 🖋</a></td>
     <td align="center"><a href="https://github.com/Navernoss"><img src="https://avatars0.githubusercontent.com/u/75784137?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Navernoss</b></sub></a><br /><a href="#content-Navernoss" title="Content">🖋 🐛 🎨 </a></td>

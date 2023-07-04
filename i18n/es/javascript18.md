@@ -22,7 +22,7 @@ In this article, we will learn how to do the same with our own functions and how
 
 You can call a function⚙️ with any number of arguments, regardless of how it was defined.
 
-For example 👇:
+For example :
 
 ```jsx live
 function learnJavaScript() {
@@ -50,7 +50,7 @@ let goFun = (...rest) => {
 
 Free parameters can be indicated with three dots `...`. It literally means: "collect the remaining parameters and put them in an array."
 
-For example, let's collect all the arguments into an array `args`👇:
+For example, let's collect all the arguments into an array `args`:
 
 ```jsx live
 function learnJavaScript() {
@@ -64,11 +64,11 @@ function learnJavaScript() {
 }
 ```
 
-The answer is already 28 and no errors🙅‍♂️! Try changing the arguments or the dimension of the array.
+The answer is already 28 and no errors! Try changing the arguments or the dimension of the array.
 
 ### Multiple parameters
 
-We can put the first few parameters in variables 🔔, and collect the rest into an array.
+We can put the first few parameters in variables , and collect the rest into an array.
 This means that you can simply insert `... rest`, but only instead of the last parameter of the function.
 
 ![paste](https://media.giphy.com/media/3o6ZtafpgSpvIaKhMI/giphy.gif)
@@ -79,7 +79,7 @@ let goFun = (first, second, ...rest) => {
 }
 ```
 
-In the example below, the first two 2️⃣ arguments to the function will become the first and last name, and the third and subsequent arguments will become the array `titles [i]` 👇:
+In the example below, the first two 2️⃣ arguments to the function will become the first and last name, and the third and subsequent arguments will become the array `titles [i]` :
 
 ```jsx live
 function learnJavaScript() {
@@ -102,7 +102,7 @@ function learnJavaScript() {
 
 ![error](https://media.giphy.com/media/xTiN0L7EW5trfOvEk0/giphy.gif)
 
-Residual parameters must be at the end, so you cannot write 🖊️ anything after them.
+Residual parameters must be at the end, so you cannot write  anything after them.
 This will throw an error:
 
 ```jsx
@@ -122,7 +122,7 @@ function f(arg1, ...rest, arg2) {   // arg2 после ...rest ?
 
 Все аргументы функции⚙️ находятся в псевдомассиве `arguments` под своими порядковыми номерами.
 
-Но доступ через массив `arguments[]` можно найти только в старом коде📟 . Не применяйте его!
+Но доступ через массив `arguments[]` можно найти только в старом коде . Не применяйте его!
 
 :::note Внимание
 Cтрелочные функции⚙️ не имеют `arguments[]` как и собственного `this.`
@@ -171,7 +171,7 @@ The `...spread` operator will help us here. It is similar to residual parameters
 
 When the `...spread` functionality is used in a function call, it converts the `arr` array object to an argument list.
 
-For `Math.max` 👇:
+For `Math.max` :
 
 ```jsx live
 function learnJavaScript() {
@@ -181,7 +181,7 @@ function learnJavaScript() {
 }
 ```
 
-In the same way, we can pass multiple iterables 👇:
+In the same way, we can pass multiple iterables :
 
 ```jsx live
 function learnJavaScript() {
@@ -199,7 +199,7 @@ Cool! A very flexible approach to programming. You can also combine the spread o
 
 ![Merger](https://media.giphy.com/media/rytLWOErAX1F6/giphy.gif)
 
-The spread operator `... spread` can also be used to merge arrays 👇:
+The spread operator `... spread` can also be used to merge arrays :
 
 ```jsx live
 function learnJavaScript() {
@@ -219,7 +219,7 @@ function learnJavaScript() {
 
 The `... spread` operator functionality works with any iterable object.
 
-For example, the spread operator is suitable for converting a string into an array of characters 👇:
+For example, the spread operator is suitable for converting a string into an array of characters :
 
 ```javascript
 let str = 'Hey, Alex!'
@@ -231,9 +231,9 @@ let result = [...str]
 Let's see what happens. Under the hood, the spread operator uses iterators to iterate over the elements. Just like `for..of` does.
 
 The `for..of` loop iterates over the string as a sequence of characters, so from` ... str` it turns out "P", "p", "and", "in", "e", "t" ...
-The resulting characters are collected into an array using the standard array declaration🗣️ `[... str] .`
+The resulting characters are collected into an array using the standard array declaration `[... str] .`
 
-We can also use `Array.from` for this task. It also converts an iterable (such as a string) to an array 👇:
+We can also use `Array.from` for this task. It also converts an iterable (such as a string) to an array :
 
 ```javascript
 let str = 'Hello'
@@ -316,7 +316,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/KoDim-React"><img src="https://avatars1.githubusercontent.com/u/72087863?v=4?s=200" width="200px " alt=""/><br /><sub><b>Dmitriy K.</b></sub></a><br /><a href="#mentoring-KoDim-React" title="Mentoring">📖</a></td>
+    <td align="center"><a href="https://github.com/KoDim-React"><img src="https://avatars1.githubusercontent.com/u/72087863?v=4?s=200" width="200px " alt=""/><br /><sub><b>Dmitriy K.</b></sub></a><br /><a href="#mentoring-KoDim-React" title="Mentoring">  </a></td>
     <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px " alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /><a href="#financial-gHashTag" title="Financial">💵</a></td>
     <td align="center"><a href="https://github.com/Resoner2005"><img src="https://avatars1.githubusercontent.com/u/75675814?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Resoner2005</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/issues?q=author%3AResoner2005" title="Bug reports">🐛 🎨 🖋</a></td>
     <td align="center"><a href="https://github.com/Navernoss"><img src="https://avatars0.githubusercontent.com/u/75784137?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Navernoss</b></sub></a><br /><a href="#content-Navernoss" title="Content">🖋 🐛 🎨 </a></td>

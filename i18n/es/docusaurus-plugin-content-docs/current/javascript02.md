@@ -10,12 +10,12 @@ import YouTube from 'react-youtube'
 
 ## ¿Qué son los comentarios?
 
-JavaScript tiene varias formas de indicar comentarios en el código 📟
+JavaScript tiene varias formas de indicar comentarios en el código 
 
-A veces, al escribir código 🖊️, deberá proporcionarle explicaciones destinadas solo a personas 👨 y no a una computadora. Tal vez sea algún tipo de mensaje del pasado (¡para el yo del futuro!) sobre esto o aquello en el código del programa. O tal vez solo sea una indicación de que solo se debe ejecutar tal o cual parte del código, y el resto debe omitirse. En una palabra, en tal caso, deberá recurrir a la ayuda de los comentarios.
-Los comentarios 🗣️ se utilizan para agregar ➕ pistas, notas 🔖, sugerencias o advertencias. Pueden hacer que el código 💡 sea más fácil de leer y comprender. También se pueden usar para evitar que se ejecute el código 🛑 (esta técnica se practica al depurar código).
+A veces, al escribir código , deberá proporcionarle explicaciones destinadas solo a personas  y no a una computadora. Tal vez sea algún tipo de mensaje del pasado (¡para el yo del futuro!) sobre esto o aquello en el código del programa. O tal vez solo sea una indicación de que solo se debe ejecutar tal o cual parte del código, y el resto debe omitirse. En una palabra, en tal caso, deberá recurrir a la ayuda de los comentarios.
+Los comentarios  se utilizan para agregar ➕ pistas, notas , sugerencias o advertencias. Pueden hacer que el código 💡 sea más fácil de leer y comprender. También se pueden usar para evitar que se ejecute el código  (esta técnica se practica al depurar código).
 
-En JavaScript, hay varias formas de incluir comentarios 🗣️ en tu código.
+En JavaScript, hay varias formas de incluir comentarios  en tu código.
 
 ## Video
 
@@ -25,7 +25,7 @@ En JavaScript, hay varias formas de incluir comentarios 🗣️ en tu código.
 
 ![Barra oblicua](https://media.giphy.com/media/bKXMS0NjXoyaY/giphy.gif)
 
-La primera 1️⃣ manera `//comentario` 🗣️ en este caso, todo el texto 📜 en la línea después de la doble barra inclinada será un comentario 🗣️. Cuando el intérprete ve dos barras diagonales de 2️⃣ seguidas `//`, inmediatamente entiende que todo lo que viene más allá del final de la línea se puede ignorar de manera segura. Ignora la sintaxis del código 📖 por ahora, lo veremos en detalle un poco más tarde.
+La primera 1️⃣ manera `//comentario`  en este caso, todo el texto  en la línea después de la doble barra inclinada será un comentario . Cuando el intérprete ve dos barras diagonales de 2️⃣ seguidas `//`, inmediatamente entiende que todo lo que viene más allá del final de la línea se puede ignorar de manera segura. Ignora la sintaxis del código    por ahora, lo veremos en detalle un poco más tarde.
 
 ```jsx live
 function learnJavaScript() {
@@ -40,7 +40,7 @@ function learnJavaScript() {
 ![Comentarios](https://media.giphy.com/media/UevalSWg5twQeqpc8Q/giphy.gif)
 
 La segunda forma 2️⃣ es `/* */`, que es más flexible que la primera 1️⃣. Tan pronto como el intérprete ve `/*`, piensa: "Sí, así que hasta que vea `*/`, ¡puedo ignorar cualquier cosa aquí!"
-Por ejemplo, puedes usarlo en una línea 1️⃣ 👇:
+Por ejemplo, puedes usarlo en una línea 1️⃣ :
 
 ```jsx live
 function learnJavaScript() {
@@ -51,7 +51,7 @@ function learnJavaScript() {
 }
 ```
 
-O puedes hacer un comentario de varias líneas 🗣️ como se muestra aquí 👇:
+O puedes hacer un comentario de varias líneas  como se muestra aquí :
 
 ```jsx live
 function learnJavaScript() {
@@ -67,7 +67,7 @@ function learnJavaScript() {
 
 ![Entre](https://media.giphy.com/media/fnjIiBNo38IHS/giphy.gif)
 
-Además, si lo deseas, puedes usar este comentario 🗣️ en medio de una línea de código. Aunque esto puede empeorar la legibilidad del código 👇:
+Además, si lo deseas, puedes usar este comentario  en medio de una línea de código. Aunque esto puede empeorar la legibilidad del código :
 
 ```jsx live
 function learnJavaScript() {
@@ -86,7 +86,7 @@ Este tipo de código a menudo se denomina autodocumentado.
 
 Esto significa que el código debe estar escrito de tal manera que, en primer lugar, sea conveniente que otros programadores trabajen con él en el futuro, incluido su autor, y en segundo lugar, teniendo en cuenta la posibilidad de expandir este código.
 
-Al comentar el código, todo estaba llamado a cambiar🔔.
+Al comentar el código, todo estaba llamado a cambiar.
 
 ![Comments](https://media.giphy.com/media/SvuRLwWT0EoeErwPvB/giphy.gif)
 
@@ -185,7 +185,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <table>
   <tr>
-    <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /> <a href="https://github.com/gHashTag/react-native-village/commits?author=gHashTag" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /> <a href="https://github.com/gHashTag/react-native-village/commits?author=gHashTag" title="Documentation">  </a></td>
     <td align="center"><a href="https://github.com/Resoner2005"><img src="https://avatars1.githubusercontent.com/u/75675814?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Resoner2005</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/issues?q=author%3AResoner2005" title="Bug reports">🐛 🎨 🖋</a></td>
   </tr>
   

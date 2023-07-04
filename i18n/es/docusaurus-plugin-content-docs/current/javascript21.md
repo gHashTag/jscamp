@@ -12,13 +12,13 @@ Un cierre es una función⚙️ que tiene acceso a una función externa⚙️ in
 
 ![Snake](https://media.giphy.com/media/3oFzmdjqH15YebLQ52/giphy.gif)
 
-Requisitos para crear un 🏗️ Cierre:
+Requisitos para crear un  Cierre:
 
 1. Una función externa que se llama en el código.
 2. Hay una función interior en la función exterior.
 3. Como resultado, la función externa devuelve la interna.
 
-Considere crear un cierre 🏗️ usando un ejemplo:
+Considere crear un cierre  usando un ejemplo:
 
 ```jsx live
 function learnJavaScript() {
@@ -38,8 +38,8 @@ function learnJavaScript() {
 2. Dentro de `getFruit` se creó una función interna `show`.
 3. La función `getFruit` devuelve la función `show` como resultado.
 4. A continuación en el código, asignamos el resultado de la función `getFruit` a la variable `showFruit`.
-5. Porque el resultado de `getFruit` es una función, entonces `showFruit` no se convierte en una variable🔔, sino en una función.
-6. El resultado de toda la construcción fue la variable 🔔 `fruit` ubicada dentro de la función `getFruit`, se cerró. Ahora solo podemos averiguar el valor de esta variable 🔔, no se puede cambiar.
+5. Porque el resultado de `getFruit` es una función, entonces `showFruit` no se convierte en una variable, sino en una función.
+6. El resultado de toda la construcción fue la variable  `fruit` ubicada dentro de la función `getFruit`, se cerró. Ahora solo podemos averiguar el valor de esta variable , no se puede cambiar.
 
 ## Video
 
@@ -138,7 +138,7 @@ function learnJavaScript() {
 
 ## Total
 
-Los cierres son uno de los conceptos fundamentales más importantes en JavaScript y deben ser entendidos por todos los desarrolladores de JS. Comprender los cierres 💡 es uno de los pasos para escribir aplicaciones 🖊️ eficientes y de alta calidad.
+Los cierres son uno de los conceptos fundamentales más importantes en JavaScript y deben ser entendidos por todos los desarrolladores de JS. Comprender los cierres 💡 es uno de los pasos para escribir aplicaciones  eficientes y de alta calidad.
 
 ## ¿Problemas?
 
@@ -188,7 +188,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr> 
-    <td align="center"><a href="https://github.com/IIo3iTiv"><img src="https://avatars1.githubusercontent.com/u/72025062?v=4?s=200" width="200px;" alt=""/><br /><sub><b>IIo3iTiv</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/commits?author=IIo3iTiv" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/IIo3iTiv"><img src="https://avatars1.githubusercontent.com/u/72025062?v=4?s=200" width="200px;" alt=""/><br /><sub><b>IIo3iTiv</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/commits?author=IIo3iTiv" title="Documentation">  </a></td>
     <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /><a href="#financial-gHashTag" title="Financial">💵</a></td>
     <td align="center"><a href="https://github.com/Resoner2005"><img src="https://avatars1.githubusercontent.com/u/75675814?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Resoner2005</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/issues?q=author%3AResoner2005" title="Bug reports">🐛 🎨 🖋</a></td>
     <td align="center"><a href="https://github.com/Navernoss"><img src="https://avatars0.githubusercontent.com/u/75784137?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Navernoss</b></sub></a><br /><a href="#content-Navernoss" title="Content">🖋 🐛 🎨 </a></td>

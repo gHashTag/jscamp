@@ -22,7 +22,7 @@ sidebar_label: 休息和傳播
 
 您可以使用任意數量的參數調用函數 ⚙️，而不管其定義方式如何。
 
-例如 👇:
+例如 :
 
 ```jsx live
 function learnJavaScript() {
@@ -50,7 +50,7 @@ let goFun = (...rest) => {
 
 自由參數可以用三個點表示 `...`. 它的字面意思是：“收集剩餘的參數並將它們放入數組中。”
 
-例如，讓我們將所有參數收集到一個數組中 `args`👇:
+例如，讓我們將所有參數收集到一個數組中 `args`:
 
 ```jsx live
 function learnJavaScript() {
@@ -64,11 +64,11 @@ function learnJavaScript() {
 }
 ```
 
-答案已經是 28，並且沒有錯誤 🙅‍♂️！ 嘗試更改參數或數組的維數。
+答案已經是 28，並且沒有錯誤 ！ 嘗試更改參數或數組的維數。
 
 ### 多個參數
 
-我們可以將前幾個參數放在變量中 🔔, 並將其餘的收集到一個數組中。
+我們可以將前幾個參數放在變量中 , 並將其餘的收集到一個數組中。
 這意味著您只需插入 `... rest`, 但僅代替函數的最後一個參數。
 
 ![paste](https://media.giphy.com/media/3o6ZtafpgSpvIaKhMI/giphy.gif)
@@ -79,7 +79,7 @@ let goFun = (first, second, ...rest) => {
 }
 ```
 
-在下面的示例中，該函數的前兩個 2️⃣ 參數將成為名字和姓氏，第三個及後續參數將成為數組 `titles [i]` 👇:
+在下面的示例中，該函數的前兩個 2️⃣ 參數將成為名字和姓氏，第三個及後續參數將成為數組 `titles [i]` :
 
 ```jsx live
 function learnJavaScript() {
@@ -102,7 +102,7 @@ function learnJavaScript() {
 
 ![error](https://media.giphy.com/media/xTiN0L7EW5trfOvEk0/giphy.gif)
 
-殘留參數必須在末尾，因此您不能在它們之後寫 🖊️。
+殘留參數必須在末尾，因此您不能在它們之後寫 。
 這將引發錯誤：
 
 ```jsx
@@ -122,7 +122,7 @@ function f(arg1, ...rest, arg2) {   // arg2 после ...rest ?
 
 Все аргументы функции⚙️ находятся в псевдомассиве `arguments` под своими порядковыми номерами.
 
-Но доступ через массив `arguments[]` можно найти только в старом коде📟 . Не применяйте его!
+Но доступ через массив `arguments[]` можно найти только в старом коде . Не применяйте его!
 
 :::note Внимание
 Cтрелочные функции⚙️ не имеют `arguments[]` как и собственного `this.`
@@ -171,7 +171,7 @@ function learnJavaScript() {
 
 當。。。的時候 `...spread` 功能在函數調用中使用，它將轉換 `arr` 數組對像到參數列表。
 
-為了 `Math.max` 👇:
+為了 `Math.max` :
 
 ```jsx live
 function learnJavaScript() {
@@ -181,7 +181,7 @@ function learnJavaScript() {
 }
 ```
 
-同樣，我們可以傳遞多個可迭代對象 👇:
+同樣，我們可以傳遞多個可迭代對象 :
 
 ```jsx live
 function learnJavaScript() {
@@ -199,7 +199,7 @@ function learnJavaScript() {
 
 ![Merger](https://media.giphy.com/media/rytLWOErAX1F6/giphy.gif)
 
-點差運算符 `... spread` 也可以用來合併數組 👇:
+點差運算符 `... spread` 也可以用來合併數組 :
 
 ```jsx live
 function learnJavaScript() {
@@ -219,7 +219,7 @@ function learnJavaScript() {
 
 `... spread` 操作員功能可與任何可迭代對像一起使用。
 
-例如，散佈運算符適用於將字符串轉換為字符數組 👇:
+例如，散佈運算符適用於將字符串轉換為字符數組 :
 
 ```javascript
 let str = 'Hey, Alex!'
@@ -231,9 +231,9 @@ let result = [...str]
 讓我們看看發生了什麼。 在底層，散佈運算符使用迭代器迭代元素。 就像 `for..of` 做。
 
 `for..of` 循環將字符串作為字符序列進行迭代，因此從 ` ... str` 原來 "P", "p", "and", "in", "e", "t" ...
-使用標準數組聲明將結果字符收集到數組中 🗣️ `[... str] .`
+使用標準數組聲明將結果字符收集到數組中  `[... str] .`
 
-我們也可以使用 `Array.from` 為此任務。 還將可迭代（例如字符串）轉換為數組 👇:
+我們也可以使用 `Array.from` 為此任務。 還將可迭代（例如字符串）轉換為數組 :
 
 ```javascript
 let str = 'Hello'
@@ -309,7 +309,7 @@ Array.from(str) // "H", "e", "l", "l", "o"
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/KoDim-React"><img src="https://avatars1.githubusercontent.com/u/72087863?v=4?s=200" width="200px " alt=""/><br /><sub><b>Dmitriy K.</b></sub></a><br /><a href="#mentoring-KoDim-React" title="Mentoring">📖</a></td>
+    <td align="center"><a href="https://github.com/KoDim-React"><img src="https://avatars1.githubusercontent.com/u/72087863?v=4?s=200" width="200px " alt=""/><br /><sub><b>Dmitriy K.</b></sub></a><br /><a href="#mentoring-KoDim-React" title="Mentoring">  </a></td>
     <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px " alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /><a href="#financial-gHashTag" title="Financial">💵</a></td>
     <td align="center"><a href="https://github.com/Resoner2005"><img src="https://avatars1.githubusercontent.com/u/75675814?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Resoner2005</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/issues?q=author%3AResoner2005" title="Bug reports">🐛 🎨 🖋</a></td>
     <td align="center"><a href="https://github.com/Navernoss"><img src="https://avatars0.githubusercontent.com/u/75784137?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Navernoss</b></sub></a><br /><a href="#content-Navernoss" title="Content">🖋 🐛 🎨 </a></td>

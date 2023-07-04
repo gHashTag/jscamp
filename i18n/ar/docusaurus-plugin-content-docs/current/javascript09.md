@@ -6,7 +6,7 @@ sidebar_label: المهام
 
 ![@serverSerrverlesskiy](/img/javascript/headers/10.jpg)
 
-المهام⚙️ حتى لا تكرر نفس الرمز📟 في العديد من الأماكن في خوارزمية البرنامج. في البرامج الحديثة ، الوظائف هي "اللبنات الأساسية".
+المهام⚙️ حتى لا تكرر نفس الرمز في العديد من الأماكن في خوارزمية البرنامج. في البرامج الحديثة ، الوظائف هي "اللبنات الأساسية".
 
 ## لا تكرر نفسك
 
@@ -14,7 +14,7 @@ DRY (روس. لا تكرر نفسك) هو مبدأ تطوير برمجيات ي�
 
 ## حدد اسم الوظيفة
 
-Function⚙️ هي العمل! لذلك ، عادة ما يكون اسم الوظيفة فعل. يجب أن تكون بسيطة ودقيقة ، وتصف عمل الوظيفة ، حتى يتمكن المبرمج من قراءة الكود📟 لديه فهم جيد لما تفعله الوظيفة.
+Function⚙️ هي العمل! لذلك ، عادة ما يكون اسم الوظيفة فعل. يجب أن تكون بسيطة ودقيقة ، وتصف عمل الوظيفة ، حتى يتمكن المبرمج من قراءة الكود لديه فهم جيد لما تفعله الوظيفة.
 
 ![Choice](https://media.giphy.com/media/VbEloWwOz3QqYBsqIZ/giphy.gif)
 
@@ -41,7 +41,7 @@ createForm (..) // ينشئ نموذجًا (ويعيده عادةً)
 checkPermission (..) // يتحقق الوصول عن طريق إرجاع صح / خطأ
 ```
 
-بفضل البادئات ، للوهلة الأولى على اسم الوظيفة ، يصبح من الواضح ما يفعله كودها والقيمة التي يمكن أن ترجعها🔄.
+بفضل البادئات ، للوهلة الأولى على اسم الوظيفة ، يصبح من الواضح ما يفعله كودها والقيمة التي يمكن أن ترجعها.
 
 على أي حال ، أنت وفريقك بحاجة إلى فهم ما تعنيه البادئة بالضبط وماذا يمكن للدالة وما لا تستطيع فعله بها.
 
@@ -50,7 +50,7 @@ checkPermission (..) // يتحقق الوصول عن طريق إرجاع صح / 
 
 على سبيل المثال ، يحتوي إطار عمل jQuery على وظيفة تسمى `$`.في مكتبة Lodash ، يتم تمثيل الوظيفة الرئيسية باسم الشرطة السفلية \ \_
 
-هذه استثناءات. بشكل أساسي ، يجب أن تكون أسماء الوظائف قصيرة ووصفية بشكل معقول 🖊️.
+هذه استثناءات. بشكل أساسي ، يجب أن تكون أسماء الوظائف قصيرة ووصفية بشكل معقول .
 :::
 
 ### وظائف === تعليقات
@@ -67,11 +67,11 @@ checkPermission (..) // يتحقق الوصول عن طريق إرجاع صح / 
 
 لإنشاء الدوال - نستخدم إعلان الوظيفة -.
 
-يأتي أولاً الكلمة الأساسية `function`, متبوعًا باسم الوظيفة ، ثم قائمة المعلمات بين قوسين مفصولة بفواصل (في المثال المعطى فارغة) ، وأخيرًا ، الرمز📟 من الوظيفة ، وتسمى أيضًا "جسم الوظيفة" ، داخل الأقواس المتعرجة ...
+يأتي أولاً الكلمة الأساسية `function`, متبوعًا باسم الوظيفة ، ثم قائمة المعلمات بين قوسين مفصولة بفواصل (في المثال المعطى فارغة) ، وأخيرًا ، الرمز من الوظيفة ، وتسمى أيضًا "جسم الوظيفة" ، داخل الأقواس المتعرجة ...
 
-هذه الطريقة الكلاسيكية في الكتابة 🖊️ وظائف تسمى`Function Declaration`.
+هذه الطريقة الكلاسيكية في الكتابة  وظائف تسمى`Function Declaration`.
 
-بناء الجملة📖:
+بناء الجملة  :
 
 ```javascript
 function name (parameters) {
@@ -89,7 +89,7 @@ function name (parameters) {
 - `Function Expression`
 - `Arrow Function (arrow functions)`
 
-تعبير الدالة هو تصريح🗣️ من وظيفة التي هي جزء من تعبير (على سبيل المثال ، مهمة).
+تعبير الدالة هو تصريح من وظيفة التي هي جزء من تعبير (على سبيل المثال ، مهمة).
 
 ```javascript
 const name = function (parameters) {
@@ -150,7 +150,7 @@ function showNumberFive() {
 
 ![Matryoschka](https://media.giphy.com/media/bFhSvsdyaCy4g0d2lU/giphy.gif)
 
-داخل وظيفة⚙️ يمكنك وضع وظائف أخرى⚙️. على سبيل المثال ، الوظيفة⚙️ `showNumberFive()` سيعيد الرقم 5️⃣ ، سيتم عرض قيمته من خلال الاستدعاء إلى وظيفة التعلم`learnJavaScript()`.
+داخل وظيفة⚙️ يمكنك وضع وظائف أخرى⚙️. على سبيل المثال ، الوظيفة⚙️ `showNumberFive()` سيعيد الرقم     ، سيتم عرض قيمته من خلال الاستدعاء إلى وظيفة التعلم`learnJavaScript()`.
 
 ```jsx live
 function learnJavaScript() {
@@ -165,12 +165,12 @@ function learnJavaScript() {
 
 - الكلمة `function` يشير للمترجم الفوري إلى أن الكود التالي معرف من قبل المستخدم ، أي أنه تم إنشاؤه بواسطتك وليس وظيفة مضمنة.
 - مكتوب في حالة الجمل`showNumberFive` ​​هو الاسم المخصص لهذه الوظيفة. بالنسبة للمترجم الشفهي ، بشكل عام ، لا فرق بالضبط في تسمية هذه الوظيفة ، ولكن من الأفضل إعطاء أسماء الوظائف التي تشير بوضوح إلى ما تفعله بالضبط.
-- `() `الأقواس هي عنصر مطلوب لأي دالة. في بعض الأحيان يتم وضع متغير واحد أو متغيرين أو أكثر بين قوسين 🔔, في حالتنا لا يوجد شيء بين قوسين.
+- `() `الأقواس هي عنصر مطلوب لأي دالة. في بعض الأحيان يتم وضع متغير واحد أو متغيرين أو أكثر بين قوسين , في حالتنا لا يوجد شيء بين قوسين.
 - يجب أن يكون جسم الوظيفة نفسها محاطًا بأقواس معقوفة "{}" - جوهر خوارزمية البرنامج.
 - عادة ما يتم وضع مسافة بادئة لجسم الوظيفة نفسها إلى اليمين (باستخدام مفتاح TAB) هذا ليس ضروريًا لتنفيذ البرنامج ، ولكنه ضروري للعمل الجماعي ، لأنه يسهل إلى حد كبير قراءة الكود.
 - تعني الكلمة الرئيسية "إرجاع" أنه كلما استدعينا هذه الوظيفة ، سيتم تمرير القيمة ، أي "إرجاع" ، إلى المترجم ، لذلك يطلق عليها "القيمة المرجعة للدالة".
 
-<!-- Еще один пример 👇 :
+<!-- Еще один пример  :
 
 ```jsx live
 function sum() {
@@ -181,7 +181,7 @@ function sum() {
 }
 ```
 
-In the function `sum ()`, the variables `x` and` y` with values are declared, the variable 🔔 `z` is declared and, according to the given algorithm, we perform the calculation (addition of 2 numbers), and the result is output through` return`.
+In the function `sum ()`, the variables `x` and` y` with values are declared, the variable  `z` is declared and, according to the given algorithm, we perform the calculation (addition of 2 numbers), and the result is output through` return`.
 
 If necessary, you can call the function При several times. For example, assign our function to the value of two different variables:
 
@@ -191,14 +191,14 @@ let x1 = sum ()
 let y1 = sum ()
 ``
 
-This example clearly shows one of the main purposes of functions⚙️: getting rid of code duplication! A function⚙️ can be run multiple times in different places in your code📟. ->
+This example clearly shows one of the main purposes of functions⚙️: getting rid of code duplication! A function⚙️ can be run multiple times in different places in your code. ->
 
 ## Parameters and function arguments
 
 ![couple](https://media.giphy.com/media/3o7TKO3AC2o5cOkZfG/giphy.gif)
 
-Let's declare🗣️ one more function но, but with a variable in parentheses.
-When the function also contains the variable 🔔 in brackets, we will call it a formal parameter (undefined in advance, we do not know what the value of x will be). Most functions⚙️ will have parameters, but sometimes we will come across functions⚙️ without them.
+Let's declare one more function но, but with a variable in parentheses.
+When the function also contains the variable  in brackets, we will call it a formal parameter (undefined in advance, we do not know what the value of x will be). Most functions⚙️ will have parameters, but sometimes we will come across functions⚙️ without them.
 
 ```javascript
 function addThree(x) {
@@ -206,7 +206,7 @@ function addThree(x) {
 }
 ```
 
-After the declaration🗣️ of the function⚙️ and its parameters, we can call (run) the "code block" with a specific value (for example: 5).
+After the declaration of the function⚙️ and its parameters, we can call (run) the "code block" with a specific value (for example: 5).
 We will call this assignment an argument:
 
 ```javascript
@@ -215,12 +215,12 @@ addThree(5)
 // Answer: 8
 ```
 
-In our example, the number 5️⃣ is the function argument - a specific value passed into the function⚙️.
+In our example, the number     is the function argument - a specific value passed into the function⚙️.
 As soon as our function⚙️ received its argument, it immediately assigned its value to the variable x (which is a formal parameter of our function⚙️).
 
-### Code example📟:
+### Code example:
 
-Experiment 👇:
+Experiment :
 
 ```jsx live
 function learnJavaScript() {
@@ -240,7 +240,7 @@ Consists of the following:
 
 `argument` is a specific value that we" passed "to the function⚙️ when calling it in parentheses. This value or set of values is assigned to the formal parameters of this function⚙️.
 
-`parameter` is the name of a variable 🔔 specified in the function declaration and waiting to be assigned a specific value at the time of the function call. The value assigned to the parameter is the argument.
+`parameter` is the name of a variable  specified in the function declaration and waiting to be assigned a specific value at the time of the function call. The value assigned to the parameter is the argument.
 
 Many programmers use these terms (argument and parameter) interchangeably, but we understood the difference.
 
@@ -248,7 +248,7 @@ Many programmers use these terms (argument and parameter) interchangeably, but w
 
 ![Mathematics](https://media.giphy.com/media/3o7btPCcdNniyf0ArS/giphy.gif)
 
-Let's try to declare🗣️ a function по for calculating on two sides of the rectangle perimeter, the parameters of which will expect two 2️⃣ numbers as their value. Please note that if you have more than one parameter, then they must be separated from each other with a comma.
+Let's try to declare a function по for calculating on two sides of the rectangle perimeter, the parameters of which will expect two 2️⃣ numbers as their value. Please note that if you have more than one parameter, then they must be separated from each other with a comma.
 
 ```jsx live
 function learnJavaScript() {
@@ -267,12 +267,12 @@ calcPrym(7, 8)
 // Answer: 30
 ```
 
-Oh, thanks a lot, computer🖥️!
+Oh, thanks a lot, computer    ️!
 
 By passing other values to the function⚙️, it will immediately calculate the perimeters of other rectangles as well.
 
 :::info Once again!
-One of the main purposes of functions⚙️ is to get rid of code duplication📟 and the ability to call them multiple times to solve your problems.
+One of the main purposes of functions⚙️ is to get rid of code duplication and the ability to call them multiple times to solve your problems.
 :::
 
 ## Built-in functions
@@ -304,7 +304,7 @@ console.log (myMessage)s
 
 While you're playing with the console logs, I'll show you another trick. Our good old friend - backslash will help me to do it!
 
-With its assistance, `\ n` you can split your code📟 line by line. Try it yourself!
+With its assistance, `\ n` you can split your code line by line. Try it yourself!
 Enter the following commands line by line:
 
 ```javascript
@@ -326,7 +326,7 @@ Each `\ n` specifies a transition to a new line, so that subsequent characters s
 
 ![Random](https://media.giphy.com/media/3o6ozoD1ByqYv7ARIk/giphy.gif)
 
-Another useful built-in function⚙️: `Math.random()`. Please note that, unlike the previous ones, the name of this function⚙️ begins with an uppercase letter `M`. There is a reason for this, the uppercase and lowercase letters in JavaScript differ in their internal codes📟. In every language👅, be it Russian, English or JavaScript, there are always some exceptions to the rule. This is one of them. All other variables and functions⚙️ that you come across should be written with a lowercase letter. Remember that register is important, and if the name `Math.random()` starts with `math`, then the function⚙️ simply won't run!
+Another useful built-in function⚙️: `Math.random()`. Please note that, unlike the previous ones, the name of this function⚙️ begins with an uppercase letter `M`. There is a reason for this, the uppercase and lowercase letters in JavaScript differ in their internal codes. In every language , be it Russian, English or JavaScript, there are always some exceptions to the rule. This is one of them. All other variables and functions⚙️ that you come across should be written with a lowercase letter. Remember that register is important, and if the name `Math.random()` starts with `math`, then the function⚙️ simply won't run!
 
 ```jsx live
 function learnJavaScript() {
@@ -336,7 +336,7 @@ function learnJavaScript() {
 
 A new number every time! The function returns a random real number between 0 and 1.
 
-Let's update the equation 👇:
+Let's update the equation :
 
 ```jsx live
 function learnJavaScript() {
@@ -350,7 +350,7 @@ If you suddenly need a random number in the range of 0 to 100, then this functio
 
 ![Floor](https://media.giphy.com/media/uTAZTQi8dX1VGa4pXT/giphy.gif)
 
-This function⚙️ takes a number or digit5️⃣ as an argument and then rounds them down.
+This function⚙️ takes a number or digit    as an argument and then rounds them down.
 
 ```javascript
 Math.floor(10.7) // 10
@@ -389,11 +389,11 @@ function learnJavaScript() {
 Have you EVER noticed THAT SOME messages ARE TOO MANY CAPITAL WORDS?
 Well, that’s what we’ll learn now.
 
-You can easily take any string and return its new version, separated by uppercase 🖊️ letters (i.e. upper / lower case), using the built-in method `.toUpperCase() / .toLowerCase()`. And, accordingly, you can return any string in lowercase letters (that is, in lowercase).
+You can easily take any string and return its new version, separated by uppercase  letters (i.e. upper / lower case), using the built-in method `.toUpperCase() / .toLowerCase()`. And, accordingly, you can return any string in lowercase letters (that is, in lowercase).
 
 Remember that a method is just a function, attached to the object described, in this case a generic string.
 
-It works like this, `.toUpperCase()` in uppercase 🖊️ letters 👇:
+It works like this, `.toUpperCase()` in uppercase  letters :
 
 ```jsx live
 function learnJavaScript() {
@@ -437,7 +437,7 @@ Hopefully, none of the above turned out to be a difficult task for you, and you 
 
 There is an even simpler and concise syntaxтакс for creating functions⚙️, which is often better than other kinds.
 
-So, the classic version of writing 🖊️ function⚙️:
+So, the classic version of writing  function⚙️:
 
 Function Declaration:
 
@@ -455,7 +455,7 @@ let func1 = function (arg1, arg2, ...argN) {
 }
 ```
 
-Such code📟 creates a function⚙️ `func1` with arguments `arg1, .. argN` and calculates `expression` - a set of actions of the algorithm on the right side using them, returning the result of calculations through the keyword` return`.
+Such code creates a function⚙️ `func1` with arguments `arg1, .. argN` and calculates `expression` - a set of actions of the algorithm on the right side using them, returning the result of calculations through the keyword` return`.
 
 Now let's use the `Arrow functions`:
 
@@ -463,13 +463,13 @@ Now let's use the `Arrow functions`:
 let func1 = (arg1, arg2, ...argN) => expression
 ```
 
-In other words, this is a shorter version of such a notation 🖊️.
+In other words, this is a shorter version of such a notation .
 
 :::note How!
 `=>` we have replaced `{return ...}` on the right side and allowed us not to write the keyword `function` on the left side!
 :::
 
-Let's take a look at a concrete example 👇:
+Let's take a look at a concrete example :
 
 ```jsx live
 function learnJavaScript() {
@@ -484,7 +484,7 @@ function learnJavaScript() {
 }
 ```
 
-Both options are correct! `function` is almost never used in modern writing of code📟, so use arrow functions!
+Both options are correct! `function` is almost never used in modern writing of code, so use arrow functions!
 
 ### Only one argument
 
@@ -510,7 +510,7 @@ function learnJavaScript() {
 
 ![no](https://media.giphy.com/media/LOEI8jsNKPmzdJYvhJ/giphy.gif)
 
-If there are no arguments, then to avoid double `==`, use `empty parentheses` 👇:
+If there are no arguments, then to avoid double `==`, use `empty parentheses` :
 
 ```jsx live
 function learnJavaScript() {
@@ -533,7 +533,7 @@ The arrow functions are convenient and very compact!
 ![Anonym](https://media.giphy.com/media/m3lszq64i1k2s/giphy.gif)
 
 If after `function` there is a name - the function⚙️ is named, otherwise anonymous.
-Anonymous functions⚙️ are often created and run immediately. Another important difference is that named functions are⚙️ declared🗣️ and anonymous functions are created using the function statement.
+Anonymous functions⚙️ are often created and run immediately. Another important difference is that named functions are⚙️ declared and anonymous functions are created using the function statement.
 
 Type the following code in the Google Chrome console:
 
@@ -549,7 +549,7 @@ Self-invocation is created by parentheses at the end of a function⚙️ that te
 
 ![conclusion](https://media.giphy.com/media/8Bksh0hra9RcZcSNSO/giphy.gif)
 
-By understanding arrow and normal functions⚙️, you can pass functions to variable objects🔔 and rebuild your code📟 in modules. Functions of this kind can also be used to create and return🔄 other functions⚙️. Here we are already talking about closure, which we will talk about in the next series.
+By understanding arrow and normal functions⚙️, you can pass functions to variable objects and rebuild your code in modules. Functions of this kind can also be used to create and return other functions⚙️. Here we are already talking about closure, which we will talk about in the next series.
 
  [![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)
 
@@ -666,7 +666,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/KoDim-React"><img src="https://avatars1.githubusercontent.com/u/72087863?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy K.</b></sub></a><br /><a href="#mentoring-KoDim-React" title="Mentoring">📖</a></td>
+    <td align="center"><a href="https://github.com/KoDim-React"><img src="https://avatars1.githubusercontent.com/u/72087863?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy K.</b></sub></a><br /><a href="#mentoring-KoDim-React" title="Mentoring">  </a></td>
     <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /><a href="#financial-gHashTag" title="Financial">💵</a></td>
     <td align="center"><a href="https://github.com/Resoner2005"><img src="https://avatars1.githubusercontent.com/u/75675814?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Resoner2005</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/issues?q=author%3AResoner2005" title="Bug reports">🐛 🎨 🖋</a></td>
     <td align="center"><a href="https://github.com/Navernoss"><img src="https://avatars0.githubusercontent.com/u/75784137?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Navernoss</b></sub></a><br /><a href="#content-Navernoss" title="Content">🖋 🐛 🎨 </a></td>

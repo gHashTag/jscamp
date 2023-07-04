@@ -10,12 +10,12 @@ import YouTube from 'react-youtube'
 
 ## What are comments?
 
-JavaScript has several ways to specify comments in code 📟
+JavaScript has several ways to specify comments in code 
 
-Sometimes, when writing 🖊️ the code, you will need to provide explanations that are intended only for humans а and not for the computer. Perhaps it will be some kind of message to yourself from the past (to the Future Me!) About this or that thing in the program code. Or maybe it will just be an indication that you need to run only such and such a part of the code, and the rest should be omitted. In short, in any such case, you will need to resort to the help of comments.
-Comments 🗣️ are used to add ➕ hints, notes 🔖, suggestions or warnings. They can make the code easier to read and understand. They can also be used to prevent 🛑 code execution (this is a common practice when debugging code).
+Sometimes, when writing  the code, you will need to provide explanations that are intended only for humans а and not for the computer. Perhaps it will be some kind of message to yourself from the past (to the Future Me!) About this or that thing in the program code. Or maybe it will just be an indication that you need to run only such and such a part of the code, and the rest should be omitted. In short, in any such case, you will need to resort to the help of comments.
+Comments  are used to add ➕ hints, notes , suggestions or warnings. They can make the code easier to read and understand. They can also be used to prevent  code execution (this is a common practice when debugging code).
 
-JavaScript has several ways to specify comments 🗣️ in code.
+JavaScript has several ways to specify comments  in code.
 
 <!-- ## Video
 
@@ -25,7 +25,7 @@ JavaScript has several ways to specify comments 🗣️ in code.
 
 ![Slash](https://media.giphy.com/media/bKXMS0NjXoyaY/giphy.gif)
 
-The first 1️⃣ way is `// comment` 🗣️ in this case all text 📜 in the line after the double slash will be a comment 🗣️. When the interpreter sees two 2️⃣ slashes in a row `//`, it immediately understands that everything that goes further to the end of the line can be safely ignored. For now, ignore the syntax 📖 of the code, we will get to know it in detail a little later.
+The first 1️⃣ way is `// comment`  in this case all text  in the line after the double slash will be a comment . When the interpreter sees two 2️⃣ slashes in a row `//`, it immediately understands that everything that goes further to the end of the line can be safely ignored. For now, ignore the syntax    of the code, we will get to know it in detail a little later.
 
 ```jsx live
 function learnJavaScript() {
@@ -41,7 +41,7 @@ function learnJavaScript() {
 ![Coments](https://media.giphy.com/media/UevalSWg5twQeqpc8Q/giphy.gif)
 
 The second 2️⃣ way is `/ * * /`, which is more flexible than the first 1️⃣. As soon as the interpreter sees `/ *`, it thinks: "Yeah, so until I see`* /`, I can not pay any attention to anything here!"
-For example, you can use it in one 1️⃣ line 👇:
+For example, you can use it in one 1️⃣ line :
 
 ```jsx live
 function learnJavaScript() {
@@ -52,7 +52,7 @@ function learnJavaScript() {
 }
 ```
 
-Alternatively, you can make a multi-line comment 🗣️ as shown here 👇:
+Alternatively, you can make a multi-line comment  as shown here :
 
 ```jsx live
 function learnJavaScript() {
@@ -68,7 +68,7 @@ function learnJavaScript() {
 
 ![Among](https://media.giphy.com/media/fnjIiBNo38IHS/giphy.gif)
 
-Also, if you wish, you can use this commenting 🗣️ in the middle of a line of code. Although this may impair the readability of the code👇:
+Also, if you wish, you can use this commenting  in the middle of a line of code. Although this may impair the readability of the code:
 
 ```jsx live
 function learnJavaScript() {
@@ -135,7 +135,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <table>
   <tr>
-    <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /> <a href="https://github.com/gHashTag/react-native-village/commits?author=gHashTag" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /> <a href="https://github.com/gHashTag/react-native-village/commits?author=gHashTag" title="Documentation">  </a></td>
     <td align="center"><a href="https://github.com/Resoner2005"><img src="https://avatars1.githubusercontent.com/u/75675814?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Resoner2005</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/issues?q=author%3AResoner2005" title="Bug reports">🐛 🎨 🖋</a></td>
   </tr>
   

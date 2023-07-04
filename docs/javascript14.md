@@ -64,7 +64,7 @@ Defining regular expressions using a constructor.
 let regExp = new RegExp('pattern')
 ```
 
-The compilation of the regular expression created🏗️ using the constructor occurs at the time of the script execution. This way of creating is worth using if your regular expression is being created созда from a dynamically generated string.
+The compilation of the regular expression created using the constructor occurs at the time of the script execution. This way of creating is worth using if your regular expression is being created созда from a dynamically generated string.
 
   </TabItem>
 </Tabs>
@@ -79,7 +79,7 @@ Let's look at the use of regular expressions using an example:
 let regExp = /banana/
 ```
 
-With this code📟 we have created🏗️ a simple regular expression that searches for the string `banana`. To test a regular expression, you can use the `.test(string)` method, the result of the method is a `boolean` value.
+With this code we have created a simple regular expression that searches for the string `banana`. To test a regular expression, you can use the `.test(string)` method, the result of the method is a `boolean` value.
 
 ```jsx live
 function learnJavaScript() {
@@ -105,7 +105,7 @@ function learnJavaScript() {
 }
 ```
 
-Using this pattern `/ banana /` you will search for `banana` in the whole line. If you need to check for a complete match of a string with a template, you need to use the anchors `/ ^ banana $ /`. The `.test ()` method will return `true` ✅ only if the whole line is` banana`.
+Using this pattern `/ banana /` you will search for `banana` in the whole line. If you need to check for a complete match of a string with a template, you need to use the anchors `/ ^ banana $ /`. The `.test ()` method will return `true`  only if the whole line is` banana`.
 
 ## Flags
 
@@ -217,7 +217,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <table>
   <tr> 
-    <td align="center"><a href="https://github.com/IIo3iTiv"><img src="https://avatars1.githubusercontent.com/u/72025062?v=4?s=200" width="200px;" alt=""/><br /><sub><b>IIo3iTiv</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/commits?author=IIo3iTiv" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/IIo3iTiv"><img src="https://avatars1.githubusercontent.com/u/72025062?v=4?s=200" width="200px;" alt=""/><br /><sub><b>IIo3iTiv</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/commits?author=IIo3iTiv" title="Documentation">  </a></td>
     <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /><a href="#financial-gHashTag" title="Financial">💵</a></td>
     <td align="center"><a href="https://github.com/Resoner2005"><img src="https://avatars1.githubusercontent.com/u/75675814?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Resoner2005</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/issues?q=author%3AResoner2005" title="Bug reports">🐛 🎨 🖋</a></td>
     <td align="center"><a href="https://github.com/Navernoss"><img src="https://avatars0.githubusercontent.com/u/75784137?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Navernoss</b></sub></a><br /><a href="#content-Navernoss" title="Content">🖋 🐛 🎨 </a></td>

@@ -6,7 +6,7 @@ sidebar_label: 對象
 
 ![@serverSerrverlesskiy](/img/javascript/headers/11.jpg)
 
-對象就像一個壁櫥📦，用於存儲和傳輸其他類型的數據。
+對象就像一個壁櫥，用於存儲和傳輸其他類型的數據。
 JavaScript是圍繞一個簡單的範例設計的。 該概念基於簡單的對象。 對像是屬性的集合，每個屬性都包含一個名稱（鍵）和一個與該名稱關聯的值。 該屬性值可以是一個函數⚙️，可以稱為對象的方法或任何其他類型。
 
 ![Object](https://media.giphy.com/media/xTiTnFEfyt0vqhQzDi/giphy.gif)
@@ -15,7 +15,7 @@ JavaScript是圍繞一個簡單的範例設計的。 該概念基於簡單的對
 
 JavaScript中的對像是簡單的關聯數組，換句話說就是“哈希”。 它存儲任何鍵：值匹配，並具有幾種標準方法。
 
-JavaScript中的對象，例如現實生活中的對象（人，公共汽車，建築物等），具有多個具有特定值（15，約翰，黑色）的命名（關鍵🗝️）參數（年齡，姓名，頭髮顏色，狀態） 'true') ✅:
+JavaScript中的對象，例如現實生活中的對象（人，公共汽車，建築物等），具有多個具有特定值（15，約翰，黑色）的命名（關鍵🗝️）參數（年齡，姓名，頭髮顏色，狀態） 'true') :
 
 ```javascript
 let obj = {
@@ -45,11 +45,11 @@ function learnJavaScript() {
 
 ![Object](https://media.giphy.com/media/2YaKpvYQEcl1WuJJTl/giphy.gif)
 
-在計算機🖥️中，我們可以將“對象”表示為帶有簽名的名稱-屬性（“訪問鍵”）的櫃子。 櫥櫃內部📦抽屜🧰-類似於事物，數據（特定信息）甚至更小的物體。 可以很容易地找到，刪除或添加（寫入）新值。`key`.
+在計算機    ️中，我們可以將“對象”表示為帶有簽名的名稱-屬性（“訪問鍵”）的櫃子。 櫥櫃內部抽屜-類似於事物，數據（特定信息）甚至更小的物體。 可以很容易地找到，刪除或添加（寫入）新值。`key`.
 
 ![obj01](/img/javascript/12/01.png)
 
-這是用於創建🏗️空對象的兩個2️⃣選項：
+這是用於創建空對象的兩個2️⃣選項：
 
 ```javascript
 // equivalent records
@@ -85,7 +85,7 @@ function learnJavaScript() {
 }
 ```
 
-創建的🏗️對象包含五個具有特定值的屬性，其中之一是護照數據，這是一個內置對象。 注意對對象的遙遠屬性或方法的調用是如何進行的。 嘗試返回您的護照號碼。
+創建的對象包含五個具有特定值的屬性，其中之一是護照數據，這是一個內置對象。 注意對對象的遙遠屬性或方法的調用是如何進行的。 嘗試返回您的護照號碼。
 
 ## 添加屬性
 
@@ -111,14 +111,14 @@ function learnJavaScript() {
 }
 ```
 
-方括號主要用於 `properties' 名字在 `variable` 🔔:
+方括號主要用於 `properties' 名字在 `variable` :
 
 ```javascript
 let nameProp = 'age'
 obj[nameProp] = 15
 ```
 
-在這裡，通過變量🔔 `nameProp`, 我們設置屬性的名稱 `"age"`, 這是包含以下內容的關聯數組中的鍵 `value 15`.
+在這裡，通過變量 `nameProp`, 我們設置屬性的名稱 `"age"`, 這是包含以下內容的關聯數組中的鍵 `value 15`.
 
 ```jsx live
 function learnJavaScript() {
@@ -137,7 +137,7 @@ function learnJavaScript() {
 
 ![Door](https://media.giphy.com/media/l378znZcUM7b6VDyM/giphy.gif)
 
-通過訪問屬性來訪問它 👇:
+通過訪問屬性來訪問它 :
 
 ```jsx live
 function learnJavaScript() {
@@ -160,13 +160,13 @@ obj.nokey
 
 ![nokey](/img/javascript/15.jpg)
 
-訪問不存在的屬性（特殊值）時不會出現錯誤🙅‍♂️ `undefined` 只會返回。 如果沒有 `return` 函數中的關鍵字，然後 `undefined` 值也會返回-缺少東西。
+訪問不存在的屬性（特殊值）時不會出現錯誤 `undefined` 只會返回。 如果沒有 `return` 函數中的關鍵字，然後 `undefined` 值也會返回-缺少東西。
 
 <!-- ## Проверка глобальной переменной
 
 ![Planet](https://media.giphy.com/media/LW5vBvAb48Oe9OoEKT/giphy.gif)
 
-В JavaScript нельзя проверить существование глобальной переменной 🔔 простым `if(проверяемаяПеременная)`:
+В JavaScript нельзя проверить существование глобальной переменной  простым `if(проверяемаяПеременная)`:
 
 ```javascript
     if (x) { ... }
@@ -194,7 +194,7 @@ obj.nokey
 Все свойства объектов - public (общественные), т.е при определении свойства никак нельзя ограничить доступ к свойству.
 :::
 
-В JavaScript есть специальные способы для создания🏗️ `private` свойств, связанные с `замыканиями`. Они рассмотрены вместе с наследованием объектов далее по курсу. -->
+В JavaScript есть специальные способы для создания `private` свойств, связанные с `замыканиями`. Они рассмотрены вместе с наследованием объектов далее по курсу. -->
 
 ## 刪除屬性
 
@@ -290,7 +290,7 @@ function learnJavaScript() {
 }
 ```
 
-Подумайте, чем можно заменить множественный `if()`. JavaScript - очень динамический язык👅. -->
+Подумайте, чем можно заменить множественный `if()`. JavaScript - очень динамический язык . -->
 
 ## 遍歷對象屬性
 
@@ -306,7 +306,7 @@ for(let key in obj) {
 }
 ```
 
-例如 👇:
+例如 :
 
 ```jsx live
 function learnJavaScript() {
@@ -326,7 +326,7 @@ function learnJavaScript() {
 }
 ```
 
-秘密地說，幾乎所有變量🔔在JavaScript環境中都是一個微型對象。 因此，不要害怕使用它們。
+秘密地說，幾乎所有變量在JavaScript環境中都是一個微型對象。 因此，不要害怕使用它們。
 
 ## 問題？
 
@@ -389,7 +389,7 @@ JavaScript中的對象方法是
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/KoDim-React"><img src="https://avatars1.githubusercontent.com/u/72087863?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy K.</b></sub></a><br /><a href="#mentoring-KoDim-React" title="Mentoring">📖</a></td>
+    <td align="center"><a href="https://github.com/KoDim-React"><img src="https://avatars1.githubusercontent.com/u/72087863?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy K.</b></sub></a><br /><a href="#mentoring-KoDim-React" title="Mentoring">  </a></td>
     <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /><a href="#financial-gHashTag" title="Financial">💵</a></td>
     <td align="center"><a href="https://github.com/Resoner2005"><img src="https://avatars1.githubusercontent.com/u/75675814?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Resoner2005</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/issues?q=author%3AResoner2005" title="Bug reports">🐛 🎨 🖋</a></td>
     <td align="center"><a href="https://github.com/Navernoss"><img src="https://avatars0.githubusercontent.com/u/75784137?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Navernoss</b></sub></a><br /><a href="#content-Navernoss" title="Content">🖋 🐛 🎨 </a></td>

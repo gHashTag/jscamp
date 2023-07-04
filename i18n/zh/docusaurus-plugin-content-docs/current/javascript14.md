@@ -64,7 +64,7 @@ let regExp = /pattern/
 let regExp = new RegExp('pattern')
 ```
 
-使用構造函數創建的🏗️正則表達式的編譯發生在腳本執行時。 如果從動態生成的字符串中創建正則表達式，則值得使用這種創建方式。
+使用構造函數創建的正則表達式的編譯發生在腳本執行時。 如果從動態生成的字符串中創建正則表達式，則值得使用這種創建方式。
 
   </TabItem>
 </Tabs>
@@ -79,7 +79,7 @@ let regExp = new RegExp('pattern')
 let regExp = /banana/
 ```
 
-使用此代碼📟我們創建了🏗️一個簡單的正則表達式來搜索字符串 `banana`. 要測試正則表達式，可以使用 `.test(string)` 方法，該方法的結果是 `boolean` 價值。
+使用此代碼我們創建了一個簡單的正則表達式來搜索字符串 `banana`. 要測試正則表達式，可以使用 `.test(string)` 方法，該方法的結果是 `boolean` 價值。
 
 ```jsx live
 function learnJavaScript() {
@@ -105,7 +105,7 @@ function learnJavaScript() {
 }
 ```
 
-使用這種模式 `/ banana /` 您將搜索 `banana` 在整個生產線上。 如果您需要檢查字符串是否與模板完全匹配，則需要使用錨點 `/ ^ banana $ /`. `.test ()`方法將返回 `true` ✅ 僅當整行是 `banana`.
+使用這種模式 `/ banana /` 您將搜索 `banana` 在整個生產線上。 如果您需要檢查字符串是否與模板完全匹配，則需要使用錨點 `/ ^ banana $ /`. `.test ()`方法將返回 `true`  僅當整行是 `banana`.
 
 ## 標誌
 
@@ -215,7 +215,7 @@ function learnJavaScript() {
 
 <table>
   <tr> 
-    <td align="center"><a href="https://github.com/IIo3iTiv"><img src="https://avatars1.githubusercontent.com/u/72025062?v=4?s=200" width="200px;" alt=""/><br /><sub><b>IIo3iTiv</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/commits?author=IIo3iTiv" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/IIo3iTiv"><img src="https://avatars1.githubusercontent.com/u/72025062?v=4?s=200" width="200px;" alt=""/><br /><sub><b>IIo3iTiv</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/commits?author=IIo3iTiv" title="Documentation">  </a></td>
     <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /><a href="#financial-gHashTag" title="Financial">💵</a></td>
     <td align="center"><a href="https://github.com/Resoner2005"><img src="https://avatars1.githubusercontent.com/u/75675814?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Resoner2005</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/issues?q=author%3AResoner2005" title="Bug reports">🐛 🎨 🖋</a></td>
     <td align="center"><a href="https://github.com/Navernoss"><img src="https://avatars0.githubusercontent.com/u/75784137?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Navernoss</b></sub></a><br /><a href="#content-Navernoss" title="Content">🖋 🐛 🎨 </a></td>

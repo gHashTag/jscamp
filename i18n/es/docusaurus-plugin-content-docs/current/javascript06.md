@@ -8,7 +8,7 @@ import YouTube from 'react-youtube'
 
 ![@serverSerrverlesskiy](/img/javascript/headers/06.jpg)
 
-En JavaScript, cualquier dato de texto 📜 es una cadena. Sin embargo, no olvide que los números también se pueden escribir en una cadena. De todos los tipos de datos, probablemente usará más cadenas. Analicemos todas las opciones para crear una nueva línea.
+En JavaScript, cualquier dato de texto  es una cadena. Sin embargo, no olvide que los números también se pueden escribir en una cadena. De todos los tipos de datos, probablemente usará más cadenas. Analicemos todas las opciones para crear una nueva línea.
 
 ## Video
 
@@ -18,7 +18,7 @@ En JavaScript, cualquier dato de texto 📜 es una cadena. Sin embargo, no olvid
 
 ![quotation marks](https://media.giphy.com/media/7cSTvZ4hI6ABZkcTwk/giphy.gif)
 
-Para crear una cadena 🏗️, se utilizan comillas "simples" o "dobles".
+Para crear una cadena , se utilizan comillas "simples" o "dobles".
 
 ```jsx
 let single = 'Hello World'
@@ -46,7 +46,7 @@ function learnJavaScript() {
 }
 ```
 
-Tenga en cuenta que la barra invertida `\` solo sirve para que el intérprete lea correctamente la cadena, pero no escribe 🖊️ en la cadena después de haberla leído. Cuando una cadena se guarda en la RAM, no se le agrega ningún carácter `\`. Esto se puede ver claramente en la salida.
+Tenga en cuenta que la barra invertida `\` solo sirve para que el intérprete lea correctamente la cadena, pero no escribe  en la cadena después de haberla leído. Cuando una cadena se guarda en la RAM, no se le agrega ningún carácter `\`. Esto se puede ver claramente en la salida.
 
 ## comillas back
 
@@ -54,7 +54,7 @@ Tenga en cuenta que la barra invertida `\` solo sirve para que el intérprete le
 
 Al escribir una cadena, también puede prescindir de una barra invertida si usa comillas \`back\`.
 
-Las comillas simples y dobles funcionan esencialmente de la misma manera, y si usa comillas inversas, podemos insertar expresiones JavaScript arbitrarias en dicha cadena envolviéndolas en un carácter de dólar con llaves `${…}` 👇:
+Las comillas simples y dobles funcionan esencialmente de la misma manera, y si usa comillas inversas, podemos insertar expresiones JavaScript arbitrarias en dicha cadena envolviéndolas en un carácter de dólar con llaves `${…}` :
 
 ```jsx live
 function learnJavaScript() {
@@ -78,7 +78,7 @@ function learnJavaScript() {
 }
 ```
 
-También se pueden crear cadenas de varias líneas🏗️ usando comillas simples y dobles, usando el llamado "carácter de nueva línea", que se escribe como `\n`. Todos los caracteres especiales en JavaScript comienzan con una barra invertida `\` Cierto, podemos verificar esto en la consola del navegador (`LIVE EDITOR` no se muestra correctamente).
+También se pueden crear cadenas de varias líneas usando comillas simples y dobles, usando el llamado "carácter de nueva línea", que se escribe como `\n`. Todos los caracteres especiales en JavaScript comienzan con una barra invertida `\` Cierto, podemos verificar esto en la consola del navegador (`LIVE EDITOR` no se muestra correctamente).
 
 ```jsx
 let guestList = 'Guests:\n * John\n * Pete\n * Mary'
@@ -92,8 +92,8 @@ guestList // lista de invitados de varias líneas
 
 ![Tree](https://media.giphy.com/media/YxlUxrYGw2w9y/giphy.gif)
 
-El contenido de una cadena en JavaScript no se puede cambiar. No puede tomar el símbolo en el medio y reemplazarlo. Tan pronto como se crea la línea🏗️, es así para siempre.
-Puede crear🏗️ una nueva cadena y escribirla en la misma variable en lugar de la anterior.
+El contenido de una cadena en JavaScript no se puede cambiar. No puede tomar el símbolo en el medio y reemplazarlo. Tan pronto como se crea la línea, es así para siempre.
+Puede crear una nueva cadena y escribirla en la misma variable en lugar de la anterior.
 
 ```jsx live
 function learnJavaScript() {
@@ -109,7 +109,7 @@ function learnJavaScript() {
 
 ![Length](https://media.giphy.com/media/Y1GK5MEiRa3OSVsxHK/giphy.gif)
 
-La propiedad `longitud` devuelve 🔄 el número de valores de código 📟 en la cadena.
+La propiedad `longitud` devuelve  el número de valores de código  en la cadena.
 
 ```jsx live
 function learnJavaScript() {
@@ -320,7 +320,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/Alena-Maitri"><img src="https://avatars1.githubusercontent.com/u/72432063?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Alena Yanbukhtina</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/commits?author=Alena-Maitri" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/Alena-Maitri"><img src="https://avatars1.githubusercontent.com/u/72432063?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Alena Yanbukhtina</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/commits?author=Alena-Maitri" title="Documentation">  </a></td>
     <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /><a href="#financial-gHashTag" title="Financial">💵</a></td>
     <td align="center"><a href="https://github.com/Resoner2005"><img src="https://avatars1.githubusercontent.com/u/75675814?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Resoner2005</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/issues?q=author%3AResoner2005" title="Bug reports">🐛 🎨 🖋</a></td>
   </tr>

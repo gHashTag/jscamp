@@ -15,7 +15,7 @@ Hasta ahora, siempre hemos tratado solo con tipos de datos primitivos, con núme
 
 ![True](https://media.giphy.com/media/gLWLC3fjwG56p3H4uC/giphy.gif)
 
-El tipo de datos que definitivamente necesitará se llama booleano `boolean` o lógico. El tipo booleano siempre tiene el valor `true` ✅ - verdadero, o `false` ❎ - falso. ¡Y sólo de esta manera, y nada más! Está mintiendo o diciendo la verdad: acertar o fallar, encender o apagar las luces, estar allí o no. O hiciste tu tarea o no la hiciste. Solo dos valores de 2️⃣ `true` ✅ o `false`.
+El tipo de datos que definitivamente necesitará se llama booleano `boolean` o lógico. El tipo booleano siempre tiene el valor `true`  - verdadero, o `false`  - falso. ¡Y sólo de esta manera, y nada más! Está mintiendo o diciendo la verdad: acertar o fallar, encender o apagar las luces, estar allí o no. O hiciste tu tarea o no la hiciste. Solo dos valores de 2️⃣ `true`  o `false`.
 
 ## Video
 
@@ -27,7 +27,7 @@ El tipo de datos que definitivamente necesitará se llama booleano `boolean` o l
 
 Los valores booleanos son útiles cuando necesitamos comparar algo en JavaScript. Cuando surge tal necesidad, llamamos inmediatamente a los operadores de comparación.
 Ahora estudiaremos secuencialmente los ocho operadores de comparación, pero la cosa es que como resultado del trabajo de cada uno de ellos, todavía
-siempre nos quedará un valor booleano, ya sea `true` ✅ o `false` ❎.
+siempre nos quedará un valor booleano, ya sea `true`  o `false` .
 
 ### Es igual a `==`
 
@@ -35,7 +35,7 @@ siempre nos quedará un valor booleano, ya sea `true` ✅ o `false` ❎.
 
 El operador de igualdad primero convierte los operandos al mismo tipo y luego aplica una comparación estricta. Si ambos operandos son objetos, entonces JavaScript compara las referencias internas que son iguales si se refieren al mismo objeto en la memoria.
 
-Sintaxis📖:
+Sintaxis  :
 
 ```javascript
 x == y
@@ -52,7 +52,7 @@ x == y
 'foo' == 'bar' // Falso
 ```
 
-Ingrese los ejemplos uno por uno en la variable 🔔 `bool` de nuestro `LIVE EDITOR`
+Ingrese los ejemplos uno por uno en la variable  `bool` de nuestro `LIVE EDITOR`
 
 ```jsx live
 function learnJavaScript() {
@@ -65,9 +65,9 @@ function learnJavaScript() {
 
 ![Equals](https://media.giphy.com/media/xT8qBit7YomT80d0M8/giphy.gif)
 
-El operador no igual devuelve 🔄 `false` ✅ si los operandos no son iguales. Es similar al operador de igualdad, convierte los operandos al mismo tipo antes de comparar. Si ambos operandos son objetos, JavaScript compara las referencias internas que no son iguales si se refieren a diferentes objetos en la memoria.
+El operador no igual devuelve  `false`  si los operandos no son iguales. Es similar al operador de igualdad, convierte los operandos al mismo tipo antes de comparar. Si ambos operandos son objetos, JavaScript compara las referencias internas que no son iguales si se refieren a diferentes objetos en la memoria.
 
-Sintaxis📖:
+Sintaxis  :
 
 ```javascript
 x != y
@@ -84,7 +84,7 @@ Ejemplos:
 'foo' != 'bar' // verdadero
 ```
 
-Ingrese los ejemplos uno por uno en la variable 🔔 `bool` de nuestro `LIVE EDITOR`
+Ingrese los ejemplos uno por uno en la variable  `bool` de nuestro `LIVE EDITOR`
 
 ```jsx live
 function learnJavaScript() {
@@ -97,9 +97,9 @@ function learnJavaScript() {
 
 ![equality](https://media.giphy.com/media/4W0ZwRP8y7pQtcUMyQ/giphy.gif)
 
-El operador devuelve 🔄 verdadero si los operandos son estrictamente iguales. A diferencia del operador de igualdad, este operador no convierte operandos al mismo tipo.
+El operador devuelve  verdadero si los operandos son estrictamente iguales. A diferencia del operador de igualdad, este operador no convierte operandos al mismo tipo.
 
-Sintaxis📖:
+Sintaxis  :
 
 ```javascript
 x === y
@@ -115,7 +115,7 @@ x === y
 
 El operador se asegura de que tanto el valor como el tipo sean estrictamente idénticos. En el caso de `3 === '3'`, el valor es, por supuesto, idéntico, pero el tipo no lo es: después de todo, el primero es un número y el segundo es una cadena.
 
-Ingrese los ejemplos uno por uno en la variable 🔔 `bool` de nuestro `LIVE EDITOR`
+Ingrese los ejemplos uno por uno en la variable  `bool` de nuestro `LIVE EDITOR`
 
 ```jsx live
 function learnJavaScript() {
@@ -128,9 +128,9 @@ function learnJavaScript() {
 
 ![ruler](https://media.giphy.com/media/tPK9Fyl1gyIkU6XbZv/giphy.gif)
 
-El operador estrictamente no igual devuelve 🔄 verdadero si los operandos no son iguales o sus tipos son diferentes.
+El operador estrictamente no igual devuelve  verdadero si los operandos no son iguales o sus tipos son diferentes.
 
-Sintaxis📖:
+Sintaxis  :
 
 ```javascript
 x !== y
@@ -143,7 +143,7 @@ Ejemplos:
 4 !== 3 // verdadero
 ```
 
-Ingrese los ejemplos uno por uno en la variable 🔔 `bool` de nuestro `LIVE EDITOR`
+Ingrese los ejemplos uno por uno en la variable  `bool` de nuestro `LIVE EDITOR`
 
 ```jsx live
 function learnJavaScript() {
@@ -152,7 +152,7 @@ function learnJavaScript() {
 }
 ```
 
-¿Por qué no usar `==` y `!=`? Sino porque tal necesidad, en general, nunca existe. En todos los casos posibles en los que pueda usarlos, siempre puede usar estrictos `===` y `!==`. Si desea más flexibilidad en la respuesta (por ejemplo, que tanto `1` como `'1'` o `true` ✅ se acepten con el mismo éxito), simplemente puede incluir las opciones de respuesta deseadas en el código en sí📟 (sin cambiando este `===`).
+¿Por qué no usar `==` y `!=`? Sino porque tal necesidad, en general, nunca existe. En todos los casos posibles en los que pueda usarlos, siempre puede usar estrictos `===` y `!==`. Si desea más flexibilidad en la respuesta (por ejemplo, que tanto `1` como `'1'` o `true`  se acepten con el mismo éxito), simplemente puede incluir las opciones de respuesta deseadas en el código en sí (sin cambiando este `===`).
 
 :::info Solo entiende la regla
 Nunca use `==` o `!=`
@@ -164,9 +164,9 @@ Nunca use `==` o `!=`
 
 ![not equal](https://media.giphy.com/media/jPfQcPdmI9bTXpa7hi/giphy.gif)
 
-El operador mayor que devuelve 🔄 verdadero si el valor del operando izquierdo es mayor que el valor del operando derecho.
+El operador mayor que devuelve  verdadero si el valor del operando izquierdo es mayor que el valor del operando derecho.
 
-Sintaxis📖:
+Sintaxis  :
 
 ```javascript
 x > y
@@ -179,7 +179,7 @@ Ejemplos:
 1 > 5 // Falso
 ```
 
-Introduce los ejemplos uno por uno en la variable 🔔 `bool` en `LIVE EDITOR`
+Introduce los ejemplos uno por uno en la variable  `bool` en `LIVE EDITOR`
 
 ```jsx live
 function learnJavaScript() {
@@ -192,9 +192,9 @@ function learnJavaScript() {
 
 ![small](https://media.giphy.com/media/82tNeaMTlEsdW/giphy.gif)
 
-El operador menor que devuelve 🔄 verdadero si el valor del operando de la izquierda es menor que el valor del operando de la derecha.
+El operador menor que devuelve  verdadero si el valor del operando de la izquierda es menor que el valor del operando de la derecha.
 
-Sintaxis📖:
+Sintaxis  :
 
 ```javascript
 x < y
@@ -207,7 +207,7 @@ x < y
 5 < 2 // falso
 ```
 
-Ingrese los ejemplos uno por uno en la variable 🔔 `bool` de nuestro `LIVE EDITOR`
+Ingrese los ejemplos uno por uno en la variable  `bool` de nuestro `LIVE EDITOR`
 
 ```jsx live
 function learnJavaScript() {
@@ -220,9 +220,9 @@ function learnJavaScript() {
 
 ![comparison operator](https://media.giphy.com/media/icJA0VF7ntoEL18Jez/giphy.gif)
 
-El operador mayor que o igual devuelve 🔄 verdadero si el valor del operando de la izquierda es mayor o igual que el valor del operando de la derecha.
+El operador mayor que o igual devuelve  verdadero si el valor del operando de la izquierda es mayor o igual que el valor del operando de la derecha.
 
-Sintaxis📖:
+Sintaxis  :
 
 ```javascript
 x >= y
@@ -235,7 +235,7 @@ Ejemplos:
 3 >= 3 // verdadero
 ```
 
-Ingrese los ejemplos uno por uno en la variable 🔔 `bool` 👇:
+Ingrese los ejemplos uno por uno en la variable  `bool` :
 
 ```jsx live
 function learnJavaScript() {
@@ -248,9 +248,9 @@ function learnJavaScript() {
 
 ![less](https://media.giphy.com/media/UQbDc6dyK6WjpCXMvt/giphy.gif)
 
-El operador menor o igual devuelve 🔄 verdadero si el valor del operando de la izquierda es menor o igual que el valor del operando de la derecha.
+El operador menor o igual devuelve  verdadero si el valor del operando de la izquierda es menor o igual que el valor del operando de la derecha.
 
-Sintaxis📖:
+Sintaxis  :
 
 ```javascript
 x <= y
@@ -263,7 +263,7 @@ x <= y
 3 <= 3 // verdadero
 ```
 
-Ingrese los ejemplos uno por uno en la variable 🔔 `bool` 👇:
+Ingrese los ejemplos uno por uno en la variable  `bool` :
 
 ```jsx live
 function learnJavaScript() {
@@ -282,15 +282,15 @@ Debes estar pensando: "Bueno, todo este asunto de la lógica booleana era muy si
 
 ![thoughtful](https://media.giphy.com/media/IyyGGEMZhZIZwAxnUS/giphy.gif)
 
-¡Buena pregunta! Una construcción condicional es una oración que se usa para ejecutar ciertos bloques de código 📟 de acuerdo con una condición dada. La condición (por ejemplo, al comparar `x === y`) siempre devuelve🔄 un valor booleano, ya sea `true` ✅ o `false` ❎. En consecuencia, si el valor es `true` ✅, entonces se debe ejecutar el código; de lo contrario, se debe omitir el bloque de código📟. Veamos algunos ejemplos.
+¡Buena pregunta! Una construcción condicional es una oración que se usa para ejecutar ciertos bloques de código  de acuerdo con una condición dada. La condición (por ejemplo, al comparar `x === y`) siempre devuelve un valor booleano, ya sea `true`  o `false` . En consecuencia, si el valor es `true` , entonces se debe ejecutar el código; de lo contrario, se debe omitir el bloque de código. Veamos algunos ejemplos.
 
 ### Expresiones condicionales con `if`
 
 ![Instruction manual](https://media.giphy.com/media/2mDSs3gPUyrcMqtheg/giphy.gif)
 
-La construcción `si` ejecuta `instrucción1` si la condición es `true` ✅, si la condición es `false` ❎, entonces se ejecuta `instrucción2`.
+La construcción `si` ejecuta `instrucción1` si la condición es `true` , si la condición es `false` , entonces se ejecuta `instrucción2`.
 
-Sintaxis📖:
+Sintaxis  :
 
 ```javascript
 if (condición) {
@@ -304,10 +304,10 @@ if (condición) {
 Una expresión que es verdadera o falsa.
 
 `instrucción1` -
-La instrucción que se ejecutará si el valor de `condición` es verdadero `true` ✅ . Puede ser cualquier declaración, incluido `if` anidado. Cuando no se requiere ninguna acción, se puede usar una declaración vacía.
+La instrucción que se ejecutará si el valor de `condición` es verdadero `true`  . Puede ser cualquier declaración, incluido `if` anidado. Cuando no se requiere ninguna acción, se puede usar una declaración vacía.
 
 `instrucción2` -
-La instrucción a ejecutar si el valor de `condición` es falso `false`❎. Tal vez cualquier declaración, incluido `if` anidado. Las instrucciones también se pueden agrupar en un bloque. Cambie el año en la variable 🔔 `whatIsTheYearNow` y observe el resultado.
+La instrucción a ejecutar si el valor de `condición` es falso `false`. Tal vez cualquier declaración, incluido `if` anidado. Las instrucciones también se pueden agrupar en un bloque. Cambie el año en la variable  `whatIsTheYearNow` y observe el resultado.
 
 ```jsx live
 function learnJavaScript() {
@@ -327,13 +327,13 @@ function learnJavaScript() {
 
 ![No](https://media.giphy.com/media/ftqLysT45BJMagKFuk/giphy.gif)
 
-Las expresiones condicionales pueden funcionar no solo con valores booleanos, es decir, con aquellos que no son exactamente `true` ✅ o `false` ❎ Entonces, en general, podemos usarlos con seguridad entre paréntesis, al igual que los valores booleanos.
+Las expresiones condicionales pueden funcionar no solo con valores booleanos, es decir, con aquellos que no son exactamente `true`  o `false`  Entonces, en general, podemos usarlos con seguridad entre paréntesis, al igual que los valores booleanos.
 
-- Todos los enteros excepto cero — `true` ✅
-- Cadena con al menos un carácter `true` ✅
-- Una cadena vacía es `false` ❎
+- Todos los enteros excepto cero — `true` 
+- Cadena con al menos un carácter `true` 
+- Una cadena vacía es `false` 
 
-Intentémoslo, ingrese valores en la variable 🔔 `bool` 👇:
+Intentémoslo, ingrese valores en la variable  `bool` :
 
 ```jsx live
 function learnJavaScript() {
@@ -353,7 +353,7 @@ function learnJavaScript() {
 
 ![made for each other](https://media.giphy.com/media/6yxIP39EMwP7IlIA28/giphy.gif)
 
-Hasta ahora, hemos tratado con comparaciones o con expresiones condicionales con `if`, pero hasta ahora no las hemos usado juntas, ¡sino que están hechas 🏗️ la una para la otra!
+Hasta ahora, hemos tratado con comparaciones o con expresiones condicionales con `if`, pero hasta ahora no las hemos usado juntas, ¡sino que están hechas  la una para la otra!
 
 ```jsx live
 function learnJavaScript() {
@@ -500,7 +500,7 @@ Por ejemplo:
 
 El único operador en JavaScript que toma tres operandos: `condición` seguida de un signo de interrogación `?`, luego `expresión`, que se ejecuta si la condición es verdadera, seguida de dos puntos `:` y finalmente `expresión`, que se ejecuta si la condición es falsa. A menudo se usa como una versión abreviada de la declaración condicional `si`.
 
-Sintaxis📖:
+Sintaxis  :
 
 ```javascript
 condición ? expresión1 : expresión2
@@ -508,11 +508,11 @@ condición ? expresión1 : expresión2
 
 Opciones:
 
-`condición` - Una expresión que se evalúa como `true` ✅ o `false` ❎ .
+`condición` - Una expresión que se evalúa como `true`  o `false`  .
 
 `expresión1`, `expresión2` - Expresiones cuyos valores pueden pertenecer a cualquier tipo.
 
-Ejemplo 👇:
+Ejemplo :
 
 ```jsx live
 function learnJavaScript() {
@@ -716,7 +716,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <table>
   <tr>
-    <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /> <a href="https://github.com/gHashTag/react-native-village/commits?author=gHashTag" title="Documentation">📖</a><a href="#financial-gHashTag" title="Financial">💵</a></td>
+    <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /> <a href="https://github.com/gHashTag/react-native-village/commits?author=gHashTag" title="Documentation">  </a><a href="#financial-gHashTag" title="Financial">💵</a></td>
     <td align="center"><a href="https://github.com/Resoner2005"><img src="https://avatars1.githubusercontent.com/u/75675814?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Resoner2005</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/issues?q=author%3AResoner2005" title="Bug reports">🐛 🎨 🖋</a></td>
   </tr>
 

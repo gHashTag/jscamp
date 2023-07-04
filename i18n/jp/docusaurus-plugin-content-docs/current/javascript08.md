@@ -13,7 +13,7 @@ sidebar_label: 正しいか間違っているか？
 
 ![True](https://media.giphy.com/media/gLWLC3fjwG56p3H4uC/giphy.gif)
 
-間違いなく必要になるデータ型はブール値と呼ばれます `boolean`, または論理的。ブール型は常にどちらかが重要です `true` ✅ - true、または `false` ❎ - 誤り。そして、この方法だけで、他には何もありません！彼は嘘をついているか、真実を語っています-パンするか消えるか、ライトがオンかオフか、またはあるかどうか。あなたは宿題をしたか、しなかったかのどちらかです。 2️⃣の値は2つだけ `true` ✅ または `false`.
+間違いなく必要になるデータ型はブール値と呼ばれます `boolean`, または論理的。ブール型は常にどちらかが重要です `true`  - true、または `false`  - 誤り。そして、この方法だけで、他には何もありません！彼は嘘をついているか、真実を語っています-パンするか消えるか、ライトがオンかオフか、またはあるかどうか。あなたは宿題をしたか、しなかったかのどちらかです。 2️⃣の値は2つだけ `true`  または `false`.
 
 ## 等式演算子
 
@@ -21,7 +21,7 @@ sidebar_label: 正しいか間違っているか？
 
 ブール値は、で何かを比較する必要がある場合に便利です JavaScript. 必要に応じて、すぐに比較演算子を呼び出します。
 ここで、8つの比較演算子すべてを順番に調べますが、それぞれの結果として、私たちは気にしません。
-常にブール値が残ります-どちらか `true` ✅ , または `false` ❎ .
+常にブール値が残ります-どちらか `true`  , または `false`  .
 
 ### 同様に `==`
 
@@ -29,7 +29,7 @@ sidebar_label: 正しいか間違っているか？
 
 equals演算子は、最初にオペランドを同じ型にキャストしてから、厳密な比較を適用します。両方のオペランドがオブジェクトの場合、JavaScriptは、メモリ内の同じオブジェクトを参照している場合に等しい内部参照を比較します。
 
-構文📖:
+構文  :
 
 ```javascript
 x == y
@@ -46,7 +46,7 @@ x == y
 'foo' == 'bar' // 誤り
 ```
 
-例を1つずつ変数に入力します 🔔 `bool` 私たちの `LIVE EDITOR`
+例を1つずつ変数に入力します  `bool` 私たちの `LIVE EDITOR`
 
 ```jsx live
 function learnJavaScript() {
@@ -59,9 +59,9 @@ function learnJavaScript() {
 
 ![Equals](https://media.giphy.com/media/xT8qBit7YomT80d0M8/giphy.gif)
 
-オペレーターが戻らない🔄 `true` ✅ オペランドが等しくない場合。これは等式演算子に似ており、比較する前にオペランドを同じ型に変換します。両方のオペランドがオブジェクトの場合、 JavaScript メモリ内の異なるオブジェクトを参照している場合、等しくない内部参照を比較します。
+オペレーターが戻らない `true`  オペランドが等しくない場合。これは等式演算子に似ており、比較する前にオペランドを同じ型に変換します。両方のオペランドがオブジェクトの場合、 JavaScript メモリ内の異なるオブジェクトを参照している場合、等しくない内部参照を比較します。
 
-構文📖:
+構文  :
 
 ```javascript
 x != y
@@ -78,7 +78,7 @@ x != y
 'foo' != 'bar' // true
 ```
 
-例を1つずつ変数に入力します 🔔 `bool` 私たちの `LIVE EDITOR`
+例を1つずつ変数に入力します  `bool` 私たちの `LIVE EDITOR`
 
 ```jsx live
 function learnJavaScript() {
@@ -91,9 +91,9 @@ function learnJavaScript() {
 
 ![equality](https://media.giphy.com/media/4W0ZwRP8y7pQtcUMyQ/giphy.gif)
 
-演算子は🔄 オペランドが厳密に等しい場合はtrue。 equals演算子とは異なり、この演算子はオペランドを同じ型にキャストしません。
+演算子は オペランドが厳密に等しい場合はtrue。 equals演算子とは異なり、この演算子はオペランドを同じ型にキャストしません。
 
-構文📖:
+構文  :
 
 ```javascript
 x === y
@@ -109,7 +109,7 @@ x === y
 
 演算子は、値とタイプの両方が厳密に同一であることを確認します。の場合には `3 === '3'` もちろん、値は同じですが、型は異なります。結局のところ、最初は数値で、2番目は文字列です。
 
-例を1つずつ変数に入力します 🔔 `bool` エラー `LIVE EDITOR`
+例を1つずつ変数に入力します  `bool` エラー `LIVE EDITOR`
 
 ```jsx live
 function learnJavaScript() {
@@ -122,9 +122,9 @@ function learnJavaScript() {
 
 ![ruler](https://media.giphy.com/media/tPK9Fyl1gyIkU6XbZv/giphy.gif)
 
-厳密に等しくない演算子の戻り値🔄 オペランドが等しくない場合、またはそれらの型が互いに異なる場合はtrue。
+厳密に等しくない演算子の戻り値 オペランドが等しくない場合、またはそれらの型が互いに異なる場合はtrue。
 
-構文📖:
+構文  :
 
 ```javascript
 x !== y
@@ -137,7 +137,7 @@ x !== y
 4 !== 3 // true
 ```
 
-例を1つずつ変数に入力します 🔔 `bool` 私たちの `LIVE EDITOR`
+例を1つずつ変数に入力します  `bool` 私たちの `LIVE EDITOR`
 
 ```jsx live
 function learnJavaScript() {
@@ -146,7 +146,7 @@ function learnJavaScript() {
 }
 ```
 
-使ってみませんか `==` そして `!=`? しかし、一般的に、そのような必要性は決してないからです。あなたがそれらを使うことができるときはいつでも、あなたは常に厳格なものを使うことができます `===` そして `!==`. 回答にもっと柔軟性が必要な場合（たとえば、 `1`, そうと `'1'` そうと `true` ✅ ), 次に、コード自体に必要な回答オプションを含めることができます📟 （変更せずに `===`).
+使ってみませんか `==` そして `!=`? しかし、一般的に、そのような必要性は決してないからです。あなたがそれらを使うことができるときはいつでも、あなたは常に厳格なものを使うことができます `===` そして `!==`. 回答にもっと柔軟性が必要な場合（たとえば、 `1`, そうと `'1'` そうと `true`  ), 次に、コード自体に必要な回答オプションを含めることができます （変更せずに `===`).
 
 :::info ルールを理解するだけ
 絶対に使用しないでください `==` または `!=`
@@ -158,9 +158,9 @@ function learnJavaScript() {
 
 ![not equal](https://media.giphy.com/media/jPfQcPdmI9bTXpa7hi/giphy.gif)
 
-演算子は詳細を返します🔄 左側のオペランドの値が右側の値よりも大きい場合はtrue。
+演算子は詳細を返します 左側のオペランドの値が右側の値よりも大きい場合はtrue。
 
-構文📖:
+構文  :
 
 ```javascript
 x > y
@@ -173,7 +173,7 @@ x > y
 1 > 5 // 誤り
 ```
 
-例を1つずつ変数に入力します 🔔 `bool` に `LIVE EDITOR`
+例を1つずつ変数に入力します  `bool` に `LIVE EDITOR`
 
 ```jsx live
 function learnJavaScript() {
@@ -186,9 +186,9 @@ function learnJavaScript() {
 
 ![small](https://media.giphy.com/media/82tNeaMTlEsdW/giphy.gif)
 
-「バグ」という言葉🔄 「バグ」という言葉
+「バグ」という言葉 「バグ」という言葉
 
-構文📖:
+構文  :
 
 ```javascript
 x < y
@@ -201,7 +201,7 @@ x < y
 5 < 2 // 誤り
 ```
 
-例を1つずつ変数に入力します 🔔 `bool` 私たちの `LIVE EDITOR`
+例を1つずつ変数に入力します  `bool` 私たちの `LIVE EDITOR`
 
 ```jsx live
 function learnJavaScript() {
@@ -214,9 +214,9 @@ function learnJavaScript() {
 
 ![comparison operator](https://media.giphy.com/media/icJA0VF7ntoEL18Jez/giphy.gif)
 
-以上の演算子、戻り値🔄 左側のオペランドの値が右側のオペランドの値以上の場合。
+以上の演算子、戻り値 左側のオペランドの値が右側のオペランドの値以上の場合。
 
-構文📖:
+構文  :
 
 ```javascript
 x >= y
@@ -229,7 +229,7 @@ x >= y
 3 >= 3 // true
 ```
 
-例を1つずつ変数に入力します 🔔 `bool` 👇 :
+例を1つずつ変数に入力します  `bool`  :
 
 ```jsx live
 function learnJavaScript() {
@@ -242,9 +242,9 @@ function learnJavaScript() {
 
 ![less](https://media.giphy.com/media/UQbDc6dyK6WjpCXMvt/giphy.gif)
 
-以下の演算子、戻り値🔄 左側のオペランドの値が右側のオペランドの値以下の場合はtrue。
+以下の演算子、戻り値 左側のオペランドの値が右側のオペランドの値以下の場合はtrue。
 
-構文📖:
+構文  :
 
 ```javascript
 x <= y
@@ -257,7 +257,7 @@ x <= y
 3 <= 3 // true
 ```
 
-例を1つずつ変数に入力します 🔔 `bool` 👇 :
+例を1つずつ変数に入力します  `bool`  :
 
 ```jsx live
 function learnJavaScript() {
@@ -277,15 +277,15 @@ function learnJavaScript() {
 
 ![thoughtful](https://media.giphy.com/media/IyyGGEMZhZIZwAxnUS/giphy.gif)
 
-良い質問！条件文は、特定のコードブロックを実行するために使用される句です。📟 指定された条件に従って。状態（例えば、比較するとき`x === y`) 常に戻ります🔄 ブール値-どちらか `true` ✅ , または `false` ❎ . したがって、値が`true` ✅ , 次に、コードを実行する必要があります。それ以外の場合は、コードブロック📟をスキップする必要があります。いくつかの例を見てみましょう。
+良い質問！条件文は、特定のコードブロックを実行するために使用される句です。 指定された条件に従って。状態（例えば、比較するとき`x === y`) 常に戻ります ブール値-どちらか `true`  , または `false`  . したがって、値が`true`  , 次に、コードを実行する必要があります。それ以外の場合は、コードブロックをスキップする必要があります。いくつかの例を見てみましょう。
 
 ### の条件式 `if`
 
 ![Instruction manual](https://media.giphy.com/media/2mDSs3gPUyrcMqtheg/giphy.gif)
 
-設計 `if` 満たす `命令1`, 条件があれば `true` ✅, 条件があれば `false` ❎, その後、実行されます `命令2`.
+設計 `if` 満たす `命令1`, 条件があれば `true` , 条件があれば `false` , その後、実行されます `命令2`.
 
-構文📖:
+構文  :
 
 ```javascript
 if (調子) {
@@ -299,10 +299,10 @@ if (調子) {
 trueまたはfalseのいずれかの式。
 
 `コードで1` -
-値が `調子` 本当に `true` ✅ . ネストされたものを含む任意の命令にすることができます `if`. アクションが不要な場合は、空のステートメントを使用できます。
+値が `調子` 本当に `true`  . ネストされたものを含む任意の命令にすることができます `if`. アクションが不要な場合は、空のステートメントを使用できます。
 
 `コードで2` -
-値が `調子` 値が `false`❎ . ネストされた命令を含む、任意の命令にすることができます `if`. 命令はブロックにグループ化することもできます。変数で年を変更する 🔔 `whatIsTheYearNow`出力に注目してください.
+値が `調子` 値が `false` . ネストされた命令を含む、任意の命令にすることができます `if`. 命令はブロックにグループ化することもできます。変数で年を変更する  `whatIsTheYearNow`出力に注目してください.
 
 ```jsx live
 function learnJavaScript() {
@@ -322,13 +322,13 @@ function learnJavaScript() {
 
 ![No](https://media.giphy.com/media/ftqLysT45BJMagKFuk/giphy.gif)
 
-条件式は、ブール値だけでなく、正確でない値でも機能します。 `true` ✅ または `false` ❎ したがって、一般に、ブール値だけでなく、括弧内でも安全に使用できます。
+条件式は、ブール値だけでなく、正確でない値でも機能します。 `true`  または `false`  したがって、一般に、ブール値だけでなく、括弧内でも安全に使用できます。
 
-- ゼロを除くすべての整数 — `true` ✅
-- 少なくとも1文字の文字列 `true` ✅
-- 空の文字列は `false` ❎
+- ゼロを除くすべての整数 — `true` 
+- 少なくとも1文字の文字列 `true` 
+- 空の文字列は `false` 
 
-試してみましょう、値を変数に入れます 🔔 `bool` 👇 :
+試してみましょう、値を変数に入れます  `bool`  :
 
 ```jsx live
 function learnJavaScript() {
@@ -392,7 +392,7 @@ function learnJavaScript() {
 
 3つのオペランドを受け入れる唯一のJavaScript演算子: `調子`, 疑問符が続きます `?`, その後 `表現`, 条件が真の場合は真で、その後にコロンが続きます `:`,そして最後に, `表現`, これは、条件がfalseの場合にtrueになります。条件文の省略形としてよく使用されます `if`.
 
-構文📖:
+構文  :
 
 ```javascript
 調子 ? 表現1 : 表現2
@@ -400,11 +400,11 @@ function learnJavaScript() {
 
 パラメーター:
 
-`調子` - 価値を帯びる表現 `true` ✅ または `false` ❎ .
+`調子` - 価値を帯びる表現 `true`  または `false`  .
 
 `式1`, `式2` - 値が任意のタイプである可能性がある式.
 
-例 👇 :
+例  :
 
 ```jsx live
 function learnJavaScript() {
@@ -500,7 +500,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <table>
   <tr>
-    <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /> <a href="https://github.com/gHashTag/react-native-village/commits?author=gHashTag" title="Documentation">📖</a><a href="#financial-gHashTag" title="Financial">💵</a></td>
+    <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /> <a href="https://github.com/gHashTag/react-native-village/commits?author=gHashTag" title="Documentation">  </a><a href="#financial-gHashTag" title="Financial">💵</a></td>
     <td align="center"><a href="https://github.com/Resoner2005"><img src="https://avatars1.githubusercontent.com/u/75675814?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Resoner2005</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/issues?q=author%3AResoner2005" title="Bug reports">🐛 🎨 🖋</a></td>
   </tr>
   

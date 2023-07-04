@@ -46,7 +46,7 @@ function learnJavaScript() {
 }
 ```
 
-注意反斜杠 `\` 僅用於解釋器正確讀取字符串，但未編寫 🖊️ 讀取後的字符串。 當字符串保存到主存儲器中時`\` 字符未添加到其中。 您可以在調查結果中清楚地看到這一點。
+注意反斜杠 `\` 僅用於解釋器正確讀取字符串，但未編寫  讀取後的字符串。 當字符串保存到主存儲器中時`\` 字符未添加到其中。 您可以在調查結果中清楚地看到這一點。
 
 ## 反引號
 
@@ -54,7 +54,7 @@ function learnJavaScript() {
 
 在編寫字符串時，您可以使用 \ `back \` 引號
 
-單引號和雙引號的工作方式基本上相同，如果使用反引號，則可以通過將花括號括起來的美元符號將任意JavaScript表達式插入這樣的字符串中 `$ {...}` 👇:
+單引號和雙引號的工作方式基本上相同，如果使用反引號，則可以通過將花括號括起來的美元符號將任意JavaScript表達式插入這樣的字符串中 `$ {...}` :
 
 ```jsx live
 function learnJavaScript() {
@@ -90,7 +90,7 @@ guestList // multi-line guest list
 
 ![Tree](https://media.giphy.com/media/YxlUxrYGw2w9y/giphy.gif)
 
-JavaScript中字符串的內容無法更改。 您不能將符號放在中間並替換它。 一旦創建了一個字符串-️-就像那樣永遠。🏗️ 您可以創建一個新字符串並將其寫入相同的變量，而不是舊的變量。
+JavaScript中字符串的內容無法更改。 您不能將符號放在中間並替換它。 一旦創建了一個字符串-️-就像那樣永遠。 您可以創建一個新字符串並將其寫入相同的變量，而不是舊的變量。
 
 ```jsx live
 function learnJavaScript() {
@@ -236,7 +236,7 @@ Channel in [Discord](https://discord.gg/6GDAfXn) after paying on [Patreon](https
 2.寫特殊字符
 3.結束行
 
-找到有錯誤的行🙅‍♂️
+找到有錯誤的行
 
 1. let str = \ `It's not complicated \`
 2. let str = "'I think so, indeed!' - cried he. "
@@ -291,7 +291,7 @@ Channel in [Discord](https://discord.gg/6GDAfXn) after paying on [Patreon](https
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/Alena-Maitri"><img src="https://avatars1.githubusercontent.com/u/72432063?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Alena Yanbukhtina</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/commits?author=Alena-Maitri" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/Alena-Maitri"><img src="https://avatars1.githubusercontent.com/u/72432063?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Alena Yanbukhtina</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/commits?author=Alena-Maitri" title="Documentation">  </a></td>
     <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /><a href="#financial-gHashTag" title="Financial">💵</a></td>
     <td align="center"><a href="https://github.com/Resoner2005"><img src="https://avatars1.githubusercontent.com/u/75675814?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Resoner2005</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/issues?q=author%3AResoner2005" title="Bug reports">🐛 🎨 🖋</a></td>
   </tr>

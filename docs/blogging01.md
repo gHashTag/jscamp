@@ -83,7 +83,7 @@ This lesson has collected many of the conventions that surround us everywhere an
 ## Objects
 
 This is one of the most extensive English topics in the JS Camp mobile app 🦄
-Here are collected the most popular words with the names of objects that surround a person in the modern world: technology 🖥, cinema 🎞, money 💰 - you can find all this in our mobile application JS Camp 🦄
+Here are collected the most popular words with the names of objects that surround a person in the modern world: technology     , cinema 🎞, money 💰 - you can find all this in our mobile application JS Camp 🦄
 
 <YouTube videoId='0zIsDnmfqfQ' />
 
@@ -106,7 +106,7 @@ When learning English, you need to know how to specify the exact time of day.
 
 ## People
 
-This topic will give you a broader understanding of the age characteristics of a person 👶 👵🏾, people's professions 👩‍🎨 👨‍🚀, introduce you to some fairy-tale characters 🧜‍♀ 🦸🏻‍♂ and help you learn gestures 🤞👌🏻 in English in a mobile application JS Camp 🦄
+This topic will give you a broader understanding of the age characteristics of a person 👶 👵🏾, people's professions 👩‍🎨 ‍, introduce you to some fairy-tale characters 🧜‍♀ 🦸🏻‍♂ and help you learn gestures 🤞👌🏻 in English in a mobile application JS Camp 🦄
 
 <YouTube videoId='9nITEQEKBxs' />
 

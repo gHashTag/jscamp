@@ -31,7 +31,7 @@ function learnJavaScript() {
 
 ![basketball](https://media.giphy.com/media/3oEdv5e5Zd2gsczAhG/giphy.gif)
 
-如果沒有其他值 `undefined` 在調用期間被傳遞給形式參數，包括“ false”值之一，例如false ❎,`0`, `" "`, `''`, `null`,`NaN`, 那麼在這種情況下，默認值將不會分配給該參數。 在這種情況下，您需要自己編寫代碼來捕獲這些“假值”。
+如果沒有其他值 `undefined` 在調用期間被傳遞給形式參數，包括“ false”值之一，例如false ,`0`, `" "`, `''`, `null`,`NaN`, 那麼在這種情況下，默認值將不會分配給該參數。 在這種情況下，您需要自己編寫代碼來捕獲這些“假值”。
 
 ## 示例
 
@@ -49,7 +49,7 @@ function learnJavaScript() {
 }
 ```
 
-有或沒有默認參數的函數示例 👇:
+有或沒有默認參數的函數示例 :
 
 ```jsx live
 function learnJavaScript() {
@@ -75,7 +75,7 @@ function learnJavaScript() {
 }
 ```
 
-結果將是相同的，但是如果沒有默認參數，代碼📟可能會變得明顯更大。
+結果將是相同的，但是如果沒有默認參數，代碼可能會變得明顯更大。
 
 ## 問題？
 
@@ -120,7 +120,7 @@ function learnJavaScript() {
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/FELiX-RN"><img src="https://avatars0.githubusercontent.com/u/72006627?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Philipp Dvinyaninov</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/commits?author=FELiX-RN" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/FELiX-RN"><img src="https://avatars0.githubusercontent.com/u/72006627?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Philipp Dvinyaninov</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/commits?author=FELiX-RN" title="Documentation">  </a></td>
     <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /><a href="#financial-gHashTag" title="Financial">💵</a></td>
     <td align="center"><a href="https://github.com/Resoner2005"><img src="https://avatars1.githubusercontent.com/u/75675814?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Resoner2005</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/issues?q=author%3AResoner2005" title="Bug reports">🐛 🎨 🖋</a></td>
     <td align="center"><a href="https://github.com/Navernoss"><img src="https://avatars0.githubusercontent.com/u/75784137?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Navernoss</b></sub></a><br /><a href="#content-Navernoss" title="Content">🖋 🐛 🎨 </a></td>

@@ -37,7 +37,7 @@ function learnJavaScript() {
 
 ![Higher](https://media.giphy.com/media/WS4yajVBkb3lIwDIKd/giphy.gif)
 
-這些是將函數⚙️作為參數或返回函數🔄️作為輸出的函數⚙️。
+這些是將函數⚙️作為參數或返回函數️作為輸出的函數⚙️。
 
 例如，這些高階函數內置在該語言中： `map()` `filter()` 和 `reduce()`
 
@@ -45,7 +45,7 @@ function learnJavaScript() {
 
 ![Edit_number](https://media.giphy.com/media/xT5LMMneIRG1UJquOI/giphy.gif)
 
-假設我們有一個數字數組。 我們要創建一個新的 🆕 數組，其中將包含第一個數組的兩倍值。 讓我們看看如何使用和不使用高階函數來解決此問題。
+假設我們有一個數字數組。 我們要創建一個新的    數組，其中將包含第一個數組的兩倍值。 讓我們看看如何使用和不使用高階函數來解決此問題。
 
 #### 沒有高階函數：
 
@@ -119,7 +119,7 @@ function learnJavaScript() {
 }
 ```
 
-我們在一行鱈魚中刷新 🆕 一個新數組e📟.
+我們在一行鱈魚中刷新    一個新數組e.
  
 ### 例子 # 3. 有條件檢查 `.filter()`
 
@@ -195,14 +195,14 @@ function learnJavaScript() {
 }
 ```
 
-在上面的示例中，我們創建了自己的高階函數 `mapFor()`, 這需要一個數組 `arr` 和一個回調函數 `fn`. 該函數遍歷此數組並調用回調函數 `fn` 在 - 的里面 `newArray.push()` f或每次迭代，計算數組單詞中的字符數，其計算算法以第二個變量的形式描述 🔔.
+在上面的示例中，我們創建了自己的高階函數 `mapFor()`, 這需要一個數組 `arr` 和一個回調函數 `fn`. 該函數遍歷此數組並調用回調函數 `fn` 在 - 的里面 `newArray.push()` f或每次迭代，計算數組單詞中的字符數，其計算算法以第二個變量的形式描述 .
 
 ::: 筆記回調
 回調函數是作為參數傳遞給另一個函數的函數，然後在完成操作後調用該函數。
 
 :::
 
-`callback` 功能 ⚙️ `fn` 獲取數組的當前元素並返回🔄當前元素的長度，該長度現在存儲在 `newArray`. 之後 `For()` 循環完成, `newArray` 返回元素的長度 `lenArray`.
+`callback` 功能 ⚙️ `fn` 獲取數組的當前元素並返回當前元素的長度，該長度現在存儲在 `newArray`. 之後 `For()` 循環完成, `newArray` 返回元素的長度 `lenArray`.
 
 <!-- Поэксперементируйте, используя стрелочные функции:
 
@@ -221,13 +221,13 @@ function learnJavaScript() {
 }
 ```
 
-Обратите внимание на синтаксис📖:
+Обратите внимание на синтаксис  :
 
 при передаче функции⚙️ say в качестве параметра скобки `()` не указываются, т.к. в параметре функция⚙️ не вызывается, а передается целиком. Функция⚙️ `say` является аргументом функции⚙️ `userInput().` -->
 
 請記住，任何算法，無論多麼小，都包括三個階段：
 
--階段1-變量🔔和函數的初始化
+-階段1-變量和函數的初始化
 -階段2-高階函數（邏輯）
 -階段3-答案的結論。
 
@@ -303,7 +303,7 @@ function learnJavaScript() {
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/KoDim-React"><img src="https://avatars1.githubusercontent.com/u/72087863?v=4?s=200" width="200px " alt=""/><br /><sub><b>Dmitriy K.</b></sub></a><br /><a href="#mentoring-KoDim-React" title="Mentoring">📖</a></td>
+    <td align="center"><a href="https://github.com/KoDim-React"><img src="https://avatars1.githubusercontent.com/u/72087863?v=4?s=200" width="200px " alt=""/><br /><sub><b>Dmitriy K.</b></sub></a><br /><a href="#mentoring-KoDim-React" title="Mentoring">  </a></td>
     <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px " alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /><a href="#financial-gHashTag" title="Financial">💵</a></td>
     <td align="center"><a href="https://github.com/Resoner2005"><img src="https://avatars1.githubusercontent.com/u/75675814?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Resoner2005</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/issues?q=author%3AResoner2005" title="Bug reports">🐛 🎨 🖋</a></td>
     <td align="center"><a href="https://github.com/Navernoss"><img src="https://avatars0.githubusercontent.com/u/75784137?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Navernoss</b></sub></a><br /><a href="#content-Navernoss" title="Content">🖋 🐛 🎨 </a></td>

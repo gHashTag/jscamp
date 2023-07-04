@@ -6,7 +6,7 @@ sidebar_label: Objects
 
 ![@serverSerrverlesskiy](/img/javascript/headers/11.jpg)
 
-Objects are like a closet📦 for storing and transporting other types of data.
+Objects are like a closet for storing and transporting other types of data.
 JavaScript is designed around a simple paradigm. The concept is based on simple objects. An object is a collection of properties, and each property consists of a name (key) and a value associated with that name. The property value can be a function⚙️, which can be called a method of an object, or any other type.
 
 ![Object](https://media.giphy.com/media/xTiTnFEfyt0vqhQzDi/giphy.gif)
@@ -15,7 +15,7 @@ In this article, we'll cover the most basic properties of JavaScript objects, cr
 
 An object in JavaScript is a simple associative array or, in other words, a "hash". It stores any key: value matches and has several standard methods.
 
-Objects in JavaScript, like objects in real life (a person👨, a bus, a building, etc.) have several named (key🗝️) parameters (age, name, hair color, status) with specific values (15, John, black, 'true') ✅:
+Objects in JavaScript, like objects in real life (a person, a bus, a building, etc.) have several named (key🗝️) parameters (age, name, hair color, status) with specific values (15, John, black, 'true') :
 
 ```javascript
 let obj = {
@@ -45,11 +45,11 @@ function learnJavaScript() {
 
 ![Object](https://media.giphy.com/media/2YaKpvYQEcl1WuJJTl/giphy.gif)
 
-In a computer🖥️ we can represent an `object` as a cabinet with names-properties (`access keys`) signed on it. Inside the cabinet📦 drawers🧰 - data (specific information) and even smaller objects, by analogy with things. It is easy to find, delete or add (write) a new value to it by the `key`.
+In a computer    ️ we can represent an `object` as a cabinet with names-properties (`access keys`) signed on it. Inside the cabinet drawers - data (specific information) and even smaller objects, by analogy with things. It is easy to find, delete or add (write) a new value to it by the `key`.
 
 ![obj01](/img/javascript/12/01.png)
 
-These are two 2️⃣ options for creating🏗️ an empty object:
+These are two 2️⃣ options for creating an empty object:
 
 ```javascript
 // equivalent records
@@ -85,7 +85,7 @@ function learnJavaScript() {
 }
 ```
 
-The created🏗️ object contains five properties with specific values, one of which is passport data, which is a built-in object. Notice how the call to distant properties or methods of the object goes. Try to return your passport number.
+The created object contains five properties with specific values, one of which is passport data, which is a built-in object. Notice how the call to distant properties or methods of the object goes. Try to return your passport number.
 
 ## Adding properties
 
@@ -111,14 +111,14 @@ function learnJavaScript() {
 }
 ```
 
-Square brackets are mainly used when the `properties' name is in a` variable` 🔔:
+Square brackets are mainly used when the `properties' name is in a` variable` :
 
 ```javascript
 let nameProp = 'age'
 obj[nameProp] = 15
 ```
 
-Here, through the variable 🔔 `nameProp`, we set the name of the property`"age"`, which is the key in the associative array that contains` value 15`.
+Here, through the variable  `nameProp`, we set the name of the property`"age"`, which is the key in the associative array that contains` value 15`.
 
 ```jsx live
 function learnJavaScript() {
@@ -137,7 +137,7 @@ function learnJavaScript() {
 
 ![Door](https://media.giphy.com/media/l378znZcUM7b6VDyM/giphy.gif)
 
-The property is accessed by accessing it 👇:
+The property is accessed by accessing it :
 
 ```jsx live
 function learnJavaScript() {
@@ -160,13 +160,13 @@ obj.nokey
 
 ![nokey](/img/javascript/15.jpg)
 
-There will be no error🙅‍♂️ when accessing a property that does not exist, the special value `undefined` will simply return. If there is no `return` keyword inside the function, then the` undefined` value will also return - the absence of something.
+There will be no error when accessing a property that does not exist, the special value `undefined` will simply return. If there is no `return` keyword inside the function, then the` undefined` value will also return - the absence of something.
 
 <!-- ## Проверка глобальной переменной
 
 ![Planet](https://media.giphy.com/media/LW5vBvAb48Oe9OoEKT/giphy.gif)
 
-В JavaScript нельзя проверить существование глобальной переменной 🔔 простым `if(проверяемаяПеременная)`:
+В JavaScript нельзя проверить существование глобальной переменной  простым `if(проверяемаяПеременная)`:
 
 ```javascript
     if (x) { ... }
@@ -194,7 +194,7 @@ There will be no error🙅‍♂️ when accessing a property that does not exis
 Все свойства объектов - public (общественные), т.е при определении свойства никак нельзя ограничить доступ к свойству.
 :::
 
-В JavaScript есть специальные способы для создания🏗️ `private` свойств, связанные с `замыканиями`. Они рассмотрены вместе с наследованием объектов далее по курсу. -->
+В JavaScript есть специальные способы для создания `private` свойств, связанные с `замыканиями`. Они рассмотрены вместе с наследованием объектов далее по курсу. -->
 
 ## Removing properties
 
@@ -236,7 +236,7 @@ obj.passport
 
 ![Description](https://media.giphy.com/media/3ohzAqLk7azQ0O6RvW/giphy.gif)
 
-As with other languages👅, JavaScript objects have `methods`.
+As with other languages , JavaScript objects have `methods`.
 
 For example, let's create a `sport` object right away with the` run` method:
 
@@ -290,7 +290,7 @@ function learnJavaScript() {
 }
 ```
 
-Подумайте, чем можно заменить множественный `if()`. JavaScript - очень динамический язык👅. -->
+Подумайте, чем можно заменить множественный `if()`. JavaScript - очень динамический язык . -->
 
 ## Looping through object properties
 
@@ -306,7 +306,7 @@ for(let key in obj) {
 }
 ```
 
-For example 👇:
+For example :
 
 ```jsx live
 function learnJavaScript() {
@@ -326,7 +326,7 @@ function learnJavaScript() {
 }
 ```
 
-And secretly, to be honest, almost any variable 🔔 is a mini-object in the JavaScript environment. So, don't be afraid to use them.
+And secretly, to be honest, almost any variable  is a mini-object in the JavaScript environment. So, don't be afraid to use them.
 
  [![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)
 
@@ -391,7 +391,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/KoDim-React"><img src="https://avatars1.githubusercontent.com/u/72087863?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy K.</b></sub></a><br /><a href="#mentoring-KoDim-React" title="Mentoring">📖</a></td>
+    <td align="center"><a href="https://github.com/KoDim-React"><img src="https://avatars1.githubusercontent.com/u/72087863?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy K.</b></sub></a><br /><a href="#mentoring-KoDim-React" title="Mentoring">  </a></td>
     <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /><a href="#financial-gHashTag" title="Financial">💵</a></td>
     <td align="center"><a href="https://github.com/Resoner2005"><img src="https://avatars1.githubusercontent.com/u/75675814?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Resoner2005</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/issues?q=author%3AResoner2005" title="Bug reports">🐛 🎨 🖋</a></td>
     <td align="center"><a href="https://github.com/Navernoss"><img src="https://avatars0.githubusercontent.com/u/75784137?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Navernoss</b></sub></a><br /><a href="#content-Navernoss" title="Content">🖋 🐛 🎨 </a></td>

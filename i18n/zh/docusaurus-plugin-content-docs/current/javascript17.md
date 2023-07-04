@@ -16,7 +16,7 @@ sidebar_label: 數組
 
 ![create](https://media.giphy.com/media/3oEduXdm2gjnrsJBOo/giphy.gif)
 
-2️⃣  有用於創建空數組的選項：🏗️
+2️⃣  有用於創建空數組的選項：
 
 ```javascript
 let arr = new Array(5)
@@ -36,7 +36,7 @@ function learnJavaScript() {
 
 數組元素從零開始編號
 
-我們可以通過在方括號中指定其編號來獲取元素👇:
+我們可以通過在方括號中指定其編號來獲取元素:
 
 ```jsx live
 function learnJavaScript() {
@@ -46,13 +46,13 @@ function learnJavaScript() {
 }
 ```
 
-我們可以替換🖊️元素:
+我們可以替換元素:
 
 ```javascript
 fruits[2] = 'Plum' // now ["Apple", "Orange", "Plum"]
 ```
 
-... 或在現有陣列上添加一個新的 👇:
+... 或在現有陣列上添加一個新的 :
 
 ```jsx live
 function learnJavaScript() {
@@ -80,7 +80,7 @@ function learnJavaScript() {
 
 ![Update](https://media.giphy.com/media/FP47IFqWyXfdKYU6VG/giphy.gif)
 
-例如，唯一的具有大索引的實元素為數組提供最大可能的長度 👇:
+例如，唯一的具有大索引的實元素為數組提供最大可能的長度 :
 
 ```jsx live
 function learnJavaScript() {
@@ -95,7 +95,7 @@ function learnJavaScript() {
 
 關於 `length` 屬性是它可以被覆蓋。
 
-如果我們手動增加➕，則不會發生任何有趣的事情。 但是，如果我們減少它，數組將變短。 我們可以從示例中了解到，這個過程是不可逆的 👇:
+如果我們手動增加➕，則不會發生任何有趣的事情。 但是，如果我們減少它，數組將變短。 我們可以從示例中了解到，這個過程是不可逆的 :
 
 ```jsx live
 function learnJavaScript() {
@@ -117,9 +117,9 @@ function learnJavaScript() {
 
 ![Storage](https://media.giphy.com/media/2sYaePC3iVWYBNxaVj/giphy.gif)
 
-數組可以存儲任何類型的📦元素-數字，布爾值，字符串，對像或整個函數：
+數組可以存儲任何類型的元素-數字，布爾值，字符串，對像或整個函數：
 
-例如 👇:
+例如 :
 
 ```jsx live
 function learnJavaScript() {
@@ -172,7 +172,7 @@ function learnJavaScript() {
 
 ![Add to](https://media.giphy.com/media/21ODeWspDCgZNAoCIp/giphy.gif)
 
-➕ 將元素添加到數組的末尾👇:
+➕ 將元素添加到數組的末尾:
 
 ```jsx live
 function learnJavaScript() {
@@ -188,7 +188,7 @@ function learnJavaScript() {
 
 ![Delete](https://media.giphy.com/media/26ybwwiZmci3DJdYs/giphy.gif)
 
-➖ 從數組中刪除最後一個元素並返回它 👇:
+➖ 從數組中刪除最後一個元素並返回它 :
 
 ```jsx live
 function learnJavaScript() {
@@ -206,7 +206,7 @@ function learnJavaScript() {
 
 ### 轉移
 
-➖  從數組中刪除第一個並返回 🔄 :
+➖  從數組中刪除第一個並返回  :
 
 ![delete](https://media.giphy.com/media/4Z1XJumqDgvI9b1VZJ/giphy.gif)
 
@@ -236,7 +236,7 @@ function learnJavaScript() {
 }
 ```
 
-`push` 和 `unshift` 方法可以一次添加多個元素 👇:
+`push` 和 `unshift` 方法可以一次添加多個元素 :
 
 ```jsx live
 function learnJavaScript() {
@@ -259,7 +259,7 @@ function learnJavaScript() {
 
 請記住，在JavaScript中，數組是一個對象，因此其行為類似於對象。
 
-例如，數組通過引用複制 👇:
+例如，數組通過引用複制 :
 
 ```jsx live
 function learnJavaScript() {
@@ -341,7 +341,7 @@ pop方法不需要移動。 這就是為什麼它運行非常快的原因。
 
 ![Object](https://media.giphy.com/media/26gs9kSN6d5PxSsQU/giphy.gif)
 
-迭代數組元素的最古老方法之一是 `for ()` 遍歷數字索引 👇:
+迭代數組元素的最古老方法之一是 `for ()` 遍歷數字索引 :
 
 ```jsx live
 // prettier-ignore
@@ -356,7 +356,7 @@ function learnJavaScript() {
 }
 ```
 
-但是數組也可以使用另一種循環形式， `for..of` 👇:
+但是數組也可以使用另一種循環形式， `for..of` :
 
 ```jsx live
 function learnJavaScript() {
@@ -379,7 +379,7 @@ function learnJavaScript() {
 
 В браузере и других программных средах также существуют так называемые "псевдомассивы" – объекты, которые выглядят, как массив. То есть, у них есть свойство `length` и индексы, но они также могут иметь дополнительные нечисловые свойства и методы, которые нам обычно не нужны. Тем не менее, цикл `for..in` выведет и их. Поэтому, если нам приходится иметь дело с объектами, похожими на массив, такие "лишние" свойства могут стать проблемой.
 
-Технически, так как массив является объектом, можно использовать и вариант `for..in` для правильного массива 👇 :
+Технически, так как массив является объектом, можно использовать и вариант `for..in` для правильного массива  :
 
 ```jsx live
 function learnJavaScript() {
@@ -404,7 +404,7 @@ function learnJavaScript() {
 
 ![Matryoschka](https://media.giphy.com/media/XuPaGVKyJ6eyI/giphy.gif)
 
-數組可以包含也是數組的元素。 這可以用於創建омер多維數組，例如，存儲📦矩陣：
+數組可以包含也是數組的元素。 這可以用於創建омер多維數組，例如，存儲矩陣：
 
 ```jsx live
 function learnJavaScript() {
@@ -424,7 +424,7 @@ function learnJavaScript() {
 
 數組是一種特殊類型的對象，旨在與一組有序元素一起使用。
 
-公告🗣️:
+公告:
 
 ```javascript
 // square brackets (usually)
@@ -448,7 +448,7 @@ length屬性反映了數組的長度。
 要遍歷數組的元素：
 
 - `for (let i = 0 i < arr.length i ++)` - 工作最快，與舊版瀏覽器兼容。
-- `for (let item of arr)` - 現代語法📖僅適用於項目值（無法訪問索引）。
+- `for (let item of arr)` - 現代語法  僅適用於項目值（無法訪問索引）。
 - `for (let i in arr)` - 永遠不要用於數組！
 
 ## 問題？
@@ -517,7 +517,7 @@ length屬性反映了數組的長度。
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/KoDim-React"><img src="https://avatars1.githubusercontent.com/u/72087863?v=4?s=200" width="200px " alt=""/><br /><sub><b>Dmitriy K.</b></sub></a><br /><a href="#mentoring-KoDim-React" title="Mentoring">📖</a></td>
+    <td align="center"><a href="https://github.com/KoDim-React"><img src="https://avatars1.githubusercontent.com/u/72087863?v=4?s=200" width="200px " alt=""/><br /><sub><b>Dmitriy K.</b></sub></a><br /><a href="#mentoring-KoDim-React" title="Mentoring">  </a></td>
     <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px " alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /><a href="#financial-gHashTag" title="Financial">💵</a></td>
     <td align="center"><a href="https://github.com/Resoner2005"><img src="https://avatars1.githubusercontent.com/u/75675814?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Resoner2005</b></sub></a><br /><a href="https://github.com/gHashTag/react-native-village/issues?q=author%3AResoner2005" title="Bug reports">🐛 🎨 🖋</a></td>
     <td align="center"><a href="https://github.com/Navernoss"><img src="https://avatars0.githubusercontent.com/u/75784137?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Navernoss</b></sub></a><br /><a href="#content-Navernoss" title="Content">🖋 🐛 🎨 </a></td>

@@ -95,8 +95,8 @@ Don't call hooks inside loops, conditionals, or nested functions. Instead, alway
 
 Don't call hooks from regular JavaScript functions. Instead, you can:
 
-- ✅ Call hooks from a functional React component.
-- ✅ Call hooks from a custom hook.
+-  Call hooks from a functional React component.
+-  Call hooks from a custom hook.
   By following this rule, you can ensure that all of the component state logic is clearly visible from the source code.
 
 To follow the rules of hooks, use the [ESLint plugin](https://ru.reactjs.org/docs/hooks-rules.html#eslint-plugin)
@@ -153,7 +153,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <table>
   <tr>
-    <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /> <a href="https://github.com/gHashTag/react-native-village/commits?author=gHashTag" title="Documentation">📖💲</a></td>
+    <td align="center"><a href="https://fullstackserverless.github.io/"><img src="https://avatars0.githubusercontent.com/u/6774813?v=4?s=200" width="200px;" alt=""/><br /><sub><b>Dmitriy Vasilev</b></sub></a><br /> <a href="https://github.com/gHashTag/react-native-village/commits?author=gHashTag" title="Documentation">  💲</a></td>
   </tr>
 </table>
 
