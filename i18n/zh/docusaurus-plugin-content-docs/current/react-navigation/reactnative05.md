@@ -19,7 +19,7 @@ const StackScreen = () => {
         name="Home"
         component={HomeScreen}
         options={{
-          headerTitle: props => <LogoTitle {...props} />,
+          headerTitle: props => <LogoTitle />,
           headerRight: () => (
             <Button
               onPress={() => alert('This is a button!')}
@@ -51,7 +51,7 @@ const StackScreen = () => {
         name="Home"
         component={HomeScreen}
         options={({ navigation, route }) => ({
-          headerTitle: props => <LogoTitle {...props} />
+          headerTitle: props => <LogoTitle />
         })}
       />
     </Stack.Navigator>
