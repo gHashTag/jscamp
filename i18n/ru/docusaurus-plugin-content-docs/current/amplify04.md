@@ -473,7 +473,7 @@ const JobAdd = ({ route, navigation }) => {
             {check && (
               <>
                 <Space height={10} />
-                <ButtonLink title="or" textStyle={{ alignSelf: 'center' }} />
+                <ButtonLink title="or"  }} />
                 <Space height={15} />
                 <Button title="DELETE" onPress={deleteJob} cancel />
               </>
