@@ -11,23 +11,25 @@ Now that we know how to customize the look and feel of our headers, let's make t
 The most common way to interact with a heading is to click the button to the left or right of the heading. Let's add a button to the right side of the header (one of the hardest places to tap on the entire screen, depending on your finger and phone size, but also a normal place to place buttons).
 
 
-```
+```jsx
+const screenOptions = {
+  headerTitle: props => <LogoTitle />,
+  headerRight: () => (
+    <Button
+      onPress={() => console.log('This is a button!')}
+      title="Info"
+      color="#fff"
+    />
+  ),
+};
+
 const StackScreen = () => {
   return (
     <Stack.Navigator>
       <Stack.Screen
         name="Home"
         component={HomeScreen}
-        options={{
-          headerTitle: props => <LogoTitle />,
-          headerRight: () => (
-            <Button
-              onPress={() => console.log('This is a button!')}
-              title="Info"
-              color="#fff"
-            />
-          ),
-        }}
+        options={screenOptions}
       />
     </Stack.Navigator>
   );
