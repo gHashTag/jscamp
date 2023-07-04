@@ -132,7 +132,7 @@ const StackScreen = () => {
       <Stack.Screen
         name="Home"
         component={HomeScreen}
-        options={{ headerTitle: props => <LogoTitle {...props} /> }}
+        options=options={{ headerTitle: props => <LogoTitle /> }} /> }}
       />
     </Stack.Navigator>
   )
