@@ -19,7 +19,7 @@ import YouTube from 'react-youtube'
 - Teamlead'а 🧙‍♂️, これは
   どこでも上に
   そして一つには見事に-
-  これは 5️⃣ 人!!
+  これは 5️⃣ 人!
 
 ![Hello World](https://media.giphy.com/media/jTICSwJwDz3wa1PQmk/giphy.gif)
 
