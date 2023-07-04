@@ -116,7 +116,7 @@ Now any screen owned by `StackScreen` will have our great branding. Surely there
 
 Sometimes you need more control than just changing the text and heading styles - for example, you might want to display an image instead of a heading, or turn the heading into a button. In these cases, you can completely override the component used for the header and provide your own.
 
-```jsx
+```
 const LogoTitle = () => {
   return (
     <Image
