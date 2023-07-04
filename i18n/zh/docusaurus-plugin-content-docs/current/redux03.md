@@ -136,4 +136,4 @@ export function HomeScreen({ navigation }) {
 
 我们学习了如何使用Redux ToolKit查询从服务器获取远程数据！
 
-[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)

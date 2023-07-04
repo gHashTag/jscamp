@@ -118,6 +118,8 @@ JS Camp 🦄 will help you study natural phenomena 🌦, landscapes 🏞, flora 
 
 <YouTube videoId='Ncy7chtb0CM' />
 
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)
+
 ## Links
 
 [Discord](https://discord.gg/6GDAfXn)
@@ -147,4 +149,4 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
+

@@ -100,6 +100,8 @@ QuantumPerson = { name: string; age: number; }
 В TS- Tuple (Кортеж данных) - это последовательность значений- Особености:   - Tuple объявляется с помощью TypeScript с определенным количеством элементов и указывает тип для каждого элементаlet myTuple: [dataType1, dataType2, dataTypeN] = [value1, value2, valueN]  - Начальным значением должен быть массив с тем же количеством элементов, что и в описании типа
 
 
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)
+
 ## Проблемы?
 
 ![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)

@@ -317,7 +317,7 @@ JavaScript 沒有這種語言，看起來像是最好的函數式編程語言！
 
 為了了解您學到了多少本課程，請對 [mobile application](http://onelink.to/njhc95) of our school on this topic.
 
-![JS Camp](/img/app.jpg)
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)
 
 ## 鏈接
 
@@ -347,4 +347,4 @@ JavaScript 沒有這種語言，看起來像是最好的函數式編程語言！
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)

@@ -287,6 +287,8 @@ The `this` keyword cannot be removed from JavaScript without destroying all exis
 
 Since in the last lesson we abandoned [classes](https://jscamp.app/docs/javascript25#refused-classes), we say goodbye to `this` with them.
 
+ [![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)
+
 ## Problems?
 
 ![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
@@ -317,7 +319,7 @@ JavaScript without `this` looks like the best:
 
 In order to understand how much you learned this lesson, take the test in the [mobile application](http://onelink.to/njhc95) of our school on this topic or in our [telegram bot](https://t.me/javascriptcamp_bot).
 
-![JS Camp](/img/app.jpg)
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)
 
 ## Links
 
@@ -347,4 +349,4 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)

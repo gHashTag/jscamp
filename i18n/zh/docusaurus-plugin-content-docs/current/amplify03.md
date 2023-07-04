@@ -240,4 +240,4 @@ amplify push
 
 Через несколько минут модель загружена на сервера AWS, поэтому далее мы переходим к приложению react native.
 
-[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)

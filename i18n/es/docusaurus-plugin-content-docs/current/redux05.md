@@ -198,4 +198,4 @@ export const SEARCH_CHANGE = 'SEARCH_CHANGE'
 ```
 
 В данном уроке мы научились создавать Boilerplate шаблон для проектов Redux.
-[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)

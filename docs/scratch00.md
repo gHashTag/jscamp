@@ -18,7 +18,7 @@ BASICS first lesson in learning the programming language "Scratch". Our teacher 
 
 Our [mobile application](http://onelink.to/njhc95)
 
-![JS Camp](/img/app.jpg)
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)
 
 ## Contributors ✨
 

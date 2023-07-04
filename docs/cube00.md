@@ -129,6 +129,8 @@ Here is one of them:
 
 R2 F R’ F’ D2 R2 U F U’ B L2 F2 R F2 U’ L F2 L B R’ D’ L’ D’ R F
 
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)
+
 ## Links
 
 [Discord](https://discord.gg/6GDAfXn)
@@ -152,4 +154,3 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)

@@ -11,4 +11,4 @@ If we parallel React Native tags with HTML tags, we get a table, which can be vi
 
 <YouTube videoId='SZg_jgnc7Xw' />
 
-[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)

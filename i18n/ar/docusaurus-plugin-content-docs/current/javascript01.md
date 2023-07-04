@@ -170,6 +170,8 @@ function learnJavaScript() {
 }
 ```
 
+ [![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)
+
 ## Problems?
 
 ![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
@@ -228,7 +230,7 @@ function learnJavaScript() {
 
 نحن الآن جاهزون لدراسة Java Script معك ، ولكن لفهم مقدار ما تعلمته في هذا الدرس ، قم بإجراء الاختبار في [mobile application](http://onelink.to/njhc95) في مدرستنا حول هذا الموضوع.
 
-![JS Camp](/img/app.jpg)
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)
 
 ## الروابط
 
@@ -247,7 +249,7 @@ function learnJavaScript() {
   
 </table>
 
-[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)
 
 <!--
 Код JavaScript выполняется JavaScript-движком браузера. Через консоль мы обращаемся к нему напрямую. Далее, для того чтобы не писать весь обучающий курс в браузере, мы настроим рабочее окружение, установив Node.js, VS Code и наиполезнейщий плагин Quokka.js

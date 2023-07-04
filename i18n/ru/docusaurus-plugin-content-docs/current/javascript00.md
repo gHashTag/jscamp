@@ -72,6 +72,8 @@ import YouTube from 'react-youtube'
 
 Записаться на бесплатный пробный онлайн урок можно через директ нашего [Instagram](https://www.instagram.com/javascriptcamp/), [ВКонтакте](https://vk.com/javascriptcamp) или в [Telegram](https://t.me/jscamp_online)
 
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)
+
 <!-- > «Мы прогнозируем, что использование [serverless](https://www.jscamp.app/en/docs/amplify-01) будет стремительно расти. Мы также прогнозируем, что локальные гибридные облачные приложения со временем будут сокращаться, хотя некоторые развертывания могут сохраняться из-за нормативных ограничений и правил управления данными.
 
 > Бессерверные вычисления станут стандартной вычислительной парадигмой в эпоху облаков, в значительной степени, заменив серверные вычисления и тем самым закрыв эру клиент-сервер."
@@ -214,12 +216,10 @@ TypeScript - язык программирования, представленн
 ![How much](https://media.giphy.com/media/VHnwACS3XAN7SZyx6O/giphy.gif)
 
 
-![JS Camp](/img/app.jpg)
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)
 
 ![JavaScript Camp](/img/bandlink.png) -->
 
 <!-- ## Оплата -->
 
-<!-- Обучение бесплатно, но вы можете поддержать наш стартап через [Patreon](https://www.patreon.com/bePatron?u=31769291).
 
-[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291) -->

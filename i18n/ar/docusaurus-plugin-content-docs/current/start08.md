@@ -11,4 +11,4 @@ If we make any change in our application, for example, remove exclamation marks 
 
 <YouTube videoId='uISgghCjL38' />
 
-[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)

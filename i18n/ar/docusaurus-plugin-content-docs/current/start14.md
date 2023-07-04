@@ -11,4 +11,4 @@ Flexbox provides tools to quickly create complex, flexible layouts, and features
 
 <YouTube videoId='PF1kzcGdN7E' />
 
-[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)

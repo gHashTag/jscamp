@@ -9,4 +9,4 @@ The topic of our tutorial is the Stack Navigator of the React Navigation version
 
 [![react-navigation](/img/rn2/01.gif)](https://youtu.be/jkUUR-Ru2Qs)
 
-[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)

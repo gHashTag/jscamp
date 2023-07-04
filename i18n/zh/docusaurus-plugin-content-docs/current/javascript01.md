@@ -229,7 +229,7 @@ function learnJavaScript() {
 
 現在，我們準備與您一起學習JavaScript，但是為了了解您學到了多少，請參加以下課程的測試 [移動應用](http://onelink.to/njhc95) 在我們學校就這個話題。
 
-![JS Camp](/img/app.jpg)
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)
 
 ## 鏈接
 
@@ -248,7 +248,7 @@ T向這些好人致敬([emoji key](https://allcontributors.org/docs/en/emoji-key
   
 </table>
 
-[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)
 
 <!--
 Код JavaScript выполняется JavaScript-движком браузера. Через консоль мы обращаемся к нему напрямую. Далее, для того чтобы не писать весь обучающий курс в браузере, мы настроим рабочее окружение, установив Node.js, VS Code и наиполезнейщий плагин Quokka.js

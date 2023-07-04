@@ -8,4 +8,4 @@ In this tutorial, we will introduce you to the concept of Redux.
 
 [![redux](/img/redux/01.gif)](https://youtu.be/3iNnqtmEgtg)
 
-[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)

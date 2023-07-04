@@ -170,6 +170,7 @@ Let's go through all this step by step:
 - The body of the function itself is usually indented to the right (using the TAB key). This is not necessary for the execution of the program, but it is necessary for teamwork, since it greatly facilitates the readability of the code.
 - The keyword `return` means that whenever we call this function, the value will be passed, that is," returned ", to the interpreter, therefore it is called the" return value of the function ".
 
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)
 <!-- Еще один пример 👇 :
 
 ```jsx live
@@ -551,6 +552,8 @@ Self-invocation is created by parentheses at the end of a function⚙️ that te
 
 By understanding arrow and normal functions⚙️, you can pass functions to variable objects🔔 and rebuild your code📟 in modules. Functions of this kind can also be used to create and return🔄 other functions⚙️. Here we are already talking about closure, which we will talk about in the next series.
 
+ [![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)
+
 ## Problems?
 
 ![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
@@ -641,7 +644,7 @@ A self-executing function is
 
 In order to understand how much you learned this lesson, take the test in the [mobile application](http://onelink.to/njhc95) of our school on this topic or in our [telegram bot](https://t.me/javascriptcamp_bot).
 
-![JS Camp](/img/app.jpg)
+ 
 
 ## Links
 
@@ -677,8 +680,3 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
-
-```
-
-```

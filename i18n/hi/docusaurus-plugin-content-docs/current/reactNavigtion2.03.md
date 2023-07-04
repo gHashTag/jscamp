@@ -8,4 +8,4 @@ sidebar_label: Drawer Navigator
 
 [![Drawer Navigator](/img/rn2/03.gif)](https://youtu.be/x1BkWHncx10)
 
-[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)

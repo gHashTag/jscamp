@@ -81,4 +81,4 @@ Basically, you pay for stable bandwidth or execution time, not for the number of
 
 More about pricing [here](https://aws.amazon.com/ru/appsync/pricing/)
 
-[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)

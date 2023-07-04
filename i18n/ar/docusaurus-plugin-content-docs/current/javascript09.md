@@ -551,6 +551,8 @@ Self-invocation is created by parentheses at the end of a function⚙️ that te
 
 By understanding arrow and normal functions⚙️, you can pass functions to variable objects🔔 and rebuild your code📟 in modules. Functions of this kind can also be used to create and return🔄 other functions⚙️. Here we are already talking about closure, which we will talk about in the next series.
 
+ [![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)
+
 ## Problems?
 
 ![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
@@ -641,7 +643,7 @@ A self-executing function is
 
 In order to understand how much you learned this lesson, take the test on the [mobile application](http://onelink.to/njhc95) of our school on this topic.
 
-![JS Camp](/img/app.jpg)
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)
 
 ## Links
 
@@ -677,7 +679,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)
 
 ```
 

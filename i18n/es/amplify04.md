@@ -604,4 +604,4 @@ https://engineering.fb.com/core-data/graphql-a-data-query-language/
 
 https://graphql.org/learn
 
-[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)

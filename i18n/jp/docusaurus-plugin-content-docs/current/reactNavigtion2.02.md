@@ -8,4 +8,4 @@ sidebar_label: Tab Navigator
 
 Возможно, самый распространенный стиль навигации в мобильных приложениях — это навигация на основе вкладок. Это могут быть вкладки внизу экрана или вверху под заголовком (или даже вместо заголовка).
 
-[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)

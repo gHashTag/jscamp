@@ -241,4 +241,4 @@ amplify push
 
 After a few minutes, the model is uploaded to the AWS servers, so next we move on to the react native application.
 
-[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)

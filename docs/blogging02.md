@@ -291,9 +291,7 @@ To delete users not involved in the article, you need to delete the correspondin
 
 It remains to add a link at the end of the article to `Patreon`:
 
-```bash
-[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
-```
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)
 
 The article is ready to be sent!
 
@@ -539,6 +537,8 @@ How do I insert an image?
 2.` (Text) (Path to image) `
 3. `! [Text] (Path to image)`
 
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)
+
 ## Links:
 
 1. [GitHub](https://github.com/)
@@ -569,5 +569,5 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
+
 ![pullreqest](/img/blogging/00/33.png)

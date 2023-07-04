@@ -167,6 +167,8 @@ export default App
 Пустые теги `<>...</>` это сокращённая запись объявления [фрагментов](https://ru.reactjs.org/docs/fragments.html). Фрагменты позволяют возвращать несколько элементов из компонента. Являясь своего рода оберткой для группы компонентов. Фрагменты позволяют формировать список дочерних элементов, не создавая лишних узлов в DOM. Возврат списка дочерних элементов из компонента — распространённая практика.
 
 
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)
+
 ## Проблемы?
 
 ![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
@@ -246,11 +248,10 @@ Style prop может быть обычным объектом JavaScript, а т
 
 Чтобы узнать, насколько хорошо вы усвоили этот урок, пройдите тест в [мобильном приложении](http://onelink.to/njhc95) нашей школы по этой теме или в [боте Telegram](https://t.me/javascriptcamp_bot).
 
-![JS Camp](/img/app.jpg)
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)
 
 ## Ссылки:
 
 1. [React Native - official website](https://reactnative.dev/docs/tutorial)
 2. [Learn React](https://learn-reactjs.ru/basics/components-and-props)
 
-[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)

@@ -13,4 +13,4 @@ In this tutorial, we'll take a look at React Native styles.
 
 [Шпаргалка по стилям](https://github.com/vhpoet/react-native-styling-cheat-sheet)
 
-[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)

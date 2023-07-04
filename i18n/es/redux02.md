@@ -8,4 +8,4 @@ Setting up the Redux working environment.
 
 [![redux](/img/redux/02.gif)](https://youtu.be/xTjsEphn7Pg)
 
-[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)

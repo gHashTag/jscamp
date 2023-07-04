@@ -230,4 +230,4 @@ export function AddMovieScreen({ navigation }) {
 
 我们学会了如何在实践中使用redux
 
-[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)

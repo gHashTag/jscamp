@@ -9,4 +9,4 @@ sidebar_label: Tab Navigator
 
 Perhaps the most common navigation style in mobile apps is tab-based navigation. These can be tabs at the bottom of the screen, or at the top below the heading (or even instead of the heading).
 
-[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)

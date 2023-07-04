@@ -10,4 +10,4 @@ We will lay out a card in our application with a text field, with a shadow and w
 
 <YouTube videoId='anVgDcngW8I' />
 
-[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)

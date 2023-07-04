@@ -8,4 +8,4 @@ sidebar_label: 下一步是什么
 
 我建议您访问RT和redux的官方文档-https://redux-toolkit.js.org ,https://redux.js.org 供更好的理解和深入研究。
 
-[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)

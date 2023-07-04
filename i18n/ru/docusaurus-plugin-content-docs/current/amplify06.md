@@ -203,4 +203,4 @@ export default App;
 
 Оригинальную статью по [AWS Amplify Studio](https://aws.amazon.com/ru/blogs/mobile/aws-amplify-studio-figma-to-fullstack-react-app-with-minimal-programming)
 
-<!-- [![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291) -->
+<!-- [![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885) -->

@@ -118,7 +118,7 @@ function learnJavaScript() {
 
 यह समझने के लिए कि आपने इस पाठ को कितना सीखा है, परीक्षा को अंदर लें [मोबाइल एप्लिकेशन](http://onelink.to/njhc95) इस विषय पर हमारा स्कूल।
 
-![JS Camp](/img/app.jpg)
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)
 
 ## लिंक:
 
@@ -138,4 +138,4 @@ function learnJavaScript() {
   
 </table>
 
-[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)

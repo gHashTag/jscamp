@@ -500,7 +500,7 @@ let arr = new Array (item1, item2 ...)
 
 لفهم مقدار ما تعلمته في هذا الدرس ، قم بإجراء الاختبار على [تطبيق الهاتف المحمول] (http://onelink.to/njhc95) الخاص بمدرستنا حول هذا الموضوع.
 
-![JS Camp](/img/app.jpg)
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)
 
 ## الروابط
 
@@ -530,7 +530,7 @@ let arr = new Array (item1, item2 ...)
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)
 
 <!--
 ### toString

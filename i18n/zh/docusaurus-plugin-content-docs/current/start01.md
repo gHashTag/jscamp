@@ -28,4 +28,4 @@ import YouTube from 'react-youtube'
 
 Надеюсь на вашу обратную связь, благодаря которой информация в изложенной статье будет корректироваться и дополняться.
 
-[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)

@@ -10,4 +10,4 @@ If we look at our application and run it on the iPhone 5 or under Android, we wi
 
 <YouTube videoId='8GwKno9vUyo' />
 
-[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)

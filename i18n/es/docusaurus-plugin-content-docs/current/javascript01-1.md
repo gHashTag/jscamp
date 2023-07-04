@@ -39,4 +39,4 @@ A continuación, planeamos implementar pruebas en TypeScript, React Native, AWS 
 
 El bot es gratuito, pero puedes apoyar nuestra puesta en marcha a través de [Patreon](https://www.patreon.com/javascriptcamp)
 
-[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)

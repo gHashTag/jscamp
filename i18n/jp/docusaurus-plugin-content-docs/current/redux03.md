@@ -136,4 +136,4 @@ export function HomeScreen({ navigation }) {
 
 We learned how to take remote data from the server using Redux ToolKit Query!
 
-[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)

@@ -150,4 +150,4 @@ Thتتكون دورة e JS من مقالات ودروس فيديو وبودكا�
 
 التدريب مجاني ، ولكن يمكنك دعم بدء التشغيل لدينا من خلاله [Patreon](https://www.patreon.com/bePatron?u=31769291).
 
-[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)

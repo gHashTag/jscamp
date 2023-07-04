@@ -79,4 +79,4 @@ Connecting the application to cloud message middleware.
 
 Manage user-generated content securely in the cloud and on the device.
 
-[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)

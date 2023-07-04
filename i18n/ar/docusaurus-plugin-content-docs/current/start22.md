@@ -9,4 +9,4 @@ Programming teaches us to be so-called realists or a little pesimist. For exampl
 
 <YouTube videoId='fr1TK-sMKww' />
 
-[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)

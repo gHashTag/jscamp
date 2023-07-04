@@ -214,7 +214,7 @@ Tنوع "الرمز" هو قيمة بدائية فريدة وغير قابلة �
 
 لفهم مقدار ما تعلمته في هذا الدرس ، قم بإجراء اختبار في مدرستنا[mobile application](http://onelink.to/njhc95) حول هذا الموضوع.
 
-![JS Camp](/img/app.jpg)
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)
 
 ##الروابط
 
@@ -234,4 +234,4 @@ Tنوع "الرمز" هو قيمة بدائية فريدة وغير قابلة �
   
 </table>
 
-[![Become a Patron!](/img/logo/patreon.jpg)](https://www.patreon.com/bePatron?u=31769291)
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)
