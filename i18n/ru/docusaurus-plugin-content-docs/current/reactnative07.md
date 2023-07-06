@@ -40,7 +40,7 @@ export default PizzaTranslator
 Ввод текста - это один из способов взаимодействия пользователя с приложением. Затем давайте посмотрим на другой тип ввода и узнаем, как обрабатывать прикосновения.
 
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
 
 ## Проблемы?
 
@@ -74,7 +74,7 @@ export default PizzaTranslator
 
 Чтобы узнать, насколько хорошо вы усвоили этот урок, пройдите тест в [мобильном приложении](http://onelink.to/njhc95) нашей школы по этой теме или в [боте Telegram](https://t.me/javascriptcamp_bot).
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
 
 ## Ссылки:
 

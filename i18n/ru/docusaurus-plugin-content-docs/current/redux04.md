@@ -8,4 +8,4 @@ sidebar_label: Что дальше
 
 Советую посетить официальную документацию по RTK и redux - https://redux-toolkit.js.org, https://redux.js.org для лучшего понимания и углубленного изучения.
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)

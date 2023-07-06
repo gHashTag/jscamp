@@ -72,7 +72,7 @@ import YouTube from 'react-youtube'
 
 Записаться на бесплатный пробный онлайн урок можно через директ нашего [Instagram](https://www.instagram.com/javascriptcamp/), [ВКонтакте](https://vk.com/javascriptcamp) или в [Telegram](https://t.me/jscamp_online)
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
 
 <!-- > «Мы прогнозируем, что использование [serverless](https://www.jscamp.app/en/docs/amplify-01) будет стремительно расти. Мы также прогнозируем, что локальные гибридные облачные приложения со временем будут сокращаться, хотя некоторые развертывания могут сохраняться из-за нормативных ограничений и правил управления данными.
 
@@ -216,7 +216,7 @@ TypeScript - язык программирования, представленн
 ![How much](https://media.giphy.com/media/VHnwACS3XAN7SZyx6O/giphy.gif)
 
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
 
 ![JavaScript Camp](/img/bandlink.png) -->
 

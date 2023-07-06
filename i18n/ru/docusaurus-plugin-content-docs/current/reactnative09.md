@@ -49,7 +49,7 @@ export default App
 
 Подробнее о компоненте [ScrollView](https://reactnative.dev/docs/scrollview#reference)
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
 
 ## Проблемы?
 
@@ -74,4 +74,4 @@ export default App
 
 1. [React Native](https://reactnative.dev/docs/platform-specific-code)
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)

@@ -292,7 +292,7 @@ Array.from(str) // "H", "e", "l", "l", "o"
 
 為了了解您學到了多少本課程，請對[mobile application](http://onelink.to/njhc95) 我們學校就這個話題。
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
 
 ## 鏈接
 
@@ -321,7 +321,7 @@ Array.from(str) // "H", "e", "l", "l", "o"
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
 
 <!--
 Например:

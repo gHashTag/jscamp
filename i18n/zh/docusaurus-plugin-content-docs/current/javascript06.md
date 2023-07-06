@@ -274,7 +274,7 @@ Channel in [Discord](https://discord.gg/6GDAfXn) after paying on [Patreon](https
 
 為了了解您學到了多少本課程，請對 [移動應用](http://onelink.to/njhc95) 我們學校就這個話題。
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
 
 ## 鏈接
 
@@ -303,4 +303,4 @@ Channel in [Discord](https://discord.gg/6GDAfXn) after paying on [Patreon](https
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)

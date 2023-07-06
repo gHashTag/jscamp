@@ -267,7 +267,7 @@ It is useful to remember:
 - Using the spread operator, you can insert an array into a function that, by default, works with a regular list of arguments.
   “Together, these constructs make it easy to convert sets of values ​​to and from arrays.
 
- [![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)
+ [![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
 
 ## Problems?
 
@@ -299,7 +299,7 @@ You can combine two arrays into one using:
 
 In order to understand how much you learned this lesson, take the test in the [mobile application](http://onelink.to/njhc95) of our school on this topic or in our [telegram bot](https://t.me/javascriptcamp_bot).
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
 
 ## Links
 

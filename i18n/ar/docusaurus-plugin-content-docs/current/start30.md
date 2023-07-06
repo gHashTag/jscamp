@@ -10,4 +10,4 @@ If we look at our application and run it on the iPhone 5 or under Android, we wi
 
 <YouTube videoId='8GwKno9vUyo' />
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)

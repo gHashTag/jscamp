@@ -1140,7 +1140,7 @@ export default PositionLayout
 Мы рассмотрели основы, но есть много других стилей, которые могут вам понадобиться для макетов. Полный список свойств, управляющих макетом, задокументирован [здесь](https://reactnative.dev/docs/layout-props).
 
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
 
 ## Проблемы?
 
@@ -1234,7 +1234,7 @@ Flexbox не работает в React Native так же, как и в CSS в �
 
 Чтобы узнать, насколько хорошо вы усвоили этот урок, пройдите тест в [мобильном приложении](http://onelink.to/njhc95) нашей школы по этой теме или в [боте Telegram](https://t.me/javascriptcamp_bot).
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
 
 ## Ссылки:
 

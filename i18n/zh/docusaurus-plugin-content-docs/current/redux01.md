@@ -123,4 +123,4 @@ export const store = configureStore({
  > 在这节课中，我们熟悉了Redux的基本概念。
 
 
- [![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)
+ [![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)

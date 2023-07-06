@@ -175,7 +175,7 @@ function learnJavaScript() {
 }
 ```
 
- [![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)
+ [![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
 
 ## Problems?
 
@@ -243,7 +243,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   </tr>
 </table>
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
 
 <!--
 Код JavaScript выполняется JavaScript-движком браузера. Через консоль мы обращаемся к нему напрямую. Далее, для того чтобы не писать весь обучающий курс в браузере, мы настроим рабочее окружение, установив Node.js, VS Code и наиполезнейщий плагин Quokka.js

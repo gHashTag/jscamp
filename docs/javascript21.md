@@ -134,7 +134,7 @@ function learnJavaScript() {
 
 Closures are one of the most important fundamental JavaScript concepts that every JS developer should understand. Understanding closures is one stepping stone to writing efficient, high-quality applications.
 
- [![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)
+ [![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
 
 ## Problems?
 
@@ -165,7 +165,7 @@ What do you need to do to access a closed variable?
 
 In order to understand how much you learned this lesson, take the test in the [mobile application](http://onelink.to/njhc95) of our school on this topic or in our [telegram bot](https://t.me/javascriptcamp_bot).
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
 
 ## Links
 

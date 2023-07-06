@@ -38,4 +38,4 @@ yarn add redux react-redux
 Если вы сделали всё правильно библиотеки должны были спокойно установиться. Если возникла какая-либо ошибка, то просто повторите всё заново.
 В данном уроке мы установили все нужные для данного курса библиотеки.
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)

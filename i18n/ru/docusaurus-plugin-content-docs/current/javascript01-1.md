@@ -39,4 +39,4 @@ import YouTube from 'react-youtube'
 
 Бот бесплатный, но вы можете поддержать наш стартап через [Patreon](https://www.patreon.com/javascriptcamp)
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)

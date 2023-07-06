@@ -78,4 +78,4 @@ Each profession has its own vocabulary, programmers have their own, react-native
 
 [Who's using React Native?](https://reactnative.dev/showcase)
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)

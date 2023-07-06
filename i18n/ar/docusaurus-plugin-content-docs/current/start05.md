@@ -55,4 +55,4 @@ In the fifth line, app.json is the name of the application. name - What is the n
 }
 ```
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)

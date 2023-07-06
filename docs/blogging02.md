@@ -291,7 +291,7 @@ To delete users not involved in the article, you need to delete the correspondin
 
 It remains to add a link at the end of the article to `Patreon`:
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
 
 The article is ready to be sent!
 
@@ -537,7 +537,7 @@ How do I insert an image?
 2.` (Text) (Path to image) `
 3. `! [Text] (Path to image)`
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
 
 ## Links:
 

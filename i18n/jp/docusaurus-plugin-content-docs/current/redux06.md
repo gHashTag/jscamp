@@ -8,4 +8,4 @@ sidebar_label: Thunk
 
 [![redux](/img/redux/06.gif)](https://youtu.be/-eE3ySQIV80)
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)

@@ -129,7 +129,7 @@ Here is one of them:
 
 R2 F R’ F’ D2 R2 U F U’ B L2 F2 R F2 U’ L F2 L B R’ D’ L’ D’ R F
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
 
 ## Links
 

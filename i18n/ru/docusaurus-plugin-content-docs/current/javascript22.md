@@ -259,7 +259,7 @@ function learnJavaScript() {
 
 Не углубляясь в детали, о функциях⚙️ высшего порядка можно сказать так: это функции⚙️, которые могут принимать функцию⚙️ в качестве аргумента и даже, возвращать функцию⚙️.
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
 
 ## Проблемы?
 
@@ -293,7 +293,7 @@ function learnJavaScript() {
 
 Для того чтобы понять, на сколько вы усвоили этот урок, пройдите тест в [мобильном приложении](http://onelink.to/njhc95) нашей школы по этой теме или в нашем [телеграм боте](https://t.me/javascriptcamp_bot).
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
 
 ## Ссылки:
 

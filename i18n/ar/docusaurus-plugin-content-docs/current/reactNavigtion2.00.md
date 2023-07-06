@@ -11,4 +11,4 @@ We continue and begin our new course on the topic - navigation in a React Native
 
 ![react navigation](https://miro.medium.com/max/2000/1*G9d0ejcM_jJOgRgbex05Ng.gif)
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)

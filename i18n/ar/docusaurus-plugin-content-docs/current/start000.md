@@ -15,4 +15,4 @@ In this course on React Native for beginners, we will develop a mobile applicati
 
 ![react native](https://miro.medium.com/max/2000/1*eIYvYBkRv83m42yxn8Ljwg.gif)
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)

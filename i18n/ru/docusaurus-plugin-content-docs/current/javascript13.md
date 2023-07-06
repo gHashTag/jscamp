@@ -109,7 +109,7 @@ export default App
 
 Использование `name` в качестве `props` позволяет нам настроить компонент приветствия, чтобы мы могли повторно использовать этот компонент для каждого из наших приветствий. В этом примере также используется компонент `HelloWorld` в JSX. Способность делать это - вот что делает React таким крутым.
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
 
 ## Проблемы?
 
@@ -141,7 +141,7 @@ export default App
 
 Для того чтобы понять, на сколько вы усвоили этот урок, пройдите тест в [мобильном приложении](http://onelink.to/njhc95) нашей школы по этой теме или в нашем [телеграм боте](https://t.me/javascriptcamp_bot).
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
 
 ## Ссылки:
 

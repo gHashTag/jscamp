@@ -214,7 +214,7 @@ Al desestructurar un objeto, ¿es necesario poner las variables en el mismo orde
 
 Para comprender cuánto ha aprendido en esta lección, realice la prueba en [aplicación móvil] (http://onelink.to/njhc95) en nuestra escuela sobre este tema.
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
 
 ## Enlaces
 
@@ -236,4 +236,4 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   
 </table>
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)

@@ -11,4 +11,4 @@ Many beginners, but what to hide, I myself was one of those and confused what St
 
 <YouTube videoId='vYuHeYxaJQU' />
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)

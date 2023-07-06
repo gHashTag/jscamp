@@ -122,7 +122,7 @@ function learnJavaScript() {
 
 Так как в курсе нашей школы мы учим разрабатывать мобильные приложения с помощью библиотеки [React](https://ru.reactjs.org), где нововведение [React Hooks](https://ru.reactjs.org/docs/hooks-intro.html) позволяет использовать состояние и другие возможности [React](https://ru.reactjs.org) без написания классов. Поэтому рассказывать о классах больше нет смысла, так как мы от них отказались.
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
 
 ## Проблемы?
 
@@ -171,7 +171,7 @@ function learnJavaScript() {
 
 Для того чтобы понять, на сколько вы усвоили этот урок, пройдите тест в [мобильном приложении](http://onelink.to/njhc95) нашей школы по этой теме или в нашем [телеграм боте](https://t.me/javascriptcamp_bot).
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
 
 <!--
 ## Геттеры и сеттеры

@@ -253,7 +253,7 @@ myFetch()
 
 `Async / await` allows you to write  asynchronous code that is easy to read and maintain. For six reasons why it is better to use it instead of promises read [here](https://habr.com/ru/company/ruvds/blog/326074/).
 
- [![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)
+ [![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
 
 ## Problems?
 
@@ -536,4 +536,4 @@ han.greeting().then(console.log)
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)

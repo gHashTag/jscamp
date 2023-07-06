@@ -331,4 +331,4 @@ The frontend / backend separation model itself is a thing of the past, together 
 [GraphQL](https://graphql.org/learn)
 
 
-<!-- [![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885) -->
+<!-- [![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl) -->

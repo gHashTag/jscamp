@@ -292,7 +292,7 @@ To delete users not involved in the article, you need to delete the correspondin
 It remains to add a link at the end of the article to `Patreon`:
 
 ```bash
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
 ```
 
 The article is ready to be sent!
@@ -569,5 +569,5 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
 ![pullreqest](/img/blogging/00/33.png)

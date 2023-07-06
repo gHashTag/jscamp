@@ -148,4 +148,4 @@ TypeScript - このような問題を解決するために、プログラミン�
 
 トレーニングは無料ですが、あなたは私たちのスタートアップをサポートすることができます [Patreon](https://www.patreon.com/bePatron?u=31769291).
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)

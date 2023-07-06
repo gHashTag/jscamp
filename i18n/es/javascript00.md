@@ -156,4 +156,4 @@ Training takes place in the application [Discord](https://discord.gg/6GDAfXn).
 
 Training is free, but you can support our startup through [Patreon](https://www.patreon.com/bePatron?u=31769291).
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)

@@ -229,7 +229,7 @@ Chrome में कंसोल खोलने के लिए कीबो�
 
 Тअब हम आपके साथ अध्ययन करने के लिए तैयार हैं Java Script, लेकिन यह समझने के लिए कि आपने इस पाठ को कितना सीखा है [मोबाइल एप्लिकेशन](http://onelink.to/njhc95) इस विषय पर हमारे स्कूल में।
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
 
 ## लिंक:
 
@@ -248,6 +248,6 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   
 </table>
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
 
 

@@ -87,4 +87,4 @@ import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment'
 
 營地通過支付 [Patreon](https://www.patreon.com/javascriptcamp) JavaScript課程的費用為每月10美元。
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)

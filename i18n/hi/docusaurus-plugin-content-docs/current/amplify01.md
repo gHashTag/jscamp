@@ -81,4 +81,4 @@ sidebar_label: Serverless
 
 Подробнее о ценах [здесь](https://aws.amazon.com/ru/appsync/pricing/)
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)

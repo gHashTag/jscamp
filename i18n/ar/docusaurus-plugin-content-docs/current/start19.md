@@ -10,4 +10,4 @@ If you conceptually understand this issue and in a simple way, then functional c
 
 <YouTube videoId='S2hQ_Tu39jo' />
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)

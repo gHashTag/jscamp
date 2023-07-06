@@ -552,7 +552,7 @@ function learnJavaScript() {
 
 Поняв суть стрелочных и обычных функций⚙️, вы сможете передавать функции в объекты-переменные  и перестроить код по модулям. Функции такого рода можно использовать также и для создания и возврата других функций⚙️. Тут речь уже заходит о замыкании, о котором мы поговорим в следующих сериях.
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
 
 ## Проблемы?
 
@@ -663,7 +663,7 @@ addThree(20)
 
 Для того чтобы понять, на сколько вы усвоили этот урок, пройдите тест в [мобильном приложении](http://onelink.to/njhc95) нашей школы по этой теме.
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
 
 ## Ссылки:
 

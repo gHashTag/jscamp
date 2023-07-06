@@ -8,4 +8,4 @@ This navigation method allows you to switch directly between different screens u
 
 [![Drawer Navigator](/img/rn2/03.gif)](https://youtu.be/x1BkWHncx10)
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)

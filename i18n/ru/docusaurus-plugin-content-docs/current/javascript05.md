@@ -103,7 +103,7 @@ foo.toUpperCase()
 
 Мы также можем ошибаться, поэтому если вы обнаружите ошибку на сайте или не точность в переводе, то можете легко помочь исправить ошибку на сайте. Для этого нужно нажать на кнопку `Отредактировать эту страницу` в самом низу каждой странице.
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
 
 ## Проблемы?
 
@@ -137,7 +137,7 @@ foo.toUpperCase()
 
 Для того чтобы понять, на сколько вы усвоили этот урок, пройдите тест в [мобильном приложении](http://onelink.to/njhc95) нашей школы по этой теме или в нашем [телеграм боте](https://t.me/javascriptcamp_bot).
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
 
 
 ## Ссылки:

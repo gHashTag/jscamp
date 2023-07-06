@@ -11,4 +11,4 @@ If we make any change in our application, for example, remove exclamation marks 
 
 <YouTube videoId='uISgghCjL38' />
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://apps.apple.com/kz/app/englishmoji/id6450254885)
+[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
