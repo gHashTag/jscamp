@@ -90,6 +90,7 @@ module.exports = {
     ],
     ['UI Kit']: ['unicorn00', 'unicorn01', 'unicorn02'],
     ['Authentication']: ['auth1-00', 'auth1-01', 'auth1-02'],
+    ['Web3']: ['web3-00'],
     ['AWS Amplify']: ['amplify-00', 'amplify-01', 'amplify-02', 'amplify-03', 'amplify-04', 'notif-00', 'amplify-05', 'amplify-06'],
     ['Telegraf']: [
       'telegraf/telegraf00'
