@@ -1,0 +1,32 @@
+name: Pull Request and Push Handler
+
+on:
+  pull_request:
+    branches: [ '*' ]
+  push:
+    branches: [ '*' ]
+
+jobs:
+  handle_webhook:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+
+    - name: Get commit author for Push
+      if: github.event_name == 'push'
+      run: echo "COMMIT_AUTHOR=$(git log -1 --pretty=format:'%an')" >> $GITHUB_ENV
+
+    - name: Webhook for PR
+      if: github.event_name == 'pull_request'
+      uses: distributhor/workflow-webhook@v3.0.7
+      with:
+        webhook_url: "https://hook.eu2.make.com/c98145z4s5jbpw906x26s15zobhpko07"
+        data: '{"url": "${{ github.event.pull_request.html_url }}", "author": "${{ github.event.pull_request.user.login }}"}'
+        
+    - name: Webhook for Push with commit author
+      if: github.event_name == 'push'
+      uses: distributhor/workflow-webhook@v3.0.7
+      with:
+        webhook_url: "https://hook.eu2.make.com/c98145z4s5jbpw906x26s15zobhpko07"
+        data: '{"url": "https://github.com/${{ github.repository }}/commit/${{ github.sha }}", "author": "${{ env.COMMIT_AUTHOR }}"}'
