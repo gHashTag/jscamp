@@ -96,6 +96,7 @@ module.exports = {
     ['Telegraf']: [
       'telegraf/telegraf00'
     ],
+    ['Using ChatGPT']: ['chatgpt00', 'chatgpt01'],
     ['Blogging']: ['blogging-01', 'blogging-02', 'blogging-03'],
     ['Rubik\'s Cube']: ['cube-00'],
     ['Scratch']: ['scratch-00', 'scratch-01'],
