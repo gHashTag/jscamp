@@ -146,7 +146,7 @@ Los cierres son uno de los conceptos fundamentales más importantes en JavaScrip
 
 Escribe en [Discord](https://discord.gg/6GDAfXn) o Telegram [chat](https://t.me/jscampapp) y suscríbete a nuestras [noticias](https://t.me/ aplicación javascript )
 
-![JavaScript Camp](/img/bandlink.png)
+<!-- ![JavaScript Camp](/img/bandlink.png) -->
 
 ## preguntas
 

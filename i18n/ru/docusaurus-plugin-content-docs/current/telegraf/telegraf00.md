@@ -204,4 +204,4 @@ bot.launch()
 
 Подписывайтесь на наши [новости](https://t.me/javascriptapp) и социальные сети.
 
-![JavaScript Camp](/img/bandlink.png)
+<!-- ![JavaScript Camp](/img/bandlink.png) -->

@@ -134,4 +134,4 @@ JavaScript теперь твое главное звено!
 
 Пишите в [Discord](https://discord.gg/6GDAfXn) или телеграмм [чат](https://t.me/jscampapp), а также подписывайтесь на наши [новости](https://t.me/javascriptapp)
 
-![JavaScript Camp](/img/bandlink.png)
+<!-- ![JavaScript Camp](/img/bandlink.png) -->

@@ -86,7 +86,7 @@ function learnJavaScript() {
 
 ![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
 
-को लिखना [Discord](https://discord.gg/6GDAfXn) या तार [बातचीत](https://t.me/jscampapp), और हमारी सदस्यता भी लें [समाचार](https://t.me/javascriptapp)
+को लिखना [Discord](https://discord.gg/6GDAfXn) या तार [बातचीत](https://t.me/neuro_coder_group), और हमारी सदस्यता भी लें [समाचार](https://t.me/javascriptapp)
 
 ## प्रशन:
 

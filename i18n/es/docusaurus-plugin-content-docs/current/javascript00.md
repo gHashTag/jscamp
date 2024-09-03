@@ -156,7 +156,7 @@ Para comprender cuánto ha aprendido esta lección, realice una prueba en la [ap
 
 [![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)
 
-![JavaScript Camp](/img/bandlink.png)
+<!-- ![JavaScript Camp](/img/bandlink.png) -->
 
 ## Pago
 

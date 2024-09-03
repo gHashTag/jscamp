@@ -453,7 +453,7 @@ let arr = new Array(item1, item2...)
 
 ![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
 
-に書き込む [Discord](https://discord.gg/6GDAfXn) または電報 [чат](https://t.me/jscampapp), そしてまた私達のを予約購読して下さい [новости](https://t.me/javascriptapp)
+に書き込む [Discord](https://discord.gg/6GDAfXn) または電報 [чат](https://t.me/neuro_coder_group), そしてまた私達のを予約購読して下さい [новости](https://t.me/javascriptapp)
 
 ## 質問
 

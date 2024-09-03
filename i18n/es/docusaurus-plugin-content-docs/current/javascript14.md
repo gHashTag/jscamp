@@ -181,7 +181,7 @@ El tema es muy extenso y rara vez lo usamos en el desarrollo, por lo que si est√
 
 Escribe en [Discord](https://discord.gg/6GDAfXn) o Telegram [chat](https://t.me/jscampapp) y suscr√≠bete a nuestras [noticias](https://t.me/javascriptapp)
 
-![JavaScript Camp](/img/bandlink.png)
+<!-- ![JavaScript Camp](/img/bandlink.png) -->
 
 ## Preguntas
 

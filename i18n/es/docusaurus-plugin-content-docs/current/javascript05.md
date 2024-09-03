@@ -109,7 +109,7 @@ También podemos cometer errores, por lo que si encuentra un error en el sitio o
 
 Escribe en [Discord](https://discord.gg/6GDAfXn) o Telegram [chat](https://t.me/jscampapp) y suscríbete a nuestras [noticias](https://t.me/javascriptapp)
 
-![JavaScript Camp](/img/bandlink.png)
+<!-- ![JavaScript Camp](/img/bandlink.png) -->
 
 ## Preguntas:
 

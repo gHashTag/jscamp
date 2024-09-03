@@ -218,7 +218,7 @@ TypeScript - язык программирования, представленн
 
 [![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)
 
-![JavaScript Camp](/img/bandlink.png) -->
+<!-- ![JavaScript Camp](/img/bandlink.png) --> -->
 
 <!-- ## Оплата -->
 

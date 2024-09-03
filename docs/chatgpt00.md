@@ -72,7 +72,7 @@ The course was created by those who have been using neural networks in all aspec
 
 Write to [Discord](https://discord.gg/6GDAfXn) or telegram [chat](https://t.me/jscampapp), and also subscribe to our [news](https://t.me/ javascriptapp)
 
-![JavaScript Camp](/img/bandlink.png)
+<!-- ![JavaScript Camp](/img/bandlink.png) -->
 
 ## Contributors ✨
 

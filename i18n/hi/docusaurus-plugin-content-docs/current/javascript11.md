@@ -153,7 +153,7 @@ Boolean(' ') // пробел это тоже true (любая непустая �
 
 ![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
 
-Пишите в [Discord](https://discord.gg/6GDAfXn) или телеграмм [чат](https://t.me/jscampapp), а также подписывайтесь на наши [новости](https://t.me/javascriptapp)
+Пишите в [Discord](https://discord.gg/6GDAfXn) или телеграмм [чат](https://t.me/neuro_coder_group), а также подписывайтесь на наши [новости](https://t.me/javascriptapp)
 
 ## Вопросы:
 

@@ -207,7 +207,7 @@ module.exports.sum = sum // export
 
 ![Problem](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
 
-[Discord](https://discord.gg/6GDAfXn) または電報 [chat](https://t.me/jscampapp) に書き込み、[news](https://t.me/javascriptapp)。
+[Discord](https://discord.gg/6GDAfXn) または電報 [chat](https://t.me/neuro_coder_group) に書き込み、[news](https://t.me/javascriptapp)。
 
 <!-- ## `Export` (экспорт)
 
