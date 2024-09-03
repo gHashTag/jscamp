@@ -81,15 +81,15 @@ const Home = () => {
 
   return (
     <>
-      <Layout title={`${siteConfig.title}`} description="Java Script Camp - лагерь скаутов">
+      <Layout title={`${siteConfig.title}`} description="NeuroCoder is a school specializing in teaching the creation of neuro-bots for Telegram and VKontakte and autofunnels, as well as teaching modern programming technologies and artificial intelligence.">
         <Head>
-          <meta property="og:image" content="https://jscamp.app/img/app.jpg" />
+          <meta property="og:image" content="https://jscamp.app/img/logo/NeuroCoder.png" />
         </Head>
-        <a href="https://www.patreon.com/javascriptcamp">
+        <a href="https://vk.com/neurocoder">
           <div className={classnames('image-container')}>
-            <img src={useBaseUrl('img/jscamp/1.3.jpg')} alt="Java Script Camp" />
-            <img src={useBaseUrl('img/jscamp/1.2.jpg')} alt="Java Script Camp" />
-            <img src={useBaseUrl('img/jscamp/1.1.jpg')} alt="Java Script Camp" />
+            <img src={useBaseUrl('img/jscamp/1.3.jpg')} alt="NeuroCoder" />
+            <img src={useBaseUrl('img/jscamp/1.2.jpg')} alt="NeuroCoder" />
+            <img src={useBaseUrl('img/jscamp/1.1.jpg')} alt="NeuroCoder" />
           </div>
         </a>
 
@@ -110,7 +110,7 @@ const Home = () => {
             <br />
 
             <h3>
-              <Link className="button-custom" to="https://www.patreon.com/javascriptcamp">
+              <Link className="button-custom" to="https://vk.com/neurocoder">
                 <Translate>Subscribe</Translate>{' '}
               </Link>
             </h3>
@@ -133,17 +133,17 @@ const Home = () => {
             </section>
           )}
         </main>
-        <div className={videoContainer}>
-          <YouTube videoId="z5gO1PzyLwU" opts={opts} className={player} />
-        </div>
-        <Program />
+        {/* <div className={videoContainer}>
+          <YouTube videoId="xpEy-Llex5k" opts={opts} className={player} />
+        </div> */}
+        {/* <Program /> */}
 
         <header className={classnames('hero hero--primary', heroBanner)}>
-          <div className="container">
+          {/* <div className="container"> */}
             {/* <img src={useBaseUrl('img/jscamp/Покатушки по Джаваскриптушке.png')} alt="Покатушки по Джаваскриптушке" /> */}
             {/* <h1 className="hero__title">Java Script Camp</h1> */}
 
-            <p className="dark-text">
+            {/* <p className="dark-text">
               <Translate>Scout camp from the creator of the first in Runet</Translate>{' '}
               <a href="https://youtube.com/playlist?list=PLth6QPteH5guFUwQj1iCdu-SOZ7O5KCz4">
                 <Translate>React Native course</Translate>
@@ -152,22 +152,22 @@ const Home = () => {
               <a href="https://aws.amazon.com/ru/developer/community/community-builders/">AWS Community Builders</a>{' '}
               <Translate>from Amazon</Translate>
             </p>
-            <br />
+            <br /> */}
 
-            <h3>
-              <Link className="button-custom" to="https://www.patreon.com/javascriptcamp">
+            {/* <h3>
+              <Link className="button-custom" to="">
                 <Translate>Subscribe</Translate>{' '}
               </Link>
-            </h3>
-            <h1 className='hForSvbiz'>
+            </h3> */}
+            {/* <h1 className='hForSvbiz'>
               <Translate>Our franchise will pack:</Translate>
-            </h1>
-            <div className='imgContainer svbizImg'>
+            </h1> */}
+            {/* <div className='imgContainer svbizImg'>
               <a href={'https://svbiz.ru'}>
                 <img src={useBaseUrl(`img/svbiz.png`)} alt={'alt'} className={'image-mobile'} />
               </a>
-            </div>
-          </div>
+            </div> */}
+          {/* </div> */}
         </header>
       </Layout>
     </>
@@ -300,7 +300,7 @@ const arrLinks = [
 const Program = () => {
   return (
     <>
-      <div className={classnames('image-container')}>
+      {/* <div className={classnames('image-container')}>
         {arrLinks.map(item => 
         {console.log(item.classImage)
           return (
@@ -309,7 +309,7 @@ const Program = () => {
             </a>
           )
         })}
-      </div>
+      </div> */}
     </>
   )
 }

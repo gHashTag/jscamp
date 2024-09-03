@@ -150,12 +150,8 @@
             },
             {
               label: 'Telegram Channel 📬',
-              href: 'https://t.me/javascriptapp'
+              href: 'https://t.me/neuro_coder_group'
             },
-            {
-              label: 'AWS Amplify Ru 💭',
-              href: 'https://t.me/awsamplify'
-            }
           ]
         },
         {
@@ -163,23 +159,15 @@
           items: [
             {
               label: 'Instagram',
-              href: 'https://www.instagram.com/javascriptcamp/'
+              href: 'https://www.instagram.com/neuro_coder'
             },
             {
               label: 'TikTok',
-              href: 'https://vm.tiktok.com/ZSJ1dxkFu/'
+              href: 'https://www.tiktok.com/@neuro_coder?_t=8pPhJEKMpTm&_r=1'
             },
             {
-              label: 'Twitter',
-              href: 'https://twitter.com/serverlesskiy'
-            },
-            {
-              label: 'YouTube En',
-              href: 'https://www.youtube.com/channel/UCR8tIQm7pu8MlPewAlUnzQw'
-            },
-            {
-              label: 'YouTube Ru',
-              href: 'https://www.youtube.com/channel/UCOxewePwIQATdHTD3yZ2UZw'
+              label: 'YouTube',
+              href: 'https://www.youtube.com/@neuro_coder_ai_bot'
             },
             {
               label: 'Hashnode',
@@ -195,7 +183,7 @@
             },
             {
               label: 'Vk',
-              href: 'https://vk.com/javascriptcamp'
+              href: 'https://vk.com/neurocoder'
             },
             {
               label: 'Medium',
@@ -203,7 +191,7 @@
             },
             {
               label: 'Twitch',
-              href: 'https://www.twitch.tv/javascriptcamp'
+              href: 'https://www.twitch.tv/neuro_coder'
             },
             {
               label: 'Code Wars',
