@@ -487,7 +487,7 @@ class ImageControl implements SelectableControl {
 
 Теперь мы готовы с вами изучать TypeScript, но для того чтобы понять на сколько вы усвоили этот урок пройдите тест в [мобильном приложении](http://onelink.to/njhc95) в нашей школы по этой теме.
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+[![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)
 
 ## Ссылки
 
@@ -505,4 +505,4 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   </tr>
 </table>
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+[![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)

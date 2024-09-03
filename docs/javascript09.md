@@ -170,7 +170,7 @@ Let's go through all this step by step:
 - The body of the function itself is usually indented to the right (using the TAB key). This is not necessary for the execution of the program, but it is necessary for teamwork, since it greatly facilitates the readability of the code.
 - The keyword `return` means that whenever we call this function, the value will be passed, that is," returned ", to the interpreter, therefore it is called the" return value of the function ".
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+[![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)
 <!-- Еще один пример  :
 
 ```jsx live
@@ -552,7 +552,7 @@ Self-invocation is created by parentheses at the end of a function⚙️ that te
 
 By understanding arrow and normal functions⚙️, you can pass functions to variable objects and rebuild your code in modules. Functions of this kind can also be used to create and return other functions⚙️. Here we are already talking about closure, which we will talk about in the next series.
 
- [![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+ [![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)
 
 ## Problems?
 

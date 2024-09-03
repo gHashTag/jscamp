@@ -203,7 +203,7 @@ To check if you did everything right, save these files, open a terminal and type
 
 So we have completed the preparatory course on JavaScript before the course on [mobile development](https://react-native-village.github.io/docs/start000).
 
- [![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+ [![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)
 
 ## Problems?
 
@@ -682,7 +682,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+[![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)
 
 <!--
 

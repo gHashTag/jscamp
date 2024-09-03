@@ -117,7 +117,7 @@ There can be only one method named `constructor` in a class.
 
 Since in the course of our school we teach to develop mobile applications using the library [React](https://reactjs.org), where is the innovation [React Hooks](https://en.reactjs.org/docs/hooks-intro.html) allows you to use state and other React features without writing classes. Therefore, it makes no sense to talk about classes anymore, since we have abandoned them.
 
- [![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+ [![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)
 
 ## Problems?
 
@@ -391,4 +391,4 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+[![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)

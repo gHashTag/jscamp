@@ -11,4 +11,4 @@ For a clear understanding of how everything works under the hood, we will take f
 
 <YouTube videoId='fg_YpbzRHmQ' />
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+[![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)

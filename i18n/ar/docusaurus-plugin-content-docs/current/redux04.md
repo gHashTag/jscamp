@@ -8,4 +8,4 @@ sidebar_label: What's next
 
 I advise you to visit the official documentation on RT and redux - https://redux-toolkit.js.org , https://redux.js.org for better understanding and in-depth study.
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+[![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)

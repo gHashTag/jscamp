@@ -10,4 +10,4 @@ React против React Native — это, конечно же, условно�
 
 <YouTube videoId='QdJGtUfkvfA' />
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+[![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)

@@ -9,4 +9,4 @@ sidebar_label: Введение
 ### Видео
 [![redux](/img/redux/00.gif)](https://youtu.be/KaKiJrVCUrw)
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+[![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)

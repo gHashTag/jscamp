@@ -36,4 +36,4 @@ Next, we plan to implement testing on TypeScript, React Native, AWS Amplify, so 
 
 The bot is free, but you can support our startup via [Patreon](https://www.patreon.com/javascriptcamp)
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+[![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)

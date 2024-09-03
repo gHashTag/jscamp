@@ -118,7 +118,7 @@ JS Camp 🦄 will help you study natural phenomena 🌦, landscapes 🏞, flora 
 
 <YouTube videoId='Ncy7chtb0CM' />
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+[![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)
 
 ## Links
 

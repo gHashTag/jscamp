@@ -10,4 +10,4 @@ State компонента — это его внутренне состояни
 
 <YouTube videoId='4sRGK632S5I' />
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+[![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)

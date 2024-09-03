@@ -217,7 +217,7 @@ Promise.race([promise1, promise2])
 
 為了了解您學到了多少本課程，請對 [mobile application](http://onelink.to/njhc95) 我們學校就這個話題。
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+[![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)
 
 ## 鏈接：
 
@@ -246,4 +246,4 @@ T向這些好人致敬 ([emoji key](https://allcontributors.org/docs/en/emoji-ke
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+[![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)

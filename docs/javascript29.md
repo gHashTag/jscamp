@@ -203,7 +203,7 @@ To check if you did everything right, save these files, open a terminal and type
 
 So we have completed the preparatory course on JavaScript before the course on [mobile development](https://jscamp.app/docs/start000).
 
- [![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+ [![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)
 
 ## Problems?
 
@@ -628,7 +628,7 @@ To make objects, functions, classes or variables  available to the outside world
 
 In order to understand how much you learned this lesson, take the test in the [mobile application](http://onelink.to/njhc95) of our school on this topic or in our [telegram bot](https://t.me/javascriptcamp_bot).
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+[![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)
 
 <!-- Экспортировать желаемые элементы одним оператором в конце модуля можно командой:
 

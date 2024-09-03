@@ -254,7 +254,7 @@ We learned what higher-order functions are and took a look at several of them al
 
 Without going into details, higher-order functions⚙️ can be said as follows: these are functions⚙️ that can take a function⚙️ as an argument and even return a function⚙️.
 
- [![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+ [![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)
 
 ## Problems?
 
@@ -316,7 +316,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+[![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)
 
 <!--
 ## Array.prototype.reduce

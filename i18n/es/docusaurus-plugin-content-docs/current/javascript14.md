@@ -207,7 +207,7 @@ Escribe en [Discord](https://discord.gg/6GDAfXn) o Telegram [chat](https://t.me/
 
 Para comprender cuánto ha aprendido en esta lección, realice la prueba en [aplicación móvil](http://onelink.to/njhc95) en nuestra escuela sobre este tema.
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+[![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)
 
 ## Enlaces
 
@@ -229,4 +229,4 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   
 </table>
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+[![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)

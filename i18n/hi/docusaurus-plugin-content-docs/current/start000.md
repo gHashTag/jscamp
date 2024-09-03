@@ -14,4 +14,4 @@ import YouTube from 'react-youtube';
 
 ![react native](https://miro.medium.com/max/2000/1*eIYvYBkRv83m42yxn8Ljwg.gif)
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+[![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)

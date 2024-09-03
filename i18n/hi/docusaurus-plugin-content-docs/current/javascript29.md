@@ -203,7 +203,7 @@ module.exports.sum = sum // export
 
 Вот мы и завершили с вами подготовительный, перед курсом по [мобильной разработке](https://jscamp.app/docs/start000), курс по JavaScript.
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+[![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)
 
 ## Проблемы?
 
@@ -628,7 +628,7 @@ obj.b = 4
 
 Для того чтобы понять насколько вы усвоили этот урок пройдите тест в [мобильном приложении](http://onelink.to/njhc95) в нашей школы по этой теме.
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+[![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)
 
 <!-- Экспортировать желаемые элементы одним оператором в конце модуля можно командой:
 

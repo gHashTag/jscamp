@@ -8,4 +8,4 @@ And finally, we will make a request to the server and receive our films through 
 
 [![redux](/img/redux/06.gif)](https://youtu.be/-eE3ySQIV80)
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+[![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)

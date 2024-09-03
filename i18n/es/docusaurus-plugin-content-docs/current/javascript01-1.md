@@ -39,4 +39,4 @@ A continuación, planeamos implementar pruebas en TypeScript, React Native, AWS 
 
 El bot es gratuito, pero puedes apoyar nuestra puesta en marcha a través de [Patreon](https://www.patreon.com/javascriptcamp)
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+[![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)

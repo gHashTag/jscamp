@@ -81,4 +81,4 @@ Basically, you pay for stable bandwidth or execution time, not for the number of
 
 More about pricing [here](https://aws.amazon.com/ru/appsync/pricing/)
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+[![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)

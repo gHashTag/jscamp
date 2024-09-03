@@ -169,7 +169,7 @@ function learnJavaScript() {
 
 Тема очень обширная и нечасто используемая нами в разработке, поэтому если интересно, то подробней можно познакомиться с ней [здесь,](https://learn.javascript.ru/regular-expressions)[ здесь](https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Regular_Expressions)[ и здесь.](https://tuhub.ru/frontend/js-regexp)
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+[![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)
 
 ## Проблемы?
 
@@ -202,7 +202,7 @@ s
 
 Для того чтобы понять насколько вы усвоили этот урок пройдите тест в [мобильном приложении](http://onelink.to/njhc95) в нашей школы по этой теме.
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+[![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)
 
 ## Ссылки
 

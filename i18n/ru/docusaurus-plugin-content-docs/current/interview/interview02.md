@@ -100,7 +100,7 @@ https://www.dropbox.com/s/y7mckthdz0oc4d3/UnlimitedNumberOfPropertiesTS.png?dl=0
 В TS- Tuple (Кортеж данных) - это последовательность значений- Особености:   - Tuple объявляется с помощью TypeScript с определенным количеством элементов и указывает тип для каждого элементаlet myTuple: [dataType1, dataType2, dataTypeN] = [value1, value2, valueN]  - Начальным значением должен быть массив с тем же количеством элементов, что и в описании типа
 
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+[![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)
 
 ## Проблемы?
 

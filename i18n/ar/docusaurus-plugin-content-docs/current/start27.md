@@ -11,4 +11,4 @@ The place where the source code of the project is located, [repository](https://
 
 <YouTube videoId='Uqhh9l_ImLg' />
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+[![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)

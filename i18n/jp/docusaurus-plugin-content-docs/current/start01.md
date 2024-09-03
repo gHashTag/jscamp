@@ -28,4 +28,4 @@ import YouTube from 'react-youtube'
 
 Надеюсь на вашу обратную связь, благодаря которой информация в изложенной статье будет корректироваться и дополняться.
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+[![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)

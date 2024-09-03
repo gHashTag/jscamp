@@ -8,4 +8,4 @@ sidebar_label: Boilerplate
 
 [![redux](/img/redux/05.gif)](https://youtu.be/qXfb62ik0_k)
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+[![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)

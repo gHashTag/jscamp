@@ -291,7 +291,7 @@ yarn all-contributors generate
 Осталось добавить в конце статьи ссылку на `Patreon`:
 
 ```bash
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+[![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)
 ```
 
 Статья готова для отправки!
@@ -568,5 +568,5 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+[![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)
 ![pullreqest](/img/blogging/00/33.png)

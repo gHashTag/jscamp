@@ -8,4 +8,4 @@ Non-standard navigation transitions.
 
 [![Z-переход](/img/rn2/04.gif)](https://youtu.be/pvbtcorKX3U)
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+[![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)

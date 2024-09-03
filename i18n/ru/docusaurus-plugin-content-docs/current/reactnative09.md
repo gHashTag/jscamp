@@ -49,7 +49,7 @@ export default App
 
 Подробнее о компоненте [ScrollView](https://reactnative.dev/docs/scrollview#reference)
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+[![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)
 
 ## Проблемы?
 
@@ -74,4 +74,4 @@ export default App
 
 1. [React Native](https://reactnative.dev/docs/platform-specific-code)
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+[![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)

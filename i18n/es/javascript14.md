@@ -171,7 +171,7 @@ Try removing the `i` flag from the example. The search is now case sensitive.
 
 The topic is very extensive and rarely used by us in development, so if you're interested, you can get acquainted with it in more detail [here,](https://learn.javascript.ru/regular-expressions) [here](https://developer.mozilla.org/en/docs/Web/JavaScript/Guide/Regular_Expressions)[and here.](https://tuhub.ru/frontend/js-regexp)
 
- [![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+ [![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)
 
 ## Problems?
 
@@ -225,4 +225,4 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   
 </table>
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+[![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)

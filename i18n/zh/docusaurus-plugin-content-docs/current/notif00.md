@@ -402,4 +402,4 @@ amplify notification console
 
 [Testing Push Notifications with AWS Amplify & CLI](https://medium.com/@dantasfiles/testing-push-notifications-with-aws-amplify-9126bd621d3a)
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+[![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)

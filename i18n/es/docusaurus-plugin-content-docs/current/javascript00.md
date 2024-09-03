@@ -154,7 +154,7 @@ El entrenamiento se lleva a cabo en las aplicaciones: [YouTube](https://www.yout
 
 Para comprender cuánto ha aprendido esta lección, realice una prueba en la [aplicación móvil](http://onelink.to/njhc95) de nuestra escuela sobre este tema o en nuestro [bot de Telegram](https://t.me/javascriptcamp_bot).
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+[![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)
 
 ![JavaScript Camp](/img/bandlink.png)
 
@@ -162,4 +162,4 @@ Para comprender cuánto ha aprendido esta lección, realice una prueba en la [ap
 
 La educación es gratuita, pero puedes apoyar nuestra puesta en marcha a través de [Patreon](https://www.patreon.com/bePatron?u=31769291).
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+[![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)

@@ -103,7 +103,7 @@ foo.toUpperCase()
 
 We can also make mistakes, so if you find an error on the site or incorrect translation, you can easily help fix the error on the site. To do this, click on the `Edit this page` button at the very bottom of each page.
 
- [![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+ [![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)
 
 ## Problems?
 
@@ -129,7 +129,7 @@ What does `Reference Error` mean?
 
 In order to understand how much you learned this lesson, take the test in the [mobile application](http://onelink.to/njhc95) of our school on this topic or in our [telegram bot](https://t.me/javascriptcamp_bot).
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+[![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)
 
 ## Links
 

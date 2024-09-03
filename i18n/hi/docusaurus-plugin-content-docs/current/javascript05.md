@@ -103,7 +103,7 @@ foo.toUpperCase()
 
 Мы также можем ошибаться, поэтому если вы обнаружите ошибку на сайте или не точность в переводе, то можете легко помочь исправить ошибку на сайте. Для этого нужно нажать на кнопку `Edit this page` в самом низу каждой странице.
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+[![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)
 
 ## Проблемы?
 
@@ -129,7 +129,7 @@ foo.toUpperCase()
 
 Для того чтобы понять, на сколько вы усвоили этот урок, пройдите тест в [мобильном приложении](http://onelink.to/njhc95) нашей школы по этой теме.
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+[![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)
 
 ## Ссылки:
 

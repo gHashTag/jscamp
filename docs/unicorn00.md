@@ -29,4 +29,4 @@ Thanks to 🙏🏻 contributors who contributed to this article and the new seri
 
 Go!
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+[![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)

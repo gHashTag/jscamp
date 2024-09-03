@@ -10,4 +10,4 @@ We will lay out a card in our application with a text field, with a shadow and w
 
 <YouTube videoId='anVgDcngW8I' />
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+[![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)

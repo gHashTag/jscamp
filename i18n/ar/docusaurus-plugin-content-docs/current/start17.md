@@ -11,4 +11,4 @@ In the process of work, a component goes through a number of stages of the life 
 
 <YouTube videoId='4xjWX3oRQoc' />
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+[![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)

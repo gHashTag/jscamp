@@ -133,7 +133,7 @@ let data = await response.json()
 console.log(data[0].name + ' and ' + data[2].name)
 ```
 
- [![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+ [![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)
 
 ## Problems?
 
@@ -199,4 +199,4 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   
 </table>
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+[![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)

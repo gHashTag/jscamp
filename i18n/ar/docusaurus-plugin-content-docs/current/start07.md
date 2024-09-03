@@ -11,4 +11,4 @@ React versus React Native is, of course, conventions, but the fact remains. Many
 
 <YouTube videoId='QdJGtUfkvfA' />
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+[![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)

@@ -227,7 +227,7 @@ null === null // true
 
 यह समझने के लिए कि आपने इस पाठ को कितना सीखा है, परीक्षा को अंदर लें [मोबाइल एप्लिकेशन](http://onelink.to/njhc95) इस विषय पर हमारा स्कूल।
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+[![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)
 
 ## लिंक:
 
@@ -247,4 +247,4 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   
 </table>
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+[![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)

@@ -11,4 +11,4 @@ Thanks to the understanding of this pattern, everything is folded up on the shel
 
 <YouTube videoId='PQV4J-pOHPw' />
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+[![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)

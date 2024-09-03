@@ -136,4 +136,4 @@ export function HomeScreen({ navigation }) {
 
 Мы научились брать удаленные данные с сервера с помощью Redux ToolKit Query!
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+[![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)

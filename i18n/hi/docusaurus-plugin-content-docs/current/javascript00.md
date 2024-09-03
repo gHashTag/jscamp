@@ -147,4 +147,4 @@ TypeScript - Microsoft द्वारा 2012 में शुरू की ग
 
 प्रशिक्षण नि: शुल्क है, लेकिन आप हमारे स्टार्टअप का समर्थन कर सकते हैं [Patreon](https://www.patreon.com/bePatron?u=31769291).
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+[![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)

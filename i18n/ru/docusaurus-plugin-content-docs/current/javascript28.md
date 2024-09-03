@@ -258,7 +258,7 @@ myFetch()
 
 `Async/await` позволяет писать  асинхронный код, который легко читать и поддерживать. Шесть причин почему его лучше использовать вместо промисов читайте [здесь](https://habr.com/ru/company/ruvds/blog/326074/).
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+[![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)
 
 ## Проблемы?
 
@@ -297,7 +297,7 @@ myFetch()
 
 Для того чтобы понять, на сколько вы усвоили этот урок, пройдите тест в [мобильном приложении](http://onelink.to/njhc95) нашей школы по этой теме или в нашем [телеграм боте](https://t.me/javascriptcamp_bot).
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+[![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)
 
 ## Ссылки:
 

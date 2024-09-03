@@ -173,7 +173,7 @@ null === null // true
 
 The `Symbol` type is a unique and immutable primitive value that can be used as a key for a property of an object. This type is so rarely used in real work that we will not even consider it in this course.
 
- [![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+ [![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)
 
 ## Problems?
 
@@ -247,4 +247,4 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   
 </table>
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+[![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)

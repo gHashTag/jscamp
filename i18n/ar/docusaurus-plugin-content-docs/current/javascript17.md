@@ -500,7 +500,7 @@ let arr = new Array (item1, item2 ...)
 
 لفهم مقدار ما تعلمته في هذا الدرس ، قم بإجراء الاختبار على [تطبيق الهاتف المحمول] (http://onelink.to/njhc95) الخاص بمدرستنا حول هذا الموضوع.
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+[![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)
 
 ## الروابط
 
@@ -530,7 +530,7 @@ let arr = new Array (item1, item2 ...)
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+[![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)
 
 <!--
 ### toString

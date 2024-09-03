@@ -126,4 +126,4 @@ We love Open Source and believe that the future belongs to it, if you are not in
 
 # Welcome to Unicorn 🦄
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+[![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)

@@ -217,4 +217,4 @@ const ImageCard = ({ data, onPress }) => {
 export { ImageCard }
 ```
 В данном уроке мы добавили стороннее ПО Redux Thunk.
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+[![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)

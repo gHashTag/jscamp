@@ -11,4 +11,4 @@ Each profession has its own vocabulary, both React programmers have their own, a
 
 <YouTube videoId='pXfH8ItPGMI' />
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+[![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)

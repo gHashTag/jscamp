@@ -253,7 +253,7 @@ myFetch()
 
 `Async / await` allows you to write  asynchronous code that is easy to read and maintain. For six reasons why it is better to use it instead of promises read [here](https://habr.com/ru/company/ruvds/blog/326074/).
 
- [![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+ [![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)
 
 ## Problems?
 
@@ -304,7 +304,7 @@ hello()
 
 In order to understand how much you learned this lesson, take the test in the [mobile application](http://onelink.to/njhc95) of our school on this topic or in our [telegram bot](https://t.me/javascriptcamp_bot).
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+[![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)
 
 ## Links:
 

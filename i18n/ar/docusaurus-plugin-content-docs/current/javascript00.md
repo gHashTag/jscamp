@@ -150,4 +150,4 @@ Thتتكون دورة e JS من مقالات ودروس فيديو وبودكا�
 
 التدريب مجاني ، ولكن يمكنك دعم بدء التشغيل لدينا من خلاله [Patreon](https://www.patreon.com/bePatron?u=31769291).
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+[![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)

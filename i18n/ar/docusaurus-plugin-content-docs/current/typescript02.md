@@ -325,7 +325,7 @@ However, when working with _JSX_ in TypeScript, only `as - syntax` is allowed, s
 
 Now we are ready to learn TypeScript with you, but in order to understand how much you learned this lesson, take the test in the [mobile application](http://onelink.to/njhc95) in our school on this topic.
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+[![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)
 
 ## Links
 
@@ -344,4 +344,4 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   </tr>
 </table>
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+[![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)

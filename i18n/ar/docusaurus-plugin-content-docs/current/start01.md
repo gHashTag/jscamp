@@ -29,4 +29,4 @@ Of course, not everyone has the opportunity to buy a Mac, but benchmarking two s
 
 I hope for your feedback, thanks to which the information in this article will be corrected and supplemented.
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+[![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)

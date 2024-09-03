@@ -243,4 +243,4 @@ const styles = StyleSheet.create({
 ```
 
 В данном уроке мы изменили иконки и в соответствии к этому поправили код, относящийся к хедеру.
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+[![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)

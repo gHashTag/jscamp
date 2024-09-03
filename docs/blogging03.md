@@ -47,7 +47,7 @@ Remote (remote) pair programming, also known as virtual pair programming or dist
 You can read more about pair programming [here](https://ru.wikipedia.org/wiki/Парное_программирование)
 
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+[![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)
 
 ## Links
 

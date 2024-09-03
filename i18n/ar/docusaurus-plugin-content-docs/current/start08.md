@@ -11,4 +11,4 @@ If we make any change in our application, for example, remove exclamation marks 
 
 <YouTube videoId='uISgghCjL38' />
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+[![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)

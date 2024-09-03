@@ -10,4 +10,4 @@ Since this course is the beginning of the next one, it is necessary to move the 
 
 <YouTube videoId='TL65kwAL0bE' />
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+[![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)

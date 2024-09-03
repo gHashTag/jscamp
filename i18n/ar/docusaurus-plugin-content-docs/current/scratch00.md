@@ -18,7 +18,7 @@ BASICS first lesson in learning the programming language "Scratch". Our teacher 
 
 Our [mobile application](http://onelink.to/njhc95)
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+[![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)
 
 ## Contributors ✨
 

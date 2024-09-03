@@ -287,7 +287,7 @@ The `this` keyword cannot be removed from JavaScript without destroying all exis
 
 Since in the last lesson we abandoned [classes](https://jscamp.app/docs/javascript25#refused-classes), we say goodbye to `this` with them.
 
- [![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+ [![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)
 
 ## Problems?
 
@@ -319,7 +319,7 @@ JavaScript without `this` looks like the best:
 
 In order to understand how much you learned this lesson, take the test in the [mobile application](http://onelink.to/njhc95) of our school on this topic or in our [telegram bot](https://t.me/javascriptcamp_bot).
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+[![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)
 
 ## Links
 

@@ -122,4 +122,4 @@ export const store = configureStore({
  > In this lesson, we got acquainted with the basic concept of Redux.
 
 
- [![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+ [![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)

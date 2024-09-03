@@ -194,7 +194,7 @@ function learnJavaScript() {
 
 لفهم مقدار ما تعلمته في هذا الدرس ، قم بإجراء اختبار في مدرستنا [mobile application](http://onelink.to/njhc95) حول هذا الموضوع.
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+[![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)
 
 ## الروابط
 
@@ -214,4 +214,4 @@ function learnJavaScript() {
   
 </table>
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+[![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)

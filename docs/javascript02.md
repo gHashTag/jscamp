@@ -90,7 +90,7 @@ With the commenting on the code, that's all and the call for a break sounded.
 
 ![Comments](https://media.giphy.com/media/SvuRLwWT0EoeErwPvB/giphy.gif)
 
- [![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+ [![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)
 
 ## Problems?
 
@@ -135,7 +135,7 @@ In order to understand how much you learned this lesson, take the test in the [m
 
  
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+[![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)
 
 ## Links
 

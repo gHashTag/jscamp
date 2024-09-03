@@ -10,4 +10,4 @@ Flexbox предоставляет инструменты для быстрог�
 
 <YouTube videoId='PF1kzcGdN7E' />
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+[![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)

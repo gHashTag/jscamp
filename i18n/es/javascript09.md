@@ -551,7 +551,7 @@ Self-invocation is created by parentheses at the end of a function⚙️ that te
 
 By understanding arrow and normal functions⚙️, you can pass functions to variable objects and rebuild your code in modules. Functions of this kind can also be used to create and return other functions⚙️. Here we are already talking about closure, which we will talk about in the next series.
 
- [![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+ [![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)
 
 ## Problems?
 
@@ -679,7 +679,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+[![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)
 
 ```
 

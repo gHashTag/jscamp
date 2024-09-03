@@ -11,4 +11,4 @@ Learn more about screen width and height in a React Native mobile app.
 
 <YouTube videoId='XehdxK1jkFk' />
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+[![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)

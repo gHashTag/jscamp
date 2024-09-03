@@ -126,7 +126,7 @@ JavaScript теперь твое главное звено!
 <YouTube videoId="GAbsjQF9i0c" />
 
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+[![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)
 
 ## Проблемы?
 

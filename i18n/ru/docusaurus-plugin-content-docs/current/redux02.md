@@ -230,4 +230,4 @@ export function AddMovieScreen({ navigation }) {
 
 Мы узнали как использовать redux на практике!
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+[![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)

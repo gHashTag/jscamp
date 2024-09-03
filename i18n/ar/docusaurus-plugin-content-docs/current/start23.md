@@ -10,4 +10,4 @@ Destructuring assignment is a feature that came to us with ES6.
 
 <YouTube videoId='z2cAFj7hfXU' />
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+[![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)

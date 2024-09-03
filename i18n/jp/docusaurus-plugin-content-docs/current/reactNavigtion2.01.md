@@ -8,4 +8,4 @@ sidebar_label: Stack Navigator
 
 [![react-navigation](/img/rn2/01.gif)](https://youtu.be/jkUUR-Ru2Qs)
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+[![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)

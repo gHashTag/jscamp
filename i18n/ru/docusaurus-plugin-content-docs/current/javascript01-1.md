@@ -39,4 +39,4 @@ import YouTube from 'react-youtube'
 
 Бот бесплатный, но вы можете поддержать наш стартап через [Patreon](https://www.patreon.com/javascriptcamp)
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+[![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)

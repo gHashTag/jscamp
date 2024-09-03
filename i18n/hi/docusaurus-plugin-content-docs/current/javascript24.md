@@ -286,7 +286,7 @@ JavaScript без this выглядит как лучший функционал
 
 Так как в прошлом уроке мы отказались от [классов](https://jscamp.app/docs/javascript25#отказ-от-классов), то и вместе с ними прощаемся и с `this`.
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+[![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)
 
 ## Проблемы?
 
@@ -324,7 +324,7 @@ JavaScript без `this` выглядит как лучший:
 
 Для того чтобы понять, на сколько вы усвоили этот урок, пройдите тест в [мобильном приложении](http://onelink.to/njhc95) нашей школы по этой теме.
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+[![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)
 
 ## Ссылки
 

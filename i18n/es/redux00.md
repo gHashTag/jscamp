@@ -8,4 +8,4 @@ We continue and begin our new course on the topic - managing the state of a mobi
 
 [![redux](/img/redux/00.gif)](https://youtu.be/KaKiJrVCUrw)
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+[![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)

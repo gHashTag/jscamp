@@ -10,4 +10,4 @@ import YouTube from 'react-youtube'
 
 <YouTube videoId='S2hQ_Tu39jo' />
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+[![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)

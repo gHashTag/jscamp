@@ -317,7 +317,7 @@ JavaScript 沒有這種語言，看起來像是最好的函數式編程語言！
 
 為了了解您學到了多少本課程，請對 [mobile application](http://onelink.to/njhc95) of our school on this topic.
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+[![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)
 
 ## 鏈接
 
@@ -347,4 +347,4 @@ JavaScript 沒有這種語言，看起來像是最好的函數式編程語言！
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+[![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)

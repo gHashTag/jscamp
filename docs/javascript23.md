@@ -117,7 +117,7 @@ There can be only one method named `constructor` in a class.
 
 Since in the course of our school we teach to develop mobile applications using the library [React](https://reactjs.org), where is the innovation [React Hooks](https://en.reactjs.org/docs/hooks-intro.html) allows you to use state and other React features without writing classes. Therefore, it makes no sense to talk about classes anymore, since we have abandoned them.
 
- [![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+ [![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)
 
 ## Problems?
 
@@ -164,7 +164,7 @@ How many `constructor()` methods can there be in one class?
 
 In order to understand how much you learned this lesson, take the test in the [mobile application](http://onelink.to/njhc95) of our school on this topic or in our [telegram bot](https://t.me/javascriptcamp_bot).
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+[![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)
 
 <!--
 ## Геттеры и сеттеры
@@ -340,7 +340,7 @@ const cat = new Animal({ //Создание объекта при помощи �
 
 Для того чтобы понять, на сколько вы усвоили этот урок, пройдите тест в [мобильном приложении](http://onelink.to/njhc95) нашей школы по этой теме или в нашем [телеграм боте](https://t.me/javascriptcamp_bot).
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl) -->
+[![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder) -->
 
 <!-- Сколько методов constructor() может находится в одном классе?
 

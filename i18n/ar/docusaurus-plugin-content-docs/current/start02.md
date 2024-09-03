@@ -10,4 +10,4 @@ To initialize a React Native application on your machine, you need to use the CL
 
 <YouTube videoId='2qqyDTy4HBs' />
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+[![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)

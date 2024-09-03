@@ -40,4 +40,4 @@ import YouTube from 'react-youtube'
 
 ボットは無料ですが、次の方法でスタートアップをサポートできます。 [Patreon](https://www.patreon.com/javascriptcamp)
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+[![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)

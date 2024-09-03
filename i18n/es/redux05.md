@@ -8,4 +8,4 @@ Here we will learn how to create a standard Redux bowlerplate in React Native pr
 
 [![redux](/img/redux/05.gif)](https://youtu.be/qXfb62ik0_k)
 
-[![EnglishMoji!](/img/logo/englishmoji.png)](https://link-to.app/xvh7Ush9kl)
+[![EnglishMoji!](/img/logo/NeuroCoder.png)](https://vk.com/neurocoder)
