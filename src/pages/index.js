@@ -87,39 +87,12 @@ const Home = () => {
         </Head>
         <a href="https://vk.com/neurocoder">
           <div className={classnames('image-container')}>
-            <img src={useBaseUrl('img/jscamp/1.3.jpg')} alt="NeuroCoder" />
-            <img src={useBaseUrl('img/jscamp/1.2.jpg')} alt="NeuroCoder" />
-            <img src={useBaseUrl('img/jscamp/1.1.jpg')} alt="NeuroCoder" />
+            <img src={useBaseUrl('img/jscamp/7.3.jpg')} alt="NeuroCoder" />
+            <img src={useBaseUrl('img/jscamp/3.2.jpg')} alt="NeuroCoder" />
+            <img src={useBaseUrl('img/jscamp/7.1.jpg')} alt="NeuroCoder" />
           </div>
         </a>
 
-        <header className={classnames('hero hero--primary', heroBanner)}>
-          <div className="container">
-            {/* <img src={useBaseUrl('img/jscamp/Покатушки по Джаваскриптушке.png')} alt="Покатушки по Джаваскриптушке" /> */}
-            {/* <h1 className="hero__title">Java Script Camp</h1> */}
-
-            <p className="dark-text">
-              <Translate>Scout camp from the creator of the first in Runet</Translate>{' '}
-              <a href="https://youtube.com/playlist?list=PLth6QPteH5guFUwQj1iCdu-SOZ7O5KCz4">
-                <Translate>React Native course</Translate>
-              </a>{' '}
-              <Translate>and the first Russian blogger-programmer in the program</Translate>{' '}
-              <a href="https://aws.amazon.com/ru/developer/community/community-builders/">AWS Community Builders</a>{' '}
-              <Translate>from Amazon</Translate>
-            </p>
-            <br />
-
-            <h3>
-              <Link className="button-custom" to="https://vk.com/neurocoder">
-                <Translate>Subscribe</Translate>{' '}
-              </Link>
-            </h3>
-
-            {/* <a href="https://www.patreon.com/javascriptcamp">
-              <img src={useBaseUrl('img/jscamp/Button 10$.png')} alt="" />
-            </a> */}
-          </div>
-        </header>
         <main>
           {features && features.length && (
             <section className={styles.features}>
@@ -132,14 +105,21 @@ const Home = () => {
               </div>
             </section>
           )}
+          
         </main>
+        
         {/* <div className={videoContainer}>
           <YouTube videoId="xpEy-Llex5k" opts={opts} className={player} />
         </div> */}
         {/* <Program /> */}
-
+       
         <header className={classnames('hero hero--primary', heroBanner)}>
-          {/* <div className="container"> */}
+          <div className="container">
+          <h3>
+              <Link className="button-custom" to="https://vk.com/neurocoder">
+                <Translate>Subscribe</Translate>{' '}
+              </Link>
+            </h3>
             {/* <img src={useBaseUrl('img/jscamp/Покатушки по Джаваскриптушке.png')} alt="Покатушки по Джаваскриптушке" /> */}
             {/* <h1 className="hero__title">Java Script Camp</h1> */}
 
@@ -167,8 +147,10 @@ const Home = () => {
                 <img src={useBaseUrl(`img/svbiz.png`)} alt={'alt'} className={'image-mobile'} />
               </a>
             </div> */}
-          {/* </div> */}
+          </div>
+          
         </header>
+        
       </Layout>
     </>
   )
