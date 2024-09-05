@@ -1,7 +1,7 @@
 ---
 id: neurobot01
-title: Chatbots
-sidebar_label: Chatbots
+title: Чат-боты
+sidebar_label: Чат-боты
 ---
 
 import YouTube from 'react-youtube'

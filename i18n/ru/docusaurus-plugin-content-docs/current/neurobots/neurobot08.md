@@ -1,7 +1,7 @@
 ---
 id: neurobot08
-title: dall-e 3 telegram bot
-sidebar_label: dall-e 3 tg bot
+title: Телеграм бот с dall-e 3
+sidebar_label: Телеграм бот с dall-e 3
 ---
 
 import YouTube from 'react-youtube'

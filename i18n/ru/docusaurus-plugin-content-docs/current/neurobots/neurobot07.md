@@ -1,7 +1,7 @@
 ---
 id: neurobot07
-title: telegram payments
-sidebar_label: telegram
+title: Подключение платежей в телеграм
+sidebar_label: Подключение платежей в телеграм
 ---
 
 import YouTube from 'react-youtube'

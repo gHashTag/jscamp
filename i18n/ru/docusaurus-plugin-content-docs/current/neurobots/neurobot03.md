@@ -1,7 +1,7 @@
 ---
 id: neurobot03
-title: VK mini-app
-sidebar_label: VK mini-app
+title: ВК мини-приложение
+sidebar_label: ВК мини-приложение
 ---
 
 import YouTube from 'react-youtube'

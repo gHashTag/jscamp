@@ -1,7 +1,7 @@
 ---
 id: neurobot06
-title: telegrambot
-sidebar_label: telegrambot
+title: Телеграм бот
+sidebar_label: Телеграм бот
 ---
 
 import YouTube from 'react-youtube'

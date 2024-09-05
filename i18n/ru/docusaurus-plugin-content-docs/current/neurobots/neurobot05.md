@@ -1,10 +1,11 @@
 ---
 id: neurobot05
-title: Setting up the working environment
-sidebar_label: Setting up the working environment
+title: Подготовка рабочего окружения
+sidebar_label: Подготовка рабочего окружения
 ---
 
 import YouTube from 'react-youtube'
+
 # Настройка рабочего окружения для разработки с Supabase, Docker и ngrok
 
 Создание рабочего окружения для разработки приложений с использованием Supabase, Docker и ngrok — это важный шаг для эффективной работы. В этой статье мы рассмотрим, как установить и настроить каждую из этих технологий.

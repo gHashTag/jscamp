@@ -1,7 +1,7 @@
 ---
 id: neurobot04
-title: Layout of the VKontakte mini-application
-sidebar_label: Layout 
+title: Верстка
+sidebar_label: Верстка
 ---
 
 import YouTube from 'react-youtube'

@@ -1,7 +1,7 @@
 ---
 id: neurobot02
-title: VK payments
-sidebar_label: VK payments
+title: Подключение ВК платежей
+sidebar_label: Подключение ВК платежей
 ---
 
 import YouTube from 'react-youtube'
