@@ -296,7 +296,7 @@ Como abandonamos en la última lección [classes](https://jscamp.app/docs/javasc
 
 ![Problema](https://media.giphy.com/media/xTiTnGeUsWOEwsGoG4/giphy.gif)
 
-Escribe en [Discord](https://discord.gg/6GDAfXn) o Telegram [chat](https://t.me/neuro_coder_group) y suscríbete a nuestras [noticias](https://t.me/javascriptapp)
+Escribe en [Discord](https://discord.gg/6GDAfXn) o Telegram [chat](https://t.me/jscampapp) y suscríbete a nuestras [noticias](https://t.me/javascriptapp)
 
 ![Campamento JavaScript](/img/bandlink.png)
 

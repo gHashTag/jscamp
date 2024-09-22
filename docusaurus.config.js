@@ -14,7 +14,7 @@
   baseUrl: '/',
   favicon: 'img/favicon.ico',
   organizationName: 'gHashTag',
-  projectName: 'jscamp',
+  projectName: 'NeuroCoder',
   onBrokenLinks: 'ignore',
   themes: ['@docusaurus/theme-live-codeblock'],
   plugins: ['remark-snackplayer', 'docusaurus-plugin-google-adsense'],
@@ -61,12 +61,12 @@
     metadata: [
       {
         name: 'description',
-        content: 'JavaScript Camp - программа обучения JavaScript в стеке React Native, TypeScript, AWS Amplify'
+        content: 'NeuroCoder - программа обучения JavaScript в стеке React Native, TypeScript, AWS Amplify'
       },
-      { property: 'og:title', content: 'JavaScript Camp' },
+      { property: 'og:title', content: 'NeuroCoder' },
       {
         property: 'og:description',
-        content: 'JavaScript Camp - программа обучения JavaScript в стеке React Native, TypeScript, AWS Amplify'
+        content: 'NeuroCoder - программа обучения JavaScript в стеке React Native, TypeScript, AWS Amplify'
       },
       { property: 'og:url', content: 'https://jscamp.app/' },
       {
@@ -93,7 +93,7 @@
       },
       items: [
         {
-          to: 'docs/javascript00',
+          to: 'docs/javascript01',
           activeBasePath: 'docs',
           label: 'Syllabus 📚',
           position: 'left'
@@ -201,7 +201,7 @@
         href: 'https://opensource.facebook.com/'
       },
       // Please do not remove the credits, help to publicize Docusaurus :)
-      copyright: `Copyright © ${new Date().getFullYear()} Server Serverlesskiy ⚛️ Built with Docusaurus`
+      copyright: `Copyright © ${new Date().getFullYear()} NeuroCoder ⚛️ Built with Docusaurus`
     }
   },
   presets: [

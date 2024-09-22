@@ -111,6 +111,7 @@ module.exports = {
     ['Rubik\'s Cube']: ['cube-00'],
     ['Scratch']: ['scratch-00', 'scratch-01'],
     ['Startup']: ['startup00', 'startup01', 'startup02'],
-    ['Interview']: ['interview/interview00', 'interview/interview01', 'interview/interview02']
+    ['Interview']: ['interview/interview00', 'interview/interview01', 'interview/interview02'],
+    ['Make.com']: ['make/make01']
   }
 }
