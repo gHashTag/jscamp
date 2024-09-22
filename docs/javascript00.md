@@ -1,7 +1,7 @@
 ---
 id: javascript00
-title: JavaScript Camp
-sidebar_label: JavaScript Camp
+title: NeuroCoder
+sidebar_label: NeuroCoder
 ---
 
 import YouTube from 'react-youtube'
