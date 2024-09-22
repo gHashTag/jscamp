@@ -36,6 +36,16 @@ module.exports = {
       'javascript30',
       'javascript01-1'
     ],
+    ['Neurobots']: [
+      'neurobots/neurobot01',
+      'neurobots/neurobot02',
+      'neurobots/neurobot03',
+      'neurobots/neurobot04',
+      'neurobots/neurobot05',
+      'neurobots/neurobot06',
+      'neurobots/neurobot07',
+      'neurobots/neurobot08'
+    ],
     ['React Native']: [
       'reactnative00',
       'reactnative01',
