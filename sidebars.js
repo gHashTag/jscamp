@@ -2,7 +2,7 @@
 module.exports = {
   someSidebar: {
     ['JavaScript']: [
-      'javascript00',
+      // 'javascript00',
       
       'javascript01',
       'javascript02',
