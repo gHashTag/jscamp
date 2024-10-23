@@ -65,13 +65,13 @@ if (!Deno.env.get("TELEGRAM_BOT_TOKEN")) throw new Error("TELEGRAM_BOT_TOKEN is 
 
 export const bot = new Bot(Deno.env.get("TELEGRAM_BOT_TOKEN") || "");
 export const handleUpdate = webhookCallback(bot, 'std/http');
+```
 Пояснение к коду:
 •	Мы импортируем необходимые модули из библиотеки grammY.
 •	Проверяем, установлен ли токен бота в переменных окружения.
 •	Создаем экземпляр бота и функцию для обработки обновлений.
 Шаг 7: Настройка OpenAI
 В папке _shared создайте папку openai, и в ней два файла: index.ts и client.ts.
-```
 В client.ts вставьте следующий код:
 
 ```typescript
